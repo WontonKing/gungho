@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="共好小學堂課程：以哈佛大學蘭格博士逆時鐘研究為主軸，介紹懷舊意念如何讓身心年輕，並附三個居家練習。">
+<meta property="og:title" content="逆時鐘的心念魔法｜共好小學堂">
+<meta property="og:description" content="懷舊意念 × 逆時鐘效應：讓心念倒轉時鐘，身體也跟著年輕。">
+<meta name="theme-color" content="#EEF8FF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='44' fill='%23fff' stroke='%231F2A44' stroke-width='8'/%3E%3Cline x1='50' y1='50' x2='50' y2='22' stroke='%231F2A44' stroke-width='8' stroke-linecap='round'/%3E%3Cline x1='50' y1='50' x2='30' y2='50' stroke='%2318A999' stroke-width='7' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='6' fill='%23F2545B'/%3E%3C/svg%3E">
+<style>
+html{-webkit-text-size-adjust:100%;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<title>逆時鐘的心念魔法</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<style>
+/* Layout: 一本復古年代的彩色課堂手冊——倒轉的時鐘當主視覺，每章用不同主色的「年代色票」分隔 */
+:root{
+  --bg:#EEF8FF;
+  --paper:#FFFFFF;
+  --ink:#1F2A44;
+  --muted:#56607A;
+  --line:#D6E6DE;
+  --red:#F2545B;
+  --yellow:#FFC23C;
+  --teal:#18A999;
+  --blue:#3B82F6;
+  --pink:#FF8FB1;
+  --purple:#8B5CF6;
+  --tint-red:#FFE6E7;
+  --tint-yellow:#FFF3D1;
+  --tint-teal:#D9F5F0;
+  --tint-blue:#E1ECFF;
+  --tint-pink:#FFE5EE;
+  --tint-purple:#EEE6FF;
+  --skin:#FFD7B5;
+  --hair:#E8E8EE;
+  --display:"Huninn","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  color-scheme:light;
+}
+/* 單一明亮主題：依課程需求固定使用淡亮色背景 */
+
+*{box-sizing:border-box}
+body{background:var(--bg) linear-gradient(160deg,#E4F4FF 0%,#F2FFF6 35%,#FFFBE0 70%,#FFEFF5 100%) fixed;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.75;padding-inline:16px;padding-block:0 48px}
+.wrap{max-width:1040px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0;line-height:1.3}
+p{margin:0}
+svg{display:block;max-width:100%;height:auto}
+
+/* top ribbon */
+.ribbon{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;padding-block:18px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-size:20px}
+.brand-dot{display:flex;gap:4px}
+.brand-dot i{width:12px;height:12px;border-radius:50%;display:block}
+.tag{font-size:14px;color:var(--muted);letter-spacing:.05em}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:center;background:var(--paper);border:3px solid var(--ink);border-radius:28px;padding:32px;box-shadow:8px 8px 0 var(--yellow);position:relative;overflow:hidden}
+.hero>*{min-width:0}
+.eyebrow{display:inline-block;font-size:14px;letter-spacing:.12em;background:var(--tint-pink);color:var(--ink);padding:4px 12px;border-radius:999px;margin-bottom:14px;font-weight:700}
+.hero h1{font-size:clamp(34px,6vw,58px)}
+.hero h1 .hl{color:var(--red)}
+.hero h1 .hl2{color:var(--teal)}
+.lead{margin-top:16px;color:var(--muted);font-size:18px;max-width:34em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chip{font-size:14px;font-weight:700;padding:6px 14px;border-radius:999px;border:2px solid var(--ink)}
+.hand{transform-origin:100px 100px;animation:back 12s linear infinite}
+.hand.min{animation-duration:3s}
+@keyframes back{to{transform:rotate(-360deg)}}
+.float{animation:bob 3.2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px)}}
+@media (prefers-reduced-motion:reduce){.hand,.float,.flip-inner{animation:none!important;transition:none!important}}
+
+/* section */
+section{margin-top:56px}
+.sec-head{display:flex;align-items:center;gap:14px;margin-bottom:22px;flex-wrap:wrap}
+.sec-no{font-family:var(--display);font-size:22px;width:52px;height:52px;border-radius:16px;display:grid;place-items:center;color:#fff;border:3px solid var(--ink);flex:none}
+.sec-head h2{font-size:clamp(24px,4vw,34px)}
+.sec-head .en{font-size:14px;color:var(--muted);letter-spacing:.06em;width:100%;padding-left:66px;margin-top:-10px}
+
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.card{background:var(--paper);border:2px solid var(--line);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.card h3{font-size:22px}
+.card .sub{font-size:13px;color:var(--muted);letter-spacing:.06em}
+.card ul{margin:0;padding-left:1.2em}
+.card li{margin:4px 0}
+.icon-row{display:flex;align-items:center;gap:14px}
+.icon-row svg{width:72px;flex:none}
+
+.quote{font-family:var(--display);font-size:clamp(20px,3.4vw,28px);text-align:center;background:var(--tint-yellow);border:3px dashed var(--yellow);border-radius:22px;padding:22px;margin-top:20px}
+
+/* mechanisms */
+.mech{border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:8px;border:2px solid transparent}
+.mech h3{font-size:20px}
+.big{font-family:var(--display);font-size:44px;line-height:1;color:var(--ink)}
+.big small{font-size:18px}
+
+/* steps */
+.steps{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.step{background:var(--paper);border:3px solid var(--ink);border-radius:22px;padding:22px;position:relative;display:flex;flex-direction:column;gap:10px}
+.step .num{position:absolute;top:-16px;left:18px;font-family:var(--display);background:var(--ink);color:var(--bg);border-radius:999px;padding:2px 14px;font-size:15px}
+.step h3{font-size:21px;margin-top:6px}
+.step ul{margin:0;padding-left:1.2em}
+.step li{margin:3px 0}
+.room{margin-top:22px;background:var(--paper);border:2px solid var(--line);border-radius:22px;padding:16px;overflow-x:auto}
+.room svg{min-width:560px;max-width:none;width:100%}
+.caption{font-size:14px;color:var(--muted);text-align:center;margin-top:8px}
+
+/* outcomes */
+.out{background:var(--paper);border-radius:22px;padding:20px;border:2px solid var(--line);display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.out .emo{width:58px;height:58px;border-radius:18px;display:grid;place-items:center}
+.out h3{font-size:19px}
+.out p{font-size:15.5px;color:var(--muted)}
+.days{display:inline-block;margin-bottom:16px;font-weight:700;background:var(--tint-teal);padding:6px 14px;border-radius:12px}
+
+/* flip cards */
+.flips{display:grid;gap:20px;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:8px}
+.flip{perspective:900px;border:0;padding:0;background:none;cursor:pointer;font:inherit;color:inherit;text-align:center;display:block;width:100%}
+.flip:focus-visible{outline:3px solid var(--blue);outline-offset:4px;border-radius:20px}
+.flip-inner{display:grid;width:100%;transition:transform .6s cubic-bezier(.3,1.4,.5,1);transform-style:preserve-3d}
+.flip.on .flip-inner{transform:rotateY(180deg)}
+.face{grid-area:1/1;min-height:170px;border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:22px 18px;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:3px solid var(--ink)}
+.face.front{background:var(--tint-red)}
+.face.back{background:var(--tint-teal);transform:rotateY(180deg)}
+.face small{font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--ink);background:var(--paper);border:2px solid var(--ink);border-radius:999px;padding:2px 12px;line-height:1.5}
+.face b{font-family:var(--display);font-weight:400;font-size:20px;line-height:1.55;display:block;max-width:12em}
+.face .hint{font-size:12.5px;color:var(--muted);letter-spacing:.05em}
+.asv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:12px}
+.bubble{background:var(--paper);border:2px solid var(--line);border-radius:20px;padding:16px;text-align:center}
+.bubble .q{font-family:var(--display);font-size:20px}
+.bubble .w{font-size:14px;color:var(--muted)}
+.bubble.key{border:3px solid var(--purple);background:var(--tint-purple)}
+
+.note{margin-top:56px;display:flex;gap:16px;align-items:flex-start;background:var(--tint-blue);border-radius:22px;padding:20px 22px}
+.note svg{width:60px;flex:none}
+.note h3{font-size:20px;margin-bottom:4px}
+.note p{font-size:15.5px}
+
+.refs{margin-top:56px;background:var(--paper);border:2px solid var(--line);border-radius:22px;padding:24px}
+.refs h2{font-size:24px;margin-bottom:12px}
+.refs h3{font-size:17px;margin:16px 0 6px;color:var(--teal)}
+.refs ol{margin:0;padding-left:1.4em;font-size:14.5px;line-height:1.65}
+.refs li{margin:8px 0}
+.refs li span{color:var(--muted);display:block}
+.refs i{font-style:italic}
+/* 深入淺出元件 */
+.plain{background:var(--paper);border:2px dashed var(--ink);border-radius:16px;padding:12px 14px;font-size:15.5px}
+.plain b.lab,.eg b.lab{display:inline-block;font-family:var(--display);font-weight:400;font-size:14px;color:#fff;background:var(--ink);border-radius:999px;padding:1px 10px;margin-right:6px}
+.eg{background:rgba(255,255,255,.6);border-radius:16px;padding:12px 14px;font-size:15.5px}
+.eg b.lab{background:var(--teal)}
+.story{background:var(--paper);border:3px solid var(--ink);border-radius:26px;padding:26px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.story>.intro{grid-column:1/-1}
+.story>.intro p{color:var(--muted);max-width:44em}
+.scene{border-radius:20px;padding:16px;display:flex;flex-direction:column;gap:6px}
+.scene .when{font-family:var(--display);font-size:15px;color:var(--muted)}
+.scene h3{font-size:19px}
+.scene p{font-size:15.5px}
+.versus{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:stretch;margin-top:6px}
+.versus>div{border-radius:18px;padding:16px;min-width:0}
+.versus .vs{align-self:center;font-family:var(--display);font-size:22px;background:var(--yellow);border:3px solid var(--ink);border-radius:50%;width:52px;height:52px;display:grid;place-items:center;padding:0}
+.versus h3{font-size:19px;margin-bottom:4px}
+.mech .plain{margin-top:auto}
+@media (max-width:820px){.story{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.story{grid-template-columns:1fr;padding:18px}.versus{grid-template-columns:1fr}.versus .vs{justify-self:center}}
+footer{text-align:center;margin-top:28px;color:var(--muted);font-size:14px}
+
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;padding:22px}
+  .hero-art{max-width:300px;margin:0 auto}
+  .g4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .flips,.asv{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .g2,.g4,.steps,.flips,.asv{grid-template-columns:1fr}
+  .sec-head .en{padding-left:0;margin-top:0}
+  .hero{box-shadow:5px 5px 0 var(--yellow)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="ribbon">
+  <div class="brand">
+    <span class="brand-dot"><i style="background:var(--red)"></i><i style="background:var(--yellow)"></i><i style="background:var(--teal)"></i><i style="background:var(--blue)"></i></span>
+    共好小學堂
+  </div>
+  <div class="tag">樂齡身心健康系列課程</div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div>
+    <span class="eyebrow">懷舊意念 × 逆時鐘效應</span>
+    <h1>讓心念<span class="hl">倒轉時鐘</span>，<br>身體也跟著<span class="hl2">年輕</span></h1>
+    <p class="lead">哈佛大學艾倫．蘭格博士（Dr. Ellen Langer）做過一個大膽的實驗：讓長者「活回」二十年前的自己，一週後，他們的聽力、握力與記憶力都進步了。這堂課帶大家認識這股「心念的力量」，也學幾招在家就能練習的小方法。</p>
+    <div class="chips">
+      <span class="chip" style="background:var(--tint-red)">心身一元論</span>
+      <span class="chip" style="background:var(--tint-teal)">活得彷彿</span>
+      <span class="chip" style="background:var(--tint-yellow)">可能性心理學</span>
+      <span class="chip" style="background:var(--tint-purple)">自主掌控感</span>
+    </div>
+  </div>
+  <div class="hero-art">
+    <!-- original cartoon: backward clock + happy elder couple -->
+    <svg viewBox="0 0 320 320" role="img" aria-label="卡通插圖：一對開心的長者在倒轉的時鐘前跳舞">
+      <circle cx="160" cy="150" r="140" fill="var(--tint-yellow)"/>
+      <g transform="translate(60,10)">
+        <circle cx="100" cy="100" r="86" fill="var(--paper)" stroke="var(--ink)" stroke-width="6"/>
+        <g stroke="var(--ink)" stroke-width="5" stroke-linecap="round">
+          <line x1="100" y1="22" x2="100" y2="34"/><line x1="178" y1="100" x2="166" y2="100"/>
+          <line x1="100" y1="178" x2="100" y2="166"/><line x1="22" y1="100" x2="34" y2="100"/>
+        </g>
+        <path d="M150 40 a78 78 0 0 0 -100 0" fill="none" stroke="var(--red)" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 10"/>
+        <path d="M54 34 l-8 8 l12 4" fill="none" stroke="var(--red)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <line class="hand" x1="100" y1="100" x2="100" y2="52" stroke="var(--ink)" stroke-width="7" stroke-linecap="round"/>
+        <line class="hand min" x1="100" y1="100" x2="140" y2="100" stroke="var(--teal)" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="100" cy="100" r="8" fill="var(--red)"/>
+      </g>
+      <!-- grandma -->
+      <g class="float">
+        <path d="M70 312 l14 -84 h44 l14 84z" fill="var(--pink)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>
+        <circle cx="106" cy="206" r="26" fill="var(--skin)" stroke="var(--ink)" stroke-width="4"/>
+        <path d="M80 200 q2 -30 26 -30 q24 0 26 30 q-10 -12 -26 -10 q-16 -2 -26 10z" fill="var(--hair)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>
+        <circle cx="106" cy="166" r="11" fill="var(--hair)" stroke="var(--ink)" stroke-width="4"/>
+        <circle cx="97" cy="208" r="3" fill="var(--ink)"/><circle cx="115" cy="208" r="3" fill="var(--ink)"/>
+        <path d="M98 218 q8 8 16 0" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="90" cy="216" r="4" fill="var(--pink)" opacity=".7"/><circle cx="122" cy="216" r="4" fill="var(--pink)" opacity=".7"/>
+        <path d="M128 244 q22 -10 34 -30" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+        <path d="M84 244 q-22 -6 -30 -30" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <!-- grandpa -->
+      <g class="float" style="animation-delay:-1.6s">
+        <rect x="186" y="226" width="54" height="86" rx="10" fill="var(--blue)" stroke="var(--ink)" stroke-width="4"/>
+        <path d="M213 230 v26" stroke="var(--yellow)" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="213" cy="200" r="27" fill="var(--skin)" stroke="var(--ink)" stroke-width="4"/>
+        <path d="M188 192 q4 -22 25 -22 q21 0 25 22" fill="var(--paper)" stroke="var(--ink)" stroke-width="4"/>
+        <rect x="196" y="196" width="14" height="10" rx="4" fill="none" stroke="var(--ink)" stroke-width="3"/>
+        <rect x="216" y="196" width="14" height="10" rx="4" fill="none" stroke="var(--ink)" stroke-width="3"/>
+        <line x1="210" y1="200" x2="216" y2="200" stroke="var(--ink)" stroke-width="3"/>
+        <path d="M203 214 q10 10 20 0" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+        <path d="M200 216 q13 6 26 0" fill="none" stroke="var(--hair)" stroke-width="5" stroke-linecap="round"/>
+        <path d="M188 246 q-18 -8 -26 -32" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+        <path d="M240 246 q22 -4 30 -32" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <!-- notes -->
+      <g fill="var(--teal)" stroke="var(--ink)" stroke-width="2">
+        <circle cx="38" cy="150" r="7"/><path d="M45 150 v-28 l12 4" fill="none" stroke="var(--teal)" stroke-width="4"/>
+        <circle cx="284" cy="160" r="7" fill="var(--red)"/><path d="M291 160 v-28 l12 4" fill="none" stroke="var(--red)" stroke-width="4"/>
+      </g>
+      <path d="M286 62 l5 12 l12 5 l-12 5 l-5 12 l-5 -12 l-12 -5 l12 -5z" fill="var(--yellow)" stroke="var(--ink)" stroke-width="2.5"/>
+      <path d="M30 70 l4 9 l9 4 l-9 4 l-4 9 l-4 -9 l-9 -4 l9 -4z" fill="var(--pink)" stroke="var(--ink)" stroke-width="2.5"/>
+    </svg>
+  </div>
+</header>
+
+<!-- 0 story -->
+<section>
+  <div class="sec-head">
+    <span class="sec-no" style="background:var(--yellow);color:var(--ink)">★</span>
+    <h2>故事時間：回到 1959 年的一週</h2>
+    <span class="en">THE COUNTERCLOCKWISE STUDY, 1979</span>
+  </div>
+  <div class="story">
+    <div class="intro">
+      <p>先來聽一個真實的實驗故事。這個故事是整堂課的起點，後面講的每個道理，都可以回頭用它來對照。</p>
+    </div>
+    <div class="scene" style="background:var(--tint-blue)">
+      <span class="when">1979 年・美國新罕布夏州</span>
+      <h3>一棟布置成 1959 年的老房子</h3>
+      <p>蘭格博士邀請一群 70 多歲的男士住進一棟老修道院。屋裡的電視、收音機、雜誌，全都是二十年前的東西。</p>
+    </div>
+    <div class="scene" style="background:var(--tint-yellow)">
+      <span class="when">入住第一天</span>
+      <h3>行李自己提</h3>
+      <p>沒有人上前攙扶。爺爺們得自己把行李搬進房間，有人花了很久，但都做到了。</p>
+    </div>
+    <div class="scene" style="background:var(--tint-pink)">
+      <span class="when">接下來五天</span>
+      <h3>把「當年」當「現在」</h3>
+      <p>大家討論時事、看球賽轉播，說話一律用現在式，好像真的回到自己五十多歲的時候。</p>
+    </div>
+    <div class="scene" style="background:var(--tint-teal)">
+      <span class="when">一週之後</span>
+      <h3>身體跟著變了</h3>
+      <p>他們的手變得更靈巧、關節更柔軟、坐得更挺，外人看照片也覺得他們變年輕了。</p>
+    </div>
+    <div class="intro" style="grid-column:1/-1">
+      <div class="versus">
+        <div style="background:var(--tint-purple)">
+          <h3>🅰 實驗組：活在當年</h3>
+          <p>說「艾森豪總統<b>正在</b>…」，把自己當成 1959 年的人。</p>
+        </div>
+        <div class="vs">VS</div>
+        <div style="background:var(--tint-blue)">
+          <h3>🅱 對照組：回憶當年</h3>
+          <p>住在同一個空間，但用過去式聊「<b>那時候</b>如何如何」。</p>
+        </div>
+      </div>
+      <p class="plain" style="margin-top:14px"><b class="lab">重點在這裡</b>兩組都有進步，但「活在當年」的那組進步更多。差別不在於有沒有懷舊，而在於腦袋是「看照片」還是「走進照片裡」。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 1 -->
+<section>
+  <div class="sec-head">
+    <span class="sec-no" style="background:var(--red)">一</span>
+    <h2>核心理念：心在哪裡，身體就在哪裡</h2>
+    <span class="en">THEORETICAL FOUNDATION</span>
+  </div>
+  <div class="grid g2">
+    <div class="card" style="background:var(--tint-red)">
+      <div class="icon-row">
+        <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36" fill="var(--paper)" stroke="var(--ink)" stroke-width="3"/><path d="M40 62 C14 46 18 22 32 22 c5 0 8 4 8 8 c0 -4 3 -8 8 -8 c14 0 18 24 -8 40z" fill="var(--red)" stroke="var(--ink)" stroke-width="3"/><path d="M30 34 q4 -4 8 0 M42 34 q4 -4 8 0" fill="none" stroke="var(--paper)" stroke-width="3" stroke-linecap="round"/></svg>
+        <div><h3>心身一元論</h3><span class="sub">MIND-BODY UNITY</span></div>
+      </div>
+      <p>西方醫學長期把「心」和「身」分開處理：心情歸心理師，身體歸醫師。蘭格博士認為它們是同一件事的兩面，心念一動，身體就跟著有反應。</p>
+      <p class="plain"><b class="lab">白話說</b>心和身不是兩個人，是同一個人。</p>
+      <p class="eg"><b class="lab">生活例子</b>光是想到酸梅，嘴巴就開始流口水；想到明天要上台，手心就冒汗。一個念頭，身體馬上回應。</p>
+    </div>
+    <div class="card" style="background:var(--tint-teal)">
+      <div class="icon-row">
+        <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36" fill="var(--paper)" stroke="var(--ink)" stroke-width="3"/><rect x="18" y="26" width="44" height="32" rx="6" fill="var(--teal)" stroke="var(--ink)" stroke-width="3"/><rect x="24" y="32" width="26" height="20" rx="3" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"/><circle cx="56" cy="36" r="2.5" fill="var(--ink)"/><circle cx="56" cy="46" r="2.5" fill="var(--ink)"/><path d="M30 26 l-6 -10 M50 26 l6 -10" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/></svg>
+        <div><h3>從「回憶」到「活得彷彿」</h3><span class="sub">LIVING "AS IF"</span></div>
+      </div>
+      <p>傳統懷舊療法是一起翻老照片、聊往事，能讓心情變好、話題變多。逆時鐘的做法再往前一步：不只回想，而是用現在式「活在」那個年代。</p>
+      <p class="plain"><b class="lab">白話說</b>不是「我以前會跳舞」，而是「今晚我要去跳舞」。</p>
+      <p class="eg"><b class="lab">生活例子</b>聽到年輕時的老歌，身體會不自覺跟著打拍子、坐直起來。那一刻，你不是在回憶，而是又回到了舞池。</p>
+    </div>
+    <div class="card" style="background:var(--tint-yellow)">
+      <div class="icon-row">
+        <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36" fill="var(--paper)" stroke="var(--ink)" stroke-width="3"/><path d="M40 16 a16 16 0 0 1 10 28 v6 h-20 v-6 a16 16 0 0 1 10 -28z" fill="var(--yellow)" stroke="var(--ink)" stroke-width="3" stroke-linejoin="round"/><rect x="31" y="52" width="18" height="6" rx="2" fill="var(--ink)"/><rect x="34" y="60" width="12" height="4" rx="2" fill="var(--ink)"/></svg>
+        <div><h3>可能性心理學</h3><span class="sub">PSYCHOLOGY OF POSSIBILITY</span></div>
+      </div>
+      <p>我們常以為「老了就是會退化」，但這有一部分是社會和語言教出來的想法。很多規定、習慣都是某個人在某個時間決定的，既然是決定出來的，就有機會重新決定。</p>
+      <p class="plain"><b class="lab">白話說</b>先別急著說「不可能」，先問「怎樣才可能？」</p>
+      <p class="eg"><b class="lab">生活例子</b>視力表最上面那行字最大、越往下越小，大家早就認定「看不清下面」。蘭格把表倒過來，小字放上面、越往下越大，受試者竟然看得到原本看不到的那幾行。</p>
+    </div>
+    <div class="card" style="background:var(--tint-purple)">
+      <div class="icon-row">
+        <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36" fill="var(--paper)" stroke="var(--ink)" stroke-width="3"/><path d="M24 50 q0 -18 16 -20 q16 2 16 20z" fill="var(--purple)" stroke="var(--ink)" stroke-width="3"/><circle cx="40" cy="24" r="9" fill="var(--skin)" stroke="var(--ink)" stroke-width="3"/><path d="M22 44 l-6 -14 M58 44 l6 -14" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/><rect x="22" y="52" width="36" height="10" rx="3" fill="var(--yellow)" stroke="var(--ink)" stroke-width="3"/></svg>
+        <div><h3>找回自主掌控感</h3><span class="sub">BREAKING LEARNED HELPLESSNESS</span></div>
+      </div>
+      <p>家人出於愛，什麼都幫長輩做好。久了，長輩會覺得「我做不到」，然後真的越來越做不到。心理學叫它「習得性無助」，蘭格叫它「自我誘發的依賴」。</p>
+      <p class="plain"><b class="lab">白話說</b>能力是越用越有，越被代勞越少。</p>
+      <p class="eg"><b class="lab">生活例子</b>讓阿嬤自己挑菜、自己決定晚餐煮什麼，比把飯菜端到她面前，更能讓她有精神。</p>
+    </div>
+  </div>
+  <p class="quote">「心念在哪裡，身體也會跟到哪裡。」</p>
+</section>
+
+<!-- 2 -->
+<section>
+  <div class="sec-head">
+    <span class="sec-no" style="background:var(--teal)">二</span>
+    <h2>為什麼會有效？四個運作機制</h2>
+    <span class="en">MECHANISMS OF ACTION</span>
+  </div>
+  <div class="grid g2">
+    <div class="mech" style="background:var(--tint-blue)">
+      <h3>💊 不吃藥的安慰劑效應</h3>
+      <p>醫學試驗裡，有些人吃了沒有藥效的糖錠，病情也會改善，這就是安慰劑效應。反過來，一直擔心會不舒服，真的就容易不舒服，叫做「反安慰劑效應」。</p>
+      <p>逆時鐘環境把「我老了、我不行」的暗示拿掉，換成「我正年輕、我做得到」的暗示，等於把反安慰劑換成安慰劑。</p>
+      <p class="eg"><b class="lab">研究故事</b>研究者告訴飯店房務員：「你們每天打掃的工作量，已經符合健康運動標準。」四週後，她們的生活習慣沒變，體重、血壓卻下降了。改變的只有她們怎麼看待自己的工作。</p>
+    </div>
+    <div class="mech" style="background:var(--tint-pink)">
+      <div class="big">7.5<small> 年</small></div>
+      <h3>你怎麼看老，就怎麼老</h3>
+      <p>耶魯大學列維教授追蹤長者二十多年，發現對變老抱持正面看法的人，平均比負面看法的人多活 7.5 年。這個差距，比血壓或膽固醇高低帶來的影響還大。</p>
+      <p>另有實驗讓長者在電腦上快速閃過老化相關的字眼，連自己都沒意識到，結果走路的速度和步態就跟著改變。</p>
+      <p class="plain"><b class="lab">白話說</b>「老人就是這樣」這句話，會悄悄變成一道指令，身體會照著做。</p>
+    </div>
+    <div class="mech" style="background:var(--tint-yellow)">
+      <h3>⏰ 身體跟著「感覺的時間」走</h3>
+      <p>我們以為身體照著時鐘運作，但研究發現，身體常常照「自己覺得過了多久」在運作。</p>
+      <p class="eg"><b class="lab">研究故事</b>蘭格團隊把時鐘偷偷調快或調慢，讓糖尿病患者玩一段遊戲。結果大家的血糖變化，跟著「牆上的時鐘」走，不是跟著真實時間。另一個實驗中，傷口在「感覺時間過得快」的情況下，也復原得比較快。</p>
+      <p class="plain"><b class="lab">白話說</b>大腦相信現在幾點，身體就照那個時間表做事。這也是神經可塑性的展現：大腦和身體會依照我們給的訊號重新調整。</p>
+    </div>
+    <div class="mech" style="background:var(--tint-teal)">
+      <h3>👀 蘭格專注力：每天找新鮮事</h3>
+      <p>這裡的專注力不是閉眼打坐，而是「主動注意到新的東西」。我們每天走同一條路、做同樣的事，大腦就進入自動駕駛，什麼都沒在看。</p>
+      <p>只要開始留意變化，例如今天的雲跟昨天不一樣、老朋友今天換了髮型，大腦就重新開機、活絡起來。</p>
+      <p class="eg"><b class="lab">小練習</b>今天散步時，試著找出三樣「以前沒注意過」的東西，回家跟家人分享。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section>
+  <div class="sec-head">
+    <span class="sec-no" style="background:var(--blue)">三</span>
+    <h2>逆時鐘沉浸式療程怎麼進行？</h2>
+    <span class="en">CLINICAL INTERVENTION PROTOCOL</span>
+  </div>
+  <div class="steps">
+    <div class="step" style="background:var(--tint-blue)">
+      <span class="num">步驟 1</span>
+      <h3>先做身心「健康快照」</h3>
+      <ul>
+        <li><b>對象：</b>75 歲以上、能自主行動的長者</li>
+        <li><b>身體：</b>SPPB 簡短身體表現評量（椅上坐起、步行速度、平衡）</li>
+        <li><b>感官：</b>聽力、視力、握力、關節活動度、血壓、呼吸</li>
+        <li><b>心理：</b>故事回憶測驗、憂鬱焦慮量表、年齡刻板印象問卷</li>
+        <li><b>外觀：</b>請他人盲測前後照片的年齡</li>
+      </ul>
+      <p class="plain"><b class="lab">為什麼</b>先量好「出發前」的樣子，事後才看得出到底有沒有變化，而不是憑感覺說「好像有比較好」。</p>
+    </div>
+    <div class="step" style="background:var(--tint-yellow)">
+      <span class="num">步驟 2</span>
+      <h3>把空間「搬回」那個年代</h3>
+      <ul>
+        <li>選定壯年時期當時間錨點，例如 1959 年或 1989 年</li>
+        <li>復古電視、收音機播放當年的流行歌與球賽</li>
+        <li>擺上當年的雜誌、報紙、海報與書</li>
+        <li>收起手機與現代產品，移開全身鏡，只放年輕時的照片</li>
+      </ul>
+      <p class="plain"><b class="lab">為什麼</b>環境就是無聲的提示。每看一次鏡中白髮，就是在提醒自己「我老了」；每看一眼年輕的照片，就是在提醒自己「這才是我」。</p>
+    </div>
+    <div class="step" style="background:var(--tint-pink)">
+      <span class="num">步驟 3</span>
+      <h3>用「現在式」過生活</h3>
+      <ul>
+        <li>聊當年時事要說「正在發生」，不說「以前怎樣」</li>
+        <li>不提後來年代發生的事</li>
+        <li>不攙扶、自己提行李進房間</li>
+        <li>大家分工決定伙食與生活安排，建立「我做得到」的感覺</li>
+      </ul>
+      <p class="plain"><b class="lab">為什麼</b>說話的時態會改變心的位置。說「那時候」，人站在現在往回看；說「現在」，人就站在那個年代裡。自己動手，則是在一次次證明「我還行」。</p>
+    </div>
+    <div class="step" style="background:var(--tint-teal)">
+      <span class="num">步驟 4</span>
+      <h3>每天動腦又熱鬧</h3>
+      <ul>
+        <li>定時舉辦當年大事的討論會，像在開時事座談</li>
+        <li>放映經典老電影</li>
+        <li>安排那個年代的休閒活動，一起找回共鳴與活力</li>
+      </ul>
+      <p class="plain"><b class="lab">為什麼</b>討論需要記憶、判斷與表達，正是大腦最好的運動。和同齡朋友一起，話題對得上，笑聲也多，心情一好，身體也跟著有勁。</p>
+    </div>
+  </div>
+
+  <div class="room">
+    <!-- original illustration of a retro room -->
+    <svg viewBox="0 0 720 260" role="img" aria-label="插圖：布置成復古年代的客廳，有老式電視、收音機、黑膠唱機、掛曆與植物">
+      <rect x="0" y="0" width="720" height="200" fill="var(--tint-yellow)"/>
+      <g fill="var(--yellow)" opacity=".5">
+        <circle cx="40" cy="30" r="8"/><circle cx="120" cy="70" r="8"/><circle cx="200" cy="30" r="8"/><circle cx="280" cy="70" r="8"/><circle cx="360" cy="30" r="8"/><circle cx="440" cy="70" r="8"/><circle cx="520" cy="30" r="8"/><circle cx="600" cy="70" r="8"/><circle cx="680" cy="30" r="8"/>
+      </g>
+      <rect x="0" y="200" width="720" height="60" fill="var(--tint-red)"/>
+      <line x1="0" y1="200" x2="720" y2="200" stroke="var(--ink)" stroke-width="4"/>
+      <!-- calendar -->
+      <rect x="60" y="40" width="90" height="100" rx="6" fill="var(--paper)" stroke="var(--ink)" stroke-width="4"/>
+      <rect x="60" y="40" width="90" height="28" rx="6" fill="var(--red)" stroke="var(--ink)" stroke-width="4"/>
+      <text x="105" y="61" text-anchor="middle" font-family="Huninn, sans-serif" font-size="18" fill="#fff">1959</text>
+      <text x="105" y="118" text-anchor="middle" font-family="Huninn, sans-serif" font-size="40" fill="var(--ink)">8</text>
+      <!-- TV -->
+      <rect x="200" y="96" width="160" height="104" rx="18" fill="var(--teal)" stroke="var(--ink)" stroke-width="4"/>
+      <rect x="216" y="110" width="100" height="74" rx="14" fill="var(--paper)" stroke="var(--ink)" stroke-width="4"/>
+      <path d="M232 160 q16 -24 32 0 t32 0" fill="none" stroke="var(--blue)" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="338" cy="126" r="8" fill="var(--yellow)" stroke="var(--ink)" stroke-width="3"/>
+      <circle cx="338" cy="156" r="8" fill="var(--yellow)" stroke="var(--ink)" stroke-width="3"/>
+      <path d="M260 96 l-22 -32 M300 96 l22 -32" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
+      <rect x="220" y="200" width="10" height="34" fill="var(--ink)"/><rect x="330" y="200" width="10" height="34" fill="var(--ink)"/>
+      <!-- radio on table -->
+      <rect x="410" y="170" width="150" height="10" fill="var(--ink)"/>
+      <rect x="420" y="180" width="8" height="60" fill="var(--ink)"/><rect x="542" y="180" width="8" height="60" fill="var(--ink)"/>
+      <rect x="430" y="112" width="110" height="58" rx="14" fill="var(--red)" stroke="var(--ink)" stroke-width="4"/>
+      <rect x="442" y="124" width="54" height="34" rx="6" fill="var(--tint-red)" stroke="var(--ink)" stroke-width="3"/>
+      <g stroke="var(--ink)" stroke-width="2"><line x1="450" y1="132" x2="488" y2="132"/><line x1="450" y1="141" x2="488" y2="141"/><line x1="450" y1="150" x2="488" y2="150"/></g>
+      <circle cx="518" cy="141" r="11" fill="var(--yellow)" stroke="var(--ink)" stroke-width="3"/>
+      <g fill="none" stroke="var(--teal)" stroke-width="4" stroke-linecap="round"><path d="M548 104 q10 -10 0 -20"/><path d="M560 112 q20 -20 0 -40"/></g>
+      <!-- plant -->
+      <path d="M610 200 l6 -50 h44 l6 50z" fill="var(--blue)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>
+      <g fill="var(--teal)" stroke="var(--ink)" stroke-width="3">
+        <path d="M638 150 q-36 -10 -40 -50 q34 6 40 50z"/><path d="M638 150 q34 -16 44 -54 q-38 8 -44 54z"/><path d="M638 150 q-4 -40 10 -74 q14 34 -10 74z"/>
+      </g>
+    </svg>
+    <p class="caption">把休養空間布置成當年的樣子：日曆、電視、收音機，連一盆自己照顧的植物都算數。</p>
+  </div>
+</section>
+
+<!-- 4 -->
+<section>
+  <div class="sec-head">
+    <span class="sec-no" style="background:var(--pink)">四</span>
+    <h2>研究觀察到的變化</h2>
+    <span class="en">CLINICAL OUTCOME MEASURES</span>
+  </div>
+  <span class="days">介入期：5 至 7 天</span>
+  <p style="margin-bottom:18px;max-width:44em">短短一週，沒有吃藥、沒有開刀，只改變了環境、說話方式和生活習慣，研究者就在參與者身上看到下面這些變化：</p>
+  <div class="grid g4">
+    <div class="out">
+      <span class="emo" style="background:var(--tint-blue)"><svg viewBox="0 0 40 40" width="34" aria-hidden="true"><path d="M14 30 c-6 -4 -6 -20 6 -22 c10 -1 14 8 10 14 c-3 4 -6 4 -6 9 c0 4 -6 5 -10 -1z" fill="var(--skin)" stroke="var(--ink)" stroke-width="2.5"/><path d="M33 12 q4 6 0 12" fill="none" stroke="var(--blue)" stroke-width="3" stroke-linecap="round"/></svg></span>
+      <h3>聽力、視力更好</h3>
+      <p>沒有任何醫療或手術介入，聽力明顯提升，視力表現也進步。</p>
+    </div>
+    <div class="out">
+      <span class="emo" style="background:var(--tint-red)"><svg viewBox="0 0 40 40" width="34" aria-hidden="true"><path d="M8 26 q0 -10 10 -12 l2 -6 q6 0 6 6 q8 2 8 12 q0 6 -13 6 q-13 0 -13 -6z" fill="var(--red)" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round"/></svg></span>
+      <h3>手腳更靈活</h3>
+      <p>握力增強、關節活動度增加、手指關節炎腫脹減輕，站姿和步伐更挺拔。</p>
+    </div>
+    <div class="out">
+      <span class="emo" style="background:var(--tint-yellow)"><svg viewBox="0 0 40 40" width="34" aria-hidden="true"><path d="M20 6 c-10 0 -14 8 -12 14 c-4 4 0 12 6 10 c2 4 10 4 12 0 c6 2 10 -6 6 -10 c2 -6 -2 -14 -12 -14z" fill="var(--pink)" stroke="var(--ink)" stroke-width="2.5"/><path d="M20 8 v22" stroke="var(--ink)" stroke-width="2"/></svg></span>
+      <h3>頭腦更清楚</h3>
+      <p>智力測驗分數提高，短期記憶與工作記憶都有改善。</p>
+    </div>
+    <div class="out">
+      <span class="emo" style="background:var(--tint-teal)"><svg viewBox="0 0 40 40" width="34" aria-hidden="true"><rect x="6" y="10" width="28" height="22" rx="4" fill="var(--paper)" stroke="var(--ink)" stroke-width="2.5"/><circle cx="20" cy="21" r="6" fill="var(--teal)" stroke="var(--ink)" stroke-width="2.5"/><rect x="14" y="6" width="12" height="5" rx="2" fill="var(--ink)"/></svg></span>
+      <h3>看起來更年輕</h3>
+      <p>不知情的觀察者看前後照片，一致評定參與者外貌更年輕。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5 -->
+<section>
+  <div class="sec-head">
+    <span class="sec-no" style="background:var(--purple)">五</span>
+    <h2>回家也能練：三個生活小功課</h2>
+    <span class="en">HOME-BASED &amp; COMMUNITY APPLICATION</span>
+  </div>
+
+  <div class="card" style="background:var(--paper)">
+    <h3>功課 ①　換掉「老化口頭禪」</h3>
+    <p style="color:var(--muted)">點一下卡片，看看可以怎麼換句話說。多用「可能」「或許」，少用「一定」「永遠」。</p>
+    <div class="flips">
+      <button class="flip" type="button" id="flip1" aria-label="翻牌：我老了">
+        <span class="flip-inner"><span class="face front"><small>以前常說</small><b>「我老了。」</b><span class="hint">點我翻面 ↻</span></span><span class="face back"><small>試著改說</small><b>「我今天想慢慢來。」</b></span></span>
+      </button>
+      <button class="flip" type="button" id="flip2" aria-label="翻牌：我記性差">
+        <span class="flip-inner"><span class="face front"><small>以前常說</small><b>「我記性很差。」</b><span class="hint">點我翻面 ↻</span></span><span class="face back"><small>試著改說</small><b>「這件事我寫下來就記得了。」</b></span></span>
+      </button>
+      <button class="flip" type="button" id="flip3" aria-label="翻牌：好累做不到">
+        <span class="flip-inner"><span class="face front"><small>以前常說</small><b>「好累，做不到。」</b><span class="hint">點我翻面 ↻</span></span><span class="face back"><small>試著改說</small><b>「雖然累，不過我完成了！」</b></span></span>
+      </button>
+      <button class="flip" type="button" id="flip4" aria-label="翻牌：膝蓋痛就是老化">
+        <span class="flip-inner"><span class="face front"><small>以前常說</small><b>「膝蓋痛，就是老了。」</b><span class="hint">點我翻面 ↻</span></span><span class="face back"><small>試著改說</small><b>「可能是今天走太多，休息看看。」</b></span></span>
+      </button>
+      <button class="flip" type="button" id="flip5" aria-label="翻牌：學不會">
+        <span class="flip-inner"><span class="face front"><small>以前常說</small><b>「這把年紀學不會啦。」</b><span class="hint">點我翻面 ↻</span></span><span class="face back"><small>試著改說</small><b>「或許換個方法，我就會了。」</b></span></span>
+      </button>
+      <button class="flip" type="button" id="flip6" aria-label="翻牌：只會越來越差">
+        <span class="flip-inner"><span class="face front"><small>以前常說</small><b>「身體只會越來越差。」</b><span class="hint">點我翻面 ↻</span></span><span class="face back"><small>試著改說</small><b>「今天比昨天好一點點。」</b></span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="card" style="background:var(--paper);margin-top:18px">
+    <h3>功課 ②　症狀變化小觀察（ASV）</h3>
+    <p style="color:var(--muted)">用手機鬧鐘隨機提醒自己，每次響起，就問自己三個問題並記下來。你會發現，不舒服其實時好時壞，並不是只會變糟。</p>
+    <p class="eg"><b class="lab">為什麼有用</b>很多慢性病人覺得「我的腰一直都在痛」。真的記錄下來才發現：早上比較痛、下午散步後比較好、跟孫子講完電話根本忘了痛。一旦找到「為什麼比較好」，就找到了自己能動手改善的地方，從被病痛牽著走，變成自己掌握方向盤。</p>
+    <div class="asv">
+      <div class="bubble"><p class="w">問題一</p><p class="q">此刻感覺如何？</p></div>
+      <div class="bubble"><p class="w">問題二</p><p class="q">比上次好，還是差？</p></div>
+      <div class="bubble key"><p class="w">最關鍵的問題三</p><p class="q">為什麼？</p></div>
+    </div>
+  </div>
+
+  <div class="card" style="background:var(--tint-teal);margin-top:18px">
+    <div class="icon-row">
+      <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36" fill="var(--paper)" stroke="var(--ink)" stroke-width="3"/><path d="M26 58 l3 -16 h22 l3 16z" fill="var(--yellow)" stroke="var(--ink)" stroke-width="3" stroke-linejoin="round"/><path d="M40 42 q-14 -4 -14 -20 q14 2 14 20z M40 42 q12 -6 14 -22 q-14 4 -14 22z" fill="var(--teal)" stroke="var(--ink)" stroke-width="3"/><path d="M58 22 q4 6 0 10 M62 18 q8 10 0 18" fill="none" stroke="var(--blue)" stroke-width="3" stroke-linecap="round"/></svg>
+      <div><h3>功課 ③　自己做主的小選擇</h3><span class="sub">ENVIRONMENTAL MICRO-CHOICES</span></div>
+    </div>
+    <p>植物要放哪裡、多久澆一次水、今天幾點散步、晚上看什麼節目，都讓長者自己決定。</p>
+    <p class="eg"><b class="lab">研究故事</b>1976 年，蘭格和羅丁在一家療養院做實驗。一層樓的長者自己挑一盆植物、自己照顧，也能決定哪天看電影；另一層樓的長者也拿到植物，但由護理人員照顧，活動也由院方安排。一年半後，自己做主的那層樓，長者更有活力、更快樂，死亡率約只有另一層樓的一半。</p>
+    <p class="plain"><b class="lab">給照顧者</b>多問一句「你想怎麼做？」，少替長輩做一點。等待雖然比較慢，卻是在幫他們保住能力。</p>
+  </div>
+</section>
+
+<div class="note">
+  <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="27" fill="var(--paper)" stroke="var(--ink)" stroke-width="3"/><rect x="26" y="14" width="8" height="22" rx="4" fill="var(--blue)"/><circle cx="30" cy="44" r="4.5" fill="var(--blue)"/></svg>
+  <div>
+    <h3>課堂小提醒</h3>
+    <p>1979 年的逆時鐘實驗只有少數長者參與，屬於啟發性的先導研究；2019 年起義大利團隊已用更嚴謹的隨機對照試驗重新檢驗。這些方法是讓身心更有活力的輔助練習，不能取代醫療。身體有狀況，仍請按時就醫、依醫囑服藥。</p>
+  </div>
+</div>
+
+<div class="refs">
+  <h2>📚 延伸閱讀與參考資料</h2>
+  <h3>經典研究與專著</h3>
+  <ol>
+    <li>Langer, E. J. (2009). <i>Counterclockwise: Mindful Health and the Power of Possibility</i>. Ballantine Books.<span>逆時鐘實驗、心身一元論、語言暗示與可能性心理學的代表著作。</span></li>
+    <li>Langer, E. J. (1989). <i>Mindfulness</i>. Addison-Wesley.<span>界定非冥想式專注力與「心盲」的危害。</span></li>
+    <li>Langer, E. J., &amp; Rodin, J. (1976). The effects of choice and enhanced personal responsibility for the aged. <i>Journal of Personality and Social Psychology, 34</i>(2), 191–198.<span>給長者小小的選擇權與責任，身心狀態明顯改善。</span></li>
+    <li>Rodin, J., &amp; Langer, E. J. (1977). Long-term effects of a control-relevant intervention with the institutionalized aged. <i>Journal of Personality and Social Psychology, 35</i>(12), 897–902.<span>長期追蹤掌控感對長者健康與壽命的影響。</span></li>
+    <li>Alexander, C. N., Langer, E. J., et al. (1989). Transcendental meditation, mindfulness, and longevity. <i>Journal of Personality and Social Psychology, 57</i>(6), 950–964.</li>
+  </ol>
+  <h3>現代複製研究與理論延伸</h3>
+  <ol start="6">
+    <li>Pagnini, F., Cavalera, C., Volpato, E., … &amp; Langer, E. (2019). Ageing as a mindset: a study protocol to rejuvenate older adults with a counterclockwise psychological intervention. <i>BMJ Open, 9</i>(7), e030411.<span>以 1989 年為時間錨點的隨機對照試驗設計，含 SPPB 評估。</span></li>
+    <li>Levy, B. R., Slade, M. D., Kunkel, S. R., &amp; Kasl, S. V. (2002). Longevity increased by positive self-perceptions of aging. <i>Journal of Personality and Social Psychology, 83</i>(2), 261–270.<span>正向老化心態與多 7.5 年壽命的關聯。</span></li>
+    <li>Crum, A. J., &amp; Langer, E. J. (2007). Mind-set matters: Exercise and the placebo effect. <i>Psychological Science, 18</i>(2), 165–171.<span>飯店房務員改變心態後，血壓、體重與 BMI 下降。</span></li>
+    <li>Clark, L., &amp; Wohl, M. J. A. (2021). Langer's illusion of control and the cognitive model of disordered gambling. <i>Addiction</i>.<span>蘭格「掌控錯覺」理論的延伸討論。</span></li>
+  </ol>
+</div>
+
+<footer>共好小學堂 · 一起學、一起好 ✿</footer>
+</div>
+
+<script>
+document.querySelectorAll('.flip').forEach(function(b){
+  b.addEventListener('click',function(){
+    b.classList.toggle('on');
+    b.setAttribute('aria-pressed',b.classList.contains('on'));
+  });
+});
+</script>
+
+</body>
+</html>
