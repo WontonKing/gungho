@@ -13,6 +13,13 @@ window.SCHOOL_TOPICS = [
    description: '捐血會讓人變得比較健康嗎？還是有其它的因素呢？讓我們思考一下吧。', 
    category: '健康小知識', 
    url: '/KS/blooddonate/index.html' 
+   },
+     { 
+   title: '懷舊小學堂', 
+   description: '假裝自己年輕二十歲真的會讓身體變健康嗎？還是有其它的心理機制呢？', 
+   category: '時間小知識', 
+   url: '/KS/timetherapy/index.html' 
    } 
+   
   // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/' }
 ];
