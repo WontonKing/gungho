@@ -3,7 +3,7 @@
    陣列順序就是畫面順序，卡片與編號會自動產生。 */
 window.SCHOOL_TOPICS = [
   {
-    title: 'GLP-1 小知識',
+    title: '瘦瘦針 GLP-1 小知識',
     description: '對 GLP-1 感到好奇嗎？從這裡開啟你的知識探索，一起把陌生的名詞慢慢讀懂。',
     category: '健康小知識',
     url: '/KS/GLP/index.html'
