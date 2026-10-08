@@ -8,5 +8,11 @@ window.SCHOOL_TOPICS = [
     category: '健康小知識',
     url: '/KS/GLP'
   }
+  { 
+   title: '捐血小學堂', 
+   description: '捐血會讓人變得比較健康嗎？還是有其它的因素呢？讓我們思考一下吧。', 
+   category: '健康小知識', 
+   url: '/KS/blooddonate/' 
+   } 
   // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/' }
 ];
