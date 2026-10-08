@@ -7,7 +7,7 @@ window.SCHOOL_TOPICS = [
     description: '對 GLP-1 感到好奇嗎？從這裡開啟你的知識探索，一起把陌生的名詞慢慢讀懂。',
     category: '健康小知識',
     url: '/KS/GLP'
-  }
+  },
   { 
    title: '捐血小學堂', 
    description: '捐血會讓人變得比較健康嗎？還是有其它的因素呢？讓我們思考一下吧。', 
