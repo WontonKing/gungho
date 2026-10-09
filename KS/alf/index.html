@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2455c7">
+<meta name="description" content="共好小學堂｜高資產下流老人：有房有存款，為什麼晚年還是會卡關？認識概念、風險機制，以及退休現金流、醫療長照與信託的準備。">
+<title>高資產下流老人｜共好小學堂</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 26 C24 12 12 14 11 20 C18 26 26 26 32 26Z' fill='%235ad6a4' stroke='%231f2a44' stroke-width='2.5'/%3E%3Cpath d='M32 22 C40 8 52 10 53 16 C46 22 38 22 32 22Z' fill='%237ee3b8' stroke='%231f2a44' stroke-width='2.5'/%3E%3Cellipse cx='32' cy='44' rx='20' ry='17' fill='%237ee3b8' stroke='%231f2a44' stroke-width='3'/%3E%3Ccircle cx='25' cy='42' r='2.6' fill='%231f2a44'/%3E%3Ccircle cx='39' cy='42' r='2.6' fill='%231f2a44'/%3E%3C/svg%3E">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/AGING/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:title" content="有房也有存款，老後為什麼還會卡關？｜高資產下流老人">
+<meta property="og:description" content="認識「高資產下流老人」的概念與風險機制，並做一次退休前財務健檢。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/AGING/">
+<meta property="og:locale" content="zh_TW">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c; --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff; --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3;
+  --bg:#fffdf7; --card:#ffffff;
+  --r:22px;
+  --shadow:0 6px 0 rgba(31,42,68,.08), 0 14px 30px rgba(36,85,199,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC",system-ui,sans-serif;line-height:1.85;font-size:17px;overflow-x:hidden}
+h1,h2,h3,.round{font-family:"Huninn","Noto Sans TC",sans-serif;font-weight:400;letter-spacing:.02em}
+a{color:var(--blue)}
+img,svg{max-width:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;z-index:99;background:#fff;padding:6px 12px;border-radius:8px}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.92);backdrop-filter:blur(8px);border-bottom:2px dashed var(--line)}
+.top .wrap{display:flex;align-items:center;gap:12px;height:62px}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--blue);font-family:"Huninn","Noto Sans TC";font-size:20px;white-space:nowrap}
+.brand small{display:block;font-size:10px;letter-spacing:.18em;color:var(--ink-2);font-family:"Noto Sans TC";line-height:1}
+.brand b{font-weight:400;line-height:1.1;display:block}
+.top nav{margin-left:auto;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.top nav::-webkit-scrollbar{display:none}
+.top nav a{flex:none;text-decoration:none;font-size:14px;padding:6px 12px;border-radius:999px;color:var(--ink-2);background:#fff;border:2px solid var(--line);transition:.2s}
+.top nav a:hover{border-color:var(--blue);color:var(--blue)}
+.back{background:var(--blue)!important;color:#fff!important;border-color:var(--blue)!important}
+@media(max-width:760px){.top nav a:not(.back){display:none}}
+
+/* hero */
+.hero{position:relative;padding:48px 0 90px;background:
+ radial-gradient(circle at 12% 20%,var(--sun-l) 0 120px,transparent 121px),
+ radial-gradient(circle at 92% 12%,var(--sky-l) 0 160px,transparent 161px),
+ radial-gradient(circle at 80% 90%,var(--coral-l) 0 110px,transparent 111px),
+ linear-gradient(180deg,#f3f7ff,#fffdf7)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}
+.tag{display:inline-flex;align-items:center;gap:6px;background:#fff;border:2px solid var(--blue);color:var(--blue);padding:4px 14px;border-radius:999px;font-size:14px;font-weight:700}
+.hero h1{font-size:clamp(36px,6vw,60px);line-height:1.2;margin:16px 0 10px;color:var(--blue-d)}
+.hero h1 .hl{white-space:nowrap;background:linear-gradient(transparent 60%,var(--sun) 60%);padding:0 4px}
+.hero p.lead{font-size:19px;color:var(--ink-2);margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:999px;border:3px solid var(--ink);box-shadow:0 4px 0 var(--ink);transition:.15s;font-size:16px}
+.btn:hover{transform:translateY(2px);box-shadow:0 2px 0 var(--ink)}
+.btn.p{background:var(--sun);color:var(--ink)}
+.btn.s{background:#fff;color:var(--ink)}
+.hero-art{position:relative}
+.float{animation:float 4s ease-in-out infinite}
+.float.d2{animation-delay:-1.3s}.float.d3{animation-delay:-2.6s}
+@keyframes float{50%{transform:translateY(-8px)}}
+.spin{animation:spin 9s linear infinite;transform-origin:center;transform-box:fill-box}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.float,.spin{animation:none}}
+.wave{position:absolute;bottom:-1px;left:0;width:100%;height:60px}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.hero{padding-top:28px}}
+
+/* sections */
+section{padding:56px 0;position:relative}
+.sec-head{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.num{flex:none;width:56px;height:56px;border-radius:18px;display:grid;place-items:center;font-family:"Huninn";font-size:26px;color:#fff;transform:rotate(-6deg);box-shadow:0 4px 0 rgba(0,0,0,.15)}
+.sec-head h2{font-size:clamp(26px,4vw,36px);margin:0;line-height:1.25}
+.sec-head .eng{display:block;font-size:12px;letter-spacing:.2em;color:var(--ink-2);font-family:"Noto Sans TC";font-weight:700}
+.alt{background:linear-gradient(180deg,#f4f8ff,#fffdf7)}
+.alt2{background:linear-gradient(180deg,#fff7ec,#fffdf7)}
+.alt3{background:linear-gradient(180deg,#effbf5,#fffdf7)}
+.card{background:var(--card);border-radius:var(--r);padding:22px 24px;box-shadow:var(--shadow);border:2px solid var(--line)}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:820px){.g2,.g3{grid-template-columns:1fr}}
+p{margin:0 0 12px}
+.src{display:inline-block;font-size:12px;background:var(--blue-l);color:var(--blue);padding:1px 8px;border-radius:999px;text-decoration:none;vertical-align:2px;margin-left:2px;white-space:nowrap}
+.src:hover{background:var(--blue);color:#fff}
+
+/* bubble */
+.bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:26px;padding:20px 24px;box-shadow:6px 6px 0 var(--sun)}
+.say{display:flex;gap:16px;align-items:flex-start}
+.say svg{flex:none;width:88px}
+@media(max-width:560px){.say{flex-direction:column}.say svg{width:72px}}
+.note{background:var(--sun-l);border:2px dashed var(--orange);border-radius:18px;padding:16px 20px;display:flex;gap:12px}
+.note .ic{font-size:26px;line-height:1}
+
+/* criteria */
+.crit{text-align:center;padding:26px 20px}
+.crit svg{width:110px;height:110px;margin:0 auto 6px;display:block}
+.crit h3{margin:4px 0 6px;font-size:22px}
+.crit p{color:var(--ink-2);font-size:15.5px}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.tabs button{font:inherit;font-weight:700;font-size:15px;cursor:pointer;padding:10px 16px;border-radius:999px;border:3px solid var(--ink);background:#fff;color:var(--ink);transition:.15s}
+.tabs button[aria-selected="true"]{background:var(--c,var(--blue));color:#fff;border-color:var(--c,var(--blue))}
+.panel{display:none;border-left:8px solid var(--c);}
+.panel.on{display:block;animation:pop .3s ease}
+@keyframes pop{from{opacity:0;transform:translateY(6px)}}
+.panel dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px}
+.panel dt{font-weight:900;color:var(--c)}
+.panel dd{margin:0}
+@media(max-width:560px){.panel dl{grid-template-columns:1fr}.panel dt{margin-top:6px}}
+
+.story{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:center;background:var(--grape-l);border-radius:var(--r);padding:20px;border:2px solid #d9cbff}
+@media(max-width:560px){.story{grid-template-columns:1fr}.story svg{width:120px}}
+
+/* compare */
+.vs{display:grid;grid-template-columns:150px 1fr 1fr;border-radius:var(--r);overflow:hidden;border:3px solid var(--ink);background:#fff}
+.vs > div{padding:14px 16px;border-bottom:2px solid var(--line)}
+.vs .h{font-family:"Huninn";font-size:19px;color:#fff;border-bottom:none}
+.vs .h.a{background:var(--sky)}.vs .h.b{background:var(--coral)}.vs .h.z{background:var(--ink)}
+.vs .k{font-weight:900;background:var(--sun-l)}
+.vs > div:nth-last-child(-n+3){border-bottom:none}
+@media(max-width:700px){
+  .vs{grid-template-columns:1fr 1fr}
+  .vs .h.z{display:none}
+  .vs .k{grid-column:1/-1;border-bottom:none;padding-bottom:4px;background:var(--sun-l)}
+}
+
+/* mechanism */
+.mech{position:relative;padding-top:30px}
+.mech .badge{position:absolute;top:-18px;left:20px;background:var(--c);color:#fff;font-family:"Huninn";font-size:15px;padding:6px 14px;border-radius:999px;box-shadow:0 3px 0 rgba(0,0,0,.15)}
+.mech h3{margin:0 0 8px;font-size:21px;color:var(--c)}
+.mech .key{background:var(--c-l);border-radius:12px;padding:10px 14px;font-weight:700;margin-top:8px}
+.paper{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center;margin:8px 0 24px}
+.paper .sheet{background:#fff;border:3px solid var(--ink);border-radius:18px;padding:16px;text-align:center}
+.paper .sheet b{display:block;font-family:"Huninn";font-size:20px}
+.bar{height:18px;border-radius:999px;background:var(--line);overflow:hidden;margin-top:10px}
+.bar i{display:block;height:100%;border-radius:999px}
+.paper .eq{font-family:"Huninn";font-size:30px;color:var(--coral)}
+@media(max-width:560px){.paper{grid-template-columns:1fr}.paper .eq{text-align:center}}
+
+/* social chips */
+.issue{display:flex;gap:14px;align-items:flex-start}
+.issue .em{flex:none;width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:26px}
+.issue h3{margin:0 0 4px;font-size:19px}
+.issue p{font-size:15.5px;color:var(--ink-2);margin:0}
+
+/* steps */
+.steps{counter-reset:s;display:grid;gap:14px;position:relative}
+.step{display:grid;grid-template-columns:54px 1fr;gap:14px;align-items:start}
+.step .dot{counter-increment:s;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--c);color:#fff;font-family:"Huninn";font-size:22px;border:4px solid #fff;box-shadow:0 0 0 3px var(--c)}
+.step .dot::before{content:counter(s)}
+.step .card{padding:16px 20px}
+.step h3{margin:0 0 4px;font-size:19px;color:var(--c)}
+.step p{margin:0;font-size:16px}
+
+.buckets{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:6px 0 24px}
+.bucket{text-align:center;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:12px 10px 16px}
+.bucket svg{width:90px;height:90px}
+.bucket b{display:block;font-family:"Huninn";font-size:18px}
+.bucket span{font-size:14px;color:var(--ink-2)}
+@media(max-width:560px){.buckets{grid-template-columns:1fr}}
+
+/* checklist */
+.prog{display:flex;align-items:center;gap:14px;margin-bottom:16px;flex-wrap:wrap}
+.prog .track{flex:1;min-width:180px;height:22px;background:#fff;border:3px solid var(--ink);border-radius:999px;overflow:hidden}
+.prog .fill{height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 10px,#3ccf9c 10px,#3ccf9c 20px);transition:width .4s}
+.prog .txt{font-family:"Huninn";font-size:20px;color:var(--mint)}
+.chk{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(max-width:700px){.chk{grid-template-columns:1fr}}
+.chk label{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start;cursor:pointer;background:#fff;border:2px solid var(--line);border-radius:18px;padding:14px 16px;transition:.2s}
+.chk label:hover{border-color:var(--mint)}
+.chk input{position:absolute;opacity:0}
+.chk .box{width:34px;height:34px;border-radius:10px;border:3px solid var(--ink);display:grid;place-items:center;font-size:20px;background:#fff;transition:.2s}
+.chk input:checked + .box{background:var(--mint);border-color:var(--mint);color:#fff}
+.chk input:checked + .box::after{content:"✓";font-weight:900}
+.chk input:focus-visible + .box{outline:3px solid var(--blue);outline-offset:2px}
+.chk label:has(input:checked){background:var(--mint-l);border-color:var(--mint)}
+.chk b{display:block;font-size:17px}
+.chk span{font-size:15px;color:var(--ink-2);display:block;line-height:1.7}
+.done-msg{display:none;margin-top:14px}
+.done-msg.on{display:flex}
+
+/* quiz */
+.q{margin-bottom:16px}
+.q h3{font-size:19px;margin:0 0 10px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts button{font:inherit;font-size:15.5px;cursor:pointer;padding:9px 16px;border-radius:14px;border:2px solid var(--ink);background:#fff;color:var(--ink);text-align:left}
+.opts button:hover{background:var(--sky-l)}
+.opts button.ok{background:var(--mint);border-color:var(--mint);color:#fff}
+.opts button.no{background:var(--coral-l);border-color:var(--coral);color:var(--coral)}
+.fb{margin-top:8px;font-size:15.5px;display:none;padding:10px 14px;border-radius:12px;background:var(--blue-l)}
+.fb.on{display:block}
+
+/* refs */
+.refs ol{margin:0;padding-left:22px}
+.refs li{margin-bottom:12px;font-size:15.5px}
+.refs li a{word-break:break-all;font-size:13.5px}
+.refs h3{font-size:18px;margin:18px 0 8px;color:var(--blue)}
+.refs .cav{display:block;font-size:13.5px;color:var(--ink-2)}
+
+footer{background:var(--blue-d);color:#dfe8ff;padding:40px 0 30px;text-align:center;margin-top:30px;position:relative}
+footer .round{font-size:22px;color:#fff}
+footer a{color:var(--sun)}
+.toTop{position:fixed;right:16px;bottom:16px;width:52px;height:52px;border-radius:50%;background:var(--sun);border:3px solid var(--ink);box-shadow:0 4px 0 var(--ink);display:grid;place-items:center;text-decoration:none;font-size:22px;z-index:40;opacity:0;pointer-events:none;transition:.3s}
+.toTop.on{opacity:1;pointer-events:auto}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+
+<!-- ===== reusable original cartoon characters ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- 小芽 sprout -->
+    <symbol id="sprout" viewBox="0 0 120 130">
+      <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+      <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+      <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+      <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+      <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+      <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+      <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <!-- 藍鳥 blue bird -->
+    <symbol id="bird" viewBox="0 0 120 110">
+      <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+      <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+      <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+      <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+      <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+      <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+      <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+      <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+    </symbol>
+    <!-- 星星 star -->
+    <symbol id="star" viewBox="0 0 120 120">
+      <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+      <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+      <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+      <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+    </symbol>
+    <!-- coin -->
+    <symbol id="coin" viewBox="0 0 40 40">
+      <circle cx="20" cy="20" r="17" fill="#ffc93c" stroke="#1f2a44" stroke-width="3"/>
+      <circle cx="20" cy="20" r="11" fill="none" stroke="#e8a400" stroke-width="2.5"/>
+      <text x="20" y="25.5" text-anchor="middle" font-size="15" font-weight="900" fill="#b37a00" font-family="sans-serif">$</text>
+    </symbol>
+    <!-- grandpa -->
+    <symbol id="grandpa" viewBox="0 0 120 200">
+      <path d="M86 120 L96 194" stroke="#8a5a2b" stroke-width="6" stroke-linecap="round"/>
+      <path d="M86 120 q12 -8 16 2" stroke="#8a5a2b" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <rect x="34" y="150" width="18" height="44" rx="8" fill="#4a5674" stroke="#1f2a44" stroke-width="3"/>
+      <rect x="58" y="150" width="18" height="44" rx="8" fill="#4a5674" stroke="#1f2a44" stroke-width="3"/>
+      <path d="M26 96 Q55 78 84 96 L90 158 Q55 168 20 158Z" fill="#ff9f43" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+      <path d="M55 94 v62" stroke="#1f2a44" stroke-width="2.5" stroke-dasharray="2 9"/>
+      <path d="M84 104 Q94 116 88 122" stroke="#1f2a44" stroke-width="12" stroke-linecap="round" fill="none"/>
+      <path d="M84 104 Q94 116 88 122" stroke="#ff9f43" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+      <circle cx="55" cy="56" r="32" fill="#ffd9b8" stroke="#1f2a44" stroke-width="3.5"/>
+      <path d="M26 50 Q24 34 34 30 M84 50 Q86 34 76 30" stroke="#fff" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <path d="M26 50 Q24 34 34 30 M84 50 Q86 34 76 30" stroke="#1f2a44" stroke-width="2" stroke-linecap="round" fill="none" opacity=".25"/>
+      <circle cx="44" cy="56" r="8" fill="#fff" stroke="#1f2a44" stroke-width="2.5"/><circle cx="66" cy="56" r="8" fill="#fff" stroke="#1f2a44" stroke-width="2.5"/>
+      <path d="M52 56 h6" stroke="#1f2a44" stroke-width="2.5"/>
+      <circle cx="44" cy="57" r="3" fill="#1f2a44"/><circle cx="66" cy="57" r="3" fill="#1f2a44"/>
+      <path d="M44 74 Q55 70 66 74 Q60 82 55 80 Q50 82 44 74Z" fill="#fff" stroke="#1f2a44" stroke-width="2"/>
+      <ellipse cx="34" cy="70" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="76" cy="70" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+    </symbol>
+    <!-- grandma -->
+    <symbol id="grandma" viewBox="0 0 120 200">
+      <rect x="38" y="160" width="16" height="34" rx="7" fill="#ffd9b8" stroke="#1f2a44" stroke-width="3"/>
+      <rect x="62" y="160" width="16" height="34" rx="7" fill="#ffd9b8" stroke="#1f2a44" stroke-width="3"/>
+      <path d="M30 96 Q58 80 86 96 L100 168 Q58 178 16 168Z" fill="#8a5cf6" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+      <circle cx="40" cy="132" r="4" fill="#fff"/><circle cx="72" cy="122" r="4" fill="#fff"/><circle cx="58" cy="150" r="4" fill="#fff"/><circle cx="82" cy="150" r="4" fill="#fff"/>
+      <circle cx="58" cy="18" r="16" fill="#d7dbe6" stroke="#1f2a44" stroke-width="3"/>
+      <circle cx="58" cy="58" r="32" fill="#ffd9b8" stroke="#1f2a44" stroke-width="3.5"/>
+      <path d="M26 58 Q24 26 58 26 Q92 26 90 58 Q84 40 58 38 Q32 40 26 58Z" fill="#e9ecf3" stroke="#1f2a44" stroke-width="3"/>
+      <path d="M42 60 q5 -5 10 0 M64 60 q5 -5 10 0" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M50 74 Q58 82 66 74" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="38" cy="70" rx="6" ry="3.5" fill="#ff9aa2" opacity=".85"/><ellipse cx="78" cy="70" rx="6" ry="3.5" fill="#ff9aa2" opacity=".85"/>
+    </symbol>
+    <!-- house -->
+    <symbol id="house" viewBox="0 0 160 150">
+      <path d="M14 70 L80 14 L146 70" fill="none" stroke="#1f2a44" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M20 66 L80 18 L140 66Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+      <rect x="110" y="26" width="16" height="30" fill="#ff9f43" stroke="#1f2a44" stroke-width="3"/>
+      <rect x="30" y="64" width="100" height="78" rx="4" fill="#fff5d6" stroke="#1f2a44" stroke-width="3.5"/>
+      <rect x="68" y="96" width="26" height="46" rx="4" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+      <circle cx="88" cy="120" r="2.5" fill="#ffc93c"/>
+      <rect x="40" y="80" width="20" height="20" rx="3" fill="#e0f4ff" stroke="#1f2a44" stroke-width="3"/>
+      <rect x="102" y="80" width="20" height="20" rx="3" fill="#e0f4ff" stroke="#1f2a44" stroke-width="3"/>
+      <path d="M50 80 v20 M40 90 h20 M112 80 v20 M102 90 h20" stroke="#1f2a44" stroke-width="2"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://www.gungho.idv.tw/KS/index.html" aria-label="回共好小學堂首頁">
+      <svg width="36" height="36"><use href="#sprout"/></svg>
+      <span><b>共好小學堂</b><small>GROW &amp; LEARN TOGETHER</small></span>
+    </a>
+    <nav aria-label="本頁目錄">
+      <a href="#origin">詞源</a>
+      <a href="#what">定義</a>
+      <a href="#why">形成原因</a>
+      <a href="#cash">現金流</a>
+      <a href="#care">長照信託</a>
+      <a href="#check">健檢</a>
+      <a href="#quiz">小測驗</a>
+      <a class="back" href="https://www.gungho.idv.tw/KS/index.html">← 回小學堂</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="tag">✦ 退休理財小知識</span>
+      <h1>有房也有存款，<br>老後為什麼還會<span class="hl">卡關？</span></h1>
+      <p class="lead">一起認識「<b>高資產下流老人</b>」——帳面上很富有，生活卻撐不住的落差，以及現在就能開始做的退休準備。</p>
+      <div class="btns">
+        <a class="btn p" href="#origin">開始認識 →</a>
+        <a class="btn s" href="#check">直接做退休健檢 ✓</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 520 400" role="img" aria-label="原創卡通插圖：爺爺奶奶站在房子前，身旁有金幣、小芽、藍鳥與星星">
+        <ellipse cx="260" cy="372" rx="240" ry="22" fill="#dcf7ec"/>
+        <g class="float d2"><use href="#house" x="140" y="120" width="230" height="216"/></g>
+        <use href="#grandpa" x="36" y="170" width="120" height="200"/>
+        <use href="#grandma" x="372" y="174" width="116" height="194"/>
+        <g class="float"><use href="#coin" x="190" y="58" width="44" height="44"/></g>
+        <g class="float d3"><use href="#coin" x="250" y="30" width="36" height="36"/></g>
+        <g class="float d2"><use href="#coin" x="300" y="66" width="30" height="30"/></g>
+        <g class="float"><use href="#star" x="410" y="20" width="84" height="84"/></g>
+        <g class="float d3"><use href="#bird" x="30" y="40" width="96" height="88"/></g>
+        <use href="#sprout" x="232" y="300" width="70" height="76"/>
+        <g font-family="Huninn, sans-serif" font-size="17">
+          <rect x="280" y="108" width="196" height="42" rx="21" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+          <text x="378" y="135" text-anchor="middle" fill="#1f2a44">房子很大，現金很少…</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q180 0 360 30 T720 30 T1080 30 T1440 30 V60 H0Z" fill="#fffdf7"/></svg>
+</section>
+
+<!-- SUMMARY -->
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="say">
+      <svg viewBox="0 0 120 110"><use href="#bird"/></svg>
+      <div class="bubble">
+        <p><b>先說重點！</b>「下流老人」是日本學者藤田孝典在 2015 年提出的說法，描述收入低、存款不夠、身邊又沒人可以依靠，而陷入貧困和孤立的長輩。</p>
+        <p>「高資產下流老人」是台灣延伸出來的講法：長輩<b>帳面資產不少</b>（尤其是房子或股票），卻因為<b>現金流不夠、資產不好變現、照護花費、投資失誤或人際關係斷掉</b>，生活品質一直往下掉。</p>
+        <p style="margin:0">⚠️ 不過要分清楚：有錢卻很焦慮、過度節儉，<b>不一定</b>就等於原本意義上的「下流老人」。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1 ORIGIN -->
+<section id="origin" class="alt">
+  <div class="wrap">
+    <div class="sec-head"><div class="num" style="background:var(--blue)">1</div><h2><span class="eng">WHERE IT CAME FROM</span>什麼是「下流老人」？</h2></div>
+    <div class="card" style="margin-bottom:22px">
+      <p>「下流老人」（日語：かりゅうろうじん）出自藤田孝典 2015 年的書《下流老人：一億総老後崩壊の衝撃》<a class="src" href="#ref1">參考 1</a>。這裡的「下流」指的是<b>社會階層與生活處境</b>，<b>不是在評價人格或品德</b>。他要提醒大家：高齡貧窮和支持斷裂，是社會結構的問題。</p>
+      <p style="margin:0">更值得警惕的是，原本過著中產生活的人，也可能因為退休、生病、家庭變故或經濟環境變化，一路往下滑<a class="src" href="#ref2">參考 2</a>。</p>
+    </div>
+    <h3 class="round" style="font-size:22px;margin:0 0 14px;text-align:center">🔍 三個常見判斷指標</h3>
+    <div class="grid g3">
+      <div class="card crit" style="border-top:8px solid var(--coral)">
+        <svg viewBox="0 0 110 110" aria-hidden="true"><circle cx="55" cy="55" r="50" fill="#ffe5e5"/><rect x="22" y="40" width="66" height="44" rx="10" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3"/><rect x="62" y="52" width="30" height="20" rx="6" fill="#fff" stroke="#1f2a44" stroke-width="3"/><circle cx="74" cy="62" r="3.5" fill="#1f2a44"/><path d="M40 30 q-6 -10 2 -14 M52 30 q0 -12 8 -12" stroke="#4a5674" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="3 5"/></svg>
+        <h3>收入極低</h3><p>收入不夠穩定撐起基本生活開銷。</p>
+      </div>
+      <div class="card crit" style="border-top:8px solid var(--sun)">
+        <svg viewBox="0 0 110 110" aria-hidden="true"><circle cx="55" cy="55" r="50" fill="#fff5d6"/><ellipse cx="55" cy="62" rx="34" ry="26" fill="#ff9aa2" stroke="#1f2a44" stroke-width="3"/><circle cx="80" cy="58" r="9" fill="#ffb3ba" stroke="#1f2a44" stroke-width="3"/><circle cx="77" cy="57" r="1.8" fill="#1f2a44"/><circle cx="83" cy="57" r="1.8" fill="#1f2a44"/><rect x="46" y="34" width="18" height="5" rx="2" fill="#1f2a44"/><path d="M36 86 v8 M70 86 v8" stroke="#1f2a44" stroke-width="5" stroke-linecap="round"/><circle cx="48" cy="58" r="3" fill="#1f2a44"/><path d="M44 70 q6 -4 12 0" stroke="#1f2a44" stroke-width="2.5" fill="none"/></svg>
+        <h3>存款不足</h3><p>遇到突發支出或活得比預期久，沒有緩衝可用。</p>
+      </div>
+      <div class="card crit" style="border-top:8px solid var(--grape)">
+        <svg viewBox="0 0 110 110" aria-hidden="true"><circle cx="55" cy="55" r="50" fill="#efe8ff"/><circle cx="55" cy="46" r="16" fill="#ffd9b8" stroke="#1f2a44" stroke-width="3"/><path d="M30 92 q25 -36 50 0" fill="#8a5cf6" stroke="#1f2a44" stroke-width="3"/><circle cx="50" cy="46" r="2.2" fill="#1f2a44"/><circle cx="60" cy="46" r="2.2" fill="#1f2a44"/><path d="M50 55 q5 -3 10 0" stroke="#1f2a44" stroke-width="2.5" fill="none"/><path d="M16 30 l8 6 M94 30 l-8 6 M14 56 h10 M96 56 h-10" stroke="#c8b6ff" stroke-width="3" stroke-linecap="round"/></svg>
+        <h3>沒有可依賴的人</h3><p>家庭或社區支持薄弱，處於社會孤立。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 WHAT -->
+<section id="what">
+  <div class="wrap">
+    <div class="sec-head"><div class="num" style="background:var(--coral)">2</div><h2><span class="eng">HIGH-ASSET, LOW-LIFE</span>那「高資產下流老人」呢？</h2></div>
+
+    <div class="say" style="margin-bottom:24px">
+      <svg viewBox="0 0 120 120"><use href="#star"/></svg>
+      <div class="bubble" style="box-shadow:6px 6px 0 var(--coral)">
+        <p style="margin:0"><b>一句話說明：</b>退休前曾經有不錯的資產、收入或社會地位，退休後卻因為<b>資產配置或變現不當、現金流不夠、醫療長照風險，或人際關係斷裂</b>，生活的選擇、照護和社會參與都明顯變少的長輩。</p>
+        <p style="margin:10px 0 0;font-size:14.5px;color:var(--ink-2)">📌 這是用來分析「資產總額」和「能不能持續好好生活」之間落差的工作性概念，不是社福制度裡的正式資格，也不適合當嚴格的學術診斷標籤。</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:26px;background:var(--sky-l);border-color:#bfe6ff">
+      <h3 class="round" style="margin:0 0 6px;font-size:21px;color:var(--blue)">🏠 在台灣，常常就是「有房沒錢」</h3>
+      <p style="margin:0">長輩名下有房子或其他固定資產，但沒有穩定收入和可用現金，所以<b>不一定符合低收入資格</b>，卻又難以自己負擔居住、醫療或照護費。這也帶出以房養老、住宅資產變現、社會住宅和長照支付能力等政策討論<a class="src" href="#ref4">參考 4</a>。</p>
+    </div>
+
+    <h3 class="round" style="font-size:22px;margin:0 0 12px">🧩 三種要分清楚的樣子（點點看）</h3>
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" aria-controls="t1" style="--c:var(--blue)">💼 資產多、現金少</button>
+      <button role="tab" aria-selected="false" aria-controls="t2" style="--c:var(--grape)">🌧️ 錢夠、生活縮水</button>
+      <button role="tab" aria-selected="false" aria-controls="t3" style="--c:var(--coral)">📉 資產耗損變貧困</button>
+    </div>
+    <div class="card panel on" id="t1" role="tabpanel" style="--c:var(--blue)">
+      <dl><dt>主要特徵</dt><dd>房地產、股票、定存的帳面價值高，但收入或可動用的現金不夠。</dd>
+      <dt>核心風險</dt><dd>日常、醫療或照護費付不出來；被迫在不好的時機賣掉資產。</dd></dl>
+    </div>
+    <div class="card panel" id="t2" role="tabpanel" style="--c:var(--grape)">
+      <dl><dt>主要特徵</dt><dd>財產還沒用完，卻因為過度節儉、金錢焦慮、失去生活目標或人際關係，生活品質下降。</dd>
+      <dt>核心風險</dt><dd>延遲就醫、孤立、憂鬱、生活意義流失；不一定屬於經濟上的貧困。</dd></dl>
+    </div>
+    <div class="card panel" id="t3" role="tabpanel" style="--c:var(--coral)">
+      <dl><dt>主要特徵</dt><dd>經歷長照、疾病、投資損失、詐騙或不當處分資產後，資產和現金流都變差。</dd>
+      <dt>核心風險</dt><dd>晚年貧困、照護不足，家庭照顧和財務壓力一起來。</dd></dl>
+    </div>
+
+    <div class="story" style="margin-top:26px">
+      <svg viewBox="0 0 120 200" style="width:130px;margin:auto"><use href="#grandpa"/></svg>
+      <div>
+        <h3 class="round" style="margin:0 0 6px;font-size:21px;color:var(--grape)">📰 一則新聞故事</h3>
+        <p>媒體報導一位退休、沒有房貸、資產超過新臺幣兩千萬元的前主管，長年「捨不得」花錢，連旅遊、換新衣服都不願意，還覺得單身、生活缺少意義<a class="src" href="#ref8">參考 8</a>。</p>
+        <p style="margin:0;font-size:15px;color:var(--ink-2)">👉 這個例子很能說明金錢心理、孤立和退休角色轉換的風險；但光憑一則新聞，<b>不能證明</b>他已經符合藤田原意的「低收入、低存款、沒人可依靠」三要件。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 COMPARE -->
+<section class="alt2">
+  <div class="wrap">
+    <div class="sec-head"><div class="num" style="background:var(--orange)">3</div><h2><span class="eng">SPOT THE DIFFERENCE</span>兩種「下流老人」差在哪？</h2></div>
+    <div class="vs">
+      <div class="h z">比一比</div><div class="h a">一般下流老人</div><div class="h b">高資產下流老人</div>
+      <div class="k">💰 資產結構</div><div>資產和儲蓄通常偏低</div><div>固定或金融資產可能很高，但不好變現，或已快速耗損</div>
+      <div class="k">🚰 現金流</div><div>收入和儲蓄都不足</div><div>帳面有錢，卻缺少能持續動用的生活現金</div>
+      <div class="k">🏛️ 社福資格</div><div>可能符合部分社會救助門檻</div><div>可能因名下資產被排除在低收入救助之外</div>
+      <div class="k">😣 典型困境</div><div>基本生活、就醫、居住與孤立</div><div>「有房、有資產卻養不起」：變現、照護和生活品質的矛盾</div>
+      <div class="k">⚠️ 概念風險</div><div>容易被污名化成「個人失敗」</div><div>容易把金錢焦慮誤當成真正的貧困，或忽略沒資產者更深的弱勢</div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 WHY -->
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head"><div class="num" style="background:var(--mint)">4</div><h2><span class="eng">HOW IT HAPPENS</span>怎麼會走到這一步？五個形成機制</h2></div>
+
+    <div class="paper" aria-label="圖解：資產很多不代表現金流夠用">
+      <div class="sheet"><b>📒 資產負債表</b>看起來很穩健
+        <div class="bar"><i style="width:90%;background:var(--mint)"></i></div></div>
+      <div class="eq">≠</div>
+      <div class="sheet"><b>💧 每月現金流</b>卻撐不住生活
+        <div class="bar"><i style="width:28%;background:var(--coral)"></i></div></div>
+    </div>
+
+    <div class="grid g2">
+      <div class="card mech" style="--c:var(--blue);--c-l:var(--blue-l)"><span class="badge">機制 1</span>
+        <h3>紙上富貴，現金流斷掉</h3>
+        <p>資產總額不等於隨時能付生活費的能力。房子要賣或出租都要時間和成本；股票基金會隨市場起伏。沒有預留流動性和提款計畫，遇到市場下跌、租金中斷或突發醫療支出，就可能出現現金危機。</p>
+        <div class="key">關鍵不只是淨資產，而是收入、可動用資產、支出彈性和出售時機能不能互相配合。</div>
+      </div>
+      <div class="card mech" style="--c:var(--coral);--c-l:var(--coral-l)"><span class="badge">機制 2</span>
+        <h3>長照、失能與醫療的尾端風險</h3>
+        <p>失能、失智、重大疾病或配偶也需要照顧，會讓醫療、看護、機構、輔具、住宅改造、交通費同時上升。難的是：<b>何時發生、持續多久、會不會和配偶重疊</b>，都很難預測。</p>
+        <div class="key">退休準備要包含醫療基金、緊急預備金、健康管理和保險檢視<a class="src" href="#ref9">參考 9</a>。</div>
+      </div>
+      <div class="card mech" style="--c:var(--orange);--c-l:var(--orange-l)"><span class="badge">機制 3</span>
+        <h3>投資集中、錯誤處分與詐騙</h3>
+        <p>資產集中在單一股票、產業、房地產或高槓桿商品，波動就大。退休初期碰上跌市又得賣資產付生活費，就是<b>「報酬順序風險」</b>：提款和下跌一起侵蝕本金，之後很難回復。</p>
+        <div class="key">售屋、投資、以房養老本身不一定是錯，要看個人現金流、居住、照護、稅務與退出策略。</div>
+      </div>
+      <div class="card mech" style="--c:var(--grape);--c-l:var(--grape-l)"><span class="badge">機制 4</span>
+        <h3>身分轉換、金錢心理與孤立</h3>
+        <p>退休也可能同時失去職務身分、同事網絡、生活節奏和成就感。如果沒有重新建立日常角色、人際關係和「可以花多少」的邊界，即使錢夠，也可能陷入不安、極端節儉和孤獨<a class="src" href="#ref8">參考 8</a>。</p>
+        <div class="key">健康、財務、學習、關係與社會參與，是互相牽動的安穩老後基礎<a class="src" href="#ref9">參考 9</a>。</div>
+      </div>
+      <div class="card mech" style="--c:var(--mint);--c-l:var(--mint-l);grid-column:1/-1"><span class="badge">機制 5</span>
+        <h3>社會救助看不見「資產卡住」的人</h3>
+        <p>以收入和資產審查為主的社會救助，有避免資源用錯地方的必要；但只看名下房產或帳面資產，就可能看不見「資產沒辦法很快用、眼前卻缺現金」的照護危機。</p>
+        <div class="key">政策評估不只問「有沒有房」，還要一起看可支配所得、資產流動性、負債、照護需求、家庭支持和居住安全。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 SOCIAL -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head"><div class="num" style="background:var(--sky)">5</div><h2><span class="eng">WHY IT MATTERS TO ALL OF US</span>帶來哪些社會問題？</h2></div>
+    <div class="grid g2">
+      <div class="card issue"><div class="em" style="background:var(--sun-l)">👨‍👩‍👧</div><div><h3>世代連動負擔</h3><p>父母晚年現金流崩解時，子女可能被迫提供金援、照顧或住處，兩代的財務和照顧壓力纏在一起。</p></div></div>
+      <div class="card issue"><div class="em" style="background:var(--coral-l)">🏥</div><div><h3>照護可近性不足</h3><p>資產多、現金少，付不起機構照護、居家看護或住宅改善——「住得起、養不起」。</p></div></div>
+      <div class="card issue"><div class="em" style="background:var(--sky-l)">🏘️</div><div><h3>住宅政策的拉扯</h3><p>長輩想保住住宅與傳承，年輕世代面對居住負擔；政策太簡化，容易引發「逼人賣屋」或「資源排擠」的爭議。</p></div></div>
+      <div class="card issue"><div class="em" style="background:var(--grape-l)">🫥</div><div><h3>孤立與延遲就醫</h3><p>金錢焦慮、失能和支持網絡薄弱，可能讓人不願就醫、避開社交、生活圈越縮越小。</p></div></div>
+      <div class="card issue" style="grid-column:1/-1"><div class="em" style="background:var(--mint-l)">🏷️</div><div><h3>污名與概念混用</h3><p>把所有「有資產但很節儉」的長輩都叫做下流老人，會讓真正的高齡貧困者，和現金流管理有困難的人被混為一談，政策反而更難對準需要的人。</p></div></div>
+    </div>
+
+    <div class="card" style="margin-top:22px;border:3px solid var(--blue)">
+      <h3 class="round" style="margin:0 0 8px;font-size:21px;color:var(--blue)">🇹🇼 台灣相關線索</h3>
+      <p>台灣高齡化正在加速，老年經濟安全、居住和長照支付能力都是重要課題。中正大學「老窮危機」報導引用家庭收支調查指出，最窮後 20% 家庭中老年家庭佔相當比例；單身失婚、配偶過世、家中有啃老成員的家庭，比較容易面臨老年經濟壓力<a class="src" href="#ref4">參考 4</a>。</p>
+      <p>國內研究也曾用衛福部中老年身心社會生活長期追蹤資料，把性別、年齡、教育、健康、退休金與職業等因素納入「下流中老年人」的分析<a class="src" href="#ref6">參考 6</a>。</p>
+      <p style="margin:0">女性因為平均壽命較長、職涯常中斷、職業年金不足，以及失婚、守寡風險，在老年貧窮議題中常被視為高風險族群<a class="src" href="#ref7">參考 7</a>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6 CASH -->
+<section id="cash">
+  <div class="wrap">
+    <div class="sec-head"><div class="num" style="background:var(--sun);color:var(--ink)">6</div><h2><span class="eng">STEADY CASH FLOW</span>怎麼建立穩定的退休現金流？</h2></div>
+
+    <p class="round" style="font-size:19px;text-align:center;margin-bottom:12px">把錢分三個水桶，越近要用的錢越要穩 🪣</p>
+    <div class="buckets">
+      <div class="bucket" style="background:var(--mint-l)">
+        <svg viewBox="0 0 90 90" aria-hidden="true"><path d="M18 30 h54 l-6 50 h-42Z" fill="#2bb88a" stroke="#1f2a44" stroke-width="3"/><path d="M18 30 q27 -24 54 0" fill="none" stroke="#1f2a44" stroke-width="3"/><use href="#coin" x="30" y="40" width="30" height="30"/></svg>
+        <b>近期水桶</b><span>近期必要支出<br>低波動、隨時拿得到</span>
+      </div>
+      <div class="bucket" style="background:var(--sky-l)">
+        <svg viewBox="0 0 90 90" aria-hidden="true"><path d="M18 30 h54 l-6 50 h-42Z" fill="#38b6ff" stroke="#1f2a44" stroke-width="3"/><path d="M18 30 q27 -24 54 0" fill="none" stroke="#1f2a44" stroke-width="3"/><use href="#coin" x="22" y="44" width="24" height="24"/><use href="#coin" x="44" y="44" width="24" height="24"/></svg>
+        <b>中期水桶</b><span>補充近期水桶<br>風險適中</span>
+      </div>
+      <div class="bucket" style="background:var(--grape-l)">
+        <svg viewBox="0 0 90 90" aria-hidden="true"><path d="M18 30 h54 l-6 50 h-42Z" fill="#8a5cf6" stroke="#1f2a44" stroke-width="3"/><path d="M18 30 q27 -24 54 0" fill="none" stroke="#1f2a44" stroke-width="3"/><path d="M45 72 v-28 M45 50 q-12 -4 -14 -14 q12 0 14 14 q2 -14 14 -14 q-2 10 -14 14" fill="#7ee3b8" stroke="#1f2a44" stroke-width="2.5"/></svg>
+        <b>長期水桶</b><span>中長期資金<br>承擔適度市場風險</span>
+      </div>
+    </div>
+
+    <div class="steps" style="--c:var(--blue)">
+      <div class="step"><div class="dot"></div><div class="card"><h3>先用「支出」定義退休需求</h3><p>列出每年或每月的基本生活、住宅、稅費、保險、醫療、照護、休閒和家人支持，分成「必要」與「可調整」。目標要回應支出、通膨、壽命和市場情境，不是只看「存到多少錢」。</p></div></div>
+      <div class="step"><div class="dot"></div><div class="card"><h3>建立流動性分層</h3><p>近期必要支出放在低波動、高流動性的地方；中長期資金才承擔適度風險。書摘建議至少準備半年生活費的緊急預備金<a class="src" href="#ref9">參考 9</a>，實際水位再依年齡、健康、固定收入和家庭責任調整。</p></div></div>
+      <div class="step"><div class="dot"></div><div class="card"><h3>分散收入與風險來源</h3><p>盤點勞保、勞退、職業年金、租金、股利、債息、兼職或顧問收入，不要讓單一房產、單一股票或高波動商品決定退休品質。重點不是最高報酬，而是提款需求和風險承受力相容。</p></div></div>
+      <div class="step"><div class="dot"></div><div class="card"><h3>做「壞天氣」壓力測試</h3><p>至少模擬：市場大跌、通膨升高、比預期長壽、配偶先失能、長照提早發生、子女需要金援。如果一跌就得賣高波動資產付基本開銷，代表流動性不夠。</p></div></div>
+      <div class="step"><div class="dot"></div><div class="card"><h3>每年調整，不是一次定案</h3><p>每年至少檢視一次收支、資產配置、保險、稅務、遺囑、受益人和家庭責任，定期做財務體檢<a class="src" href="#ref9">參考 9</a>。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 CARE -->
+<section id="care" class="alt3">
+  <div class="wrap">
+    <div class="sec-head"><div class="num" style="background:var(--coral)">7</div><h2><span class="eng">CARE, INSURANCE &amp; TRUST</span>醫療、長照保險與信託怎麼規劃？</h2></div>
+    <div class="say" style="margin-bottom:22px">
+      <svg viewBox="0 0 120 130"><use href="#sprout"/></svg>
+      <div class="bubble" style="box-shadow:6px 6px 0 var(--mint)"><p style="margin:0">小芽提醒：<b>先想清楚需要什麼照顧，再挑工具</b>，不要先買保單再倒推需求喔！</p></div>
+    </div>
+    <div class="steps" style="--c:var(--coral)">
+      <div class="step"><div class="dot"></div><div class="card"><h3>先畫出照護需求情境</h3><p>依自己和配偶的健康、家族病史、可用照顧人力、住宅條件和偏好模式（居家、社區、機構）估算風險。</p></div></div>
+      <div class="step"><div class="dot"></div><div class="card"><h3>找出公費和自費的缺口</h3><p>先確認全民健保、社會保險和長照服務能涵蓋什麼，再估自費看護、輔具、居家改造、交通、機構，以及家庭照顧者的替代成本。長照保險能轉移特定風險，但<b>不保證付清所有長照費</b>。</p></div></div>
+      <div class="step"><div class="dot"></div><div class="card"><h3>確認保單繳得下去</h3><p>比較保費、等待期、給付條件、給付年限、給付額和通膨風險，也確認老了還繳得起。保險只是整體財務的一部分，不該犧牲緊急流動性去追求保單收益<a class="src" href="#ref9">參考 9</a>。</p></div></div>
+      <div class="step"><div class="dot"></div><div class="card"><h3>用信託安排失能後的管理</h3><p>信託可以預先指定財產管理人、受益人，以及生活、醫療、照護支出的支付原則，降低失能後資產被不當處分的風險。但信託<b>不會自己變出現金流</b>，也有設立、管理和監督成本，建議諮詢律師、信託業者等合格專業人員。</p></div></div>
+      <div class="step"><div class="dot"></div><div class="card"><h3>完成家庭溝通與文件清冊</h3><p>及早討論醫療決策代理人、財務代理人、照護分工和資產處理原則。把保單、帳戶、房地產、負債、重要聯絡人、遺囑和數位帳戶整理成清冊，讓信任的人知道放在哪裡。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 CHECK -->
+<section id="check">
+  <div class="wrap">
+    <div class="sec-head"><div class="num" style="background:var(--mint)">8</div><h2><span class="eng">PRE-RETIREMENT CHECK-UP</span>退休前必做的財務健檢</h2></div>
+    <p>每完成一項就打勾，看看你準備到哪裡了！（勾選只存在你自己的瀏覽器裡）</p>
+    <div class="prog"><div class="track"><div class="fill" id="fill"></div></div><div class="txt" id="ptxt">0 / 9</div></div>
+    <div class="chk" id="chk">
+      <label><input type="checkbox"><span class="box"></span><span><b>💵 現金流與預算</b><span>退休後每月必要與彈性支出多少？收入中斷或市場下跌時，現金能撐多久？</span></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>💧 資產流動性</b><span>多少資產能在合理成本與時間內動用？是否太集中在自住房、單一股票或不易變現的商品？</span></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>🧾 負債與保證責任</b><span>房貸、信貸、循環債、替子女作保或共同借款，會不會侵蝕退休現金流？</span></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>📈 投資與通膨</b><span>配置是否符合時間長度、提款需求和波動承受度？真的了解高報酬承諾背後的風險嗎？</span></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>🩺 醫療、長照與失能</b><span>健康狀況、保險缺口、照護選項、住宅無障礙和可依靠的照顧網絡都盤點了嗎？</span></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>🏡 住宅安排</b><span>自住、出租、換屋、和子女同住或機構照護，成本、稅費、可行性和退出策略是什麼？</span></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>📜 法律與傳承</b><span>遺囑、受益人、授權、信託、共有不動產和數位帳戶安排清楚、有更新嗎？</span></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>🤝 家庭與社會支持</b><span>失能時誰幫忙做決定、陪同就醫、處理財務？有沒有能持續參與的社群和角色？</span></span></label>
+      <label style="grid-column:1/-1"><input type="checkbox"><span class="box"></span><span><b>🌈 退休生活目標</b><span>除了「不缺錢」，工作轉換、學習、志願服務、休閒和人際互動也安排好了嗎？</span></span></label>
+    </div>
+    <div class="note done-msg" id="done"><span class="ic">🎉</span><div><b>太棒了，九項都想過一輪！</b>記得每年再回來檢查一次，生活變了，計畫也要跟著調整。</div></div>
+  </div>
+</section>
+
+<!-- 9 POLICY -->
+<section class="alt2">
+  <div class="wrap">
+    <div class="sec-head"><div class="num" style="background:var(--grape)">9</div><h2><span class="eng">FOR POLICY &amp; RESEARCH</span>政策與研究的五個提醒</h2></div>
+    <div class="grid g2">
+      <div class="card"><b style="color:var(--grape)">① 不用資產總額取代生活能力評估</b><p style="margin:6px 0 0;font-size:15.5px">要一起看所得、可動用資產、負債、照護需求、居住安全和家庭支持。</p></div>
+      <div class="card"><b style="color:var(--grape)">② 避免概念污名化</b><p style="margin:6px 0 0;font-size:15.5px">高資產者也可能有現金流或孤立問題，但不能因此遮住無房、無儲蓄長輩更高的生存風險。</p></div>
+      <div class="card"><b style="color:var(--grape)">③ 住宅變現需要配套</b><p style="margin:6px 0 0;font-size:15.5px">以房養老、售屋、換屋或出租，要和租住安全、照護、稅務、繼承與金融消費者保護一起設計。</p></div>
+      <div class="card"><b style="color:var(--grape)">④ 長照是家庭與社會的風險</b><p style="margin:6px 0 0;font-size:15.5px">影響的不只是個人資產，也會改變配偶、子女和勞動市場中的照顧分工。</p></div>
+      <div class="card" style="grid-column:1/-1"><b style="color:var(--grape)">⑤ 新聞個案不能取代實證資料</b><p style="margin:6px 0 0;font-size:15.5px">媒體個案適合呈現經驗與警訊；要估計規模、找出因果或設計給付資格，仍需要官方統計、長期追蹤資料和嚴謹研究。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 QUIZ -->
+<section id="quiz">
+  <div class="wrap">
+    <div class="sec-head"><div class="num" style="background:var(--blue)">10</div><h2><span class="eng">QUICK QUIZ</span>小測驗：你懂了幾分？</h2></div>
+    <div class="card" id="quizbox">
+      <div class="q" data-a="1">
+        <h3>Q1. 藤田孝典說的「下流」，指的是什麼？</h3>
+        <div class="opts"><button>人品不好、道德低落</button><button>社會階層與生活處境往下滑</button><button>住在河川下游的長輩</button></div>
+        <div class="fb">「下流」指的是社會階層與生活處境，不是人格或道德評價。</div>
+      </div>
+      <div class="q" data-a="2">
+        <h3>Q2. 阿明伯名下有兩間房，但每月現金不夠付看護費。他最可能遇到哪種問題？</h3>
+        <div class="opts"><button>投資報酬太低</button><button>資產太少</button><button>資產豐富、現金流不足</button></div>
+        <div class="fb">帳面資產高 ≠ 能隨時付生活費。房產變現需要時間和成本，這正是「有房沒錢」的困境。</div>
+      </div>
+      <div class="q" data-a="0">
+        <h3>Q3. 退休初期遇到跌市，又得賣股票付生活費，這叫做？</h3>
+        <div class="opts"><button>報酬順序風險</button><button>通膨風險</button><button>匯率風險</button></div>
+        <div class="fb">提款和下跌同時侵蝕本金，讓後面很難回復。所以近期要用的錢，最好放在低波動、高流動的「近期水桶」。</div>
+      </div>
+      <p class="round" id="score" style="font-size:20px;color:var(--blue);margin:6px 0 0"></p>
+    </div>
+  </div>
+</section>
+
+<!-- REFS -->
+<section class="alt refs" id="refs">
+  <div class="wrap">
+    <div class="sec-head"><div class="num" style="background:var(--ink)">📚</div><h2><span class="eng">REFERENCES</span>參考資料</h2></div>
+    <div class="card">
+      <h3>A. 原始概念與一般背景</h3>
+      <ol>
+        <li id="ref1">維基百科，〈下流老人〉。藤田孝典、2015 年著作、概念定義與背景。<br><a href="https://zh.wikipedia.org/zh-cn/%E4%B8%8B%E6%B5%81%E8%80%81%E4%BA%BA" target="_blank" rel="noopener">zh.wikipedia.org／下流老人</a></li>
+        <li id="ref2">教育部人權教育資源網，〈老後崩壞：並不很久的將來——讀《下流老人》〉。三項常見指標與高齡貧窮問題。<br><a href="https://hre.pro.edu.tw/bedu/5245" target="_blank" rel="noopener">hre.pro.edu.tw/bedu/5245</a></li>
+        <li id="ref3">輔仁大學社會學系學位論文，〈「援」與「緣」的阻斷－下流老人之社會排除、社經地位與身心健康…〉。<br><a href="https://www.soci.fju.edu.tw/upload/%E8%94%A1%E7%91%80%E6%A0%BC%E5%84%AA%E7%A7%80%E5%AD%B8%E5%A3%AB%E8%AB%96%E6%96%87.pdf" target="_blank" rel="noopener">soci.fju.edu.tw（PDF）</a></li>
+      </ol>
+      <h3>B. 台灣老年貧窮與研究線索</h3>
+      <ol start="4">
+        <li id="ref4">國立中正大學，〈老窮危機》台灣將又老又窮？〉，2022-10-26。<br><a href="https://www.ccu.edu.tw/p/406-1000-27768,r982.php?Lang=zh-tw" target="_blank" rel="noopener">ccu.edu.tw</a></li>
+        <li id="ref5">國立中正大學，〈老窮危機》三大改革救下流老人〉，2022-10-27。<br><a href="https://www.ccu.edu.tw/p/406-1000-27905,r982.php?Lang=zh-tw" target="_blank" rel="noopener">ccu.edu.tw</a></li>
+        <li id="ref6">臺灣博碩士論文知識加值系統，〈宗教信仰與下流中老年人之探討〉。<br><a href="https://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi/login?o=dnclcdr&amp;s=id=%22105NKIT0218016%22.&amp;searchmode=basic" target="_blank" rel="noopener">ndltd.ncl.edu.tw</a></li>
+        <li id="ref7">街角守衛者，黃芳宜，〈為何女性易為陷於貧困生活的「下流老人」？年金分配之性別差異初探〉，2021-10-26。<br><a href="https://twstreetcorner.org/2021/10/26/fang-yi-huang/" target="_blank" rel="noopener">twstreetcorner.org</a></li>
+      </ol>
+      <h3>C. 高資產、現金流與退休生活品質</h3>
+      <ol start="8">
+        <li id="ref8">Yahoo 股市／旺得富，〈60歲傳產高管退休夢碎！存股逾2千萬元照淪下流老人…〉，2026。<span class="cav">媒體個案，適合說明金錢心理、孤立與生活品質，不宜單獨作為盛行率或因果證據。</span><a href="https://tw.stock.yahoo.com/news/60%E6%AD%B2%E5%82%B3%E7%94%A2%E9%AB%98%E7%AE%A1%E9%80%80%E4%BC%91%E5%A4%A2%E7%A2%8E-%E5%AD%98%E8%82%A1%E9%80%BE2%E5%8D%83%E8%90%AC%E5%85%83%E7%85%A7%E6%B7%AA%E4%B8%8B%E6%B5%81%E8%80%81%E4%BA%BA-%E9%81%94%E4%BA%BA1%E8%AA%9E%E9%BB%9E%E7%A0%B4-3%E5%80%8B%E5%AD%97-%E5%AE%B3%E4%BB%96-213530428.html" target="_blank" rel="noopener">tw.stock.yahoo.com</a></li>
+        <li id="ref9">商業周刊，宋怡慧，〈中產也可能變「下流老人」！如何克服金錢焦慮、存到安心退休？〉，2026，精選書摘。<br><a href="https://www.businessweekly.com.tw/careers/blog/3022164" target="_blank" rel="noopener">businessweekly.com.tw</a></li>
+        <li id="ref10">Yahoo 股市，〈60歲以上準備退休！4大資產「輕易賣掉」恐瞬間淪下流老人〉。<span class="cav">此連結先前未能成功讀取，引用前建議再核對原文、作者與日期。</span><a href="https://tw.stock.yahoo.com/news/60%E6%AD%B2%E4%BB%A5%E4%B8%8A%E6%BA%96%E5%82%99%E9%80%80%E4%BC%91%EF%BC%814%E5%A4%A7%E8%B3%87%E7%94%A2%E3%80%8C%E8%BC%95%E6%98%93%E8%B3%A3%E6%8E%89%E3%80%8D-%E6%81%90%E7%9E%AC%E9%96%93%E6%B7%AA%E4%B8%8B%E6%B5%81%E8%80%81%E4%BA%BA-220530980.html" target="_blank" rel="noopener">tw.stock.yahoo.com</a></li>
+      </ol>
+    </div>
+    <div class="note" style="margin-top:20px">
+      <span class="ic">📌</span>
+      <div style="font-size:15px"><b>使用聲明：</b>本頁以概念整理與風險框架為目的，不構成投資、保險、稅務、法律、信託或個別長照建議。實際安排涉及資產種類、負債、家庭關係、健康、保單條款、稅務與繼承等因素，做決定前請向具執照的財務、保險、法律、信託或稅務專業人士取得個別意見。</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <svg viewBox="0 0 330 100" width="220" aria-hidden="true">
+      <use href="#bird" x="0" y="8" width="100" height="90"/>
+      <use href="#sprout" x="114" y="0" width="96" height="100"/>
+      <use href="#star" x="226" y="4" width="96" height="96"/>
+    </svg>
+    <p class="round">「每一次多懂一點，都是送給自己的小禮物。」</p>
+    <p style="margin:0 0 10px"><a href="https://www.gungho.idv.tw/KS/index.html">← 回共好小學堂，看看其他主題</a></p>
+    <p style="font-size:13px;margin:0;opacity:.8">共好小學堂 ✦ 一起學習，一起共好　｜　本頁插圖為原創 SVG 卡通繪製　｜　整理日期 2026-10-09</p>
+  </div>
+</footer>
+
+<a href="#main" class="toTop" id="toTop" aria-label="回到頁首">↑</a>
+
+<script>
+// tabs
+document.querySelectorAll('.tabs').forEach(function(tl){
+  var btns = tl.querySelectorAll('button');
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){
+      btns.forEach(function(x){
+        x.setAttribute('aria-selected','false');
+        document.getElementById(x.getAttribute('aria-controls')).classList.remove('on');
+      });
+      b.setAttribute('aria-selected','true');
+      document.getElementById(b.getAttribute('aria-controls')).classList.add('on');
+    });
+  });
+});
+
+// checklist with progress (per-viewer convenience storage)
+(function(){
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('#chk input'));
+  var KEY = 'ks-aging-check';
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '[]'); } catch(e){}
+  boxes.forEach(function(b,i){ if(saved[i]) b.checked = true; b.addEventListener('change', update); });
+  function update(){
+    var n = boxes.filter(function(b){return b.checked}).length;
+    document.getElementById('fill').style.width = (n/boxes.length*100)+'%';
+    document.getElementById('ptxt').textContent = n+' / '+boxes.length;
+    document.getElementById('done').classList.toggle('on', n===boxes.length);
+    try { localStorage.setItem(KEY, JSON.stringify(boxes.map(function(b){return b.checked}))); } catch(e){}
+  }
+  update();
+})();
+
+// quiz
+(function(){
+  var qs = document.querySelectorAll('#quizbox .q'), right = 0, answered = 0;
+  qs.forEach(function(q){
+    var a = +q.dataset.a, opts = q.querySelectorAll('button'), done = false;
+    opts.forEach(function(o,i){
+      o.addEventListener('click', function(){
+        if(done) return; done = true; answered++;
+        opts[a].classList.add('ok');
+        if(i===a){ right++; } else { o.classList.add('no'); }
+        var fb = q.querySelector('.fb');
+        fb.innerHTML = (i===a ? '✅ <b>答對了！</b>' : '💡 <b>再想想～</b>') + fb.innerHTML;
+        fb.classList.add('on');
+        if(answered===qs.length){
+          document.getElementById('score').textContent =
+            right===qs.length ? '🌟 全對！你已經是退休準備小達人了！' : '你答對了 '+right+' / '+qs.length+' 題，往上再複習一下吧！';
+        }
+      });
+    });
+  });
+})();
+
+// back to top
+window.addEventListener('scroll', function(){
+  document.getElementById('toTop').classList.toggle('on', window.scrollY > 600);
+}, {passive:true});
+</script>
+</body>
+</html>
