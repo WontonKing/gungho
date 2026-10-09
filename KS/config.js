@@ -25,7 +25,13 @@ window.SCHOOL_TOPICS = [
    description: '有房也有存款，老後為什麼還會卡關？一起做退休前財務健檢。', 
    category: '退休理財小知識', 
    url: '/KS/alf/index.html' 
-   }  
+   },
+     { 
+   title: '腸子和腦子的雙向交流', 
+   description: '腸子和腦子如何溝通？只有肚子餓那麼簡單嗎？', 
+   category: '飲食小知識', 
+   url: '/KS/gbc/index.html' 
+   }   
    
   // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/' }
 ];
