@@ -19,7 +19,13 @@ window.SCHOOL_TOPICS = [
    description: '假裝自己年輕二十歲真的會讓身體變健康嗎？還是有其它的心理機制呢？', 
    category: '時間小知識', 
    url: '/KS/timetherapy/index.html' 
-   } 
+   },
+     { 
+   title: '高資產怎麼會變成下流老人', 
+   description: '有房也有存款，老後為什麼還會卡關？一起做退休前財務健檢。', 
+   category: '退休理財小知識', 
+   url: '/KS/alf/index.html' 
+   }  
    
   // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/' }
 ];
