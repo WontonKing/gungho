@@ -31,7 +31,13 @@ window.SCHOOL_TOPICS = [
    description: '腸子和腦子如何溝通？只有肚子餓那麼簡單嗎？', 
    category: '飲食小知識', 
    url: '/KS/gbc/index.html' 
-   }   
+   },
+     { 
+   title: '退休保險怎麼保', 
+   description: '保險保險，有保就有驚無險。但是，你對退休保險知多少？', 
+   category: '退休保險小知識', 
+   url: '/KS/retireinsurance/index.html' 
+   }     
    
   // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/' }
 ];
