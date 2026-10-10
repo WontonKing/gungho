@@ -39,7 +39,7 @@ window.SCHOOL_TOPICS = [
    url: '/KS/retireinsurance/index.html' 
    },
      { 
-   title: '口腔體操一起來', 
+   title: '多咬一口，腦袋會更靈光嗎？', 
    description: '咀嚼能力好可以預防失智？做口腔操有用嗎？要怎麼做？', 
    category: '失智預防小知識', 
    url: '/KS/chew/index.html' 
