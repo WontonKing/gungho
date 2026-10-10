@@ -37,7 +37,13 @@ window.SCHOOL_TOPICS = [
    description: '保險保險，有保就有驚無險。但是，你對退休保險知多少？', 
    category: '退休保險小知識', 
    url: '/KS/retireinsurance/index.html' 
-   }     
+   },
+     { 
+   title: '口腔體操一起來', 
+   description: '咀嚼能力好可以預防失智？做口腔操有用嗎？要怎麼做？', 
+   category: '失智預防小知識', 
+   url: '/KS/chew/index.html' 
+   }    
    
   // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/' }
 ];
