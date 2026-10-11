@@ -67,6 +67,12 @@ window.SCHOOL_TOPICS = [
       description: '紅光、近紅外光與藍光對傷口癒合有什麼不同？看懂光生物調節原理、劑量為何不是越多越好，以及光療的安全注意事項。', 
       category: '健康樂活', 
       url: '/KS/WOUND/'
+   },
+   { 
+      title: '在家一角綠，給你好心情？', 
+      description: '室內植物對情緒的幫助比淨化空氣更明確。看懂證據、挑對植栽與植物燈，配置書桌、客廳、床頭三種療癒角落。', 
+      category: '健康樂活', 
+      url: '/KS/GREEN/' 
    }
   // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/' }
 ];
