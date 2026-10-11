@@ -43,7 +43,13 @@ window.SCHOOL_TOPICS = [
    description: '咀嚼能力好可以預防失智？做口腔操有用嗎？要怎麼做？', 
    category: '失智預防小知識', 
    url: '/KS/chew/index.html' 
-   }    
+   },
+     { 
+  title: '跟著節拍，走路更穩嗎？',
+  description: '節律性聽覺刺激如何幫助帕金森病友改善步速與步幅？看懂原理與證據，還能試聽節拍器示範。',
+  category: '帕金森病小學堂',
+  url: '/KS/rhythm/index.html' 
+   } 
    
   // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/' }
 ];
