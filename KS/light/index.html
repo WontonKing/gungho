@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2455c7">
+<title>天變短了，心情也變暗？｜共好小學堂</title>
+<meta name="description" content="光週期如何透過生物時鐘、褪黑激素與血清素影響睡眠和情緒？認識季節性情感障礙、光照療法的標準做法與安全注意事項，並排出自己的晨光時間表。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/LIGHT/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="天變短了，心情也變暗？光週期、情緒與生理節律｜共好小學堂">
+<meta property="og:description" content="秋冬日照變短可能讓人疲倦低落。一起看懂生物時鐘、季節性情感障礙與光照療法，早晨多照光、夜晚少點光。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/LIGHT/">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 130'%3E%3Cpath d='M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z' fill='%235ad6a4' stroke='%231f2a44' stroke-width='5'/%3E%3Cpath d='M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Cellipse cx='60' cy='88' rx='40' ry='38' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Ccircle cx='46' cy='84' r='6' fill='%231f2a44'/%3E%3Ccircle cx='74' cy='84' r='6' fill='%231f2a44'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c;  --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff;  --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7;
+  --round:'Huninn','Noto Sans TC',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans TC',system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:var(--blue)}
+h1,h2,h3,h4{font-family:var(--round);line-height:1.35;margin:0 0 .5em;font-weight:400}
+p{margin:0 0 1em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.hl{background:linear-gradient(transparent 58%,var(--sun) 58%,var(--sun) 92%,transparent 92%);padding:0 2px}
+.nw{white-space:nowrap}
+b,strong{font-weight:700}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.94);backdrop-filter:blur(8px);border-bottom:3px solid var(--ink)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex-shrink:0}
+.brand svg{width:40px;height:44px}
+.brand b{font-family:var(--round);font-weight:400;font-size:19px;display:block;line-height:1.1}
+.brand small{font-size:10px;letter-spacing:.14em;color:var(--ink-2);display:block}
+.navpills{display:flex;gap:6px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.navpills::-webkit-scrollbar{display:none}
+.navpills a{white-space:nowrap;text-decoration:none;font-size:14px;color:var(--ink);padding:4px 11px;border:2px solid var(--ink);border-radius:99px;background:#fff}
+.navpills a:hover{background:var(--sun-l)}
+.back{white-space:nowrap;text-decoration:none;font-family:var(--round);background:var(--blue);color:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:5px 14px;box-shadow:0 3px 0 var(--ink);font-size:15px;flex-shrink:0}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--blue-l),var(--bg));padding:56px 0 90px}
+.blob{position:absolute;border-radius:50%;opacity:.55;z-index:0}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.tag{display:inline-block;font-family:var(--round);background:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:4px 14px;font-size:15px;box-shadow:0 3px 0 var(--ink);margin-bottom:18px}
+.hero h1{font-size:clamp(32px,5vw,52px);margin-bottom:16px}
+.hero .lead{font-size:18.5px;color:var(--ink-2);max-width:34em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{font-family:var(--round);text-decoration:none;font-size:17px;padding:10px 22px;border:3px solid var(--ink);border-radius:16px;box-shadow:0 4px 0 var(--ink);color:var(--ink);background:#fff;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--sun)}
+.meta{font-size:13.5px;color:var(--ink-2);margin-top:18px}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block}
+.bubble{position:absolute;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:8px 14px;font-family:var(--round);font-size:17px;box-shadow:0 4px 0 var(--ink);white-space:nowrap}
+.bubble::after{content:"";position:absolute;width:14px;height:14px;background:#fff;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg);bottom:-9px;left:30px}
+.hero .bubble{top:2%;left:4%}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:60px;z-index:1}
+.float{animation:float 4.5s ease-in-out infinite}
+.float.d2{animation-delay:-1.5s}.float.d3{animation-delay:-3s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media (prefers-reduced-motion:reduce){.float{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
+
+/* sections */
+section.sec{padding:64px 0;position:relative}
+section.alt{background:linear-gradient(180deg,var(--tint,#fff),var(--bg))}
+.sec-head{display:flex;align-items:flex-start;gap:18px;margin-bottom:26px}
+.num{flex-shrink:0;width:58px;height:58px;display:grid;place-items:center;font-family:var(--round);font-size:28px;color:#fff;background:var(--c,var(--blue));border:3px solid var(--ink);border-radius:16px;transform:rotate(-6deg);box-shadow:4px 4px 0 var(--ink)}
+.eyebrow{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--c,var(--blue));font-weight:700;display:block}
+.sec-head h2{font-size:clamp(25px,3.4vw,34px);margin:2px 0 0}
+.intro{color:var(--ink-2);max-width:46em}
+hr.dash{border:0;border-top:3px dashed var(--line);margin:34px 0}
+
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:0 5px 0 var(--ink)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card h3{font-size:21px;margin-bottom:.35em}
+.card p:last-child{margin-bottom:0}
+.small{font-size:14.5px;color:var(--ink-2)}
+.note{font-size:14.5px;color:var(--ink-2);background:#fff;border:2px dashed var(--line);border-radius:14px;padding:10px 14px;margin-top:16px}
+.ico{width:96px;height:96px;display:block;margin-bottom:10px}
+.src{display:inline-block;font-size:12px;line-height:1;text-decoration:none;background:var(--blue-l);color:var(--blue-d);border:1.5px solid var(--blue);border-radius:99px;padding:4px 8px;margin:0 2px;vertical-align:2px;font-weight:700;white-space:nowrap}
+.src:hover{background:var(--sun-l)}
+.badge{display:inline-block;font-size:12.5px;font-weight:700;border:2px solid var(--ink);border-radius:99px;padding:1px 10px;background:var(--sun-l);margin-bottom:8px}
+
+/* talk */
+.talk{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;margin-bottom:22px}
+.talk.r{grid-template-columns:1fr 150px}
+.talk.r .who{order:2}
+.who svg{width:130px;height:130px}
+.say{position:relative;background:#fff;border:3px solid var(--ink);border-radius:22px;padding:18px 22px;box-shadow:6px 6px 0 var(--c,var(--sun))}
+.say::before{content:"";position:absolute;left:-12px;top:42px;width:18px;height:18px;background:#fff;border-left:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg)}
+.talk.r .say::before{left:auto;right:-12px;transform:rotate(-135deg)}
+.say .name{font-family:var(--round);color:var(--c,var(--blue));font-size:15px;display:block;margin-bottom:4px}
+.say p:last-child{margin-bottom:0}
+.qs{counter-reset:q;list-style:none;padding:0;margin:.4em 0 1em}
+.qs li{counter-increment:q;padding-left:40px;position:relative;margin:6px 0}
+.qs li::before{content:counter(q);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;background:var(--sun);border:2.5px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:15px}
+.warn{background:var(--coral-l);border:3px solid var(--ink);border-radius:18px;padding:14px 18px;margin-top:14px}
+.warn b{color:#c33}
+
+/* evidence chips */
+.ev{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.ev .card{padding:16px;box-shadow:0 4px 0 var(--ink)}
+.ev h4{font-size:17px;margin:0 0 4px}
+.ev .k{font-size:13.5px;color:var(--ink-2);margin:0}
+.ev .u{font-size:14px;margin-top:8px;padding-top:8px;border-top:2px dashed var(--line)}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tab{font-family:var(--round);font-size:16px;cursor:pointer;border:2.5px solid var(--ink);background:#fff;border-radius:14px;padding:7px 14px;color:var(--ink);box-shadow:0 3px 0 var(--ink)}
+.tab[aria-selected="true"]{background:var(--c,var(--blue));color:#fff}
+.tab:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.panel{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:24px;box-shadow:6px 6px 0 var(--c,var(--blue))}
+.panel[hidden]{display:none}
+.panel-grid{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:start}
+.panel-grid svg{width:110px;height:110px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0}
+.kv dt{font-weight:700;color:var(--c,var(--blue));white-space:nowrap}
+.kv dd{margin:0}
+
+/* mechanism cards */
+.mech{position:relative;padding-top:30px}
+.mech .pin{position:absolute;top:-16px;left:20px;background:var(--c);color:#fff;font-family:var(--round);font-size:14px;border:2.5px solid var(--ink);border-radius:99px;padding:2px 12px;transform:rotate(-4deg)}
+.mech .key{margin-top:12px;padding-top:10px;border-top:2px dashed var(--line);font-weight:700}
+
+/* age matrix */
+.agechips{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.mtx{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.mtx div{border:2.5px solid var(--ink);border-radius:16px;padding:10px 12px;background:var(--bgc,#fff)}
+.mtx b{display:block;font-family:var(--round);font-weight:400;font-size:15px;color:var(--ink-2)}
+.mtx span{font-weight:700}
+
+/* table-like */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:20px;overflow:hidden;background:#fff;font-size:15.5px}
+.tbl th,.tbl td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:2px solid var(--line)}
+.tbl thead th{font-family:var(--round);font-weight:400;font-size:16.5px;color:#fff;background:var(--blue)}
+.tbl thead th:nth-child(2){background:var(--coral)}
+.tbl thead th:nth-child(3){background:var(--orange)}
+.tbl thead th:nth-child(4){background:var(--mint)}
+.tbl thead th:first-child{background:var(--ink)}
+.tbl tbody th{background:var(--sun-l);font-weight:700;white-space:nowrap}
+.tbl tr:last-child td,.tbl tr:last-child th{border-bottom:0}
+.tbl td.r{text-align:right;font-family:var(--round);font-size:18px}
+
+.prod{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.prod .card{padding:18px 20px;box-shadow:0 4px 0 var(--ink)}
+.prod .co{display:inline-block;font-family:var(--round);color:#fff;background:var(--c);border:2.5px solid var(--ink);border-radius:12px;padding:1px 12px;margin-bottom:8px}
+.prod h4{font-size:17.5px;margin:0 0 6px}
+.prod .ask{margin-top:10px;padding:8px 12px;background:var(--grape-l);border-radius:12px;font-size:15px}
+.prod .ask::before{content:"❓ 要追問：";font-weight:700}
+
+/* calculators */
+.calc{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:6px 6px 0 var(--c,var(--sky))}
+.calc label{font-weight:700;display:block;margin-bottom:4px}
+.calc input[type=range]{width:100%;accent-color:var(--blue);height:28px}
+.calc input[type=number]{font:inherit;font-family:var(--round);font-size:22px;width:120px;padding:4px 10px;border:3px solid var(--ink);border-radius:12px}
+.bars{display:grid;gap:12px;margin-top:16px}
+.bar{display:grid;grid-template-columns:96px 1fr 110px;gap:10px;align-items:center}
+.bar .tr{height:28px;border:2.5px solid var(--ink);border-radius:99px;background:#f4f6fb;overflow:hidden}
+.bar .fill{height:100%;border-radius:99px;transition:width .3s}
+.bar .v{font-family:var(--round);font-size:19px;text-align:right}
+.verdict{margin-top:14px;font-weight:700;background:var(--sun-l);border-radius:14px;padding:10px 14px}
+.agegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.agebox{border:3px solid var(--ink);border-radius:18px;padding:12px 14px;background:#fff}
+.agebox .st{font-family:var(--round);font-size:18px}
+.agebox.ok{background:var(--mint-l)}
+.agebox.no{background:var(--coral-l)}
+
+/* compare 3 companies */
+.cmp{display:grid;grid-template-columns:150px repeat(3,1fr);border:3px solid var(--ink);border-radius:22px;overflow:hidden;background:#fff;font-size:15.5px}
+.cmp > div{padding:11px 13px;border-bottom:2px solid var(--line);border-left:2px solid var(--line)}
+.cmp .h{font-family:var(--round);color:#fff;font-size:17px;border-left:0}
+.cmp .h.c1{background:var(--blue)}.cmp .h.c2{background:var(--coral)}.cmp .h.c3{background:var(--mint)}
+.cmp .h.c0{background:var(--ink)}
+.cmp .rh{background:var(--sun-l);font-weight:700;border-left:0}
+.cmp .m{display:none}
+
+/* timeline */
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:14px 18px 14px 70px;background:#fff;border:3px solid var(--ink);border-radius:18px}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:var(--mint);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:20px}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:33px;bottom:-17px;height:17px;border-left:3px dashed var(--ink)}
+
+/* formula */
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:10px 0}
+.formula .t{border:2.5px solid var(--ink);border-radius:12px;padding:4px 12px;background:#fff;font-size:15.5px}
+.formula .t.p{background:var(--coral-l)}.formula .t.m{background:var(--mint-l)}
+.formula .op{font-family:var(--round);font-size:24px;line-height:1}
+.formula .eq{background:var(--sun);font-weight:700}
+
+/* checklist */
+.chk{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.chk label{display:flex;gap:14px;align-items:flex-start;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px 16px;cursor:pointer;box-shadow:0 4px 0 var(--ink);transition:background .2s}
+.chk input{position:absolute;opacity:0;pointer-events:none}
+.chk .box{flex-shrink:0;width:30px;height:30px;border:3px solid var(--ink);border-radius:9px;background:#fff;display:grid;place-items:center;font-size:19px;color:#fff;margin-top:2px}
+.chk input:checked + .box{background:var(--mint)}
+.chk input:checked + .box::after{content:"✓"}
+.chk input:focus-visible + .box{outline:3px solid var(--sun);outline-offset:2px}
+.chk label.on{background:var(--mint-l)}
+.chk b{display:block;font-family:var(--round);font-weight:400;font-size:18px}
+.chk span.d{font-size:14.5px;color:var(--ink-2);line-height:1.6;display:block}
+.prog{margin:20px 0 8px;display:flex;align-items:center;gap:14px}
+.prog .tr{flex:1;height:26px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden}
+.prog .fill{height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 10px,#5ad6a4 10px,#5ad6a4 20px);transition:width .3s}
+.prog .n{font-family:var(--round);font-size:20px;white-space:nowrap}
+.cheer{display:none;background:var(--sun-l);border:3px solid var(--ink);border-radius:18px;padding:12px 16px;font-weight:700;margin-top:12px}
+.cheer.show{display:block}
+
+/* quiz */
+.quiz{display:grid;gap:18px}
+.q h4{font-size:18.5px}
+.opts{display:grid;gap:10px}
+.opt{text-align:left;font:inherit;font-size:16px;cursor:pointer;background:#fff;border:2.5px solid var(--ink);border-radius:14px;padding:10px 14px;color:var(--ink)}
+.opt:hover:not(:disabled){background:var(--sky-l)}
+.opt:disabled{cursor:default}
+.opt.right{background:var(--mint-l);border-color:var(--mint);font-weight:700}
+.opt.wrong{background:var(--coral-l);border-color:var(--coral)}
+.exp{display:none;margin-top:10px;background:var(--sun-l);border-radius:14px;padding:10px 14px;font-size:15.5px}
+.exp.show{display:block}
+.score{display:none;text-align:center;font-family:var(--round);font-size:22px;background:var(--blue);color:#fff;border:3px solid var(--ink);border-radius:20px;padding:14px;box-shadow:0 5px 0 var(--ink)}
+.score.show{display:block}
+
+/* refs */
+.refs h3{font-size:19px;margin-top:22px;color:var(--blue-d)}
+.refs ol{padding-left:0;list-style:none;margin:0}
+.refs li{background:#fff;border:2px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:10px;font-size:15px;line-height:1.7;word-break:break-word}
+.refs li:target{border-color:var(--sun);background:var(--sun-l)}
+.refs .rid{display:inline-block;font-family:var(--round);background:var(--blue);color:#fff;border-radius:8px;padding:0 8px;margin-right:6px;font-size:13.5px}
+.refs .loc{display:block;color:var(--ink-2);font-size:13.5px}
+.refs a{word-break:break-all;font-size:13.5px}
+
+.disc{background:var(--sun-l);border:3px dashed var(--ink);border-radius:20px;padding:18px 22px;font-size:15.5px}
+.disc b{font-family:var(--round);font-weight:400;font-size:18px;display:block;margin-bottom:4px}
+
+.bigdisc{background:var(--coral-l);border:4px solid var(--ink);border-radius:24px;box-shadow:8px 8px 0 var(--coral);padding:22px 26px;outline:3px dashed var(--coral);outline-offset:-14px}
+.bd-head{display:flex;align-items:center;gap:12px;font-family:var(--round);font-size:clamp(22px,3vw,28px);color:#b42318;margin-bottom:10px}
+.bd-ico{flex-shrink:0;width:46px;height:46px;border-radius:50%;background:var(--coral);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-size:24px}
+.bd-key{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:8px 14px;margin:0 0 12px;font-weight:900;font-size:18px;color:#b42318}
+.bigdisc ul{margin:0;padding-left:1.2em}
+.bigdisc li{margin:6px 0;line-height:1.75}
+.bigdisc li b:first-child{color:#b42318}
+.ftdisc{display:inline-block;background:var(--sun);color:var(--ink);font-weight:700;border:3px solid var(--ink);border-radius:14px;padding:6px 16px;margin:4px 0 14px;font-size:15.5px}
+@media (max-width:820px){.bigdisc{padding:18px 16px;outline-offset:-10px}}
+footer{background:var(--blue-d);color:#fff;text-align:center;padding:46px 0 34px;margin-top:40px;border-top:4px solid var(--ink)}
+footer .pals{display:flex;justify-content:center;gap:12px;margin-bottom:12px}
+footer .pals svg{width:80px;height:80px}
+footer .quote{font-family:var(--round);font-size:22px;margin-bottom:10px}
+footer a{color:var(--sun)}
+footer .fine{font-size:13px;opacity:.8;margin-top:10px}
+#toTop{position:fixed;right:18px;bottom:18px;width:52px;height:52px;border-radius:50%;background:var(--sun);border:3px solid var(--ink);box-shadow:0 4px 0 var(--ink);font-size:22px;font-family:var(--round);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;z-index:60;color:var(--ink)}
+#toTop.show{opacity:1;pointer-events:auto}
+
+@media (max-width:1000px){.ev{grid-template-columns:repeat(3,1fr)}.agechips{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .navpills{display:none}
+  .back{margin-left:auto}
+  .hero{padding:34px 0 80px}
+  .hero .wrap,.grid2,.grid3,.prod,.chk,.agegrid{grid-template-columns:1fr}
+  .hero-art{max-width:420px;margin:0 auto;width:100%}
+  .ev{grid-template-columns:1fr 1fr}
+  .mtx{grid-template-columns:1fr 1fr}
+  .talk,.talk.r{grid-template-columns:1fr;gap:6px}
+  .talk.r .who{order:0}
+  .who svg{width:96px;height:96px}
+  .say::before{left:40px;top:-12px;transform:rotate(135deg)}
+  .talk.r .say::before{left:40px;right:auto;transform:rotate(135deg)}
+  .panel-grid{grid-template-columns:1fr}
+  .panel-grid svg{width:84px;height:84px}
+  .kv{grid-template-columns:1fr}
+  .cmp{grid-template-columns:1fr 1fr 1fr}
+  .cmp .h.c0{display:none}
+  .cmp .h{font-size:15px;padding:9px 8px}
+  .cmp .rh{grid-column:1/-1}
+  .cmp > div{font-size:14.5px;padding:9px 8px}
+  .cmp > div:nth-child(n){border-left:0}
+  .cmp .v{border-left:2px solid var(--line)}
+  .cmp .v1{border-left:0}
+  .bar{grid-template-columns:72px 1fr 92px}
+  .sec-head{gap:14px}
+  .num{width:48px;height:48px;font-size:23px}
+  section.sec{padding:48px 0}
+  .tbl{font-size:14.5px}
+  .tbl th,.tbl td{padding:9px 9px}
+  .tblwrap{overflow-x:auto}
+  .card,.panel,.calc{padding:18px 16px}
+}
+@media (max-width:420px){.ev{grid-template-columns:1fr}.agechips{grid-template-columns:repeat(2,1fr)}.hero .bubble{font-size:15px}}
+
+/* ---- LIGHT 專用 ---- */
+.path{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.flow{background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px;text-align:center;position:relative}
+.flow .e{font-size:34px;display:block}
+.flow b{font-family:var(--round);font-weight:400;font-size:18px;display:block}
+.flow:not(:last-child)::after{content:"➜";position:absolute;right:-19px;top:50%;transform:translateY(-50%);font-size:22px;z-index:2;background:var(--bg);border-radius:50%;width:24px;line-height:24px}
+.daybar{position:relative;height:56px;border:3px solid var(--ink);border-radius:16px;overflow:hidden;display:flex;margin:10px 0 4px}
+.daybar span{display:flex;align-items:center;justify-content:center;font-family:var(--round);font-size:15px;color:#fff;white-space:nowrap;overflow:hidden}
+.daybar .n{background:#2b3a67}.daybar .d{background:#ffc93c;color:var(--ink)}
+.cmpday{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.lux{display:grid;gap:10px;margin-top:10px}
+.lux .row{display:grid;grid-template-columns:150px 1fr 120px;gap:10px;align-items:center}
+.lux .tr{height:26px;border:2.5px solid var(--ink);border-radius:99px;background:#f4f6fb;overflow:hidden}
+.lux .fill{height:100%;border-radius:99px}
+.lux .v{font-family:var(--round);font-size:16px;text-align:right}
+.rx{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.rx .card{padding:16px 14px;text-align:center;box-shadow:0 4px 0 var(--ink)}
+.rx .e{font-size:36px;display:block}
+.rx b{font-family:var(--round);font-weight:400;font-size:19px;display:block;line-height:1.35}
+.rx p{font-size:14.5px;margin:6px 0 0;line-height:1.7}
+.timeline{position:relative;height:74px;border:3px solid var(--ink);border-radius:18px;background:linear-gradient(90deg,#2b3a67 0%,#2b3a67 25%,#ffe9a8 30%,#fff5d6 50%,#ffe9a8 70%,#2b3a67 80%,#2b3a67 100%);margin:16px 0 8px;overflow:hidden}
+.timeline .blk{position:absolute;top:8px;bottom:8px;border:2.5px solid var(--ink);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;padding:0 4px}
+.timeline .sun{background:var(--sun)}
+.timeline .dim{background:var(--grape);color:#fff}
+.timeline .sleep{background:#1f2a44;color:#fff;border-color:#fff}
+.ticks{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink-2);padding:0 2px}
+.plan{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.plan div{border:3px solid var(--ink);border-radius:16px;padding:10px 14px;background:#fff}
+.plan b{font-family:var(--round);font-weight:400;font-size:22px;display:block}
+.tin{display:flex;gap:16px;flex-wrap:wrap}
+.tin label{font-weight:700;display:block}
+.tin input{font:inherit;font-family:var(--round);font-size:22px;padding:4px 10px;border:3px solid var(--ink);border-radius:12px;background:#fff}
+.unv{display:inline-block;font-size:12px;font-weight:700;background:var(--orange-l);color:#a4520a;border:1.5px solid var(--orange);border-radius:99px;padding:3px 8px;margin:0 2px;vertical-align:2px;white-space:nowrap}
+.redflag{display:none;background:var(--coral-l);border:3px solid var(--ink);border-radius:18px;padding:12px 16px;font-weight:700;margin-top:12px}
+.redflag.show{display:block}
+.okflag{background:var(--mint-l);border:3px solid var(--ink);border-radius:18px;padding:12px 16px;margin-top:12px}
+.okflag.hide{display:none}
+@media (max-width:1000px){.rx{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:820px){
+  .path{grid-template-columns:1fr 1fr}
+  .flow:not(:last-child)::after{display:none}
+  .cmpday,.plan{grid-template-columns:1fr}
+  .rx{grid-template-columns:1fr 1fr}
+  .lux .row{grid-template-columns:96px 1fr 84px;gap:6px}
+  .lux .row span:first-child{font-size:14px;line-height:1.35}
+  .lux .v{font-size:13.5px}
+  .timeline .blk{font-size:11px}
+}
+@media (max-width:420px){.rx{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+<symbol id="grandma" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="60" cy="14" r="13" fill="#d9dde8" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M24 60 C22 34 40 24 60 24 C80 24 98 34 96 60Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="60" cy="64" r="34" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M28 52 C40 40 80 40 92 52 C86 34 34 34 28 52Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="48" cy="64" r="4.5" fill="#1f2a44"/><circle cx="72" cy="64" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="62.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="62.6" r="1.4" fill="#fff"/>
+  <ellipse cx="39" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="81" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M51 80 Q60 88 69 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="grandpa" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#8a5cf6" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M52 100 L60 116 L68 100" fill="#fff" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="60" cy="62" r="36" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M26 56 C24 40 32 30 40 30 M94 56 C96 40 88 30 80 30" stroke="#1f2a44" stroke-width="3" fill="#eef1f7" stroke-linecap="round"/>
+  <path d="M27 52 C22 44 26 34 36 34 L36 52Z M93 52 C98 44 94 34 84 34 L84 52Z" fill="#eef1f7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="47" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/><circle cx="73" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M56 60 H64" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="47" cy="61" r="3.5" fill="#1f2a44"/><circle cx="73" cy="61" r="3.5" fill="#1f2a44"/>
+  <circle cx="48.2" cy="59.8" r="1.2" fill="#fff"/><circle cx="74.2" cy="59.8" r="1.2" fill="#fff"/>
+  <ellipse cx="38" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="82" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M50 80 Q60 88 70 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="heart" viewBox="0 0 120 120">
+  <path d="M60 104 C20 78 10 56 14 40 C18 22 42 16 60 36 C78 16 102 22 106 40 C110 56 100 78 60 104Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="48" cy="56" r="4.5" fill="#1f2a44"/><circle cx="72" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="54.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="54.6" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 太陽 -->
+<symbol id="sun" viewBox="0 0 120 120">
+  <g stroke="#1f2a44" stroke-width="4" stroke-linecap="round"><path d="M60 6 V20 M60 100 V114 M6 60 H20 M100 60 H114 M22 22 L32 32 M88 88 L98 98 M98 22 L88 32 M32 88 L22 98"/></g>
+  <circle cx="60" cy="60" r="32" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.4" cy="54.6" r="1.4" fill="#fff"/><circle cx="71.4" cy="54.6" r="1.4" fill="#fff"/>
+  <ellipse cx="42" cy="66" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="66" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 68 Q60 75 68 68" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 月亮 -->
+<symbol id="moon" viewBox="0 0 120 120">
+  <path d="M78 12 C46 14 22 40 24 70 C26 98 52 116 80 110 C92 108 102 100 108 92 C70 96 46 64 60 34 C64 24 70 16 78 12Z" fill="#efe8ff" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M44 66 Q48 70 52 66 M64 78 Q68 82 72 78" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="44" cy="80" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 86 Q58 90 64 88" stroke="#1f2a44" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 時鐘 -->
+<symbol id="clock" viewBox="0 0 120 120">
+  <circle cx="60" cy="64" r="44" fill="#fff" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="60" cy="64" r="36" fill="#e0f4ff"/>
+  <path d="M60 64 V40 M60 64 L78 74" stroke="#1f2a44" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="60" cy="64" r="5" fill="#ff6b6b" stroke="#1f2a44" stroke-width="2.5"/>
+  <path d="M26 22 L40 14 M94 22 L80 14" stroke="#1f2a44" stroke-width="5" stroke-linecap="round"/>
+</symbol>
+<!-- 照光箱 -->
+<symbol id="lightbox" viewBox="0 0 120 120">
+  <g stroke="#ffc93c" stroke-width="4" stroke-linecap="round"><path d="M8 30 L18 34 M6 56 H16 M8 82 L18 78"/></g>
+  <rect x="24" y="14" width="76" height="80" rx="10" fill="#fff5d6" stroke="#1f2a44" stroke-width="3.5"/>
+  <rect x="34" y="24" width="56" height="60" rx="6" fill="#fff" stroke="#1f2a44" stroke-width="2.5"/>
+  <path d="M44 34 H80 M44 46 H80 M44 58 H80 M44 70 H80" stroke="#ffd25e" stroke-width="5" stroke-linecap="round"/>
+  <path d="M50 94 L44 110 H80 L74 94" fill="#8a5cf6" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+</symbol>
+<!-- 床（睡眠） -->
+<symbol id="bed" viewBox="0 0 120 100">
+  <rect x="10" y="50" width="100" height="26" rx="6" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <rect x="16" y="36" width="34" height="18" rx="8" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M10 30 V90 M110 56 V90" stroke="#1f2a44" stroke-width="5" stroke-linecap="round"/>
+  <g font-family="Huninn,sans-serif" font-size="16" fill="#8a5cf6"><text x="64" y="30">z</text><text x="78" y="20">z</text><text x="92" y="10">Z</text></g>
+</symbol>
+</defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://www.gungho.idv.tw/KS/index.html" aria-label="回共好小學堂首頁">
+      <svg aria-hidden="true"><use href="#sprout"/></svg>
+      <span><b>共好小學堂</b><small>GROW &amp; LEARN TOGETHER</small></span>
+    </a>
+    <nav class="navpills" aria-label="章節">
+      <a href="#s1">生物時鐘</a><a href="#s2">季節與情緒</a><a href="#s3">光照療法</a><a href="#tools">晨光時間表</a><a href="#s5">安全</a><a href="#quiz">小測驗</a><a href="#refs">參考資料</a>
+    </nav>
+    <a class="back" href="https://www.gungho.idv.tw/KS/index.html">← 回小學堂</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <span class="blob" style="width:320px;height:320px;background:var(--sun-l);top:-90px;right:-60px"></span>
+  <span class="blob" style="width:220px;height:220px;background:var(--grape-l);bottom:30px;left:-70px"></span>
+  <span class="blob" style="width:140px;height:140px;background:var(--sky-l);top:40%;left:46%"></span>
+  <div class="wrap">
+    <div>
+      <span class="tag">✦ 睡眠與情緒小知識</span>
+      <h1>天變短了，心情也<span class="hl nw">變暗了？</span></h1>
+      <p class="lead">一到秋冬就特別累、想睡、提不起勁？日照長短、光線強弱和日夜明暗的變化，也就是<b>「光週期」</b>，會透過身體的<b>生物時鐘</b>、褪黑激素和血清素，影響睡眠、精神和情緒。我們一起看懂原理，學會「早晨多照光、夜晚少點光」。</p>
+      <div class="btns">
+        <a class="btn pri" href="#start">開始認識 →</a>
+        <a class="btn" href="#tools">排我的晨光時間表</a>
+      </div>
+      <p class="meta">資料查核日：2026年10月11日｜資料來源：PubMed 收錄之回顧文獻、美國家庭醫師學會期刊、NIH 補充與整合健康中心、Mayo Clinic</p>
+    </div>
+    <div class="hero-art">
+      <div class="bubble">早安！先曬曬太陽～</div>
+      <svg viewBox="0 0 520 400" role="img" aria-label="阿嬤在窗邊迎接陽光，旁邊有太陽、月亮、時鐘、小芽、藍鳥和星星">
+        <ellipse cx="260" cy="368" rx="230" ry="26" fill="#dcf7ec"/>
+        <rect x="300" y="70" width="170" height="150" rx="14" fill="#e0f4ff" stroke="#1f2a44" stroke-width="4"/>
+        <path d="M385 70 V220 M300 145 H470" stroke="#1f2a44" stroke-width="4"/>
+        <g class="float"><use href="#sun" x="320" y="78" width="70" height="70"/></g>
+        <path d="M300 225 L180 330" stroke="#ffe08a" stroke-width="40" opacity=".35" stroke-linecap="round"/>
+        <use href="#grandma" x="170" y="160" width="130" height="165"/>
+        <g class="float d2"><use href="#moon" x="320" y="236" width="58" height="58"/></g>
+        <g class="float d3"><use href="#clock" x="50" y="170" width="60" height="60"/></g>
+        <use href="#sprout" x="40" y="272" width="84" height="92"/>
+        <use href="#bird" x="400" y="286" width="92" height="84"/>
+        <g class="float"><use href="#star" x="470" y="20" width="44" height="44"/></g>
+      </svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C240 60 480 0 720 30 C960 60 1200 0 1440 30 V60 H0Z" fill="#fffdf7"/></svg>
+</section>
+
+<section class="sec" id="start">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">★</div><div><span class="eyebrow">Key Points</span><h2>先說重點</h2></div></div>
+    <div class="talk" style="--c:var(--mint)">
+      <div class="who"><svg aria-hidden="true"><use href="#sprout"/></svg></div>
+      <div class="say"><span class="name">小芽說</span>
+        <p>光週期會透過「<b>視網膜 → 視交叉上核（SCN）</b>」這條生物時鐘路徑，加上血清素、褪黑激素等神經傳導和荷爾蒙系統，影響<b>睡眠、警覺度、情緒</b>，以及季節性情感障礙的風險。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref6">參考 6</a><a class="src" href="#ref8">參考 8</a></p>
+      </div>
+    </div>
+    <div class="talk r" style="--c:var(--sun)">
+      <div class="who"><svg aria-hidden="true"><use href="#sun"/></svg></div>
+      <div class="say"><span class="name">太陽說</span>
+        <p>早晨、適量、規律地照光，是有實證基礎的方法；對季節性情感障礙來說，<b>光照療法是第一線治療選項之一</b>。<a class="src" href="#ref3">參考 3</a><a class="src" href="#ref4">參考 4</a></p>
+      </div>
+    </div>
+    <div class="warn"><b>⚠ 要分清楚：</b>秋冬「有點懶、有點悶」很常見，但<b>季節性情感障礙是一種憂鬱症</b>，需要專業診斷。有憂鬱症、雙向情感障礙（躁鬱症）病史，或情緒症狀明顯、反覆發作的人，<b>請先讓醫師評估，不要自己開始高強度照光</b>。</div>
+  </div>
+</section>
+
+<section class="sec alt" id="s1" style="--tint:var(--sky-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--sky)"><div class="num">1</div><div><span class="eyebrow">Body Clock</span><h2>核心機轉：光，是生物時鐘的「對時器」</h2></div></div>
+    <div class="path">
+      <div class="flow"><span class="e">👁</span><b>光進入眼睛</b><span class="small">視網膜的感光細胞接收訊號</span></div>
+      <div class="flow"><span class="e">🕰</span><b>視交叉上核 SCN</b><span class="small">在下視丘，人體的主要生物時鐘</span></div>
+      <div class="flow"><span class="e">🌙</span><b>調節各種節律</b><span class="small">睡醒週期、荷爾蒙、體溫、基因表現</span></div>
+      <div class="flow"><span class="e">😊</span><b>睡眠與情緒</b><span class="small">警覺度、精神與心情</span></div>
+    </div>
+    <p class="small" style="margin-top:10px">參考資料：<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref8">參考 8</a></p>
+
+    <div class="grid2" style="margin-top:30px">
+      <div class="card mech" style="--c:var(--grape)"><span class="pin">荷爾蒙 1</span><h3>🌙 褪黑激素：夜晚的訊號</h3><p>褪黑激素由<b>松果體</b>分泌，通常夜間升高、白天被光抑制。冬季日照縮短時，部分季節性憂鬱患者的<b>夜間褪黑激素分泌時間變長</b>，或時間點往後延，進而干擾睡眠與情緒節律。<a class="src" href="#ref6">參考 6</a><a class="src" href="#ref8">參考 8</a><a class="src" href="#ref1">參考 1</a></p><p class="key">研究發現：SAD 患者冬季夜間褪黑激素分泌比夏季長，健康對照組則沒有這種差異。<a class="src" href="#ref6">參考 6</a></p></div>
+      <div class="card mech" style="--c:var(--coral)"><span class="pin">神經傳導 2</span><h3>☀️ 血清素：也有季節變化</h3><p>回顧研究指出，在各種單胺類神經傳導物質中，<b>血清素的季節節律最明顯</b>，多數指標顯示冬季代謝與可用性下降。<a class="src" href="#ref6">參考 6</a></p><p class="key">更精確地說：已經<b>緩解</b>的 SAD 患者，若暫時降低大腦的色胺酸（血清素原料），會出現短暫復發；但在冬季、尚未治療的患者身上則沒有更惡化。這顯示血清素系統在季節性情緒變化中扮演重要角色。<a class="src" href="#ref6">參考 6</a><a class="src" href="#ref3">參考 3</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="s2">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--orange)"><div class="num">2</div><div><span class="eyebrow">Seasons &amp; Mood</span><h2>季節變了，情緒也跟著變</h2></div></div>
+    <div class="cmpday">
+      <div class="card"><h3>☀️ 夏天：白天長</h3><div class="daybar" aria-hidden="true"><span class="n" style="width:22%">夜</span><span class="d" style="width:58%">白天</span><span class="n" style="width:20%">夜</span></div><p class="small">示意圖，非實際日照時數</p></div>
+      <div class="card"><h3>🌙 冬天：白天短</h3><div class="daybar" aria-hidden="true"><span class="n" style="width:30%">夜</span><span class="d" style="width:42%">白天</span><span class="n" style="width:28%">夜</span></div><p class="small">示意圖，非實際日照時數</p></div>
+    </div>
+    <p style="margin-top:20px">影響情緒的不只是每天日照的「總量」，也包括日照與太陽輻射量的<b>變化速度</b>。<span class="unv">待查證</span> 秋季光週期快速縮短時，部分人比較容易出現疲倦、低落、嗜睡與動力下降；在<b>緯度較高</b>、冬季日照明顯縮短的地區更值得注意。研究提到在溫帶地區，約有近一成人口出現冬季憂鬱。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref6">參考 6</a></p>
+
+    <div class="talk" style="--c:var(--orange);margin-top:22px">
+      <div class="who"><svg aria-hidden="true"><use href="#bird"/></svg></div>
+      <div class="say"><span class="name">藍鳥解釋：什麼是季節性情感障礙（SAD）？</span>
+        <p>SAD 通常在<b>秋冬</b>出現憂鬱症狀，到<b>春夏</b>緩解。診斷上要符合：</p>
+        <ol class="qs"><li>症狀發作和季節有固定關係</li><li>該季節結束後<b>完全緩解</b></li><li>至少<b>連續兩年</b>在同一季節發作</li></ol>
+        <p class="small" style="margin:0">另外，這些發作不能是由該季節特有的生活壓力所解釋。<a class="src" href="#ref4">參考 4</a></p>
+      </div>
+    </div>
+
+    <h3 style="font-size:21px;margin-top:28px">點頁籤，看三種季節性反應</h3>
+    <div style="--c:var(--orange)">
+      <div class="tabs" role="tablist" aria-label="季節性反應" data-tabs>
+        <button class="tab" role="tab" aria-selected="true" aria-controls="m1" id="mb1">🍂 秋冬情緒低落</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="m2" id="mb2" tabindex="-1">🌸 春夏情緒變化</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="m3" id="mb3" tabindex="-1">💡 夜間人工光</button>
+      </div>
+      <div class="panel" role="tabpanel" id="m1" aria-labelledby="mb1"><div class="panel-grid"><svg aria-hidden="true"><use href="#moon"/></svg><dl class="kv">
+        <dt>可能機轉</dt><dd>日照縮短、褪黑激素節律延後、血清素活性下降、晝夜節律失去同步。<a class="src" href="#ref6">參考 6</a><a class="src" href="#ref3">參考 3</a></dd>
+        <dt>常見表現</dt><dd>疲倦、嗜睡、食慾或體重增加、注意力下降、憂鬱情緒。<a class="src" href="#ref4">參考 4</a><a class="src" href="#ref6">參考 6</a></dd></dl></div></div>
+      <div class="panel" role="tabpanel" id="m2" aria-labelledby="mb2" hidden><div class="panel-grid"><svg aria-hidden="true"><use href="#sun"/></svg><dl class="kv">
+        <dt>可能機轉</dt><dd>光週期快速延長可能改變睡眠與晝夜節律；部分雙向情感障礙患者的躁症或輕躁發作風險可能上升。<span class="unv">待查證</span></dd>
+        <dt>要注意</dt><dd>躁鬱症患者要留意<b>睡眠減少、活動量突然變多、衝動性升高</b>等警訊，並儘早與精神科醫師討論。</dd></dl>
+        </div><p class="note">📌 研究也提到，在極高緯度地區夏季幾乎整天都有日光時，有研究團隊觀察到暴力自殺增加，說明「光太少」或「光太多」都可能影響情緒。<a class="src" href="#ref1">參考 1</a></p></div>
+      <div class="panel" role="tabpanel" id="m3" aria-labelledby="mb3" hidden><div class="panel-grid"><svg aria-hidden="true"><use href="#bed"/></svg><dl class="kv">
+        <dt>可能機轉</dt><dd>夜間光線會抑制褪黑激素，並可能讓大腦的中樞時鐘和身體各處的周邊時鐘失去同步。<a class="src" href="#ref1">參考 1</a></dd>
+        <dt>怎麼做</dt><dd>睡前減少強光與螢幕，維持固定作息。</dd></dl></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="s3" style="--tint:var(--sun-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--sun)"><div class="num">3</div><div><span class="eyebrow">Light Therapy</span><h2>光照療法：怎麼照才對？</h2></div></div>
+    <p class="intro">光照療法是季節性情感障礙的<b>第一線治療選項之一</b>，可以和抗憂鬱劑、認知行為治療合併使用。<a class="src" href="#ref3">參考 3</a><a class="src" href="#ref4">參考 4</a> 原稿另提到「對有季節型態的輕至中度重性憂鬱症，臨床指引亦建議可考慮光照療法」。<span class="unv">待查證</span></p>
+
+    <h3 style="font-size:21px">常見的標準起始方案</h3>
+    <div class="rx">
+      <div class="card"><span class="e">📦</span><b>濾掉紫外線</b><p>使用經過濾、紫外線量極低的照光箱。<a class="src" href="#ref5">參考 5</a><a class="src" href="#ref2">參考 2</a></p></div>
+      <div class="card"><span class="e">💡</span><b>約 10,000 lux</b><p>替代：5,000 lux 約1小時，或 2,500 lux 約2小時。<a class="src" href="#ref8">參考 8</a><a class="src" href="#ref3">參考 3</a></p></div>
+      <div class="card"><span class="e">⏰</span><b>早晨 20–30 分</b><p>通常在醒來後一小時內使用。<a class="src" href="#ref5">參考 5</a><a class="src" href="#ref3">參考 3</a></p></div>
+      <div class="card"><span class="e">👀</span><b>張眼，不直視</b><p>讓光進入視野，但不要盯著光源看。<a class="src" href="#ref5">參考 5</a><a class="src" href="#ref2">參考 2</a></p></div>
+      <div class="card"><span class="e">📅</span><b>2–4 週看反應</b><p>有效的話，常建議持續到冬季結束。<a class="src" href="#ref3">參考 3</a><a class="src" href="#ref7">參考 7</a><a class="src" href="#ref8">參考 8</a></p></div>
+    </div>
+    <p class="note">🔎 <b>各來源的說法略有不同：</b>Mayo Clinic 建議 10,000 lux、20–30分鐘<a class="src" href="#ref5">參考 5</a>；NIH 補充與整合健康中心寫每天 20–60分鐘<a class="src" href="#ref2">參考 2</a>；美國家庭醫師學會期刊寫 2,500–10,000 lux、每天 30–60分鐘<a class="src" href="#ref4">參考 4</a>。實際的強度、距離與時間，請依醫師建議與設備說明。</p>
+
+    <div class="talk r" style="--c:var(--sun);margin-top:24px">
+      <div class="who"><svg aria-hidden="true"><use href="#lightbox"/></svg></div>
+      <div class="say"><span class="name">照光箱說：為什麼是「早上」？</span><p>早晨的光可以<b>抑制褪黑激素</b>，讓晝夜節律「往前調」（相位前移），幫忙把睡醒和情緒相關的生理節律重新對準。研究也發現，早晨照光比晚上照光效果好。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref3">參考 3</a></p></div>
+    </div>
+
+    <h3 style="font-size:21px;margin-top:30px">🔆 光有多亮？跟照光箱比一比</h3>
+    <p class="small">條狀長度依對數比例繪製，方便同時看到很暗和很亮的數值。<a class="src" href="#ref3">參考 3</a></p>
+    <div class="lux" id="luxBars"></div>
+    <p class="small" style="margin-top:8px">💡 就算是下雨的冬天，戶外光（約 2,000 lux）通常仍比一般室內照明亮得多。</p>
+  </div>
+</section>
+
+<section class="sec" id="tools">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">4</div><div><span class="eyebrow">My Light Plan</span><h2>日常調整：排出我的「晨光時間表」</h2></div></div>
+    <div class="calc" style="--c:var(--grape)">
+      <h3>⏰ 輸入你的起床和就寢時間</h3>
+      <p class="small">工具會標出：起床後一小時內適合<b>接觸晨光</b>的時段，以及睡前 1–2 小時該<b>調暗燈光、減少螢幕</b>的時段。這是生活作息的參考，<b>不是光照治療處方</b>。</p>
+      <div class="tin">
+        <div><label for="wake">起床時間</label><input type="time" id="wake" value="06:30"></div>
+        <div><label for="sleep">就寢時間</label><input type="time" id="sleep" value="22:30"></div>
+      </div>
+      <div class="timeline" id="tl" aria-hidden="true"></div>
+      <div class="ticks" aria-hidden="true"><span>0時</span><span>6時</span><span>12時</span><span>18時</span><span>24時</span></div>
+      <div class="plan" id="plan" aria-live="polite"></div>
+    </div>
+
+    <h3 style="font-size:21px;margin-top:30px">🌿 五個日常好習慣</h3>
+    <ol class="steps">
+      <li><b>早晨接受自然光</b>：起床後盡早到戶外或窗邊；陰天時，戶外光照通常也比室內照明亮。<a class="src" href="#ref3">參考 3</a><a class="src" href="#ref8">參考 8</a></li>
+      <li><b>維持固定作息</b>：固定起床、用餐、運動與就寢時間，強化光線以外的「時間線索」。</li>
+      <li><b>白天多亮、夜晚少光</b>：白天多接觸明亮環境，睡前 1–2 小時減少強光、螢幕和夜間照明。<a class="src" href="#ref1">參考 1</a></li>
+      <li><b>規律運動與戶外活動</b>：到戶外走走、讓工作環境多點自然光、做有氧運動，都是輔助的生活調整。<a class="src" href="#ref4">參考 4</a></li>
+      <li><b>留意高危情境</b>：有憂鬱症、雙向情感障礙、反覆季節性情緒變化或睡眠節律明顯紊亂的人，應先由醫療專業人員評估。<a class="src" href="#ref4">參考 4</a><a class="src" href="#ref2">參考 2</a></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec alt" id="s5" style="--tint:var(--coral-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--coral)"><div class="num">5</div><div><span class="eyebrow">Safety First</span><h2>安全第一：使用照光箱前想一想</h2></div></div>
+    <div class="grid2">
+      <div class="card"><h3>😣 可能的副作用</h3><p>整體耐受性良好，副作用通常輕微、可恢復：<b>頭痛、眼睛疲勞、噁心、躁動或易怒</b>；在不當時間（例如晚上）照光，可能造成<b>失眠</b>。光太強或時間不對，也可能擾亂節律。<a class="src" href="#ref3">參考 3</a><a class="src" href="#ref8">參考 8</a></p></div>
+      <div class="card"><h3>🧠 雙向情感障礙要特別小心</h3><p>光照（以及其他抗憂鬱治療）有<b>誘發躁症或輕躁</b>的潛在風險，特別是尚未被診斷或治療不足的雙向情感障礙。請先由精神科醫師評估。<a class="src" href="#ref2">參考 2</a><a class="src" href="#ref5">參考 5</a><a class="src" href="#ref3">參考 3</a></p></div>
+    </div>
+    <h3 style="font-size:21px;margin-top:26px">勾勾看：這些情況請先找醫師或眼科</h3>
+    <div class="chk" id="flags">
+      <label><input type="checkbox"><span class="box"></span><span><b>有憂鬱症或雙向情感障礙病史</b><span class="d">或家人說你有時「特別亢奮、睡很少」</span></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>情緒症狀明顯、反覆發作</b><span class="d">影響工作、生活或人際</span></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>有眼睛疾病</b><span class="d">如視網膜疾病、青光眼、白內障、糖尿病眼病變</span></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>正在使用光敏感藥物</b><span class="d">例如聖約翰草等；不確定請問醫師或藥師</span></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>睡眠節律明顯紊亂</b><span class="d">長期失眠、日夜顛倒</span></span></label>
+    </div>
+    <div class="okflag" id="okflag">✅ 目前沒有勾選。早晨多照自然光、睡前調暗燈光，是人人可以做的生活調整；要使用照光箱，仍建議先問過醫師。</div>
+    <div class="redflag" id="redflag">🚩 有勾選項目：使用照光設備前，請先諮詢精神科、眼科或相關醫療人員，並在專業評估與監測下進行。</div>
+    <p class="small" style="margin-top:12px">這份勾選只是幫你整理狀況，不是診斷工具；勾選結果不會儲存。資料來源：<a class="src" href="#ref4">參考 4</a><a class="src" href="#ref5">參考 5</a><a class="src" href="#ref7">參考 7</a></p>
+    <p class="note">📦 選照光箱時，請選擇<b>紫外線過濾</b>設計，並遵守設備說明的距離、角度與使用時間；頭部離開設定距離，照到的光量就會變少。<a class="src" href="#ref5">參考 5</a><a class="src" href="#ref7">參考 7</a></p>
+  </div>
+</section>
+
+<section class="sec" id="s6">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">6</div><div><span class="eyebrow">Wrap-up</span><h2>結論：把光用在對的時間</h2></div></div>
+    <div class="grid3">
+      <div class="card" style="box-shadow:6px 6px 0 var(--sky)"><span class="badge" style="background:var(--sky-l)">影響是真的</span><p>光週期透過視網膜—SCN 生物時鐘、褪黑激素與血清素系統，對情緒、睡眠與生理節律有可測量的影響。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref6">參考 6</a><a class="src" href="#ref8">參考 8</a></p></div>
+      <div class="card" style="box-shadow:6px 6px 0 var(--sun)"><span class="badge" style="background:var(--sun-l)">早晨照光</span><p>秋冬短日照可能促成季節性憂鬱；早晨、適量、規律的光照療法，是有實證基礎的輔助或第一線治療選項。<a class="src" href="#ref3">參考 3</a><a class="src" href="#ref4">參考 4</a></p></div>
+      <div class="card" style="box-shadow:6px 6px 0 var(--coral)"><span class="badge" style="background:var(--coral-l)">專業陪伴</span><p>情緒症狀明顯、反覆發作，或有雙向情感障礙病史的人，光照療法要在專業評估與監測下進行。<a class="src" href="#ref2">參考 2</a><a class="src" href="#ref4">參考 4</a></p></div>
+    </div>
+    <div class="talk" style="--c:var(--mint);margin-top:28px">
+      <div class="who"><svg aria-hidden="true"><use href="#sprout"/></svg></div>
+      <div class="say"><span class="name">小芽總結</span><p>記住一句話：<b>早上多曬、晚上少照、作息固定</b>。如果秋冬心情一直低落、影響生活，就不是「撐一下就好」，請找醫師聊聊。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="quiz" style="--tint:var(--grape-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">?</div><div><span class="eyebrow">Quick Quiz</span><h2>小測驗：三題就好</h2></div></div>
+    <div class="quiz" id="quizBox">
+      <div class="card q" data-ans="a">
+        <h4>Q1. 想用照光箱幫助冬季情緒，哪一種用法比較符合常見建議？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">起床後一小時內，張開眼睛但不直視光源，約 10,000 lux 照 20–30 分鐘</button>
+          <button class="opt" data-v="b">睡前照一小時，幫助放鬆</button>
+          <button class="opt" data-v="c">盯著光源看，越亮越久越好</button>
+        </div>
+        <div class="exp">早晨照光效果較好；晚上照光可能造成失眠。眼睛要張開，但不要直視光源。</div>
+      </div>
+      <div class="card q" data-ans="c">
+        <h4>Q2. 陳大哥有躁鬱症病史，秋天心情低落，想自己買照光箱來用。比較好的做法是？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">直接開始，每天照兩小時</button>
+          <button class="opt" data-v="b">停掉原本的藥，改用照光就好</button>
+          <button class="opt" data-v="c">先和精神科醫師討論，在專業評估與監測下使用</button>
+        </div>
+        <div class="exp">光照療法有誘發躁症或輕躁的潛在風險，雙向情感障礙患者應由精神科醫師評估後再使用。</div>
+      </div>
+      <div class="card q" data-ans="b">
+        <h4>Q3. 下列哪一個描述，比較符合「季節性情感障礙」的診斷概念？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">今年冬天有幾天心情不好</button>
+          <button class="opt" data-v="b">至少連續兩年在同一季節發作憂鬱，季節結束後完全緩解</button>
+          <button class="opt" data-v="c">只要冬天比較想睡就是</button>
+        </div>
+        <div class="exp">診斷上通常要求症狀和季節有固定關係、季節結束後完全緩解，並至少連續兩年在同一季節發作。</div>
+      </div>
+      <div class="score" id="score"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec refs" id="refs">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--ink)"><div class="num">§</div><div><span class="eyebrow">References</span><h2>參考資料</h2></div></div>
+    <p class="small">以下資料於<b>2026年10月11日</b>查核；學術文獻已透過 PubMed 核對題名、作者、期刊與 DOI。原稿內文的 [web:16]～[web:30] 標記無法對應文末清單，本頁已依各來源實際內容重新對應。標示 <span class="unv">待查證</span> 的敘述，在下列來源中未找到直接出處，僅保留原稿說法供參考。</p>
+
+    <h3>📚 回顧文獻</h3>
+    <ol>
+      <li id="ref1"><span class="rid">1</span>Bedrosian TA, Nelson RJ. <b>Timing of light exposure affects mood and brain circuits.</b> <i>Transl Psychiatry.</i> 2017;7(1):e1017.<span class="loc">夜間人工光造成晝夜節律紊亂與情緒相關；溫帶地區近10%人口有冬季憂鬱；早晨強光抑制褪黑激素、重新對準節律。</span><a href="https://doi.org/10.1038/tp.2016.262" target="_blank" rel="noopener">DOI: 10.1038/tp.2016.262</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/28140399/" target="_blank" rel="noopener">PubMed 28140399</a></li>
+      <li id="ref3"><span class="rid">3</span>Praschak-Rieder N, Willeit M. <b>Treatment of seasonal affective disorders.</b> <i>Dialogues Clin Neurosci.</i> 2003;5(4):389-398.<span class="loc">強光治療為第一線；起始建議 10,000 lux／30分鐘、2,500 lux／2小時；早晨優於晚上；1週可見效，有時需2–4週；副作用含頭痛、眼睛疲勞、噁心、躁動，偶有輕躁；室內約100–500 lux，雨天冬季戶外約2,000 lux。</span><a href="https://doi.org/10.31887/DCNS.2003.5.4/npraschakrieder" target="_blank" rel="noopener">DOI: 10.31887/DCNS.2003.5.4/npraschakrieder</a>｜<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3181778/" target="_blank" rel="noopener">PMC3181778</a></li>
+      <li id="ref6"><span class="rid">6</span>Levitan RD. <b>The chronobiology and neurobiology of winter seasonal affective disorder.</b> <i>Dialogues Clin Neurosci.</i> 2007;9(3):315-324.<span class="loc">SAD 患者冬季夜間褪黑激素分泌較長；血清素季節節律最明顯、冬季下降；色胺酸耗竭使緩解期患者短暫復發。</span><a href="https://doi.org/10.31887/DCNS.2007.9.3/rlevitan" target="_blank" rel="noopener">DOI: 10.31887/DCNS.2007.9.3/rlevitan</a>｜<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3202491/" target="_blank" rel="noopener">PMC3202491</a></li>
+      <li id="ref7"><span class="rid">7</span><b>Light Therapy: Why, What, for Whom, How, and When (And a Postscript about Darkness).</b> <i>Praxis</i>（Hogrefe）。<span class="loc">SAD 標準起始 10,000 lux 約30分鐘、早晨使用；約2週內見改善；建議檢查眼睛健康並留意光敏感藥物（如聖約翰草）；頭部離開設定距離會減少劑量。查核頁面未列作者與卷期。</span><a href="https://doi.org/10.1024/1661-8157/a003821" target="_blank" rel="noopener">DOI: 10.1024/1661-8157/a003821</a></li>
+      <li id="ref8"><span class="rid">8</span>Bertani DE, De Novellis AMP, Farina R, et al. <b>"Shedding Light on Light": A Review on the Effects on Mental Health of Exposure to Optical Radiation.</b> <i>Int J Environ Res Public Health.</i> 2021;18(4):1670.<span class="loc">光調節晝夜節律與心理健康；10,000 lux／30分鐘，或 5,000 lux／1小時、2,500 lux／2小時；持續整個冬季；副作用含頭痛、眼睛疲勞、視力模糊、畏光、易怒、噁心，晚上照光可能失眠。</span><a href="https://doi.org/10.3390/ijerph18041670" target="_blank" rel="noopener">DOI: 10.3390/ijerph18041670</a>｜<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7916252/" target="_blank" rel="noopener">PMC7916252</a></li>
+    </ol>
+
+    <h3>🏥 臨床與衛教資料</h3>
+    <ol>
+      <li id="ref2"><span class="rid">2</span><b>NIH 國家補充與整合健康中心（NCCIH）：Seasonal Affective Disorder and Complementary Health Approaches: What the Science Says</b>（Clinical Digest，2019年1月）。<span class="loc">照光箱約 10,000 lux、每天20–60分鐘並濾除紫外線；避免直視光源；可能誘發未診斷或治療不足之雙向情感障礙患者躁症。</span><a href="https://www.nccih.nih.gov/health/providers/digest/seasonal-affective-disorder-and-complementary-health-approaches-science" target="_blank" rel="noopener">https://www.nccih.nih.gov/health/providers/digest/seasonal-affective-disorder-and-complementary-health-approaches-science</a></li>
+      <li id="ref4"><span class="rid">4</span>Galima SV, Vogel SR, Kowalski AW. <b>Seasonal Affective Disorder: Common Questions and Answers.</b> <i>Am Fam Physician.</i> 2020;102(11):668-672.<span class="loc">診斷：季節關係、季節結束完全緩解、連續兩年；第一線治療含光照、抗憂鬱劑、認知行為治療；光照 2,500–10,000 lux、30–60分鐘；戶外步行與有氧運動；眼疾或光敏感藥物者宜先經眼科評估。</span><a href="https://www.aafp.org/afp/2020/1201/p668" target="_blank" rel="noopener">https://www.aafp.org/afp/2020/1201/p668</a></li>
+      <li id="ref5"><span class="rid">5</span><b>Mayo Clinic：Seasonal affective disorder treatment: Choosing a light box.</b><span class="loc">10,000 lux、約20–30分鐘、醒來後一小時內；紫外線愈少愈好；張眼但不直視；青光眼、白內障、糖尿病眼病變者先問眼科；雙向情感障礙者可能誘發躁症。</span><a href="https://www.mayoclinic.org/diseases-conditions/seasonal-affective-disorder/in-depth/seasonal-affective-disorder-treatment/art-20048298" target="_blank" rel="noopener">https://www.mayoclinic.org/diseases-conditions/seasonal-affective-disorder/in-depth/seasonal-affective-disorder-treatment/art-20048298</a></li>
+    </ol>
+
+    <div class="bigdisc" role="note" aria-label="免責聲明" style="margin-top:30px">
+      <div class="bd-head"><span class="bd-ico">⚠</span><span>重要聲明｜請先看這裡</span></div>
+      <p class="bd-key">本站資訊僅供參考，實際以醫師等專業人員評估及官方資料為準。</p>
+      <ul>
+        <li><b>僅供參考：</b>本頁為健康觀念的學習整理，<b>不構成任何醫療診斷、治療或建議</b>，不能取代精神科、家醫科或眼科醫師的評估。</li>
+        <li><b>不是自我診斷工具：</b>頁面上的勾選與時間表只是整理生活作息與狀況，<b>不能用來判斷是否罹患季節性情感障礙或憂鬱症</b>。</li>
+        <li><b>無任何推薦或行銷：</b>本頁不推薦、不銷售任何照光箱、燈具、App、保健品、課程或醫療院所，與文中來源單位無任何合作關係。</li>
+        <li><b>請勿自行停藥：</b>光照療法是治療選項之一，正在治療中的人請勿因此自行停藥或更改療程。</li>
+        <li><b>資料時點：</b>資料查核於2026年10月11日，之後的新研究或指引更新，本頁不會即時同步。</li>
+        <li><b>情緒求助：</b>如果出現持續低落、想傷害自己的念頭，請立即就醫或撥打衛福部安心專線 <b>1925</b>（24小時）。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="pals" aria-hidden="true"><svg><use href="#sprout"/></svg><svg><use href="#bird"/></svg><svg><use href="#star"/></svg></div>
+    <p class="quote">每一次多懂一點，都是送給自己的小禮物。</p>
+    <p class="ftdisc">⚠ 僅供參考｜不構成醫療建議｜無任何推薦或行銷<br>本站資訊僅供參考，實際以醫師等專業人員評估及官方資料為準</p>
+    <p><a href="https://www.gungho.idv.tw/KS/index.html">← 回共好小學堂</a></p>
+    <p class="fine">共好小學堂 ✦ 一起學習，一起共好<br>本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-10-11</p>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到頂端">↑</button>
+
+<script>
+(function(){
+  document.querySelectorAll('[data-tabs]').forEach(function(list){
+    var tabs=[].slice.call(list.querySelectorAll('[role=tab]'));
+    function select(t,focus){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on?'true':'false');x.tabIndex=on?0:-1;var p=document.getElementById(x.getAttribute('aria-controls'));if(p)p.hidden=!on;});if(focus)t.focus();}
+    tabs.forEach(function(t,i){t.addEventListener('click',function(){select(t);});t.addEventListener('keydown',function(e){var n=null;if(e.key==='ArrowRight')n=tabs[(i+1)%tabs.length];if(e.key==='ArrowLeft')n=tabs[(i-1+tabs.length)%tabs.length];if(n){e.preventDefault();select(n,true);}});});
+  });
+
+  // lux bars (log scale; values from ref 3)
+  var L=[['一般室內','100–500 lux',300,'#e3e8f3'],['雨天冬季戶外','約 2,000 lux',2000,'#38b6ff'],['標準照光箱','10,000 lux',10000,'#ffc93c'],['直射陽光','50,000–300,000 lux',100000,'#ff9f43']];
+  var mx=Math.log10(300000),mn=Math.log10(10);
+  document.getElementById('luxBars').innerHTML=L.map(function(r){var w=Math.max(6,(Math.log10(r[2])-mn)/(mx-mn)*100);return '<div class="row"><span>'+r[0]+'</span><div class="tr"><div class="fill" style="width:'+w+'%;background:'+r[3]+'"></div></div><span class="v">'+r[1]+'</span></div>';}).join('');
+
+  // light plan
+  var wake=document.getElementById('wake'),slp=document.getElementById('sleep'),tl=document.getElementById('tl'),plan=document.getElementById('plan');
+  function toMin(v){var p=(v||'').split(':');if(p.length<2)return null;var h=parseInt(p[0],10),m=parseInt(p[1],10);if(isNaN(h)||isNaN(m))return null;return h*60+m;}
+  function fmt(m){m=((m%1440)+1440)%1440;var h=Math.floor(m/60),mm=m%60;return (h<10?'0':'')+h+':'+(mm<10?'0':'')+mm;}
+  function blk(cls,s,e,txt){
+    var out='';s=((s%1440)+1440)%1440;e=((e%1440)+1440)%1440;
+    var segs=e>s?[[s,e]]:[[s,1440],[0,e]];
+    segs.forEach(function(g){if(g[1]-g[0]<=0)return;out+='<div class="blk '+cls+'" style="left:'+(g[0]/1440*100)+'%;width:'+((g[1]-g[0])/1440*100)+'%">'+((g[1]-g[0])>=60?txt:'')+'</div>';});
+    return out;
+  }
+  function render(){
+    var w=toMin(wake.value),s=toMin(slp.value);
+    if(w===null||s===null){plan.innerHTML='';tl.innerHTML='';return;}
+    var html=blk('sleep',s,w,'睡眠')+blk('sun',w,w+60,'晨光')+blk('dim',s-120,s,'調暗');
+    tl.innerHTML=html;
+    var dur=((w-s)%1440+1440)%1440;
+    plan.innerHTML='<div><span class="small">☀️ 晨光時段</span><b>'+fmt(w)+'–'+fmt(w+60)+'</b><span class="small">起床後一小時內到窗邊或戶外</span></div>'+
+      '<div><span class="small">🌙 調暗燈光</span><b>'+fmt(s-120)+'–'+fmt(s)+'</b><span class="small">睡前 1–2 小時少螢幕、少強光</span></div>'+
+      '<div><span class="small">🛏 睡眠時間</span><b>約 '+(Math.round(dur/6)/10)+' 小時</b><span class="small">每天固定起床與就寢</span></div>';
+  }
+  wake.addEventListener('input',render);slp.addEventListener('input',render);render();
+
+  // flags (not stored)
+  var fl=[].slice.call(document.querySelectorAll('#flags input'));
+  function fUpd(){var n=fl.filter(function(b){return b.checked;}).length;fl.forEach(function(b){b.parentNode.classList.toggle('on',b.checked);});document.getElementById('redflag').classList.toggle('show',n>0);document.getElementById('okflag').classList.toggle('hide',n>0);}
+  fl.forEach(function(b){b.addEventListener('change',fUpd);});fUpd();
+
+  // quiz
+  var qs=[].slice.call(document.querySelectorAll('#quizBox .q')),answered=0,right=0;
+  qs.forEach(function(q){var ans=q.dataset.ans,opts=q.querySelectorAll('.opt');opts.forEach(function(o){o.addEventListener('click',function(){var ok=o.dataset.v===ans;opts.forEach(function(x){x.disabled=true;if(x.dataset.v===ans)x.classList.add('right');});if(!ok)o.classList.add('wrong');var exp=q.querySelector('.exp');exp.innerHTML=(ok?'<b>✅ 答對了！</b> ':'<b>💡 再想想～</b> ')+exp.innerHTML;exp.classList.add('show');answered++;if(ok)right++;if(answered===qs.length){var s=document.getElementById('score');s.textContent='你答對了 '+right+' / '+qs.length+' 題！'+(right===qs.length?' 太厲害了 🎉':' 每多懂一點都是收穫 🌱');s.classList.add('show');}});});});
+
+  var tt=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('show',window.scrollY>600);},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
+})();
+</script>
+</body>
+</html>
