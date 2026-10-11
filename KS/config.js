@@ -55,6 +55,12 @@ window.SCHOOL_TOPICS = [
         description: '光週期如何透過生物時鐘、褪黑激素與血清素影響睡眠和情緒？認識季節性情感障礙與光照療法，排出自己的晨光時間表。', 
         category: '健康樂活', 
         url: '/KS/light/'
-     }
+     },
+   { 
+      title: '退休，要從幾歲開始準備？', 
+      description: '看懂勞保老年年金65歲新規、提前減給與延後增給，用三大支柱與三層現金流規劃退休，附勞保年金試算與行動清單。', 
+      category: '退休理財', 
+      url: '/KS/PREP/' 
+   }
   // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/' }
 ];
