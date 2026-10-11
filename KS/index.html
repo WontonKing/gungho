@@ -6,6 +6,17 @@
 <title>共好小學堂｜每天懂一點，一起好一點</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%232455c7'/%3E%3Cpath d='M13 17q10-4 19 3q9-7 19-3v30q-10-4-19 3q-9-7-19-3z' fill='%23ffdd73'/%3E%3Cpath d='M32 21v27' stroke='%232455c7' stroke-width='3'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css"><script src="config.js" defer></script><script src="app.js" defer></script>
+<style>
+  /* ===== 課程排序控制 ===== */
+  .sort-bar{display:flex;align-items:center;justify-content:flex-end;gap:.6rem;flex-wrap:wrap;margin:0 0 1.2rem}
+  .sort-bar__label{font-size:.9rem;color:#5b6475}
+  .sort-toggle{display:inline-flex;padding:4px;border-radius:999px;background:#eef2fb;border:1px solid #d6def3}
+  .sort-toggle button{appearance:none;border:0;background:transparent;font:inherit;font-size:.9rem;color:#2455c7;padding:.45rem 1rem;border-radius:999px;cursor:pointer;transition:background .2s,color .2s}
+  .sort-toggle button:hover{background:#dfe7fa}
+  .sort-toggle button[aria-pressed="true"]{background:#2455c7;color:#fff;box-shadow:0 2px 6px rgba(36,85,199,.25)}
+  .sort-toggle button:focus-visible{outline:3px solid #ffdd73;outline-offset:2px}
+  @media (max-width:480px){.sort-bar{justify-content:flex-start}}
+</style>
 </head>
 <body>
 <a class="skip" href="#lessons">跳至學習主題</a>
@@ -13,7 +24,17 @@
 <main>
 <section class="hero wrap" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow"><span aria-hidden="true">✦</span> 歡迎來到我們的小學堂</p><h1 id="hero-title">每天懂一點，<br>一起<span class="highlight">好一點。</span></h1><p class="lead">讓好奇心發芽，讓知識陪伴生活。<br>從一個小問題開始，慢慢認識健康的模樣。</p><a class="primary" href="#lessons">今天，想認識什麼？</a><p class="little-note">帶著好奇就好，我們一起學。</p></div><div class="hero-art"><img src="assets/learning-friends.png" alt="小芽、藍鳥與星星三位原創卡通夥伴，一起開心地閱讀" width="1536" height="1024" fetchpriority="high"><span class="art-label">小小知識，大大收穫</span></div></section>
 <div class="ribbon" aria-hidden="true"><span>保持好奇 ✦</span><span>一起探索 ✦</span><span>分享收穫 ✦</span><span>慢慢長大 ✦</span></div>
-<section class="wrap learning" id="lessons" aria-labelledby="lesson-title"><div class="section-heading"><div><p class="eyebrow">OUR LITTLE CLASSROOM</p><h2 id="lesson-title">好知識，從這裡開始</h2></div><p>挑一個主題，展開今天的小小探索。</p></div><div class="lessons" id="lesson-list"></div><noscript><p><a href="/KS/GLP">閱讀 GLP-1 小知識</a></p></noscript><aside class="coming"><span class="coming-star" aria-hidden="true">✦</span><div><h3>還有更多好奇，正在發芽。</h3><p>小學堂會陸續加入新主題，歡迎常常回來看看。</p></div></aside></section>
+<section class="wrap learning" id="lessons" aria-labelledby="lesson-title"><div class="section-heading"><div><p class="eyebrow">OUR LITTLE CLASSROOM</p><h2 id="lesson-title">好知識，從這裡開始</h2></div><p>挑一個主題，展開今天的小小探索。</p></div>
+<div class="sort-bar" role="group" aria-label="課程排序">
+  <span class="sort-bar__label">排序：</span>
+  <div class="sort-toggle">
+    <button type="button" data-sort="newest" aria-pressed="true">由新到舊</button>
+    <button type="button" data-sort="oldest" aria-pressed="false">由舊到新</button>
+  </div>
+</div>
+<div class="lessons" id="lesson-list" aria-live="polite"></div><noscript><p><a href="/KS/GLP">閱讀 GLP-1 小知識</a></p></noscript><aside class="coming"><span class="coming-star" aria-hidden="true">✦</span><div><h3>還有更多好奇，正在發芽。</h3><p>小學堂會陸續加入新主題，歡迎常常回來看看。</p></div></aside></section>
 <section class="quote wrap"><p>「每一次多懂一點，<br class="mobile-break">都是送給自己的小禮物。」</p><span>和共好小學堂，一起累積生活裡的美好。</span></section>
 </main><footer class="wrap"><span>共好小學堂 <span aria-hidden="true">✦</span> 一起學習，一起共好</span><small></small></footer>
+
 </body></html>
+
