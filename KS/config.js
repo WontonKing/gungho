@@ -2,7 +2,6 @@
    url 使用 / 開頭表示同網域根目錄；跨網站請填完整 https:// 網址。
    陣列順序就是畫面順序，卡片與編號會自動產生。 */
 window.SCHOOL_TOPICS = [
-  { title: '動手種一盆，身心更舒坦？', description: '園藝治療對幸福感、壓力與高齡憂鬱有潛在幫助，但預防失智的證據還不足。看懂研究證據與活動設計，排出自己的居家園藝週計畫。', category: '健康練習', url: '/KS/GARDEN/', date: '2026-10-11' },
   { title: '瘦瘦針小知識', description: '對瘦瘦針感到好奇嗎？從這裡開啟你的知識探索，一起把陌生的名詞慢慢讀懂。', category: '健康小知識', url: '/KS/GLP/index.html', date: '2026-09-15' },
   { title: '捐血小學堂', description: '捐血會讓人變得比較健康嗎？還是有其它的因素呢？讓我們思考一下吧。', category: '健康小知識', url: '/KS/blooddonate/index.html', date: '2026-09-15'},
   { title: '懷舊小學堂', description: '假裝自己年輕二十歲真的會讓身體變健康嗎？還是有其它的心理機制呢？', category: '時間小知識', url: '/KS/timetherapy/index.html', date: '2026-09-16'},
@@ -17,6 +16,8 @@ window.SCHOOL_TOPICS = [
   { title: '在家一角綠，給你好心情？', description: '室內植物對情緒的幫助比淨化空氣更明確。看懂證據、挑對植栽與植物燈，配置書桌、客廳、床頭三種療癒角落。', category: '健康樂活', url: '/KS/GREEN/' ,  date: '2026-10-11'},
   { title: '每天念出聲，大腦會更健康嗎？', description: '出聲朗讀是累積認知儲備的好習慣，但預防失智要多管齊下。看懂 WHO 2026 新指引，跟著朗讀計時器念一首唐詩。', category: '健康樂活', url: '/KS/READ/' ,  date: '2026-10-11'},
   { title: '聞不到味道，是大腦在提醒？', description: '嗅覺減退或幻嗅可能是神經退化的早期警訊，也可能只是鼻子出問題。看懂原因、就醫時機，用嗅覺小日記記錄變化。', category: '健康樂活', url: '/KS/SMELL/',  date: '2026-10-11' },
-  { title: '禱告，能讓心安穩下來嗎？', description: '禱告是面對壓力的信仰資源，但不取代醫療與心理專業。認識禱告類型、證據界線，跟著十分鐘安穩禱告練習。', category: '信仰與生活', url: '/KS/PRAY/',  date: '2026-10-11' }
-  // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/', date: '日期XXXX-XX-XX' }
+  { title: '禱告，能讓心安穩下來嗎？', description: '禱告是面對壓力的信仰資源，但不取代醫療與心理專業。認識禱告類型、證據界線，跟著十分鐘安穩禱告練習。', category: '信仰與生活', url: '/KS/PRAY/',  date: '2026-10-11' },
+   { title: '動手種一盆，身心更舒坦？', description: '園藝治療對幸福感、壓力與高齡憂鬱有潛在幫助，但預防失智的證據還不足。看懂研究證據與活動設計，排出自己的居家園藝週計畫。', category: '健康練習', url: '/KS/GARDEN/', date: '2026-10-11' }
+   
+   // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/', date: '日期XXXX-XX-XX' }
 ];
