@@ -49,7 +49,12 @@ window.SCHOOL_TOPICS = [
   description: '節律性聽覺刺激如何幫助帕金森病友改善步速與步幅？看懂原理與證據，還能試聽節拍器示範。',
   category: '帕金森病小學堂',
   url: '/KS/rhythm/index.html' 
-   } 
-   
+   },
+     {
+        title: '天變短了，心情也變暗了？', 
+        description: '光週期如何透過生物時鐘、褪黑激素與血清素影響睡眠和情緒？認識季節性情感障礙與光照療法，排出自己的晨光時間表。', 
+        category: '健康樂活', 
+        url: '/KS/light/'
+     }
   // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/' }
 ];
