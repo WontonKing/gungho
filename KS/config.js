@@ -79,6 +79,7 @@ window.SCHOOL_TOPICS = [
       description: '出聲朗讀是累積認知儲備的好習慣，但預防失智要多管齊下。看懂 WHO 2026 新指引，跟著朗讀計時器念一首唐詩。', 
       category: '健康樂活', 
       url: '/KS/READ/' 
-   }
+   },
+   { title: '聞不到味道，是大腦在提醒？', description: '嗅覺減退或幻嗅可能是神經退化的早期警訊，也可能只是鼻子出問題。看懂原因、就醫時機，用嗅覺小日記記錄變化。', category: '健康樂活', url: '/KS/SMELL/' }
   // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/' }
 ];
