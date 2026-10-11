@@ -73,6 +73,12 @@ window.SCHOOL_TOPICS = [
       description: '室內植物對情緒的幫助比淨化空氣更明確。看懂證據、挑對植栽與植物燈，配置書桌、客廳、床頭三種療癒角落。', 
       category: '健康樂活', 
       url: '/KS/GREEN/' 
+   },
+   { 
+      title: '每天念出聲，大腦會更健康嗎？', 
+      description: '出聲朗讀是累積認知儲備的好習慣，但預防失智要多管齊下。看懂 WHO 2026 新指引，跟著朗讀計時器念一首唐詩。', 
+      category: '健康樂活', 
+      url: '/KS/READ/' 
    }
   // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/' }
 ];
