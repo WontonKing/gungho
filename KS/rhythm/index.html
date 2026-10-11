@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2455c7">
+<title>跟著節拍走一步｜共好小學堂</title>
+<meta name="description" content="節律性聽覺刺激（RAS）如何幫助帕金森病友走路？用白話看懂原理、研究證據、常見做法與安全注意事項，還能試聽節拍器示範。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/RHYTHM/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="跟著節拍走一步：音樂節律與帕金森病復健｜共好小學堂">
+<meta property="og:description" content="外部節拍可以當「替身節拍器」，幫助步速與步幅；但它是輔助，不取代藥物與復健。一起看懂證據與安全做法。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/RHYTHM/">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 130'%3E%3Cpath d='M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z' fill='%235ad6a4' stroke='%231f2a44' stroke-width='5'/%3E%3Cpath d='M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Cellipse cx='60' cy='88' rx='40' ry='38' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Ccircle cx='46' cy='84' r='6' fill='%231f2a44'/%3E%3Ccircle cx='74' cy='84' r='6' fill='%231f2a44'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c;  --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff;  --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7;
+  --round:'Huninn','Noto Sans TC',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans TC',system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:var(--blue)}
+h1,h2,h3,h4{font-family:var(--round);line-height:1.35;margin:0 0 .5em;font-weight:400}
+p{margin:0 0 1em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.hl{background:linear-gradient(transparent 58%,var(--sun) 58%,var(--sun) 92%,transparent 92%);padding:0 2px}
+.nw{white-space:nowrap}
+b,strong{font-weight:700}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.94);backdrop-filter:blur(8px);border-bottom:3px solid var(--ink)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex-shrink:0}
+.brand svg{width:40px;height:44px}
+.brand b{font-family:var(--round);font-weight:400;font-size:19px;display:block;line-height:1.1}
+.brand small{font-size:10px;letter-spacing:.14em;color:var(--ink-2);display:block}
+.navpills{display:flex;gap:6px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.navpills::-webkit-scrollbar{display:none}
+.navpills a{white-space:nowrap;text-decoration:none;font-size:14px;color:var(--ink);padding:4px 11px;border:2px solid var(--ink);border-radius:99px;background:#fff}
+.navpills a:hover{background:var(--sun-l)}
+.back{white-space:nowrap;text-decoration:none;font-family:var(--round);background:var(--blue);color:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:5px 14px;box-shadow:0 3px 0 var(--ink);font-size:15px;flex-shrink:0}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--blue-l),var(--bg));padding:56px 0 90px}
+.blob{position:absolute;border-radius:50%;opacity:.55;z-index:0}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.tag{display:inline-block;font-family:var(--round);background:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:4px 14px;font-size:15px;box-shadow:0 3px 0 var(--ink);margin-bottom:18px}
+.hero h1{font-size:clamp(32px,5vw,52px);margin-bottom:16px}
+.hero .lead{font-size:18.5px;color:var(--ink-2);max-width:34em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{font-family:var(--round);text-decoration:none;font-size:17px;padding:10px 22px;border:3px solid var(--ink);border-radius:16px;box-shadow:0 4px 0 var(--ink);color:var(--ink);background:#fff;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--sun)}
+.meta{font-size:13.5px;color:var(--ink-2);margin-top:18px}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block}
+.bubble{position:absolute;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:8px 14px;font-family:var(--round);font-size:17px;box-shadow:0 4px 0 var(--ink);white-space:nowrap}
+.bubble::after{content:"";position:absolute;width:14px;height:14px;background:#fff;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg);bottom:-9px;left:30px}
+.hero .bubble{top:2%;left:4%}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:60px;z-index:1}
+.float{animation:float 4.5s ease-in-out infinite}
+.float.d2{animation-delay:-1.5s}.float.d3{animation-delay:-3s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media (prefers-reduced-motion:reduce){.float{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
+
+/* sections */
+section.sec{padding:64px 0;position:relative}
+section.alt{background:linear-gradient(180deg,var(--tint,#fff),var(--bg))}
+.sec-head{display:flex;align-items:flex-start;gap:18px;margin-bottom:26px}
+.num{flex-shrink:0;width:58px;height:58px;display:grid;place-items:center;font-family:var(--round);font-size:28px;color:#fff;background:var(--c,var(--blue));border:3px solid var(--ink);border-radius:16px;transform:rotate(-6deg);box-shadow:4px 4px 0 var(--ink)}
+.eyebrow{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--c,var(--blue));font-weight:700;display:block}
+.sec-head h2{font-size:clamp(25px,3.4vw,34px);margin:2px 0 0}
+.intro{color:var(--ink-2);max-width:46em}
+hr.dash{border:0;border-top:3px dashed var(--line);margin:34px 0}
+
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:0 5px 0 var(--ink)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card h3{font-size:21px;margin-bottom:.35em}
+.card p:last-child{margin-bottom:0}
+.small{font-size:14.5px;color:var(--ink-2)}
+.note{font-size:14.5px;color:var(--ink-2);background:#fff;border:2px dashed var(--line);border-radius:14px;padding:10px 14px;margin-top:16px}
+.ico{width:96px;height:96px;display:block;margin-bottom:10px}
+.src{display:inline-block;font-size:12px;line-height:1;text-decoration:none;background:var(--blue-l);color:var(--blue-d);border:1.5px solid var(--blue);border-radius:99px;padding:4px 8px;margin:0 2px;vertical-align:2px;font-weight:700;white-space:nowrap}
+.src:hover{background:var(--sun-l)}
+.badge{display:inline-block;font-size:12.5px;font-weight:700;border:2px solid var(--ink);border-radius:99px;padding:1px 10px;background:var(--sun-l);margin-bottom:8px}
+
+/* talk */
+.talk{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;margin-bottom:22px}
+.talk.r{grid-template-columns:1fr 150px}
+.talk.r .who{order:2}
+.who svg{width:130px;height:130px}
+.say{position:relative;background:#fff;border:3px solid var(--ink);border-radius:22px;padding:18px 22px;box-shadow:6px 6px 0 var(--c,var(--sun))}
+.say::before{content:"";position:absolute;left:-12px;top:42px;width:18px;height:18px;background:#fff;border-left:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg)}
+.talk.r .say::before{left:auto;right:-12px;transform:rotate(-135deg)}
+.say .name{font-family:var(--round);color:var(--c,var(--blue));font-size:15px;display:block;margin-bottom:4px}
+.say p:last-child{margin-bottom:0}
+.qs{counter-reset:q;list-style:none;padding:0;margin:.4em 0 1em}
+.qs li{counter-increment:q;padding-left:40px;position:relative;margin:6px 0}
+.qs li::before{content:counter(q);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;background:var(--sun);border:2.5px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:15px}
+.warn{background:var(--coral-l);border:3px solid var(--ink);border-radius:18px;padding:14px 18px;margin-top:14px}
+.warn b{color:#c33}
+
+/* evidence chips */
+.ev{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.ev .card{padding:16px;box-shadow:0 4px 0 var(--ink)}
+.ev h4{font-size:17px;margin:0 0 4px}
+.ev .k{font-size:13.5px;color:var(--ink-2);margin:0}
+.ev .u{font-size:14px;margin-top:8px;padding-top:8px;border-top:2px dashed var(--line)}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tab{font-family:var(--round);font-size:16px;cursor:pointer;border:2.5px solid var(--ink);background:#fff;border-radius:14px;padding:7px 14px;color:var(--ink);box-shadow:0 3px 0 var(--ink)}
+.tab[aria-selected="true"]{background:var(--c,var(--blue));color:#fff}
+.tab:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.panel{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:24px;box-shadow:6px 6px 0 var(--c,var(--blue))}
+.panel[hidden]{display:none}
+.panel-grid{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:start}
+.panel-grid svg{width:110px;height:110px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0}
+.kv dt{font-weight:700;color:var(--c,var(--blue));white-space:nowrap}
+.kv dd{margin:0}
+
+/* mechanism cards */
+.mech{position:relative;padding-top:30px}
+.mech .pin{position:absolute;top:-16px;left:20px;background:var(--c);color:#fff;font-family:var(--round);font-size:14px;border:2.5px solid var(--ink);border-radius:99px;padding:2px 12px;transform:rotate(-4deg)}
+.mech .key{margin-top:12px;padding-top:10px;border-top:2px dashed var(--line);font-weight:700}
+
+/* age matrix */
+.agechips{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.mtx{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.mtx div{border:2.5px solid var(--ink);border-radius:16px;padding:10px 12px;background:var(--bgc,#fff)}
+.mtx b{display:block;font-family:var(--round);font-weight:400;font-size:15px;color:var(--ink-2)}
+.mtx span{font-weight:700}
+
+/* table-like */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:20px;overflow:hidden;background:#fff;font-size:15.5px}
+.tbl th,.tbl td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:2px solid var(--line)}
+.tbl thead th{font-family:var(--round);font-weight:400;font-size:16.5px;color:#fff;background:var(--blue)}
+.tbl thead th:nth-child(2){background:var(--coral)}
+.tbl thead th:nth-child(3){background:var(--orange)}
+.tbl thead th:nth-child(4){background:var(--mint)}
+.tbl thead th:first-child{background:var(--ink)}
+.tbl tbody th{background:var(--sun-l);font-weight:700;white-space:nowrap}
+.tbl tr:last-child td,.tbl tr:last-child th{border-bottom:0}
+.tbl td.r{text-align:right;font-family:var(--round);font-size:18px}
+
+.prod{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.prod .card{padding:18px 20px;box-shadow:0 4px 0 var(--ink)}
+.prod .co{display:inline-block;font-family:var(--round);color:#fff;background:var(--c);border:2.5px solid var(--ink);border-radius:12px;padding:1px 12px;margin-bottom:8px}
+.prod h4{font-size:17.5px;margin:0 0 6px}
+.prod .ask{margin-top:10px;padding:8px 12px;background:var(--grape-l);border-radius:12px;font-size:15px}
+.prod .ask::before{content:"❓ 要追問：";font-weight:700}
+
+/* calculators */
+.calc{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:6px 6px 0 var(--c,var(--sky))}
+.calc label{font-weight:700;display:block;margin-bottom:4px}
+.calc input[type=range]{width:100%;accent-color:var(--blue);height:28px}
+.calc input[type=number]{font:inherit;font-family:var(--round);font-size:22px;width:120px;padding:4px 10px;border:3px solid var(--ink);border-radius:12px}
+.bars{display:grid;gap:12px;margin-top:16px}
+.bar{display:grid;grid-template-columns:96px 1fr 110px;gap:10px;align-items:center}
+.bar .tr{height:28px;border:2.5px solid var(--ink);border-radius:99px;background:#f4f6fb;overflow:hidden}
+.bar .fill{height:100%;border-radius:99px;transition:width .3s}
+.bar .v{font-family:var(--round);font-size:19px;text-align:right}
+.verdict{margin-top:14px;font-weight:700;background:var(--sun-l);border-radius:14px;padding:10px 14px}
+.agegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.agebox{border:3px solid var(--ink);border-radius:18px;padding:12px 14px;background:#fff}
+.agebox .st{font-family:var(--round);font-size:18px}
+.agebox.ok{background:var(--mint-l)}
+.agebox.no{background:var(--coral-l)}
+
+/* compare 3 companies */
+.cmp{display:grid;grid-template-columns:150px repeat(3,1fr);border:3px solid var(--ink);border-radius:22px;overflow:hidden;background:#fff;font-size:15.5px}
+.cmp > div{padding:11px 13px;border-bottom:2px solid var(--line);border-left:2px solid var(--line)}
+.cmp .h{font-family:var(--round);color:#fff;font-size:17px;border-left:0}
+.cmp .h.c1{background:var(--blue)}.cmp .h.c2{background:var(--coral)}.cmp .h.c3{background:var(--mint)}
+.cmp .h.c0{background:var(--ink)}
+.cmp .rh{background:var(--sun-l);font-weight:700;border-left:0}
+.cmp .m{display:none}
+
+/* timeline */
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:14px 18px 14px 70px;background:#fff;border:3px solid var(--ink);border-radius:18px}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:var(--mint);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:20px}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:33px;bottom:-17px;height:17px;border-left:3px dashed var(--ink)}
+
+/* formula */
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:10px 0}
+.formula .t{border:2.5px solid var(--ink);border-radius:12px;padding:4px 12px;background:#fff;font-size:15.5px}
+.formula .t.p{background:var(--coral-l)}.formula .t.m{background:var(--mint-l)}
+.formula .op{font-family:var(--round);font-size:24px;line-height:1}
+.formula .eq{background:var(--sun);font-weight:700}
+
+/* checklist */
+.chk{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.chk label{display:flex;gap:14px;align-items:flex-start;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px 16px;cursor:pointer;box-shadow:0 4px 0 var(--ink);transition:background .2s}
+.chk input{position:absolute;opacity:0;pointer-events:none}
+.chk .box{flex-shrink:0;width:30px;height:30px;border:3px solid var(--ink);border-radius:9px;background:#fff;display:grid;place-items:center;font-size:19px;color:#fff;margin-top:2px}
+.chk input:checked + .box{background:var(--mint)}
+.chk input:checked + .box::after{content:"✓"}
+.chk input:focus-visible + .box{outline:3px solid var(--sun);outline-offset:2px}
+.chk label.on{background:var(--mint-l)}
+.chk b{display:block;font-family:var(--round);font-weight:400;font-size:18px}
+.chk span.d{font-size:14.5px;color:var(--ink-2);line-height:1.6;display:block}
+.prog{margin:20px 0 8px;display:flex;align-items:center;gap:14px}
+.prog .tr{flex:1;height:26px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden}
+.prog .fill{height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 10px,#5ad6a4 10px,#5ad6a4 20px);transition:width .3s}
+.prog .n{font-family:var(--round);font-size:20px;white-space:nowrap}
+.cheer{display:none;background:var(--sun-l);border:3px solid var(--ink);border-radius:18px;padding:12px 16px;font-weight:700;margin-top:12px}
+.cheer.show{display:block}
+
+/* quiz */
+.quiz{display:grid;gap:18px}
+.q h4{font-size:18.5px}
+.opts{display:grid;gap:10px}
+.opt{text-align:left;font:inherit;font-size:16px;cursor:pointer;background:#fff;border:2.5px solid var(--ink);border-radius:14px;padding:10px 14px;color:var(--ink)}
+.opt:hover:not(:disabled){background:var(--sky-l)}
+.opt:disabled{cursor:default}
+.opt.right{background:var(--mint-l);border-color:var(--mint);font-weight:700}
+.opt.wrong{background:var(--coral-l);border-color:var(--coral)}
+.exp{display:none;margin-top:10px;background:var(--sun-l);border-radius:14px;padding:10px 14px;font-size:15.5px}
+.exp.show{display:block}
+.score{display:none;text-align:center;font-family:var(--round);font-size:22px;background:var(--blue);color:#fff;border:3px solid var(--ink);border-radius:20px;padding:14px;box-shadow:0 5px 0 var(--ink)}
+.score.show{display:block}
+
+/* refs */
+.refs h3{font-size:19px;margin-top:22px;color:var(--blue-d)}
+.refs ol{padding-left:0;list-style:none;margin:0}
+.refs li{background:#fff;border:2px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:10px;font-size:15px;line-height:1.7;word-break:break-word}
+.refs li:target{border-color:var(--sun);background:var(--sun-l)}
+.refs .rid{display:inline-block;font-family:var(--round);background:var(--blue);color:#fff;border-radius:8px;padding:0 8px;margin-right:6px;font-size:13.5px}
+.refs .loc{display:block;color:var(--ink-2);font-size:13.5px}
+.refs a{word-break:break-all;font-size:13.5px}
+
+.disc{background:var(--sun-l);border:3px dashed var(--ink);border-radius:20px;padding:18px 22px;font-size:15.5px}
+.disc b{font-family:var(--round);font-weight:400;font-size:18px;display:block;margin-bottom:4px}
+
+.bigdisc{background:var(--coral-l);border:4px solid var(--ink);border-radius:24px;box-shadow:8px 8px 0 var(--coral);padding:22px 26px;outline:3px dashed var(--coral);outline-offset:-14px}
+.bd-head{display:flex;align-items:center;gap:12px;font-family:var(--round);font-size:clamp(22px,3vw,28px);color:#b42318;margin-bottom:10px}
+.bd-ico{flex-shrink:0;width:46px;height:46px;border-radius:50%;background:var(--coral);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-size:24px}
+.bd-key{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:8px 14px;margin:0 0 12px;font-weight:900;font-size:18px;color:#b42318}
+.bigdisc ul{margin:0;padding-left:1.2em}
+.bigdisc li{margin:6px 0;line-height:1.75}
+.bigdisc li b:first-child{color:#b42318}
+.ftdisc{display:inline-block;background:var(--sun);color:var(--ink);font-weight:700;border:3px solid var(--ink);border-radius:14px;padding:6px 16px;margin:4px 0 14px;font-size:15.5px}
+@media (max-width:820px){.bigdisc{padding:18px 16px;outline-offset:-10px}}
+footer{background:var(--blue-d);color:#fff;text-align:center;padding:46px 0 34px;margin-top:40px;border-top:4px solid var(--ink)}
+footer .pals{display:flex;justify-content:center;gap:12px;margin-bottom:12px}
+footer .pals svg{width:80px;height:80px}
+footer .quote{font-family:var(--round);font-size:22px;margin-bottom:10px}
+footer a{color:var(--sun)}
+footer .fine{font-size:13px;opacity:.8;margin-top:10px}
+#toTop{position:fixed;right:18px;bottom:18px;width:52px;height:52px;border-radius:50%;background:var(--sun);border:3px solid var(--ink);box-shadow:0 4px 0 var(--ink);font-size:22px;font-family:var(--round);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;z-index:60;color:var(--ink)}
+#toTop.show{opacity:1;pointer-events:auto}
+
+@media (max-width:1000px){.ev{grid-template-columns:repeat(3,1fr)}.agechips{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .navpills{display:none}
+  .back{margin-left:auto}
+  .hero{padding:34px 0 80px}
+  .hero .wrap,.grid2,.grid3,.prod,.chk,.agegrid{grid-template-columns:1fr}
+  .hero-art{max-width:420px;margin:0 auto;width:100%}
+  .ev{grid-template-columns:1fr 1fr}
+  .mtx{grid-template-columns:1fr 1fr}
+  .talk,.talk.r{grid-template-columns:1fr;gap:6px}
+  .talk.r .who{order:0}
+  .who svg{width:96px;height:96px}
+  .say::before{left:40px;top:-12px;transform:rotate(135deg)}
+  .talk.r .say::before{left:40px;right:auto;transform:rotate(135deg)}
+  .panel-grid{grid-template-columns:1fr}
+  .panel-grid svg{width:84px;height:84px}
+  .kv{grid-template-columns:1fr}
+  .cmp{grid-template-columns:1fr 1fr 1fr}
+  .cmp .h.c0{display:none}
+  .cmp .h{font-size:15px;padding:9px 8px}
+  .cmp .rh{grid-column:1/-1}
+  .cmp > div{font-size:14.5px;padding:9px 8px}
+  .cmp > div:nth-child(n){border-left:0}
+  .cmp .v{border-left:2px solid var(--line)}
+  .cmp .v1{border-left:0}
+  .bar{grid-template-columns:72px 1fr 92px}
+  .sec-head{gap:14px}
+  .num{width:48px;height:48px;font-size:23px}
+  section.sec{padding:48px 0}
+  .tbl{font-size:14.5px}
+  .tbl th,.tbl td{padding:9px 9px}
+  .tblwrap{overflow-x:auto}
+  .card,.panel,.calc{padding:18px 16px}
+}
+@media (max-width:420px){.ev{grid-template-columns:1fr}.agechips{grid-template-columns:repeat(2,1fr)}.hero .bubble{font-size:15px}}
+
+/* ---- RHYTHM 專用 ---- */
+.stat{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat .card{text-align:center;padding:18px 14px}
+.stat .big{font-family:var(--round);font-size:38px;line-height:1.15;color:var(--c);display:block}
+.stat .big small{font-size:18px}
+.stat .lbl{font-family:var(--round);font-size:17px;display:block;margin:4px 0 6px}
+.loop{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.loop .card h3{display:flex;align-items:center;gap:10px}
+.beat{display:flex;gap:8px;margin:12px 0 4px;align-items:flex-end;height:46px}
+.beat i{width:20px;border:2.5px solid var(--ink);border-radius:8px;background:var(--c)}
+.meter{display:flex;gap:6px;margin:6px 0 10px}
+.meter i{width:34px;height:14px;border:2.5px solid var(--ink);border-radius:99px;background:#fff}
+.meter i.on{background:var(--c,var(--mint))}
+.claim{background:var(--blue-l);border-radius:14px;padding:10px 14px;margin-bottom:10px}
+.limit{background:var(--orange-l);border-radius:14px;padding:10px 14px;margin-top:10px}
+.limit::before{content:"⚠ 證據強度與限制：";font-weight:700;display:block}
+.ways{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.ways .card{padding:16px 14px;box-shadow:0 4px 0 var(--ink)}
+.ways .e{font-size:38px;display:block;line-height:1.2}
+.ways h4{font-size:18px;margin:6px 0}
+.ways p{font-size:14.5px;line-height:1.7;margin:0}
+/* metronome */
+.metro{display:grid;grid-template-columns:220px 1fr;gap:26px;align-items:center}
+.metro-art{position:relative;width:200px;height:220px;margin:0 auto}
+.metro-art svg{width:200px;height:220px}
+#arm{transform-origin:100px 176px;transition:transform .12s ease-out}
+.bpm{font-family:var(--round);font-size:54px;line-height:1;color:var(--blue)}
+.bpm small{font-size:18px;color:var(--ink-2)}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.pill{font-family:var(--round);font-size:16px;cursor:pointer;border:2.5px solid var(--ink);border-radius:99px;padding:5px 14px;background:#fff;color:var(--ink)}
+.pill[aria-pressed="true"]{background:var(--sky);color:#fff}
+.play{font-family:var(--round);font-size:19px;cursor:pointer;border:3px solid var(--ink);border-radius:16px;padding:9px 22px;background:var(--sun);box-shadow:0 4px 0 var(--ink);color:var(--ink)}
+.play.on{background:var(--coral);color:#fff}
+.steps-viz{display:flex;gap:10px;margin-top:14px;height:40px;align-items:center}
+.steps-viz span{font-size:28px;opacity:.25;transition:opacity .1s,transform .1s}
+.steps-viz span.lit{opacity:1;transform:translateY(-4px)}
+.param{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.param .card{text-align:center}
+.param .big{font-family:var(--round);font-size:34px;color:var(--c);display:block;line-height:1.2}
+@media (max-width:1000px){.ways{grid-template-columns:repeat(3,1fr)}}
+.metro>*{min-width:0}
+#baseIn{max-width:100%;box-sizing:border-box;margin:0}
+.steps-viz{flex-wrap:wrap;overflow:hidden}
+@media (max-width:820px){.steps-viz{gap:2px}.steps-viz span{font-size:24px}}
+@media (max-width:820px){
+  .stat{grid-template-columns:1fr 1fr}
+  .loop,.metro,.param{grid-template-columns:1fr}
+  .ways{grid-template-columns:1fr 1fr}
+  .stat .big{font-size:32px}
+}
+@media (max-width:420px){.ways{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){#arm{transition:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+<symbol id="grandma" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="60" cy="14" r="13" fill="#d9dde8" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M24 60 C22 34 40 24 60 24 C80 24 98 34 96 60Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="60" cy="64" r="34" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M28 52 C40 40 80 40 92 52 C86 34 34 34 28 52Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="48" cy="64" r="4.5" fill="#1f2a44"/><circle cx="72" cy="64" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="62.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="62.6" r="1.4" fill="#fff"/>
+  <ellipse cx="39" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="81" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M51 80 Q60 88 69 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="grandpa" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#8a5cf6" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M52 100 L60 116 L68 100" fill="#fff" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="60" cy="62" r="36" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M26 56 C24 40 32 30 40 30 M94 56 C96 40 88 30 80 30" stroke="#1f2a44" stroke-width="3" fill="#eef1f7" stroke-linecap="round"/>
+  <path d="M27 52 C22 44 26 34 36 34 L36 52Z M93 52 C98 44 94 34 84 34 L84 52Z" fill="#eef1f7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="47" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/><circle cx="73" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M56 60 H64" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="47" cy="61" r="3.5" fill="#1f2a44"/><circle cx="73" cy="61" r="3.5" fill="#1f2a44"/>
+  <circle cx="48.2" cy="59.8" r="1.2" fill="#fff"/><circle cx="74.2" cy="59.8" r="1.2" fill="#fff"/>
+  <ellipse cx="38" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="82" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M50 80 Q60 88 70 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="heart" viewBox="0 0 120 120">
+  <path d="M60 104 C20 78 10 56 14 40 C18 22 42 16 60 36 C78 16 102 22 106 40 C110 56 100 78 60 104Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="48" cy="56" r="4.5" fill="#1f2a44"/><circle cx="72" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="54.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="54.6" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 節拍器 -->
+<symbol id="metronome" viewBox="0 0 120 130">
+  <path d="M40 14 H80 L104 120 H16Z" fill="#8a5cf6" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <rect x="12" y="114" width="96" height="12" rx="5" fill="#ffc93c" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 104 L80 30" stroke="#1f2a44" stroke-width="4" stroke-linecap="round"/>
+  <rect x="68" y="50" width="16" height="10" rx="3" fill="#ffc93c" stroke="#1f2a44" stroke-width="2.5" transform="rotate(15 76 55)"/>
+  <circle cx="48" cy="86" r="4" fill="#1f2a44"/><circle cx="72" cy="86" r="4" fill="#1f2a44"/>
+  <circle cx="49.2" cy="84.8" r="1.3" fill="#fff"/><circle cx="73.2" cy="84.8" r="1.3" fill="#fff"/>
+  <path d="M54 96 Q60 101 66 96" stroke="#1f2a44" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 小鼓 -->
+<symbol id="drum" viewBox="0 0 120 120">
+  <path d="M18 50 V88 C18 100 102 100 102 88 V50" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M18 56 L40 90 L60 58 L80 90 L102 56" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="50" rx="42" ry="14" fill="#fff5d6" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M26 14 L56 44 M94 14 L64 44" stroke="#1f2a44" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="24" cy="12" r="6" fill="#ffc93c" stroke="#1f2a44" stroke-width="2.5"/><circle cx="96" cy="12" r="6" fill="#ffc93c" stroke="#1f2a44" stroke-width="2.5"/>
+</symbol>
+<!-- 音符 -->
+<symbol id="note" viewBox="0 0 120 120">
+  <path d="M46 88 V22 L96 12 V76" fill="none" stroke="#1f2a44" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M46 22 L96 12 V28 L46 38Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="34" cy="90" rx="16" ry="12" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="84" cy="78" rx="16" ry="12" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+</symbol>
+<!-- 鞋子 -->
+<symbol id="shoe" viewBox="0 0 120 90">
+  <path d="M14 30 C14 18 30 16 34 26 C40 40 56 42 72 44 C96 48 108 56 108 68 V74 H14Z" fill="#2bb88a" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <rect x="10" y="72" width="102" height="10" rx="5" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M44 36 L52 30 M54 40 L62 34 M64 42 L72 36" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+</symbol>
+<!-- 麥克風（歌唱） -->
+<symbol id="mic" viewBox="0 0 120 120">
+  <rect x="42" y="10" width="36" height="56" rx="18" fill="#ff9f43" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M48 26 H72 M48 38 H72 M48 50 H72" stroke="#1f2a44" stroke-width="2.5" opacity=".5"/>
+  <path d="M30 52 C30 74 44 84 60 84 C76 84 90 74 90 52" fill="none" stroke="#1f2a44" stroke-width="4" stroke-linecap="round"/>
+  <path d="M60 84 V104 M42 106 H78" stroke="#1f2a44" stroke-width="5" stroke-linecap="round"/>
+</symbol>
+</defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://www.gungho.idv.tw/KS/index.html" aria-label="回共好小學堂首頁">
+      <svg aria-hidden="true"><use href="#sprout"/></svg>
+      <span><b>共好小學堂</b><small>GROW &amp; LEARN TOGETHER</small></span>
+    </a>
+    <nav class="navpills" aria-label="章節">
+      <a href="#s1">核心原理</a><a href="#s2">研究證據</a><a href="#s3">常見做法</a><a href="#s4">節拍器</a><a href="#s5">安全</a><a href="#quiz">小測驗</a><a href="#refs">參考資料</a>
+    </nav>
+    <a class="back" href="https://www.gungho.idv.tw/KS/index.html">← 回小學堂</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <span class="blob" style="width:320px;height:320px;background:var(--grape-l);top:-90px;right:-60px"></span>
+  <span class="blob" style="width:220px;height:220px;background:var(--mint-l);bottom:30px;left:-70px"></span>
+  <span class="blob" style="width:140px;height:140px;background:var(--sun-l);top:40%;left:46%"></span>
+  <div class="wrap">
+    <div>
+      <span class="tag">✦ 帕金森病復健小知識</span>
+      <h1>跟著節拍，走路<span class="hl nw">更穩嗎？</span></h1>
+      <p class="lead">帕金森病友常覺得腳步「卡住」、越走越小步。<b>節律性聽覺刺激（RAS）</b>用穩定的節拍器或音樂當「外面的節拍器」，幫身體把步伐對上拍子。它有幫助，但是<b>輔助</b>，不取代藥物和復健。一起看懂它！</p>
+      <div class="btns">
+        <a class="btn pri" href="#start">開始認識 →</a>
+        <a class="btn" href="#s4">試聽節拍器示範</a>
+      </div>
+      <p class="meta">文獻查核日：2026年10月11日｜資料來源：PubMed 收錄之系統性回顧、統合分析與臨床試驗</p>
+    </div>
+    <div class="hero-art">
+      <div class="bubble">一、二、一、二～</div>
+      <svg viewBox="0 0 520 400" role="img" aria-label="阿公跟著節拍器走路，旁邊有音符、小鼓、小芽、藍鳥和星星">
+        <ellipse cx="260" cy="368" rx="230" ry="26" fill="#dcf7ec"/>
+        <use href="#grandpa" x="200" y="150" width="130" height="165"/>
+        <use href="#shoe" x="196" y="310" width="62" height="46"/>
+        <use href="#shoe" x="270" y="300" width="62" height="46"/>
+        <g class="float"><use href="#metronome" x="350" y="150" width="110" height="120"/></g>
+        <g class="float d2"><use href="#note" x="300" y="40" width="80" height="80"/></g>
+        <g class="float d3"><use href="#note" x="120" y="70" width="60" height="60"/></g>
+        <g class="float"><use href="#drum" x="70" y="170" width="86" height="86"/></g>
+        <use href="#sprout" x="40" y="272" width="84" height="92"/>
+        <use href="#bird" x="400" y="286" width="92" height="84"/>
+        <g class="float d2"><use href="#star" x="450" y="60" width="52" height="52"/></g>
+      </svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C240 60 480 0 720 30 C960 60 1200 0 1440 30 V60 H0Z" fill="#fffdf7"/></svg>
+</section>
+
+<section class="sec" id="start">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">★</div><div><span class="eyebrow">Key Points</span><h2>先說重點</h2></div></div>
+    <div class="talk" style="--c:var(--mint)">
+      <div class="who"><svg aria-hidden="true"><use href="#sprout"/></svg></div>
+      <div class="say"><span class="name">小芽說</span>
+        <p>音樂節律，特別是<b>節律性聽覺刺激（Rhythmic Auditory Stimulation, RAS）</b>，可以當帕金森病（PD）復健的輔助方法，對<b>步態速度、步幅、平衡</b>和部分日常生活功能有正面效果。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref5">參考 5</a><a class="src" href="#ref14">參考 14</a></p>
+      </div>
+    </div>
+    <div class="talk r" style="--c:var(--sky)">
+      <div class="who"><svg aria-hidden="true"><use href="#bird"/></svg></div>
+      <div class="say"><span class="name">藍鳥說</span>
+        <p>不過，研究的<b>證據品質和長期效果仍然有限</b>：最適合的節奏、曲風和練習份量，也還沒有共識。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref6">參考 6</a><a class="src" href="#ref10">參考 10</a></p>
+      </div>
+    </div>
+    <div class="warn"><b>⚠ 要分清楚：</b>RAS 是正規<b>藥物治療與復健治療的補充</b>，不是取代。開始練習前，請先跟醫師、物理治療師討論。</div>
+  </div>
+</section>
+
+<section class="sec alt" id="s1" style="--tint:var(--grape-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">1</div><div><span class="eyebrow">How It Works</span><h2>核心原理：借一個「外面的節拍器」</h2></div></div>
+    <div class="loop">
+      <div class="card" style="--c:var(--coral)">
+        <h3>😣 身體裡的節拍器不太準</h3>
+        <div class="beat" aria-hidden="true"><i style="height:40px"></i><i style="height:18px"></i><i style="height:30px"></i><i style="height:10px"></i><i style="height:26px"></i><i style="height:14px"></i><i style="height:36px"></i></div>
+        <p>帕金森病友的<b>基底核—運動皮質迴路</b>受損，常出現內在時間感與動作節律的障礙，表現為走路變慢、步幅變小、身體僵硬，以及<b>凍結步態</b>（腳像黏在地上踏不出去）。</p>
+      </div>
+      <div class="card" style="--c:var(--mint)">
+        <h3>🎵 外面的節拍來幫忙</h3>
+        <div class="beat" aria-hidden="true"><i style="height:30px"></i><i style="height:30px"></i><i style="height:30px"></i><i style="height:30px"></i><i style="height:30px"></i><i style="height:30px"></i><i style="height:30px"></i></div>
+        <p>RAS 用穩定的外部聽覺節拍，例如<b>節拍器</b>或<b>節奏清楚的音樂</b>，提供可以預期的時間線索，幫助動作「<b>同步化</b>」（entrainment）。<a class="src" href="#ref6">參考 6</a><a class="src" href="#ref12">參考 12</a></p>
+      </div>
+    </div>
+    <div class="talk" style="--c:var(--sun);margin-top:28px">
+      <div class="who"><svg aria-hidden="true"><use href="#metronome"/></svg></div>
+      <div class="say"><span class="name">節拍器說</span>
+        <p>所謂「神經共振」或「聽覺—動作耦合」，是指大腦可以把<b>聽到的拍子</b>和<b>動作</b>連在一起，讓跨步、擺手這種一下一下重複的動作，比較容易被組織和啟動。外部的聲音線索，就能<b>繞過或補償</b>一部分受損的內在節律。<a class="src" href="#ref4">參考 4</a><a class="src" href="#ref6">參考 6</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="s2">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--coral)"><div class="num">2</div><div><span class="eyebrow">What Research Shows</span><h2>研究證據：有幫助，但還不夠確定</h2></div></div>
+
+    <div class="stat">
+      <div class="card" style="--c:var(--blue)"><span class="big">0.53<small> SD</small></span><span class="lbl">步速改善</span><p class="small">5篇隨機對照試驗、209人的統合分析<a class="src" href="#ref1">參考 1</a></p></div>
+      <div class="card" style="--c:var(--mint)"><span class="big">0.51<small> SD</small></span><span class="lbl">步幅改善</span><p class="small">同一篇統合分析；證據品質低、缺乏盲法<a class="src" href="#ref1">參考 1</a></p></div>
+      <div class="card" style="--c:var(--coral)"><span class="big">18<small>篇</small> 774<small>人</small></span><span class="lbl">凍結事件減少</span><p class="small">統合分析也見 UPDRS、生活品質改善<a class="src" href="#ref5">參考 5</a></p></div>
+      <div class="card" style="--c:var(--grape)"><span class="big">0.49 / 0.40</span><span class="lbl">穿戴式 RAS</span><p class="small">步速／平衡的效果量（SMD），11篇隨機試驗<a class="src" href="#ref2">參考 2</a></p></div>
+    </div>
+    <p class="note">📏 <b>「0.53 個標準差（SD）」怎麼看？</b>它是把不同研究、不同量法換成同一把尺的「效果量」，數字越大代表跟對照組差越多。這裡表示做 RAS 的組別，步速平均比對照組多進步約半個標準差。</p>
+
+    <h3 style="font-size:21px;margin-top:30px">點頁籤，看各項復健目標</h3>
+    <div style="--c:var(--coral)">
+      <div class="tabs" role="tablist" aria-label="復健目標" data-tabs>
+        <button class="tab" role="tab" aria-selected="true" aria-controls="g1" id="gb1">🚶 步速與步幅</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="g2" id="gb2" tabindex="-1">🧊 凍結步態</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="g3" id="gb3" tabindex="-1">⚖ 平衡與日常活動</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="g4" id="gb4" tabindex="-1">🎶 音樂治療整體</button>
+      </div>
+      <div class="panel" role="tabpanel" id="g1" aria-labelledby="gb1"><div class="panel-grid"><svg aria-hidden="true"><use href="#shoe"/></svg><div>
+        <p class="claim"><b>主要發現：</b>RAS 可以改善走路速度與步幅；一項統合分析估計，步速改善約 <b>0.53 個標準差</b>、步幅改善約 <b>0.51 個標準差</b>。<a class="src" href="#ref1">參考 1</a></p>
+        <p class="limit">支持效果的是隨機對照試驗的統合分析，但原文指出<b>證據品質低、試驗缺乏盲法</b>（受試者知道自己在哪一組）。<a class="src" href="#ref1">參考 1</a></p>
+      </div></div></div>
+      <div class="panel" role="tabpanel" id="g2" aria-labelledby="gb2" hidden><div class="panel-grid"><svg aria-hidden="true"><use href="#metronome"/></svg><div>
+        <p class="claim"><b>主要發現：</b>一項納入 <b>18 篇研究、774 人</b>的統合分析發現，RAS 可以增加步幅與步速、<b>減少走路時的凍結事件</b>，並改善 UPDRS（帕金森病綜合評估量表）與生活品質分數。<a class="src" href="#ref5">參考 5</a></p>
+        <p class="limit">效果方向一致，但各研究的設計、介入方式與追蹤時間差異很大（追蹤期從1到26個月不等）。<a class="src" href="#ref5">參考 5</a><a class="src" href="#ref6">參考 6</a></p>
+      </div></div></div>
+      <div class="panel" role="tabpanel" id="g3" aria-labelledby="gb3" hidden><div class="panel-grid"><svg aria-hidden="true"><use href="#grandpa"/></svg><div>
+        <p class="claim"><b>主要發現：</b>系統性回顧指出，RAS 可以改善步行功能、<b>平衡</b>及<b>日常生活活動</b>；穿戴式或個人化的 RAS 也看到步速與平衡改善。<a class="src" href="#ref14">參考 14</a><a class="src" href="#ref2">參考 2</a></p>
+        <p class="limit">對某些指標效果不一致：例如穿戴式 RAS 的統合分析中，<b>步態型態、凍結步態問卷（FOG-Q）、UPDRS-III</b> 都沒有顯著差異。<a class="src" href="#ref2">參考 2</a></p>
+      </div></div></div>
+      <div class="panel" role="tabpanel" id="g4" aria-labelledby="gb4" hidden><div class="panel-grid"><svg aria-hidden="true"><use href="#note"/></svg><div>
+        <p class="claim"><b>主要發現：</b>音樂治療可能改善動作功能、平衡、凍結步態、步速，以及情緒與心理健康。<a class="src" href="#ref9">參考 9</a></p>
+        <p class="limit">多半是輔助性證據，還不足以取代標準復健。<a class="src" href="#ref9">參考 9</a><a class="src" href="#ref10">參考 10</a></p>
+      </div></div></div>
+    </div>
+
+    <div class="grid2" style="margin-top:30px">
+      <div class="card mech" style="--c:var(--orange)"><span class="pin">查證更正</span><h3>Cochrane 那一篇，還在「計畫書」階段</h3><p>原稿提到「Cochrane 回顧的立場較審慎」。查證後，該篇（CD015759）目前公開的是<b>系統性回顧計畫書（protocol）</b>，只說明預計要評估 RAS 對帕金森病動作復健的效果，<b>還沒有研究結果</b>。<a class="src" href="#ref8">參考 8</a></p><p class="key">所以本頁不把它當成「Cochrane 的結論」。不過，「最適節奏、劑量與長期效果仍待確認」這個提醒，其他回顧也都有提到。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref6">參考 6</a><a class="src" href="#ref10">參考 10</a></p></div>
+      <div class="card mech" style="--c:var(--sky)"><span class="pin">補充比較</span><h3>聽覺、視覺、觸覺線索，哪個強？</h3><p>原稿列出的一篇 2026 年網絡統合分析（33篇隨機試驗、1,118人）比較了不同感覺線索：在<b>步幅</b>上，視覺、觸覺和聽覺線索都有顯著幫助；在<b>步速</b>上，觸覺和視覺線索顯著，單獨使用聽覺線索則排名較後。<a class="src" href="#ref7">參考 7</a></p><p class="key">節拍不是唯一的線索，治療師可能會依個人狀況搭配其他方式。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="s3" style="--tint:var(--mint-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">3</div><div><span class="eyebrow">Ways to Practice</span><h2>五種常見做法</h2></div></div>
+    <div class="ways">
+      <div class="card"><span class="e">⏱</span><h4>節拍器步行訓練</h4><p>節拍器設定在<b>接近自己原本步頻</b>的節奏，再慢慢微調，練習跨步和走路節奏。</p></div>
+      <div class="card"><span class="e">🎧</span><h4>音樂同步步行</h4><p>挑<b>節拍清楚、速度穩定</b>的音樂，讓步伐對上拍子。能依走路狀況<b>即時調整的個人化 RAS</b>，看起來比固定節奏更有潛力。<a class="src" href="#ref11">參考 11</a></p></div>
+      <div class="card"><span class="e">🥁</span><h4>鼓圈與肢體律動</h4><p>打鼓、拍手、踏步等節律動作，練習動作啟動、左右協調和節奏控制，也能讓人<b>更願意參與</b>。</p></div>
+      <div class="card"><span class="e">🎤</span><h4>歌唱與呼吸訓練</h4><p>歌唱會用到聲量、呼吸、發聲時間和口咽肌肉控制。團體歌唱試驗看到<b>說話音量</b>與部分生活品質面向改善。<a class="src" href="#ref3">參考 3</a><a class="src" href="#ref10">參考 10</a></p></div>
+      <div class="card"><span class="e">⌚</span><h4>穿戴式聽覺回饋</h4><p>裝置偵測步態，再給同步節拍；研究顯示可以改善步速與平衡，但對部分臨床量表或步態型態<b>效益不一致</b>。<a class="src" href="#ref2">參考 2</a></p></div>
+    </div>
+    <p class="note">🎤 歌唱的補充：音樂治療回顧提到，歌唱類的課程可能影響溝通、吞嚥、呼吸與情緒。<a class="src" href="#ref9">參考 9</a> 但上面那項團體歌唱試驗也指出，兩組參與者的基本條件不同，<b>無法把所有改善都歸功於唱歌</b>。<a class="src" href="#ref3">參考 3</a></p>
+  </div>
+</section>
+
+<section class="sec" id="s4">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--sky)"><div class="num">4</div><div><span class="eyebrow">Practical Settings</span><h2>實務參數：多快？多久？多常？</h2></div></div>
+    <p class="intro">一篇統合分析整理了研究中的練習方式，提出以下建議：<a class="src" href="#ref6">參考 6</a></p>
+    <div class="param">
+      <div class="card" style="--c:var(--blue)"><span class="big">±10%</span><p>以病友<b>偏好的步頻</b>為基準，節奏上下調整約10%</p></div>
+      <div class="card" style="--c:var(--mint)"><span class="big">20–45 分</span><p>每天至少練習的時間；同篇也建議單次以 <b>25–40 分鐘</b>為宜</p></div>
+      <div class="card" style="--c:var(--coral)"><span class="big">3–5 天</span><p>每週至少練習的天數</p></div>
+    </div>
+
+    <div class="calc" style="--c:var(--sky);margin-top:28px">
+      <h3>🎵 節拍器示範：感受一下 ±10% 有多大差別</h3>
+      <p class="small">先選一個「平常走路的步頻」（每分鐘幾步），再切換 −10%、原速、+10%，按播放聽聽看。<b>這只是讓你感受節拍的示範</b>，實際練習的節奏請由治療師評估設定。</p>
+      <div class="metro">
+        <div class="metro-art">
+          <svg viewBox="0 0 200 220" aria-hidden="true">
+            <path d="M70 24 H130 L172 196 H28Z" fill="#8a5cf6" stroke="#1f2a44" stroke-width="4" stroke-linejoin="round"/>
+            <rect x="20" y="190" width="160" height="18" rx="7" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5"/>
+            <path d="M58 150 H142" stroke="#efe8ff" stroke-width="4" stroke-linecap="round"/>
+            <g id="arm"><path d="M100 176 V44" stroke="#1f2a44" stroke-width="6" stroke-linecap="round"/><rect x="88" y="70" width="24" height="16" rx="4" fill="#ffc93c" stroke="#1f2a44" stroke-width="3"/></g>
+            <circle cx="100" cy="176" r="8" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3"/>
+          </svg>
+        </div>
+        <div>
+          <label for="baseIn" style="font-weight:700">平常步頻：<span id="baseLbl">100</span> 步／分鐘</label>
+          <input type="range" id="baseIn" min="60" max="130" value="100" style="width:100%;accent-color:var(--blue)">
+          <div class="pills" role="group" aria-label="節奏調整">
+            <button type="button" class="pill" data-m="0.9" aria-pressed="false">−10%（慢一點）</button>
+            <button type="button" class="pill" data-m="1" aria-pressed="true">原速</button>
+            <button type="button" class="pill" data-m="1.1" aria-pressed="false">+10%（快一點）</button>
+          </div>
+          <div class="bpm" id="bpmOut" aria-live="polite">100 <small>拍／分鐘</small></div>
+          <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+            <button type="button" class="play" id="playBtn">▶ 播放節拍</button>
+            <span class="small" id="audioNote">聲音會從你的裝置播放，請先調整音量。</span>
+          </div>
+          <div class="steps-viz" aria-hidden="true"><span>🦶</span><span>🦶</span><span>🦶</span><span>🦶</span><span>🦶</span><span>🦶</span><span>🦶</span><span>🦶</span></div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size:21px;margin-top:32px">🩺 實際執行前，請治療師先評估這四件事</h3>
+    <p class="small">由物理治療師、職能治療師或音樂治療師評估：</p>
+    <ol class="steps" style="--x:1">
+      <li>目前的<b>步速、步幅、步頻</b>與<b>跌倒風險</b></li>
+      <li>是否有<b>姿勢性低血壓</b>、嚴重平衡障礙或凍結步態</li>
+      <li>音樂節奏是否<b>太快</b>，導致追趕拍子、慌張步態或疲勞</li>
+      <li><b>認知、聽力與注意力</b>是否足以配合外部線索</li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec alt" id="s5" style="--tint:var(--coral-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--coral)"><div class="num">5</div><div><span class="eyebrow">Safety First</span><h2>安全第一：居家練習前打個勾</h2></div></div>
+    <div class="talk" style="--c:var(--mint)">
+      <div class="who"><svg aria-hidden="true"><use href="#sprout"/></svg></div>
+      <div class="say"><span class="name">小芽說</span><p>已發表的研究沒有看到不良事件，RAS 被認為是<b>可行、安全</b>的輔助方法。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref11">參考 11</a> 但在家自己練，還是要多注意幾件事喔！<a class="src" href="#ref6">參考 6</a></p></div>
+    </div>
+    <div class="chk" id="chk">
+      <label><input type="checkbox" data-k="s1"><span class="box"></span><span><b>已跟醫師或治療師討論過</b><span class="d">確認適合練習，以及要用的節奏</span></span></label>
+      <label><input type="checkbox" data-k="s2"><span class="box"></span><span><b>有照顧者在旁</b><span class="d">特別是明顯平衡障礙、反覆跌倒、姿勢性低血壓或嚴重凍結步態者</span></span></label>
+      <label><input type="checkbox" data-k="s3"><span class="box"></span><span><b>在平坦、無障礙的空間</b><span class="d">移開地墊、電線和雜物</span></span></label>
+      <label><input type="checkbox" data-k="s4"><span class="box"></span><span><b>節奏穩定、跟得上</b><span class="d">不一味加快；以穩定、可持續配合為原則</span></span></label>
+      <label><input type="checkbox" data-k="s5"><span class="box"></span><span><b>累了、頭暈就停</b><span class="d">出現追趕拍子、慌張步態或疲勞，就放慢或休息</span></span></label>
+      <label><input type="checkbox" data-k="s6"><span class="box"></span><span><b>照常吃藥、照常復健</b><span class="d">節拍練習是補充，不取代原本的治療</span></span></label>
+    </div>
+    <div class="prog"><div class="tr"><div class="fill" id="pFill"></div></div><span class="n" id="pN">0 / 6</span></div>
+    <div class="cheer" id="cheer">🎉 六項都準備好了！穩穩地、一步一拍開始吧。</div>
+    <p class="small">🔒 勾選狀態只存在你自己的瀏覽器，不會上傳。<button type="button" id="chkReset" style="font:inherit;font-size:14px;border:2px solid var(--ink);border-radius:10px;background:#fff;padding:1px 10px;cursor:pointer;margin-left:6px">清除重來</button></p>
+    <p class="note">📌 這份清單是依原稿安全注意事項整理成的提醒，不是醫療評估工具。</p>
+  </div>
+</section>
+
+<section class="sec" id="s6">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">6</div><div><span class="eyebrow">Wrap-up</span><h2>結論：外部節拍，補上內在節奏</h2></div></div>
+    <div class="grid3">
+      <div class="card" style="box-shadow:6px 6px 0 var(--mint)"><span class="badge" style="background:var(--mint-l)">主要價值</span><p>用<b>外部時間線索</b>補償內在動作節律的缺損，改善步速、步幅、平衡與生活品質。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref5">參考 5</a></p></div>
+      <div class="card" style="box-shadow:6px 6px 0 var(--sky)"><span class="badge" style="background:var(--sky-l)">額外好處</span><p>歌唱可能額外支持<b>發聲、呼吸與溝通</b>功能。<a class="src" href="#ref3">參考 3</a><a class="src" href="#ref10">參考 10</a></p></div>
+      <div class="card" style="box-shadow:6px 6px 0 var(--coral)"><span class="badge" style="background:var(--coral-l)">還不知道</span><p>最佳節奏、曲風、訓練劑量及長期效益，仍需要更多高品質試驗確認。<a class="src" href="#ref6">參考 6</a><a class="src" href="#ref14">參考 14</a></p></div>
+    </div>
+    <div class="talk r" style="--c:var(--sky);margin-top:28px">
+      <div class="who"><svg aria-hidden="true"><use href="#bird"/></svg></div>
+      <div class="say"><span class="name">藍鳥總結</span><p>可以把 RAS 看成<b>藥物治療、物理治療與語言治療之外，有潛力的輔助療法</b>。聽著拍子走，是在原本的治療上「加一點」，不是「換掉」。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="quiz" style="--tint:var(--grape-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">?</div><div><span class="eyebrow">Quick Quiz</span><h2>小測驗：三題就好</h2></div></div>
+    <div class="quiz" id="quizBox">
+      <div class="card q" data-ans="b">
+        <h4>Q1. 李伯伯聽說「跟著音樂走路對帕金森有效」，想停掉復健課改在家聽音樂走。比較好的建議是？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">好啊，音樂比復健有效</button>
+          <button class="opt" data-v="b">RAS 是輔助，應該繼續原本的藥物和復健，再跟治療師討論怎麼加入節拍練習</button>
+          <button class="opt" data-v="c">音樂完全沒用，不要試</button>
+        </div>
+        <div class="exp">RAS 有正面效果，但證據品質仍有限，應視為藥物與正規復健的補充，而不是取代。</div>
+      </div>
+      <div class="card q" data-ans="a">
+        <h4>Q2. 設定節拍器時，比較符合研究建議的做法是？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">以自己偏好的步頻為基準，上下調整約10%</button>
+          <button class="opt" data-v="b">越快越好，逼自己走快一點</button>
+          <button class="opt" data-v="c">隨便選一首喜歡的歌就好，不用管節奏</button>
+        </div>
+        <div class="exp">回顧建議以偏好步頻為基準調整約 ±10%；節奏太快可能造成追趕拍子、慌張步態或疲勞。</div>
+      </div>
+      <div class="card q" data-ans="c">
+        <h4>Q3. 王媽媽有姿勢性低血壓，也常跌倒，想在家練節拍步行，最重要的是？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">自己一個人在客廳慢慢練</button>
+          <button class="opt" data-v="b">戴耳機在戶外人行道練</button>
+          <button class="opt" data-v="c">先讓治療師評估，練習時有照顧者在旁，並在平坦無障礙的空間</button>
+        </div>
+        <div class="exp">有明顯平衡障礙、反覆跌倒或姿勢性低血壓者，居家練習應有照顧者在旁，並優先在平坦、無障礙的空間進行。</div>
+      </div>
+      <div class="score" id="score"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec refs" id="refs">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--ink)"><div class="num">§</div><div><span class="eyebrow">References</span><h2>參考資料</h2></div></div>
+    <p class="small">以下文獻於<b>2026年10月11日</b>透過 PubMed 核對題名、作者、期刊與 DOI。編號沿用原稿（原稿清單沒有第13筆）；內文引用已依各篇實際內容重新對應。</p>
+
+    <h3>📊 統合分析與系統性回顧（步態與動作）</h3>
+    <ol>
+      <li id="ref1"><span class="rid">1</span>Burrai F, Apuzzo L, Zanotti R. <b>Effectiveness of Rhythmic Auditory Stimulation on Gait in Parkinson Disease: A Systematic Review and Meta-analysis.</b> <i>Holist Nurs Pract.</i> 2024;38(2):109-119（線上首刊2021）。<span class="loc">5篇RCT、209人；步速0.53 SD（95% CI 0.23–0.83）、步幅0.51 SD（95% CI 0.18–0.84）；缺乏盲法、證據品質低；未見不良事件。</span><a href="https://doi.org/10.1097/HNP.0000000000000462" target="_blank" rel="noopener">DOI: 10.1097/HNP.0000000000000462</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/34121062/" target="_blank" rel="noopener">PubMed 34121062</a></li>
+      <li id="ref2"><span class="rid">2</span>Kim JH, Lee MH, Kim MK. <b>Effects of Rhythmic Auditory Stimulation Using Sensory Feedback-Based Wearable Devices on the Gait and Balance in Patients with Parkinson's Disease: A Systematic Review and Meta-Analysis.</b> <i>Brain Sci.</i> 2026;16(4):359.<span class="loc">11篇RCT；步速SMD 0.49、平衡SMD 0.40；步態型態、FOG-Q、UPDRS-III 無顯著差異。</span><a href="https://doi.org/10.3390/brainsci16040359" target="_blank" rel="noopener">DOI: 10.3390/brainsci16040359</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/42041770/" target="_blank" rel="noopener">PubMed 42041770</a></li>
+      <li id="ref4"><span class="rid">4</span>Trindade MFD, Viana RA. <b>Effects of auditory or visual stimuli on gait in Parkinsonic patients: a systematic review.</b> <i>Porto Biomed J.</i> 2021;6(4):e140.<span class="loc">5篇、232人；聽覺或視覺刺激可改善多項步態參數。</span><a href="https://doi.org/10.1097/j.pbj.0000000000000140" target="_blank" rel="noopener">DOI: 10.1097/j.pbj.0000000000000140</a>｜<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8341369/" target="_blank" rel="noopener">PMC8341369</a></li>
+      <li id="ref5"><span class="rid">5</span>Ye X, Li L, He R, Jia Y, Poon W. <b>Rhythmic auditory stimulation promotes gait recovery in Parkinson's patients: A systematic review and meta-analysis.</b> <i>Front Neurol.</i> 2022;13:940419.<span class="loc">18篇、774人；步幅、步速增加，凍結事件減少，UPDRS-II／III 與 PDQL 改善（追蹤1–26個月）。</span><a href="https://doi.org/10.3389/fneur.2022.940419" target="_blank" rel="noopener">DOI: 10.3389/fneur.2022.940419</a>｜<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9366143/" target="_blank" rel="noopener">PMC9366143</a></li>
+      <li id="ref6"><span class="rid">6</span>Ghai S, Ghai I, Schmitz G, Effenberg AO. <b>Effect of rhythmic auditory cueing on parkinsonian gait: A systematic review and meta-analysis.</b> <i>Sci Rep.</i> 2018;8(1):506.<span class="loc">50篇、1,892人；建議以偏好步頻 ±10% 調整、每天至少20–45分鐘、每週至少3–5天，單次以25–40分鐘為宜；有效刺激特性與訓練劑量尚無共識。</span><a href="https://doi.org/10.1038/s41598-017-16232-5" target="_blank" rel="noopener">DOI: 10.1038/s41598-017-16232-5</a>｜<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5764963/" target="_blank" rel="noopener">PMC5764963</a></li>
+      <li id="ref7"><span class="rid">7</span>Stonsaovapak C, Koonalinthip N, Koonalintip P, Pongmala C, Terachinda P. <b>External sensory cueing on gait in Parkinson's disease: a systematic review and network meta-analysis.</b> <i>J Neurol.</i> 2026;273(6).<span class="loc">33篇RCT、1,118人；步幅上視覺、觸覺、聽覺線索皆顯著；步速上觸覺與視覺線索較佳。</span><a href="https://doi.org/10.1007/s00415-026-13857-3" target="_blank" rel="noopener">DOI: 10.1007/s00415-026-13857-3</a>｜<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13197277/" target="_blank" rel="noopener">PMC13197277</a></li>
+      <li id="ref8"><span class="rid">8</span><b>Rhythmic auditory stimulation for motor rehabilitation in Parkinson's disease.</b> <i>Cochrane Database of Systematic Reviews</i>, CD015759.<span class="loc">⚠ 查核時為系統性回顧「計畫書（protocol）」，尚無研究結果；本頁不引用其為結論。</span><a href="https://doi.org/10.1002/14651858.CD015759" target="_blank" rel="noopener">DOI: 10.1002/14651858.CD015759</a>｜<a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015759/full" target="_blank" rel="noopener">Cochrane Library</a></li>
+      <li id="ref11"><span class="rid">11</span>Demeco A, Bruno RC, Bonfiglio R, et al. <b>Effectiveness of Music Therapy with Personalized Rhythmic Auditory Stimulation Plus Music-Contingent Gait Training in Patients with Parkinson's Disease: A Systematic Review.</b> <i>Neurol Int.</i> 2026;18(2):26.<span class="loc">10篇；個人化、可調整或依需求提供的 RAS 比傳統線索更有效，凍結步態最多減少36%，安全且順從性佳。</span><a href="https://doi.org/10.3390/neurolint18020026" target="_blank" rel="noopener">DOI: 10.3390/neurolint18020026</a>｜<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12943453/" target="_blank" rel="noopener">PMC12943453</a></li>
+      <li id="ref12"><span class="rid">12</span>Forte R, Tocci N, De Vito G. <b>The Impact of Exercise Intervention with Rhythmic Auditory Stimulation to Improve Gait and Mobility in Parkinson Disease: An Umbrella Review.</b> <i>Brain Sci.</i> 2021;11(6):685.<span class="loc">傘狀回顧4篇；節律性聽覺線索搭配運動對步態與行動力有正面效果。</span><a href="https://doi.org/10.3390/brainsci11060685" target="_blank" rel="noopener">DOI: 10.3390/brainsci11060685</a>｜<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8224645/" target="_blank" rel="noopener">PMC8224645</a></li>
+      <li id="ref14"><span class="rid">14</span>Wang L, Peng JL, Ou-Yang JB, et al. <b>Effects of Rhythmic Auditory Stimulation on Gait and Motor Function in Parkinson's Disease: A Systematic Review and Meta-Analysis of Clinical Randomized Controlled Studies.</b> <i>Front Neurol.</i> 2022;13:818559.<span class="loc">21篇回顧、14篇統合；步速、步長、步幅、6分鐘走路、TUG、UPDRS-II／III、Berg平衡量表顯著改善；步頻與步寬不顯著。</span><a href="https://doi.org/10.3389/fneur.2022.818559" target="_blank" rel="noopener">DOI: 10.3389/fneur.2022.818559</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/35493833/" target="_blank" rel="noopener">PubMed 35493833</a></li>
+    </ol>
+
+    <h3>🎶 音樂治療、歌唱與藝術介入</h3>
+    <ol>
+      <li id="ref3"><span class="rid">3</span>Butala A, Li K, Swaminathan A, et al. <b>Parkinsonics: A Randomized, Blinded, Cross-Over Trial of Group Singing for Motor and Nonmotor Symptoms in Idiopathic Parkinson Disease.</b> <i>Parkinsons Dis.</i> 2022;2022:4233203.<span class="loc">26人完成；每週團體歌唱可能改善說話音量與部分生活品質；組間基線差異限制了因果歸因。</span><a href="https://doi.org/10.1155/2022/4233203" target="_blank" rel="noopener">DOI: 10.1155/2022/4233203</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/36247106/" target="_blank" rel="noopener">PubMed 36247106</a></li>
+      <li id="ref9"><span class="rid">9</span>Machado Sotomayor MJ, Arufe-Giráldez V, Ruíz-Rico G, Navarro-Patón R. <b>Music Therapy and Parkinson's Disease: A Systematic Review from 2015-2020.</b> <i>Int J Environ Res Public Health.</i> 2021;18(21):11618.<span class="loc">58篇；音樂治療對動作、溝通、吞嚥、呼吸與情緒等面向有正面效果。</span><a href="https://doi.org/10.3390/ijerph182111618" target="_blank" rel="noopener">DOI: 10.3390/ijerph182111618</a>｜<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8582661/" target="_blank" rel="noopener">PMC8582661</a></li>
+      <li id="ref10"><span class="rid">10</span>Gros P, Spee BTM, Bloem BR, Kalia LV. <b>If Art Were a Drug: Implications for Parkinson's Disease.</b> <i>J Parkinsons Dis.</i> 2024;14(s1):S159-S172.<span class="loc">藝術介入質性回顧；研究樣本小，最適劑量與症狀別效益仍缺乏研究。</span><a href="https://doi.org/10.3233/JPD-240031" target="_blank" rel="noopener">DOI: 10.3233/JPD-240031</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/38788090/" target="_blank" rel="noopener">PubMed 38788090</a></li>
+    </ol>
+
+    <div class="bigdisc" role="note" aria-label="免責聲明" style="margin-top:30px">
+      <div class="bd-head"><span class="bd-ico">⚠</span><span>重要聲明｜請先看這裡</span></div>
+      <p class="bd-key">本站資訊僅供參考，實際以醫師、治療師評估及官方資料為準。</p>
+      <ul>
+        <li><b>僅供參考：</b>本頁為健康觀念的學習整理，<b>不構成任何醫療診斷、治療或建議</b>，也不能取代神經科醫師、物理治療師、職能治療師、語言治療師或音樂治療師的專業評估。</li>
+        <li><b>非替代療法：</b>節律性聽覺刺激是輔助方法，<b>請勿因此自行停藥或停止復健</b>。</li>
+        <li><b>無任何推薦或行銷：</b>本頁不推薦、不銷售任何裝置、App、音樂產品、課程或醫療院所，與文中作者及出版單位無任何合作關係。</li>
+        <li><b>節拍器示範：</b>頁面上的節拍器只用來感受節奏，<b>不是治療設定</b>；實際節奏、時間與頻率請由專業人員依個人狀況設定。</li>
+        <li><b>資料時點：</b>文獻查核於2026年10月11日，之後的新研究本頁不會即時同步。</li>
+        <li><b>練習安全：</b>出現頭暈、疲勞、跌倒風險升高或任何不適，請立即停止並諮詢專業人員。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="pals" aria-hidden="true"><svg><use href="#sprout"/></svg><svg><use href="#bird"/></svg><svg><use href="#star"/></svg></div>
+    <p class="quote">每一次多懂一點，都是送給自己的小禮物。</p>
+    <p class="ftdisc">⚠ 僅供參考｜不構成醫療建議｜無任何推薦或行銷<br>本站資訊僅供參考，實際以醫師、治療師評估及官方資料為準</p>
+    <p><a href="https://www.gungho.idv.tw/KS/index.html">← 回共好小學堂</a></p>
+    <p class="fine">共好小學堂 ✦ 一起學習，一起共好<br>本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-10-11</p>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到頂端">↑</button>
+
+<script>
+(function(){
+  document.querySelectorAll('[data-tabs]').forEach(function(list){
+    var tabs=[].slice.call(list.querySelectorAll('[role=tab]'));
+    function select(t,focus){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on?'true':'false');x.tabIndex=on?0:-1;var p=document.getElementById(x.getAttribute('aria-controls'));if(p)p.hidden=!on;});if(focus)t.focus();}
+    tabs.forEach(function(t,i){t.addEventListener('click',function(){select(t);});t.addEventListener('keydown',function(e){var n=null;if(e.key==='ArrowRight')n=tabs[(i+1)%tabs.length];if(e.key==='ArrowLeft')n=tabs[(i-1+tabs.length)%tabs.length];if(n){e.preventDefault();select(n,true);}});});
+  });
+
+  // Metronome
+  var baseIn=document.getElementById('baseIn'),pills=[].slice.call(document.querySelectorAll('.pill')),mult=1;
+  var arm=document.getElementById('arm'),feet=[].slice.call(document.querySelectorAll('.steps-viz span'));
+  var playBtn=document.getElementById('playBtn'),ctx=null,timer=null,tick=0,running=false;
+  function bpm(){return Math.round(parseInt(baseIn.value,10)*mult);}
+  function render(){document.getElementById('baseLbl').textContent=baseIn.value;document.getElementById('bpmOut').innerHTML=bpm()+' <small>拍／分鐘</small>';}
+  function click(){
+    tick++;
+    arm.style.transform='rotate('+(tick%2?22:-22)+'deg)';
+    feet.forEach(function(f,i){f.classList.toggle('lit',i===(tick-1)%feet.length);});
+    if(ctx){try{var o=ctx.createOscillator(),g=ctx.createGain();o.frequency.value=tick%2?880:660;g.gain.setValueAtTime(0.0001,ctx.currentTime);g.gain.exponentialRampToValueAtTime(0.35,ctx.currentTime+0.005);g.gain.exponentialRampToValueAtTime(0.0001,ctx.currentTime+0.09);o.connect(g);g.connect(ctx.destination);o.start();o.stop(ctx.currentTime+0.1);}catch(e){}}
+  }
+  function schedule(){clearInterval(timer);timer=setInterval(click,60000/bpm());}
+  function stop(){running=false;clearInterval(timer);playBtn.textContent='▶ 播放節拍';playBtn.classList.remove('on');arm.style.transform='rotate(0deg)';feet.forEach(function(f){f.classList.remove('lit');});}
+  playBtn.addEventListener('click',function(){
+    if(running){stop();return;}
+    try{var AC=window.AudioContext||window.webkitAudioContext;if(AC){ctx=ctx||new AC();if(ctx.resume)ctx.resume();}else{document.getElementById('audioNote').textContent='此瀏覽器不支援聲音，只顯示動畫。';}}catch(e){ctx=null;document.getElementById('audioNote').textContent='無法播放聲音，只顯示動畫。';}
+    running=true;playBtn.textContent='■ 停止';playBtn.classList.add('on');click();schedule();
+  });
+  baseIn.addEventListener('input',function(){render();if(running)schedule();});
+  pills.forEach(function(p){p.addEventListener('click',function(){mult=parseFloat(p.dataset.m);pills.forEach(function(x){x.setAttribute('aria-pressed',x===p?'true':'false');});render();if(running)schedule();});});
+  document.addEventListener('visibilitychange',function(){if(document.hidden&&running)stop();});
+  render();
+
+  // checklist
+  var KEY='gungho-ks-rhythm-chk',boxes=[].slice.call(document.querySelectorAll('#chk input')),st={};
+  try{st=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){st={};}
+  function upd(){var n=0;boxes.forEach(function(b){b.parentNode.classList.toggle('on',b.checked);if(b.checked)n++;});document.getElementById('pFill').style.width=(n/boxes.length*100)+'%';document.getElementById('pN').textContent=n+' / '+boxes.length;document.getElementById('cheer').classList.toggle('show',n===boxes.length);}
+  boxes.forEach(function(b){b.checked=!!st[b.dataset.k];b.addEventListener('change',function(){st[b.dataset.k]=b.checked;try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}upd();});});
+  document.getElementById('chkReset').addEventListener('click',function(){st={};boxes.forEach(function(b){b.checked=false;});try{localStorage.removeItem(KEY);}catch(e){}upd();});
+  upd();
+
+  // quiz
+  var qs=[].slice.call(document.querySelectorAll('#quizBox .q')),answered=0,right=0;
+  qs.forEach(function(q){var ans=q.dataset.ans,opts=q.querySelectorAll('.opt');opts.forEach(function(o){o.addEventListener('click',function(){var ok=o.dataset.v===ans;opts.forEach(function(x){x.disabled=true;if(x.dataset.v===ans)x.classList.add('right');});if(!ok)o.classList.add('wrong');var exp=q.querySelector('.exp');exp.innerHTML=(ok?'<b>✅ 答對了！</b> ':'<b>💡 再想想～</b> ')+exp.innerHTML;exp.classList.add('show');answered++;if(ok)right++;if(answered===qs.length){var s=document.getElementById('score');s.textContent='你答對了 '+right+' / '+qs.length+' 題！'+(right===qs.length?' 太厲害了 🎉':' 每多懂一點都是收穫 🌱');s.classList.add('show');}});});});
+
+  var tt=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('show',window.scrollY>600);},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
+})();
+</script>
+</body>
+</html>
