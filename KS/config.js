@@ -61,6 +61,12 @@ window.SCHOOL_TOPICS = [
       description: '看懂勞保老年年金65歲新規、提前減給與延後增給，用三大支柱與三層現金流規劃退休，附勞保年金試算與行動清單。', 
       category: '退休理財', 
       url: '/KS/PREP/' 
+   },
+   { 
+      title: '照光，能讓傷口好得快？', 
+      description: '紅光、近紅外光與藍光對傷口癒合有什麼不同？看懂光生物調節原理、劑量為何不是越多越好，以及光療的安全注意事項。', 
+      category: '健康樂活', 
+      url: '/KS/WOUND/'
    }
   // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/' }
 ];
