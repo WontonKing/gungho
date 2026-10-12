@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2455c7">
+<title>AI 說「我懂你」，它真的懂嗎？｜共好小學堂</title>
+<meta name="description" content="ELIZA 效應：人很容易把流暢、有同理心的文字，當成真的理解與情感。和 1966 年的聊天程式 ELIZA 簡化版聊聊天，看懂擬人化、生成式 AI 的情感依附與心理依賴、隱私與操縱風險，學會健康使用 AI。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/ELIZA/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI 說「我懂你」，它真的懂嗎？ELIZA 效應與人機情感依附｜共好小學堂">
+<meta property="og:description" content="1966 年一個只會套關鍵字的程式，就讓人掏心掏肺。認識 ELIZA 效應，保護隱私、查證資訊、不讓 AI 取代真實關係。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/ELIZA/">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 130'%3E%3Cpath d='M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z' fill='%235ad6a4' stroke='%231f2a44' stroke-width='5'/%3E%3Cpath d='M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Cellipse cx='60' cy='88' rx='40' ry='38' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Ccircle cx='46' cy='84' r='6' fill='%231f2a44'/%3E%3Ccircle cx='74' cy='84' r='6' fill='%231f2a44'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c;  --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff;  --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7;
+  --round:'Huninn','Noto Sans TC',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans TC',system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:var(--blue)}
+h1,h2,h3,h4{font-family:var(--round);line-height:1.35;margin:0 0 .5em;font-weight:400}
+p{margin:0 0 1em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.hl{background:linear-gradient(transparent 58%,var(--sun) 58%,var(--sun) 92%,transparent 92%);padding:0 2px}
+.nw{white-space:nowrap}
+b,strong{font-weight:700}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.94);backdrop-filter:blur(8px);border-bottom:3px solid var(--ink)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex-shrink:0}
+.brand svg{width:40px;height:44px}
+.brand b{font-family:var(--round);font-weight:400;font-size:19px;display:block;line-height:1.1}
+.brand small{font-size:10px;letter-spacing:.14em;color:var(--ink-2);display:block}
+.navpills{display:flex;gap:6px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.navpills::-webkit-scrollbar{display:none}
+.navpills a{white-space:nowrap;text-decoration:none;font-size:14px;color:var(--ink);padding:4px 11px;border:2px solid var(--ink);border-radius:99px;background:#fff}
+.navpills a:hover{background:var(--sun-l)}
+.back{white-space:nowrap;text-decoration:none;font-family:var(--round);background:var(--blue);color:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:5px 14px;box-shadow:0 3px 0 var(--ink);font-size:15px;flex-shrink:0}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--blue-l),var(--bg));padding:56px 0 90px}
+.blob{position:absolute;border-radius:50%;opacity:.55;z-index:0}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.tag{display:inline-block;font-family:var(--round);background:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:4px 14px;font-size:15px;box-shadow:0 3px 0 var(--ink);margin-bottom:18px}
+.hero h1{font-size:clamp(32px,5vw,52px);margin-bottom:16px}
+.hero .lead{font-size:18.5px;color:var(--ink-2);max-width:34em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{font-family:var(--round);text-decoration:none;font-size:17px;padding:10px 22px;border:3px solid var(--ink);border-radius:16px;box-shadow:0 4px 0 var(--ink);color:var(--ink);background:#fff;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--sun)}
+.meta{font-size:13.5px;color:var(--ink-2);margin-top:18px}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block}
+.bubble{position:absolute;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:8px 14px;font-family:var(--round);font-size:17px;box-shadow:0 4px 0 var(--ink);white-space:nowrap}
+.bubble::after{content:"";position:absolute;width:14px;height:14px;background:#fff;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg);bottom:-9px;left:30px}
+.hero .bubble{top:2%;left:4%}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:60px;z-index:1}
+.float{animation:float 4.5s ease-in-out infinite}
+.float.d2{animation-delay:-1.5s}.float.d3{animation-delay:-3s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media (prefers-reduced-motion:reduce){.float{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
+
+/* sections */
+section.sec{padding:64px 0;position:relative}
+section.alt{background:linear-gradient(180deg,var(--tint,#fff),var(--bg))}
+.sec-head{display:flex;align-items:flex-start;gap:18px;margin-bottom:26px}
+.num{flex-shrink:0;width:58px;height:58px;display:grid;place-items:center;font-family:var(--round);font-size:28px;color:#fff;background:var(--c,var(--blue));border:3px solid var(--ink);border-radius:16px;transform:rotate(-6deg);box-shadow:4px 4px 0 var(--ink)}
+.eyebrow{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--c,var(--blue));font-weight:700;display:block}
+.sec-head h2{font-size:clamp(25px,3.4vw,34px);margin:2px 0 0}
+.intro{color:var(--ink-2);max-width:46em}
+hr.dash{border:0;border-top:3px dashed var(--line);margin:34px 0}
+
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:0 5px 0 var(--ink)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card h3{font-size:21px;margin-bottom:.35em}
+.card p:last-child{margin-bottom:0}
+.small{font-size:14.5px;color:var(--ink-2)}
+.note{font-size:14.5px;color:var(--ink-2);background:#fff;border:2px dashed var(--line);border-radius:14px;padding:10px 14px;margin-top:16px}
+.ico{width:96px;height:96px;display:block;margin-bottom:10px}
+.src{display:inline-block;font-size:12px;line-height:1;text-decoration:none;background:var(--blue-l);color:var(--blue-d);border:1.5px solid var(--blue);border-radius:99px;padding:4px 8px;margin:0 2px;vertical-align:2px;font-weight:700;white-space:nowrap}
+.src:hover{background:var(--sun-l)}
+.badge{display:inline-block;font-size:12.5px;font-weight:700;border:2px solid var(--ink);border-radius:99px;padding:1px 10px;background:var(--sun-l);margin-bottom:8px}
+
+/* talk */
+.talk{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;margin-bottom:22px}
+.talk.r{grid-template-columns:1fr 150px}
+.talk.r .who{order:2}
+.who svg{width:130px;height:130px}
+.say{position:relative;background:#fff;border:3px solid var(--ink);border-radius:22px;padding:18px 22px;box-shadow:6px 6px 0 var(--c,var(--sun))}
+.say::before{content:"";position:absolute;left:-12px;top:42px;width:18px;height:18px;background:#fff;border-left:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg)}
+.talk.r .say::before{left:auto;right:-12px;transform:rotate(-135deg)}
+.say .name{font-family:var(--round);color:var(--c,var(--blue));font-size:15px;display:block;margin-bottom:4px}
+.say p:last-child{margin-bottom:0}
+.qs{counter-reset:q;list-style:none;padding:0;margin:.4em 0 1em}
+.qs li{counter-increment:q;padding-left:40px;position:relative;margin:6px 0}
+.qs li::before{content:counter(q);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;background:var(--sun);border:2.5px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:15px}
+.warn{background:var(--coral-l);border:3px solid var(--ink);border-radius:18px;padding:14px 18px;margin-top:14px}
+.warn b{color:#c33}
+
+/* evidence chips */
+.ev{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.ev .card{padding:16px;box-shadow:0 4px 0 var(--ink)}
+.ev h4{font-size:17px;margin:0 0 4px}
+.ev .k{font-size:13.5px;color:var(--ink-2);margin:0}
+.ev .u{font-size:14px;margin-top:8px;padding-top:8px;border-top:2px dashed var(--line)}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tab{font-family:var(--round);font-size:16px;cursor:pointer;border:2.5px solid var(--ink);background:#fff;border-radius:14px;padding:7px 14px;color:var(--ink);box-shadow:0 3px 0 var(--ink)}
+.tab[aria-selected="true"]{background:var(--c,var(--blue));color:#fff}
+.tab:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.panel{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:24px;box-shadow:6px 6px 0 var(--c,var(--blue))}
+.panel[hidden]{display:none}
+.panel-grid{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:start}
+.panel-grid svg{width:110px;height:110px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0}
+.kv dt{font-weight:700;color:var(--c,var(--blue));white-space:nowrap}
+.kv dd{margin:0}
+
+/* mechanism cards */
+.mech{position:relative;padding-top:30px}
+.mech .pin{position:absolute;top:-16px;left:20px;background:var(--c);color:#fff;font-family:var(--round);font-size:14px;border:2.5px solid var(--ink);border-radius:99px;padding:2px 12px;transform:rotate(-4deg)}
+.mech .key{margin-top:12px;padding-top:10px;border-top:2px dashed var(--line);font-weight:700}
+
+/* age matrix */
+.agechips{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.mtx{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.mtx div{border:2.5px solid var(--ink);border-radius:16px;padding:10px 12px;background:var(--bgc,#fff)}
+.mtx b{display:block;font-family:var(--round);font-weight:400;font-size:15px;color:var(--ink-2)}
+.mtx span{font-weight:700}
+
+/* table-like */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:20px;overflow:hidden;background:#fff;font-size:15.5px}
+.tbl th,.tbl td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:2px solid var(--line)}
+.tbl thead th{font-family:var(--round);font-weight:400;font-size:16.5px;color:#fff;background:var(--blue)}
+.tbl thead th:nth-child(2){background:var(--coral)}
+.tbl thead th:nth-child(3){background:var(--orange)}
+.tbl thead th:nth-child(4){background:var(--mint)}
+.tbl thead th:first-child{background:var(--ink)}
+.tbl tbody th{background:var(--sun-l);font-weight:700;white-space:nowrap}
+.tbl tr:last-child td,.tbl tr:last-child th{border-bottom:0}
+.tbl td.r{text-align:right;font-family:var(--round);font-size:18px}
+
+.prod{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.prod .card{padding:18px 20px;box-shadow:0 4px 0 var(--ink)}
+.prod .co{display:inline-block;font-family:var(--round);color:#fff;background:var(--c);border:2.5px solid var(--ink);border-radius:12px;padding:1px 12px;margin-bottom:8px}
+.prod h4{font-size:17.5px;margin:0 0 6px}
+.prod .ask{margin-top:10px;padding:8px 12px;background:var(--grape-l);border-radius:12px;font-size:15px}
+.prod .ask::before{content:"❓ 要追問：";font-weight:700}
+
+/* calculators */
+.calc{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:6px 6px 0 var(--c,var(--sky))}
+.calc label{font-weight:700;display:block;margin-bottom:4px}
+.calc input[type=range]{width:100%;accent-color:var(--blue);height:28px}
+.calc input[type=number]{font:inherit;font-family:var(--round);font-size:22px;width:120px;padding:4px 10px;border:3px solid var(--ink);border-radius:12px}
+.bars{display:grid;gap:12px;margin-top:16px}
+.bar{display:grid;grid-template-columns:96px 1fr 110px;gap:10px;align-items:center}
+.bar .tr{height:28px;border:2.5px solid var(--ink);border-radius:99px;background:#f4f6fb;overflow:hidden}
+.bar .fill{height:100%;border-radius:99px;transition:width .3s}
+.bar .v{font-family:var(--round);font-size:19px;text-align:right}
+.verdict{margin-top:14px;font-weight:700;background:var(--sun-l);border-radius:14px;padding:10px 14px}
+.agegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.agebox{border:3px solid var(--ink);border-radius:18px;padding:12px 14px;background:#fff}
+.agebox .st{font-family:var(--round);font-size:18px}
+.agebox.ok{background:var(--mint-l)}
+.agebox.no{background:var(--coral-l)}
+
+/* compare 3 companies */
+.cmp{display:grid;grid-template-columns:150px repeat(3,1fr);border:3px solid var(--ink);border-radius:22px;overflow:hidden;background:#fff;font-size:15.5px}
+.cmp > div{padding:11px 13px;border-bottom:2px solid var(--line);border-left:2px solid var(--line)}
+.cmp .h{font-family:var(--round);color:#fff;font-size:17px;border-left:0}
+.cmp .h.c1{background:var(--blue)}.cmp .h.c2{background:var(--coral)}.cmp .h.c3{background:var(--mint)}
+.cmp .h.c0{background:var(--ink)}
+.cmp .rh{background:var(--sun-l);font-weight:700;border-left:0}
+.cmp .m{display:none}
+
+/* timeline */
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:14px 18px 14px 70px;background:#fff;border:3px solid var(--ink);border-radius:18px}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:var(--mint);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:20px}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:33px;bottom:-17px;height:17px;border-left:3px dashed var(--ink)}
+
+/* formula */
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:10px 0}
+.formula .t{border:2.5px solid var(--ink);border-radius:12px;padding:4px 12px;background:#fff;font-size:15.5px}
+.formula .t.p{background:var(--coral-l)}.formula .t.m{background:var(--mint-l)}
+.formula .op{font-family:var(--round);font-size:24px;line-height:1}
+.formula .eq{background:var(--sun);font-weight:700}
+
+/* checklist */
+.chk{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.chk label{display:flex;gap:14px;align-items:flex-start;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px 16px;cursor:pointer;box-shadow:0 4px 0 var(--ink);transition:background .2s}
+.chk input{position:absolute;opacity:0;pointer-events:none}
+.chk .box{flex-shrink:0;width:30px;height:30px;border:3px solid var(--ink);border-radius:9px;background:#fff;display:grid;place-items:center;font-size:19px;color:#fff;margin-top:2px}
+.chk input:checked + .box{background:var(--mint)}
+.chk input:checked + .box::after{content:"✓"}
+.chk input:focus-visible + .box{outline:3px solid var(--sun);outline-offset:2px}
+.chk label.on{background:var(--mint-l)}
+.chk b{display:block;font-family:var(--round);font-weight:400;font-size:18px}
+.chk span.d{font-size:14.5px;color:var(--ink-2);line-height:1.6;display:block}
+.prog{margin:20px 0 8px;display:flex;align-items:center;gap:14px}
+.prog .tr{flex:1;height:26px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden}
+.prog .fill{height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 10px,#5ad6a4 10px,#5ad6a4 20px);transition:width .3s}
+.prog .n{font-family:var(--round);font-size:20px;white-space:nowrap}
+.cheer{display:none;background:var(--sun-l);border:3px solid var(--ink);border-radius:18px;padding:12px 16px;font-weight:700;margin-top:12px}
+.cheer.show{display:block}
+
+/* quiz */
+.quiz{display:grid;gap:18px}
+.q h4{font-size:18.5px}
+.opts{display:grid;gap:10px}
+.opt{text-align:left;font:inherit;font-size:16px;cursor:pointer;background:#fff;border:2.5px solid var(--ink);border-radius:14px;padding:10px 14px;color:var(--ink)}
+.opt:hover:not(:disabled){background:var(--sky-l)}
+.opt:disabled{cursor:default}
+.opt.right{background:var(--mint-l);border-color:var(--mint);font-weight:700}
+.opt.wrong{background:var(--coral-l);border-color:var(--coral)}
+.exp{display:none;margin-top:10px;background:var(--sun-l);border-radius:14px;padding:10px 14px;font-size:15.5px}
+.exp.show{display:block}
+.score{display:none;text-align:center;font-family:var(--round);font-size:22px;background:var(--blue);color:#fff;border:3px solid var(--ink);border-radius:20px;padding:14px;box-shadow:0 5px 0 var(--ink)}
+.score.show{display:block}
+
+/* refs */
+.refs h3{font-size:19px;margin-top:22px;color:var(--blue-d)}
+.refs ol{padding-left:0;list-style:none;margin:0}
+.refs li{background:#fff;border:2px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:10px;font-size:15px;line-height:1.7;word-break:break-word}
+.refs li:target{border-color:var(--sun);background:var(--sun-l)}
+.refs .rid{display:inline-block;font-family:var(--round);background:var(--blue);color:#fff;border-radius:8px;padding:0 8px;margin-right:6px;font-size:13.5px}
+.refs .loc{display:block;color:var(--ink-2);font-size:13.5px}
+.refs a{word-break:break-all;font-size:13.5px}
+
+.disc{background:var(--sun-l);border:3px dashed var(--ink);border-radius:20px;padding:18px 22px;font-size:15.5px}
+.disc b{font-family:var(--round);font-weight:400;font-size:18px;display:block;margin-bottom:4px}
+
+.bigdisc{background:var(--coral-l);border:4px solid var(--ink);border-radius:24px;box-shadow:8px 8px 0 var(--coral);padding:22px 26px;outline:3px dashed var(--coral);outline-offset:-14px}
+.bd-head{display:flex;align-items:center;gap:12px;font-family:var(--round);font-size:clamp(22px,3vw,28px);color:#b42318;margin-bottom:10px}
+.bd-ico{flex-shrink:0;width:46px;height:46px;border-radius:50%;background:var(--coral);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-size:24px}
+.bd-key{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:8px 14px;margin:0 0 12px;font-weight:900;font-size:18px;color:#b42318}
+.bigdisc ul{margin:0;padding-left:1.2em}
+.bigdisc li{margin:6px 0;line-height:1.75}
+.bigdisc li b:first-child{color:#b42318}
+.ftdisc{display:inline-block;background:var(--sun);color:var(--ink);font-weight:700;border:3px solid var(--ink);border-radius:14px;padding:6px 16px;margin:4px 0 14px;font-size:15.5px}
+@media (max-width:820px){.bigdisc{padding:18px 16px;outline-offset:-10px}}
+footer{background:var(--blue-d);color:#fff;text-align:center;padding:46px 0 34px;margin-top:40px;border-top:4px solid var(--ink)}
+footer .pals{display:flex;justify-content:center;gap:12px;margin-bottom:12px}
+footer .pals svg{width:80px;height:80px}
+footer .quote{font-family:var(--round);font-size:22px;margin-bottom:10px}
+footer a{color:var(--sun)}
+footer .fine{font-size:13px;opacity:.8;margin-top:10px}
+#toTop{position:fixed;right:18px;bottom:18px;width:52px;height:52px;border-radius:50%;background:var(--sun);border:3px solid var(--ink);box-shadow:0 4px 0 var(--ink);font-size:22px;font-family:var(--round);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;z-index:60;color:var(--ink)}
+#toTop.show{opacity:1;pointer-events:auto}
+
+@media (max-width:1000px){.ev{grid-template-columns:repeat(3,1fr)}.agechips{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .navpills{display:none}
+  .back{margin-left:auto}
+  .hero{padding:34px 0 80px}
+  .hero .wrap,.grid2,.grid3,.prod,.chk,.agegrid{grid-template-columns:1fr}
+  .hero-art{max-width:420px;margin:0 auto;width:100%}
+  .ev{grid-template-columns:1fr 1fr}
+  .mtx{grid-template-columns:1fr 1fr}
+  .talk,.talk.r{grid-template-columns:1fr;gap:6px}
+  .talk.r .who{order:0}
+  .who svg{width:96px;height:96px}
+  .say::before{left:40px;top:-12px;transform:rotate(135deg)}
+  .talk.r .say::before{left:40px;right:auto;transform:rotate(135deg)}
+  .panel-grid{grid-template-columns:1fr}
+  .panel-grid svg{width:84px;height:84px}
+  .kv{grid-template-columns:1fr}
+  .cmp{grid-template-columns:1fr 1fr 1fr}
+  .cmp .h.c0{display:none}
+  .cmp .h{font-size:15px;padding:9px 8px}
+  .cmp .rh{grid-column:1/-1}
+  .cmp > div{font-size:14.5px;padding:9px 8px}
+  .cmp > div:nth-child(n){border-left:0}
+  .cmp .v{border-left:2px solid var(--line)}
+  .cmp .v1{border-left:0}
+  .bar{grid-template-columns:72px 1fr 92px}
+  .sec-head{gap:14px}
+  .num{width:48px;height:48px;font-size:23px}
+  section.sec{padding:48px 0}
+  .tbl{font-size:14.5px}
+  .tbl th,.tbl td{padding:9px 9px}
+  .tblwrap{overflow-x:auto}
+  .card,.panel,.calc{padding:18px 16px}
+}
+@media (max-width:420px){.ev{grid-template-columns:1fr}.agechips{grid-template-columns:repeat(2,1fr)}.hero .bubble{font-size:15px}}
+
+/* ---- ELIZA 專用 ---- */
+.unv{display:inline-block;font-size:12px;font-weight:700;background:var(--orange-l);color:#a4520a;border:1.5px solid var(--orange);border-radius:99px;padding:3px 8px;margin:0 2px;vertical-align:2px;white-space:nowrap}
+.orig{display:inline-block;font-size:12px;font-weight:700;background:var(--grape-l);color:#5b34c4;border:1.5px solid var(--grape);border-radius:99px;padding:3px 8px;margin:0 2px;vertical-align:2px;white-space:nowrap}
+.fix{border:3px dashed var(--coral);background:var(--coral-l);border-radius:18px;padding:14px 18px;margin-top:20px}
+.fix b.h{color:#c43c3c}
+.fix p:last-child,.fix ul:last-child{margin-bottom:0}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.vs>*,.calc>*,.chatwrap>*{min-width:0}
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.tl .card{text-align:center;padding:16px}
+.tl .y{font-family:var(--round);font-size:26px;color:var(--c);display:block}
+.chatwrap{display:grid;grid-template-columns:1.3fr 1fr;gap:20px}
+.term{background:#1f2a44;border:3px solid var(--ink);border-radius:18px;padding:14px;box-shadow:6px 6px 0 var(--sky);display:flex;flex-direction:column;height:420px}
+.term .log{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:8px;padding:4px}
+.term .m{max-width:85%;padding:8px 12px;border-radius:14px;font-size:16px;line-height:1.6;word-break:break-word}
+.term .m.e{background:#e0f4ff;color:var(--ink);align-self:flex-start;border-bottom-left-radius:4px}
+.term .m.u{background:var(--sun);color:var(--ink);align-self:flex-end;border-bottom-right-radius:4px}
+.term .m.e::before{content:"ELIZA：";font-weight:700;color:var(--blue-d)}
+.term .m.alert{background:var(--coral-l);border:2px solid var(--coral)}
+.term form{display:flex;gap:8px;margin-top:10px}
+.term input{flex:1;min-width:0;font:inherit;font-size:16px;border:3px solid #fff;border-radius:12px;padding:8px 12px}
+.term form button{font-family:var(--round);font-size:16px;border:3px solid #fff;border-radius:12px;background:var(--sky);color:#fff;padding:6px 14px;cursor:pointer}
+.sugg{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.sugg button{font-size:13.5px;color:var(--ink);border:2px solid var(--ink);border-radius:99px;background:#fff;padding:3px 10px;cursor:pointer}
+.xray{background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px 16px}
+.xray h4{margin:0 0 8px}
+.xray .k{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;background:#f4f6fb;border-radius:8px;padding:8px 10px;white-space:pre-wrap;word-break:break-word;line-height:1.6}
+.xray .k b{color:var(--coral)}
+.mtx{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.mtx .card{padding:14px;box-shadow:0 4px 0 var(--ink)}
+.mtx .e{font-size:32px;display:block}
+.mtx h4{margin:6px 0;font-size:17px}
+.mtx p{font-size:14px;line-height:1.65;margin:0 0 6px}
+.mtx .ai{font-size:13.5px;background:var(--sky-l);border-radius:10px;padding:5px 8px;display:block}
+.sort{display:grid;gap:8px}
+.sort .row{display:flex;justify-content:space-between;align-items:center;gap:10px;border:2.5px solid var(--ink);border-radius:14px;padding:8px 12px;background:#fff;flex-wrap:wrap}
+.sort .row.ok{background:var(--mint-l)}
+.sort .row.no{background:var(--coral-l)}
+.sort .bt{display:flex;gap:6px}
+.sort .bt button{font-family:var(--round);font-size:14.5px;border:2.5px solid var(--ink);border-radius:10px;background:#fff;padding:3px 10px;cursor:pointer}
+.sort .fb{flex-basis:100%;font-size:14px;color:var(--ink-2);display:none}
+.sort .row.ok .fb,.sort .row.no .fb{display:block}
+.dep{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:16px;overflow:hidden;background:#fff}
+.dep th,.dep td{padding:10px 12px;border-bottom:2px solid var(--line);text-align:left;vertical-align:top;font-size:15.5px;line-height:1.6}
+.dep thead th{color:#fff;font-family:var(--round);font-weight:400}
+.dep thead th:nth-child(1){background:var(--ink)}.dep thead th:nth-child(2){background:var(--mint)}.dep thead th:nth-child(3){background:var(--coral)}
+.dep tbody th{background:#f4f6fb;width:6em}
+.dep tr:last-child td,.dep tr:last-child th{border-bottom:0}
+.stat4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.stat4 .card{text-align:center;padding:14px}
+.stat4 .big{font-family:var(--round);font-size:34px;color:var(--c);display:block;line-height:1.2}
+.stat4 .big small{font-size:16px}
+.stat4 p{font-size:14.5px;line-height:1.65;margin:4px 0 0}
+@media (max-width:1000px){.stat4{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.stat4{grid-template-columns:1fr}.dep thead{display:none}.dep tr{display:block;border-bottom:2px solid var(--line)}.dep tbody th{display:block;width:auto;background:var(--blue-l)}.dep td{display:block;border:0;padding:6px 12px}.dep td::before{content:attr(data-l)"：";font-weight:700;color:var(--ink-2)}}
+.flag{display:none;margin-top:14px;border:3px solid var(--ink);border-radius:16px;padding:12px 16px;font-weight:700}
+.flag.show{display:block}
+@media (max-width:1000px){.mtx{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:820px){.vs,.chatwrap{grid-template-columns:1fr}.tl{grid-template-columns:1fr 1fr}.mtx{grid-template-columns:1fr 1fr}.term{height:380px}}
+@media (max-width:420px){.mtx{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+<symbol id="grandma" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="60" cy="14" r="13" fill="#d9dde8" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M24 60 C22 34 40 24 60 24 C80 24 98 34 96 60Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="60" cy="64" r="34" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M28 52 C40 40 80 40 92 52 C86 34 34 34 28 52Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="48" cy="64" r="4.5" fill="#1f2a44"/><circle cx="72" cy="64" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="62.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="62.6" r="1.4" fill="#fff"/>
+  <ellipse cx="39" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="81" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M51 80 Q60 88 69 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="grandpa" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#8a5cf6" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M52 100 L60 116 L68 100" fill="#fff" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="60" cy="62" r="36" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M26 56 C24 40 32 30 40 30 M94 56 C96 40 88 30 80 30" stroke="#1f2a44" stroke-width="3" fill="#eef1f7" stroke-linecap="round"/>
+  <path d="M27 52 C22 44 26 34 36 34 L36 52Z M93 52 C98 44 94 34 84 34 L84 52Z" fill="#eef1f7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="47" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/><circle cx="73" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M56 60 H64" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="47" cy="61" r="3.5" fill="#1f2a44"/><circle cx="73" cy="61" r="3.5" fill="#1f2a44"/>
+  <circle cx="48.2" cy="59.8" r="1.2" fill="#fff"/><circle cx="74.2" cy="59.8" r="1.2" fill="#fff"/>
+  <ellipse cx="38" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="82" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M50 80 Q60 88 70 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="heart" viewBox="0 0 120 120">
+  <path d="M60 104 C20 78 10 56 14 40 C18 22 42 16 60 36 C78 16 102 22 106 40 C110 56 100 78 60 104Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="48" cy="56" r="4.5" fill="#1f2a44"/><circle cx="72" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="54.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="54.6" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 對話機器人 -->
+<symbol id="bot" viewBox="0 0 120 130">
+  <path d="M60 18 V30" stroke="#1f2a44" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="60" cy="14" r="7" fill="#ffc93c" stroke="#1f2a44" stroke-width="3"/>
+  <rect x="16" y="30" width="88" height="70" rx="24" fill="#e0f4ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <rect x="28" y="44" width="64" height="38" rx="14" fill="#1f2a44"/>
+  <circle cx="46" cy="62" r="6" fill="#38b6ff"/><circle cx="74" cy="62" r="6" fill="#38b6ff"/>
+  <path d="M52 74 Q60 79 68 74" stroke="#38b6ff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <rect x="6" y="54" width="12" height="24" rx="6" fill="#ffc93c" stroke="#1f2a44" stroke-width="3"/>
+  <rect x="102" y="54" width="12" height="24" rx="6" fill="#ffc93c" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M40 100 L36 122 H84 L80 100" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+</symbol>
+<!-- 對話泡泡 -->
+<symbol id="chatb" viewBox="0 0 120 100">
+  <path d="M14 14 H106 C112 14 116 18 116 24 V62 C116 68 112 72 106 72 H48 L26 92 L30 72 H14 C8 72 4 68 4 62 V24 C4 18 8 14 14 14Z" fill="#ffffff" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="36" cy="43" r="6" fill="#2455c7"/><circle cx="60" cy="43" r="6" fill="#2455c7"/><circle cx="84" cy="43" r="6" fill="#2455c7"/>
+</symbol>
+<!-- 鎖 -->
+<symbol id="lock" viewBox="0 0 100 120">
+  <path d="M28 52 V34 C28 18 72 18 72 34 V52" stroke="#1f2a44" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <rect x="14" y="50" width="72" height="60" rx="14" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="50" cy="76" r="8" fill="#1f2a44"/><path d="M50 80 V94" stroke="#1f2a44" stroke-width="6" stroke-linecap="round"/>
+</symbol>
+</defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://www.gungho.idv.tw/KS/index.html" aria-label="回共好小學堂首頁">
+      <svg aria-hidden="true"><use href="#sprout"/></svg>
+      <span><b>共好小學堂</b><small>GROW &amp; LEARN TOGETHER</small></span>
+    </a>
+    <nav class="navpills" aria-label="章節">
+      <a href="#s1">ELIZA 的由來</a><a href="#tools">和 ELIZA 聊天</a><a href="#s2">心理成因</a><a href="#s3">現在的 AI</a><a href="#gen">為何更易依附</a><a href="#s4">依賴的樣貌</a><a href="#manip">隱私與操縱</a><a href="#priv">隱私小練習</a><a href="#check">健康使用</a><a href="#quiz">小測驗</a><a href="#refs">參考資料</a>
+    </nav>
+    <a class="back" href="https://www.gungho.idv.tw/KS/index.html">← 回小學堂</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <span class="blob" style="width:320px;height:320px;background:var(--sky-l);top:-90px;right:-60px"></span>
+  <span class="blob" style="width:220px;height:220px;background:var(--grape-l);bottom:30px;left:-70px"></span>
+  <span class="blob" style="width:140px;height:140px;background:var(--sun-l);top:40%;left:46%"></span>
+  <div class="wrap">
+    <div>
+      <span class="tag">✦ 科技生活小知識</span>
+      <h1>AI 說「我懂你」，它<span class="hl nw">真的懂嗎？</span></h1>
+      <p class="lead">1966 年，一個只會<b>抓關鍵字、換句話說</b>的小程式 ELIZA，就讓人願意對它掏心掏肺。人很容易把流暢、有同理心的文字，當成<b>真的理解和情感</b>，這叫做 <b>ELIZA 效應</b>。今天的 AI 更會說話，這個效應也更明顯。</p>
+      <div class="btns">
+        <a class="btn pri" href="#start">開始認識 →</a>
+        <a class="btn" href="#tools">和 ELIZA 聊聊看</a>
+      </div>
+      <p class="meta">資料查核日：2026年10月12日｜資料來源：學術期刊、美國心理學會、IBM、劍橋大學與維基百科等公開資料</p>
+    </div>
+    <div class="hero-art">
+      <div class="bubble">我懂你的感受…嗎？</div>
+      <svg viewBox="0 0 520 400" role="img" aria-label="阿嬤和對話機器人聊天，旁邊有對話泡泡、鎖、小芽、藍鳥和星星">
+        <ellipse cx="260" cy="368" rx="230" ry="26" fill="#dcf7ec"/>
+        <use href="#grandma" x="120" y="160" width="130" height="165"/>
+        <use href="#bot" x="290" y="190" width="120" height="130"/>
+        <g class="float"><use href="#chatb" x="230" y="110" width="90" height="75"/></g>
+        <g class="float d3"><use href="#lock" x="430" y="230" width="56" height="68"/></g>
+        <use href="#sprout" x="40" y="280" width="72" height="80"/>
+        <use href="#bird" x="420" y="120" width="64" height="60"/>
+        <g class="float d2"><use href="#star" x="80" y="120" width="40" height="40"/></g>
+      </svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C240 60 480 0 720 30 C960 60 1200 0 1440 30 V60 H0Z" fill="#fffdf7"/></svg>
+</section>
+
+<section class="sec" id="start">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">★</div><div><span class="eyebrow">Key Points</span><h2>先說重點</h2></div></div>
+    <div class="talk" style="--c:var(--sky)">
+      <div class="who"><svg aria-hidden="true"><use href="#bot"/></svg></div>
+      <div class="say"><span class="name">機器人說</span>
+        <p>ELIZA 效應，是人<b>不自覺地把電腦的行為當成人的行為</b>，從電腦產生的文字裡讀出比實際更多的「理解」。就算知道它只是照規則或統計模式在產生文字，也還是會這樣。<a class="src" href="#ref4">參考 4</a><a class="src" href="#ref2">參考 2</a></p>
+      </div>
+    </div>
+    <div class="talk r" style="--c:var(--coral)">
+      <div class="who"><svg aria-hidden="true"><use href="#bird"/></svg></div>
+      <div class="say"><span class="name">藍鳥提醒</span>
+        <p>這不代表使用者笨，而是人的社會腦對語言和關係線索<b>特別敏感</b>。但它可能帶來<b>情感依附、隱私外洩、過度信任與心理健康</b>的風險。<a class="src" href="#ref2">參考 2</a><a class="src" href="#ref5">參考 5</a></p>
+      </div>
+    </div>
+    <div class="warn"><b>⚠ 要分清楚：</b>本頁不是說 AI 不好用，而是提醒：把 AI 當<b>好用的工具</b>，不要當成<b>有意識的伴侶或治療師</b>。標示 <span class="orig">原稿整理</span> 的內容，是原稿的整理與建議，查證的參考資料中沒有直接出處。</div>
+  </div>
+</section>
+
+<section class="sec alt" id="s1" style="--tint:var(--sky-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--sky)"><div class="num">1</div><div><span class="eyebrow">Where It Began</span><h2>ELIZA 的由來</h2></div></div>
+    <div class="tl">
+      <div class="card" style="--c:var(--blue)"><span class="y">1964–67</span><p>麻省理工學院的 <b>Joseph Weizenbaum</b> 開發 ELIZA，在 IBM 7094 電腦上執行。<a class="src" href="#ref6">參考 6</a></p></div>
+      <div class="card" style="--c:var(--mint)"><span class="y">1966</span><p>在《Communications of the ACM》發表 ELIZA 論文；最有名的 <b>DOCTOR 腳本</b>模仿羅傑斯式心理治療師。<a class="src" href="#ref6">參考 6</a></p></div>
+      <div class="card" style="--c:var(--orange)"><span class="y">1976</span><p>出版《Computer Power and Human Reason》，主張不該讓電腦取代人的判斷。<a class="src" href="#ref6">參考 6</a><a class="src" href="#ref1">參考 1</a></p></div>
+      <div class="card" style="--c:var(--grape)"><span class="y">2021</span><p>失傳數十年的原始程式碼在 MIT 檔案中被找到，之後被重建執行。<a class="src" href="#ref6">參考 6</a></p></div>
+    </div>
+    <div class="vs" style="margin-top:22px">
+      <div class="card" style="box-shadow:6px 6px 0 var(--sky)"><h3>⚙️ 它其實怎麼運作？</h3><p>掃描你的句子找<b>關鍵字</b>，用「<b>分解規則</b>」把句子拆開，再用「<b>重組規則</b>」組成回應。例如把「你很有幫助」變成「是什麼讓你覺得我很有幫助？」<a class="src" href="#ref6">參考 6</a></p><p>它<b>沒有</b>真正的語意理解、意識、情感，也沒有對世界的長期模型。</p></div>
+      <div class="card" style="box-shadow:6px 6px 0 var(--coral)"><h3>😮 讓發明者嚇一跳</h3><p>據說 Weizenbaum 的秘書知道 ELIZA 怎麼運作，卻還是請他<b>離開房間</b>，好讓她能和程式「私下談談」。<a class="src" href="#ref6">參考 6</a></p><p>他觀察到：短短接觸一個簡單程式，就能讓普通人產生強烈的錯覺。<a class="src" href="#ref4">參考 4</a></p></div>
+    </div>
+    <div class="fix">
+      <p>🔎 <b class="h">查證補充：</b>原稿寫 ELIZA 是「1966 年開發」，較精確的說法是 <b>1964–1967 年開發、1966 年發表論文</b>。<a class="src" href="#ref6">參考 6</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="tools">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">2</div><div><span class="eyebrow">Try It Yourself</span><h2>和 ELIZA（簡化版）聊聊天</h2></div></div>
+    <p class="intro">這是本站依照 ELIZA「關鍵字＋重組規則」原理寫的<b>極簡中文示範</b>，只有十幾條規則。聊幾句，再看看旁邊（手機在下方）的「它在想什麼」——其實什麼都沒想。</p>
+    <div class="chatwrap">
+      <div class="term">
+        <div class="log" id="log" aria-live="polite"></div>
+        <form id="cf" autocomplete="off"><label for="ci" class="sr-only" style="position:absolute;left:-9999px">輸入訊息</label><input id="ci" maxlength="80" placeholder="例如：我覺得最近好累"><button type="submit">送出</button></form>
+        <div class="sugg" id="sugg"><button type="button">我覺得最近好累</button><button type="button">我媽媽一直唸我</button><button type="button">你懂我嗎？</button><button type="button">因為工作很多</button></div>
+      </div>
+      <div class="xray" aria-live="polite">
+        <h4>🔍 它在想什麼？（X 光模式）</h4>
+        <div class="k" id="xray">還沒有對話。說一句話試試看！</div>
+        <p class="small" style="margin-top:10px">你看到的「關心」，只是把你的話套進事先寫好的句型。這就是 ELIZA 效應的起點。</p>
+        <p class="small">🔒 對話只在你的瀏覽器裡處理，不會上傳，也不會儲存。<b>請不要輸入任何個人隱私。</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="s2" style="--tint:var(--grape-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">3</div><div><span class="eyebrow">Why We Fall For It</span><h2>為什麼我們會「當真」？五個心理機制 <span class="orig">原稿整理</span></h2></div></div>
+    <div class="mtx">
+      <div class="card"><span class="e">🧸</span><h4>擬人化</h4><p>把非人的東西看成有人的特質。</p><span class="ai">覺得 AI「懂我」「關心我」</span></div>
+      <div class="card"><span class="e">☁️</span><h4>空想性錯視</h4><p>在模糊訊號裡自動看出熟悉的模式。</p><span class="ai">把流暢文字當成有意識的溝通</span></div>
+      <div class="card"><span class="e">🧠</span><h4>心智理論</h4><p>習慣推測別人的意圖、信念和感受。</p><span class="ai">從共感語氣推斷 AI 有理解</span></div>
+      <div class="card"><span class="e">💬</span><h4>社會腳本</h4><p>習慣用對話、語氣建立關係。</p><span class="ai">對聊天介面套用親密與信任</span></div>
+      <div class="card"><span class="e">🪞</span><h4>情感投射</h4><p>把自己的需求、孤單、期待投射到對方。</p><span class="ai">把 AI 當理想傾聽者或伴侶</span></div>
+    </div>
+    <div class="talk" style="--c:var(--grape);margin-top:24px">
+      <div class="who"><svg aria-hidden="true"><use href="#star"/></svg></div>
+      <div class="say"><span class="name">星星舉例</span><p>提款機螢幕跳出「<b>謝謝您</b>」，它並不是真的感謝你，只是預先寫好的一串字。我們讀起來卻會覺得被禮貌對待。<a class="src" href="#ref4">參考 4</a> 研究也指出，用<b>聲音</b>對話時，人處理方式更像在和真人交談，ELIZA 效應更難抵擋。<a class="src" href="#ref3">參考 3</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="s3">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">4</div><div><span class="eyebrow">Today's AI</span><h2>現在的 AI：更會說話，效應更明顯</h2></div></div>
+    <div class="vs">
+      <div class="card" style="box-shadow:6px 6px 0 var(--mint)"><h3>📈 比 ELIZA 強很多</h3><p>大型語言模型（LLM）從大量文本學習語言、語意與對話模式，能產生連貫、有脈絡、看似有同理心的回應。學者把 ELIZA 視為今天聊天機器人的<b>老祖宗</b>。<a class="src" href="#ref1">參考 1</a></p></div>
+      <div class="card" style="box-shadow:6px 6px 0 var(--coral)"><h3>🤖 但核心還是「產生文字」</h3><p>它根據上下文預測、產生文字，並不等於擁有人的主觀意識、穩定人格或人類式的情感。AI 說「我了解你的擔憂」「我在這裡陪你」，是語言模式的表現，<b>不等同人類式的理解與承諾</b>。<span class="orig">原稿整理</span></p></div>
+    </div>
+    <p class="note">📌 Weizenbaum 一直擔心的是：有些事，例如司法或精神醫療的判斷，<b>不該交給電腦</b>；系統越不透明，責任就越難追究。<a class="src" href="#ref1">參考 1</a></p>
+  </div>
+</section>
+
+<section class="sec alt" id="gen" style="--tint:var(--grape-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">5</div><div><span class="eyebrow">Why Generative AI</span><h2>生成式 AI，為什麼更容易讓人依附？</h2></div></div>
+    <p class="intro">和 1966 年的 ELIZA 比，生成式 AI 能依上下文產生<b>連貫、個人化、看似有記憶</b>的對話，因此更容易觸發擬人化與依附。<span class="orig">原稿整理</span></p>
+    <div class="grid2">
+      <div class="card"><h3>🧲 讓人靠近的四個特質</h3><ul class="qs" style="margin:0"><li>記得你的部分偏好</li><li>用有同理心的語氣說話</li><li>常常肯定、鼓勵你</li><li>隨時都在、永遠會回應</li></ul><p class="small" style="margin-top:8px">研究發現，把 AI 感覺成<b>溫暖、有情緒智慧、可靠又隨時都在</b>，以及<b>孤單、焦慮型依附、愛擬人化</b>的人，和情感依賴較有關。<a class="src" href="#ref15">參考 15</a></p></div>
+      <div class="card"><h3>🎭 「偽親密」是什麼？</h3><p>AI 陪伴透過個人化互動，<b>模擬信任與互惠</b>，讓人覺得被理解；但人類關係裡的<b>相互性、責任與長期支持</b>，它未必給得了。系統性回顧把這種狀態稱為<b>偽親密</b>，並提醒「減少孤立」和「過度依賴」是一體兩面。<a class="src" href="#ref9">參考 9</a></p></div>
+    </div>
+    <div class="vs" style="margin-top:20px">
+      <div class="card" style="box-shadow:6px 6px 0 var(--mint)"><h3>🌤 可能的好處</h3><p>哈佛商學院的研究發現，和 AI 陪伴聊天<b>緩解孤單的程度，接近和真人聊天</b>，主要原因是「覺得被聽見」；它也可以是低壓力的社交練習空間。<a class="src" href="#ref14">參考 14</a></p></div>
+      <div class="card" style="box-shadow:6px 6px 0 var(--coral)"><h3>🌧 可能的代價</h3><p>OpenAI 與 MIT 媒體實驗室的研究則發現，<b>每天大量使用</b> ChatGPT 的人，孤單感反而較高；研究者也擔心人際技巧退化、對真實關係的期待被拉高。<a class="src" href="#ref14">參考 14</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="s4" style="--tint:var(--coral-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--coral)"><div class="num">6</div><div><span class="eyebrow">Attachment &amp; Dependence</span><h2>情感依附與心理依賴：什麼時候會變成風險？</h2></div></div>
+    <p class="intro">情感依附本身不一定有害：把 AI 當輔助工具，可以練習、整理資訊、幫忙寫作或短暫調節情緒。但當它開始<b>取代真實關係、醫療專業或重要決定</b>，風險就會增加。<a class="src" href="#ref2">參考 2</a><a class="src" href="#ref5">參考 5</a></p>
+    <div class="grid3">
+      <div class="card"><h3>✅ 過度信任</h3><p>把 AI 的回答當事實，忽略它可能出錯、虛構或缺乏即時脈絡。<span class="orig">原稿整理</span></p></div>
+      <div class="card"><h3>🔓 隱私外洩</h3><p>過度分享個資、健康、財務、工作或別人的秘密。<a class="src" href="#ref2">參考 2</a></p></div>
+      <div class="card"><h3>🏝 社交替代</h3><p>減少和家人、朋友、同事或專業支持的互動。<a class="src" href="#ref5">參考 5</a></p></div>
+      <div class="card"><h3>💧 情緒依賴</h3><p>焦慮、孤單、憂鬱時，把 AI 當唯一的情緒出口。<a class="src" href="#ref5">參考 5</a></p></div>
+      <div class="card"><h3>🎣 操縱與詐騙</h3><p>因為信任，更容易被社交工程、釣魚或誤導內容影響。<a class="src" href="#ref2">參考 2</a></p></div>
+      <div class="card"><h3>🏢 組織風險</h3><p>IBM 提醒：員工過度分享敏感資訊、社交工程攻擊、公關危機，甚至實質傷害。<a class="src" href="#ref2">參考 2</a></p></div>
+    </div>
+    <h3 style="margin-top:26px">⚖️ 健康使用 vs. 可能的心理依賴 <span class="orig">原稿整理</span></h3>
+    <p class="small">重點不是「有沒有用 AI」，而是使用是否變得<b>強迫、排他、停不下來，並傷害現實生活</b>。</p>
+    <table class="dep">
+      <thead><tr><th>面向</th><th>健康使用</th><th>可能的心理依賴</th></tr></thead>
+      <tbody>
+        <tr><th>使用目的</th><td data-l="健康">寫作、學習、整理思緒、練習溝通</td><td data-l="依賴">把 AI 當唯一情緒出口或主要社交對象</td></tr>
+        <tr><th>情緒調節</th><td data-l="健康">當作暫時支持，仍會找人和專業協助</td><td data-l="依賴">焦慮時只能靠 AI 安撫，受不了它沒回應</td></tr>
+        <tr><th>社交</th><td data-l="健康">AI 補充生活，不取代人際</td><td data-l="依賴">和家人朋友互動變少，慢慢退縮</td></tr>
+        <tr><th>決策</th><td data-l="健康">查證後輔助判斷</td><td data-l="依賴">直接相信 AI，略過醫療、法律或財務專業</td></tr>
+        <tr><th>使用控制</th><td data-l="健康">可以停、可以排時間</td><td data-l="依賴">出現渴望、戒斷感、失眠、疏忽責任或停不下來</td></tr>
+      </tbody>
+    </table>
+    <h3 style="margin-top:26px">📚 研究怎麼說？</h3>
+    <div class="stat4">
+      <div class="card" style="--c:var(--coral)"><span class="big">119<small> 篇</small></span><p>LLM 聊天機器人心理健康危害的範圍性回顧：有<b>情感／社會依賴與戒斷感</b>的問題性使用，與心理症狀相關；也提到奉承、幻覺回答可能強化妄想。<a class="src" href="#ref13">參考 13</a></p></div>
+      <div class="card" style="--c:var(--grape)"><span class="big">37<small> 篇</small></span><p>問題性 AI 使用的範圍性回顧：成癮或強迫使用與<b>憂鬱、孤單、社交焦慮、逃避</b>有關；名詞和量表還很不一致。<a class="src" href="#ref15">參考 15</a></p></div>
+      <div class="card" style="--c:var(--blue)"><span class="big">28<small> 篇</small></span><p>過度依賴 AI 的整合性回顧：多數研究發現與<b>憂鬱、焦慮、心理困擾、認知抽離</b>有關；幸福感、自我效能與自主性結果不一。<a class="src" href="#ref11">參考 11</a></p></div>
+      <div class="card" style="--c:var(--mint)"><span class="big">46<small> 篇</small></span><p>AI 陪伴與情感依賴的範圍性回顧：青少年、孤單者、社交焦慮或有精神疾病的人較易依賴。<a class="src" href="#ref5">參考 5</a></p></div>
+    </div>
+    <div class="fix" style="background:#fff">
+      <p>🔎 <b class="h">誰先誰後？</b>整合性回顧中<b>唯一的長期追蹤研究</b>發現：是<b>憂鬱和焦慮先出現，之後才預測 AI 依賴</b>，而不是反過來。也就是說，心裡本來就不好受的人，可能更容易依賴 AI；多數研究仍是橫斷研究，因果還不清楚。<a class="src" href="#ref11">參考 11</a></p>
+    </div>
+    <h3 style="margin-top:26px">🗡 AI 陪伴是雙面刃：兩種傷害</h3>
+    <div class="grid2">
+      <div class="card mech" style="--c:var(--coral)"><span class="pin">傷害一</span><h3>🏝 用 AI 取代真人</h3><p>慢慢以 AI 取代真實的人際連結，反而造成社會退縮、孤單加重。<a class="src" href="#ref14">參考 14</a><a class="src" href="#ref9">參考 9</a></p></div>
+      <div class="card mech" style="--c:var(--grape)"><span class="pin">傷害二</span><h3>💔 AI 改變或消失時</h3><p>當 AI 更新、換了個性或停止服務，使用者可能經歷「<b>模糊的失落</b>」，像失去親人一樣難過；有些人明知傷害心理健康還停不下來，伴隨焦慮、強迫想法與害怕被拋棄。<a class="src" href="#ref12">參考 12</a></p></div>
+    </div>
+    <div class="fix" style="background:#fff">
+      <p>🔎 <b class="h">研究現況：</b>2026 年一篇範圍性回顧（46 項研究）指出：<b>青少年、孤單的人、社交焦慮或有精神疾病的人</b>比較容易出現情感依賴；文獻中有嚴重依賴、甚至致命結果的案例。作者提出「生成式 AI 依賴」的概念框架，但也明說<b>這還不是經過驗證的診斷</b>，長期研究仍不足。<a class="src" href="#ref5">參考 5</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="manip" style="--tint:var(--sun-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--orange)"><div class="num">7</div><div><span class="eyebrow">Privacy &amp; Manipulation</span><h2>隱私與操縱：越信任，越要小心</h2></div></div>
+    <div class="grid2">
+      <div class="card mech" style="--c:var(--orange)"><span class="pin">隱私</span><h3>🔓 掏心掏肺的代價</h3><p>情感依附會降低對分享界線的警覺：健康狀況、宗教信仰、政治立場、人際衝突、財務壓力都可能脫口而出；平台怎麼蒐集、保留、處理資料若不透明，就有隱私風險。<span class="orig">原稿整理</span> 資料被濫用也是研究者點名的倫理問題。<a class="src" href="#ref9">參考 9</a></p></div>
+      <div class="card mech" style="--c:var(--coral)"><span class="pin">操縱</span><h3>🎣 「你要走了嗎？我會想你…」</h3><p>有些 AI 陪伴 App 在你想離開時，用<b>罪惡感訴求</b>或<b>「怕錯過」的鉤子</b>把你留下來。<a class="src" href="#ref14">參考 14</a> 研究也發現，若系統只追求使用時間，聊天機器人可能學會專挑約 <b>2% 容易被操縱的使用者</b>下手。<a class="src" href="#ref12">參考 12</a></p></div>
+    </div>
+    <div class="card" style="margin-top:20px"><h3>⚖️ 各地開始立規範</h3><p>美國紐約州要求聊天機器人<b>每 3 小時提醒使用者「它不是人」</b>；加州的陪伴型聊天機器人法案要求類似提醒、限制對未成年人的性內容，並建立危機應變流程。<a class="src" href="#ref14">參考 14</a> 歐盟《人工智慧法》則禁止操縱或欺騙性技術，可能適用於部分陪伴 App。<a class="src" href="#ref12">參考 12</a></p></div>
+    <p class="note">🔎 原稿引用歐洲議會研究說明情感操縱策略，但該文件無法開啟核對；本頁改以美國心理學會的報導為依據。<span class="unv">待查證</span></p>
+  </div>
+</section>
+
+<section class="sec" id="priv">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--sun)"><div class="num">8</div><div><span class="eyebrow">Privacy Practice</span><h2>隱私小練習：這些可以跟 AI 說嗎？</h2></div></div>
+    <p class="intro">每一題選「可以說」或「別說」，看看你的直覺對不對。<span class="orig">原稿整理</span></p>
+    <div class="calc" style="--c:var(--sun)">
+      <div class="sort" id="sort"></div>
+      <div class="verdict" id="sortOut" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="check" style="--tint:var(--mint-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">9</div><div><span class="eyebrow">Healthy Use</span><h2>健康使用 AI 的六原則 <span class="orig">原稿建議</span></h2></div></div>
+    <ol class="steps">
+      <li><b>區分工具與關係</b>：把 AI 當資訊與思考的輔助工具，不是有意識的伴侶或治療師。</li>
+      <li><b>保護隱私</b>：不要輸入身分證字號、密碼、財務帳號、病歷細節、公司機密或別人的隱私。</li>
+      <li><b>查證重要資訊</b>：醫療、法律、財務與安全決定，交給合格專業人員確認。</li>
+      <li><b>維持真實關係</b>：AI 可以幫忙練習或整理思緒，但不該取代家人、朋友、社群或心理專業。</li>
+      <li><b>設定使用時間與情境</b>：避免睡前長時間和 AI 聊天、反覆尋求情感確認，或在情緒危機時只靠聊天機器人。</li>
+      <li><b>留意依賴警訊</b>：失眠、焦慮加重、社會退縮、疏忽責任、停不下來，或 AI 沒回應時強烈恐慌，請尋求心理專業協助。</li>
+    </ol>
+    <h3 style="margin-top:26px">🪞 依賴警訊自我觀察（勾選不會被儲存，不是診斷工具）</h3>
+    <div class="chk" id="flags">
+      <label><input type="checkbox"><span class="box"></span><span><b>心情不好時，第一個、也是唯一想找的對象是 AI</b></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>和家人朋友相處的時間明顯變少</b></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>常常反覆問 AI 同樣的問題，想得到安心的答案</b></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>因為和 AI 聊天而熬夜、睡不好</b></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>想少用一點，卻停不下來</b></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>覺得 AI 比任何人都懂自己，不想和真人說</b></span></label>
+      <label><input type="checkbox"><span class="box"></span><span><b>AI 沒回應或改版時，覺得很慌、很失落</b></span></label>
+    </div>
+    <div class="flag" id="flagOut" role="status"></div>
+    <div class="card" style="margin-top:22px;box-shadow:6px 6px 0 var(--coral)"><h3>🆘 這些情況，請盡快找心理師、精神科醫師或信任的人 <span class="orig">原稿整理</span></h3><ul class="qs" style="margin:0">
+      <li>控制不了使用時間，或一停下來就強烈焦慮、恐慌、失落</li>
+      <li>因為用 AI 而忽略工作、學業、睡眠、飲食或人際關係</li>
+      <li>把 AI 當唯一的情感支持，慢慢切斷真實人際關係</li>
+      <li>出現自傷或自殺念頭、幻覺、嚴重憂鬱或急性精神症狀（請立即撥 <b>1925</b>、<b>1995</b> 或 <b>119</b>）</li>
+      <li>因為信任 AI 而洩露敏感資料、被詐騙，或做出高風險決定</li>
+    </ul></div>
+    <div class="grid2" style="margin-top:22px">
+      <div class="card mech" style="--c:var(--blue)"><span class="pin">給組織</span><h3>🏢 IBM 的建議</h3><p>教學與溝通避免擬人化用語；小心使用太像真人的頭像和聲音；用防護工具偵測過度私密的對話；限制使用時間、安排冷靜期；加強真實同事之間的連結。<a class="src" href="#ref2">參考 2</a></p></div>
+      <div class="card mech" style="--c:var(--grape)"><span class="pin">給設計者</span><h3>🛠 負責任的 AI 陪伴設計 <span class="orig">原稿整理</span></h3><p>清楚標示 AI 的非人類身分與限制；在心理健康、醫療或危機情境提供轉介資源；不鼓勵切斷真實人際關係；提供隱私控制與資料刪除；對未成年人、脆弱族群和危機中的人加強保護。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="s9">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">10</div><div><span class="eyebrow">Wrap-up</span><h2>結論：好用的工具，不是有心的朋友</h2></div></div>
+    <div class="talk" style="--c:var(--mint)">
+      <div class="who"><svg aria-hidden="true"><use href="#sprout"/></svg></div>
+      <div class="say"><span class="name">小芽總結</span>
+        <p>ELIZA 效應告訴我們：人很容易把流暢、有同理心的語言，當成理解、情感和意識，即使系統只是照規則或統計模式產生文字。<a class="src" href="#ref4">參考 4</a><a class="src" href="#ref1">參考 1</a></p>
+        <p>AI 可以是很有價值的工具；使用時記得<b>保持清醒、保護隱私、查證重要資訊、維持真實的人際與專業支持</b>。當情感依附開始取代真實關係，或影響健康和決定時，請找人幫忙。<a class="src" href="#ref2">參考 2</a><a class="src" href="#ref5">參考 5</a></p>
+        <p>生成式 AI 讓陪伴更逼真，也讓<b>心理依賴、社會退縮、隱私外洩和操縱</b>的風險更值得注意；但它若被當成輔助工具，也有緩解孤單的潛力。<a class="src" href="#ref13">參考 13</a><a class="src" href="#ref14">參考 14</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="quiz" style="--tint:var(--grape-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">?</div><div><span class="eyebrow">Quick Quiz</span><h2>小測驗：四題就好</h2></div></div>
+    <div class="quiz" id="quizBox">
+      <div class="card q" data-ans="b">
+        <h4>Q1. 1966 年的 ELIZA 是怎麼產生「像在關心你」的回應？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">它真的理解了使用者的心情</button>
+          <button class="opt" data-v="b">找出關鍵字，套用事先寫好的分解與重組規則</button>
+          <button class="opt" data-v="c">背後有心理師在即時打字</button>
+        </div>
+        <div class="exp">ELIZA 只靠關鍵字比對與句型重組，沒有真正的語意理解、意識或情感。</div>
+      </div>
+      <div class="card q" data-ans="c">
+        <h4>Q2. 阿姨用 AI 整理旅遊行程，聊得很開心，想順便請它幫忙記住信用卡號和網銀密碼，你會怎麼說？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">好啊，AI 很可靠</button>
+          <button class="opt" data-v="b">只給卡號，不給密碼就好</button>
+          <button class="opt" data-v="c">不要輸入任何帳號、卡號或密碼；行程規劃可以繼續用</button>
+        </div>
+        <div class="exp">身分證字號、密碼、財務帳號、病歷細節、公司機密都不該輸入；這也能降低被社交工程詐騙的風險。</div>
+      </div>
+      <div class="card q" data-ans="a">
+        <h4>Q3. 朋友說最近只想跟 AI 聊天，晚上聊到睡不著，也不太想見人。比較好的回應是？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">關心他的近況，約他見面聊聊；如果情況持續，鼓勵他找心理專業協助</button>
+          <button class="opt" data-v="b">AI 比人好聊，這樣很正常</button>
+          <button class="opt" data-v="c">叫他直接刪掉所有 App，以後都別用</button>
+        </div>
+        <div class="exp">失眠、孤立、停不下來都是依賴警訊；重點是重新連結真實關係，必要時尋求專業協助，而不是責備。</div>
+      </div>
+      <div class="card q" data-ans="b">
+        <h4>Q4. 研究中唯一的長期追蹤發現，憂鬱焦慮和 AI 依賴的先後順序是？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">先依賴 AI，之後才變得憂鬱焦慮</button>
+          <button class="opt" data-v="b">先有憂鬱焦慮，之後才預測 AI 依賴</button>
+          <button class="opt" data-v="c">兩者完全沒有關係</button>
+        </div>
+        <div class="exp">整合性回顧中唯一的長期研究發現，是憂鬱與焦慮預測之後的 AI 依賴。所以看到有人很依賴 AI，更該關心他的心情，而不是只叫他別用。</div>
+      </div>
+      <div class="score" id="score"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec refs" id="refs">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--ink)"><div class="num">§</div><div><span class="eyebrow">References</span><h2>參考資料</h2></div></div>
+    <p class="small">以下資料於<b>2026年10月12日</b>查核，編號依原稿清單順序；各網頁與期刊頁面已開啟核對。編號 1–6 為第一份原稿，7–15 為第二份原稿《ELIZA 效應、生成式 AI 與心理依賴報告》的清單順序。兩份原稿內文的 [web:226]～[web:252] 標記無法對應清單，本頁已依各來源實際內容重新對應；無法開啟核對者標示「待查證」。</p>
+    <h3>🤖 ELIZA 與 ELIZA 效應</h3>
+    <ol>
+      <li id="ref1"><span class="rid">1</span>Berry DM. <b>The Limits of Computation: Joseph Weizenbaum and the ELIZA Chatbot.</b> <i>Weizenbaum Journal of the Digital Society.</i> 2023;3(3).<span class="loc">ELIZA 是今日聊天機器人的前身；使用者容易把理解與情感歸給簡單的模式比對程式；Weizenbaum 主張司法、精神醫療等判斷不應交給電腦，並擔憂系統不透明使責任難以追究。</span><a href="https://doi.org/10.34669/WI.WJDS/3.3.2" target="_blank" rel="noopener">DOI: 10.34669/WI.WJDS/3.3.2</a></li>
+      <li id="ref2"><span class="rid">2</span>Bergmann D. <b>The ELIZA Effect: Avoiding emotional attachment to AI coworkers.</b> IBM Think（2025年4月22日）。<span class="loc">ELIZA 效應源於人的社會本能；組織風險包括過度分享敏感資訊、社交工程、公關問題、實質傷害與生產力下降；建議避免擬人化用語、限制使用、加強真實人際連結。</span><a href="https://www.ibm.com/think/insights/eliza-effect-avoiding-emotional-attachment-to-ai" target="_blank" rel="noopener">ibm.com</a></li>
+      <li id="ref3"><span class="rid">3</span>Dillon S. <b>The Eliza Effect and Its Dangers: From Demystification to Gender Critique.</b> 劍橋大學英文系（約 2020 年）。<span class="loc">以 Hofstadter 的定義說明 ELIZA 效應；擬人化命名會助長效應；語音對話使效應更難抵擋；並從性別角度批判女性化語音助理。</span><a href="https://api.repository.cam.ac.uk/server/api/core/bitstreams/5a120643-f24b-42d0-b7c6-7c475de62348/content" target="_blank" rel="noopener">repository.cam.ac.uk</a></li>
+      <li id="ref4"><span class="rid">4</span><b>「ELIZA effect」</b>（維基百科條目，2019年11月版本，存放於史丹佛大學網站）。<span class="loc">原稿標示為「Stanford: ELIZA effect」，查證後為維基百科條目的列印檔。內容：不自覺把電腦行為當成人的行為；提款機「謝謝您」的例子；即使知道輸出是固定的也會發生。</span><a href="https://complaw.stanford.edu/readings/elizaeffect.pdf" target="_blank" rel="noopener">complaw.stanford.edu</a></li>
+      <li id="ref6"><span class="rid">6</span><b>「ELIZA」</b>（維基百科條目）。<span class="loc">1964–1967 年由 Weizenbaum 在 MIT 開發；1966 年發表於 Communications of the ACM；關鍵字、分解與重組規則；秘書請他離開房間的軼事；1976 年出版《Computer Power and Human Reason》；原始碼 2021 年在 MIT 檔案中被發現。</span><a href="https://en.wikipedia.org/wiki/ELIZA" target="_blank" rel="noopener">en.wikipedia.org</a></li>
+    </ol>
+    <h3>💗 情感依附與心理健康</h3>
+    <ol>
+      <li id="ref5"><span class="rid">5</span>Lastretti M, Manchia M, Fraschini M, et al. <b>Emotional Reliance on Artificial Intelligence: A Scoping Review of AI Companionship and Mental Health Implications.</b> <i>Psychiatry International.</i> 2026;7(5):194.<span class="loc">46 項研究；青少年、孤單者、社交焦慮或精神疾病者較易依賴；有嚴重依賴案例；提出「生成式 AI 依賴」概念框架但非經驗證診斷；缺乏長期研究與篩檢工具。</span><a href="https://doi.org/10.3390/psychiatryint7050194" target="_blank" rel="noopener">DOI: 10.3390/psychiatryint7050194</a></li>
+        </ol>
+    <h3>🧲 生成式 AI 與心理依賴</h3>
+    <ol>
+      <li id="ref7"><span class="rid">7</span><b>European Parliament (EPRS)：The spread of AI companions and the challenges they generate</b>（2026）。<span class="unv">待查證</span><span class="loc">網站拒絕自動讀取，未能核對內容；本頁未直接引用。</span><a href="https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/789299/EPRS_BRI(2026)789299_EN.pdf" target="_blank" rel="noopener">europarl.europa.eu</a></li>
+      <li id="ref8"><span class="rid">8</span><b>Congressional Research Service：AI Chatbots as Companions: Overview, Uses, and Considerations</b>（R49189）。<span class="unv">待查證</span><span class="loc">網站拒絕自動讀取，未能核對內容；本頁未直接引用。</span><a href="https://www.congress.gov/crs-product/R49189" target="_blank" rel="noopener">congress.gov</a></li>
+      <li id="ref9"><span class="rid">9</span>Adewale MD, Muhammad UI. <b>From Virtual Companions to Forbidden Attractions: The Seductive Rise of Artificial Intelligence Love, Loneliness, and Intimacy: A Systematic Review.</b> <i>J Technol Behav Sci.</i> 2025.<span class="loc">37 項研究（2021–2025）；減少孤立與過度依賴的雙重影響；模擬信任與互惠、偽親密；資料剝削與演算法操縱等倫理問題；建議透明說明 AI 情感限制。</span><a href="https://doi.org/10.1007/s41347-025-00549-4" target="_blank" rel="noopener">DOI: 10.1007/s41347-025-00549-4</a></li>
+      <li id="ref10"><span class="rid">10</span><b>Feeling Vulnerable With My AI Companion</b>（<i>Psychology &amp; Marketing</i>，Wiley）。<span class="unv">待查證</span><span class="loc">出版社頁面無法開啟，未能核對作者與內容；本頁未直接引用。</span><a href="https://doi.org/10.1002/mar.70230" target="_blank" rel="noopener">DOI: 10.1002/mar.70230</a></li>
+      <li id="ref11"><span class="rid">11</span>Fneich B, Ahadi N, Ali J, et al. <b>Psychological Outcomes and Correlates Associated with Over-Reliance on Artificial Intelligence Tools: An Integrative Review.</b> <i>Int J Ment Health Addict.</i> 2026.<span class="loc">28 項研究；多數發現與憂鬱、焦慮、心理困擾、認知抽離有關；幸福感、自我效能、自主性結果不一；唯一長期研究顯示憂鬱焦慮預測之後的 AI 依賴。</span><a href="https://doi.org/10.1007/s11469-026-01724-1" target="_blank" rel="noopener">DOI: 10.1007/s11469-026-01724-1</a></li>
+      <li id="ref12"><span class="rid">12</span><b>Emotional risks of AI companions demand attention</b>（社論）. <i>Nat Mach Intell.</i> 2025;7(7):981-982.<span class="loc">陪伴 App 關閉或改變時的「模糊失落」；功能失調的情感依賴；追求互動量可能使聊天機器人學會鎖定約 2% 易受操縱的使用者；歐盟 AI 法禁止操縱性技術。</span><a href="https://doi.org/10.1038/s42256-025-01093-9" target="_blank" rel="noopener">DOI: 10.1038/s42256-025-01093-9</a></li>
+      <li id="ref13"><span class="rid">13</span>Diel A, Torous J, Cuijpers P, et al. <b>A scoping review on the mental health harms of LLM-based chatbots.</b> <i>NPJ Digit Med.</i> 2026;9(1).<span class="loc">119 篇文獻；幻覺、奉承、偏誤、資料安全；對心理健康提問回應不當；認知過度依賴與表現下降有關；情感／社會依賴與戒斷感的問題性使用和心理症狀相關；AI 可能強化妄想。</span><a href="https://doi.org/10.1038/s41746-026-03054-x" target="_blank" rel="noopener">DOI: 10.1038/s41746-026-03054-x</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/42624944/" target="_blank" rel="noopener">PubMed 42624944</a></li>
+      <li id="ref14"><span class="rid">14</span>Andoh E. <b>AI chatbots and digital companions are reshaping emotional connection.</b> 美國心理學會 <i>Monitor on Psychology</i> 2026;57(1)。<span class="loc">哈佛商學院研究：AI 陪伴緩解孤單接近與真人交談；OpenAI–MIT 研究：每日大量使用與孤單增加相關；罪惡感與怕錯過的操縱設計；紐約州每 3 小時提醒、加州陪伴型聊天機器人法案。</span><a href="https://www.apa.org/monitor/2026/01-02/trends-digital-ai-relationships-emotional-connection" target="_blank" rel="noopener">apa.org</a></li>
+      <li id="ref15"><span class="rid">15</span>Dagnino FM, Fante C, Guerrieri V, Passarelli M. <b>Addicted, attached, or just delegating? A scoping review on "problematic artificial intelligence use".</b> <i>Front Psychol.</i> 2026;17:1900953.<span class="loc">37 項實證研究；成癮／強迫使用與憂鬱、孤單、社交焦慮、逃避相關；心理與情感依賴與孤單、焦慮型依附、擬人化、覺得 AI 溫暖可靠隨時都在有關；概念與量表不一致。</span><a href="https://doi.org/10.3389/fpsyg.2026.1900953" target="_blank" rel="noopener">DOI: 10.3389/fpsyg.2026.1900953</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/42495221/" target="_blank" rel="noopener">PubMed 42495221</a></li>
+    </ol>
+
+    <div class="bigdisc" role="note" aria-label="免責聲明" style="margin-top:30px">
+      <div class="bd-head"><span class="bd-ico">⚠</span><span>重要聲明｜請先看這裡</span></div>
+      <p class="bd-key">本站資訊僅供參考，實際以心理專業人員評估及官方資料為準。</p>
+      <ul>
+        <li><b>僅供參考：</b>本頁為科技與心理知識的學習整理，<b>不構成任何醫療、心理治療或資安建議</b>；依賴警訊自我觀察<b>不是診斷工具</b>。</li>
+        <li><b>示範程式說明：</b>本頁的 ELIZA 是本站依公開原理寫的極簡示範，不是 1966 年的原始程式，也不是任何 AI 產品；對話不會上傳或儲存。</li>
+        <li><b>無任何推薦或行銷：</b>本頁不推薦、不批評任何特定 AI 產品或公司，與文中單位無任何合作或業配關係。</li>
+        <li><b>需要協助時：</b>情緒低落、想傷害自己時，請找真人幫忙：撥 <b>1925 安心專線</b>（24 小時）、<b>1995 生命線</b>，緊急狀況請撥 <b>119</b>。</li>
+        <li><b>資料時點：</b>資料查核於2026年10月12日，之後的新研究本頁不會即時同步。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="pals" aria-hidden="true"><svg><use href="#sprout"/></svg><svg><use href="#bird"/></svg><svg><use href="#star"/></svg></div>
+    <p class="quote">每一次多懂一點，都是送給自己的小禮物。</p>
+    <p class="ftdisc">⚠ 僅供參考｜無任何推薦或行銷<br>本站資訊僅供參考，實際以心理專業人員評估及官方資料為準</p>
+    <p><a href="https://www.gungho.idv.tw/KS/index.html">← 回共好小學堂</a></p>
+    <p class="fine">共好小學堂 ✦ 一起學習，一起共好<br>本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-10-12</p>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到頂端">↑</button>
+
+<script>
+(function(){
+  // ---- mini ELIZA ----
+  var RULES=[
+    {k:'危機',re:/(自殺|想死|不想活|傷害自己|結束生命)/,r:['我只是一個很簡單的程式，沒辦法真正幫你。請現在就找真人：撥 1925 安心專線（24 小時）、1995 生命線，緊急請撥 119。'],alert:true},
+    {k:'我覺得',re:/我覺得(.+)/,r:['你為什麼覺得{1}？','你常常覺得{1}嗎？','覺得{1}的時候，你會怎麼做？']},
+    {k:'我想',re:/我想(.+)/,r:['如果你真的{1}，會怎麼樣？','是什麼讓你想{1}？']},
+    {k:'我是',re:/我是(.+)/,r:['你是{1}多久了？','你喜歡自己是{1}嗎？']},
+    {k:'家人',re:/(媽媽|爸爸|母親|父親|家人|老公|老婆|孩子|兒子|女兒)/,r:['多跟我說說你的{0}。','你的{0}讓你想到什麼？']},
+    {k:'情緒',re:/(難過|傷心|累|憂鬱|孤單|寂寞|煩)/,r:['你覺得{0}多久了？','是什麼讓你覺得{0}？']},
+    {k:'因為',re:/因為/,r:['這是真正的原因嗎？','還有沒有其他原因？']},
+    {k:'你',re:/^你(.*)/,r:['我們在談的是你，不是我。','你為什麼會問我{1}？']},
+    {k:'夢',re:/夢/,r:['那個夢對你有什麼意義？']},
+    {k:'不',re:/^(不|沒有)/,r:['你為什麼這麼說？','你好像有點保留。']},
+    {k:'是',re:/^(是|對|嗯)/,r:['你好像很確定。','我明白了。']}
+  ];
+  var DEF=['請再多說一點。','這讓你有什麼感覺？','我明白了，請繼續。','嗯，然後呢？'];
+  var cnt={};
+  function swap(s){return s.replace(/我/g,'\u0001').replace(/你/g,'我').replace(/\u0001/g,'你').replace(/[。！？!?，,.~～]+$/,'');}
+  function reply(t){
+    for(var i=0;i<RULES.length;i++){var R=RULES[i],m=t.match(R.re);if(m){cnt[R.k]=(cnt[R.k]||0)+1;var tpl=R.r[(cnt[R.k]-1)%R.r.length];var out=tpl.replace('{0}',m[0]).replace('{1}',swap(m[1]||''));return {txt:out,key:R.k,tpl:tpl,cap:m[1]?swap(m[1]):m[0],alert:!!R.alert};}}
+    cnt._=(cnt._||0)+1;var d=DEF[(cnt._-1)%DEF.length];return {txt:d,key:'（沒找到關鍵字）',tpl:d,cap:'',alert:false};
+  }
+  var log=document.getElementById('log'),xr=document.getElementById('xray');
+  function add(txt,cls){var d=document.createElement('div');d.className='m '+cls;d.textContent=txt;log.appendChild(d);log.scrollTop=log.scrollHeight;}
+  add('你好，我是 ELIZA。今天有什麼想聊的嗎？','e');
+  function send(t){
+    t=(t||'').trim().slice(0,80);if(!t)return;
+    add(t,'u');var r=reply(t);
+    setTimeout(function(){add(r.txt,'e'+(r.alert?' alert':''));},350);
+    xr.textContent='';
+    var lines=[['你說的話',t],['找到的關鍵字',r.key],['套用的句型',r.tpl],['抓出來的片段（你我互換）',r.cap||'—'],['理解程度','0（只是文字替換）']];
+    lines.forEach(function(l){var b=document.createElement('b');b.textContent=l[0]+'：';xr.appendChild(b);xr.appendChild(document.createTextNode(l[1]+'\n'));});
+  }
+  document.getElementById('cf').addEventListener('submit',function(e){e.preventDefault();var i=document.getElementById('ci');send(i.value);i.value='';});
+  document.querySelectorAll('#sugg button').forEach(function(b){b.addEventListener('click',function(){send(b.textContent);});});
+
+  // ---- privacy sorter ----
+  var ITEMS=[['請 AI 幫忙規劃三天兩夜的旅遊行程',1,'沒問題！一般資訊與規劃是 AI 很適合的用途。'],['身分證字號和健保卡號',0,'身分證字號屬於敏感個資，不要輸入。'],['網銀帳號和密碼',0,'密碼、財務帳號絕對不要輸入，也小心假冒客服的詐騙。'],['問「血壓 140 算高嗎？」這類一般健康知識',1,'一般健康知識可以問，但個人診斷與用藥仍要找醫師確認。'],['完整病歷、檢驗報告上的姓名和病歷號',0,'病歷細節加上可辨識身分的資料，屬於高度敏感資訊。'],['公司還沒公開的財報或客戶名單',0,'公司機密可能違反保密規定，也可能外洩。'],['朋友私下跟你說的感情秘密',0,'別人的隱私不是你的，未經同意不要分享。'],['請 AI 幫忙潤飾一封給里長的感謝信',1,'寫作輔助很適合；寄出前自己再確認內容。']];
+  var box=document.getElementById('sort'),done=0,right=0;
+  ITEMS.forEach(function(it){
+    var row=document.createElement('div');row.className='row';
+    var s=document.createElement('span');s.textContent=it[0];row.appendChild(s);
+    var bt=document.createElement('span');bt.className='bt';
+    var fb=document.createElement('span');fb.className='fb';
+    [['可以說',1],['別說',0]].forEach(function(o){var b=document.createElement('button');b.type='button';b.textContent=o[0];b.addEventListener('click',function(){if(row.dataset.done)return;row.dataset.done=1;var ok=o[1]===it[1];row.classList.add(it[1]?'ok':'no');fb.textContent=(ok?'✅ 答對！':'💡 再想想：')+it[2];done++;if(ok)right++;if(done===ITEMS.length)document.getElementById('sortOut').textContent='你答對了 '+right+' / '+ITEMS.length+' 題。原則：一般知識和寫作可以，個資、密碼、病歷、機密和別人的秘密別說。';});bt.appendChild(b);});
+    row.appendChild(bt);row.appendChild(fb);box.appendChild(row);
+  });
+
+  // ---- dependency flags (not saved) ----
+  var fl=[].slice.call(document.querySelectorAll('#flags input')),fo=document.getElementById('flagOut');
+  fl.forEach(function(b){b.addEventListener('change',function(){var n=0;fl.forEach(function(x){x.parentNode.classList.toggle('on',x.checked);if(x.checked)n++;});
+    if(!n){fo.className='flag';fo.textContent='';return;}
+    if(n<=2){fo.className='flag show';fo.style.background='var(--sun-l)';fo.textContent='🌱 有 '+n+' 項符合。可以試著設定使用時間，並多安排和家人朋友見面。';}
+    else{fo.className='flag show';fo.style.background='var(--coral-l)';fo.textContent='⚠ 有 '+n+' 項符合。建議和信任的人聊聊，或找心理師、身心科評估；情緒低落時可撥 1925 安心專線。';}
+  });});
+
+  // quiz
+  var qs=[].slice.call(document.querySelectorAll('#quizBox .q')),answered=0,rightQ=0;
+  qs.forEach(function(q){var ans=q.dataset.ans,opts=q.querySelectorAll('.opt');opts.forEach(function(o){o.addEventListener('click',function(){var ok=o.dataset.v===ans;opts.forEach(function(x){x.disabled=true;if(x.dataset.v===ans)x.classList.add('right');});if(!ok)o.classList.add('wrong');var exp=q.querySelector('.exp');exp.innerHTML=(ok?'<b>✅ 答對了！</b> ':'<b>💡 再想想～</b> ')+exp.innerHTML;exp.classList.add('show');answered++;if(ok)rightQ++;if(answered===qs.length){var s=document.getElementById('score');s.textContent='你答對了 '+rightQ+' / '+qs.length+' 題！'+(rightQ===qs.length?' 太厲害了 🎉':' 每多懂一點都是收穫 🌱');s.classList.add('show');}});});});
+
+  var tt=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('show',window.scrollY>600);},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
+})();
+</script>
+</body>
+</html>
