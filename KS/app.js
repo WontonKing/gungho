@@ -17,7 +17,13 @@ const cards = [];
   card.append(top, title, description, action);
 
   // 【新增】記住原始順序與日期，供排序使用
-  cards.push({ card, index, date: Date.parse(topic.date || '') });
+  // 每堂課都有日期時，編號依日期決定（最早的是 LESSON 01）
+if (cards.length && cards.every(c => !isNaN(c.date))) {
+  cards.slice()
+    .sort((a, b) => (a.date - b.date) || (a.index - b.index))
+    .forEach((c, i) => { c.number.textContent = 'LESSON ' + String(i + 1).padStart(2, '0'); });
+}
+  cards.push({ card, index, number, date: Date.parse(topic.date || '') });
 });
 
 /* ===== 2. 【新增】排序功能 ===== */
