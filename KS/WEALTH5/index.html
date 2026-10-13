@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2455c7">
+<title>人生記分板只算錢嗎？｜共好小學堂</title>
+<meta name="description" content="時間、社交、心理、身體、金錢，五種財富一起算，才是完整的人生記分板。認識抵達終點謬誤、皮洛士勝利、反目標，再替自己的五種財富打分數、畫出人生週曆。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/WEALTH5/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="人生記分板只算錢嗎？五種財富與生活設計｜共好小學堂">
+<meta property="og:description" content="升遷、買房之後就會快樂嗎？用五種財富重新設計人生記分板，替自己打分數、寫下反目標。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/WEALTH5/">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 130'%3E%3Cpath d='M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z' fill='%235ad6a4' stroke='%231f2a44' stroke-width='5'/%3E%3Cpath d='M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Cellipse cx='60' cy='88' rx='40' ry='38' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Ccircle cx='46' cy='84' r='6' fill='%231f2a44'/%3E%3Ccircle cx='74' cy='84' r='6' fill='%231f2a44'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c;  --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff;  --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7;
+  --round:'Huninn','Noto Sans TC',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans TC',system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:var(--blue)}
+h1,h2,h3,h4{font-family:var(--round);line-height:1.35;margin:0 0 .5em;font-weight:400}
+p{margin:0 0 1em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.hl{background:linear-gradient(transparent 58%,var(--sun) 58%,var(--sun) 92%,transparent 92%);padding:0 2px}
+.nw{white-space:nowrap}
+b,strong{font-weight:700}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.94);backdrop-filter:blur(8px);border-bottom:3px solid var(--ink)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex-shrink:0}
+.brand svg{width:40px;height:44px}
+.brand b{font-family:var(--round);font-weight:400;font-size:19px;display:block;line-height:1.1}
+.brand small{font-size:10px;letter-spacing:.14em;color:var(--ink-2);display:block}
+.navpills{display:flex;gap:6px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.navpills::-webkit-scrollbar{display:none}
+.navpills a{white-space:nowrap;text-decoration:none;font-size:14px;color:var(--ink);padding:4px 11px;border:2px solid var(--ink);border-radius:99px;background:#fff}
+.navpills a:hover{background:var(--sun-l)}
+.back{white-space:nowrap;text-decoration:none;font-family:var(--round);background:var(--blue);color:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:5px 14px;box-shadow:0 3px 0 var(--ink);font-size:15px;flex-shrink:0}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--blue-l),var(--bg));padding:56px 0 90px}
+.blob{position:absolute;border-radius:50%;opacity:.55;z-index:0}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.tag{display:inline-block;font-family:var(--round);background:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:4px 14px;font-size:15px;box-shadow:0 3px 0 var(--ink);margin-bottom:18px}
+.hero h1{font-size:clamp(32px,5vw,52px);margin-bottom:16px}
+.hero .lead{font-size:18.5px;color:var(--ink-2);max-width:34em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{font-family:var(--round);text-decoration:none;font-size:17px;padding:10px 22px;border:3px solid var(--ink);border-radius:16px;box-shadow:0 4px 0 var(--ink);color:var(--ink);background:#fff;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--sun)}
+.meta{font-size:13.5px;color:var(--ink-2);margin-top:18px}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block}
+.bubble{position:absolute;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:8px 14px;font-family:var(--round);font-size:17px;box-shadow:0 4px 0 var(--ink);white-space:nowrap}
+.bubble::after{content:"";position:absolute;width:14px;height:14px;background:#fff;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg);bottom:-9px;left:30px}
+.hero .bubble{top:2%;left:4%}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:60px;z-index:1}
+.float{animation:float 4.5s ease-in-out infinite}
+.float.d2{animation-delay:-1.5s}.float.d3{animation-delay:-3s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media (prefers-reduced-motion:reduce){.float{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
+
+/* sections */
+section.sec{padding:64px 0;position:relative}
+section.alt{background:linear-gradient(180deg,var(--tint,#fff),var(--bg))}
+.sec-head{display:flex;align-items:flex-start;gap:18px;margin-bottom:26px}
+.num{flex-shrink:0;width:58px;height:58px;display:grid;place-items:center;font-family:var(--round);font-size:28px;color:#fff;background:var(--c,var(--blue));border:3px solid var(--ink);border-radius:16px;transform:rotate(-6deg);box-shadow:4px 4px 0 var(--ink)}
+.eyebrow{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--c,var(--blue));font-weight:700;display:block}
+.sec-head h2{font-size:clamp(25px,3.4vw,34px);margin:2px 0 0}
+.intro{color:var(--ink-2);max-width:46em}
+hr.dash{border:0;border-top:3px dashed var(--line);margin:34px 0}
+
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:0 5px 0 var(--ink)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card h3{font-size:21px;margin-bottom:.35em}
+.card p:last-child{margin-bottom:0}
+.small{font-size:14.5px;color:var(--ink-2)}
+.note{font-size:14.5px;color:var(--ink-2);background:#fff;border:2px dashed var(--line);border-radius:14px;padding:10px 14px;margin-top:16px}
+.ico{width:96px;height:96px;display:block;margin-bottom:10px}
+.src{display:inline-block;font-size:12px;line-height:1;text-decoration:none;background:var(--blue-l);color:var(--blue-d);border:1.5px solid var(--blue);border-radius:99px;padding:4px 8px;margin:0 2px;vertical-align:2px;font-weight:700;white-space:nowrap}
+.src:hover{background:var(--sun-l)}
+.badge{display:inline-block;font-size:12.5px;font-weight:700;border:2px solid var(--ink);border-radius:99px;padding:1px 10px;background:var(--sun-l);margin-bottom:8px}
+
+/* talk */
+.talk{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;margin-bottom:22px}
+.talk.r{grid-template-columns:1fr 150px}
+.talk.r .who{order:2}
+.who svg{width:130px;height:130px}
+.say{position:relative;background:#fff;border:3px solid var(--ink);border-radius:22px;padding:18px 22px;box-shadow:6px 6px 0 var(--c,var(--sun))}
+.say::before{content:"";position:absolute;left:-12px;top:42px;width:18px;height:18px;background:#fff;border-left:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg)}
+.talk.r .say::before{left:auto;right:-12px;transform:rotate(-135deg)}
+.say .name{font-family:var(--round);color:var(--c,var(--blue));font-size:15px;display:block;margin-bottom:4px}
+.say p:last-child{margin-bottom:0}
+.qs{counter-reset:q;list-style:none;padding:0;margin:.4em 0 1em}
+.qs li{counter-increment:q;padding-left:40px;position:relative;margin:6px 0}
+.qs li::before{content:counter(q);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;background:var(--sun);border:2.5px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:15px}
+.warn{background:var(--coral-l);border:3px solid var(--ink);border-radius:18px;padding:14px 18px;margin-top:14px}
+.warn b{color:#c33}
+
+/* evidence chips */
+.ev{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.ev .card{padding:16px;box-shadow:0 4px 0 var(--ink)}
+.ev h4{font-size:17px;margin:0 0 4px}
+.ev .k{font-size:13.5px;color:var(--ink-2);margin:0}
+.ev .u{font-size:14px;margin-top:8px;padding-top:8px;border-top:2px dashed var(--line)}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tab{font-family:var(--round);font-size:16px;cursor:pointer;border:2.5px solid var(--ink);background:#fff;border-radius:14px;padding:7px 14px;color:var(--ink);box-shadow:0 3px 0 var(--ink)}
+.tab[aria-selected="true"]{background:var(--c,var(--blue));color:#fff}
+.tab:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.panel{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:24px;box-shadow:6px 6px 0 var(--c,var(--blue))}
+.panel[hidden]{display:none}
+.panel-grid{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:start}
+.panel-grid svg{width:110px;height:110px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0}
+.kv dt{font-weight:700;color:var(--c,var(--blue));white-space:nowrap}
+.kv dd{margin:0}
+
+/* mechanism cards */
+.mech{position:relative;padding-top:30px}
+.mech .pin{position:absolute;top:-16px;left:20px;background:var(--c);color:#fff;font-family:var(--round);font-size:14px;border:2.5px solid var(--ink);border-radius:99px;padding:2px 12px;transform:rotate(-4deg)}
+.mech .key{margin-top:12px;padding-top:10px;border-top:2px dashed var(--line);font-weight:700}
+
+/* age matrix */
+.agechips{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.mtx{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.mtx div{border:2.5px solid var(--ink);border-radius:16px;padding:10px 12px;background:var(--bgc,#fff)}
+.mtx b{display:block;font-family:var(--round);font-weight:400;font-size:15px;color:var(--ink-2)}
+.mtx span{font-weight:700}
+
+/* table-like */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:20px;overflow:hidden;background:#fff;font-size:15.5px}
+.tbl th,.tbl td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:2px solid var(--line)}
+.tbl thead th{font-family:var(--round);font-weight:400;font-size:16.5px;color:#fff;background:var(--blue)}
+.tbl thead th:nth-child(2){background:var(--coral)}
+.tbl thead th:nth-child(3){background:var(--orange)}
+.tbl thead th:nth-child(4){background:var(--mint)}
+.tbl thead th:first-child{background:var(--ink)}
+.tbl tbody th{background:var(--sun-l);font-weight:700;white-space:nowrap}
+.tbl tr:last-child td,.tbl tr:last-child th{border-bottom:0}
+.tbl td.r{text-align:right;font-family:var(--round);font-size:18px}
+
+.prod{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.prod .card{padding:18px 20px;box-shadow:0 4px 0 var(--ink)}
+.prod .co{display:inline-block;font-family:var(--round);color:#fff;background:var(--c);border:2.5px solid var(--ink);border-radius:12px;padding:1px 12px;margin-bottom:8px}
+.prod h4{font-size:17.5px;margin:0 0 6px}
+.prod .ask{margin-top:10px;padding:8px 12px;background:var(--grape-l);border-radius:12px;font-size:15px}
+.prod .ask::before{content:"❓ 要追問：";font-weight:700}
+
+/* calculators */
+.calc{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:6px 6px 0 var(--c,var(--sky))}
+.calc label{font-weight:700;display:block;margin-bottom:4px}
+.calc input[type=range]{width:100%;accent-color:var(--blue);height:28px}
+.calc input[type=number]{font:inherit;font-family:var(--round);font-size:22px;width:120px;padding:4px 10px;border:3px solid var(--ink);border-radius:12px}
+.bars{display:grid;gap:12px;margin-top:16px}
+.bar{display:grid;grid-template-columns:96px 1fr 110px;gap:10px;align-items:center}
+.bar .tr{height:28px;border:2.5px solid var(--ink);border-radius:99px;background:#f4f6fb;overflow:hidden}
+.bar .fill{height:100%;border-radius:99px;transition:width .3s}
+.bar .v{font-family:var(--round);font-size:19px;text-align:right}
+.verdict{margin-top:14px;font-weight:700;background:var(--sun-l);border-radius:14px;padding:10px 14px}
+.agegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.agebox{border:3px solid var(--ink);border-radius:18px;padding:12px 14px;background:#fff}
+.agebox .st{font-family:var(--round);font-size:18px}
+.agebox.ok{background:var(--mint-l)}
+.agebox.no{background:var(--coral-l)}
+
+/* compare 3 companies */
+.cmp{display:grid;grid-template-columns:150px repeat(3,1fr);border:3px solid var(--ink);border-radius:22px;overflow:hidden;background:#fff;font-size:15.5px}
+.cmp > div{padding:11px 13px;border-bottom:2px solid var(--line);border-left:2px solid var(--line)}
+.cmp .h{font-family:var(--round);color:#fff;font-size:17px;border-left:0}
+.cmp .h.c1{background:var(--blue)}.cmp .h.c2{background:var(--coral)}.cmp .h.c3{background:var(--mint)}
+.cmp .h.c0{background:var(--ink)}
+.cmp .rh{background:var(--sun-l);font-weight:700;border-left:0}
+.cmp .m{display:none}
+
+/* timeline */
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:14px 18px 14px 70px;background:#fff;border:3px solid var(--ink);border-radius:18px}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:var(--mint);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:20px}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:33px;bottom:-17px;height:17px;border-left:3px dashed var(--ink)}
+
+/* formula */
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:10px 0}
+.formula .t{border:2.5px solid var(--ink);border-radius:12px;padding:4px 12px;background:#fff;font-size:15.5px}
+.formula .t.p{background:var(--coral-l)}.formula .t.m{background:var(--mint-l)}
+.formula .op{font-family:var(--round);font-size:24px;line-height:1}
+.formula .eq{background:var(--sun);font-weight:700}
+
+/* checklist */
+.chk{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.chk label{display:flex;gap:14px;align-items:flex-start;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px 16px;cursor:pointer;box-shadow:0 4px 0 var(--ink);transition:background .2s}
+.chk input{position:absolute;opacity:0;pointer-events:none}
+.chk .box{flex-shrink:0;width:30px;height:30px;border:3px solid var(--ink);border-radius:9px;background:#fff;display:grid;place-items:center;font-size:19px;color:#fff;margin-top:2px}
+.chk input:checked + .box{background:var(--mint)}
+.chk input:checked + .box::after{content:"✓"}
+.chk input:focus-visible + .box{outline:3px solid var(--sun);outline-offset:2px}
+.chk label.on{background:var(--mint-l)}
+.chk b{display:block;font-family:var(--round);font-weight:400;font-size:18px}
+.chk span.d{font-size:14.5px;color:var(--ink-2);line-height:1.6;display:block}
+.prog{margin:20px 0 8px;display:flex;align-items:center;gap:14px}
+.prog .tr{flex:1;height:26px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden}
+.prog .fill{height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 10px,#5ad6a4 10px,#5ad6a4 20px);transition:width .3s}
+.prog .n{font-family:var(--round);font-size:20px;white-space:nowrap}
+.cheer{display:none;background:var(--sun-l);border:3px solid var(--ink);border-radius:18px;padding:12px 16px;font-weight:700;margin-top:12px}
+.cheer.show{display:block}
+
+/* quiz */
+.quiz{display:grid;gap:18px}
+.q h4{font-size:18.5px}
+.opts{display:grid;gap:10px}
+.opt{text-align:left;font:inherit;font-size:16px;cursor:pointer;background:#fff;border:2.5px solid var(--ink);border-radius:14px;padding:10px 14px;color:var(--ink)}
+.opt:hover:not(:disabled){background:var(--sky-l)}
+.opt:disabled{cursor:default}
+.opt.right{background:var(--mint-l);border-color:var(--mint);font-weight:700}
+.opt.wrong{background:var(--coral-l);border-color:var(--coral)}
+.exp{display:none;margin-top:10px;background:var(--sun-l);border-radius:14px;padding:10px 14px;font-size:15.5px}
+.exp.show{display:block}
+.score{display:none;text-align:center;font-family:var(--round);font-size:22px;background:var(--blue);color:#fff;border:3px solid var(--ink);border-radius:20px;padding:14px;box-shadow:0 5px 0 var(--ink)}
+.score.show{display:block}
+
+/* refs */
+.refs h3{font-size:19px;margin-top:22px;color:var(--blue-d)}
+.refs ol{padding-left:0;list-style:none;margin:0}
+.refs li{background:#fff;border:2px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:10px;font-size:15px;line-height:1.7;word-break:break-word}
+.refs li:target{border-color:var(--sun);background:var(--sun-l)}
+.refs .rid{display:inline-block;font-family:var(--round);background:var(--blue);color:#fff;border-radius:8px;padding:0 8px;margin-right:6px;font-size:13.5px}
+.refs .loc{display:block;color:var(--ink-2);font-size:13.5px}
+.refs a{word-break:break-all;font-size:13.5px}
+
+.disc{background:var(--sun-l);border:3px dashed var(--ink);border-radius:20px;padding:18px 22px;font-size:15.5px}
+.disc b{font-family:var(--round);font-weight:400;font-size:18px;display:block;margin-bottom:4px}
+
+.bigdisc{background:var(--coral-l);border:4px solid var(--ink);border-radius:24px;box-shadow:8px 8px 0 var(--coral);padding:22px 26px;outline:3px dashed var(--coral);outline-offset:-14px}
+.bd-head{display:flex;align-items:center;gap:12px;font-family:var(--round);font-size:clamp(22px,3vw,28px);color:#b42318;margin-bottom:10px}
+.bd-ico{flex-shrink:0;width:46px;height:46px;border-radius:50%;background:var(--coral);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-size:24px}
+.bd-key{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:8px 14px;margin:0 0 12px;font-weight:900;font-size:18px;color:#b42318}
+.bigdisc ul{margin:0;padding-left:1.2em}
+.bigdisc li{margin:6px 0;line-height:1.75}
+.bigdisc li b:first-child{color:#b42318}
+.ftdisc{display:inline-block;background:var(--sun);color:var(--ink);font-weight:700;border:3px solid var(--ink);border-radius:14px;padding:6px 16px;margin:4px 0 14px;font-size:15.5px}
+@media (max-width:820px){.bigdisc{padding:18px 16px;outline-offset:-10px}}
+footer{background:var(--blue-d);color:#fff;text-align:center;padding:46px 0 34px;margin-top:40px;border-top:4px solid var(--ink)}
+footer .pals{display:flex;justify-content:center;gap:12px;margin-bottom:12px}
+footer .pals svg{width:80px;height:80px}
+footer .quote{font-family:var(--round);font-size:22px;margin-bottom:10px}
+footer a{color:var(--sun)}
+footer .fine{font-size:13px;opacity:.8;margin-top:10px}
+#toTop{position:fixed;right:18px;bottom:18px;width:52px;height:52px;border-radius:50%;background:var(--sun);border:3px solid var(--ink);box-shadow:0 4px 0 var(--ink);font-size:22px;font-family:var(--round);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;z-index:60;color:var(--ink)}
+#toTop.show{opacity:1;pointer-events:auto}
+
+@media (max-width:1000px){.ev{grid-template-columns:repeat(3,1fr)}.agechips{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .navpills{display:none}
+  .back{margin-left:auto}
+  .hero{padding:34px 0 80px}
+  .hero .wrap,.grid2,.grid3,.prod,.chk,.agegrid{grid-template-columns:1fr}
+  .hero-art{max-width:420px;margin:0 auto;width:100%}
+  .ev{grid-template-columns:1fr 1fr}
+  .mtx{grid-template-columns:1fr 1fr}
+  .talk,.talk.r{grid-template-columns:1fr;gap:6px}
+  .talk.r .who{order:0}
+  .who svg{width:96px;height:96px}
+  .say::before{left:40px;top:-12px;transform:rotate(135deg)}
+  .talk.r .say::before{left:40px;right:auto;transform:rotate(135deg)}
+  .panel-grid{grid-template-columns:1fr}
+  .panel-grid svg{width:84px;height:84px}
+  .kv{grid-template-columns:1fr}
+  .cmp{grid-template-columns:1fr 1fr 1fr}
+  .cmp .h.c0{display:none}
+  .cmp .h{font-size:15px;padding:9px 8px}
+  .cmp .rh{grid-column:1/-1}
+  .cmp > div{font-size:14.5px;padding:9px 8px}
+  .cmp > div:nth-child(n){border-left:0}
+  .cmp .v{border-left:2px solid var(--line)}
+  .cmp .v1{border-left:0}
+  .bar{grid-template-columns:72px 1fr 92px}
+  .sec-head{gap:14px}
+  .num{width:48px;height:48px;font-size:23px}
+  section.sec{padding:48px 0}
+  .tbl{font-size:14.5px}
+  .tbl th,.tbl td{padding:9px 9px}
+  .tblwrap{overflow-x:auto}
+  .card,.panel,.calc{padding:18px 16px}
+}
+@media (max-width:420px){.ev{grid-template-columns:1fr}.agechips{grid-template-columns:repeat(2,1fr)}.hero .bubble{font-size:15px}}
+
+/* ---- WEALTH5 專用 ---- */
+.orig{display:inline-block;font-size:12px;font-weight:700;background:var(--grape-l);color:#5b34c4;border:1.5px solid var(--grape);border-radius:99px;padding:3px 8px;margin:0 2px;vertical-align:2px;white-space:nowrap}
+.unv{display:inline-block;font-size:12px;font-weight:700;background:var(--orange-l);color:#a4520a;border:1.5px solid var(--orange);border-radius:99px;padding:3px 8px;margin:0 2px;vertical-align:2px;white-space:nowrap}
+.fix{border:3px dashed var(--coral);background:var(--coral-l);border-radius:18px;padding:14px 18px;margin-top:20px}
+.fix b.h{color:#c43c3c}
+.fix p:last-child{margin-bottom:0}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.vs>*{min-width:0}
+.w5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.w5 .card{text-align:center;padding:16px 12px;border-top:8px solid var(--c)}
+.w5 .ic{font-size:34px;display:block}
+.w5 h3{margin:6px 0 4px;font-size:18px}
+.w5 p{font-size:14.5px;margin:0 0 6px}
+.w5 .act{font-size:13.5px;color:var(--ink-2);border-top:2px dashed var(--line);padding-top:6px}
+.score2{display:grid;grid-template-columns:1fr 340px;gap:24px;align-items:center}
+.sl{display:grid;gap:12px}
+.sl label{display:grid;grid-template-columns:120px 1fr 40px;gap:10px;align-items:center;font-weight:700}
+.sl output{font-family:var(--round);font-size:22px;color:var(--c);text-align:right}
+.radar svg{width:100%;height:auto;display:block}
+.weeks{width:100%;max-width:640px;margin:10px auto 0;display:block;image-rendering:pixelated}
+.wkleg{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;font-size:14px;margin-top:8px}
+.wkleg i{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-2px;margin-right:4px;border:1px solid var(--ink)}
+.row2{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.row2 input[type=number]{font:inherit;font-size:18px;width:90px;border:3px solid var(--ink);border-radius:12px;padding:4px 10px}
+.seg{display:inline-flex;border:3px solid var(--ink);border-radius:14px;overflow:hidden;flex-wrap:wrap}
+.seg button{font-family:var(--round);font-size:15px;border:0;background:#fff;color:var(--ink);padding:6px 14px;cursor:pointer}
+.seg button+button{border-left:3px solid var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--blue);color:#fff}
+.picks{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.picks button{font:inherit;font-size:15px;border:2.5px solid var(--ink);border-radius:12px;background:#fff;color:var(--ink);padding:6px 12px;cursor:pointer;box-shadow:0 3px 0 var(--ink);text-align:left}
+.picks button[aria-pressed="true"]{background:var(--mint-l)}
+.mine{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+.mine input{flex:1;min-width:200px;font:inherit;font-size:16px;border:3px solid var(--ink);border-radius:12px;padding:6px 12px}
+.mine button,.btnrow button{font-family:var(--round);font-size:15px;border:3px solid var(--ink);border-radius:12px;background:var(--sun);color:var(--ink);padding:6px 14px;cursor:pointer}
+.mylist{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:8px}
+.mylist li{display:flex;justify-content:space-between;gap:10px;align-items:center;background:#fff;border:2.5px solid var(--ink);border-radius:12px;padding:6px 12px}
+.mylist li button{font:inherit;font-size:13px;border:2px solid var(--ink);border-radius:8px;background:#fff;cursor:pointer;padding:1px 8px}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.btnrow button.ghost{background:#fff}
+.caps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.caps .card{padding:14px 12px;text-align:center}
+.caps .ic{font-size:30px;display:block}
+.caps h4{margin:4px 0;font-size:16.5px}
+.caps p{font-size:14px;margin:0}
+.ptbl{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:16px;overflow:hidden;background:#fff}
+.ptbl th,.ptbl td{padding:10px 12px;border-bottom:2px solid var(--line);text-align:left;vertical-align:top;font-size:15.5px}
+.ptbl thead th{background:var(--mint);color:#fff;font-family:var(--round);font-weight:400}
+.ptbl tr:last-child td{border-bottom:0}
+@media (max-width:1000px){.w5,.caps{grid-template-columns:repeat(3,1fr)}.score2{grid-template-columns:1fr}.radar{max-width:340px;margin:0 auto}}
+@media (max-width:820px){.vs{grid-template-columns:1fr}}
+@media (max-width:560px){.w5,.caps{grid-template-columns:1fr 1fr}.sl label{grid-template-columns:90px 1fr 34px}.ptbl thead{display:none}.ptbl tr{display:block;border-bottom:2px solid var(--line);padding:8px 4px}.ptbl td{display:block;border:0;padding:3px 10px}.ptbl td[data-l]::before{content:attr(data-l)"：";font-weight:700;color:var(--ink-2)}}
+@media print{body.pw header,body.pw footer,body.pw #toTop,body.pw main>section:not(#tools){display:none!important}body.pw #tools .wrap>*:not(#myCard){display:none!important}body.pw #myCard .btnrow,body.pw #myCard .mine,body.pw #myCard .picks,body.pw #myCard .mylist li button{display:none!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+<symbol id="grandma" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="60" cy="14" r="13" fill="#d9dde8" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M24 60 C22 34 40 24 60 24 C80 24 98 34 96 60Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="60" cy="64" r="34" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M28 52 C40 40 80 40 92 52 C86 34 34 34 28 52Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="48" cy="64" r="4.5" fill="#1f2a44"/><circle cx="72" cy="64" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="62.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="62.6" r="1.4" fill="#fff"/>
+  <ellipse cx="39" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="81" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M51 80 Q60 88 69 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="grandpa" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#8a5cf6" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M52 100 L60 116 L68 100" fill="#fff" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="60" cy="62" r="36" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M26 56 C24 40 32 30 40 30 M94 56 C96 40 88 30 80 30" stroke="#1f2a44" stroke-width="3" fill="#eef1f7" stroke-linecap="round"/>
+  <path d="M27 52 C22 44 26 34 36 34 L36 52Z M93 52 C98 44 94 34 84 34 L84 52Z" fill="#eef1f7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="47" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/><circle cx="73" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M56 60 H64" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="47" cy="61" r="3.5" fill="#1f2a44"/><circle cx="73" cy="61" r="3.5" fill="#1f2a44"/>
+  <circle cx="48.2" cy="59.8" r="1.2" fill="#fff"/><circle cx="74.2" cy="59.8" r="1.2" fill="#fff"/>
+  <ellipse cx="38" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="82" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M50 80 Q60 88 70 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="heart" viewBox="0 0 120 120">
+  <path d="M60 104 C20 78 10 56 14 40 C18 22 42 16 60 36 C78 16 102 22 106 40 C110 56 100 78 60 104Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="48" cy="56" r="4.5" fill="#1f2a44"/><circle cx="72" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="54.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="54.6" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 記分板 -->
+<symbol id="board" viewBox="0 0 140 110">
+  <rect x="6" y="10" width="128" height="80" rx="14" fill="#1f2a44"/>
+  <rect x="14" y="18" width="112" height="64" rx="8" fill="#2455c7"/>
+  <rect x="22" y="30" width="16" height="42" rx="3" fill="#2bb88a"/><rect x="42" y="42" width="16" height="30" rx="3" fill="#ffc93c"/><rect x="62" y="24" width="16" height="48" rx="3" fill="#ff6b6b"/><rect x="82" y="36" width="16" height="36" rx="3" fill="#a78bfa"/><rect x="102" y="46" width="16" height="26" rx="3" fill="#7cc4ff"/>
+  <path d="M40 90 L30 106 M100 90 L110 106" stroke="#1f2a44" stroke-width="6" stroke-linecap="round"/>
+</symbol>
+<!-- 沙漏 -->
+<symbol id="hourglass" viewBox="0 0 90 120">
+  <rect x="8" y="4" width="74" height="12" rx="6" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5"/>
+  <rect x="8" y="104" width="74" height="12" rx="6" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M18 16 C18 44 40 52 40 60 C40 68 18 76 18 104 H72 C72 76 50 68 50 60 C50 52 72 44 72 16Z" fill="#e8f4ff" stroke="#1f2a44" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M26 30 H64 C60 44 48 50 45 56 C42 50 30 44 26 30Z" fill="#ff9aa2"/>
+  <path d="M24 100 C30 84 40 80 45 78 C50 80 60 84 66 100Z" fill="#ff9aa2"/>
+  <circle cx="34" cy="66" r="3.5" fill="#1f2a44"/><circle cx="56" cy="66" r="3.5" fill="#1f2a44"/>
+</symbol>
+</defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://www.gungho.idv.tw/KS/index.html" aria-label="回共好小學堂首頁">
+      <svg aria-hidden="true"><use href="#sprout"/></svg>
+      <span><b>共好小學堂</b><small>GROW &amp; LEARN TOGETHER</small></span>
+    </a>
+    <nav class="navpills" aria-label="章節">
+      <a href="#s1">兩個陷阱</a><a href="#s2">五種財富</a><a href="#myscore">我的分數</a><a href="#s3">反目標</a><a href="#weeks">人生週曆</a><a href="#s4">健康與收入</a><a href="#s5">五大資本</a><a href="#tools">我的準則</a><a href="#check">每週檢核</a><a href="#quiz">小測驗</a><a href="#refs">參考資料</a>
+    </nav>
+    <a class="back" href="https://www.gungho.idv.tw/KS/index.html">← 回小學堂</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <span class="blob" style="width:320px;height:320px;background:var(--sun-l);top:-90px;right:-60px"></span>
+  <span class="blob" style="width:220px;height:220px;background:var(--mint-l);bottom:30px;left:-70px"></span>
+  <span class="blob" style="width:140px;height:140px;background:var(--grape-l);top:40%;left:46%"></span>
+  <div class="wrap">
+    <div>
+      <span class="tag">✦ 樂活空間小知識</span>
+      <h1>人生記分板，<span class="hl nw">只算錢嗎？</span></h1>
+      <p class="lead">如果人生只看薪水、職位和存款，很容易為了數字犧牲健康、家人和自己的時間。作家 Sahil Bloom 提出用<b>時間、社交、心理、身體、金錢</b>五種財富，一起當作人生的記分板。我們一起看懂兩個常見陷阱，再替自己打個分數。</p>
+      <div class="btns">
+        <a class="btn pri" href="#start">開始認識 →</a>
+        <a class="btn" href="#myscore">替五種財富打分數</a>
+      </div>
+      <p class="meta">資料查核日：2026年10月13日｜資料來源：作者訪談與官方網站、學術期刊、永續組織資料</p>
+    </div>
+    <div class="hero-art">
+      <div class="bubble">五項都有分數才算贏～</div>
+      <svg viewBox="0 0 520 400" role="img" aria-label="記分板、沙漏，旁邊有阿嬤、阿公、小芽和藍鳥">
+        <ellipse cx="260" cy="368" rx="230" ry="26" fill="#dcf7ec"/>
+        <g class="float"><use href="#board" x="150" y="60" width="200" height="157"/></g>
+        <use href="#grandma" x="60" y="190" width="120" height="152"/>
+        <use href="#grandpa" x="330" y="190" width="120" height="152"/>
+        <g class="float d2"><use href="#hourglass" x="215" y="240" width="80" height="106"/></g>
+        <use href="#sprout" x="20" y="300" width="60" height="66"/>
+        <use href="#bird" x="450" y="120" width="64" height="58"/>
+      </svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C240 60 480 0 720 30 C960 60 1200 0 1440 30 V60 H0Z" fill="#fffdf7"/></svg>
+</section>
+
+<section class="sec" id="start">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">★</div><div><span class="eyebrow">Key Points</span><h2>先說重點</h2></div></div>
+    <div class="talk" style="--c:var(--sun)">
+      <div class="who"><svg aria-hidden="true"><use href="#board"/></svg></div>
+      <div class="say"><span class="name">記分板說</span>
+        <p>Bloom 把五種財富比喻成「<b>調光開關</b>」而不是「開或關」：每個人生階段可以調整亮度，例如年輕時多拚金錢、中年多顧關係；小而穩定的行動，會在每個面向慢慢累積。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref4">參考 4</a></p>
+      </div>
+    </div>
+    <div class="talk r" style="--c:var(--coral)">
+      <div class="who"><svg aria-hidden="true"><use href="#bird"/></svg></div>
+      <div class="say"><span class="name">藍鳥提醒</span>
+        <p>「五種財富」是生活設計的<b>思考框架</b>，不是科學量表。本頁的打分數與週曆工具，只是幫你看見自己的狀態，沒有標準答案。</p>
+      </div>
+    </div>
+    <div class="warn"><b>⚠ 閱讀小提醒：</b>本頁為生活設計的學習整理，<b>不是投資理財或心理治療建議</b>，也不推薦任何書籍或課程。標示 <span class="orig">原稿整理</span> 的內容是原稿的實務建議，查證的資料中沒有直接出處。</div>
+  </div>
+</section>
+
+<section class="sec alt" id="s1" style="--tint:var(--coral-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--coral)"><div class="num">1</div><div><span class="eyebrow">Two Traps</span><h2>兩個陷阱：以為到了就會快樂、贏了卻輸掉</h2></div></div>
+    <div class="vs">
+      <div class="card mech" style="--c:var(--orange)"><span class="pin">抵達終點謬誤</span><h3>🏁 「等我升遷就會快樂了⋯⋯」</h3><p>哈佛正向心理學講師 Tal Ben-Shahar 在《更快樂》一書提出：以為達成某個目標就會一直快樂，但<b>抵達很少讓人像預期那樣快樂</b>。因為還沒到時你就一直期待它，到了之後很快就習慣，接著又看到下一個目標。<a class="src" href="#ref6">參考 6</a></p><p class="key">朝目標前進的過程，有時反而比抵達更快樂；所以目標和過程都重要。<a class="src" href="#ref6">參考 6</a></p></div>
+      <div class="card mech" style="--c:var(--coral)"><span class="pin">皮洛士勝利</span><h3>⚔️ 贏了這場戰役，輸了整場戰爭</h3><p>典故來自古希臘伊庇魯斯國王皮洛士，打贏羅馬卻損失慘重。用在人生，就是為了金錢、職位或名聲，<b>犧牲了健康、家庭、睡眠或友誼</b>。<span class="orig">原稿整理</span></p><p class="key">Bloom 認為「反目標」可以幫我們避開這種代價過高的勝利。<a class="src" href="#ref11">參考 11</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="s2">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">2</div><div><span class="eyebrow">Five Types of Wealth</span><h2>五種財富</h2></div></div>
+    <div class="w5">
+      <div class="card" style="--c:var(--blue)"><span class="ic">⏳</span><h3>時間財富</h3><p>自由選擇怎麼用時間、和誰、在哪裡度過</p><div class="act">保護專注時段、減少低價值雜事</div></div>
+      <div class="card" style="--c:var(--coral)"><span class="ic">🤝</span><h3>社交財富</h3><p>深刻、真誠、彼此支持的關係</p><div class="act">投資少數核心關係、定期聯繫</div></div>
+      <div class="card" style="--c:var(--grape)"><span class="ic">🧠</span><h3>心理財富</h3><p>目的感、持續成長、留給大問題的空間</p><div class="act">閱讀、靜心、寫作、留白</div></div>
+      <div class="card" style="--c:var(--mint)"><span class="ic">💪</span><h3>身體財富</h3><p>健康與活力</p><div class="act">規律運動、原型飲食、睡飽</div></div>
+      <div class="card" style="--c:var(--orange)"><span class="ic">💰</span><h3>金錢財富</h3><p>知道對自己而言什麼是「足夠」</p><div class="act">定義足夠、自動儲蓄、控制負債</div></div>
+    </div>
+    <p class="small" style="margin-top:10px">定義依芝加哥大學與作者的對談整理<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref2">參考 2</a>；下方「關鍵行動」為原稿整理。<span class="orig">原稿整理</span> Bloom 也說，<b>時間</b>常被他放在第一位，因為「時間能解鎖其他所有東西」。<a class="src" href="#ref4">參考 4</a></p>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card"><h3>💰 什麼是「足夠」？</h3><p>對談中引用哈佛商學院 Michael Norton 的研究：不論現在有多少錢，人們常說要再多 <b>2 到 3 倍</b>才會「完全快樂」。如果沒先定義「足夠」，就容易一直在跑步機上追更多。<a class="src" href="#ref1">參考 1</a></p></div>
+      <div class="card"><h3>🤝 關係比膽固醇更能預測健康？</h3><p>對談也提到哈佛成人發展研究：中年時對關係的滿意度，比膽固醇、血壓等指標，更能預測 80 歲時的健康。<a class="src" href="#ref1">參考 1</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="myscore" style="--tint:var(--sky-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">3</div><div><span class="eyebrow">My Scoreboard</span><h2>替自己的五種財富打分數</h2></div></div>
+    <p class="intro">拉拉看，0 分是「很缺」，10 分是「很滿足」。憑直覺就好！</p>
+    <div class="calc score2" style="--c:var(--blue)">
+      <div class="sl" id="sl"></div>
+      <div class="radar"><svg viewBox="0 0 320 300" id="radar" role="img" aria-label="五種財富雷達圖"></svg></div>
+    </div>
+    <div class="verdict" id="scOut" aria-live="polite" style="margin-top:14px"></div>
+    <p class="small">🔒 分數只存在你自己的瀏覽器，不會上傳。<button type="button" id="scReset" style="font:inherit;font-size:14px;border:2px solid var(--ink);border-radius:10px;background:#fff;padding:1px 10px;cursor:pointer;margin-left:6px">重設</button></p>
+  </div>
+</section>
+
+<section class="sec" id="s3">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">4</div><div><span class="eyebrow">Tools</span><h2>三個落地工具</h2></div></div>
+    <div class="grid3">
+      <div class="card mech" style="--c:var(--grape)"><span class="pin">反目標</span><h3>🚫 先寫「絕對不要」</h3><p>來自加拿大創業家 Andrew Wilkinson 2017 年的文章：借用投資人查理．蒙格的「<b>逆向思考</b>」，先想像最糟的一天，再訂規則避開它，例如不開沒必要的會、不和不信任的人做生意。<a class="src" href="#ref10">參考 10</a></p><p class="key">設定目標時，同時寫下不願付出的代價。<a class="src" href="#ref11">參考 11</a></p></div>
+      <div class="card mech" style="--c:var(--blue)"><span class="pin">人生剃刀</span><h3>🪒 一句話的決策準則</h3><p>簡單、可控、能長期引導決定的個人規則，例如「絕不錯過家庭晚餐」「不為短期收入犧牲睡眠」。它不是宏大目標，而是日常的過濾網。<span class="orig">原稿整理</span></p></div>
+      <div class="card mech" style="--c:var(--mint)"><span class="pin">微習慣定投</span><h3>📈 像定期定額一樣累積</h3><p>學指數化投資的長期複利精神，在五種財富各放一個小習慣：每天走路 30 分鐘、每週約一次朋友、每月自動轉帳儲蓄。價值不在單日，而在長期累積。<span class="orig">原稿整理</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="weeks" style="--tint:var(--sun-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--orange)"><div class="num">5</div><div><span class="eyebrow">Life in Weeks</span><h2>人生週曆：一格一週</h2></div></div>
+    <p class="intro">把人生畫成格子，<b>一行一年、一格一週</b>。80 年大約是 4,160 格。看見時間有限，不是要製造焦慮，而是提醒自己：想陪伴的人、想做的事，值得早點排進行程。<span class="orig">原稿整理</span></p>
+    <div class="calc" style="--c:var(--orange)">
+      <div class="row2">
+        <label for="age"><b>我現在</b> <input type="number" id="age" min="0" max="100" value="65"> <b>歲</b></label>
+        <div class="seg" role="group" aria-label="畫到幾歲"><button type="button" data-y="80" aria-pressed="true">畫到 80 歲</button><button type="button" data-y="90" aria-pressed="false">畫到 90 歲</button><button type="button" data-y="100" aria-pressed="false">畫到 100 歲</button></div>
+      </div>
+      <canvas class="weeks" id="wk" width="520" height="640" aria-label="人生週曆格子圖"></canvas>
+      <div class="wkleg"><span><i style="background:#9fb0d0"></i>已經走過的週</span><span><i style="background:#ffc93c"></i>接下來的週</span></div>
+      <div class="verdict" id="wkOut" aria-live="polite"></div>
+      <p class="small" style="margin-top:8px">「畫到幾歲」只是示意，不是預測壽命。這種畫法因部落客 Tim Urban 的〈Your Life in Weeks〉而廣為人知。</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="s4">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">6</div><div><span class="eyebrow">Health &amp; Income</span><h2>健康，至少和收入一樣重要</h2></div></div>
+    <div class="card" style="box-shadow:6px 6px 0 var(--mint)"><h3>📊 全球蓋洛普調查的分析（2024）</h3><p>一項使用蓋洛普世界民調資料的研究發現：<b>健康對生活滿意度的解釋力，至少和收入一樣大</b>；而且在<b>比較富裕的地區</b>，健康的影響甚至超過收入，最貧窮的地區則是收入比較重要。2009–2018 年間，收入最低和健康最差的人，生活滿意度下降最多。<a class="src" href="#ref12">參考 12</a></p></div>
+    <div class="fix">
+      <p>🔎 <b class="h">查證補充：</b>原稿這段標示出自五種財富的書籍資料，但那些頁面沒有提到這項研究；本頁改引用原始論文（查證補列）。<a class="src" href="#ref12">參考 12</a></p>
+    </div>
+    <div class="card" style="margin-top:20px"><h3>🏦 整體財富管理的五大支柱 <span class="orig">原稿整理</span></h3><p>現代財富管理不只看投資報酬，而是整合<b>財務規劃、資產管理、稅務、資產保護與保險、傳承規劃</b>，把金錢和家庭價值、人生目標、風險管理一起考慮。</p></div>
+  </div>
+</section>
+
+<section class="sec alt" id="s5" style="--tint:var(--mint-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">7</div><div><span class="eyebrow">Five Capitals</span><h2>放大來看：永續的五大資本</h2></div></div>
+    <p class="intro">英國永續組織 Forum for the Future 的「五大資本模型」，把永續發展看成維護和增加五種資本。<a class="src" href="#ref7">參考 7</a></p>
+    <div class="caps">
+      <div class="card"><span class="ic">🌳</span><h4>自然資本</h4><p>能源、物質、吸收廢物的能力、氣候調節等自然過程</p></div>
+      <div class="card"><span class="ic">🧑‍🎓</span><h4>人力資本</h4><p>個人的健康、知識、技能與動力</p></div>
+      <div class="card"><span class="ic">🏘</span><h4>社會資本</h4><p>家庭、社區、企業、工會、學校、志工團體等</p></div>
+      <div class="card"><span class="ic">🏗</span><h4>製造資本</h4><p>工具、機器、建築等支持生產的固定資產</p></div>
+      <div class="card"><span class="ic">💵</span><h4>金融資本</h4><p>股票、債券、貨幣等，讓其他資本可以被擁有與交易</p></div>
+    </div>
+    <div class="talk" style="--c:var(--mint);margin-top:20px">
+      <div class="who"><svg aria-hidden="true"><use href="#sprout"/></svg></div>
+      <div class="say"><span class="name">小芽說</span>
+        <p>這個模型指出，<b>金融資本本身沒有內在價值</b>，它代表的是其他四種資本。如果破壞了自然、人力或社會資本，長期的繁榮也撐不住，就像個人只顧賺錢卻弄壞了身體和關係。<a class="src" href="#ref7">參考 7</a></p>
+      </div>
+    </div>
+    <p class="small" style="margin-top:10px">原稿另提到「早晨勝利一小時」、20/20/20 公式（運動、反思、學習各 20 分鐘）等精力管理方法，以及生物多樣性是最底層的財富。<span class="orig">原稿整理</span></p>
+  </div>
+</section>
+
+<section class="sec" id="tools">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">8</div><div><span class="eyebrow">My Rules</span><h2>寫下我的反目標與人生剃刀</h2></div></div>
+    <div class="calc" id="myCard" style="--c:var(--grape)">
+      <h3>📝 我的人生準則卡</h3>
+      <p class="small">點選範例加入，或自己寫。可以列印貼在冰箱上！🔒 內容只存在你自己的瀏覽器。</p>
+      <h4 style="margin:12px 0 4px">🚫 反目標（我絕對不要⋯⋯）</h4>
+      <div class="picks" id="pickA"></div>
+      <div class="mine"><input type="text" id="inA" maxlength="60" placeholder="自己寫一個反目標，例如：不讓手機陪我吃晚餐" aria-label="自己寫一個反目標"><button type="button" id="addA">加入</button></div>
+      <ul class="mylist" id="listA"></ul>
+      <h4 style="margin:18px 0 4px">🪒 人生剃刀（我的一句話準則）</h4>
+      <div class="picks" id="pickB"></div>
+      <div class="mine"><input type="text" id="inB" maxlength="60" placeholder="自己寫一句準則，例如：先照顧身體，再談效率" aria-label="自己寫一句人生剃刀"><button type="button" id="addB">加入</button></div>
+      <ul class="mylist" id="listB"></ul>
+      <div class="btnrow"><button type="button" id="prt">🖨 列印我的準則卡</button><button type="button" class="ghost" id="clr">清除重來</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="check" style="--tint:var(--grape-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">9</div><div><span class="eyebrow">Weekly Check</span><h2>五種財富每週檢核</h2></div></div>
+    <p class="intro">每週做到就勾起來，每週一自動重新開始。<span class="orig">原稿整理</span></p>
+    <div class="chk" id="chk">
+      <label><input type="checkbox" data-k="c1"><span class="box"></span><span><b>⏳ 時間：保留 2 個專注時段</b><span class="d">我是否掌控了自己的行程？</span></span></label>
+      <label><input type="checkbox" data-k="c2"><span class="box"></span><span><b>🤝 社交：安排一次面對面聚會</b><span class="d">我是否和重要的人有深度互動？</span></span></label>
+      <label><input type="checkbox" data-k="c3"><span class="box"></span><span><b>🧠 心理：閱讀 30 分鐘、寫 3 行反思</b><span class="d">我是否有學習、反思或意義感？</span></span></label>
+      <label><input type="checkbox" data-k="c4"><span class="box"></span><span><b>💪 身體：走路 5 天、早睡 3 天</b><span class="d">我是否運動、睡飽、吃原型食物？</span></span></label>
+      <label><input type="checkbox" data-k="c5"><span class="box"></span><span><b>💰 金錢：自動轉帳儲蓄、檢視支出</b><span class="d">我是否朝自己的「足夠」前進？</span></span></label>
+    </div>
+    <div class="prog"><div class="tr"><div class="fill" id="pFill"></div></div><span class="n" id="pN">0 / 5</span></div>
+    <div class="cheer" id="cheer">🎉 五種財富這週都有存款了！</div>
+    <p class="small">🔒 勾選狀態只存在你自己的瀏覽器。<button type="button" id="chkReset" style="font:inherit;font-size:14px;border:2px solid var(--ink);border-radius:10px;background:#fff;padding:1px 10px;cursor:pointer;margin-left:6px">清除重來</button></p>
+  </div>
+</section>
+
+<section class="sec" id="s9">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">10</div><div><span class="eyebrow">Wrap-up</span><h2>結論：真正的富足，是五項一起顧</h2></div></div>
+    <div class="talk" style="--c:var(--mint)">
+      <div class="who"><svg aria-hidden="true"><use href="#sprout"/></svg></div>
+      <div class="say"><span class="name">小芽總結</span>
+        <p>把人生記分板從「只算錢」擴大成<b>時間、社交、心理、身體、金錢</b>五種財富。抵達終點謬誤提醒我們重視過程，皮洛士勝利提醒我們守住核心價值。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref6">參考 6</a></p>
+        <p>反目標、人生剃刀和微習慣，是把想法變成日常的工具；從個人到社會，金錢都應該支持健康、關係、意義與自然，而不是侵蝕它們。<a class="src" href="#ref7">參考 7</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="quiz" style="--tint:var(--grape-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">?</div><div><span class="eyebrow">Quick Quiz</span><h2>小測驗：四題就好</h2></div></div>
+    <div class="quiz" id="quizBox">
+      <div class="card q" data-ans="b">
+        <h4>Q1. 「抵達終點謬誤」是指什麼？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">只要努力就一定能達成目標</button>
+          <button class="opt" data-v="b">以為達成某個目標後就會一直快樂，其實抵達很少讓人像預期那樣快樂</button>
+          <button class="opt" data-v="c">不該設定任何目標</button>
+        </div>
+        <div class="exp">Ben-Shahar 提出這個概念；但這不代表目標沒用，目標和過程都重要。</div>
+      </div>
+      <div class="card q" data-ans="c">
+        <h4>Q2. 「反目標」的做法是？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">把目標訂得越高越好</button>
+          <button class="opt" data-v="b">完全不設目標</button>
+          <button class="opt" data-v="c">設定目標時，同時寫下絕對不願付出的代價</button>
+        </div>
+        <div class="exp">反目標用「逆向思考」，先想清楚最糟的情況，再避開它，例如「不犧牲睡眠」。</div>
+      </div>
+      <div class="card q" data-ans="a">
+        <h4>Q3. 用全球蓋洛普資料的研究發現，在比較富裕的地區？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">健康對生活滿意度的影響，甚至超過收入</button>
+          <button class="opt" data-v="b">收入是唯一重要的因素</button>
+          <button class="opt" data-v="c">健康和生活滿意度無關</button>
+        </div>
+        <div class="exp">整體而言健康至少和收入一樣重要；在富裕地區健康影響更大，最貧窮地區則收入較重要。</div>
+      </div>
+      <div class="card q" data-ans="b">
+        <h4>Q4. 五大資本模型怎麼看「金融資本」？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">是最有價值、最該極大化的資本</button>
+          <button class="opt" data-v="b">本身沒有內在價值，代表的是自然、人力、社會、製造資本</button>
+          <button class="opt" data-v="c">和其他資本完全無關</button>
+        </div>
+        <div class="exp">破壞了其他資本，金融資本代表的價值也撐不住。</div>
+      </div>
+      <div class="score" id="score"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec refs" id="refs">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--ink)"><div class="num">§</div><div><span class="eyebrow">References</span><h2>參考資料</h2></div></div>
+    <p class="small">以下資料於<b>2026年10月13日</b>查核，編號 1–10 依原稿清單順序（第 10 筆起有調整，見說明），第 11、12 筆為查證時補列。原稿內文的 [web:329]～[web:343] 標記無法對應清單，本頁已依各來源實際內容重新對應。</p>
+    <h3>📘 五種財富</h3>
+    <ol>
+      <li id="ref1"><span class="rid">1</span>University of Chicago Leadership and Society Initiative. <b>The 5 Types of Wealth with Sahil Bloom</b>（對談影片與逐字稿，2025年5月）。<span class="loc">五種財富的定義；「調光開關」比喻；人生階段調整；Norton 研究「需要再多 2–3 倍的錢」；哈佛研究關係滿意度預測 80 歲健康。未提及人生剃刀、反目標、抵達終點謬誤。</span><a href="https://leadforsociety.uchicago.edu/wealth" target="_blank" rel="noopener">uchicago.edu</a></li>
+      <li id="ref2"><span class="rid">2</span><b>The 5 Types of Wealth 官方網站</b>（Sahil Bloom，2025，Penguin Random House）。<span class="loc">書名《The 5 Types of Wealth: A Transformative Guide to Design Your Dream Life》；五種財富簡介；另有配套的《Life Planner》。</span><a href="https://www.the5typesofwealth.com/" target="_blank" rel="noopener">the5typesofwealth.com</a></li>
+      <li id="ref3"><span class="rid">3</span><b>Goodreads：The 5 Types of Wealth</b>。<span class="loc">書目資料頁，本頁未直接引用。</span><a href="https://www.goodreads.com/en/book/show/212806718-the-5-types-of-wealth" target="_blank" rel="noopener">goodreads.com</a></li>
+      <li id="ref4"><span class="rid">4</span>Thomson J. <b>The "5 Types of Wealth": Why you're wealthier than you think.</b> Big Think，2025年2月4日。<span class="loc">訪談 Bloom：時間財富優先；一次只能專注一種、依人生季節調整；五種財富沒有高低之分。</span><a href="https://bigthink.com/thinking/the-5-types-of-wealth-why-youre-wealthier-than-you-think/" target="_blank" rel="noopener">bigthink.com</a></li>
+      <li id="ref5"><span class="rid">5</span><b>Google Books：The 5 Types of Wealth Life Planner</b>。<span class="loc">書目資料頁，本頁未直接引用。</span><a href="https://books.google.com/books/about/The_5_Types_of_Wealth_Life_Planner.html?id=lkuWEQAAQBAJ" target="_blank" rel="noopener">books.google.com</a></li>
+      <li id="ref6"><span class="rid">6</span>Rubin G. <b>Happiness Myth No. 8: You'll Be Happy As Soon As You…</b>（2009年3月11日）。<span class="loc">抵達終點謬誤出自 Tal Ben-Shahar《Happier》；抵達很少讓人像預期般快樂；朝目標前進的正向情緒；目標與過程都重要。</span><a href="https://gretchenrubin.com/articles/happiness-myth-no-8-youll-be-happy-as-soon-as-you/" target="_blank" rel="noopener">gretchenrubin.com</a></li>
+    </ol>
+    <h3>🌍 五大資本與永續</h3>
+    <ol>
+      <li id="ref7"><span class="rid">7</span>Forum for the Future. <b>The Five Capitals — A framework for sustainability.</b><span class="loc">五種資本定義；金融資本本身沒有內在價值，代表其他四種資本。</span><a href="https://www.forumforthefuture.org/the-five-capitals" target="_blank" rel="noopener">forumforthefuture.org</a></li>
+      <li id="ref8"><span class="rid">8</span><b>Evaluating Corporate Sustainability in the Agrifood Industry Using a Five Capitals Framework</b>（愛丁堡大學研究成果頁）。<span class="loc">本次未開啟核對，本頁未直接引用。</span><a href="https://www.research.ed.ac.uk/en/publications/evaluating-corporate-sustainability-in-the-agrifood-industry-using-a-five-capitals-framework/" target="_blank" rel="noopener">research.ed.ac.uk</a></li>
+      <li id="ref9"><span class="rid">9</span>The Open University. <b>Adding value through innovation</b>（OpenLearn 課程單元）。<span class="loc">本次未開啟核對，本頁未直接引用。</span><a href="https://www.open.edu/openlearn/science-maths-technology/introducing-technology-and-innovation-management/content-section-10" target="_blank" rel="noopener">open.edu</a></li>
+    </ol>
+    <h3>🔎 反目標與健康研究</h3>
+    <ol>
+      <li id="ref10"><span class="rid">10</span>Wilkinson A. <b>The Power of Anti-Goals</b>（2017年7月6日原刊於 Medium，現存於 Tiny 部落格）。<span class="loc">查證補列。反目標的源頭；運用蒙格的逆向思考，先想像最糟的工作日再訂規則避開。（原稿第 10 筆為一篇書評，內容未提及本頁概念，移至說明。）</span><a href="https://tiny.com/blog/the-power-of-anti-goals" target="_blank" rel="noopener">tiny.com</a></li>
+      <li id="ref11"><span class="rid">11</span>Bloom S. <b>The Ultimate Goal Setting Tool.</b> The Curiosity Chronicle，2022年5月18日。<span class="loc">查證補列。反目標四步驟；以反目標避開「皮洛士勝利」。</span><a href="https://sahilbloom.substack.com/p/the-ultimate-goal-setting-tool" target="_blank" rel="noopener">substack.com</a></li>
+      <li id="ref12"><span class="rid">12</span>Katsaiti MS, Kopinska J, Atella V. <b>Healthy, Wealthy, and Happy: The Joint Role of Health and Income in Explaining Global Life Satisfaction.</b> <i>Review of Income and Wealth.</i> 2024;70(1):33-59.<span class="loc">查證補列。蓋洛普世界民調；健康對生活滿意度至少與收入相當，富裕地區健康影響超過收入。</span><a href="https://ideas.repec.org/a/bla/revinw/v70y2024i1p33-59.html" target="_blank" rel="noopener">ideas.repec.org</a></li>
+    </ol>
+    <p class="small">📝 原稿第 10 筆：<a href="https://empowerprocess.com/growth/book-review-the-5-types-of-wealth-by-sahil-bloom/" target="_blank" rel="noopener">Empower Process 書評</a>（2026年6月23日），已開啟核對，內容為一般書評，未提及人生剃刀、反目標、人生週曆、20/20/20 或健康與收入研究，本頁未直接引用。</p>
+
+    <div class="bigdisc" role="note" aria-label="免責聲明" style="margin-top:30px">
+      <div class="bd-head"><span class="bd-ico">⚠</span><span>重要聲明｜請先看這裡</span></div>
+      <p class="bd-key">本站資訊僅供參考，實際以各專業人員評估及各機構官方資料為準。</p>
+      <ul>
+        <li><b>僅供參考：</b>本頁為生活設計觀念的學習整理，<b>不構成任何投資理財、財務規劃或心理治療建議</b>；理財決策請諮詢合格的財務顧問，身心困擾請尋求專業協助。</li>
+        <li><b>無任何推薦或行銷：</b>本頁不推薦、不銷售任何書籍、課程、理財商品或服務，與 Sahil Bloom、出版社及文中單位無任何合作或業配關係。</li>
+        <li><b>工具限制：</b>五種財富打分數與人生週曆只是自我覺察的示意工具，不是心理測驗，也不是壽命預測。</li>
+        <li><b>原稿整理：</b>標示此標籤的內容（例如人生剃刀、微習慣、20/20/20、財富管理五大支柱）為一般性實務建議，請依自身狀況調整。</li>
+        <li><b>資料時點：</b>資料以2026年9月底前公開資料為準，查核於2026年10月13日。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="pals" aria-hidden="true"><svg><use href="#sprout"/></svg><svg><use href="#bird"/></svg><svg><use href="#star"/></svg></div>
+    <p class="quote">每一次多懂一點，都是送給自己的小禮物。</p>
+    <p class="ftdisc">⚠ 僅供參考｜無任何推薦或行銷<br>本站資訊僅供參考，實際以各專業人員評估及官方資料為準</p>
+    <p><a href="https://www.gungho.idv.tw/KS/index.html">← 回共好小學堂</a></p>
+    <p class="fine">共好小學堂 ✦ 一起學習，一起共好<br>本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-10-13</p>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到頂端">↑</button>
+
+<script>
+(function(){
+  function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML;}
+  function load(k,d){try{var v=JSON.parse(localStorage.getItem(k)||'null');return v==null?d:v;}catch(e){return d;}}
+  function save(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+
+  // scores + radar
+  var W=[['⏳ 時間','var(--blue)','#2455c7','時間：保護一個專注時段，或刪掉一件低價值的雜事。'],['🤝 社交','var(--coral)','#ff6b6b','社交：這週主動約一位重要的人，好好聊一次。'],['🧠 心理','var(--grape)','#8b5cf6','心理：每天留 10 分鐘閱讀、靜心或寫三行反思。'],['💪 身體','var(--mint)','#2bb88a','身體：先從每天走路、固定睡覺時間開始。'],['💰 金錢','var(--orange)','#ff9f43','金錢：先寫下自己的「足夠」是多少，再設定自動儲蓄。']];
+  var SK='gungho-ks-wealth5-score',sc=load(SK,[5,5,5,5,5]);
+  var sl=document.getElementById('sl');
+  W.forEach(function(w,i){var l=document.createElement('label');l.style.setProperty('--c',w[1]);l.innerHTML='<span>'+esc(w[0])+'</span><input type="range" min="0" max="10" value="'+sc[i]+'" data-i="'+i+'" aria-label="'+esc(w[0])+'分數"><output>'+sc[i]+'</output>';sl.appendChild(l);});
+  var rad=document.getElementById('radar'),cx=160,cy=150,R=110;
+  function pt(i,r){var a=-Math.PI/2+i*2*Math.PI/5;return [cx+r*Math.cos(a),cy+r*Math.sin(a)];}
+  function rS(){
+    var g='';for(var k=1;k<=5;k++){g+='<polygon points="'+[0,1,2,3,4].map(function(i){return pt(i,R*k/5).join(',');}).join(' ')+'" fill="none" stroke="#dfe6f5" stroke-width="2"/>';}
+    [0,1,2,3,4].forEach(function(i){var p=pt(i,R);g+='<line x1="'+cx+'" y1="'+cy+'" x2="'+p[0]+'" y2="'+p[1]+'" stroke="#dfe6f5" stroke-width="2"/>';var q=pt(i,R+24);g+='<text x="'+q[0]+'" y="'+(q[1]+5)+'" text-anchor="middle" font-size="15" fill="#1f2a44">'+W[i][0]+'</text>';});
+    g+='<polygon points="'+sc.map(function(v,i){return pt(i,R*v/10).join(',');}).join(' ')+'" fill="rgba(36,85,199,.25)" stroke="#2455c7" stroke-width="3.5" stroke-linejoin="round"/>';
+    sc.forEach(function(v,i){var p=pt(i,R*v/10);g+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="6" fill="'+W[i][2]+'" stroke="#1f2a44" stroke-width="2"/>';});
+    rad.innerHTML=g;
+    var mn=Math.min.apply(null,sc),idx=sc.indexOf(mn),tot=sc.reduce(function(a,b){return a+b;},0);
+    var o=document.getElementById('scOut');
+    o.innerHTML='總分 <b>'+tot+'</b> / 50。'+(Math.max.apply(null,sc)-mn<=2?'五種財富還算平均，很棒！可以挑一個想再加強的。':'目前最需要照顧的是 <b>'+esc(W[idx][0])+'</b>（'+mn+' 分）。小建議：'+esc(W[idx][3]))+' <span class="orig">原稿整理</span>';
+  }
+  sl.addEventListener('input',function(e){var t=e.target;if(t.type!=='range')return;var i=+t.dataset.i;sc[i]=+t.value;t.nextElementSibling.textContent=t.value;save(SK,sc);rS();});
+  document.getElementById('scReset').addEventListener('click',function(){sc=[5,5,5,5,5];[].forEach.call(sl.querySelectorAll('input'),function(x){x.value=5;x.nextElementSibling.textContent=5;});save(SK,sc);rS();});
+  rS();
+
+  // life in weeks
+  var cv=document.getElementById('wk'),ctx=cv.getContext&&cv.getContext('2d'),ageI=document.getElementById('age'),span=80,segs=[].slice.call(document.querySelectorAll('#weeks .seg button'));
+  function rW(){
+    var age=Math.max(0,Math.min(110,parseFloat(ageI.value)||0)),cols=52,cell=10,gap=0,rows=span,w=cols*cell,h=rows*cell;
+    cv.width=w;cv.height=h;
+    if(ctx){ctx.clearRect(0,0,w,h);var lived=Math.round(age*52);
+      for(var r=0;r<rows;r++){for(var c=0;c<cols;c++){var n=r*52+c;ctx.fillStyle=n<lived?'#9fb0d0':'#ffc93c';ctx.fillRect(c*cell+1,r*cell+1,cell-2,cell-2);}
+        if(r%10===0&&r>0){ctx.fillStyle='#1f2a44';ctx.fillRect(0,r*cell-1,w,1);}}}
+    var total=span*52,left=Math.max(0,total-Math.round(age*52));
+    document.getElementById('wkOut').innerHTML=(age>=span?'你已經走過了畫面上全部的格子，每一週都是額外的禮物 🎁。':'畫到 '+span+' 歲共 <b>'+total.toLocaleString()+'</b> 格，接下來還有 <b>'+left.toLocaleString()+'</b> 個黃色的週。')+'<br>想一想：如果每個月和老朋友聚一次，大約還能見面 <b>'+Math.max(0,Math.floor(left/4.33)).toLocaleString()+'</b> 次；如果每週打一通電話給家人，就有 <b>'+left.toLocaleString()+'</b> 次溫暖的對話。';
+  }
+  segs.forEach(function(b){b.addEventListener('click',function(){span=+b.dataset.y;segs.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});rW();});});
+  ageI.addEventListener('input',rW);rW();
+
+  // rules card
+  var PA=['不犧牲每晚 7 小時睡眠','不接受連續兩週以上的高壓超時工作','不缺席家庭重要時刻','不讓社群媒體取代深度閱讀與面對面交流','不為了短期報酬，犧牲長期健康與關係'];
+  var PB=['先照顧身體，再談效率','每週至少一次深度對話','金錢是自由的工具，不是身分證明','每天保留一段不被打擾的思考時間','若目標需要犧牲健康或家庭，就重新設計目標'];
+  var RK='gungho-ks-wealth5-rules',rules=load(RK,{a:[],b:[]});
+  function rL(){
+    ['a','b'].forEach(function(k){var ul=document.getElementById(k==='a'?'listA':'listB');ul.innerHTML='';rules[k].forEach(function(t,i){var li=document.createElement('li');var sp=document.createElement('span');sp.textContent=(k==='a'?'🚫 ':'🪒 ')+t;var bt=document.createElement('button');bt.type='button';bt.textContent='移除';bt.setAttribute('aria-label','移除：'+t);bt.addEventListener('click',function(){rules[k].splice(i,1);save(RK,rules);rL();});li.appendChild(sp);li.appendChild(bt);ul.appendChild(li);});});
+    [['pickA',PA,'a'],['pickB',PB,'b']].forEach(function(p){[].forEach.call(document.getElementById(p[0]).children,function(b){b.setAttribute('aria-pressed',rules[p[2]].indexOf(b.dataset.t)>=0?'true':'false');});});
+  }
+  [['pickA',PA,'a'],['pickB',PB,'b']].forEach(function(p){var box=document.getElementById(p[0]);p[1].forEach(function(t){var b=document.createElement('button');b.type='button';b.dataset.t=t;b.textContent=t;b.addEventListener('click',function(){var arr=rules[p[2]],j=arr.indexOf(t);if(j>=0)arr.splice(j,1);else if(arr.length<10)arr.push(t);save(RK,rules);rL();});box.appendChild(b);});});
+  function add(k,id){var inp=document.getElementById(id),v=(inp.value||'').trim().slice(0,60);if(!v||rules[k].length>=10)return;rules[k].push(v);inp.value='';save(RK,rules);rL();}
+  document.getElementById('addA').addEventListener('click',function(){add('a','inA');});
+  document.getElementById('addB').addEventListener('click',function(){add('b','inB');});
+  document.getElementById('inA').addEventListener('keydown',function(e){if(e.key==='Enter')add('a','inA');});
+  document.getElementById('inB').addEventListener('keydown',function(e){if(e.key==='Enter')add('b','inB');});
+  document.getElementById('clr').addEventListener('click',function(){rules={a:[],b:[]};save(RK,rules);rL();});
+  document.getElementById('prt').addEventListener('click',function(){document.body.classList.add('pw');window.print();setTimeout(function(){document.body.classList.remove('pw');},500);});
+  window.addEventListener('afterprint',function(){document.body.classList.remove('pw');});
+  rL();
+
+  // weekly checklist (resets on Monday week)
+  function wkey(){var d=new Date();d.setHours(0,0,0,0);d.setDate(d.getDate()-((d.getDay()+6)%7));return d.toDateString();}
+  var KEY='gungho-ks-wealth5-chk',boxes=[].slice.call(document.querySelectorAll('#chk input')),raw=load(KEY,{}),st=(raw&&raw.w===wkey())?(raw.s||{}):{};
+  function upd(){var n=0;boxes.forEach(function(b){b.parentNode.classList.toggle('on',b.checked);if(b.checked)n++;});document.getElementById('pFill').style.width=(n/boxes.length*100)+'%';document.getElementById('pN').textContent=n+' / '+boxes.length;document.getElementById('cheer').classList.toggle('show',n===boxes.length);}
+  boxes.forEach(function(b){b.checked=!!st[b.dataset.k];b.addEventListener('change',function(){st[b.dataset.k]=b.checked;save(KEY,{w:wkey(),s:st});upd();});});
+  document.getElementById('chkReset').addEventListener('click',function(){st={};boxes.forEach(function(b){b.checked=false;});try{localStorage.removeItem(KEY);}catch(e){}upd();});
+  upd();
+
+  // quiz
+  var qs=[].slice.call(document.querySelectorAll('#quizBox .q')),answered=0,right=0;
+  qs.forEach(function(q){var ans=q.dataset.ans,opts=q.querySelectorAll('.opt');opts.forEach(function(o){o.addEventListener('click',function(){var ok=o.dataset.v===ans;opts.forEach(function(x){x.disabled=true;if(x.dataset.v===ans)x.classList.add('right');});if(!ok)o.classList.add('wrong');var exp=q.querySelector('.exp');exp.innerHTML=(ok?'<b>✅ 答對了！</b> ':'<b>💡 再想想～</b> ')+exp.innerHTML;exp.classList.add('show');answered++;if(ok)right++;if(answered===qs.length){var s=document.getElementById('score');s.textContent='你答對了 '+right+' / '+qs.length+' 題！'+(right===qs.length?' 太厲害了 🎉':' 每多懂一點都是收穫 🌱');s.classList.add('show');}});});});
+
+  var tt=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('show',window.scrollY>600);},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
+})();
+</script>
+</body>
+</html>
