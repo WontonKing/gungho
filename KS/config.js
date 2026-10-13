@@ -4,7 +4,7 @@
 window.SCHOOL_TOPICS = [
   
   {  title: '減重針背後的新生意', description: 'GLP-1 藥物怎麼讓人吃不下？各種藥差在哪？藥廠為什麼要串連遠距醫療、智慧筆數據和 AI 營養工具？看懂科學原理與「藥物＋數據＋平台」的商業模式。', category: '醫療新知', url: '/KS/GLP/index.html', date: '2026-09-15' },
-  { title: '捐血小學堂', description: '捐血會讓人變得比較健康嗎？還是有其它的因素呢？讓我們思考一下吧。', category: '醫療新知', url: '/KS/blooddonate/index.html', date: '2026-09-15'},
+  { title: '捐血的人比較健康嗎？', description: '捐血者死亡率比較低，是捐血有益健康，還是本來就健康的人才會去捐？認識健康捐血者效應、鐵假說的爭議，以及北歐 50 年輸血資料庫的安全研究。', category: '醫療新知', url: '/KS/blooddonate/index.html', date: '2026-09-15'},
   { title: '懷舊小學堂', description: '假裝自己年輕二十歲真的會讓身體變健康嗎？還是有其它的心理機制呢？', category: '睡眠情緒', url: '/KS/timetherapy/index.html', date: '2026-09-16'},
   { title: '高資產怎麼會變成下流老人', description: '有房也有存款，老後為什麼還會卡關？一起做退休前財務健檢。', category: '退休理財', url: '/KS/alf/index.html', date: '2026-09-17'},
   { title: '腸子和腦子的雙向交流', description: '腸子和腦子如何溝通？只有肚子餓那麼簡單嗎？', category: '醫療新知', url: '/KS/gbc/index.html', date: '2026-09-18'},
