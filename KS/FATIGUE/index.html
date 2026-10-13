@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2455c7">
+<title>為什麼總是好累？｜共好小學堂</title>
+<meta name="description" content="一般疲勞和慢性疲勞症候群（ME/CFS）怎麼分？什麼是「活動後症狀惡化」？腸道菌、營養、咖啡因、遠端工作和運動，哪些對恢復能量有幫助？看懂研究，做好每天的能量管理。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/FATIGUE/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="為什麼總是好累？現代疲勞、慢性疲勞症候群與能量管理｜共好小學堂">
+<meta property="og:description" content="累了休息就會好，還是需要看醫師？認識 ME/CFS 的四個核心症狀、能量管理與運動爭議，再檢查自己的每日能量習慣。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/FATIGUE/">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 130'%3E%3Cpath d='M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z' fill='%235ad6a4' stroke='%231f2a44' stroke-width='5'/%3E%3Cpath d='M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Cellipse cx='60' cy='88' rx='40' ry='38' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Ccircle cx='46' cy='84' r='6' fill='%231f2a44'/%3E%3Ccircle cx='74' cy='84' r='6' fill='%231f2a44'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c;  --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff;  --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7;
+  --round:'Huninn','Noto Sans TC',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans TC',system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:var(--blue)}
+h1,h2,h3,h4{font-family:var(--round);line-height:1.35;margin:0 0 .5em;font-weight:400}
+p{margin:0 0 1em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.hl{background:linear-gradient(transparent 58%,var(--sun) 58%,var(--sun) 92%,transparent 92%);padding:0 2px}
+.nw{white-space:nowrap}
+b,strong{font-weight:700}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.94);backdrop-filter:blur(8px);border-bottom:3px solid var(--ink)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex-shrink:0}
+.brand svg{width:40px;height:44px}
+.brand b{font-family:var(--round);font-weight:400;font-size:19px;display:block;line-height:1.1}
+.brand small{font-size:10px;letter-spacing:.14em;color:var(--ink-2);display:block}
+.navpills{display:flex;gap:6px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.navpills::-webkit-scrollbar{display:none}
+.navpills a{white-space:nowrap;text-decoration:none;font-size:14px;color:var(--ink);padding:4px 11px;border:2px solid var(--ink);border-radius:99px;background:#fff}
+.navpills a:hover{background:var(--sun-l)}
+.back{white-space:nowrap;text-decoration:none;font-family:var(--round);background:var(--blue);color:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:5px 14px;box-shadow:0 3px 0 var(--ink);font-size:15px;flex-shrink:0}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--blue-l),var(--bg));padding:56px 0 90px}
+.blob{position:absolute;border-radius:50%;opacity:.55;z-index:0}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.tag{display:inline-block;font-family:var(--round);background:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:4px 14px;font-size:15px;box-shadow:0 3px 0 var(--ink);margin-bottom:18px}
+.hero h1{font-size:clamp(32px,5vw,52px);margin-bottom:16px}
+.hero .lead{font-size:18.5px;color:var(--ink-2);max-width:34em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{font-family:var(--round);text-decoration:none;font-size:17px;padding:10px 22px;border:3px solid var(--ink);border-radius:16px;box-shadow:0 4px 0 var(--ink);color:var(--ink);background:#fff;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--sun)}
+.meta{font-size:13.5px;color:var(--ink-2);margin-top:18px}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block}
+.bubble{position:absolute;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:8px 14px;font-family:var(--round);font-size:17px;box-shadow:0 4px 0 var(--ink);white-space:nowrap}
+.bubble::after{content:"";position:absolute;width:14px;height:14px;background:#fff;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg);bottom:-9px;left:30px}
+.hero .bubble{top:2%;left:4%}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:60px;z-index:1}
+.float{animation:float 4.5s ease-in-out infinite}
+.float.d2{animation-delay:-1.5s}.float.d3{animation-delay:-3s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media (prefers-reduced-motion:reduce){.float{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
+
+/* sections */
+section.sec{padding:64px 0;position:relative}
+section.alt{background:linear-gradient(180deg,var(--tint,#fff),var(--bg))}
+.sec-head{display:flex;align-items:flex-start;gap:18px;margin-bottom:26px}
+.num{flex-shrink:0;width:58px;height:58px;display:grid;place-items:center;font-family:var(--round);font-size:28px;color:#fff;background:var(--c,var(--blue));border:3px solid var(--ink);border-radius:16px;transform:rotate(-6deg);box-shadow:4px 4px 0 var(--ink)}
+.eyebrow{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--c,var(--blue));font-weight:700;display:block}
+.sec-head h2{font-size:clamp(25px,3.4vw,34px);margin:2px 0 0}
+.intro{color:var(--ink-2);max-width:46em}
+hr.dash{border:0;border-top:3px dashed var(--line);margin:34px 0}
+
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:0 5px 0 var(--ink)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card h3{font-size:21px;margin-bottom:.35em}
+.card p:last-child{margin-bottom:0}
+.small{font-size:14.5px;color:var(--ink-2)}
+.note{font-size:14.5px;color:var(--ink-2);background:#fff;border:2px dashed var(--line);border-radius:14px;padding:10px 14px;margin-top:16px}
+.ico{width:96px;height:96px;display:block;margin-bottom:10px}
+.src{display:inline-block;font-size:12px;line-height:1;text-decoration:none;background:var(--blue-l);color:var(--blue-d);border:1.5px solid var(--blue);border-radius:99px;padding:4px 8px;margin:0 2px;vertical-align:2px;font-weight:700;white-space:nowrap}
+.src:hover{background:var(--sun-l)}
+.badge{display:inline-block;font-size:12.5px;font-weight:700;border:2px solid var(--ink);border-radius:99px;padding:1px 10px;background:var(--sun-l);margin-bottom:8px}
+
+/* talk */
+.talk{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;margin-bottom:22px}
+.talk.r{grid-template-columns:1fr 150px}
+.talk.r .who{order:2}
+.who svg{width:130px;height:130px}
+.say{position:relative;background:#fff;border:3px solid var(--ink);border-radius:22px;padding:18px 22px;box-shadow:6px 6px 0 var(--c,var(--sun))}
+.say::before{content:"";position:absolute;left:-12px;top:42px;width:18px;height:18px;background:#fff;border-left:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg)}
+.talk.r .say::before{left:auto;right:-12px;transform:rotate(-135deg)}
+.say .name{font-family:var(--round);color:var(--c,var(--blue));font-size:15px;display:block;margin-bottom:4px}
+.say p:last-child{margin-bottom:0}
+.qs{counter-reset:q;list-style:none;padding:0;margin:.4em 0 1em}
+.qs li{counter-increment:q;padding-left:40px;position:relative;margin:6px 0}
+.qs li::before{content:counter(q);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;background:var(--sun);border:2.5px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:15px}
+.warn{background:var(--coral-l);border:3px solid var(--ink);border-radius:18px;padding:14px 18px;margin-top:14px}
+.warn b{color:#c33}
+
+/* evidence chips */
+.ev{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.ev .card{padding:16px;box-shadow:0 4px 0 var(--ink)}
+.ev h4{font-size:17px;margin:0 0 4px}
+.ev .k{font-size:13.5px;color:var(--ink-2);margin:0}
+.ev .u{font-size:14px;margin-top:8px;padding-top:8px;border-top:2px dashed var(--line)}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tab{font-family:var(--round);font-size:16px;cursor:pointer;border:2.5px solid var(--ink);background:#fff;border-radius:14px;padding:7px 14px;color:var(--ink);box-shadow:0 3px 0 var(--ink)}
+.tab[aria-selected="true"]{background:var(--c,var(--blue));color:#fff}
+.tab:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.panel{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:24px;box-shadow:6px 6px 0 var(--c,var(--blue))}
+.panel[hidden]{display:none}
+.panel-grid{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:start}
+.panel-grid svg{width:110px;height:110px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0}
+.kv dt{font-weight:700;color:var(--c,var(--blue));white-space:nowrap}
+.kv dd{margin:0}
+
+/* mechanism cards */
+.mech{position:relative;padding-top:30px}
+.mech .pin{position:absolute;top:-16px;left:20px;background:var(--c);color:#fff;font-family:var(--round);font-size:14px;border:2.5px solid var(--ink);border-radius:99px;padding:2px 12px;transform:rotate(-4deg)}
+.mech .key{margin-top:12px;padding-top:10px;border-top:2px dashed var(--line);font-weight:700}
+
+/* age matrix */
+.agechips{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.mtx{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.mtx div{border:2.5px solid var(--ink);border-radius:16px;padding:10px 12px;background:var(--bgc,#fff)}
+.mtx b{display:block;font-family:var(--round);font-weight:400;font-size:15px;color:var(--ink-2)}
+.mtx span{font-weight:700}
+
+/* table-like */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:20px;overflow:hidden;background:#fff;font-size:15.5px}
+.tbl th,.tbl td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:2px solid var(--line)}
+.tbl thead th{font-family:var(--round);font-weight:400;font-size:16.5px;color:#fff;background:var(--blue)}
+.tbl thead th:nth-child(2){background:var(--coral)}
+.tbl thead th:nth-child(3){background:var(--orange)}
+.tbl thead th:nth-child(4){background:var(--mint)}
+.tbl thead th:first-child{background:var(--ink)}
+.tbl tbody th{background:var(--sun-l);font-weight:700;white-space:nowrap}
+.tbl tr:last-child td,.tbl tr:last-child th{border-bottom:0}
+.tbl td.r{text-align:right;font-family:var(--round);font-size:18px}
+
+.prod{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.prod .card{padding:18px 20px;box-shadow:0 4px 0 var(--ink)}
+.prod .co{display:inline-block;font-family:var(--round);color:#fff;background:var(--c);border:2.5px solid var(--ink);border-radius:12px;padding:1px 12px;margin-bottom:8px}
+.prod h4{font-size:17.5px;margin:0 0 6px}
+.prod .ask{margin-top:10px;padding:8px 12px;background:var(--grape-l);border-radius:12px;font-size:15px}
+.prod .ask::before{content:"❓ 要追問：";font-weight:700}
+
+/* calculators */
+.calc{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:6px 6px 0 var(--c,var(--sky))}
+.calc label{font-weight:700;display:block;margin-bottom:4px}
+.calc input[type=range]{width:100%;accent-color:var(--blue);height:28px}
+.calc input[type=number]{font:inherit;font-family:var(--round);font-size:22px;width:120px;padding:4px 10px;border:3px solid var(--ink);border-radius:12px}
+.bars{display:grid;gap:12px;margin-top:16px}
+.bar{display:grid;grid-template-columns:96px 1fr 110px;gap:10px;align-items:center}
+.bar .tr{height:28px;border:2.5px solid var(--ink);border-radius:99px;background:#f4f6fb;overflow:hidden}
+.bar .fill{height:100%;border-radius:99px;transition:width .3s}
+.bar .v{font-family:var(--round);font-size:19px;text-align:right}
+.verdict{margin-top:14px;font-weight:700;background:var(--sun-l);border-radius:14px;padding:10px 14px}
+.agegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.agebox{border:3px solid var(--ink);border-radius:18px;padding:12px 14px;background:#fff}
+.agebox .st{font-family:var(--round);font-size:18px}
+.agebox.ok{background:var(--mint-l)}
+.agebox.no{background:var(--coral-l)}
+
+/* compare 3 companies */
+.cmp{display:grid;grid-template-columns:150px repeat(3,1fr);border:3px solid var(--ink);border-radius:22px;overflow:hidden;background:#fff;font-size:15.5px}
+.cmp > div{padding:11px 13px;border-bottom:2px solid var(--line);border-left:2px solid var(--line)}
+.cmp .h{font-family:var(--round);color:#fff;font-size:17px;border-left:0}
+.cmp .h.c1{background:var(--blue)}.cmp .h.c2{background:var(--coral)}.cmp .h.c3{background:var(--mint)}
+.cmp .h.c0{background:var(--ink)}
+.cmp .rh{background:var(--sun-l);font-weight:700;border-left:0}
+.cmp .m{display:none}
+
+/* timeline */
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:14px 18px 14px 70px;background:#fff;border:3px solid var(--ink);border-radius:18px}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:var(--mint);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:20px}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:33px;bottom:-17px;height:17px;border-left:3px dashed var(--ink)}
+
+/* formula */
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:10px 0}
+.formula .t{border:2.5px solid var(--ink);border-radius:12px;padding:4px 12px;background:#fff;font-size:15.5px}
+.formula .t.p{background:var(--coral-l)}.formula .t.m{background:var(--mint-l)}
+.formula .op{font-family:var(--round);font-size:24px;line-height:1}
+.formula .eq{background:var(--sun);font-weight:700}
+
+/* checklist */
+.chk{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.chk label{display:flex;gap:14px;align-items:flex-start;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px 16px;cursor:pointer;box-shadow:0 4px 0 var(--ink);transition:background .2s}
+.chk input{position:absolute;opacity:0;pointer-events:none}
+.chk .box{flex-shrink:0;width:30px;height:30px;border:3px solid var(--ink);border-radius:9px;background:#fff;display:grid;place-items:center;font-size:19px;color:#fff;margin-top:2px}
+.chk input:checked + .box{background:var(--mint)}
+.chk input:checked + .box::after{content:"✓"}
+.chk input:focus-visible + .box{outline:3px solid var(--sun);outline-offset:2px}
+.chk label.on{background:var(--mint-l)}
+.chk b{display:block;font-family:var(--round);font-weight:400;font-size:18px}
+.chk span.d{font-size:14.5px;color:var(--ink-2);line-height:1.6;display:block}
+.prog{margin:20px 0 8px;display:flex;align-items:center;gap:14px}
+.prog .tr{flex:1;height:26px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden}
+.prog .fill{height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 10px,#5ad6a4 10px,#5ad6a4 20px);transition:width .3s}
+.prog .n{font-family:var(--round);font-size:20px;white-space:nowrap}
+.cheer{display:none;background:var(--sun-l);border:3px solid var(--ink);border-radius:18px;padding:12px 16px;font-weight:700;margin-top:12px}
+.cheer.show{display:block}
+
+/* quiz */
+.quiz{display:grid;gap:18px}
+.q h4{font-size:18.5px}
+.opts{display:grid;gap:10px}
+.opt{text-align:left;font:inherit;font-size:16px;cursor:pointer;background:#fff;border:2.5px solid var(--ink);border-radius:14px;padding:10px 14px;color:var(--ink)}
+.opt:hover:not(:disabled){background:var(--sky-l)}
+.opt:disabled{cursor:default}
+.opt.right{background:var(--mint-l);border-color:var(--mint);font-weight:700}
+.opt.wrong{background:var(--coral-l);border-color:var(--coral)}
+.exp{display:none;margin-top:10px;background:var(--sun-l);border-radius:14px;padding:10px 14px;font-size:15.5px}
+.exp.show{display:block}
+.score{display:none;text-align:center;font-family:var(--round);font-size:22px;background:var(--blue);color:#fff;border:3px solid var(--ink);border-radius:20px;padding:14px;box-shadow:0 5px 0 var(--ink)}
+.score.show{display:block}
+
+/* refs */
+.refs h3{font-size:19px;margin-top:22px;color:var(--blue-d)}
+.refs ol{padding-left:0;list-style:none;margin:0}
+.refs li{background:#fff;border:2px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:10px;font-size:15px;line-height:1.7;word-break:break-word}
+.refs li:target{border-color:var(--sun);background:var(--sun-l)}
+.refs .rid{display:inline-block;font-family:var(--round);background:var(--blue);color:#fff;border-radius:8px;padding:0 8px;margin-right:6px;font-size:13.5px}
+.refs .loc{display:block;color:var(--ink-2);font-size:13.5px}
+.refs a{word-break:break-all;font-size:13.5px}
+
+.disc{background:var(--sun-l);border:3px dashed var(--ink);border-radius:20px;padding:18px 22px;font-size:15.5px}
+.disc b{font-family:var(--round);font-weight:400;font-size:18px;display:block;margin-bottom:4px}
+
+.bigdisc{background:var(--coral-l);border:4px solid var(--ink);border-radius:24px;box-shadow:8px 8px 0 var(--coral);padding:22px 26px;outline:3px dashed var(--coral);outline-offset:-14px}
+.bd-head{display:flex;align-items:center;gap:12px;font-family:var(--round);font-size:clamp(22px,3vw,28px);color:#b42318;margin-bottom:10px}
+.bd-ico{flex-shrink:0;width:46px;height:46px;border-radius:50%;background:var(--coral);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-size:24px}
+.bd-key{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:8px 14px;margin:0 0 12px;font-weight:900;font-size:18px;color:#b42318}
+.bigdisc ul{margin:0;padding-left:1.2em}
+.bigdisc li{margin:6px 0;line-height:1.75}
+.bigdisc li b:first-child{color:#b42318}
+.ftdisc{display:inline-block;background:var(--sun);color:var(--ink);font-weight:700;border:3px solid var(--ink);border-radius:14px;padding:6px 16px;margin:4px 0 14px;font-size:15.5px}
+@media (max-width:820px){.bigdisc{padding:18px 16px;outline-offset:-10px}}
+footer{background:var(--blue-d);color:#fff;text-align:center;padding:46px 0 34px;margin-top:40px;border-top:4px solid var(--ink)}
+footer .pals{display:flex;justify-content:center;gap:12px;margin-bottom:12px}
+footer .pals svg{width:80px;height:80px}
+footer .quote{font-family:var(--round);font-size:22px;margin-bottom:10px}
+footer a{color:var(--sun)}
+footer .fine{font-size:13px;opacity:.8;margin-top:10px}
+#toTop{position:fixed;right:18px;bottom:18px;width:52px;height:52px;border-radius:50%;background:var(--sun);border:3px solid var(--ink);box-shadow:0 4px 0 var(--ink);font-size:22px;font-family:var(--round);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;z-index:60;color:var(--ink)}
+#toTop.show{opacity:1;pointer-events:auto}
+
+@media (max-width:1000px){.ev{grid-template-columns:repeat(3,1fr)}.agechips{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .navpills{display:none}
+  .back{margin-left:auto}
+  .hero{padding:34px 0 80px}
+  .hero .wrap,.grid2,.grid3,.prod,.chk,.agegrid{grid-template-columns:1fr}
+  .hero-art{max-width:420px;margin:0 auto;width:100%}
+  .ev{grid-template-columns:1fr 1fr}
+  .mtx{grid-template-columns:1fr 1fr}
+  .talk,.talk.r{grid-template-columns:1fr;gap:6px}
+  .talk.r .who{order:0}
+  .who svg{width:96px;height:96px}
+  .say::before{left:40px;top:-12px;transform:rotate(135deg)}
+  .talk.r .say::before{left:40px;right:auto;transform:rotate(135deg)}
+  .panel-grid{grid-template-columns:1fr}
+  .panel-grid svg{width:84px;height:84px}
+  .kv{grid-template-columns:1fr}
+  .cmp{grid-template-columns:1fr 1fr 1fr}
+  .cmp .h.c0{display:none}
+  .cmp .h{font-size:15px;padding:9px 8px}
+  .cmp .rh{grid-column:1/-1}
+  .cmp > div{font-size:14.5px;padding:9px 8px}
+  .cmp > div:nth-child(n){border-left:0}
+  .cmp .v{border-left:2px solid var(--line)}
+  .cmp .v1{border-left:0}
+  .bar{grid-template-columns:72px 1fr 92px}
+  .sec-head{gap:14px}
+  .num{width:48px;height:48px;font-size:23px}
+  section.sec{padding:48px 0}
+  .tbl{font-size:14.5px}
+  .tbl th,.tbl td{padding:9px 9px}
+  .tblwrap{overflow-x:auto}
+  .card,.panel,.calc{padding:18px 16px}
+}
+@media (max-width:420px){.ev{grid-template-columns:1fr}.agechips{grid-template-columns:repeat(2,1fr)}.hero .bubble{font-size:15px}}
+
+/* ---- FATIGUE 專用 ---- */
+.orig{display:inline-block;font-size:12px;font-weight:700;background:var(--grape-l);color:#5b34c4;border:1.5px solid var(--grape);border-radius:99px;padding:3px 8px;margin:0 2px;vertical-align:2px;white-space:nowrap}
+.unv{display:inline-block;font-size:12px;font-weight:700;background:var(--orange-l);color:#a4520a;border:1.5px solid var(--orange);border-radius:99px;padding:3px 8px;margin:0 2px;vertical-align:2px;white-space:nowrap}
+.fix{border:3px dashed var(--coral);background:var(--coral-l);border-radius:18px;padding:14px 18px;margin-top:20px}
+.fix b.h{color:#c43c3c}
+.fix p:last-child{margin-bottom:0}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.vs>*{min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 4px}
+.chips span{border:2.5px solid var(--ink);border-radius:99px;padding:5px 14px;background:#fff;font-weight:700;font-size:15.5px;box-shadow:0 3px 0 var(--ink)}
+.core{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.core .card{text-align:center;padding:16px 12px}
+.core .ic{font-size:34px;display:block}
+.core h4{margin:6px 0 4px;font-size:17px}
+.core p{font-size:14.5px;margin:0}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:20px;border:3px solid var(--ink);border-radius:18px;overflow:hidden;background:#fff}
+.tl div{padding:12px 14px;border-right:3px solid var(--ink)}
+.tl div:last-child{border-right:0}
+.tl>div>b{font-family:var(--round);font-weight:400;font-size:19px;display:block}
+.tl small{font-size:14px;color:var(--ink-2)}
+.stat{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.stat .card{text-align:center}
+.stat .big{font-family:var(--round);font-size:32px;line-height:1.15;color:var(--c);display:block}
+.stat p{font-size:14.5px;margin:6px 0 0}
+.tblw{overflow-x:auto}
+.ptbl{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:16px;overflow:hidden;background:#fff}
+.ptbl th,.ptbl td{padding:10px 12px;border-bottom:2px solid var(--line);text-align:left;vertical-align:top;font-size:15.5px;line-height:1.6}
+.ptbl thead th{background:var(--mint);color:#fff;font-family:var(--round);font-weight:400}
+.ptbl tr:last-child td{border-bottom:0}
+.sq fieldset{border:3px solid var(--ink);border-radius:16px;padding:10px 14px 12px;margin:0 0 12px;background:#fff}
+.sq legend{font-family:var(--round);font-size:16.5px;padding:0 6px}
+.sq label{display:inline-flex;align-items:center;gap:6px;margin:4px 14px 4px 0;font-size:16px;cursor:pointer}
+.sq input{width:20px;height:20px;accent-color:var(--blue)}
+.sqout{margin-top:6px;border-radius:16px;padding:14px 16px;border:3px solid var(--ink);background:var(--sun-l);font-weight:500}
+.sqout.red{background:var(--coral-l)}
+.sqout.green{background:var(--mint-l)}
+.bat{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.acts{display:flex;flex-wrap:wrap;gap:8px}
+.acts button{font:inherit;font-size:15.5px;border:2.5px solid var(--ink);border-radius:12px;background:#fff;color:var(--ink);padding:6px 12px;cursor:pointer;box-shadow:0 3px 0 var(--ink)}
+.acts button[aria-pressed="true"]{background:var(--sky-l)}
+.cell{position:relative;height:200px;width:110px;margin:0 auto;border:4px solid var(--ink);border-radius:18px;background:#fff;overflow:hidden}
+.cell:before{content:"";position:absolute;top:-14px;left:35px;width:32px;height:12px;background:var(--ink);border-radius:6px 6px 0 0}
+.cell i{position:absolute;left:0;right:0;bottom:0;background:var(--mint);transition:height .4s,background .3s}
+.cell .lim{position:absolute;left:0;right:0;border-top:3px dashed var(--coral);z-index:2}
+.cell span{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;font-family:var(--round);font-size:26px;z-index:3}
+.batwrap{position:relative;padding-top:14px}
+@media (max-width:1000px){.core{grid-template-columns:1fr 1fr}}
+@media (max-width:820px){.vs,.bat{grid-template-columns:1fr}.stat{grid-template-columns:1fr}.tl{grid-template-columns:1fr}.tl div{border-right:0;border-bottom:3px solid var(--ink)}.tl div:last-child{border-bottom:0}}
+@media (max-width:560px){.ptbl thead{display:none}.ptbl tr{display:block;border-bottom:2px solid var(--line);padding:8px 4px}.ptbl td{display:block;border:0;padding:3px 10px}.ptbl td[data-l]::before{content:attr(data-l)"：";font-weight:700;color:var(--ink-2)}}
+@media (max-width:420px){.core{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+<symbol id="grandma" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="60" cy="14" r="13" fill="#d9dde8" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M24 60 C22 34 40 24 60 24 C80 24 98 34 96 60Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="60" cy="64" r="34" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M28 52 C40 40 80 40 92 52 C86 34 34 34 28 52Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="48" cy="64" r="4.5" fill="#1f2a44"/><circle cx="72" cy="64" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="62.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="62.6" r="1.4" fill="#fff"/>
+  <ellipse cx="39" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="81" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M51 80 Q60 88 69 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="grandpa" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#8a5cf6" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M52 100 L60 116 L68 100" fill="#fff" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="60" cy="62" r="36" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M26 56 C24 40 32 30 40 30 M94 56 C96 40 88 30 80 30" stroke="#1f2a44" stroke-width="3" fill="#eef1f7" stroke-linecap="round"/>
+  <path d="M27 52 C22 44 26 34 36 34 L36 52Z M93 52 C98 44 94 34 84 34 L84 52Z" fill="#eef1f7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="47" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/><circle cx="73" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M56 60 H64" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="47" cy="61" r="3.5" fill="#1f2a44"/><circle cx="73" cy="61" r="3.5" fill="#1f2a44"/>
+  <circle cx="48.2" cy="59.8" r="1.2" fill="#fff"/><circle cx="74.2" cy="59.8" r="1.2" fill="#fff"/>
+  <ellipse cx="38" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="82" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M50 80 Q60 88 70 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="heart" viewBox="0 0 120 120">
+  <path d="M60 104 C20 78 10 56 14 40 C18 22 42 16 60 36 C78 16 102 22 106 40 C110 56 100 78 60 104Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="48" cy="56" r="4.5" fill="#1f2a44"/><circle cx="72" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="54.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="54.6" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 電池寶寶 -->
+<symbol id="battery" viewBox="0 0 90 140">
+  <rect x="30" y="2" width="30" height="12" rx="4" fill="#1f2a44"/>
+  <rect x="6" y="12" width="78" height="124" rx="16" fill="#fff" stroke="#1f2a44" stroke-width="4"/>
+  <rect x="14" y="84" width="62" height="44" rx="8" fill="#ffc93c"/>
+  <circle cx="32" cy="52" r="5" fill="#1f2a44"/><circle cx="58" cy="52" r="5" fill="#1f2a44"/>
+  <path d="M26 42 Q32 38 38 42 M52 42 Q58 38 64 42" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M38 68 Q45 64 52 68" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="22" cy="62" rx="6" ry="3.5" fill="#ff9aa2" opacity=".85"/><ellipse cx="68" cy="62" rx="6" ry="3.5" fill="#ff9aa2" opacity=".85"/>
+</symbol>
+<!-- 咖啡杯 -->
+<symbol id="cup" viewBox="0 0 110 100">
+  <path d="M30 18 C26 10 36 8 32 0 M52 18 C48 10 58 8 54 0" fill="none" stroke="#9fb0d0" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M10 26 H80 V58 C80 78 66 92 45 92 C24 92 10 78 10 58Z" fill="#8b5a3c" stroke="#1f2a44" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M80 36 C98 36 98 64 78 64" fill="none" stroke="#1f2a44" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="34" cy="56" r="4" fill="#fff"/><circle cx="56" cy="56" r="4" fill="#fff"/>
+  <path d="M38 68 Q45 72 52 68" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+</defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://www.gungho.idv.tw/KS/index.html" aria-label="回共好小學堂首頁">
+      <svg aria-hidden="true"><use href="#sprout"/></svg>
+      <span><b>共好小學堂</b><small>GROW &amp; LEARN TOGETHER</small></span>
+    </a>
+    <nav class="navpills" aria-label="章節">
+      <a href="#s1">疲勞 vs ME/CFS</a><a href="#s2">先排除什麼</a><a href="#s3">腸道菌</a><a href="#s4">營養咖啡因</a><a href="#s5">遠端工作</a><a href="#s6">復原策略</a><a href="#s7">運動爭議</a><a href="#check">每日檢核</a><a href="#quiz">小測驗</a><a href="#refs">參考資料</a>
+    </nav>
+    <a class="back" href="https://www.gungho.idv.tw/KS/index.html">← 回小學堂</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <span class="blob" style="width:320px;height:320px;background:var(--sun-l);top:-90px;right:-60px"></span>
+  <span class="blob" style="width:220px;height:220px;background:var(--sky-l);bottom:30px;left:-70px"></span>
+  <span class="blob" style="width:140px;height:140px;background:var(--mint-l);top:40%;left:46%"></span>
+  <div class="wrap">
+    <div>
+      <span class="tag">✦ 醫療新知小知識</span>
+      <h1>為什麼<span class="hl nw">總是好累？</span></h1>
+      <p class="lead">多數的累，和<b>睡不夠、壓力、吃不對、久坐</b>有關，休息後會好。但如果累了很久、休息也沒用，<b>活動後隔天反而更糟</b>，就要想到<b>慢性疲勞症候群（ME/CFS）</b>，並先請醫師排除其他疾病。我們一起看懂研究，做好每天的能量管理。</p>
+      <div class="btns">
+        <a class="btn pri" href="#start">開始認識 →</a>
+        <a class="btn" href="#s2">我的累要看醫師嗎？</a>
+      </div>
+      <p class="meta">資料查核日：2026年10月12日｜資料來源：英國 NICE 指引、美國國家衛生研究院、考科藍文獻回顧、學術期刊</p>
+    </div>
+    <div class="hero-art">
+      <div class="bubble">先充電，再出發～</div>
+      <svg viewBox="0 0 520 400" role="img" aria-label="阿嬤坐著休息，旁邊有電池寶寶、咖啡杯、小芽和藍鳥">
+        <ellipse cx="260" cy="368" rx="230" ry="26" fill="#dcf7ec"/>
+        <use href="#grandma" x="200" y="160" width="130" height="165"/>
+        <g class="float"><use href="#battery" x="70" y="140" width="96" height="150"/></g>
+        <g class="float d2"><use href="#cup" x="350" y="230" width="100" height="92"/></g>
+        <use href="#sprout" x="40" y="286" width="74" height="82"/>
+        <use href="#bird" x="440" y="130" width="70" height="64"/>
+        <g class="float d3"><use href="#star" x="300" y="80" width="40" height="40"/></g>
+      </svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C240 60 480 0 720 30 C960 60 1200 0 1440 30 V60 H0Z" fill="#fffdf7"/></svg>
+</section>
+
+<section class="sec" id="start">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">★</div><div><span class="eyebrow">Key Points</span><h2>先說重點</h2></div></div>
+    <div class="talk" style="--c:var(--sun)">
+      <div class="who"><svg aria-hidden="true"><use href="#battery"/></svg></div>
+      <div class="say"><span class="name">電池寶寶說</span>
+        <p>ME/CFS 不是「比較累」而已，它是<b>嚴重、慢性、影響全身的疾病</b>。最關鍵的特徵是「<b>活動後症狀惡化</b>」（PEM）：做了平常做得到的事，之後症狀明顯變糟，而且恢復得很慢。<a class="src" href="#ref1">參考 1</a></p>
+      </div>
+    </div>
+    <div class="talk r" style="--c:var(--coral)">
+      <div class="who"><svg aria-hidden="true"><use href="#bird"/></svg></div>
+      <div class="say"><span class="name">藍鳥提醒</span>
+        <p>對一般疲勞，規律運動有幫助；但對 ME/CFS，英國 NICE 指引<b>不建議「固定增量」的漸進式運動治療</b>，重點是<b>能量管理</b>，不要超過自己的能量上限。<a class="src" href="#ref1">參考 1</a></p>
+      </div>
+    </div>
+    <div class="warn"><b>⚠ 閱讀小提醒：</b>本頁是健康知識整理，<b>不能用來自我診斷</b>。標示 <span class="orig">原稿整理</span> 的內容（例如食物、B 群、咖啡因、遠端工作與中醫穴位）是原稿的一般性建議，查證的參考資料中沒有直接出處。</div>
+  </div>
+</section>
+
+<section class="sec alt" id="s1" style="--tint:var(--sky-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">1</div><div><span class="eyebrow">Fatigue vs ME/CFS</span><h2>一般疲勞和 ME/CFS 差在哪？</h2></div></div>
+    <div class="vs">
+      <div class="card" style="box-shadow:6px 6px 0 var(--mint)"><h3>😮‍💨 一般疲勞</h3><p>多和短期壓力、劇烈活動、睡眠不足或急性感染有關，<b>休息後通常會改善</b>。<span class="orig">原稿整理</span></p></div>
+      <div class="card" style="box-shadow:6px 6px 0 var(--coral)"><h3>🪫 ME/CFS</h3><p>嚴重、慢性、影響多個系統的疾病。疲勞<b>無法用活動量解釋</b>，活動後會惡化、恢復很慢，日常功能明顯下降。<a class="src" href="#ref1">參考 1</a></p></div>
+    </div>
+    <h3 style="margin-top:26px">🔍 NICE 指引的四個核心症狀（要四個都有）</h3>
+    <div class="core">
+      <div class="card"><span class="ic">🪫</span><h4>令人虛弱的疲勞</h4><p>活動後變糟、恢復延遲，休息也很難緩解</p></div>
+      <div class="card"><span class="ic">📉</span><h4>活動後症狀惡化</h4><p>PEM：活動後幾小時到幾天才惡化，可能持續數天到數週</p></div>
+      <div class="card"><span class="ic">🛌</span><h4>睡不飽或睡不好</h4><p>睡醒仍覺得沒有恢復，或有睡眠障礙</p></div>
+      <div class="card"><span class="ic">🌫</span><h4>認知困難</h4><p>俗稱腦霧：專注、記憶、找詞變困難</p></div>
+    </div>
+    <div class="tl">
+      <div style="background:var(--sun-l)"><b>6 週</b><small>成人四項症狀持續至少 6 週（兒童青少年 4 週）、功能明顯下降、且無其他解釋 → <b>懷疑</b> ME/CFS</small></div>
+      <div style="background:var(--coral-l)"><b>3 個月</b><small>症狀持續 3 個月、且無法用其他疾病解釋 → 才<b>診斷</b></small></div>
+      <div style="background:#fff"><b>等待期間</b><small>先做能量管理，不要硬撐<span class="orig">原稿整理</span></small></div>
+    </div>
+    <p class="small" style="margin-top:8px">英國 NICE 指引（NG206，2021 年）。常見的伴隨症狀還有肌肉關節痛、頭痛、喉嚨痛、淋巴結壓痛、自律神經症狀與腸胃不適。<a class="src" href="#ref1">參考 1</a></p>
+  </div>
+</section>
+
+<section class="sec" id="s2">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--coral)"><div class="num">2</div><div><span class="eyebrow">Rule Out First</span><h2>先排除這些可以治療的原因</h2></div></div>
+    <p class="intro">慢性疲勞不是單一疾病。ME/CFS 要由醫療專業人員診斷，不能因為「很累」就自己歸類。<span class="orig">原稿整理</span></p>
+    <div class="chips"><span>😴 睡眠呼吸中止症</span><span>🩸 貧血</span><span>🦋 甲狀腺異常</span><span>🍬 糖尿病、代謝疾病</span><span>🫘 肝腎疾病</span><span>🛡 自體免疫疾病</span><span>🦠 慢性感染</span><span>💭 憂鬱、焦慮、創傷後壓力</span><span>💊 藥物副作用</span><span>🍺 酒精或物質使用</span><span>🦠 新冠長期症狀</span></div>
+
+    <div class="calc sq" style="--c:var(--blue);margin-top:24px">
+      <h3>🧭 我的累，要看醫師嗎？（自我整理，非診斷）</h3>
+      <p class="small">這份小問卷只幫你整理狀況、準備和醫師說明。<b>答案不會儲存，也不會上傳。</b></p>
+      <fieldset><legend>1. 累的感覺持續多久了？</legend>
+        <label><input type="radio" name="q1" value="0" checked>不到 6 週</label>
+        <label><input type="radio" name="q1" value="1">6 週到 3 個月</label>
+        <label><input type="radio" name="q1" value="2">超過 3 個月</label>
+      </fieldset>
+      <fieldset><legend>2. 好好休息、睡一晚之後？</legend>
+        <label><input type="radio" name="q2" value="0" checked>會明顯好轉</label>
+        <label><input type="radio" name="q2" value="1">幾乎沒有好轉</label>
+      </fieldset>
+      <fieldset><legend>3. 有沒有這些情形？（可複選）</legend>
+        <label><input type="checkbox" name="q3" value="pem">做完平常的事，隔天更糟、好幾天才恢復</label>
+        <label><input type="checkbox" name="q3" value="sleep">睡醒還是覺得沒睡飽</label>
+        <label><input type="checkbox" name="q3" value="fog">腦霧：專心、記憶、找詞變困難</label>
+        <label><input type="checkbox" name="q3" value="func">工作、家事、社交明顯做不到以前的程度</label>
+      </fieldset>
+      <fieldset><legend>4. 有沒有這些警訊？（可複選）</legend>
+        <label><input type="checkbox" name="q4" value="1">體重莫名減輕、發燒或夜間盜汗</label>
+        <label><input type="checkbox" name="q4" value="1">很會打鼾、睡覺會停止呼吸、白天嚴重嗜睡</label>
+        <label><input type="checkbox" name="q4" value="1">胸痛、喘不過氣、心悸、暈倒</label>
+        <label><input type="checkbox" name="q4" value="1">情緒持續低落，或有想傷害自己的念頭</label>
+      </fieldset>
+      <div class="sqout" id="sqOut" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="s3" style="--tint:var(--mint-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">3</div><div><span class="eyebrow">Gut Microbiome</span><h2>腸道菌與丁酸：有潛力，但還不是療法</h2></div></div>
+    <p class="intro">「丁酸」是腸道好菌分解膳食纖維產生的短鏈脂肪酸之一。幾項研究發現，ME/CFS 患者<b>會產生丁酸的細菌比較少</b>。</p>
+    <div class="stat">
+      <div class="card" style="--c:var(--blue)"><span class="big">106 vs 91</span><p>哥倫比亞大學研究（患者 vs 健康者）：產丁酸菌偏少、丁酸產量降低；其中一種菌越少，疲勞越嚴重。<a class="src" href="#ref2">參考 2</a></p></div>
+      <div class="card" style="--c:var(--grape)"><span class="big">149 vs 79</span><p>傑克森實驗室研究：<b>發病 4 年內</b>的患者產丁酸菌減少較明顯；病程超過 10 年者菌相較穩定，但症狀更嚴重。<a class="src" href="#ref2">參考 2</a></p></div>
+      <div class="card" style="--c:var(--coral)"><span class="big">40 vs 40</span><p>中國的病例對照研究：患者糞便中的乙酸、丁酸等短鏈脂肪酸較低；纖維吃得多的患者，乙酸與異戊酸較高。<a class="src" href="#ref4">參考 4</a></p></div>
+    </div>
+    <div class="card" style="margin-top:20px"><h3>🔗 可能的機制（仍是假說）</h3><p>2026 年的文獻回顧整理：產丁酸能力下降、腸道屏障變弱與細菌移位、低度發炎、色胺酸代謝改變、能量失衡，以及「腸—腦」「腸—肌肉」訊號，可能共同讓人更容易疲勞。膳食纖維、發酵食物、益生質、益生菌、多酚等飲食方法<b>可能</b>有幫助，但需要更多對照試驗。<a class="src" href="#ref3">參考 3</a></p></div>
+    <div class="fix">
+      <p>🔎 <b class="h">研究現況：</b>美國國家衛生研究院強調，目前還<b>不知道菌相差異是症狀的原因還是結果</b>，這些菌只是「潛在」的生物標記，ME/CFS 也還沒有核准的治療。<a class="src" href="#ref2">參考 2</a> 另外，原稿說「多吃纖維」可支持丁酸；但那篇 40 人研究中，纖維攝取多的患者是<b>乙酸與異戊酸</b>較高，丁酸並沒有顯著差異。<a class="src" href="#ref4">參考 4</a> 所以，<b>不能把補充丁酸或特定益生菌當成 ME/CFS 的療法</b>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="s4">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--orange)"><div class="num">4</div><div><span class="eyebrow">Nutrition &amp; Caffeine</span><h2>營養、B 群和咖啡因</h2></div></div>
+    <p class="intro">比較穩健的原則：以<b>原型食物</b>為主，有足夠的蛋白質、膳食纖維、健康脂肪、蔬果與全穀；避免長時間空腹或過度節食，少吃高糖、高度加工食品。<span class="orig">原稿整理</span></p>
+    <div class="tblw"><table class="ptbl">
+      <thead><tr><th>食物</th><th>主要營養</th><th>可能支持</th></tr></thead>
+      <tbody>
+        <tr><td data-l="食物"><b>🥣 燕麥</b></td><td data-l="營養">水溶性膳食纖維、複合碳水化合物</td><td data-l="支持">較平穩的血糖與飽足感</td></tr>
+        <tr><td data-l="食物"><b>🥬 菠菜</b></td><td data-l="營養">鐵、葉酸、鎂</td><td data-l="支持">紅血球生成</td></tr>
+        <tr><td data-l="食物"><b>🫘 黃豆製品</b></td><td data-l="營養">蛋白質、色胺酸</td><td data-l="支持">飽足感、神經傳導物質原料</td></tr>
+        <tr><td data-l="食物"><b>🥜 堅果</b></td><td data-l="營養">不飽和脂肪酸、鎂、維生素 E</td><td data-l="支持">能量密度與心血管健康</td></tr>
+        <tr><td data-l="食物"><b>🫐 藍莓</b></td><td data-l="營養">花青素、多酚</td><td data-l="支持">抗氧化</td></tr>
+        <tr><td data-l="食物"><b>🥬 發酵食物、高纖蔬果</b></td><td data-l="營養">益生菌、益生質、多酚</td><td data-l="支持">腸道菌與短鏈脂肪酸<a class="src" href="#ref3">參考 3</a></td></tr>
+      </tbody>
+    </table></div>
+    <p class="small" style="margin-top:8px">食物表為原稿整理 <span class="orig">原稿整理</span>，是一般營養知識，不是治療疲勞的處方；腎臟病、需控制鉀或磷的人，請依醫師或營養師建議。</p>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card mech" style="--c:var(--orange)"><span class="pin">B 群</span><h3>💊 不是萬能提神劑</h3><p>維生素 B1、B2、B6、B12 是能量代謝的輔酶。因飲食不均、吸收不良或疾病<b>真的缺乏</b>時，補充可能有幫助；但睡不夠、壓力大或 ME/CFS 的累，靠 B 群解決不了。<span class="orig">原稿整理</span></p></div>
+      <div class="card mech" style="--c:#8b5a3c"><span class="pin">咖啡因</span><h3>☕ 越喝越累的循環</h3><p>咖啡因能短暫提神，但解決不了睡眠債、貧血、甲狀腺問題、憂鬱或 PEM。喝太多可能心悸、焦慮、胃不舒服、睡更差。<b>午後避免</b>是原稿的建議。<span class="orig">原稿整理</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="s5" style="--tint:var(--grape-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">5</div><div><span class="eyebrow">Remote Work</span><h2>遠端工作：省了通勤，多了數位倦怠</h2></div></div>
+    <div class="vs">
+      <div class="card" style="box-shadow:6px 6px 0 var(--mint)"><h3>👍 好處</h3><p>省下通勤時間、時間比較彈性，有機會兼顧工作和生活。<span class="orig">原稿整理</span></p></div>
+      <div class="card" style="box-shadow:6px 6px 0 var(--coral)"><h3>⚠️ 常見風險</h3><ul class="qs" style="margin:0"><li>上下班界線模糊，越做越久</li><li>視訊會議、即時訊息讓注意力一直被打斷</li><li>少了茶水間閒聊，團隊感變弱</li><li>久坐、姿勢不良、眼睛疲勞</li><li>「隨時在線」的壓力影響睡眠</li></ul><p class="small">以上為原稿整理。<span class="orig">原稿整理</span></p></div>
+    </div>
+    <p class="note">🔎 原稿把遠端工作的內容標示出自美國國家衛生研究院的新聞稿，但那篇新聞稿談的是腸道菌，沒有提到遠端工作，所以本頁改標為原稿整理。</p>
+  </div>
+</section>
+
+<section class="sec" id="s6">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">6</div><div><span class="eyebrow">Recovery</span><h2>不吃藥的復原策略</h2></div></div>
+    <div style="--c:var(--mint)">
+      <div class="tabs" role="tablist" aria-label="復原策略" data-tabs>
+        <button class="tab" role="tab" aria-selected="true" aria-controls="p1" id="pb1">🛌 睡眠</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p2" id="pb2" tabindex="-1">🚶 活動</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p3" id="pb3" tabindex="-1">🧘 身心練習</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p4" id="pb4" tabindex="-1">🌿 中醫穴位</button>
+      </div>
+      <div class="panel" role="tabpanel" id="p1" aria-labelledby="pb1">
+        <ul class="qs" style="margin:0"><li>固定起床與就寢時間</li><li>白天曬自然光，晚上少強光與螢幕</li><li>午後避免咖啡因，睡前避免喝酒</li><li>臥室保持暗、安靜、涼爽</li><li>常打鼾、睡覺停止呼吸、白天嚴重嗜睡，要檢查睡眠呼吸中止症</li></ul>
+        <p class="small" style="margin-top:8px">以上為原稿整理的睡眠衛生建議。<span class="orig">原稿整理</span></p>
+      </div>
+      <div class="panel" role="tabpanel" id="p2" aria-labelledby="pb2" hidden>
+        <p><b>一般疲勞</b>：規律的有氧、肌力與伸展運動，有助體能與情緒。<span class="orig">原稿整理</span></p>
+        <p><b>ME/CFS</b>：NICE 不建議「固定增量」的漸進式運動治療，也不建議一般性的運動課程；若要安排活動計畫，應先評估在<b>不惡化症狀</b>下做得到多少，並由受過 ME/CFS 訓練的物理或職能治療師帶領。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref9">參考 9</a></p>
+      </div>
+      <div class="panel" role="tabpanel" id="p3" aria-labelledby="pb3" hidden>
+        <p>正念、呼吸練習、瑜伽或溫和伸展，可能有助於減壓、改善情緒與睡眠。對慢性疲勞者，要<b>低強度、可以隨時停、不誘發 PEM</b>；症狀變糟<b>不是意志力不足</b>。<span class="orig">原稿整理</span></p>
+        <p class="small">NICE 也指出，認知行為治療（CBT）<b>不是治癒 ME/CFS 的方法</b>，只能作為支持性的心理治療，幫助管理症狀與生活品質。<a class="src" href="#ref9">參考 9</a></p>
+      </div>
+      <div class="panel" role="tabpanel" id="p4" aria-labelledby="pb4" hidden>
+        <p>中醫常把慢性疲勞歸在「虛勞」，依心脾兩虛、肝鬱氣滯、氣滯血瘀等證型調理；百會、四神聰、神門、內關、合谷、太衝等穴位常用於提神、寧心或疏肝理氣。<span class="orig">原稿整理</span></p>
+        <p class="small">⚠ 查證的參考資料中沒有支持穴位或茶飲療效的研究；這些只能當輔助，<b>不能取代西醫鑑別診斷與必要治療</b>。懷孕者按壓合谷等穴位前，請先詢問中醫師。</p>
+      </div>
+    </div>
+
+    <div class="calc" style="--c:var(--sun);margin-top:28px">
+      <h3>🔋 能量電池：今天的活動會不會「透支」？</h3>
+      <p class="small">NICE 建議 ME/CFS 患者做「<b>能量管理</b>」（常稱為「配速」）：把活動控制在自己的<b>能量上限</b>內，避免觸發症狀惡化。<a class="src" href="#ref1">參考 1</a> 點選今天想做的事，看看電池會不會掉到紅線以下。<b>下面的耗電數字只是示意</b>，每個人的能量上限都不一樣。</p>
+      <div class="bat">
+        <div>
+          <div class="acts" id="acts"></div>
+          <div class="btnrow" style="margin-top:12px"><button type="button" id="batReset" style="font:inherit;font-size:14px;border:2px solid var(--ink);border-radius:10px;background:#fff;padding:3px 12px;cursor:pointer">清空重來</button></div>
+        </div>
+        <div class="batwrap"><div class="cell" aria-hidden="true"><i id="batFill"></i><div class="lim" style="bottom:30%"></div><span id="batPct">100%</span></div><p class="small" style="text-align:center;margin-top:6px">紅色虛線 = 示意的能量上限（留 30% 不用）</p></div>
+      </div>
+      <div class="verdict" id="batOut" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="s7" style="--tint:var(--coral-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--coral)"><div class="num">7</div><div><span class="eyebrow">Exercise Controversy</span><h2>運動治療，為什麼吵這麼久？</h2></div></div>
+    <div class="vs">
+      <div class="card mech" style="--c:var(--blue)"><span class="pin">考科藍回顧</span><h3>📚 8 項試驗、1,518 人</h3><p>和一般照護相比，運動療法在治療結束時<b>可能減少疲勞</b>、稍微改善睡眠；但長期效果不確定，<b>嚴重不良反應的證據也不確定</b>。2024 年 12 月的最新版本，文獻只搜尋到 <b>2014 年 5 月</b>，納入的試驗都用舊的診斷標準。<a class="src" href="#ref5">參考 5</a></p></div>
+      <div class="card mech" style="--c:var(--coral)"><span class="pin">NICE 2021</span><h3>🚫 不建議漸進式運動治療</h3><p>NICE 指出，有病人回報超過能量上限後受到傷害，因此不建議以「固定增量」方式勉強運動；美國疾管署也表示，標準運動建議對 ME/CFS 患者可能有害。<a class="src" href="#ref6">參考 6</a><a class="src" href="#ref9">參考 9</a></p></div>
+    </div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card"><h3>🔁 PACE 試驗的爭議</h3><p>一項英國大型試驗曾宣稱 CBT 和漸進式運動的「康復率」約 22%；法院命令公開原始資料後，獨立重新分析的康復率只有約 <b>3–7%</b>，各組差異不顯著，2.5 年後各組差異也消失。<a class="src" href="#ref7">參考 7</a></p></div>
+      <div class="card"><h3>📰 考科藍取消更新</h3><p>2025 年 1 月，考科藍取消了這篇回顧原本計畫的更新，引起病友團體強烈不滿，要求撤回這篇過時的回顧。<a class="src" href="#ref6">參考 6</a></p></div>
+    </div>
+    <div class="warn"><b>💡 對你我的意義：</b>如果你有 PEM，任何活動計畫都要以「<b>不讓症狀變糟</b>」為前提，請和熟悉 ME/CFS 的醫療團隊一起個別調整。</div>
+  </div>
+</section>
+
+<section class="sec" id="check">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">8</div><div><span class="eyebrow">Daily Check</span><h2>每日能量恢復檢核表</h2></div></div>
+    <p class="intro">今天做到的就勾起來！<span class="orig">原稿整理</span></p>
+    <div class="chk" id="chk">
+      <label><input type="checkbox" data-k="c1"><span class="box"></span><span><b>🛌 睡眠</b><span class="d">固定作息，成人以 7–9 小時為參考</span></span></label>
+      <label><input type="checkbox" data-k="c2"><span class="box"></span><span><b>💧 水分</b><span class="d">依活動量和天氣補水，不用含糖飲料代替水</span></span></label>
+      <label><input type="checkbox" data-k="c3"><span class="box"></span><span><b>🍱 餐食</b><span class="d">三餐規律，有蛋白質、纖維和健康脂肪</span></span></label>
+      <label><input type="checkbox" data-k="c4"><span class="box"></span><span><b>☕ 咖啡因</b><span class="d">午後不喝；有焦慮、心悸或失眠就減量</span></span></label>
+      <label><input type="checkbox" data-k="c5"><span class="box"></span><span><b>📱 螢幕</b><span class="d">睡前 1 小時少看強光與工作訊息</span></span></label>
+      <label><input type="checkbox" data-k="c6"><span class="box"></span><span><b>🚶 活動</b><span class="d">一般人規律運動；有 PEM 的人不超過能量上限</span></span></label>
+      <label><input type="checkbox" data-k="c7"><span class="box"></span><span><b>🧘 壓力</b><span class="d">每天 5–10 分鐘正念、呼吸或休息</span></span></label>
+      <label><input type="checkbox" data-k="c8"><span class="box"></span><span><b>🩺 就醫</b><span class="d">疲勞持續、變嚴重或有警訊時，主動看醫師</span></span></label>
+    </div>
+    <div class="prog"><div class="tr"><div class="fill" id="pFill"></div></div><span class="n" id="pN">0 / 8</span></div>
+    <div class="cheer" id="cheer">🎉 八項都做到了！今天的電池充得很好。</div>
+    <p class="small">🔒 勾選狀態只存在你自己的瀏覽器，不會上傳，每天會自動重新開始。<button type="button" id="chkReset" style="font:inherit;font-size:14px;border:2px solid var(--ink);border-radius:10px;background:#fff;padding:1px 10px;cursor:pointer;margin-left:6px">清除重來</button></p>
+  </div>
+</section>
+
+<section class="sec alt" id="s9" style="--tint:var(--sun-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">9</div><div><span class="eyebrow">Wrap-up</span><h2>結論：先找原因，再管理能量</h2></div></div>
+    <div class="talk" style="--c:var(--mint)">
+      <div class="who"><svg aria-hidden="true"><use href="#sprout"/></svg></div>
+      <div class="say"><span class="name">小芽總結</span>
+        <p>現代人的累，要從<b>睡眠、壓力、營養、活動量、工作型態和潛在疾病</b>一起看。ME/CFS 特別要注意 PEM、腦霧與睡眠問題，並先排除其他可以治療的原因。<a class="src" href="#ref1">參考 1</a></p>
+        <p>腸道菌與丁酸研究很有潛力，但還不是療法；營養和睡眠衛生能支持日常恢復，而 ME/CFS 的活動安排必須<b>個別化、不讓症狀變糟</b>。<a class="src" href="#ref2">參考 2</a><a class="src" href="#ref5">參考 5</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="quiz">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">?</div><div><span class="eyebrow">Quick Quiz</span><h2>小測驗：四題就好</h2></div></div>
+    <div class="quiz" id="quizBox">
+      <div class="card q" data-ans="b">
+        <h4>Q1. ME/CFS 最關鍵、和一般疲勞最不一樣的特徵是？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">早上起床比較想賴床</button>
+          <button class="opt" data-v="b">活動後症狀惡化（PEM），而且恢復很慢</button>
+          <button class="opt" data-v="c">喝咖啡後會比較有精神</button>
+        </div>
+        <div class="exp">PEM 是 NICE 指引的四大核心症狀之一，也直接影響復原策略：有 PEM 的人不適合「硬撐」運動。</div>
+      </div>
+      <div class="card q" data-ans="c">
+        <h4>Q2. 依 NICE 指引，成人四項核心症狀持續多久，就應該「懷疑」ME/CFS？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">3 天</button>
+          <button class="opt" data-v="b">1 年</button>
+          <button class="opt" data-v="c">至少 6 週（確診需 3 個月）</button>
+        </div>
+        <div class="exp">成人 6 週、兒童青少年 4 週可懷疑；持續 3 個月且無其他解釋才診斷。</div>
+      </div>
+      <div class="card q" data-ans="a">
+        <h4>Q3. 研究發現 ME/CFS 患者產丁酸的腸道菌較少，代表什麼？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">是有潛力的研究線索，但還不知道是因還是果，不能當療法</button>
+          <button class="opt" data-v="b">只要吃丁酸補充品就能治好</button>
+          <button class="opt" data-v="c">ME/CFS 是腸胃病</button>
+        </div>
+        <div class="exp">美國國家衛生研究院指出，菌相差異可能是潛在生物標記，但因果關係還不清楚，ME/CFS 目前也沒有核准的治療。</div>
+      </div>
+      <div class="card q" data-ans="b">
+        <h4>Q4. 有 PEM 的人想開始活動，比較好的做法是？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">每週固定增加運動時間，咬牙撐過去</button>
+          <button class="opt" data-v="b">先了解自己的能量上限，在不讓症狀變糟的範圍內，由專業團隊個別調整</button>
+          <button class="opt" data-v="c">完全不能動，整天躺著</button>
+        </div>
+        <div class="exp">NICE 建議能量管理，不建議「固定增量」的漸進式運動治療；活動計畫要個別化。</div>
+      </div>
+      <div class="score" id="score"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt refs" id="refs" style="--tint:var(--blue-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--ink)"><div class="num">§</div><div><span class="eyebrow">References</span><h2>參考資料</h2></div></div>
+    <p class="small">以下資料於<b>2026年10月12日</b>查核，編號依原稿清單順序。學術文獻已透過 PubMed 或期刊網頁核對；NICE 網站本次無法完整開啟，核心症狀與時間門檻經其他來源交叉確認。原稿內文的 [web:314]～[web:325] 標記無法對應清單，本頁已依各來源實際內容重新對應。第 9 筆為查證時補列。</p>
+    <h3>🩺 指引與疾病</h3>
+    <ol>
+      <li id="ref1"><span class="rid">1</span>National Institute for Health and Care Excellence. <b>Myalgic encephalomyelitis (or encephalopathy)/chronic fatigue syndrome: diagnosis and management</b>（NG206），2021。<span class="loc">四個核心症狀；成人 6 週、兒童青少年 4 週可懷疑，3 個月診斷；不建議以固定增量的漸進式運動治療；建議能量管理（配速）並說明它不是治癒方法。</span><a href="https://www.nice.org.uk/guidance/ng206/chapter/recommendations" target="_blank" rel="noopener">nice.org.uk</a></li>
+    </ol>
+    <h3>🦠 腸道菌與丁酸</h3>
+    <ol>
+      <li id="ref2"><span class="rid">2</span>National Institutes of Health. <b>Studies find that microbiome changes may be a signature for ME/CFS</b>（新聞稿，2023年2月8日）。<span class="loc">兩項 Cell Host &amp; Microbe 研究：哥倫比亞大學 106 位患者 vs 91 位健康者；傑克森實驗室 149 位患者 vs 79 位健康者；產丁酸菌減少；因果尚不明，僅為潛在生物標記。</span><a href="https://www.nih.gov/news-events/news-releases/studies-find-microbiome-changes-may-be-signature-mecfs" target="_blank" rel="noopener">nih.gov</a></li>
+      <li id="ref3"><span class="rid">3</span>Kim J, Son B, Yoo W, et al. <b>Gut microbiome-immune-metabolic axis in fatigue: mechanistic insights and food science approaches.</b> <i>Food Sci Biotechnol.</i> 2026;35(12):3449-3463.<span class="loc">文獻回顧：產丁酸能力下降、腸道屏障與細菌移位、低度發炎、色胺酸代謝、能量失衡、腸—腦／腸—肌肉軸；飲食方法仍需對照試驗驗證。</span><a href="https://doi.org/10.1007/s10068-026-02282-x" target="_blank" rel="noopener">DOI: 10.1007/s10068-026-02282-x</a></li>
+      <li id="ref4"><span class="rid">4</span>Cheng X, Wang W, Xu T, et al. <b>Alterations in gut microbiota and associated metabolites in patients with chronic fatigue syndrome.</b> <i>Sci Rep.</i> 2025;15(1):43681.<span class="loc">40 位患者 vs 40 位健康者；菌相多樣性下降；乙酸、丁酸等短鏈脂肪酸較低；纖維攝取較多者乙酸與異戊酸較高。</span><a href="https://doi.org/10.1038/s41598-025-27564-y" target="_blank" rel="noopener">DOI: 10.1038/s41598-025-27564-y</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/41387992/" target="_blank" rel="noopener">PubMed 41387992</a></li>
+    </ol>
+    <h3>🚶 運動治療爭議</h3>
+    <ol>
+      <li id="ref5"><span class="rid">5</span>Larun L, Brurberg KG, Odgaard-Jensen J, Price JR. <b>Exercise therapy for chronic fatigue syndrome.</b> <i>Cochrane Database Syst Rev.</i> 2024, Issue 12（CD003200.pub9）。<span class="loc">8 項試驗、1,518 人；相較被動對照可能減少治療結束時的疲勞；長期效果與不良反應證據不確定；文獻搜尋至 2014 年 5 月；試驗使用 1994 年 CDC 或牛津標準。</span><a href="https://www.cochrane.org/evidence/CD003200_exercise-treatment-adults-chronic-fatigue-syndrome" target="_blank" rel="noopener">cochrane.org</a></li>
+      <li id="ref6"><span class="rid">6</span>Wise J. <b>Chronic fatigue syndrome: Outcry over Cochrane decision to abandon review of exercise therapy.</b> <i>BMJ.</i> 2025;388:r169.<span class="loc">考科藍取消原計畫的更新；病友團體強烈反應；對比 NICE 2021 不建議漸進式運動、美國疾管署表示標準運動建議可能有害。</span><a href="https://doi.org/10.1136/bmj.r169" target="_blank" rel="noopener">DOI: 10.1136/bmj.r169</a></li>
+      <li id="ref7"><span class="rid">7</span>Mitchell AJ. <b>Controversy over exercise therapy for chronic fatigue syndrome: Key lessons for clinicians and academics.</b> <i>BJPsych Advances.</i> 2017;23(3):145-148.<span class="loc">PACE 試驗原始資料公開後重新分析，康復率約 3–7%、各組差異不顯著；2.5 年追蹤差異消失；心理治療應為醫療的輔助而非替代。</span><a href="https://doi.org/10.1192/apt.bp.116.016261" target="_blank" rel="noopener">DOI: 10.1192/apt.bp.116.016261</a></li>
+    </ol>
+    <h3>🔎 查證補列</h3>
+    <ol>
+      <li id="ref9"><span class="rid">9</span><b>NICE reverses advice on exercise therapy for treatment of chronic fatigue syndrome in draft guidance.</b> <i>The Pharmaceutical Journal</i>，2020年11月11日。<span class="loc">查證補列（因 NICE 網站本次無法完整開啟）。草案不建議漸進式運動治療，理由為病人超過能量上限後受到傷害；活動計畫應由受過 ME/CFS 訓練的物理或職能治療師帶領；CBT 不是治癒方法，屬支持性心理治療。</span><a href="https://pharmaceutical-journal.com/?p=22976" target="_blank" rel="noopener">pharmaceutical-journal.com</a></li>
+    </ol>
+
+    <div class="bigdisc" role="note" aria-label="免責聲明" style="margin-top:30px">
+      <div class="bd-head"><span class="bd-ico">⚠</span><span>重要聲明｜請先看這裡</span></div>
+      <p class="bd-key">本站資訊僅供參考，實際以醫師等醫療專業人員評估及衛生主管機關官方資料為準。</p>
+      <ul>
+        <li><b>僅供參考：</b>本頁為健康知識的學習整理，<b>不構成任何醫療建議或診斷</b>；小問卷只幫助整理狀況，不能判斷是否罹患 ME/CFS 或其他疾病。</li>
+        <li><b>無任何推薦或行銷：</b>本頁不推薦、不銷售任何保健食品、維生素、益生菌、丁酸補充品、咖啡、中藥茶飲或課程，與文中作者及單位無任何合作或業配關係。</li>
+        <li><b>研究限制：</b>腸道菌研究多為小樣本的關聯性研究，因果不明；運動治療證據仍有爭議，各國指引可能不同。</li>
+        <li><b>原稿整理：</b>標示此標籤的食物、B 群、咖啡因、遠端工作與中醫穴位內容，是一般性整理，請依自身狀況並諮詢醫師、營養師或中醫師。</li>
+        <li><b>需要協助時：</b>出現胸痛、呼吸困難、暈倒等急症請撥 <b>119</b>；情緒低落、想傷害自己時，請撥 <b>1925 安心專線</b>（24 小時）或 <b>1995 生命線</b>。</li>
+        <li><b>資料時點：</b>資料查核於2026年10月12日，之後的新研究與指引更新，本頁不會即時同步。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="pals" aria-hidden="true"><svg><use href="#sprout"/></svg><svg><use href="#bird"/></svg><svg><use href="#star"/></svg></div>
+    <p class="quote">每一次多懂一點，都是送給自己的小禮物。</p>
+    <p class="ftdisc">⚠ 僅供參考｜無任何推薦或行銷<br>本站資訊僅供參考，實際以醫師等醫療專業人員評估及官方資料為準</p>
+    <p><a href="https://www.gungho.idv.tw/KS/index.html">← 回共好小學堂</a></p>
+    <p class="fine">共好小學堂 ✦ 一起學習，一起共好<br>本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-10-12</p>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到頂端">↑</button>
+
+<script>
+(function(){
+  function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML;}
+  document.querySelectorAll('[data-tabs]').forEach(function(list){
+    var tabs=[].slice.call(list.querySelectorAll('[role=tab]'));
+    function select(t,focus){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on?'true':'false');x.tabIndex=on?0:-1;var p=document.getElementById(x.getAttribute('aria-controls'));if(p)p.hidden=!on;});if(focus)t.focus();}
+    tabs.forEach(function(t,i){t.addEventListener('click',function(){select(t);});t.addEventListener('keydown',function(e){var n=null;if(e.key==='ArrowRight')n=tabs[(i+1)%tabs.length];if(e.key==='ArrowLeft')n=tabs[(i-1+tabs.length)%tabs.length];if(n){e.preventDefault();select(n,true);}});});
+  });
+
+  // self-check (not saved)
+  var sq=document.querySelector('.sq'),out=document.getElementById('sqOut');
+  function rS(){
+    var d=+sq.querySelector('input[name=q1]:checked').value,r=+sq.querySelector('input[name=q2]:checked').value;
+    var s=[].slice.call(sq.querySelectorAll('input[name=q3]:checked')).map(function(x){return x.value;});
+    var red=sq.querySelectorAll('input[name=q4]:checked').length,core=s.length,pem=s.indexOf('pem')>=0,msg,cls;
+    if(red){cls='red';msg='🚨 你勾了警訊。請<b>盡快就醫</b>，讓醫師找出原因；胸痛、呼吸困難、暈倒請撥 <b>119</b>。如果有想傷害自己的念頭，請撥 <b>1925 安心專線</b>（24 小時）或 <b>1995 生命線</b>。';}
+    else if(d===0&&r===0&&core<2){cls='green';msg='🌱 比較像一般疲勞。先從睡眠、飲食、壓力與活動量調整，觀察一兩週；如果沒改善或越來越累，再看醫師。';}
+    else if(d>=1&&core>=3&&pem){cls='red';msg='🩺 你描述的狀況持續一段時間，也有「活動後隔天更糟」等多項症狀。建議<b>帶著這份整理去看家醫科或內科</b>，先排除貧血、甲狀腺、睡眠呼吸中止症、憂鬱等原因；ME/CFS 需由醫師評估。在這之前，<b>先別硬撐運動</b>。';}
+    else{cls='';msg='🩺 疲勞'+(d===2?'已超過 3 個月':(d===1?'已超過 6 週':'還不到 6 週'))+(r?'、休息也不太會好':'')+'。建議和家醫科醫師聊聊，先排除常見的可治療原因。';}
+    if(pem&&!red)msg+='<br>📝 提醒：記下哪些活動之後會變糟、多久才恢復，看診時很有幫助。';
+    out.className='sqout '+cls;out.innerHTML=msg+'<br><span class="small">（本結果只是整理參考，不是診斷。）</span>';
+  }
+  sq.addEventListener('change',rS);rS();
+
+  // energy battery
+  var A=[['🚿 洗澡',10],['🍳 煮一頓飯',15],['🛒 上市場',20],['💻 視訊會議 1 小時',15],['📱 滑手機 1 小時',8],['🧹 打掃',20],['👵 和朋友聚餐',20],['🚶 散步 20 分鐘',12],['😴 午休 30 分鐘',-10]];
+  var acts=document.getElementById('acts'),used=0,sel={};
+  A.forEach(function(a,i){var b=document.createElement('button');b.type='button';b.setAttribute('aria-pressed','false');b.textContent=a[0]+(a[1]<0?'（回充）':'');b.addEventListener('click',function(){sel[i]=!sel[i];b.setAttribute('aria-pressed',sel[i]?'true':'false');rB();});acts.appendChild(b);});
+  function rB(){
+    used=0;A.forEach(function(a,i){if(sel[i])used+=a[1];});
+    var left=Math.max(0,Math.min(100,100-used)),f=document.getElementById('batFill');
+    f.style.height=left+'%';f.style.background=left<30?'var(--coral)':(left<50?'var(--sun)':'var(--mint)');
+    document.getElementById('batPct').textContent=left+'%';
+    var o=document.getElementById('batOut');
+    if(used<=0)o.textContent='電池滿滿！選幾件今天要做的事試試看。';
+    else if(left>=30)o.textContent='👍 還在能量上限內。記得活動之間穿插休息，把重要的事排在精神最好的時段。';
+    else o.textContent='⚠️ 超過示意的能量上限了！對有 PEM 的人，這可能讓隔天症狀變糟。試著把一些事分到別天、請人幫忙，或中間安排休息。';
+  }
+  document.getElementById('batReset').addEventListener('click',function(){sel={};[].forEach.call(acts.children,function(b){b.setAttribute('aria-pressed','false');});rB();});
+  rB();
+
+  // daily checklist (resets daily)
+  var KEY='gungho-ks-fatigue-chk',boxes=[].slice.call(document.querySelectorAll('#chk input')),st={},today=new Date().toDateString();
+  try{var raw=JSON.parse(localStorage.getItem(KEY)||'{}')||{};if(raw.d===today)st=raw.s||{};}catch(e){st={};}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify({d:today,s:st}));}catch(e){}}
+  function upd(){var n=0;boxes.forEach(function(b){b.parentNode.classList.toggle('on',b.checked);if(b.checked)n++;});document.getElementById('pFill').style.width=(n/boxes.length*100)+'%';document.getElementById('pN').textContent=n+' / '+boxes.length;document.getElementById('cheer').classList.toggle('show',n===boxes.length);}
+  boxes.forEach(function(b){b.checked=!!st[b.dataset.k];b.addEventListener('change',function(){st[b.dataset.k]=b.checked;save();upd();});});
+  document.getElementById('chkReset').addEventListener('click',function(){st={};boxes.forEach(function(b){b.checked=false;});try{localStorage.removeItem(KEY);}catch(e){}upd();});
+  upd();
+
+  // quiz
+  var qs=[].slice.call(document.querySelectorAll('#quizBox .q')),answered=0,right=0;
+  qs.forEach(function(q){var ans=q.dataset.ans,opts=q.querySelectorAll('.opt');opts.forEach(function(o){o.addEventListener('click',function(){var ok=o.dataset.v===ans;opts.forEach(function(x){x.disabled=true;if(x.dataset.v===ans)x.classList.add('right');});if(!ok)o.classList.add('wrong');var exp=q.querySelector('.exp');exp.innerHTML=(ok?'<b>✅ 答對了！</b> ':'<b>💡 再想想～</b> ')+exp.innerHTML;exp.classList.add('show');answered++;if(ok)right++;if(answered===qs.length){var s=document.getElementById('score');s.textContent='你答對了 '+right+' / '+qs.length+' 題！'+(right===qs.length?' 太厲害了 🎉':' 每多懂一點都是收穫 🌱');s.classList.add('show');}});});});
+
+  var tt=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('show',window.scrollY>600);},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
+})();
+</script>
+</body>
+</html>
