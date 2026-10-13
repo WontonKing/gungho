@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2455c7">
+<title>夢與真實之間｜共好小學堂</title>
+<meta name="description" content="為什麼有時分不清夢和真的？認識REM睡眠的記憶「閘門」與MÖBIUS假說、馬祖芹壁祈夢習俗、整合醫學的安全原則，以及壓力和疲勞如何影響金錢決定。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/DREAM/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="夢與真實之間：REM睡眠的記憶閘門、馬祖祈夢與整合療癒｜共好小學堂">
+<meta property="og:description" content="夢為什麼會被當成真的？從睡眠科學、祈夢文化到決策前的停一停。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/DREAM/">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 130'%3E%3Cpath d='M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z' fill='%235ad6a4' stroke='%231f2a44' stroke-width='5'/%3E%3Cpath d='M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Cellipse cx='60' cy='88' rx='40' ry='38' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Ccircle cx='46' cy='84' r='6' fill='%231f2a44'/%3E%3Ccircle cx='74' cy='84' r='6' fill='%231f2a44'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c;  --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff;  --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7;
+  --round:'Huninn','Noto Sans TC',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans TC',system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:var(--blue)}
+h1,h2,h3,h4{font-family:var(--round);line-height:1.35;margin:0 0 .5em;font-weight:400}
+p{margin:0 0 1em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.hl{background:linear-gradient(transparent 58%,var(--sun) 58%,var(--sun) 92%,transparent 92%);padding:0 2px}
+.nw{white-space:nowrap}
+b,strong{font-weight:700}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.94);backdrop-filter:blur(8px);border-bottom:3px solid var(--ink)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex-shrink:0}
+.brand svg{width:40px;height:44px}
+.brand b{font-family:var(--round);font-weight:400;font-size:19px;display:block;line-height:1.1}
+.brand small{font-size:10px;letter-spacing:.14em;color:var(--ink-2);display:block}
+.navpills{display:flex;gap:6px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.navpills::-webkit-scrollbar{display:none}
+.navpills a{white-space:nowrap;text-decoration:none;font-size:14px;color:var(--ink);padding:4px 11px;border:2px solid var(--ink);border-radius:99px;background:#fff}
+.navpills a:hover{background:var(--sun-l)}
+.back{white-space:nowrap;text-decoration:none;font-family:var(--round);background:var(--blue);color:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:5px 14px;box-shadow:0 3px 0 var(--ink);font-size:15px;flex-shrink:0}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--blue-l),var(--bg));padding:56px 0 90px}
+.blob{position:absolute;border-radius:50%;opacity:.55;z-index:0}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.tag{display:inline-block;font-family:var(--round);background:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:4px 14px;font-size:15px;box-shadow:0 3px 0 var(--ink);margin-bottom:18px}
+.hero h1{font-size:clamp(32px,5vw,52px);margin-bottom:16px}
+.hero .lead{font-size:18.5px;color:var(--ink-2);max-width:34em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{font-family:var(--round);text-decoration:none;font-size:17px;padding:10px 22px;border:3px solid var(--ink);border-radius:16px;box-shadow:0 4px 0 var(--ink);color:var(--ink);background:#fff;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--sun)}
+.meta{font-size:13.5px;color:var(--ink-2);margin-top:18px}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block}
+.bubble{position:absolute;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:8px 14px;font-family:var(--round);font-size:17px;box-shadow:0 4px 0 var(--ink);white-space:nowrap}
+.bubble::after{content:"";position:absolute;width:14px;height:14px;background:#fff;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg);bottom:-9px;left:30px}
+.hero .bubble{top:2%;left:4%}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:60px;z-index:1}
+.float{animation:float 4.5s ease-in-out infinite}
+.float.d2{animation-delay:-1.5s}.float.d3{animation-delay:-3s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media (prefers-reduced-motion:reduce){.float{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
+
+/* sections */
+section.sec{padding:64px 0;position:relative}
+section.alt{background:linear-gradient(180deg,var(--tint,#fff),var(--bg))}
+.sec-head{display:flex;align-items:flex-start;gap:18px;margin-bottom:26px}
+.num{flex-shrink:0;width:58px;height:58px;display:grid;place-items:center;font-family:var(--round);font-size:28px;color:#fff;background:var(--c,var(--blue));border:3px solid var(--ink);border-radius:16px;transform:rotate(-6deg);box-shadow:4px 4px 0 var(--ink)}
+.eyebrow{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--c,var(--blue));font-weight:700;display:block}
+.sec-head h2{font-size:clamp(25px,3.4vw,34px);margin:2px 0 0}
+.intro{color:var(--ink-2);max-width:46em}
+hr.dash{border:0;border-top:3px dashed var(--line);margin:34px 0}
+
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:0 5px 0 var(--ink)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card h3{font-size:21px;margin-bottom:.35em}
+.card p:last-child{margin-bottom:0}
+.small{font-size:14.5px;color:var(--ink-2)}
+.note{font-size:14.5px;color:var(--ink-2);background:#fff;border:2px dashed var(--line);border-radius:14px;padding:10px 14px;margin-top:16px}
+.ico{width:96px;height:96px;display:block;margin-bottom:10px}
+.src{display:inline-block;font-size:12px;line-height:1;text-decoration:none;background:var(--blue-l);color:var(--blue-d);border:1.5px solid var(--blue);border-radius:99px;padding:4px 8px;margin:0 2px;vertical-align:2px;font-weight:700;white-space:nowrap}
+.src:hover{background:var(--sun-l)}
+.badge{display:inline-block;font-size:12.5px;font-weight:700;border:2px solid var(--ink);border-radius:99px;padding:1px 10px;background:var(--sun-l);margin-bottom:8px}
+
+/* talk */
+.talk{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;margin-bottom:22px}
+.talk.r{grid-template-columns:1fr 150px}
+.talk.r .who{order:2}
+.who svg{width:130px;height:130px}
+.say{position:relative;background:#fff;border:3px solid var(--ink);border-radius:22px;padding:18px 22px;box-shadow:6px 6px 0 var(--c,var(--sun))}
+.say::before{content:"";position:absolute;left:-12px;top:42px;width:18px;height:18px;background:#fff;border-left:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg)}
+.talk.r .say::before{left:auto;right:-12px;transform:rotate(-135deg)}
+.say .name{font-family:var(--round);color:var(--c,var(--blue));font-size:15px;display:block;margin-bottom:4px}
+.say p:last-child{margin-bottom:0}
+.qs{counter-reset:q;list-style:none;padding:0;margin:.4em 0 1em}
+.qs li{counter-increment:q;padding-left:40px;position:relative;margin:6px 0}
+.qs li::before{content:counter(q);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;background:var(--sun);border:2.5px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:15px}
+.warn{background:var(--coral-l);border:3px solid var(--ink);border-radius:18px;padding:14px 18px;margin-top:14px}
+.warn b{color:#c33}
+
+/* evidence chips */
+.ev{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.ev .card{padding:16px;box-shadow:0 4px 0 var(--ink)}
+.ev h4{font-size:17px;margin:0 0 4px}
+.ev .k{font-size:13.5px;color:var(--ink-2);margin:0}
+.ev .u{font-size:14px;margin-top:8px;padding-top:8px;border-top:2px dashed var(--line)}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tab{font-family:var(--round);font-size:16px;cursor:pointer;border:2.5px solid var(--ink);background:#fff;border-radius:14px;padding:7px 14px;color:var(--ink);box-shadow:0 3px 0 var(--ink)}
+.tab[aria-selected="true"]{background:var(--c,var(--blue));color:#fff}
+.tab:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.panel{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:24px;box-shadow:6px 6px 0 var(--c,var(--blue))}
+.panel[hidden]{display:none}
+.panel-grid{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:start}
+.panel-grid svg{width:110px;height:110px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0}
+.kv dt{font-weight:700;color:var(--c,var(--blue));white-space:nowrap}
+.kv dd{margin:0}
+
+/* mechanism cards */
+.mech{position:relative;padding-top:30px}
+.mech .pin{position:absolute;top:-16px;left:20px;background:var(--c);color:#fff;font-family:var(--round);font-size:14px;border:2.5px solid var(--ink);border-radius:99px;padding:2px 12px;transform:rotate(-4deg)}
+.mech .key{margin-top:12px;padding-top:10px;border-top:2px dashed var(--line);font-weight:700}
+
+/* age matrix */
+.agechips{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.mtx{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.mtx div{border:2.5px solid var(--ink);border-radius:16px;padding:10px 12px;background:var(--bgc,#fff)}
+.mtx b{display:block;font-family:var(--round);font-weight:400;font-size:15px;color:var(--ink-2)}
+.mtx span{font-weight:700}
+
+/* table-like */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:20px;overflow:hidden;background:#fff;font-size:15.5px}
+.tbl th,.tbl td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:2px solid var(--line)}
+.tbl thead th{font-family:var(--round);font-weight:400;font-size:16.5px;color:#fff;background:var(--blue)}
+.tbl thead th:nth-child(2){background:var(--coral)}
+.tbl thead th:nth-child(3){background:var(--orange)}
+.tbl thead th:nth-child(4){background:var(--mint)}
+.tbl thead th:first-child{background:var(--ink)}
+.tbl tbody th{background:var(--sun-l);font-weight:700;white-space:nowrap}
+.tbl tr:last-child td,.tbl tr:last-child th{border-bottom:0}
+.tbl td.r{text-align:right;font-family:var(--round);font-size:18px}
+
+.prod{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.prod .card{padding:18px 20px;box-shadow:0 4px 0 var(--ink)}
+.prod .co{display:inline-block;font-family:var(--round);color:#fff;background:var(--c);border:2.5px solid var(--ink);border-radius:12px;padding:1px 12px;margin-bottom:8px}
+.prod h4{font-size:17.5px;margin:0 0 6px}
+.prod .ask{margin-top:10px;padding:8px 12px;background:var(--grape-l);border-radius:12px;font-size:15px}
+.prod .ask::before{content:"❓ 要追問：";font-weight:700}
+
+/* calculators */
+.calc{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:6px 6px 0 var(--c,var(--sky))}
+.calc label{font-weight:700;display:block;margin-bottom:4px}
+.calc input[type=range]{width:100%;accent-color:var(--blue);height:28px}
+.calc input[type=number]{font:inherit;font-family:var(--round);font-size:22px;width:120px;padding:4px 10px;border:3px solid var(--ink);border-radius:12px}
+.bars{display:grid;gap:12px;margin-top:16px}
+.bar{display:grid;grid-template-columns:96px 1fr 110px;gap:10px;align-items:center}
+.bar .tr{height:28px;border:2.5px solid var(--ink);border-radius:99px;background:#f4f6fb;overflow:hidden}
+.bar .fill{height:100%;border-radius:99px;transition:width .3s}
+.bar .v{font-family:var(--round);font-size:19px;text-align:right}
+.verdict{margin-top:14px;font-weight:700;background:var(--sun-l);border-radius:14px;padding:10px 14px}
+.agegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.agebox{border:3px solid var(--ink);border-radius:18px;padding:12px 14px;background:#fff}
+.agebox .st{font-family:var(--round);font-size:18px}
+.agebox.ok{background:var(--mint-l)}
+.agebox.no{background:var(--coral-l)}
+
+/* compare 3 companies */
+.cmp{display:grid;grid-template-columns:150px repeat(3,1fr);border:3px solid var(--ink);border-radius:22px;overflow:hidden;background:#fff;font-size:15.5px}
+.cmp > div{padding:11px 13px;border-bottom:2px solid var(--line);border-left:2px solid var(--line)}
+.cmp .h{font-family:var(--round);color:#fff;font-size:17px;border-left:0}
+.cmp .h.c1{background:var(--blue)}.cmp .h.c2{background:var(--coral)}.cmp .h.c3{background:var(--mint)}
+.cmp .h.c0{background:var(--ink)}
+.cmp .rh{background:var(--sun-l);font-weight:700;border-left:0}
+.cmp .m{display:none}
+
+/* timeline */
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:14px 18px 14px 70px;background:#fff;border:3px solid var(--ink);border-radius:18px}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:var(--mint);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:20px}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:33px;bottom:-17px;height:17px;border-left:3px dashed var(--ink)}
+
+/* formula */
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:10px 0}
+.formula .t{border:2.5px solid var(--ink);border-radius:12px;padding:4px 12px;background:#fff;font-size:15.5px}
+.formula .t.p{background:var(--coral-l)}.formula .t.m{background:var(--mint-l)}
+.formula .op{font-family:var(--round);font-size:24px;line-height:1}
+.formula .eq{background:var(--sun);font-weight:700}
+
+/* checklist */
+.chk{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.chk label{display:flex;gap:14px;align-items:flex-start;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px 16px;cursor:pointer;box-shadow:0 4px 0 var(--ink);transition:background .2s}
+.chk input{position:absolute;opacity:0;pointer-events:none}
+.chk .box{flex-shrink:0;width:30px;height:30px;border:3px solid var(--ink);border-radius:9px;background:#fff;display:grid;place-items:center;font-size:19px;color:#fff;margin-top:2px}
+.chk input:checked + .box{background:var(--mint)}
+.chk input:checked + .box::after{content:"✓"}
+.chk input:focus-visible + .box{outline:3px solid var(--sun);outline-offset:2px}
+.chk label.on{background:var(--mint-l)}
+.chk b{display:block;font-family:var(--round);font-weight:400;font-size:18px}
+.chk span.d{font-size:14.5px;color:var(--ink-2);line-height:1.6;display:block}
+.prog{margin:20px 0 8px;display:flex;align-items:center;gap:14px}
+.prog .tr{flex:1;height:26px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden}
+.prog .fill{height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 10px,#5ad6a4 10px,#5ad6a4 20px);transition:width .3s}
+.prog .n{font-family:var(--round);font-size:20px;white-space:nowrap}
+.cheer{display:none;background:var(--sun-l);border:3px solid var(--ink);border-radius:18px;padding:12px 16px;font-weight:700;margin-top:12px}
+.cheer.show{display:block}
+
+/* quiz */
+.quiz{display:grid;gap:18px}
+.q h4{font-size:18.5px}
+.opts{display:grid;gap:10px}
+.opt{text-align:left;font:inherit;font-size:16px;cursor:pointer;background:#fff;border:2.5px solid var(--ink);border-radius:14px;padding:10px 14px;color:var(--ink)}
+.opt:hover:not(:disabled){background:var(--sky-l)}
+.opt:disabled{cursor:default}
+.opt.right{background:var(--mint-l);border-color:var(--mint);font-weight:700}
+.opt.wrong{background:var(--coral-l);border-color:var(--coral)}
+.exp{display:none;margin-top:10px;background:var(--sun-l);border-radius:14px;padding:10px 14px;font-size:15.5px}
+.exp.show{display:block}
+.score{display:none;text-align:center;font-family:var(--round);font-size:22px;background:var(--blue);color:#fff;border:3px solid var(--ink);border-radius:20px;padding:14px;box-shadow:0 5px 0 var(--ink)}
+.score.show{display:block}
+
+/* refs */
+.refs h3{font-size:19px;margin-top:22px;color:var(--blue-d)}
+.refs ol{padding-left:0;list-style:none;margin:0}
+.refs li{background:#fff;border:2px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:10px;font-size:15px;line-height:1.7;word-break:break-word}
+.refs li:target{border-color:var(--sun);background:var(--sun-l)}
+.refs .rid{display:inline-block;font-family:var(--round);background:var(--blue);color:#fff;border-radius:8px;padding:0 8px;margin-right:6px;font-size:13.5px}
+.refs .loc{display:block;color:var(--ink-2);font-size:13.5px}
+.refs a{word-break:break-all;font-size:13.5px}
+
+.disc{background:var(--sun-l);border:3px dashed var(--ink);border-radius:20px;padding:18px 22px;font-size:15.5px}
+.disc b{font-family:var(--round);font-weight:400;font-size:18px;display:block;margin-bottom:4px}
+
+.bigdisc{background:var(--coral-l);border:4px solid var(--ink);border-radius:24px;box-shadow:8px 8px 0 var(--coral);padding:22px 26px;outline:3px dashed var(--coral);outline-offset:-14px}
+.bd-head{display:flex;align-items:center;gap:12px;font-family:var(--round);font-size:clamp(22px,3vw,28px);color:#b42318;margin-bottom:10px}
+.bd-ico{flex-shrink:0;width:46px;height:46px;border-radius:50%;background:var(--coral);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-size:24px}
+.bd-key{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:8px 14px;margin:0 0 12px;font-weight:900;font-size:18px;color:#b42318}
+.bigdisc ul{margin:0;padding-left:1.2em}
+.bigdisc li{margin:6px 0;line-height:1.75}
+.bigdisc li b:first-child{color:#b42318}
+.ftdisc{display:inline-block;background:var(--sun);color:var(--ink);font-weight:700;border:3px solid var(--ink);border-radius:14px;padding:6px 16px;margin:4px 0 14px;font-size:15.5px}
+@media (max-width:820px){.bigdisc{padding:18px 16px;outline-offset:-10px}}
+footer{background:var(--blue-d);color:#fff;text-align:center;padding:46px 0 34px;margin-top:40px;border-top:4px solid var(--ink)}
+footer .pals{display:flex;justify-content:center;gap:12px;margin-bottom:12px}
+footer .pals svg{width:80px;height:80px}
+footer .quote{font-family:var(--round);font-size:22px;margin-bottom:10px}
+footer a{color:var(--sun)}
+footer .fine{font-size:13px;opacity:.8;margin-top:10px}
+#toTop{position:fixed;right:18px;bottom:18px;width:52px;height:52px;border-radius:50%;background:var(--sun);border:3px solid var(--ink);box-shadow:0 4px 0 var(--ink);font-size:22px;font-family:var(--round);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;z-index:60;color:var(--ink)}
+#toTop.show{opacity:1;pointer-events:auto}
+
+@media (max-width:1000px){.ev{grid-template-columns:repeat(3,1fr)}.agechips{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .navpills{display:none}
+  .back{margin-left:auto}
+  .hero{padding:34px 0 80px}
+  .hero .wrap,.grid2,.grid3,.prod,.chk,.agegrid{grid-template-columns:1fr}
+  .hero-art{max-width:420px;margin:0 auto;width:100%}
+  .ev{grid-template-columns:1fr 1fr}
+  .mtx{grid-template-columns:1fr 1fr}
+  .talk,.talk.r{grid-template-columns:1fr;gap:6px}
+  .talk.r .who{order:0}
+  .who svg{width:96px;height:96px}
+  .say::before{left:40px;top:-12px;transform:rotate(135deg)}
+  .talk.r .say::before{left:40px;right:auto;transform:rotate(135deg)}
+  .panel-grid{grid-template-columns:1fr}
+  .panel-grid svg{width:84px;height:84px}
+  .kv{grid-template-columns:1fr}
+  .cmp{grid-template-columns:1fr 1fr 1fr}
+  .cmp .h.c0{display:none}
+  .cmp .h{font-size:15px;padding:9px 8px}
+  .cmp .rh{grid-column:1/-1}
+  .cmp > div{font-size:14.5px;padding:9px 8px}
+  .cmp > div:nth-child(n){border-left:0}
+  .cmp .v{border-left:2px solid var(--line)}
+  .cmp .v1{border-left:0}
+  .bar{grid-template-columns:72px 1fr 92px}
+  .sec-head{gap:14px}
+  .num{width:48px;height:48px;font-size:23px}
+  section.sec{padding:48px 0}
+  .tbl{font-size:14.5px}
+  .tbl th,.tbl td{padding:9px 9px}
+  .tblwrap{overflow-x:auto}
+  .card,.panel,.calc{padding:18px 16px}
+}
+@media (max-width:420px){.ev{grid-template-columns:1fr}.agechips{grid-template-columns:repeat(2,1fr)}.hero .bubble{font-size:15px}}
+
+/* ---- DREAM 專用 ---- */
+.orig{display:inline-block;font-size:12px;font-weight:700;background:var(--grape-l);color:#5b34c4;border:1.5px solid var(--grape);border-radius:99px;padding:3px 8px;margin:0 2px;vertical-align:2px;white-space:nowrap}
+.unv{display:inline-block;font-size:12px;font-weight:700;background:var(--orange-l);color:#a4520a;border:1.5px solid var(--orange);border-radius:99px;padding:3px 8px;margin:0 2px;vertical-align:2px;white-space:nowrap}
+.hyp{display:inline-block;font-size:12px;font-weight:700;background:var(--sky-l);color:#1d4fa8;border:1.5px solid var(--blue);border-radius:99px;padding:3px 8px;margin:0 2px;vertical-align:2px;white-space:nowrap}
+.fix{border:3px dashed var(--coral);background:var(--coral-l);border-radius:18px;padding:14px 18px;margin-top:20px}
+.fix b.h{color:#c43c3c}
+.fix p:last-child{margin-bottom:0}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.vs>*{min-width:0}
+.locks{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px}
+.lock{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:12px;text-align:center;transition:background .3s}
+.lock .ic{font-size:30px;display:block}
+.lock h4{margin:4px 0;font-size:16px}
+.lock p{font-size:14px;margin:0}
+.lock .st{display:inline-block;margin-top:6px;font-weight:700;font-size:13px;border-radius:99px;padding:2px 10px;background:var(--mint-l)}
+.lock.weak{background:var(--coral-l)}
+.lock.weak .st{background:var(--coral);color:#fff}
+.facs{display:flex;flex-wrap:wrap;gap:10px}
+.facs button{font-family:var(--round);font-size:16px;border:3px solid var(--ink);border-radius:14px;background:#fff;padding:8px 14px;cursor:pointer;box-shadow:0 3px 0 var(--ink);color:var(--ink)}
+.facs button[aria-pressed="true"]{background:var(--coral);color:#fff}
+.gatebar{height:22px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden;margin-top:14px}
+.gatebar i{display:block;height:100%;background:var(--mint);transition:width .4s,background .4s}
+.dj input,.dj select{width:100%;font:inherit;font-size:16px;border:3px solid var(--ink);border-radius:12px;padding:8px 12px;margin:4px 0;background:#fff}
+.jl{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:8px}
+.jl li{background:#fff;border:2.5px solid var(--ink);border-radius:12px;padding:8px 12px}
+.jl li b{font-family:var(--round);font-weight:400;color:var(--blue)}
+.jl li .t{display:inline-block;font-size:13px;font-weight:700;border-radius:99px;padding:1px 8px;margin-left:6px;background:var(--sun-l)}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.btnrow button{font-family:var(--round);font-size:16px;border:3px solid var(--ink);border-radius:14px;background:var(--sun);color:var(--ink);padding:8px 16px;cursor:pointer;box-shadow:0 3px 0 var(--ink)}
+.btnrow button.ghost{background:#fff}
+.tblw{overflow-x:auto}
+.panel h3{margin-top:0}
+@media (max-width:900px){.locks{grid-template-columns:1fr 1fr}}
+@media (max-width:820px){.vs{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+<symbol id="grandma" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="60" cy="14" r="13" fill="#d9dde8" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M24 60 C22 34 40 24 60 24 C80 24 98 34 96 60Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="60" cy="64" r="34" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M28 52 C40 40 80 40 92 52 C86 34 34 34 28 52Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="48" cy="64" r="4.5" fill="#1f2a44"/><circle cx="72" cy="64" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="62.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="62.6" r="1.4" fill="#fff"/>
+  <ellipse cx="39" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="81" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M51 80 Q60 88 69 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="grandpa" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#8a5cf6" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M52 100 L60 116 L68 100" fill="#fff" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="60" cy="62" r="36" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M26 56 C24 40 32 30 40 30 M94 56 C96 40 88 30 80 30" stroke="#1f2a44" stroke-width="3" fill="#eef1f7" stroke-linecap="round"/>
+  <path d="M27 52 C22 44 26 34 36 34 L36 52Z M93 52 C98 44 94 34 84 34 L84 52Z" fill="#eef1f7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="47" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/><circle cx="73" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M56 60 H64" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="47" cy="61" r="3.5" fill="#1f2a44"/><circle cx="73" cy="61" r="3.5" fill="#1f2a44"/>
+  <circle cx="48.2" cy="59.8" r="1.2" fill="#fff"/><circle cx="74.2" cy="59.8" r="1.2" fill="#fff"/>
+  <ellipse cx="38" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="82" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M50 80 Q60 88 70 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="heart" viewBox="0 0 120 120">
+  <path d="M60 104 C20 78 10 56 14 40 C18 22 42 16 60 36 C78 16 102 22 106 40 C110 56 100 78 60 104Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="48" cy="56" r="4.5" fill="#1f2a44"/><circle cx="72" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="54.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="54.6" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 睡月亮 -->
+<symbol id="moon" viewBox="0 0 120 120">
+  <path d="M78 10 A50 50 0 1 0 110 78 A40 40 0 0 1 78 10Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M40 62 Q46 68 52 62 M62 70 Q68 76 74 70" stroke="#1f2a44" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M52 84 Q58 89 64 84" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="38" cy="76" r="5" fill="#ff9e9e"/>
+</symbol>
+<!-- 雲朵夢泡 -->
+<symbol id="dreamcloud" viewBox="0 0 160 110">
+  <path d="M30 86 C8 86 6 58 28 56 C26 32 56 24 68 40 C76 18 112 18 116 44 C140 40 152 70 132 84 Z" fill="#fff" stroke="#1f2a44" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M60 62 l6 -12 6 12 -12 -7 h12z" fill="#ffc93c" stroke="#1f2a44" stroke-width="2"/>
+  <circle cx="98" cy="58" r="9" fill="#a0e2ff" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="22" cy="100" r="6" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+</symbol>
+<!-- 記憶閘門 -->
+<symbol id="gate" viewBox="0 0 120 110">
+  <rect x="10" y="20" width="20" height="84" rx="4" fill="#9fb0d0" stroke="#1f2a44" stroke-width="4"/>
+  <rect x="90" y="20" width="20" height="84" rx="4" fill="#9fb0d0" stroke="#1f2a44" stroke-width="4"/>
+  <path d="M30 36 H90 M30 56 H90 M30 76 H90" stroke="#2455c7" stroke-width="6" stroke-linecap="round"/>
+  <path d="M6 22 Q60 -6 114 22" fill="none" stroke="#1f2a44" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="60" cy="96" r="8" fill="#ffc93c" stroke="#1f2a44" stroke-width="3"/>
+</symbol>
+</defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://www.gungho.idv.tw/KS/index.html" aria-label="回共好小學堂首頁">
+      <svg aria-hidden="true"><use href="#sprout"/></svg>
+      <span><b>共好小學堂</b><small>GROW &amp; LEARN TOGETHER</small></span>
+    </a>
+    <nav class="navpills" aria-label="章節">
+      <a href="#s1">夢與真實</a><a href="#s2">記憶閘門</a><a href="#journal">夢境筆記</a><a href="#s3">馬祖祈夢</a><a href="#s4">整合療癒</a><a href="#s5">決策停一停</a><a href="#quiz">小測驗</a><a href="#refs">參考資料</a>
+    </nav>
+    <a class="back" href="https://www.gungho.idv.tw/KS/index.html">← 回小學堂</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <span class="blob" style="width:320px;height:320px;background:var(--sky-l);top:-90px;right:-60px"></span>
+  <span class="blob" style="width:220px;height:220px;background:var(--grape-l);bottom:30px;left:-70px"></span>
+  <span class="blob" style="width:140px;height:140px;background:var(--sun-l);top:40%;left:46%"></span>
+  <div class="wrap">
+    <div>
+      <span class="tag">✦ 睡眠情緒小知識</span>
+      <h1>夢與真實之間，<span class="hl nw">大腦有道閘門</span></h1>
+      <p class="lead">「那件事是真的發生，還是我夢到的？」大多數人偶爾會有這種困惑。睡眠科學認為，做夢時大腦有一套機制，避免把夢當成真實記憶存起來。我們一起看懂這道<b>記憶閘門</b>，認識馬祖芹壁的<b>祈夢</b>習俗，再談談壓力和疲勞怎麼影響<b>重要決定</b>。</p>
+      <div class="btns">
+        <a class="btn pri" href="#start">開始認識 →</a>
+        <a class="btn" href="#s5">決定前停一停</a>
+      </div>
+      <p class="meta">資料查核日：2026年10月13日｜資料來源：《Communications Biology》《Science》等期刊、美國 NCCIH、中央社等媒體報導</p>
+    </div>
+    <div class="hero-art">
+      <div class="bubble">昨晚那是夢吧？</div>
+      <svg viewBox="0 0 520 400" role="img" aria-label="睡著的月亮、夢的雲朵和記憶閘門，阿嬤和阿公在旁邊，還有小芽和藍鳥">
+        <ellipse cx="260" cy="368" rx="230" ry="26" fill="#e3ecff"/>
+        <use href="#grandma" x="40" y="186" width="120" height="152"/>
+        <use href="#grandpa" x="360" y="186" width="120" height="152"/>
+        <g class="float"><use href="#moon" x="200" y="20" width="120" height="120"/></g>
+        <g class="float d2"><use href="#dreamcloud" x="60" y="60" width="140" height="96"/></g>
+        <use href="#gate" x="200" y="210" width="130" height="120"/>
+        <use href="#sprout" x="160" y="300" width="56" height="62"/>
+        <use href="#bird" x="430" y="96" width="64" height="58"/>
+        <use href="#star" x="350" y="40" width="34" height="34"/>
+      </svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C240 60 480 0 720 30 C960 60 1200 0 1440 30 V60 H0Z" fill="#fffdf7"/></svg>
+</section>
+
+<section class="sec" id="start">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">★</div><div><span class="eyebrow">Key Points</span><h2>先說重點</h2></div></div>
+    <div class="talk" style="--c:var(--sun)">
+      <div class="who"><svg aria-hidden="true"><use href="#moon"/></svg></div>
+      <div class="say"><span class="name">月亮說</span>
+        <p>做夢主要發生在 <b>REM 睡眠</b>（快速動眼期）。這時大腦很活躍，但會<b>限制處理外界訊息</b>，所以夢裡的畫面常常很逼真。<a class="src" href="#ref7">參考 7</a></p>
+      </div>
+    </div>
+    <div class="talk r" style="--c:var(--coral)">
+      <div class="who"><svg aria-hidden="true"><use href="#bird"/></svg></div>
+      <div class="say"><span class="name">藍鳥提醒</span>
+        <p>原稿介紹的「MÖBIUS 模型」是 2026 年一位睡眠醫師提出的<b>新假說</b>，作者自己也說它是「有待驗證的工作理論」，還不是定論。<a class="src" href="#ref1">參考 1</a></p>
+      </div>
+    </div>
+    <div class="warn"><b>⚠ 閱讀小提醒：</b>本頁是知識整理，<b>不是醫療診斷，也不是投資建議</b>。標示 <span class="hyp">假說</span> 的是尚未證實的理論；<span class="orig">原稿整理</span> 是原稿的整理或延伸，查到的資料沒有直接出處；<span class="unv">待查證</span> 是查不到可靠出處的內容。</div>
+  </div>
+</section>
+
+<section class="sec alt" id="s1" style="--tint:var(--sky-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">1</div><div><span class="eyebrow">Dream-Reality Confusion</span><h2>什麼是「夢境與現實混淆」？</h2></div></div>
+    <p class="intro">心理學稱為<b>夢境—現實混淆</b>：醒來後，把夢裡發生的事記成真的發生過。大腦每次回想時，都要判斷這段記憶「從哪裡來」——是外面真的發生，還是自己腦中想像、夢到的。<a class="src" href="#ref4">參考 4</a></p>
+    <div class="grid3">
+      <div class="card mech" style="--c:var(--coral)"><span class="pin">夢的特性</span><h3>😨 越真實、越不愉快</h3><p>研究整理發現，內容越寫實、越不愉快的夢，越容易被誤認為真的，也比較會影響白天的行為。<a class="src" href="#ref4">參考 4</a></p></div>
+      <div class="card mech" style="--c:var(--orange)"><span class="pin">睡眠</span><h3>🌙 睡不好、作息亂</h3><p>睡眠和清醒週期不穩定，與夢境現實混淆有關。<a class="src" href="#ref4">參考 4</a></p></div>
+      <div class="card mech" style="--c:var(--grape)"><span class="pin">心理狀態</span><h3>🌀 解離、現實檢驗困難</h3><p>有解離經驗或現實檢驗困難的人較容易混淆；有學者推論邊緣型人格障礙者可能更容易發生。<a class="src" href="#ref4">參考 4</a></p></div>
+    </div>
+    <div class="note">💡 偶爾分不清是正常的。若<b>經常</b>把夢當真，並且伴隨失眠、惡夢、創傷症狀或困擾，請找<b>精神科或睡眠醫學門診</b>評估。心情低落、想找人談，可撥<b>衛福部安心專線 1925</b>（24小時）。</div>
+  </div>
+</section>
+
+<section class="sec" id="s2">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">2</div><div><span class="eyebrow">The Memory Gate</span><h2>REM 睡眠的「記憶閘門」 <span class="hyp">假說</span></h2></div></div>
+    <p class="intro">MÖBIUS 是「內部未驗證序列的記憶振盪綁定」的英文縮寫。它提出：REM 睡眠平常像一道<b>閘門</b>，讓夢在腦中「演出」，但不讓它被存成自己的人生記憶。閘門出問題時，夢就可能被當成真的。<a class="src" href="#ref1">參考 1</a></p>
+    <div class="vs">
+      <div class="card"><h3>✅ 已有研究支持的部分</h3><ul class="qs" style="margin:0">
+        <li>REM 睡眠時，海馬迴出現 5–10 Hz 的 <b>theta 節律</b>，肌肉張力消失。<a class="src" href="#ref2">參考 2</a></li>
+        <li>下視丘的 <b>MCH 神經元</b>在 REM 睡眠時活躍、密集連到海馬迴；在<b>小鼠</b>實驗中，它們參與「主動遺忘」。<a class="src" href="#ref5">參考 5</a></li>
+        <li>REM 與非 REM 睡眠各有不同的腦波節奏，共同參與記憶處理。<a class="src" href="#ref6">參考 6</a></li>
+      </ul></div>
+      <div class="card"><h3>🧪 MÖBIUS 的新推論</h3><ul class="qs" style="margin:0">
+        <li><b>MCH 像防火牆</b>，壓住海馬迴，不讓夢被寫進記憶。</li>
+        <li><b>CA2</b> 被比喻成「過濾器」，判斷哪些內容夠「熟悉」可以存檔。</li>
+        <li>壓力或創傷讓<b>食慾素</b>（orexin，維持清醒的物質）過強，壓制 MCH，閘門就鬆了。</li>
+        <li>平常在 REM 被壓住的<b>尖波漣漪</b>重新出現，夢的片段就被送去存檔。</li>
+      </ul><p class="small" style="margin-top:8px">作者自己說明：這是「有待驗證的工作理論」，資料分析只有 4 位常做史詩級長夢的人與 4 位對照者。<a class="src" href="#ref1">參考 1</a></p></div>
+    </div>
+
+    <div class="calc" style="--c:var(--mint);margin-top:24px">
+      <h3>🔐 動動手：看看閘門怎麼鬆開（示意）</h3>
+      <p class="small">點選下面的狀況，看 MÖBIUS 假說認為哪個環節會變弱。這只是幫助理解的示意圖，<b>不能用來自我診斷</b>。</p>
+      <div class="facs" id="facs"></div>
+      <div class="locks" id="locks"></div>
+      <div class="gatebar" aria-hidden="true"><i id="gateFill" style="width:100%"></i></div>
+      <div class="verdict" id="gateOut" aria-live="polite" style="margin-top:12px"></div>
+    </div>
+    <div class="fix">
+      <p>🔎 <b class="h">查證更正：</b>原稿把 MÖBIUS 模型寫得像已確立的機制，並把整合醫學、祈夢文化、行為金融都標成同一個來源；實際上這篇是 2026 年的觀點文章（Perspective），內容只談睡眠與記憶，沒有提到這三個主題。MCH 參與遺忘的證據來自小鼠實驗，「維持夢與現實的邊界」是 MÖBIUS 的推論。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref5">參考 5</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="journal" style="--tint:var(--grape-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">3</div><div><span class="eyebrow">Dream Journal</span><h2>夢境筆記：把夢和真的分開放</h2></div></div>
+    <p class="intro">醒來後先記下夢，再寫下「醒著時確認過的事實」。把兩者分開記錄，可以幫助自己分辨記憶的來源。<span class="orig">原稿整理</span></p>
+    <div class="calc dj" style="--c:var(--grape)">
+      <label for="dText" class="small">昨晚夢到什麼？</label><input type="text" id="dText" maxlength="80" placeholder="例如：夢到老同學來家裡吃飯">
+      <label for="dTag" class="small">醒來後的判斷</label>
+      <select id="dTag"><option value="0">確定是夢</option><option value="1">好像真的發生過，要查證</option><option value="2">已經查證：是夢</option></select>
+      <div class="btnrow"><button type="button" id="dSave">💾 記下來</button><button type="button" class="ghost" id="dClr">清除全部紀錄</button></div>
+      <div class="verdict" id="dOut" aria-live="polite" style="margin-top:12px"></div>
+      <ul class="jl" id="dList"></ul>
+      <p class="small" style="margin-top:8px">🔒 只存在你自己的瀏覽器，最多保留最近 14 筆。</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="s3">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--orange)"><div class="num">4</div><div><span class="eyebrow">Matsu Dream Incubation</span><h2>馬祖芹壁的「祈夢」習俗</h2></div></div>
+    <p class="intro">北竿芹壁村龍角峰<b>伍位靈公廟</b>，每年農曆<b>正月廿九</b>開放祈夢，這天是北竿擺暝文化祭的尾聲，「一年只有一天可以祈夢」。這項傳統源自福建長樂，中央社形容是「相當罕見的儀式」。<a class="src" href="#ref10">參考 10</a><a class="src" href="#ref11">參考 11</a></p>
+    <ol class="steps" style="--c:var(--orange)">
+      <li><b>當天吃素</b>：保持心境平和、沒有雜念，焚香叩拜。<a class="src" href="#ref11">參考 11</a></li>
+      <li><b>求神問事</b>：先向神明說出想問的事，多半是求子、求事業。<a class="src" href="#ref10">參考 10</a><a class="src" href="#ref12">參考 12</a></li>
+      <li><b>夜宿廟中</b>：帶簡單寢具打地鋪；睡在「醒與不醒之間」，睡太沉就夢不到。<a class="src" href="#ref10">參考 10</a></li>
+      <li><b>夢醒擲筊</b>：腦中閃過一個念頭或畫面也算神明賜夢，醒來立刻擲筊確認。<a class="src" href="#ref11">參考 11</a></li>
+      <li><b>現場解夢</b>：把夢告訴「桌頭」，由神明的「翻譯官」解夢。睡不著的人，也可以請人代為做夢。<a class="src" href="#ref10">參考 10</a></li>
+    </ol>
+    <div class="vs" style="margin-top:20px">
+      <div class="card"><h3>🧠 科學的角度</h3><p>「醒與不醒之間」是睡醒交界的狀態，夢境、期待與情緒在這時交織，容易出現鮮明的畫面。<span class="orig">原稿整理</span></p></div>
+      <div class="card"><h3>🏮 文化的角度</h3><p>祈夢不應簡化成「迷信」或「大腦出錯」。它是社群透過儀式、故事與解讀，把模糊的內在經驗變成可以分享的意義。<span class="orig">原稿整理</span></p></div>
+    </div>
+    <div class="fix">
+      <p>🔎 <b class="h">查證更正：</b>原稿寫祈夢是元宵擺暝的一部分；報導指出祈夢在<b>正月廿九</b>，是擺暝文化祭的最後一場，不在元宵當天。原稿說的「半行半歲」和「引報」，在查到的報導中都沒有出現 <span class="unv">待查證</span>；報導另外提到夢醒要<b>擲筊確認</b>。<a class="src" href="#ref10">參考 10</a><a class="src" href="#ref11">參考 11</a><a class="src" href="#ref12">參考 12</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="s4" style="--tint:var(--mint-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">5</div><div><span class="eyebrow">Integrative Health</span><h2>整合醫學與全球療癒傳統</h2></div></div>
+    <p class="intro">美國國家輔助與整合衛生中心（NCCIH）說明：整合醫療是把一般醫療和輔助療法「<b>有協調地</b>」結合，例如藥物加上針灸或瑜伽，目標是照顧<b>整個人</b>。重點是<b>結合</b>，不是用傳統療法取代正規治療。<a class="src" href="#ref9">參考 9</a></p>
+    <div class="tabs" role="tablist" aria-label="療癒傳統" data-tabs style="margin-bottom:14px">
+      <button class="tab" role="tab" aria-selected="true" aria-controls="hp1" id="ht1" style="--c:var(--coral)">🌿 傳統中醫</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="hp2" id="ht2" tabindex="-1" style="--c:var(--orange)">🪷 阿育吠陀</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="hp3" id="ht3" tabindex="-1" style="--c:var(--mint)">🌏 原住民療癒</button>
+    </div>
+    <div class="panel" role="tabpanel" id="hp1" aria-labelledby="ht1" style="--c:var(--coral)">
+      <h3>🌿 傳統中醫</h3>
+      <dl class="kv"><dt>核心概念</dt><dd>經絡、氣、陰陽平衡</dd><dt>常見方法</dt><dd>針灸、拔罐、草藥、推拿</dd><dt>安全提醒</dt><dd>仍需現代診斷；中藥和西藥一起用前，先問醫師或藥師。</dd></dl>
+      <p class="small" style="margin-top:8px"><a class="src" href="#ref8">參考 8</a></p>
+    </div>
+    <div class="panel" role="tabpanel" id="hp2" aria-labelledby="ht2" style="--c:var(--orange)" hidden>
+      <h3>🪷 阿育吠陀（印度傳統醫學）</h3>
+      <dl class="kv"><dt>核心概念</dt><dd>Vata、Pitta、Kapha 三種體質能量（dosha）</dd><dt>常見方法</dt><dd>改變生活方式、調整飲食、草藥、潘查卡瑪（按摩、特殊草藥等淨化程序）</dd><dt>安全提醒</dt><dd>草藥與淨化程序應由合格專業人員評估，避免和西藥交互作用。</dd></dl>
+      <p class="small" style="margin-top:8px"><a class="src" href="#ref8">參考 8</a></p>
+    </div>
+    <div class="panel" role="tabpanel" id="hp3" aria-labelledby="ht3" style="--c:var(--mint)" hidden>
+      <h3>🌏 原住民療癒傳統</h3>
+      <dl class="kv"><dt>核心概念</dt><dd>恢復個人內在的平衡，也恢復人和宇宙、社群的連結</dd><dt>常見方法</dt><dd>儀式、植物知識、徒手療法，知識在社群中代代相傳</dd><dt>合作原則</dt><dd>文化謙遜、知情同意、尊重原住民資料主權、避免文化挪用與商業化。</dd></dl>
+      <p class="small" style="margin-top:8px"><a class="src" href="#ref8">參考 8</a></p>
+    </div>
+    <h3 style="margin-top:24px">🤝 整合時的五個原則</h3>
+    <ol class="steps" style="--c:var(--mint)">
+      <li><b>尊重</b>病人的價值觀與文化背景</li>
+      <li><b>評估</b>安全性、藥物交互作用與證據品質</li>
+      <li><b>共同決策</b>，充分說明後再同意</li>
+      <li><b>界定</b>各自的執業範圍，需要時轉介</li>
+      <li><b>追蹤</b>效果與不良反應</li>
+    </ol>
+    <p class="small" style="margin-top:8px">五個原則為原稿整理。<span class="orig">原稿整理</span> 參考 8 也強調要採用有實證、安全的做法，並提醒許多替代療法「有很多個人見證」，但不一定有足夠的臨床試驗。<a class="src" href="#ref8">參考 8</a></p>
+  </div>
+</section>
+
+<section class="sec" id="s5">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--coral)"><div class="num">6</div><div><span class="eyebrow">Behavioral Finance</span><h2>累了、急了，先別做大決定</h2></div></div>
+    <p class="intro">行為經濟學發現，人在複雜、不確定、壓力大時，常靠直覺、找個「夠好」的答案就停，不一定理性選最好的。飢餓、疲勞、強烈情緒這類<b>身體與情緒的驅力</b>，會讓人做出事後後悔的選擇。<a class="src" href="#ref13">參考 13</a></p>
+    <div class="talk" style="--c:var(--blue)">
+      <div class="who"><svg aria-hidden="true"><use href="#gate"/></svg></div>
+      <div class="say"><span class="name">閘門說</span>
+        <p>夢會被誤當成真的，決定也可能被恐懼或想像牽著走。兩者都提醒我們：重要的事，需要<b>外面的檢查</b>——查資料、問別人、寫下理由、隔天再決定。<span class="orig">原稿整理</span></p>
+      </div>
+    </div>
+    <div class="calc" style="--c:var(--coral);margin-top:20px">
+      <h3>🛑 重要金錢決定前的「停一停」</h3>
+      <p class="small">買保險、大筆投資、借錢給人、簽約前，先勾勾看。本工具不會記錄你的勾選。<span class="orig">原稿整理</span></p>
+      <div class="chk" id="dec">
+        <label><input type="checkbox"><span class="box"></span><span><b>😴 我昨晚睡夠了</b></span></label>
+        <label><input type="checkbox"><span class="box"></span><span><b>🧘 我現在情緒平穩</b><span class="d">不生氣、不焦慮，也不是特別興奮</span></span></label>
+        <label><input type="checkbox"><span class="box"></span><span><b>🔍 資料我自己查證過</b><span class="d">不只聽推銷或群組消息</span></span></label>
+        <label><input type="checkbox"><span class="box"></span><span><b>👥 有信任的人幫我看過</b></span></label>
+        <label><input type="checkbox"><span class="box"></span><span><b>📝 我寫下了決定的理由</b></span></label>
+        <label><input type="checkbox"><span class="box"></span><span><b>⏳ 我可以等 24 小時再決定</b><span class="d">對方催你「今天不買就沒了」，要特別小心</span></span></label>
+      </div>
+      <div class="verdict" id="decOut" aria-live="polite" style="margin-top:12px"></div>
+    </div>
+    <p class="note">⚠ 本節是原稿從睡眠研究延伸的類比，查到的參考資料中沒有直接談資本結構的來源。若遇到「保證獲利、限時加碼」的說法，可撥 <b>165 反詐騙專線</b>查詢。</p>
+  </div>
+</section>
+
+<section class="sec alt" id="s6" style="--tint:var(--sun-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">7</div><div><span class="eyebrow">Wrap-up</span><h2>結論：睡好、查證、尊重</h2></div></div>
+    <div class="tblw">
+      <table class="tbl">
+        <thead><tr><th>主題</th><th>核心問題</th><th>主要機制</th><th>生活提醒</th></tr></thead>
+        <tbody>
+          <tr><th>夢境記憶</th><td>夢為什麼會被當真？</td><td>REM 睡眠的記憶閘門（部分仍是假說）</td><td>規律睡眠、紓壓、分開記錄夢和事實</td></tr>
+          <tr><th>祈夢文化</th><td>模糊經驗怎麼變成意義？</td><td>儀式、故事、社群解讀</td><td>尊重文化脈絡，不簡化成迷信</td></tr>
+          <tr><th>整合醫學</th><td>怎麼照顧整個人？</td><td>一般醫療與輔助療法協調結合</td><td>安全第一、告訴醫師、共同決策</td></tr>
+          <tr><th>決策</th><td>壓力怎麼影響判斷？</td><td>情緒、疲勞、直覺捷徑</td><td>睡飽再決定、查證、問人、等一天</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:8px">表格依原稿整理。<span class="orig">原稿整理</span></p>
+  </div>
+</section>
+
+<section class="sec" id="quiz">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">?</div><div><span class="eyebrow">Quick Quiz</span><h2>小測驗：四題就好</h2></div></div>
+    <div class="quiz" id="quizBox">
+      <div class="card q" data-ans="b">
+        <h4>Q1. MÖBIUS 模型目前的狀態是？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">已被大型臨床試驗證實</button>
+          <button class="opt" data-v="b">2026 年提出、有待驗證的假說</button>
+          <button class="opt" data-v="c">中醫的經絡理論</button>
+        </div>
+        <div class="exp">作者自己說明這是有待驗證的工作理論，資料分析只有 4 位個案和 4 位對照者。</div>
+      </div>
+      <div class="card q" data-ans="a">
+        <h4>Q2. 小鼠實驗中，REM 睡眠時活躍的 MCH 神經元和什麼有關？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">主動遺忘海馬迴的記憶</button>
+          <button class="opt" data-v="b">讓人更容易醒來</button>
+          <button class="opt" data-v="c">控制食慾和體重而已</button>
+        </div>
+        <div class="exp">2019 年《Science》的研究發現，REM 期活躍的 MCH 神經元參與海馬迴記憶的主動遺忘。</div>
+      </div>
+      <div class="card q" data-ans="c">
+        <h4>Q3. 芹壁伍位靈公廟的祈夢在哪一天？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">元宵節當晚</button>
+          <button class="opt" data-v="b">每個月初一</button>
+          <button class="opt" data-v="c">農曆正月廿九，擺暝文化祭的尾聲</button>
+        </div>
+        <div class="exp">報導指出，一年只有正月廿九這一天可以祈夢，夢醒後還要擲筊確認。</div>
+      </div>
+      <div class="card q" data-ans="b">
+        <h4>Q4. 整合醫學的正確精神是？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">用傳統療法取代正規治療</button>
+          <button class="opt" data-v="b">把一般醫療和輔助療法有協調地結合，照顧整個人</button>
+          <button class="opt" data-v="c">只要是天然的就一定安全</button>
+        </div>
+        <div class="exp">重點是安全、有協調地結合；草藥也可能和藥物交互作用，要先問醫師或藥師。</div>
+      </div>
+      <div class="score" id="score"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt refs" id="refs" style="--tint:var(--blue-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--ink)"><div class="num">§</div><div><span class="eyebrow">References</span><h2>參考資料</h2></div></div>
+    <p class="small">以下資料於<b>2026年10月13日</b>查核。1–8 依原稿清單順序，9–13 為本頁查證時補充。原稿內文的 [web:389]～[web:402] 標記無法對應清單，本頁已依各來源實際內容重新對應。</p>
+    <h3>🌙 睡眠與夢境記憶</h3>
+    <ol>
+      <li id="ref1"><span class="rid">1</span>Rosenzweig I. <b>When dreams feel real: the MÖBIUS model.</b> <i>Communications Biology.</i> 2026;9:412.<span class="loc">觀點文章（Perspective），2026年3月23日刊出。提出 MÖBIUS 假說：MCH「神經調節防火牆」、CA2「認識論過濾器」、食慾素過強、尖波漣漪重現；作者註明為有待驗證的工作理論，資料為 4 位個案對 4 位對照。</span><a href="https://doi.org/10.1038/s42003-026-09781-x" target="_blank" rel="noopener">DOI: 10.1038/s42003-026-09781-x</a></li>
+      <li id="ref2"><span class="rid">2</span>Frazer MA, Cabrera Y, Guthrie RS, et al. <b>Shining a Light on the Mechanisms of Sleep for Memory Consolidation.</b> <i>Current Sleep Medicine Reports.</i> 2021;7:221-231.<span class="loc">REM 睡眠特徵：肌肉無張力、類清醒腦波、5–10 Hz 海馬迴 theta 節律；MCH 神經元與遺忘的研究回顧。</span><a href="https://doi.org/10.1007/s40675-021-00204-3" target="_blank" rel="noopener">DOI: 10.1007/s40675-021-00204-3</a></li>
+      <li id="ref3"><span class="rid">3</span>Abel T. <b>Sleep and Hippocampal Memory Consolidation.</b> In: <i>The Oxford Handbook of the Neurobiology of Learning and Memory.</i> Oxford University Press; 2020.<span class="loc">僅能讀到摘要開頭，本頁未直接引用。</span><a href="https://academic.oup.com/edited-volume/34729/chapter/520241638" target="_blank" rel="noopener">academic.oup.com</a></li>
+      <li id="ref4"><span class="rid">4</span>Skrzypińska D, Szmigielska B. <b>Dream-reality confusion in borderline personality disorder: a theoretical analysis.</b> <i>Frontiers in Psychology.</i> 2015;6:1393.<span class="loc">理論分析：睡眠障礙、解離、負面寫實夢境、現實檢驗困難與夢境現實混淆有關。</span><a href="https://doi.org/10.3389/fpsyg.2015.01393" target="_blank" rel="noopener">DOI: 10.3389/fpsyg.2015.01393</a></li>
+      <li id="ref5"><span class="rid">5</span>Izawa S, Chowdhury S, Miyazaki T, et al. <b>REM sleep-active MCH neurons are involved in forgetting hippocampus-dependent memories.</b> <i>Science.</i> 2019;365(6459):1308-1313.<span class="loc">小鼠實驗：MCH 神經元密集投射至背側海馬迴；REM 期活躍的 MCH 神經元參與主動遺忘。</span><a href="https://doi.org/10.1126/science.aax9238" target="_blank" rel="noopener">DOI: 10.1126/science.aax9238</a></li>
+      <li id="ref6"><span class="rid">6</span>E Said S, Miyamoto D. <b>Multi-region processing during sleep for memory and cognition.</b> <i>Proceedings of the Japan Academy, Series B.</i> 2025;101(3):107-128.<span class="loc">回顧：REM 與非 REM 睡眠的振盪模式形成跨腦區網路，參與記憶鞏固與提取。</span><a href="https://doi.org/10.2183/pjab.101.008" target="_blank" rel="noopener">DOI: 10.2183/pjab.101.008</a></li>
+      <li id="ref7"><span class="rid">7</span>Gao JX, Yan G, Li XX, et al. <b>The Ponto-Geniculo-Occipital (PGO) Waves in Dreaming: An Overview.</b> <i>Brain Sciences.</i> 2023;13(9):1350.<span class="loc">REM 睡眠是做夢的主要相關期；PGO 波限制外界資訊處理，可能形成夢的視覺幻象。</span><a href="https://doi.org/10.3390/brainsci13091350" target="_blank" rel="noopener">DOI: 10.3390/brainsci13091350</a></li>
+    </ol>
+    <h3>🌿 整合醫學</h3>
+    <ol>
+      <li id="ref8"><span class="rid">8</span>Cawthorn A. <b>Exploring Global Healing Traditions: Lessons From Eastern and Indigenous Practices.</b> Indiana Wesleyan University; 2025年9月30日。<span class="loc">原稿網址誤植為 iwu.edu（另一所大學）的首頁，已更正。此文為大學招生推廣文章：中醫、阿育吠陀、原住民療癒、文化謙遜與資料主權。</span><a href="https://www.indwes.edu/articles/2025/09/exploring-global-healing-traditions-lessons-from-eastern-indigenous-practices" target="_blank" rel="noopener">indwes.edu</a></li>
+      <li id="ref9"><span class="rid">9</span>National Center for Complementary and Integrative Health (NCCIH). <b>Complementary, Alternative, or Integrative Health: What's In a Name?</b>（2021年4月更新）<span class="loc">整合醫療是以協調的方式結合一般醫療與輔助療法，照顧整個人。</span><a href="https://www.nccih.nih.gov/health/complementary-alternative-or-integrative-health-whats-in-a-name" target="_blank" rel="noopener">nccih.nih.gov</a></li>
+    </ol>
+    <h3>🏮 馬祖祈夢</h3>
+    <ol>
+      <li id="ref10"><span class="rid">10</span>鄭景雯。<b>馬祖擺暝鬧元宵</b>。中央社《文化+》，2020年2月29日。<span class="loc">農曆正月29日祈夢；吃素、打地鋪、睡在醒與不醒之間；夢醒告訴「桌頭」解夢；可請師姐代為做夢。</span><a href="https://www.cna.com.tw/culture/article/20200229w001" target="_blank" rel="noopener">cna.com.tw</a></li>
+      <li id="ref11"><span class="rid">11</span><b>馬高航線加持 體驗傳統「北竿擺暝文化祭」祈夢</b>。新頭殼，2025年3月4日。<span class="loc">伍位靈公廟；擺暝文化祭尾聲、一年一天；源自福建長樂；夢醒擲筊確認、現場解夢。</span><a href="https://newtalk.tw/news/view/2025-03-04/958976" target="_blank" rel="noopener">newtalk.tw</a></li>
+      <li id="ref12"><span class="rid">12</span>NOWnews 今日新聞，2025年2月11日（北竿擺暝祈夢活動報導）。<span class="loc">正月廿九為北竿擺暝最終場；求神問事後在廟內坐臥冥想，等待賜夢。</span><a href="https://www.nownews.com/news/6645413" target="_blank" rel="noopener">nownews.com</a></li>
+    </ol>
+    <h3>💭 決策心理</h3>
+    <ol>
+      <li id="ref13"><span class="rid">13</span>Loewenstein G. <b>Out of Control: Visceral Influences on Behavior.</b> <i>Organizational Behavior and Human Decision Processes.</i> 1996;65(3):272-292.<span class="loc">飢餓、疲勞、情緒等「內臟驅力」使行為偏離自身長期利益。原稿提到 visceral influences 但未列出處，本頁補充。</span><a href="https://ideas.repec.org/a/eee/jobhdp/v65y1996i3p272-292.html" target="_blank" rel="noopener">ideas.repec.org</a></li>
+    </ol>
+
+    <div class="bigdisc" role="note" aria-label="免責聲明" style="margin-top:30px">
+      <div class="bd-head"><span class="bd-ico">⚠</span><span>重要聲明｜請先看這裡</span></div>
+      <p class="bd-key">本站資訊僅供參考，實際以醫師、藥師等專業人員評估及官方資料為準。</p>
+      <ul>
+        <li><b>僅供參考：</b>本頁不構成醫療診斷、治療或投資建議。睡眠問題、反覆惡夢或分不清夢與現實，請就醫評估；使用中藥、草藥或其他輔助療法前，請告知醫師與藥師。</li>
+        <li><b>無任何推薦或行銷：</b>本頁不推薦、不銷售任何療法、課程、商品或金融服務，與文中機構、廟宇及學校無任何合作關係。</li>
+        <li><b>假說性質：</b>MÖBIUS 模型為 2026 年提出、尚待驗證的理論；部分機制來自動物實驗。</li>
+        <li><b>尊重信仰：</b>祈夢習俗的介紹依媒體報導整理，尊重各種信仰與文化，不評論靈驗與否。</li>
+        <li><b>資料時點：</b>資料以2026年9月底前公開資料為準，查核於2026年10月13日。</li>
+      </ul>
+      <p class="small" style="margin-bottom:0">需要時：安心專線 <b>1925</b>（24小時）｜反詐騙專線 <b>165</b>｜緊急狀況 <b>119</b></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="pals" aria-hidden="true"><svg><use href="#sprout"/></svg><svg><use href="#moon"/></svg><svg><use href="#bird"/></svg></div>
+    <p class="quote">每一次多懂一點，都是送給自己的小禮物。</p>
+    <p class="ftdisc">⚠ 僅供參考｜無任何推薦或行銷｜非醫療診斷、非投資建議<br>本站資訊僅供參考，實際以專業人員評估及官方資料為準</p>
+    <p><a href="https://www.gungho.idv.tw/KS/index.html">← 回共好小學堂</a></p>
+    <p class="fine">共好小學堂 ✦ 一起學習，一起共好<br>本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-10-13</p>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到頂端">↑</button>
+
+<script>
+(function(){
+  function load(k,d){try{var v=JSON.parse(localStorage.getItem(k)||'null');return v==null?d:v;}catch(e){return d;}}
+  function save(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+
+  // tabs
+  document.querySelectorAll('[data-tabs]').forEach(function(list){
+    var tabs=[].slice.call(list.querySelectorAll('[role=tab]'));
+    function select(t,focus){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on?'true':'false');x.tabIndex=on?0:-1;var q=document.getElementById(x.getAttribute('aria-controls'));if(q)q.hidden=!on;});if(focus)t.focus();}
+    tabs.forEach(function(t,i){t.addEventListener('click',function(){select(t);});t.addEventListener('keydown',function(e){var n=null;if(e.key==='ArrowRight')n=tabs[(i+1)%tabs.length];if(e.key==='ArrowLeft')n=tabs[(i-1+tabs.length)%tabs.length];if(n){e.preventDefault();select(n,true);}});});
+  });
+
+  // gate simulator (illustrative, per MÖBIUS hypothesis)
+  var LK=[['🛡','MCH 防火牆','壓住海馬迴，不讓夢被存檔'],['⚖️','食慾素平衡','清醒訊號不過強'],['🔎','CA2 過濾器','分辨「熟悉」與「新的」'],['🔇','漣漪靜音','REM 時尖波漣漪被壓住']];
+  var FC=[['😣 長期壓力大',[0,1]],['💥 創傷、常做惡夢',[0,1]],['🌀 睡不夠、REM 不穩',[2,3]]];
+  var lk=document.getElementById('locks'),fc=document.getElementById('facs'),on={};
+  var lkEls=LK.map(function(l){var d=document.createElement('div');d.className='lock';
+    var ic=document.createElement('span');ic.className='ic';ic.textContent=l[0];var h=document.createElement('h4');h.textContent=l[1];var p=document.createElement('p');p.textContent=l[2];var s=document.createElement('span');s.className='st';s.textContent='正常';
+    d.appendChild(ic);d.appendChild(h);d.appendChild(p);d.appendChild(s);lk.appendChild(d);return d;});
+  FC.forEach(function(f,i){var b=document.createElement('button');b.type='button';b.textContent=f[0];b.setAttribute('aria-pressed','false');b.addEventListener('click',function(){on[i]=!on[i];b.setAttribute('aria-pressed',on[i]?'true':'false');rG();});fc.appendChild(b);});
+  function rG(){var weak={};FC.forEach(function(f,i){if(on[i])f[1].forEach(function(k){weak[k]=1;});});var n=0;
+    lkEls.forEach(function(d,i){var w=!!weak[i];if(w)n++;d.classList.toggle('weak',w);d.querySelector('.st').textContent=w?'變弱':'正常';});
+    var g=document.getElementById('gateFill');g.style.width=(100-n*22)+'%';g.style.background=n>=3?'var(--coral)':(n?'var(--orange)':'var(--mint)');
+    document.getElementById('gateOut').textContent=n===0?'閘門關好了：夢在腦中演出，但不會被當成真實記憶存起來。點上面的狀況試試看。':(n<4?'有 '+n+' 個環節變弱，閘門開始鬆動。依假說，夢的片段比較可能被誤存成記憶。':'四個環節都變弱了。依假說，這時最容易把夢當成真的。好好睡覺、紓解壓力是第一步；長期困擾請就醫。');}
+  rG();
+
+  // dream journal
+  var DK='gungho-ks-dream-journal',J=load(DK,[]);if(!Array.isArray(J))J=[];
+  var TG=['確定是夢','要查證','已查證：是夢'];
+  function rJ(){var ul=document.getElementById('dList');ul.innerHTML='';J.slice().reverse().forEach(function(e){var li=document.createElement('li');var b=document.createElement('b');b.textContent=e.d+'　';li.appendChild(b);li.appendChild(document.createTextNode(e.t));var s=document.createElement('span');s.className='t';s.textContent=TG[e.g]||TG[0];li.appendChild(s);ul.appendChild(li);});
+    var need=J.filter(function(e){return e.g===1;}).length;
+    document.getElementById('dOut').textContent=J.length?('已記錄 '+J.length+' 個夢'+(need?'，其中 '+need+' 個還需要查證：問問家人或看看行事曆、照片吧。':'。')):'寫下夢的內容，選好判斷後按「記下來」。';}
+  document.getElementById('dSave').addEventListener('click',function(){var t=(document.getElementById('dText').value||'').trim().slice(0,80);if(!t){document.getElementById('dOut').textContent='先寫一點夢的內容喔！';return;}
+    var d=new Date();J.push({d:(d.getMonth()+1)+'/'+d.getDate(),t:t,g:+document.getElementById('dTag').value});if(J.length>14)J=J.slice(-14);save(DK,J);document.getElementById('dText').value='';rJ();});
+  document.getElementById('dClr').addEventListener('click',function(){J=[];save(DK,J);rJ();});
+  rJ();
+
+  // decision checklist (not saved)
+  var db=[].slice.call(document.querySelectorAll('#dec input'));
+  function rD(){var n=0;db.forEach(function(b){b.parentNode.classList.toggle('on',b.checked);if(b.checked)n++;});
+    document.getElementById('decOut').textContent=n===6?'✅ 六項都做到了，可以比較安心地做決定。':(n>=4?'還差 '+(6-n)+' 項。沒打勾的，先補上再決定。':'只做到 '+n+' 項。建議今天先不要決定，睡一覺、問問人再說。');}
+  db.forEach(function(b){b.addEventListener('change',rD);});rD();
+
+  // quiz
+  var qs=[].slice.call(document.querySelectorAll('#quizBox .q')),answered=0,right=0;
+  qs.forEach(function(q){var ans=q.dataset.ans,opts=q.querySelectorAll('.opt');opts.forEach(function(o){o.addEventListener('click',function(){var ok=o.dataset.v===ans;opts.forEach(function(x){x.disabled=true;if(x.dataset.v===ans)x.classList.add('right');});if(!ok)o.classList.add('wrong');var exp=q.querySelector('.exp');exp.innerHTML=(ok?'<b>✅ 答對了！</b> ':'<b>💡 再想想～</b> ')+exp.innerHTML;exp.classList.add('show');answered++;if(ok)right++;if(answered===qs.length){var s=document.getElementById('score');s.textContent='你答對了 '+right+' / '+qs.length+' 題！'+(right===qs.length?' 太厲害了 🎉':' 每多懂一點都是收穫 🌱');s.classList.add('show');}});});});
+
+  var tt=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('show',window.scrollY>600);},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
+})();
+</script>
+</body>
+</html>
