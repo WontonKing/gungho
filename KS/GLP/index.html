@@ -1,900 +1,855 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant-TW">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>諾和諾德合作夥伴計畫｜GLP-1 數位健康生態系</title>
-<meta name="description" content="以 GLP-1 藥物為平台，諾和諾德合作夥伴計畫（NNPP）串連遠端醫療、臨床數據與 AI 行為干預，從單次銷售走向生態系獲利的類訂閱商業模式。">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2455c7">
+<title>減重針背後的新生意｜共好小學堂</title>
+<meta name="description" content="GLP-1 藥物從降血糖到減重，藥廠也開始串連遠距醫療、智慧筆數據與 AI 營養工具。用小學堂的方式看懂 GLP-1 的作用原理、主要藥物比較、新適應症，以及「藥物＋數據＋平台」的商業模式。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/GLP1/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="減重針背後的新生意：GLP-1 從一支藥到一個健康平台｜共好小學堂">
+<meta property="og:description" content="GLP-1 怎麼讓人吃不下？各種藥差在哪？藥廠為什麼要做數位平台？看懂科學與商業模式，也想想自己的資料和荷包。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/GLP1/">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 130'%3E%3Cpath d='M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z' fill='%235ad6a4' stroke='%231f2a44' stroke-width='5'/%3E%3Cpath d='M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Cellipse cx='60' cy='88' rx='40' ry='38' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Ccircle cx='46' cy='84' r='6' fill='%231f2a44'/%3E%3Ccircle cx='74' cy='84' r='6' fill='%231f2a44'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
+
 :root{
-  --ink:#1d2445; --ink-soft:#4d5578; --bg:#fff8ef; --card:#ffffff;
-  --teal:#11b5a4; --teal-l:#d6f6f1;
-  --coral:#ff6b6b; --coral-l:#ffe3e1;
-  --sun:#ffc23d; --sun-l:#fff1c9;
-  --violet:#7b5cff; --violet-l:#ebe5ff;
-  --sky:#2f9bff; --sky-l:#dcefff;
-  --pink:#ff7ac2;
-  --radius:24px; --shadow:0 10px 30px rgba(29,36,69,.10);
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c;  --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff;  --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7;
+  --round:'Huninn','Noto Sans TC',system-ui,sans-serif;
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:"Noto Sans TC",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.75;overflow-x:hidden}
-img,svg{display:block;max-width:100%}
-a{color:inherit}
-.wrap{width:min(1160px,100% - 32px);margin-inline:auto}
-.num{font-family:"Baloo 2","Noto Sans TC",sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans TC',system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:var(--blue)}
+h1,h2,h3,h4{font-family:var(--round);line-height:1.35;margin:0 0 .5em;font-weight:400}
+p{margin:0 0 1em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.hl{background:linear-gradient(transparent 58%,var(--sun) 58%,var(--sun) 92%,transparent 92%);padding:0 2px}
+.nw{white-space:nowrap}
+b,strong{font-weight:700}
 
-/* NAV */
-nav{position:sticky;top:0;z-index:50;background:rgba(255,248,239,.88);backdrop-filter:blur(10px);border-bottom:1px solid rgba(29,36,69,.06)}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:900;text-decoration:none;white-space:nowrap}
-.brand-dot{width:34px;height:34px;border-radius:50%;background:conic-gradient(var(--teal),var(--sky),var(--violet),var(--coral),var(--sun),var(--teal));display:grid;place-items:center}
-.brand-dot::after{content:"";width:16px;height:16px;border-radius:50%;background:var(--bg)}
-.menu{display:flex;gap:4px;list-style:none;overflow-x:auto;scrollbar-width:none}
-.menu::-webkit-scrollbar{display:none}
-.menu a{display:block;padding:6px 12px;border-radius:99px;text-decoration:none;font-size:14px;font-weight:500;white-space:nowrap;transition:.2s}
-.menu a:hover{background:var(--sun-l)}
-@media (max-width:860px){.menu{display:none}}
+/* top bar */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.94);backdrop-filter:blur(8px);border-bottom:3px solid var(--ink)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex-shrink:0}
+.brand svg{width:40px;height:44px}
+.brand b{font-family:var(--round);font-weight:400;font-size:19px;display:block;line-height:1.1}
+.brand small{font-size:10px;letter-spacing:.14em;color:var(--ink-2);display:block}
+.navpills{display:flex;gap:6px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.navpills::-webkit-scrollbar{display:none}
+.navpills a{white-space:nowrap;text-decoration:none;font-size:14px;color:var(--ink);padding:4px 11px;border:2px solid var(--ink);border-radius:99px;background:#fff}
+.navpills a:hover{background:var(--sun-l)}
+.back{white-space:nowrap;text-decoration:none;font-family:var(--round);background:var(--blue);color:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:5px 14px;box-shadow:0 3px 0 var(--ink);font-size:15px;flex-shrink:0}
 
-/* HERO */
-.hero{position:relative;padding:72px 0 96px;overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
-.pill{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:2px solid var(--ink);border-radius:99px;padding:4px 14px;font-weight:700;font-size:14px;box-shadow:3px 3px 0 var(--ink)}
-.pill i{width:10px;height:10px;border-radius:50%;background:var(--coral);display:inline-block;animation:blink 1.4s infinite}
-@keyframes blink{50%{opacity:.25}}
-h1{font-size:clamp(34px,5.4vw,62px);line-height:1.18;font-weight:900;margin:20px 0 18px;letter-spacing:.5px}
-h1 .hl{background:linear-gradient(transparent 58%,var(--sun) 58%);padding:0 4px}
-h1 .grad{font-size:.74em;display:inline-block;margin-top:6px;background:linear-gradient(90deg,var(--teal),var(--sky),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
-.lead{font-size:clamp(16px,1.9vw,19px);color:var(--ink-soft);max-width:34em}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:99px;font-weight:700;text-decoration:none;border:2px solid var(--ink);transition:transform .15s, box-shadow .15s}
-.btn.primary{background:var(--coral);color:#fff;box-shadow:4px 4px 0 var(--ink)}
-.btn.ghost{background:var(--card);box-shadow:4px 4px 0 var(--ink)}
-.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
-.blob{position:absolute;border-radius:50%;filter:blur(2px);opacity:.55;z-index:-1}
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--blue-l),var(--bg));padding:56px 0 90px}
+.blob{position:absolute;border-radius:50%;opacity:.55;z-index:0}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.tag{display:inline-block;font-family:var(--round);background:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:4px 14px;font-size:15px;box-shadow:0 3px 0 var(--ink);margin-bottom:18px}
+.hero h1{font-size:clamp(32px,5vw,52px);margin-bottom:16px}
+.hero .lead{font-size:18.5px;color:var(--ink-2);max-width:34em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{font-family:var(--round);text-decoration:none;font-size:17px;padding:10px 22px;border:3px solid var(--ink);border-radius:16px;box-shadow:0 4px 0 var(--ink);color:var(--ink);background:#fff;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--sun)}
+.meta{font-size:13.5px;color:var(--ink-2);margin-top:18px}
 .hero-art{position:relative}
-.float{animation:float 5s ease-in-out infinite}
-.float.d2{animation-delay:-1.6s}.float.d3{animation-delay:-3.2s}
-@keyframes float{50%{transform:translateY(-12px)}}
-.spin-slow{transform-origin:50% 50%;animation:spin 40s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero{padding:40px 0 64px}.hero-art{max-width:440px;margin:0 auto}}
+.hero-art svg{width:100%;height:auto;display:block}
+.bubble{position:absolute;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:8px 14px;font-family:var(--round);font-size:17px;box-shadow:0 4px 0 var(--ink);white-space:nowrap}
+.bubble::after{content:"";position:absolute;width:14px;height:14px;background:#fff;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg);bottom:-9px;left:30px}
+.hero .bubble{top:2%;left:4%}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:60px;z-index:1}
+.float{animation:float 4.5s ease-in-out infinite}
+.float.d2{animation-delay:-1.5s}.float.d3{animation-delay:-3s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media (prefers-reduced-motion:reduce){.float{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
 
-/* WAVES */
-.wave{display:block;width:100%;height:60px}
+/* sections */
+section.sec{padding:64px 0;position:relative}
+section.alt{background:linear-gradient(180deg,var(--tint,#fff),var(--bg))}
+.sec-head{display:flex;align-items:flex-start;gap:18px;margin-bottom:26px}
+.num{flex-shrink:0;width:58px;height:58px;display:grid;place-items:center;font-family:var(--round);font-size:28px;color:#fff;background:var(--c,var(--blue));border:3px solid var(--ink);border-radius:16px;transform:rotate(-6deg);box-shadow:4px 4px 0 var(--ink)}
+.eyebrow{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--c,var(--blue));font-weight:700;display:block}
+.sec-head h2{font-size:clamp(25px,3.4vw,34px);margin:2px 0 0}
+.intro{color:var(--ink-2);max-width:46em}
+hr.dash{border:0;border-top:3px dashed var(--line);margin:34px 0}
 
-/* SECTIONS */
-section{padding:88px 0;position:relative}
-.sec-head{text-align:center;max-width:760px;margin:0 auto 48px}
-.kicker{display:inline-block;font-weight:800;font-size:14px;letter-spacing:2px;padding:4px 14px;border-radius:99px;margin-bottom:12px}
-h2{font-size:clamp(28px,3.8vw,42px);line-height:1.3;font-weight:900}
-.sec-head p{color:var(--ink-soft);margin-top:12px;font-size:17px}
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease, transform .7s ease}
-.reveal.in{opacity:1;transform:none}
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:0 5px 0 var(--ink)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card h3{font-size:21px;margin-bottom:.35em}
+.card p:last-child{margin-bottom:0}
+.small{font-size:14.5px;color:var(--ink-2)}
+.note{font-size:14.5px;color:var(--ink-2);background:#fff;border:2px dashed var(--line);border-radius:14px;padding:10px 14px;margin-top:16px}
+.ico{width:96px;height:96px;display:block;margin-bottom:10px}
+.src{display:inline-block;font-size:12px;line-height:1;text-decoration:none;background:var(--blue-l);color:var(--blue-d);border:1.5px solid var(--blue);border-radius:99px;padding:4px 8px;margin:0 2px;vertical-align:2px;font-weight:700;white-space:nowrap}
+.src:hover{background:var(--sun-l)}
+.badge{display:inline-block;font-size:12.5px;font-weight:700;border:2px solid var(--ink);border-radius:99px;padding:1px 10px;background:var(--sun-l);margin-bottom:8px}
 
-/* MARKET */
-#market{background:var(--ink);color:#fff}
-#market .sec-head p{color:#c9cdef}
-#market .kicker{background:var(--sun);color:var(--ink)}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.stat{border-radius:var(--radius);padding:28px 22px;color:var(--ink);position:relative;overflow:hidden;transition:transform .25s}
-.stat:hover{transform:translateY(-6px) rotate(-1deg)}
-.stat .big{font-size:clamp(40px,4.6vw,56px);font-weight:800;line-height:1}
-.stat .big small{font-size:.45em;margin-left:2px}
-.stat h3{font-size:17px;margin-top:10px}
-.stat p{font-size:14px;opacity:.8}
-.stat .emo{position:absolute;right:-6px;bottom:-10px;width:84px;opacity:.9}
-.s1{background:var(--sun)}.s2{background:var(--teal);color:#fff}.s3{background:var(--coral);color:#fff}.s4{background:var(--sky);color:#fff}
-.s2,.s3,.s4{color:#fff}.s2 *,.s3 *,.s4 *{color:#fff}
-.scale{margin-top:48px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.scale-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:var(--radius);padding:24px}
-.scale-card h4{font-size:18px;margin-bottom:6px}
-.bar{height:18px;border-radius:99px;background:rgba(255,255,255,.12);overflow:hidden;margin:14px 0 8px}
-.bar span{display:block;height:100%;width:0;border-radius:99px;transition:width 1.6s cubic-bezier(.2,.8,.2,1)}
-.scale-card small{color:#c9cdef}
-.insight{margin-top:24px;display:flex;gap:16px;align-items:center;background:linear-gradient(90deg,var(--violet),var(--sky));border-radius:var(--radius);padding:22px 26px;font-weight:700;font-size:17px}
-.insight svg{flex:none;width:56px}
-@media (max-width:860px){.stats{grid-template-columns:1fr 1fr}.scale{grid-template-columns:1fr}}
-@media (max-width:460px){.stats{grid-template-columns:1fr}}
+/* talk */
+.talk{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;margin-bottom:22px}
+.talk.r{grid-template-columns:1fr 150px}
+.talk.r .who{order:2}
+.who svg{width:130px;height:130px}
+.say{position:relative;background:#fff;border:3px solid var(--ink);border-radius:22px;padding:18px 22px;box-shadow:6px 6px 0 var(--c,var(--sun))}
+.say::before{content:"";position:absolute;left:-12px;top:42px;width:18px;height:18px;background:#fff;border-left:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg)}
+.talk.r .say::before{left:auto;right:-12px;transform:rotate(-135deg)}
+.say .name{font-family:var(--round);color:var(--c,var(--blue));font-size:15px;display:block;margin-bottom:4px}
+.say p:last-child{margin-bottom:0}
+.qs{counter-reset:q;list-style:none;padding:0;margin:.4em 0 1em}
+.qs li{counter-increment:q;padding-left:40px;position:relative;margin:6px 0}
+.qs li::before{content:counter(q);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;background:var(--sun);border:2.5px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:15px}
+.warn{background:var(--coral-l);border:3px solid var(--ink);border-radius:18px;padding:14px 18px;margin-top:14px}
+.warn b{color:#c33}
 
-/* SHIFT */
-#shift .kicker{background:var(--violet-l);color:var(--violet)}
-.shift{display:grid;grid-template-columns:1fr auto 1fr;gap:24px;align-items:center}
-.shift-card{background:var(--card);border-radius:var(--radius);padding:32px 28px;box-shadow:var(--shadow);text-align:center;border:3px solid transparent}
-.shift-card.old{border-color:#e4e2dc}
-.shift-card.new{border-color:var(--violet);background:linear-gradient(160deg,#fff,var(--violet-l))}
-.shift-card svg{width:150px;margin:0 auto 14px}
-.shift-card h3{font-size:22px;font-weight:900}
-.shift-card ul{list-style:none;margin-top:12px;text-align:left;display:inline-block}
-.shift-card li{padding-left:26px;position:relative;margin:4px 0}
-.shift-card li::before{content:"";position:absolute;left:4px;top:.6em;width:12px;height:12px;border-radius:4px;background:var(--teal)}
-.shift-card.old li::before{background:#c7c4bd}
-.arrow-big{font-size:48px;color:var(--coral);font-weight:900;animation:nudge 1.6s infinite}
-@keyframes nudge{50%{transform:translateX(8px)}}
-@media (max-width:860px){.shift{grid-template-columns:1fr}.arrow-big{transform:rotate(90deg);text-align:center;animation:none}}
+/* evidence chips */
+.ev{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.ev .card{padding:16px;box-shadow:0 4px 0 var(--ink)}
+.ev h4{font-size:17px;margin:0 0 4px}
+.ev .k{font-size:13.5px;color:var(--ink-2);margin:0}
+.ev .u{font-size:14px;margin-top:8px;padding-top:8px;border-top:2px dashed var(--line)}
 
-/* PARTNERS */
-#partners{background:linear-gradient(180deg,var(--bg),#eefaf7)}
-#partners .kicker{background:var(--teal-l);color:#0b8478}
-.tabs{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:28px}
-.tab{cursor:pointer;border:2px solid var(--ink);background:var(--card);font:inherit;font-weight:700;padding:10px 22px;border-radius:99px;display:flex;align-items:center;gap:8px;box-shadow:3px 3px 0 var(--ink);transition:.15s}
-.tab .d{width:12px;height:12px;border-radius:50%}
-.tab[aria-selected="true"]{color:#fff}
-.tab[data-c="teal"][aria-selected="true"]{background:var(--teal)}
-.tab[data-c="sky"][aria-selected="true"]{background:var(--sky)}
-.tab[data-c="violet"][aria-selected="true"]{background:var(--violet)}
-.panel{display:none;background:var(--card);border-radius:32px;box-shadow:var(--shadow);overflow:hidden}
-.panel.active{display:grid;grid-template-columns:320px 1fr;animation:pop .45s ease}
-@keyframes pop{from{opacity:0;transform:scale(.97)}}
-.panel-art{display:grid;place-items:center;padding:32px}
-.panel-art svg{width:100%;max-width:260px}
-.panel-body{padding:36px 36px 36px 8px}
-.tag{display:inline-block;font-size:13px;font-weight:700;padding:3px 12px;border-radius:99px;margin-right:6px;margin-bottom:6px}
-.panel-body h3{font-size:28px;font-weight:900;margin:6px 0 8px}
-.panel-body > p{color:var(--ink-soft)}
-.feat{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
-.feat div{border-radius:18px;padding:18px}
-.feat h4{font-size:16px;margin-bottom:4px}
-.feat p{font-size:14px;color:var(--ink-soft)}
-@media (max-width:860px){.panel.active{grid-template-columns:1fr}.panel-body{padding:0 24px 28px}.panel-art{padding:24px 24px 8px}.panel-art svg{max-width:180px}.feat{grid-template-columns:1fr}}
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tab{font-family:var(--round);font-size:16px;cursor:pointer;border:2.5px solid var(--ink);background:#fff;border-radius:14px;padding:7px 14px;color:var(--ink);box-shadow:0 3px 0 var(--ink)}
+.tab[aria-selected="true"]{background:var(--c,var(--blue));color:#fff}
+.tab:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.panel{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:24px;box-shadow:6px 6px 0 var(--c,var(--blue))}
+.panel[hidden]{display:none}
+.panel-grid{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:start}
+.panel-grid svg{width:110px;height:110px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0}
+.kv dt{font-weight:700;color:var(--c,var(--blue));white-space:nowrap}
+.kv dd{margin:0}
 
-/* JOURNEY */
-#journey .kicker{background:var(--sky-l);color:#1d6fc2}
-.journey{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:20px;align-items:stretch}
-.lane{border-radius:var(--radius);padding:26px;color:#fff;position:relative}
-.lane.ro{background:var(--sky)}
-.lane.gl{background:var(--teal)}
-.lane h3{font-size:20px;font-weight:900;display:flex;align-items:center;gap:10px}
-.lane h3 span{font-size:13px;background:rgba(255,255,255,.25);padding:2px 10px;border-radius:99px;font-weight:700}
-.lane ul{list-style:none;margin-top:14px}
-.lane li{background:rgba(255,255,255,.18);border-radius:12px;padding:8px 12px;margin:8px 0;font-size:15px}
-.steps{display:flex;flex-direction:column;gap:14px;justify-content:center}
-.step{background:var(--card);border-radius:20px;padding:18px 20px 18px 76px;position:relative;box-shadow:var(--shadow)}
-.step .n{position:absolute;left:18px;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-family:"Baloo 2";font-weight:800;font-size:22px;color:#fff}
-.step h4{font-size:17px}
-.step p{font-size:14px;color:var(--ink-soft)}
-.journey-note{text-align:center;margin-top:28px;font-weight:700;color:var(--ink-soft)}
-@media (max-width:960px){.journey{grid-template-columns:1fr}}
+/* mechanism cards */
+.mech{position:relative;padding-top:30px}
+.mech .pin{position:absolute;top:-16px;left:20px;background:var(--c);color:#fff;font-family:var(--round);font-size:14px;border:2.5px solid var(--ink);border-radius:99px;padding:2px 12px;transform:rotate(-4deg)}
+.mech .key{margin-top:12px;padding-top:10px;border-top:2px dashed var(--line);font-weight:700}
 
-/* MODEL */
-#model{background:var(--sun-l)}
-#model .kicker{background:var(--sun);color:var(--ink)}
-.model{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.wheel-box{position:relative;max-width:480px;width:100%;margin:0 auto;aspect-ratio:1}
-.wheel-box > svg{position:absolute;inset:0;width:100%;height:100%}
-.node{position:absolute;width:31%;aspect-ratio:1;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;font-weight:900;font-size:clamp(14px,2vw,18px);border:4px solid #fff;box-shadow:var(--shadow);cursor:pointer;transition:transform .25s;padding:6px}
-.node small{font-weight:500;font-size:11px;line-height:1.35;opacity:.95;margin-top:2px}
-.node:hover,.node.on{transform:scale(1.1)}
-.n1{top:0;left:34.5%;background:var(--coral)}
-.n2{top:34.5%;right:0;background:var(--sky)}
-.n3{bottom:0;left:34.5%;background:var(--teal)}
-.n4{top:34.5%;left:0;background:var(--violet)}
-.hub{position:absolute;inset:36%;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;text-align:center;font-weight:900;font-size:clamp(13px,1.8vw,16px);line-height:1.4}
-.model-text h3{font-size:26px;font-weight:900;margin-bottom:14px}
-.leap{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:18px 0}
-.leap b{padding:8px 16px;border-radius:14px;border:2px solid var(--ink)}
-.leap b:first-child{background:#fff}
-.leap b:last-child{background:var(--coral);color:#fff}
-.model-text ul{list-style:none}
-.model-text li{position:relative;padding:8px 0 8px 36px;border-bottom:1px dashed rgba(29,36,69,.15)}
-.model-text li::before{content:"✓";position:absolute;left:0;top:8px;width:24px;height:24px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-size:13px;font-weight:900}
-.moat{margin-top:20px;background:var(--ink);color:#fff;border-radius:20px;padding:18px 22px;display:flex;gap:14px;align-items:center}
-.moat svg{width:52px;flex:none}
-@media (max-width:860px){.model{grid-template-columns:1fr}}
+/* age matrix */
+.agechips{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.mtx{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.mtx div{border:2.5px solid var(--ink);border-radius:16px;padding:10px 12px;background:var(--bgc,#fff)}
+.mtx b{display:block;font-family:var(--round);font-weight:400;font-size:15px;color:var(--ink-2)}
+.mtx span{font-weight:700}
 
-/* SCIENCE */
-#science .kicker{background:var(--coral-l);color:#d84545}
-.sci{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.sci-card{background:var(--card);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
-.sci-card h3{font-size:21px;font-weight:900;margin-bottom:12px;display:flex;gap:10px;align-items:center}
-.chip-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:6px}
-.chip{border-radius:16px;padding:14px;font-size:14px}
-.chip b{display:block;font-size:15px;margin-bottom:2px}
-.venn{display:flex;justify-content:center;margin:12px 0}
-.venn svg{width:100%;max-width:400px}
-.safe{background:var(--teal-l);border-radius:16px;padding:14px 18px;font-size:15px;margin-top:10px}
-.organs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.organ{display:flex;gap:12px;align-items:flex-start;border-radius:16px;padding:14px}
-.organ svg{width:44px;flex:none}
-.organ b{display:block}
-.organ p{font-size:14px;color:var(--ink-soft)}
-@media (max-width:860px){.sci{grid-template-columns:1fr}.chip-row{grid-template-columns:1fr}.organs{grid-template-columns:1fr}}
+/* table-like */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:20px;overflow:hidden;background:#fff;font-size:15.5px}
+.tbl th,.tbl td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:2px solid var(--line)}
+.tbl thead th{font-family:var(--round);font-weight:400;font-size:16.5px;color:#fff;background:var(--blue)}
+.tbl thead th:nth-child(2){background:var(--coral)}
+.tbl thead th:nth-child(3){background:var(--orange)}
+.tbl thead th:nth-child(4){background:var(--mint)}
+.tbl thead th:first-child{background:var(--ink)}
+.tbl tbody th{background:var(--sun-l);font-weight:700;white-space:nowrap}
+.tbl tr:last-child td,.tbl tr:last-child th{border-bottom:0}
+.tbl td.r{text-align:right;font-family:var(--round);font-size:18px}
 
-/* FUTURE */
-#future{background:var(--violet);color:#fff;overflow:hidden}
-#future .kicker{background:#fff;color:var(--violet)}
-#future .sec-head p{color:#e3dcff}
-.future{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.f-col h3{font-size:20px;margin-bottom:14px;font-weight:900}
-.ind{display:flex;gap:14px;background:rgba(255,255,255,.12);border-radius:18px;padding:16px;margin-bottom:12px;transition:background .2s}
-.ind:hover{background:rgba(255,255,255,.22)}
-.ind .n{flex:none;width:40px;height:40px;border-radius:12px;background:var(--sun);color:var(--ink);display:grid;place-items:center;font-family:"Baloo 2";font-weight:800;font-size:20px}
-.ind b{display:block}
-.ind p{font-size:14px;color:#e3dcff}
-.frontier{background:#fff;color:var(--ink);border-radius:18px;padding:18px;margin-bottom:12px;border-left:8px solid var(--pink)}
-.frontier:nth-child(3){border-color:var(--sun)}.frontier:nth-child(4){border-color:var(--teal)}
-.frontier b{display:block;font-size:16px}
-.frontier p{font-size:14px;color:var(--ink-soft)}
-.paradigm{margin-top:30px;text-align:center;font-size:clamp(18px,2.6vw,24px);font-weight:900}
-.paradigm span{display:inline-block;background:#fff;color:var(--violet);padding:6px 18px;border-radius:14px;margin:4px}
-@media (max-width:860px){.future{grid-template-columns:1fr}}
+.prod{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.prod .card{padding:18px 20px;box-shadow:0 4px 0 var(--ink)}
+.prod .co{display:inline-block;font-family:var(--round);color:#fff;background:var(--c);border:2.5px solid var(--ink);border-radius:12px;padding:1px 12px;margin-bottom:8px}
+.prod h4{font-size:17.5px;margin:0 0 6px}
+.prod .ask{margin-top:10px;padding:8px 12px;background:var(--grape-l);border-radius:12px;font-size:15px}
+.prod .ask::before{content:"❓ 要追問：";font-weight:700}
 
-/* CLINIC */
-#clinic .kicker{background:var(--teal-l);color:#0b8478}
-.clinic{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.c-card{background:var(--card);border-radius:var(--radius);padding:24px 20px;box-shadow:var(--shadow);border-top:8px solid;transition:transform .25s}
-.c-card:hover{transform:translateY(-6px)}
-.c-card svg{width:64px;margin-bottom:10px}
-.c-card h3{font-size:18px;font-weight:900;margin-bottom:6px;line-height:1.4}
-.c-card p{font-size:14px;color:var(--ink-soft)}
-@media (max-width:960px){.clinic{grid-template-columns:1fr 1fr}}
-@media (max-width:520px){.clinic{grid-template-columns:1fr}}
+/* calculators */
+.calc{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:6px 6px 0 var(--c,var(--sky))}
+.calc label{font-weight:700;display:block;margin-bottom:4px}
+.calc input[type=range]{width:100%;accent-color:var(--blue);height:28px}
+.calc input[type=number]{font:inherit;font-family:var(--round);font-size:22px;width:120px;padding:4px 10px;border:3px solid var(--ink);border-radius:12px}
+.bars{display:grid;gap:12px;margin-top:16px}
+.bar{display:grid;grid-template-columns:96px 1fr 110px;gap:10px;align-items:center}
+.bar .tr{height:28px;border:2.5px solid var(--ink);border-radius:99px;background:#f4f6fb;overflow:hidden}
+.bar .fill{height:100%;border-radius:99px;transition:width .3s}
+.bar .v{font-family:var(--round);font-size:19px;text-align:right}
+.verdict{margin-top:14px;font-weight:700;background:var(--sun-l);border-radius:14px;padding:10px 14px}
+.agegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.agebox{border:3px solid var(--ink);border-radius:18px;padding:12px 14px;background:#fff}
+.agebox .st{font-family:var(--round);font-size:18px}
+.agebox.ok{background:var(--mint-l)}
+.agebox.no{background:var(--coral-l)}
 
-/* VISION */
-#vision{padding:0 0 88px}
-.vision{background:linear-gradient(120deg,var(--coral),var(--pink) 45%,var(--violet));color:#fff;border-radius:36px;padding:56px 48px;display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:center;position:relative;overflow:hidden}
-.vision h2{color:#fff}
-.vision p{font-size:18px;margin-top:14px;opacity:.95}
-.vision svg{width:100%;max-width:260px;margin:0 auto}
-@media (max-width:860px){.vision{grid-template-columns:1fr;padding:40px 24px}}
+/* compare 3 companies */
+.cmp{display:grid;grid-template-columns:150px repeat(3,1fr);border:3px solid var(--ink);border-radius:22px;overflow:hidden;background:#fff;font-size:15.5px}
+.cmp > div{padding:11px 13px;border-bottom:2px solid var(--line);border-left:2px solid var(--line)}
+.cmp .h{font-family:var(--round);color:#fff;font-size:17px;border-left:0}
+.cmp .h.c1{background:var(--blue)}.cmp .h.c2{background:var(--coral)}.cmp .h.c3{background:var(--mint)}
+.cmp .h.c0{background:var(--ink)}
+.cmp .rh{background:var(--sun-l);font-weight:700;border-left:0}
+.cmp .m{display:none}
 
-/* TIPS */
-#tips{background:linear-gradient(180deg,#eef7ff,var(--bg))}
-#tips .kicker{background:var(--sky);color:#fff}
-.flips{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.flip{perspective:1000px;height:230px;cursor:pointer;background:none;border:0;font:inherit;color:inherit;text-align:left;padding:0}
-.flip-in{position:relative;width:100%;height:100%;transition:transform .6s cubic-bezier(.3,.8,.3,1);transform-style:preserve-3d}
-.flip:hover .flip-in,.flip.on .flip-in,.flip:focus-visible .flip-in{transform:rotateY(180deg)}
-.face{position:absolute;inset:0;border-radius:22px;padding:20px;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
-.face.front{justify-content:space-between}
-.face.front .q{font-size:19px;font-weight:900;line-height:1.45}
-.face.front .ico{font-size:38px;line-height:1}
-.face.front .hint{font-size:12px;font-weight:700;opacity:.75}
-.face.back{background:#fff;transform:rotateY(180deg);font-size:14.5px;line-height:1.7;overflow:auto}
-.face.back b{display:block;font-size:15px;margin-bottom:4px}
-.f-c{background:var(--coral);color:#fff}.f-s{background:var(--sun)}.f-t{background:var(--teal);color:#fff}.f-v{background:var(--violet);color:#fff}.f-b{background:var(--sky);color:#fff}
-.tips-row{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
-.t-card{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
-.t-card h3{font-size:21px;font-weight:900;margin-bottom:6px}
-.t-card > p{color:var(--ink-soft);font-size:15px;margin-bottom:14px}
-.brain-wrap{display:grid;grid-template-columns:190px 1fr;gap:16px;align-items:center}
-.brain-steps{list-style:none;counter-reset:b}
-.brain-steps li{position:relative;padding:10px 12px 10px 48px;border-radius:14px;margin-bottom:10px;font-size:14px;counter-increment:b}
-.brain-steps li::before{content:counter(b);position:absolute;left:10px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:800;font-family:"Baloo 2"}
-.brain-steps b{display:block;font-size:15px}
-.path{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.path div{border-radius:16px;padding:14px;border-left:6px solid}
-.path b{display:block;font-family:"Baloo 2","Noto Sans TC";font-size:17px}
-.path p{font-size:13.5px;color:var(--ink-soft)}
-.receptor{display:flex;align-items:center;gap:12px;background:var(--sun-l);border-radius:16px;padding:12px 16px;margin-bottom:14px;font-size:14px;font-weight:700}
-.receptor svg{width:52px;flex:none}
-.drugs{margin-top:28px;background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
-.drugs h3{font-size:21px;font-weight:900;margin-bottom:4px}
-.drugs > p{color:var(--ink-soft);font-size:15px;margin-bottom:16px}
-.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
-table.dt{width:100%;border-collapse:separate;border-spacing:0 8px;min-width:640px}
-.dt th{text-align:left;font-size:13px;color:var(--ink-soft);font-weight:700;padding:0 14px}
-.dt td{white-space:nowrap;background:#f7f5f0;padding:14px;font-size:14.5px;vertical-align:middle}
-.dt td:first-child{border-radius:14px 0 0 14px;font-weight:900;font-family:"Baloo 2","Noto Sans TC";font-size:17px}
-.dt td:last-child{white-space:normal;min-width:200px;border-radius:0 14px 14px 0;font-size:13.5px;color:var(--ink-soft)}
-.dt tr.best td{background:var(--sun-l)}
-.dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:8px;vertical-align:middle}
-.wbar{display:flex;align-items:center;gap:8px}
-.wbar i{display:block;height:12px;border-radius:99px;background:linear-gradient(90deg,var(--teal),var(--sky))}
-.badge{display:inline-block;background:var(--coral);color:#fff;font-size:11px;font-weight:700;padding:1px 8px;border-radius:99px;margin-left:6px;vertical-align:middle}
-.swipe{display:none;font-size:12px;font-weight:700;color:var(--ink-soft);margin-bottom:4px}
-@media (max-width:700px){.swipe{display:block}}
-.drug-note{margin-top:10px;font-size:14px;background:var(--violet-l);border-radius:14px;padding:12px 16px}
-@media (max-width:960px){.flips{grid-template-columns:1fr 1fr}.tips-row{grid-template-columns:1fr}}
-@media (max-width:520px){.flips{grid-template-columns:1fr}.flip{height:172px}.brain-wrap{grid-template-columns:1fr}.brain-wrap svg{max-width:170px;margin:0 auto}.path{grid-template-columns:1fr}}
+/* timeline */
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:14px 18px 14px 70px;background:#fff;border:3px solid var(--ink);border-radius:18px}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:var(--mint);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:20px}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:33px;bottom:-17px;height:17px;border-left:3px dashed var(--ink)}
 
-footer{background:var(--ink);color:#c9cdef;padding:40px 0;font-size:14px}
-footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
-footer b{color:#fff}
-.top{position:fixed;right:18px;bottom:18px;width:48px;height:48px;border-radius:50%;background:var(--sun);border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);display:grid;place-items:center;font-weight:900;text-decoration:none;opacity:0;pointer-events:none;transition:.3s;z-index:60}
-.top.show{opacity:1;pointer-events:auto}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+/* formula */
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:10px 0}
+.formula .t{border:2.5px solid var(--ink);border-radius:12px;padding:4px 12px;background:#fff;font-size:15.5px}
+.formula .t.p{background:var(--coral-l)}.formula .t.m{background:var(--mint-l)}
+.formula .op{font-family:var(--round);font-size:24px;line-height:1}
+.formula .eq{background:var(--sun);font-weight:700}
+
+/* checklist */
+.chk{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.chk label{display:flex;gap:14px;align-items:flex-start;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px 16px;cursor:pointer;box-shadow:0 4px 0 var(--ink);transition:background .2s}
+.chk input{position:absolute;opacity:0;pointer-events:none}
+.chk .box{flex-shrink:0;width:30px;height:30px;border:3px solid var(--ink);border-radius:9px;background:#fff;display:grid;place-items:center;font-size:19px;color:#fff;margin-top:2px}
+.chk input:checked + .box{background:var(--mint)}
+.chk input:checked + .box::after{content:"✓"}
+.chk input:focus-visible + .box{outline:3px solid var(--sun);outline-offset:2px}
+.chk label.on{background:var(--mint-l)}
+.chk b{display:block;font-family:var(--round);font-weight:400;font-size:18px}
+.chk span.d{font-size:14.5px;color:var(--ink-2);line-height:1.6;display:block}
+.prog{margin:20px 0 8px;display:flex;align-items:center;gap:14px}
+.prog .tr{flex:1;height:26px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden}
+.prog .fill{height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 10px,#5ad6a4 10px,#5ad6a4 20px);transition:width .3s}
+.prog .n{font-family:var(--round);font-size:20px;white-space:nowrap}
+.cheer{display:none;background:var(--sun-l);border:3px solid var(--ink);border-radius:18px;padding:12px 16px;font-weight:700;margin-top:12px}
+.cheer.show{display:block}
+
+/* quiz */
+.quiz{display:grid;gap:18px}
+.q h4{font-size:18.5px}
+.opts{display:grid;gap:10px}
+.opt{text-align:left;font:inherit;font-size:16px;cursor:pointer;background:#fff;border:2.5px solid var(--ink);border-radius:14px;padding:10px 14px;color:var(--ink)}
+.opt:hover:not(:disabled){background:var(--sky-l)}
+.opt:disabled{cursor:default}
+.opt.right{background:var(--mint-l);border-color:var(--mint);font-weight:700}
+.opt.wrong{background:var(--coral-l);border-color:var(--coral)}
+.exp{display:none;margin-top:10px;background:var(--sun-l);border-radius:14px;padding:10px 14px;font-size:15.5px}
+.exp.show{display:block}
+.score{display:none;text-align:center;font-family:var(--round);font-size:22px;background:var(--blue);color:#fff;border:3px solid var(--ink);border-radius:20px;padding:14px;box-shadow:0 5px 0 var(--ink)}
+.score.show{display:block}
+
+/* refs */
+.refs h3{font-size:19px;margin-top:22px;color:var(--blue-d)}
+.refs ol{padding-left:0;list-style:none;margin:0}
+.refs li{background:#fff;border:2px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:10px;font-size:15px;line-height:1.7;word-break:break-word}
+.refs li:target{border-color:var(--sun);background:var(--sun-l)}
+.refs .rid{display:inline-block;font-family:var(--round);background:var(--blue);color:#fff;border-radius:8px;padding:0 8px;margin-right:6px;font-size:13.5px}
+.refs .loc{display:block;color:var(--ink-2);font-size:13.5px}
+.refs a{word-break:break-all;font-size:13.5px}
+
+.disc{background:var(--sun-l);border:3px dashed var(--ink);border-radius:20px;padding:18px 22px;font-size:15.5px}
+.disc b{font-family:var(--round);font-weight:400;font-size:18px;display:block;margin-bottom:4px}
+
+.bigdisc{background:var(--coral-l);border:4px solid var(--ink);border-radius:24px;box-shadow:8px 8px 0 var(--coral);padding:22px 26px;outline:3px dashed var(--coral);outline-offset:-14px}
+.bd-head{display:flex;align-items:center;gap:12px;font-family:var(--round);font-size:clamp(22px,3vw,28px);color:#b42318;margin-bottom:10px}
+.bd-ico{flex-shrink:0;width:46px;height:46px;border-radius:50%;background:var(--coral);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-size:24px}
+.bd-key{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:8px 14px;margin:0 0 12px;font-weight:900;font-size:18px;color:#b42318}
+.bigdisc ul{margin:0;padding-left:1.2em}
+.bigdisc li{margin:6px 0;line-height:1.75}
+.bigdisc li b:first-child{color:#b42318}
+.ftdisc{display:inline-block;background:var(--sun);color:var(--ink);font-weight:700;border:3px solid var(--ink);border-radius:14px;padding:6px 16px;margin:4px 0 14px;font-size:15.5px}
+@media (max-width:820px){.bigdisc{padding:18px 16px;outline-offset:-10px}}
+footer{background:var(--blue-d);color:#fff;text-align:center;padding:46px 0 34px;margin-top:40px;border-top:4px solid var(--ink)}
+footer .pals{display:flex;justify-content:center;gap:12px;margin-bottom:12px}
+footer .pals svg{width:80px;height:80px}
+footer .quote{font-family:var(--round);font-size:22px;margin-bottom:10px}
+footer a{color:var(--sun)}
+footer .fine{font-size:13px;opacity:.8;margin-top:10px}
+#toTop{position:fixed;right:18px;bottom:18px;width:52px;height:52px;border-radius:50%;background:var(--sun);border:3px solid var(--ink);box-shadow:0 4px 0 var(--ink);font-size:22px;font-family:var(--round);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;z-index:60;color:var(--ink)}
+#toTop.show{opacity:1;pointer-events:auto}
+
+@media (max-width:1000px){.ev{grid-template-columns:repeat(3,1fr)}.agechips{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .navpills{display:none}
+  .back{margin-left:auto}
+  .hero{padding:34px 0 80px}
+  .hero .wrap,.grid2,.grid3,.prod,.chk,.agegrid{grid-template-columns:1fr}
+  .hero-art{max-width:420px;margin:0 auto;width:100%}
+  .ev{grid-template-columns:1fr 1fr}
+  .mtx{grid-template-columns:1fr 1fr}
+  .talk,.talk.r{grid-template-columns:1fr;gap:6px}
+  .talk.r .who{order:0}
+  .who svg{width:96px;height:96px}
+  .say::before{left:40px;top:-12px;transform:rotate(135deg)}
+  .talk.r .say::before{left:40px;right:auto;transform:rotate(135deg)}
+  .panel-grid{grid-template-columns:1fr}
+  .panel-grid svg{width:84px;height:84px}
+  .kv{grid-template-columns:1fr}
+  .cmp{grid-template-columns:1fr 1fr 1fr}
+  .cmp .h.c0{display:none}
+  .cmp .h{font-size:15px;padding:9px 8px}
+  .cmp .rh{grid-column:1/-1}
+  .cmp > div{font-size:14.5px;padding:9px 8px}
+  .cmp > div:nth-child(n){border-left:0}
+  .cmp .v{border-left:2px solid var(--line)}
+  .cmp .v1{border-left:0}
+  .bar{grid-template-columns:72px 1fr 92px}
+  .sec-head{gap:14px}
+  .num{width:48px;height:48px;font-size:23px}
+  section.sec{padding:48px 0}
+  .tbl{font-size:14.5px}
+  .tbl th,.tbl td{padding:9px 9px}
+  .tblwrap{overflow-x:auto}
+  .card,.panel,.calc{padding:18px 16px}
+}
+@media (max-width:420px){.ev{grid-template-columns:1fr}.agechips{grid-template-columns:repeat(2,1fr)}.hero .bubble{font-size:15px}}
+
+/* ---- GLP1 專用 ---- */
+.orig{display:inline-block;font-size:12px;font-weight:700;background:var(--grape-l);color:#5b34c4;border:1.5px solid var(--grape);border-radius:99px;padding:3px 8px;margin:0 2px;vertical-align:2px;white-space:nowrap}
+.unv{display:inline-block;font-size:12px;font-weight:700;background:var(--orange-l);color:#a4520a;border:1.5px solid var(--orange);border-radius:99px;padding:3px 8px;margin:0 2px;vertical-align:2px;white-space:nowrap}
+.fix{border:3px dashed var(--coral);background:var(--coral-l);border-radius:18px;padding:14px 18px;margin-top:20px}
+.fix b.h{color:#c43c3c}
+.fix p:last-child{margin-bottom:0}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.vs>*{min-width:0}
+.stat{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat .card{text-align:center}
+.stat .big{font-family:var(--round);font-size:34px;line-height:1.15;color:var(--c);display:block}
+.stat .big small{font-size:16px}
+.stat p{font-size:14.5px;margin:6px 0 0}
+.gates{display:grid;gap:14px}
+.gate{display:grid;grid-template-columns:64px 1fr;gap:14px;align-items:start;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px 16px;cursor:pointer;text-align:left;font:inherit;color:var(--ink);width:100%}
+.gate .n{font-family:var(--round);font-size:28px;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--c);color:#fff;border:3px solid var(--ink)}
+.gate h4{margin:2px 0;font-size:18px}
+.gate .more{display:none;margin-top:6px;font-size:15.5px}
+.gate[aria-expanded="true"]{background:var(--sun-l)}
+.gate[aria-expanded="true"] .more{display:block}
+.fly{display:grid;grid-template-columns:320px 1fr;gap:24px;align-items:center}
+.fly svg{width:100%;height:auto}
+.fly .node{cursor:pointer}
+.fly .node circle{transition:transform .2s}
+.fly .node.on circle{stroke-width:6}
+.flyout{background:#fff;border:3px solid var(--ink);border-radius:18px;padding:16px 18px;min-height:150px}
+.flyout h4{margin:0 0 6px;font-size:19px}
+.flips{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.flip{perspective:900px;min-height:200px;border:0;background:none;padding:0;cursor:pointer;font:inherit;color:var(--ink);text-align:left}
+.flip{display:block;width:100%}
+.flip .in{display:block;position:relative;width:100%;height:100%;min-height:200px;transition:transform .5s;transform-style:preserve-3d}
+.flip[aria-pressed="true"] .in{transform:rotateY(180deg)}
+.flip .fc,.flip .bc{position:absolute;inset:0;backface-visibility:hidden;border:3px solid var(--ink);border-radius:18px;padding:14px;display:flex;flex-direction:column;box-shadow:0 4px 0 var(--ink)}
+.flip .fc{background:#fff;align-items:center;justify-content:center;text-align:center}
+.flip .fc .ic{font-size:36px}
+.flip .fc b{font-family:var(--round);font-weight:400;font-size:17px;margin-top:6px}
+.flip .fc small{color:var(--ink-2);margin-top:6px}
+.flip .bc{background:var(--sky-l);transform:rotateY(180deg);font-size:14.5px;line-height:1.6;overflow:auto}
+.flip .fc b,.flip .fc small,.flip .fc .ic{display:block}
+.flip .bc b{display:block;font-size:16px;margin-bottom:4px}
+.tblw{overflow-x:auto}
+.ptbl{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:16px;overflow:hidden;background:#fff;min-width:640px}
+.ptbl th,.ptbl td{padding:10px 12px;border-bottom:2px solid var(--line);text-align:left;vertical-align:top;font-size:15px;line-height:1.6}
+.ptbl thead th{background:var(--blue);color:#fff;font-family:var(--round);font-weight:400}
+.ptbl tr:last-child td{border-bottom:0}
+.ind{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.ind .card{position:relative;padding-top:34px}
+.badge{position:absolute;top:-14px;left:18px;font-family:var(--round);font-size:14px;color:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:2px 12px;background:var(--c)}
+@media (max-width:1000px){.stat,.flips{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:820px){.vs,.fly,.ind{grid-template-columns:1fr}.fly svg{max-width:320px;margin:0 auto}}
+@media (max-width:420px){.stat{grid-template-columns:1fr}.flips{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.flip .in{transition:none}}
 </style>
 </head>
 <body>
 
-<nav>
-  <div class="wrap">
-    <a class="brand" href="#top"><span class="brand-dot"></span>NNPP 合作夥伴計畫</a>
-    <ul class="menu">
-      <li><a href="#market">市場</a></li>
-      <li><a href="#shift">轉型</a></li>
-      <li><a href="#partners">合作夥伴</a></li>
-      <li><a href="#journey">照護路徑</a></li>
-      <li><a href="#model">商業模式</a></li>
-      <li><a href="#science">科學基礎</a></li>
-      <li><a href="#tips">小常識</a></li>
-      <li><a href="#future">未來趨勢</a></li>
-    </ul>
-  </div>
-</nav>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+<symbol id="grandma" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="60" cy="14" r="13" fill="#d9dde8" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M24 60 C22 34 40 24 60 24 C80 24 98 34 96 60Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="60" cy="64" r="34" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M28 52 C40 40 80 40 92 52 C86 34 34 34 28 52Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="48" cy="64" r="4.5" fill="#1f2a44"/><circle cx="72" cy="64" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="62.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="62.6" r="1.4" fill="#fff"/>
+  <ellipse cx="39" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="81" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M51 80 Q60 88 69 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="grandpa" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#8a5cf6" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M52 100 L60 116 L68 100" fill="#fff" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="60" cy="62" r="36" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M26 56 C24 40 32 30 40 30 M94 56 C96 40 88 30 80 30" stroke="#1f2a44" stroke-width="3" fill="#eef1f7" stroke-linecap="round"/>
+  <path d="M27 52 C22 44 26 34 36 34 L36 52Z M93 52 C98 44 94 34 84 34 L84 52Z" fill="#eef1f7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="47" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/><circle cx="73" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M56 60 H64" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="47" cy="61" r="3.5" fill="#1f2a44"/><circle cx="73" cy="61" r="3.5" fill="#1f2a44"/>
+  <circle cx="48.2" cy="59.8" r="1.2" fill="#fff"/><circle cx="74.2" cy="59.8" r="1.2" fill="#fff"/>
+  <ellipse cx="38" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="82" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M50 80 Q60 88 70 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="heart" viewBox="0 0 120 120">
+  <path d="M60 104 C20 78 10 56 14 40 C18 22 42 16 60 36 C78 16 102 22 106 40 C110 56 100 78 60 104Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="48" cy="56" r="4.5" fill="#1f2a44"/><circle cx="72" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="54.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="54.6" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 注射筆寶寶 -->
+<symbol id="pen" viewBox="0 0 60 150">
+  <rect x="22" y="2" width="16" height="14" rx="4" fill="#9fb0d0" stroke="#1f2a44" stroke-width="3"/>
+  <rect x="10" y="14" width="40" height="110" rx="16" fill="#e8f4ff" stroke="#1f2a44" stroke-width="4"/>
+  <rect x="16" y="84" width="28" height="30" rx="8" fill="#ffc93c" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M30 124 V146" stroke="#1f2a44" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="23" cy="48" r="4" fill="#1f2a44"/><circle cx="37" cy="48" r="4" fill="#1f2a44"/>
+  <path d="M24 60 Q30 66 36 60" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="17" cy="56" rx="4" ry="2.5" fill="#ff9aa2"/><ellipse cx="43" cy="56" rx="4" ry="2.5" fill="#ff9aa2"/>
+</symbol>
+<!-- 餐盤 -->
+<symbol id="plate" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="54" fill="#fff" stroke="#1f2a44" stroke-width="4"/>
+  <circle cx="60" cy="60" r="40" fill="#f4f6fb" stroke="#c9d3e8" stroke-width="3"/>
+  <path d="M60 60 L60 22 A38 38 0 0 1 96 72Z" fill="#2bb88a"/>
+  <path d="M60 60 L96 72 A38 38 0 0 1 36 90Z" fill="#ff6b6b"/>
+  <path d="M60 60 L36 90 A38 38 0 0 1 60 22Z" fill="#ffc93c"/>
+</symbol>
+<!-- 手機 -->
+<symbol id="phone" viewBox="0 0 80 130">
+  <rect x="6" y="4" width="68" height="122" rx="14" fill="#2455c7" stroke="#1f2a44" stroke-width="4"/>
+  <rect x="14" y="18" width="52" height="88" rx="6" fill="#fff"/>
+  <path d="M20 84 L32 70 L42 76 L58 52" fill="none" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="40" cy="116" r="5" fill="#fff"/>
+</symbol>
+</defs>
+</svg>
 
-<!-- HERO -->
-<header class="hero" id="top">
-  <div class="blob" style="width:420px;height:420px;background:var(--sun-l);top:-120px;left:-120px"></div>
-  <div class="blob" style="width:360px;height:360px;background:var(--teal-l);bottom:-140px;right:-80px"></div>
+<header class="top">
   <div class="wrap">
-    <div>
-      <span class="pill"><i></i>Novo Nordisk Partner Program · NNPP</span>
-      <h1>諾和諾德<br><span class="hl">合作夥伴計畫</span><br><span class="grad">讓 GLP-1 成為健康平台</span></h1>
-      <p class="lead">以 GLP-1 藥物為核心，串連遠端醫療、臨床數據與 AI 行為干預，打造一個陪伴患者長期健康的數位生態系，從「賣一支藥」走向「經營一段健康旅程」。</p>
-      <div class="cta-row">
-        <a class="btn primary" href="#model">看懂商業模式 →</a>
-        <a class="btn ghost" href="#partners">認識合作夥伴</a>
-      </div>
-    </div>
-    <div class="hero-art">
-      <!-- Original cartoon: a smiling pen mascot at the center of an orbit of partners -->
-      <svg viewBox="0 0 480 480" aria-label="以 GLP-1 為中心的生態系插圖" role="img">
-        <g class="spin-slow">
-          <circle cx="240" cy="240" r="190" fill="none" stroke="#1d2445" stroke-width="2" stroke-dasharray="6 10" opacity=".35"/>
-        </g>
-        <circle cx="240" cy="240" r="120" fill="#ffffff" stroke="#1d2445" stroke-width="3"/>
-        <circle cx="240" cy="240" r="104" fill="#d6f6f1"/>
-        <!-- pen mascot -->
-        <g class="float">
-          <g transform="rotate(-18 240 240)">
-            <rect x="214" y="150" width="52" height="170" rx="24" fill="#2f9bff" stroke="#1d2445" stroke-width="4"/>
-            <rect x="214" y="250" width="52" height="40" fill="#ffc23d" stroke="#1d2445" stroke-width="4"/>
-            <rect x="228" y="134" width="24" height="22" rx="6" fill="#ff6b6b" stroke="#1d2445" stroke-width="4"/>
-            <path d="M232 320 L248 320 L240 346 Z" fill="#c9cdef" stroke="#1d2445" stroke-width="4" stroke-linejoin="round"/>
-            <circle cx="229" cy="200" r="6" fill="#1d2445"/><circle cx="251" cy="200" r="6" fill="#1d2445"/>
-            <circle cx="231" cy="198" r="2" fill="#fff"/><circle cx="253" cy="198" r="2" fill="#fff"/>
-            <path d="M228 216 Q240 228 252 216" fill="none" stroke="#1d2445" stroke-width="4" stroke-linecap="round"/>
-            <circle cx="220" cy="214" r="5" fill="#ff7ac2" opacity=".7"/><circle cx="260" cy="214" r="5" fill="#ff7ac2" opacity=".7"/>
-            <text x="240" y="277" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="15" fill="#1d2445">GLP-1</text>
-          </g>
-        </g>
-        <!-- phone -->
-        <g class="float d2">
-          <circle cx="92" cy="128" r="54" fill="#2f9bff"/>
-          <rect x="72" y="96" width="40" height="64" rx="8" fill="#fff" stroke="#1d2445" stroke-width="3"/>
-          <circle cx="92" cy="122" r="10" fill="#ff6b6b"/>
-          <rect x="80" y="138" width="24" height="4" rx="2" fill="#1d2445"/><rect x="80" y="146" width="16" height="4" rx="2" fill="#1d2445"/>
-        </g>
-        <!-- cloud/data -->
-        <g class="float d3">
-          <circle cx="392" cy="120" r="54" fill="#11b5a4"/>
-          <path d="M366 132 a14 14 0 0 1 4-27 a18 18 0 0 1 34-4 a13 13 0 0 1 14 22 z" fill="#fff" stroke="#1d2445" stroke-width="3"/>
-          <path d="M376 140 l8-8 l8 6 l12-14" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-        <!-- AI robot -->
-        <g class="float">
-          <circle cx="398" cy="364" r="54" fill="#7b5cff"/>
-          <rect x="374" y="344" width="48" height="40" rx="12" fill="#fff" stroke="#1d2445" stroke-width="3"/>
-          <circle cx="388" cy="362" r="5" fill="#1d2445"/><circle cx="408" cy="362" r="5" fill="#1d2445"/>
-          <path d="M390 374 h16" stroke="#1d2445" stroke-width="3" stroke-linecap="round"/>
-          <line x1="398" y1="344" x2="398" y2="332" stroke="#1d2445" stroke-width="3"/><circle cx="398" cy="330" r="5" fill="#ffc23d" stroke="#1d2445" stroke-width="2"/>
-        </g>
-        <!-- heart -->
-        <g class="float d2">
-          <circle cx="86" cy="360" r="54" fill="#ff6b6b"/>
-          <path d="M86 384 C60 366 62 342 76 340 C84 339 86 346 86 348 C86 346 88 339 96 340 C110 342 112 366 86 384Z" fill="#fff" stroke="#1d2445" stroke-width="3"/>
-          <path d="M70 360 h8 l4 -8 l6 16 l4 -8 h10" fill="none" stroke="#ff6b6b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-        <!-- sparkles -->
-        <path d="M240 28 l6 14 l14 6 l-14 6 l-6 14 l-6 -14 l-14 -6 l14 -6z" fill="#ffc23d"/>
-        <path d="M30 240 l4 9 l9 4 l-9 4 l-4 9 l-4 -9 l-9 -4 l9 -4z" fill="#7b5cff"/>
-        <path d="M452 244 l4 9 l9 4 l-9 4 l-4 9 l-4 -9 l-9 -4 l9 -4z" fill="#11b5a4"/>
-      </svg>
-    </div>
+    <a class="brand" href="https://www.gungho.idv.tw/KS/index.html" aria-label="回共好小學堂首頁">
+      <svg aria-hidden="true"><use href="#sprout"/></svg>
+      <span><b>共好小學堂</b><small>GROW &amp; LEARN TOGETHER</small></span>
+    </a>
+    <nav class="navpills" aria-label="章節">
+      <a href="#s1">市場</a><a href="#s2">角色轉型</a><a href="#s3">合作夥伴</a><a href="#s4">照護路徑</a><a href="#s5">商業模式</a><a href="#s6">科學原理</a><a href="#s7">小常識</a><a href="#s8">藥物比較</a><a href="#s9">新適應症</a><a href="#check">看診前清單</a><a href="#quiz">小測驗</a><a href="#refs">參考資料</a>
+    </nav>
+    <a class="back" href="https://www.gungho.idv.tw/KS/index.html">← 回小學堂</a>
   </div>
 </header>
 
-<!-- MARKET -->
-<section id="market">
+<main>
+<section class="hero">
+  <span class="blob" style="width:320px;height:320px;background:var(--sky-l);top:-90px;right:-60px"></span>
+  <span class="blob" style="width:220px;height:220px;background:var(--mint-l);bottom:30px;left:-70px"></span>
+  <span class="blob" style="width:140px;height:140px;background:var(--sun-l);top:40%;left:46%"></span>
   <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="kicker">01 · 市場</span>
-      <h2>GLP-1 市場的爆發式成長</h2>
-      <p>GLP-1 類藥物已是製藥產業成長最快的類別，諾和諾德穩坐領頭羊地位。</p>
+    <div>
+      <span class="tag">✦ 醫療新知小知識</span>
+      <h1>減重針背後的<span class="hl nw">新生意</span></h1>
+      <p class="lead">GLP-1 藥物從降血糖用到減重，成了全球最熱門的藥物之一。藥廠也開始把<b>遠距醫療、智慧注射筆數據、AI 營養工具</b>串在一起，從「賣一支藥」走向「經營一段健康旅程」。我們一起看懂<b>科學原理</b>，也看懂這門<b>生意</b>。</p>
+      <div class="btns">
+        <a class="btn pri" href="#start">開始認識 →</a>
+        <a class="btn" href="#s6">GLP-1 怎麼作用？</a>
+      </div>
+      <p class="meta">資料查核日：2026年10月13日｜資料來源：藥廠年報與投資人簡報、產業新聞、臨床試驗論文、國際糖尿病聯盟</p>
     </div>
-    <div class="stats">
-      <div class="stat s1 reveal">
-        <div class="big num"><span class="count" data-to="665">0</span><small>億美元</small></div>
-        <h3>2025 年全球市場規模</h3><p>年增率達 33%</p>
-        <svg class="emo" viewBox="0 0 80 80"><circle cx="40" cy="40" r="30" fill="#fff" opacity=".5"/><path d="M22 52 l12-12 l10 8 l16-20" fill="none" stroke="#1d2445" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M50 28 h10 v10" fill="none" stroke="#1d2445" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div class="stat s2 reveal">
-        <div class="big num"><span class="count" data-to="310">0</span><small>億美元</small></div>
-        <h3>諾和諾德 GLP-1 營收</h3><p>年增率約 26%</p>
-        <svg class="emo" viewBox="0 0 80 80"><circle cx="40" cy="40" r="30" fill="#fff" opacity=".3"/><circle cx="40" cy="40" r="16" fill="#ffc23d" stroke="#1d2445" stroke-width="4"/><text x="40" y="47" text-anchor="middle" font-size="18" font-weight="900" fill="#1d2445">$</text></svg>
-      </div>
-      <div class="stat s3 reveal">
-        <div class="big num"><span class="count" data-to="57">0</span><small>%</small></div>
-        <h3>肥胖症藥物增長</h3><p>專項營收年增率</p>
-        <svg class="emo" viewBox="0 0 80 80"><circle cx="40" cy="40" r="30" fill="#fff" opacity=".3"/><path d="M40 18 l0 40 M26 32 l14-14 l14 14" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div class="stat s4 reveal">
-        <div class="big num"><span class="count" data-to="55">0</span><small>%</small></div>
-        <h3>市場主導地位</h3><p>全球價值份額占比</p>
-        <svg class="emo" viewBox="0 0 80 80"><circle cx="40" cy="40" r="26" fill="#fff" opacity=".3"/><path d="M40 40 L40 14 A26 26 0 1 1 15 47 Z" fill="#fff"/></svg>
-      </div>
-    </div>
-
-    <div class="scale">
-      <div class="scale-card reveal">
-        <h4>🩸 糖尿病患者</h4>
-        <div class="num" style="font-size:34px;font-weight:800;color:var(--sun)">約 4,300 萬人</div>
-        <div class="bar"><span data-w="86%" style="background:linear-gradient(90deg,var(--sun),var(--coral))"></span></div>
-        <small>服務規模穩定成長</small>
-      </div>
-      <div class="scale-card reveal">
-        <h4>⚖️ 肥胖症患者</h4>
-        <div class="num" style="font-size:34px;font-weight:800;color:#6ff0e0">220 萬人 → 翻倍以上</div>
-        <div class="bar"><span data-w="44%" style="background:linear-gradient(90deg,var(--teal),var(--sky))"></span></div>
-        <small>預期隨產能開出大幅跳升，增長率超過 100%</small>
-      </div>
-    </div>
-    <div class="insight reveal">
-      <svg viewBox="0 0 60 60"><circle cx="30" cy="26" r="18" fill="#ffc23d" stroke="#1d2445" stroke-width="3"/><rect x="22" y="42" width="16" height="10" rx="3" fill="#fff" stroke="#1d2445" stroke-width="3"/><path d="M24 26 q6 -8 12 0" fill="none" stroke="#1d2445" stroke-width="3" stroke-linecap="round"/></svg>
-      <span>關鍵洞察：以 GLP-1 類藥物為核心平台建立數位健康生態系，帶動週邊健康促進服務、商品與創新。</span>
-    </div>
-  </div>
-</section>
-
-<!-- SHIFT -->
-<section id="shift">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="kicker">02 · 角色轉型</span>
-      <h2>從「藥品供應者」<br>到「慢病照護平台協調者」</h2>
-      <p>NNPP 把 GLP-1 治療與數位支持服務整合在一起，藥廠的角色從出貨端走進患者的日常。</p>
-    </div>
-    <div class="shift">
-      <div class="shift-card old reveal">
-        <svg viewBox="0 0 160 120"><rect x="30" y="40" width="100" height="70" rx="10" fill="#f1efe9" stroke="#1d2445" stroke-width="3"/><path d="M30 60 h100" stroke="#1d2445" stroke-width="3"/><rect x="66" y="52" width="28" height="16" rx="4" fill="#ffc23d" stroke="#1d2445" stroke-width="3"/><circle cx="62" cy="86" r="4" fill="#1d2445"/><circle cx="98" cy="86" r="4" fill="#1d2445"/><path d="M70 98 h20" stroke="#1d2445" stroke-width="3" stroke-linecap="round"/></svg>
-        <h3>過去：藥品供應者</h3>
-        <ul><li>單次處方、單次銷售</li><li>價值止於交貨那一刻</li><li>專利到期即面臨挑戰</li></ul>
-      </div>
-      <div class="arrow-big">➜</div>
-      <div class="shift-card new reveal">
-        <svg viewBox="0 0 160 120"><circle cx="80" cy="60" r="22" fill="#7b5cff" stroke="#1d2445" stroke-width="3"/><circle cx="73" cy="56" r="3" fill="#fff"/><circle cx="87" cy="56" r="3" fill="#fff"/><path d="M72 66 q8 7 16 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><g stroke="#1d2445" stroke-width="3"><line x1="80" y1="38" x2="80" y2="16"/><line x1="102" y1="60" x2="128" y2="60"/><line x1="58" y1="60" x2="32" y2="60"/><line x1="80" y1="82" x2="80" y2="104"/></g><circle cx="80" cy="12" r="9" fill="#ff6b6b" stroke="#1d2445" stroke-width="3"/><circle cx="134" cy="60" r="9" fill="#11b5a4" stroke="#1d2445" stroke-width="3"/><circle cx="26" cy="60" r="9" fill="#2f9bff" stroke="#1d2445" stroke-width="3"/><circle cx="80" cy="108" r="9" fill="#ffc23d" stroke="#1d2445" stroke-width="3"/></svg>
-        <h3>現在：照護平台協調者</h3>
-        <ul><li>藥物 + 數據 + 平台深度耦合</li><li>長期陪伴、持續產生價值</li><li>以真實世界數據建立護城河</li></ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PARTNERS -->
-<section id="partners">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="kicker">03 · 三大支柱</span>
-      <h2>合作夥伴與方法策略</h2>
-      <p>諾和諾德透過 NNPP 攜手三類夥伴，構建完整的數位健康生態系。點選下方標籤看看各自扮演的角色。</p>
-    </div>
-    <div class="tabs" role="tablist">
-      <button class="tab" role="tab" aria-selected="true" data-c="teal" data-t="p1"><span class="d" style="background:var(--teal)"></span>Glooko 臨床數據</button>
-      <button class="tab" role="tab" aria-selected="false" data-c="sky" data-t="p2"><span class="d" style="background:var(--sky)"></span>Ro 遠端醫療</button>
-      <button class="tab" role="tab" aria-selected="false" data-c="violet" data-t="p3"><span class="d" style="background:var(--violet)"></span>AI 行為干預</button>
-    </div>
-
-    <div class="panel active" id="p1" role="tabpanel">
-      <div class="panel-art" style="background:var(--teal-l)">
-        <svg viewBox="0 0 240 240"><rect x="40" y="40" width="160" height="120" rx="16" fill="#fff" stroke="#1d2445" stroke-width="4"/><path d="M60 130 l30-34 l24 20 l26-40 l30 30" fill="none" stroke="#11b5a4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="140" cy="76" r="7" fill="#ff6b6b"/><rect x="100" y="160" width="40" height="18" fill="#1d2445"/><rect x="76" y="176" width="88" height="10" rx="5" fill="#1d2445"/><g class="float"><rect x="162" y="120" width="22" height="80" rx="11" fill="#2f9bff" stroke="#1d2445" stroke-width="4" transform="rotate(25 173 160)"/><path d="M196 110 q10 -10 20 0 M202 102 q14 -14 28 0" fill="none" stroke="#11b5a4" stroke-width="4" stroke-linecap="round"/></g></svg>
-      </div>
-      <div class="panel-body">
-        <span class="tag" style="background:var(--teal-l);color:#0b8478">臨床數據管理</span><span class="tag" style="background:var(--sun-l)">精準數據驅動</span>
-        <h3>Glooko｜智慧筆 × 雲端 × 醫師</h3>
-        <p>整合諾和諾德智慧型胰島素筆（NovoPen 6 / Echo Plus），透過 NFC／藍牙把精準注射數據同步至雲端，再結合 CGM（連續血糖監測）數據，協助醫師進行遠端病患管理（RPM）。</p>
-        <div class="feat">
-          <div style="background:var(--teal-l)"><h4>🥗 智慧飲食追蹤</h4><p>支援語音輸入、條碼掃描與巨量營養素總結，整合 Biosense 酮體數據以了解脂肪代謝。</p></div>
-          <div style="background:var(--sky-l)"><h4>📊 臨床整合儀表板</h4><p>交叉分析運動、壓力、睡眠與血糖用藥數據，讓數位監測與臨床決策深度整合。</p></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel" id="p2" role="tabpanel">
-      <div class="panel-art" style="background:var(--sky-l)">
-        <svg viewBox="0 0 240 240"><circle cx="100" cy="96" r="34" fill="#ffd9b8" stroke="#1d2445" stroke-width="4"/><path d="M66 90 q34 -46 68 0" fill="#1d2445"/><circle cx="88" cy="100" r="4" fill="#1d2445"/><circle cx="112" cy="100" r="4" fill="#1d2445"/><path d="M90 114 q10 8 20 0" fill="none" stroke="#1d2445" stroke-width="3" stroke-linecap="round"/><path d="M46 196 q54 -80 108 0 z" fill="#fff" stroke="#1d2445" stroke-width="4"/><path d="M86 150 q0 26 14 26 q14 0 14 -26" fill="none" stroke="#2f9bff" stroke-width="4"/><circle cx="114" cy="176" r="6" fill="#2f9bff"/><g class="float"><rect x="150" y="120" width="60" height="44" rx="8" fill="#ffc23d" stroke="#1d2445" stroke-width="4"/><path d="M150 134 h60" stroke="#1d2445" stroke-width="4"/><path d="M174 120 v14 M186 120 v14" stroke="#1d2445" stroke-width="3"/><path d="M168 186 h24" stroke="#1d2445" stroke-width="4" stroke-linecap="round"/><circle cx="160" cy="176" r="8" fill="#fff" stroke="#1d2445" stroke-width="4"/><circle cx="200" cy="176" r="8" fill="#fff" stroke="#1d2445" stroke-width="4"/></g></svg>
-      </div>
-      <div class="panel-body">
-        <span class="tag" style="background:var(--sky-l);color:#1d6fc2">遠端醫療與近端配送</span><span class="tag" style="background:var(--coral-l)">全人照護模式</span>
-        <h3>Ro｜端到端的減重服務</h3>
-        <p>透過 Ro 的「Body Program」提供一條龍的減重服務：線上醫師諮詢、GLP-1 藥物處方與配送，以及結合數據追蹤的行為改變輔導。</p>
-        <div class="feat">
-          <div style="background:var(--coral-l)"><h4>🏃 營養與生活型態</h4><p>專業營養教育課程，涵蓋運動、睡眠等生活型態改變建議與行為科學指導。</p></div>
-          <div style="background:var(--sun-l)"><h4>⚖️ 智慧監測工具</h4><p>智慧體重計等硬體自動回傳數據給醫療團隊，即時追蹤進度。</p></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel" id="p3" role="tabpanel">
-      <div class="panel-art" style="background:var(--violet-l)">
-        <svg viewBox="0 0 240 240"><ellipse cx="120" cy="150" rx="86" ry="40" fill="#fff" stroke="#1d2445" stroke-width="4"/><ellipse cx="120" cy="146" rx="66" ry="28" fill="#f4f1ea"/><circle cx="96" cy="142" r="14" fill="#11b5a4"/><path d="M118 132 q18 -6 30 8 q-12 14 -30 8 z" fill="#ff6b6b"/><circle cx="140" cy="158" r="8" fill="#ffc23d"/><g class="float"><rect x="80" y="30" width="80" height="60" rx="14" fill="#7b5cff" stroke="#1d2445" stroke-width="4"/><circle cx="104" cy="58" r="8" fill="#fff"/><circle cx="136" cy="58" r="8" fill="#fff"/><circle cx="106" cy="58" r="3" fill="#1d2445"/><circle cx="138" cy="58" r="3" fill="#1d2445"/><path d="M110 76 h20" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M120 90 l-30 40 M120 90 l30 40" stroke="#7b5cff" stroke-width="3" stroke-dasharray="4 5"/></g><path d="M188 100 l5 11 l11 5 l-11 5 l-5 11 l-5 -11 l-11 -5 l11 -5z" fill="#ffc23d"/></svg>
-      </div>
-      <div class="panel-body">
-        <span class="tag" style="background:var(--violet-l);color:var(--violet)">行為干預與營養</span><span class="tag" style="background:var(--teal-l)">數位教練</span>
-        <h3>AI 應用｜掃一下餐盤就懂你</h3>
-        <p>合作開發 AI 影像識別食物技術：掃描餐盤即可監測蛋白質攝取，預防減重期間的肌肉流失；再透過數位教練提升患者的用藥依從性與生活品質（Quality of Life）。</p>
-        <div class="feat">
-          <div style="background:var(--violet-l)"><h4>📸 餐盤影像辨識</h4><p>自動辨識食物內容，追蹤蛋白質等關鍵營養素攝取。</p></div>
-          <div style="background:var(--teal-l)"><h4>💬 數位教練陪伴</h4><p>個人化提醒與鼓勵，降低中斷用藥、穩定長期療效。</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- JOURNEY -->
-<section id="journey">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="kicker">04 · 生態系架構</span>
-      <h2>一條完整的照護與給付路徑</h2>
-      <p>前端由 Ro 協助患者跨過保險門檻，中長期由 Glooko 以臨床成效證明價值，中間串起三道給付審查關卡。</p>
-    </div>
-    <div class="journey">
-      <div class="lane ro reveal">
-        <h3>🔵 Ro <span>前端管理</span></h3>
-        <ul>
-          <li>保險查核與事前授權（PA）提交</li>
-          <li>BMI／共病資格審查</li>
-          <li>現金支付或 NovoCare 計畫導引</li>
-          <li>提供結構化資料，協助保險判斷給付</li>
-        </ul>
-      </div>
-      <div class="steps">
-        <div class="step reveal"><span class="n" style="background:var(--sky)">1</span><h4>初始給付審核</h4><p>依 BMI、HbA1c 及既往治療紀錄，嚴格控管用藥資格。</p></div>
-        <div class="step reveal"><span class="n" style="background:var(--violet)">2</span><h4>續用成效審查</h4><p>3–6 個月觀察期：體重達標、依從性、肌肉流失評估。</p></div>
-        <div class="step reveal"><span class="n" style="background:var(--teal)">3</span><h4>長期風險管理</h4><p>監控停藥後體重維持，評估心血管事件等總醫療成本。</p></div>
-      </div>
-      <div class="lane gl reveal">
-        <h3>🟢 Glooko <span>中長期臨床支持</span></h3>
-        <ul>
-          <li>串接血糖機、CGM、活動與飲食數據</li>
-          <li>提早偵測控制不佳或低血糖風險</li>
-          <li>以 HbA1c 改善、急診率降低證明成效</li>
-          <li>費用由保險公司或醫療體系支付</li>
-        </ul>
-      </div>
-    </div>
-    <p class="journey-note reveal">每一段旅程都在產生數據，數據又回過頭來支持下一次給付決策。</p>
-  </div>
-</section>
-
-<!-- MODEL -->
-<section id="model">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="kicker">05 · 商業模式</span>
-      <h2>類訂閱模式：重新定義商業價值</h2>
-      <p>患者不再只是購買單次藥物，而是進入包含遠端諮詢、數據監控與營養管理的完整健康管理系統。</p>
-    </div>
-    <div class="model">
-      <div class="wheel-box reveal">
-        <svg viewBox="0 0 400 400" aria-hidden="true">
-          <defs><marker id="ah" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1d2445"/></marker></defs>
-          <g class="spin-slow"><circle cx="200" cy="200" r="150" fill="none" stroke="#ffc23d" stroke-width="22" opacity=".45"/></g>
-          <path d="M258 62 A150 150 0 0 1 338 142" fill="none" stroke="#1d2445" stroke-width="4" marker-end="url(#ah)"/>
-          <path d="M338 258 A150 150 0 0 1 258 338" fill="none" stroke="#1d2445" stroke-width="4" marker-end="url(#ah)"/>
-          <path d="M142 338 A150 150 0 0 1 62 258" fill="none" stroke="#1d2445" stroke-width="4" marker-end="url(#ah)"/>
-          <path d="M62 142 A150 150 0 0 1 142 62" fill="none" stroke="#1d2445" stroke-width="4" marker-end="url(#ah)"/>
-        </svg>
-        <div class="node n1" data-i="0">藥物療效<small>建立信任基礎</small></div>
-        <div class="node n2" data-i="1">數據回饋<small>強化議價能力</small></div>
-        <div class="node n3" data-i="2">平台黏著<small>持續收益流</small></div>
-        <div class="node n4" data-i="3">價值支付<small>預防即紅利</small></div>
-        <div class="hub">藥物<br>＋數據<br>＋平台</div>
-      </div>
-      <div class="model-text reveal">
-        <h3 id="wheel-title">四步飛輪，越轉越快</h3>
-        <p id="wheel-desc" style="color:var(--ink-soft);min-height:3.5em">把滑鼠移到左邊的圓圈上，看看每一步如何推動下一步。</p>
-        <div class="leap"><b>單次銷售</b><span style="font-size:24px">➜</span><b>生態系獲利</b></div>
-        <ul>
-          <li>GLP-1 穩定療效，建立患者信任的基礎</li>
-          <li>真實世界數據（RWD）強化與支付方的議價能力</li>
-          <li>長期契約與服務黏著，創造持續收益流</li>
-          <li>預防醫療省下的成本，轉化為經濟紅利</li>
-        </ul>
-        <div class="moat">
-          <svg viewBox="0 0 60 60"><path d="M10 50 V24 l6-6 l6 6 V50 M22 30 h16 M38 50 V24 l6-6 l6 6 V50 M8 50 h44" fill="none" stroke="#ffc23d" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><path d="M4 56 q8-6 16 0 t16 0 t16 0" fill="none" stroke="#2f9bff" stroke-width="4" stroke-linecap="round"/></svg>
-          <span><b>數據護城河：</b>把產品生命週期從專利期，延伸到數據生態系的長期競爭優勢。</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SCIENCE -->
-<section id="science">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="kicker">06 · 科學基礎</span>
-      <h2>為什麼 GLP-1 撐得起一個平台？</h2>
-      <p>GLP-1 由迴腸 L 細胞在進食後分泌，與 GIP 並稱兩大 incretin 荷爾蒙。它的作用遍及全身，也是生態系能向外延伸的理由。</p>
-    </div>
-    <div class="sci">
-      <div class="sci-card reveal">
-        <h3>🧬 生理學基礎</h3>
-        <div class="chip-row">
-          <div class="chip" style="background:var(--coral-l)"><b>⏱ 極短半衰期</b>天然 GLP-1 半衰期不到 2 分鐘，由 DPP-4 酶快速降解</div>
-          <div class="chip" style="background:var(--sky-l)"><b>🗺 受體廣泛分佈</b>胰臟、腦部、心臟、腎臟、肝臟都有 GLP-1R</div>
-          <div class="chip" style="background:var(--sun-l)"><b>🤝 雙重 Incretin</b>與 GIP 協同調控餐後胰島素分泌</div>
-        </div>
-        <div class="venn">
-          <svg viewBox="0 0 400 190" role="img" aria-label="β 細胞與 α 細胞的協同作用">
-            <circle cx="150" cy="95" r="82" fill="#11b5a4" opacity=".75"/>
-            <circle cx="250" cy="95" r="82" fill="#7b5cff" opacity=".7"/>
-            <text x="112" y="86" text-anchor="middle" font-weight="900" font-size="18" fill="#fff">β 細胞</text>
-            <text x="112" y="108" text-anchor="middle" font-size="12" fill="#fff">促胰島素分泌</text>
-            <text x="112" y="124" text-anchor="middle" font-size="12" fill="#fff">（血糖依賴性）</text>
-            <text x="288" y="86" text-anchor="middle" font-weight="900" font-size="18" fill="#fff">α 細胞</text>
-            <text x="288" y="108" text-anchor="middle" font-size="12" fill="#fff">高血糖時抑制升糖素</text>
-            <text x="288" y="124" text-anchor="middle" font-size="12" fill="#fff">低血糖風險低</text>
-            <text x="200" y="92" text-anchor="middle" font-weight="900" font-size="15" fill="#fff">交集</text>
-            <text x="200" y="110" text-anchor="middle" font-size="11" fill="#fff">協同調節</text>
-          </svg>
-        </div>
-        <div class="safe">✅ <b>血糖依賴性 = 更安全：</b>只在血糖升高時才誘導胰島素釋放，低血糖風險低，治療安全窗口遠優於傳統磺醯尿素類藥物。</div>
-      </div>
-      <div class="sci-card reveal">
-        <h3>🫀 周邊代謝與心血管保護</h3>
-        <div class="organs">
-          <div class="organ" style="background:var(--sun-l)">
-            <svg viewBox="0 0 48 48"><path d="M14 8 q-6 14 4 22 q8 6 4 14 h10 q4 -10 -4 -16 q-8 -6 -2 -20z" fill="#ff9f7a" stroke="#1d2445" stroke-width="2.5"/></svg>
-            <div><b>胃腸道</b><p>延緩胃排空，降低餐後血糖峰值，延長飽足感</p></div>
-          </div>
-          <div class="organ" style="background:var(--coral-l)">
-            <svg viewBox="0 0 48 48"><circle cx="16" cy="20" r="9" fill="#ffd36e" stroke="#1d2445" stroke-width="2.5"/><circle cx="30" cy="16" r="8" fill="#ffd36e" stroke="#1d2445" stroke-width="2.5"/><circle cx="26" cy="32" r="10" fill="#ffd36e" stroke="#1d2445" stroke-width="2.5"/></svg>
-            <div><b>脂肪組織</b><p>抗發炎、促進脂解，改善脂肪分佈與胰島素敏感性</p></div>
-          </div>
-          <div class="organ" style="background:var(--teal-l)">
-            <svg viewBox="0 0 48 48"><path d="M6 20 q6 -12 26 -10 q12 2 10 12 q-2 14 -18 16 q-14 0 -18 -18z" fill="#c2593f" stroke="#1d2445" stroke-width="2.5"/></svg>
-            <div><b>肝臟</b><p>抑制肝糖新生（gluconeogenesis），降低空腹血糖基礎值</p></div>
-          </div>
-          <div class="organ" style="background:var(--violet-l)">
-            <svg viewBox="0 0 48 48"><path d="M24 42 C6 30 6 14 16 12 C21 11 24 15 24 17 C24 15 27 11 32 12 C42 14 42 30 24 42Z" fill="#ff6b6b" stroke="#1d2445" stroke-width="2.5"/><path d="M12 26 h6 l3 -5 l4 10 l3 -5 h8" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg>
-            <div><b>血脂與心血管</b><p>LDL −0.16 mmol/L、總膽固醇 −0.48 mmol/L，改善心血管風險因子</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TIPS -->
-<section id="tips">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="kicker">07 · GLP-1 小常識</span>
-      <h2>GLP-1 小常識：<br>一次看懂這顆明星分子</h2>
-      <p>把滑鼠移到卡片上（手機請點一下），翻開答案。</p>
-    </div>
-    <div class="flips">
-      <button class="flip reveal" type="button"><div class="flip-in">
-        <div class="face front f-c"><span class="ico">🧪</span><span class="q">GLP-1 到底<br>是什麼？</span><span class="hint">翻開看看 ↻</span></div>
-        <div class="face back"><b>腸道分泌的「飯後荷爾蒙」</b>全名 Glucagon-like peptide-1，由腸道 L 細胞在進食後分泌，屬於 incretin 荷爾蒙，最早被開發成第二型糖尿病的治療藥物。</div>
-      </div></button>
-      <button class="flip reveal" type="button"><div class="flip-in">
-        <div class="face front f-s"><span class="ico">⏱️</span><span class="q">身體自己做的 GLP-1<br>能撐多久？</span><span class="hint">翻開看看 ↻</span></div>
-        <div class="face back"><b>不到 2 分鐘！</b>天然 GLP-1 很快就被 DPP-4 酶分解掉。藥物版本經過改造，才能延長作用時間，做到每日一次甚至每週一次給藥。</div>
-      </div></button>
-      <button class="flip reveal" type="button"><div class="flip-in">
-        <div class="face front f-t"><span class="ico">🍽️</span><span class="q">為什麼用了之後<br>比較吃不下？</span><span class="hint">翻開看看 ↻</span></div>
-        <div class="face back"><b>大腦和腸胃一起喊「飽了」</b>GLP-1 會作用在下視丘與腦幹的飽足中樞，同時透過迷走神經延緩胃排空，飽足感來得更早、維持更久。</div>
-      </div></button>
-      <button class="flip reveal" type="button"><div class="flip-in">
-        <div class="face front f-v"><span class="ico">🩸</span><span class="q">會不會讓血糖<br>掉得太低？</span><span class="hint">翻開看看 ↻</span></div>
-        <div class="face back"><b>風險很低，因為它「看血糖辦事」</b>只有血糖升高時才促進胰島素分泌、抑制升糖素；血糖正常或偏低時，作用會自動放鬆。這是 GLP-1 安全性的核心機制。</div>
-      </div></button>
-      <button class="flip reveal" type="button"><div class="flip-in">
-        <div class="face front f-b"><span class="ico">❤️</span><span class="q">對心臟<br>也有好處嗎？</span><span class="hint">翻開看看 ↻</span></div>
-        <div class="face back"><b>MACE 風險降低 14–20%</b>多項心血管結果試驗（CVOTs）顯示，GLP-1 受體促效劑能降低心肌梗塞、中風與心血管死亡等主要心血管不良事件的風險。</div>
-      </div></button>
-      <button class="flip reveal" type="button"><div class="flip-in">
-        <div class="face front f-c"><span class="ico">🛡️</span><span class="q">它是怎麼<br>保護血管的？</span><span class="hint">翻開看看 ↻</span></div>
-        <div class="face back"><b>三重保護機制</b>① 抑制 NF-κB／JAK-STAT 發炎路徑<br>② 心肌缺血預處理（PKG／PKCε／ERK1/2）<br>③ 促進 NO 生成，改善血管內皮功能</div>
-      </div></button>
-      <button class="flip reveal" type="button"><div class="flip-in">
-        <div class="face front f-s"><span class="ico">🧠</span><span class="q">只能用來<br>治糖尿病嗎？</span><span class="hint">翻開看看 ↻</span></div>
-        <div class="face back"><b>早就不只了</b>適應症已擴展到肥胖症、心血管疾病，並持續探索睡眠呼吸中止、脂肪肝炎、骨關節炎，以及阿茲海默症、帕金森氏症等神經退化疾病。</div>
-      </div></button>
-      <button class="flip reveal" type="button"><div class="flip-in">
-        <div class="face front f-t"><span class="ico">🌏</span><span class="q">全世界有多少人<br>需要它？</span><span class="hint">翻開看看 ↻</span></div>
-        <div class="face back"><b>糖尿病患者超過 4.22 億人</b>GLP-1 受體促效劑的崛起，正在重新定義代謝疾病的治療方式，從「控制血糖」走向「多系統代謝保護」。</div>
-      </div></button>
-    </div>
-
-    <div class="tips-row">
-      <div class="t-card reveal">
-        <h3>🧠 大腦裡的「飽足開關」</h3>
-        <p>GLP-1 讓人少吃，不是靠意志力，而是三個部位接力傳送「吃飽了」的訊號。</p>
-        <div class="brain-wrap">
-          <svg viewBox="0 0 190 190" role="img" aria-label="大腦卡通插圖">
-            <g class="float">
-              <path d="M40 100 q-22 -6 -16 -30 q4 -22 28 -22 q8 -22 34 -18 q20 -14 42 4 q26 -2 30 22 q22 10 10 34 q4 26 -24 28 q-10 18 -34 10 q-18 14 -38 0 q-28 4 -32 -28z" fill="#ffb3d1" stroke="#1d2445" stroke-width="4"/>
-              <path d="M62 52 q10 14 0 26 M96 36 q-6 20 8 30 M130 48 q-12 14 -2 28 M70 98 q16 -8 30 4 q14 -12 30 -2" fill="none" stroke="#1d2445" stroke-width="3" stroke-linecap="round"/>
-              <circle cx="78" cy="118" r="6" fill="#1d2445"/><circle cx="116" cy="118" r="6" fill="#1d2445"/>
-              <circle cx="80" cy="116" r="2" fill="#fff"/><circle cx="118" cy="116" r="2" fill="#fff"/>
-              <path d="M86 134 q11 10 22 0" fill="none" stroke="#1d2445" stroke-width="4" stroke-linecap="round"/>
-              <path d="M90 156 v22" stroke="#1d2445" stroke-width="4"/>
-              <rect x="68" y="166" width="44" height="18" rx="9" fill="#11b5a4" stroke="#1d2445" stroke-width="3"/>
-              <text x="90" y="179" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">飽了！</text>
-            </g>
-          </svg>
-          <ol class="brain-steps">
-            <li style="background:var(--coral-l)"><b>下視丘弓狀核</b>活化 POMC 神經元、抑制 AgRP，送出強烈飽足訊號</li>
-            <li style="background:var(--sun-l)"><b>腦幹 NTS</b>活化血清素神經元，進一步壓低食慾</li>
-            <li style="background:var(--teal-l)"><b>迷走神經</b>延緩胃排空，讓飽腹感持續更久</li>
-          </ol>
-        </div>
-      </div>
-      <div class="t-card reveal">
-        <h3>🔑 受體開關打開後的四條路</h3>
-        <p>GLP-1 接上受體後，會同時觸發多條下游訊號，各自負責不同工作。</p>
-        <div class="receptor">
-          <svg viewBox="0 0 52 52"><rect x="4" y="30" width="44" height="8" rx="4" fill="#1d2445"/><path d="M18 30 v-12 a8 8 0 0 1 16 0 v12" fill="#ffc23d" stroke="#1d2445" stroke-width="3"/><circle cx="26" cy="9" r="6" fill="#ff6b6b" stroke="#1d2445" stroke-width="3"/></svg>
-          <span>GLP-1（紅色小球）＋ GLP-1R 受體 → 啟動訊號級聯</span>
-        </div>
-        <div class="path">
-          <div style="background:var(--coral-l);border-color:var(--coral)"><b>cAMP / PKA</b><p>最核心的降糖路徑，負責「看血糖」分泌胰島素</p></div>
-          <div style="background:var(--teal-l);border-color:var(--teal)"><b>PI3K / Akt</b><p>促進 β 細胞存活與增殖，對抗凋亡、保住胰島功能</p></div>
-          <div style="background:var(--sky-l);border-color:var(--sky)"><b>MAPK / ERK</b><p>調控基因表現與細胞生長分化，參與長期代謝適應</p></div>
-          <div style="background:var(--violet-l);border-color:var(--violet)"><b>AMPK</b><p>作用於下視丘，調節產熱與能量消耗，是體重控制的關鍵</p></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="drugs reveal">
-      <h3>💊 主要 GLP-1 藥物比一比</h3>
-      <p>從每日一針到每週一針，從單一受體到雙重促效，藥物一代比一代強。</p>
-      <div class="swipe">👉 表格可左右滑動</div>
-      <div class="tbl-scroll">
-        <table class="dt">
-          <thead><tr><th>藥物</th><th>給藥頻率</th><th>HbA1c 下降</th><th>體重下降</th><th>特色／核准</th></tr></thead>
-          <tbody>
-            <tr><td><span class="dot" style="background:var(--sky)"></span>Liraglutide</td><td>每日一次</td><td>−1.0~1.5%</td><td>−3~5 kg</td><td>LEADER 試驗，心血管適應症核准</td></tr>
-            <tr><td><span class="dot" style="background:var(--teal)"></span>Semaglutide</td><td>每週一次</td><td>−1.5~1.8%</td><td><div class="wbar"><i style="width:60px"></i>−10~15%</div></td><td>SELECT 試驗，肥胖合併心血管核准</td></tr>
-            <tr class="best"><td><span class="dot" style="background:var(--coral)"></span>Tirzepatide<span class="badge">最佳</span></td><td>每週一次</td><td><b>−2.1%</b></td><td><div class="wbar"><i style="width:96px"></i><b>−22%</b></div></td><td>雙重 GIP／GLP-1；2024 年 FDA 核准用於 OSA</td></tr>
-            <tr><td><span class="dot" style="background:var(--violet)"></span>CagriSema</td><td>每週一次</td><td>研究中</td><td>−14.03 kg</td><td>Cagrilintide＋Semaglutide 複合製劑</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="drug-note">💡 Tirzepatide 是首個雙重 GIP／GLP-1 促效劑，HbA1c 下降與體重控制兩項表現都最好。表中數據為不同試驗結果整理，僅供概念比較。</div>
-    </div>
-  </div>
-</section>
-
-<!-- FUTURE -->
-<section id="future">
-  <div class="blob" style="width:380px;height:380px;background:var(--pink);opacity:.35;top:-120px;right:-100px;z-index:0"></div>
-  <div class="wrap" style="position:relative">
-    <div class="sec-head reveal">
-      <span class="kicker">08 · 未來趨勢</span>
-      <h2>新興適應症與研究前沿</h2>
-      <p>每多一個適應症，生態系就多一群可以服務的患者與一組新的合作機會。</p>
-    </div>
-    <div class="future">
-      <div class="f-col reveal">
-        <h3>🌱 擴展中的臨床適應症</h3>
-        <div class="ind"><span class="n">1</span><div><b>阻塞性睡眠呼吸中止（OSA）</b><p>Tirzepatide 於 2024 年獲 FDA 核准，為首個非 CPAP 的藥物治療</p></div></div>
-        <div class="ind"><span class="n">2</span><div><b>MASH 代謝相關脂肪性肝炎</b><p>多項試驗顯示肝臟纖維化及炎症指標顯著改善</p></div></div>
-        <div class="ind"><span class="n">3</span><div><b>骨關節炎</b><p>腸-關節軸理論：抗發炎效應減輕關節疼痛與退化</p></div></div>
-        <div class="ind"><span class="n">4</span><div><b>神經退化疾病</b><p>阿茲海默症、帕金森氏症的神經保護潛力備受關注</p></div></div>
-      </div>
-      <div class="f-col reveal">
-        <h3>🚀 下一代研究前沿</h3>
-        <div class="frontier"><b>三重促效劑 Retatrutide</b><p>GLP-1／GIP／Glucagon 三重受體促效劑，Phase 2 數據顯示體重下降超過 24%</p></div>
-        <div class="frontier"><b>口服劑型開發</b><p>口服 Semaglutide 已核准，更多口服 GLP-1 製劑持續研發，提升用藥依從性</p></div>
-        <div class="frontier"><b>青少年族群</b><p>兒科肥胖治療的新興方向，安全性與長期效益研究進行中</p></div>
-      </div>
-    </div>
-    <div class="paradigm reveal"><span>單一血糖控制</span> ➜ <span>多系統代謝保護</span><br><small style="font-weight:500;font-size:16px;opacity:.9">全面性治療典範轉移</small></div>
-  </div>
-</section>
-
-<!-- CLINIC -->
-<section id="clinic">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="kicker">09 · 臨床實踐</span>
-      <h2>代謝性疾病管理的全能型工具</h2>
-      <p>GLP-1RAs 經由 GPCR 路徑精準調控胰島功能、中樞食慾及多器官炎症，已從降糖藥躍升為代謝性疾病管理的核心治療。</p>
-    </div>
-    <div class="clinic">
-      <div class="c-card reveal" style="border-color:var(--coral)">
-        <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#ffe3e1"/><path d="M32 48 C14 36 14 20 24 18 C29 17 32 21 32 23 C32 21 35 17 40 18 C50 20 50 36 32 48Z" fill="#ff6b6b" stroke="#1d2445" stroke-width="2.5"/><path d="M26 30 h12 M32 24 v12" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
-        <h3>早期介入心血管高風險族群</h3>
-        <p>合併心血管疾病、心衰竭高風險或慢性腎臟病（CKD）的第二型糖尿病患者，優先考慮具 MACE 降低證據的長效 GLP-1RAs。</p>
-      </div>
-      <div class="c-card reveal" style="border-color:var(--teal)">
-        <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#d6f6f1"/><rect x="16" y="22" width="32" height="26" rx="8" fill="#fff" stroke="#1d2445" stroke-width="2.5"/><path d="M24 32 a8 8 0 0 1 16 0" fill="none" stroke="#11b5a4" stroke-width="3"/><path d="M32 32 l4 -5" stroke="#1d2445" stroke-width="2.5" stroke-linecap="round"/></svg>
-        <h3>體重管理：依目標選擇藥物</h3>
-        <p>依預期減重目標選藥。Tirzepatide 或高劑量 Semaglutide（2.4 mg）目前提供最強的非手術減重效益（＞20%）。</p>
-      </div>
-      <div class="c-card reveal" style="border-color:var(--sun)">
-        <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#fff1c9"/><path d="M16 46 h8 v-8 h8 v-8 h8 v-8 h8" fill="none" stroke="#1d2445" stroke-width="3" stroke-linejoin="round"/><circle cx="48" cy="20" r="5" fill="#ffc23d" stroke="#1d2445" stroke-width="2.5"/></svg>
-        <h3>副作用管理與治療依從性</h3>
-        <p>低起始劑量、緩慢滴定，並主動衛教腸胃症狀的暫時性，降低早期停藥率，提升長期依從性。</p>
-      </div>
-      <div class="c-card reveal" style="border-color:var(--violet)">
-        <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#ebe5ff"/><circle cx="22" cy="26" r="7" fill="#7b5cff" stroke="#1d2445" stroke-width="2.5"/><circle cx="42" cy="26" r="7" fill="#11b5a4" stroke="#1d2445" stroke-width="2.5"/><circle cx="32" cy="42" r="7" fill="#ff6b6b" stroke="#1d2445" stroke-width="2.5"/><path d="M27 31 l3 5 M37 31 l-3 5 M29 26 h6" stroke="#1d2445" stroke-width="2.5"/></svg>
-        <h3>跨學科共同照護路徑</h3>
-        <p>內分泌、心臟、腎臟及神經科建立整合照護路徑，最大化預防多重代謝併發症的臨床效益。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- VISION -->
-<section id="vision">
-  <div class="wrap">
-    <div class="vision reveal">
-      <div>
-        <h2>從「控制指標的工具」<br>到「改善長期存活品質的關鍵方案」</h2>
-        <p>隨著口服小分子藥物上市與三重促效劑進入臨床應用，GLP-1 正在完成角色轉型。諾和諾德合作夥伴計畫把這股動能化為一個共創的生態系，讓藥物、數據與服務在同一個平台上為患者創造長期價值。</p>
-        <div class="cta-row"><a class="btn ghost" href="#top" style="color:var(--ink)">回到頂端 ↑</a></div>
-      </div>
-      <svg viewBox="0 0 240 240" aria-hidden="true">
-        <g class="float">
-          <circle cx="120" cy="120" r="90" fill="rgba(255,255,255,.18)"/>
-          <path d="M70 170 q50 -120 100 -100" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 12"/>
-          <g transform="translate(150 50) rotate(40)">
-            <path d="M0 -36 q16 16 16 46 h-32 q0 -30 16 -46z" fill="#fff" stroke="#1d2445" stroke-width="4"/>
-            <circle cx="0" cy="-6" r="7" fill="#2f9bff" stroke="#1d2445" stroke-width="3"/>
-            <path d="M-16 4 l-10 14 h10 M16 4 l10 14 h-10" fill="#ff6b6b" stroke="#1d2445" stroke-width="3" stroke-linejoin="round"/>
-            <path d="M-8 12 q8 22 16 0" fill="#ffc23d"/>
-          </g>
-          <path d="M50 70 l5 11 l11 5 l-11 5 l-5 11 l-5 -11 l-11 -5 l11 -5z" fill="#ffc23d"/>
-          <path d="M190 170 l4 8 l8 4 l-8 4 l-4 8 l-4 -8 l-8 -4 l8 -4z" fill="#fff"/>
-        </g>
+    <div class="hero-art">
+      <div class="bubble">藥物＋數據＋陪伴！</div>
+      <svg viewBox="0 0 520 400" role="img" aria-label="注射筆寶寶、手機、餐盤和阿公，旁邊有小芽和藍鳥">
+        <ellipse cx="260" cy="368" rx="230" ry="26" fill="#dcf7ec"/>
+        <use href="#grandpa" x="300" y="160" width="130" height="165"/>
+        <g class="float"><use href="#pen" x="110" y="120" width="72" height="180"/></g>
+        <g class="float d2"><use href="#phone" x="210" y="190" width="70" height="114"/></g>
+        <use href="#plate" x="40" y="270" width="96" height="96"/>
+        <use href="#sprout" x="450" y="290" width="62" height="70"/>
+        <use href="#bird" x="430" y="110" width="70" height="64"/>
+        <g class="float d3"><use href="#star" x="250" y="80" width="40" height="40"/></g>
       </svg>
     </div>
   </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C240 60 480 0 720 30 C960 60 1200 0 1440 30 V60 H0Z" fill="#fffdf7"/></svg>
 </section>
+
+<section class="sec" id="start">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">★</div><div><span class="eyebrow">Key Points</span><h2>先說重點</h2></div></div>
+    <div class="talk" style="--c:var(--sky)">
+      <div class="who"><svg aria-hidden="true"><use href="#pen"/></svg></div>
+      <div class="say"><span class="name">注射筆寶寶說</span>
+        <p>GLP-1 是腸道在<b>吃飯後</b>分泌的荷爾蒙，會幫忙控制血糖、讓人比較快有飽足感。藥物版本延長了作用時間，可以每天或每週打一次，也已經有口服的。</p>
+      </div>
+    </div>
+    <div class="talk r" style="--c:var(--coral)">
+      <div class="who"><svg aria-hidden="true"><use href="#bird"/></svg></div>
+      <div class="say"><span class="name">藍鳥提醒</span>
+        <p>這一課是<b>產業與科學的學習整理</b>，不是推薦任何藥物、公司或服務。GLP-1 藥物都需要<b>醫師處方</b>，有腸胃副作用等風險，請不要自行購買或使用。</p>
+      </div>
+    </div>
+    <div class="warn"><b>⚠ 閱讀小提醒：</b>本頁改寫自一份介紹「諾和諾德合作夥伴計畫」的網頁，原文偏向宣傳語氣，本頁已改為中立的說明，並逐項查證數字；查不到出處的標示 <span class="orig">原稿整理</span>，無法核對的標示 <span class="unv">待查證</span>。</div>
+  </div>
+</section>
+
+<section class="sec alt" id="s1" style="--tint:var(--sky-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">1</div><div><span class="eyebrow">Market</span><h2>GLP-1 市場有多大？</h2></div></div>
+    <p class="intro">以下是諾和諾德（Novo Nordisk）2025 年年報與投資人簡報公布的數字。<a class="src" href="#ref3">參考 3</a><a class="src" href="#ref4">參考 4</a></p>
+    <div class="stat">
+      <div class="card" style="--c:var(--coral)"><span class="big">823<small> 億丹麥克朗</small></span><p>肥胖照護產品 2025 年營收，以固定匯率計算成長 <b>31%</b></p></div>
+      <div class="card" style="--c:var(--blue)"><span class="big">46<small>%</small></span><p>全球 GLP-1 糖尿病藥物市場的價值占有率（2025 年 11 月）</p></div>
+      <div class="card" style="--c:var(--mint)"><span class="big">4,200<small> 萬人</small></span><p>2025 年使用該公司糖尿病產品的人數（估計）</p></div>
+      <div class="card" style="--c:var(--grape)"><span class="big">250<small> 萬人</small></span><p>2025 年全年使用該公司抗肥胖藥物的人數</p></div>
+    </div>
+    <div class="fix">
+      <p>🔎 <b class="h">查證更正：</b>原網頁寫「2025 年全球市場 665 億美元、年增 33%」「諾和諾德 GLP-1 營收 310 億美元」「市場主導 55%」「肥胖藥增長 57%」，但沒有出處。查證後：該公司 2025 年<b>全公司</b>總營收約 3,091 億丹麥克朗（固定匯率成長 10%），GLP-1 糖尿病藥營收約 1,522 億丹麥克朗（成長 6%），肥胖照護成長 31%，GLP-1 糖尿病市場價值占有率 46%。<a class="src" href="#ref3">參考 3</a><a class="src" href="#ref4">參考 4</a> 「310 億」可能是把丹麥克朗誤當美元。全球市場規模各家市調估計不同，例如一家市調公司估 2025 年約 629 億美元。<a class="src" href="#ref15">參考 15</a> <span class="unv">待查證</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="s2">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">2</div><div><span class="eyebrow">Role Shift</span><h2>從「賣藥」到「陪伴照護」</h2></div></div>
+    <div class="vs">
+      <div class="card" style="box-shadow:6px 6px 0 var(--coral)"><h3>💊 過去：藥品供應者</h3><ul class="qs" style="margin:0"><li>單次處方、單次銷售</li><li>價值停在交貨那一刻</li><li>專利到期就面臨挑戰</li></ul></div>
+      <div class="card" style="box-shadow:6px 6px 0 var(--mint)"><h3>🤝 現在：照護平台協調者</h3><ul class="qs" style="margin:0"><li>藥物、數據、平台綁在一起</li><li>長期陪伴、持續產生價值</li><li>用真實世界數據建立競爭優勢</li></ul></div>
+    </div>
+    <p class="small" style="margin-top:10px">這是原網頁對商業模式的分析框架。<span class="orig">原稿整理</span></p>
+  </div>
+</section>
+
+<section class="sec alt" id="s3" style="--tint:var(--mint-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">3</div><div><span class="eyebrow">Partners</span><h2>合作夥伴平台在做什麼？</h2></div></div>
+    <p class="intro">2025 年 6 月，諾和諾德在歐洲的醫療科技大會上介紹「<b>諾和諾德合作夥伴平台</b>」（NNPP），形容它是「精選解決方案的市集」：病人開始用藥後，可以挑選健身、飲食等數位服務。<a class="src" href="#ref1">參考 1</a> 官網也說明，這些工具可提供給藥局、診所、遠距醫療業者與保險支付方。<a class="src" href="#ref2">參考 2</a></p>
+    <div style="--c:var(--mint)">
+      <div class="tabs" role="tablist" aria-label="三種合作" data-tabs>
+        <button class="tab" role="tab" aria-selected="true" aria-controls="p1" id="pb1">📊 臨床數據</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p2" id="pb2" tabindex="-1">🩺 遠距醫療</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p3" id="pb3" tabindex="-1">📸 AI 營養</button>
+      </div>
+      <div class="panel" role="tabpanel" id="p1" aria-labelledby="pb1"><div class="panel-grid"><svg aria-hidden="true"><use href="#pen"/></svg><div>
+        <h3>智慧注射筆 × 糖尿病數據平台（例：Glooko）</h3>
+        <p>2021 年起，諾和諾德的智慧胰島素筆（NovoPen 6、NovoPen Echo Plus）會自動記錄注射時間和劑量，最多存三個月，透過 <b>NFC 近場通訊</b>傳到 Glooko 平台，先在德國等歐洲市場推出。瑞典 12 家糖尿病診所的研究發現，使用連網筆可減少漏打。<a class="src" href="#ref5">參考 5</a></p>
+        <p class="small">原網頁提到的藍牙傳輸、連續血糖監測整合、語音飲食紀錄與酮體數據整合，查證資料中沒有提到。<span class="orig">原稿整理</span></p>
+      </div></div></div>
+      <div class="panel" role="tabpanel" id="p2" aria-labelledby="pb2" hidden><div class="panel-grid"><svg aria-hidden="true"><use href="#phone"/></svg><div>
+        <h3>遠距醫療一條龍（例：美國的 Ro）</h3>
+        <p>2025 年 4 月，美國遠距醫療業者 Ro 宣布串接諾和諾德的直送藥局 NovoCare Pharmacy：病人在 App 裡看診、拿處方，再由合作藥局配送，自費價格每月 <b>499 美元</b>。會員服務包括醫師諮詢、一對一教練、體重與劑量紀錄、檢驗與副作用追蹤，以及免費的保險給付查詢工具。<a class="src" href="#ref6">參考 6</a></p>
+        <p class="small">這是美國的服務模式，台灣的處方與給付規定不同。</p>
+      </div></div></div>
+      <div class="panel" role="tabpanel" id="p3" aria-labelledby="pb3" hidden><div class="panel-grid"><svg aria-hidden="true"><use href="#plate"/></svg><div>
+        <h3>拍餐盤看營養</h3>
+        <p>諾和諾德在尋找能用 AI <b>掃描餐盤、判斷營養是否足夠</b>（特別是蛋白質）的合作夥伴，因為 GLP-1 藥物和肌肉流失有關；也在和提供<b>身體組成掃描 App</b> 的公司洽談。<a class="src" href="#ref1">參考 1</a></p>
+        <p class="small">報導沒有公布具體合作廠商名稱。</p>
+      </div></div></div>
+    </div>
+    <div class="fix">
+      <p>🔎 <b class="h">查證更正：</b>原網頁把 Glooko、Ro 寫成「合作夥伴計畫的三大支柱」，但 2025 年的報導<b>沒有公布平台的合作廠商名單</b>。<a class="src" href="#ref1">參考 1</a> Glooko 與諾和諾德早在 2017 年就宣布合作開發數位糖尿病管理平台<a class="src" href="#ref16">參考 16</a>（2021 年擴及智慧筆），Ro 則是 2025 年的美國藥品通路合作，兩者都是<b>個別合作案</b>，本頁改為「例子」來介紹。<a class="src" href="#ref5">參考 5</a><a class="src" href="#ref6">參考 6</a> 計畫名稱的 NNPP，報導寫的是 Partner <b>Platform</b>（平台）。</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="s4">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--orange)"><div class="num">4</div><div><span class="eyebrow">Care &amp; Payment Path</span><h2>美國的照護與給付路徑（點開看）</h2></div></div>
+    <p class="intro">原網頁描繪的模式：前端由遠距醫療業者協助查核保險、送事前授權；中長期由數據平台用臨床成效證明價值。中間有三道給付審查關卡。<span class="orig">原稿整理</span></p>
+    <div class="gates" id="gates">
+      <button type="button" class="gate" aria-expanded="false" style="--c:var(--blue)"><span class="n">1</span><span><h4>初始給付審核</h4><span class="more">依身體質量指數（BMI）、糖化血色素（HbA1c）和過去治療紀錄，控管誰可以用藥。</span></span></button>
+      <button type="button" class="gate" aria-expanded="false" style="--c:var(--orange)"><span class="n">2</span><span><h4>續用成效審查</h4><span class="more">3–6 個月的觀察期：體重有沒有達標、有沒有按時用藥、肌肉有沒有流失。</span></span></button>
+      <button type="button" class="gate" aria-expanded="false" style="--c:var(--coral)"><span class="n">3</span><span><h4>長期風險管理</h4><span class="more">追蹤停藥後體重能不能維持，評估心血管事件等整體醫療成本。</span></span></button>
+    </div>
+    <p class="small" style="margin-top:10px">這是美國商業保險的情境示意，各保險公司規定不同；台灣健保與自費規定請以主管機關公告與醫師說明為準。</p>
+  </div>
+</section>
+
+<section class="sec alt" id="s5" style="--tint:var(--sun-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--orange)"><div class="num">5</div><div><span class="eyebrow">Business Model</span><h2>四步飛輪：類訂閱的商業模式</h2></div></div>
+    <p class="intro">點圓圈看每一步怎麼推動下一步。<span class="orig">原稿整理</span></p>
+    <div class="fly">
+      <svg viewBox="0 0 320 320" role="group" aria-label="四步飛輪">
+        <circle cx="160" cy="160" r="104" fill="none" stroke="#c9d3e8" stroke-width="6" stroke-dasharray="10 10"/>
+        <path d="M232 70 l14 -4 l-4 14" fill="none" stroke="#1f2a44" stroke-width="4" stroke-linecap="round"/>
+        <path d="M250 232 l4 14 l-14 -4" fill="none" stroke="#1f2a44" stroke-width="4" stroke-linecap="round"/>
+        <path d="M88 250 l-14 4 l4 -14" fill="none" stroke="#1f2a44" stroke-width="4" stroke-linecap="round"/>
+        <path d="M70 88 l-4 -14 l14 4" fill="none" stroke="#1f2a44" stroke-width="4" stroke-linecap="round"/>
+        <g class="node" data-i="0" tabindex="0" role="button" aria-label="第一步：藥物療效"><circle cx="160" cy="56" r="40" fill="#e8f4ff" stroke="#1f2a44" stroke-width="4"/><text x="160" y="52" text-anchor="middle" font-size="22">💊</text><text x="160" y="76" text-anchor="middle" font-size="14" fill="#1f2a44">療效</text></g>
+        <g class="node" data-i="1" tabindex="0" role="button" aria-label="第二步：數據回饋"><circle cx="264" cy="160" r="40" fill="#dcf7ec" stroke="#1f2a44" stroke-width="4"/><text x="264" y="156" text-anchor="middle" font-size="22">📊</text><text x="264" y="180" text-anchor="middle" font-size="14" fill="#1f2a44">數據</text></g>
+        <g class="node" data-i="2" tabindex="0" role="button" aria-label="第三步：平台黏著"><circle cx="160" cy="264" r="40" fill="#fff5d6" stroke="#1f2a44" stroke-width="4"/><text x="160" y="260" text-anchor="middle" font-size="22">📱</text><text x="160" y="284" text-anchor="middle" font-size="14" fill="#1f2a44">平台</text></g>
+        <g class="node" data-i="3" tabindex="0" role="button" aria-label="第四步：價值支付"><circle cx="56" cy="160" r="40" fill="#ffe3e3" stroke="#1f2a44" stroke-width="4"/><text x="56" y="156" text-anchor="middle" font-size="22">💰</text><text x="56" y="180" text-anchor="middle" font-size="14" fill="#1f2a44">支付</text></g>
+      </svg>
+      <div class="flyout" id="flyOut" aria-live="polite"></div>
+    </div>
+    <div class="card" style="margin-top:22px;box-shadow:6px 6px 0 var(--coral)"><h3>🤔 站在病人和家屬的角度想一想</h3>
+      <ul class="qs" style="margin:0">
+        <li><b>資料給了誰？</b>注射紀錄、體重、飲食照片會傳到哪些公司？能不能刪除？</li>
+        <li><b>長期費用多少？</b>以美國為例，自費每月約 499 美元；停藥後體重可能回升，要想清楚能不能長期負擔。<a class="src" href="#ref6">參考 6</a></li>
+        <li><b>會不會被綁住？</b>平台服務很方便，但也可能讓你很難換醫師、換藥或換服務。</li>
+        <li><b>建議是誰給的？</b>App 裡的教練或推薦，背後是否有商業合作？</li>
+      </ul>
+      <p class="small" style="margin-top:8px">以上為本站補充的思考題，供讀者參考。</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="s6">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">6</div><div><span class="eyebrow">Science</span><h2>GLP-1 為什麼撐得起一個平台？</h2></div></div>
+    <div class="grid3">
+      <div class="card mech" style="--c:var(--blue)"><span class="pin">很短命</span><h3>⏱ 天然的不到 2 分鐘</h3><p>身體自己分泌的 GLP-1 很快就被 DPP-4 酶分解；藥物版本經過改造，才能每天或每週給藥一次。<span class="orig">原稿整理</span></p></div>
+      <div class="card mech" style="--c:var(--mint)"><span class="pin">看血糖辦事</span><h3>🩸 低血糖風險較低</h3><p>只在血糖升高時促進胰島素分泌，所以<b>單獨使用時</b>低血糖風險低；但和胰島素或磺醯尿素類藥物合用時，低血糖風險會增加，劑量要由醫師調整。<span class="orig">原稿整理</span></p></div>
+      <div class="card mech" style="--c:var(--coral)"><span class="pin">遍布全身</span><h3>🗺 很多器官都有受體</h3><p>胰臟、腦部、心臟、腎臟、肝臟都有 GLP-1 受體，這也是它能延伸到其他疾病的原因。<span class="orig">原稿整理</span></p></div>
+    </div>
+    <h3 style="margin-top:26px">🧠 大腦裡的「飽足開關」 <span class="orig">原稿整理</span></h3>
+    <ol class="steps" style="--c:var(--blue)">
+      <li><b>下視丘</b>：活化讓人覺得飽的神經元、抑制讓人想吃的神經元。</li>
+      <li><b>腦幹</b>：進一步壓低食慾。</li>
+      <li><b>迷走神經與腸胃</b>：延緩胃排空，讓飽足感維持更久，也降低飯後血糖高峰。</li>
+    </ol>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card"><h3>🫀 心血管</h3><p>整合 8 項大型試驗、6 萬多名第二型糖尿病患者的統合分析：GLP-1 受體促效劑讓<b>主要心血管不良事件（心肌梗塞、中風、心血管死亡）減少 14%</b>，全死因死亡減少 12%，腎臟複合結果減少 21%，且沒有增加嚴重低血糖。<a class="src" href="#ref7">參考 7</a></p></div>
+      <div class="card"><h3>🧪 血脂與其他</h3><p>原網頁寫「低密度膽固醇 −0.16 mmol/L、總膽固醇 −0.48 mmol/L」，沒有註明出處，查不到原始研究。<span class="unv">待查證</span> 原網頁也列了抗發炎、心肌保護等細胞訊號路徑，多屬機制研究。<span class="orig">原稿整理</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="s7" style="--tint:var(--grape-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">7</div><div><span class="eyebrow">Fun Facts</span><h2>GLP-1 小常識：點卡片翻答案</h2></div></div>
+    <div class="flips" id="flips"></div>
+  </div>
+</section>
+
+<section class="sec" id="s8">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--coral)"><div class="num">8</div><div><span class="eyebrow">Drugs</span><h2>主要藥物比一比</h2></div></div>
+    <p class="small">👉 手機上表格可以左右滑動。數字來自不同試驗、不同族群與追蹤時間，<b>不能直接比較誰比較好</b>，僅供認識。</p>
+    <div class="tblw"><table class="ptbl">
+      <thead><tr><th>藥物（學名）</th><th>給藥</th><th>代表性的減重結果</th><th>重要里程碑</th></tr></thead>
+      <tbody>
+        <tr><td><b>利拉魯肽</b><br>Liraglutide</td><td>每日一針</td><td>糖尿病劑量約減 3–5 公斤 <span class="orig">原稿整理</span></td><td>LEADER 心血管試驗 <span class="orig">原稿整理</span></td></tr>
+        <tr><td><b>司美格魯肽</b><br>Semaglutide</td><td>每週一針；也有口服</td><td>2.4 毫克約減 10–15% <span class="orig">原稿整理</span></td><td>美國 2021 年核准用於肥胖、2024 年核准降低心血管風險、2025 年 8 月加速核准用於脂肪性肝炎（MASH）、2025 年 12 月核准口服減重版<a class="src" href="#ref11">參考 11</a></td></tr>
+        <tr><td><b>替爾泊肽</b><br>Tirzepatide</td><td>每週一針</td><td>72 週最高劑量約減 <b>20.9%</b><a class="src" href="#ref8">參考 8</a></td><td>同時作用於 GIP 與 GLP-1 受體；2024 年 12 月成為美國第一個核准治療阻塞型睡眠呼吸中止的藥物（限肥胖成人）<a class="src" href="#ref14">參考 14</a></td></tr>
+        <tr><td><b>CagriSema</b><br>Cagrilintide＋Semaglutide</td><td>每週一針</td><td>68 週約減 <b>20.4%</b>（無糖尿病者）；有糖尿病者約減 13.7%<a class="src" href="#ref9">參考 9</a></td><td>第三期試驗，尚在審查</td></tr>
+        <tr><td><b>瑞塔魯肽</b><br>Retatrutide</td><td>每週一針</td><td>第二期試驗 48 週最高劑量約減 <b>24.2%</b><a class="src" href="#ref10">參考 10</a></td><td>同時作用於 GIP、GLP-1、升糖素三種受體，研究中</td></tr>
+      </tbody>
+    </table></div>
+    <div class="fix">
+      <p>🔎 <b class="h">查證更正：</b>原網頁寫替爾泊肽「體重下降 −22%」，關鍵試驗是 <b>−20.9%</b>（15 毫克、72 週）<a class="src" href="#ref8">參考 8</a>；寫 CagriSema「−14.03 公斤」，第三期試驗 REDEFINE 1 的結果是 <b>−20.4%</b><a class="src" href="#ref9">參考 9</a>。原網頁也把替爾泊肽標為「最佳」，本頁刪除這類比較用語，因為各藥試驗條件不同，適合哪一種要由醫師評估。這些藥常見<b>噁心、嘔吐、腹瀉、便秘</b>等腸胃副作用，大多是輕到中度、暫時性的。<a class="src" href="#ref8">參考 8</a><a class="src" href="#ref9">參考 9</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="s9" style="--tint:var(--blue-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">9</div><div><span class="eyebrow">New Indications</span><h2>新適應症：有成功，也有失敗</h2></div></div>
+    <div class="ind">
+      <div class="card" style="--c:var(--mint)"><span class="badge">已核准</span><h3>😴 阻塞型睡眠呼吸中止</h3><p>替爾泊肽 2024 年 12 月獲美國核准，用於肥胖成人的中重度睡眠呼吸中止。美國睡眠醫學會提醒，很多人的睡眠呼吸中止和下巴、呼吸道結構有關，藥物不是人人適用，而且要持續維持減重才有效。<a class="src" href="#ref14">參考 14</a></p></div>
+      <div class="card" style="--c:var(--mint)"><span class="badge">加速核准</span><h3>🫘 代謝相關脂肪性肝炎（MASH）</h3><p>司美格魯肽 2025 年 8 月獲美國加速核准用於 MASH。<a class="src" href="#ref11">參考 11</a> 「加速核准」代表還需要後續試驗確認臨床效益。</p></div>
+      <div class="card" style="--c:var(--coral)"><span class="badge">試驗失敗</span><h3>🧠 阿茲海默症</h3><p>2025 年 11 月，兩項共 3,808 人的第三期試驗（EVOKE、EVOKE+）顯示，口服司美格魯肽<b>未能比安慰劑更有效延緩</b>早期阿茲海默症惡化，藥廠已停止延長期。<a class="src" href="#ref12">參考 12</a></p></div>
+      <div class="card" style="--c:var(--orange)"><span class="badge">研究中</span><h3>🦴 骨關節炎、帕金森氏症、青少年肥胖</h3><p>原網頁提到這些研究方向，本頁未逐一查證最新進度。<span class="orig">原稿整理</span></p></div>
+    </div>
+    <div class="fix">
+      <p>🔎 <b class="h">查證更正：</b>原網頁把阿茲海默症列為「神經保護潛力備受關注」的未來方向，但 2025 年 11 月的大型試驗已經失敗。<a class="src" href="#ref12">參考 12</a> 原網頁寫「全球糖尿病患者超過 4.22 億人」，那是較舊的數字；國際糖尿病聯盟 2025 年的最新估計是 <b>5.89 億名成人</b>（20–79 歲），其中約 2.52 億人不知道自己有糖尿病。<a class="src" href="#ref13">參考 13</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="check">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">10</div><div><span class="eyebrow">Before You Ask</span><h2>考慮 GLP-1 藥物前，可以和醫師聊的 6 件事</h2></div></div>
+    <p class="intro">勾一勾，看診時帶著問。<b>是否適合用藥，請由醫師評估。</b></p>
+    <div class="chk" id="chk">
+      <label><input type="checkbox" data-k="c1"><span class="box"></span><span><b>我符合用藥條件嗎？</b><span class="d">例如 BMI、糖尿病或其他共病</span></span></label>
+      <label><input type="checkbox" data-k="c2"><span class="box"></span><span><b>我正在吃的其他藥，會不會互相影響？</b><span class="d">特別是胰島素、磺醯尿素類等降血糖藥</span></span></label>
+      <label><input type="checkbox" data-k="c3"><span class="box"></span><span><b>腸胃副作用怎麼處理？</b><span class="d">噁心、嘔吐、腹瀉、便秘時該怎麼辦、何時要回診</span></span></label>
+      <label><input type="checkbox" data-k="c4"><span class="box"></span><span><b>怎麼避免肌肉流失？</b><span class="d">蛋白質要吃多少、要不要搭配肌力訓練</span></span></label>
+      <label><input type="checkbox" data-k="c5"><span class="box"></span><span><b>要用多久？停藥後會怎樣？</b><span class="d">長期費用、健保給付或自費規定</span></span></label>
+      <label><input type="checkbox" data-k="c6"><span class="box"></span><span><b>如果使用 App 或數位服務，我的資料怎麼保護？</b><span class="d">誰能看、能不能刪除、會不會用於行銷</span></span></label>
+    </div>
+    <div class="prog"><div class="tr"><div class="fill" id="pFill"></div></div><span class="n" id="pN">0 / 6</span></div>
+    <div class="cheer" id="cheer">🎉 六個問題都準備好了！帶著它們去和醫師好好討論。</div>
+    <p class="small">🔒 勾選狀態只存在你自己的瀏覽器，不會上傳。<button type="button" id="chkReset" style="font:inherit;font-size:14px;border:2px solid var(--ink);border-radius:10px;background:#fff;padding:1px 10px;cursor:pointer;margin-left:6px">清除重來</button></p>
+    <div class="warn"><b>⚠ 安全提醒：</b>請勿透過網路、社群或非醫療管道購買「減重針」；來路不明的產品可能是偽藥。用藥期間如有劇烈腹痛、持續嘔吐等不適，請盡快就醫。</div>
+  </div>
+</section>
+
+<section class="sec alt" id="s10" style="--tint:var(--sun-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">11</div><div><span class="eyebrow">Wrap-up</span><h2>結論：看懂科學，也看懂生意</h2></div></div>
+    <div class="talk" style="--c:var(--mint)">
+      <div class="who"><svg aria-hidden="true"><use href="#sprout"/></svg></div>
+      <div class="say"><span class="name">小芽總結</span>
+        <p>GLP-1 藥物已從降血糖擴展到減重、心血管、睡眠呼吸中止與脂肪肝炎，但也有像阿茲海默症這樣的失敗。<a class="src" href="#ref7">參考 7</a><a class="src" href="#ref12">參考 12</a></p>
+        <p>藥廠用「藥物＋數據＋平台」打造長期服務，對病人可能帶來更多陪伴；但我們也要問清楚<b>資料去哪裡、費用多少、建議是否中立</b>。用不用藥、用哪一種，請和醫師一起決定。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="quiz">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">?</div><div><span class="eyebrow">Quick Quiz</span><h2>小測驗：四題就好</h2></div></div>
+    <div class="quiz" id="quizBox">
+      <div class="card q" data-ans="b">
+        <h4>Q1. 身體自己分泌的 GLP-1，大約多久就被分解？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">一整天</button>
+          <button class="opt" data-v="b">不到 2 分鐘</button>
+          <button class="opt" data-v="c">一個星期</button>
+        </div>
+        <div class="exp">天然 GLP-1 很快被 DPP-4 酶分解，藥物版本經過改造，才能每天或每週給藥一次。</div>
+      </div>
+      <div class="card q" data-ans="c">
+        <h4>Q2. 統合分析發現，GLP-1 受體促效劑讓第二型糖尿病患者的主要心血管不良事件減少多少？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">完全沒有效果</button>
+          <button class="opt" data-v="b">減少 80%</button>
+          <button class="opt" data-v="c">約減少 14%</button>
+        </div>
+        <div class="exp">8 項試驗、6 萬多人的統合分析：主要心血管不良事件減少 14%，全死因死亡減少 12%。</div>
+      </div>
+      <div class="card q" data-ans="a">
+        <h4>Q3. 口服司美格魯肽用於早期阿茲海默症的第三期試驗，結果如何？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">沒有比安慰劑更能延緩惡化</button>
+          <button class="opt" data-v="b">成功治好阿茲海默症</button>
+          <button class="opt" data-v="c">還沒開始做試驗</button>
+        </div>
+        <div class="exp">2025 年 11 月公布的 EVOKE 與 EVOKE+ 試驗未達主要目標，提醒我們「機制上有潛力」不等於「臨床有效」。</div>
+      </div>
+      <div class="card q" data-ans="b">
+        <h4>Q4. 使用藥廠合作的數位健康 App 前，最值得先問清楚的是？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">App 的顏色好不好看</button>
+          <button class="opt" data-v="b">我的健康資料會給誰、能不能刪除、長期費用多少</button>
+          <button class="opt" data-v="c">下載的人數多不多</button>
+        </div>
+        <div class="exp">平台模式靠數據與長期服務獲利，資料用途、刪除權與費用，都是使用者應該掌握的資訊。</div>
+      </div>
+      <div class="score" id="score"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt refs" id="refs" style="--tint:var(--blue-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--ink)"><div class="num">§</div><div><span class="eyebrow">References</span><h2>參考資料</h2></div></div>
+    <p class="small">原網頁註明內容整理自兩份簡報，但沒有列出可查證的來源。以下資料為本站於<b>2026年10月13日</b>逐項查證時補列：臨床論文透過 PubMed 核對，企業數字取自公司年報與投資人簡報。</p>
+    <h3>🤝 合作夥伴平台與商業模式</h3>
+    <ol>
+      <li id="ref1"><span class="rid">1</span>Beaney A. <b>Novo Nordisk seeks digital health partners to boost GLP-1RA weight loss outcomes.</b> Pharmaceutical Technology，2025年6月18日。<span class="loc">NNPP（Novo Nordisk Partner Platform）於歐洲 HLTH 大會介紹；「精選解決方案市集」；尋找 AI 餐盤營養、身體組成掃描、遠距醫療與藥局夥伴；未公布合作廠商。</span><a href="https://www.pharmaceutical-technology.com/news/novo-nordisk-digital-health-partners-improve-glp1ra/" target="_blank" rel="noopener">pharmaceutical-technology.com</a></li>
+      <li id="ref2"><span class="rid">2</span>Novo Nordisk. <b>Channel partners</b>（數位合作官網頁面）。<span class="loc">提供藥局、診所、線上與遠距醫療業者及支付方使用的精選數位健康工具；未列出合作廠商。</span><a href="https://digitalpartnerships.novonordisk.com/en_gb/partnerships/channel-partners.html" target="_blank" rel="noopener">novonordisk.com</a></li>
+      <li id="ref3"><span class="rid">3</span>Novo Nordisk. <b>Annual Report 2025 — Financial performance.</b><span class="loc">總營收 3,090.64 億丹麥克朗（固定匯率 +10%）；GLP-1 糖尿病 1,522.02 億（+6%）；肥胖照護 823.47 億（+31%）；GLP-1 第二型糖尿病價值占有率 45.8%。</span><a href="https://annualreport.novonordisk.com/2025/strategic-aspirations/financial-performance.html" target="_blank" rel="noopener">novonordisk.com</a></li>
+      <li id="ref4"><span class="rid">4</span>Novo Nordisk. <b>Investor presentation Full year 2025</b>（2026年2月4日）。<span class="loc">糖尿病產品約 4,200 萬人、抗肥胖藥約 250 萬人；GLP-1 糖尿病市場價值占有率 46%（2025 年 11 月）。</span><a href="https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q4-2025-investor-presentation-4Feb.pdf" target="_blank" rel="noopener">novonordisk.com（PDF）</a></li>
+      <li id="ref5"><span class="rid">5</span>Glooko. <b>Glooko announces collaboration with Novo Nordisk for European connected pen launches</b>（2021年11月9日）。<span class="loc">NovoPen 6 與 NovoPen Echo Plus 自動記錄劑量、存三個月、以 NFC 傳輸；德國等歐洲市場；瑞典 12 家診所研究。</span><a href="https://glooko.com/news_reg/glooko-announces-collaboration-with-novo-nordisk-for-european-connected-pen-launches/" target="_blank" rel="noopener">glooko.com</a></li>
+      <li id="ref6"><span class="rid">6</span>Ro. <b>Ro integrates with NovoCare® Pharmacy to provide seamless access to Wegovy® at the lowest cash price</b>（2025年4月29日）。<span class="loc">自費每月 499 美元；App 內看診與處方；會員服務內容；保險給付查詢工具。</span><a href="https://ro.co/press/wegovy-novocare/" target="_blank" rel="noopener">ro.co</a></li>
+      <li id="ref16"><span class="rid">16</span>Mobihealthnews. <b>Novo Nordisk teams up with Glooko for digital diabetes management</b>（2017年1月9日）。<span class="loc">兩家公司宣布非獨家合作，共同開發數位糖尿病管理平台。</span><a href="https://www.mobihealthnews.com/news/novo-nordisk-teams-glooko-digital-diabetes-management" target="_blank" rel="noopener">mobihealthnews.com</a></li>
+      <li id="ref15"><span class="rid">15</span>Towards Healthcare. <b>GLP-1 Receptor Agonist Market Valued at USD 62.86 Billion in 2025</b>（新聞稿，BioSpace，2025年7月14日）。<span class="loc">市調公司估計 2025 年約 628.6 億美元、2025–2034 年複合成長率 17.5%；市調估計方法各家不同。</span><a href="https://www.biospace.com/press-releases/glp-1-receptor-agonist-market-valued-at-usd-62-86-billion-in-2025-set-to-grow-at-17-5-cagr-through-2034" target="_blank" rel="noopener">biospace.com</a></li>
+    </ol>
+    <h3>🧪 臨床研究與核准</h3>
+    <ol>
+      <li id="ref7"><span class="rid">7</span>Sattar N, Lee MMY, Kristensen SL, et al. <b>Cardiovascular, mortality, and kidney outcomes with GLP-1 receptor agonists in patients with type 2 diabetes: a systematic review and meta-analysis of randomised trials.</b> <i>Lancet Diabetes Endocrinol.</i> 2021;9(10):653-662.<span class="loc">8 項試驗、60,080 人；主要心血管不良事件 −14%、全死因死亡 −12%、心衰竭住院 −11%、腎臟複合結果 −21%。</span><a href="https://doi.org/10.1016/S2213-8587(21)00203-5" target="_blank" rel="noopener">DOI: 10.1016/S2213-8587(21)00203-5</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/34425083/" target="_blank" rel="noopener">PubMed 34425083</a></li>
+      <li id="ref8"><span class="rid">8</span>Jastreboff AM, Aronne LJ, Ahmad NN, et al. <b>Tirzepatide Once Weekly for the Treatment of Obesity.</b> <i>N Engl J Med.</i> 2022;387(3):205-216.<span class="loc">SURMOUNT-1；2,539 人；72 週 5／10／15 毫克分別減重 15.0%／19.5%／20.9%；常見腸胃副作用。</span><a href="https://doi.org/10.1056/NEJMoa2206038" target="_blank" rel="noopener">DOI: 10.1056/NEJMoa2206038</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/35658024/" target="_blank" rel="noopener">PubMed 35658024</a></li>
+      <li id="ref9"><span class="rid">9</span>Garvey WT, Blüher M, Osorto Contreras CK, et al. <b>Coadministered Cagrilintide and Semaglutide in Adults with Overweight or Obesity.</b> <i>N Engl J Med.</i> 2025;393(7):635-647；Davies MJ, et al. <b>Cagrilintide-Semaglutide in Adults with Overweight or Obesity and Type 2 Diabetes.</b> 同期 648-659。<span class="loc">REDEFINE 1：68 週 −20.4%；REDEFINE 2（第二型糖尿病）：−13.7%；腸胃副作用多為暫時、輕到中度。</span><a href="https://doi.org/10.1056/NEJMoa2502081" target="_blank" rel="noopener">DOI: 10.1056/NEJMoa2502081</a>｜<a href="https://doi.org/10.1056/NEJMoa2502082" target="_blank" rel="noopener">DOI: 10.1056/NEJMoa2502082</a></li>
+      <li id="ref10"><span class="rid">10</span>Jastreboff AM, Kaplan LM, Frías JP, et al. <b>Triple-Hormone-Receptor Agonist Retatrutide for Obesity — A Phase 2 Trial.</b> <i>N Engl J Med.</i> 2023;389(6):514-526.<span class="loc">338 人；48 週 12 毫克組 −24.2%。</span><a href="https://doi.org/10.1056/NEJMoa2301972" target="_blank" rel="noopener">DOI: 10.1056/NEJMoa2301972</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/37366315/" target="_blank" rel="noopener">PubMed 37366315</a></li>
+      <li id="ref11"><span class="rid">11</span>Drugs.com. <b>Wegovy FDA Approval History.</b><span class="loc">2021/6/4 肥胖；2024/3/8 降低心血管風險；2025/8/15 MASH 加速核准；2025/12/22 口服版核准。</span><a href="https://www.drugs.com/history/wegovy.html" target="_blank" rel="noopener">drugs.com</a></li>
+      <li id="ref12"><span class="rid">12</span>NeurologyLive. <b>GLP-1 semaglutide fails to outperform placebo in phase 3 EVOKE trials in Alzheimer disease</b>（2025年11月24日）。<span class="loc">EVOKE 與 EVOKE+ 共 3,808 名 55–85 歲早期阿茲海默症患者；未優於安慰劑；停止延長期。</span><a href="https://www.neurologylive.com/view/glp-1-semaglutide-fails-outperform-placebo-phase-3-evoke-trial-ad" target="_blank" rel="noopener">neurologylive.com</a></li>
+      <li id="ref13"><span class="rid">13</span>International Diabetes Federation. <b>IDF Diabetes Atlas 11th Edition</b>（2025年4月7日）。<span class="loc">5.89 億名 20–79 歲成人有糖尿病；2050 年預估 8.53 億；2.52 億人不知道自己有糖尿病。</span><a href="https://idf.org/news-and-resources/news/idf-diabetes-atlas-11th-edition/" target="_blank" rel="noopener">idf.org</a></li>
+      <li id="ref14"><span class="rid">14</span>Kim J（NPR）. <b>FDA approves weight loss drug Zepbound to treat obstructive sleep apnea</b>（2024年12月21日）。<span class="loc">第一個核准治療阻塞型睡眠呼吸中止的處方藥；限肥胖成人中重度患者；美國睡眠醫學會提醒並非人人適用。</span><a href="https://www.kaxe.org/news/2024-12-21/fda-approves-weight-loss-drug-zepbound-to-treat-obstructive-sleep-apnea" target="_blank" rel="noopener">kaxe.org（NPR 轉載）</a></li>
+    </ol>
+
+    <div class="bigdisc" role="note" aria-label="免責聲明" style="margin-top:30px">
+      <div class="bd-head"><span class="bd-ico">⚠</span><span>重要聲明｜請先看這裡</span></div>
+      <p class="bd-key">本站資訊僅供參考，實際以醫師等專業人員評估、各公司官方資料及衛生主管機關公告為準。</p>
+      <ul>
+        <li><b>僅供參考：</b>本頁為產業與醫學知識的學習整理，<b>不構成任何醫療建議或投資建議</b>；GLP-1 藥物須由醫師處方，請勿自行購買或使用。</li>
+        <li><b>無任何推薦或行銷：</b>本頁不推薦、不銷售任何藥物、藥廠、遠距醫療服務、App 或數位健康產品，與文中提到的公司（諾和諾德、禮來、Glooko、Ro 等）無任何合作或業配關係；提及商品名與公司名僅為說明。</li>
+        <li><b>非投資建議：</b>文中營收與市占數字僅為說明產業趨勢，不代表對任何公司股票的評價。</li>
+        <li><b>地區差異：</b>文中的核准、價格與保險給付多為美國或歐洲資訊，台灣的核准適應症、健保給付與自費規定可能不同。</li>
+        <li><b>資料時點：</b>資料以2026年9月底前公開資料為準，查核於2026年10月13日，之後的新試驗、核准與財報本頁不會即時同步。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
 
 <footer>
   <div class="wrap">
-    <div><b>諾和諾德合作夥伴計畫（NNPP）｜GLP-1 數位健康生態系</b><br>本頁內容整理自「以 GLP-1 藥物為平台的健康管理生態系」與「GLP-1 作用機制」簡報，僅供產業分析與教育交流之用，不構成醫療建議或投資建議。</div>
-    <div>市場數據為簡報所載之 2025 年資料；用藥請遵循醫師指示。<br>頁面插圖均為原創向量繪製。</div>
+    <div class="pals" aria-hidden="true"><svg><use href="#sprout"/></svg><svg><use href="#bird"/></svg><svg><use href="#star"/></svg></div>
+    <p class="quote">每一次多懂一點，都是送給自己的小禮物。</p>
+    <p class="ftdisc">⚠ 僅供參考｜無任何推薦或行銷｜非醫療或投資建議<br>本站資訊僅供參考，實際以醫師等專業人員評估、各公司官方資料及主管機關公告為準</p>
+    <p><a href="https://www.gungho.idv.tw/KS/index.html">← 回共好小學堂</a></p>
+    <p class="fine">共好小學堂 ✦ 一起學習，一起共好<br>本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-10-13</p>
   </div>
 </footer>
 
-<a class="top" href="#top" aria-label="回到頂端">↑</a>
+<button id="toTop" aria-label="回到頂端">↑</button>
 
 <script>
-// reveal on scroll + counters + bars
-const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;el.classList.add('in');
-  el.querySelectorAll('.count').forEach(c=>{if(c.dataset.done)return;c.dataset.done=1;const to=+c.dataset.to;const t0=performance.now();const d=1400;
-    const step=t=>{const p=Math.min((t-t0)/d,1);c.textContent=Math.round(to*(1-Math.pow(1-p,3))).toLocaleString();if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step)});
-  el.querySelectorAll('.bar span').forEach(b=>b.style.width=b.dataset.w);
-  io.unobserve(el)})},{threshold:.15});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+(function(){
+  function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML;}
+  document.querySelectorAll('[data-tabs]').forEach(function(list){
+    var tabs=[].slice.call(list.querySelectorAll('[role=tab]'));
+    function select(t,focus){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on?'true':'false');x.tabIndex=on?0:-1;var p=document.getElementById(x.getAttribute('aria-controls'));if(p)p.hidden=!on;});if(focus)t.focus();}
+    tabs.forEach(function(t,i){t.addEventListener('click',function(){select(t);});t.addEventListener('keydown',function(e){var n=null;if(e.key==='ArrowRight')n=tabs[(i+1)%tabs.length];if(e.key==='ArrowLeft')n=tabs[(i-1+tabs.length)%tabs.length];if(n){e.preventDefault();select(n,true);}});});
+  });
 
-// tabs
-document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
-  document.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected','false'));
-  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
-  t.setAttribute('aria-selected','true');document.getElementById(t.dataset.t).classList.add('active')}));
+  // gates
+  document.querySelectorAll('#gates .gate').forEach(function(g){g.addEventListener('click',function(){g.setAttribute('aria-expanded',g.getAttribute('aria-expanded')==='true'?'false':'true');});});
 
-// flywheel
-const W=[
- ['① 藥物療效','GLP-1 帶來穩定、看得見的血糖與體重改善，患者因此信任這套療程，願意持續留在系統裡。'],
- ['② 數據回饋','智慧筆、CGM、體重計持續產生真實世界數據，證明療效，也成為與保險及醫療體系談判的籌碼。'],
- ['③ 平台黏著','遠端諮詢、營養課程與數位教練讓服務融入日常，長期契約創造穩定、可預期的收益流。'],
- ['④ 價值支付','預防住院與併發症所省下的醫療成本，透過價值導向支付回饋給生態系，再投資到更好的療效。']];
-const nodes=document.querySelectorAll('.node');
-nodes.forEach(n=>{const show=()=>{nodes.forEach(x=>x.classList.remove('on'));n.classList.add('on');
-  document.getElementById('wheel-title').textContent=W[n.dataset.i][0];document.getElementById('wheel-desc').textContent=W[n.dataset.i][1]};
-  n.addEventListener('mouseenter',show);n.addEventListener('click',show)});
+  // flywheel
+  var F=[['💊 第一步：藥物療效建立信任','藥物的穩定效果，讓病人和醫師願意長期使用。'],['📊 第二步：數據回饋強化議價','注射、體重、血糖等真實世界數據，可以拿來向保險公司或醫療體系證明成效、爭取給付。'],['📱 第三步：平台黏著創造持續收益','遠距諮詢、教練、營養追蹤等服務，讓病人長期留在同一個系統裡，像訂閱制一樣持續付費。'],['💰 第四步：價值支付','如果預防了併發症、省下醫療成本，支付方可能願意依「成效」付費，再回頭支持更多人用藥。']];
+  var nodes=[].slice.call(document.querySelectorAll('.fly .node')),fo=document.getElementById('flyOut');
+  function rF(i){nodes.forEach(function(n,j){n.classList.toggle('on',j===i);});fo.innerHTML='<h4>'+esc(F[i][0])+'</h4><p>'+esc(F[i][1])+'</p><p class="small">這是原網頁的商業模式分析。<span class="orig">原稿整理</span></p>';}
+  nodes.forEach(function(n,i){n.addEventListener('click',function(){rF(i);});n.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();rF(i);}});});
+  rF(0);
 
-// flip cards (tap on touch)
-document.querySelectorAll('.flip').forEach(f=>f.addEventListener('click',()=>f.classList.toggle('on')));
+  // flip cards
+  var C=[['🧪','GLP-1 是什麼？','腸道的「飯後荷爾蒙」','全名「類升糖素胜肽-1」，由腸道 L 細胞在吃飯後分泌，屬於「腸泌素」；最早被開發成第二型糖尿病藥物。'],['⏱️','天然的能撐多久？','不到 2 分鐘','很快被 DPP-4 酶分解。藥物經過改造延長作用，才能每天或每週給藥。'],['🍽️','為什麼會吃不下？','大腦和腸胃一起喊「飽了」','作用在下視丘與腦幹的飽足中樞，同時延緩胃排空，飽足感更早來、維持更久。'],['🩸','會不會血糖太低？','單獨使用風險低','它「看血糖辦事」，血糖高時才促進胰島素分泌；但和胰島素等藥合用時，低血糖風險會增加。'],['❤️','對心臟有好處嗎？','糖尿病患者的心血管事件減少約 14%','8 項大型試驗的統合分析結果，也減少全死因死亡與腎臟惡化。'],['🧠','只能治糖尿病嗎？','已擴展到肥胖、睡眠呼吸中止、脂肪肝炎','但阿茲海默症的第三期試驗在 2025 年失敗了。'],['🌏','全球多少人有糖尿病？','約 5.89 億名成人','國際糖尿病聯盟 2025 年估計（20–79 歲），還有約 2.52 億人不知道自己有。'],['💪','減重會掉肌肉嗎？','有這個疑慮','這也是藥廠在找 AI 餐盤營養工具、身體組成掃描合作的原因；用藥期間要注意蛋白質與肌力訓練，請和醫師討論。']];
+  var flips=document.getElementById('flips');
+  C.forEach(function(c){var b=document.createElement('button');b.type='button';b.className='flip';b.setAttribute('aria-pressed','false');b.innerHTML='<span class="in"><span class="fc"><span class="ic">'+c[0]+'</span><b>'+esc(c[1])+'</b><small>點一下翻開 ↻</small></span><span class="bc"><b>'+esc(c[2])+'</b>'+esc(c[3])+'</span></span>';b.addEventListener('click',function(){b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');});flips.appendChild(b);});
 
-// back to top
-const toTop=document.querySelector('.top');
-addEventListener('scroll',()=>toTop.classList.toggle('show',scrollY>600),{passive:true});
+  // checklist
+  var KEY='gungho-ks-glp1-chk',boxes=[].slice.call(document.querySelectorAll('#chk input')),st={};
+  try{st=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){st={};}
+  function upd(){var n=0;boxes.forEach(function(b){b.parentNode.classList.toggle('on',b.checked);if(b.checked)n++;});document.getElementById('pFill').style.width=(n/boxes.length*100)+'%';document.getElementById('pN').textContent=n+' / '+boxes.length;document.getElementById('cheer').classList.toggle('show',n===boxes.length);}
+  boxes.forEach(function(b){b.checked=!!st[b.dataset.k];b.addEventListener('change',function(){st[b.dataset.k]=b.checked;try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}upd();});});
+  document.getElementById('chkReset').addEventListener('click',function(){st={};boxes.forEach(function(b){b.checked=false;});try{localStorage.removeItem(KEY);}catch(e){}upd();});
+  upd();
+
+  // quiz
+  var qs=[].slice.call(document.querySelectorAll('#quizBox .q')),answered=0,right=0;
+  qs.forEach(function(q){var ans=q.dataset.ans,opts=q.querySelectorAll('.opt');opts.forEach(function(o){o.addEventListener('click',function(){var ok=o.dataset.v===ans;opts.forEach(function(x){x.disabled=true;if(x.dataset.v===ans)x.classList.add('right');});if(!ok)o.classList.add('wrong');var exp=q.querySelector('.exp');exp.innerHTML=(ok?'<b>✅ 答對了！</b> ':'<b>💡 再想想～</b> ')+exp.innerHTML;exp.classList.add('show');answered++;if(ok)right++;if(answered===qs.length){var s=document.getElementById('score');s.textContent='你答對了 '+right+' / '+qs.length+' 題！'+(right===qs.length?' 太厲害了 🎉':' 每多懂一點都是收穫 🌱');s.classList.add('show');}});});});
+
+  var tt=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('show',window.scrollY>600);},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
+})();
 </script>
 </body>
 </html>
