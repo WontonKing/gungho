@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2455c7">
+<title>我的身體是誰的？｜共好小學堂</title>
+<meta name="description" content="健康經濟學用 QALY、ICER 與機會成本分配有限的醫療資源；基督教信仰把身體看成上帝所託付的禮物。從創世記的無花果葉與皮衣，看懂兩種視角，也試算 QALY 與 ICER。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/STEWARD/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的身體是誰的？健康經濟學與信仰的管家視角｜共好小學堂">
+<meta property="og:description" content="無花果葉與皮衣、QALY 與失群的羊：用信仰和經濟學兩副眼鏡，重新看待健康與身體。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/STEWARD/">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 130'%3E%3Cpath d='M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z' fill='%235ad6a4' stroke='%231f2a44' stroke-width='5'/%3E%3Cpath d='M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Cellipse cx='60' cy='88' rx='40' ry='38' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Ccircle cx='46' cy='84' r='6' fill='%231f2a44'/%3E%3Ccircle cx='74' cy='84' r='6' fill='%231f2a44'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c;  --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff;  --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7;
+  --round:'Huninn','Noto Sans TC',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans TC',system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:var(--blue)}
+h1,h2,h3,h4{font-family:var(--round);line-height:1.35;margin:0 0 .5em;font-weight:400}
+p{margin:0 0 1em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.hl{background:linear-gradient(transparent 58%,var(--sun) 58%,var(--sun) 92%,transparent 92%);padding:0 2px}
+.nw{white-space:nowrap}
+b,strong{font-weight:700}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.94);backdrop-filter:blur(8px);border-bottom:3px solid var(--ink)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex-shrink:0}
+.brand svg{width:40px;height:44px}
+.brand b{font-family:var(--round);font-weight:400;font-size:19px;display:block;line-height:1.1}
+.brand small{font-size:10px;letter-spacing:.14em;color:var(--ink-2);display:block}
+.navpills{display:flex;gap:6px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.navpills::-webkit-scrollbar{display:none}
+.navpills a{white-space:nowrap;text-decoration:none;font-size:14px;color:var(--ink);padding:4px 11px;border:2px solid var(--ink);border-radius:99px;background:#fff}
+.navpills a:hover{background:var(--sun-l)}
+.back{white-space:nowrap;text-decoration:none;font-family:var(--round);background:var(--blue);color:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:5px 14px;box-shadow:0 3px 0 var(--ink);font-size:15px;flex-shrink:0}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--blue-l),var(--bg));padding:56px 0 90px}
+.blob{position:absolute;border-radius:50%;opacity:.55;z-index:0}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.tag{display:inline-block;font-family:var(--round);background:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:4px 14px;font-size:15px;box-shadow:0 3px 0 var(--ink);margin-bottom:18px}
+.hero h1{font-size:clamp(32px,5vw,52px);margin-bottom:16px}
+.hero .lead{font-size:18.5px;color:var(--ink-2);max-width:34em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{font-family:var(--round);text-decoration:none;font-size:17px;padding:10px 22px;border:3px solid var(--ink);border-radius:16px;box-shadow:0 4px 0 var(--ink);color:var(--ink);background:#fff;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--sun)}
+.meta{font-size:13.5px;color:var(--ink-2);margin-top:18px}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block}
+.bubble{position:absolute;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:8px 14px;font-family:var(--round);font-size:17px;box-shadow:0 4px 0 var(--ink);white-space:nowrap}
+.bubble::after{content:"";position:absolute;width:14px;height:14px;background:#fff;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg);bottom:-9px;left:30px}
+.hero .bubble{top:2%;left:4%}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:60px;z-index:1}
+.float{animation:float 4.5s ease-in-out infinite}
+.float.d2{animation-delay:-1.5s}.float.d3{animation-delay:-3s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media (prefers-reduced-motion:reduce){.float{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
+
+/* sections */
+section.sec{padding:64px 0;position:relative}
+section.alt{background:linear-gradient(180deg,var(--tint,#fff),var(--bg))}
+.sec-head{display:flex;align-items:flex-start;gap:18px;margin-bottom:26px}
+.num{flex-shrink:0;width:58px;height:58px;display:grid;place-items:center;font-family:var(--round);font-size:28px;color:#fff;background:var(--c,var(--blue));border:3px solid var(--ink);border-radius:16px;transform:rotate(-6deg);box-shadow:4px 4px 0 var(--ink)}
+.eyebrow{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--c,var(--blue));font-weight:700;display:block}
+.sec-head h2{font-size:clamp(25px,3.4vw,34px);margin:2px 0 0}
+.intro{color:var(--ink-2);max-width:46em}
+hr.dash{border:0;border-top:3px dashed var(--line);margin:34px 0}
+
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:0 5px 0 var(--ink)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card h3{font-size:21px;margin-bottom:.35em}
+.card p:last-child{margin-bottom:0}
+.small{font-size:14.5px;color:var(--ink-2)}
+.note{font-size:14.5px;color:var(--ink-2);background:#fff;border:2px dashed var(--line);border-radius:14px;padding:10px 14px;margin-top:16px}
+.ico{width:96px;height:96px;display:block;margin-bottom:10px}
+.src{display:inline-block;font-size:12px;line-height:1;text-decoration:none;background:var(--blue-l);color:var(--blue-d);border:1.5px solid var(--blue);border-radius:99px;padding:4px 8px;margin:0 2px;vertical-align:2px;font-weight:700;white-space:nowrap}
+.src:hover{background:var(--sun-l)}
+.badge{display:inline-block;font-size:12.5px;font-weight:700;border:2px solid var(--ink);border-radius:99px;padding:1px 10px;background:var(--sun-l);margin-bottom:8px}
+
+/* talk */
+.talk{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;margin-bottom:22px}
+.talk.r{grid-template-columns:1fr 150px}
+.talk.r .who{order:2}
+.who svg{width:130px;height:130px}
+.say{position:relative;background:#fff;border:3px solid var(--ink);border-radius:22px;padding:18px 22px;box-shadow:6px 6px 0 var(--c,var(--sun))}
+.say::before{content:"";position:absolute;left:-12px;top:42px;width:18px;height:18px;background:#fff;border-left:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg)}
+.talk.r .say::before{left:auto;right:-12px;transform:rotate(-135deg)}
+.say .name{font-family:var(--round);color:var(--c,var(--blue));font-size:15px;display:block;margin-bottom:4px}
+.say p:last-child{margin-bottom:0}
+.qs{counter-reset:q;list-style:none;padding:0;margin:.4em 0 1em}
+.qs li{counter-increment:q;padding-left:40px;position:relative;margin:6px 0}
+.qs li::before{content:counter(q);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;background:var(--sun);border:2.5px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:15px}
+.warn{background:var(--coral-l);border:3px solid var(--ink);border-radius:18px;padding:14px 18px;margin-top:14px}
+.warn b{color:#c33}
+
+/* evidence chips */
+.ev{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.ev .card{padding:16px;box-shadow:0 4px 0 var(--ink)}
+.ev h4{font-size:17px;margin:0 0 4px}
+.ev .k{font-size:13.5px;color:var(--ink-2);margin:0}
+.ev .u{font-size:14px;margin-top:8px;padding-top:8px;border-top:2px dashed var(--line)}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tab{font-family:var(--round);font-size:16px;cursor:pointer;border:2.5px solid var(--ink);background:#fff;border-radius:14px;padding:7px 14px;color:var(--ink);box-shadow:0 3px 0 var(--ink)}
+.tab[aria-selected="true"]{background:var(--c,var(--blue));color:#fff}
+.tab:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.panel{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:24px;box-shadow:6px 6px 0 var(--c,var(--blue))}
+.panel[hidden]{display:none}
+.panel-grid{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:start}
+.panel-grid svg{width:110px;height:110px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0}
+.kv dt{font-weight:700;color:var(--c,var(--blue));white-space:nowrap}
+.kv dd{margin:0}
+
+/* mechanism cards */
+.mech{position:relative;padding-top:30px}
+.mech .pin{position:absolute;top:-16px;left:20px;background:var(--c);color:#fff;font-family:var(--round);font-size:14px;border:2.5px solid var(--ink);border-radius:99px;padding:2px 12px;transform:rotate(-4deg)}
+.mech .key{margin-top:12px;padding-top:10px;border-top:2px dashed var(--line);font-weight:700}
+
+/* age matrix */
+.agechips{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.mtx{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.mtx div{border:2.5px solid var(--ink);border-radius:16px;padding:10px 12px;background:var(--bgc,#fff)}
+.mtx b{display:block;font-family:var(--round);font-weight:400;font-size:15px;color:var(--ink-2)}
+.mtx span{font-weight:700}
+
+/* table-like */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:20px;overflow:hidden;background:#fff;font-size:15.5px}
+.tbl th,.tbl td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:2px solid var(--line)}
+.tbl thead th{font-family:var(--round);font-weight:400;font-size:16.5px;color:#fff;background:var(--blue)}
+.tbl thead th:nth-child(2){background:var(--coral)}
+.tbl thead th:nth-child(3){background:var(--orange)}
+.tbl thead th:nth-child(4){background:var(--mint)}
+.tbl thead th:first-child{background:var(--ink)}
+.tbl tbody th{background:var(--sun-l);font-weight:700;white-space:nowrap}
+.tbl tr:last-child td,.tbl tr:last-child th{border-bottom:0}
+.tbl td.r{text-align:right;font-family:var(--round);font-size:18px}
+
+.prod{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.prod .card{padding:18px 20px;box-shadow:0 4px 0 var(--ink)}
+.prod .co{display:inline-block;font-family:var(--round);color:#fff;background:var(--c);border:2.5px solid var(--ink);border-radius:12px;padding:1px 12px;margin-bottom:8px}
+.prod h4{font-size:17.5px;margin:0 0 6px}
+.prod .ask{margin-top:10px;padding:8px 12px;background:var(--grape-l);border-radius:12px;font-size:15px}
+.prod .ask::before{content:"❓ 要追問：";font-weight:700}
+
+/* calculators */
+.calc{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:6px 6px 0 var(--c,var(--sky))}
+.calc label{font-weight:700;display:block;margin-bottom:4px}
+.calc input[type=range]{width:100%;accent-color:var(--blue);height:28px}
+.calc input[type=number]{font:inherit;font-family:var(--round);font-size:22px;width:120px;padding:4px 10px;border:3px solid var(--ink);border-radius:12px}
+.bars{display:grid;gap:12px;margin-top:16px}
+.bar{display:grid;grid-template-columns:96px 1fr 110px;gap:10px;align-items:center}
+.bar .tr{height:28px;border:2.5px solid var(--ink);border-radius:99px;background:#f4f6fb;overflow:hidden}
+.bar .fill{height:100%;border-radius:99px;transition:width .3s}
+.bar .v{font-family:var(--round);font-size:19px;text-align:right}
+.verdict{margin-top:14px;font-weight:700;background:var(--sun-l);border-radius:14px;padding:10px 14px}
+.agegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.agebox{border:3px solid var(--ink);border-radius:18px;padding:12px 14px;background:#fff}
+.agebox .st{font-family:var(--round);font-size:18px}
+.agebox.ok{background:var(--mint-l)}
+.agebox.no{background:var(--coral-l)}
+
+/* compare 3 companies */
+.cmp{display:grid;grid-template-columns:150px repeat(3,1fr);border:3px solid var(--ink);border-radius:22px;overflow:hidden;background:#fff;font-size:15.5px}
+.cmp > div{padding:11px 13px;border-bottom:2px solid var(--line);border-left:2px solid var(--line)}
+.cmp .h{font-family:var(--round);color:#fff;font-size:17px;border-left:0}
+.cmp .h.c1{background:var(--blue)}.cmp .h.c2{background:var(--coral)}.cmp .h.c3{background:var(--mint)}
+.cmp .h.c0{background:var(--ink)}
+.cmp .rh{background:var(--sun-l);font-weight:700;border-left:0}
+.cmp .m{display:none}
+
+/* timeline */
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:14px 18px 14px 70px;background:#fff;border:3px solid var(--ink);border-radius:18px}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:var(--mint);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:20px}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:33px;bottom:-17px;height:17px;border-left:3px dashed var(--ink)}
+
+/* formula */
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:10px 0}
+.formula .t{border:2.5px solid var(--ink);border-radius:12px;padding:4px 12px;background:#fff;font-size:15.5px}
+.formula .t.p{background:var(--coral-l)}.formula .t.m{background:var(--mint-l)}
+.formula .op{font-family:var(--round);font-size:24px;line-height:1}
+.formula .eq{background:var(--sun);font-weight:700}
+
+/* checklist */
+.chk{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.chk label{display:flex;gap:14px;align-items:flex-start;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px 16px;cursor:pointer;box-shadow:0 4px 0 var(--ink);transition:background .2s}
+.chk input{position:absolute;opacity:0;pointer-events:none}
+.chk .box{flex-shrink:0;width:30px;height:30px;border:3px solid var(--ink);border-radius:9px;background:#fff;display:grid;place-items:center;font-size:19px;color:#fff;margin-top:2px}
+.chk input:checked + .box{background:var(--mint)}
+.chk input:checked + .box::after{content:"✓"}
+.chk input:focus-visible + .box{outline:3px solid var(--sun);outline-offset:2px}
+.chk label.on{background:var(--mint-l)}
+.chk b{display:block;font-family:var(--round);font-weight:400;font-size:18px}
+.chk span.d{font-size:14.5px;color:var(--ink-2);line-height:1.6;display:block}
+.prog{margin:20px 0 8px;display:flex;align-items:center;gap:14px}
+.prog .tr{flex:1;height:26px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden}
+.prog .fill{height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 10px,#5ad6a4 10px,#5ad6a4 20px);transition:width .3s}
+.prog .n{font-family:var(--round);font-size:20px;white-space:nowrap}
+.cheer{display:none;background:var(--sun-l);border:3px solid var(--ink);border-radius:18px;padding:12px 16px;font-weight:700;margin-top:12px}
+.cheer.show{display:block}
+
+/* quiz */
+.quiz{display:grid;gap:18px}
+.q h4{font-size:18.5px}
+.opts{display:grid;gap:10px}
+.opt{text-align:left;font:inherit;font-size:16px;cursor:pointer;background:#fff;border:2.5px solid var(--ink);border-radius:14px;padding:10px 14px;color:var(--ink)}
+.opt:hover:not(:disabled){background:var(--sky-l)}
+.opt:disabled{cursor:default}
+.opt.right{background:var(--mint-l);border-color:var(--mint);font-weight:700}
+.opt.wrong{background:var(--coral-l);border-color:var(--coral)}
+.exp{display:none;margin-top:10px;background:var(--sun-l);border-radius:14px;padding:10px 14px;font-size:15.5px}
+.exp.show{display:block}
+.score{display:none;text-align:center;font-family:var(--round);font-size:22px;background:var(--blue);color:#fff;border:3px solid var(--ink);border-radius:20px;padding:14px;box-shadow:0 5px 0 var(--ink)}
+.score.show{display:block}
+
+/* refs */
+.refs h3{font-size:19px;margin-top:22px;color:var(--blue-d)}
+.refs ol{padding-left:0;list-style:none;margin:0}
+.refs li{background:#fff;border:2px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:10px;font-size:15px;line-height:1.7;word-break:break-word}
+.refs li:target{border-color:var(--sun);background:var(--sun-l)}
+.refs .rid{display:inline-block;font-family:var(--round);background:var(--blue);color:#fff;border-radius:8px;padding:0 8px;margin-right:6px;font-size:13.5px}
+.refs .loc{display:block;color:var(--ink-2);font-size:13.5px}
+.refs a{word-break:break-all;font-size:13.5px}
+
+.disc{background:var(--sun-l);border:3px dashed var(--ink);border-radius:20px;padding:18px 22px;font-size:15.5px}
+.disc b{font-family:var(--round);font-weight:400;font-size:18px;display:block;margin-bottom:4px}
+
+.bigdisc{background:var(--coral-l);border:4px solid var(--ink);border-radius:24px;box-shadow:8px 8px 0 var(--coral);padding:22px 26px;outline:3px dashed var(--coral);outline-offset:-14px}
+.bd-head{display:flex;align-items:center;gap:12px;font-family:var(--round);font-size:clamp(22px,3vw,28px);color:#b42318;margin-bottom:10px}
+.bd-ico{flex-shrink:0;width:46px;height:46px;border-radius:50%;background:var(--coral);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-size:24px}
+.bd-key{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:8px 14px;margin:0 0 12px;font-weight:900;font-size:18px;color:#b42318}
+.bigdisc ul{margin:0;padding-left:1.2em}
+.bigdisc li{margin:6px 0;line-height:1.75}
+.bigdisc li b:first-child{color:#b42318}
+.ftdisc{display:inline-block;background:var(--sun);color:var(--ink);font-weight:700;border:3px solid var(--ink);border-radius:14px;padding:6px 16px;margin:4px 0 14px;font-size:15.5px}
+@media (max-width:820px){.bigdisc{padding:18px 16px;outline-offset:-10px}}
+footer{background:var(--blue-d);color:#fff;text-align:center;padding:46px 0 34px;margin-top:40px;border-top:4px solid var(--ink)}
+footer .pals{display:flex;justify-content:center;gap:12px;margin-bottom:12px}
+footer .pals svg{width:80px;height:80px}
+footer .quote{font-family:var(--round);font-size:22px;margin-bottom:10px}
+footer a{color:var(--sun)}
+footer .fine{font-size:13px;opacity:.8;margin-top:10px}
+#toTop{position:fixed;right:18px;bottom:18px;width:52px;height:52px;border-radius:50%;background:var(--sun);border:3px solid var(--ink);box-shadow:0 4px 0 var(--ink);font-size:22px;font-family:var(--round);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;z-index:60;color:var(--ink)}
+#toTop.show{opacity:1;pointer-events:auto}
+
+@media (max-width:1000px){.ev{grid-template-columns:repeat(3,1fr)}.agechips{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .navpills{display:none}
+  .back{margin-left:auto}
+  .hero{padding:34px 0 80px}
+  .hero .wrap,.grid2,.grid3,.prod,.chk,.agegrid{grid-template-columns:1fr}
+  .hero-art{max-width:420px;margin:0 auto;width:100%}
+  .ev{grid-template-columns:1fr 1fr}
+  .mtx{grid-template-columns:1fr 1fr}
+  .talk,.talk.r{grid-template-columns:1fr;gap:6px}
+  .talk.r .who{order:0}
+  .who svg{width:96px;height:96px}
+  .say::before{left:40px;top:-12px;transform:rotate(135deg)}
+  .talk.r .say::before{left:40px;right:auto;transform:rotate(135deg)}
+  .panel-grid{grid-template-columns:1fr}
+  .panel-grid svg{width:84px;height:84px}
+  .kv{grid-template-columns:1fr}
+  .cmp{grid-template-columns:1fr 1fr 1fr}
+  .cmp .h.c0{display:none}
+  .cmp .h{font-size:15px;padding:9px 8px}
+  .cmp .rh{grid-column:1/-1}
+  .cmp > div{font-size:14.5px;padding:9px 8px}
+  .cmp > div:nth-child(n){border-left:0}
+  .cmp .v{border-left:2px solid var(--line)}
+  .cmp .v1{border-left:0}
+  .bar{grid-template-columns:72px 1fr 92px}
+  .sec-head{gap:14px}
+  .num{width:48px;height:48px;font-size:23px}
+  section.sec{padding:48px 0}
+  .tbl{font-size:14.5px}
+  .tbl th,.tbl td{padding:9px 9px}
+  .tblwrap{overflow-x:auto}
+  .card,.panel,.calc{padding:18px 16px}
+}
+@media (max-width:420px){.ev{grid-template-columns:1fr}.agechips{grid-template-columns:repeat(2,1fr)}.hero .bubble{font-size:15px}}
+
+/* ---- STEWARD 專用 ---- */
+.orig{display:inline-block;font-size:12px;font-weight:700;background:var(--grape-l);color:#5b34c4;border:1.5px solid var(--grape);border-radius:99px;padding:3px 8px;margin:0 2px;vertical-align:2px;white-space:nowrap}
+.unv{display:inline-block;font-size:12px;font-weight:700;background:var(--orange-l);color:#a4520a;border:1.5px solid var(--orange);border-radius:99px;padding:3px 8px;margin:0 2px;vertical-align:2px;white-space:nowrap}
+.fix{border:3px dashed var(--coral);background:var(--coral-l);border-radius:18px;padding:14px 18px;margin-top:20px}
+.fix b.h{color:#c43c3c}
+.fix p:last-child{margin-bottom:0}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.vs>*{min-width:0}
+.verse{font-family:var(--round);font-size:19px;line-height:1.8;background:#fff8e6;border-left:6px solid var(--sun);border-radius:0 14px 14px 0;padding:12px 16px;margin:10px 0}
+.verse cite{display:block;font-family:var(--sans,inherit);font-style:normal;font-size:14px;color:var(--ink-2);margin-top:4px}
+.scene{display:grid;grid-template-columns:200px 1fr;gap:22px;align-items:center}
+.scene svg{width:100%;height:auto}
+.steps3{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.steps3 button{font-family:var(--round);font-size:16px;border:3px solid var(--ink);border-radius:14px;background:#fff;color:var(--ink);padding:8px 14px;cursor:pointer;box-shadow:0 3px 0 var(--ink)}
+.steps3 button[aria-pressed="true"]{background:var(--sun)}
+.calc2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.fld{display:grid;gap:4px;margin-bottom:12px}
+.fld label{font-weight:700}
+.fld input[type=number]{font:inherit;font-size:18px;border:3px solid var(--ink);border-radius:12px;padding:6px 10px;width:100%;max-width:240px}
+.res{font-family:var(--round);font-size:22px;margin-top:6px}
+.res b{color:var(--coral);font-size:34px;font-weight:400}
+.qbar{height:28px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden;margin:6px 0}
+.qbar i{display:block;height:100%;background:var(--mint);transition:width .3s}
+.ptbl{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:16px;overflow:hidden;background:#fff}
+.ptbl th,.ptbl td{padding:10px 12px;border-bottom:2px solid var(--line);text-align:left;vertical-align:top;font-size:15.5px}
+.ptbl thead th{font-family:var(--round);font-weight:400;color:#fff}
+.ptbl thead th:nth-child(1){background:var(--ink)}.ptbl thead th:nth-child(2){background:var(--blue)}.ptbl thead th:nth-child(3){background:var(--orange)}
+.ptbl tbody th{background:#f4f6fb;width:7em}
+.ptbl tr:last-child td,.ptbl tr:last-child th{border-bottom:0}
+@media (max-width:820px){.vs,.calc2{grid-template-columns:1fr}.scene{grid-template-columns:1fr}.scene svg{max-width:220px;margin:0 auto}}
+@media (max-width:560px){.ptbl thead{display:none}.ptbl tr{display:block;border-bottom:2px solid var(--line)}.ptbl tbody th{display:block;width:auto;background:var(--blue-l)}.ptbl td{display:block;border:0;padding:6px 12px}.ptbl td::before{content:attr(data-l)"：";font-weight:700;color:var(--ink-2)}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+<symbol id="grandma" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="60" cy="14" r="13" fill="#d9dde8" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M24 60 C22 34 40 24 60 24 C80 24 98 34 96 60Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="60" cy="64" r="34" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M28 52 C40 40 80 40 92 52 C86 34 34 34 28 52Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="48" cy="64" r="4.5" fill="#1f2a44"/><circle cx="72" cy="64" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="62.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="62.6" r="1.4" fill="#fff"/>
+  <ellipse cx="39" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="81" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M51 80 Q60 88 69 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="grandpa" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#8a5cf6" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M52 100 L60 116 L68 100" fill="#fff" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="60" cy="62" r="36" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M26 56 C24 40 32 30 40 30 M94 56 C96 40 88 30 80 30" stroke="#1f2a44" stroke-width="3" fill="#eef1f7" stroke-linecap="round"/>
+  <path d="M27 52 C22 44 26 34 36 34 L36 52Z M93 52 C98 44 94 34 84 34 L84 52Z" fill="#eef1f7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="47" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/><circle cx="73" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M56 60 H64" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="47" cy="61" r="3.5" fill="#1f2a44"/><circle cx="73" cy="61" r="3.5" fill="#1f2a44"/>
+  <circle cx="48.2" cy="59.8" r="1.2" fill="#fff"/><circle cx="74.2" cy="59.8" r="1.2" fill="#fff"/>
+  <ellipse cx="38" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="82" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M50 80 Q60 88 70 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="heart" viewBox="0 0 120 120">
+  <path d="M60 104 C20 78 10 56 14 40 C18 22 42 16 60 36 C78 16 102 22 106 40 C110 56 100 78 60 104Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="48" cy="56" r="4.5" fill="#1f2a44"/><circle cx="72" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="54.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="54.6" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 無花果葉 -->
+<symbol id="fig" viewBox="0 0 120 120">
+  <path d="M60 112 V70" stroke="#1f2a44" stroke-width="4" stroke-linecap="round"/>
+  <path d="M60 72 C30 76 10 58 14 36 C24 44 30 40 28 28 C40 34 46 28 44 14 C52 20 58 16 60 6 C62 16 68 20 76 14 C74 28 80 34 92 28 C90 40 96 44 106 36 C110 58 90 76 60 72Z" fill="#2bb88a" stroke="#1f2a44" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M60 70 V20 M60 50 L36 40 M60 50 L84 40 M60 62 L40 58 M60 62 L80 58" stroke="#1d8f6a" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <circle cx="50" cy="44" r="3.5" fill="#1f2a44"/><circle cx="70" cy="44" r="3.5" fill="#1f2a44"/>
+</symbol>
+<!-- 衣袍 -->
+<symbol id="robe" viewBox="0 0 120 130">
+  <path d="M40 12 Q60 26 80 12 L106 30 L94 52 L86 46 L90 124 H30 L34 46 L26 52 L14 30Z" fill="#c9a26b" stroke="#1f2a44" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M60 22 V124" stroke="#a37f4b" stroke-width="3"/>
+  <path d="M36 70 Q60 78 84 70 M34 96 Q60 104 86 96" stroke="#a37f4b" stroke-width="3" fill="none"/>
+  <circle cx="50" cy="44" r="3.5" fill="#1f2a44"/><circle cx="70" cy="44" r="3.5" fill="#1f2a44"/>
+  <path d="M52 54 Q60 60 68 54" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 小羊 -->
+<symbol id="lamb" viewBox="0 0 130 110">
+  <ellipse cx="70" cy="60" rx="46" ry="32" fill="#fff" stroke="#1f2a44" stroke-width="4"/>
+  <circle cx="40" cy="44" r="12" fill="#fff" stroke="#1f2a44" stroke-width="4"/><circle cx="62" cy="34" r="12" fill="#fff" stroke="#1f2a44" stroke-width="4"/><circle cx="86" cy="36" r="12" fill="#fff" stroke="#1f2a44" stroke-width="4"/>
+  <ellipse cx="28" cy="62" rx="18" ry="16" fill="#ffe2c8" stroke="#1f2a44" stroke-width="4"/>
+  <circle cx="22" cy="60" r="3" fill="#1f2a44"/><circle cx="34" cy="60" r="3" fill="#1f2a44"/>
+  <path d="M24 70 Q28 74 32 70" stroke="#1f2a44" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M50 90 V104 M66 92 V106 M84 92 V106 M100 88 V102" stroke="#1f2a44" stroke-width="5" stroke-linecap="round"/>
+</symbol>
+</defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://www.gungho.idv.tw/KS/index.html" aria-label="回共好小學堂首頁">
+      <svg aria-hidden="true"><use href="#sprout"/></svg>
+      <span><b>共好小學堂</b><small>GROW &amp; LEARN TOGETHER</small></span>
+    </a>
+    <nav class="navpills" aria-label="章節">
+      <a href="#s1">創世記</a><a href="#s2">健康經濟學</a><a href="#calc">試算 QALY</a><a href="#s3">機會成本</a><a href="#s4">天國經濟學</a><a href="#s5">公共與受託</a><a href="#s6">三種自由</a><a href="#s7">對照表</a><a href="#check">實踐清單</a><a href="#quiz">小測驗</a><a href="#refs">參考資料</a>
+    </nav>
+    <a class="back" href="https://www.gungho.idv.tw/KS/index.html">← 回小學堂</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <span class="blob" style="width:320px;height:320px;background:var(--sun-l);top:-90px;right:-60px"></span>
+  <span class="blob" style="width:220px;height:220px;background:var(--mint-l);bottom:30px;left:-70px"></span>
+  <span class="blob" style="width:140px;height:140px;background:var(--sky-l);top:40%;left:46%"></span>
+  <div class="wrap">
+    <div>
+      <span class="tag">✦ 信仰生活小知識</span>
+      <h1>我的身體，<span class="hl nw">是誰的？</span></h1>
+      <p class="lead">健康經濟學說：醫療資源有限，要用 <b>QALY、ICER、機會成本</b>算清楚怎麼分配。基督教信仰說：身體是<b>上帝所託付的禮物</b>，我們是管家而不是主人。從創世記的<b>無花果葉與皮衣</b>出發，戴上兩副眼鏡，重新看看健康與身體。</p>
+      <div class="btns">
+        <a class="btn pri" href="#start">開始認識 →</a>
+        <a class="btn" href="#calc">試算 QALY 與 ICER</a>
+      </div>
+      <p class="meta">資料查核日：2026年10月13日｜資料來源：健康經濟學教材與期刊、美國臨床與經濟評論研究所（ICER）、聖經和合本、聖經學術論文</p>
+    </div>
+    <div class="hero-art">
+      <div class="bubble">我是管家，不是主人～</div>
+      <svg viewBox="0 0 520 400" role="img" aria-label="無花果葉、衣袍和小羊，旁邊有阿嬤、小芽和藍鳥">
+        <ellipse cx="260" cy="368" rx="230" ry="26" fill="#dcf7ec"/>
+        <g class="float"><use href="#fig" x="60" y="110" width="120" height="120"/></g>
+        <g class="float d2"><use href="#robe" x="200" y="170" width="120" height="130"/></g>
+        <use href="#grandma" x="340" y="170" width="120" height="152"/>
+        <use href="#lamb" x="60" y="270" width="120" height="100"/>
+        <use href="#bird" x="440" y="100" width="66" height="60"/>
+        <g class="float d3"><use href="#star" x="260" y="80" width="40" height="40"/></g>
+      </svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C240 60 480 0 720 30 C960 60 1200 0 1440 30 V60 H0Z" fill="#fffdf7"/></svg>
+</section>
+
+<section class="sec" id="start">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">★</div><div><span class="eyebrow">Key Points</span><h2>先說重點</h2></div></div>
+    <div class="talk" style="--c:var(--sun)">
+      <div class="who"><svg aria-hidden="true"><use href="#robe"/></svg></div>
+      <div class="say"><span class="name">衣袍說</span>
+        <p>健康經濟學提醒我們：資源有限，每個選擇都有<b>機會成本</b>；QALY 和 ICER 是有用的分配工具，但<b>不能取代對公平、尊嚴與弱勢者的關懷</b>。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref3">參考 3</a></p>
+      </div>
+    </div>
+    <div class="talk r" style="--c:var(--coral)">
+      <div class="who"><svg aria-hidden="true"><use href="#lamb"/></svg></div>
+      <div class="say"><span class="name">小羊說</span>
+        <p>信仰把身體看成受託管理的禮物。承認「我不是自己的」，不是放棄照顧身體，而是<b>從焦慮的自我修補中被釋放</b>，用感恩和責任善用生命。<span class="orig">原稿整理</span></p>
+      </div>
+    </div>
+    <div class="warn"><b>⚠ 閱讀小提醒：</b>本頁是信仰反思與健康經濟學知識的整理，經文解讀<b>有不同傳統與觀點</b>，本頁呈現的是原稿採用的基督教詮釋。標示 <span class="orig">原稿整理</span> 的是原稿的神學或實務觀點；這些觀點不能取代醫療專業，生病請就醫。</div>
+  </div>
+</section>
+
+<section class="sec alt" id="s1" style="--tint:var(--sun-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--orange)"><div class="num">1</div><div><span class="eyebrow">Genesis</span><h2>創世記三幕劇：赤身、無花果葉、皮衣</h2></div></div>
+    <div class="calc" style="--c:var(--orange)">
+      <div class="steps3" role="group" aria-label="選擇場景">
+        <button type="button" data-i="0" aria-pressed="true">第一幕：不羞恥</button>
+        <button type="button" data-i="1" aria-pressed="false">第二幕：無花果葉</button>
+        <button type="button" data-i="2" aria-pressed="false">第三幕：皮衣</button>
+      </div>
+      <div class="scene">
+        <svg viewBox="0 0 200 200" aria-hidden="true" id="sceneArt"></svg>
+        <div id="sceneTxt" aria-live="polite"></div>
+      </div>
+    </div>
+    <div class="vs" style="margin-top:22px">
+      <div class="card mech" style="--c:var(--mint)"><span class="pin">無花果葉</span><h3>🍃 自我保險的比喻</h3><p>用自己的力氣遮住羞恥與脆弱：有限、易損、要一再修補，像「治標不治本」的投資。<span class="orig">原稿整理</span></p></div>
+      <div class="card mech" style="--c:var(--orange)"><span class="pin">皮衣</span><h3>🧥 恩典覆蓋的比喻</h3><p>承認自己修補的極限，接受上帝的供應。人不再是身體與生命的「最終承保者」，而是受託的管家。<span class="orig">原稿整理</span></p></div>
+    </div>
+    <div class="fix">
+      <p>🔎 <b class="h">不同的讀法：</b>「皮衣需要動物流血、預示獻祭與基督救贖」是基督教常見的<b>傳統解讀</b>，例如 GotQuestions 的文章就這樣說明，但經文本身沒有明說。<a class="src" href="#ref8">參考 8</a> 聖經學者 Lambden 整理的早期猶太文獻則有很多不同讀法：有的認為皮衣是祭司的衣服，有的讀成「光的衣服」，也有人認為皮衣指的就是人會朽壞的肉身；他也認為這段經文的重點不一定是「罪與墮落」，而是人的聰明與上帝的照顧。<a class="src" href="#ref7">參考 7</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="s2">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">2</div><div><span class="eyebrow">Health Economics</span><h2>健康經濟學：稀缺下的分配科學</h2></div></div>
+    <div class="grid3">
+      <div class="card mech" style="--c:var(--blue)"><span class="pin">稀缺</span><h3>⚖️ 資源有限</h3><p>時間和金錢等資源，能用的地方永遠比能做的多。醫療預算、醫護人力、病床、藥物都一樣。<a class="src" href="#ref1">參考 1</a></p></div>
+      <div class="card mech" style="--c:var(--coral)"><span class="pin">機會成本</span><h3>🔀 選了這個，就放棄那個</h3><p>把資源用在一件事上，就失去「下一個最好選擇」可帶來的好處；機會成本<b>不只是錢</b>，而是失去的健康利益。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref3">參考 3</a></p></div>
+      <div class="card mech" style="--c:var(--mint)"><span class="pin">QALY</span><h3>🌱 質量調整壽命年</h3><p>同時算「活多久」和「活得好不好」：1 代表完全健康、0 代表死亡；完全健康活一年 = 1 個 QALY。<a class="src" href="#ref1">參考 1</a></p></div>
+    </div>
+    <div class="card" style="margin-top:20px"><h3>🧮 ICER：增量成本效果比</h3><p style="font-family:var(--round);font-size:20px;text-align:center">ICER ＝ 成本差多少 ÷ 健康效果差多少</p><p>比較新方案和現行方案：多花的錢，除以多得到的健康（常用 QALY 表示）。決策者再拿這個數字和「願意付多少」的門檻比較。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref6">參考 6</a></p></div>
+  </div>
+</section>
+
+<section class="sec alt" id="calc" style="--tint:var(--sky-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">3</div><div><span class="eyebrow">Try It</span><h2>動手試算 QALY 與 ICER</h2></div></div>
+    <div class="calc2">
+      <div class="calc" style="--c:var(--mint)">
+        <h3>🌱 QALY 小算盤</h3>
+        <div class="fld"><label for="qy">活了幾年</label><input type="number" id="qy" min="0" max="100" step="0.5" value="10"></div>
+        <div class="fld"><label for="qw">生活品質權重：<span id="qwL">0.70</span>（1＝完全健康，0＝死亡）</label><input type="range" id="qw" min="0" max="1" step="0.05" value="0.7"></div>
+        <div class="qbar" aria-hidden="true"><i id="qwBar"></i></div>
+        <div class="res" id="qRes" aria-live="polite"></div>
+        <p class="small">例：權重 0.5 的狀態活一年 = 0.5 個 QALY。<a class="src" href="#ref1">參考 1</a></p>
+      </div>
+      <div class="calc" style="--c:var(--coral)">
+        <h3>🧮 ICER 小算盤</h3>
+        <div class="fld"><label for="ic">新治療比舊治療多花（萬元）</label><input type="number" id="ic" min="0" step="1" value="100"></div>
+        <div class="fld"><label for="iq">多得到的 QALY</label><input type="number" id="iq" min="0" step="0.1" value="2"></div>
+        <div class="res" id="iRes" aria-live="polite"></div>
+        <p class="small" id="iNote"></p>
+        <p class="small">原稿的例子：多花 100 萬、多 2 個 QALY → 每 QALY 50 萬元。<span class="orig">原稿整理</span></p>
+      </div>
+    </div>
+    <div class="card" style="margin-top:20px"><h3>📏 門檻是誰訂的？</h3><p>美國的臨床與經濟評論研究所（ICER）在 2025 年的方法手冊中，以<b>每 QALY 或每 evLY 10 萬到 15 萬美元</b>作為「健康效益價格基準」的常用範圍。<a class="src" href="#ref6">參考 6</a> 各國門檻與做法不同，台灣的健保給付評估也有自己的程序，這個數字只是舉例。</p>
+      <p class="small">💡 什麼是 evLY？ICER 擔心傳統 QALY 會把「延長重病或失能者的生命」算得比較不值錢，所以另外使用「等值生命年」（evLY）：延長的每一年，生活品質都用同一個固定值計算。<a class="src" href="#ref6">參考 6</a></p></div>
+  </div>
+</section>
+
+<section class="sec" id="s3">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--coral)"><div class="num">4</div><div><span class="eyebrow">Opportunity Cost &amp; Fairness</span><h2>機會成本與公平</h2></div></div>
+    <div class="vs">
+      <div class="card"><h3>🤔 忽略機會成本也不道德？</h3><p>一篇 2005 年的期刊文章就以「忽略機會成本是道德的嗎？」為題討論：把錢花在某項治療，代表其他病人可能少了服務，這也是倫理問題。<a class="src" href="#ref3">參考 3</a></p></div>
+      <div class="card"><h3>⚠️ 效率不能是唯一標準</h3><p>效率最大化可能有利整體人口，卻未必公平對待<b>重症、罕病、失能、高齡或弱勢族群</b>。所以不只要問「多少 QALY」，也要問「<b>誰被排除、誰承擔代價、如何保障尊嚴</b>」。<span class="orig">原稿整理</span></p></div>
+    </div>
+    <p class="small" style="margin-top:12px">英國學者也指出，全國層級的經濟評估通常以「讓整體預算產生最多健康」為原則；地方決策則常受政治與預算週期影響，透明度較低。<a class="src" href="#ref4">參考 4</a></p>
+  </div>
+</section>
+
+<section class="sec alt" id="s4" style="--tint:var(--mint-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">5</div><div><span class="eyebrow">Kingdom Economics</span><h2>天國經濟學：豐盛、憐憫與 Shalom</h2></div></div>
+    <div class="vs">
+      <div class="card mech" style="--c:var(--mint)"><span class="pin">從稀缺到豐盛</span><h3>🌾 不是浪費，而是換個問題</h3><p>健康經濟學問：有限預算下怎麼得到最多健康？天國經濟學問：資源怎麼使用，才能促進<b>公義、憐憫與關係修復</b>？這不是忽略成本，而是提醒：<b>效率不能成為唯一的神</b>。<span class="orig">原稿整理</span></p></div>
+      <div class="card mech" style="--c:var(--blue)"><span class="pin">Shalom</span><h3>🕊 全人的平安</h3><p>希伯來文 Shalom 不只是沒有衝突，而是完整、健全、和好：涵蓋身體、心理、人際、社會公義與靈性。健康的終極定義，不只是器官正常或壽命最長。<span class="orig">原稿整理</span></p></div>
+    </div>
+    <div class="verse">「你們中間誰有一百隻羊失去一隻，不把這九十九隻撇在曠野，去找那失去的羊，直到找着呢？」<cite>路加福音 15:4（和合本）</cite></div>
+    <p>原稿用「失群的羊」提醒：如果醫療或社會政策只看 QALY，忽略失能者、弱勢者，就可能違背憐憫與公義。<span class="orig">原稿整理</span></p>
+  </div>
+</section>
+
+<section class="sec" id="s5">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">6</div><div><span class="eyebrow">Public &amp; Entrusted</span><h2>身體：公共資產，也是受託資產</h2></div></div>
+    <div class="grid3">
+      <div class="card mech" style="--c:var(--blue)"><span class="pin">外部性</span><h3>💉 我的健康會影響別人</h3><p>打疫苗保護的不只自己，也透過群體免疫保護別人；因為個人沒算到這部分好處，市場上的疫苗需求會低於社會需要的程度。<a class="src" href="#ref5">參考 5</a></p></div>
+      <div class="card mech" style="--c:var(--orange)"><span class="pin">道德風險</span><h3>🛡 有保險就比較不小心？</h3><p>因為不用自己負擔全部費用，有保險的人可能少做預防、多用醫療；加收部分負擔可以減少，但可能讓低收入者不敢就醫。<a class="src" href="#ref5">參考 5</a></p></div>
+      <div class="card mech" style="--c:var(--coral)"><span class="pin">逆選擇</span><h3>📉 保險市場也會失靈</h3><p>保險公司看不清每個人的風險，保費一漲，低風險的人先退出，保費再漲⋯⋯強制性的公共保險是解方之一。<a class="src" href="#ref5">參考 5</a></p></div>
+    </div>
+    <div class="verse">「豈不知你們的身子就是聖靈的殿嗎？這聖靈是從神而來，住在你們裡頭的；並且你們不是自己的人，因為你們是重價買來的。所以，要在你們的身子上榮耀神。」<cite>哥林多前書 6:19–20（和合本）</cite></div>
+    <p>信仰視角把身體從純粹的私有財產，轉為<b>受託管理的資產</b>：不是為了焦慮地控制所有風險，而是為了善用生命、維護健康、服事他人、榮耀上帝。<span class="orig">原稿整理</span></p>
+  </div>
+</section>
+
+<section class="sec alt" id="s6" style="--tint:var(--grape-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">7</div><div><span class="eyebrow">Freedom</span><h2>承認「不擁有自己」帶來的三種自由</h2></div></div>
+    <p class="intro">這不是否定自主權：人仍然需要就醫、運動、休息、管理慢性病，做知情的決定。只是不必把衰老、疾病和死亡，當成必須獨自打贏的失敗。<span class="orig">原稿整理</span></p>
+    <ol class="steps" style="--c:var(--grape)">
+      <li><b>📊 從健康數據的綁架中釋放</b>：血壓、血糖、體重是管理工具，不是身分價值或救贖證明。</li>
+      <li><b>🔧 從無止境的自我修補中釋放</b>：接受身體的有限，把資源也投入關係、使命與服事。</li>
+      <li><b>🕯 從死亡焦慮中釋放</b>：把終極的修復與救贖交託給上帝，以感恩和責任使用當下的生命。</li>
+    </ol>
+    <p class="small" style="margin-top:8px">以上為原稿的信仰觀點。<span class="orig">原稿整理</span> 如果長期被健康焦慮或死亡焦慮困擾，除了牧養陪伴，也可以尋求身心科醫師或心理師協助。</p>
+  </div>
+</section>
+
+<section class="sec" id="s7">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">8</div><div><span class="eyebrow">Two Lenses</span><h2>兩副眼鏡對照表 <span class="orig">原稿整理</span></h2></div></div>
+    <table class="ptbl">
+      <thead><tr><th>議題</th><th>健康經濟學</th><th>天國經濟學</th></tr></thead>
+      <tbody>
+        <tr><th>基本前提</th><td data-l="健康經濟學">資源稀缺、機會成本</td><td data-l="天國經濟學">上帝主權、恩典與豐盛</td></tr>
+        <tr><th>核心工具</th><td data-l="健康經濟學">QALY、ICER、成本效益分析</td><td data-l="天國經濟學">Shalom、公義、憐憫、管家職分</td></tr>
+        <tr><th>身體定位</th><td data-l="健康經濟學">個人健康資本與公共外部性</td><td data-l="天國經濟學">上帝所賜、受託管理的身體</td></tr>
+        <tr><th>決策目標</th><td data-l="健康經濟學">效率、健康產出、資源分配</td><td data-l="天國經濟學">公義、憐憫、修復、全人平安</td></tr>
+        <tr><th>對邊緣者</th><td data-l="健康經濟學">需注意公平與機會成本</td><td data-l="天國經濟學">主動尋找並關懷「失群的羊」</td></tr>
+        <tr><th>面對死亡</th><td data-l="健康經濟學">延長生命、改善生活品質</td><td data-l="天國經濟學">交託救贖、善用有限生命</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="sec alt" id="check" style="--tint:var(--sun-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">9</div><div><span class="eyebrow">Practice</span><h2>管家實踐小清單</h2></div></div>
+    <p class="intro">選幾項這個月想做的，做到就勾起來。<span class="orig">原稿整理</span></p>
+    <div class="chk" id="chk">
+      <label><input type="checkbox" data-k="c1"><span class="box"></span><span><b>🚶 把運動、睡眠、飲食當成管家責任</b><span class="d">不是焦慮地控制，而是感恩地照顧</span></span></label>
+      <label><input type="checkbox" data-k="c2"><span class="box"></span><span><b>📊 把健康數據當回饋，不當身分</b><span class="d">量完血壓，記錄下來，然後好好過今天</span></span></label>
+      <label><input type="checkbox" data-k="c3"><span class="box"></span><span><b>🩺 做醫療決定時，一起考慮效果、副作用、生活品質、家人負擔與自己的價值</b><span class="d">和醫師、家人一起討論</span></span></label>
+      <label><input type="checkbox" data-k="c4"><span class="box"></span><span><b>🙏 探望一位生病或獨居的弟兄姊妹</b><span class="d">探病、陪伴、代禱，也是健康照護的一部分</span></span></label>
+      <label><input type="checkbox" data-k="c5"><span class="box"></span><span><b>🤝 支持一位照顧者</b><span class="d">幫忙接送、送一餐，或讓他喘口氣</span></span></label>
+      <label><input type="checkbox" data-k="c6"><span class="box"></span><span><b>🧭 協助弱勢者取得醫療資訊或交通</b><span class="d">陪長輩看診、幫忙掛號、整理用藥</span></span></label>
+    </div>
+    <div class="prog"><div class="tr"><div class="fill" id="pFill"></div></div><span class="n" id="pN">0 / 6</span></div>
+    <div class="cheer" id="cheer">🎉 六項都做到了！願你在身體、心靈與關係中經歷 Shalom。</div>
+    <p class="small">🔒 勾選狀態只存在你自己的瀏覽器，不會上傳。<button type="button" id="chkReset" style="font:inherit;font-size:14px;border:2px solid var(--ink);border-radius:10px;background:#fff;padding:1px 10px;cursor:pointer;margin-left:6px">清除重來</button></p>
+  </div>
+</section>
+
+<section class="sec" id="s9">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">10</div><div><span class="eyebrow">Wrap-up</span><h2>結論：算得清楚，也愛得周全</h2></div></div>
+    <div class="talk" style="--c:var(--mint)">
+      <div class="who"><svg aria-hidden="true"><use href="#sprout"/></svg></div>
+      <div class="say"><span class="name">小芽總結</span>
+        <p>健康經濟學提醒我們：資源有限，選擇必然有機會成本；QALY 與 ICER 是有價值的工具，但不能取代對公平、尊嚴與弱勢者的關懷。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref3">參考 3</a><a class="src" href="#ref6">參考 6</a></p>
+        <p>信仰則把身體看成上帝所賜、受託管理的禮物，以 Shalom 作為健康的終極視野。承認「不擁有自己」，反而讓人從焦慮的自我修補中得自由，用感恩、責任與使命善用生命。<span class="orig">原稿整理</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="quiz" style="--tint:var(--grape-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">?</div><div><span class="eyebrow">Quick Quiz</span><h2>小測驗：四題就好</h2></div></div>
+    <div class="quiz" id="quizBox">
+      <div class="card q" data-ans="b">
+        <h4>Q1. 以生活品質權重 0.5 的狀態活 4 年，等於幾個 QALY？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">4 個</button>
+          <button class="opt" data-v="b">2 個</button>
+          <button class="opt" data-v="c">0.5 個</button>
+        </div>
+        <div class="exp">QALY ＝ 年數 × 生活品質權重：4 × 0.5 ＝ 2。</div>
+      </div>
+      <div class="card q" data-ans="c">
+        <h4>Q2. 新藥比舊藥多花 60 萬元、多 3 個 QALY，ICER 是多少？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">每 QALY 180 萬元</button>
+          <button class="opt" data-v="b">每 QALY 63 萬元</button>
+          <button class="opt" data-v="c">每 QALY 20 萬元</button>
+        </div>
+        <div class="exp">ICER ＝ 成本差 ÷ 效果差 ＝ 60 萬 ÷ 3 ＝ 每 QALY 20 萬元。</div>
+      </div>
+      <div class="card q" data-ans="a">
+        <h4>Q3. 打疫苗也保護了別人，這在經濟學上叫做什麼？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">正向外部性</button>
+          <button class="opt" data-v="b">道德風險</button>
+          <button class="opt" data-v="c">逆選擇</button>
+        </div>
+        <div class="exp">外部性是落在沒有參與交易者身上的成本或好處；疫苗透過群體免疫保護他人，是正向外部性。</div>
+      </div>
+      <div class="card q" data-ans="b">
+        <h4>Q4. 關於創世記 3:21 的皮衣，下列哪個說法比較準確？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">經文明白寫著皮衣代表獻祭與救贖</button>
+          <button class="opt" data-v="b">「預示獻祭與救贖」是基督教常見的傳統解讀，猶太文獻還有其他讀法</button>
+          <button class="opt" data-v="c">這段經文沒有任何人討論過</button>
+        </div>
+        <div class="exp">經文只說上帝用皮子做衣服給他們穿；獻祭預表是詮釋傳統，早期猶太文獻也有「祭司衣」「光之衣」「肉身」等讀法。</div>
+      </div>
+      <div class="score" id="score"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec refs" id="refs">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--ink)"><div class="num">§</div><div><span class="eyebrow">References</span><h2>參考資料</h2></div></div>
+    <p class="small">以下資料於<b>2026年10月13日</b>查核，編號依原稿清單順序。原稿內文的 [web:344]～[web:358] 標記無法對應清單，本頁已依各來源實際內容重新對應。經文引自<b>聖經和合本</b>（1919 年版，公共領域）。</p>
+    <h3>📊 健康經濟學</h3>
+    <ol>
+      <li id="ref1"><span class="rid">1</span>Currie G. <b>Intro to health economics.</b> University of Calgary, Pediatrics Residents and Fellows Research Course，2025年11月3日。<span class="loc">稀缺、機會成本（不只是金錢）、QALY（1＝完全健康、0＝死亡）、ICER 的定義；未給出具體門檻數字。</span><a href="https://cumming.ucalgary.ca/sites/default/files/teams/82/education/Intro%20to%20Health%20Economics%202025.pdf" target="_blank" rel="noopener">ucalgary.ca（PDF）</a></li>
+      <li id="ref2"><span class="rid">2</span>Grant L. <b>Health economics for palliative care.</b> In: <i>Oxford Textbook of Palliative Medicine</i>, 6th edn. Oxford University Press，2021。<span class="loc">僅能讀到摘要開頭（醫療成本因需求與可用治療增加而上升），本頁未直接引用。</span><a href="https://academic.oup.com/book/40580/chapter/348127795" target="_blank" rel="noopener">oup.com</a></li>
+      <li id="ref3"><span class="rid">3</span>Sendi P, Gafni A, Birch S. <b>Ethical economics and cost–effectiveness analysis: is it ethical to ignore opportunity costs?</b> <i>Expert Rev Pharmacoecon Outcomes Res.</i> 2005;5(6):661-665.<span class="loc">題名與書目經 Crossref 核對；全文頁面未能開啟，內文僅引用其題旨。</span><a href="https://doi.org/10.1586/14737167.5.6.661" target="_blank" rel="noopener">DOI: 10.1586/14737167.5.6.661</a></li>
+      <li id="ref4"><span class="rid">4</span>Howdon D, Hinde S, Lomas J, Franklin M. <b>Economic Evaluation Evidence for Resource-Allocation Decision Making: Bridging the Gap for Local Decision Makers Using English Case Studies.</b> <i>Appl Health Econ Health Policy.</i> 2022;20(6):783-792.<span class="loc">全國層級以預算產生最多健康為原則；地方決策較受政治與預算週期影響。</span><a href="https://doi.org/10.1007/s40258-022-00756-7" target="_blank" rel="noopener">DOI: 10.1007/s40258-022-00756-7</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/36018504/" target="_blank" rel="noopener">PubMed 36018504</a></li>
+      <li id="ref5"><span class="rid">5</span>Smith R. <b>Externalities, Public Goods and Health Insurance</b>（Lecture 6，倫敦衛生與熱帶醫學院）。<span class="loc">市場失靈；疫苗的正向外部性與群體免疫；公共財；逆選擇；道德風險與部分負擔的取捨。</span><a href="https://healtheconomics.org/wp-content/uploads/2022/08/Externalities-Public-Goods-and-Health-Insurance-Smith-Lecture-6.pdf" target="_blank" rel="noopener">healtheconomics.org（PDF）</a></li>
+      <li id="ref6"><span class="rid">6</span>Institute for Clinical and Economic Review. <b>ICER's Reference Case for Economic Evaluations: Elements and Rationale</b>（2025年10月23日版）。<span class="loc">每 QALY／evLY 10–15 萬美元的健康效益價格基準；以 evLY 回應 QALY 對延長生命評價的疑慮。</span><a href="https://icer.org/wp-content/uploads/2024/02/ICER_Reference-Case_For-Publication_070126.pdf" target="_blank" rel="noopener">icer.org（PDF）</a></li>
+    </ol>
+    <h3>📖 聖經與詮釋</h3>
+    <ol>
+      <li id="ref7"><span class="rid">7</span>Lambden SN. <b>From Fig Leaves to Fingernails: Some Notes on the Garments of Adam and Eve in the Hebrew Bible and Select Early Postbiblical Jewish Writings.</b> In: <i>JSOT Supplement Series</i> 136. Sheffield: JSOT Press.<span class="loc">把創 2:25、3:7、3:21 連讀；無花果葉為人的愚拙、皮衣為上帝的照顧；整理祭司衣、光之衣、肉身等猶太詮釋；認為許多基督教讀法屬「讀入經文」。</span><a href="https://hurqalya.ucmerced.edu/sites/g/files/ufvvjh1056/f/page/documents/0-lancaster.pdf" target="_blank" rel="noopener">ucmerced.edu（PDF）</a></li>
+      <li id="ref8"><span class="rid">8</span><b>What is the significance of the garments of skin?</b> GotQuestions.org。<span class="loc">基督教福音派觀點：皮衣需流血、預示獻祭與基督；無花果葉代表自義的遮蔽。</span><a href="https://www.gotquestions.org/garments-of-skin.html" target="_blank" rel="noopener">gotquestions.org</a></li>
+      <li id="ref9"><span class="rid">9</span><b>Topical Bible: Dress of Fig Leaves</b>（Nave's Topical Bible，Bible Hub）。<span class="loc">經文索引頁，本頁未直接引用。</span><a href="https://biblehub.com/topical/naves/d/dress_of_fig_leaves.htm" target="_blank" rel="noopener">biblehub.com</a></li>
+    </ol>
+
+    <div class="bigdisc" role="note" aria-label="免責聲明" style="margin-top:30px">
+      <div class="bd-head"><span class="bd-ico">⚠</span><span>重要聲明｜請先看這裡</span></div>
+      <p class="bd-key">本站資訊僅供參考，實際以醫師等專業人員評估、各機構官方資料及衛生福利部、健保署公告為準。</p>
+      <ul>
+        <li><b>僅供參考：</b>本頁為信仰反思與健康經濟學知識的學習整理，<b>不構成任何醫療、保險或政策建議</b>；信仰觀點不能取代就醫與專業治療。</li>
+        <li><b>無任何推薦或行銷：</b>本頁不推薦、不銷售任何產品、保險、課程或特定教會團體，與文中作者及單位無任何合作或業配關係。</li>
+        <li><b>詮釋多元：</b>經文詮釋有不同傳統，本頁呈現的是原稿採用的基督教觀點，並列出其他讀法供參考。</li>
+        <li><b>試算工具：</b>QALY 與 ICER 小算盤只為說明概念，數字與門檻皆為舉例，不代表任何國家的實際給付標準。</li>
+        <li><b>資料時點：</b>資料查核於2026年10月13日，之後的新資料本頁不會即時同步。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="pals" aria-hidden="true"><svg><use href="#sprout"/></svg><svg><use href="#bird"/></svg><svg><use href="#star"/></svg></div>
+    <p class="quote">每一次多懂一點，都是送給自己的小禮物。</p>
+    <p class="ftdisc">⚠ 僅供參考｜無任何推薦或行銷<br>本站資訊僅供參考，實際以醫師等專業人員評估及官方資料為準</p>
+    <p><a href="https://www.gungho.idv.tw/KS/index.html">← 回共好小學堂</a></p>
+    <p class="fine">共好小學堂 ✦ 一起學習，一起共好<br>本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-10-13</p>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到頂端">↑</button>
+
+<script>
+(function(){
+  // scenes
+  var S=[
+    ['<circle cx="100" cy="100" r="80" fill="#fff5d6" stroke="#1f2a44" stroke-width="4"/><use href="#sprout" x="55" y="50" width="90" height="100"/>','「當時夫妻二人赤身露體，並不羞恥。」','創世記 2:25','起點：沒有羞恥、沒有遮掩，人與上帝、彼此之間沒有隔閡。'],
+    ['<circle cx="100" cy="100" r="80" fill="#dcf7ec" stroke="#1f2a44" stroke-width="4"/><use href="#fig" x="40" y="40" width="120" height="120"/>','「他們二人的眼睛就明亮了，才知道自己是赤身露體，便拿無花果樹的葉子為自己編作裙子。」','創世記 3:7','人為的遮蔽：用自己的方法遮住羞恥與脆弱。原稿把它比喻成「自我保險」，有限而需要不斷修補。'],
+    ['<circle cx="100" cy="100" r="80" fill="#ffe9cc" stroke="#1f2a44" stroke-width="4"/><use href="#robe" x="40" y="35" width="120" height="130"/>','「耶和華神為亞當和他妻子用皮子做衣服給他們穿。」','創世記 3:21','上帝的供應：上帝看見人的需要，主動為他們做衣服。原稿把它比喻成從「自我保險」轉為「恩典覆蓋」。']
+  ];
+  var sb=[].slice.call(document.querySelectorAll('.steps3 button'));
+  function rSc(i){sb.forEach(function(b,j){b.setAttribute('aria-pressed',j===i?'true':'false');});document.getElementById('sceneArt').innerHTML=S[i][0];
+    var t=document.getElementById('sceneTxt');t.innerHTML='';var v=document.createElement('div');v.className='verse';v.textContent=S[i][1];var c=document.createElement('cite');c.textContent=S[i][2]+'（和合本）';v.appendChild(c);var p=document.createElement('p');p.textContent=S[i][3];t.appendChild(v);t.appendChild(p);
+    if(i>0){var o=document.createElement('span');o.className='orig';o.textContent='原稿整理';p.appendChild(o);}}
+  sb.forEach(function(b,i){b.addEventListener('click',function(){rSc(i);});});rSc(0);
+
+  // QALY
+  var qy=document.getElementById('qy'),qw=document.getElementById('qw');
+  function rQ(){var y=Math.max(0,parseFloat(qy.value)||0),w=parseFloat(qw.value);document.getElementById('qwL').textContent=w.toFixed(2);document.getElementById('qwBar').style.width=(w*100)+'%';
+    var q=Math.round(y*w*100)/100;document.getElementById('qRes').innerHTML=y+' 年 × '+w.toFixed(2)+' ＝ <b>'+q+'</b> 個 QALY';}
+  qy.addEventListener('input',rQ);qw.addEventListener('input',rQ);rQ();
+
+  // ICER
+  var ic=document.getElementById('ic'),iq=document.getElementById('iq');
+  function rI(){var c=parseFloat(ic.value),q=parseFloat(iq.value),r=document.getElementById('iRes'),n=document.getElementById('iNote');
+    if(!(q>0)||isNaN(c)){r.innerHTML='請輸入大於 0 的 QALY';n.textContent='';return;}
+    var v=Math.round(c/q*10)/10;r.innerHTML='每 QALY <b>'+v.toLocaleString()+'</b> 萬元';
+    n.textContent='意思是：每多換到一年「完全健康的生命」，要多花約 '+v.toLocaleString()+' 萬元。值不值得，要和社會願意付的門檻比較，也要考慮公平與病人的價值。';}
+  ic.addEventListener('input',rI);iq.addEventListener('input',rI);rI();
+
+  // checklist
+  var KEY='gungho-ks-steward-chk',boxes=[].slice.call(document.querySelectorAll('#chk input')),st={};
+  try{st=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){st={};}
+  function upd(){var n=0;boxes.forEach(function(b){b.parentNode.classList.toggle('on',b.checked);if(b.checked)n++;});document.getElementById('pFill').style.width=(n/boxes.length*100)+'%';document.getElementById('pN').textContent=n+' / '+boxes.length;document.getElementById('cheer').classList.toggle('show',n===boxes.length);}
+  boxes.forEach(function(b){b.checked=!!st[b.dataset.k];b.addEventListener('change',function(){st[b.dataset.k]=b.checked;try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}upd();});});
+  document.getElementById('chkReset').addEventListener('click',function(){st={};boxes.forEach(function(b){b.checked=false;});try{localStorage.removeItem(KEY);}catch(e){}upd();});
+  upd();
+
+  // quiz
+  var qs=[].slice.call(document.querySelectorAll('#quizBox .q')),answered=0,right=0;
+  qs.forEach(function(q){var ans=q.dataset.ans,opts=q.querySelectorAll('.opt');opts.forEach(function(o){o.addEventListener('click',function(){var ok=o.dataset.v===ans;opts.forEach(function(x){x.disabled=true;if(x.dataset.v===ans)x.classList.add('right');});if(!ok)o.classList.add('wrong');var exp=q.querySelector('.exp');exp.innerHTML=(ok?'<b>✅ 答對了！</b> ':'<b>💡 再想想～</b> ')+exp.innerHTML;exp.classList.add('show');answered++;if(ok)right++;if(answered===qs.length){var s=document.getElementById('score');s.textContent='你答對了 '+right+' / '+qs.length+' 題！'+(right===qs.length?' 太厲害了 🎉':' 每多懂一點都是收穫 🌱');s.classList.add('show');}});});});
+
+  var tt=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('show',window.scrollY>600);},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
+})();
+</script>
+</body>
+</html>
