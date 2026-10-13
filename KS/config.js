@@ -30,6 +30,10 @@ window.SCHOOL_TOPICS = [
 { title: '雙胞胎為什麼越來越多？', description: '全球每 42 個新生兒就有 1 個是雙胞胎。看懂同卵與異卵、雙胞胎變多的原因、非洲的雙胞胎生存悖論，以及雙胞胎懷孕的照護重點。', category: '醫療新知', url: '/KS/TWINS/', date: '2026-10-13' }
 ,{ title: '我的帳號，身後誰能看？', description: '從美國 RUFADAA 看懂數位遺產的三層順位、通訊內容與目錄的差別，以及 AI「數位復活」的法律問題，再動手整理自己的數位資產清單與 AI 分身意願。', category: '科技生活', url: '/KS/DLEGACY/', date: '2026-10-12' }
 ,{ title: '為什麼總是好累？', description: '一般疲勞和慢性疲勞症候群（ME/CFS）怎麼分？認識活動後症狀惡化、腸道菌研究、營養與咖啡因、運動治療爭議，再用能量電池和每日檢核表做好能量管理。', category: '醫療新知', url: '/KS/FATIGUE/', date: '2026-10-13' }
+,{ title: '人生記分板只算錢嗎？', description: '時間、社交、心理、身體、金錢五種財富一起算。認識抵達終點謬誤、皮洛士勝利與反目標，替自己的五種財富打分數、畫出人生週曆、寫下人生準則。', category: '樂活空間', url: '/KS/WEALTH5/', date: '2026-10-13' }
+,{ title: '我的身體是誰的？', description: '健康經濟學用 QALY、ICER 與機會成本分配有限的醫療資源；信仰把身體看成上帝託付的禮物。從創世記的無花果葉與皮衣出發，試算 QALY，思考管家職分與 Shalom。', category: '信仰生活', url: '/KS/STEWARD/', date: '2026-10-13' }
+
+
    
    // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/', date: '日期XXXX-XX-XX' }
 ];
