@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2455c7">
+<title>為什麼停不下洋芋片｜共好小學堂</title>
+<meta name="description" content="想吃洋芋片、餅乾、麵包，不只是意志力不夠。從大腦的「想要」與「喜歡」、血糖與血清素、壓力和睡眠，看懂澱粉零食的吸引力，並學會辨識渴望、溫和應對。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/CARBCRAVE/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="為什麼停不下洋芋片？澱粉零食的大腦與心理機制｜共好小學堂">
+<meta property="og:description" content="不是你意志力差，是大腦、血糖、壓力和食品設計一起作用。附渴望偵探與 3 分鐘暫停練習。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/CARBCRAVE/">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 130'%3E%3Cpath d='M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z' fill='%235ad6a4' stroke='%231f2a44' stroke-width='5'/%3E%3Cpath d='M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Cellipse cx='60' cy='88' rx='40' ry='38' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Ccircle cx='46' cy='84' r='6' fill='%231f2a44'/%3E%3Ccircle cx='74' cy='84' r='6' fill='%231f2a44'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c;  --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff;  --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7;
+  --round:'Huninn','Noto Sans TC',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans TC',system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:var(--blue)}
+h1,h2,h3,h4{font-family:var(--round);line-height:1.35;margin:0 0 .5em;font-weight:400}
+p{margin:0 0 1em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.hl{background:linear-gradient(transparent 58%,var(--sun) 58%,var(--sun) 92%,transparent 92%);padding:0 2px}
+.nw{white-space:nowrap}
+b,strong{font-weight:700}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.94);backdrop-filter:blur(8px);border-bottom:3px solid var(--ink)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex-shrink:0}
+.brand svg{width:40px;height:44px}
+.brand b{font-family:var(--round);font-weight:400;font-size:19px;display:block;line-height:1.1}
+.brand small{font-size:10px;letter-spacing:.14em;color:var(--ink-2);display:block}
+.navpills{display:flex;gap:6px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.navpills::-webkit-scrollbar{display:none}
+.navpills a{white-space:nowrap;text-decoration:none;font-size:14px;color:var(--ink);padding:4px 11px;border:2px solid var(--ink);border-radius:99px;background:#fff}
+.navpills a:hover{background:var(--sun-l)}
+.back{white-space:nowrap;text-decoration:none;font-family:var(--round);background:var(--blue);color:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:5px 14px;box-shadow:0 3px 0 var(--ink);font-size:15px;flex-shrink:0}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--blue-l),var(--bg));padding:56px 0 90px}
+.blob{position:absolute;border-radius:50%;opacity:.55;z-index:0}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.tag{display:inline-block;font-family:var(--round);background:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:4px 14px;font-size:15px;box-shadow:0 3px 0 var(--ink);margin-bottom:18px}
+.hero h1{font-size:clamp(32px,5vw,52px);margin-bottom:16px}
+.hero .lead{font-size:18.5px;color:var(--ink-2);max-width:34em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{font-family:var(--round);text-decoration:none;font-size:17px;padding:10px 22px;border:3px solid var(--ink);border-radius:16px;box-shadow:0 4px 0 var(--ink);color:var(--ink);background:#fff;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--sun)}
+.meta{font-size:13.5px;color:var(--ink-2);margin-top:18px}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block}
+.bubble{position:absolute;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:8px 14px;font-family:var(--round);font-size:17px;box-shadow:0 4px 0 var(--ink);white-space:nowrap}
+.bubble::after{content:"";position:absolute;width:14px;height:14px;background:#fff;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg);bottom:-9px;left:30px}
+.hero .bubble{top:2%;left:4%}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:60px;z-index:1}
+.float{animation:float 4.5s ease-in-out infinite}
+.float.d2{animation-delay:-1.5s}.float.d3{animation-delay:-3s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media (prefers-reduced-motion:reduce){.float{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
+
+/* sections */
+section.sec{padding:64px 0;position:relative}
+section.alt{background:linear-gradient(180deg,var(--tint,#fff),var(--bg))}
+.sec-head{display:flex;align-items:flex-start;gap:18px;margin-bottom:26px}
+.num{flex-shrink:0;width:58px;height:58px;display:grid;place-items:center;font-family:var(--round);font-size:28px;color:#fff;background:var(--c,var(--blue));border:3px solid var(--ink);border-radius:16px;transform:rotate(-6deg);box-shadow:4px 4px 0 var(--ink)}
+.eyebrow{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--c,var(--blue));font-weight:700;display:block}
+.sec-head h2{font-size:clamp(25px,3.4vw,34px);margin:2px 0 0}
+.intro{color:var(--ink-2);max-width:46em}
+hr.dash{border:0;border-top:3px dashed var(--line);margin:34px 0}
+
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:0 5px 0 var(--ink)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card h3{font-size:21px;margin-bottom:.35em}
+.card p:last-child{margin-bottom:0}
+.small{font-size:14.5px;color:var(--ink-2)}
+.note{font-size:14.5px;color:var(--ink-2);background:#fff;border:2px dashed var(--line);border-radius:14px;padding:10px 14px;margin-top:16px}
+.ico{width:96px;height:96px;display:block;margin-bottom:10px}
+.src{display:inline-block;font-size:12px;line-height:1;text-decoration:none;background:var(--blue-l);color:var(--blue-d);border:1.5px solid var(--blue);border-radius:99px;padding:4px 8px;margin:0 2px;vertical-align:2px;font-weight:700;white-space:nowrap}
+.src:hover{background:var(--sun-l)}
+.badge{display:inline-block;font-size:12.5px;font-weight:700;border:2px solid var(--ink);border-radius:99px;padding:1px 10px;background:var(--sun-l);margin-bottom:8px}
+
+/* talk */
+.talk{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;margin-bottom:22px}
+.talk.r{grid-template-columns:1fr 150px}
+.talk.r .who{order:2}
+.who svg{width:130px;height:130px}
+.say{position:relative;background:#fff;border:3px solid var(--ink);border-radius:22px;padding:18px 22px;box-shadow:6px 6px 0 var(--c,var(--sun))}
+.say::before{content:"";position:absolute;left:-12px;top:42px;width:18px;height:18px;background:#fff;border-left:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg)}
+.talk.r .say::before{left:auto;right:-12px;transform:rotate(-135deg)}
+.say .name{font-family:var(--round);color:var(--c,var(--blue));font-size:15px;display:block;margin-bottom:4px}
+.say p:last-child{margin-bottom:0}
+.qs{counter-reset:q;list-style:none;padding:0;margin:.4em 0 1em}
+.qs li{counter-increment:q;padding-left:40px;position:relative;margin:6px 0}
+.qs li::before{content:counter(q);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;background:var(--sun);border:2.5px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:15px}
+.warn{background:var(--coral-l);border:3px solid var(--ink);border-radius:18px;padding:14px 18px;margin-top:14px}
+.warn b{color:#c33}
+
+/* evidence chips */
+.ev{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.ev .card{padding:16px;box-shadow:0 4px 0 var(--ink)}
+.ev h4{font-size:17px;margin:0 0 4px}
+.ev .k{font-size:13.5px;color:var(--ink-2);margin:0}
+.ev .u{font-size:14px;margin-top:8px;padding-top:8px;border-top:2px dashed var(--line)}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tab{font-family:var(--round);font-size:16px;cursor:pointer;border:2.5px solid var(--ink);background:#fff;border-radius:14px;padding:7px 14px;color:var(--ink);box-shadow:0 3px 0 var(--ink)}
+.tab[aria-selected="true"]{background:var(--c,var(--blue));color:#fff}
+.tab:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.panel{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:24px;box-shadow:6px 6px 0 var(--c,var(--blue))}
+.panel[hidden]{display:none}
+.panel-grid{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:start}
+.panel-grid svg{width:110px;height:110px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0}
+.kv dt{font-weight:700;color:var(--c,var(--blue));white-space:nowrap}
+.kv dd{margin:0}
+
+/* mechanism cards */
+.mech{position:relative;padding-top:30px}
+.mech .pin{position:absolute;top:-16px;left:20px;background:var(--c);color:#fff;font-family:var(--round);font-size:14px;border:2.5px solid var(--ink);border-radius:99px;padding:2px 12px;transform:rotate(-4deg)}
+.mech .key{margin-top:12px;padding-top:10px;border-top:2px dashed var(--line);font-weight:700}
+
+/* age matrix */
+.agechips{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.mtx{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.mtx div{border:2.5px solid var(--ink);border-radius:16px;padding:10px 12px;background:var(--bgc,#fff)}
+.mtx b{display:block;font-family:var(--round);font-weight:400;font-size:15px;color:var(--ink-2)}
+.mtx span{font-weight:700}
+
+/* table-like */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:20px;overflow:hidden;background:#fff;font-size:15.5px}
+.tbl th,.tbl td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:2px solid var(--line)}
+.tbl thead th{font-family:var(--round);font-weight:400;font-size:16.5px;color:#fff;background:var(--blue)}
+.tbl thead th:nth-child(2){background:var(--coral)}
+.tbl thead th:nth-child(3){background:var(--orange)}
+.tbl thead th:nth-child(4){background:var(--mint)}
+.tbl thead th:first-child{background:var(--ink)}
+.tbl tbody th{background:var(--sun-l);font-weight:700;white-space:nowrap}
+.tbl tr:last-child td,.tbl tr:last-child th{border-bottom:0}
+.tbl td.r{text-align:right;font-family:var(--round);font-size:18px}
+
+.prod{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.prod .card{padding:18px 20px;box-shadow:0 4px 0 var(--ink)}
+.prod .co{display:inline-block;font-family:var(--round);color:#fff;background:var(--c);border:2.5px solid var(--ink);border-radius:12px;padding:1px 12px;margin-bottom:8px}
+.prod h4{font-size:17.5px;margin:0 0 6px}
+.prod .ask{margin-top:10px;padding:8px 12px;background:var(--grape-l);border-radius:12px;font-size:15px}
+.prod .ask::before{content:"❓ 要追問：";font-weight:700}
+
+/* calculators */
+.calc{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:6px 6px 0 var(--c,var(--sky))}
+.calc label{font-weight:700;display:block;margin-bottom:4px}
+.calc input[type=range]{width:100%;accent-color:var(--blue);height:28px}
+.calc input[type=number]{font:inherit;font-family:var(--round);font-size:22px;width:120px;padding:4px 10px;border:3px solid var(--ink);border-radius:12px}
+.bars{display:grid;gap:12px;margin-top:16px}
+.bar{display:grid;grid-template-columns:96px 1fr 110px;gap:10px;align-items:center}
+.bar .tr{height:28px;border:2.5px solid var(--ink);border-radius:99px;background:#f4f6fb;overflow:hidden}
+.bar .fill{height:100%;border-radius:99px;transition:width .3s}
+.bar .v{font-family:var(--round);font-size:19px;text-align:right}
+.verdict{margin-top:14px;font-weight:700;background:var(--sun-l);border-radius:14px;padding:10px 14px}
+.agegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.agebox{border:3px solid var(--ink);border-radius:18px;padding:12px 14px;background:#fff}
+.agebox .st{font-family:var(--round);font-size:18px}
+.agebox.ok{background:var(--mint-l)}
+.agebox.no{background:var(--coral-l)}
+
+/* compare 3 companies */
+.cmp{display:grid;grid-template-columns:150px repeat(3,1fr);border:3px solid var(--ink);border-radius:22px;overflow:hidden;background:#fff;font-size:15.5px}
+.cmp > div{padding:11px 13px;border-bottom:2px solid var(--line);border-left:2px solid var(--line)}
+.cmp .h{font-family:var(--round);color:#fff;font-size:17px;border-left:0}
+.cmp .h.c1{background:var(--blue)}.cmp .h.c2{background:var(--coral)}.cmp .h.c3{background:var(--mint)}
+.cmp .h.c0{background:var(--ink)}
+.cmp .rh{background:var(--sun-l);font-weight:700;border-left:0}
+.cmp .m{display:none}
+
+/* timeline */
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:14px 18px 14px 70px;background:#fff;border:3px solid var(--ink);border-radius:18px}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:var(--mint);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:20px}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:33px;bottom:-17px;height:17px;border-left:3px dashed var(--ink)}
+
+/* formula */
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:10px 0}
+.formula .t{border:2.5px solid var(--ink);border-radius:12px;padding:4px 12px;background:#fff;font-size:15.5px}
+.formula .t.p{background:var(--coral-l)}.formula .t.m{background:var(--mint-l)}
+.formula .op{font-family:var(--round);font-size:24px;line-height:1}
+.formula .eq{background:var(--sun);font-weight:700}
+
+/* checklist */
+.chk{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.chk label{display:flex;gap:14px;align-items:flex-start;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px 16px;cursor:pointer;box-shadow:0 4px 0 var(--ink);transition:background .2s}
+.chk input{position:absolute;opacity:0;pointer-events:none}
+.chk .box{flex-shrink:0;width:30px;height:30px;border:3px solid var(--ink);border-radius:9px;background:#fff;display:grid;place-items:center;font-size:19px;color:#fff;margin-top:2px}
+.chk input:checked + .box{background:var(--mint)}
+.chk input:checked + .box::after{content:"✓"}
+.chk input:focus-visible + .box{outline:3px solid var(--sun);outline-offset:2px}
+.chk label.on{background:var(--mint-l)}
+.chk b{display:block;font-family:var(--round);font-weight:400;font-size:18px}
+.chk span.d{font-size:14.5px;color:var(--ink-2);line-height:1.6;display:block}
+.prog{margin:20px 0 8px;display:flex;align-items:center;gap:14px}
+.prog .tr{flex:1;height:26px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden}
+.prog .fill{height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 10px,#5ad6a4 10px,#5ad6a4 20px);transition:width .3s}
+.prog .n{font-family:var(--round);font-size:20px;white-space:nowrap}
+.cheer{display:none;background:var(--sun-l);border:3px solid var(--ink);border-radius:18px;padding:12px 16px;font-weight:700;margin-top:12px}
+.cheer.show{display:block}
+
+/* quiz */
+.quiz{display:grid;gap:18px}
+.q h4{font-size:18.5px}
+.opts{display:grid;gap:10px}
+.opt{text-align:left;font:inherit;font-size:16px;cursor:pointer;background:#fff;border:2.5px solid var(--ink);border-radius:14px;padding:10px 14px;color:var(--ink)}
+.opt:hover:not(:disabled){background:var(--sky-l)}
+.opt:disabled{cursor:default}
+.opt.right{background:var(--mint-l);border-color:var(--mint);font-weight:700}
+.opt.wrong{background:var(--coral-l);border-color:var(--coral)}
+.exp{display:none;margin-top:10px;background:var(--sun-l);border-radius:14px;padding:10px 14px;font-size:15.5px}
+.exp.show{display:block}
+.score{display:none;text-align:center;font-family:var(--round);font-size:22px;background:var(--blue);color:#fff;border:3px solid var(--ink);border-radius:20px;padding:14px;box-shadow:0 5px 0 var(--ink)}
+.score.show{display:block}
+
+/* refs */
+.refs h3{font-size:19px;margin-top:22px;color:var(--blue-d)}
+.refs ol{padding-left:0;list-style:none;margin:0}
+.refs li{background:#fff;border:2px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:10px;font-size:15px;line-height:1.7;word-break:break-word}
+.refs li:target{border-color:var(--sun);background:var(--sun-l)}
+.refs .rid{display:inline-block;font-family:var(--round);background:var(--blue);color:#fff;border-radius:8px;padding:0 8px;margin-right:6px;font-size:13.5px}
+.refs .loc{display:block;color:var(--ink-2);font-size:13.5px}
+.refs a{word-break:break-all;font-size:13.5px}
+
+.disc{background:var(--sun-l);border:3px dashed var(--ink);border-radius:20px;padding:18px 22px;font-size:15.5px}
+.disc b{font-family:var(--round);font-weight:400;font-size:18px;display:block;margin-bottom:4px}
+
+.bigdisc{background:var(--coral-l);border:4px solid var(--ink);border-radius:24px;box-shadow:8px 8px 0 var(--coral);padding:22px 26px;outline:3px dashed var(--coral);outline-offset:-14px}
+.bd-head{display:flex;align-items:center;gap:12px;font-family:var(--round);font-size:clamp(22px,3vw,28px);color:#b42318;margin-bottom:10px}
+.bd-ico{flex-shrink:0;width:46px;height:46px;border-radius:50%;background:var(--coral);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-size:24px}
+.bd-key{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:8px 14px;margin:0 0 12px;font-weight:900;font-size:18px;color:#b42318}
+.bigdisc ul{margin:0;padding-left:1.2em}
+.bigdisc li{margin:6px 0;line-height:1.75}
+.bigdisc li b:first-child{color:#b42318}
+.ftdisc{display:inline-block;background:var(--sun);color:var(--ink);font-weight:700;border:3px solid var(--ink);border-radius:14px;padding:6px 16px;margin:4px 0 14px;font-size:15.5px}
+@media (max-width:820px){.bigdisc{padding:18px 16px;outline-offset:-10px}}
+footer{background:var(--blue-d);color:#fff;text-align:center;padding:46px 0 34px;margin-top:40px;border-top:4px solid var(--ink)}
+footer .pals{display:flex;justify-content:center;gap:12px;margin-bottom:12px}
+footer .pals svg{width:80px;height:80px}
+footer .quote{font-family:var(--round);font-size:22px;margin-bottom:10px}
+footer a{color:var(--sun)}
+footer .fine{font-size:13px;opacity:.8;margin-top:10px}
+#toTop{position:fixed;right:18px;bottom:18px;width:52px;height:52px;border-radius:50%;background:var(--sun);border:3px solid var(--ink);box-shadow:0 4px 0 var(--ink);font-size:22px;font-family:var(--round);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;z-index:60;color:var(--ink)}
+#toTop.show{opacity:1;pointer-events:auto}
+
+@media (max-width:1000px){.ev{grid-template-columns:repeat(3,1fr)}.agechips{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .navpills{display:none}
+  .back{margin-left:auto}
+  .hero{padding:34px 0 80px}
+  .hero .wrap,.grid2,.grid3,.prod,.chk,.agegrid{grid-template-columns:1fr}
+  .hero-art{max-width:420px;margin:0 auto;width:100%}
+  .ev{grid-template-columns:1fr 1fr}
+  .mtx{grid-template-columns:1fr 1fr}
+  .talk,.talk.r{grid-template-columns:1fr;gap:6px}
+  .talk.r .who{order:0}
+  .who svg{width:96px;height:96px}
+  .say::before{left:40px;top:-12px;transform:rotate(135deg)}
+  .talk.r .say::before{left:40px;right:auto;transform:rotate(135deg)}
+  .panel-grid{grid-template-columns:1fr}
+  .panel-grid svg{width:84px;height:84px}
+  .kv{grid-template-columns:1fr}
+  .cmp{grid-template-columns:1fr 1fr 1fr}
+  .cmp .h.c0{display:none}
+  .cmp .h{font-size:15px;padding:9px 8px}
+  .cmp .rh{grid-column:1/-1}
+  .cmp > div{font-size:14.5px;padding:9px 8px}
+  .cmp > div:nth-child(n){border-left:0}
+  .cmp .v{border-left:2px solid var(--line)}
+  .cmp .v1{border-left:0}
+  .bar{grid-template-columns:72px 1fr 92px}
+  .sec-head{gap:14px}
+  .num{width:48px;height:48px;font-size:23px}
+  section.sec{padding:48px 0}
+  .tbl{font-size:14.5px}
+  .tbl th,.tbl td{padding:9px 9px}
+  .tblwrap{overflow-x:auto}
+  .card,.panel,.calc{padding:18px 16px}
+}
+@media (max-width:420px){.ev{grid-template-columns:1fr}.agechips{grid-template-columns:repeat(2,1fr)}.hero .bubble{font-size:15px}}
+
+/* ---- CARBCRAVE 專用 ---- */
+.orig{display:inline-block;font-size:12px;font-weight:700;background:var(--grape-l);color:#5b34c4;border:1.5px solid var(--grape);border-radius:99px;padding:3px 8px;margin:0 2px;vertical-align:2px;white-space:nowrap}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.vs>*{min-width:0}
+.wl{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.wl .card{text-align:center;padding:18px}
+.wl .ic{font-size:40px;display:block}
+.sorter .item{font-family:var(--round);font-size:20px;text-align:center;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:16px;margin-bottom:12px}
+.sorter .opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sorter .nav{display:flex;justify-content:space-between;align-items:center;margin-top:12px;gap:10px;flex-wrap:wrap}
+.sorter .nav button,.btnrow button{font-family:var(--round);font-size:16px;border:3px solid var(--ink);border-radius:14px;background:var(--sun);padding:8px 16px;cursor:pointer;box-shadow:0 3px 0 var(--ink);color:var(--ink)}
+.sorter .nav button[disabled]{opacity:.4;cursor:default}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.btnrow button.ghost{background:#fff}
+.path{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:stretch}
+.path .st{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:10px;text-align:center;font-size:14.5px;position:relative;transition:opacity .3s,background .3s}
+.path .st b{display:block;font-size:22px}
+.path .st.off{opacity:.35;background:#eef1f7}
+.path .st:not(:last-child)::after{content:"➜";position:absolute;right:-12px;top:50%;transform:translateY(-50%);font-size:16px;z-index:1}
+.toggle{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.toggle button{font-family:var(--round);font-size:16px;border:3px solid var(--ink);border-radius:14px;background:#fff;padding:8px 14px;cursor:pointer;box-shadow:0 3px 0 var(--ink);color:var(--ink)}
+.toggle button[aria-pressed="true"]{background:var(--blue);color:#fff}
+.detect{display:flex;flex-wrap:wrap;gap:10px}
+.detect button{font-family:var(--round);font-size:16px;border:3px solid var(--ink);border-radius:14px;background:#fff;padding:8px 14px;cursor:pointer;box-shadow:0 3px 0 var(--ink);color:var(--ink)}
+.detect button[aria-pressed="true"]{background:var(--coral);color:#fff}
+.dres{margin-top:14px;background:#fff;border:3px solid var(--ink);border-left:12px solid var(--coral);border-radius:16px;padding:14px 16px;min-height:80px}
+.dres h4{margin:0 0 6px}
+.dres p{margin:0 0 6px}
+.breath{text-align:center}
+.breath .ball{width:150px;height:150px;border-radius:50%;margin:10px auto;background:var(--mint-l);border:4px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:20px;transition:transform 4s ease-in-out}
+.breath .ball.big{transform:scale(1.35)}
+.log input,.log select{width:100%;font:inherit;font-size:16px;border:2.5px solid var(--ink);border-radius:10px;padding:7px 10px;background:#fff}
+.log .g{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.log label{font-weight:700;font-size:14.5px}
+.jl{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:8px}
+.jl li{background:#fff;border:2.5px solid var(--ink);border-radius:12px;padding:8px 12px;font-size:15px}
+.jl li b{font-family:var(--round);font-weight:400;color:var(--blue)}
+.tblw{overflow-x:auto}
+@media (max-width:900px){.path{grid-template-columns:1fr}.path .st:not(:last-child)::after{content:"⬇";right:auto;left:50%;top:auto;bottom:-16px;transform:translateX(-50%)}.log .g{grid-template-columns:1fr 1fr}}
+@media (max-width:820px){.vs,.wl{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+<symbol id="grandma" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="60" cy="14" r="13" fill="#d9dde8" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M24 60 C22 34 40 24 60 24 C80 24 98 34 96 60Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="60" cy="64" r="34" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M28 52 C40 40 80 40 92 52 C86 34 34 34 28 52Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="48" cy="64" r="4.5" fill="#1f2a44"/><circle cx="72" cy="64" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="62.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="62.6" r="1.4" fill="#fff"/>
+  <ellipse cx="39" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="81" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M51 80 Q60 88 69 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="grandpa" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#8a5cf6" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M52 100 L60 116 L68 100" fill="#fff" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="60" cy="62" r="36" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M26 56 C24 40 32 30 40 30 M94 56 C96 40 88 30 80 30" stroke="#1f2a44" stroke-width="3" fill="#eef1f7" stroke-linecap="round"/>
+  <path d="M27 52 C22 44 26 34 36 34 L36 52Z M93 52 C98 44 94 34 84 34 L84 52Z" fill="#eef1f7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="47" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/><circle cx="73" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M56 60 H64" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="47" cy="61" r="3.5" fill="#1f2a44"/><circle cx="73" cy="61" r="3.5" fill="#1f2a44"/>
+  <circle cx="48.2" cy="59.8" r="1.2" fill="#fff"/><circle cx="74.2" cy="59.8" r="1.2" fill="#fff"/>
+  <ellipse cx="38" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="82" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M50 80 Q60 88 70 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="heart" viewBox="0 0 120 120">
+  <path d="M60 104 C20 78 10 56 14 40 C18 22 42 16 60 36 C78 16 102 22 106 40 C110 56 100 78 60 104Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="48" cy="56" r="4.5" fill="#1f2a44"/><circle cx="72" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="54.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="54.6" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 洋芋片袋 -->
+<symbol id="chips" viewBox="0 0 110 130">
+  <path d="M14 14 Q55 4 96 14 L90 116 Q55 126 20 116Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M14 14 l8 8 8 -8 8 8 8 -8 8 8 8 -8 8 8 8 -8 8 8 8 -8" fill="none" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="55" cy="70" rx="26" ry="18" fill="#ffe8a3" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="46" cy="66" r="4" fill="#1f2a44"/><circle cx="64" cy="66" r="4" fill="#1f2a44"/>
+  <path d="M48 76 Q55 82 62 76" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M30 100 q8 -6 16 0 M62 102 q8 -6 16 0" stroke="#e0a21a" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 大腦 -->
+<symbol id="brain" viewBox="0 0 130 110">
+  <path d="M30 86 C10 84 6 60 18 50 C8 34 24 14 42 20 C48 6 72 4 80 18 C96 10 118 24 110 42 C126 52 120 80 100 82 C96 98 74 104 64 92 C52 104 32 100 30 86Z" fill="#ffb3c7" stroke="#1f2a44" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M64 22 V90 M40 40 q10 6 0 16 M88 40 q-10 6 0 16 M46 70 q8 -4 14 2 M70 70 q8 -6 14 0" stroke="#d6668a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="80" cy="56" r="4.5" fill="#1f2a44"/>
+  <path d="M56 68 Q65 74 74 68" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+</defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://www.gungho.idv.tw/KS/index.html" aria-label="回共好小學堂首頁">
+      <svg aria-hidden="true"><use href="#sprout"/></svg>
+      <span><b>共好小學堂</b><small>GROW &amp; LEARN TOGETHER</small></span>
+    </a>
+    <nav class="navpills" aria-label="章節">
+      <a href="#s1">想要與喜歡</a><a href="#s2">血清素之路</a><a href="#s3">零食設計</a><a href="#detect">渴望偵探</a><a href="#pause">3 分鐘暫停</a><a href="#log">渴望紀錄</a><a href="#quiz">小測驗</a><a href="#refs">參考資料</a>
+    </nav>
+    <a class="back" href="https://www.gungho.idv.tw/KS/index.html">← 回小學堂</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <span class="blob" style="width:320px;height:320px;background:var(--sun-l);top:-90px;right:-60px"></span>
+  <span class="blob" style="width:220px;height:220px;background:var(--coral-l);bottom:30px;left:-70px"></span>
+  <span class="blob" style="width:140px;height:140px;background:var(--sky-l);top:40%;left:46%"></span>
+  <div class="wrap">
+    <div>
+      <span class="tag">✦ 大腦保健小知識</span>
+      <h1>為什麼停不下<span class="hl nw">那包洋芋片？</span></h1>
+      <p class="lead">一打開就停不下來，<b>不只是意志力不夠</b>。大腦的獎勵系統、血糖與情緒、零食的鹹甜油酥設計，再加上壓力和熬夜，一起把我們推向餅乾和麵包。<b>澱粉不是敵人</b>，看懂渴望從哪裡來，就能溫和地應對。</p>
+      <div class="btns">
+        <a class="btn pri" href="#start">開始認識 →</a>
+        <a class="btn" href="#detect">當個渴望偵探</a>
+      </div>
+      <p class="meta">資料查核日：2026年10月14日｜資料來源：《Nutrition Reviews》《Neuroscience &amp; Biobehavioral Reviews》等期刊回顧</p>
+    </div>
+    <div class="hero-art">
+      <div class="bubble">再一片就好…</div>
+      <svg viewBox="0 0 520 400" role="img" aria-label="笑臉洋芋片袋和粉紅色大腦，阿嬤與阿公在旁邊，還有小芽和藍鳥">
+        <ellipse cx="260" cy="368" rx="230" ry="26" fill="#fff3d6"/>
+        <use href="#grandma" x="30" y="186" width="120" height="152"/>
+        <use href="#grandpa" x="370" y="186" width="120" height="152"/>
+        <g class="float"><use href="#chips" x="190" y="170" width="130" height="154"/></g>
+        <g class="float d2"><use href="#brain" x="200" y="40" width="120" height="102"/></g>
+        <use href="#sprout" x="450" y="320" width="50" height="54"/>
+        <use href="#bird" x="90" y="70" width="64" height="58"/>
+      </svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C240 60 480 0 720 30 C960 60 1200 0 1440 30 V60 H0Z" fill="#fffdf7"/></svg>
+</section>
+
+<section class="sec" id="start">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">★</div><div><span class="eyebrow">Key Points</span><h2>先說重點</h2></div></div>
+    <div class="grid3">
+      <div class="card" style="box-shadow:6px 6px 0 var(--coral)"><h3>🧠 大腦會「想要」</h3><p>好吃的高糖、高脂食物會活化大腦的獎勵系統，讓人就算不餓也想吃。<a class="src" href="#ref5">參考 5</a></p></div>
+      <div class="card" style="box-shadow:6px 6px 0 var(--orange)"><h3>🍞 安慰效果很短</h3><p>碳水化合物和血清素有關，但加一點蛋白質就會擋住這個效果，不能說「吃澱粉一定會快樂」。<a class="src" href="#ref3">參考 3</a></p></div>
+      <div class="card" style="box-shadow:6px 6px 0 var(--mint)"><h3>🌱 澱粉不是敵人</h3><p>複合型碳水（全穀、豆類）和較好的記憶、大腦老化有關；問題多在精緻零食和吃的情境。<a class="src" href="#ref8">參考 8</a></p></div>
+    </div>
+    <div class="warn"><b>⚠ 閱讀小提醒：</b>本頁是衛教整理，<b>不能取代醫師、營養師或心理師</b>。如果常常失控大吃、吃完很自責，或伴隨催吐、過度節食，請尋求專業協助。</div>
+  </div>
+</section>
+
+<section class="sec alt" id="s1" style="--tint:var(--coral-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--coral)"><div class="num">1</div><div><span class="eyebrow">Wanting vs Liking</span><h2>大腦裡的「想要」和「喜歡」</h2></div></div>
+    <p class="intro">人類演化在食物不穩定的環境，能快速提供熱量的食物有生存優勢。大腦的獎勵系統（中腦多巴胺路徑）會被好吃的食物活化；研究者把食物獎勵分成兩個面向：<a class="src" href="#ref5">參考 5</a></p>
+    <div class="wl">
+      <div class="card" style="box-shadow:6px 6px 0 var(--coral)"><span class="ic">🏃</span><h3>想要（wanting）</h3><p>驅使你<b>去找、去買、去拿</b>的動機。多巴胺主要和這個有關，看到廣告、聞到香味就會被勾起。</p></div>
+      <div class="card" style="box-shadow:6px 6px 0 var(--sun)"><span class="ic">😋</span><h3>喜歡（liking）</h3><p>吃進嘴裡那一刻的<b>愉悅、風味和口感</b>。</p></div>
+    </div>
+    <p class="small" style="margin-top:8px">想要與喜歡的分法，以及多巴胺偏向「動機」而不是「快樂」，是食物獎勵研究常用的架構。<a class="src" href="#ref5">參考 5</a></p>
+    <div class="calc sorter" style="--c:var(--coral);margin-top:20px">
+      <h3>🎯 分分看：這是「想要」還是「喜歡」？</h3>
+      <div class="item" id="sItem" aria-live="polite"></div>
+      <div class="opts"><button type="button" class="opt" data-v="w">🏃 想要</button><button type="button" class="opt" data-v="l">😋 喜歡</button></div>
+      <div class="exp" id="sExp"></div>
+      <div class="nav"><span class="small" id="sCnt"></span><button type="button" id="sNext" disabled>下一題 →</button></div>
+    </div>
+    <div class="note">💡 <b>「不餓但還是想吃」有名字：</b>叫做「享樂性飢餓」。印度一項 150 位年輕人的研究中，51.3% 有中度、23.3% 有重度的享樂性飢餓，而且和吃特定零食、情緒性進食有關。<a class="src" href="#ref9">參考 9</a></div>
+  </div>
+</section>
+
+<section class="sec" id="s2">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">2</div><div><span class="eyebrow">The Serotonin Path</span><h2>澱粉、血清素和「療癒感」</h2></div></div>
+    <p class="intro">1980 年代，麻省理工學院的 Wurtman 夫婦提出一條路徑，解釋為什麼澱粉零食有「療癒感」。按下面的按鈕，看看加了蛋白質會怎樣：<a class="src" href="#ref2">參考 2</a></p>
+    <div class="calc" style="--c:var(--blue)">
+      <div class="toggle" id="tg">
+        <button type="button" aria-pressed="true" data-m="0">🍞 只吃澱粉、幾乎沒蛋白質</button>
+        <button type="button" aria-pressed="false" data-m="1">🍳 加一點蛋白質</button>
+      </div>
+      <div class="path" id="path">
+        <div class="st"><b>🍞</b>吃進碳水化合物</div>
+        <div class="st"><b>💉</b>分泌胰島素</div>
+        <div class="st"><b>⚖️</b>其他胺基酸減少，色胺酸比例上升</div>
+        <div class="st"><b>🧠</b>較多色胺酸進入大腦</div>
+        <div class="st"><b>✨</b>製造較多血清素</div>
+      </div>
+      <div class="verdict" id="pathOut" aria-live="polite" style="margin-top:14px"></div>
+    </div>
+    <div class="vs" style="margin-top:20px">
+      <div class="card"><h3>⚠️ 這條路有限制</h3><ul class="qs" style="margin:0"><li>只有<b>幾乎全是碳水、蛋白質很少</b>的餐才會發生；少量蛋白質就會擋住，所以日常並不常見。<a class="src" href="#ref3">參考 3</a></li><li>高碳水餐反而常讓人覺得<b>比較沒精神</b>；純糖飲料多數研究則沒看到效果。<a class="src" href="#ref3">參考 3</a></li><li>血糖<b>快速下降</b>時，容易覺得煩躁。<a class="src" href="#ref3">參考 3</a></li></ul></div>
+      <div class="card"><h3>🍪 那療癒感從哪來？</h3><p>心情不好時，人常吃<b>又甜又油</b>的好吃食物，這類食物可能促進腦內啡釋放。<a class="src" href="#ref3">參考 3</a> 血清素也受維生素 B 群、維生素 D、鐵、鎂與腸道菌影響，不是只靠吃澱粉。<a class="src" href="#ref6">參考 6</a></p></div>
+    </div>
+    <p class="small" style="margin-top:10px">Wurtman 的「碳水渴望」理論來自 1980–90 年代的研究，當時用來說明的減肥藥後來已下市；現代回顧認為，情緒和食慾的關係比單一血清素路徑更複雜。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref6">參考 6</a></p>
+  </div>
+</section>
+
+<section class="sec alt" id="s3" style="--tint:var(--sun-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--orange)"><div class="num">3</div><div><span class="eyebrow">Food Design</span><h2>零食很少只是「澱粉」</h2></div></div>
+    <div class="grid3">
+      <div class="card mech" style="--c:var(--orange)"><span class="pin">組合</span><h3>🍟 碳水＋油＋鹽＋糖</h3><p>市售零食通常把精緻澱粉和脂肪、鹽、糖、調味料組合在一起，比單一營養素更能刺激獎勵系統。<span class="orig">原稿整理</span></p></div>
+      <div class="card mech" style="--c:var(--coral)"><span class="pin">幸福點</span><h3>🎯 「最好吃」的比例</h3><p>食品業會調整糖、鹽、油的比例讓食物最好吃。但「油和碳水 1:1 最成癮」的說法，<b>沒有一致的科學證據</b>。<span class="orig">原稿整理</span></p></div>
+      <div class="card mech" style="--c:var(--grape)"><span class="pin">口感</span><h3>🔊 酥脆聲</h3><p>咬下去的聲音和觸感增加感官刺激，可能讓人更難停手；「酥脆代表新鮮」的演化說法仍屬推論。<span class="orig">原稿整理</span></p></div>
+    </div>
+    <div class="talk" style="--c:var(--sun);margin-top:18px">
+      <div class="who"><svg aria-hidden="true"><use href="#chips"/></svg></div>
+      <div class="say"><span class="name">洋芋片袋說</span>
+        <p>Wurtman 也觀察到，許多人在壓力、季節性憂鬱、經前症候群或戒菸時，特別愛吃<b>洋芋片、酥皮點心</b>這類又是澱粉又有油的零食，好像把食物當藥用。<a class="src" href="#ref1">參考 1</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="detect">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--coral)"><div class="num">4</div><div><span class="eyebrow">Craving Detective</span><h2>渴望偵探：現在是什麼情況？</h2></div></div>
+    <p class="intro">壓力、熬夜、睡不夠，會讓人更想吃高糖高油的零食。這時身體需要的，可能不只是熱量，而是休息、喝水、按時吃飯或處理情緒。點選你現在的狀況：<span class="orig">原稿整理</span></p>
+    <div class="detect" id="dBtns"></div>
+    <div class="dres" id="dRes" aria-live="polite"><p>👆 點一個情況，看看可以怎麼做。</p></div>
+  </div>
+</section>
+
+<section class="sec alt" id="pause" style="--tint:var(--mint-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">5</div><div><span class="eyebrow">3-minute Pause</span><h2>想吃之前，先暫停 3 分鐘</h2></div></div>
+    <div class="vs">
+      <div>
+        <p>渴望像海浪，會升起也會退去。壓力大的時候，先做 3 分鐘呼吸，或暫時離開放零食的地方，再決定要不要吃。<span class="orig">原稿整理</span></p>
+        <p><b>不是不准吃</b>：3 分鐘後還是想吃，就拿出一小份、放在盤子裡、坐下來慢慢吃，不要整包直接吃。</p>
+      </div>
+      <div class="calc breath" style="--c:var(--mint)">
+        <div class="ball" id="ball">準備好了嗎？</div>
+        <div id="bTime" style="font-family:var(--round);font-size:24px">3:00</div>
+        <div class="btnrow" style="justify-content:center"><button type="button" id="bGo">▶ 開始</button><button type="button" class="ghost" id="bStop">■ 停止</button></div>
+        <p class="small" id="bOut" aria-live="polite">吸氣 4 秒、吐氣 6 秒，跟著圓圈一起呼吸。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="log">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">6</div><div><span class="eyebrow">Craving Log</span><h2>渴望紀錄：找出自己的模式</h2></div></div>
+    <p class="intro">如果常常想吃停不下來，記錄幾天的<b>時間、心情、睡眠和吃了什麼</b>，很容易看出規律。<span class="orig">原稿整理</span></p>
+    <div class="calc log" style="--c:var(--blue)">
+      <div class="g">
+        <div><label for="lTime">什麼時候</label><select id="lTime"><option>早上</option><option>中午</option><option>下午</option><option>晚上</option><option>深夜</option></select></div>
+        <div><label for="lMood">心情</label><select id="lMood"><option>平靜</option><option>累</option><option>壓力大</option><option>無聊</option><option>難過</option><option>開心</option></select></div>
+        <div><label for="lSleep">昨晚睡得</label><select id="lSleep"><option>足夠</option><option>普通</option><option>不夠</option></select></div>
+        <div><label for="lFood">想吃／吃了</label><input type="text" id="lFood" maxlength="30" placeholder="例如：洋芋片半包"></div>
+      </div>
+      <div class="btnrow"><button type="button" id="lSave">💾 記下來</button><button type="button" class="ghost" id="lClr">清除全部紀錄</button></div>
+      <div class="verdict" id="lOut" aria-live="polite" style="margin-top:12px"></div>
+      <ul class="jl" id="lList"></ul>
+      <p class="small" style="margin-top:8px">🔒 只存在你自己的瀏覽器，最多保留最近 20 筆。</p>
+    </div>
+    <h3 style="margin-top:24px">🍽 情境替代表</h3>
+    <div class="tblw">
+      <table class="tbl">
+        <thead><tr><th>情境</th><th>可以試試</th></tr></thead>
+        <tbody>
+          <tr><th>下午好累</th><td>先喝水、散步 5–10 分鐘，再選水果、堅果或原味優格</td></tr>
+          <tr><th>熬夜嘴饞</th><td>不必完全禁止，選小份量、有蛋白質和纖維的點心</td></tr>
+          <tr><th>想吃洋芋片</th><td>倒一小份到盤子，慢慢吃，不要整包拿著吃</td></tr>
+          <tr><th>想吃麵包</th><td>選全麥麵包，搭配蛋、豆腐或無糖優格</td></tr>
+          <tr><th>常常失控</th><td>記錄模式，並找營養師或心理師聊聊</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:8px">替代建議依原稿整理。<span class="orig">原稿整理</span></p>
+  </div>
+</section>
+
+<section class="sec alt" id="quiz" style="--tint:var(--grape-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">?</div><div><span class="eyebrow">Quick Quiz</span><h2>小測驗：四題就好</h2></div></div>
+    <div class="quiz" id="quizBox">
+      <div class="card q" data-ans="b">
+        <h4>Q1. 大腦的多巴胺主要和食物獎勵的哪個面向有關？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">吃進嘴裡的味道</button>
+          <button class="opt" data-v="b">「想要」去找食物的動機</button>
+          <button class="opt" data-v="c">消化食物</button>
+        </div>
+        <div class="exp">多巴胺偏向驅動「想要」與尋找行為，而不只是快樂本身。</div>
+      </div>
+      <div class="card q" data-ans="c">
+        <h4>Q2. 碳水化合物增加大腦血清素的路徑，什麼東西會擋住它？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">喝水</button>
+          <button class="opt" data-v="b">多吃一點糖</button>
+          <button class="opt" data-v="c">同一餐裡的少量蛋白質</button>
+        </div>
+        <div class="exp">少量蛋白質就會阻斷這個機制，所以日常生活中並不常見。</div>
+      </div>
+      <div class="card q" data-ans="a">
+        <h4>Q3. 「不餓但還是很想吃」叫做什麼？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">享樂性飢餓</button>
+          <button class="opt" data-v="b">低血糖</button>
+          <button class="opt" data-v="c">營養不良</button>
+        </div>
+        <div class="exp">享樂性飢餓是指沒有能量需求時，仍反覆想著、渴望食物。</div>
+      </div>
+      <div class="card q" data-ans="b">
+        <h4>Q4. 壓力大、很想吃洋芋片時，比較好的做法是？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">責怪自己意志力差，然後整包吃完</button>
+          <button class="opt" data-v="b">先暫停 3 分鐘，還想吃就倒一小份慢慢吃</button>
+          <button class="opt" data-v="c">從此完全禁止吃任何澱粉</button>
+        </div>
+        <div class="exp">溫和、不羞辱自己的方式比完全禁止更能持續；澱粉本身不是敵人。</div>
+      </div>
+      <div class="score" id="score"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec refs" id="refs">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--ink)"><div class="num">§</div><div><span class="eyebrow">References</span><h2>參考資料</h2></div></div>
+    <p class="small">以下資料於<b>2026年10月14日</b>查核，編號依原稿清單順序。</p>
+    <ol>
+      <li id="ref1"><span class="rid">1</span>Wurtman RJ, Wurtman JJ. <b>Brain serotonin, carbohydrate-craving, obesity and depression.</b> <i>Obesity Research.</i> 1995;3 Suppl 4:477S-480S.<span class="loc">碳水攝取經胰島素與「血漿色胺酸比例」增加血清素釋放；許多人在壓力、經前、冬季憂鬱、戒菸時過量吃洋芋片、酥皮點心等零食。</span><a href="https://doi.org/10.1002/j.1550-8528.1995.tb00215.x" target="_blank" rel="noopener">DOI: 10.1002/j.1550-8528.1995.tb00215.x</a></li>
+      <li id="ref2"><span class="rid">2</span>Wurtman RJ, Wurtman JJ. <b>Carbohydrate craving, obesity and brain serotonin.</b> <i>Appetite.</i> 1986;7 Suppl:99-103.<span class="loc">高碳水低蛋白餐刺激胰島素，降低與色胺酸競爭的胺基酸，使色胺酸較易進入大腦；高蛋白餐則相反。</span><a href="https://doi.org/10.1016/s0195-6663(86)80055-1" target="_blank" rel="noopener">DOI: 10.1016/s0195-6663(86)80055-1</a></li>
+      <li id="ref3"><span class="rid">3</span>Benton D. <b>Carbohydrate ingestion, blood glucose and mood.</b> <i>Neuroscience &amp; Biobehavioral Reviews.</i> 2002;26(3):293-308.<span class="loc">高碳水餐常與較沒精神有關；少量蛋白質即阻斷血清素機制；心情差時易吃高碳水高脂食物，可能促進腦內啡；血糖快速下降與煩躁有關。</span><a href="https://doi.org/10.1016/s0149-7634(02)00004-0" target="_blank" rel="noopener">DOI: 10.1016/s0149-7634(02)00004-0</a></li>
+      <li id="ref4"><span class="rid">4</span>Garutti M, Sirico M, Noto C, et al. <b>Hallmarks of Appetite: A Comprehensive Review of Hunger, Appetite, Satiation, and Satiety.</b> <i>Current Obesity Reports.</i> 2025;14(1):12.<span class="loc">飢餓、食慾、飽足的生理調控機制回顧，本頁未直接引用。</span><a href="https://doi.org/10.1007/s13679-024-00604-w" target="_blank" rel="noopener">DOI: 10.1007/s13679-024-00604-w</a></li>
+      <li id="ref5"><span class="rid">5</span>Alonso-Alonso M, Woods SC, Pelchat M, et al. <b>Food reward system: current perspectives and future research needs.</b> <i>Nutrition Reviews.</i> 2015;73(5):296-307.<span class="loc">食物獎勵的神經科學、享樂面向與食物成癮假說；渴望與成癮的區分；認知控制。</span><a href="https://doi.org/10.1093/nutrit/nuv002" target="_blank" rel="noopener">DOI: 10.1093/nutrit/nuv002</a></li>
+      <li id="ref6"><span class="rid">6</span>Tang J, Krushelnycky L, Shaqo A, Cho CE. <b>A Comprehensive Review of Nutritional Influences on the Serotonergic System.</b> <i>Advances in Nutrition.</i> 2025;16(11):100524.<span class="loc">色胺酸與大型中性胺基酸比例；維生素 B 群、維生素 D、鐵、鎂為輔因子；腸道菌的角色；血清素路徑的複雜性。</span><a href="https://doi.org/10.1016/j.advnut.2025.100524" target="_blank" rel="noopener">DOI: 10.1016/j.advnut.2025.100524</a></li>
+      <li id="ref7"><span class="rid">7</span>Peuhkuri K, Sihvola N, Korpela R. <b>Dietary proteins and food-related reward signals.</b> <i>Food &amp; Nutrition Research.</i> 2011;55.<span class="loc">蛋白質可能透過腸道訊號參與食物獎勵，證據多來自動物實驗，本頁未直接引用。</span><a href="https://doi.org/10.3402/fnr.v55i0.5955" target="_blank" rel="noopener">DOI: 10.3402/fnr.v55i0.5955</a></li>
+      <li id="ref8"><span class="rid">8</span>Arshad MT, Maqsood S, Altalhi R, et al. <b>Role of Dietary Carbohydrates in Cognitive Function: A Review.</b> <i>Food Science &amp; Nutrition.</i> 2025;13(7):e70516.<span class="loc">簡單糖攝取與整體認知下降有關；複合型碳水與短期、長期記憶及成功的大腦老化有關。</span><a href="https://doi.org/10.1002/fsn3.70516" target="_blank" rel="noopener">DOI: 10.1002/fsn3.70516</a></li>
+      <li id="ref9"><span class="rid">9</span>Mankad M, Gokhale D. <b>Not Hungry, but Still Snacking: The Association Between Hedonic Hunger and Snacking Behaviour Among Young Adults in Vadodara, Gujarat.</b> <i>Cureus.</i> 2023;15(9):e44814.<span class="loc">150 位 15–24 歲年輕人橫斷面研究；51.3% 中度、23.3% 重度享樂性飢餓；與零食、情緒性進食、意志力、運動有關。</span><a href="https://doi.org/10.7759/cureus.44814" target="_blank" rel="noopener">DOI: 10.7759/cureus.44814</a></li>
+    </ol>
+
+    <div class="bigdisc" role="note" aria-label="免責聲明" style="margin-top:30px">
+      <div class="bd-head"><span class="bd-ico">⚠</span><span>重要聲明｜請先看這裡</span></div>
+      <p class="bd-key">本站資訊僅供參考，實際以醫師、營養師、心理師等專業人員評估為準。</p>
+      <ul>
+        <li><b>僅供參考：</b>本頁為飲食心理衛教整理，不構成醫療、營養或心理治療建議；有糖尿病、低血糖或飲食障礙困擾者，請依專業人員建議。</li>
+        <li><b>無任何推薦或行銷：</b>本頁不推薦、不銷售任何零食、保健品、飲食課程或品牌，與文中作者及機構無任何合作關係。</li>
+        <li><b>需要協助時：</b>若常暴食後自責、催吐或過度節食，請就醫；心情低落可撥衛福部安心專線 <b>1925</b>（24小時）。</li>
+        <li><b>資料時點：</b>資料以2026年9月底前公開資料為準，查核於2026年10月14日。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="pals" aria-hidden="true"><svg><use href="#sprout"/></svg><svg><use href="#brain"/></svg><svg><use href="#heart"/></svg></div>
+    <p class="quote">每一次多懂一點，都是送給自己的小禮物。</p>
+    <p class="ftdisc">⚠ 僅供參考｜無任何推薦或行銷｜不能取代專業人員建議<br>本站資訊僅供參考，實際以專業人員評估及官方資料為準</p>
+    <p><a href="https://www.gungho.idv.tw/KS/index.html">← 回共好小學堂</a></p>
+    <p class="fine">共好小學堂 ✦ 一起學習，一起共好<br>本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-10-14</p>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到頂端">↑</button>
+
+<script>
+(function(){
+  function load(k,d){try{var v=JSON.parse(localStorage.getItem(k)||'null');return v==null?d:v;}catch(e){return d;}}
+  function save(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+
+  // wanting/liking sorter
+  var IT=[['📺 看到洋芋片廣告，突然好想去便利商店','w','被廣告勾起、想去買，是「想要」。'],['😋 咬下第一口，鹹香酥脆好滿足','l','吃進嘴裡的愉悅，是「喜歡」。'],['🛒 走過麵包店，聞到香味就忍不住走進去','w','聞到線索而驅使你行動，是「想要」。'],['🍪 餅乾在嘴裡化開的甜味','l','當下的風味享受，是「喜歡」。'],['📱 看劇時，手一直伸向零食袋','w','不太在乎味道、一直拿，是被「想要」驅動。']];
+  var si=0,ok=0,el={it:document.getElementById('sItem'),op:[].slice.call(document.querySelectorAll('.sorter .opt')),ex:document.getElementById('sExp'),nx:document.getElementById('sNext'),cn:document.getElementById('sCnt')};
+  function show(){el.it.textContent=IT[si][0];el.ex.classList.remove('show');el.ex.textContent='';el.nx.disabled=true;el.nx.textContent=si===IT.length-1?'重新開始 ↺':'下一題 →';el.cn.textContent='第 '+(si+1)+' / '+IT.length+' 題｜答對 '+ok+' 題';el.op.forEach(function(o){o.disabled=false;o.classList.remove('right','wrong');});}
+  el.op.forEach(function(o){o.addEventListener('click',function(){var t=IT[si],g=o.dataset.v===t[1];if(g)ok++;el.op.forEach(function(x){x.disabled=true;if(x.dataset.v===t[1])x.classList.add('right');});if(!g)o.classList.add('wrong');el.ex.textContent=(g?'✅ 答對了！':'💡 再想想～')+t[2];el.ex.classList.add('show');el.nx.disabled=false;el.cn.textContent='第 '+(si+1)+' / '+IT.length+' 題｜答對 '+ok+' 題';});});
+  el.nx.addEventListener('click',function(){si++;if(si>=IT.length){si=0;ok=0;}show();});
+  show();
+
+  // serotonin path
+  var tg=[].slice.call(document.querySelectorAll('#tg button')),sts=[].slice.call(document.querySelectorAll('#path .st'));
+  function rP(m){tg.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.m==m?'true':'false');});sts.forEach(function(s,i){s.classList.toggle('off',m==1&&i>=2);});
+    document.getElementById('pathOut').textContent=m==0?'幾乎只有碳水的一餐：色胺酸較容易進入大腦，可能增加血清素。但這種餐在日常很少見。':'加了少量蛋白質：其他胺基酸一起增加，和色胺酸競爭進入大腦，這條路就被擋住了。';}
+  tg.forEach(function(b){b.addEventListener('click',function(){rP(b.dataset.m);});});
+  rP(0);
+
+  // craving detective
+  var D=[['😴 下午好累','可能是累了、口渴，或午餐吃太少','先喝一杯水、起來走 5–10 分鐘。還是餓，就選水果、堅果或原味優格。'],['🌙 熬夜嘴饞','睡不夠會讓人更想吃高熱量食物','不必完全禁止，選小份量、有蛋白質和纖維的點心，例如無糖豆漿或一顆茶葉蛋；也想想今晚能不能早點睡。'],['😣 壓力很大','壓力讓大腦更想要立即的獎勵','先做 3 分鐘呼吸，或離開放零食的地方。也可以打電話給朋友、寫下煩惱。'],['📺 無聊、看劇','手在找事做，不一定是肚子餓','把零食倒一小份到盤子，袋子收起來；或手上拿杯熱茶。'],['⏰ 很久沒吃飯','真的餓了，身體在要能量','好好吃一頓有蛋白質、蔬菜和全穀的正餐，比吃零食更能撐久。'],['📣 看到廣告或香味','外在線索勾起「想要」','告訴自己：「這是廣告在說話，不是我的肚子。」等 3 分鐘再決定。']];
+  var db=document.getElementById('dBtns'),dr=document.getElementById('dRes'),btns=[];
+  D.forEach(function(d,i){var b=document.createElement('button');b.type='button';b.textContent=d[0];b.setAttribute('aria-pressed','false');b.addEventListener('click',function(){btns.forEach(function(x){x.setAttribute('aria-pressed','false');});b.setAttribute('aria-pressed','true');dr.innerHTML='';var h=document.createElement('h4');h.textContent='🔍 '+d[1];var p=document.createElement('p');p.textContent='👉 '+d[2];dr.appendChild(h);dr.appendChild(p);});db.appendChild(b);btns.push(b);});
+
+  // 3-min breathing (4 in / 6 out)
+  var ball=document.getElementById('ball'),bt=document.getElementById('bTime'),bo=document.getElementById('bOut'),timer=null,t0=0,phT=null;
+  function fmt(s){return Math.floor(s/60)+':'+('0'+(s%60)).slice(-2);}
+  function stop(msg){clearInterval(timer);clearTimeout(phT);timer=null;ball.classList.remove('big');ball.textContent='準備好了嗎？';bt.textContent='3:00';if(msg)bo.textContent=msg;}
+  function cycle(){if(!timer)return;ball.classList.add('big');ball.textContent='吸氣';phT=setTimeout(function(){if(!timer)return;ball.classList.remove('big');ball.textContent='吐氣';phT=setTimeout(cycle,6000);},4000);}
+  document.getElementById('bGo').addEventListener('click',function(){if(timer)return;t0=Date.now();bo.textContent='跟著圓圈呼吸，覺察身體的感覺。';timer=setInterval(function(){var left=180-Math.floor((Date.now()-t0)/1000);if(left<=0){stop('✅ 3 分鐘到了！現在還想吃嗎？想吃就倒一小份，慢慢享受。');return;}bt.textContent=fmt(left);},500);cycle();});
+  document.getElementById('bStop').addEventListener('click',function(){stop('已停止。隨時可以再試一次。');});
+
+  // craving log
+  var LK='gungho-ks-carbcrave-log',L=load(LK,[]);if(!Array.isArray(L))L=[];
+  function rL(){var ul=document.getElementById('lList');ul.innerHTML='';L.slice().reverse().forEach(function(e){var li=document.createElement('li');var b=document.createElement('b');b.textContent=e.d+' '+e.t+'　';li.appendChild(b);li.appendChild(document.createTextNode('心情：'+e.m+'｜睡眠：'+e.s+(e.f?'｜'+e.f:'')));ul.appendChild(li);});
+    var o=document.getElementById('lOut');if(L.length<3){o.textContent=L.length?'已記錄 '+L.length+' 筆，記滿 3 筆會幫你找規律。':'選好欄位後按「記下來」。';return;}
+    function top(k){var c={};L.forEach(function(e){c[e[k]]=(c[e[k]]||0)+1;});var best=null;Object.keys(c).forEach(function(x){if(!best||c[x]>c[best])best=x;});return [best,c[best]];}
+    var tt=top('t'),mm=top('m'),ss=L.filter(function(e){return e.s==='不夠';}).length;
+    o.textContent='共 '+L.length+' 筆。最常出現在「'+tt[0]+'」（'+tt[1]+' 次），心情多半是「'+mm[0]+'」（'+mm[1]+' 次）'+(ss?'；其中 '+ss+' 次前一晚睡不夠。':'。');}
+  document.getElementById('lSave').addEventListener('click',function(){var d=new Date();L.push({d:(d.getMonth()+1)+'/'+d.getDate(),t:document.getElementById('lTime').value,m:document.getElementById('lMood').value,s:document.getElementById('lSleep').value,f:(document.getElementById('lFood').value||'').trim().slice(0,30)});if(L.length>20)L=L.slice(-20);save(LK,L);document.getElementById('lFood').value='';rL();});
+  document.getElementById('lClr').addEventListener('click',function(){L=[];save(LK,L);rL();});
+  rL();
+
+  // quiz
+  var qs=[].slice.call(document.querySelectorAll('#quizBox .q')),answered=0,right=0;
+  qs.forEach(function(q){var ans=q.dataset.ans,opts=q.querySelectorAll('.opt');opts.forEach(function(o){o.addEventListener('click',function(){var ok=o.dataset.v===ans;opts.forEach(function(x){x.disabled=true;if(x.dataset.v===ans)x.classList.add('right');});if(!ok)o.classList.add('wrong');var exp=q.querySelector('.exp');exp.innerHTML=(ok?'<b>✅ 答對了！</b> ':'<b>💡 再想想～</b> ')+exp.innerHTML;exp.classList.add('show');answered++;if(ok)right++;if(answered===qs.length){var s=document.getElementById('score');s.textContent='你答對了 '+right+' / '+qs.length+' 題！'+(right===qs.length?' 太厲害了 🎉':' 每多懂一點都是收穫 🌱');s.classList.add('show');}});});});
+
+  var tt=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('show',window.scrollY>600);},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
+})();
+</script>
+</body>
+</html>
