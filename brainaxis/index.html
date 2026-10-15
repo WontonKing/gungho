@@ -1,0 +1,1037 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="互動人體圖：點器官學習八條腦軸（腸腦、心肺腦、肌腦、腎腦、口腔腦、腸眼、足底腦、骨腦）的機制、證據燈號、中醫經絡穴位與生活處方，附小測驗與可溯源參考資料。">
+<meta property="og:title" content="腦軸探險地圖">
+<meta property="og:description" content="互動人體圖：點器官學習八條腦軸（腸腦、心肺腦、肌腦、腎腦、口腔腦、腸眼、足底腦、骨腦）的機制、證據燈號、中醫經絡穴位與生活處方，附小測驗與可溯源參考資料。">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#193e51">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20100%20100%27%3E%3Cpath%20d%3D%27M50%2014c-10%200-16%206-18%2012-8%200-15%207-15%2015%200%204%202%208%205%2010-2%203-3%206-2%2010%201%208%208%2013%2016%2013%203%206%209%209%2014%209s11-3%2014-9c8%200%2015-5%2016-13%201-4%200-7-2-10%203-2%205-6%205-10%200-8-7-15-15-15-2-6-8-12-18-12z%27%20fill%3D%27%23ff9fc6%27%20stroke%3D%27%23d2508c%27%20stroke-width%3D%274%27/%3E%3C/svg%3E">
+<style>[hidden]{display:none!important}body{margin:0}img{max-width:100%}</style>
+<title>腦軸探險地圖</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&display=swap">
+<style>
+/* Layout: 解剖掛圖紙（點格底）＋左側可點人體圖、右側學習面板；八條腦軸各有一個色相 */
+:root{
+  --bg:#fbfeff; --dot:#d6ebf3; --surface:#ffffff; --surface2:#f4fbfd;
+  --ink:#15313f; --muted:#56717f; --line:#d3e3eb;
+  --navy:#193e51; --accent:#1f7a9c;
+  --bodyfill:#e2eff5; --bodystroke:#8db2c3; --organline:#ffffff;
+  --mer:#7f9aa8;
+  --c-hub:#e0609a; --c-gut:#f08a24; --c-heart:#e5484d; --c-muscle:#d6409f;
+  --c-kidney:#7c5cff; --c-oral:#0fb5a6; --c-eye:#0ea5e9; --c-foot:#22a06b; --c-bone:#d4a017;
+  --lvA:#15803d; --lvB:#b45309; --lvC:#1d4ed8; --lvT:#8b3fd1;
+  --good:#15803d; --bad:#c2410c;
+  --f-display:"Huninn","LXGW WenKai TC","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --f-body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  --r:18px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+section,#panel,#top,details.refg li{scroll-margin-top:72px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background-color:var(--bg);background-image:radial-gradient(var(--dot) 1px,transparent 1.3px),radial-gradient(circle at 8% 6%,#fff1c9 0,transparent 32%),radial-gradient(circle at 92% 12%,#ffe0ee 0,transparent 30%),radial-gradient(circle at 85% 70%,#dff7ec 0,transparent 34%),radial-gradient(circle at 10% 80%,#e2f1ff 0,transparent 34%);background-size:22px 22px,100% 100%,100% 100%,100% 100%,100% 100%;background-attachment:scroll,fixed,fixed,fixed,fixed;color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.75}
+a{color:var(--accent)}
+.wrap{max-width:1220px;margin:0 auto;padding-inline:16px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.3;margin:0}
+h2{font-size:clamp(1.6rem,3.2vw,2.2rem);color:var(--navy)}
+h3{font-size:1.2rem}
+p{margin:0}
+.eyebrow{font-size:.8rem;letter-spacing:.12em;font-weight:700;color:var(--accent)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:12px;padding-block:8px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:8px;font-family:var(--f-display);font-size:1.15rem;color:var(--navy);text-decoration:none;font-weight:700}
+.brand svg{width:34px;height:34px}
+.top nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+.top nav a{text-decoration:none;color:var(--ink);font-size:.9rem;padding:4px 10px;border-radius:999px}
+.top nav a:hover{background:var(--surface)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:24px;align-items:center;padding-block:36px 20px}
+.hero h1{font-size:clamp(2.1rem,5.4vw,3.6rem);color:var(--navy)}
+.hero h1 .hl{background:linear-gradient(transparent 62%,color-mix(in srgb,var(--c-gut) 40%,transparent) 0)}
+.hero .lede{font-size:1.08rem;color:var(--muted);margin-top:14px;max-width:34em}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:0;border-radius:999px;padding:10px 20px;font-weight:700;cursor:pointer;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--navy);color:var(--bg)}
+.btn.sec{background:var(--surface);color:var(--navy);border:2px solid var(--navy)}
+.outcomes{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;font-size:.88rem}
+.outcomes span{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px 12px}
+.orbit{width:100%;height:auto;max-width:600px;justify-self:center}
+.orbit .ln{stroke-dasharray:4 7;animation:flow 1.6s linear infinite;stroke-width:2.2;fill:none;opacity:.75}
+@keyframes flow{to{stroke-dashoffset:-22}}
+.orbit .m{cursor:pointer;transition:transform .2s}
+.orbit .m:hover{transform:translateY(-4px)}
+.orbit text{font-family:var(--f-display);font-size:15px;fill:var(--ink);text-anchor:middle}
+.bob{animation:bob 3.2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px)}}
+
+/* section */
+section.blk{padding-block:34px}
+.sechead{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+.sechead p{color:var(--muted);max-width:52em}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.step{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.step b.n{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--bg);font-family:var(--f-display)}
+.step p{font-size:.93rem;color:var(--muted)}
+.step strong{display:block;color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:16px;font-size:.88rem;color:var(--muted)}
+.lv{display:inline-flex;align-items:center;justify-content:center;min-width:1.6em;height:1.6em;padding:0 .4em;border-radius:6px;font-weight:900;font-size:.78rem;font-family:var(--f-body);vertical-align:.1em;margin-right:6px;flex:none}
+.lv[data-l=A]{color:var(--lvA);background:color-mix(in srgb,var(--lvA) 16%,transparent)}
+.lv[data-l=B]{color:var(--lvB);background:color-mix(in srgb,var(--lvB) 16%,transparent)}
+.lv[data-l=C]{color:var(--lvC);background:color-mix(in srgb,var(--lvC) 16%,transparent)}
+.lv[data-l=T]{color:var(--lvT);background:color-mix(in srgb,var(--lvT) 16%,transparent)}
+
+/* map */
+.mapgrid{display:grid;grid-template-columns:minmax(0,460px) minmax(0,1fr);gap:22px;align-items:start}
+.bodycard{position:sticky;top:64px;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:12px 12px 14px}
+.bodytools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:0 4px 6px}
+.toggle{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;cursor:pointer;user-select:none}
+.toggle input{accent-color:var(--accent);width:16px;height:16px}
+.hint{font-size:.8rem;color:var(--muted)}
+#bodySvg{width:100%;height:auto;display:block;max-height:calc(100vh - 210px);touch-action:manipulation}
+#bodySvg .organ{cursor:pointer;transition:filter .2s,opacity .25s}
+#bodySvg .organ:hover,#bodySvg .organ:focus-visible{filter:drop-shadow(0 0 6px var(--glow,#fff)) brightness(1.08);outline:none}
+#bodySvg.dimmed .organ:not(.on){opacity:.42}
+#bodySvg .organ.on{animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{filter:drop-shadow(0 0 9px var(--glow)) brightness(1.12)}}
+#bodySvg .lbl{font-family:var(--f-display);font-size:15px;fill:var(--ink);cursor:pointer}
+#bodySvg .lblline{stroke:var(--muted);stroke-width:.8;fill:none;stroke-dasharray:2 2}
+#bodySvg .lblg.on .lbl{font-weight:700;fill:var(--glow)}
+#merLayer,#axisLayer,#ptLayer,#bodySvg .lblline{pointer-events:none}
+#bodySvg .mer{fill:none;stroke-linecap:round;stroke-linejoin:round}
+#bodySvg .mer.all{stroke:var(--mer);stroke-width:1.4;stroke-dasharray:1 4;opacity:.8}
+#bodySvg .mer.hot{stroke-width:2.6;stroke-dasharray:2 5;animation:flow 1.4s linear infinite}
+#bodySvg .mer.internal{stroke-dasharray:1 6;opacity:.7}
+#bodySvg .pt circle.c{stroke:var(--surface);stroke-width:2}
+#bodySvg .pt .halo{animation:halo 1.8s ease-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes halo{from{transform:scale(.6);opacity:.8}to{transform:scale(2.2);opacity:0}}
+#bodySvg .pt text{font-size:11.5px;font-weight:700;paint-order:stroke;stroke:var(--surface);stroke-width:3.5px;fill:var(--ink)}
+#bodySvg .axisline{fill:none;stroke-width:3;stroke-dasharray:6 6;animation:flow 1s linear infinite}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--bg);font-size:.82rem;padding:3px 10px;border-radius:8px;transform:translate(-50%,-130%);white-space:nowrap;opacity:0;transition:opacity .12s}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chip{display:inline-flex;align-items:center;gap:6px;border:2px solid var(--c);background:var(--surface);border-radius:999px;padding:3px 10px 3px 4px;font-size:.85rem;cursor:pointer;font-weight:500}
+.chip svg{width:24px;height:24px}
+.chip[aria-pressed=true]{background:var(--c);color:#fff}
+.chip .stamp{font-size:.7rem;margin-left:2px}
+.passport{margin-top:10px;font-size:.82rem;color:var(--muted);display:flex;align-items:center;gap:8px}
+.passport .bar{flex:1;height:8px;border-radius:99px;background:var(--surface2);overflow:hidden;border:1px solid var(--line)}
+.passport .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--c-gut),var(--c-heart),var(--c-kidney),var(--c-eye),var(--c-foot));width:0;transition:width .4s}
+
+/* panel */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:24px;overflow:hidden;min-width:0}
+.phead{display:flex;gap:14px;align-items:center;padding:18px 20px 14px;background:color-mix(in srgb,var(--c) 14%,var(--surface));border-bottom:3px solid var(--c)}
+.phead svg.masc{width:76px;height:76px;flex:none}
+.phead .t{min-width:0}
+.phead .en{font-size:.8rem;letter-spacing:.06em;color:var(--muted)}
+.phead h3{font-size:1.6rem;color:var(--ink)}
+.phead .hook{font-size:.98rem;margin-top:4px}
+.tabs{display:flex;gap:4px;padding:10px 12px 0;overflow-x:auto;border-bottom:1px solid var(--line);scrollbar-width:thin}
+.tab{border:0;background:none;padding:8px 12px;border-radius:12px 12px 0 0;cursor:pointer;font-weight:700;font-size:.92rem;color:var(--muted);white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected=true]{color:var(--ink);border-bottom-color:var(--c);background:color-mix(in srgb,var(--c) 8%,transparent)}
+.pbody{padding:20px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.bubble{position:relative;background:var(--surface2);border:2px dashed color-mix(in srgb,var(--c) 60%,var(--line));border-radius:16px;padding:12px 16px}
+.bubble b{color:var(--c)}
+.paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.pathc{border:1px solid var(--line);border-top:4px solid var(--c);border-radius:14px;padding:10px 12px;background:var(--surface2)}
+.pathc strong{display:block;font-family:var(--f-display);font-size:1.02rem}
+.pathc p{font-size:.88rem;color:var(--muted);margin-top:2px}
+.ev{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.ev li{display:flex;gap:8px;align-items:flex-start;padding:10px 12px;border-radius:12px;background:var(--surface2);border:1px solid var(--line);font-size:.95rem}
+.ev li > div{min-width:0}
+sup.r{font-size:.72rem;margin-left:2px;white-space:nowrap}
+sup.r a{text-decoration:none;background:color-mix(in srgb,var(--accent) 14%,transparent);border-radius:5px;padding:0 4px;margin-left:2px;font-weight:700}
+.quote{border-left:4px solid var(--lvT);background:color-mix(in srgb,var(--lvT) 8%,var(--surface));padding:10px 14px;border-radius:0 12px 12px 0}
+.quote q{font-family:var(--f-display);font-size:1.12rem;quotes:"「" "」"}
+.quote cite{display:block;font-style:normal;font-size:.82rem;color:var(--muted);margin-top:2px}
+.quotes{display:flex;flex-direction:column;gap:8px}
+.mers{display:flex;flex-wrap:wrap;gap:6px}
+.mers span{font-size:.85rem;border:1px solid var(--line);border-radius:999px;padding:2px 10px;background:var(--surface2)}
+.acus{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.acu{border:1px solid var(--line);border-radius:14px;padding:12px;background:var(--surface2);display:flex;flex-direction:column;gap:4px;font-size:.88rem}
+.acu .nm{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.acu .nm b{font-family:var(--f-display);font-size:1.15rem;color:var(--ink)}
+.acu .code{font-size:.75rem;font-weight:700;color:#fff;background:var(--c);border-radius:6px;padding:0 6px}
+.acu .k{color:var(--muted);font-weight:700;margin-right:4px}
+.bridge{background:linear-gradient(135deg,color-mix(in srgb,var(--c) 12%,var(--surface)),color-mix(in srgb,var(--lvT) 10%,var(--surface)));border-radius:16px;padding:14px 16px;border:1px solid var(--line)}
+.bridge strong{font-family:var(--f-display)}
+.note{font-size:.85rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px}
+.tips{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.tips li{display:flex;gap:8px;align-items:flex-start;background:var(--surface2);border:1px solid var(--line);border-radius:12px;padding:8px 12px;font-size:.92rem;cursor:pointer}
+.tips li input{margin-top:6px;accent-color:var(--c);flex:none}
+.tips li.done{opacity:.6}
+.red{border:2px solid var(--bad);border-radius:16px;padding:12px 16px;background:color-mix(in srgb,var(--bad) 7%,var(--surface))}
+.red strong{color:var(--bad)}
+.red ul{margin:6px 0 0;padding-left:1.2em;font-size:.92rem}
+.refl{margin:0;padding-left:1.4em;font-size:.86rem;display:flex;flex-direction:column;gap:4px;word-break:break-word}
+.hubgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.hubbtn{display:flex;flex-direction:column;align-items:center;gap:2px;border:2px solid var(--c);border-radius:14px;background:var(--surface2);padding:8px 4px;cursor:pointer;font-size:.85rem;font-weight:700}
+.hubbtn svg{width:46px;height:46px}
+.hubbtn small{font-weight:400;color:var(--muted);font-size:.72rem;text-align:center;line-height:1.3}
+.four{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.four div{background:var(--surface2);border:1px solid var(--line);border-radius:12px;padding:10px;font-size:.85rem}
+.four b{display:block;font-family:var(--f-display);font-size:1rem}
+
+/* quiz */
+.q{border:1px solid var(--line);border-radius:16px;padding:14px;background:var(--surface2)}
+.q .qt{font-weight:700;margin-bottom:8px}
+.q .opts{display:grid;gap:6px}
+.opt{text-align:left;border:2px solid var(--line);background:var(--surface);border-radius:12px;padding:8px 12px;cursor:pointer;font-size:.95rem;transition:border-color .15s}
+.opt:hover:not(:disabled){border-color:var(--c)}
+.opt.ok{border-color:var(--good);background:color-mix(in srgb,var(--good) 12%,var(--surface))}
+.opt.no{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 10%,var(--surface))}
+.opt:disabled{cursor:default}
+.expl{margin-top:8px;font-size:.9rem;padding:8px 12px;border-radius:10px;background:var(--surface)}
+.expl b.y{color:var(--good)} .expl b.x{color:var(--bad)}
+.score{display:flex;align-items:center;gap:10px;font-weight:700}
+.score .big{font-family:var(--f-display);font-size:1.5rem;color:var(--c)}
+.deep{display:inline-flex;align-items:center;gap:6px;margin-top:8px;background:var(--c,var(--navy));color:#fff;font-weight:700;text-decoration:none;border-radius:999px;padding:6px 16px;border:2px solid #1f2a44;box-shadow:0 3px 0 #1f2a44;font-size:.95rem;transition:transform .15s}
+.deep:hover{transform:translateY(-2px)}
+.deepgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.deepcard{display:flex;flex-direction:column;gap:6px;text-decoration:none;color:var(--ink);background:var(--surface);border:2px solid var(--c);border-radius:18px;padding:14px;box-shadow:0 4px 0 color-mix(in srgb,var(--c) 45%,transparent);transition:transform .15s}
+.deepcard:hover{transform:translateY(-3px)}
+.deepcard svg{width:54px;height:54px}
+.deepcard .ax{font-size:.8rem;font-weight:700;color:var(--c)}
+.deepcard b{font-size:1.05rem;line-height:1.4}
+.deepcard .go{margin-top:auto;font-weight:700;color:var(--c)}
+@media (max-width:980px){.deepgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:420px){.deepgrid{grid-template-columns:1fr}}
+.mini{font-size:.82rem;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 12px;cursor:pointer}
+
+/* compare table */
+.tblwrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:20px}
+table.cmp{border-collapse:collapse;width:100%;min-width:900px;font-size:.9rem}
+table.cmp th,table.cmp td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+table.cmp thead th{background:var(--surface2);font-family:var(--f-display);font-size:.95rem;color:var(--navy);position:sticky;top:0}
+table.cmp td:first-child{white-space:nowrap;font-weight:700}
+table.cmp td:first-child i{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c);margin-right:6px}
+table.cmp tbody tr{cursor:pointer}
+table.cmp tbody tr:hover{background:var(--surface2)}
+
+/* final challenge */
+.challenge{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,300px);gap:20px;align-items:start}
+.cbox{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:20px;--c:var(--navy)}
+.prog{height:10px;border-radius:99px;background:var(--surface2);border:1px solid var(--line);overflow:hidden;margin-bottom:14px}
+.prog i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+.ctag{display:inline-block;font-size:.78rem;font-weight:700;color:#fff;background:var(--c);border-radius:999px;padding:1px 10px;margin-bottom:6px}
+.side{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:16px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px}
+.side svg{width:120px;height:120px}
+
+/* refs */
+details.refg{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:10px 16px;margin-bottom:8px}
+details.refg summary{cursor:pointer;font-weight:700;font-family:var(--f-display);font-size:1.05rem}
+details.refg summary i{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c);margin-right:8px}
+details.refg ol{margin:8px 0 4px;padding-left:1.6em;font-size:.86rem;display:flex;flex-direction:column;gap:3px;word-break:break-word}
+details.refg li:target{background:color-mix(in srgb,var(--accent) 18%,transparent);border-radius:6px}
+footer{padding-block:28px 40px;color:var(--muted);font-size:.86rem;border-top:1px solid var(--line);margin-top:20px}
+footer .wrap{display:flex;flex-direction:column;gap:8px}
+
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr}
+  .mapgrid{grid-template-columns:1fr}
+  .bodycard{position:static}
+  #bodySvg{max-height:none}
+  .challenge{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .steps,.paths{grid-template-columns:1fr}
+  .tips{grid-template-columns:1fr}
+  .hubgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .four{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .phead svg.masc{width:58px;height:58px}
+  .phead h3{font-size:1.3rem}
+  .pbody{padding:16px}
+  .top nav a{padding:3px 7px;font-size:.82rem}
+}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><svg viewBox="0 0 100 100" id="brandMasc" aria-hidden="true"></svg>腦軸探險地圖</a>
+    <nav aria-label="頁內導覽">
+      <a href="#map">人體地圖</a><a href="#compare">中西對照</a><a href="#challenge">終極挑戰</a><a href="#refs">參考資料</a><a href="#deep">深入探險</a><a href="https://www.gungho.idv.tw/KS/index.html">← 回小學堂</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">生活健康課 · 約 30 分鐘 · 適合全家一起上</p>
+        <h1>大腦不是獨自工作<br><span class="hl">身體的八條腦軸</span></h1>
+        <p class="lede">腸胃、心肺、肌肉、腎臟、口腔、眼睛、足底和骨骼，都透過神經、血液、免疫與荷爾蒙，和大腦天天「講電話」。點人體圖上的器官，看看現代研究怎麼說、中醫經絡怎麼看，再用小測驗考考自己。</p>
+        <div class="cta">
+          <a class="btn pri" href="#map">打開人體地圖 →</a>
+          <a class="btn sec" href="#challenge">直接挑戰測驗</a>
+        </div>
+        <div class="outcomes" aria-label="學完你會">
+          <span>認識 8 條腦軸的溝通路線</span><span>分辨研究證據強弱</span><span>對照中醫經絡與穴位</span><span>帶走一份生活處方</span>
+        </div>
+      </div>
+      <svg class="orbit" id="orbit" viewBox="0 0 600 460" role="img" aria-label="大腦卡通角色在中央，周圍八個器官角色以虛線相連"></svg>
+    </section>
+
+    <section class="blk" aria-labelledby="howto">
+      <div class="sechead">
+        <p class="eyebrow">使用方式</p>
+        <h2 id="howto">三步驟探險</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><b class="n">1</b><p><strong>點器官</strong>人體圖上的彩色器官都能點，也可以用圖下方的按鈕選。被選中的器官會有一條虛線連回大腦。</p></div>
+        <div class="step"><b class="n">2</b><p><strong>讀五個分頁</strong>認識原理、研究證據、中醫經絡、生活處方、小測驗，每一句重點都附上出處編號。</p></div>
+        <div class="step"><b class="n">3</b><p><strong>集滿護照</strong>每探索一條腦軸、答完小測驗就蓋一個章。八章蓋滿，再去挑戰終極測驗。</p></div>
+      </div>
+      <div class="legend" aria-label="證據燈號說明">
+        <span><b class="lv" data-l="A">A</b>人體證據較多（統合分析、隨機試驗、臨床共識）</span>
+        <span><b class="lv" data-l="B">B</b>觀察性或小型研究，看得到關聯，因果待確認</span>
+        <span><b class="lv" data-l="C">C</b>動物或機制研究，人體效果還不確定</span>
+        <span><b class="lv" data-l="T">T</b>中醫經典理論，屬傳統醫學觀點</span>
+      </div>
+    </section>
+
+    <section class="blk" id="map" aria-labelledby="maph">
+      <div class="sechead">
+        <p class="eyebrow">互動人體圖</p>
+        <h2 id="maph">點一個器官，接通它和大腦的熱線</h2>
+        <p>圖中人體採解剖學標準姿勢（面向你、掌心朝前），所以圖的左邊是身體的右側。左腿畫出骨骼、右腿畫出肌肉；腎臟位在腹腔後方，以虛線表示。</p>
+      </div>
+      <div class="mapgrid">
+        <div class="bodycard" id="bodycard">
+          <div class="bodytools">
+            <label class="toggle"><input type="checkbox" id="allMer">顯示全部經絡</label>
+            <label class="toggle"><input type="checkbox" id="showLbl" checked>器官名稱</label>
+          </div>
+          <div style="position:relative">
+            <svg id="bodySvg" viewBox="-34 0 468 820" role="group" aria-label="人體器官圖">
+              <defs>
+                <radialGradient id="gBody" cx="50%" cy="35%" r="70%">
+                  <stop offset="0" stop-color="var(--bodyfill)"/>
+                  <stop offset="1" stop-color="color-mix(in srgb,var(--bodyfill) 80%,var(--bodystroke))"/>
+                </radialGradient>
+                <path id="halfBody" d="M200,128 L186,128 C186,146 184,156 180,162 C166,170 146,172 132,178 C114,186 106,200 106,222 C104,256 100,290 98,320 C96,350 92,390 90,424 C88,440 84,452 82,466 C80,480 84,494 94,500 C104,504 110,494 110,482 C110,466 112,450 114,436 C118,400 122,360 126,326 C128,300 132,270 138,246 C140,280 142,320 146,360 C148,380 142,410 138,440 C136,480 136,520 140,560 C144,590 148,610 148,630 C146,670 150,710 158,748 C158,760 150,772 148,782 C150,792 172,794 184,790 C190,786 190,772 186,762 C186,740 188,700 190,660 C192,630 190,610 190,596 C192,560 196,520 198,488 L200,486 Z"/>
+              </defs>
+              <!-- outline pass -->
+              <g stroke="var(--bodystroke)" stroke-width="3" fill="var(--bodystroke)">
+                <use href="#halfBody"/><use href="#halfBody" transform="matrix(-1 0 0 1 400 0)"/>
+                <ellipse cx="200" cy="80" rx="46" ry="56"/>
+                <ellipse cx="153" cy="88" rx="6" ry="11"/><ellipse cx="247" cy="88" rx="6" ry="11"/>
+              </g>
+              <!-- fill pass -->
+              <g fill="url(#gBody)">
+                <use href="#halfBody"/><use href="#halfBody" transform="matrix(-1 0 0 1 400 0)"/>
+                <ellipse cx="200" cy="80" rx="46" ry="56"/>
+                <ellipse cx="153" cy="88" rx="5" ry="10"/><ellipse cx="247" cy="88" rx="5" ry="10"/>
+              </g>
+              <!-- subtle anatomical contours -->
+              <g fill="none" stroke="var(--bodystroke)" stroke-width="1" opacity=".55">
+                <path d="M168,178 C182,186 192,186 200,182 C208,186 218,186 232,178"/>
+                <path d="M200,392 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"/>
+                <path d="M150,300 C170,312 190,316 200,316 C210,316 230,312 250,300" stroke-dasharray="3 4"/>
+              </g>
+              <!-- liver (context, not clickable) -->
+              <path d="M150,302 C168,292 210,294 222,306 C214,322 182,332 156,328 C148,322 146,310 150,302 Z" fill="#b5654f" opacity=".28"/>
+              <text x="166" y="318" font-size="9" fill="var(--muted)">肝</text>
+
+              <!-- ORGANS -->
+              <g id="organs">
+                <!-- bones: left leg (viewer's left) -->
+                <g class="organ" data-axis="bone" tabindex="0" role="button" aria-label="骨骼：骨腦軸">
+                  <g fill="#f6e7bd" stroke="#c29a2c" stroke-width="1.6">
+                    <path d="M144,436 C148,414 174,410 190,426 C194,444 188,460 176,468 C168,460 156,452 144,436 Z" opacity=".85"/>
+                    <path d="M256,436 C252,414 226,410 210,426 C206,444 212,460 224,468 C232,460 244,452 256,436 Z" opacity=".55"/>
+                    <path d="M188,470 C194,480 206,480 212,470" fill="none"/>
+                    <circle cx="174" cy="468" r="8"/>
+                    <path d="M170,474 C166,480 162,482 160,488 L158,584 C156,590 154,596 156,600 L178,600 C180,596 178,590 172,584 L170,488 Z"/>
+                    <ellipse cx="166" cy="606" rx="9" ry="9" fill="#efdca8"/>
+                    <path d="M154,616 C156,612 176,612 180,616 L176,624 L174,742 C178,748 180,752 178,756 L164,756 C164,750 166,746 168,742 L166,624 Z"/>
+                    <path d="M154,622 L156,744" fill="none" stroke-width="3"/>
+                  </g>
+                </g>
+                <!-- muscles: right thigh quadriceps + right biceps/deltoid -->
+                <g class="organ" data-axis="muscle" tabindex="0" role="button" aria-label="肌肉：肌腦軸">
+                  <g fill="#e46aa9" stroke="#b03580" stroke-width="1.3">
+                    <path d="M228,494 C244,496 260,520 258,560 C256,592 246,612 236,618 C224,610 212,590 212,556 C212,524 218,498 228,494 Z"/>
+                    <path d="M228,500 C230,540 234,580 236,614 M218,520 C222,556 228,590 232,612 M248,516 C246,556 242,590 238,612" fill="none" stroke="#f7b4d6" stroke-width="1"/>
+                    <path d="M210,616 C222,622 238,622 248,616 C250,646 246,676 240,700 C232,690 224,680 220,660 C214,646 210,632 210,616 Z" opacity=".75"/>
+                    <path d="M262,184 C280,180 298,196 298,222 C296,236 288,244 280,246 C274,232 268,214 262,184 Z"/>
+                    <path d="M276,248 C288,254 294,280 292,304 C290,318 284,326 278,326 C272,316 268,292 270,270 C270,258 272,250 276,248 Z"/>
+                    <path d="M280,256 C282,280 282,304 280,322" fill="none" stroke="#f7b4d6" stroke-width="1"/>
+                  </g>
+                </g>
+                <!-- lungs -->
+                <g class="organ" data-axis="heart" tabindex="0" role="button" aria-label="肺臟：心肺腦軸">
+                  <path d="M200,140 L200,194 M200,194 C194,198 190,202 186,210 M200,194 C206,198 210,202 214,210" stroke="#7fb2cf" stroke-width="5" fill="none" stroke-linecap="round"/>
+                  <path d="M190,196 C170,188 152,202 150,240 C148,278 150,306 158,318 C172,326 186,318 192,306 C194,270 194,230 190,196 Z" fill="#8cc4e3" stroke="#4b8fb7" stroke-width="1.5"/>
+                  <path d="M210,198 C230,188 248,202 250,240 C252,278 250,306 242,318 C232,326 218,320 214,308 C222,292 222,276 210,266 Z" fill="#8cc4e3" stroke="#4b8fb7" stroke-width="1.5"/>
+                  <path d="M156,250 C168,252 178,248 188,238 M158,284 C170,284 182,280 190,272 M246,256 C236,256 226,252 216,244" stroke="#4b8fb7" stroke-width="1" fill="none" opacity=".7"/>
+                </g>
+                <!-- heart -->
+                <g class="organ" data-axis="heart" tabindex="0" role="button" aria-label="心臟：心肺腦軸">
+                  <path d="M206,248 C204,232 214,224 224,232 M210,250 C212,238 220,236 228,240" stroke="#c0303a" stroke-width="5" fill="none" stroke-linecap="round"/>
+                  <path d="M200,248 C188,252 184,268 192,282 C200,294 214,300 224,302 C234,294 238,280 234,264 C230,250 214,244 200,248 Z" fill="#e5484d" stroke="#a32128" stroke-width="1.5"/>
+                  <path d="M210,256 C214,272 218,286 222,298" stroke="#ff9ea2" stroke-width="1.2" fill="none"/>
+                </g>
+                <!-- stomach + intestines -->
+                <g class="organ" data-axis="gut" tabindex="0" role="button" aria-label="腸胃：腸腦軸">
+                  <path d="M214,306 C228,296 252,304 250,328 C248,350 230,360 214,352 C206,346 210,336 220,334 C226,326 220,318 214,306 Z" fill="#f6a457" stroke="#c4661a" stroke-width="1.5"/>
+                  <path d="M170,446 L168,384 C168,374 174,370 182,370 L222,370 C230,370 234,374 234,384 L234,440 C234,450 224,454 212,450" fill="none" stroke="#e98a3a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M170,446 L168,384 C168,374 174,370 182,370 L222,370 C230,370 234,374 234,384 L234,440 C234,450 224,454 212,450" fill="none" stroke="#f7b77a" stroke-width="3" stroke-dasharray="2 5" stroke-linecap="round"/>
+                  <path d="M184,388 C196,380 210,392 220,386 C228,394 214,402 202,398 C190,396 182,408 194,412 C206,416 214,406 222,414 C226,424 210,428 200,424 C188,420 182,432 194,438 C204,442 212,436 218,440" fill="none" stroke="#f3a560" stroke-width="5" stroke-linecap="round"/>
+                </g>
+                <!-- kidneys (behind) -->
+                <g class="organ" data-axis="kidney" tabindex="0" role="button" aria-label="腎臟：腎腦軸">
+                  <path d="M160,334 C148,336 146,356 150,366 C154,374 164,376 170,370 C166,362 168,354 172,350 C174,340 168,332 160,334 Z" fill="#9b82ff" fill-opacity=".8" stroke="#5a3fd0" stroke-width="1.6" stroke-dasharray="4 2"/>
+                  <path d="M240,330 C252,332 254,352 250,362 C246,370 236,372 230,366 C234,358 232,350 228,346 C226,336 232,328 240,330 Z" fill="#9b82ff" fill-opacity=".8" stroke="#5a3fd0" stroke-width="1.6" stroke-dasharray="4 2"/>
+                  <path d="M170,362 C176,380 182,400 190,430 M230,358 C224,378 218,400 210,430" stroke="#9b82ff" stroke-width="1.6" fill="none" opacity=".7"/>
+                </g>
+                <!-- brain -->
+                <g class="organ" data-axis="hub" tabindex="0" role="button" aria-label="大腦：腦軸總機">
+                  <path d="M200,32 C186,30 174,36 170,46 C162,48 158,58 162,66 C160,74 166,82 176,82 C182,88 192,88 200,84 C208,88 218,88 224,82 C234,82 240,74 238,66 C242,58 238,48 230,46 C226,36 214,30 200,32 Z" fill="#ff9fc6" stroke="#d2508c" stroke-width="1.6"/>
+                  <path d="M200,34 L200,84 M178,46 C186,50 186,58 180,62 M172,70 C180,66 188,70 190,76 M222,46 C214,50 214,58 220,62 M228,70 C220,66 212,70 210,76 M188,40 C192,46 196,46 198,52 M212,40 C208,46 204,46 202,52" stroke="#d2508c" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+                </g>
+                <!-- eyes -->
+                <g class="organ" data-axis="eye" tabindex="0" role="button" aria-label="眼睛：腸眼軸">
+                  <ellipse cx="182" cy="96" rx="9.5" ry="5.5" fill="#fff" stroke="#0b7fb3" stroke-width="1.5"/>
+                  <ellipse cx="218" cy="96" rx="9.5" ry="5.5" fill="#fff" stroke="#0b7fb3" stroke-width="1.5"/>
+                  <circle cx="182" cy="96" r="3.6" fill="#0ea5e9"/><circle cx="218" cy="96" r="3.6" fill="#0ea5e9"/>
+                  <circle cx="182" cy="96" r="1.5" fill="#0b2533"/><circle cx="218" cy="96" r="1.5" fill="#0b2533"/>
+                </g>
+                <!-- mouth -->
+                <g class="organ" data-axis="oral" tabindex="0" role="button" aria-label="口腔：口腔腦軸">
+                  <path d="M186,116 C194,112 206,112 214,116 C208,126 192,126 186,116 Z" fill="#f08a9a" stroke="#c4566a" stroke-width="1.4"/>
+                  <path d="M190,117 L210,117 L208,120 L192,120 Z" fill="#fff"/>
+                  <path d="M194,117 L194,120 M198,117 L198,120 M202,117 L202,120 M206,117 L206,120" stroke="#c9d6dc" stroke-width=".6"/>
+                </g>
+                <!-- feet + sole inset -->
+                <g class="organ" data-axis="foot" tabindex="0" role="button" aria-label="足底：足底腦軸">
+                  <path d="M158,750 C150,766 146,776 148,784 C152,794 174,796 186,790 C190,780 188,766 186,754 Z" fill="#7fd1a6" stroke="#1d8a59" stroke-width="1.4"/>
+                  <path d="M242,750 C250,766 254,776 252,784 C248,794 226,796 214,790 C210,780 212,766 214,754 Z" fill="#7fd1a6" stroke="#1d8a59" stroke-width="1.4"/>
+                  <path d="M296,736 L246,776" stroke="#1d8a59" stroke-width="1.2" stroke-dasharray="3 3"/>
+                  <circle cx="336" cy="700" r="54" fill="var(--surface)" stroke="#1d8a59" stroke-width="2"/>
+                  <g fill="#7fd1a6" stroke="#1d8a59" stroke-width="1.3">
+                    <path d="M336,662 C351,662 357,678 355,696 C353,714 349,728 347,740 C345,750 327,752 325,740 C323,724 319,708 319,690 C319,672 323,662 336,662 Z"/>
+                    <circle cx="324" cy="656" r="5.5"/><circle cx="334" cy="652" r="4.6"/><circle cx="343" cy="652" r="4.2"/><circle cx="351" cy="655" r="3.8"/><circle cx="357" cy="660" r="3.3"/>
+                  </g>
+                  <text x="336" y="766" text-anchor="middle" font-size="11" fill="var(--muted)">右足底（放大）</text>
+                </g>
+              </g>
+
+              <!-- labels -->
+              <g id="labels"></g>
+              <g id="merLayer"></g>
+              <g id="axisLayer"></g>
+              <g id="ptLayer"></g>
+            </svg>
+            <div class="tip" id="tip"></div>
+          </div>
+          <div class="chips" id="chips" aria-label="選擇腦軸"></div>
+          <div class="passport"><span id="ppText">探險護照 0 / 8</span><span class="bar"><i id="ppBar"></i></span></div>
+        </div>
+
+        <article class="panel" id="panel" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section class="blk" id="deep" aria-labelledby="deeph">
+      <div class="sechead">
+        <p class="eyebrow">深入探險</p>
+        <h2 id="deeph">八條腦軸，各有一張專屬探險地圖</h2>
+        <p>每個單元都有放大的器官剖面圖、更多研究證據、中醫經絡穴位，還有可以動手做的小工具。看完總覽，挑一條腦軸繼續深入吧！</p>
+      </div>
+      <div class="deepgrid" id="deepCards"></div>
+    </section>
+
+    <section class="blk" id="compare" aria-labelledby="cmph">
+      <div class="sechead">
+        <p class="eyebrow">中西對照</p>
+        <h2 id="cmph">現代腦軸 × 中醫臟腑經絡，一張表看懂</h2>
+        <p>中醫的「臟」是功能系統，不等於解剖器官；兩套語言描述的現象常常相似，但證據層級不同。點任一列可回到人體圖看詳細內容。</p>
+      </div>
+      <div class="tblwrap"><table class="cmp" id="cmpTable"></table></div>
+    </section>
+
+    <section class="blk" id="challenge" aria-labelledby="chh">
+      <div class="sechead">
+        <p class="eyebrow">終極挑戰</p>
+        <h2 id="chh">十題混合題，看看你是不是腦軸達人</h2>
+        <p>從八條腦軸與中醫經典的題庫隨機抽出 10 題，每題作答後立刻看解析。</p>
+      </div>
+      <div class="challenge">
+        <div class="cbox" id="cbox"></div>
+        <aside class="side" id="cside"></aside>
+      </div>
+    </section>
+
+    <section class="blk" id="refs" aria-labelledby="refh">
+      <div class="sechead">
+        <p class="eyebrow">可溯源參考資料</p>
+        <h2 id="refh">每一句重點，都找得到出處</h2>
+        <p>現代醫學內容整理自「各種腦軸線」資料匣的八份整合報告及其參考文獻；中醫內容引自《黃帝內經》《難經》原文，穴位定位依 WHO 西太平洋區標準。文中上標如「腸 9」即對應下列編號。</p>
+      </div>
+      <div id="refList"></div>
+    </section>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <p><strong>健康教育聲明：</strong>本頁為一般衛教與學習用途，不能取代個人化的醫療診斷與治療。穴位按壓與泡腳屬自我保健或輔助方式，若有疾病、懷孕、傷口或正在服藥，請先諮詢醫師或合格中醫師。出現文中「紅旗警訊」時請立即就醫；緊急狀況撥打 119。</p>
+    <p>插圖與卡通角色為本頁原創繪製，無版權疑慮。<a href="#top">回到頁首 ↑</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+/* ---------- storage (optional) ---------- */
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const visited=new Set(store.get("ba_visited",[]));
+const quizDone=store.get("ba_quiz",{});
+
+/* ---------- mascots ---------- */
+function face(cx,cy,big){
+  const e=big?`<circle cx="${cx-11}" cy="${cy}" r="8.5" fill="#fff" stroke="#1f2d33" stroke-width="1.6"/><circle cx="${cx+11}" cy="${cy}" r="8.5" fill="#fff" stroke="#1f2d33" stroke-width="1.6"/><circle cx="${cx-10}" cy="${cy+1}" r="4.6" fill="#0b4f6c"/><circle cx="${cx+12}" cy="${cy+1}" r="4.6" fill="#0b4f6c"/><circle cx="${cx-8.5}" cy="${cy-1}" r="1.6" fill="#fff"/><circle cx="${cx+13.5}" cy="${cy-1}" r="1.6" fill="#fff"/>`
+   :`<circle cx="${cx-8}" cy="${cy}" r="3.6" fill="#1f2d33"/><circle cx="${cx+8}" cy="${cy}" r="3.6" fill="#1f2d33"/><circle cx="${cx-7}" cy="${cy-1.2}" r="1.2" fill="#fff"/><circle cx="${cx+9}" cy="${cy-1.2}" r="1.2" fill="#fff"/>`;
+  const my=big?cy+14:cy+8;
+  return e+`<path d="M${cx-6} ${my} Q${cx} ${my+6} ${cx+6} ${my}" stroke="#1f2d33" stroke-width="2.4" fill="none" stroke-linecap="round"/><ellipse cx="${cx-15}" cy="${my-2}" rx="4.5" ry="3" fill="#ff6f8f" opacity=".45"/><ellipse cx="${cx+15}" cy="${my-2}" rx="4.5" ry="3" fill="#ff6f8f" opacity=".45"/>`;
+}
+const MASC={
+  hub:()=>`<path d="M50 14c-10 0-16 6-18 12-8 0-15 7-15 15 0 4 2 8 5 10-2 3-3 6-2 10 1 8 8 13 16 13 3 6 9 9 14 9s11-3 14-9c8 0 15-5 16-13 1-4 0-7-2-10 3-2 5-6 5-10 0-8-7-15-15-15-2-6-8-12-18-12z" fill="#ff9fc6" stroke="#d2508c" stroke-width="2.4"/><path d="M50 16v16M34 30c6 2 8 8 6 12M66 30c-6 2-8 8-6 12M22 50c6-2 10 0 12 4M78 50c-6-2-10 0-12 4" stroke="#d2508c" stroke-width="2" fill="none" stroke-linecap="round"/>`+face(50,58),
+  gut:()=>`<rect x="40" y="6" width="12" height="22" rx="6" fill="#f6a457" stroke="#c4661a" stroke-width="2.2"/><ellipse cx="50" cy="56" rx="36" ry="30" fill="#f6a457" stroke="#c4661a" stroke-width="2.4"/><path d="M26 78c8 8 16 0 24 6s16 0 24-6" stroke="#c4661a" stroke-width="2" fill="none" stroke-linecap="round"/>`+face(50,52),
+  heart:()=>`<ellipse cx="16" cy="50" rx="11" ry="20" fill="#8cc4e3" stroke="#4b8fb7" stroke-width="2"/><ellipse cx="84" cy="50" rx="11" ry="20" fill="#8cc4e3" stroke="#4b8fb7" stroke-width="2"/><path d="M50 88C20 68 14 52 14 38c0-12 9-21 20-21 8 0 13 4 16 10 3-6 8-10 16-10 11 0 20 9 20 21 0 14-6 30-36 50z" fill="#e5484d" stroke="#a32128" stroke-width="2.4"/>`+face(50,46),
+  muscle:()=>`<rect x="16" y="8" width="68" height="6" rx="3" fill="#8a97a0"/><rect x="10" y="2" width="10" height="18" rx="3" fill="#56636b"/><rect x="80" y="2" width="10" height="18" rx="3" fill="#56636b"/><path d="M26 18c4 6 8 10 10 14M74 18c-4 6-8 10-10 14" stroke="#b03580" stroke-width="6" stroke-linecap="round"/><circle cx="50" cy="60" r="32" fill="#e46aa9" stroke="#b03580" stroke-width="2.4"/><rect x="20" y="36" width="60" height="8" rx="4" fill="#ffd166"/>`+face(50,60),
+  kidney:()=>`<path d="M56 10c20 0 32 18 32 40s-12 40-32 40c-14 0-22-8-22-18 0-8 8-12 8-22s-8-14-8-22c0-10 8-18 22-18z" fill="#9b82ff" stroke="#5a3fd0" stroke-width="2.4"/><path d="M38 50c-8 0-14 6-20 16" stroke="#5a3fd0" stroke-width="3" fill="none" stroke-linecap="round"/>`+face(62,50),
+  oral:()=>`<path d="M24 22c8-8 18-4 26 0 8-4 18-8 26 0 9 8 6 24 2 36-3 10-5 28-13 30-7 1-8-15-15-15s-8 16-15 15c-8-2-10-20-13-30-4-12-7-28 2-36z" fill="#ffffff" stroke="#0fb5a6" stroke-width="2.6"/><path d="M70 26c4 2 6 6 6 10" stroke="#bfeee8" stroke-width="3" fill="none" stroke-linecap="round"/>`+face(50,44),
+  eye:()=>`<circle cx="50" cy="54" r="36" fill="#7cd3f7" stroke="#0b7fb3" stroke-width="2.4"/><path d="M22 26l-6-8M50 18v-10M78 26l6-8" stroke="#0b7fb3" stroke-width="3" stroke-linecap="round"/>`+face(50,50,true),
+  foot:()=>`<circle cx="33" cy="16" r="7" fill="#7fd1a6" stroke="#1d8a59" stroke-width="2"/><circle cx="46" cy="11" r="6" fill="#7fd1a6" stroke="#1d8a59" stroke-width="2"/><circle cx="58" cy="11" r="5.4" fill="#7fd1a6" stroke="#1d8a59" stroke-width="2"/><circle cx="68" cy="15" r="4.8" fill="#7fd1a6" stroke="#1d8a59" stroke-width="2"/><circle cx="76" cy="22" r="4.2" fill="#7fd1a6" stroke="#1d8a59" stroke-width="2"/><path d="M50 26c16 0 26 12 26 30 0 18-6 26-8 34-2 6-30 6-32 0-2-8-10-18-10-34 0-18 8-30 24-30z" fill="#7fd1a6" stroke="#1d8a59" stroke-width="2.4"/>`+face(50,56),
+  bone:()=>`<g fill="#f6e2a2" stroke="#c29317" stroke-width="2.4"><circle cx="20" cy="36" r="12"/><circle cx="20" cy="64" r="12"/><circle cx="80" cy="36" r="12"/><circle cx="80" cy="64" r="12"/><rect x="18" y="36" width="64" height="28" rx="10"/></g><path d="M18 36h64M18 64h64" stroke="#f6e2a2" stroke-width="4"/>`+face(50,48)
+};
+const masc=(k,cls)=>`<svg viewBox="0 0 100 100" class="${cls||""}" aria-hidden="true">${MASC[k]()}</svg>`;
+
+/* ---------- references ---------- */
+const RLAB={gut:"腸",heart:"心",muscle:"肌",kidney:"腎",oral:"口",eye:"眼",foot:"足",bone:"骨",tcm:"典",gen:"通"};
+const REFS={
+gut:[
+["Joyce HealthSpan。腸腦軸大解密：營養師教你「養腸又養腦」的飲食攻略","https://joyce.healthspan.com.tw/web/official/b/gut-brain-axis"],
+["CNFCD 知識庫。腸腦軸、食慾與嘴饞","https://cnfcd.tw/library/life-gut-brain-axis-appetite-cravings-metabolism/"],
+["成功大學安全衛生組。健康人生：你的腸道，是身體的第二個大腦","http://stud.adm.ncku.edu.tw/saf/newsletter/Data/202511/22.pdf"],
+["自由健康網。快樂不起來？腸道養好就對了 醫揭 3 法有幫助","https://health.ltn.com.tw/article/breakingnews/5202930"],
+["世界華人消化雜誌。飲食—腸道微生物—腦腸軸的交互作用對情緒影響的研究進展","https://www.wjgnet.com/1009-3079/full/v33/i7/522.htm"],
+["Frontiers in Nutrition. Gut microbiota, nutrients, and depression (2025)","https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1581848/full"],
+["Frontiers in Nutrition. From Plate to Mind: Scientific Perspectives on Foods That May …","https://pmc.ncbi.nlm.nih.gov/articles/PMC13165168/"],
+["BMC Medicine. Mediterranean diet, gut microbiota, and cognitive decline","https://link.springer.com/article/10.1186/s12916-025-04488-y"],
+["JAMA Internal Medicine. Mediterranean Diet and Cognitive Decline (PREDIMED-Barcelona RCT)","https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2293082"],
+["PMC. Association between the Mediterranean diet and cognitive …","https://pmc.ncbi.nlm.nih.gov/articles/PMC9372716/"],
+["PMC. The role of the Mediterranean diet in reducing the risk …","https://pmc.ncbi.nlm.nih.gov/articles/PMC12181514/"],
+["Formulawave。5 種有益認知功能的輔助方法","https://formulawave.com/cognitive-function-complementary-therapies/"],
+["PMC. Mediterranean diet and gut microbiota: impact on memory and …","https://pmc.ncbi.nlm.nih.gov/articles/PMC13008869/"],
+["Frontiers in Nutrition. The intricate interplay between dietary habits and cognitive function: insights from the gut-brain axis","https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1539355/full"]],
+heart:[
+["ESC Heart Failure. Heart failure and cognitive impairment: a narrative review","https://academic.oup.com/eschf/article/13/4/xvag192/8733300"],
+["Stroke (AHA). Cognitive Impairment in Patients With Cardiac Disease: Implications for Clinical Practice","https://www.ahajournals.org/doi/10.1161/STROKEAHA.123.040499"],
+["PubMed. The Heart-Brain Axis in Heart Failure: Implications for Cognitive Decline and Brain Health","https://pubmed.ncbi.nlm.nih.gov/41193445/"],
+["PubMed. Exercise training alters resting brain-derived neurotrophic factor in older adults: a systematic review and meta-analysis","https://pubmed.ncbi.nlm.nih.gov/39674562/"],
+["PubMed. A narrative review of the relationship between heart failure and cognitive impairment","https://pubmed.ncbi.nlm.nih.gov/39477682/"],
+["ESC Heart Failure. Connecting the Dots: Heart Failure and Cognitive Impairment","https://academic.oup.com/eschf/article/12/2/1119/8487945"],
+["PMC. Cognitive impairment in heart failure patients","https://pmc.ncbi.nlm.nih.gov/articles/PMC4294149/"],
+["PMC. The heart-brain axis: cardiovascular disease and Alzheimer's disease","https://pmc.ncbi.nlm.nih.gov/articles/PMC12682763/"],
+["PMC. Cognitive Impairment in Heart Failure: Landscape, Challenges, and Future Directions","https://pmc.ncbi.nlm.nih.gov/articles/PMC8858826/"],
+["Frontiers in Neurology. Impact of physical exercise on the regulation of brain-derived neurotrophic factor","https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2024.1505879/full"],
+["Frontiers in Cardiovascular Medicine. Heart–brain interaction in cardiogenic dementia","https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2024.1304864/full"],
+["MDPI Pharmaceuticals. Cognitive Safety and Outcomes of Pharmacological Management in Heart Failure","https://www.mdpi.com/1424-8247/18/11/1671"]],
+muscle:[
+["康健雜誌。肌肉量與肌力越好，大腦越年輕：「肌腦軸」","https://www.commonhealth.com.tw/article/94719"],
+["健康雲／聯合報。肌肉量多大腦年輕？醫揭「肌腦軸」關鍵","https://health.udn.com/health/story/5965/9161476"],
+["自由健康網。60 歲以上重訓 1 年，大腦年輕近 2 歲","https://health.ltn.com.tw/article/breakingnews/5558489"],
+["PubMed. Physical Activity to Counter Age-Related Cognitive Decline: Aerobic, Resistance, and Combined Training","https://pubmed.ncbi.nlm.nih.gov/40381170/"],
+["BMC Geriatrics. Effects of dual-task resistance exercise on cognition, mood …","https://link.springer.com/content/pdf/10.1186/s12877-024-04942-1.pdf"],
+["Springer. Effects of different training characteristics in combined …","https://link.springer.com/content/pdf/10.1186/s11556-026-00403-3_reference.pdf"],
+["PMC. Effects of aerobic exercise on cognitive function in older adults …","https://pmc.ncbi.nlm.nih.gov/articles/PMC12827630/"],
+["PMC. The brain-gut-muscle axis: a mechanism for exercise …","https://pmc.ncbi.nlm.nih.gov/articles/PMC12995645/"],
+["PMC. Aerobic exercise interventions for older adults with cognitive …","https://pmc.ncbi.nlm.nih.gov/articles/PMC13345865/"],
+["PMC. Effects of Resistance Training on Motor and Cognitive …","https://pmc.ncbi.nlm.nih.gov/articles/PMC12691713"],
+["PMC. Effects of aerobic exercise on cognition, sleep, and mood …","https://pmc.ncbi.nlm.nih.gov/articles/PMC13260539"],
+["AIR Unimi. Irisin and the muscle–brain axis","https://air.unimi.it/bitstream/2434/1210941/2/Irisin%20and%20the%20muscle-brain%20axis.pdf"],
+["Frontiers in Medicine. Impact of physical exercise interventions on …","https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1732129/full"],
+["Frontiers in Aging Neuroscience. Optimal exercise interventions for enhancing cognitive function in older adults: a network meta-analysis","https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2025.1510773/full"],
+["Frontiers in Psychiatry. A systematic review and meta-analysis of the …","https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1708244/full"],
+["Frontiers in Aging Neuroscience. The brain-gut-muscle axis: a mechanism for exercise …","https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2026.1761832/full"],
+["Quality in Sport. A literature review on effects of regular exercise on cognitive …","https://apcz.umk.pl/QS/article/download/62853/43361/202548"]],
+kidney:[
+["Brain. Relationship between kidney health and neurodegenerative diseases","https://academic.oup.com/brain/article/148/8/2616/8090446"],
+["Clinical Kidney Journal. Health outcomes in CKD patients with cognitive impairment","https://academic.oup.com/ckj/article/18/1/sfae401/7921620"],
+["Nephrology Dialysis Transplantation. Care pathways for patients with cognitive impairment and CKD","https://academic.oup.com/ndt/article/40/Supplement_2/ii28/8074948"],
+["PubMed. Cognitive impairment in chronic kidney disease","https://pubmed.ncbi.nlm.nih.gov/41201682/"],
+["Mayo Clinic / Elsevier Pure. Uremic Toxins, CKD, and Cognitive Dysfunction","https://mayoclinic.elsevierpure.com/en/publications/uremic-toxins-ckd-and-cognitive-dysfunction/"],
+["PMC. Uremic Toxins, CKD, and Cognitive Dysfunction","https://pmc.ncbi.nlm.nih.gov/articles/PMC12147973/"],
+["PMC. Chronic Kidney disease and cognitive frailty in aging","https://pmc.ncbi.nlm.nih.gov/articles/PMC13106425/"],
+["PMC. Genetic and circulating biomarkers of cognitive dysfunction in CKD","https://pmc.ncbi.nlm.nih.gov/articles/PMC11905751/"],
+["PMC. Global trends in chronic kidney disease related cognitive impairment","https://pmc.ncbi.nlm.nih.gov/articles/PMC13226549/"],
+["Renal Failure (Taylor & Francis). Kidney function and cognitive impairment","https://www.tandfonline.com/doi/full/10.1080/0886022X.2025.2463565"],
+["PMC. Cognitive impairment in chronic kidney disease","https://pmc.ncbi.nlm.nih.gov/articles/PMC11997786/"],
+["PMC. CONNECT: what has been done and what needs to be done","https://pmc.ncbi.nlm.nih.gov/articles/PMC11905759/"],
+["Frontiers in Nephrology. Research advances on acute kidney injury and brain dysfunction","https://www.frontiersin.org/journals/nephrology/articles/10.3389/fneph.2026.1867473/full"]],
+oral:[
+["Journal of Oral Pathology & Medicine (Wiley). Impact of Oral Bacteria on Alzheimer's Disease","https://onlinelibrary.wiley.com/doi/10.1111/jop.70111"],
+["PubMed. Pathophysiological Insights Into the Oral-Brain Axis","https://pubmed.ncbi.nlm.nih.gov/41416492/"],
+["PMC. The role of the oral microbiome, host response, and periodontal disease in Alzheimer's disease","https://pmc.ncbi.nlm.nih.gov/articles/PMC12842860/"],
+["PMC. Association between periodontal disease and Alzheimer's disease","https://pmc.ncbi.nlm.nih.gov/articles/PMC12283705/"],
+["IBRO Neuroscience Reports. Association between periodontitis and Alzheimer's disease: A narrative review","https://pmc.ncbi.nlm.nih.gov/articles/PMC11889340/"],
+["PMC. Association Between Periodontitis and Mild Cognitive Impairment, Alzheimer's Disease and Dementia","https://pmc.ncbi.nlm.nih.gov/articles/PMC13471809/"],
+["PMC. Oral diseases as emerging risk factors for Alzheimer's disease","https://pmc.ncbi.nlm.nih.gov/articles/PMC12666449/"],
+["PMC. Alzheimer's Disease and Porphyromonas gingivalis","https://pmc.ncbi.nlm.nih.gov/articles/PMC11766648/"],
+["Frontiers in Immunology. Porphyromonas gingivalis: a potential trigger of neurodegenerative disease","https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2025.1482033/full"],
+["MDPI. Reciprocal Interactions Between Periodontal Disease and Alzheimer's Disease","https://www.mdpi.com/2035-8377/17/6/81"]],
+eye:[
+["PubMed. Lactobacillaceae-mediated eye-brain-gut axis regulates high myopia-related anxiety","https://pubmed.ncbi.nlm.nih.gov/39635020/"],
+["PubMed. Standardization and clinical applications of retinal imaging biomarkers for cardiovascular disease","https://pubmed.ncbi.nlm.nih.gov/39039178/"],
+["BMC Ophthalmology. What is the impact of microbiota on dry eye: a literature review","https://link.springer.com/article/10.1186/s12886-024-03526-2"],
+["Clinical and Experimental Optometry. Probiotics and prebiotics on ocular and systemic inflammation in dry eye disease","https://www.tandfonline.com/doi/full/10.1080/08164622.2025.2502529"],
+["PMC. The Gut-Eye Axis and Microbiome in Ophthalmic Diseases","https://pmc.ncbi.nlm.nih.gov/articles/PMC13206939/"],
+["PMC. Gut–ocular surface axis in dry eye disease","https://pmc.ncbi.nlm.nih.gov/articles/PMC13381242/"],
+["PMC. Gut microbiota and uveitis: exploring novel mechanisms of pathogenesis","https://pmc.ncbi.nlm.nih.gov/articles/PMC13143938/"],
+["PMC. The Relationship Between Gut Microbiome and Ophthalmologic Diseases","https://pmc.ncbi.nlm.nih.gov/articles/PMC11392598/"],
+["PMC. Gut microbiota and eye diseases: A review","https://pmc.ncbi.nlm.nih.gov/articles/PMC11441905/"],
+["Monash University. Oculomics: Current concepts and evidence","https://researchmgt.monash.edu/ws/portalfiles/portal/726110387/694605219.pdf"],
+["Frontiers in Medicine. Unveiling the gut-eye axis: how microbial metabolites influence ocular health and disease","https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2024.1377186/full"],
+["World Journal of Clinical Cases. Gut-ocular axis: An emerging strategy to treat ocular diseases","https://www.wjgnet.com/2307-8960/full/v14/i25/124172.htm"]],
+foot:[
+["PubMed. Human foot cutaneous receptors function: stimulating mechanoreceptors in neurorehabilitation","https://pubmed.ncbi.nlm.nih.gov/39425663/"],
+["PMC. An MRI-Compatible System for Characterizing Supraspinal Processing of Foot-Sole Somatosensory Stimulation","https://pmc.ncbi.nlm.nih.gov/articles/PMC12067938/"],
+["Australian Government Department of Health. Natural Therapies Review 2024 – Reflexology evidence evaluation","https://www.health.gov.au/sites/default/files/2025-03/natural-therapies-review-2024-reflexology-evidence-evaluation.pdf"],
+["European Journal of Cardiovascular Nursing. Reflexology for pain and anxiety in patients undergoing coronary angiography","https://academic.oup.com/eurjcn/advance-article/doi/10.1093/eurjcn/zvag132/8690501"],
+["PMC. Systematic review and meta-analysis of reflexology for people with multiple sclerosis","https://pmc.ncbi.nlm.nih.gov/articles/PMC9902001/"],
+["Frontiers in Medicine. Reflexology for preoperative anxiety in laparoscopic cholecystectomy: an RCT","https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1634575/full"]],
+bone:[
+["European Journal of Medical Research. The brain–bone axis: CNS and skeletal metabolism","https://link.springer.com/article/10.1186/s40001-024-01918-0"],
+["Bone Research (Nature). Neural regulation of bone: from central neural circuits to peripheral innervation","https://www.nature.com/articles/s41413-026-00534-4"],
+["JCI. Neuroendocrine and neural control of bone mass in health and disease","https://www.jci.org/articles/view/203623"],
+["PubMed. Emerging roles of osteocalcin in central nervous system disorders","https://pubmed.ncbi.nlm.nih.gov/41391736/"],
+["PMC. The Bone–Brain Axis: Bidirectional Communication Between Depression and Osteoporosis","https://pmc.ncbi.nlm.nih.gov/articles/PMC12938012/"],
+["PMC. Piezo1 in the central nervous system","https://pmc.ncbi.nlm.nih.gov/articles/PMC13343986/"],
+["PMC. Unraveling the Bone–Brain Communication Network","https://pmc.ncbi.nlm.nih.gov/articles/PMC12466962/"],
+["Frontiers in Cell and Developmental Biology. Osteocalcin and GPR158: linking bone and brain function","https://www.frontiersin.org/journals/cell-and-developmental-biology/articles/10.3389/fcell.2025.1564751/full"],
+["Frontiers in Endocrinology. The brain–bone–gut axis: a microbial bridge underlying systemic disease","https://public-pages-files-2025.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2026.1755305/pdf"],
+["Frontiers in Endocrinology. Focusing on the Brain-Bone Axis","https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2026.1750464/abstract"],
+["Frontiers in Immunology. The role of the neuro-immune-bone axis in osteoporosis","https://www.frontiersin.org/articles/10.3389/fimmu.2026.1911655/full"],
+["Frontiers in Molecular Biosciences. Mechanosensitive channel Piezo1 in calcium dynamics","https://www.frontiersin.org/journals/molecular-biosciences/articles/10.3389/fmolb.2025.1693456/full"]],
+tcm:[
+["《黃帝內經》全文（素問、靈樞），維基文庫","https://zh.wikisource.org/wiki/黃帝內經"],
+["《黃帝內經·素問》第七卷：經脈別論、宣明五氣篇，維基文庫","https://zh.wikisource.org/wiki/黃帝內經/素問第七卷"],
+["《黃帝內經·素問》第八卷：太陰陽明論，維基文庫","https://zh.wikisource.org/wiki/黃帝內經/素問第八卷"],
+["《黃帝內經·靈樞》第一卷：九鍼十二原、本輸，維基文庫","https://zh.wikisource.org/wiki/黃帝內經/靈樞第一卷"],
+["《黃帝內經·靈樞》第三卷：經脈，維基文庫","https://zh.wikisource.org/wiki/黃帝內經/靈樞第三卷"],
+["《黃帝內經·靈樞》第四卷：脈度，維基文庫","https://zh.wikisource.org/wiki/黃帝內經/靈樞第四卷"],
+["《黃帝內經·靈樞》第九卷：五味論，維基文庫","https://zh.wikisource.org/wiki/黃帝內經/靈樞第九卷"],
+["《難經》（含二十八難督脈、四十五難八會穴），維基文庫","https://zh.wikisource.org/wiki/難經"],
+["中國哲學書電子化計劃（ctext）。《黃帝內經》原文與分章","https://ctext.org/huangdi-neijing/zh"],
+["Lim S. WHO Standard Acupuncture Point Locations. Evid Based Complement Alternat Med. 2010;7(2):167–168","https://pmc.ncbi.nlm.nih.gov/articles/PMC2862941/"],
+["NCCIH（美國國家輔助與整合健康中心）. Acupuncture: Effectiveness and Safety","https://www.nccih.nih.gov/health/acupuncture-what-you-need-to-know"],
+["NCCIH. Tai Chi: What You Need To Know","https://www.nccih.nih.gov/health/tai-chi-what-you-need-to-know"]],
+gen:[
+["World Health Organization. Physical activity – Fact sheet (2024)","https://www.who.int/news-room/fact-sheets/detail/physical-activity"],
+["Mayo Clinic. Broken heart syndrome – Symptoms and causes","https://www.mayoclinic.org/diseases-conditions/broken-heart-syndrome/symptoms-causes/syc-20354617"]]
+};
+function rf(list){ if(!list||!list.length) return ""; return `<sup class="r">`+list.map(s=>{const [g,n]=s.split(":");return `<a href="#ref-${g}-${n}" title="${REFS[g][n-1][0].replace(/"/g,"&quot;")}">${RLAB[g]} ${n}</a>`}).join("")+`</sup>`;}
+
+/* ---------- acupoints ---------- */
+const PTS={
+GV20:{n:"百會",m:"督脈",x:200,y:24,loc:"頭頂正中線上，前髮際正中直上 5 寸（約兩耳尖連線與頭頂中線交會處）。",how:"指腹輕揉 1 分鐘，配合緩慢深呼吸。",use:"傳統用於頭暈、精神不振與安神。",warn:"頭部有傷口或術後勿按。"},
+CV17:{n:"膻中",m:"任脈",x:200,y:250,loc:"前正中線上，平第 4 肋間隙（約兩乳頭連線中點）。",how:"掌心貼住，順時針輕揉，吐氣時放鬆肩膀。",use:"八會穴之「氣會」，傳統用於胸悶、氣短。",warn:"胸痛時先就醫，不要以按摩代替。"},
+PC6:{n:"內關",m:"手厥陰心包經",x:297,y:410,loc:"前臂掌側，腕橫紋上 2 寸，兩條肌腱（掌長肌腱、橈側腕屈肌腱）之間。",how:"拇指按揉 1–2 分鐘，以痠脹可忍受為度。",use:"傳統用於胸悶心悸、噁心與安神；針灸對化療後噁心嘔吐的效益較有共識。",warn:"手腕有傷口、腫脹時避免。"},
+HT7:{n:"神門",m:"手少陰心經",x:112,y:432,loc:"腕掌側橫紋尺側端（小指側），尺側腕屈肌腱的橈側凹陷。",how:"拇指指尖輕按 1 分鐘，睡前可做。",use:"傳統用於失眠、心悸、健忘。",warn:"失眠持續超過一個月，請就醫評估。"},
+LU9:{n:"太淵",m:"手太陰肺經",x:94,y:430,loc:"腕掌側橫紋橈側（拇指側），橈動脈搏動處。",how:"輕觸感受脈搏即可，輕揉 30 秒。",use:"肺經原穴、八會穴之「脈會」。",warn:"位在動脈上，不可用力壓迫。"},
+ST36:{n:"足三里",m:"足陽明胃經",x:159,y:632,loc:"小腿前外側，膝眼（犢鼻）下 3 寸，脛骨前緣外一橫指。",how:"拇指按揉或握拳輕敲 1–2 分鐘。",use:"傳統保健要穴，用於調理脾胃、疲倦乏力。",warn:"局部有靜脈曲張或傷口時避免。"},
+ST25:{n:"天樞",m:"足陽明胃經",x:184,y:392,loc:"腹部，肚臍旁開 2 寸。",how:"揉腹時以掌心順時針經過，每次 3–5 分鐘。",use:"傳統用於腹脹、便秘、腹瀉。",warn:"飯後立即、懷孕或急性腹痛時不要按。"},
+ST6:{n:"頰車",m:"足陽明胃經",x:170,y:116,loc:"下頜角前上方約一橫指，咬緊牙時咬肌隆起最高處。",how:"指腹畫圈輕揉，配合慢慢張口、閉口。",use:"傳統用於牙痛、咀嚼痠痛、口歪。",warn:"顳顎關節疼痛時力道放輕，持續疼痛請看牙科。"},
+LI4:{n:"合谷",m:"手陽明大腸經",x:306,y:468,loc:"手背第 1、2 掌骨之間，約第 2 掌骨橈側中點。",how:"另一手拇指按揉 1 分鐘，左右交替。",use:"傳統用於頭面、口齒不適。",warn:"孕婦避免強刺激（傳統禁忌）。"},
+GB34:{n:"陽陵泉",m:"足少陽膽經",x:250,y:622,loc:"小腿外側，腓骨頭前下方凹陷處。",how:"拇指按揉 1–2 分鐘，可在運動後做。",use:"八會穴之「筋會」，傳統用於筋肉痠痛、下肢無力。",warn:"膝外側急性腫痛時先休息、就醫。"},
+KI3:{n:"太谿",m:"足少陰腎經",x:215,y:750,loc:"足內側，內踝尖與跟腱之間的凹陷。",how:"拇指輕揉 1 分鐘，泡腳後做最舒服。",use:"腎經原穴，傳統用於腰膝痠軟、耳鳴、失眠。",warn:"腳踝扭傷急性期避免。"},
+KI1:{n:"湧泉",m:"足少陰腎經",x:336,y:686,loc:"足底，捲趾時足心最凹陷處（約足底前 1/3 處）。",how:"泡腳後以拇指由足跟往腳趾方向推揉 1–2 分鐘。",use:"腎經井穴，傳統用於頭暈、失眠、足心熱。",warn:"糖尿病足、傷口、感覺減退者不要用力按。"},
+LR3:{n:"太衝",m:"足厥陰肝經",x:221,y:774,loc:"足背，第 1、2 蹠骨間，蹠骨底結合部前方凹陷。",how:"拇指由下往上推揉 1 分鐘。",use:"肝經原穴，傳統用於眼睛乾澀、頭痛、情緒煩躁。",warn:"足背有傷口或腫脹時避免。"},
+GB39:{n:"懸鐘（絕骨）",m:"足少陽膽經",x:243,y:728,loc:"小腿外側，外踝尖上 3 寸，腓骨前緣。",how:"拇指按揉 1 分鐘。",use:"八會穴之「髓會」，傳統用於下肢痠軟、頸項僵硬。",warn:"骨折或骨質疏鬆疼痛處不要用力壓。"},
+BL11:{n:"大杼",m:"足太陽膀胱經",x:null,y:null,loc:"背部，第 1 胸椎棘突下，後正中線旁開 1.5 寸（圖為正面，故未標示）。",how:"請家人以掌根輕揉上背，或熱敷 10 分鐘。",use:"八會穴之「骨會」，傳統用於肩背痠痛。",warn:"背痛合併發燒、外傷或夜間痛醒，請就醫。"}
+};
+const MER={
+ren:{n:"任脈",p:[[200,124],[200,250],[200,392],[200,484]]},
+du:{n:"督脈",p:[[176,36],[188,26],[200,22],[212,26],[224,36]]},
+st:{n:"足陽明胃經",p:[[188,100],[188,114],[170,118],[174,150],[176,182],[174,250],[182,320],[184,392],[180,450],[162,500],[160,590],[159,632],[164,700],[168,750],[170,788]]},
+sp:{n:"足太陰脾經",p:[[184,786],[186,752],[188,700],[190,650],[190,598],[194,540],[196,494],[176,440],[172,380],[168,320],[160,250],[150,226]]},
+li:{n:"手陽明大腸經",p:[[310,500],[306,468],[304,430],[300,380],[298,330],[296,270],[294,220],[278,186],[250,166],[222,132],[212,112]]},
+lu:{n:"手太陰肺經",p:[[152,196],[118,214],[110,260],[104,330],[98,380],[94,430],[86,470]]},
+ht:{n:"手少陰心經",p:[[140,232],[134,270],[126,330],[118,390],[112,432],[106,494]]},
+pc:{n:"手厥陰心包經",p:[[246,250],[266,250],[282,300],[288,350],[297,410],[302,494]]},
+ki:{n:"足少陰腎經",p:[[228,772],[215,750],[212,700],[210,650],[208,598],[205,540],[204,494],[206,470],[206,400],[208,320],[214,250],[222,186]]},
+lr:{n:"足厥陰肝經",p:[[216,788],[221,774],[218,740],[216,690],[214,630],[212,596],[208,520],[208,490],[216,470],[236,420],[240,330]],inner:[[240,330],[232,250],[214,150],[218,98]]},
+gb:{n:"足少陽膽經",p:[[262,470],[260,520],[256,580],[250,622],[248,680],[243,728],[250,788]]}
+};
+
+/* ---------- axes content ---------- */
+const ORDER=["gut","heart","muscle","kidney","oral","eye","foot","bone"];
+const DEEP={"gut": ["GUTBRAINMAP", "吃對食物，腸道也能顧大腦？"], "heart": ["HEARTMAP", "心肺顧得好，大腦更年輕？"], "muscle": ["MUSCLEMAP", "練肌肉，也在練大腦？"], "kidney": ["KIDNEYMAP", "腎臟累了，大腦也會霧霧的？"], "oral": ["ORALMAP", "嚼一嚼，大腦也在動？"], "eye": ["GUTEYEMAP", "腸道細菌，也會影響眼睛？"], "foot": ["FOOTMAP", "腳底，是大腦的觸控板？"], "bone": ["BONEMAP", "骨頭也會跟大腦說話？"]};
+const AX={
+hub:{name:"大腦總機",en:"The Brain Hub",organ:"大腦",c:"var(--c-hub)",center:[200,58],
+ hook:"大腦不是獨自工作的總指揮，它每天和八個器官講電話。",
+ mers:["du","ren"],pts:["GV20"]},
+gut:{name:"腸腦軸",en:"Gut–Brain Axis",organ:"腸胃",c:"var(--c-gut)",center:[222,400],
+ hook:"一緊張就胃痛、跑廁所？那是肚子和大腦在講電話。",
+ meta:"腸道像一座有自己總機的城市：<b>腸神經系統</b>能自己指揮蠕動和分泌，<b>迷走神經</b>則是直通大腦的專線。住在城裡的腸道菌，也會透過代謝物插話。",
+ paths:[["神經線","迷走神經是主要高速通道；菌群產生的短鏈脂肪酸、GABA 等可刺激迷走神經，把訊號送到腦幹與情緒中樞。"],["免疫線","菌相失衡時腸道通透性增加，內毒素（LPS）進入血液，引發全身低度慢性發炎，影響大腦的神經發炎。"],["荷爾蒙線","GLP-1、PYY 等腸道激素與色胺酸代謝物，可調節下視丘—腦垂腺—腎上腺（HPA）軸與壓力荷爾蒙。"]],
+ ev:[["A","人體約 90–95% 的血清素在腸道的腸嗜鉻細胞合成；它不易直接穿過血腦屏障，主要透過迷走神經、免疫與代謝訊號間接影響情緒與睡眠。",["gut:1","gut:3","gut:5"]],
+     ["A","系統性回顧與統合分析：高度遵循地中海飲食者，整體失智症與阿茲海默症風險約降低 11–30%。",["gut:10","gut:11"]],
+     ["A","隨機對照試驗：地中海飲食額外補充橄欖油或堅果，與較佳的整體認知、記憶表現相關。",["gut:9"]],
+     ["A","統合分析：Omega-3 對焦慮、憂鬱症狀有小到中等程度改善，臨床族群與 EPA 每日 ≥1000 mg 時較明顯。",["gut:6","gut:7"]],
+     ["B","高糖高脂的「西方飲食」與菌相多樣性下降、較高的憂鬱焦慮風險相關。",["gut:6","gut:14"]],
+     ["C","高脂飲食誘發類焦慮行為與認知下降、調整飲食後部分逆轉，主要來自動物研究。",["gut:7","gut:14"]]],
+ tcm:{view:"中醫把消化功能歸在「脾胃」，稱為「後天之本」。脾在志為「思」，想太多、壓力大會傷脾胃，這和現代說的「壓力型胃痛」描述的是同一件事。",
+  quotes:[["胃不和則臥不安。","《素問·逆調論》","tcm:1"],["思傷脾。","《素問·陰陽應象大論》","tcm:1"],["脾胃者，倉廩之官，五味出焉。","《素問·靈蘭秘典論》","tcm:9"]],
+  mers:["st","sp","li","pc"],pts:["ST36","ST25","PC6"],
+  bridge:"古人觀察到「胃不舒服就睡不好、想太多就吃不下」；腸腦軸研究則從迷走神經、HPA 軸與腸道菌提出可檢驗的機制。兩者描述的現象相近，但中醫的「脾」是功能系統，不等於解剖學的脾臟。"},
+ tips:["每天至少一餐主食換成糙米、燕麥等全穀","每週 2–3 次油脂魚：鮭魚、鯖魚、秋刀魚","蔬果多色、橄欖油、無調味堅果、豆類：地中海式吃法搭配台灣家常菜","適量發酵食品（無糖優格、納豆、泡菜），觀察自己的耐受度","細嚼慢嚥，吃飯時不看螢幕、不邊工作","每天 10–20 分鐘腹式呼吸或正念練習","記錄 2–4 週「飲食・壓力・胃痛・睡眠」日記，找出觸發因子","少喝含糖飲料，少吃油炸、加工肉品與過量酒精"],
+ red:["胃痛合併黑便、血便或吐血","體重不明原因下降、持續嘔吐或吞嚥困難","夜間痛醒、症狀持續加重","情緒低落或焦慮已影響生活，請同步尋求身心醫療"],
+ quiz:[["人體大部分的血清素，主要在哪裡製造？",["腸道","大腦松果體","肝臟","骨髓"],0,"約 90–95% 的血清素由腸道的腸嗜鉻細胞合成，但它不易通過血腦屏障，多透過迷走神經等路徑間接影響大腦。"],
+       ["膳食纖維被腸道菌發酵後，會產生哪一類有助腸道屏障、抗發炎的物質？",["短鏈脂肪酸（如丁酸鹽）","反式脂肪","尿酸","膽固醇"],0,"纖維是益生元，發酵後產生短鏈脂肪酸，能維持腸道屏障、降低發炎，也參與腸腦訊號。"],
+       ["《素問·逆調論》「胃不和則臥不安」最接近哪個現象？",["腸胃不舒服時，睡眠也容易受影響","睡太多會胃痛","胃不好的人要多躺","晚餐吃越多睡越好"],0,"這句話描述腸胃失調會干擾睡眠，和現代腸腦軸「腸道狀態影響睡眠與情緒」的觀察相呼應。"]]},
+heart:{name:"心肺腦軸",en:"Heart–Lung–Brain Axis",organ:"心臟・肺",c:"var(--c-heart)",center:[200,262],
+ hook:"大腦只占體重約 2%，卻用掉全身約 20% 的氧氣和葡萄糖。",
+ meta:"心臟是<b>幫浦</b>、肺是<b>換氣站</b>、大腦是全身最耗電的<b>工廠</b>。供氧一不穩，工廠最先受影響；反過來，大腦的壓力和情緒也會改變心跳、血壓與呼吸。",
+ paths:[["神經線","大腦透過交感與副交感神經調節心跳、血壓與呼吸；心臟的感覺訊號也經迷走神經回傳大腦。"],["血流線","心衰竭、冠心病、心房顫動與血壓異常，會降低腦部灌流或增加腦栓塞風險。"],["發炎線","心血管疾病常伴隨全身發炎、氧化壓力與神經荷爾蒙失衡，可能破壞血腦屏障。"]],
+ ev:[["B","心衰竭患者較常出現注意力、記憶與執行功能障礙；機制包括慢性腦灌流不足、血腦屏障受損與神經發炎。",["heart:1","heart:2","heart:7","heart:9"]],
+     ["A","系統性回顧與統合分析：規律運動可提升中高齡者的 BDNF（腦源性神經營養因子）濃度。",["heart:4","heart:10"]],
+     ["A","強烈情緒或身體壓力可引發「心碎症候群」（章魚壺心肌症），症狀像心肌梗塞，但冠狀動脈沒有阻塞。",["gen:2"]],
+     ["B","認知障礙會降低用藥遵從與自我管理能力，讓心血管疾病更難控制，形成惡性循環。",["heart:2","heart:12"]],
+     ["A","世界衛生組織建議成人每週至少 150 分鐘中等強度身體活動。",["gen:1"]],
+     ["T","太極拳可能改善心血管病患的生活品質與心理健康，並可能降低血壓；但多數研究規模小、品質參差。",["tcm:12"]]],
+ tcm:{view:"中醫說「心藏神」，心是精神意識的主宰；「肺朝百脈」，肺與心一起推動全身氣血。胸中的「宗氣」同時負責心跳和呼吸，正是古人版的心肺耦合。",
+  quotes:[["心者，君主之官也，神明出焉。","《素問·靈蘭秘典論》","tcm:9"],["宗氣積於胸中，出於喉嚨，以貫心脈，而行呼吸焉。","《靈樞·邪客》","tcm:1"],["肺朝百脈。","《素問·經脈別論》","tcm:2"]],
+  mers:["ht","pc","lu","ren"],pts:["PC6","HT7","CV17","LU9"],
+  bridge:"「心主神明」與現代心腦軸都指出：心臟出狀況，精神與認知也會受牽連。「宗氣貫心脈而行呼吸」像在描述心肺一體；現代版的養宗氣，就是規律有氧運動與緩慢的腹式呼吸。"},
+ tips:["每週累積 150 分鐘中等強度有氧：呼吸心跳變快，但還能說短句","每週 2–3 次阻力訓練，用力時吐氣、不要憋氣","雙重任務活動：邊走邊心算、羽球、桌球、舞蹈","每坐 30–60 分鐘，起身走動或伸展 2–5 分鐘","每天 10 分鐘腹式呼吸、靜坐或正念","依醫囑控制血壓、血糖、血脂，規律治療心房顫動","打鼾、睡眠中呼吸暫停、晨起頭痛、白天嗜睡，要做睡眠呼吸評估","有心肺疾病者，先請醫師開立運動處方或參加心肺復健"],
+ red:["突發胸痛、嚴重呼吸急促或暈厥","單側無力、臉歪、口齒不清、意識改變（疑似中風，立即撥 119）","運動中出現胸痛、明顯喘、暈眩、異常心悸：立刻停止運動"],
+ quiz:[["大腦約占體重 2%，卻消耗全身大約多少的氧氣？",["約 20%","約 2%","約 5%","約 60%"],0,"大腦是高耗能器官，約消耗全身 20% 的氧氣與葡萄糖，所以對心肺供氧特別敏感。"],
+       ["「中等強度」有氧運動的簡單判斷方式是？",["呼吸心跳變快，但還能說短句","喘到完全說不出話","完全不會流汗","心跳越快越好"],0,"可以說話但沒辦法唱歌，大約就是中等強度，主觀用力感約 RPE 11–13／20。"],
+       ["《靈樞·邪客》說宗氣「以貫心脈，而行呼吸」，最接近哪個現代觀念？",["心臟循環與呼吸互相配合，共同供氧","肺負責消化","心臟只受情緒控制","呼吸和心跳互不相關"],0,"宗氣同時推動心脈與呼吸，對應現代心肺耦合：肺換氣、心送血，一起把氧氣送到大腦。"]]},
+muscle:{name:"肌腦軸",en:"Muscle–Brain Axis",organ:"肌肉",c:"var(--c-muscle)",center:[236,556],
+ hook:"肌肉也會寫信給大腦：每次用力，就寄出一封「肌肉素」。",
+ meta:"肌肉不只負責動作，也是一座<b>內分泌工廠</b>。收縮時分泌的鳶尾素（irisin）等肌肉素進入血液，收件人包括掌管記憶的<b>海馬迴</b>。",
+ paths:[["肌肉素線","鳶尾素由 FNDC5 蛋白切割而來，運動後上升，可促進 BDNF 表現、海馬迴神經新生與突觸可塑性。"],["代謝發炎線","肌肉是血糖的大倉庫，肌肉量較多與胰島素敏感性較好、CRP 與 IL-6 等發炎指標較低相關。"],["神經迴路線","每次出力都要大腦估算力量與角度，動用運動皮質、小腦、基底核與前額葉，本身就是神經訓練。"]],
+ ev:[["A","網路統合分析：阻力訓練對長者「整體認知」與「抑制控制」的效果優於單純有氧或伸展；有效方案多為每週 2 次、每次約 45 分鐘、持續 12 週以上。",["muscle:14","muscle:15"]],
+     ["A","系統性回顧：阻力訓練可改善老年人整體認知，尤其工作記憶與語詞學習。",["muscle:10","muscle:13"]],
+     ["B","60 歲以上長者重訓 1–2 年，以 MRI 與機器學習估算的大腦生物學年齡約年輕 1.4–2.2 歲，且與肌力進步幅度相關。",["muscle:3"]],
+     ["B","雙重任務阻力訓練（例如深蹲時同時做認知題）可能比單純重訓更能改善認知，尤其在已有認知障礙的族群。",["muscle:5"]],
+     ["C","鳶尾素促進 BDNF 與海馬迴神經新生的證據，多來自動物與機制研究。",["muscle:12","muscle:8"]],
+     ["A","太極拳：一項 318 位輕度認知障礙長者的試驗中，結合認知任務的太極比伸展或一般太極更能改善多項認知功能。",["tcm:12"]]],
+ tcm:{view:"中醫說「脾主肌肉」「四肢皆稟氣於胃」，肌肉的養分來自脾胃的消化吸收。《內經》也直接警告：久坐不動會「傷肉」。",
+  quotes:[["脾主身之肌肉。","《素問·痿論》","tcm:1"],["四支皆稟氣於胃，而不得至經，必因於脾，乃得稟也。","《素問·太陰陽明論》","tcm:3"],["久臥傷氣，久坐傷肉。","《素問·宣明五氣》","tcm:2"]],
+  mers:["sp","st","gb"],pts:["ST36","GB34"],
+  bridge:"「久坐傷肉」和現代的久坐風險、肌少症不謀而合；「脾主肌肉」則提醒我們：練肌力也要吃得夠、消化好。太極、八段錦等傳統導引同時練肌力、平衡與專注，本身就是「身體加大腦」的雙重任務。"},
+ tips:["每週阻力訓練 2–3 次：深蹲或坐站、划船、推舉、臀橋","每個動作 2–3 組、每組 8–12 下，強度約 RPE 5–7／10","每週有氧 2–3 次：快走、騎車、游泳","每週 1–2 次雙重任務：組間回憶詞語、邊踏步邊背數字","漸進加量：每 2–4 週依能力調整重量或次數","蛋白質中高齡約每公斤體重 1.0–1.2 g／日可作討論起點（腎臟病者須個別調整）","每晚睡 7–8 小時，高強度訓練之間安排休息日","每 1–3 個月記錄肌力、步行速度與平衡"],
+ red:["運動中胸悶、暈眩、異常心悸","持續關節疼痛或跌倒","以上情形請停止運動並就醫評估"],
+ quiz:[["運動時由肌肉分泌、能促進大腦 BDNF 的代表性肌肉素是？",["鳶尾素（irisin）","胰島素","腎上腺素","褪黑激素"],0,"鳶尾素由 FNDC5 切割而來，運動後上升，研究顯示它可促進 BDNF 與海馬迴神經新生（多為動物研究）。"],
+       ["網路統合分析中，改善長者「整體認知與抑制控制」表現較突出的是？",["阻力訓練","只做伸展","完全休息","只吃營養補充品"],0,"阻力訓練在整體認知與抑制控制上的效果，優於單純有氧或伸展。"],
+       ["《素問·宣明五氣》的「五勞所傷」中，「久坐」傷的是？",["肉","骨","血","筋"],0,"原文：「久視傷血，久臥傷氣，久坐傷肉，久立傷骨，久行傷筋。」"]]},
+kidney:{name:"腎腦軸",en:"Brain–Kidney Axis",organ:"腎臟",c:"var(--c-kidney)",center:[162,352],
+ hook:"腎臟過濾不乾淨，大腦也可能跟著「霧霧的」。",
+ meta:"腎臟是全身的<b>淨水廠</b>。效率下降時，尿毒素像汙水回流，可能滲進大腦這座精密實驗室；而長期壓力與高血壓，也會反過來傷害腎絲球。",
+ paths:[["毒素線","腎功能下降時，indoxyl sulfate、p-cresyl sulfate 等尿毒素累積，可能破壞血腦屏障、產生神經毒性。"],["血管線","腎絲球與腦小血管構造相似、同樣脆弱，高血壓、糖尿病、發炎會同時傷害兩者。"],["壓力線","長期壓力與失眠使交感神經亢奮、HPA 軸活化，造成腎血管收縮、腎絲球內壓上升與蛋白尿。"]],
+ ev:[["B","慢性腎臟病（CKD）患者的認知障礙與失智盛行率高於一般人，並隨 eGFR 下降與蛋白尿加重而上升。",["kidney:1","kidney:4","kidney:11"]],
+     ["B","透析患者常見認知障礙，透析時的血壓與體液波動可能影響腦血流與執行功能。",["kidney:2","kidney:3"]],
+     ["B","急性腎損傷之後，未來的認知衰退與失智風險也可能提高。",["kidney:13"]],
+     ["C","尿毒素與血腦屏障通透性增加、腦小血管病變相關，機制包括氧化壓力與神經發炎。",["kidney:5","kidney:6"]],
+     ["C","「腸—腎—腦軸」：腸道菌失調會增加尿毒素前驅物，經肝臟代謝後循環到大腦。",["kidney:6","kidney:8"]]],
+ tcm:{view:"這是中醫理論和腦軸對得最緊的一條：腎藏精，精生髓，髓匯聚於腦。腎精不足、髓海空虛，就會頭暈、耳鳴、健忘、反應變慢。",
+  quotes:[["腦為髓之海。","《靈樞·海論》","tcm:1"],["髓海不足，則腦轉耳鳴，脛痠眩冒，目無所見，懈怠安臥。","《靈樞·海論》","tcm:1"],["腎藏志。","《素問·宣明五氣》","tcm:2"]],
+  mers:["ki","du"],pts:["KI3","KI1","GV20"],
+  bridge:"中醫的「腎」比解剖學的腎臟範圍大，涵蓋生長、生殖、骨骼與部分內分泌功能；現代可對照的是腎功能、血管危險因子與認知的關聯。「補腎」不能取代抽血驗尿；腎功能不佳者使用任何藥物（含中草藥）都要先告知醫師，評估劑量。"},
+ tips:["減鈉：少加工食品、醃漬物、濃湯與重口味醬料，改用天然香料","蛋白質與水分依腎功能個別化，不是人人都要喝 2000 mL","高血壓、糖尿病、家族腎病史者，定期驗 eGFR 與尿白蛋白／肌酸酐比值（ACR）","依醫囑控制血壓、血糖、血脂","每週 150 分鐘中等強度有氧加阻力訓練（透析者由醫療團隊調整）","睡前 10 分鐘腹式呼吸或漸進式放鬆","請醫師檢視用藥清單：腎功能劑量、會影響認知的藥物","家人留意：重複問話、忘記服藥、處理金錢困難"],
+ red:["持續泡泡尿、水腫、尿量突然變少","持續噁心、食慾差、嚴重疲倦或呼吸喘","單側無力、口齒不清、劇烈頭痛、意識混亂（立即撥 119）"],
+ quiz:[["下列哪一項是評估腎功能的常用指標？",["eGFR（估算腎絲球過濾率）","骨密度 T 值","眼壓","心率變異度"],0,"eGFR 由血液肌酸酐推算，再搭配尿白蛋白／肌酸酐比值（ACR），是篩檢慢性腎臟病的基本組合。"],
+       ["關於腎臟病患的喝水量，哪個說法正確？",["應依腎功能與醫囑個別化","每個人都要喝 3000 mL","越少越好","只喝茶就好"],0,"晚期 CKD 或透析患者可能需要限水，不能一概要求每天 2000 mL。"],
+       ["《靈樞·海論》說「腦為髓之海」，在中醫理論中，髓與哪個臟最相關？",["腎（腎藏精，精生髓）","肺","膽","小腸"],0,"中醫認為腎藏精、精生髓、髓匯於腦，所以腎精不足會出現頭暈、健忘等「髓海不足」表現。"]]},
+oral:{name:"口腔腦軸",en:"Oral–Brain Axis",organ:"口腔",c:"var(--c-oral)",center:[200,118],
+ hook:"咬一口、嚼二十下，大腦也跟著做了一回運動。",
+ meta:"每一次咀嚼，牙根周圍的感受器都在<b>按大腦的門鈴</b>。牙齒少了、只吃軟爛食物，門鈴就少了；牙周發炎時，細菌和發炎物質還可能跟著血液跑。",
+ paths:[["感覺回饋線","咀嚼時三叉神經把訊號送到腦幹、丘腦、感覺運動皮質、海馬迴與前額葉，增加這些區域的血流。"],["發炎線","牙周病的慢性發炎會升高全身發炎因子，影響血腦屏障並促進神經發炎。"],["細菌線","牙周致病菌牙齦卟啉單胞菌（P. gingivalis）及其毒素，在部分阿茲海默症患者的研究中被檢測到。"]],
+ ev:[["B","系統性回顧：牙周炎與輕度認知障礙、阿茲海默症及失智風險增加相關，但證據確定性仍有限。",["oral:5","oral:6"]],
+     ["B","缺牙多、咀嚼力差的人，認知退化與失智風險較高，部分研究估計約 1.5–2 倍；結果可能受營養、社經與慢性病影響。",["oral:7","oral:2"]],
+     ["B","口腔衰弱（舌肌力下降、咬合力減弱、吞嚥變差、口乾）與營養不良、肌少症和失能相關；舌肌力不足會增加嗆咳與吸入性肺炎風險。",["oral:2","oral:7"]],
+     ["C","P. gingivalis 在動物與機制研究中可能促進 Aβ 沉積、tau 磷酸化與微膠細胞活化。",["oral:8","oral:9","oral:3"]]],
+ tcm:{view:"中醫認為「脾開竅於口」「心開竅於舌」，牙齒是「骨之所終」、歸腎所主。足陽明胃經進入上齒、手陽明大腸經進入下齒，口腔正是消化經絡的入口。",
+  quotes:[["脾氣通於口，脾和則口能知五穀矣。","《靈樞·脈度》","tcm:6"],["心氣通於舌，心和則舌能知五味矣。","《靈樞·脈度》","tcm:6"],["胃足陽明之脈……入上齒中；大腸手陽明之脈……入下齒中。","《靈樞·經脈》","tcm:5"],["齒者，骨之所終也。","《靈樞·五味論》","tcm:7"]],
+  mers:["st","li","ren"],pts:["ST6","LI4"],
+  bridge:"古人把口腔和消化（脾胃）、骨骼（腎）串成一線；現代研究則把口腔和大腦的距離拉得更近。傳統養生的「叩齒」「吞津」等口腔導引，換成現代版本，就是健口操、伸舌操和充分咀嚼。"},
+ tips:["每 6–12 個月看一次牙，早期處理蛀牙、牙周病和缺牙","缺牙可與牙醫討論活動假牙、固定義齒或植牙","健口操：清楚唸出「ㄆㄚ、ㄊㄚ、ㄎㄚ、ㄌㄚ」","伸舌操：舌頭往前、上、下、左、右各停 3–5 秒，重複 5–10 次","每口嘗試咀嚼 20–30 下，依牙齒與吞嚥安全調整","早晚刷牙，搭配牙線或牙間刷","控制血糖、戒菸，規律洗牙","飯後嚼無糖口香糖 5–10 分鐘促進唾液（顳顎關節痛者免）"],
+ red:["反覆嗆咳、發燒咳嗽、曾有吸入性肺炎","牙齒快速鬆動、牙齦大量出血或化膿、假牙嚴重不合","記憶或判斷力在數月內明顯變差，請到記憶門診或神經科"],
+ quiz:[["健口操「ㄆㄚ、ㄊㄚ、ㄎㄚ、ㄌㄚ」主要在訓練什麼？",["嘴唇、舌頭與吞嚥相關肌群","聲帶音量","眼睛肌肉","頸椎"],0,"ㄆ練嘴唇閉合、ㄊ練舌尖、ㄎ練舌根、ㄌ練舌頭捲動，都和咀嚼吞嚥有關。"],
+       ["和阿茲海默症研究最常一起被提到的牙周致病菌是？",["牙齦卟啉單胞菌（P. gingivalis）","乳酸桿菌","大腸桿菌","幽門螺旋桿菌"],0,"P. gingivalis 及其毒素在部分 AD 患者腦中被檢出，但目前仍未證實牙周炎必然造成失智。"],
+       ["根據《靈樞·經脈》，哪一條經脈「入上齒中」？",["足陽明胃經","手少陰心經","足少陰腎經","足少陽膽經"],0,"胃經入上齒、大腸經入下齒，所以中醫看牙痛常從陽明經著手。"]]},
+eye:{name:"腸眼軸",en:"Gut–Eye Axis",organ:"眼睛",c:"var(--c-eye)",center:[200,96],
+ hook:"眼睛是唯一能直接看見血管與神經的窗口，而腸道菌也在窗外敲門。",
+ meta:"視網膜像身體的<b>監視器螢幕</b>，醫師不用開刀就能看到微血管和神經；腸道則像遠方的<b>發電廠</b>，供電品質（發炎、代謝）會反映到螢幕上。",
+ paths:[["免疫線","菌相失衡使腸道通透性增加，LPS 進入血液，Th17／Treg 免疫平衡失調，增加眼表慢性發炎。"],["代謝線","色胺酸衍生物、次級膽汁酸等腸道代謝物，可調節血—視網膜屏障與神經免疫反應。"],["生活線","血糖血脂異常與睡眠不足，加劇氧化壓力，增加糖尿病視網膜病變、乾眼與心血管風險。"]],
+ ev:[["B","乾眼症患者的腸道與眼表菌相，在組成與多樣性上都有改變。",["eye:3","eye:6"]],
+     ["B","益生菌、益生元對乾眼的輔助效果仍在小型試驗階段；治療核心仍是人工淚液、眼瞼照護與必要的抗發炎治療。",["eye:4"]],
+     ["B","2024 年研究提出乳酸菌科可能參與高度近視相關焦慮的「眼—腦—腸軸」。",["eye:1"]],
+     ["B","眼生物標記學（Oculomics）：視網膜微血管與神經纖維層指標，與高血壓、冠心病、中風及神經退化風險相關，AI 有望協助風險分層。",["eye:2","eye:10"]],
+     ["C","腸道代謝物影響血—視網膜屏障，目前以機制研究為主。",["eye:11","eye:5"]]],
+ tcm:{view:"中醫說「肝開竅於目」「肝受血而能視」，又說五臟六腑的精氣都向上灌注到眼睛。所以眼睛反映的是全身狀態，而脾胃（消化）正是精氣的源頭。",
+  quotes:[["東方青色，入通於肝，開竅於目。","《素問·金匱真言論》","tcm:1"],["五藏六府之精氣，皆上注於目而為之精。","《靈樞·大惑論》","tcm:1"],["肝氣通於目，肝和則目能辨五色矣。","《靈樞·脈度》","tcm:6"],["久視傷血。","《素問·宣明五氣》","tcm:2"]],
+  mers:["lr","st","ht"],pts:["LR3","ST36"],
+  bridge:"「精氣上注於目」很像今天說的「全身代謝和發炎狀態會反映在眼睛」；「久視傷血」則是兩千年前的螢幕使用警告。經脈上，肝經「連目系」、心經「繫目系」、胃經起於目下。眼周穴位（如睛明）緊鄰眼球，不建議自行用力按壓，熱敷和 20-20-20 原則更安全。"},
+ tips:["20-20-20 原則：每 20 分鐘看 6 公尺外 20 秒","乾眼：熱敷 5–10 分鐘、眼瞼清潔、人工淚液","不要長期自行使用含類固醇的眼藥水","高纖飲食加適量發酵食品，少精製糖與加工食品","糖尿病者依醫囑控制 HbA1c，並定期檢查眼底","40 歲以上、高度近視、青光眼家族史者定期眼科檢查","睡前一小時減少螢幕，維持規律睡眠","每週 150 分鐘中等強度活動加 2 次肌力訓練"],
+ red:["突發或快速惡化的視力下降、視野缺損","眼前閃光或大量新增飛蚊","眼痛合併頭痛、噁心（疑似急性青光眼）","高度近視合併明顯焦慮、憂鬱或自傷念頭：儘速尋求身心醫療"],
+ quiz:[["「20-20-20 原則」是指什麼？",["每 20 分鐘看 6 公尺外 20 秒","每天點 20 滴眼藥水","20 歲前不能用手機","一次閉眼 20 分鐘"],0,"20 英尺約 6 公尺，讓睫狀肌定時放鬆，減少視覺疲勞。"],
+       ["下列哪一個情況應該立即到眼科急診？",["突然出現大量飛蚊加上閃光","看書久了有點累","偶爾眼睛癢","早上眼屎稍多"],0,"大量新增飛蚊與閃光可能是視網膜裂孔或剝離的警訊，需要立即檢查。"],
+       ["《素問·宣明五氣》的「五勞所傷」中，「久視」傷什麼？",["血","骨","肉","氣"],0,"「久視傷血」，加上「肝受血而能視」，古人已提醒用眼過度會耗損肝血。"]]},
+foot:{name:"足底腦軸",en:"Foot–Brain Axis",organ:"足底",c:"var(--c-foot)",center:[232,784],
+ hook:"腳底是身體的觸控板，每走一步都在幫大腦更新地圖。",
+ meta:"足底的<b>機械感受器</b>像地面感測器，把壓力、震動、紋理與坡度即時回傳；大腦據此調整姿勢和步伐。感覺變差時，跌倒風險就上升。",
+ paths:[["感覺線","足底感受器 → 脛神經 → 脊髓 → 丘腦 → 大腦感覺皮質，是足底訊號的基本路徑。"],["平衡線","足底訊號與小腦、前庭、視覺整合，協助身體定位、步態修正與平衡反應。"],["放鬆線","溫熱、觸覺與呼吸放鬆，可能降低交感神經緊張、提升放鬆感，但個人差異大。"]],
+ ev:[["B","MRI 研究：足底機械刺激可活化感覺運動相關腦區。",["foot:2"]],
+     ["B","足底感受器刺激被用於神經復健與步態訓練研究。",["foot:1"]],
+     ["B","反射療法在特定醫療情境（心導管檢查、手術前）可能減少短期焦慮或疼痛，但研究方法差異很大。",["foot:4","foot:6","foot:5"]],
+     ["A","澳洲政府 2024 年自然療法審查：反射療法對情緒功能與心理健康的證據確定性「非常低」。",["foot:3"]],
+     ["A","「腳底反射區對應各內臟」的器官地圖，目前沒有解剖或生理學證據支持。",["foot:3"]]],
+ tcm:{view:"腳是十二經脈中六條經的起點或終點：足三陰經從腳出發，足三陽經在腳結束。腎經的第一個穴位「湧泉」就在腳心，名字的意思是泉水從地底湧出。",
+  quotes:[["腎出於湧泉，湧泉者，足心也。","《靈樞·本輸》","tcm:4"],["腎足少陰之脈，起於小指之下，斜走足心。","《靈樞·經脈》","tcm:5"]],
+  mers:["ki","sp","lr","st","gb"],pts:["KI1","KI3","LR3"],
+  bridge:"經絡的「腳是起點」與現代的「足底是感覺入口」互相呼應。但要分清楚：中醫經絡和坊間的「足底反射區地圖」來源不同，後者是 20 世紀發展出來的系統。泡腳、按揉湧泉可以當作睡前放鬆儀式，不能取代疾病治療。"},
+ tips:["睡前溫水泡腳 10–15 分鐘；糖尿病或感覺減退者先用溫度計或手肘試溫","坐著用按摩球滾足底 3–5 分鐘，以舒服為原則、不追求痛","腳趾抓毛巾、腳踝繞圈、小腿與足底筋膜伸展","穿合腳的鞋，每天檢查雙腳皮膚與趾縫","扶椅單腳站、走直線，練平衡防跌","工作間隔做 1–2 分鐘腳踝活動與短暫步行"],
+ red:["腳部傷口、潰瘍、發黑發紫、突然冰冷或劇痛","突發單側無力、臉歪、言語不清、嚴重失衡（立即撥 119）","反覆跌倒、麻木漸漸加重、步態異常","糖尿病足、感覺減退、使用抗凝血劑：避免強力按摩與過熱泡腳"],
+ quiz:[["湧泉穴的位置在哪裡？",["腳底，捲趾時足心最凹處","腳背大拇趾旁","外踝上方 3 寸","膝蓋下方"],0,"《靈樞·本輸》：「湧泉者，足心也。」它是腎經的第一個穴位（井穴）。"],
+       ["澳洲政府 2024 年評估反射療法對心理健康的證據確定性為？",["非常低","非常高","已證實可治療焦慮症","沒有評估"],0,"可以當作放鬆的輔助方式，但不能取代焦慮、失眠的正規治療。"],
+       ["糖尿病且腳部感覺變差的人泡腳時，最重要的是？",["先用溫度計或手肘確認水溫，避免燙傷","水越熱越有效","泡一小時以上","泡完用力按壓"],0,"感覺減退時腳感受不到燙，容易造成燙傷與難癒合的傷口。"]]},
+bone:{name:"骨腦軸",en:"Bone–Brain Axis",organ:"骨骼",c:"var(--c-bone)",center:[166,540],
+ hook:"骨頭不只是支架，它也會分泌荷爾蒙，跟大腦對話。",
+ meta:"骨骼像一棟<b>會發電報的鋼骨大樓</b>：受力時送出「骨鈣素」等訊號；大腦則透過交感神經和荷爾蒙，反過來指揮大樓的拆除與重建（骨重塑）。",
+ paths:[["骨→腦","骨細胞分泌骨鈣素（OCN）、FGF23 等骨因子；非羧化型骨鈣素在動物研究中可穿越血腦屏障。"],["腦→骨","交感神經釋放的去甲腎上腺素作用於骨細胞 β2 受體；長期壓力可能抑制骨形成、促進骨吸收。"],["機械力線","負重與衝擊活化骨細胞的 PIEZO1 機械敏感通道，啟動鈣訊號與成骨路徑。"]],
+ ev:[["B","憂鬱與骨質疏鬆常同時出現，可能涉及 HPA 軸、交感神經、發炎、活動量與營養等共同因素。",["bone:5"]],
+     ["B","中風、脊髓損傷與腦外傷之後，骨流失加速、骨折風險上升。",["bone:1","bone:3"]],
+     ["C","骨鈣素與海馬迴神經新生、記憶與情緒有關，主要來自動物研究，人體因果尚未確立。",["bone:4","bone:8"]],
+     ["C","PIEZO1 在骨與腦中都有角色，跨器官的治療應用仍在研究。",["bone:6","bone:12"]],
+     ["A","太極拳：高確定性證據顯示可減少長者「發生跌倒的人數」，是骨與腦共同受惠的平衡訓練。",["tcm:12"]]],
+ tcm:{view:"中醫有一條完整的鏈：腎主骨 → 骨藏髓 → 髓通於腦。骨頭、骨髓和大腦在古人眼中本來就是一家人，和今天的骨腦軸相當接近。",
+  quotes:[["心主脈，肺主皮，肝主筋，脾主肉，腎主骨。","《素問·宣明五氣》","tcm:2"],["骨者，髓之府。","《素問·脈要精微論》","tcm:1"],["諸髓者，皆屬於腦。","《素問·五藏生成》","tcm:1"],["筋會陽陵泉，髓會絕骨，骨會大杼。","《難經·四十五難》","tcm:8"]],
+  mers:["ki","du","gb"],pts:["GB39","BL11","KI3"],
+  bridge:"「腎—骨—髓—腦」的古典鏈條，和「骨鈣素—海馬迴」的現代研究彼此呼應；不過前者是理論，後者也多半還在動物階段。兩邊共同的處方很清楚：讓骨頭受力、練平衡，也別「久立傷骨」、久坐不動。"},
+ tips:["負重活動：快走、爬樓梯、跳舞，能力許可可加小幅跳躍","阻力訓練每週 2–3 次：深蹲、弓步、臀橋、划船、推舉","平衡訓練：太極、單腳站、敏捷踏步","與醫師或營養師討論鈣、維生素 D、蛋白質攝取","戒菸、限制酒精，維持規律睡眠與壓力管理","停經後女性、長期用類固醇或曾骨折者，討論 DXA 骨密度與 FRAX 骨折風險"],
+ red:["輕微外力就骨折","急性嚴重背痛、夜間持續骨痛","身高明顯變矮、駝背加重","反覆跌倒，同時出現記憶或情緒明顯改變"],
+ quiz:[["哪一個是由骨骼分泌、被研究與記憶和情緒有關的骨因子？",["骨鈣素（osteocalcin）","胃泌素","甲狀腺素","褪黑激素"],0,"骨鈣素由成骨細胞分泌，動物研究顯示它與海馬迴功能有關；人體因果仍待確認。"],
+       ["下列哪一項活動最能給骨骼「負重刺激」？",["快走、爬樓梯","泡溫泉","躺著聽音樂","坐著看電視"],0,"骨骼要受力才會刺激骨形成；游泳、騎車屬低衝擊，負重效果較少。"],
+       ["《難經·四十五難》的八會穴中，「髓會」是哪一穴？",["絕骨（懸鐘）","大杼","太淵","膻中"],0,"原文：「筋會陽陵泉，髓會絕骨，骨會大杼。」大杼是骨會，太淵是脈會，膻中是氣會。"]]}
+};
+const HUBQ=[
+ ["《素問·宣明五氣》「心藏神，肺藏魄，肝藏魂，脾藏意，腎藏志」表達什麼觀念？",["精神活動和多個臟腑都有關","情緒只由大腦決定","五臟彼此無關","只有心臟負責思考"],0,"古人把精神活動分配給五臟，和今天「大腦功能受全身器官影響」的多腦軸觀點相映成趣。","hub"],
+ ["哪一條經脈「並於脊裏，上至風府，入屬於腦」（《難經·二十八難》）？",["督脈","任脈","帶脈","足太陰脾經"],0,"督脈沿脊柱上行入腦，百會穴就在督脈上，位於頭頂。","hub"],
+ ["本頁證據燈號中，「C」代表什麼？",["動物或機制研究，人體效果還不確定","已被大型試驗證實","中醫經典理論","醫師個人經驗"],0,"看到 C 級內容時，代表科學家找到可能的機制，但還不能直接推論到人身上。","hub"]
+];
+
+/* ---------- body labels ---------- */
+const LBL=[
+ ["hub","大腦",44,52,170,56,"end"],["eye","眼睛",44,92,173,96,"end"],["oral","口腔",44,126,186,119,"end"],
+ ["heart","肺",44,236,158,244,"end"],["kidney","腎臟",44,352,150,352,"end"],["bone","骨骼",44,540,158,540,"end"],
+ ["heart","心臟",358,262,232,272,"start"],["gut","胃・腸",358,372,250,330,"start"],["muscle","肌肉",358,540,256,550,"start"],["foot","足底",358,628,350,650,"start"]
+];
+
+/* ---------- helpers ---------- */
+const $=s=>document.querySelector(s);
+const NS="http://www.w3.org/2000/svg";
+function smooth(p){let d=`M${p[0][0]},${p[0][1]}`;for(let i=0;i<p.length-1;i++){const p0=p[i-1]||p[i],p1=p[i],p2=p[i+1],p3=p[i+2]||p2;const c1=[p1[0]+(p2[0]-p0[0])/6,p1[1]+(p2[1]-p0[1])/6],c2=[p2[0]-(p3[0]-p1[0])/6,p2[1]-(p3[1]-p1[1])/6];d+=` C${c1[0].toFixed(1)},${c1[1].toFixed(1)} ${c2[0].toFixed(1)},${c2[1].toFixed(1)} ${p2[0]},${p2[1]}`}return d}
+const colorOf=id=>getComputedStyle(document.documentElement).getPropertyValue("--c-"+id).trim()||"#888";
+
+/* ---------- build static pieces ---------- */
+$("#brandMasc").innerHTML=MASC.hub();
+// orbit
+(function(){
+  const o=$("#orbit");const cx=300,cy=222,rx=228,ry=168;let s="";
+  ORDER.forEach((id,i)=>{const a=-Math.PI/2+i*2*Math.PI/8;const x=cx+rx*Math.cos(a),y=cy+ry*Math.sin(a);
+    s+=`<path class="ln" d="M${cx},${cy} Q${(cx+x)/2+Math.sin(a)*30},${(cy+y)/2-Math.cos(a)*30} ${x},${y}" stroke="var(--c-${id})"/>`;});
+  s+=`<circle cx="${cx}" cy="${cy}" r="84" fill="color-mix(in srgb,var(--c-hub) 14%,transparent)"/>`;
+  s+=`<g transform="translate(${cx-70},${cy-74}) scale(1.4)"><g class="m bob" data-go="hub" tabindex="0" role="button" aria-label="大腦總機">${MASC.hub()}</g></g><text x="${cx}" y="${cy+90}" style="font-size:18px;font-weight:700">大腦總機</text>`;
+  ORDER.forEach((id,i)=>{const a=-Math.PI/2+i*2*Math.PI/8;const x=cx+rx*Math.cos(a),y=cy+ry*Math.sin(a);
+    s+=`<g class="m" data-go="${id}" tabindex="0" role="button" aria-label="${AX[id].name}"><circle cx="${x}" cy="${y}" r="40" fill="var(--surface)" stroke="var(--c-${id})" stroke-width="3"/><g transform="translate(${x-31},${y-33}) scale(.62)">${MASC[id]()}</g><text x="${x}" y="${y+58}">${AX[id].name}</text></g>`;});
+  o.innerHTML=s;
+  o.querySelectorAll("[data-go]").forEach(g=>{const go=()=>{select(g.dataset.go);$("#map").scrollIntoView({behavior:"smooth"})};g.addEventListener("click",go);g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go()}})});
+})();
+// labels
+(function(){
+  let s="";LBL.forEach(([id,t,x,y,px,py,anc])=>{s+=`<g class="lblg" data-axis="${id}" style="--glow:var(--c-${id})"><path class="lblline" d="M${anc==="end"?x+4:x-4},${y-5} L${px},${py}"/><circle cx="${px}" cy="${py}" r="2.2" fill="var(--muted)"/><text class="lbl" x="${x}" y="${y}" text-anchor="${anc}">${t}</text></g>`});
+  $("#labels").innerHTML=s;
+  $("#labels").querySelectorAll(".lblg").forEach(g=>g.addEventListener("click",()=>select(g.dataset.axis)));
+})();
+// all meridians faint layer
+function drawMer(){
+  const all=$("#allMer").checked;const cur=AX[current];const hot=new Set((cur.tcm?cur.tcm.mers:cur.mers)||[]);
+  let s="";
+  Object.entries(MER).forEach(([k,m])=>{
+    if(hot.has(k)){s+=`<path class="mer hot" d="${smooth(m.p)}" stroke="${colorOf(current)}"><title>${m.n}</title></path>`;if(m.inner)s+=`<path class="mer hot internal" d="${smooth(m.inner)}" stroke="${colorOf(current)}"><title>${m.n}（體內支脈：連目系）</title></path>`;}
+    else if(all){s+=`<path class="mer all" d="${smooth(m.p)}"><title>${m.n}</title></path>`}
+  });
+  $("#merLayer").innerHTML=s;
+  // points
+  const pts=(cur.tcm?cur.tcm.pts:cur.pts)||[];let p="";
+  pts.forEach(code=>{const P=PTS[code];if(P.x==null)return;const left=P.x<200;
+    p+=`<g class="pt"><circle class="halo" cx="${P.x}" cy="${P.y}" r="6" fill="${colorOf(current)}"/><circle class="c" cx="${P.x}" cy="${P.y}" r="5" fill="${colorOf(current)}"/><text x="${left?P.x-9:P.x+9}" y="${P.y+4}" text-anchor="${left?"end":"start"}">${P.n}</text></g>`});
+  $("#ptLayer").innerHTML=p;
+}
+$("#allMer").addEventListener("change",drawMer);
+$("#showLbl").addEventListener("change",e=>{$("#labels").style.display=e.target.checked?"":"none"});
+
+// organs interactions
+const tip=$("#tip");
+document.querySelectorAll("#organs .organ").forEach(g=>{
+  const id=g.dataset.axis;g.style.setProperty("--glow",`var(--c-${id})`);
+  g.addEventListener("click",()=>select(id,true));
+  g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(id,true)}});
+  g.addEventListener("mousemove",e=>{const r=$("#bodycard").querySelector("div[style]").getBoundingClientRect();tip.textContent=g.getAttribute("aria-label");tip.style.left=(e.clientX-r.left)+"px";tip.style.top=(e.clientY-r.top)+"px";tip.style.opacity=1});
+  g.addEventListener("mouseleave",()=>tip.style.opacity=0);
+});
+// chips
+(function(){
+  let s=`<button class="chip" data-id="hub" style="--c:var(--c-hub)" aria-pressed="false">${masc("hub")}大腦總機</button>`;
+  ORDER.forEach(id=>{s+=`<button class="chip" data-id="${id}" style="--c:var(--c-${id})" aria-pressed="false">${masc(id)}${AX[id].name}<span class="stamp" data-st="${id}"></span></button>`});
+  $("#chips").innerHTML=s;
+  $("#chips").querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>select(b.dataset.id,true)));
+})();
+function updatePassport(){
+  let n=0;ORDER.forEach(id=>{const v=visited.has(id),q=quizDone[id];if(v)n++;const st=document.querySelector(`[data-st="${id}"]`);if(st)st.textContent=q?" ★":(v?" ✓":"")});
+  $("#ppText").textContent=`探險護照 ${n} / 8`;$("#ppBar").style.width=(n/8*100)+"%";
+}
+
+/* ---------- panel ---------- */
+let current="hub",tab="learn";
+function select(id,scroll){
+  current=id;tab=id==="hub"?"learn":(tab||"learn");
+  if(id!=="hub"){visited.add(id);store.set("ba_visited",[...visited])}
+  const svg=$("#bodySvg");svg.classList.toggle("dimmed",id!=="hub");
+  svg.querySelectorAll(".organ").forEach(g=>g.classList.toggle("on",g.dataset.axis===id));
+  svg.querySelectorAll(".lblg").forEach(g=>g.classList.toggle("on",g.dataset.axis===id));
+  document.querySelectorAll(".chip").forEach(b=>b.setAttribute("aria-pressed",b.dataset.id===id?"true":"false"));
+  // axis line
+  const a=AX[id];let al="";
+  if(id!=="hub"){const [x,y]=a.center,bx=200,by=58;const side=x<200?-1:1;const mx=(x+bx)/2+side*(id==="eye"||id==="oral"?60:120),my=(y+by)/2;
+    al=`<path class="axisline" d="M${x},${y} Q${mx},${my} ${bx},${by}" stroke="${colorOf(id)}"/><circle cx="${x}" cy="${y}" r="5" fill="${colorOf(id)}"/><circle cx="${bx}" cy="${by}" r="6" fill="${colorOf(id)}"/>`}
+  $("#axisLayer").innerHTML=al;
+  drawMer();renderPanel();updatePassport();
+  if(scroll&&window.innerWidth<=980){$("#panel").scrollIntoView({behavior:"smooth",block:"start"})}
+}
+function evItem([l,t,r]){return `<li><b class="lv" data-l="${l}">${l}</b><div>${t}${rf(r)}</div></li>`}
+function quoteHTML([q,src,r]){return `<div class="quote"><q>${q}</q><cite>${src}${rf([r])}</cite></div>`}
+function acuHTML(code){const P=PTS[code];return `<div class="acu"><div class="nm"><b>${P.n}</b><span class="code">${code}</span><span class="hint">${P.m}</span></div><div><span class="k">位置</span>${P.loc}</div><div><span class="k">方法</span>${P.how}</div><div><span class="k">傳統</span>${P.use}</div><div><span class="k">注意</span>${P.warn}</div></div>`}
+function allRefs(id){const a=AX[id];const set=new Set();(a.ev||[]).forEach(e=>e[2].forEach(r=>set.add(r)));(a.tcm?a.tcm.quotes:[]).forEach(q=>set.add(q[2]));["tcm:10","tcm:11"].forEach(r=>set.add(r));return [...set]}
+
+function renderPanel(){
+  const id=current,a=AX[id],p=$("#panel");p.style.setProperty("--c",`var(--c-${id})`);
+  let head=`<div class="phead">${masc(id,"masc bob")}<div class="t"><div class="en">${a.en}</div><h3>${a.name}${id!=="hub"?`<span class="hint" style="font-family:var(--f-body);font-size:.85rem;font-weight:400"> · ${a.organ} ⇄ 大腦</span>`:""}</h3><p class="hook">${a.hook}</p>${id!=="hub"&&DEEP[id]?`<a class="deep" href="${DEEP[id][0]}/index.html">深入探險：${AX[id].name} →</a>`:""}</div></div>`;
+  if(id==="hub"){p.innerHTML=head+`<div class="pbody">${hubBody()}</div>`;bindHub();return}
+  const T=[["learn","認識"],["ev","研究證據"],["tcm","中醫經絡"],["life","生活處方"],["quiz","小測驗"],["src","出處"]];
+  head+=`<div class="tabs" role="tablist">`+T.map(([k,t])=>`<button class="tab" role="tab" data-t="${k}" aria-selected="${tab===k}">${t}</button>`).join("")+`</div>`;
+  let body="";
+  if(tab==="learn"){body=`<div class="bubble"><b>白話比喻：</b>${a.meta}</div><h3>三條溝通線路</h3><div class="paths">${a.paths.map(([t,d])=>`<div class="pathc"><strong>${t}</strong><p>${d}</p></div>`).join("")}</div><p class="note">想知道每個說法有多可靠？到「研究證據」分頁看燈號；想知道古人怎麼看？到「中醫經絡」分頁，人體圖上也會亮起相關經絡與穴位。</p>`}
+  else if(tab==="ev"){body=`<ul class="ev">${a.ev.map(evItem).join("")}</ul><p class="note">A＝人體證據較多　B＝觀察或小型研究　C＝動物／機制研究　T＝中醫理論。上標編號可點，連到頁尾參考資料。</p>`}
+  else if(tab==="tcm"){const t=a.tcm;body=`<p>${t.view}</p><div class="quotes">${t.quotes.map(quoteHTML).join("")}</div><div><h3 style="margin-bottom:6px">相關經絡</h3><div class="mers">${t.mers.map(k=>`<span>${MER[k].n}</span>`).join("")}</div></div><div><h3 style="margin-bottom:6px">自我保健穴位 <span class="hint" style="font-family:var(--f-body)">（人體圖上已標出）</span></h3><div class="acus">${t.pts.map(acuHTML).join("")}</div></div><div class="bridge"><strong>中西對話：</strong>${t.bridge}</div><p class="note"><b class="lv" data-l="T">T</b>穴位定位依 WHO 西太平洋區標準${rf(["tcm:10"])}。穴位按壓屬放鬆與自我保健，相關研究多為小型試驗；美國 NCCIH 提醒不要用針灸或按壓延誤就醫${rf(["tcm:11"])}。</p>`}
+  else if(tab==="life"){const done=store.get("ba_tips_"+id,[]);body=`<p>勾選你這週願意試試看的項目（只存在你自己的瀏覽器）：</p><ul class="tips">${a.tips.map((t,i)=>`<li class="${done.includes(i)?"done":""}"><input type="checkbox" id="tp-${id}-${i}" data-i="${i}" ${done.includes(i)?"checked":""}><label for="tp-${id}-${i}">${t}</label></li>`).join("")}</ul><div class="red"><strong>紅旗警訊：出現以下情況請盡快就醫</strong><ul>${a.red.map(r=>`<li>${r}</li>`).join("")}</ul></div>`}
+  else if(tab==="quiz"){body=quizHTML(a.quiz.map(q=>q.concat([id])),"aq")+`<div class="score" id="aqScore"></div>`}
+  else if(tab==="src"){body=`<p>本分頁所有說法的出處（點標題開啟原文）：</p><ol class="refl">${allRefs(id).map(r=>{const [g,n]=r.split(":");const R=REFS[g][n-1];return `<li><span class="hint">[${RLAB[g]} ${n}]</span> <a href="${R[1]}" target="_blank" rel="noopener">${R[0]}</a></li>`}).join("")}</ol>`}
+  p.innerHTML=head+`<div class="pbody" role="tabpanel">${body}</div>`;
+  p.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{tab=b.dataset.t;renderPanel();const nb=p.querySelector(`.tab[data-t="${tab}"]`);if(nb)nb.focus()}));
+  if(tab==="quiz")bindQuiz(p,"aq",(score,total)=>{$("#aqScore").innerHTML=`<span class="big">${score} / ${total}</span>${score===total?"全對！護照蓋上金星 ★":"再讀一次「認識」和「中醫經絡」，可以再挑戰一次。"} <button class="mini" id="aqRe">重新作答</button>`;if(score===total){quizDone[id]=1;store.set("ba_quiz",quizDone);updatePassport()}$("#aqRe").addEventListener("click",renderPanel)});
+  if(tab==="life")p.querySelectorAll(".tips input").forEach(c=>c.addEventListener("change",()=>{const arr=[...p.querySelectorAll(".tips input:checked")].map(x=>+x.dataset.i);store.set("ba_tips_"+id,arr);c.closest("li").classList.toggle("done",c.checked)}));
+}
+function hubBody(){
+  return `<p>「腦軸」（axis）指器官和大腦之間，透過神經、血液、免疫與荷爾蒙形成的<b>雙向</b>溝通線路。點下面任一個角色，或直接點人體圖上的器官。</p>
+  <div class="hubgrid">${ORDER.map(id=>`<button class="hubbtn" data-go="${id}" style="--c:var(--c-${id})">${masc(id)}${AX[id].name}<small>${AX[id].organ} ⇄ 大腦</small></button>`).join("")}</div>
+  <h3>深入探險</h3><p>每條腦軸都有一個專屬單元，點下面的按鈕進入：</p><div style="display:flex;flex-wrap:wrap;gap:6px">${ORDER.map(id=>`<a class="deep" style="--c:var(--c-${id})" href="${DEEP[id][0]}/index.html">${AX[id].name} →</a>`).join("")}</div>
+  <h3>八條腦軸共用的四種語言</h3>
+  <div class="four"><div><b>神經</b>迷走神經、交感與副交感神經、三叉神經、足底感覺神經</div><div><b>血流</b>腦部灌流、血腦屏障、腦小血管</div><div><b>發炎</b>內毒素、細胞激素、慢性低度發炎</div><div><b>訊號分子</b>血清素、肌肉素、骨鈣素、尿毒素</div></div>
+  <h3>中醫怎麼看大腦</h3>
+  <div class="quotes">${quoteHTML(["頭者，精明之府。","《素問·脈要精微論》","tcm:1"])}${quoteHTML(["心藏神，肺藏魄，肝藏魂，脾藏意，腎藏志。","《素問·宣明五氣》","tcm:2"])}${quoteHTML(["督脈者，起於下極之俞，並於脊裏，上至風府，入屬於腦。","《難經·二十八難》","tcm:8"])}</div>
+  <div class="bridge"><strong>中西對話：</strong>中醫把精神活動分配給五臟，現代研究則發現腸、心、肌、腎、骨都會送訊號影響大腦。兩套語言都在說同一件事：<b>照顧大腦，要從照顧全身開始。</b></div>
+  <div class="acus">${acuHTML("GV20")}</div>
+  <h3>八條腦軸的共同處方</h3>
+  <ul class="ev"><li><b class="lv" data-l="A">A</b><div>動起來：每週 150 分鐘中等強度有氧，加上 2–3 次阻力與平衡訓練${rf(["gen:1","muscle:14"])}</div></li><li><b class="lv" data-l="A">A</b><div>吃原型、多纖維、地中海式飲食${rf(["gut:10","gut:9"])}</div></li><li><b class="lv" data-l="B">B</b><div>睡好、減壓：規律作息、腹式呼吸、正念${rf(["gut:4"])}</div></li><li><b class="lv" data-l="B">B</b><div>定期檢查：牙齒、眼睛、腎功能、骨密度、血壓血糖${rf(["oral:7","kidney:3","eye:2"])}</div></li></ul>`;
+}
+function deepCards(){const el=$("#deepCards");if(!el)return;el.innerHTML=ORDER.map(id=>`<a class="deepcard" style="--c:var(--c-${id})" href="${DEEP[id][0]}/index.html">${masc(id)}<span class="ax">${AX[id].name}・${AX[id].organ} ⇄ 大腦</span><b>${DEEP[id][1]}</b><span class="go">深入探險 →</span></a>`).join("")}
+function bindHub(){$("#panel").querySelectorAll(".hubbtn").forEach(b=>b.addEventListener("click",()=>select(b.dataset.go,true)))}
+
+/* ---------- quiz engine ---------- */
+function quizHTML(qs,pre){return qs.map((q,i)=>{const order=shuffle(q[1].map((_,k)=>k));return `<div class="q" data-ans="${q[2]}" data-i="${i}"><div class="qt">${i+1}. ${q[0]}</div><div class="opts">${order.map(k=>`<button class="opt" data-k="${k}">${q[1][k]}</button>`).join("")}</div><div class="expl" hidden>${q[3]}</div></div>`}).join("")}
+function bindQuiz(root,pre,onDone){
+  const qs=root.querySelectorAll(".q");let answered=0,score=0;
+  qs.forEach(q=>q.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>{
+    const ans=+q.dataset.ans,k=+b.dataset.k;q.querySelectorAll(".opt").forEach(o=>{o.disabled=true;if(+o.dataset.k===ans)o.classList.add("ok")});
+    if(k!==ans)b.classList.add("no");else score++;answered++;
+    const ex=q.querySelector(".expl");ex.innerHTML=(k===ans?'<b class="y">答對了！</b> ':'<b class="x">差一點！</b> ')+ex.innerHTML;ex.hidden=false;
+    if(answered===qs.length)onDone(score,qs.length);
+  })));
+}
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+
+/* ---------- compare table ---------- */
+(function(){
+  const rows={
+   gut:["迷走神經、腸道菌、短鏈脂肪酸、血清素","脾胃為後天之本；思傷脾；胃不和則臥不安","足陽明胃經、足太陰脾經","足三里、天樞、內關","都觀察到壓力→腸胃→睡眠情緒的連動"],
+   heart:["腦灌流、BDNF、交感神經、心衰竭與認知","心藏神、主血脈；肺朝百脈；宗氣貫心脈而行呼吸","手少陰心經、手厥陰心包經、手太陰肺經","內關、神門、膻中、太淵","心主神明 ≈ 心臟功能影響認知"],
+   muscle:["肌肉素（鳶尾素）、BDNF、胰島素敏感性","脾主肌肉；四肢皆稟氣於胃；久坐傷肉","足太陰脾經、足陽明胃經","足三里、陽陵泉（筋會）","久坐傷肉 ≈ 久坐與肌少症風險"],
+   kidney:["尿毒素、血腦屏障、腦小血管、eGFR","腎藏精、精生髓、腦為髓之海","足少陰腎經、督脈","太谿、湧泉、百會","髓海不足 ≈ 腎功能與認知下降相關；中醫「腎」範圍較廣"],
+   oral:["三叉神經回饋、牙周病、P. gingivalis","脾開竅於口、心氣通於舌、齒為骨之所終","足陽明胃經（上齒）、手陽明大腸經（下齒）","頰車、合谷","口腔連結消化與全身，古今一致"],
+   eye:["乾眼與菌相、Th17/Treg、視網膜生物標記","肝開竅於目；五臟六腑精氣上注於目；久視傷血","足厥陰肝經、足陽明胃經、手少陰心經","太衝、足三里","眼睛反映全身狀態；久視傷血 ≈ 螢幕疲勞"],
+   foot:["足底機械感受器、本體感覺、平衡","腎出於湧泉；足三陰起於足、足三陽止於足","足少陰腎經等六條足經","湧泉、太谿、太衝","腳是起點／感覺入口；反射區地圖證據不足"],
+   bone:["骨鈣素、交感神經、PIEZO1、跌倒","腎主骨；骨者髓之府；諸髓皆屬於腦","足少陰腎經、督脈、足少陽膽經","懸鐘（髓會）、大杼（骨會）、太谿","腎—骨—髓—腦 ≈ 骨—腦雙向訊號"]};
+  let s=`<thead><tr><th>腦軸</th><th>現代醫學關鍵詞</th><th>中醫臟腑理論</th><th>代表經絡</th><th>自我保健穴位</th><th>相似處／提醒</th></tr></thead><tbody>`;
+  ORDER.forEach(id=>{const r=rows[id];s+=`<tr data-go="${id}" style="--c:var(--c-${id})" tabindex="0"><td><i></i>${AX[id].name}</td>${r.map(x=>`<td>${x}</td>`).join("")}</tr>`});
+  $("#cmpTable").innerHTML=s+"</tbody>";
+  $("#cmpTable").querySelectorAll("tr[data-go]").forEach(tr=>{const go=()=>{tab="tcm";select(tr.dataset.go);$("#map").scrollIntoView({behavior:"smooth"})};tr.addEventListener("click",go);tr.addEventListener("keydown",e=>{if(e.key==="Enter")go()})});
+})();
+
+/* ---------- final challenge ---------- */
+const POOL=[];ORDER.forEach(id=>AX[id].quiz.forEach(q=>POOL.push(q.concat([id]))));HUBQ.forEach(q=>POOL.push(q));
+let cq=[],ci=0,cs=0;
+function startChallenge(){cq=shuffle(POOL).slice(0,10);ci=0;cs=0;renderCQ();renderSide()}
+function renderCQ(){
+  const box=$("#cbox");
+  if(ci>=cq.length){const msg=cs>=9?"腦軸達人！你已經能向家人解釋八條腦軸了。":cs>=6?"腦軸探險家！再複習幾條，就能拿滿分。":"腦軸新手！回人體圖逛一圈，再來挑戰。";
+    box.innerHTML=`<div class="prog"><i style="width:100%"></i></div><h3 style="font-size:1.6rem">得分 ${cs} / 10</h3><p style="margin:8px 0 14px">${msg}</p><button class="btn pri" id="cRe">再抽 10 題</button>`;$("#cRe").addEventListener("click",startChallenge);renderSide(true);return}
+  const q=cq[ci],id=q[4],name=id==="hub"?"大腦總機":AX[id].name;
+  box.style.setProperty("--c",`var(--c-${id})`);
+  box.innerHTML=`<div class="prog"><i style="width:${ci/10*100}%"></i></div><span class="ctag">${name}</span><span class="hint" style="margin-left:8px">第 ${ci+1} / 10 題 · 目前 ${cs} 分</span>`+quizHTML([q],"cq").replace(/^<div class="q"/,'<div class="q" style="margin-top:8px"').replace(/>1\. /,">")+`<div style="margin-top:12px"><button class="btn pri" id="cNext" hidden>下一題 →</button></div>`;
+  bindQuiz(box,"cq",(s)=>{cs+=s;const n=$("#cNext");n.hidden=false;n.textContent=ci===9?"看結果 →":"下一題 →";n.addEventListener("click",()=>{ci++;renderCQ()});n.focus()});
+}
+function renderSide(end){
+  const best=store.get("ba_best",0);if(end&&cs>best)store.set("ba_best",cs);
+  const b=Math.max(best,end?cs:0);
+  $("#cside").innerHTML=`${masc(end&&cs>=9?"hub":"hub","bob")}<strong style="font-family:var(--f-display);font-size:1.2rem">${end?(cs>=9?"太厲害了！":"繼續加油！"):"準備好了嗎？"}</strong><p class="hint">題目會隨機抽選，每次都不一樣。${b?`你的最佳紀錄：${b} / 10`:""}</p>`;
+}
+startChallenge();
+
+/* ---------- references list ---------- */
+(function(){
+  const names={gut:"腸腦軸",heart:"心肺腦軸",muscle:"肌腦軸",kidney:"腎腦軸",oral:"口腔腦軸",eye:"腸眼軸",foot:"足底腦軸",bone:"骨腦軸",tcm:"中醫經典與穴位標準",gen:"通用資料"};
+  const col={tcm:"var(--lvT)",gen:"var(--accent)"};
+  let s="";["gut","heart","muscle","kidney","oral","eye","foot","bone","tcm","gen"].forEach(g=>{
+    s+=`<details class="refg" style="--c:${col[g]||`var(--c-${g})`}" ${g==="tcm"?"open":""}><summary><i></i>${names[g]}（${REFS[g].length} 筆，標記「${RLAB[g]}」）</summary><ol>${REFS[g].map((r,i)=>`<li id="ref-${g}-${i+1}"><a href="${r[1]}" target="_blank" rel="noopener">${r[0]}</a></li>`).join("")}</ol></details>`});
+  $("#refList").innerHTML=s;
+  document.addEventListener("click",e=>{const a=e.target.closest('sup.r a');if(!a)return;const t=document.querySelector(a.getAttribute("href"));if(t){const d=t.closest("details");if(d)d.open=true}});
+})();
+
+/* ---------- init ---------- */
+select("hub");
+deepCards();
+})();
+</script>
+
+</body>
+</html>
