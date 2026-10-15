@@ -1,0 +1,921 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#2455c7">
+<meta name="description" content="點開人體背面剖面圖，認識腎絲球與 eGFR、尿毒素與血腦屏障、共同小血管、壓力與 HPA 軸、腸腎腦軸、透析與用藥；附證據標籤、中醫經絡穴位、低鈉小遊戲與居家紀錄。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/BRAINAXIS/KIDNEYMAP/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="腎臟累了，大腦也會霧霧的？｜腦軸大探險">
+<meta property="og:description" content="點開人體背面剖面圖，認識腎絲球與 eGFR、尿毒素與血腦屏障、共同小血管、壓力與 HPA 軸、腸腎腦軸、透析與用藥；附證據標籤、中醫經絡穴位、低鈉小遊戲與居家紀錄。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/BRAINAXIS/KIDNEYMAP/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20120%20130%27%3E%3Cpath%20d%3D%27M60%2030%20C44%2010%2022%2014%2020%2026%20C34%2036%2050%2036%2060%2030Z%27%20fill%3D%27%235ad6a4%27%20stroke%3D%27%231f2a44%27%20stroke-width%3D%273%27/%3E%3Cpath%20d%3D%27M60%2024%20C74%204%2098%208%20100%2020%20C86%2032%2070%2032%2060%2024Z%27%20fill%3D%27%237ee3b8%27%20stroke%3D%27%231f2a44%27%20stroke-width%3D%273%27/%3E%3Cellipse%20cx%3D%2760%27%20cy%3D%2788%27%20rx%3D%2740%27%20ry%3D%2738%27%20fill%3D%27%237ee3b8%27%20stroke%3D%27%231f2a44%27%20stroke-width%3D%273.5%27/%3E%3C/svg%3E">
+<style>[hidden]{display:none!important}</style>
+<title>腎臟累了，大腦也會霧霧的？｜腦軸大探險</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&display=swap">
+<style>
+/* Layout: 共好小學堂單元頁 × 探險地圖：左側可點全身骨骼正面圖、右側學習面板；粗墨線＋位移陰影的卡通風 */
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c; --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff; --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --rose:#f06595; --rose-l:#ffe3ee;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7; --white:#ffffff;
+  --lvA:#15803d; --lvB:#b45309; --lvC:#1d4ed8; --lvT:#0f8a7a; --lvO:#7c3aed; --lvQ:#c2410c;
+  --f-display:"Huninn","LXGW WenKai TC","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --f-body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+section,#panel,[id^=ref]{scroll-margin-top:76px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background-color:var(--bg);background-image:radial-gradient(circle at 6% 4%,var(--sun-l) 0,transparent 30%),radial-gradient(circle at 96% 10%,var(--rose-l) 0,transparent 28%),radial-gradient(circle at 90% 75%,var(--mint-l) 0,transparent 32%),radial-gradient(circle at 6% 85%,var(--sky-l) 0,transparent 32%);background-attachment:fixed;color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.85}
+a{color:var(--blue)}
+.wrap{max-width:1220px;margin:0 auto;padding-inline:16px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.3;margin:0}
+h2{font-size:clamp(1.6rem,3.4vw,2.3rem)}
+h3{font-size:1.2rem}
+p{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:8px}
+.hl{background:linear-gradient(transparent 60%,var(--sun) 0);padding:0 .1em}
+.nw{white-space:nowrap}
+.card{background:var(--white);border:3px solid var(--ink);border-radius:22px;box-shadow:0 4px 0 var(--ink)}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:3px dashed var(--line)}
+.top .wrap{display:flex;align-items:center;gap:10px;padding-block:8px}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink)}
+.brand svg{width:38px;height:40px}
+.brand b{font-family:var(--f-display);font-size:1.15rem;display:block;line-height:1.1}
+.brand small{font-size:.66rem;letter-spacing:.14em;color:var(--ink-2);font-weight:700}
+.top nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.pill{text-decoration:none;color:var(--ink);font-size:.86rem;font-weight:700;padding:3px 12px;border-radius:999px;border:2px solid var(--ink);background:var(--white)}
+.pill.back{background:var(--sun)}
+@media (max-width:820px){.top nav .pill:not(.back){display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:36px 64px}
+.hero .bubbleBg{position:absolute;border-radius:50%;opacity:.5;z-index:-1}
+.hero .grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px;align-items:center}
+.tag{display:inline-block;background:var(--sun-l);border:2px solid var(--ink);border-radius:999px;padding:2px 14px;font-weight:700;font-size:.9rem}
+.hero h1{font-size:clamp(2.2rem,5.6vw,3.7rem);margin-top:14px}
+.hero .lede{font-size:1.08rem;color:var(--ink-2);margin-top:14px;max-width:32em}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:3px solid var(--ink);border-radius:999px;padding:9px 22px;font-weight:900;cursor:pointer;text-decoration:none;color:var(--ink);box-shadow:0 4px 0 var(--ink);transition:transform .12s,box-shadow .12s;background:var(--white)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 var(--ink)}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 var(--ink)}
+.btn.pri{background:var(--blue);color:#fff}
+.btn.sun{background:var(--sun)}
+.btn.sm{padding:5px 14px;font-size:.9rem}
+.heroArt{width:100%;max-width:520px;justify-self:center;height:auto}
+.float{animation:float 3.4s ease-in-out infinite}
+.float2{animation:float 4.2s ease-in-out infinite reverse}
+@keyframes float{50%{transform:translateY(-8px)}}
+.wave{position:absolute;left:0;right:0;bottom:0;width:100%;height:46px}
+
+/* section scaffolding */
+section.blk{padding-block:34px}
+.sechead{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px}
+.num{flex:none;width:52px;height:52px;border:3px solid var(--ink);border-radius:14px;display:grid;place-items:center;font-family:var(--f-display);font-size:1.5rem;transform:rotate(-6deg);box-shadow:3px 3px 0 var(--ink)}
+.eyebrow{font-size:.74rem;letter-spacing:.16em;font-weight:900;color:var(--ink-2)}
+.sechead p.sub{color:var(--ink-2);max-width:52em;margin-top:4px}
+.tint{border-radius:28px;padding:26px 18px;margin-inline:-2px}
+
+/* key points */
+.keyp{display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;align-items:center;padding:20px}
+.keyp svg{width:110px;height:120px}
+.say{position:relative;background:var(--white);border:3px solid var(--ink);border-radius:20px;padding:14px 18px;font-size:1.02rem}
+.say::before{content:"";position:absolute;left:-14px;top:30px;border:10px solid transparent;border-right-color:var(--ink)}
+.say ul{margin:6px 0 0;padding-left:1.2em}
+.say .warn{margin-top:8px;background:var(--coral-l);border-radius:12px;padding:6px 12px;font-weight:700}
+
+/* legend */
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:.88rem;color:var(--ink-2);margin-top:12px}
+.lv{display:inline-flex;align-items:center;justify-content:center;min-width:1.7em;height:1.6em;padding:0 .45em;border-radius:7px;font-weight:900;font-size:.76rem;margin-right:6px;flex:none;white-space:nowrap;border:1.5px solid currentColor}
+.lv[data-l=A]{color:var(--lvA);background:#e7f7ec}
+.lv[data-l=B]{color:var(--lvB);background:#fff3df}
+.lv[data-l=C]{color:var(--lvC);background:#e6edff}
+.lv[data-l=T]{color:var(--lvT);background:#dff5f1}
+.lv[data-l=原]{color:var(--lvO);background:var(--grape-l)}
+.lv[data-l=待]{color:var(--lvQ);background:var(--orange-l)}
+
+/* map */
+.mapgrid{display:grid;grid-template-columns:minmax(0,500px) minmax(0,1fr);gap:22px;align-items:start}
+.headcard{position:sticky;top:70px;padding:12px 12px 14px}
+.tools{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;padding:0 4px 4px;font-size:.86rem}
+.toggle{display:inline-flex;gap:6px;align-items:center;cursor:pointer;font-weight:700}
+.toggle input{width:17px;height:17px;accent-color:var(--blue)}
+#headSvg{width:100%;height:auto;display:block;max-height:calc(100vh - 230px)}
+#headSvg .st{cursor:pointer;transition:opacity .25s,filter .2s}
+#headSvg .st:hover,#headSvg .st:focus-visible{filter:drop-shadow(0 0 6px var(--glow)) brightness(1.06);outline:none}
+#headSvg.dim .st:not(.on){opacity:.35}
+#headSvg .st.on{animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{filter:drop-shadow(0 0 9px var(--glow)) brightness(1.1)}}
+#headSvg .lbl{font-family:var(--f-display);font-size:16px;fill:var(--ink);cursor:pointer}
+#headSvg .lblg.on .lbl{font-weight:700;fill:var(--glow)}
+#headSvg .lblline{stroke:var(--ink-2);stroke-width:.9;stroke-dasharray:2 2;fill:none}
+#merL,#routeL,#ptL,#headSvg .lblline,#regL{pointer-events:none}
+#headSvg .mer{fill:none;stroke-linecap:round;stroke-linejoin:round}
+#headSvg .mer.all{stroke:#8a96ad;stroke-width:1.5;stroke-dasharray:1 4}
+#headSvg .mer.hot{stroke-width:2.8;stroke-dasharray:2 5;animation:flow 1.4s linear infinite}
+#headSvg .route{fill:none;stroke-width:3.4;stroke-dasharray:7 6;animation:flow .9s linear infinite;stroke-linecap:round}
+@keyframes flow{to{stroke-dashoffset:-26}}
+#headSvg .rtxt{font-size:12.5px;font-weight:900;paint-order:stroke;stroke:#fff;stroke-width:4px}
+#headSvg .pt .halo{animation:halo 1.8s ease-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes halo{from{transform:scale(.6);opacity:.8}to{transform:scale(2.3);opacity:0}}
+#headSvg .pt text{font-size:12.5px;font-weight:900;paint-order:stroke;stroke:#fff;stroke-width:4px;fill:var(--ink)}
+#headSvg .reg{opacity:0;transition:opacity .3s}
+#headSvg.hubon .reg{opacity:1}
+#headSvg .reg text{font-size:11.5px;font-weight:900;paint-order:stroke;stroke:#fff;stroke-width:3.5px;fill:var(--blue-d)}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:#fff;font-size:.82rem;padding:2px 10px;border-radius:8px;transform:translate(-50%,-135%);white-space:nowrap;opacity:0;transition:opacity .12s}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chip{display:inline-flex;align-items:center;gap:5px;border:2.5px solid var(--ink);background:var(--white);border-radius:999px;padding:2px 10px 2px 3px;font-size:.86rem;cursor:pointer;font-weight:700}
+.chip svg{width:26px;height:26px}
+.chip[aria-pressed=true]{background:var(--cl);box-shadow:0 3px 0 var(--ink)}
+.passport{margin-top:10px;font-size:.84rem;color:var(--ink-2);display:flex;align-items:center;gap:8px;font-weight:700}
+.passport .bar{flex:1;height:12px;border-radius:99px;border:2px solid var(--ink);background:var(--white);overflow:hidden}
+.passport .bar i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint) 0 8px,#5fd6ad 8px 16px);transition:width .4s}
+
+/* panel */
+.panel{overflow:hidden;min-width:0}
+.phead{display:flex;gap:14px;align-items:center;padding:16px 20px;background:var(--cl);border-bottom:3px solid var(--ink)}
+.phead svg.m{width:80px;height:80px;flex:none}
+.phead .en{font-size:.74rem;letter-spacing:.14em;font-weight:900;color:var(--ink-2)}
+.phead h3{font-size:1.65rem}
+.phead .hook{font-size:1rem;margin-top:2px}
+.tabs{display:flex;gap:4px;padding:10px 12px 0;overflow-x:auto;border-bottom:3px dashed var(--line)}
+.tab{border:0;background:none;padding:7px 12px;border-radius:12px 12px 0 0;cursor:pointer;font-weight:900;font-size:.94rem;color:var(--ink-2);white-space:nowrap;border-bottom:4px solid transparent}
+.tab[aria-selected=true]{color:var(--ink);border-bottom-color:var(--cc);background:var(--cl)}
+.pbody{padding:20px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.meta{background:var(--cl);border:2.5px dashed var(--ink);border-radius:18px;padding:12px 16px}
+.paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.pathc{position:relative;border:2.5px solid var(--ink);border-radius:16px;padding:20px 12px 10px;background:var(--white)}
+.pathc .badge{position:absolute;top:-12px;left:10px;background:var(--cc);color:var(--ink);border:2px solid var(--ink);border-radius:999px;font-size:.74rem;font-weight:900;padding:0 10px}
+.pathc strong{font-family:var(--f-display);font-size:1.05rem;display:block}
+.pathc p{font-size:.9rem;color:var(--ink-2)}
+.ev{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.ev li{display:flex;gap:8px;align-items:flex-start;padding:10px 12px;border-radius:14px;background:var(--white);border:2px solid var(--line);font-size:.96rem}
+.ev li>div{min-width:0}
+a.src{display:inline-block;font-size:.72rem;font-weight:900;text-decoration:none;background:var(--blue-l);color:var(--blue-d);border-radius:999px;padding:0 8px;margin-left:4px;line-height:1.7;vertical-align:.1em;white-space:nowrap}
+.quote{border-left:5px solid var(--lvT);background:#effaf7;padding:10px 14px;border-radius:0 14px 14px 0}
+.quote q{font-family:var(--f-display);font-size:1.12rem;quotes:"「" "」"}
+.quote cite{display:block;font-style:normal;font-size:.82rem;color:var(--ink-2)}
+.quotes{display:flex;flex-direction:column;gap:8px}
+.mers{display:flex;flex-wrap:wrap;gap:6px}
+.mers span{font-size:.86rem;border:2px solid var(--ink);border-radius:999px;padding:0 10px;background:var(--white);font-weight:700}
+.acus{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.acu{border:2.5px solid var(--ink);border-radius:16px;padding:12px;background:var(--white);display:flex;flex-direction:column;gap:3px;font-size:.88rem}
+.acu .nm{display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+.acu .nm b{font-family:var(--f-display);font-size:1.2rem}
+.acu .code{font-size:.72rem;font-weight:900;background:var(--cc);border:1.5px solid var(--ink);border-radius:6px;padding:0 6px}
+.acu .k{font-weight:900;color:var(--ink-2);margin-right:4px}
+.bridge{background:linear-gradient(135deg,var(--cl),#effaf7);border:2.5px solid var(--ink);border-radius:18px;padding:12px 16px}
+.bridge strong{font-family:var(--f-display)}
+.note{font-size:.86rem;color:var(--ink-2);border-top:2px dashed var(--line);padding-top:10px}
+.tips{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.tips li{background:var(--white);border:2px solid var(--line);border-radius:14px;padding:8px 12px;font-size:.93rem}
+.tips li::before{content:"✓ ";color:var(--mint);font-weight:900}
+.red{border:3px solid var(--coral);border-radius:18px;padding:12px 16px;background:var(--coral-l)}
+.red strong{color:#c92a2a}
+.red ul{margin:6px 0 0;padding-left:1.2em;font-size:.94rem}
+.cycle{width:100%;max-width:520px;height:auto;display:block;margin:0 auto}
+.hubgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.hubbtn{display:flex;flex-direction:column;align-items:center;border:2.5px solid var(--ink);border-radius:16px;background:var(--cl);padding:8px 4px;cursor:pointer;font-weight:900;font-size:.88rem;box-shadow:0 3px 0 var(--ink)}
+.hubbtn svg{width:48px;height:48px}
+
+/* quiz */
+.q{border:2.5px solid var(--ink);border-radius:18px;padding:14px;background:var(--white)}
+.qt{font-weight:900;margin-bottom:8px}
+.opts{display:grid;gap:6px}
+.opt{text-align:left;border:2.5px solid var(--line);background:var(--white);border-radius:14px;padding:8px 12px;cursor:pointer;font-size:.96rem}
+.opt:hover:not(:disabled){border-color:var(--ink)}
+.opt.ok{border-color:var(--mint);background:var(--mint-l)}
+.opt.no{border-color:var(--coral);background:var(--coral-l)}
+.opt:disabled{cursor:default}
+.expl{margin-top:8px;font-size:.92rem;padding:8px 12px;border-radius:12px;background:var(--sun-l)}
+.score{font-weight:900;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.score .big{font-family:var(--f-display);font-size:1.6rem}
+
+/* practice */
+.prac{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pcard{padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.pcard h3{display:flex;align-items:center;gap:8px}
+.stage{border:2.5px solid var(--ink);border-radius:18px;background:var(--cl);min-height:190px;display:grid;place-items:center;text-align:center;padding:10px;position:relative}
+.syll{font-family:var(--f-display);font-size:3.4rem;line-height:1}
+.syl-sub{font-size:.9rem;color:var(--ink-2);margin-top:6px}
+.beats{display:flex;gap:6px;justify-content:center;margin-top:10px}
+.beats i{width:14px;height:14px;border-radius:50%;border:2px solid var(--ink);background:var(--white)}
+.beats i.on{background:var(--orange)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.small{font-size:.84rem;color:var(--ink-2)}
+#tongueFace{width:150px;height:150px}
+#tongueFace #tg{transition:transform .45s cubic-bezier(.4,1.6,.6,1)}
+.ring{width:150px;height:150px}
+.timeline{display:grid;gap:12px;position:relative}
+.tl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:start}
+.tl .dot{width:46px;height:46px;border-radius:50%;border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--f-display);font-weight:700;box-shadow:2px 2px 0 var(--ink)}
+.tl .box{padding:10px 14px}
+.tl .box b{font-family:var(--f-display);font-size:1.1rem}
+.tl .box .n{font-size:.86rem;color:var(--ink-2)}
+.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.ck{display:flex;gap:10px;align-items:flex-start;padding:10px 14px;cursor:pointer;font-size:.96rem;border:2.5px solid var(--ink);border-radius:16px;background:var(--white)}
+.ck input{appearance:none;flex:none;width:24px;height:24px;border:2.5px solid var(--ink);border-radius:7px;margin-top:3px;display:grid;place-items:center;background:var(--white)}
+.ck input:checked{background:var(--coral)}
+.ck input:checked::after{content:"✓";color:#fff;font-weight:900;font-size:15px;line-height:1}
+.prog{height:16px;border:2.5px solid var(--ink);border-radius:99px;overflow:hidden;background:var(--white)}
+.prog i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--coral) 0 8px,#ff8f8f 8px 16px);transition:width .3s}
+.tblwrap{overflow-x:auto;border:3px solid var(--ink);border-radius:22px;background:var(--white);box-shadow:0 4px 0 var(--ink)}
+table.cmp{border-collapse:collapse;width:100%;min-width:860px;font-size:.9rem}
+table.cmp th,table.cmp td{padding:10px 12px;border-bottom:2px dashed var(--line);text-align:left;vertical-align:top}
+table.cmp thead th{background:var(--blue);color:#fff;font-family:var(--f-display);font-weight:400;font-size:1rem}
+table.cmp td:first-child{font-weight:900;white-space:nowrap}
+table.cmp td:first-child i{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--cc);border:2px solid var(--ink);margin-right:6px;vertical-align:-1px}
+table.cmp tbody tr{cursor:pointer}
+table.cmp tbody tr:hover{background:var(--sun-l)}
+.chal{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,280px);gap:18px;align-items:start}
+.cbox{padding:20px}
+.cside{padding:16px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
+.cside svg{width:120px;height:120px}
+.ctag{display:inline-block;font-size:.8rem;font-weight:900;background:var(--cl);border:2px solid var(--ink);border-radius:999px;padding:0 12px;margin-bottom:6px}
+.refs ol{margin:0;padding-left:1.6em;display:flex;flex-direction:column;gap:8px;font-size:.9rem;word-break:break-word}
+.refs li:target{background:var(--sun-l);border-radius:8px}
+.refs .one{color:var(--ink-2);font-size:.86rem}
+.fix{border:2.5px dashed var(--orange);background:var(--orange-l);border-radius:16px;padding:12px 16px;font-size:.92rem;margin-bottom:14px}
+.fix b{color:#b35400}
+.disc{border:4px solid #c92a2a;background:var(--coral-l);border-radius:24px;padding:6px}
+.disc .in{border:2.5px dashed #c92a2a;border-radius:18px;padding:16px 18px}
+.disc h2{font-size:1.4rem;color:#c92a2a}
+.disc .first{background:#fff;color:#c92a2a;font-weight:900;border-radius:12px;padding:8px 12px;margin:10px 0}
+.disc ul{margin:0;padding-left:1.2em;font-size:.95rem}
+footer{background:var(--blue-d);color:#fff;margin-top:36px;padding-block:30px 40px}
+footer .wrap{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+footer .trio{display:flex;gap:10px;align-items:flex-end}
+footer .trio svg{width:70px;height:72px}
+footer .gold{font-family:var(--f-display);font-size:1.3rem}
+footer .slogan{background:var(--sun);color:var(--ink);font-weight:900;border-radius:999px;padding:4px 16px;font-size:.92rem}
+footer a{color:var(--sun)}
+footer small{opacity:.85}
+.prac.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:820px){.prac.two{grid-template-columns:1fr}}
+#toTop{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:48px;height:48px;border-radius:50%;border:3px solid var(--ink);background:var(--sun);font-weight:900;font-size:1.3rem;cursor:pointer;box-shadow:0 4px 0 var(--ink);z-index:50}
+
+@media (max-width:980px){.mapgrid{grid-template-columns:1fr}.headcard{position:static}#headSvg{max-height:none}}
+@media (max-width:820px){
+  .hero .grid,.prac,.chal,.checks,.tips,.paths{grid-template-columns:1fr}
+  .keyp{grid-template-columns:1fr;justify-items:center}
+  .say::before{display:none}
+  .hubgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .phead svg.m{width:60px;height:60px}
+  .phead h3{font-size:1.3rem}
+  .pbody{padding:16px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+</defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><svg aria-hidden="true"><use href="#sprout"/></svg><span><b>腦軸大探險</b><small>BRAIN AXIS ADVENTURE</small></span></a>
+    <nav aria-label="頁內導覽">
+      <a class="pill" href="#map">探險地圖</a><a class="pill" href="#practice">跟著做</a><a class="pill" href="#challenge">挑戰</a><a class="pill" href="#refs">參考</a>
+      <a class="pill back" href="../index.html">← 返回探險基地</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="bubbleBg" style="width:340px;height:340px;background:var(--grape-l);left:-120px;top:-60px"></div>
+    <div class="bubbleBg" style="width:260px;height:260px;background:var(--sky-l);right:-80px;top:40px"></div>
+    <div class="bubbleBg" style="width:200px;height:200px;background:var(--mint-l);left:40%;bottom:-60px"></div>
+    <div class="wrap grid">
+      <div>
+        <span class="tag">✦ 大腦保健小知識 · 腎腦軸探險地圖</span>
+        <h1>腎臟累了，<span class="hl nw">大腦也會霧霧的？</span></h1>
+        <p class="lede">腎臟是全身的淨水廠。過濾效率下降時，尿毒素可能跟著血液跑進大腦；長期壓力、失眠和高血壓，也會反過來傷害腎臟。點開背面剖面圖的每一站，看看研究怎麼說、中醫「腎藏精、髓通腦」怎麼看，再一起做低鈉小遊戲和居家紀錄。</p>
+        <div class="cta"><a class="btn pri" href="#map">開始探險 →</a><a class="btn sun" href="#practice">直接跟著做</a></div>
+      </div>
+      <svg class="heroArt" id="heroArt" viewBox="0 0 520 400" role="img" aria-label="小芽、藍鳥、星星和腎臟寶寶站在草地上，說：少鹽多走路，腎腦都輕鬆！"></svg>
+    </div>
+    <svg class="wave" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C150 0 300 46 450 24 C600 2 750 46 900 22 C1050 0 1130 30 1200 20 L1200 46 L0 46Z" fill="var(--white)" opacity=".8"/></svg>
+  </section>
+
+  <div class="wrap">
+    <section class="blk" aria-labelledby="kph">
+      <div class="sechead"><div class="num" style="background:var(--blue-l)">1</div><div><p class="eyebrow">KEY POINTS</p><h2 id="kph">先說重點</h2></div></div>
+      <div class="card keyp">
+        <svg aria-hidden="true"><use href="#bird"/></svg>
+        <div class="say">
+          <b>藍鳥幫你整理三件事：</b>
+          <ul>
+            <li>腎功能越差，認知障礙越常見：統合分析顯示，eGFR 低於 30 的人，大約六成有認知障礙。</li>
+            <li>腎臟和大腦有很像的小血管，高血壓、糖尿病會同時傷害兩邊；尿毒素也可能破壞血腦屏障。</li>
+            <li>控制三高、減鈉、定期驗 eGFR 和尿白蛋白、請醫師檢視用藥，是腎腦一起保護的基本功。</li>
+          </ul>
+          <p class="warn">要分清楚：水和蛋白質要依腎功能個別化，不是每個人都要喝 2,000 mL；已確診腎臟病的人，飲食請跟腎臟科醫師與營養師討論。</p>
+        </div>
+      </div>
+      <div class="legend" aria-label="證據標籤說明">
+        <span><b class="lv" data-l="A">A</b>系統性回顧／統合分析</span>
+        <span><b class="lv" data-l="B">B</b>觀察性研究或回顧，看得到關聯</span>
+        <span><b class="lv" data-l="C">C</b>動物或機制研究</span>
+        <span><b class="lv" data-l="T">T</b>中醫經典理論</span>
+        <span><b class="lv" data-l="原">原稿整理</b>原稿的整理或建議，未附直接出處</span>
+      </div>
+    </section>
+
+    <section class="blk" id="map" aria-labelledby="maph">
+      <div class="sechead"><div class="num" style="background:var(--grape-l)">2</div><div><p class="eyebrow">EXPLORATION MAP</p><h2 id="maph">點一站，看腎臟和大腦怎麼互相影響</h2><p class="sub">這是人體的<b>背面</b>剖面圖（看著背後，所以圖的左邊是身體左側）。腎臟貼在後腰兩側，右上角放大的是腎絲球。被選中的部位會亮起，彩色虛線畫出影響路線；切到「中醫經絡」分頁，背上的膀胱經和穴位會亮起來。</p></div></div>
+      <div class="mapgrid">
+        <div class="card headcard" id="headcard">
+          <div class="tools">
+            <label class="toggle"><input type="checkbox" id="allMer">顯示全部經絡</label>
+            <label class="toggle"><input type="checkbox" id="showLbl" checked>部位名稱</label>
+          </div>
+          <div style="position:relative" id="svgWrap">
+            <svg id="headSvg" viewBox="-40 0 500 820" role="group" aria-label="人體背面腎臟與大腦剖面圖">
+              <defs>
+                <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff1e4"/><stop offset="1" stop-color="#ffe2cc"/></linearGradient>
+                <path id="half" d="M200,128 L186,128 C186,146 184,156 180,162 C166,170 146,172 132,178 C114,186 106,200 106,222 C104,256 100,290 98,320 C96,350 92,390 90,424 C88,440 84,452 82,466 C80,480 84,494 94,500 C104,504 110,494 110,482 C110,466 112,450 114,436 C118,400 122,360 126,326 C128,300 132,270 138,246 C140,280 142,320 146,360 C148,380 142,410 138,440 C136,480 136,520 140,560 C144,590 148,610 148,630 C146,670 150,710 158,748 C158,760 150,772 148,782 C150,792 172,794 184,790 C190,786 190,772 186,762 C186,740 188,700 190,660 C192,630 190,610 190,596 C192,560 196,520 198,488 L200,486 Z"/>
+              </defs>
+              <g fill="#1f2a44" stroke="#1f2a44" stroke-width="7" stroke-linejoin="round"><use href="#half"/><use href="#half" transform="matrix(-1 0 0 1 400 0)"/><ellipse cx="200" cy="80" rx="46" ry="56"/></g>
+              <g fill="url(#skin)"><use href="#half"/><use href="#half" transform="matrix(-1 0 0 1 400 0)"/><ellipse cx="200" cy="80" rx="46" ry="56"/></g>
+              <!-- hair (back of head) -->
+              <path d="M154,82 C150,46 174,24 200,24 C226,24 250,46 246,82 C240,100 228,110 200,112 C172,110 160,100 154,82 Z" fill="#4a3b36"/>
+              <path d="M176,40 C186,52 190,70 186,96 M224,40 C214,52 210,70 214,96" stroke="#6b574f" stroke-width="2" fill="none"/>
+              <!-- scapulae & lower ribs (context) -->
+              <g fill="none" stroke="#e7cdb4" stroke-width="3" stroke-linecap="round">
+                <path d="M150,200 C140,230 146,260 168,272 C176,250 178,220 172,200 Z"/><path d="M250,200 C260,230 254,260 232,272 C224,250 222,220 228,200 Z"/>
+                <path d="M194,318 C176,320 160,330 152,346"/><path d="M206,318 C224,320 240,330 248,346"/>
+              </g>
+              <!-- spine -->
+              <g fill="#f3ead2" stroke="#b9a676" stroke-width="1.3" id="vert"></g>
+
+              <g id="stations">
+                <!-- gut (anterior, dashed) -->
+                <g class="st" data-s="gut" tabindex="0" role="button" aria-label="腸道：腸腎腦軸（在腎臟前方）">
+                  <path d="M168,446 L166,392 C166,384 172,380 180,380 L220,380 C228,380 234,384 234,392 L234,446" fill="none" stroke="#ffb36b" stroke-width="9" stroke-linecap="round" stroke-dasharray="2 5" opacity=".95"/>
+                  <path d="M182,398 C194,390 206,402 218,396 C224,404 210,410 198,408 C186,408 180,420 192,424 C204,428 212,418 220,426" fill="none" stroke="#ffb36b" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 5"/>
+                </g>
+                <!-- sympathetic / renal nerves -->
+                <g class="st" data-s="nerve" tabindex="0" role="button" aria-label="交感神經：壓力與腎血管">
+                  <path d="M200,110 L200,470" stroke="#e6a800" stroke-width="3.5" stroke-dasharray="1 0" opacity=".9"/>
+                  <path d="M200,320 C188,330 176,338 166,346 M200,326 C212,336 222,344 232,352" stroke="#e6a800" stroke-width="2.6" fill="none" stroke-dasharray="3 3" stroke-linecap="round"/>
+                  <g fill="#ffc93c" stroke="#1f2a44" stroke-width="1.3"><circle cx="190" cy="324" r="3.4"/><circle cx="210" cy="328" r="3.4"/></g>
+                </g>
+                <!-- vessels: aorta + renal arteries -->
+                <g class="st" data-s="vessel" tabindex="0" role="button" aria-label="血管：腎臟與大腦的共同小血管">
+                  <path d="M206,230 L206,450" stroke="#1f2a44" stroke-width="9" stroke-linecap="round"/>
+                  <path d="M206,230 L206,450" stroke="#e5484d" stroke-width="5.5" stroke-linecap="round"/>
+                  <path d="M206,352 C194,352 186,354 180,356 M206,358 C214,360 220,362 224,364" stroke="#e5484d" stroke-width="4" stroke-linecap="round"/>
+                  <path d="M194,236 L194,450" stroke="#4a7fd6" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+                </g>
+                <!-- bladder & ureters -->
+                <g class="st" data-s="bladder" tabindex="0" role="button" aria-label="輸尿管與膀胱：居家自我監測">
+                  <path d="M170,376 C176,410 186,440 192,468 M232,382 C226,414 214,442 208,468" stroke="#7fb2cf" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+                  <ellipse cx="200" cy="478" rx="20" ry="14" fill="#cfe9f7" stroke="#1f2a44" stroke-width="2.4"/>
+                </g>
+                <!-- kidneys -->
+                <g class="st" data-s="toxin" tabindex="0" role="button" aria-label="腎臟：淨水廠與尿毒素">
+                  <path d="M162,326 C146,328 140,350 142,368 C144,386 156,394 168,390 C174,382 174,370 178,362 C182,352 180,338 174,330 Z" fill="#9b82ff" stroke="#1f2a44" stroke-width="2.6"/>
+                  <path d="M238,334 C254,336 260,358 258,376 C256,394 244,402 232,398 C226,390 226,378 222,370 C218,360 220,346 226,338 Z" fill="#9b82ff" stroke="#1f2a44" stroke-width="2.6"/>
+                  <path d="M152,350 C158,356 162,366 160,378 M248,358 C242,364 238,374 240,386" stroke="#d6c8ff" stroke-width="2" fill="none"/>
+                </g>
+                <!-- adrenals (HPA) -->
+                <g class="st" data-s="adrenal" tabindex="0" role="button" aria-label="腎上腺：HPA 軸與壓力荷爾蒙">
+                  <path d="M152,328 C154,314 166,308 176,316 C176,322 170,328 162,330 Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="2.2"/>
+                  <path d="M248,336 C246,322 234,316 224,324 C224,330 230,336 238,338 Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="2.2"/>
+                  <circle cx="200" cy="100" r="5" fill="#ffc93c" stroke="#1f2a44" stroke-width="2"/>
+                </g>
+                <!-- glomerulus inset -->
+                <g class="st" data-s="glom" tabindex="0" role="button" aria-label="腎絲球：過濾器與 eGFR">
+                  <path d="M246,346 L318,262" stroke="#7048e8" stroke-width="1.6" stroke-dasharray="4 3"/>
+                  <circle cx="352" cy="230" r="62" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+                  <path d="M352,184 C390,186 404,226 392,256 C380,280 336,286 318,262 C302,240 310,200 334,188" fill="#efe8ff" stroke="#7048e8" stroke-width="2.6"/>
+                  <g fill="none" stroke="#e5484d" stroke-width="3" stroke-linecap="round"><path d="M340,214 c8-10 20-4 18 6 c-2 10 12 12 14 2 c2-8 12-6 12 4 c0 10-12 14-18 10 c-6 8-20 8-22-2 c-8 2-12-10-4-20z"/></g>
+                  <path d="M318,262 C300,276 292,290 296,304" stroke="#7048e8" stroke-width="3" fill="none"/>
+                  <path d="M330,190 L316,176 M346,186 L340,170" stroke="#e5484d" stroke-width="3" stroke-linecap="round"/>
+                  <text x="352" y="312" text-anchor="middle" font-size="12" fill="#4a5674">腎絲球（放大）</text>
+                </g>
+                <!-- dialysis & meds -->
+                <g class="st" data-s="dialysis" tabindex="0" role="button" aria-label="透析與用藥">
+                  <rect x="322" y="470" width="62" height="86" rx="10" fill="#e0f4ff" stroke="#1f2a44" stroke-width="2.6"/>
+                  <rect x="332" y="482" width="42" height="22" rx="4" fill="#fff" stroke="#1f2a44" stroke-width="2"/>
+                  <path d="M336,494 h6 l3,-6 4,12 3,-6 h8" stroke="#2bb88a" stroke-width="2" fill="none"/>
+                  <circle cx="342" cy="530" r="7" fill="#9b82ff" stroke="#1f2a44" stroke-width="2"/><circle cx="364" cy="530" r="7" fill="#ff6b6b" stroke="#1f2a44" stroke-width="2"/>
+                  <path d="M322,520 C300,520 290,500 300,470" stroke="#e5484d" stroke-width="2.4" fill="none" stroke-dasharray="4 3"/>
+                  <rect x="388" y="520" width="34" height="18" rx="9" fill="#ffc93c" stroke="#1f2a44" stroke-width="2"/><path d="M405,520 v18" stroke="#1f2a44" stroke-width="2"/>
+                  <text x="364" y="574" text-anchor="middle" font-size="12" fill="#4a5674">透析・藥物</text>
+                </g>
+                <!-- brain (back view outline inside head) -->
+                <g class="st" data-s="hub" tabindex="0" role="button" aria-label="大腦：腎腦軸總機">
+                  <path d="M200,40 C186,38 174,44 170,54 C162,56 158,66 162,74 C160,82 166,90 176,90 C182,96 192,96 200,92 C208,96 218,96 224,90 C234,90 240,82 238,74 C242,66 238,56 230,54 C226,44 214,38 200,40 Z" fill="#ffb3cf" fill-opacity=".92" stroke="#1f2a44" stroke-width="2.4"/>
+                  <path d="M200,42 L200,92 M180,56 C188,60 188,68 182,72 M220,56 C212,60 212,68 218,72" stroke="#c94f80" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                </g>
+              </g>
+              <g id="lblL"></g>
+              <g id="merL"></g>
+              <g id="routeL"></g>
+              <g id="ptL"></g>
+            </svg>
+            <div class="tip" id="tip"></div>
+          </div>
+          <div class="chips" id="chips"></div>
+          <div class="passport"><span id="ppT">探險章 0 / 8</span><span class="bar"><i id="ppB"></i></span></div>
+        </div>
+        <article class="card panel" id="panel" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section class="blk tint" id="practice" style="background:linear-gradient(160deg,var(--grape-l),var(--sky-l))" aria-labelledby="prh">
+      <div class="sechead"><div class="num" style="background:var(--grape)">3</div><div><p class="eyebrow">LET'S PRACTICE</p><h2 id="prh">跟著做：看懂 eGFR、換低鈉、記錄身體</h2><p class="sub">已確診慢性腎臟病、洗腎、高血鉀或需要限水的人，飲食與水分請依腎臟科醫師和營養師的個別建議。</p></div></div>
+      <div class="prac two">
+        <div class="card pcard" style="--cl:var(--grape-l)">
+          <h3>eGFR 和認知障礙盛行率</h3>
+          <div class="stage"><div style="width:100%"><div class="syll" id="gN" style="font-size:2.6rem">75</div><div class="syl-sub">eGFR（mL/min/1.73 m²）</div><input type="range" id="gIn" min="5" max="120" value="75" aria-label="eGFR" style="width:100%;accent-color:#8a5cf6;margin-top:8px"><div id="gBar" style="height:22px;border:2.5px solid #1f2a44;border-radius:99px;margin-top:10px;overflow:hidden;background:#fff"><i style="display:block;height:100%;width:10%;background:repeating-linear-gradient(45deg,#8a5cf6 0 8px,#b99cff 8px 16px);transition:width .3s"></i></div><div id="gMsg" style="font-weight:900;margin-top:8px"></div></div></div>
+          <p class="small">數字來自 17 篇研究、32,141 人的統合分析，是族群的盛行率，不是個人的機率。你的 eGFR 請以抽血報告為準。</p>
+        </div>
+        <div class="card pcard" style="--cl:var(--mint-l)">
+          <h3>低鈉換一換 <span class="lv" data-l="原">原稿建議</span></h3>
+          <div class="stage" aria-live="polite"><div style="width:100%" id="nStage"></div></div>
+          <div class="row"><span class="small" id="nScore"></span><button class="btn sm" id="nRe">重新開始</button></div>
+          <p class="small">選出比較適合護腎的一項。重點是少加工、少醃漬、少濃湯，用天然香料取代重口味醬料。</p>
+        </div>
+        <div class="card pcard" style="--cl:var(--sky-l)">
+          <h3>居家健康紀錄 <span class="lv" data-l="原">原稿建議</span></h3>
+          <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px">
+            <label class="small">收縮壓<br><input type="number" id="rSys" min="60" max="250" style="font:inherit;width:100%;border:2.5px solid #1f2a44;border-radius:10px;padding:2px 8px"></label>
+            <label class="small">舒張壓<br><input type="number" id="rDia" min="30" max="150" style="font:inherit;width:100%;border:2.5px solid #1f2a44;border-radius:10px;padding:2px 8px"></label>
+            <label class="small">體重（公斤）<br><input type="number" id="rW" min="20" max="250" step="0.1" style="font:inherit;width:100%;border:2.5px solid #1f2a44;border-radius:10px;padding:2px 8px"></label>
+            <label class="small">浮腫<br><select id="rE" style="font:inherit;width:100%;border:2.5px solid #1f2a44;border-radius:10px;padding:2px 8px"><option>沒有</option><option>有一點</option><option>明顯</option></select></label>
+            <label class="small" style="grid-column:1/-1">尿量<br><select id="rU" style="font:inherit;width:100%;border:2.5px solid #1f2a44;border-radius:10px;padding:2px 8px"><option>和平常差不多</option><option>變少</option><option>變多</option></select></label>
+          </div>
+          <div class="row"><button class="btn sm sun" id="rSave">記下今天</button><button class="btn sm" id="rClear">清除全部</button></div>
+          <div id="rTable" class="small" style="overflow-x:auto"></div>
+          <p class="small">紀錄只存在你自己的瀏覽器，回診時給醫師看。血壓目標值請依醫師建議。</p>
+        </div>
+        <div class="card pcard" style="--cl:var(--sun-l)">
+          <h3>回診用藥與檢查清單 <span class="lv" data-l="原">原稿建議</span></h3>
+          <div class="checks" id="docCk" style="grid-template-columns:1fr"></div>
+          <p class="small">想問的打勾，回診時拿出來看。勾選只存在你自己的瀏覽器。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="blk" aria-labelledby="dayh">
+      <div class="sechead"><div class="num" style="background:var(--mint-l)">4</div><div><p class="eyebrow">ONE DAY ROUTINE</p><h2 id="dayh">腎腦軸保護的一天 <span class="lv" data-l="原">原稿建議</span></h2><p class="sub">適用一般中高齡、輕度腎功能異常或有三高風險的人；已確診 CKD、洗腎、高血鉀或有液體限制者，請由醫師與營養師個別調整。</p></div></div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="blk tint" style="background:linear-gradient(160deg,var(--coral-l),#fff)" aria-labelledby="ckh">
+      <div class="sechead"><div class="num" style="background:var(--coral)">5</div><div><p class="eyebrow">FAMILY CHECK</p><h2 id="ckh">家屬觀察清單</h2><p class="sub">這不是診斷工具，勾選結果也不會儲存。符合的項目記錄下來，帶去和醫師討論。</p></div></div>
+      <div class="checks" id="checks"></div>
+      <div class="row" style="margin-top:12px"><div class="prog" style="flex:1"><i id="ckBar"></i></div><b id="ckN">0 / 8</b></div>
+      <p id="ckMsg" class="small" style="margin-top:6px"></p>
+      <div class="red" style="margin-top:14px"><strong>這些情況請盡快就醫</strong><ul>
+        <li>突發單側無力、口齒不清、臉歪、劇烈頭痛或意識混亂：立即撥 119，排除腦中風。</li>
+        <li>明顯水腫、尿量突然變少、持續噁心食慾差、嚴重疲倦或呼吸喘：儘速評估腎功能與體液狀態。</li>
+        <li>記憶、注意力或做事能力持續下降、已影響日常生活。</li>
+      </ul></div>
+    </section>
+
+    <section class="blk" id="compare" aria-labelledby="cmh">
+      <div class="sechead"><div class="num" style="background:var(--grape-l)">6</div><div><p class="eyebrow">EAST MEETS WEST</p><h2 id="cmh">現代研究 × 中醫經絡對照表</h2><p class="sub">中醫的「腎」範圍比解剖學的腎臟大，涵蓋生長、生殖、骨骼與部分內分泌功能。點任一列，可以回到地圖看那一站的中醫分頁。</p></div></div>
+      <div class="tblwrap"><table class="cmp" id="cmp"></table></div>
+    </section>
+
+    <section class="blk" id="challenge" aria-labelledby="chh">
+      <div class="sechead"><div class="num" style="background:var(--sun)">7</div><div><p class="eyebrow">QUIZ</p><h2 id="chh">腎腦軸小挑戰</h2><p class="sub">從題庫隨機抽 6 題，每題作答後馬上看解說。</p></div></div>
+      <div class="chal"><div class="card cbox" id="cbox"></div><aside class="card cside" id="cside"></aside></div>
+    </section>
+
+    <section class="blk refs" id="refs" aria-labelledby="rfh">
+      <div class="sechead"><div class="num" style="background:var(--sky-l)">8</div><div><p class="eyebrow">REFERENCES</p><h2 id="rfh">參考資料</h2><p class="sub">學術文獻已用 PubMed 與出版社頁面核對題名、期刊、年份與 DOI；中醫原文引自《黃帝內經》《難經》（維基文庫），穴位定位依 WHO 西太平洋區標準。</p></div></div>
+      <div id="refList"></div>
+    </section>
+
+    <section class="blk" aria-labelledby="dch">
+      <div class="disc"><div class="in">
+        <h2 id="dch">⚠ 重要聲明｜請先看這裡</h2>
+        <p class="first">本站資訊僅供參考，實際以醫療專業人員評估為準。</p>
+        <ul>
+          <li><b>僅供參考：</b>本頁為一般健康教育，不構成醫療建議，不能取代腎臟科、神經科醫師、營養師或中醫師的個別評估與治療。</li>
+          <li><b>飲食與水分：</b>蛋白質、鉀、磷與水分攝取須依腎功能分期與是否透析個別調整；不要自行限水或大量補水。</li>
+          <li><b>用藥：</b>腎功能不佳者使用任何藥物（含中草藥與保健食品）前，請先告知醫師，評估劑量。</li>
+          <li><b>無任何推薦或行銷：</b>本頁未推薦任何藥物、保健食品或療法。</li>
+          <li><b>資料時點：</b>內容整理於 2026-10-14，研究持續更新，請留意最新資訊。</li>
+          <li><b>使用前查證：</b>文中標示「原稿整理」的內容，引用前請再確認出處。</li>
+        </ul>
+        <p style="margin-top:10px;font-weight:700">緊急狀況（突發單側無力、口齒不清、意識混亂、嚴重喘）請撥 119。情緒壓力很大時，可撥 1925 安心專線。</p>
+      </div></div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="trio"><svg aria-hidden="true"><use href="#sprout"/></svg><svg aria-hidden="true"><use href="#bird"/></svg><svg aria-hidden="true"><use href="#star"/></svg></div>
+    <p class="gold">每一次多懂一點，都是送給自己的小禮物。</p>
+    <p class="slogan">本站資訊僅供參考，實際以醫療專業人員評估為準</p>
+    <p><a href="../index.html">← 返回探險基地</a></p>
+    <small>共好小學堂 ✦ 一起學習，一起共好｜本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-10-14</small>
+  </div>
+</footer>
+<button id="toTop" aria-label="回到頂端" hidden>↑</button>
+
+<script>
+(function(){
+"use strict";
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const INK="#1f2a44";
+let v="";for(let y=130;y<=462;y+=13)v+=`<rect x="193" y="${y}" width="14" height="10" rx="3"/>`;$("#vert").innerHTML=v;
+
+function face(cx,cy,s){s=s||1;return `<circle cx="${cx-9*s}" cy="${cy}" r="${4.2*s}" fill="${INK}"/><circle cx="${cx+9*s}" cy="${cy}" r="${4.2*s}" fill="${INK}"/><circle cx="${cx-7.8*s}" cy="${cy-1.4*s}" r="${1.4*s}" fill="#fff"/><circle cx="${cx+10.2*s}" cy="${cy-1.4*s}" r="${1.4*s}" fill="#fff"/><ellipse cx="${cx-17*s}" cy="${cy+8*s}" rx="${5.5*s}" ry="${3.2*s}" fill="#ff9aa2" opacity=".8"/><ellipse cx="${cx+17*s}" cy="${cy+8*s}" rx="${5.5*s}" ry="${3.2*s}" fill="#ff9aa2" opacity=".8"/><path d="M${cx-6*s} ${cy+9*s} Q${cx} ${cy+15*s} ${cx+6*s} ${cy+9*s}" stroke="${INK}" stroke-width="${2.8*s}" fill="none" stroke-linecap="round"/>`}
+const SW=`stroke="${INK}" stroke-width="3" stroke-linejoin="round"`;
+const BEAN=f=>`<path d="M56 10c20 0 32 18 32 40s-12 40-32 40c-14 0-22-8-22-18 0-8 8-12 8-22s-8-14-8-22c0-10 8-18 22-18z" fill="${f}" ${SW}/>`;
+const M={
+ hub:()=>`<path d="M50 12c-10 0-16 6-18 12-8 0-15 7-15 15 0 4 2 8 5 10-2 3-3 6-2 10 1 8 8 13 16 13 3 6 9 9 14 9s11-3 14-9c8 0 15-5 16-13 1-4 0-7-2-10 3-2 5-6 5-10 0-8-7-15-15-15-2-6-8-12-18-12z" fill="#ffb3cf" ${SW}/><path d="M50 14v14M34 28c6 2 8 8 6 12M66 28c-6 2-8 8-6 12" stroke="#c94f80" stroke-width="2.2" fill="none" stroke-linecap="round"/>`+face(50,56,.9),
+ toxin:()=>BEAN("#9b82ff")+`<g fill="#8a6b2e"><circle cx="16" cy="30" r="4"/><circle cx="10" cy="50" r="3"/><circle cx="18" cy="70" r="3.5"/></g>`+face(62,50,.8),
+ glom:()=>`<circle cx="50" cy="52" r="38" fill="#efe8ff" ${SW}/><path d="M34 46c8-12 22-4 20 6-2 12 14 14 16 2 2-10 14-8 14 4 0 12-14 18-22 12-8 10-24 10-26-2-10 2-14-12-2-22z" fill="none" stroke="#e5484d" stroke-width="4" stroke-linecap="round"/>`+face(50,56,.7),
+ vessel:()=>`<path d="M14 64c10-30 26-44 36-44s26 14 36 44" stroke="#e5484d" stroke-width="14" fill="none" stroke-linecap="round"/><circle cx="50" cy="62" r="24" fill="#ff8a8a" ${SW}/>`+face(50,60,.75),
+ adrenal:()=>`<path d="M14 70C16 34 38 18 50 18s34 16 36 52c-10 10-62 10-72 0z" fill="#ffc93c" ${SW}/><path d="M38 26l-6-12M62 26l6-12" stroke="${INK}" stroke-width="3" stroke-linecap="round"/>`+face(50,50,.8),
+ nerve:()=>`<path d="M58 6L22 56h24l-8 38 40-54H54z" fill="#ffc93c" ${SW}/>`+face(50,50,.75),
+ gut:()=>`<rect x="40" y="6" width="12" height="20" rx="6" fill="#ffb36b" ${SW}/><ellipse cx="50" cy="58" rx="36" ry="30" fill="#ffb36b" ${SW}/><path d="M26 80c8 8 16 0 24 6s16 0 24-6" stroke="${INK}" stroke-width="2.6" fill="none" stroke-linecap="round"/>`+face(50,54,.85),
+ dialysis:()=>`<rect x="18" y="12" width="64" height="80" rx="12" fill="#e0f4ff" ${SW}/><rect x="28" y="22" width="44" height="22" rx="5" fill="#fff" stroke="${INK}" stroke-width="2.4"/><path d="M32 33h8l4-8 5 16 4-8h12" stroke="#2bb88a" stroke-width="2.6" fill="none"/>`+face(50,64,.75),
+ bladder:()=>`<path d="M50 14c20 0 34 16 34 38S70 90 50 90 16 74 16 52s14-38 34-38z" fill="#cfe9f7" ${SW}/><path d="M30 20L20 6M70 20l10-14" stroke="#7fb2cf" stroke-width="4" stroke-linecap="round"/>`+face(50,54,.85)
+};
+const masc=(k,cls)=>`<svg viewBox="0 0 100 100" class="${cls||""}" aria-hidden="true">${M[k]()}</svg>`;
+$("#heroArt").innerHTML=`<ellipse cx="260" cy="350" rx="230" ry="34" fill="#dcf7ec" stroke="${INK}" stroke-width="3"/>
+<g class="float2"><path d="M70 60c-6 12-18 20-18 32 0 10 8 16 18 16s18-6 18-16c0-12-12-20-18-32z" fill="#9fd9f7" stroke="${INK}" stroke-width="2.5"/></g>
+<g class="float"><rect x="40" y="128" width="40" height="30" rx="8" fill="#fff" stroke="${INK}" stroke-width="2.5"/><text x="60" y="149" text-anchor="middle" font-size="14" font-weight="900" fill="#e8494d">鹽↓</text></g>
+<g class="float2"><path d="M110 160 l10 -16 l10 16 l-10 16 z" fill="#ffc93c" stroke="${INK}" stroke-width="2.5"/></g>
+<g transform="translate(36,190) scale(1.15)"><use href="#sprout" width="120" height="130"/></g>
+<g transform="translate(176,150) scale(1.7)"><svg width="100" height="100" viewBox="0 0 100 100">${M.toxin()}</svg></g>
+<g transform="translate(340,210) scale(1.05)"><use href="#bird" width="120" height="110"/></g>
+<g class="float" transform="translate(438,96)"><use href="#star" width="64" height="64"/></g>
+<g transform="translate(135,20)"><rect width="280" height="56" rx="20" fill="#fff" stroke="${INK}" stroke-width="3"/><path d="M120 56 l14 18 l8 -18" fill="#fff" stroke="${INK}" stroke-width="3" stroke-linejoin="round"/><rect x="118" y="50" width="30" height="8" fill="#fff"/><text x="140" y="36" text-anchor="middle" font-family="Huninn,Noto Sans TC,sans-serif" font-size="19" fill="${INK}">少鹽多走路，腎腦都輕鬆！</text></g>`;
+
+/* ---------- references ---------- */
+const REFS=[
+ {t:"The relationship between kidney health and neurodegenerative diseases.",a:"Zuo M, et al. Brain. 2025;148(8):2616-2630.",d:"10.1093/brain/awaf113",u:"https://academic.oup.com/brain/article/148/8/2616/8090446",one:"回顧：腎臟健康與神經退化的證據仍不一致；有研究發現 CKD 或較低 eGFR 與失智、阿茲海默症、帕金森氏症相關，也有研究沒有找到關聯。"},
+ {t:"Health outcomes in chronic kidney disease patients with cognitive impairment or dementia: a global collaborative analysis.",a:"Merlino L, et al. Clin Kidney J. 2025;18(1):sfae401.",d:"10.1093/ckj/sfae401",u:"https://pubmed.ncbi.nlm.nih.gov/39866298/",one:"真實世界世代研究（配對後各 8,170 人）：合併認知障礙的 CKD 患者，全死因死亡率較高（18.5% vs 12.6%），腦血管疾病（11.3% vs 6.9%）、營養不良、肺炎、情緒障礙等也較多。"},
+ {t:"Care pathways for patients with cognitive impairment and chronic kidney disease.",a:"Pépin M, et al.; CONNECT Action. Nephrol Dial Transplant. 2025;40(Suppl 2):ii28-ii36.",d:"10.1093/ndt/gfae264",u:"https://academic.oup.com/ndt/article/40/Supplement_2/ii28/8074948",one:"敘述性回顧：CKD 與認知障礙互相影響；認知障礙可能延誤 CKD 照護、減少接受腎臟替代治療的機會。建議腎臟科、老年科、神經科共同照護與早期認知篩檢。"},
+ {t:"Cognitive impairment in chronic kidney disease: mechanisms, clinical manifestations, and management strategies.",a:"Cozza M, Boccardi V. Metab Brain Dis. 2025;40(8):312.",d:"10.1007/s11011-025-01735-2",u:"https://pubmed.ncbi.nlm.nih.gov/41201682/",one:"回顧：腦與腎有相似的微血管結構。兩種機制：共同危險因子（高血壓、糖尿病、發炎）同時傷害腎與腦小血管；以及腎功能不良本身與透析帶來的尿毒素、血腦屏障改變、貧血缺氧、礦物質失衡與血流動力壓力。"},
+ {t:"Uremic Toxins, CKD, and Cognitive Dysfunction.",a:"Andrews TD, et al. J Am Soc Nephrol. 2025;36(6):1208-1226.",d:"10.1681/ASN.0000000675",u:"https://pubmed.ncbi.nlm.nih.gov/40009460/",one:"回顧：CKD 患者認知障礙比例約 20–70%，透析患者是同齡者的兩倍；尿毒素造成腦部氧化壓力、神經發炎與血腦屏障失能（多為細胞與動物模型）；運動、腎移植等介入仍在研究。"},
+ {t:"Chronic Kidney disease and cognitive frailty in aging: molecular crosstalk and clinical implications.",a:"Cao Y, et al. Front Aging Neurosci. 2026;18:1778574.",d:"10.3389/fnagi.2026.1778574",u:"https://pubmed.ncbi.nlm.nih.gov/42038696/",one:"回顧：CKD 與認知衰弱的分子路徑包括發炎、氧化壓力、血管功能異常、荷爾蒙失調與腸—腎—腦軸；正在研究的策略包括 SGLT2 抑制劑、菌相調節與結構化運動。"},
+ {t:"Genetic and circulating biomarkers of cognitive dysfunction and dementia in CKD.",a:"Zoccali C, et al. Nephrol Dial Transplant. 2025;40(Suppl 2):ii64-ii75.",d:"10.1093/ndt/gfae259",u:"https://pubmed.ncbi.nlm.nih.gov/40080085/",one:"回顧：eGFR 快速下降與認知惡化、血管性失智相關；輕中度 eGFR 下降與長者執行功能較差相關；尿毒素、腸道菌、發炎等生物標記與失智有關，但因果仍不清楚。"},
+ {t:"Global trends in chronic kidney disease related cognitive impairment/dementia: a bibliometric analysis (2005-2025).",a:"Sun N, et al. Front Neurol. 2026;17:1739096.",d:"10.3389/fneur.2026.1739096",u:"https://pubmed.ncbi.nlm.nih.gov/42239683/",one:"文獻計量分析 7,971 篇：研究焦點從透析與存活，轉向認知健康、生活品質與以病人為中心的照護。"},
+ {t:"Kidney function and cognitive impairment: a systematic review and meta-analysis.",a:"Pei X, et al. Ren Fail. 2025;47(1):2463565.",d:"10.1080/0886022X.2025.2463565",u:"https://pubmed.ncbi.nlm.nih.gov/40037396/",one:"17 篇研究、32,141 人：認知障礙盛行率隨腎功能下降而上升——eGFR ≥60 約 10%、30–60 約 47.3%、<30 約 60.6%；第二型糖尿病、心血管病、腦血管病、教育程度較低是較強的危險因子。"},
+ {t:"Cognitive impairment in chronic kidney disease: role of brain imaging, functional imaging, electroencephalography, cerebrospinal fluid biomarkers and sensors.",a:"Andrade A, et al. Nephrol Dial Transplant. 2025;40(Suppl 2):ii18-ii27.",d:"10.1093/ndt/gfae256",u:"https://pubmed.ncbi.nlm.nih.gov/40080092/",one:"回顧：整理腦影像、腦波、腦脊髓液生物標記與感測器在評估 CKD 認知障礙上的用途與限制。"},
+ {t:"CONNECT: what has been done and what needs to be done.",a:"Capasso G, Unwin RJ, et al. Nephrol Dial Transplant. 2025;40(Suppl 2):ii1-ii3.",d:"10.1093/ndt/gfae248",u:"https://pubmed.ncbi.nlm.nih.gov/40080087/",one:"歐洲 CONNECT 腎—腦研究網絡的專刊導言，整理已完成與待完成的研究方向。"},
+ {t:"Research advances on acute kidney injury and brain dysfunction.",a:"Li M, et al. Front Nephrol. 2026;6:1867473.",d:"10.3389/fneph.2026.1867473",u:"https://pubmed.ncbi.nlm.nih.gov/42564073/",one:"回顧：急性腎損傷可能引發譫妄、昏迷、中風，也提高日後慢性認知障礙、失智與憂鬱的風險；機制包括全身發炎、氧化壓力、海馬迴神經損傷、尿毒素累積與胰島素阻抗。"}
+];
+const TREFS=[
+ ["《黃帝內經》全文（素問、靈樞），維基文庫","https://zh.wikisource.org/wiki/黃帝內經"],
+ ["《黃帝內經·素問》第七卷：宣明五氣篇，維基文庫","https://zh.wikisource.org/wiki/黃帝內經/素問第七卷"],
+ ["《難經》（二十八難：督脈），維基文庫","https://zh.wikisource.org/wiki/難經"],
+ ["Lim S. WHO Standard Acupuncture Point Locations. Evid Based Complement Alternat Med. 2010;7(2):167–168","https://pmc.ncbi.nlm.nih.gov/articles/PMC2862941/"],
+ ["NCCIH. Acupuncture: Effectiveness and Safety","https://www.nccih.nih.gov/health/acupuncture-what-you-need-to-know"]
+];
+function src(list){return (list||[]).map(r=>typeof r==="number"?`<a class="src" href="#ref${r}">參考 ${r}</a>`:`<a class="src" href="#tref${r.slice(1)}">典 ${r.slice(1)}</a>`).join("")}
+
+/* ---------- acupoints & meridians (back view) ---------- */
+const PTS={
+ GV20:{n:"百會",m:"督脈",xy:[200,26],loc:"頭頂正中線上，前髮際正中直上 5 寸。",how:"指腹輕揉 1 分鐘，配合慢慢深呼吸。",use:"傳統用於頭暈、健忘、精神不振。",warn:"頭部有傷口或術後不要按。"},
+ GV4:{n:"命門",m:"督脈",xy:[200,372],loc:"腰部，後正中線上，第 2 腰椎棘突下凹陷。",how:"雙手搓熱後掌心貼住後腰，輕揉或熱敷 5–10 分鐘。",use:"傳統用於腰膝痠軟、手腳冰冷。",warn:"腰椎急性疼痛、骨折或皮膚破損時不要做。"},
+ BL23:{n:"腎俞",m:"足太陽膀胱經",xy:[178,372],loc:"腰部，第 2 腰椎棘突下，後正中線旁開 1.5 寸。",how:"雙手握拳，用拳背上下輕摩至溫熱。",use:"腎的背俞穴，傳統用於腰痠、耳鳴、夜尿。",warn:"不要用力捶打腰部。"},
+ BL52:{n:"志室",m:"足太陽膀胱經",xy:[150,372],loc:"腰部，第 2 腰椎棘突下，後正中線旁開 3 寸。",how:"雙手叉腰，拇指在後輕揉 1 分鐘。",use:"名稱取自「腎藏志」，傳統用於腰痛、精神疲憊。",warn:"不要用力壓在腎臟位置。"},
+ BL20:{n:"脾俞",m:"足太陽膀胱經",xy:[178,330],loc:"背部，第 11 胸椎棘突下，後正中線旁開 1.5 寸。",how:"請家人用掌根輕揉，或熱敷 10 分鐘。",use:"脾的背俞穴，傳統用於腹脹、食慾差。",warn:"背部有傷口時避免。"},
+ KI3:{n:"太谿",m:"足少陰腎經",xy:[186,752],loc:"足內側，內踝尖與跟腱之間的凹陷。",how:"拇指輕揉 1 分鐘。",use:"腎經原穴，傳統用於腰膝痠軟、耳鳴、失眠。",warn:"腳踝扭傷急性期避免。"},
+ KI7:{n:"復溜",m:"足少陰腎經",xy:[188,724],loc:"小腿內側，內踝尖上 2 寸，跟腱前緣。",how:"拇指輕揉 1 分鐘。",use:"傳統用於水腫、盜汗、腿腳無力。",warn:"水腫明顯時先就醫評估，不要以按壓代替治療。"}
+};
+const MER={
+ bl:{n:"足太陽膀胱經",p:[[186,120],[180,200],[178,300],[178,372],[178,440],[172,500],[166,600],[164,690],[160,750]]},
+ bl2:{n:"足太陽膀胱經（外側線）",p:[[176,170],[156,240],[150,320],[150,372],[154,440]]},
+ du:{n:"督脈",p:[[200,470],[200,372],[200,200],[200,110],[200,26]]},
+ ki:{n:"足少陰腎經",p:[[186,752],[188,724],[190,660],[192,600],[196,520]]}
+};
+
+/* ---------- stations ---------- */
+const ORDER=["glom","toxin","vessel","adrenal","nerve","gut","dialysis","bladder"];
+const COL={hub:["var(--blue)","var(--blue-l)"],glom:["var(--grape)","var(--grape-l)"],toxin:["var(--orange)","var(--orange-l)"],vessel:["var(--coral)","var(--coral-l)"],adrenal:["var(--sun)","var(--sun-l)"],nerve:["var(--mint)","var(--mint-l)"],gut:["var(--rose)","var(--rose-l)"],dialysis:["var(--sky)","var(--sky-l)"],bladder:["var(--sky)","var(--sky-l)"]};
+const HEX={hub:"#2455c7",glom:"#7048e8",toxin:"#ea7d12",vessel:"#e8494d",adrenal:"#c28a00",nerve:"#1f9e75",gut:"#d6336c",dialysis:"#1e90d6",bladder:"#1e7fb3"};
+const S={
+hub:{name:"大腦總機",en:"BRAIN HUB",hook:"淨水廠出問題，最精密的實驗室最先受影響。",mers:["du"],pts:["GV20"]},
+glom:{name:"腎絲球",en:"GLOMERULUS",hook:"每顆腎臟約有上百萬個小過濾器，eGFR 就是它們的工作效率。",
+ route:[[300,300],[262,340],[232,360]],rlabel:"放大自腎臟",
+ meta:"腎絲球是一團微血管纏成的<b>小濾網</b>，血液流過時把廢物和多餘水分濾出來。<b>eGFR</b>（估算腎絲球過濾率）代表濾網的工作效率；<b>尿白蛋白</b>則代表濾網有沒有破洞。",
+ paths:[["eGFR","數字越低，過濾效率越差。"],["尿白蛋白（ACR）","濾網受損時，蛋白質會漏到尿裡。"],["和大腦的關係","eGFR 越低、蛋白尿越多，認知障礙越常見。"]],
+ ev:[["A","統合分析（17 篇研究、32,141 人）：認知障礙盛行率隨腎功能下降而上升——eGFR ≥60 約 10%、30–60 約 47.3%、<30 約 60.6%。",[9]],
+     ["B","eGFR 快速下降與認知惡化、血管性失智相關；輕中度 eGFR 下降與長者執行功能較差相關；蛋白尿、胱抑素 C 也與認知有關。",[7]],
+     ["原","高血壓、糖尿病、家族腎病史或中高齡者，可和醫療團隊討論定期檢查血肌酸酐、eGFR 與尿白蛋白／肌酸酐比值（ACR）。",[]]],
+ tcm:{view:"中醫說腎是「封藏之本」，負責把身體的精華好好收藏；腎精足，骨髓與腦髓才充足。現代的「濾網保住好東西、排出廢物」，和這個概念有幾分相似。",
+  quotes:[["腎者，主蟄，封藏之本，精之處也，其華在髮，其充在骨。","《素問·六節藏象論》","T1"]],
+  mers:["bl","ki"],pts:["BL23","KI3"],bridge:"「封藏」與「過濾」說的是同一件事的兩面：保住該留的、排出該排的。腎俞、太谿可當放鬆保健，但腎功能要靠抽血驗尿才看得出來。"},
+ tips:["高風險族群定期驗 eGFR 與尿白蛋白／肌酸酐比值（ACR）","依醫囑控制血壓、血糖、血脂","必要時做認知篩檢（如 MMSE、MoCA）"],
+ red:["持續泡泡尿、水腫","尿量突然變少"],
+ quiz:[["統合分析中，eGFR 低於 30 的人，認知障礙盛行率大約是？",["約 60%","約 1%","約 10%","約 100%"],0,"eGFR ≥60 約 10%、30–60 約 47%、<30 約 61%。"],
+       ["下列哪一項是評估腎絲球「濾網有沒有破洞」的檢查？",["尿白蛋白／肌酸酐比值（ACR）","骨密度","眼壓","心電圖"],0,"蛋白質漏到尿裡，代表腎絲球受損。"]]},
+toxin:{name:"腎臟與尿毒素",en:"UREMIC TOXINS",hook:"淨水廠效率變差，汙水就可能回流到大腦。",
+ route:[[232,362],[214,300],[204,200],[200,70]],rlabel:"尿毒素經血液→血腦屏障",
+ meta:"腎功能下降時，代謝廢物（如 indoxyl sulfate、p-cresyl sulfate 等<b>尿毒素</b>）排不出去，在血液裡累積。研究發現，它們可能穿透或破壞<b>血腦屏障</b>，帶來氧化壓力和神經發炎。",
+ paths:[["累積","腎功能下降，尿毒素排不掉。"],["穿過屏障","可能破壞血腦屏障、降低腦部灌流。"],["神經毒性","氧化壓力、內皮功能異常與神經發炎。"]],
+ ev:[["B","CKD 患者的認知障礙比例約 20–70%，透析患者是同齡者的兩倍。",[5]],
+     ["C","尿毒素造成腦部氧化壓力、神經發炎與血腦屏障失能，多來自細胞與動物模型。",[5]],
+     ["B","Brain 期刊回顧：腎臟健康與神經退化（失智、帕金森氏症）的關聯，研究結果並不一致。",[1]],
+     ["C","吸附尿毒素的藥物、運動、腎移植等介入，對認知的效果仍在研究中。",[5]]],
+ tcm:{view:"中醫說「腎者水藏，主津液」，腎負責全身水液的代謝。水液代謝出問題，古人看到的是水腫、尿少；現代看到的是廢物與尿毒素累積。",
+  quotes:[["腎者水藏，主津液。","《素問·逆調論》","T1"]],
+  mers:["bl","du"],pts:["BL23","GV4"],bridge:"「腎主水」對應現代的腎臟排水排廢功能。但要注意：腎功能不好時，任何草藥或偏方都可能加重腎臟負擔，使用前一定要告訴醫師。"},
+ tips:["依醫囑控制血壓、血糖","減少加工食品與高鈉飲食","用藥（含中草藥）先請醫師評估腎功能劑量"],
+ red:["持續噁心、食慾差、嚴重疲倦","意識混亂"],
+ quiz:[["下列何者是常被研究的尿毒素？",["indoxyl sulfate（硫酸吲哚酚）","維生素 C","鈣","膽固醇"],0,"indoxyl sulfate 與 p-cresyl sulfate 是常見的研究對象。"],
+       ["透析患者的認知障礙盛行率大約是同齡者的？",["兩倍","一半","相同","十分之一"],0,"JASN 回顧整理：透析患者約為同齡者的兩倍。"]]},
+vessel:{name:"血管",en:"SHARED MICROVESSELS",hook:"腎絲球和腦小血管是「表兄弟」，三高一來兩邊都受傷。",
+ route:[[206,300],[206,200],[214,120],[204,70]],rlabel:"共同的小血管",
+ meta:"腎絲球和大腦的小血管，結構和生理上都很像，對<b>高血壓、糖尿病、發炎</b>同樣脆弱。所以腎臟出問題時，大腦的小血管往往也正在受傷，這叫「共同原因」；腎功能不好本身，又會再傷害腦血管，這叫「腎臟造成的路徑」。",
+ paths:[["共同原因","高血壓、糖尿病、發炎同時傷害腎與腦小血管。"],["腎臟造成","尿毒素、貧血缺氧、礦物質失衡、透析血流波動。"],["結果","腦白質病變、腦灌流下降、認知變差。"]],
+ ev:[["B","回顧：腦與腎有相似的微血管結構；共同危險因子同時傷害兩者，腎功能不良與其治療又會進一步造成神經血管損傷。",[4]],
+     ["A","統合分析：第二型糖尿病（OR 1.55）、心血管疾病（1.63）、腦血管疾病（1.95）與較低教育程度（2.59）是 CKD 認知障礙的較強危險因子；年紀與副甲狀腺素偏高也相關。",[9]],
+     ["原","依醫囑穩定控制血壓、血糖與血脂，可保護腎絲球與腦小血管；目標值依個別狀況訂定。",[]]],
+ tcm:{view:"中醫說「心主脈」，血脈由心推動；腎經從腳底沿著小腿內側往上走，復溜穴傳統用於水腫。古人把水液和血脈的運行放在一起看。",
+  quotes:[["心主脈，肺主皮，肝主筋，脾主肉，腎主骨。","《素問·宣明五氣》","T2"]],
+  mers:["ki"],pts:["KI7","KI3"],bridge:"中醫看「心腎相交」，現代看「心血管—腎—腦」共同的小血管。不論哪種語言，控制血壓都是第一件事。"},
+ tips:["定期量血壓並記錄","依醫囑控制血壓、血糖與血脂","每週 150 分鐘中等強度有氧＋阻力訓練（高風險者由醫療團隊調整）","戒菸"],
+ red:["突發單側無力、口齒不清、臉歪（撥 119）"],
+ quiz:[["為什麼腎臟病和大腦小血管病常一起出現？",["兩者的小血管構造相似，又有共同危險因子","腎臟長在腦裡","完全是巧合","因為喝太多水"],0,"高血壓、糖尿病、發炎會同時傷害兩邊。"],
+       ["統合分析中，下列哪一項是 CKD 認知障礙較強的危險因子？",["腦血管疾病","近視","身高","血型"],0,"腦血管疾病 OR 1.95、心血管疾病 1.63、糖尿病 1.55。"]]},
+adrenal:{name:"腎上腺（HPA 軸）",en:"STRESS HORMONES",hook:"壓力荷爾蒙長期偏高，血壓、血糖和腎臟都受影響。",
+ route:[[200,100],[214,200],[226,300],[238,332]],rlabel:"HPA 軸：皮質醇",
+ meta:"腎上腺像兩頂小帽子，戴在腎臟上方。大腦遇到壓力時，透過<b>下視丘—腦下垂體—腎上腺（HPA）軸</b>讓腎上腺分泌皮質醇。長期壓力讓這條軸一直開著，可能引發胰島素阻抗、血壓上升與慢性發炎，間接傷腎。",
+ paths:[["大腦發令","下視丘 → 腦下垂體 → 腎上腺。"],["荷爾蒙升高","皮質醇與兒茶酚胺持續偏高。"],["間接傷腎","胰島素阻抗、血壓上升、慢性發炎。"]],
+ ev:[["原","HPA 軸長期活化會提高皮質醇與兒茶酚胺，可能引發胰島素阻抗、血壓上升與慢性發炎，間接加速腎損傷。",[]],
+     ["B","荷爾蒙失調是 CKD 與認知衰弱之間的分子路徑之一。",[6]]],
+ tcm:{view:"中醫說「腎藏志」，又說「恐傷腎」。長期的驚恐、憂慮被認為會耗傷腎氣。背上的「志室」穴，名字就來自「腎藏志」。",
+  quotes:[["心藏神，肺藏魄，肝藏魂，脾藏意，腎藏志。","《素問·宣明五氣》","T2"],["恐傷腎。","《素問·陰陽應象大論》","T1"]],
+  mers:["bl2","du"],pts:["BL52","GV20"],bridge:"「恐傷腎」和「壓力→HPA 軸→腎」形成有趣的對照。照顧情緒，也是在照顧腎臟。"},
+ tips:["睡前 10 分鐘腹式呼吸、漸進式放鬆或冥想","維持規律作息，處理失眠","心理諮商、社會支持都能減少慢性壓力"],
+ red:["長期焦慮或情緒低落影響生活（1925 安心專線）"],
+ quiz:[["HPA 軸的「A」指的是哪個器官？",["腎上腺","肝臟","肺臟","骨頭"],0,"下視丘（H）—腦下垂體（P）—腎上腺（A）。"],
+       ["中醫「恐傷腎」最接近哪個現代觀念？",["長期壓力透過神經與荷爾蒙影響腎臟","害怕會讓腎臟變大","腎臟會害怕","和腎無關"],0,"現代可從壓力—自律神經—HPA 軸—血壓理解。"]]},
+nerve:{name:"交感神經",en:"SYMPATHETIC NERVES",hook:"壓力一直踩油門，腎血管也跟著縮緊。",
+ route:[[200,110],[200,250],[200,320],[232,352]],rlabel:"交感神經→腎血管收縮",
+ meta:"交感神經從脊髓延伸到腎臟。長期精神壓力、焦慮與睡眠不足，讓交感神經持續亢奮，造成<b>腎血管收縮、腎絲球內壓上升</b>，促進蛋白尿與腎功能惡化。反過來，認知下降也讓人忘記吃藥、飲食控制變差，形成惡性循環。",
+ paths:[["油門踩著","壓力、焦慮、失眠讓交感亢奮。"],["腎臟受壓","腎血管收縮、腎絲球內壓上升。"],["惡性循環","認知下降影響用藥、飲食與就醫。"]],
+ ev:[["原","長期壓力、焦慮與睡眠不足使交感神經持續亢奮，造成腎血管收縮、腎絲球內壓上升，促進蛋白尿與腎功能惡化。",[]],
+     ["B","認知障礙可能延誤 CKD 的照護，並減少接受腎臟替代治療（透析、移植）的機會。",[3]]],
+ tcm:{view:"督脈沿脊柱正中上行入腦，命門穴在第 2 腰椎下方，正好在兩顆腎臟之間。古人把「腰」看成腎之府。",
+  quotes:[["督脈者，起於下極之俞，並於脊裏，上至風府，入屬於腦。","《難經·二十八難》","T3"],["腰者，腎之府。","《素問·脈要精微論》","T1"]],
+  mers:["du"],pts:["GV4","GV20"],bridge:"督脈「沿脊入腦」，交感神經也從脊髓出發到腎臟。位置相近，但經絡與神經仍是兩套系統。"},
+ tips:["每天安排放鬆時間：呼吸訓練、正念","處理失眠與睡眠呼吸中止症","用藥盒或手機提醒，避免忘記吃藥"],
+ red:["血壓突然飆高合併頭痛、視力模糊（就醫）"],
+ quiz:[["長期交感神經亢奮對腎臟的影響是？",["腎血管收縮、腎絲球內壓上升","腎臟變大","尿變甜","完全沒影響"],0,"可能促進蛋白尿與腎功能惡化。"],
+       ["認知障礙對 CKD 照護可能造成什麼影響？",["延誤照護、減少接受腎臟替代治療的機會","讓腎功能自動恢復","不需要再看醫生","讓血壓變好"],0,"所以 CKD 患者需要早期認知篩檢與共同照護。"]]},
+gut:{name:"腸道（腸腎腦軸）",en:"GUT–KIDNEY–BRAIN AXIS",hook:"有些尿毒素的「原料」，是腸道菌做出來的。",
+ route:[[200,420],[240,330],[214,200],[200,70]],rlabel:"前驅物→肝→尿毒素→腦",
+ meta:"腸道位在腎臟的前方（圖中以虛線表示）。腸道菌失調時，會產生更多<b>尿毒素的前驅物</b>，經肝臟代謝成尿毒素，再隨血液影響大腦。所以飲食、腸道菌和腎功能，可能一起影響大腦健康。",
+ paths:[["腸道菌","菌相失調增加尿毒素前驅物。"],["肝臟加工","前驅物在肝臟變成尿毒素。"],["送到大腦","經血液循環影響大腦。"]],
+ ev:[["C","回顧：腸—腎—腦軸是 CKD 與認知衰弱之間的路徑之一；菌相調節、SGLT2 抑制劑、結構化運動等策略仍在研究。",[6]],
+     ["B","腸道菌等生物標記與 CKD 患者的失智有關，但因果關係仍不清楚。",[7]],
+     ["原","以未高度加工的原型食物為主，搭配符合腎功能限制的蔬果與纖維，有助整體代謝與腸道菌相。",[]]],
+ tcm:{view:"《內經》說「腎者，胃之關也」：腎像胃的關卡，關卡不順，水液就會積聚。古人很早就把消化與腎的排水功能連在一起。",
+  quotes:[["腎者，胃之關也，關門不利，故聚水而從其類也。","《素問·水熱穴論》","T1"]],
+  mers:["bl"],pts:["BL20","BL23"],bridge:"「腎者胃之關」和「腸道菌影響尿毒素」遙相呼應：腸胃和腎臟本來就是一條生產線上的上下游。"},
+ tips:["以原型食物為主，減少高度加工食品","依腎功能限制選擇蔬果與纖維（高血鉀、高血磷者請依營養師建議）","規律運動"],
+ red:["長期腹瀉或便秘合併體重下降"],
+ quiz:[["在腸—腎—腦軸中，部分尿毒素的前驅物來自？",["腸道菌","頭髮","骨頭","眼淚"],0,"前驅物經肝臟代謝成尿毒素，再循環到大腦。"],
+       ["《素問·水熱穴論》說「腎者，胃之關也」，提醒我們？",["消化與腎的排水功能互相關連","胃長在腎上","不用吃東西","腎負責消化"],0,"關門不利，水液就會積聚。"]]},
+dialysis:{name:"透析與用藥",en:"DIALYSIS & MEDICATION",hook:"透析救命，但血壓與體液的波動，大腦也感受得到。",
+ route:[[322,500],[270,420],[214,250],[200,70]],rlabel:"血壓體液波動→腦血流",
+ meta:"洗腎（透析）幫腎衰竭的人清除廢物和水分，但過程中的<b>血壓與體液波動</b>可能影響腦血流與做事能力。另外，腎功能不好時，有些藥物（特別是有<b>抗膽鹼或鎮靜作用</b>的）可能讓認知更差，需要請醫師檢視。",
+ paths:[["血流波動","透析中低血壓可能影響腦血流與執行功能。"],["用藥","藥物需依腎功能調整劑量。"],["急性腎損傷","也可能引起譫妄，提高日後認知問題風險。"]],
+ ev:[["B","真實世界研究：合併認知障礙的 CKD 患者，全死因死亡率較高（18.5% vs 12.6%），腦血管疾病（11.3% vs 6.9%）、肺炎、營養不良也較多。",[2]],
+     ["B","透析帶來的血流動力壓力，是 CKD 引起神經血管損傷的路徑之一。",[4]],
+     ["B","急性腎損傷可能引發譫妄、昏迷、中風，也提高日後認知障礙、失智與憂鬱的風險。",[12]],
+     ["B","腦影像、腦波與腦脊髓液生物標記可用來評估 CKD 的認知變化，但各有限制。",[10]],
+     ["原","部分具抗膽鹼或鎮靜作用的藥物可能加重認知症狀，應由醫療專業人員進行藥物檢視。",[]]],
+ tcm:{view:"《內經》說「髓海不足」會頭暈、耳鳴、眼前發黑、懶洋洋只想躺著——和透析後常見的疲倦、頭暈有些相似。中醫調理可當輔助，但透析與用藥一定要聽腎臟科醫師的。",
+  quotes:[["髓海不足，則腦轉耳鳴，脛痠眩冒，目無所見，懈怠安臥。","《靈樞·海論》","T1"]],
+  mers:["du","ki"],pts:["GV20","KI3"],bridge:"古人描述的「髓海不足」，現代可以從貧血、血壓波動、尿毒素與睡眠問題去理解。任何中藥都要先讓腎臟科醫師知道。"},
+ tips:["透析患者與腎臟科討論血壓穩定、低血壓與營養問題","帶完整用藥清單（含成藥、中草藥、保健食品）給醫師檢視","問醫師：哪些藥需要依腎功能調整劑量？","需要時做正式認知評估或轉介神經科"],
+ red:["透析中或透析後頭暈、意識改變","吃新藥後變得更混亂或嗜睡"],
+ quiz:[["哪一類藥物在腎功能不佳時，特別需要注意可能加重認知症狀？",["具抗膽鹼或鎮靜作用的藥物","維生素 C","生理食鹽水","眼藥水"],0,"請醫師或藥師做完整的藥物檢視。"],
+       ["急性腎損傷可能帶來哪些腦部問題？",["譫妄，以及日後認知障礙與失智風險上升","視力變好","頭髮變多","完全沒有影響"],0,"所以急性腎損傷後，也要留意認知變化。"]]},
+bladder:{name:"輸尿管與膀胱",en:"SELF MONITORING",hook:"尿量、泡泡、水腫，是腎臟每天寄來的明信片。",
+ meta:"腎臟做好的尿液，經輸尿管流到膀胱。<b>尿量變化、持續泡泡尿、水腫、體重快速上升</b>，都是腎臟在提醒你。在家定期記錄血壓、體重、浮腫和尿量，回診時給醫師看，是最實用的自我管理。",
+ paths:[["觀察","泡泡尿、尿量、水腫、體重。"],["記錄","血壓、體重、浮腫、尿量、用藥。"],["喝水","依口渴、運動與尿色；CKD 晚期或透析者以醫囑為準。"]],
+ ev:[["原","定期量測並記錄血壓、體重、浮腫、尿量與用藥情況。",[]],
+     ["原","無心衰或水分限制者，可依口渴、運動與尿色適當補水；CKD 晚期或透析患者的飲水量應以醫囑為準，不能一概要求每日 2,000 mL。",[]],
+     ["B","建議腎臟科、老年科、神經科共同照護，及早做認知篩檢與共同決策。",[3,11]],
+     ["B","CKD 與認知研究的焦點，已從透析存活轉向認知健康、生活品質與以病人為中心的照護。",[8]]],
+ tcm:{view:"《內經》說膀胱是「州都之官」，負責貯存津液，靠「氣化」才能排出。古人用水庫和閘門的比喻，描述膀胱與腎的合作。",
+  quotes:[["膀胱者，州都之官，津液藏焉，氣化則能出矣。","《素問·靈蘭秘典論》","T1"]],
+  mers:["bl","ki"],pts:["BL23","KI7"],bridge:"中醫說腎與膀胱相表裡，現代說腎做尿、膀胱存尿。不論哪一種，觀察尿量和水腫，都是最簡單的自我監測。"},
+ tips:["每天固定時間量血壓、體重","晚上避免大量喝水，夜尿多者尤其注意","記錄浮腫與尿量的變化","回診帶紀錄給醫師看"],
+ red:["尿量突然變少","明顯水腫、呼吸喘"],
+ quiz:[["關於腎臟病患者的喝水量，哪個說法正確？",["依腎功能與醫囑個別化","每個人都要喝 3,000 mL","越少越好","只喝茶就好"],0,"CKD 晚期或透析患者可能需要限水。"],
+       ["《素問·靈蘭秘典論》說膀胱是什麼官？",["州都之官","君主之官","將軍之官","倉廩之官"],0,"「膀胱者，州都之官，津液藏焉，氣化則能出矣。」"]]}
+};
+const HUBQ=[
+ ["中醫「腎藏精、精生髓、髓匯於腦」中，「腦為髓之海」出自？",["《靈樞·海論》","《傷寒論》","《本草綱目》","《金匱要略》"],0,"腎精不足、髓海空虛，表現為健忘、頭暈、反應慢。","hub"],
+ ["腎腦軸的「雙向」是指？",["腎病傷腦，壓力與高血壓也傷腎","只有腎影響腦","只有腦影響腎","兩者無關"],0,"尿毒素、小血管是腎→腦；壓力、交感、HPA 軸是腦→腎。","hub"]
+];
+
+/* ---------- map ---------- */
+const svg=$("#headSvg");
+const LBL=[["hub","大腦",40,60,166,62,"end"],["adrenal","腎上腺",40,300,156,318,"end"],["toxin","腎臟",40,360,144,360,"end"],["nerve","交感神經",40,240,200,240,"end"],["gut","腸道（前方）",40,420,166,420,"end"],["bladder","膀胱",40,490,182,480,"end"],
+ ["vessel","主動脈・腎動脈",250,440,208,420,"start"],["glom","腎絲球",430,190,410,206,"start"],["dialysis","透析・用藥",372,458,358,470,"start"]];
+$("#lblL").innerHTML=LBL.map(([id,t,x,y,px,py,a])=>`<g class="lblg" data-s="${id}" style="--glow:${HEX[id]}"><path class="lblline" d="M${a==="end"?x+4:x-4},${y-5} L${px},${py}"/><circle cx="${px}" cy="${py}" r="2.6" fill="${INK}"/><text class="lbl" x="${x}" y="${y}" text-anchor="${a}">${t}</text></g>`).join("");
+$("#lblL").querySelectorAll(".lblg").forEach(g=>g.addEventListener("click",()=>select(g.dataset.s,true)));
+$("#showLbl").addEventListener("change",e=>{$("#lblL").style.display=e.target.checked?"":"none"});
+function smooth(p){let d=`M${p[0][0]},${p[0][1]}`;for(let i=0;i<p.length-1;i++){const p0=p[i-1]||p[i],p1=p[i],p2=p[i+1],p3=p[i+2]||p2;d+=` C${(p1[0]+(p2[0]-p0[0])/6).toFixed(1)},${(p1[1]+(p2[1]-p0[1])/6).toFixed(1)} ${(p2[0]-(p3[0]-p1[0])/6).toFixed(1)},${(p2[1]-(p3[1]-p1[1])/6).toFixed(1)} ${p2[0]},${p2[1]}`}return d}
+const tip=$("#tip");
+svg.querySelectorAll(".st").forEach(g=>{const id=g.dataset.s;g.style.setProperty("--glow",HEX[id]);
+ g.addEventListener("click",()=>select(id,true));
+ g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(id,true)}});
+ g.addEventListener("mousemove",e=>{const r=$("#svgWrap").getBoundingClientRect();tip.textContent=g.getAttribute("aria-label");tip.style.left=(e.clientX-r.left)+"px";tip.style.top=(e.clientY-r.top)+"px";tip.style.opacity=1});
+ g.addEventListener("mouseleave",()=>tip.style.opacity=0);});
+$("#chips").innerHTML=["hub",...ORDER].map(id=>`<button class="chip" data-s="${id}" style="--cl:${COL[id][1]}" aria-pressed="false">${masc(id)}${S[id].name}<span data-st="${id}"></span></button>`).join("");
+$("#chips").querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>select(b.dataset.s,true)));
+$("#allMer").addEventListener("change",draw);
+const visited=new Set(store.get("kd_v",[]));const qdone=store.get("kd_q",{});
+function passport(){let n=0;ORDER.forEach(id=>{if(visited.has(id))n++;const e=document.querySelector(`[data-st="${id}"]`);if(e)e.textContent=qdone[id]?" ★":(visited.has(id)?" ✓":"")});$("#ppT").textContent=`探險章 ${n} / ${ORDER.length}`;$("#ppB").style.width=(n/ORDER.length*100)+"%"}
+let cur="hub",tab="learn";
+function draw(){
+ const s=S[cur],t=s.tcm||s,hot=new Set(t.mers||[]),all=$("#allMer").checked,c=HEX[cur];
+ let m="";Object.entries(MER).forEach(([k,v])=>{if(hot.has(k))m+=`<path class="mer hot" d="${smooth(v.p)}" stroke="${c}"><title>${v.n}</title></path>`;else if(all)m+=`<path class="mer all" d="${smooth(v.p)}"/>`});
+ $("#merL").innerHTML=m;
+ $("#ptL").innerHTML=(t.pts||[]).filter(k=>PTS[k].xy).map(k=>{const P=PTS[k],[x,y]=P.xy,left=x<200;return `<g class="pt"><circle class="halo" cx="${x}" cy="${y}" r="6" fill="${c}"/><circle cx="${x}" cy="${y}" r="5.5" fill="${c}" stroke="#fff" stroke-width="2"/><text x="${left?x-9:x+9}" y="${y+4}" text-anchor="${left?"end":"start"}">${P.n}</text></g>`}).join("");
+ let r="";if(s.route){const p=s.route,mid=p[Math.floor(p.length/2)];r=`<path class="route" d="${smooth(p)}" stroke="${c}"/><circle cx="${p[0][0]}" cy="${p[0][1]}" r="6" fill="${c}" stroke="#fff" stroke-width="2"/><circle cx="${p[p.length-1][0]}" cy="${p[p.length-1][1]}" r="7" fill="${c}" stroke="#fff" stroke-width="2"/><text class="rtxt" x="${mid[0]+14}" y="${mid[1]}" text-anchor="start" fill="${c}">${s.rlabel}</text>`}
+ $("#routeL").innerHTML=r;
+}
+function select(id,scroll){
+ cur=id;if(id==="hub")tab="learn";
+ if(id!=="hub"){visited.add(id);store.set("kd_v",[...visited])}
+ svg.classList.toggle("dim",id!=="hub");
+ svg.querySelectorAll(".st").forEach(g=>g.classList.toggle("on",g.dataset.s===id));
+ svg.querySelectorAll(".lblg").forEach(g=>g.classList.toggle("on",g.dataset.s===id));
+ document.querySelectorAll(".chip").forEach(b=>b.setAttribute("aria-pressed",b.dataset.s===id?"true":"false"));
+ draw();render();passport();
+ if(scroll&&innerWidth<=980)$("#panel").scrollIntoView({behavior:"smooth"});
+}
+const evLi=([l,t,r])=>`<li><b class="lv" data-l="${l}">${l==="原"?"原稿整理":l}</b><div>${t}${src(r)}</div></li>`;
+const qH=([q,c,r])=>`<div class="quote"><q>${q}</q><cite>${c} ${src([r])}</cite></div>`;
+const acuH=k=>{const P=PTS[k];return `<div class="acu"><div class="nm"><b>${P.n}</b><span class="code">${k}</span><span class="small">${P.m}</span></div><div><span class="k">位置</span>${P.loc}</div><div><span class="k">方法</span>${P.how}</div><div><span class="k">傳統</span>${P.use}</div><div><span class="k">注意</span>${P.warn}</div></div>`};
+function render(){
+ const id=cur,s=S[id],p=$("#panel");p.style.setProperty("--cc",COL[id][0]);p.style.setProperty("--cl",COL[id][1]);
+ let h=`<div class="phead">${masc(id,"m float")}<div><div class="en">${s.en}</div><h3>${s.name}</h3><p class="hook">${s.hook}</p></div></div>`;
+ if(id==="hub"){p.innerHTML=h+`<div class="pbody">${hubBody()}</div>`;p.querySelectorAll(".hubbtn").forEach(b=>b.addEventListener("click",()=>select(b.dataset.s,true)));return}
+ const T=[["learn","認識"],["ev","研究證據"],["tcm","中醫經絡"],["life","生活處方"],["quiz","小測驗"]];
+ h+=`<div class="tabs" role="tablist">${T.map(([k,t])=>`<button class="tab" role="tab" data-t="${k}" aria-selected="${tab===k}">${t}</button>`).join("")}</div>`;
+ let b="";
+ if(tab==="learn")b=`<div class="meta"><b>白話比喻：</b>${s.meta}</div><div class="paths">${s.paths.map(([t,d],i)=>`<div class="pathc"><span class="badge">重點 ${i+1}</span><strong>${t}</strong><p>${d}</p></div>`).join("")}</div><p class="note">${s.rlabel?`圖上的彩色虛線是「${s.rlabel}」的示意路線。`:""}想知道每個說法有多可靠，請看「研究證據」分頁的標籤。</p>`;
+ else if(tab==="ev")b=`<ul class="ev">${s.ev.map(evLi).join("")}</ul><p class="note">A 系統性回顧／統合分析　B 觀察性研究或回顧　C 動物／機制研究　原稿整理：原稿的整理，未附直接出處。點「參考 n」可跳到頁尾文獻。</p>`;
+ else if(tab==="tcm"){const t=s.tcm;b=`<p>${t.view}</p><div class="quotes">${t.quotes.map(qH).join("")}</div><div><h3 style="margin-bottom:6px">相關經絡</h3><div class="mers">${t.mers.map(k=>`<span>${MER[k].n}</span>`).join("")}</div></div><div><h3 style="margin-bottom:6px">自我保健穴位</h3><div class="acus">${t.pts.map(acuH).join("")}</div></div><div class="bridge"><strong>中西對話：</strong>${t.bridge}</div><p class="note"><b class="lv" data-l="T">T</b>穴位定位依 WHO 西太平洋區標準${src(["T4"])}。穴位按壓屬放鬆與自我保健，不能取代腎功能檢查與治療；美國 NCCIH 提醒不要用針灸或按壓延誤就醫${src(["T5"])}。</p>`}
+ else if(tab==="life")b=`<ul class="tips">${s.tips.map(t=>`<li>${t}</li>`).join("")}</ul><div class="red"><strong>出現這些情況請就醫</strong><ul>${s.red.map(r=>`<li>${r}</li>`).join("")}</ul></div>`;
+ else b=quizHTML(s.quiz.map(q=>q.concat([id])))+`<div class="score" id="pScore"></div>`;
+ p.innerHTML=h+`<div class="pbody" role="tabpanel">${b}</div>`;
+ p.querySelectorAll(".tab").forEach(x=>x.addEventListener("click",()=>{tab=x.dataset.t;render();const n=p.querySelector(`.tab[data-t="${tab}"]`);if(n)n.focus()}));
+ if(tab==="quiz")bindQuiz(p,(sc,tot)=>{$("#pScore").innerHTML=`<span class="big">${sc} / ${tot}</span>${sc===tot?"全對！護照蓋上金星 ★":"再看一次「認識」分頁，可以重新挑戰。"} <button class="btn sm" id="pRe">重新作答</button>`;if(sc===tot){qdone[id]=1;store.set("kd_q",qdone);passport()}$("#pRe").addEventListener("click",render)});
+}
+function hubBody(){
+ const two=`<svg class="cycle" viewBox="0 0 520 220" role="img" aria-label="雙向關係：腎功能下降透過尿毒素與小血管影響大腦；壓力、交感神經與 HPA 軸影響腎臟">
+ <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="${INK}"/></marker></defs>
+ <g font-family="Huninn,Noto Sans TC,sans-serif" text-anchor="middle" fill="${INK}">
+ <rect x="20" y="70" width="150" height="80" rx="20" fill="#ffb3cf" stroke="${INK}" stroke-width="3"/><text x="95" y="118" font-size="20">大腦</text>
+ <rect x="350" y="70" width="150" height="80" rx="20" fill="#efe8ff" stroke="${INK}" stroke-width="3"/><text x="425" y="118" font-size="20">腎臟</text>
+ <path d="M175 88 C240 50 290 50 345 88" stroke="${INK}" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+ <path d="M345 134 C290 172 240 172 175 134" stroke="${INK}" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+ <text x="260" y="40" font-size="14">壓力、交感神經、HPA 軸 → 腎血管與血壓</text>
+ <text x="260" y="196" font-size="14">尿毒素、小血管病變 → 認知下降</text>
+ </g></svg>`;
+ return `<p>腎腦軸是腎臟與大腦之間，透過<b>血管、神經、免疫與代謝</b>形成的雙向連結。慢性腎臟病增加認知障礙與失智風險；長期壓力、睡眠不足與高血壓，也會反過來傷害腎絲球。</p>
+ <div class="hubgrid">${ORDER.map(id=>`<button class="hubbtn" data-s="${id}" style="--cl:${COL[id][1]}">${masc(id)}${S[id].name}</button>`).join("")}</div>
+ <h3>一條雙向道</h3>${two}
+ <h3>中醫怎麼看</h3>
+ <div class="quotes">${qH(["腦為髓之海。","《靈樞·海論》","T1"])}${qH(["髓海不足，則腦轉耳鳴，脛痠眩冒，目無所見，懈怠安臥。","《靈樞·海論》","T1"])}${qH(["心藏神，肺藏魄，肝藏魂，脾藏意，腎藏志。","《素問·宣明五氣》","T2"])}</div>
+ <div class="bridge"><strong>中西對話：</strong>中醫「腎藏精、精生髓、髓匯於腦」，是腦軸裡和現代研究對得最緊的一條。但中醫的「腎」範圍比腎臟大；現代可對照的是腎功能、血管危險因子與認知的關聯。「補腎」不能取代抽血驗尿。</div>
+ <div class="acus">${acuH("GV20")}</div>`;
+}
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function quizHTML(qs,noNum){return qs.map((q,i)=>`<div class="q" data-ans="${q[2]}"><div class="qt">${noNum?"":(i+1)+". "}${q[0]}</div><div class="opts">${shuffle(q[1].map((_,k)=>k)).map(k=>`<button class="opt" data-k="${k}">${q[1][k]}</button>`).join("")}</div><div class="expl" hidden>${q[3]}</div></div>`).join("")}
+function bindQuiz(root,done){const qs=root.querySelectorAll(".q");let n=0,sc=0;qs.forEach(q=>q.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>{const a=+q.dataset.ans,k=+b.dataset.k;q.querySelectorAll(".opt").forEach(o=>{o.disabled=true;if(+o.dataset.k===a)o.classList.add("ok")});if(k===a)sc++;else b.classList.add("no");n++;const e=q.querySelector(".expl");e.innerHTML=(k===a?"<b>答對了！</b> ":"<b>差一點！</b> ")+e.innerHTML;e.hidden=false;if(n===qs.length)done(sc,qs.length)})))}
+
+/* compare */
+const ROWS={glom:["eGFR、尿白蛋白、認知盛行率","腎者封藏之本","足太陽膀胱經、足少陰腎經","腎俞、太谿"],
+ toxin:["尿毒素、血腦屏障、神經發炎","腎者水藏，主津液","足太陽膀胱經、督脈","腎俞、命門"],
+ vessel:["共同微血管、三高、腦白質病變","心主脈","足少陰腎經","復溜、太谿"],
+ adrenal:["HPA 軸、皮質醇、胰島素阻抗","腎藏志、恐傷腎","膀胱經外側線、督脈","志室、百會"],
+ nerve:["交感神經、腎絲球內壓、照護延誤","腰者腎之府；督脈入屬於腦","督脈","命門、百會"],
+ gut:["腸—腎—腦軸、尿毒素前驅物","腎者胃之關","足太陽膀胱經","脾俞、腎俞"],
+ dialysis:["透析血流波動、用藥檢視、急性腎損傷","髓海不足","督脈、足少陰腎經","百會、太谿"],
+ bladder:["居家紀錄、個別化喝水、共同照護","膀胱者州都之官","足太陽膀胱經、足少陰腎經","腎俞、復溜"]};
+$("#cmp").innerHTML=`<thead><tr><th>站點</th><th>現代研究關鍵詞</th><th>中醫理論</th><th>相關經絡</th><th>自我保健穴位</th></tr></thead><tbody>`+ORDER.map(id=>`<tr data-s="${id}" tabindex="0" style="--cc:${COL[id][0]}"><td><i></i>${S[id].name}</td>${ROWS[id].map(x=>`<td>${x}</td>`).join("")}</tr>`).join("")+`</tbody>`;
+$("#cmp").querySelectorAll("tr[data-s]").forEach(tr=>{const go=()=>{tab="tcm";select(tr.dataset.s);$("#map").scrollIntoView({behavior:"smooth"})};tr.addEventListener("click",go);tr.addEventListener("keydown",e=>{if(e.key==="Enter")go()})});
+
+/* challenge */
+const POOL=[];ORDER.forEach(id=>S[id].quiz.forEach(q=>POOL.push(q.concat([id]))));HUBQ.forEach(q=>POOL.push(q));
+let cq=[],ci=0,cs=0;const NQ=6;
+function startC(){cq=shuffle(POOL).slice(0,NQ);ci=0;cs=0;showQ();side()}
+function showQ(){const box=$("#cbox");
+ if(ci>=NQ){box.innerHTML=`<div class="prog"><i style="width:100%;background:var(--sun)"></i></div><h3 style="font-size:1.7rem;margin-top:12px">得分 ${cs} / ${NQ}</h3><p style="margin:6px 0 14px">${cs===NQ?"滿分！你是腎腦軸小達人。":cs>=4?"很不錯！回地圖再逛一圈，下次拿滿分。":"沒關係，回地圖看看每一站，再來挑戰一次。"}</p><button class="btn pri" id="cRe">再抽 ${NQ} 題</button>`;$("#cRe").addEventListener("click",startC);side(true);return}
+ const q=cq[ci],id=q[4];box.style.setProperty("--cl",COL[id][1]);
+ box.innerHTML=`<div class="prog"><i style="width:${ci/NQ*100}%;background:var(--sun)"></i></div><div style="margin-top:12px"><span class="ctag">${S[id].name}</span> <span class="small">第 ${ci+1} / ${NQ} 題 · 目前 ${cs} 分</span></div>`+quizHTML([q],true)+`<div style="margin-top:12px"><button class="btn pri sm" id="cN" hidden>下一題 →</button></div>`;
+ bindQuiz(box,s=>{cs+=s;const n=$("#cN");n.hidden=false;n.textContent=ci===NQ-1?"看結果 →":"下一題 →";n.addEventListener("click",()=>{ci++;showQ()});n.focus()});
+}
+function side(end){const best=store.get("kd_best",0);if(end&&cs>best)store.set("kd_best",cs);const b=Math.max(best,end?cs:0);
+ $("#cside").innerHTML=`<svg viewBox="0 0 120 120" class="float" aria-hidden="true"><use href="#star"/></svg><b style="font-family:var(--f-display);font-size:1.2rem">${end?(cs===NQ?"太厲害了！":"繼續加油！"):"星星陪你答題"}</b><p class="small">題目隨機抽選，每次都不一樣。${b?`最佳紀錄：${b} / ${NQ}`:""}</p>`}
+startC();
+
+/* practice: eGFR */
+function gUpd(){const v=+$("#gIn").value;$("#gN").textContent=v;let p,msg;if(v>=60){p=10;msg="eGFR ≥60：研究族群中約 10% 有認知障礙。"}else if(v>=30){p=47.3;msg="eGFR 30–59：研究族群中約 47.3% 有認知障礙。建議和醫師討論認知篩檢。"}else{p=60.6;msg="eGFR <30：研究族群中約 60.6% 有認知障礙。請和腎臟科、神經科一起追蹤。"}$("#gBar i").style.width=p+"%";$("#gMsg").textContent=msg}
+$("#gIn").addEventListener("input",gUpd);gUpd();
+
+/* practice: low-sodium swap */
+const NP=[["醃漬小菜","新鮮燙青菜",1,"醃漬食品鈉含量高，原稿建議避免。"],["香腸、火腿等加工肉品","清蒸魚或去皮雞肉",1,"加工肉品多鹽，原稿建議改吃原型蛋白質。"],["濃湯","清湯或白開水",1,"濃湯通常很鹹，原稿建議避免。"],["蔥、薑、蒜、檸檬調味","重口味醬料",0,"用天然香料取代高鈉醬料。"]];
+let nI=0,nS=0;
+function nShow(){if(nI>=NP.length){$("#nStage").innerHTML=`<div class="syll" style="font-size:2rem">${nS} / ${NP.length}</div><div class="syl-sub">${nS===NP.length?"全對！你是護腎採買高手。":"再試一次，記住：少加工、少醃漬、少濃湯。"}</div>`;$("#nScore").textContent="";return}
+ const [a,b]=NP[nI];$("#nStage").innerHTML=`<div class="syl-sub">第 ${nI+1} / ${NP.length} 題：哪一個比較護腎？</div><div class="opts" style="margin-top:8px"><button class="opt" data-k="0">${a}</button><button class="opt" data-k="1">${b}</button></div><div class="expl" id="nEx" hidden></div>`;
+ $("#nStage").querySelectorAll(".opt").forEach(o=>o.addEventListener("click",()=>{const ok=+o.dataset.k===NP[nI][2];$("#nStage").querySelectorAll(".opt").forEach(x=>{x.disabled=true;if(+x.dataset.k===NP[nI][2])x.classList.add("ok")});if(ok)nS++;else o.classList.add("no");const ex=$("#nEx");ex.innerHTML=(ok?"<b>答對了！</b> ":"<b>差一點！</b> ")+NP[nI][3];ex.hidden=false;setTimeout(()=>{nI++;nShow()},1800)}));
+ $("#nScore").textContent=`目前 ${nS} 分`}
+$("#nRe").addEventListener("click",()=>{nI=0;nS=0;nShow()});nShow();
+
+/* practice: home log */
+function rShow(){const h=store.get("kd_log",[]);if(!h.length){$("#rTable").innerHTML="還沒有紀錄";return}
+ $("#rTable").innerHTML=`<table style="border-collapse:collapse;width:100%;min-width:360px;margin-top:6px"><tr>${["日期","血壓","體重","浮腫","尿量"].map(x=>`<th style="text-align:left;border-bottom:2px solid #e3e8f3;padding:2px 6px">${x}</th>`).join("")}</tr>${h.slice(-7).reverse().map(r=>`<tr>${[r.d,(r.s&&r.di)?`${r.s}/${r.di}`:"—",r.w||"—",r.e,r.u].map(x=>`<td style="padding:2px 6px;border-bottom:1px dashed #e3e8f3">${esc(x)}</td>`).join("")}</tr>`).join("")}</table>`}
+$("#rSave").addEventListener("click",()=>{const d=new Date();const h=store.get("kd_log",[]);h.push({d:`${d.getMonth()+1}/${d.getDate()}`,s:$("#rSys").value,di:$("#rDia").value,w:$("#rW").value,e:$("#rE").value,u:$("#rU").value});store.set("kd_log",h.slice(-60));rShow()});
+$("#rClear").addEventListener("click",()=>{store.set("kd_log",[]);rShow()});rShow();
+
+/* practice: doctor checklist */
+const DC=["eGFR、尿白蛋白／肌酸酐比值（ACR）","血壓、血糖、血脂與貧血指標","帶完整用藥清單（含成藥、中草藥、保健食品）","哪些藥要依腎功能調整劑量？","有沒有會影響認知或跌倒風險的藥？","是否需要正式認知評估或神經科轉介","腎臟營養諮詢：蛋白質、鉀、磷、水分","運動處方或復健建議"];
+const dcv=store.get("kd_doc",[]);
+$("#docCk").innerHTML=DC.map((t,i)=>`<label class="ck"><input type="checkbox" id="dc${i}" ${dcv.includes(i)?"checked":""}><span>${t}</span></label>`).join("");
+document.querySelectorAll("#docCk input").forEach(x=>x.addEventListener("change",()=>store.set("kd_doc",[...document.querySelectorAll("#docCk input:checked")].map(y=>+y.id.slice(2)))));
+
+/* timeline */
+const DAY=[["早晨","短暫伸展或快走 10–15 分鐘；早餐可選燕麥或糙米粥、水煮蛋與少量蔬菜","有水分或鉀限制者依醫囑調整","var(--sun-l)"],["中午","雜糧飯適量、清蒸魚或去皮雞肉、兩種蔬菜；用天然香料取代高鈉醬料","避免濃湯、加工肉品、醃漬食品","var(--mint-l)"],["下午","一小份水果、散步或伸展 5–10 分鐘；做簡單記憶活動","高血鉀者請依營養師建議選水果","var(--orange-l)"],["晚上","小份主食、豆腐或適量魚肉、蔬菜；飯後慢走 15–20 分鐘","避免晚間大量喝水，夜尿多者尤其注意","var(--sky-l)"],["睡前","腹式呼吸、漸進式放鬆或冥想 10 分鐘，固定時間入睡","有失眠、打鼾或白天嗜睡，要評估睡眠問題","var(--grape-l)"]];
+$("#timeline").innerHTML=DAY.map(([t,a,n,c],i)=>`<div class="tl"><div class="dot" style="background:${c}">${i+1}</div><div class="card box"><b>${t}</b><p>${a}</p><p class="n">注意：${n}</p></div></div>`).join("");
+
+/* family check */
+const CK=["常常重複問同一件事","忘記吃藥","處理金錢有困難","日常工作或家事變得吃力","明顯情緒改變","睡眠明顯改變","腳或眼皮浮腫","尿量明顯改變或常有泡泡尿"];
+$("#checks").innerHTML=CK.map((t,i)=>`<label class="ck"><input type="checkbox" id="ck${i}"><span>${t}</span></label>`).join("");
+function ckUpd(){const n=document.querySelectorAll("#checks input:checked").length;$("#ckBar").style.width=(n/CK.length*100)+"%";$("#ckN").textContent=`${n} / ${CK.length}`;$("#ckMsg").textContent=n===0?"":n<=2?"先記錄下來（何時開始、多常發生），下次回診時提出來。":"符合的項目不少：建議和醫師討論腎功能、用藥與正式認知評估。"}
+document.querySelectorAll("#checks input").forEach(c=>c.addEventListener("change",ckUpd));
+
+/* refs */
+$("#refList").innerHTML=`<div class="card" style="padding:16px 18px"><h3 style="margin-bottom:8px">學術文獻</h3><ol>${REFS.map((r,i)=>`<li id="ref${i+1}"><a href="${r.u}" target="_blank" rel="noopener">${esc(r.t)}</a><br><span>${esc(r.a)}</span>${r.d?` DOI: <a href="https://doi.org/${r.d}" target="_blank" rel="noopener">${r.d}</a>`:""}<div class="one">${r.one}</div></li>`).join("")}</ol></div>
+<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="margin-bottom:8px">中醫經典與穴位標準</h3><ol>${TREFS.map((r,i)=>`<li id="tref${i+1}"><a href="${r[1]}" target="_blank" rel="noopener">${r[0]}</a></li>`).join("")}</ol></div>`;
+
+const tt=$("#toTop");addEventListener("scroll",()=>{tt.hidden=scrollY<600},{passive:true});tt.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
+select("hub");
+})();
+</script>
+
+</body>
+</html>
