@@ -1,0 +1,908 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#2455c7">
+<meta name="description" content="點開頭頸剖面圖，認識牙齒、牙周、舌頭、咀嚼肌、唾液、吞嚥與三叉神經如何和大腦互傳訊號；附證據標籤、中醫經絡穴位、健口操跟著做與小測驗。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/BRAINAXIS/ORALMAP/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="嚼一嚼，大腦也在動？｜腦軸大探險">
+<meta property="og:description" content="點開頭頸剖面圖，認識牙齒、牙周、舌頭、咀嚼肌、唾液、吞嚥與三叉神經如何和大腦互傳訊號；附證據標籤、中醫經絡穴位、健口操跟著做與小測驗。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/BRAINAXIS/ORALMAP/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20120%20130%27%3E%3Cpath%20d%3D%27M60%2030%20C44%2010%2022%2014%2020%2026%20C34%2036%2050%2036%2060%2030Z%27%20fill%3D%27%235ad6a4%27%20stroke%3D%27%231f2a44%27%20stroke-width%3D%273%27/%3E%3Cpath%20d%3D%27M60%2024%20C74%204%2098%208%20100%2020%20C86%2032%2070%2032%2060%2024Z%27%20fill%3D%27%237ee3b8%27%20stroke%3D%27%231f2a44%27%20stroke-width%3D%273%27/%3E%3Cellipse%20cx%3D%2760%27%20cy%3D%2788%27%20rx%3D%2740%27%20ry%3D%2738%27%20fill%3D%27%237ee3b8%27%20stroke%3D%27%231f2a44%27%20stroke-width%3D%273.5%27/%3E%3C/svg%3E">
+<style>[hidden]{display:none!important}</style>
+<title>嚼一嚼，大腦也在動？｜腦軸大探險</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&display=swap">
+<style>
+/* Layout: 共好小學堂單元頁 × 探險地圖：左側可點頭頸口腔剖面圖、右側學習面板；粗墨線＋位移陰影的卡通風 */
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c; --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff; --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --rose:#f06595; --rose-l:#ffe3ee;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7; --white:#ffffff;
+  --lvA:#15803d; --lvB:#b45309; --lvC:#1d4ed8; --lvT:#0f8a7a; --lvO:#7c3aed; --lvQ:#c2410c;
+  --f-display:"Huninn","LXGW WenKai TC","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --f-body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+section,#panel,[id^=ref]{scroll-margin-top:76px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background-color:var(--bg);background-image:radial-gradient(circle at 6% 4%,var(--sun-l) 0,transparent 30%),radial-gradient(circle at 96% 10%,var(--rose-l) 0,transparent 28%),radial-gradient(circle at 90% 75%,var(--mint-l) 0,transparent 32%),radial-gradient(circle at 6% 85%,var(--sky-l) 0,transparent 32%);background-attachment:fixed;color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.85}
+a{color:var(--blue)}
+.wrap{max-width:1220px;margin:0 auto;padding-inline:16px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.3;margin:0}
+h2{font-size:clamp(1.6rem,3.4vw,2.3rem)}
+h3{font-size:1.2rem}
+p{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:8px}
+.hl{background:linear-gradient(transparent 60%,var(--sun) 0);padding:0 .1em}
+.nw{white-space:nowrap}
+.card{background:var(--white);border:3px solid var(--ink);border-radius:22px;box-shadow:0 4px 0 var(--ink)}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:3px dashed var(--line)}
+.top .wrap{display:flex;align-items:center;gap:10px;padding-block:8px}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink)}
+.brand svg{width:38px;height:40px}
+.brand b{font-family:var(--f-display);font-size:1.15rem;display:block;line-height:1.1}
+.brand small{font-size:.66rem;letter-spacing:.14em;color:var(--ink-2);font-weight:700}
+.top nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.pill{text-decoration:none;color:var(--ink);font-size:.86rem;font-weight:700;padding:3px 12px;border-radius:999px;border:2px solid var(--ink);background:var(--white)}
+.pill.back{background:var(--sun)}
+@media (max-width:820px){.top nav .pill:not(.back){display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:36px 64px}
+.hero .bubbleBg{position:absolute;border-radius:50%;opacity:.5;z-index:-1}
+.hero .grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px;align-items:center}
+.tag{display:inline-block;background:var(--sun-l);border:2px solid var(--ink);border-radius:999px;padding:2px 14px;font-weight:700;font-size:.9rem}
+.hero h1{font-size:clamp(2.2rem,5.6vw,3.7rem);margin-top:14px}
+.hero .lede{font-size:1.08rem;color:var(--ink-2);margin-top:14px;max-width:32em}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:3px solid var(--ink);border-radius:999px;padding:9px 22px;font-weight:900;cursor:pointer;text-decoration:none;color:var(--ink);box-shadow:0 4px 0 var(--ink);transition:transform .12s,box-shadow .12s;background:var(--white)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 var(--ink)}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 var(--ink)}
+.btn.pri{background:var(--blue);color:#fff}
+.btn.sun{background:var(--sun)}
+.btn.sm{padding:5px 14px;font-size:.9rem}
+.heroArt{width:100%;max-width:520px;justify-self:center;height:auto}
+.float{animation:float 3.4s ease-in-out infinite}
+.float2{animation:float 4.2s ease-in-out infinite reverse}
+@keyframes float{50%{transform:translateY(-8px)}}
+.wave{position:absolute;left:0;right:0;bottom:0;width:100%;height:46px}
+
+/* section scaffolding */
+section.blk{padding-block:34px}
+.sechead{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px}
+.num{flex:none;width:52px;height:52px;border:3px solid var(--ink);border-radius:14px;display:grid;place-items:center;font-family:var(--f-display);font-size:1.5rem;transform:rotate(-6deg);box-shadow:3px 3px 0 var(--ink)}
+.eyebrow{font-size:.74rem;letter-spacing:.16em;font-weight:900;color:var(--ink-2)}
+.sechead p.sub{color:var(--ink-2);max-width:52em;margin-top:4px}
+.tint{border-radius:28px;padding:26px 18px;margin-inline:-2px}
+
+/* key points */
+.keyp{display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;align-items:center;padding:20px}
+.keyp svg{width:110px;height:120px}
+.say{position:relative;background:var(--white);border:3px solid var(--ink);border-radius:20px;padding:14px 18px;font-size:1.02rem}
+.say::before{content:"";position:absolute;left:-14px;top:30px;border:10px solid transparent;border-right-color:var(--ink)}
+.say ul{margin:6px 0 0;padding-left:1.2em}
+.say .warn{margin-top:8px;background:var(--coral-l);border-radius:12px;padding:6px 12px;font-weight:700}
+
+/* legend */
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:.88rem;color:var(--ink-2);margin-top:12px}
+.lv{display:inline-flex;align-items:center;justify-content:center;min-width:1.7em;height:1.6em;padding:0 .45em;border-radius:7px;font-weight:900;font-size:.76rem;margin-right:6px;flex:none;white-space:nowrap;border:1.5px solid currentColor}
+.lv[data-l=A]{color:var(--lvA);background:#e7f7ec}
+.lv[data-l=B]{color:var(--lvB);background:#fff3df}
+.lv[data-l=C]{color:var(--lvC);background:#e6edff}
+.lv[data-l=T]{color:var(--lvT);background:#dff5f1}
+.lv[data-l=原]{color:var(--lvO);background:var(--grape-l)}
+.lv[data-l=待]{color:var(--lvQ);background:var(--orange-l)}
+
+/* map */
+.mapgrid{display:grid;grid-template-columns:minmax(0,500px) minmax(0,1fr);gap:22px;align-items:start}
+.headcard{position:sticky;top:70px;padding:12px 12px 14px}
+.tools{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;padding:0 4px 4px;font-size:.86rem}
+.toggle{display:inline-flex;gap:6px;align-items:center;cursor:pointer;font-weight:700}
+.toggle input{width:17px;height:17px;accent-color:var(--blue)}
+#headSvg{width:100%;height:auto;display:block;max-height:calc(100vh - 230px)}
+#headSvg .st{cursor:pointer;transition:opacity .25s,filter .2s}
+#headSvg .st:hover,#headSvg .st:focus-visible{filter:drop-shadow(0 0 6px var(--glow)) brightness(1.06);outline:none}
+#headSvg.dim .st:not(.on){opacity:.35}
+#headSvg .st.on{animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{filter:drop-shadow(0 0 9px var(--glow)) brightness(1.1)}}
+#headSvg .lbl{font-family:var(--f-display);font-size:16px;fill:var(--ink);cursor:pointer}
+#headSvg .lblg.on .lbl{font-weight:700;fill:var(--glow)}
+#headSvg .lblline{stroke:var(--ink-2);stroke-width:.9;stroke-dasharray:2 2;fill:none}
+#merL,#routeL,#ptL,#headSvg .lblline,#regL{pointer-events:none}
+#headSvg .mer{fill:none;stroke-linecap:round;stroke-linejoin:round}
+#headSvg .mer.all{stroke:#8a96ad;stroke-width:1.5;stroke-dasharray:1 4}
+#headSvg .mer.hot{stroke-width:2.8;stroke-dasharray:2 5;animation:flow 1.4s linear infinite}
+#headSvg .route{fill:none;stroke-width:3.4;stroke-dasharray:7 6;animation:flow .9s linear infinite;stroke-linecap:round}
+@keyframes flow{to{stroke-dashoffset:-26}}
+#headSvg .rtxt{font-size:12.5px;font-weight:900;paint-order:stroke;stroke:#fff;stroke-width:4px}
+#headSvg .pt .halo{animation:halo 1.8s ease-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes halo{from{transform:scale(.6);opacity:.8}to{transform:scale(2.3);opacity:0}}
+#headSvg .pt text{font-size:12.5px;font-weight:900;paint-order:stroke;stroke:#fff;stroke-width:4px;fill:var(--ink)}
+#headSvg .reg{opacity:0;transition:opacity .3s}
+#headSvg.hubon .reg{opacity:1}
+#headSvg .reg text{font-size:11.5px;font-weight:900;paint-order:stroke;stroke:#fff;stroke-width:3.5px;fill:var(--blue-d)}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:#fff;font-size:.82rem;padding:2px 10px;border-radius:8px;transform:translate(-50%,-135%);white-space:nowrap;opacity:0;transition:opacity .12s}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chip{display:inline-flex;align-items:center;gap:5px;border:2.5px solid var(--ink);background:var(--white);border-radius:999px;padding:2px 10px 2px 3px;font-size:.86rem;cursor:pointer;font-weight:700}
+.chip svg{width:26px;height:26px}
+.chip[aria-pressed=true]{background:var(--cl);box-shadow:0 3px 0 var(--ink)}
+.passport{margin-top:10px;font-size:.84rem;color:var(--ink-2);display:flex;align-items:center;gap:8px;font-weight:700}
+.passport .bar{flex:1;height:12px;border-radius:99px;border:2px solid var(--ink);background:var(--white);overflow:hidden}
+.passport .bar i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint) 0 8px,#5fd6ad 8px 16px);transition:width .4s}
+
+/* panel */
+.panel{overflow:hidden;min-width:0}
+.phead{display:flex;gap:14px;align-items:center;padding:16px 20px;background:var(--cl);border-bottom:3px solid var(--ink)}
+.phead svg.m{width:80px;height:80px;flex:none}
+.phead .en{font-size:.74rem;letter-spacing:.14em;font-weight:900;color:var(--ink-2)}
+.phead h3{font-size:1.65rem}
+.phead .hook{font-size:1rem;margin-top:2px}
+.tabs{display:flex;gap:4px;padding:10px 12px 0;overflow-x:auto;border-bottom:3px dashed var(--line)}
+.tab{border:0;background:none;padding:7px 12px;border-radius:12px 12px 0 0;cursor:pointer;font-weight:900;font-size:.94rem;color:var(--ink-2);white-space:nowrap;border-bottom:4px solid transparent}
+.tab[aria-selected=true]{color:var(--ink);border-bottom-color:var(--cc);background:var(--cl)}
+.pbody{padding:20px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.meta{background:var(--cl);border:2.5px dashed var(--ink);border-radius:18px;padding:12px 16px}
+.paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.pathc{position:relative;border:2.5px solid var(--ink);border-radius:16px;padding:20px 12px 10px;background:var(--white)}
+.pathc .badge{position:absolute;top:-12px;left:10px;background:var(--cc);color:var(--ink);border:2px solid var(--ink);border-radius:999px;font-size:.74rem;font-weight:900;padding:0 10px}
+.pathc strong{font-family:var(--f-display);font-size:1.05rem;display:block}
+.pathc p{font-size:.9rem;color:var(--ink-2)}
+.ev{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.ev li{display:flex;gap:8px;align-items:flex-start;padding:10px 12px;border-radius:14px;background:var(--white);border:2px solid var(--line);font-size:.96rem}
+.ev li>div{min-width:0}
+a.src{display:inline-block;font-size:.72rem;font-weight:900;text-decoration:none;background:var(--blue-l);color:var(--blue-d);border-radius:999px;padding:0 8px;margin-left:4px;line-height:1.7;vertical-align:.1em;white-space:nowrap}
+.quote{border-left:5px solid var(--lvT);background:#effaf7;padding:10px 14px;border-radius:0 14px 14px 0}
+.quote q{font-family:var(--f-display);font-size:1.12rem;quotes:"「" "」"}
+.quote cite{display:block;font-style:normal;font-size:.82rem;color:var(--ink-2)}
+.quotes{display:flex;flex-direction:column;gap:8px}
+.mers{display:flex;flex-wrap:wrap;gap:6px}
+.mers span{font-size:.86rem;border:2px solid var(--ink);border-radius:999px;padding:0 10px;background:var(--white);font-weight:700}
+.acus{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.acu{border:2.5px solid var(--ink);border-radius:16px;padding:12px;background:var(--white);display:flex;flex-direction:column;gap:3px;font-size:.88rem}
+.acu .nm{display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+.acu .nm b{font-family:var(--f-display);font-size:1.2rem}
+.acu .code{font-size:.72rem;font-weight:900;background:var(--cc);border:1.5px solid var(--ink);border-radius:6px;padding:0 6px}
+.acu .k{font-weight:900;color:var(--ink-2);margin-right:4px}
+.bridge{background:linear-gradient(135deg,var(--cl),#effaf7);border:2.5px solid var(--ink);border-radius:18px;padding:12px 16px}
+.bridge strong{font-family:var(--f-display)}
+.note{font-size:.86rem;color:var(--ink-2);border-top:2px dashed var(--line);padding-top:10px}
+.tips{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.tips li{background:var(--white);border:2px solid var(--line);border-radius:14px;padding:8px 12px;font-size:.93rem}
+.tips li::before{content:"✓ ";color:var(--mint);font-weight:900}
+.red{border:3px solid var(--coral);border-radius:18px;padding:12px 16px;background:var(--coral-l)}
+.red strong{color:#c92a2a}
+.red ul{margin:6px 0 0;padding-left:1.2em;font-size:.94rem}
+.cycle{width:100%;max-width:520px;height:auto;display:block;margin:0 auto}
+.hubgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.hubbtn{display:flex;flex-direction:column;align-items:center;border:2.5px solid var(--ink);border-radius:16px;background:var(--cl);padding:8px 4px;cursor:pointer;font-weight:900;font-size:.88rem;box-shadow:0 3px 0 var(--ink)}
+.hubbtn svg{width:48px;height:48px}
+
+/* quiz */
+.q{border:2.5px solid var(--ink);border-radius:18px;padding:14px;background:var(--white)}
+.qt{font-weight:900;margin-bottom:8px}
+.opts{display:grid;gap:6px}
+.opt{text-align:left;border:2.5px solid var(--line);background:var(--white);border-radius:14px;padding:8px 12px;cursor:pointer;font-size:.96rem}
+.opt:hover:not(:disabled){border-color:var(--ink)}
+.opt.ok{border-color:var(--mint);background:var(--mint-l)}
+.opt.no{border-color:var(--coral);background:var(--coral-l)}
+.opt:disabled{cursor:default}
+.expl{margin-top:8px;font-size:.92rem;padding:8px 12px;border-radius:12px;background:var(--sun-l)}
+.score{font-weight:900;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.score .big{font-family:var(--f-display);font-size:1.6rem}
+
+/* practice */
+.prac{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pcard{padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.pcard h3{display:flex;align-items:center;gap:8px}
+.stage{border:2.5px solid var(--ink);border-radius:18px;background:var(--cl);min-height:190px;display:grid;place-items:center;text-align:center;padding:10px;position:relative}
+.syll{font-family:var(--f-display);font-size:3.4rem;line-height:1}
+.syl-sub{font-size:.9rem;color:var(--ink-2);margin-top:6px}
+.beats{display:flex;gap:6px;justify-content:center;margin-top:10px}
+.beats i{width:14px;height:14px;border-radius:50%;border:2px solid var(--ink);background:var(--white)}
+.beats i.on{background:var(--orange)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.small{font-size:.84rem;color:var(--ink-2)}
+#tongueFace{width:150px;height:150px}
+#tongueFace #tg{transition:transform .45s cubic-bezier(.4,1.6,.6,1)}
+.ring{width:150px;height:150px}
+.timeline{display:grid;gap:12px;position:relative}
+.tl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:start}
+.tl .dot{width:46px;height:46px;border-radius:50%;border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--f-display);font-weight:700;box-shadow:2px 2px 0 var(--ink)}
+.tl .box{padding:10px 14px}
+.tl .box b{font-family:var(--f-display);font-size:1.1rem}
+.tl .box .n{font-size:.86rem;color:var(--ink-2)}
+.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.ck{display:flex;gap:10px;align-items:flex-start;padding:10px 14px;cursor:pointer;font-size:.96rem;border:2.5px solid var(--ink);border-radius:16px;background:var(--white)}
+.ck input{appearance:none;flex:none;width:24px;height:24px;border:2.5px solid var(--ink);border-radius:7px;margin-top:3px;display:grid;place-items:center;background:var(--white)}
+.ck input:checked{background:var(--coral)}
+.ck input:checked::after{content:"✓";color:#fff;font-weight:900;font-size:15px;line-height:1}
+.prog{height:16px;border:2.5px solid var(--ink);border-radius:99px;overflow:hidden;background:var(--white)}
+.prog i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--coral) 0 8px,#ff8f8f 8px 16px);transition:width .3s}
+.tblwrap{overflow-x:auto;border:3px solid var(--ink);border-radius:22px;background:var(--white);box-shadow:0 4px 0 var(--ink)}
+table.cmp{border-collapse:collapse;width:100%;min-width:860px;font-size:.9rem}
+table.cmp th,table.cmp td{padding:10px 12px;border-bottom:2px dashed var(--line);text-align:left;vertical-align:top}
+table.cmp thead th{background:var(--blue);color:#fff;font-family:var(--f-display);font-weight:400;font-size:1rem}
+table.cmp td:first-child{font-weight:900;white-space:nowrap}
+table.cmp td:first-child i{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--cc);border:2px solid var(--ink);margin-right:6px;vertical-align:-1px}
+table.cmp tbody tr{cursor:pointer}
+table.cmp tbody tr:hover{background:var(--sun-l)}
+.chal{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,280px);gap:18px;align-items:start}
+.cbox{padding:20px}
+.cside{padding:16px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
+.cside svg{width:120px;height:120px}
+.ctag{display:inline-block;font-size:.8rem;font-weight:900;background:var(--cl);border:2px solid var(--ink);border-radius:999px;padding:0 12px;margin-bottom:6px}
+.refs ol{margin:0;padding-left:1.6em;display:flex;flex-direction:column;gap:8px;font-size:.9rem;word-break:break-word}
+.refs li:target{background:var(--sun-l);border-radius:8px}
+.refs .one{color:var(--ink-2);font-size:.86rem}
+.fix{border:2.5px dashed var(--orange);background:var(--orange-l);border-radius:16px;padding:12px 16px;font-size:.92rem;margin-bottom:14px}
+.fix b{color:#b35400}
+.disc{border:4px solid #c92a2a;background:var(--coral-l);border-radius:24px;padding:6px}
+.disc .in{border:2.5px dashed #c92a2a;border-radius:18px;padding:16px 18px}
+.disc h2{font-size:1.4rem;color:#c92a2a}
+.disc .first{background:#fff;color:#c92a2a;font-weight:900;border-radius:12px;padding:8px 12px;margin:10px 0}
+.disc ul{margin:0;padding-left:1.2em;font-size:.95rem}
+footer{background:var(--blue-d);color:#fff;margin-top:36px;padding-block:30px 40px}
+footer .wrap{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+footer .trio{display:flex;gap:10px;align-items:flex-end}
+footer .trio svg{width:70px;height:72px}
+footer .gold{font-family:var(--f-display);font-size:1.3rem}
+footer .slogan{background:var(--sun);color:var(--ink);font-weight:900;border-radius:999px;padding:4px 16px;font-size:.92rem}
+footer a{color:var(--sun)}
+footer small{opacity:.85}
+#toTop{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:48px;height:48px;border-radius:50%;border:3px solid var(--ink);background:var(--sun);font-weight:900;font-size:1.3rem;cursor:pointer;box-shadow:0 4px 0 var(--ink);z-index:50}
+
+@media (max-width:980px){.mapgrid{grid-template-columns:1fr}.headcard{position:static}#headSvg{max-height:none}}
+@media (max-width:820px){
+  .hero .grid,.prac,.chal,.checks,.tips,.paths{grid-template-columns:1fr}
+  .keyp{grid-template-columns:1fr;justify-items:center}
+  .say::before{display:none}
+  .hubgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .phead svg.m{width:60px;height:60px}
+  .phead h3{font-size:1.3rem}
+  .pbody{padding:16px}
+}
+</style>
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+</defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><svg aria-hidden="true"><use href="#sprout"/></svg><span><b>腦軸大探險</b><small>BRAIN AXIS ADVENTURE</small></span></a>
+    <nav aria-label="頁內導覽">
+      <a class="pill" href="#map">探險地圖</a><a class="pill" href="#practice">跟著做</a><a class="pill" href="#challenge">挑戰</a><a class="pill" href="#refs">參考</a>
+      <a class="pill back" href="../index.html">← 返回探險基地</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="bubbleBg" style="width:340px;height:340px;background:var(--sky-l);left:-120px;top:-60px"></div>
+    <div class="bubbleBg" style="width:260px;height:260px;background:var(--rose-l);right:-80px;top:40px"></div>
+    <div class="bubbleBg" style="width:200px;height:200px;background:var(--sun-l);left:40%;bottom:-60px"></div>
+    <div class="wrap grid">
+      <div>
+        <span class="tag">✦ 大腦保健小知識 · 口腔腦軸探險地圖</span>
+        <h1>嚼一嚼，<span class="hl nw">大腦也在動？</span></h1>
+        <p class="lede">牙齒、牙齦、舌頭、咀嚼肌、唾液和吞嚥，都和大腦天天互傳訊號。點開頭頸剖面圖上的每一站，看看研究怎麼說、中醫經絡怎麼看，再一起跟著做健口操。</p>
+        <div class="cta"><a class="btn pri" href="#map">開始探險 →</a><a class="btn sun" href="#practice">直接跟著做</a></div>
+      </div>
+      <svg class="heroArt" id="heroArt" viewBox="0 0 520 400" role="img" aria-label="小芽、藍鳥、星星和牙齒寶寶站在草地上，說：嚼一嚼，大腦也醒過來！"></svg>
+    </div>
+    <svg class="wave" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C150 0 300 46 450 24 C600 2 750 46 900 22 C1050 0 1130 30 1200 20 L1200 46 L0 46Z" fill="var(--white)" opacity=".8"/></svg>
+  </section>
+
+  <div class="wrap">
+    <section class="blk" aria-labelledby="kph">
+      <div class="sechead"><div class="num" style="background:var(--blue-l)">1</div><div><p class="eyebrow">KEY POINTS</p><h2 id="kph">先說重點</h2></div></div>
+      <div class="card keyp">
+        <svg aria-hidden="true"><use href="#bird"/></svg>
+        <div class="say">
+          <b>藍鳥幫你整理三件事：</b>
+          <ul>
+            <li>咀嚼時，牙齒周圍的感受器會經三叉神經把訊號送進大腦，咀嚼本身就是一種大腦運動。</li>
+            <li>缺牙、咬合力下降、牙周病，和認知退化、失智風險較高有關；牙周病的慢性發炎和細菌毒素可能是其中的橋樑。</li>
+            <li>好消息是：看牙、刷牙清牙縫、健口操、好好咀嚼，都是低風險、隨時可以開始的好習慣。</li>
+          </ul>
+          <p class="warn">要分清楚：目前研究多半只看到「有關聯」，還不能說牙周病一定會造成失智。</p>
+        </div>
+      </div>
+      <div class="legend" aria-label="證據標籤說明">
+        <span><b class="lv" data-l="A">A</b>人體試驗結果</span>
+        <span><b class="lv" data-l="B">B</b>觀察性研究或其系統性回顧，看得到關聯</span>
+        <span><b class="lv" data-l="C">C</b>動物或機制研究</span>
+        <span><b class="lv" data-l="T">T</b>中醫經典理論</span>
+        <span><b class="lv" data-l="原">原稿整理</b>原稿的整理或建議，未附直接出處</span>
+      </div>
+    </section>
+
+    <section class="blk" id="map" aria-labelledby="maph">
+      <div class="sechead"><div class="num" style="background:var(--coral-l)">2</div><div><p class="eyebrow">EXPLORATION MAP</p><h2 id="maph">點一站，看訊號怎麼傳到大腦</h2><p class="sub">這是頭頸部的側面剖面圖（臉朝右）。被選中的部位會亮起，彩色虛線畫出它通往大腦的路線；切到「中醫經絡」分頁，圖上會標出相關經絡與穴位。</p></div></div>
+      <div class="mapgrid">
+        <div class="card headcard" id="headcard">
+          <div class="tools">
+            <label class="toggle"><input type="checkbox" id="allMer">顯示全部經絡</label>
+            <label class="toggle"><input type="checkbox" id="showLbl" checked>部位名稱</label>
+          </div>
+          <div style="position:relative" id="svgWrap">
+            <svg id="headSvg" viewBox="-24 40 594 545" role="group" aria-label="頭頸口腔側面剖面圖">
+              <defs>
+                <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff1e4"/><stop offset="1" stop-color="#ffe2cc"/></linearGradient>
+                <clipPath id="headClip"><path id="headPath" d="M150,585 C148,520 140,470 128,430 C104,380 92,330 96,270 C102,150 190,62 290,60 C380,58 432,118 438,190 C440,206 436,214 432,222 C440,236 446,250 452,262 C460,276 466,284 462,290 C458,296 448,298 440,300 C444,306 446,312 444,318 C440,322 434,324 432,328 C440,334 446,340 442,348 C438,356 432,358 432,366 C434,376 434,388 424,396 C410,404 384,404 360,410 C346,414 338,424 336,440 C334,480 334,530 336,585 Z"/></clipPath>
+              </defs>
+              <use href="#headPath" fill="url(#skin)" stroke="#1f2a44" stroke-width="3.5"/>
+              <g clip-path="url(#headClip)">
+                <!-- skull band -->
+                <path d="M112,276 C112,160 194,80 290,78 C376,76 420,128 424,196" fill="none" stroke="#efe3c8" stroke-width="12"/>
+                <!-- spinal cord / vertebrae -->
+                <g fill="#f3ead2" stroke="#b9a676" stroke-width="1.4">
+                  <rect x="226" y="400" width="34" height="24" rx="6"/><rect x="224" y="430" width="36" height="26" rx="6"/><rect x="222" y="462" width="38" height="26" rx="6"/><rect x="220" y="494" width="40" height="28" rx="6"/><rect x="218" y="528" width="42" height="28" rx="6"/>
+                </g>
+                <path d="M248,384 L250,585" stroke="#f6c453" stroke-width="7" opacity=".7"/>
+                <!-- palate bone -->
+                <path d="M292,300 C330,296 400,298 438,304" stroke="#e8d9b0" stroke-width="9" fill="none" stroke-linecap="round"/>
+              </g>
+              <!-- ear (outside reference) -->
+              <path d="M186,276 C176,290 176,316 190,330 C200,338 212,330 212,318 C212,306 204,300 206,290 C208,280 198,270 186,276 Z" fill="#ffd9c2" stroke="#1f2a44" stroke-width="2.5"/>
+              <!-- eye & brow -->
+              <path d="M386,214 Q400,206 414,214" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <path d="M392,226 Q402,232 412,226" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <ellipse cx="412" cy="250" rx="9" ry="5" fill="#ff9aa2" opacity=".6"/>
+
+              <g id="stations">
+                <!-- brain (hub) -->
+                <g class="st" data-s="hub" tabindex="0" role="button" aria-label="大腦：口腔腦軸總機">
+                  <path d="M120,268 C116,170 190,92 286,90 C370,88 418,140 420,196 C422,232 404,252 380,256 C360,260 344,252 330,256 C312,262 300,276 282,282 C262,288 246,286 236,292 C220,300 196,300 176,296 C150,292 124,290 120,268 Z" fill="#ffb3cf" stroke="#1f2a44" stroke-width="3"/>
+                  <ellipse cx="170" cy="304" rx="40" ry="22" fill="#f799bd" stroke="#1f2a44" stroke-width="2.5"/>
+                  <path d="M140,300 C160,296 182,300 200,306 M144,310 C164,306 184,310 198,314" stroke="#c94f80" stroke-width="1.4" fill="none"/>
+                  <path d="M170,140 C190,150 196,170 186,186 M210,108 C220,130 232,140 250,140 M298,94 C300,130 296,170 300,214 M330,100 C340,124 360,130 380,128 M360,160 C376,170 392,170 404,180 M150,210 C170,206 188,214 196,230 M220,180 C240,190 252,206 254,226 M330,190 C344,200 352,214 350,232 M264,250 C276,256 300,254 318,246" stroke="#c94f80" stroke-width="2" fill="none" stroke-linecap="round"/>
+                  <path d="M242,282 C244,320 248,350 250,386 L266,386 C266,350 264,320 262,282 Z" fill="#f799bd" stroke="#1f2a44" stroke-width="2.5"/>
+                </g>
+                <!-- trigeminal nerve -->
+                <g class="st" data-s="nerve" tabindex="0" role="button" aria-label="三叉神經：咀嚼訊號高速公路">
+                  <path d="M266,262 C300,272 330,286 360,296 C380,300 400,298 420,296" stroke="#e6a800" stroke-width="4" fill="none" stroke-linecap="round"/>
+                  <path d="M264,268 C276,300 290,330 304,352 C324,370 380,368 424,360" stroke="#e6a800" stroke-width="4" fill="none" stroke-linecap="round"/>
+                  <path d="M270,256 C320,232 370,214 404,200" stroke="#e6a800" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/>
+                  <path d="M262,262 L252,284" stroke="#e6a800" stroke-width="5" stroke-linecap="round"/>
+                  <ellipse cx="264" cy="262" rx="11" ry="7" fill="#ffc93c" stroke="#1f2a44" stroke-width="2.5"/>
+                </g>
+                <!-- salivary glands -->
+                <g class="st" data-s="saliva" tabindex="0" role="button" aria-label="唾液腺：唾液與口乾">
+                  <path d="M222,300 C236,290 260,292 268,302 C274,326 276,354 268,374 C254,382 236,374 230,358 C222,338 218,316 222,300 Z" fill="#9fe6c9" stroke="#1f2a44" stroke-width="2.5"/>
+                  <path d="M236,318 C246,316 254,324 258,334 M232,344 C242,344 252,350 256,360" stroke="#2bb88a" stroke-width="1.6" fill="none"/>
+                  <path d="M266,322 C292,318 320,316 348,314" stroke="#2bb88a" stroke-width="2.6" fill="none" stroke-dasharray="5 3"/>
+                  <ellipse cx="322" cy="416" rx="22" ry="10" fill="#9fe6c9" stroke="#1f2a44" stroke-width="2.5"/>
+                </g>
+                <!-- pharynx / swallowing -->
+                <g class="st" data-s="swallow" tabindex="0" role="button" aria-label="咽喉：吞嚥">
+                  <path d="M294,296 C318,296 328,322 328,350 L328,420 L320,585 L302,585 L308,420 L308,352 C308,330 302,314 290,306 Z" fill="#ffc2d6" stroke="#1f2a44" stroke-width="2.5"/>
+                  <path d="M330,430 L346,430 L348,585 L332,585 Z" fill="#ffd6e3" stroke="#1f2a44" stroke-width="2.2"/>
+                  <path d="M332,446 h14 M332,462 h15 M333,478 h15 M333,494 h15 M333,510 h15" stroke="#c94f80" stroke-width="1.5"/>
+                  <path d="M324,404 C334,396 342,402 338,418" stroke="#1f2a44" stroke-width="2.5" fill="#ff9fbf"/>
+                </g>
+                <!-- jaw bone + masseter (chewing muscles) -->
+                <g class="st" data-s="chew" tabindex="0" role="button" aria-label="咀嚼肌與顳顎關節">
+                  <path d="M256,296 C262,288 274,290 274,300 L288,372 C292,390 300,398 320,398 L408,396 C422,394 430,386 428,372 L426,356 L346,356 C334,356 326,344 322,330 L306,302 C300,316 294,326 286,330 Z" fill="#f2e6c9" stroke="#1f2a44" stroke-width="2.5"/>
+                  <path d="M276,292 C300,286 326,290 342,298 L334,394 C320,402 298,400 288,394 Z" fill="#b99cff" fill-opacity=".85" stroke="#1f2a44" stroke-width="2.5"/>
+                  <path d="M290,296 L296,392 M304,294 L310,394 M318,294 L322,394 M330,298 L332,390" stroke="#6b46d6" stroke-width="1.3"/>
+                  <circle cx="266" cy="298" r="7" fill="#fff" stroke="#1f2a44" stroke-width="2.5"/>
+                </g>
+                <!-- tongue -->
+                <g class="st" data-s="tongue" tabindex="0" role="button" aria-label="舌頭：口腔衰弱">
+                  <path d="M318,382 C316,346 344,318 392,314 C418,312 432,322 428,334 C424,342 410,348 394,352 C372,360 352,372 344,398 C334,402 320,396 318,382 Z" fill="#ff8fa3" stroke="#1f2a44" stroke-width="2.5"/>
+                  <path d="M350,334 C370,328 392,326 412,326" stroke="#e05a77" stroke-width="1.6" fill="none"/>
+                </g>
+                <!-- gums -->
+                <g class="st" data-s="gum" tabindex="0" role="button" aria-label="牙周牙齦：發炎通道">
+                  <path d="M346,300 C370,304 410,302 438,304 L438,314 C412,312 372,314 346,312 Z" fill="#ff7b8a" stroke="#1f2a44" stroke-width="2.2"/>
+                  <path d="M346,346 C372,346 410,348 432,346 L430,358 C408,360 372,358 346,358 Z" fill="#ff7b8a" stroke="#1f2a44" stroke-width="2.2"/>
+                </g>
+                <!-- teeth -->
+                <g class="st" data-s="teeth" tabindex="0" role="button" aria-label="牙齒與咬合">
+                  <g fill="#ffffff" stroke="#1f2a44" stroke-width="2">
+                    <path d="M350,308 h16 v14 q-8 4 -16 0 z"/><path d="M368,308 h16 v14 q-8 4 -16 0 z"/><path d="M386,308 h13 v14 q-6 4 -13 0 z"/><path d="M401,308 h11 v15 q-5 3 -11 0 z"/><path d="M414,308 h9 v16 q-4 3 -9 0 z"/><path d="M425,308 h9 v16 q-4 3 -9 0 z"/>
+                    <path d="M350,348 h16 v-14 q-8 -4 -16 0 z"/><path d="M368,348 h16 v-14 q-8 -4 -16 0 z"/><path d="M386,348 h13 v-14 q-6 -4 -13 0 z"/><path d="M401,348 h11 v-15 q-5 -3 -11 0 z"/><path d="M414,348 h9 v-15 q-4 -3 -9 0 z"/><path d="M424,348 h8 v-15 q-4 -3 -8 0 z"/>
+                  </g>
+                </g>
+              </g>
+              <!-- brain regions (shown on hub) -->
+              <g id="regL">
+                <g class="reg"><circle cx="384" cy="178" r="5" fill="#2455c7"/><text x="384" y="166" text-anchor="middle">前額葉</text></g>
+                <g class="reg"><path d="M296,94 C298,140 296,180 300,214" stroke="#2455c7" stroke-width="4" fill="none" opacity=".6"/><text x="300" y="118" text-anchor="start" dx="6">感覺運動皮質</text></g>
+                <g class="reg"><circle cx="262" cy="226" r="5" fill="#2455c7"/><text x="262" y="214" text-anchor="middle">丘腦</text></g>
+                <g class="reg"><path d="M268,262 C278,256 290,260 292,270" stroke="#2455c7" stroke-width="4" fill="none"/><text x="300" y="276" text-anchor="start">海馬迴</text></g>
+                <g class="reg"><circle cx="256" cy="336" r="5" fill="#2455c7"/><text x="234" y="352" text-anchor="end">腦幹</text></g>
+              </g>
+              <g id="lblL"></g>
+              <g id="merL"></g>
+              <g id="routeL"></g>
+              <g id="ptL"></g>
+            </svg>
+            <div class="tip" id="tip"></div>
+          </div>
+          <div class="chips" id="chips"></div>
+          <div class="passport"><span id="ppT">探險章 0 / 7</span><span class="bar"><i id="ppB"></i></span></div>
+        </div>
+        <article class="card panel" id="panel" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section class="blk tint" id="practice" style="background:linear-gradient(160deg,var(--orange-l),var(--sun-l))" aria-labelledby="prh">
+      <div class="sechead"><div class="num" style="background:var(--orange)">3</div><div><p class="eyebrow">LET'S PRACTICE</p><h2 id="prh">跟著做：三分鐘口腔小體操</h2><p class="sub">已經有吞嚥困難或反覆嗆咳的人，請先讓語言治療師、復健科或耳鼻喉科做吞嚥評估，再開始練習。動作要清楚，但不應該痛。</p></div></div>
+      <div class="prac">
+        <div class="card pcard" style="--cl:var(--orange-l)">
+          <h3>健口操 <span class="lv" data-l="原">原稿建議</span></h3>
+          <div class="stage" aria-live="polite"><div><div class="syll" id="kSyll">ㄆㄚ</div><div class="syl-sub" id="kSub">按「開始」，每個音清楚唸 5 次</div><div class="beats" id="kBeats"><i></i><i></i><i></i><i></i><i></i></div></div></div>
+          <div class="row"><button class="btn sm sun" id="kGo">開始</button><button class="btn sm" id="kStop">暫停</button><span class="small" id="kRound">第 1 輪</span></div>
+          <p class="small">ㄆ 練嘴唇閉合、ㄊ 練舌尖、ㄎ 練舌根，四個音一起訓練與吞嚥相關的肌群。</p>
+        </div>
+        <div class="card pcard" style="--cl:var(--rose-l)">
+          <h3>伸舌操 <span class="lv" data-l="原">原稿建議</span></h3>
+          <div class="stage"><div><svg id="tongueFace" viewBox="0 0 160 160" aria-hidden="true"></svg><div class="syl-sub" id="tSub">舌頭往 <b>前</b> 伸，停 4 秒</div></div></div>
+          <div class="row"><button class="btn sm sun" id="tGo">開始</button><button class="btn sm" id="tStop">暫停</button><label class="small">次數 <select id="tRep"><option>5</option><option>8</option><option>10</option></select></label></div>
+          <p class="small">前、上、下、左、右五個方向，每個方向停 3–5 秒（這裡設 4 秒），重複 5–10 次。</p>
+        </div>
+        <div class="card pcard" style="--cl:var(--mint-l)">
+          <h3>咀嚼計數器 <span class="lv" data-l="原">原稿建議</span></h3>
+          <div class="stage"><svg class="ring" viewBox="0 0 150 150" id="ring" aria-hidden="true"><circle cx="75" cy="75" r="60" fill="#fff" stroke="#e3e8f3" stroke-width="14"/><circle id="ringArc" cx="75" cy="75" r="60" fill="none" stroke="#2bb88a" stroke-width="14" stroke-linecap="round" transform="rotate(-90 75 75)" stroke-dasharray="377" stroke-dashoffset="377"/><text x="75" y="84" text-anchor="middle" font-family="Huninn,Noto Sans TC" font-size="34" fill="#1f2a44" id="ringN">0</text><text x="75" y="106" text-anchor="middle" font-size="12" fill="#4a5674">下</text></svg></div>
+          <div class="row"><button class="btn sm sun" id="cTap">嚼一下 +1</button><button class="btn sm" id="cReset">下一口</button></div>
+          <p class="small" id="cMsg">吃飯時每口試著嚼 20–30 下，依牙齒狀況與吞嚥安全彈性調整。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="blk" aria-labelledby="dayh">
+      <div class="sechead"><div class="num" style="background:var(--mint-l)">4</div><div><p class="eyebrow">ONE DAY ROUTINE</p><h2 id="dayh">一日口腔腦軸照護 <span class="lv" data-l="原">原稿建議</span></h2></div></div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="blk tint" style="background:linear-gradient(160deg,var(--coral-l),#fff)" aria-labelledby="ckh">
+      <div class="sechead"><div class="num" style="background:var(--coral)">5</div><div><p class="eyebrow">FAMILY CHECK</p><h2 id="ckh">家屬觀察清單</h2><p class="sub">這不是診斷工具，勾選結果也不會儲存。只要有幾項符合，就記錄下來，帶去和牙醫或醫師討論。</p></div></div>
+      <div class="checks" id="checks"></div>
+      <div class="row" style="margin-top:12px"><div class="prog" style="flex:1"><i id="ckBar"></i></div><b id="ckN">0 / 8</b></div>
+      <p id="ckMsg" class="small" style="margin-top:6px"></p>
+      <div class="red" style="margin-top:14px"><strong>這些情況請盡快就醫</strong><ul>
+        <li>反覆嗆咳、發燒咳嗽、呼吸急促，或曾經得過吸入性肺炎：儘速就醫。</li>
+        <li>牙齒快速鬆動、牙齦大量出血或化膿、口腔疼痛、假牙嚴重不合：盡快看牙科。</li>
+        <li>記憶、做事能力或情緒在幾個月內明顯變差、影響生活：安排神經科或記憶門診。</li>
+      </ul></div>
+    </section>
+
+    <section class="blk" id="compare" aria-labelledby="cmh">
+      <div class="sechead"><div class="num" style="background:var(--grape-l)">6</div><div><p class="eyebrow">EAST MEETS WEST</p><h2 id="cmh">現代研究 × 中醫經絡對照表</h2><p class="sub">中醫的「臟」是功能系統，不等於解剖器官。點任一列，可以回到地圖看那一站的中醫分頁。</p></div></div>
+      <div class="tblwrap"><table class="cmp" id="cmp"></table></div>
+    </section>
+
+    <section class="blk" id="challenge" aria-labelledby="chh">
+      <div class="sechead"><div class="num" style="background:var(--sun)">7</div><div><p class="eyebrow">QUIZ</p><h2 id="chh">口腔腦軸小挑戰</h2><p class="sub">從題庫隨機抽 6 題，每題作答後馬上看解說。</p></div></div>
+      <div class="chal"><div class="card cbox" id="cbox"></div><aside class="card cside" id="cside"></aside></div>
+    </section>
+
+    <section class="blk refs" id="refs" aria-labelledby="rfh">
+      <div class="sechead"><div class="num" style="background:var(--sky-l)">8</div><div><p class="eyebrow">REFERENCES</p><h2 id="rfh">參考資料</h2><p class="sub">現代醫學文獻已用 PubMed 與出版社頁面核對題名、期刊、年份與 DOI；中醫原文引自《黃帝內經》（維基文庫），穴位定位依 WHO 西太平洋區標準。</p></div></div>
+      <div id="refList"></div>
+    </section>
+
+    <section class="blk" aria-labelledby="dch">
+      <div class="disc"><div class="in">
+        <h2 id="dch">⚠ 重要聲明｜請先看這裡</h2>
+        <p class="first">本站資訊僅供參考，實際以醫療專業人員評估為準。</p>
+        <ul>
+          <li><b>僅供參考：</b>本頁為一般健康教育，不構成醫療建議，不能取代牙醫、醫師、語言治療師或中醫師的個別評估與治療。</li>
+          <li><b>無任何推薦或行銷：</b>本頁未推薦任何產品、診所或療法。</li>
+          <li><b>資料時點：</b>內容整理於 2026-10-14，研究持續更新，請留意最新資訊。</li>
+          <li><b>穴位按壓：</b>屬放鬆與自我保健，力道以舒服為原則；有傷口、發炎、懷孕或正在治療中，請先詢問專業人員。</li>
+          <li><b>使用前查證：</b>文中標示「原稿整理」的內容，引用前請再確認出處。</li>
+        </ul>
+        <p style="margin-top:10px;font-weight:700">緊急狀況（嚴重嗆咳、呼吸困難、突然單側無力或說話不清）請撥 119。</p>
+      </div></div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="trio"><svg aria-hidden="true"><use href="#sprout"/></svg><svg aria-hidden="true"><use href="#bird"/></svg><svg aria-hidden="true"><use href="#star"/></svg></div>
+    <p class="gold">每一次多懂一點，都是送給自己的小禮物。</p>
+    <p class="slogan">本站資訊僅供參考，實際以醫療專業人員評估為準</p>
+    <p><a href="../index.html">← 返回探險基地</a></p>
+    <small>共好小學堂 ✦ 一起學習，一起共好｜本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-10-14</small>
+  </div>
+</footer>
+<button id="toTop" aria-label="回到頂端" hidden>↑</button>
+
+<script>
+(function(){
+"use strict";
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+/* ---------- mascots (ink outline style) ---------- */
+const INK="#1f2a44";
+function face(cx,cy,s){s=s||1;return `<circle cx="${cx-9*s}" cy="${cy}" r="${4.2*s}" fill="${INK}"/><circle cx="${cx+9*s}" cy="${cy}" r="${4.2*s}" fill="${INK}"/><circle cx="${cx-7.8*s}" cy="${cy-1.4*s}" r="${1.4*s}" fill="#fff"/><circle cx="${cx+10.2*s}" cy="${cy-1.4*s}" r="${1.4*s}" fill="#fff"/><ellipse cx="${cx-17*s}" cy="${cy+8*s}" rx="${5.5*s}" ry="${3.2*s}" fill="#ff9aa2" opacity=".8"/><ellipse cx="${cx+17*s}" cy="${cy+8*s}" rx="${5.5*s}" ry="${3.2*s}" fill="#ff9aa2" opacity=".8"/><path d="M${cx-6*s} ${cy+9*s} Q${cx} ${cy+15*s} ${cx+6*s} ${cy+9*s}" stroke="${INK}" stroke-width="${2.8*s}" fill="none" stroke-linecap="round"/>`}
+const SW=`stroke="${INK}" stroke-width="3" stroke-linejoin="round"`;
+const M={
+ hub:()=>`<path d="M50 12c-10 0-16 6-18 12-8 0-15 7-15 15 0 4 2 8 5 10-2 3-3 6-2 10 1 8 8 13 16 13 3 6 9 9 14 9s11-3 14-9c8 0 15-5 16-13 1-4 0-7-2-10 3-2 5-6 5-10 0-8-7-15-15-15-2-6-8-12-18-12z" fill="#ffb3cf" ${SW}/><path d="M50 14v14M34 28c6 2 8 8 6 12M66 28c-6 2-8 8-6 12" stroke="#c94f80" stroke-width="2.2" fill="none" stroke-linecap="round"/>`+face(50,56,.9),
+ teeth:()=>`<path d="M22 22c9-9 19-4 28 0 9-4 19-9 28 0 9 9 6 25 2 37-3 11-5 29-14 31-7 1-8-15-16-15s-9 16-16 15c-9-2-11-20-14-31-4-12-7-28 2-37z" fill="#fff" ${SW}/>`+face(50,44,.9),
+ gum:()=>`<path d="M10 40c10-14 22-14 26-4 4-10 18-10 22 0 4-10 18-10 22 0 6-10 14-6 10 6v30c-10 12-70 12-80 0z" fill="#ff7b8a" ${SW}/><path d="M22 38v-10M42 36v-12M62 36v-12M80 38v-10" stroke="#fff" stroke-width="5" stroke-linecap="round"/>`+face(50,62,.9),
+ tongue:()=>`<path d="M22 20h56c4 0 6 4 6 8v26c0 22-14 38-34 38S16 76 16 54V28c0-4 2-8 6-8z" fill="#ff8fa3" ${SW}/><path d="M50 50v28" stroke="#e05a77" stroke-width="3" stroke-linecap="round"/>`+face(50,40,.9),
+ chew:()=>`<ellipse cx="50" cy="58" rx="36" ry="32" fill="#b99cff" ${SW}/><rect x="16" y="32" width="68" height="9" rx="4.5" fill="#ffc93c" ${SW}/><path d="M26 74c8 6 40 6 48 0" stroke="${INK}" stroke-width="3" fill="none"/>`+face(50,56,.9),
+ saliva:()=>`<path d="M50 8C40 30 18 46 18 66c0 18 14 28 32 28s32-10 32-28C82 46 60 30 50 8z" fill="#7ee3b8" ${SW}/><ellipse cx="36" cy="58" rx="5" ry="9" fill="#fff" opacity=".7"/>`+face(52,66,.9),
+ swallow:()=>`<rect x="26" y="10" width="48" height="84" rx="24" fill="#ffc2d6" ${SW}/><path d="M50 70v16M42 80l8 8 8-8" stroke="${INK}" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`+face(50,40,.85),
+ nerve:()=>`<path d="M58 6L22 56h24l-8 38 40-54H54z" fill="#ffc93c" ${SW}/>`+face(50,50,.75)
+};
+const masc=(k,cls)=>`<svg viewBox="0 0 100 100" class="${cls||""}" aria-hidden="true">${M[k]()}</svg>`;
+
+/* hero art */
+$("#heroArt").innerHTML=`<ellipse cx="260" cy="350" rx="230" ry="34" fill="#dcf7ec" stroke="${INK}" stroke-width="3"/>
+<g class="float2"><circle cx="70" cy="70" r="22" fill="#fff5d6" stroke="${INK}" stroke-width="2.5"/><path d="M62 70h16M70 62v16" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/></g>
+<g class="float"><path d="M460 120c-6 12-18 20-18 32 0 10 8 16 18 16s18-6 18-16c0-12-12-20-18-32z" fill="#7ee3b8" stroke="${INK}" stroke-width="2.5"/></g>
+<g class="float2"><path d="M110 150 l10 -16 l10 16 l-10 16 z" fill="#ffc93c" stroke="${INK}" stroke-width="2.5"/></g>
+<g transform="translate(36,190) scale(1.15)"><use href="#sprout" width="120" height="130"/></g>
+<g transform="translate(176,150) scale(1.7)"><svg width="100" height="100" viewBox="0 0 100 100">${M.teeth()}</svg></g>
+<g transform="translate(340,210) scale(1.05)"><use href="#bird" width="120" height="110"/></g>
+<g class="float" transform="translate(410,60)"><use href="#star" width="80" height="80"/></g>
+<g transform="translate(150,20)"><rect width="250" height="56" rx="20" fill="#fff" stroke="${INK}" stroke-width="3"/><path d="M110 56 l14 18 l8 -18" fill="#fff" stroke="${INK}" stroke-width="3" stroke-linejoin="round"/><rect x="108" y="50" width="30" height="8" fill="#fff"/><text x="125" y="36" text-anchor="middle" font-family="Huninn,Noto Sans TC,sans-serif" font-size="20" fill="${INK}">嚼一嚼，大腦也醒過來！</text></g>`;
+
+/* ---------- references ---------- */
+const REFS=[
+ {t:"Impact of Oral Bacteria on Alzheimer's Disease.",a:"J Oral Pathol Med（Wiley）",d:"10.1111/jop.70111",u:"https://onlinelibrary.wiley.com/doi/10.1111/jop.70111",one:"探討口腔細菌與阿茲海默症關聯的文獻。"},
+ {t:"Pathophysiological Insights Into the Oral-Brain Axis: Evidence-Based Mechanisms Connecting Periodontitis and Alzheimer's Disease.",a:"Ahmed MAE, et al. Eur J Neurosci. 2025;62(12):e70366.",d:"10.1111/ejn.70366",u:"https://pubmed.ncbi.nlm.nih.gov/41416492/",one:"回顧：發炎級聯（IL-1β、TNF-α）與微生物路徑；P. gingivalis 可能經血流或三叉神經進入腦部、活化微膠細胞；失智者自我口腔照護能力下降。"},
+ {t:"The role of the oral microbiome, host response, and periodontal disease treatment in Alzheimer's disease: A primer.",a:"Chalmers JC, Hernandez-Kapila YL. Periodontol 2000. 2025;98(1):220-227.",d:"10.1111/prd.12631",u:"https://pubmed.ncbi.nlm.nih.gov/40495582/",one:"敘述性回顧：人體尚未證實直接因果；AD 患者腦組織與腦脊髓液曾檢出牙周致病菌；牙齦蛋白酶抑制劑在輕中度 AD 患者未改善認知。"},
+ {t:"Association between periodontal disease and Alzheimer's disease: umbrella review.",a:"Arbildo-Vega HI, et al. Front Dent Med. 2025;6:1635200.",d:"10.3389/fdmed.2025.1635200",u:"https://pubmed.ncbi.nlm.nih.gov/40703565/",one:"傘狀回顧 16 篇系統性回顧，14 篇顯示牙周病與 AD 相關（OR 1.67–2.17、RR 1.11–2.26）；牙周病與缺牙都和 AD 相關。"},
+ {t:"Association between periodontitis and Alzheimer's disease: A narrative review.",a:"Seyedmoalemi MA, Saied-Moallemi Z. IBRO Neurosci Rep. 2025;18:360-365.",d:"10.1016/j.ibneur.2024.12.004",u:"https://pubmed.ncbi.nlm.nih.gov/40060035/",one:"敘述性回顧：AD 患者腦中檢出 P. gingivalis，可能經微膠細胞活化與全身發炎加重神經發炎。"},
+ {t:"Association Between Periodontitis and Mild Cognitive Impairment, Alzheimer's Disease, and Dementia: An Umbrella Review With Evidence Stratification.",a:"Rizwan Ali A, et al. Spec Care Dentist. 2026;46(4):e70235.",d:"10.1111/scd.70235",u:"https://pubmed.ncbi.nlm.nih.gov/42593420/",one:"傘狀回顧：牙周炎者 MCI 風險約 1.65 倍、AD 約 1.53 倍、失智約 1.54 倍；GRADE 證據確定性皆為「非常低」。"},
+ {t:"Oral diseases as emerging risk factors for Alzheimer's disease: A scoping review.",a:"Yi Y, et al. Jpn Dent Sci Rev. 2025;61:292-300.",d:"10.1016/j.jdsr.2025.11.003",u:"https://pubmed.ncbi.nlm.nih.gov/41334059/",one:"範圍回顧 45 篇：牙周炎與缺牙和 AD 風險相關；適當假牙修復可能透過恢復咀嚼、支持營養降低失智風險，但因果未確立。"},
+ {t:"Alzheimer's Disease and Porphyromonas gingivalis: Exploring the Links.",a:"Shawkatova I, et al. Life (Basel). 2025;15(1):96.",d:"10.3390/life15010096",u:"https://pubmed.ncbi.nlm.nih.gov/39860036/",one:"回顧：牙齦蛋白酶與脂多醣可能破壞血腦屏障、引發神經發炎；外膜囊泡可能把毒力因子帶到腦部。"},
+ {t:"Porphyromonas gingivalis: a potential trigger of neurodegenerative disease.",a:"Huang Z, et al. Front Immunol. 2025;16:1482033.",d:"10.3389/fimmu.2025.1482033",u:"https://pubmed.ncbi.nlm.nih.gov/40028317/",one:"回顧：P. gingivalis 可能穿越血腦屏障或經腸腦軸等途徑引起神經發炎。"},
+ {t:"Reciprocal Interactions Between Periodontal Disease and Alzheimer's Disease: Implications for Mutual Triggering, Exacerbation, and Treatment Interventions — A Comprehensive Literature Review.",a:"Gharaibeh S, et al. Neurol Int. 2025;17(6):81.",d:"10.3390/neurolint17060081",u:"https://www.mdpi.com/2035-8377/17/6/81",one:"文獻回顧：牙周病與 AD 可能互相觸發、互相加重。"}
+];
+const TREFS=[
+ ["《黃帝內經》全文（素問、靈樞），維基文庫","https://zh.wikisource.org/wiki/黃帝內經"],
+ ["《黃帝內經·素問》第七卷：宣明五氣篇（五主、五液），維基文庫","https://zh.wikisource.org/wiki/黃帝內經/素問第七卷"],
+ ["《黃帝內經·靈樞》第三卷：經脈，維基文庫","https://zh.wikisource.org/wiki/黃帝內經/靈樞第三卷"],
+ ["《黃帝內經·靈樞》第四卷：脈度，維基文庫","https://zh.wikisource.org/wiki/黃帝內經/靈樞第四卷"],
+ ["《黃帝內經·靈樞》第九卷：五味論，維基文庫","https://zh.wikisource.org/wiki/黃帝內經/靈樞第九卷"],
+ ["Lim S. WHO Standard Acupuncture Point Locations. Evid Based Complement Alternat Med. 2010;7(2):167–168","https://pmc.ncbi.nlm.nih.gov/articles/PMC2862941/"],
+ ["NCCIH. Acupuncture: Effectiveness and Safety","https://www.nccih.nih.gov/health/acupuncture-what-you-need-to-know"]
+];
+function src(list){return (list||[]).map(r=>typeof r==="number"?`<a class="src" href="#ref${r}">參考 ${r}</a>`:`<a class="src" href="#tref${r.slice(1)}">典 ${r.slice(1)}</a>`).join("")}
+
+/* ---------- acupoints & meridians ---------- */
+const PTS={
+ GV20:{n:"百會",m:"督脈",x:286,y:66,loc:"頭頂正中線上，前髮際正中直上 5 寸。",how:"指腹輕揉 1 分鐘，配合慢慢深呼吸。",use:"傳統用於頭暈、精神不振、安神。",warn:"頭部有傷口或術後不要按。"},
+ ST7:{n:"下關",m:"足陽明胃經",x:284,y:304,loc:"耳屏前方，顴弓下緣與下頜切跡之間的凹陷，閉口時取穴。",how:"指腹畫小圈輕揉 1 分鐘，同時慢慢張口、閉口。",use:"傳統用於牙痛、下巴痠痛、張口不利。",warn:"顳顎關節急性疼痛時力道放輕，持續疼痛請看牙科。"},
+ ST6:{n:"頰車",m:"足陽明胃經",x:302,y:376,loc:"下頜角前上方約一橫指，用力咬牙時咬肌隆起最高處。",how:"咬一下找到位置，放鬆後用指腹輕揉 1 分鐘。",use:"傳統用於牙痛、咀嚼痠痛、口歪。",warn:"不要用力壓到發痛。"},
+ ST4:{n:"地倉",m:"足陽明胃經",x:424,y:331,loc:"嘴角旁開約 0.4 寸。",how:"雙手指腹在兩側嘴角外輕揉，再做抿嘴、嘟嘴動作。",use:"傳統用於口角歪斜、流口水。",warn:"嘴角破皮或發炎時避免。"},
+ CV24:{n:"承漿",m:"任脈",x:428,y:362,loc:"下巴，頦唇溝正中的凹陷處。",how:"指腹輕揉 30 秒到 1 分鐘。",use:"傳統用於口歪、齒齦腫痛、流口水。",warn:"局部有傷口不要按。"},
+ CV23:{n:"廉泉",m:"任脈",x:346,y:420,loc:"前頸正中線上，喉結上方，舌骨上緣的凹陷。",how:"指腹輕觸、輕揉即可，配合做吞口水動作。",use:"傳統用於舌頭僵硬、說話不清、流口水、吞嚥不利。",warn:"不可用力壓喉嚨；吞嚥困難請先做專業評估。"},
+ LI4:{n:"合谷",m:"手陽明大腸經",x:null,y:null,loc:"手背第 1、2 掌骨之間，約第 2 掌骨橈側中點（在手上，圖中未標）。",how:"另一手拇指按揉 1 分鐘，左右交替。",use:"傳統常用於頭面、口齒不適。",warn:"孕婦避免強刺激（傳統禁忌）。"}
+};
+const MER={
+ st:{n:"足陽明胃經",p:[[400,232],[414,290],[424,331],[420,384],[360,398],[302,376],[284,304],[300,200],[330,120]]},
+ li:{n:"手陽明大腸經",p:[[340,585],[340,460],[380,404],[428,360],[438,334],[452,296]]},
+ ren:{n:"任脈",p:[[338,585],[340,450],[346,420],[400,404],[428,362]]},
+ du:{n:"督脈",p:[[150,585],[110,420],[98,290],[150,140],[286,64],[400,124],[436,200],[456,268],[444,312]]}
+};
+
+/* ---------- stations ---------- */
+const ORDER=["teeth","gum","tongue","chew","saliva","swallow","nerve"];
+const COL={hub:["var(--blue)","var(--blue-l)"],teeth:["var(--sky)","var(--sky-l)"],gum:["var(--coral)","var(--coral-l)"],tongue:["var(--orange)","var(--orange-l)"],chew:["var(--grape)","var(--grape-l)"],saliva:["var(--mint)","var(--mint-l)"],swallow:["var(--rose)","var(--rose-l)"],nerve:["var(--sun)","var(--sun-l)"]};
+const HEX={hub:"#2455c7",teeth:"#1e90d6",gum:"#e8494d",tongue:"#ea7d12",chew:"#7048e8",saliva:"#1f9e75",swallow:"#d6336c",nerve:"#d99a00"};
+const S={
+hub:{name:"大腦總機",en:"BRAIN HUB",hook:"咀嚼不只是嘴巴的事：大腦在指揮，也在接收。",mers:["du"],pts:["GV20"]},
+teeth:{name:"牙齒與咬合",en:"TEETH & BITE",hook:"每咬一口，牙根四周的感受器就在按大腦的門鈴。",
+ route:[[392,316],[350,300],[300,280],[264,262],[256,240],[300,150]],rlabel:"感覺訊號",
+ meta:"牙齒不是死的骨頭，它扎根在牙周組織裡，四周布滿感受器。咬東西時，這些感受器把「多硬、多大力」的訊息送給大腦。牙齒越少、咬得越無力、吃得越軟爛，門鈴就越少響。",
+ paths:[["感覺回饋","三叉神經把咀嚼訊號送到腦幹、丘腦、感覺運動皮質、海馬迴與前額葉。"],["血流代謝","咀嚼時，這些腦區的血流與代謝活動會增加。"],["營養","牙齒好、吃得動，才吃得到全穀、蔬菜與蛋白質。"]],
+ ev:[["B","缺牙、咀嚼力較差的人，認知退化與失智風險較高；傘狀回顧也指出牙周病與缺牙都和阿茲海默症相關。",[4]],
+     ["原","部分研究估計風險約增加 1.5–2 倍，但可能受營養、社經狀況與慢性病影響，不能直接當成因果。",[]],
+     ["原","咀嚼能力較差的高齡者，在推理、記憶與執行功能測驗上往往表現較低。",[]],
+     ["B","範圍回顧：適當的假牙修復能恢復咀嚼、支持營養，可能有助降低失智風險，但因果還沒確立。",[7]]],
+ tcm:{view:"中醫說牙齒是「骨之所終」，歸腎所主；上排牙由足陽明胃經經過，下排牙由手陽明大腸經經過。牙齒同時連著骨骼（腎）與消化（胃腸）兩條線。",
+  quotes:[["齒者，骨之所終也。","《靈樞·五味論》","T5"],["腎主骨。","《素問·宣明五氣》","T2"],["胃足陽明之脈……入上齒中；大腸手陽明之脈……入下齒中。","《靈樞·經脈》","T3"]],
+  mers:["st","li"],pts:["ST6","LI4"],bridge:"古人把牙齒放在「腎—骨—髓—腦」這條線上，現代研究則發現咀嚼訊號直達腦部。兩邊的建議一致：把牙齒留住，好好用它咀嚼。"},
+ tips:["每 6–12 個月看一次牙，早期處理蛀牙、牙周病與缺牙","缺牙可以和牙醫討論活動假牙、固定義齒或植牙","沒有嗆咳危險時，不要長期只吃全流質飲食","依自己的能力，逐步吃回需要適度咀嚼的食物"],
+ red:["牙齒快速鬆動","假牙嚴重不合、無法咀嚼"],
+ quiz:[["一般建議多久看一次牙？",["每 6–12 個月","牙痛才去","每 5 年","換假牙時才去"],0,"定期檢查能早期處理蛀牙、牙周病與缺牙，把咬合功能留住。"],
+       ["「齒者，骨之所終也」出自哪本書？",["《靈樞·五味論》","《傷寒論》","《本草綱目》","《千金方》"],0,"《靈樞·五味論》：「齒者，骨之所終也。」中醫因此把牙齒歸在腎主骨的系統裡。"]]},
+gum:{name:"牙周與牙齦",en:"GUMS",hook:"牙齦發炎不只是嘴裡的事，發炎物質可能一路跑到大腦。",
+ route:[[400,352],[350,404],[300,470],[276,420],[262,330],[300,200]],rlabel:"發炎物質經血流",
+ meta:"牙周病像一個<b>長期不熄的小火堆</b>：牙齦慢性發炎時，發炎物質和細菌毒素會進入血液，可能影響血腦屏障，讓大腦也跟著「發炎」。",
+ paths:[["發炎線","牙周病的慢性發炎提高全身發炎因子（如 IL-1β、TNF-α），可能影響血腦屏障並促進神經發炎。"],["細菌線","牙周致病菌牙齦卟啉單胞菌（P. gingivalis）及其毒素，在部分阿茲海默症患者的研究中被檢出。"],["照護線","認知下降後，口腔清潔容易被忽略，牙周病又更嚴重。"]],
+ ev:[["B","傘狀回顧（彙整 16 篇系統性回顧）：14 篇顯示牙周病與阿茲海默症相關，勝算比約 1.67–2.17。",[4]],
+     ["B","另一篇傘狀回顧：牙周炎者 MCI 風險約 1.65 倍、阿茲海默症約 1.53 倍、失智約 1.54 倍，但證據確定性都被評為「非常低」。",[6]],
+     ["C","發炎因子與細菌毒素破壞血腦屏障、促進神經發炎，主要來自機制研究。",[2,5]],
+     ["A","針對 P. gingivalis 牙齦蛋白酶的抑制劑，在輕中度阿茲海默症患者的試驗中沒有改善認知。",[3]],
+     ["原","維持牙周健康仍是低風險、整體效益高的健康策略。",[]]],
+ tcm:{view:"牙齦在經絡上由陽明經經過；督脈的最後一穴「齦交」就在上門牙的牙齦上。口腔保健在傳統養生裡一直和脾胃、腎骨一起看。",
+  quotes:[["胃足陽明之脈……入上齒中，還出挾口環脣。","《靈樞·經脈》","T3"]],
+  mers:["st","li","du"],pts:["CV24","LI4"],bridge:"中醫看到的是「牙齦腫痛常和腸胃、作息有關」，現代研究看到的是「牙周發炎可能牽動全身發炎」。兩邊都提醒：牙齦出血、腫痛不是小事。"},
+ tips:["每天早晚刷牙","依牙縫大小使用牙線或牙間刷","定期洗牙，有牙周病就接受治療","控制血糖、戒菸，減少牙周慢性發炎"],
+ red:["牙齦大量出血、化膿","口腔持續疼痛"],
+ quiz:[["傘狀回顧對「牙周炎與失智相關」的證據確定性評為？",["非常低","非常高","已證實因果","沒有評估"],0,"看得到關聯，但研究品質參差、因果未確立，所以確定性被評為非常低。"],
+       ["哪一組做法最能減少牙周慢性發炎？",["早晚刷牙、清牙縫、控糖戒菸、規律洗牙","只用漱口水","牙齦流血就不要刷","只吃軟的食物"],0,"刷牙清牙縫加上控制糖尿病、戒菸與規律洗牙，是原稿建議的牙周照護組合。"]]},
+tongue:{name:"舌頭",en:"TONGUE",hook:"舌頭力氣小了，吃飯、說話、吞嚥都會出狀況。",
+ route:[[380,336],[330,356],[290,350],[262,330],[256,300]],rlabel:"感覺與運動訊號",
+ meta:"舌頭是口腔裡的<b>搬運工兼攪拌機</b>：把食物推到牙齒之間、攪成食團，再幫忙把它送去吞嚥。舌頭沒力，就是「口腔衰弱」的警訊。",
+ paths:[["推送","把食物推送到齒間，配合咀嚼。"],["成團","把嚼碎的食物攪拌成容易吞的食團。"],["啟動吞嚥","協助啟動吞嚥，舌肌力不足會增加嗆咳風險。"]],
+ ev:[["原","口腔衰弱包括舌頭肌力下降、咬合力減弱、吞嚥變差、口乾與發音含糊。",[]],
+     ["原","口腔衰弱與營養不良、肌少症、失能及失智風險上升相關。",[]],
+     ["原","舌頭肌力不足會增加嗆咳與吸入性肺炎的風險。",[]]],
+ tcm:{view:"中醫說「心開竅於舌」，舌頭靈不靈活、說話清不清楚，被看成心神狀態的外在表現。",
+  quotes:[["心氣通於舌，心和則舌能知五味矣。","《靈樞·脈度》","T4"]],
+  mers:["ren"],pts:["CV23"],bridge:"「心開竅於舌」把舌頭和精神活動連在一起，現代則從舌肌力、吞嚥和口腔衰弱來看認知健康。練舌頭，兩邊都說好。"},
+ tips:["健口操：清楚唸「ㄆㄚ、ㄊㄚ、ㄎㄚ、ㄌㄚ」","伸舌操：前、上、下、左、右各停 3–5 秒，重複 5–10 次","說話變慢、咬字含糊時，記錄下來與醫師討論","已有吞嚥困難者，先接受吞嚥評估再練習"],
+ red:["說話突然含糊合併單側無力或臉歪（疑似中風，撥 119）","反覆嗆咳"],
+ quiz:[["健口操「ㄆㄚ、ㄊㄚ、ㄎㄚ、ㄌㄚ」主要訓練什麼？",["嘴唇、舌尖、舌根與吞嚥相關肌群","眼睛肌肉","聲帶音量","肩頸肌肉"],0,"四個音分別用到嘴唇與舌頭不同部位，一起訓練吞嚥相關肌群。"],
+       ["伸舌操每個方向建議停留多久？",["3–5 秒","30 秒","1 分鐘","不用停"],0,"原稿建議每個方向維持 3–5 秒、重複 5–10 次。"]]},
+chew:{name:"咀嚼肌與顳顎關節",en:"CHEWING MUSCLES",hook:"咀嚼不只是肌肉在動，也要大腦的前額葉一起出力。",
+ route:[[310,346],[292,300],[300,220],[300,120]],rlabel:"大腦指揮・肌肉回報",
+ meta:"咬肌是臉上最有力的肌肉之一。每次咀嚼，大腦都要算好力道和節奏；反過來，咀嚼也在<b>鍛鍊大腦</b>。這是一條雙向道。",
+ paths:[["大腦→肌肉","咀嚼依賴高階認知功能，不只是肌肉反射。"],["肌肉→大腦","咀嚼較硬食物時，前額葉功能連結較強的人，咀嚼效能也較好。"],["惡性循環","認知下降者可能出現吞嚥失用、進食行為改變，讓口腔功能更差。"]],
+ ev:[["原","腦影像研究：年長者咀嚼較硬食物時，前額葉功能連結較強者，咀嚼效能也較佳。",[]],
+     ["B","失智者自我口腔照護能力下降，口腔問題與認知退化可能互相加重。",[2,10]]],
+ tcm:{view:"咀嚼肌所在的面頰，是足陽明胃經「循頰車、上耳前」經過的路線；中醫又說「脾主肌肉」，咀嚼的力氣和脾胃的狀態被看成一體。",
+  quotes:[["胃足陽明之脈……出大迎，循頰車，上耳前。","《靈樞·經脈》","T3"],["心主脈，肺主皮，肝主筋，脾主肉，腎主骨。","《素問·宣明五氣》","T2"]],
+  mers:["st"],pts:["ST7","ST6"],bridge:"頰車、下關正好在咬肌與顳顎關節上。傳統用來舒緩牙痛與下巴痠，現代則提醒我們：好好咀嚼，也是在給大腦做運動。"},
+ tips:["進食放慢，每口試著咀嚼約 20–30 下","在安全前提下，選擇需要適度咀嚼的食物：全穀、纖維蔬菜、豆類","飯後可嚼無糖口香糖 5–10 分鐘","顳顎關節疼痛、牙周急性發炎或假牙不穩時，不要勉強嚼"],
+ red:["下巴關節持續疼痛、張口困難"],
+ quiz:[["原稿建議每口大約咀嚼幾下？",["20–30 下","3–5 下","100 下","不用嚼，直接吞"],0,"每口約 20–30 下，依食物質地、牙齒狀況與吞嚥安全彈性調整。"],
+       ["誰不適合飯後嚼口香糖？",["顳顎關節疼痛、牙周急性發炎或假牙不穩的人","一般成年人","喜歡薄荷味的人","剛刷完牙的人"],0,"這些情況勉強咀嚼可能更痛或傷到口腔。"]]},
+saliva:{name:"唾液腺",en:"SALIVA",hook:"口水不只是水：口乾，也是口腔衰弱的訊號之一。",
+ route:[[248,334],[256,300],[256,284]],rlabel:"自律神經訊號",
+ meta:"耳朵前方的腮腺、下巴底下的頜下腺，負責分泌<b>唾液</b>。唾液幫忙潤滑食物、形成食團、保持口腔濕潤。口乾時，咀嚼、吞嚥和說話都會變吃力。",
+ paths:[["潤滑","讓食物變濕軟、好嚼好吞。"],["口乾警訊","口乾是口腔衰弱的表現之一。"],["促進分泌","咀嚼能刺激唾液分泌，飯後嚼無糖口香糖是簡單的方法。"]],
+ ev:[["原","口腔衰弱的表現包括口乾，並與營養不良、肌少症、失能及失智風險相關。",[]],
+     ["原","飯後嚼無糖口香糖 5–10 分鐘可促進唾液分泌。",[]]],
+ tcm:{view:"中醫把口水分成兩種：「涎」較清稀，屬脾；「唾」較稠，屬腎。口乾或流口水，都被當成臟腑狀態的線索。",
+  quotes:[["心為汗，肺為涕，肝為淚，脾為涎，腎為唾，是謂五液。","《素問·宣明五氣》","T2"]],
+  mers:["st","ren"],pts:["ST4","CV23"],bridge:"傳統養生有「吞津」（把口水慢慢嚥下）的習慣；現代版就是好好咀嚼、補充水分，留意長期口乾的原因。"},
+ tips:["留意長期口乾，記錄下來和醫師討論","飯後嚼無糖口香糖 5–10 分鐘（有禁忌者免）","吃飯時充分咀嚼，讓唾液和食物拌勻"],
+ red:["口乾合併體重不明原因下降","口乾導致吞嚥困難"],
+ quiz:[["《素問·宣明五氣》的「五液」中，「涎」屬於哪一臟？",["脾","腎","心","肺"],0,"原文：「脾為涎，腎為唾」。"],
+       ["長期口乾代表什麼？",["可能是口腔衰弱的表現之一，值得留意","完全正常不用管","只要多喝咖啡就好","一定是蛀牙"],0,"口乾是口腔衰弱的表現之一，持續的話應記錄並和醫師討論。"]]},
+swallow:{name:"咽喉與吞嚥",en:"SWALLOWING",hook:"吞嚥是口腔腦軸的最後一關，也是最需要小心的一關。",
+ route:[[318,404],[290,370],[262,330],[256,300]],rlabel:"吞嚥反射",
+ meta:"食物走到喉嚨時，會厭軟骨要及時蓋住氣管，食物才會進食道。舌頭沒力、反應變慢，就可能<b>嗆到</b>，甚至讓食物或口水跑進肺裡。",
+ paths:[["舌頭推送","舌頭把食團推向咽喉，啟動吞嚥。"],["保護氣道","吞嚥時要關住氣管入口，避免嗆入。"],["認知影響","認知功能下降可能出現吞嚥失用，進食變慢、變亂。"]],
+ ev:[["原","舌頭肌力不足會增加嗆咳與吸入性肺炎的風險。",[]],
+     ["原","認知功能下降者可能出現吞嚥失用、進食行為改變。",[]]],
+ tcm:{view:"《內經》把喉嚨分成兩條路：咽是食物的路，喉是呼吸的路。任脈沿著身體正中線往上，經過咽喉到達下巴。",
+  quotes:[["咽喉者，水穀之道也；喉嚨者，氣之所以上下者也。","《靈樞·憂恚無言》","T1"]],
+  mers:["ren"],pts:["CV23"],bridge:"古人已經清楚區分「吃的路」和「呼吸的路」。現代醫學更知道：兩條路要靠吞嚥反射精準切換，舌頭和大腦都要顧好。"},
+ tips:["吃飯坐正、慢慢吃，一口量不要太大","吃東西時不要邊說話、邊看螢幕","家人留意：是否常嗆咳、聲音變濕、吃很久才吃完","已有嗆咳者，先做吞嚥評估，再由專業人員建議訓練與食物質地"],
+ red:["反覆嗆咳、發燒咳嗽、呼吸急促","曾經得過吸入性肺炎"],
+ quiz:[["吃飯常嗆咳、聲音變濕，第一步該怎麼做？",["先接受吞嚥評估（語言治療師、復健科或耳鼻喉科）","自己加強練習就好","改吃更乾的食物","不用理會"],0,"原稿建議已有吞嚥困難或反覆嗆咳者，先做吞嚥評估再訓練。"],
+       ["舌頭肌力不足，最直接會增加哪種風險？",["嗆咳與吸入性肺炎","近視","骨折","高血壓"],0,"舌頭負責推送食團、啟動吞嚥，力氣不足容易嗆到。"]]},
+nerve:{name:"三叉神經",en:"TRIGEMINAL NERVE",hook:"這是口腔通往大腦的高速公路，好訊號和壞東西都可能走這條路。",
+ route:[[410,300],[330,288],[266,262],[254,284],[262,240],[290,150]],rlabel:"三叉神經路線",
+ meta:"三叉神經有三大分支，其中兩支分別通往上排和下排牙齒。它把咀嚼的感覺送進腦幹，再轉到丘腦和大腦皮質。研究也發現，牙周細菌<b>可能</b>沿著這條神經進入腦部。",
+ paths:[["上行訊號","腦幹 → 丘腦 → 感覺運動皮質、海馬迴、前額葉。"],["細菌入侵？","P. gingivalis 可能經血流或三叉神經進入腦部、活化微膠細胞。"],["毒力因子","牙齦蛋白酶、脂多醣與外膜囊泡，可能破壞血腦屏障。"]],
+ ev:[["原","咀嚼時，三叉神經把感覺訊號送到腦幹、丘腦、感覺運動皮質、海馬迴與前額葉。",[]],
+     ["B","阿茲海默症患者的腦組織與腦脊髓液中曾檢出牙周致病菌，牙齦蛋白酶也出現在病灶附近。",[3,5]],
+     ["C","P. gingivalis 可能經血流或三叉神經進入腦部、活化微膠細胞。",[2,9]],
+     ["C","牙齦蛋白酶、脂多醣與外膜囊泡可能破壞血腦屏障、引發神經發炎、促進 Aβ 沉積與 tau 磷酸化。",[8,9]]],
+ tcm:{view:"中醫沒有「神經」的說法；面部的感覺與動作，在經絡上主要由陽明經負責。經絡和神經是兩套不同的系統，不能直接畫上等號。",
+  quotes:[["胃足陽明之脈，起於鼻……入上齒中，還出挾口環脣。","《靈樞·經脈》","T3"]],
+  mers:["st","li"],pts:["ST7","LI4"],bridge:"下關穴正好位在三叉神經下頜支附近，傳統用於牙痛。這是古今觀察的交會點，但經絡理論和神經解剖仍是兩回事。"},
+ tips:["牙周病治療好，就是減少壞東西走這條路的機會","好好咀嚼，讓這條路多跑好訊號","牙痛、臉部麻木或刺痛持續，請就醫查明原因"],
+ red:["突然臉部麻木、歪斜或劇烈刺痛"],
+ quiz:[["咀嚼的感覺訊號主要經由哪條神經傳回大腦？",["三叉神經","視神經","坐骨神經","聽神經"],0,"三叉神經分支通往上下排牙齒，把咀嚼感覺送到腦幹。"],
+       ["針對 P. gingivalis 牙齦蛋白酶的抑制劑，在輕中度阿茲海默症患者試驗的結果是？",["沒有改善認知","治癒失智","記憶力加倍","還沒有任何人體試驗"],0,"Periodontol 2000 的回顧整理：這類抑制劑在患者身上沒有看到認知改善，提醒我們機制研究不等於療效。"]]}
+};
+const HUBQ=[
+ ["口腔功能與認知的「惡性循環」是指？",["認知下降 → 口腔清潔變差 → 缺牙與牙周病惡化 → 咀嚼回饋更少","刷牙太多傷腦","吃太硬傷牙","睡太少會蛀牙"],0,"原稿提醒口腔功能與認知健康要一起照顧，不要只顧一端。","hub"],
+ ["「腦為髓之海」出自？",["《靈樞·海論》","《金匱要略》","《本草綱目》","《傷寒論》"],0,"《靈樞·海論》：「腦為髓之海。」配合「腎主骨」「齒者骨之所終」，古人把牙齒、骨、髓與腦連成一條線。","hub"]
+];
+
+/* ---------- map build ---------- */
+const svg=$("#headSvg");
+const LBL=[["hub","大腦",64,150,180,170,"end"],["nerve","三叉神經",64,236,258,262,"end"],["saliva","唾液腺",64,340,232,334,"end"],["swallow","咽喉吞嚥",64,470,308,470,"end"],
+ ["teeth","牙齒",490,290,430,316,"start"],["gum","牙周牙齦",490,340,432,352,"start"],["tongue","舌頭",490,390,392,342,"start"],["chew","咀嚼肌",490,440,320,384,"start"]];
+$("#lblL").innerHTML=LBL.map(([id,t,x,y,px,py,a])=>`<g class="lblg" data-s="${id}" style="--glow:${HEX[id]}"><path class="lblline" d="M${a==="end"?x+4:x-4},${y-5} L${px},${py}"/><circle cx="${px}" cy="${py}" r="2.6" fill="${INK}"/><text class="lbl" x="${x}" y="${y}" text-anchor="${a}">${t}</text></g>`).join("");
+$("#lblL").querySelectorAll(".lblg").forEach(g=>g.addEventListener("click",()=>select(g.dataset.s,true)));
+$("#showLbl").addEventListener("change",e=>{$("#lblL").style.display=e.target.checked?"":"none"});
+function smooth(p){let d=`M${p[0][0]},${p[0][1]}`;for(let i=0;i<p.length-1;i++){const p0=p[i-1]||p[i],p1=p[i],p2=p[i+1],p3=p[i+2]||p2;d+=` C${(p1[0]+(p2[0]-p0[0])/6).toFixed(1)},${(p1[1]+(p2[1]-p0[1])/6).toFixed(1)} ${(p2[0]-(p3[0]-p1[0])/6).toFixed(1)},${(p2[1]-(p3[1]-p1[1])/6).toFixed(1)} ${p2[0]},${p2[1]}`}return d}
+const tip=$("#tip");
+svg.querySelectorAll(".st").forEach(g=>{const id=g.dataset.s;g.style.setProperty("--glow",HEX[id]);
+ g.addEventListener("click",()=>select(id,true));
+ g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(id,true)}});
+ g.addEventListener("mousemove",e=>{const r=$("#svgWrap").getBoundingClientRect();tip.textContent=g.getAttribute("aria-label");tip.style.left=(e.clientX-r.left)+"px";tip.style.top=(e.clientY-r.top)+"px";tip.style.opacity=1});
+ g.addEventListener("mouseleave",()=>tip.style.opacity=0);});
+$("#chips").innerHTML=["hub",...ORDER].map(id=>`<button class="chip" data-s="${id}" style="--cl:${COL[id][1]}" aria-pressed="false">${masc(id)}${S[id].name}<span data-st="${id}"></span></button>`).join("");
+$("#chips").querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>select(b.dataset.s,true)));
+$("#allMer").addEventListener("change",draw);
+
+const visited=new Set(store.get("oral_v",[]));const qdone=store.get("oral_q",{});
+function passport(){let n=0;ORDER.forEach(id=>{if(visited.has(id))n++;const e=document.querySelector(`[data-st="${id}"]`);if(e)e.textContent=qdone[id]?" ★":(visited.has(id)?" ✓":"")});$("#ppT").textContent=`探險章 ${n} / 7`;$("#ppB").style.width=(n/7*100)+"%"}
+
+let cur="hub",tab="learn";
+function draw(){
+ const s=S[cur],t=s.tcm||s,hot=new Set(t.mers||[]),all=$("#allMer").checked,c=HEX[cur];
+ let m="";Object.entries(MER).forEach(([k,v])=>{if(hot.has(k))m+=`<path class="mer hot" d="${smooth(v.p)}" stroke="${c}"><title>${v.n}</title></path>`;else if(all)m+=`<path class="mer all" d="${smooth(v.p)}"/>`});
+ $("#merL").innerHTML=m;
+ $("#ptL").innerHTML=(t.pts||[]).filter(k=>PTS[k].x!=null).map(k=>{const P=PTS[k],left=P.x<300;return `<g class="pt"><circle class="halo" cx="${P.x}" cy="${P.y}" r="6" fill="${c}"/><circle cx="${P.x}" cy="${P.y}" r="5.5" fill="${c}" stroke="#fff" stroke-width="2"/><text x="${left?P.x-9:P.x+9}" y="${P.y-8}" text-anchor="${left?"end":"start"}">${P.n}</text></g>`}).join("");
+ let r="";if(s.route){const p=s.route,mid=p[Math.floor(p.length/2)];r=`<path class="route" d="${smooth(p)}" stroke="${c}"/><circle cx="${p[0][0]}" cy="${p[0][1]}" r="6" fill="${c}" stroke="#fff" stroke-width="2"/><circle cx="${p[p.length-1][0]}" cy="${p[p.length-1][1]}" r="7" fill="${c}" stroke="#fff" stroke-width="2"/><text class="rtxt" x="${mid[0]}" y="${mid[1]-10}" text-anchor="middle" fill="${c}">${s.rlabel}</text>`}
+ $("#routeL").innerHTML=r;
+}
+function select(id,scroll){
+ cur=id;if(id==="hub")tab="learn";
+ if(id!=="hub"){visited.add(id);store.set("oral_v",[...visited])}
+ svg.classList.toggle("dim",id!=="hub");svg.classList.toggle("hubon",id==="hub");
+ svg.querySelectorAll(".st").forEach(g=>g.classList.toggle("on",g.dataset.s===id));
+ svg.querySelectorAll(".lblg").forEach(g=>g.classList.toggle("on",g.dataset.s===id));
+ document.querySelectorAll(".chip").forEach(b=>b.setAttribute("aria-pressed",b.dataset.s===id?"true":"false"));
+ draw();render();passport();
+ if(scroll&&innerWidth<=980)$("#panel").scrollIntoView({behavior:"smooth"});
+}
+const evLi=([l,t,r])=>`<li><b class="lv" data-l="${l}">${l==="原"?"原稿整理":l}</b><div>${t}${src(r)}</div></li>`;
+const qH=([q,c,r])=>`<div class="quote"><q>${q}</q><cite>${c} ${src([r])}</cite></div>`;
+const acuH=k=>{const P=PTS[k];return `<div class="acu"><div class="nm"><b>${P.n}</b><span class="code">${k}</span><span class="small">${P.m}</span></div><div><span class="k">位置</span>${P.loc}</div><div><span class="k">方法</span>${P.how}</div><div><span class="k">傳統</span>${P.use}</div><div><span class="k">注意</span>${P.warn}</div></div>`};
+function render(){
+ const id=cur,s=S[id],p=$("#panel");p.style.setProperty("--cc",COL[id][0]);p.style.setProperty("--cl",COL[id][1]);
+ let h=`<div class="phead">${masc(id,"m float")}<div><div class="en">${s.en}</div><h3>${s.name}</h3><p class="hook">${s.hook}</p></div></div>`;
+ if(id==="hub"){p.innerHTML=h+`<div class="pbody">${hubBody()}</div>`;p.querySelectorAll(".hubbtn").forEach(b=>b.addEventListener("click",()=>select(b.dataset.s,true)));return}
+ const T=[["learn","認識"],["ev","研究證據"],["tcm","中醫經絡"],["life","生活處方"],["quiz","小測驗"]];
+ h+=`<div class="tabs" role="tablist">${T.map(([k,t])=>`<button class="tab" role="tab" data-t="${k}" aria-selected="${tab===k}">${t}</button>`).join("")}</div>`;
+ let b="";
+ if(tab==="learn")b=`<div class="meta"><b>白話比喻：</b>${s.meta}</div><div class="paths">${s.paths.map(([t,d],i)=>`<div class="pathc"><span class="badge">重點 ${i+1}</span><strong>${t}</strong><p>${d}</p></div>`).join("")}</div><p class="note">圖上的彩色虛線是「${s.rlabel}」的示意路線。想知道每個說法有多可靠，請看「研究證據」分頁的標籤。</p>`;
+ else if(tab==="ev")b=`<ul class="ev">${s.ev.map(evLi).join("")}</ul><p class="note">A 人體試驗　B 觀察性研究　C 動物／機制研究　原稿整理：原稿的整理，未附直接出處。點「參考 n」可跳到頁尾文獻。</p>`;
+ else if(tab==="tcm"){const t=s.tcm;b=`<p>${t.view}</p><div class="quotes">${t.quotes.map(qH).join("")}</div><div><h3 style="margin-bottom:6px">相關經絡</h3><div class="mers">${t.mers.map(k=>`<span>${MER[k].n}</span>`).join("")}</div></div><div><h3 style="margin-bottom:6px">自我保健穴位</h3><div class="acus">${t.pts.map(acuH).join("")}</div></div><div class="bridge"><strong>中西對話：</strong>${t.bridge}</div><p class="note"><b class="lv" data-l="T">T</b>穴位定位依 WHO 西太平洋區標準${src(["T6"])}。穴位按壓屬放鬆與自我保健；美國 NCCIH 提醒不要用針灸或按壓延誤就醫${src(["T7"])}。</p>`}
+ else if(tab==="life")b=`<ul class="tips">${s.tips.map(t=>`<li>${t}</li>`).join("")}</ul><div class="red"><strong>出現這些情況請就醫</strong><ul>${s.red.map(r=>`<li>${r}</li>`).join("")}</ul></div>`;
+ else b=quizHTML(s.quiz.map(q=>q.concat([id])))+`<div class="score" id="pScore"></div>`;
+ p.innerHTML=h+`<div class="pbody" role="tabpanel">${b}</div>`;
+ p.querySelectorAll(".tab").forEach(x=>x.addEventListener("click",()=>{tab=x.dataset.t;render();const n=p.querySelector(`.tab[data-t="${tab}"]`);if(n)n.focus()}));
+ if(tab==="quiz")bindQuiz(p,(sc,tot)=>{$("#pScore").innerHTML=`<span class="big">${sc} / ${tot}</span>${sc===tot?"全對！護照蓋上金星 ★":"再看一次「認識」分頁，可以重新挑戰。"} <button class="btn sm" id="pRe">重新作答</button>`;if(sc===tot){qdone[id]=1;store.set("oral_q",qdone);passport()}$("#pRe").addEventListener("click",render)});
+}
+function hubBody(){
+ const cyc=`<svg class="cycle" viewBox="0 0 520 250" role="img" aria-label="惡性循環：認知下降、口腔清潔不足、缺牙與牙周病惡化、咀嚼與感覺回饋減少，再回到認知下降">
+ <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="${INK}"/></marker></defs>
+ <path d="M200 52 C250 30 270 30 320 52" stroke="${INK}" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+ <path d="M430 92 C450 120 450 140 430 168" stroke="${INK}" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+ <path d="M320 208 C270 230 250 230 200 208" stroke="${INK}" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+ <path d="M90 168 C70 140 70 120 90 92" stroke="${INK}" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+ <g font-family="Huninn,Noto Sans TC,sans-serif" font-size="16" text-anchor="middle" fill="${INK}">
+ <rect x="20" y="30" width="180" height="56" rx="18" fill="#ffb3cf" stroke="${INK}" stroke-width="3"/><text x="110" y="64">認知功能下降</text>
+ <rect x="320" y="30" width="180" height="56" rx="18" fill="#fff5d6" stroke="${INK}" stroke-width="3"/><text x="410" y="64">口腔清潔不足</text>
+ <rect x="320" y="170" width="180" height="56" rx="18" fill="#ffe5e5" stroke="${INK}" stroke-width="3"/><text x="410" y="196">缺牙、牙周病</text><text x="410" y="216" font-size="13">加重</text>
+ <rect x="20" y="170" width="180" height="56" rx="18" fill="#e0f4ff" stroke="${INK}" stroke-width="3"/><text x="110" y="196">咀嚼與感覺回饋</text><text x="110" y="216" font-size="13">變少</text>
+ </g></svg>`;
+ return `<p>口腔腦軸指的是牙齒、牙周、舌頭與吞嚥肌群，和大腦之間透過<b>神經回饋、血流調節與發炎路徑</b>形成的雙向連結。地圖上的藍色標記，是咀嚼訊號會經過的腦區。</p>
+ <div class="hubgrid">${ORDER.map(id=>`<button class="hubbtn" data-s="${id}" style="--cl:${COL[id][1]}">${masc(id)}${S[id].name}</button>`).join("")}</div>
+ <h3>要小心的惡性循環 <span class="lv" data-l="原">原稿整理</span></h3>${cyc}
+ <p class="note">所以口腔功能和認知健康要一起照顧，不要只盯著其中一端。</p>
+ <h3>中醫怎麼看</h3>
+ <div class="quotes">${qH(["腦為髓之海。","《靈樞·海論》","T1"])}${qH(["齒者，骨之所終也。","《靈樞·五味論》","T5"])}</div>
+ <div class="bridge"><strong>中西對話：</strong>古人把「腎主骨 → 齒為骨之所終 → 髓 → 腦」串成一條線；現代研究則找到三叉神經與發炎路徑。兩套語言都在說：<b>顧好牙齒，也是在顧大腦。</b></div>
+ <div class="acus">${acuH("GV20")}</div>`;
+}
+
+/* ---------- quiz ---------- */
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function quizHTML(qs,noNum){return qs.map((q,i)=>`<div class="q" data-ans="${q[2]}"><div class="qt">${noNum?"":(i+1)+". "}${q[0]}</div><div class="opts">${shuffle(q[1].map((_,k)=>k)).map(k=>`<button class="opt" data-k="${k}">${q[1][k]}</button>`).join("")}</div><div class="expl" hidden>${q[3]}</div></div>`).join("")}
+function bindQuiz(root,done){const qs=root.querySelectorAll(".q");let n=0,sc=0;qs.forEach(q=>q.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>{const a=+q.dataset.ans,k=+b.dataset.k;q.querySelectorAll(".opt").forEach(o=>{o.disabled=true;if(+o.dataset.k===a)o.classList.add("ok")});if(k===a)sc++;else b.classList.add("no");n++;const e=q.querySelector(".expl");e.innerHTML=(k===a?"<b>答對了！</b> ":"<b>差一點！</b> ")+e.innerHTML;e.hidden=false;if(n===qs.length)done(sc,qs.length)})))}
+
+/* ---------- compare table ---------- */
+const ROWS={teeth:["三叉神經感覺回饋、缺牙與失智風險、假牙修復","齒為骨之所終、腎主骨","足陽明胃經（上齒）、手陽明大腸經（下齒）","頰車、合谷"],
+ gum:["慢性發炎、P. gingivalis、血腦屏障","陽明經入齒、督脈止於上齦","足陽明胃經、手陽明大腸經、督脈","承漿、合谷"],
+ tongue:["口腔衰弱、舌肌力、嗆咳","心開竅於舌","任脈","廉泉"],
+ chew:["前額葉與咀嚼效能雙向關係","脾主肉；胃經循頰車上耳前","足陽明胃經","下關、頰車"],
+ saliva:["口乾、唾液分泌","脾為涎、腎為唾","足陽明胃經、任脈","地倉、廉泉"],
+ swallow:["吞嚥、吸入性肺炎、吞嚥失用","咽為水穀之道、喉為氣之道","任脈","廉泉"],
+ nerve:["三叉神經上行路徑、細菌可能循神經入腦","經絡不等於神經；面口屬陽明","足陽明胃經、手陽明大腸經","下關、合谷"]};
+$("#cmp").innerHTML=`<thead><tr><th>站點</th><th>現代研究關鍵詞</th><th>中醫理論</th><th>相關經絡</th><th>自我保健穴位</th></tr></thead><tbody>`+ORDER.map(id=>`<tr data-s="${id}" tabindex="0" style="--cc:${COL[id][0]}"><td><i></i>${S[id].name}</td>${ROWS[id].map(x=>`<td>${x}</td>`).join("")}</tr>`).join("")+`</tbody>`;
+$("#cmp").querySelectorAll("tr[data-s]").forEach(tr=>{const go=()=>{tab="tcm";select(tr.dataset.s);$("#map").scrollIntoView({behavior:"smooth"})};tr.addEventListener("click",go);tr.addEventListener("keydown",e=>{if(e.key==="Enter")go()})});
+
+/* ---------- challenge ---------- */
+const POOL=[];ORDER.forEach(id=>S[id].quiz.forEach(q=>POOL.push(q.concat([id]))));HUBQ.forEach(q=>POOL.push(q));
+let cq=[],ci=0,cs=0;const NQ=6;
+function startC(){cq=shuffle(POOL).slice(0,NQ);ci=0;cs=0;showQ();side()}
+function showQ(){const box=$("#cbox");
+ if(ci>=NQ){box.innerHTML=`<div class="prog"><i style="width:100%;background:var(--sun)"></i></div><h3 style="font-size:1.7rem;margin-top:12px">得分 ${cs} / ${NQ}</h3><p style="margin:6px 0 14px">${cs===NQ?"滿分！你是口腔腦軸小達人。":cs>=4?"很不錯！回地圖再逛一圈，下次拿滿分。":"沒關係，回地圖看看每一站，再來挑戰一次。"}</p><button class="btn pri" id="cRe">再抽 ${NQ} 題</button>`;$("#cRe").addEventListener("click",startC);side(true);return}
+ const q=cq[ci],id=q[4];box.style.setProperty("--cl",COL[id][1]);
+ box.innerHTML=`<div class="prog"><i style="width:${ci/NQ*100}%;background:var(--sun)"></i></div><div style="margin-top:12px"><span class="ctag">${S[id].name}</span> <span class="small">第 ${ci+1} / ${NQ} 題 · 目前 ${cs} 分</span></div>`+quizHTML([q],true)+`<div style="margin-top:12px"><button class="btn pri sm" id="cN" hidden>下一題 →</button></div>`;
+ bindQuiz(box,s=>{cs+=s;const n=$("#cN");n.hidden=false;n.textContent=ci===NQ-1?"看結果 →":"下一題 →";n.addEventListener("click",()=>{ci++;showQ()});n.focus()});
+}
+function side(end){const best=store.get("oral_best",0);if(end&&cs>best)store.set("oral_best",cs);const b=Math.max(best,end?cs:0);
+ $("#cside").innerHTML=`<svg viewBox="0 0 120 120" class="float" aria-hidden="true"><use href="#star"/></svg><b style="font-family:var(--f-display);font-size:1.2rem">${end?(cs===NQ?"太厲害了！":"繼續加油！"):"星星陪你答題"}</b><p class="small">題目隨機抽選，每次都不一樣。${b?`最佳紀錄：${b} / ${NQ}`:""}</p>`}
+startC();
+
+/* ---------- practice: 健口操 ---------- */
+const SY=[["ㄆㄚ","嘴唇閉合"],["ㄊㄚ","舌尖"],["ㄎㄚ","舌根"],["ㄌㄚ","舌頭捲動"]];
+let kT=null,kI=0,kB=0,kR=1;
+function kShow(){$("#kSyll").textContent=SY[kI][0];$("#kSub").innerHTML=`練 <b>${SY[kI][1]}</b>：跟著亮燈清楚唸`;$("#kBeats").querySelectorAll("i").forEach((e,i)=>e.classList.toggle("on",i<kB));$("#kRound").textContent=`第 ${kR} 輪`}
+$("#kGo").addEventListener("click",()=>{if(kT)return;kShow();kT=setInterval(()=>{kB++;if(kB>5){kB=0;kI++;if(kI>=SY.length){kI=0;kR++;if(kR>3){clearInterval(kT);kT=null;kR=1;$("#kSub").innerHTML="完成三輪，很棒！";$("#kBeats").querySelectorAll("i").forEach(e=>e.classList.remove("on"));return}}}kShow()},900)});
+$("#kStop").addEventListener("click",()=>{clearInterval(kT);kT=null});
+
+/* ---------- practice: 伸舌操 ---------- */
+$("#tongueFace").innerHTML=`<circle cx="80" cy="76" r="62" fill="#ffd9c2" stroke="${INK}" stroke-width="3.5"/>
+<circle cx="58" cy="62" r="6" fill="${INK}"/><circle cx="102" cy="62" r="6" fill="${INK}"/><circle cx="60" cy="60" r="2" fill="#fff"/><circle cx="104" cy="60" r="2" fill="#fff"/>
+<ellipse cx="40" cy="84" rx="9" ry="5" fill="#ff9aa2" opacity=".8"/><ellipse cx="120" cy="84" rx="9" ry="5" fill="#ff9aa2" opacity=".8"/>
+<g id="tg"><path d="M68 104 h24 v20 c0 10 -24 10 -24 0 z" fill="#ff8fa3" stroke="${INK}" stroke-width="3"/><path d="M80 108 v12" stroke="#e05a77" stroke-width="2.5"/></g>
+<ellipse cx="80" cy="102" rx="20" ry="9" fill="#b33a52" stroke="${INK}" stroke-width="3"/>`;
+const DIR=[["前","translate(0,6)"],["上","translate(0,-6) scale(1,.7)"],["下","translate(0,14) scale(1,1.2)"],["左","translate(-16,4) rotate(18 80 104)"],["右","translate(16,4) rotate(-18 80 104)"]];
+let tT=null,tI=0,tS=4,tRp=1;
+function tShow(){const tg=$("#tg");tg.setAttribute("transform",DIR[tI][1]);$("#tSub").innerHTML=`舌頭往 <b>${DIR[tI][0]}</b> 伸，停 <b>${tS}</b> 秒　（第 ${tRp} / ${$("#tRep").value} 次）`}
+$("#tGo").addEventListener("click",()=>{if(tT)return;tShow();tT=setInterval(()=>{tS--;if(tS<=0){tS=4;tI++;if(tI>=DIR.length){tI=0;tRp++;if(tRp>+$("#tRep").value){clearInterval(tT);tT=null;tRp=1;$("#tg").setAttribute("transform","");$("#tSub").innerHTML="完成！舌頭休息一下。";return}}}tShow()},1000)});
+$("#tStop").addEventListener("click",()=>{clearInterval(tT);tT=null});
+
+/* ---------- practice: 咀嚼計數器 ---------- */
+let cN=0;function cShow(){const arc=$("#ringArc"),f=Math.min(cN,30)/30;arc.setAttribute("stroke-dashoffset",377*(1-f));arc.setAttribute("stroke",cN>=20?"#2bb88a":"#ff9f43");$("#ringN").textContent=cN;$("#cMsg").textContent=cN>=30?"30 下了，可以慢慢吞下去。":cN>=20?"達到 20 下，很好！依食物軟硬決定要不要再嚼幾下。":"吃飯時每口試著嚼 20–30 下，依牙齒狀況與吞嚥安全彈性調整。"}
+$("#cTap").addEventListener("click",()=>{cN++;cShow()});$("#cReset").addEventListener("click",()=>{cN=0;cShow()});
+
+/* ---------- timeline ---------- */
+const DAY=[["早晨","刷牙，用牙線或牙間刷；健口操與伸舌操各 3–5 分鐘","動作要清楚，但不應該痛","var(--sun-l)"],["早餐","全穀主食、蛋、蔬果等需要適度咀嚼的食物","有吞嚥困難的人，依專業建議調整食物質地","var(--orange-l)"],["中午","每口慢慢咀嚼，留意食物口感；飯後可嚼無糖口香糖","有顳顎關節問題的人，避免過度咀嚼","var(--mint-l)"],["晚上","刷牙、清潔牙縫；清潔活動假牙","假牙依牙醫指示清潔與浸泡","var(--sky-l)"],["睡前","留意今天是否有嗆咳、口乾、咬字含糊或吃飯吃很久","症狀持續就記錄下來，帶去就醫","var(--grape-l)"]];
+$("#timeline").innerHTML=DAY.map(([t,a,n,c],i)=>`<div class="tl"><div class="dot" style="background:${c}">${i+1}</div><div class="card box"><b>${t}</b><p>${a}</p><p class="n">注意：${n}</p></div></div>`).join("");
+
+/* ---------- family check ---------- */
+const CK=["吃飯常嗆咳、咳嗽，或吞完後聲音變濕","要花很長時間才吃完一餐","偏好吃很軟的食物","不明原因體重下降","常覺得口乾","說話變慢或咬字含糊","明顯健忘、重複問同一件事","忘記吃藥、處理錢有困難，或方向感變差"];
+$("#checks").innerHTML=CK.map((t,i)=>`<label class="ck"><input type="checkbox" id="ck${i}"><span>${t}</span></label>`).join("");
+function ckUpd(){const n=document.querySelectorAll("#checks input:checked").length;$("#ckBar").style.width=(n/CK.length*100)+"%";$("#ckN").textContent=`${n} / ${CK.length}`;$("#ckMsg").textContent=n===0?"":n<=2?"有幾項符合：先記錄下來（時間、情況），下次看牙或回診時提出來。":"符合的項目不少：建議盡快安排牙科、吞嚥或記憶門診評估，並帶著這份紀錄。"}
+document.querySelectorAll("#checks input").forEach(c=>c.addEventListener("change",ckUpd));
+
+/* ---------- references ---------- */
+$("#refList").innerHTML=`<div class="card" style="padding:16px 18px"><h3 style="margin-bottom:8px">現代醫學文獻</h3><ol>${REFS.map((r,i)=>`<li id="ref${i+1}"><a href="${r.u}" target="_blank" rel="noopener">${esc(r.t)}</a><br><span>${esc(r.a)}</span> DOI: <a href="https://doi.org/${r.d}" target="_blank" rel="noopener">${r.d}</a><div class="one">${r.one}</div></li>`).join("")}</ol></div>
+<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="margin-bottom:8px">中醫經典與穴位標準</h3><ol>${TREFS.map((r,i)=>`<li id="tref${i+1}"><a href="${r[1]}" target="_blank" rel="noopener">${r[0]}</a></li>`).join("")}</ol><p class="small" style="margin-top:8px">《素問·宣明五氣》《靈樞·經脈》《靈樞·脈度》《靈樞·五味論》引文已對照原文；《靈樞·海論》《靈樞·憂恚無言》為通行名句，連結至全書目錄。</p></div>`;
+
+/* ---------- to top ---------- */
+const tt=$("#toTop");addEventListener("scroll",()=>{tt.hidden=scrollY<600},{passive:true});tt.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
+
+select("hub");
+})();
+</script>
+
+</body>
+</html>
