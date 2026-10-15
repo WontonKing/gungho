@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#2455c7">
+<meta name="description" content="點開全身骨骼圖，認識骨鈣素、骨髓神經、交感神經、下視丘荷爾蒙、負重與 PIEZO1、脊椎姿勢與腦骨腸軸；附證據標籤、中醫經絡穴位、敏捷踏步與骨密度小檢查。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/BRAINAXIS/BONEMAP/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="骨頭也會跟大腦說話？｜腦軸大探險">
+<meta property="og:description" content="點開全身骨骼圖，認識骨鈣素、骨髓神經、交感神經、下視丘荷爾蒙、負重與 PIEZO1、脊椎姿勢與腦骨腸軸；附證據標籤、中醫經絡穴位、敏捷踏步與骨密度小檢查。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/BRAINAXIS/BONEMAP/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20120%20130%27%3E%3Cpath%20d%3D%27M60%2030%20C44%2010%2022%2014%2020%2026%20C34%2036%2050%2036%2060%2030Z%27%20fill%3D%27%235ad6a4%27%20stroke%3D%27%231f2a44%27%20stroke-width%3D%273%27/%3E%3Cpath%20d%3D%27M60%2024%20C74%204%2098%208%20100%2020%20C86%2032%2070%2032%2060%2024Z%27%20fill%3D%27%237ee3b8%27%20stroke%3D%27%231f2a44%27%20stroke-width%3D%273%27/%3E%3Cellipse%20cx%3D%2760%27%20cy%3D%2788%27%20rx%3D%2740%27%20ry%3D%2738%27%20fill%3D%27%237ee3b8%27%20stroke%3D%27%231f2a44%27%20stroke-width%3D%273.5%27/%3E%3C/svg%3E">
+<style>[hidden]{display:none!important}</style>
+<title>骨頭也會跟大腦說話？｜腦軸大探險</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&display=swap">
+<style>
+/* Layout: 共好小學堂單元頁 × 探險地圖：左側可點全身骨骼正面圖、右側學習面板；粗墨線＋位移陰影的卡通風 */
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c; --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff; --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --rose:#f06595; --rose-l:#ffe3ee;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7; --white:#ffffff;
+  --lvA:#15803d; --lvB:#b45309; --lvC:#1d4ed8; --lvT:#0f8a7a; --lvO:#7c3aed; --lvQ:#c2410c;
+  --f-display:"Huninn","LXGW WenKai TC","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --f-body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+section,#panel,[id^=ref]{scroll-margin-top:76px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background-color:var(--bg);background-image:radial-gradient(circle at 6% 4%,var(--sun-l) 0,transparent 30%),radial-gradient(circle at 96% 10%,var(--rose-l) 0,transparent 28%),radial-gradient(circle at 90% 75%,var(--mint-l) 0,transparent 32%),radial-gradient(circle at 6% 85%,var(--sky-l) 0,transparent 32%);background-attachment:fixed;color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.85}
+a{color:var(--blue)}
+.wrap{max-width:1220px;margin:0 auto;padding-inline:16px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.3;margin:0}
+h2{font-size:clamp(1.6rem,3.4vw,2.3rem)}
+h3{font-size:1.2rem}
+p{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:8px}
+.hl{background:linear-gradient(transparent 60%,var(--sun) 0);padding:0 .1em}
+.nw{white-space:nowrap}
+.card{background:var(--white);border:3px solid var(--ink);border-radius:22px;box-shadow:0 4px 0 var(--ink)}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:3px dashed var(--line)}
+.top .wrap{display:flex;align-items:center;gap:10px;padding-block:8px}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink)}
+.brand svg{width:38px;height:40px}
+.brand b{font-family:var(--f-display);font-size:1.15rem;display:block;line-height:1.1}
+.brand small{font-size:.66rem;letter-spacing:.14em;color:var(--ink-2);font-weight:700}
+.top nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.pill{text-decoration:none;color:var(--ink);font-size:.86rem;font-weight:700;padding:3px 12px;border-radius:999px;border:2px solid var(--ink);background:var(--white)}
+.pill.back{background:var(--sun)}
+@media (max-width:820px){.top nav .pill:not(.back){display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:36px 64px}
+.hero .bubbleBg{position:absolute;border-radius:50%;opacity:.5;z-index:-1}
+.hero .grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px;align-items:center}
+.tag{display:inline-block;background:var(--sun-l);border:2px solid var(--ink);border-radius:999px;padding:2px 14px;font-weight:700;font-size:.9rem}
+.hero h1{font-size:clamp(2.2rem,5.6vw,3.7rem);margin-top:14px}
+.hero .lede{font-size:1.08rem;color:var(--ink-2);margin-top:14px;max-width:32em}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:3px solid var(--ink);border-radius:999px;padding:9px 22px;font-weight:900;cursor:pointer;text-decoration:none;color:var(--ink);box-shadow:0 4px 0 var(--ink);transition:transform .12s,box-shadow .12s;background:var(--white)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 var(--ink)}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 var(--ink)}
+.btn.pri{background:var(--blue);color:#fff}
+.btn.sun{background:var(--sun)}
+.btn.sm{padding:5px 14px;font-size:.9rem}
+.heroArt{width:100%;max-width:520px;justify-self:center;height:auto}
+.float{animation:float 3.4s ease-in-out infinite}
+.float2{animation:float 4.2s ease-in-out infinite reverse}
+@keyframes float{50%{transform:translateY(-8px)}}
+.wave{position:absolute;left:0;right:0;bottom:0;width:100%;height:46px}
+
+/* section scaffolding */
+section.blk{padding-block:34px}
+.sechead{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px}
+.num{flex:none;width:52px;height:52px;border:3px solid var(--ink);border-radius:14px;display:grid;place-items:center;font-family:var(--f-display);font-size:1.5rem;transform:rotate(-6deg);box-shadow:3px 3px 0 var(--ink)}
+.eyebrow{font-size:.74rem;letter-spacing:.16em;font-weight:900;color:var(--ink-2)}
+.sechead p.sub{color:var(--ink-2);max-width:52em;margin-top:4px}
+.tint{border-radius:28px;padding:26px 18px;margin-inline:-2px}
+
+/* key points */
+.keyp{display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;align-items:center;padding:20px}
+.keyp svg{width:110px;height:120px}
+.say{position:relative;background:var(--white);border:3px solid var(--ink);border-radius:20px;padding:14px 18px;font-size:1.02rem}
+.say::before{content:"";position:absolute;left:-14px;top:30px;border:10px solid transparent;border-right-color:var(--ink)}
+.say ul{margin:6px 0 0;padding-left:1.2em}
+.say .warn{margin-top:8px;background:var(--coral-l);border-radius:12px;padding:6px 12px;font-weight:700}
+
+/* legend */
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:.88rem;color:var(--ink-2);margin-top:12px}
+.lv{display:inline-flex;align-items:center;justify-content:center;min-width:1.7em;height:1.6em;padding:0 .45em;border-radius:7px;font-weight:900;font-size:.76rem;margin-right:6px;flex:none;white-space:nowrap;border:1.5px solid currentColor}
+.lv[data-l=A]{color:var(--lvA);background:#e7f7ec}
+.lv[data-l=B]{color:var(--lvB);background:#fff3df}
+.lv[data-l=C]{color:var(--lvC);background:#e6edff}
+.lv[data-l=T]{color:var(--lvT);background:#dff5f1}
+.lv[data-l=原]{color:var(--lvO);background:var(--grape-l)}
+.lv[data-l=待]{color:var(--lvQ);background:var(--orange-l)}
+
+/* map */
+.mapgrid{display:grid;grid-template-columns:minmax(0,500px) minmax(0,1fr);gap:22px;align-items:start}
+.headcard{position:sticky;top:70px;padding:12px 12px 14px}
+.tools{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;padding:0 4px 4px;font-size:.86rem}
+.toggle{display:inline-flex;gap:6px;align-items:center;cursor:pointer;font-weight:700}
+.toggle input{width:17px;height:17px;accent-color:var(--blue)}
+#headSvg{width:100%;height:auto;display:block;max-height:calc(100vh - 230px)}
+#headSvg .st{cursor:pointer;transition:opacity .25s,filter .2s}
+#headSvg .st:hover,#headSvg .st:focus-visible{filter:drop-shadow(0 0 6px var(--glow)) brightness(1.06);outline:none}
+#headSvg.dim .st:not(.on){opacity:.35}
+#headSvg .st.on{animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{filter:drop-shadow(0 0 9px var(--glow)) brightness(1.1)}}
+#headSvg .lbl{font-family:var(--f-display);font-size:16px;fill:var(--ink);cursor:pointer}
+#headSvg .lblg.on .lbl{font-weight:700;fill:var(--glow)}
+#headSvg .lblline{stroke:var(--ink-2);stroke-width:.9;stroke-dasharray:2 2;fill:none}
+#merL,#routeL,#ptL,#headSvg .lblline,#regL{pointer-events:none}
+#headSvg .mer{fill:none;stroke-linecap:round;stroke-linejoin:round}
+#headSvg .mer.all{stroke:#8a96ad;stroke-width:1.5;stroke-dasharray:1 4}
+#headSvg .mer.hot{stroke-width:2.8;stroke-dasharray:2 5;animation:flow 1.4s linear infinite}
+#headSvg .route{fill:none;stroke-width:3.4;stroke-dasharray:7 6;animation:flow .9s linear infinite;stroke-linecap:round}
+@keyframes flow{to{stroke-dashoffset:-26}}
+#headSvg .rtxt{font-size:12.5px;font-weight:900;paint-order:stroke;stroke:#fff;stroke-width:4px}
+#headSvg .pt .halo{animation:halo 1.8s ease-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes halo{from{transform:scale(.6);opacity:.8}to{transform:scale(2.3);opacity:0}}
+#headSvg .pt text{font-size:12.5px;font-weight:900;paint-order:stroke;stroke:#fff;stroke-width:4px;fill:var(--ink)}
+#headSvg .reg{opacity:0;transition:opacity .3s}
+#headSvg.hubon .reg{opacity:1}
+#headSvg .reg text{font-size:11.5px;font-weight:900;paint-order:stroke;stroke:#fff;stroke-width:3.5px;fill:var(--blue-d)}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:#fff;font-size:.82rem;padding:2px 10px;border-radius:8px;transform:translate(-50%,-135%);white-space:nowrap;opacity:0;transition:opacity .12s}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chip{display:inline-flex;align-items:center;gap:5px;border:2.5px solid var(--ink);background:var(--white);border-radius:999px;padding:2px 10px 2px 3px;font-size:.86rem;cursor:pointer;font-weight:700}
+.chip svg{width:26px;height:26px}
+.chip[aria-pressed=true]{background:var(--cl);box-shadow:0 3px 0 var(--ink)}
+.passport{margin-top:10px;font-size:.84rem;color:var(--ink-2);display:flex;align-items:center;gap:8px;font-weight:700}
+.passport .bar{flex:1;height:12px;border-radius:99px;border:2px solid var(--ink);background:var(--white);overflow:hidden}
+.passport .bar i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint) 0 8px,#5fd6ad 8px 16px);transition:width .4s}
+
+/* panel */
+.panel{overflow:hidden;min-width:0}
+.phead{display:flex;gap:14px;align-items:center;padding:16px 20px;background:var(--cl);border-bottom:3px solid var(--ink)}
+.phead svg.m{width:80px;height:80px;flex:none}
+.phead .en{font-size:.74rem;letter-spacing:.14em;font-weight:900;color:var(--ink-2)}
+.phead h3{font-size:1.65rem}
+.phead .hook{font-size:1rem;margin-top:2px}
+.tabs{display:flex;gap:4px;padding:10px 12px 0;overflow-x:auto;border-bottom:3px dashed var(--line)}
+.tab{border:0;background:none;padding:7px 12px;border-radius:12px 12px 0 0;cursor:pointer;font-weight:900;font-size:.94rem;color:var(--ink-2);white-space:nowrap;border-bottom:4px solid transparent}
+.tab[aria-selected=true]{color:var(--ink);border-bottom-color:var(--cc);background:var(--cl)}
+.pbody{padding:20px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.meta{background:var(--cl);border:2.5px dashed var(--ink);border-radius:18px;padding:12px 16px}
+.paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.pathc{position:relative;border:2.5px solid var(--ink);border-radius:16px;padding:20px 12px 10px;background:var(--white)}
+.pathc .badge{position:absolute;top:-12px;left:10px;background:var(--cc);color:var(--ink);border:2px solid var(--ink);border-radius:999px;font-size:.74rem;font-weight:900;padding:0 10px}
+.pathc strong{font-family:var(--f-display);font-size:1.05rem;display:block}
+.pathc p{font-size:.9rem;color:var(--ink-2)}
+.ev{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.ev li{display:flex;gap:8px;align-items:flex-start;padding:10px 12px;border-radius:14px;background:var(--white);border:2px solid var(--line);font-size:.96rem}
+.ev li>div{min-width:0}
+a.src{display:inline-block;font-size:.72rem;font-weight:900;text-decoration:none;background:var(--blue-l);color:var(--blue-d);border-radius:999px;padding:0 8px;margin-left:4px;line-height:1.7;vertical-align:.1em;white-space:nowrap}
+.quote{border-left:5px solid var(--lvT);background:#effaf7;padding:10px 14px;border-radius:0 14px 14px 0}
+.quote q{font-family:var(--f-display);font-size:1.12rem;quotes:"「" "」"}
+.quote cite{display:block;font-style:normal;font-size:.82rem;color:var(--ink-2)}
+.quotes{display:flex;flex-direction:column;gap:8px}
+.mers{display:flex;flex-wrap:wrap;gap:6px}
+.mers span{font-size:.86rem;border:2px solid var(--ink);border-radius:999px;padding:0 10px;background:var(--white);font-weight:700}
+.acus{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.acu{border:2.5px solid var(--ink);border-radius:16px;padding:12px;background:var(--white);display:flex;flex-direction:column;gap:3px;font-size:.88rem}
+.acu .nm{display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+.acu .nm b{font-family:var(--f-display);font-size:1.2rem}
+.acu .code{font-size:.72rem;font-weight:900;background:var(--cc);border:1.5px solid var(--ink);border-radius:6px;padding:0 6px}
+.acu .k{font-weight:900;color:var(--ink-2);margin-right:4px}
+.bridge{background:linear-gradient(135deg,var(--cl),#effaf7);border:2.5px solid var(--ink);border-radius:18px;padding:12px 16px}
+.bridge strong{font-family:var(--f-display)}
+.note{font-size:.86rem;color:var(--ink-2);border-top:2px dashed var(--line);padding-top:10px}
+.tips{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.tips li{background:var(--white);border:2px solid var(--line);border-radius:14px;padding:8px 12px;font-size:.93rem}
+.tips li::before{content:"✓ ";color:var(--mint);font-weight:900}
+.red{border:3px solid var(--coral);border-radius:18px;padding:12px 16px;background:var(--coral-l)}
+.red strong{color:#c92a2a}
+.red ul{margin:6px 0 0;padding-left:1.2em;font-size:.94rem}
+.cycle{width:100%;max-width:520px;height:auto;display:block;margin:0 auto}
+.hubgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.hubbtn{display:flex;flex-direction:column;align-items:center;border:2.5px solid var(--ink);border-radius:16px;background:var(--cl);padding:8px 4px;cursor:pointer;font-weight:900;font-size:.88rem;box-shadow:0 3px 0 var(--ink)}
+.hubbtn svg{width:48px;height:48px}
+
+/* quiz */
+.q{border:2.5px solid var(--ink);border-radius:18px;padding:14px;background:var(--white)}
+.qt{font-weight:900;margin-bottom:8px}
+.opts{display:grid;gap:6px}
+.opt{text-align:left;border:2.5px solid var(--line);background:var(--white);border-radius:14px;padding:8px 12px;cursor:pointer;font-size:.96rem}
+.opt:hover:not(:disabled){border-color:var(--ink)}
+.opt.ok{border-color:var(--mint);background:var(--mint-l)}
+.opt.no{border-color:var(--coral);background:var(--coral-l)}
+.opt:disabled{cursor:default}
+.expl{margin-top:8px;font-size:.92rem;padding:8px 12px;border-radius:12px;background:var(--sun-l)}
+.score{font-weight:900;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.score .big{font-family:var(--f-display);font-size:1.6rem}
+
+/* practice */
+.prac{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pcard{padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.pcard h3{display:flex;align-items:center;gap:8px}
+.stage{border:2.5px solid var(--ink);border-radius:18px;background:var(--cl);min-height:190px;display:grid;place-items:center;text-align:center;padding:10px;position:relative}
+.syll{font-family:var(--f-display);font-size:3.4rem;line-height:1}
+.syl-sub{font-size:.9rem;color:var(--ink-2);margin-top:6px}
+.beats{display:flex;gap:6px;justify-content:center;margin-top:10px}
+.beats i{width:14px;height:14px;border-radius:50%;border:2px solid var(--ink);background:var(--white)}
+.beats i.on{background:var(--orange)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.small{font-size:.84rem;color:var(--ink-2)}
+#tongueFace{width:150px;height:150px}
+#tongueFace #tg{transition:transform .45s cubic-bezier(.4,1.6,.6,1)}
+.ring{width:150px;height:150px}
+.timeline{display:grid;gap:12px;position:relative}
+.tl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:start}
+.tl .dot{width:46px;height:46px;border-radius:50%;border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--f-display);font-weight:700;box-shadow:2px 2px 0 var(--ink)}
+.tl .box{padding:10px 14px}
+.tl .box b{font-family:var(--f-display);font-size:1.1rem}
+.tl .box .n{font-size:.86rem;color:var(--ink-2)}
+.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.ck{display:flex;gap:10px;align-items:flex-start;padding:10px 14px;cursor:pointer;font-size:.96rem;border:2.5px solid var(--ink);border-radius:16px;background:var(--white)}
+.ck input{appearance:none;flex:none;width:24px;height:24px;border:2.5px solid var(--ink);border-radius:7px;margin-top:3px;display:grid;place-items:center;background:var(--white)}
+.ck input:checked{background:var(--coral)}
+.ck input:checked::after{content:"✓";color:#fff;font-weight:900;font-size:15px;line-height:1}
+.prog{height:16px;border:2.5px solid var(--ink);border-radius:99px;overflow:hidden;background:var(--white)}
+.prog i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--coral) 0 8px,#ff8f8f 8px 16px);transition:width .3s}
+.tblwrap{overflow-x:auto;border:3px solid var(--ink);border-radius:22px;background:var(--white);box-shadow:0 4px 0 var(--ink)}
+table.cmp{border-collapse:collapse;width:100%;min-width:860px;font-size:.9rem}
+table.cmp th,table.cmp td{padding:10px 12px;border-bottom:2px dashed var(--line);text-align:left;vertical-align:top}
+table.cmp thead th{background:var(--blue);color:#fff;font-family:var(--f-display);font-weight:400;font-size:1rem}
+table.cmp td:first-child{font-weight:900;white-space:nowrap}
+table.cmp td:first-child i{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--cc);border:2px solid var(--ink);margin-right:6px;vertical-align:-1px}
+table.cmp tbody tr{cursor:pointer}
+table.cmp tbody tr:hover{background:var(--sun-l)}
+.chal{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,280px);gap:18px;align-items:start}
+.cbox{padding:20px}
+.cside{padding:16px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
+.cside svg{width:120px;height:120px}
+.ctag{display:inline-block;font-size:.8rem;font-weight:900;background:var(--cl);border:2px solid var(--ink);border-radius:999px;padding:0 12px;margin-bottom:6px}
+.refs ol{margin:0;padding-left:1.6em;display:flex;flex-direction:column;gap:8px;font-size:.9rem;word-break:break-word}
+.refs li:target{background:var(--sun-l);border-radius:8px}
+.refs .one{color:var(--ink-2);font-size:.86rem}
+.fix{border:2.5px dashed var(--orange);background:var(--orange-l);border-radius:16px;padding:12px 16px;font-size:.92rem;margin-bottom:14px}
+.fix b{color:#b35400}
+.disc{border:4px solid #c92a2a;background:var(--coral-l);border-radius:24px;padding:6px}
+.disc .in{border:2.5px dashed #c92a2a;border-radius:18px;padding:16px 18px}
+.disc h2{font-size:1.4rem;color:#c92a2a}
+.disc .first{background:#fff;color:#c92a2a;font-weight:900;border-radius:12px;padding:8px 12px;margin:10px 0}
+.disc ul{margin:0;padding-left:1.2em;font-size:.95rem}
+footer{background:var(--blue-d);color:#fff;margin-top:36px;padding-block:30px 40px}
+footer .wrap{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+footer .trio{display:flex;gap:10px;align-items:flex-end}
+footer .trio svg{width:70px;height:72px}
+footer .gold{font-family:var(--f-display);font-size:1.3rem}
+footer .slogan{background:var(--sun);color:var(--ink);font-weight:900;border-radius:999px;padding:4px 16px;font-size:.92rem}
+footer a{color:var(--sun)}
+footer small{opacity:.85}
+.prac.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:820px){.prac.two{grid-template-columns:1fr}}
+#toTop{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:48px;height:48px;border-radius:50%;border:3px solid var(--ink);background:var(--sun);font-weight:900;font-size:1.3rem;cursor:pointer;box-shadow:0 4px 0 var(--ink);z-index:50}
+
+@media (max-width:980px){.mapgrid{grid-template-columns:1fr}.headcard{position:static}#headSvg{max-height:none}}
+@media (max-width:820px){
+  .hero .grid,.prac,.chal,.checks,.tips,.paths{grid-template-columns:1fr}
+  .keyp{grid-template-columns:1fr;justify-items:center}
+  .say::before{display:none}
+  .hubgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .phead svg.m{width:60px;height:60px}
+  .phead h3{font-size:1.3rem}
+  .pbody{padding:16px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+</defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><svg aria-hidden="true"><use href="#sprout"/></svg><span><b>腦軸大探險</b><small>BRAIN AXIS ADVENTURE</small></span></a>
+    <nav aria-label="頁內導覽">
+      <a class="pill" href="#map">探險地圖</a><a class="pill" href="#practice">跟著做</a><a class="pill" href="#challenge">挑戰</a><a class="pill" href="#refs">參考</a>
+      <a class="pill back" href="../index.html">← 返回探險基地</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="bubbleBg" style="width:340px;height:340px;background:var(--sun-l);left:-120px;top:-60px"></div>
+    <div class="bubbleBg" style="width:260px;height:260px;background:var(--grape-l);right:-80px;top:40px"></div>
+    <div class="bubbleBg" style="width:200px;height:200px;background:var(--sky-l);left:40%;bottom:-60px"></div>
+    <div class="wrap grid">
+      <div>
+        <span class="tag">✦ 大腦保健小知識 · 骨腦軸探險地圖</span>
+        <h1>骨頭也會<span class="hl nw">跟大腦說話？</span></h1>
+        <p class="lede">骨頭不只是支架，也是會分泌「骨鈣素」等訊號的內分泌器官；大腦則透過神經和荷爾蒙，指揮骨頭的拆除與重建。點開骨骼地圖的每一站，看看研究怎麼說、中醫「腎主骨、骨生髓、髓通腦」怎麼看，再一起做敏捷踏步和骨骼健康小檢查。</p>
+        <div class="cta"><a class="btn pri" href="#map">開始探險 →</a><a class="btn sun" href="#practice">直接跟著做</a></div>
+      </div>
+      <svg class="heroArt" id="heroArt" viewBox="0 0 520 400" role="img" aria-label="小芽、藍鳥、星星和骨頭寶寶站在草地上，說：站起來走走，骨頭和大腦都開心！"></svg>
+    </div>
+    <svg class="wave" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C150 0 300 46 450 24 C600 2 750 46 900 22 C1050 0 1130 30 1200 20 L1200 46 L0 46Z" fill="var(--white)" opacity=".8"/></svg>
+  </section>
+
+  <div class="wrap">
+    <section class="blk" aria-labelledby="kph">
+      <div class="sechead"><div class="num" style="background:var(--blue-l)">1</div><div><p class="eyebrow">KEY POINTS</p><h2 id="kph">先說重點</h2></div></div>
+      <div class="card keyp">
+        <svg aria-hidden="true"><use href="#bird"/></svg>
+        <div class="say">
+          <b>藍鳥幫你整理三件事：</b>
+          <ul>
+            <li>骨→腦：骨頭分泌的骨鈣素可進入血液，在動物研究中能穿過血腦屏障，影響記憶、情緒與髓鞘形成。</li>
+            <li>腦→骨：長期壓力、交感神經亢奮與憂鬱，可能讓骨頭「拆得比蓋得快」，骨量下降；憂鬱和骨質疏鬆常常一起出現。</li>
+            <li>共同處方：讓骨頭受力（負重與阻力運動）、練平衡防跌、討論鈣與維生素 D，必要時做骨密度檢查。</li>
+          </ul>
+          <p class="warn">要分清楚：骨鈣素、PIEZO1 等機制多數還在動物與機制研究階段；臨床上已確立的，仍是藥物、運動、營養與防跌。</p>
+        </div>
+      </div>
+      <div class="legend" aria-label="證據標籤說明">
+        <span><b class="lv" data-l="A">A</b>人體試驗或臨床共識</span>
+        <span><b class="lv" data-l="B">B</b>觀察性研究或回顧，看得到關聯</span>
+        <span><b class="lv" data-l="C">C</b>動物或機制研究</span>
+        <span><b class="lv" data-l="T">T</b>中醫經典理論</span>
+        <span><b class="lv" data-l="原">原稿整理</b>原稿的整理或建議，未附直接出處</span>
+      </div>
+    </section>
+
+    <section class="blk" id="map" aria-labelledby="maph">
+      <div class="sechead"><div class="num" style="background:var(--sun-l)">2</div><div><p class="eyebrow">EXPLORATION MAP</p><h2 id="maph">點一站，看骨頭和大腦怎麼互傳訊號</h2><p class="sub">這是全身骨骼正面圖（面向你，所以圖的左邊是身體右側）。被選中的部位會亮起，彩色虛線畫出訊號的方向；切到「中醫經絡」分頁，圖上會標出相關經絡與穴位。</p></div></div>
+      <div class="mapgrid">
+        <div class="card headcard" id="headcard">
+          <div class="tools">
+            <label class="toggle"><input type="checkbox" id="allMer">顯示全部經絡</label>
+            <label class="toggle"><input type="checkbox" id="showLbl" checked>部位名稱</label>
+          </div>
+          <div style="position:relative" id="svgWrap">
+            <svg id="headSvg" viewBox="-40 0 480 830" role="group" aria-label="全身骨骼與大腦正面圖">
+              <defs>
+                <path id="half" d="M200,128 L186,128 C186,146 184,156 180,162 C166,170 146,172 132,178 C114,186 106,200 106,222 C104,256 100,290 98,320 C96,350 92,390 90,424 C88,440 84,452 82,466 C80,480 84,494 94,500 C104,504 110,494 110,482 C110,466 112,450 114,436 C118,400 122,360 126,326 C128,300 132,270 138,246 C140,280 142,320 146,360 C148,380 142,410 138,440 C136,480 136,520 140,560 C144,590 148,610 148,630 C146,670 150,710 158,748 C158,760 150,772 148,782 C150,792 172,794 184,790 C190,786 190,772 186,762 C186,740 188,700 190,660 C192,630 190,610 190,596 C192,560 196,520 198,488 L200,486 Z"/>
+                <g id="lhalfBones" fill="#fbf3dc" stroke="#1f2a44" stroke-width="2">
+                  <path d="M128,186 C116,190 114,204 120,212 L112,322 C108,330 110,336 116,336 L124,334 L130,214 C136,206 136,192 128,186 Z"/>
+                  <path d="M114,340 L100,452 L106,454 L120,342 Z"/><path d="M122,340 L110,454 L116,456 L128,344 Z"/>
+                  <ellipse cx="104" cy="472" rx="10" ry="16"/>
+                  <path d="M196,180 C176,176 156,178 140,186" fill="none" stroke-width="5" stroke="#1f2a44"/><path d="M196,180 C176,176 156,178 140,186" fill="none" stroke-width="2.4" stroke="#fbf3dc"/>
+                  <path d="M190,200 C166,198 150,212 148,232" fill="none" stroke-width="5"/><path d="M190,222 C164,222 148,238 148,258" fill="none" stroke-width="5"/><path d="M190,246 C164,248 150,264 152,286" fill="none" stroke-width="5"/><path d="M190,270 C166,274 154,290 158,310" fill="none" stroke-width="5"/>
+                  <path d="M154,618 L160,744 L172,744 L168,618 Z"/><path d="M150,624 L152,740" fill="none" stroke-width="3"/>
+                </g>
+              </defs>
+              <g fill="#fff4ea" stroke="#1f2a44" stroke-width="2.5" opacity=".9"><use href="#half"/><use href="#half" transform="matrix(-1 0 0 1 400 0)"/><ellipse cx="200" cy="80" rx="46" ry="56"/></g>
+              <!-- context bones -->
+              <use href="#lhalfBones"/><use href="#lhalfBones" transform="matrix(-1 0 0 1 400 0)"/>
+              <g fill="#fbf3dc" stroke="#1f2a44" stroke-width="2">
+                <ellipse cx="200" cy="80" rx="38" ry="46"/>
+                <ellipse cx="186" cy="88" rx="7" ry="6" fill="#ead9ad"/><ellipse cx="214" cy="88" rx="7" ry="6" fill="#ead9ad"/>
+                <path d="M172,102 C176,124 190,132 200,132 C210,132 224,124 228,102" fill="#fbf3dc"/>
+              </g>
+
+              <g id="stations">
+                <!-- spine -->
+                <g class="st" data-s="spine" tabindex="0" role="button" aria-label="脊椎與姿勢">
+                  <g fill="#ffe6a6" stroke="#1f2a44" stroke-width="1.8" id="vert"></g>
+                </g>
+                <!-- sympathetic chain -->
+                <g class="st" data-s="sym" tabindex="0" role="button" aria-label="交感神經：壓力與骨流失">
+                  <path d="M184,150 L182,450 M216,150 L218,450" stroke="#e6a800" stroke-width="3" fill="none" stroke-dasharray="2 4" stroke-linecap="round"/>
+                  <g fill="#ffc93c" stroke="#1f2a44" stroke-width="1.4" id="gang"></g>
+                </g>
+                <!-- gut -->
+                <g class="st" data-s="gut" tabindex="0" role="button" aria-label="腸道：腦骨腸軸">
+                  <path d="M176,420 L176,380 C176,372 182,368 188,368 L212,368 C218,368 224,372 224,380 L224,418" fill="none" stroke="#1f2a44" stroke-width="10" stroke-linecap="round"/>
+                  <path d="M176,420 L176,380 C176,372 182,368 188,368 L212,368 C218,368 224,372 224,380 L224,418" fill="none" stroke="#ffb36b" stroke-width="6" stroke-linecap="round"/>
+                  <path d="M188,384 C198,378 206,388 212,384 C216,392 206,398 198,396 C190,396 186,404 194,408 C202,412 208,404 212,410" fill="none" stroke="#1f2a44" stroke-width="6" stroke-linecap="round"/>
+                  <path d="M188,384 C198,378 206,388 212,384 C216,392 206,398 198,396 C190,396 186,404 194,408 C202,412 208,404 212,410" fill="none" stroke="#ffcf9a" stroke-width="3" stroke-linecap="round"/>
+                </g>
+                <!-- pelvis & marrow -->
+                <g class="st" data-s="marrow" tabindex="0" role="button" aria-label="骨盆與骨髓">
+                  <g fill="#fbf3dc" stroke="#1f2a44" stroke-width="2.2">
+                    <path d="M194,432 C178,420 150,424 144,448 C144,468 158,482 176,486 C184,480 192,470 194,458 Z"/>
+                    <path d="M206,432 C222,420 250,424 256,448 C256,468 242,482 224,486 C216,480 208,470 206,458 Z"/>
+                    <path d="M190,470 C194,484 206,484 210,470" fill="none"/>
+                  </g>
+                  <g fill="#ff6b6b"><circle cx="162" cy="446" r="3.5"/><circle cx="172" cy="458" r="3"/><circle cx="160" cy="462" r="2.6"/><circle cx="238" cy="446" r="3.5"/><circle cx="228" cy="458" r="3"/><circle cx="240" cy="462" r="2.6"/></g>
+                </g>
+                <!-- femurs: bone cells / osteocalcin -->
+                <g class="st" data-s="ocn" tabindex="0" role="button" aria-label="骨細胞與骨鈣素">
+                  <g fill="#ffe08a" stroke="#1f2a44" stroke-width="2.2">
+                    <circle cx="172" cy="490" r="9"/><path d="M166,496 L156,600 L170,604 L178,498 Z"/><ellipse cx="162" cy="606" rx="13" ry="7"/>
+                    <circle cx="228" cy="490" r="9"/><path d="M234,496 L244,600 L230,604 L222,498 Z"/><ellipse cx="238" cy="606" rx="13" ry="7"/>
+                  </g>
+                  <g fill="#ff9f43"><circle cx="168" cy="530" r="2.4"/><circle cx="164" cy="560" r="2.4"/><circle cx="232" cy="530" r="2.4"/><circle cx="236" cy="560" r="2.4"/></g>
+                </g>
+                <!-- legs & feet: mechanical load -->
+                <g class="st" data-s="mech" tabindex="0" role="button" aria-label="負重與機械力：PIEZO1">
+                  <g fill="#b7e8ff" stroke="#1f2a44" stroke-width="2"><ellipse cx="164" cy="770" rx="16" ry="10"/><ellipse cx="236" cy="770" rx="16" ry="10"/></g>
+                  <path d="M120,812 h160" stroke="#1f2a44" stroke-width="3" stroke-linecap="round"/>
+                  <g stroke="#1e90d6" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M164,808 v-20 M158,794 l6,-6 6,6"/><path d="M236,808 v-20 M230,794 l6,-6 6,6"/></g>
+                </g>
+                <!-- hypothalamus & pituitary -->
+                <g class="st" data-s="hypo" tabindex="0" role="button" aria-label="下視丘與腦下垂體">
+                  <circle cx="200" cy="92" r="6" fill="#8a5cf6" stroke="#1f2a44" stroke-width="2"/>
+                  <path d="M200,98 L200,104" stroke="#1f2a44" stroke-width="2"/>
+                  <circle cx="200" cy="108" r="5" fill="#b99cff" stroke="#1f2a44" stroke-width="2"/>
+                </g>
+                <!-- brain -->
+                <g class="st" data-s="hub" tabindex="0" role="button" aria-label="大腦：骨腦軸總機">
+                  <path d="M200,40 C188,38 178,43 175,51 C168,52 165,60 168,66 C167,72 172,78 180,78 C185,82 193,82 200,80 C207,82 215,82 220,78 C228,78 233,72 232,66 C235,60 232,52 225,51 C222,43 212,38 200,40 Z" fill="#ffb3cf" stroke="#1f2a44" stroke-width="2.4"/>
+                  <path d="M200,42 L200,80 M182,52 C188,55 188,61 184,64 M218,52 C212,55 212,61 216,64" stroke="#c94f80" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+                </g>
+              </g>
+              <g id="regL">
+                <g class="reg"><circle cx="212" cy="62" r="4" fill="#2455c7"/><text x="250" y="58" text-anchor="start">海馬迴</text></g>
+                <g class="reg"><circle cx="188" cy="54" r="4" fill="#2455c7"/><text x="150" y="40" text-anchor="end">前額葉</text></g>
+              </g>
+              <g id="lblL"></g>
+              <g id="merL"></g>
+              <g id="routeL"></g>
+              <g id="ptL"></g>
+            </svg>
+            <div class="tip" id="tip"></div>
+          </div>
+          <div class="chips" id="chips"></div>
+          <div class="passport"><span id="ppT">探險章 0 / 7</span><span class="bar"><i id="ppB"></i></span></div>
+        </div>
+        <article class="card panel" id="panel" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section class="blk tint" id="practice" style="background:linear-gradient(160deg,var(--sun-l),var(--grape-l))" aria-labelledby="prh">
+      <div class="sechead"><div class="num" style="background:var(--sun)">3</div><div><p class="eyebrow">LET'S PRACTICE</p><h2 id="prh">跟著做：踏一踏、量一量、問一問</h2><p class="sub">有骨質疏鬆、脆弱性骨折或平衡不好的人，請在扶手或椅子旁練習，必要時請物理治療師設計個人化運動處方。</p></div></div>
+      <div class="prac two">
+        <div class="card pcard" style="--cl:var(--sky-l)">
+          <h3>敏捷踏步遊戲 <span class="lv" data-l="原">原稿建議</span></h3>
+          <div class="stage" aria-live="polite"><div><div class="syll" id="aArrow" style="font-size:4rem">準備</div><div class="syl-sub" id="aSub">看到箭頭，就往那個方向踏一步再收回</div></div></div>
+          <div class="row"><button class="btn sm sun" id="aGo">開始 1 分鐘</button><button class="btn sm" id="aStop">停止</button><label class="small">速度 <select id="aSpd"><option value="2500">慢</option><option value="1800" selected>中</option><option value="1300">快</option></select></label></div>
+          <p class="small">敏捷踏步同時練平衡、反應和專注，是原稿建議的平衡訓練之一。旁邊放一張穩固的椅子。</p>
+        </div>
+        <div class="card pcard" style="--cl:var(--coral-l)">
+          <h3>骨密度檢查要不要問？</h3>
+          <div class="checks" id="dxaCk" style="grid-template-columns:1fr"></div>
+          <div id="dxaMsg" class="meta" style="--cl:var(--sun-l);font-size:.95rem"></div>
+          <p class="small">勾選結果不會儲存，這不是診斷工具。</p>
+        </div>
+        <div class="card pcard" style="--cl:var(--mint-l)">
+          <h3>身高小紀錄 <span class="lv" data-l="原">原稿建議</span></h3>
+          <div class="stage"><div style="width:100%"><label class="small" for="hIn">今天量到的身高（公分）</label><br><input type="number" id="hIn" min="100" max="220" step="0.1" placeholder="例如 158.5" style="font:inherit;font-size:1.5rem;width:150px;text-align:center;border:3px solid #1f2a44;border-radius:14px;padding:4px"><div style="margin-top:8px"><button class="btn sm sun" id="hSave">記下來</button> <button class="btn sm" id="hClear">清除紀錄</button></div><div id="hOut" class="syl-sub" style="margin-top:8px"></div></div></div>
+          <p class="small">身高明顯變矮、駝背加重，是值得和醫師討論的訊號。紀錄只存在你自己的瀏覽器。</p>
+        </div>
+        <div class="card pcard" style="--cl:var(--grape-l)">
+          <h3>回診討論清單 <span class="lv" data-l="原">原稿建議</span></h3>
+          <div class="checks" id="docCk" style="grid-template-columns:1fr"></div>
+          <p class="small">想問的打勾，回診時拿出來看。勾選只存在你自己的瀏覽器。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="blk" aria-labelledby="wkh">
+      <div class="sechead"><div class="num" style="background:var(--mint-l)">4</div><div><p class="eyebrow">WEEKLY PLAN</p><h2 id="wkh">一週骨腦軸活動表 <span class="lv" data-l="原">原稿建議</span></h2><p class="sub">做完就打勾，勾選只存在你自己的瀏覽器。跳躍等衝擊動作請依自身能力，骨質疏鬆者先和醫師或物理治療師確認。</p></div></div>
+      <div class="checks" id="week"></div>
+      <div class="row" style="margin-top:12px"><div class="prog" style="flex:1"><i id="wkBar" style="background:repeating-linear-gradient(45deg,var(--mint) 0 8px,#5fd6ad 8px 16px)"></i></div><b id="wkN">0 / 7</b> <button class="btn sm" id="wkReset">新的一週</button></div>
+      <p id="wkMsg" class="small" style="margin-top:6px"></p>
+      <div class="card" style="padding:14px 18px;margin-top:14px"><b style="font-family:var(--f-display)">保護策略</b>
+        <ul style="margin:6px 0 0;padding-left:1.2em"><li><b>負重活動：</b>快走、慢跑、爬樓梯、跳舞。</li><li><b>阻力訓練：</b>每週 2–3 次，著重下肢、脊椎、髖部與核心；每動作 2–3 組、每組 8–12 下，漸進增加強度。</li><li><b>平衡訓練：</b>太極、單腳站、敏捷踏步或舞蹈。</li><li><b>營養與生活：</b>和醫師或營養師討論鈣、維生素 D、蛋白質、維生素 K、鎂與鋅；戒菸、限酒、規律睡眠與壓力管理。</li></ul></div>
+    </section>
+
+    <section class="blk tint" style="background:linear-gradient(160deg,var(--coral-l),#fff)" aria-labelledby="ckh">
+      <div class="sechead"><div class="num" style="background:var(--coral)">5</div><div><p class="eyebrow">SELF CHECK</p><h2 id="ckh">自我觀察清單</h2><p class="sub">這不是診斷工具，勾選結果也不會儲存。符合的項目記錄下來，帶去和醫師討論。</p></div></div>
+      <div class="checks" id="checks"></div>
+      <div class="row" style="margin-top:12px"><div class="prog" style="flex:1"><i id="ckBar"></i></div><b id="ckN">0 / 8</b></div>
+      <p id="ckMsg" class="small" style="margin-top:6px"></p>
+      <div class="red" style="margin-top:14px"><strong>這些情況請盡快就醫</strong><ul>
+        <li>輕微外力就骨折、急性嚴重背痛、夜間持續骨痛，或功能快速退化。</li>
+        <li>有骨質疏鬆或脆弱性骨折病史，又出現反覆跌倒、神經症狀或明顯的認知、情緒改變：骨科、復健與神經／精神科一起評估。</li>
+      </ul></div>
+    </section>
+
+    <section class="blk" id="compare" aria-labelledby="cmh">
+      <div class="sechead"><div class="num" style="background:var(--grape-l)">6</div><div><p class="eyebrow">EAST MEETS WEST</p><h2 id="cmh">現代研究 × 中醫經絡對照表</h2><p class="sub">中醫的「腎」是功能系統，不等於解剖學的腎臟。點任一列，可以回到地圖看那一站的中醫分頁。</p></div></div>
+      <div class="tblwrap"><table class="cmp" id="cmp"></table></div>
+    </section>
+
+    <section class="blk" id="challenge" aria-labelledby="chh">
+      <div class="sechead"><div class="num" style="background:var(--sun)">7</div><div><p class="eyebrow">QUIZ</p><h2 id="chh">骨腦軸小挑戰</h2><p class="sub">從題庫隨機抽 6 題，每題作答後馬上看解說。</p></div></div>
+      <div class="chal"><div class="card cbox" id="cbox"></div><aside class="card cside" id="cside"></aside></div>
+    </section>
+
+    <section class="blk refs" id="refs" aria-labelledby="rfh">
+      <div class="sechead"><div class="num" style="background:var(--sky-l)">8</div><div><p class="eyebrow">REFERENCES</p><h2 id="rfh">參考資料</h2><p class="sub">學術文獻已用 PubMed 核對題名、期刊、年份與 DOI；中醫原文引自《黃帝內經》《難經》（維基文庫），穴位定位依 WHO 西太平洋區標準。</p></div></div>
+      <div id="refList"></div>
+    </section>
+
+    <section class="blk" aria-labelledby="dch">
+      <div class="disc"><div class="in">
+        <h2 id="dch">⚠ 重要聲明｜請先看這裡</h2>
+        <p class="first">本站資訊僅供參考，實際以醫療專業人員評估為準。</p>
+        <ul>
+          <li><b>僅供參考：</b>本頁為一般健康教育，不構成醫療建議，不能取代醫師、物理治療師、營養師或中醫師的個別評估與治療。</li>
+          <li><b>運動安全：</b>骨質疏鬆或曾有脆弱性骨折者，跳躍、衝擊與彎腰負重動作請先由專業人員評估。</li>
+          <li><b>無任何推薦或行銷：</b>本頁未推薦任何藥物、保健食品或療法；營養補充請和醫師或營養師討論。</li>
+          <li><b>資料時點：</b>內容整理於 2026-10-14，研究持續更新，請留意最新資訊。</li>
+          <li><b>使用前查證：</b>文中標示「原稿整理」的內容，引用前請再確認出處。</li>
+        </ul>
+        <p style="margin-top:10px;font-weight:700">跌倒後無法站立、劇烈疼痛或懷疑骨折，請撥 119 或盡快就醫。情緒低落很久時，可撥 1925 安心專線。</p>
+      </div></div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="trio"><svg aria-hidden="true"><use href="#sprout"/></svg><svg aria-hidden="true"><use href="#bird"/></svg><svg aria-hidden="true"><use href="#star"/></svg></div>
+    <p class="gold">每一次多懂一點，都是送給自己的小禮物。</p>
+    <p class="slogan">本站資訊僅供參考，實際以醫療專業人員評估為準</p>
+    <p><a href="../index.html">← 返回探險基地</a></p>
+    <small>共好小學堂 ✦ 一起學習，一起共好｜本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-10-14</small>
+  </div>
+</footer>
+<button id="toTop" aria-label="回到頂端" hidden>↑</button>
+
+<script>
+(function(){
+"use strict";
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const INK="#1f2a44";
+/* vertebrae & ganglia */
+let v="";for(let y=140;y<=462;y+=14)v+=`<rect x="192" y="${y}" width="16" height="11" rx="3"/>`;$("#vert").innerHTML=v;
+let gg="";for(let y=170;y<=440;y+=30)gg+=`<circle cx="183" cy="${y}" r="3.6"/><circle cx="217" cy="${y}" r="3.6"/>`;$("#gang").innerHTML=gg;
+
+function face(cx,cy,s){s=s||1;return `<circle cx="${cx-9*s}" cy="${cy}" r="${4.2*s}" fill="${INK}"/><circle cx="${cx+9*s}" cy="${cy}" r="${4.2*s}" fill="${INK}"/><circle cx="${cx-7.8*s}" cy="${cy-1.4*s}" r="${1.4*s}" fill="#fff"/><circle cx="${cx+10.2*s}" cy="${cy-1.4*s}" r="${1.4*s}" fill="#fff"/><ellipse cx="${cx-17*s}" cy="${cy+8*s}" rx="${5.5*s}" ry="${3.2*s}" fill="#ff9aa2" opacity=".8"/><ellipse cx="${cx+17*s}" cy="${cy+8*s}" rx="${5.5*s}" ry="${3.2*s}" fill="#ff9aa2" opacity=".8"/><path d="M${cx-6*s} ${cy+9*s} Q${cx} ${cy+15*s} ${cx+6*s} ${cy+9*s}" stroke="${INK}" stroke-width="${2.8*s}" fill="none" stroke-linecap="round"/>`}
+const SW=`stroke="${INK}" stroke-width="3" stroke-linejoin="round"`;
+const BONE=(f)=>`<g fill="${f}" ${SW}><circle cx="20" cy="36" r="12"/><circle cx="20" cy="64" r="12"/><circle cx="80" cy="36" r="12"/><circle cx="80" cy="64" r="12"/><rect x="18" y="36" width="64" height="28" rx="10"/></g><path d="M18 36h64M18 64h64" stroke="${f}" stroke-width="4"/>`;
+const M={
+ hub:()=>`<path d="M50 12c-10 0-16 6-18 12-8 0-15 7-15 15 0 4 2 8 5 10-2 3-3 6-2 10 1 8 8 13 16 13 3 6 9 9 14 9s11-3 14-9c8 0 15-5 16-13 1-4 0-7-2-10 3-2 5-6 5-10 0-8-7-15-15-15-2-6-8-12-18-12z" fill="#ffb3cf" ${SW}/><path d="M50 14v14M34 28c6 2 8 8 6 12M66 28c-6 2-8 8-6 12" stroke="#c94f80" stroke-width="2.2" fill="none" stroke-linecap="round"/>`+face(50,56,.9),
+ ocn:()=>BONE("#ffe08a")+`<rect x="64" y="4" width="28" height="18" rx="5" fill="#fff" ${SW}/><path d="M68 9l10 6 10-6" stroke="${INK}" stroke-width="2.4" fill="none"/>`+face(50,50,.75),
+ marrow:()=>`<path d="M14 30C26 12 46 14 50 30c4-16 24-18 36 0 4 22-8 40-20 44-8-4-14-12-16-22-2 10-8 18-16 22C18 70 10 52 14 30z" fill="#fbf3dc" ${SW}/><g fill="#ff6b6b"><circle cx="28" cy="40" r="4"/><circle cx="72" cy="40" r="4"/><circle cx="34" cy="54" r="3"/><circle cx="66" cy="54" r="3"/></g>`+face(50,46,.7),
+ sym:()=>`<path d="M58 6L22 56h24l-8 38 40-54H54z" fill="#ffc93c" ${SW}/>`+face(50,50,.75),
+ hypo:()=>`<circle cx="50" cy="44" r="30" fill="#b99cff" ${SW}/><path d="M50 74v10" stroke="${INK}" stroke-width="4"/><circle cx="50" cy="90" r="8" fill="#efe8ff" ${SW}/>`+face(50,42,.8),
+ mech:()=>`<path d="M14 92h72" stroke="${INK}" stroke-width="4" stroke-linecap="round"/>`+`<g transform="translate(0,-6)">`+BONE("#b7e8ff")+`</g><path d="M30 92V78M24 84l6-6 6 6M70 92V78M64 84l6-6 6 6" stroke="#1e90d6" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`+face(50,44,.75),
+ spine:()=>`<g fill="#ffe6a6" ${SW}><rect x="34" y="6" width="32" height="16" rx="5"/><rect x="32" y="26" width="36" height="16" rx="5"/><rect x="30" y="46" width="40" height="18" rx="5"/><rect x="30" y="68" width="40" height="20" rx="5"/></g>`+face(50,56,.7),
+ gut:()=>`<rect x="40" y="6" width="12" height="20" rx="6" fill="#ffb36b" ${SW}/><ellipse cx="50" cy="58" rx="36" ry="30" fill="#ffb36b" ${SW}/><path d="M26 80c8 8 16 0 24 6s16 0 24-6" stroke="${INK}" stroke-width="2.6" fill="none" stroke-linecap="round"/>`+face(50,54,.85)
+};
+const masc=(k,cls)=>`<svg viewBox="0 0 100 100" class="${cls||""}" aria-hidden="true">${M[k]()}</svg>`;
+$("#heroArt").innerHTML=`<ellipse cx="260" cy="350" rx="230" ry="34" fill="#dcf7ec" stroke="${INK}" stroke-width="3"/>
+<g class="float2"><rect x="44" y="70" width="52" height="34" rx="8" fill="#fff" stroke="${INK}" stroke-width="2.5"/><path d="M50 76l20 12 20-12" stroke="${INK}" stroke-width="2.5" fill="none"/></g>
+<g class="float"><circle cx="468" cy="150" r="14" fill="#ffd166" stroke="${INK}" stroke-width="2.5"/><text x="468" y="156" text-anchor="middle" font-size="14" font-weight="900" fill="${INK}">D</text></g>
+<g class="float2"><path d="M110 160 l10 -16 l10 16 l-10 16 z" fill="#ffc93c" stroke="${INK}" stroke-width="2.5"/></g>
+<g transform="translate(36,190) scale(1.15)"><use href="#sprout" width="120" height="130"/></g>
+<g transform="translate(176,150) scale(1.7)"><svg width="100" height="100" viewBox="0 0 100 100">${M.ocn()}</svg></g>
+<g transform="translate(340,210) scale(1.05)"><use href="#bird" width="120" height="110"/></g>
+<g class="float" transform="translate(410,60)"><use href="#star" width="80" height="80"/></g>
+<g transform="translate(135,20)"><rect width="280" height="56" rx="20" fill="#fff" stroke="${INK}" stroke-width="3"/><path d="M120 56 l14 18 l8 -18" fill="#fff" stroke="${INK}" stroke-width="3" stroke-linejoin="round"/><rect x="118" y="50" width="30" height="8" fill="#fff"/><text x="140" y="36" text-anchor="middle" font-family="Huninn,Noto Sans TC,sans-serif" font-size="19" fill="${INK}">站起來走走，骨頭和大腦都開心！</text></g>`;
+
+/* ---------- references ---------- */
+const REFS=[
+ {t:"The brain-bone axis: unraveling the complex interplay between the central nervous system and skeletal metabolism.",a:"Shi H, Chen M. Eur J Med Res. 2024;29(1):317.",d:"10.1186/s40001-024-01918-0",u:"https://pubmed.ncbi.nlm.nih.gov/38849920/",one:"回顧：交感神經、下視丘神經胜肽與神經傳導物質調控骨重塑；骨鈣素、FGF23 等骨來源因子影響大腦功能與行為。"},
+ {t:"Neural regulation of bone: from central neural circuits to peripheral innervation of the skeletal stem cell niche.",a:"Chen Z, et al. Bone Res. 2026;14(1).",d:"10.1038/s41413-026-00534-4",u:"https://pubmed.ncbi.nlm.nih.gov/42014392/",one:"回顧：三個層次——下視丘整合荷爾蒙與代謝訊號、經副甲狀腺素等建立骨代謝晝夜節律；周邊感覺與自律神經（β-腎上腺素路徑）作用於骨細胞；骨髓中的神經纖維調控骨骼幹細胞。"},
+ {t:"Neuroendocrine and neural control of bone mass in health and disease.",a:"Zaidi M, et al. J Clin Invest. 2026;136(9).",d:"10.1172/JCI203623",u:"https://pubmed.ncbi.nlm.nih.gov/42065237/",one:"回顧：大腦控制骨量有兩條路——靠腦下垂體激素濃度的「調幅」路線，與靠交感、副交感、感覺神經放電頻率的「調頻」路線。"},
+ {t:"Bone-brain crosstalk: emerging roles of osteocalcin in central nervous system disorders.",a:"Chen H, et al. Neuroscience. 2025;595:1-8.",d:"10.1016/j.neuroscience.2025.12.028",u:"https://pubmed.ncbi.nlm.nih.gov/41391736/",one:"回顧：骨鈣素進入血液，可穿越血腦屏障，作用於 GPR158、GPR37 等受體，影響情緒、認知、發炎與髓鞘形成。"},
+ {t:"The Bone-Brain Axis: Novel Insights into the Bidirectional Crosstalk in Depression and Osteoporosis.",a:"Li P, et al. Biomolecules. 2026;16(2):213.",d:"10.3390/biom16020213",u:"https://pubmed.ncbi.nlm.nih.gov/41750283/",one:"回顧：憂鬱與骨質疏鬆常共病，尤其在長者；憂鬱透過 HPA 軸持續活化、交感神經過度活躍與慢性低度發炎促進骨流失；骨鈣素、lipocalin-2 與細胞外囊泡則影響海馬迴神經新生與血清素訊號。"},
+ {t:"Piezo1 in the central nervous system: decoding the mechanical signature of neuroinflammation.",a:"Shi G, et al. J Neuroinflammation. 2026;23(1).",d:"10.1186/s12974-026-03843-x",u:"https://pubmed.ncbi.nlm.nih.gov/42069634/",one:"回顧：PIEZO1 把組織硬度、血流剪力等機械訊號轉成神經發炎反應；在微膠細胞、寡突膠細胞與內皮細胞的證據最強，其他細胞仍在探索。"},
+ {t:"Unraveling the Bone-Brain Communication Network.",a:"Hansda S, Das H. Biology (Basel). 2025;14(9):1279.",d:"10.3390/biology14091279",u:"https://pubmed.ncbi.nlm.nih.gov/41007423/",one:"回顧：骨鈣素、lipocalin-2、FGF23 影響認知、情緒與神經新生；瘦素、血清素與交感訊號調控骨重塑；發炎與老化擾亂這條溝通。"},
+ {t:"Osteocalcin and GPR158: linking bone and brain function.",a:"Li J, et al. Front Cell Dev Biol. 2025;13:1564751.",d:"10.3389/fcell.2025.1564751",u:"https://pubmed.ncbi.nlm.nih.gov/40337551/",one:"回顧：GPR158 是骨鈣素在腦中的關鍵受體，影響神經細胞存活與可塑性，與阿茲海默症、帕金森氏症相關，機制仍未完全清楚。"},
+ {t:"The brain-bone-gut axis: a microbial bridge underlying multisystem comorbidities.",a:"Xu X, et al. Front Endocrinol (Lausanne). 2026;17:1755305.",d:"10.3389/fendo.2026.1755305",u:"https://pubmed.ncbi.nlm.nih.gov/41837143/",one:"回顧：腦—骨—腸軸以免疫發炎為樞紐，連結腸道菌失調、骨代謝與腦功能；建議結合微生態、營養與運動管理。"},
+ {t:"The therapeutic potential of descending regulatory pathways from brain to bone in osteoporosis: focusing on the brain-bone axis.",a:"Rong Y, et al. Front Endocrinol (Lausanne). 2026;17:1750464.",d:"10.3389/fendo.2026.1750464",u:"https://pubmed.ncbi.nlm.nih.gov/41858860/",one:"回顧：整理大腦往下調控骨骼的多條路徑及其交互關係，探討其在骨質疏鬆中的角色。"},
+ {t:"The role of the neuro-immune-bone axis in osteoporosis: from bone remodeling imbalance to multi-system interactions.",a:"Zhang Y, et al. Front Immunol. 2026;17:1911655.",d:"10.3389/fimmu.2026.1911655",u:"https://pubmed.ncbi.nlm.nih.gov/42643980/",one:"回顧：臨床已確立的是指引建議的抗骨鬆藥物、運動、營養、防跌與控制原發病；交感神經調節、CGRP 等介入多來自動物或早期研究，還不能當常規治療。"},
+ {t:"Mechanosensitive channel Piezo1 in calcium dynamics: structure, function, and emerging therapeutic strategies.",a:"Liu Y, et al. Front Mol Biosci. 2025;12:1693456.",d:"10.3389/fmolb.2025.1693456",u:"https://pubmed.ncbi.nlm.nih.gov/41195420/",one:"回顧：PIEZO1 於 2010 年發現、相關研究獲 2021 年諾貝爾獎；它把機械力轉成鈣訊號，參與骨重塑、血管張力與神經可塑性。"}
+];
+const TREFS=[
+ ["《黃帝內經》全文（素問、靈樞），維基文庫","https://zh.wikisource.org/wiki/黃帝內經"],
+ ["《黃帝內經·素問》第七卷：宣明五氣篇，維基文庫","https://zh.wikisource.org/wiki/黃帝內經/素問第七卷"],
+ ["《黃帝內經·素問》第八卷：太陰陽明論，維基文庫","https://zh.wikisource.org/wiki/黃帝內經/素問第八卷"],
+ ["《難經》（二十八難：督脈；四十五難：八會穴），維基文庫","https://zh.wikisource.org/wiki/難經"],
+ ["Lim S. WHO Standard Acupuncture Point Locations. Evid Based Complement Alternat Med. 2010;7(2):167–168","https://pmc.ncbi.nlm.nih.gov/articles/PMC2862941/"],
+ ["NCCIH. Acupuncture: Effectiveness and Safety","https://www.nccih.nih.gov/health/acupuncture-what-you-need-to-know"],
+ ["NCCIH. Tai Chi: What You Need To Know","https://www.nccih.nih.gov/health/tai-chi-what-you-need-to-know"]
+];
+function src(list){return (list||[]).map(r=>typeof r==="number"?`<a class="src" href="#ref${r}">參考 ${r}</a>`:`<a class="src" href="#tref${r.slice(1)}">典 ${r.slice(1)}</a>`).join("")}
+
+/* ---------- acupoints & meridians ---------- */
+const PTS={
+ GV20:{n:"百會",m:"督脈",xy:[200,30],loc:"頭頂正中線上，前髮際正中直上 5 寸。",how:"指腹輕揉 1 分鐘，配合慢慢深呼吸。",use:"傳統用於頭暈、精神不振、安神。",warn:"頭部有傷口或術後不要按。"},
+ GB39:{n:"懸鐘（絕骨）",m:"足少陽膽經",xy:[150,722],loc:"小腿外側，外踝尖上 3 寸，腓骨前緣。",how:"拇指按揉 1 分鐘。",use:"八會穴之「髓會」，傳統用於下肢痠軟、頸項僵硬。",warn:"骨折或骨質疏鬆疼痛處不要用力壓。"},
+ KI3:{n:"太谿",m:"足少陰腎經",xy:[228,752],loc:"足內側，內踝尖與跟腱之間的凹陷。",how:"拇指輕揉 1 分鐘。",use:"腎經原穴，傳統用於腰膝痠軟、耳鳴、失眠。",warn:"腳踝扭傷急性期避免。"},
+ BL11:{n:"大杼",m:"足太陽膀胱經",xy:null,loc:"背部，第 1 胸椎棘突下，後正中線旁開 1.5 寸（在背面，圖中未標）。",how:"請家人以掌根輕揉上背，或熱敷 10 分鐘。",use:"八會穴之「骨會」，傳統用於肩背痠痛。",warn:"背痛合併發燒、外傷或夜間痛醒，請就醫。"},
+ BL23:{n:"腎俞",m:"足太陽膀胱經",xy:null,loc:"腰部，第 2 腰椎棘突下，後正中線旁開 1.5 寸（在背面，圖中未標）。",how:"雙手握拳，用拳背輕輕上下摩擦腰部至溫熱。",use:"腎的背俞穴，傳統用於腰痠、腰膝無力。",warn:"有脊椎壓迫性骨折或急性背痛時不要做。"},
+ HT7:{n:"神門",m:"手少陰心經",xy:[114,452],loc:"腕掌側橫紋小指側端，尺側腕屈肌腱的橈側凹陷。",how:"拇指指尖輕按 1 分鐘，睡前可做。",use:"傳統用於心悸、失眠、情緒不安。",warn:"情緒低落持續兩週以上，請尋求專業協助。"},
+ ST36:{n:"足三里",m:"足陽明胃經",xy:[150,640],loc:"小腿前外側，膝眼下 3 寸，脛骨前緣外一橫指。",how:"拇指按揉或握拳輕敲 1–2 分鐘。",use:"傳統保健要穴，用於調理脾胃、疲倦乏力。",warn:"局部有傷口時避免。"},
+ CV12:{n:"中脘",m:"任脈",xy:[200,344],loc:"前正中線上，肚臍上 4 寸。",how:"掌心順時針揉腹 3–5 分鐘。",use:"胃的募穴，傳統用於胃脹、食慾差。",warn:"飯後立即、懷孕或急性腹痛時不要按。"}
+};
+const MER={
+ ki:{n:"足少陰腎經",p:[[228,752],[230,700],[232,640],[226,560],[214,490],[206,470],[206,400]]},
+ gb:{n:"足少陽膽經",p:[[140,470],[142,540],[148,630],[150,722],[150,790]]},
+ st:{n:"足陽明胃經",p:[[176,182],[174,250],[182,320],[184,392],[180,450],[162,500],[156,590],[150,640],[160,700],[166,790]]},
+ du:{n:"督脈",p:[[200,470],[200,300],[200,140],[200,24]]},
+ ren:{n:"任脈",p:[[200,124],[200,250],[200,344],[200,470]]},
+ ht:{n:"手少陰心經",p:[[140,232],[134,270],[126,330],[118,390],[114,452],[108,494]]}
+};
+
+/* ---------- stations ---------- */
+const ORDER=["ocn","marrow","sym","hypo","mech","spine","gut"];
+const COL={hub:["var(--blue)","var(--blue-l)"],ocn:["var(--sun)","var(--sun-l)"],marrow:["var(--coral)","var(--coral-l)"],sym:["var(--orange)","var(--orange-l)"],hypo:["var(--grape)","var(--grape-l)"],mech:["var(--sky)","var(--sky-l)"],spine:["var(--mint)","var(--mint-l)"],gut:["var(--rose)","var(--rose-l)"]};
+const HEX={hub:"#2455c7",ocn:"#c28a00",marrow:"#e8494d",sym:"#ea7d12",hypo:"#7048e8",mech:"#1e90d6",spine:"#1f9e75",gut:"#d6336c"};
+const S={
+hub:{name:"大腦總機",en:"BRAIN HUB",hook:"大腦指揮骨頭的拆與蓋，骨頭也寄信給大腦。",mers:["du"],pts:["GV20"]},
+ocn:{name:"骨細胞與骨鈣素",en:"OSTEOCALCIN",hook:"骨頭會寄信：骨鈣素是骨頭寫給大腦的信。",
+ route:[[166,550],[178,450],[192,300],[198,180],[200,64]],rlabel:"骨鈣素經血液→大腦",
+ meta:"骨頭裡的成骨細胞和骨細胞，會分泌<b>骨鈣素（osteocalcin）</b>、FGF23 等活性分子。它們進入血液，像信件一樣寄到全身，研究發現收件人也包括<b>大腦</b>。",
+ paths:[["分泌","成骨細胞、骨細胞分泌骨鈣素、FGF23 等骨因子。"],["進入大腦","非羧化型骨鈣素在動物研究中可穿越血腦屏障。"],["作用","與海馬迴、情緒、認知、發炎與髓鞘形成有關。"]],
+ ev:[["C","骨鈣素進入血液後可穿越血腦屏障，作用於 GPR158、GPR37 等受體，影響情緒、認知、發炎與髓鞘形成。",[4,8]],
+     ["C","骨鈣素、lipocalin-2、FGF23 等骨來源因子，影響認知、情緒與神經新生。",[7,1]],
+     ["C","在阿茲海默症與帕金森氏症的動物模型中，骨鈣素與神經保護、髓鞘形成及發炎調節有關。",[4,8]],
+     ["原","人體觀察研究發現較低骨鈣素濃度與較差認知表現可能相關，但因果關係與臨床介入尚未確立。",[]]],
+ tcm:{view:"中醫有一條很完整的鏈：腎主骨 → 骨藏髓 → 髓通於腦。骨頭、骨髓和大腦，在古人眼中本來就是一家人。",
+  quotes:[["心主脈，肺主皮，肝主筋，脾主肉，腎主骨。","《素問·宣明五氣》","T2"],["骨者，髓之府。","《素問·脈要精微論》","T1"],["諸髓者，皆屬於腦。","《素問·五藏生成》","T1"]],
+  mers:["gb","ki"],pts:["GB39","KI3"],bridge:"「骨—髓—腦」的古典鏈條，和「骨鈣素—海馬迴」的現代研究彼此呼應；不過前者是理論，後者也多半還在動物階段。"},
+ tips:["讓骨頭受力：快走、爬樓梯、跳舞","阻力訓練每週 2–3 次","和醫師或營養師討論鈣、維生素 D 與蛋白質"],
+ red:["輕微外力就骨折","夜間持續骨痛"],
+ quiz:[["哪一個是由骨骼分泌、被研究與記憶和情緒有關的骨因子？",["骨鈣素（osteocalcin）","胃泌素","褪黑激素","胰島素"],0,"骨鈣素由成骨細胞分泌，動物研究顯示可影響海馬迴與情緒。"],
+       ["骨鈣素在大腦中的關鍵受體之一是？",["GPR158","胰島素受體","視紫質","乙醯膽鹼酯酶"],0,"GPR158 影響神經細胞存活與可塑性，機制仍在研究。"]]},
+marrow:{name:"骨盆與骨髓",en:"BONE MARROW",hook:"骨頭裡面有神經，也有幹細胞的「育嬰室」。",
+ route:[[164,450],[184,400],[198,300],[200,180],[200,70]],rlabel:"神經纖維↔幹細胞",
+ meta:"骨盆、股骨裡的<b>骨髓</b>，是骨骼幹細胞的「育嬰室」。研究發現，骨髓裡有不同種類的神經纖維，會釋放神經傳導物質，影響幹細胞要不要長大、長成什麼。",
+ paths:[["神經進駐","骨髓中有交感、副交感與感覺神經纖維。"],["調控幹細胞","神經訊號影響骨骼幹細胞的增殖、分化與休眠。"],["疼痛與修復","受傷或發炎時的感覺神經訊號，把疼痛和組織修復連在一起。"]],
+ ev:[["C","骨髓中不同種類的神經纖維釋放神經傳導物質，塑造骨骼幹細胞與前驅細胞的微環境，調控增殖、分化與休眠。",[2]],
+     ["C","受傷或發炎時的感覺神經訊號，會影響骨細胞與基質細胞的代謝與修復反應。",[2]],
+     ["原","NPY、CGRP、P 物質等神經胜肽可能參與骨灌流與骨重塑調控。",[]]],
+ tcm:{view:"《難經》的八會穴裡，「髓會絕骨（懸鐘）」「骨會大杼」，古人特別為骨與髓各指定了一個匯聚點。",
+  quotes:[["筋會陽陵泉，髓會絕骨，骨會大杼。","《難經·四十五難》","T4"]],
+  mers:["gb"],pts:["GB39","BL11"],bridge:"古人看不到骨髓裡的神經，但已經把「骨」和「髓」當成需要特別照顧的系統；現代研究則發現骨髓是神經、骨骼與幹細胞交會的地方。"},
+ tips:["規律活動，讓骨骼持續受到刺激","避免抽菸與過量飲酒","骨折或受傷後依醫囑復健"],
+ red:["骨頭持續疼痛、夜間痛醒","不明原因發燒合併骨痛"],
+ quiz:[["研究發現骨髓中有什麼會影響骨骼幹細胞？",["不同種類的神經纖維","眼淚","頭髮","指甲"],0,"神經纖維釋放神經傳導物質，調控幹細胞的增殖與分化。"],
+       ["《難經·四十五難》中的「髓會」是哪一穴？",["絕骨（懸鐘）","大杼","太淵","膻中"],0,"「髓會絕骨，骨會大杼」。"]]},
+sym:{name:"交感神經",en:"SYMPATHETIC NERVES",hook:"壓力太大，骨頭也會「拆得比蓋得快」。",
+ route:[[200,90],[184,200],[183,420],[170,520]],rlabel:"交感神經→骨（β2 受體）",
+ meta:"交感神經是身體的<b>油門</b>。它支配骨組織，釋放去甲腎上腺素作用在骨細胞的 β2 受體上。長期壓力、焦慮或憂鬱讓油門一直踩著，可能<b>抑制骨形成、促進骨吸收</b>，骨量慢慢下降。",
+ paths:[["神經支配","交感神經分布到骨組織。"],["β2 受體","去甲腎上腺素影響骨形成與骨吸收。"],["壓力與憂鬱","HPA 軸持續活化、交感過度與慢性發炎，促進骨流失。"]],
+ ev:[["B","憂鬱與骨質疏鬆常同時出現，尤其在長者；憂鬱可能透過 HPA 軸持續活化、交感神經過度活躍與慢性低度發炎促進骨流失。",[5]],
+     ["C","交感神經的 β-腎上腺素路徑直接作用於成骨細胞與基質細胞。",[2,1]],
+     ["C","神經放電頻率（交感、副交感、感覺神經）是大腦控制骨量的「調頻」路線。",[3]],
+     ["B","交感神經調節、CGRP 等介入目前多來自動物或早期研究，還不能當作常規治療。",[11]]],
+ tcm:{view:"中醫說「恐傷腎」，又說「腎藏志」。長期的驚恐、憂慮被認為會耗傷腎氣；而腎主骨，情緒和骨骼在古人眼中是連在一起的。",
+  quotes:[["心藏神，肺藏魄，肝藏魂，脾藏意，腎藏志。","《素問·宣明五氣》","T2"],["恐傷腎。","《素問·陰陽應象大論》","T1"]],
+  mers:["ht"],pts:["HT7","GV20"],bridge:"「恐傷腎、腎主骨」和「壓力→交感神經→骨流失」形成有趣的對照。照顧情緒，可能也是在照顧骨頭。"},
+ tips:["每天 10 分鐘呼吸放鬆、正念或靜坐","規律睡眠與壓力管理","長期情緒低落或焦慮，尋求身心科或心理師協助","太極、瑜伽等身心運動"],
+ red:["情緒低落超過兩週、影響生活（1925 安心專線）"],
+ quiz:[["長期壓力可能如何影響骨頭？",["交感神經過度活躍，促進骨流失","讓骨頭變更硬","完全沒有影響","讓身高變高"],0,"憂鬱與骨質疏鬆常共病，HPA 軸、交感與發炎是共同路徑。"],
+       ["交感神經的訊號作用在骨細胞的哪一種受體？",["β2-腎上腺素受體","胰島素受體","雌激素受體","視覺受體"],0,"去甲腎上腺素經 β2 受體影響骨形成與骨吸收。"]]},
+hypo:{name:"下視丘與腦下垂體",en:"HYPOTHALAMUS & PITUITARY",hook:"大腦用荷爾蒙「遠端遙控」骨頭。",
+ route:[[200,108],[214,200],[220,400],[232,520]],rlabel:"腦下垂體激素→骨",
+ meta:"大腦控制骨量有兩條路：一條是<b>「調幅」</b>，靠腦下垂體分泌的激素濃度高低；另一條是<b>「調頻」</b>，靠神經放電的快慢。下視丘整合瘦素、胰島素等能量訊號，再指揮這兩條路。",
+ paths:[["整合訊號","下視丘整合瘦素、胰島素與代謝訊號。"],["荷爾蒙","腦下垂體激素、副甲狀腺素、性荷爾蒙、皮質醇、甲狀腺素參與調控。"],["晝夜節律","建立骨代謝的晝夜節律。"]],
+ ev:[["C","大腦控制骨量有兩條路：腦下垂體激素濃度的「調幅」路線，與神經放電頻率的「調頻」路線；兩者失調都可能造成疾病。",[3]],
+     ["C","下視丘經由腦室周圍器整合荷爾蒙與代謝訊號，調節副甲狀腺素等內分泌，建立骨代謝的晝夜節律。",[2]],
+     ["C","大腦往下調控骨骼的多條路徑彼此交互，形成複雜網絡。",[10]],
+     ["原","性荷爾蒙、皮質醇與甲狀腺素等神經內分泌訊號，也參與腦—骨調控網絡。",[]]],
+ tcm:{view:"中醫說「腎藏精」「其充在骨」：腎精充足，骨頭才結實。現代的內分泌（荷爾蒙）概念，和中醫「腎」的部分功能相當接近。",
+  quotes:[["腎者，主蟄，封藏之本，精之處也，其華在髮，其充在骨。","《素問·六節藏象論》","T1"]],
+  mers:["du","ki"],pts:["GV20","KI3"],bridge:"中醫的「腎」涵蓋生長、生殖與骨骼，和現代的下視丘—腦下垂體—性腺／腎上腺系統有部分重疊。但兩者是不同系統，不能直接畫上等號。"},
+ tips:["停經後女性、長期使用類固醇者，和醫師討論骨密度檢查","甲狀腺、性荷爾蒙相關疾病依醫囑治療","維持規律睡眠，配合身體的晝夜節律"],
+ red:["長期使用類固醇又出現背痛或骨折"],
+ quiz:[["大腦控制骨量的兩條路線是？",["腦下垂體激素的「調幅」與神經放電的「調頻」","視覺與聽覺","消化與排泄","呼吸與心跳"],0,"JCI 回顧把大腦對骨骼的控制分成這兩條路。"],
+       ["《素問·六節藏象論》說腎「其充在骨」，意思是？",["腎精充足，表現在骨骼結實","腎臟長在骨頭裡","骨頭會製造尿液","腎和骨無關"],0,"中醫的腎主骨、藏精，和現代內分泌概念部分相通。"]]},
+mech:{name:"負重與機械力",en:"MECHANICAL LOAD",hook:"骨頭要被「踩」、被「用」，才會變結實。",
+ route:[[164,806],[164,700],[166,560],[190,300],[200,64]],rlabel:"受力→PIEZO1→訊號",
+ meta:"骨頭受力（走路、爬樓梯、阻力運動）時，骨細胞上的 <b>PIEZO1</b> 等機械敏感通道會打開，讓鈣離子流入，啟動造骨的訊號。PIEZO1 相關研究在 2021 年獲得諾貝爾獎。",
+ paths:[["感受力量","PIEZO1 把機械力轉成鈣訊號。"],["造骨","啟動成骨相關基因與骨重塑。"],["也在腦中","PIEZO1 也和腦血流、神經發炎有關。"]],
+ ev:[["C","PIEZO1 是機械敏感離子通道，把剪力、拉伸、壓縮等力量轉成鈣訊號，參與骨重塑、血管張力與神經可塑性；2021 年諾貝爾獎表彰其發現。",[12]],
+     ["C","PIEZO1 在腦中與神經發炎有關，微膠細胞、寡突膠細胞與內皮細胞的證據最強，其他細胞仍在探索。",[6]],
+     ["原","動物研究提示骨骼機械刺激可能減輕神經發炎、支持腦傷後修復，但還不能當作人類治療結論。",[]],
+     ["A","太極拳：美國 NCCIH 整理指出，高確定性證據顯示可減少長者「發生跌倒的人數」。",["T7"]]],
+ tcm:{view:"《內經》提醒「久立傷骨」：一直站著不動不好；但也說「久臥傷氣、久坐傷肉」。骨頭需要的是有動有休、適度受力。",
+  quotes:[["久視傷血，久臥傷氣，久坐傷肉，久立傷骨，久行傷筋。","《素問·宣明五氣》","T2"]],
+  mers:["st","ki"],pts:["ST36","KI3"],bridge:"現代說「骨頭要負重才會長」，《內經》說「久立傷骨」。兩者不矛盾：骨頭要的是動態的、有變化的受力，而不是長時間靜止站立。"},
+ tips:["快走 30–40 分鐘；能力許可者可加小幅跳躍（注意落地緩衝）","深蹲、弓步、臀橋、硬舉變式等下肢阻力訓練","爬樓梯、跳舞、健行","騎車或游泳屬低衝擊，可當恢復日"],
+ red:["運動中突然骨痛或關節劇痛：停止並就醫"],
+ quiz:[["哪一種活動最能給骨骼「負重刺激」？",["快走、爬樓梯","泡溫泉","躺著聽音樂","坐著看電視"],0,"游泳、騎車屬低衝擊，負重效果較少，可當恢復日。"],
+       ["PIEZO1 是什麼？",["把機械力轉成鈣訊號的離子通道","一種維生素","一種止痛藥","骨頭的名稱"],0,"骨受力時，PIEZO1 打開，啟動造骨訊號。"]]},
+spine:{name:"脊椎與姿勢",en:"SPINE & POSTURE",hook:"身高變矮、駝背加重，是骨頭在發出的警訊。",
+ route:[[200,440],[200,300],[200,160],[200,64]],rlabel:"姿勢・疼痛訊號",
+ meta:"脊椎是身體的<b>中柱</b>，裡面保護著通往大腦的脊髓。骨質流失時，脊椎可能發生壓迫性變形，表現為<b>身高變矮、駝背、持續背痛</b>。中風、脊髓或腦部受傷後，活動減少，骨流失也會加速。",
+ paths:[["中柱","支撐身體、保護脊髓。"],["警訊","身高明顯變矮、駝背、持續背痛。"],["腦傷後","活動減少、肌肉萎縮與神經內分泌變化，加速骨流失。"]],
+ ev:[["B","中風、脊髓損傷與創傷性腦損傷後，可能因活動減少、肌肉萎縮、自律神經與內分泌變化，出現加速骨流失與骨折風險上升。",[1,10]],
+     ["B","臨床上已確立的骨質疏鬆管理：指引建議的抗骨鬆藥物、運動、營養支持、防跌與控制原發疾病。",[11]],
+     ["原","是否有身高明顯變矮、駝背、持續背痛、骨痛或輕微外力即骨折，是自我觀察的重點。",[]]],
+ tcm:{view:"督脈沿著脊柱正中往上走，進入腦部。《難經》說督脈「並於脊裏，上至風府，入屬於腦」，古人很早就把脊柱看成連接身體與腦的大通道。",
+  quotes:[["督脈者，起於下極之俞，並於脊裏，上至風府，入屬於腦。","《難經·二十八難》","T4"],["骨會大杼。","《難經·四十五難》","T4"]],
+  mers:["du"],pts:["BL11","BL23","GV20"],bridge:"督脈「並於脊裏、入屬於腦」，和現代的脊椎保護脊髓、通往大腦，位置上高度重疊；但經絡和神經解剖仍是兩套系統。"},
+ tips:["上肢與背部阻力訓練：划船、推舉、背伸展","維持良好姿勢，避免長時間彎腰駝背","每隔一段時間量身高並記錄","彎腰提重物前，先蹲下、背打直"],
+ red:["急性嚴重背痛","身高快速變矮、駝背快速加重"],
+ quiz:[["下列哪一項是骨質流失可能的警訊？",["身高明顯變矮、駝背加重","頭髮變黑","聲音變大","視力變好"],0,"脊椎壓迫性變形會讓身高變矮、駝背。"],
+       ["哪一條經脈「並於脊裏，入屬於腦」？",["督脈","任脈","帶脈","足陽明胃經"],0,"《難經·二十八難》描述督脈沿脊柱上行入腦。"]]},
+gut:{name:"腸道（腦骨腸軸）",en:"BRAIN–BONE–GUT AXIS",hook:"腸道菌也加入骨頭和大腦的群組對話。",
+ route:[[200,400],[214,300],[210,180],[200,64]],rlabel:"菌相・發炎訊號",
+ meta:"近年研究提出「<b>腦—骨—腸軸</b>」：大腦、骨骼和腸道菌透過神經、內分泌和免疫路徑互相影響，其中<b>免疫發炎</b>是連結三者的樞紐。照顧腸道，也可能幫到骨頭和大腦。",
+ paths:[["腸→骨","腸道菌失調可能擾亂骨代謝。"],["腸→腦","腸腦軸影響腦功能。"],["樞紐","免疫發炎串起三方。"]],
+ ev:[["C","回顧：腦—骨—腸軸以免疫發炎為樞紐，連結腸道菌失調、骨代謝紊亂與腦功能改變；建議結合微生態、營養與運動管理。",[9]],
+     ["C","發炎與老化會擾亂骨與腦之間的溝通，與認知衰退、骨質疏鬆等老化相關疾病有關。",[7]]],
+ tcm:{view:"中醫說「四支皆稟氣於胃」，身體的骨肉都要靠脾胃消化吸收來的養分。腸胃不好，骨頭的材料也跟著不足。",
+  quotes:[["四支皆稟氣於胃，而不得至經，必因於脾，乃得稟也。","《素問·太陰陽明論》","T3"]],
+  mers:["ren","st"],pts:["CV12","ST36"],bridge:"「脾胃是後天之本」和「腸道菌影響骨與腦」遙相呼應。兩邊的處方都一樣：好好吃、規律動。"},
+ tips:["多樣化的蔬果、全穀與豆類","和醫師或營養師討論鈣、維生素 D、蛋白質、維生素 K、鎂與鋅","戒菸、限制酒精"],
+ red:["長期腹瀉、體重不明原因下降（可能影響營養吸收）"],
+ quiz:[["「腦—骨—腸軸」中，串起三方的樞紐是？",["免疫發炎","視力","頭髮","聲音"],0,"腸道菌失調、骨代謝與腦功能，透過免疫發炎互相影響。"],
+       ["《素問·太陰陽明論》說「四支皆稟氣於胃」，提醒我們？",["骨肉的養分來自脾胃消化吸收","四肢會消化食物","胃長在手腳上","不用吃飯"],0,"腸胃顧好，骨頭和肌肉才有材料。"]]}
+};
+const HUBQ=[
+ ["骨腦軸的「雙向」是指？",["骨頭分泌訊號影響大腦，大腦也透過神經與荷爾蒙調控骨頭","骨頭和大腦長在一起","只有大腦影響骨頭","兩者完全無關"],0,"骨→腦靠骨鈣素等骨因子；腦→骨靠交感神經與荷爾蒙。","hub"],
+ ["中醫「腎主骨、骨生髓、髓通腦」中，「腦為髓之海」出自？",["《靈樞·海論》","《傷寒論》","《本草綱目》","《金匱要略》"],0,"《靈樞·海論》：「腦為髓之海。」","hub"]
+];
+
+/* ---------- map ---------- */
+const svg=$("#headSvg");
+const LBL=[["hub","大腦",40,50,176,58,"end"],["hypo","下視丘・腦下垂體",40,108,194,96,"end"],["sym","交感神經",40,260,182,260,"end"],["marrow","骨盆・骨髓",40,452,152,452,"end"],["ocn","骨細胞（股骨）",40,556,162,556,"end"],["mech","受力（雙腳）",40,776,148,772,"end"],
+ ["spine","脊椎",350,210,208,210,"start"],["gut","腸道",350,400,224,400,"start"]];
+$("#lblL").innerHTML=LBL.map(([id,t,x,y,px,py,a])=>`<g class="lblg" data-s="${id}" style="--glow:${HEX[id]}"><path class="lblline" d="M${a==="end"?x+4:x-4},${y-5} L${px},${py}"/><circle cx="${px}" cy="${py}" r="2.6" fill="${INK}"/><text class="lbl" x="${x}" y="${y}" text-anchor="${a}">${t}</text></g>`).join("");
+$("#lblL").querySelectorAll(".lblg").forEach(g=>g.addEventListener("click",()=>select(g.dataset.s,true)));
+$("#showLbl").addEventListener("change",e=>{$("#lblL").style.display=e.target.checked?"":"none"});
+function smooth(p){let d=`M${p[0][0]},${p[0][1]}`;for(let i=0;i<p.length-1;i++){const p0=p[i-1]||p[i],p1=p[i],p2=p[i+1],p3=p[i+2]||p2;d+=` C${(p1[0]+(p2[0]-p0[0])/6).toFixed(1)},${(p1[1]+(p2[1]-p0[1])/6).toFixed(1)} ${(p2[0]-(p3[0]-p1[0])/6).toFixed(1)},${(p2[1]-(p3[1]-p1[1])/6).toFixed(1)} ${p2[0]},${p2[1]}`}return d}
+const tip=$("#tip");
+svg.querySelectorAll(".st").forEach(g=>{const id=g.dataset.s;g.style.setProperty("--glow",HEX[id]);
+ g.addEventListener("click",()=>select(id,true));
+ g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(id,true)}});
+ g.addEventListener("mousemove",e=>{const r=$("#svgWrap").getBoundingClientRect();tip.textContent=g.getAttribute("aria-label");tip.style.left=(e.clientX-r.left)+"px";tip.style.top=(e.clientY-r.top)+"px";tip.style.opacity=1});
+ g.addEventListener("mouseleave",()=>tip.style.opacity=0);});
+$("#chips").innerHTML=["hub",...ORDER].map(id=>`<button class="chip" data-s="${id}" style="--cl:${COL[id][1]}" aria-pressed="false">${masc(id)}${S[id].name}<span data-st="${id}"></span></button>`).join("");
+$("#chips").querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>select(b.dataset.s,true)));
+$("#allMer").addEventListener("change",draw);
+const visited=new Set(store.get("bn_v",[]));const qdone=store.get("bn_q",{});
+function passport(){let n=0;ORDER.forEach(id=>{if(visited.has(id))n++;const e=document.querySelector(`[data-st="${id}"]`);if(e)e.textContent=qdone[id]?" ★":(visited.has(id)?" ✓":"")});$("#ppT").textContent=`探險章 ${n} / ${ORDER.length}`;$("#ppB").style.width=(n/ORDER.length*100)+"%"}
+let cur="hub",tab="learn";
+function draw(){
+ const s=S[cur],t=s.tcm||s,hot=new Set(t.mers||[]),all=$("#allMer").checked,c=HEX[cur];
+ let m="";Object.entries(MER).forEach(([k,v])=>{if(hot.has(k))m+=`<path class="mer hot" d="${smooth(v.p)}" stroke="${c}"><title>${v.n}</title></path>`;else if(all)m+=`<path class="mer all" d="${smooth(v.p)}"/>`});
+ $("#merL").innerHTML=m;
+ $("#ptL").innerHTML=(t.pts||[]).filter(k=>PTS[k].xy).map(k=>{const P=PTS[k],[x,y]=P.xy,left=x<=200;return `<g class="pt"><circle class="halo" cx="${x}" cy="${y}" r="6" fill="${c}"/><circle cx="${x}" cy="${y}" r="5.5" fill="${c}" stroke="#fff" stroke-width="2"/><text x="${left?x-9:x+9}" y="${y+4}" text-anchor="${left?"end":"start"}">${P.n}</text></g>`}).join("");
+ let r="";if(s.route){const p=s.route,mid=p[Math.floor(p.length/2)];r=`<path class="route" d="${smooth(p)}" stroke="${c}"/><circle cx="${p[0][0]}" cy="${p[0][1]}" r="6" fill="${c}" stroke="#fff" stroke-width="2"/><circle cx="${p[p.length-1][0]}" cy="${p[p.length-1][1]}" r="7" fill="${c}" stroke="#fff" stroke-width="2"/><text class="rtxt" x="${mid[0]+14}" y="${mid[1]}" text-anchor="start" fill="${c}">${s.rlabel}</text>`}
+ $("#routeL").innerHTML=r;
+}
+function select(id,scroll){
+ cur=id;if(id==="hub")tab="learn";
+ if(id!=="hub"){visited.add(id);store.set("bn_v",[...visited])}
+ svg.classList.toggle("dim",id!=="hub");svg.classList.toggle("hubon",id==="hub");
+ svg.querySelectorAll(".st").forEach(g=>g.classList.toggle("on",g.dataset.s===id));
+ svg.querySelectorAll(".lblg").forEach(g=>g.classList.toggle("on",g.dataset.s===id));
+ document.querySelectorAll(".chip").forEach(b=>b.setAttribute("aria-pressed",b.dataset.s===id?"true":"false"));
+ draw();render();passport();
+ if(scroll&&innerWidth<=980)$("#panel").scrollIntoView({behavior:"smooth"});
+}
+const evLi=([l,t,r])=>`<li><b class="lv" data-l="${l}">${l==="原"?"原稿整理":l}</b><div>${t}${src(r)}</div></li>`;
+const qH=([q,c,r])=>`<div class="quote"><q>${q}</q><cite>${c} ${src([r])}</cite></div>`;
+const acuH=k=>{const P=PTS[k];return `<div class="acu"><div class="nm"><b>${P.n}</b><span class="code">${k}</span><span class="small">${P.m}</span></div><div><span class="k">位置</span>${P.loc}</div><div><span class="k">方法</span>${P.how}</div><div><span class="k">傳統</span>${P.use}</div><div><span class="k">注意</span>${P.warn}</div></div>`};
+function render(){
+ const id=cur,s=S[id],p=$("#panel");p.style.setProperty("--cc",COL[id][0]);p.style.setProperty("--cl",COL[id][1]);
+ let h=`<div class="phead">${masc(id,"m float")}<div><div class="en">${s.en}</div><h3>${s.name}</h3><p class="hook">${s.hook}</p></div></div>`;
+ if(id==="hub"){p.innerHTML=h+`<div class="pbody">${hubBody()}</div>`;p.querySelectorAll(".hubbtn").forEach(b=>b.addEventListener("click",()=>select(b.dataset.s,true)));return}
+ const T=[["learn","認識"],["ev","研究證據"],["tcm","中醫經絡"],["life","生活處方"],["quiz","小測驗"]];
+ h+=`<div class="tabs" role="tablist">${T.map(([k,t])=>`<button class="tab" role="tab" data-t="${k}" aria-selected="${tab===k}">${t}</button>`).join("")}</div>`;
+ let b="";
+ if(tab==="learn")b=`<div class="meta"><b>白話比喻：</b>${s.meta}</div><div class="paths">${s.paths.map(([t,d],i)=>`<div class="pathc"><span class="badge">重點 ${i+1}</span><strong>${t}</strong><p>${d}</p></div>`).join("")}</div><p class="note">圖上的彩色虛線是「${s.rlabel}」的示意路線。想知道每個說法有多可靠，請看「研究證據」分頁的標籤。</p>`;
+ else if(tab==="ev")b=`<ul class="ev">${s.ev.map(evLi).join("")}</ul><p class="note">A 人體試驗或臨床共識　B 觀察性研究或回顧　C 動物／機制研究　原稿整理：原稿的整理，未附直接出處。點「參考 n」可跳到頁尾文獻。</p>`;
+ else if(tab==="tcm"){const t=s.tcm;b=`<p>${t.view}</p><div class="quotes">${t.quotes.map(qH).join("")}</div><div><h3 style="margin-bottom:6px">相關經絡</h3><div class="mers">${t.mers.map(k=>`<span>${MER[k].n}</span>`).join("")}</div></div><div><h3 style="margin-bottom:6px">自我保健穴位</h3><div class="acus">${t.pts.map(acuH).join("")}</div></div><div class="bridge"><strong>中西對話：</strong>${t.bridge}</div><p class="note"><b class="lv" data-l="T">T</b>穴位定位依 WHO 西太平洋區標準${src(["T5"])}。穴位按壓屬放鬆與自我保健；骨質疏鬆處不要用力按壓。美國 NCCIH 提醒不要用針灸或按壓延誤就醫${src(["T6"])}。</p>`}
+ else if(tab==="life")b=`<ul class="tips">${s.tips.map(t=>`<li>${t}</li>`).join("")}</ul><div class="red"><strong>出現這些情況請就醫</strong><ul>${s.red.map(r=>`<li>${r}</li>`).join("")}</ul></div>`;
+ else b=quizHTML(s.quiz.map(q=>q.concat([id])))+`<div class="score" id="pScore"></div>`;
+ p.innerHTML=h+`<div class="pbody" role="tabpanel">${b}</div>`;
+ p.querySelectorAll(".tab").forEach(x=>x.addEventListener("click",()=>{tab=x.dataset.t;render();const n=p.querySelector(`.tab[data-t="${tab}"]`);if(n)n.focus()}));
+ if(tab==="quiz")bindQuiz(p,(sc,tot)=>{$("#pScore").innerHTML=`<span class="big">${sc} / ${tot}</span>${sc===tot?"全對！護照蓋上金星 ★":"再看一次「認識」分頁，可以重新挑戰。"} <button class="btn sm" id="pRe">重新作答</button>`;if(sc===tot){qdone[id]=1;store.set("bn_q",qdone);passport()}$("#pRe").addEventListener("click",render)});
+}
+function hubBody(){
+ const two=`<svg class="cycle" viewBox="0 0 520 220" role="img" aria-label="雙向關係：骨頭分泌骨鈣素等訊號影響大腦；大腦透過交感神經與荷爾蒙調控骨頭">
+ <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="${INK}"/></marker></defs>
+ <g font-family="Huninn,Noto Sans TC,sans-serif" text-anchor="middle" fill="${INK}">
+ <rect x="20" y="70" width="150" height="80" rx="20" fill="#ffb3cf" stroke="${INK}" stroke-width="3"/><text x="95" y="118" font-size="20">大腦</text>
+ <rect x="350" y="70" width="150" height="80" rx="20" fill="#fff5d6" stroke="${INK}" stroke-width="3"/><text x="425" y="118" font-size="20">骨骼</text>
+ <path d="M175 88 C240 50 290 50 345 88" stroke="${INK}" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+ <path d="M345 134 C290 172 240 172 175 134" stroke="${INK}" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+ <text x="260" y="40" font-size="14">交感神經、荷爾蒙 → 骨重塑</text>
+ <text x="260" y="196" font-size="14">骨鈣素、FGF23 等骨因子 → 記憶、情緒</text>
+ </g></svg>`;
+ return `<p>骨腦軸是中樞神經系統與骨骼之間，透過<b>神經、內分泌與機械力</b>形成的雙向溝通網絡。骨骼是會分泌骨因子的內分泌器官；大腦則透過交感神經、神經胜肽與荷爾蒙調控骨代謝。</p>
+ <div class="hubgrid">${ORDER.map(id=>`<button class="hubbtn" data-s="${id}" style="--cl:${COL[id][1]}">${masc(id)}${S[id].name}</button>`).join("")}</div>
+ <h3>一條雙向道</h3>${two}
+ <h3>中醫怎麼看</h3>
+ <div class="quotes">${qH(["心主脈，肺主皮，肝主筋，脾主肉，腎主骨。","《素問·宣明五氣》","T2"])}${qH(["腦為髓之海。","《靈樞·海論》","T1"])}</div>
+ <div class="bridge"><strong>中西對話：</strong>中醫「腎主骨 → 骨生髓 → 髓匯於腦」把骨和腦串成一條線；現代研究找到骨鈣素、交感神經與 PIEZO1 這些路徑。兩邊都在說：<b>顧好骨頭，也是在顧大腦。</b></div>
+ <div class="acus">${acuH("GV20")}</div>`;
+}
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function quizHTML(qs,noNum){return qs.map((q,i)=>`<div class="q" data-ans="${q[2]}"><div class="qt">${noNum?"":(i+1)+". "}${q[0]}</div><div class="opts">${shuffle(q[1].map((_,k)=>k)).map(k=>`<button class="opt" data-k="${k}">${q[1][k]}</button>`).join("")}</div><div class="expl" hidden>${q[3]}</div></div>`).join("")}
+function bindQuiz(root,done){const qs=root.querySelectorAll(".q");let n=0,sc=0;qs.forEach(q=>q.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>{const a=+q.dataset.ans,k=+b.dataset.k;q.querySelectorAll(".opt").forEach(o=>{o.disabled=true;if(+o.dataset.k===a)o.classList.add("ok")});if(k===a)sc++;else b.classList.add("no");n++;const e=q.querySelector(".expl");e.innerHTML=(k===a?"<b>答對了！</b> ":"<b>差一點！</b> ")+e.innerHTML;e.hidden=false;if(n===qs.length)done(sc,qs.length)})))}
+
+/* compare */
+const ROWS={ocn:["骨鈣素、GPR158、血腦屏障","腎主骨、骨者髓之府、諸髓皆屬於腦","足少陽膽經、足少陰腎經","懸鐘、太谿"],
+ marrow:["骨髓神經纖維、骨骼幹細胞","髓會絕骨、骨會大杼","足少陽膽經","懸鐘、大杼"],
+ sym:["交感神經、β2 受體、憂鬱與骨鬆共病","恐傷腎、腎藏志","手少陰心經","神門、百會"],
+ hypo:["腦下垂體「調幅」、神經「調頻」、晝夜節律","腎藏精、其充在骨","督脈、足少陰腎經","百會、太谿"],
+ mech:["PIEZO1、負重運動、太極防跌","久立傷骨（有動有休）","足陽明胃經、足少陰腎經","足三里、太谿"],
+ spine:["脊椎變形、腦傷後骨流失、骨鬆管理","督脈並於脊裏入屬於腦","督脈","大杼、腎俞、百會"],
+ gut:["腦—骨—腸軸、免疫發炎","四支皆稟氣於胃","任脈、足陽明胃經","中脘、足三里"]};
+$("#cmp").innerHTML=`<thead><tr><th>站點</th><th>現代研究關鍵詞</th><th>中醫理論</th><th>相關經絡</th><th>自我保健穴位</th></tr></thead><tbody>`+ORDER.map(id=>`<tr data-s="${id}" tabindex="0" style="--cc:${COL[id][0]}"><td><i></i>${S[id].name}</td>${ROWS[id].map(x=>`<td>${x}</td>`).join("")}</tr>`).join("")+`</tbody>`;
+$("#cmp").querySelectorAll("tr[data-s]").forEach(tr=>{const go=()=>{tab="tcm";select(tr.dataset.s);$("#map").scrollIntoView({behavior:"smooth"})};tr.addEventListener("click",go);tr.addEventListener("keydown",e=>{if(e.key==="Enter")go()})});
+
+/* challenge */
+const POOL=[];ORDER.forEach(id=>S[id].quiz.forEach(q=>POOL.push(q.concat([id]))));HUBQ.forEach(q=>POOL.push(q));
+let cq=[],ci=0,cs=0;const NQ=6;
+function startC(){cq=shuffle(POOL).slice(0,NQ);ci=0;cs=0;showQ();side()}
+function showQ(){const box=$("#cbox");
+ if(ci>=NQ){box.innerHTML=`<div class="prog"><i style="width:100%;background:var(--sun)"></i></div><h3 style="font-size:1.7rem;margin-top:12px">得分 ${cs} / ${NQ}</h3><p style="margin:6px 0 14px">${cs===NQ?"滿分！你是骨腦軸小達人。":cs>=4?"很不錯！回地圖再逛一圈，下次拿滿分。":"沒關係，回地圖看看每一站，再來挑戰一次。"}</p><button class="btn pri" id="cRe">再抽 ${NQ} 題</button>`;$("#cRe").addEventListener("click",startC);side(true);return}
+ const q=cq[ci],id=q[4];box.style.setProperty("--cl",COL[id][1]);
+ box.innerHTML=`<div class="prog"><i style="width:${ci/NQ*100}%;background:var(--sun)"></i></div><div style="margin-top:12px"><span class="ctag">${S[id].name}</span> <span class="small">第 ${ci+1} / ${NQ} 題 · 目前 ${cs} 分</span></div>`+quizHTML([q],true)+`<div style="margin-top:12px"><button class="btn pri sm" id="cN" hidden>下一題 →</button></div>`;
+ bindQuiz(box,s=>{cs+=s;const n=$("#cN");n.hidden=false;n.textContent=ci===NQ-1?"看結果 →":"下一題 →";n.addEventListener("click",()=>{ci++;showQ()});n.focus()});
+}
+function side(end){const best=store.get("bn_best",0);if(end&&cs>best)store.set("bn_best",cs);const b=Math.max(best,end?cs:0);
+ $("#cside").innerHTML=`<svg viewBox="0 0 120 120" class="float" aria-hidden="true"><use href="#star"/></svg><b style="font-family:var(--f-display);font-size:1.2rem">${end?(cs===NQ?"太厲害了！":"繼續加油！"):"星星陪你答題"}</b><p class="small">題目隨機抽選，每次都不一樣。${b?`最佳紀錄：${b} / ${NQ}`:""}</p>`}
+startC();
+
+/* practice: agility stepping */
+const AR=[["↑","往前踏"],["↓","往後踏"],["←","往左踏"],["→","往右踏"]];let aT=null,aEnd=0,aN=0;
+$("#aGo").addEventListener("click",()=>{if(aT)return;aEnd=Date.now()+60000;aN=0;const step=()=>{if(Date.now()>=aEnd){clearInterval(aT);aT=null;$("#aArrow").textContent="完成！";$("#aSub").textContent=`這一分鐘踏了 ${aN} 步，休息一下。`;return}const a=AR[Math.floor(Math.random()*4)];aN++;$("#aArrow").textContent=a[0];$("#aSub").textContent=`${a[1]}一步，再收回來（剩 ${Math.ceil((aEnd-Date.now())/1000)} 秒）`};step();aT=setInterval(step,+$("#aSpd").value)});
+$("#aStop").addEventListener("click",()=>{clearInterval(aT);aT=null;$("#aArrow").textContent="準備";$("#aSub").textContent="看到箭頭，就往那個方向踏一步再收回"});
+
+/* practice: DXA */
+const DX=["我是中高齡","我是停經後女性","我長期使用類固醇","我曾經在輕微外力下骨折（脆弱性骨折）","家人有骨質疏鬆或骨折病史"];
+$("#dxaCk").innerHTML=DX.map((t,i)=>`<label class="ck"><input type="checkbox" id="dx${i}"><span>${t}</span></label>`).join("");
+function dxUpd(){const n=document.querySelectorAll("#dxaCk input:checked").length;$("#dxaMsg").innerHTML=n===0?"勾選符合你的情況，看看要不要和醫師討論。":`<b>建議和醫師討論：</b>是否需要做 DXA 骨密度檢查，以及骨折風險（FRAX）評估。`}
+document.querySelectorAll("#dxaCk input").forEach(x=>x.addEventListener("change",dxUpd));dxUpd();
+
+/* practice: height log */
+function hShow(){const h=store.get("bn_h",[]);if(!h.length){$("#hOut").textContent="還沒有紀錄";return}const first=h[0].v,last=h[h.length-1].v,diff=(last-first).toFixed(1);$("#hOut").innerHTML=h.slice(-5).map(x=>`${esc(x.d)}：<b>${x.v}</b>`).join("　")+(h.length>1?`<br>和第一次紀錄相比：<b>${diff>0?"+":""}${diff}</b> 公分`:"")}
+$("#hSave").addEventListener("click",()=>{const v=+$("#hIn").value;if(!(v>=100&&v<=220)){$("#hOut").textContent="請輸入 100–220 之間的數字";return}const h=store.get("bn_h",[]);const d=new Date();h.push({d:`${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}`,v:+v.toFixed(1)});store.set("bn_h",h.slice(-30));hShow()});
+$("#hClear").addEventListener("click",()=>{store.set("bn_h",[]);hShow()});hShow();
+
+/* practice: doctor checklist */
+const DC=["DXA 骨密度與 FRAX 骨折風險","鈣、磷、維生素 D、副甲狀腺素","骨代謝指標與目前用藥","個人化負重、阻力與平衡運動處方","是否轉介物理治療與跌倒預防","失眠、憂鬱、慢性疼痛與營養問題"];
+const dcv=store.get("bn_doc",[]);
+$("#docCk").innerHTML=DC.map((t,i)=>`<label class="ck"><input type="checkbox" id="dc${i}" ${dcv.includes(i)?"checked":""}><span>${t}</span></label>`).join("");
+document.querySelectorAll("#docCk input").forEach(x=>x.addEventListener("change",()=>store.set("bn_doc",[...document.querySelectorAll("#docCk input:checked")].map(y=>+y.id.slice(2)))));
+
+/* weekly plan */
+const WK=[["週一","快走 30–40 分鐘；能力許可者可加小幅跳躍","負重、姿勢與落地緩衝"],["週二","下肢與核心阻力訓練：深蹲、弓步、臀橋、硬舉變式","動作控制、避免憋氣"],["週三","騎車或游泳 30 分鐘＋伸展","低衝擊恢復日"],["週四","上肢與背部阻力訓練：划船、推舉、背伸展","維持姿勢與脊椎功能"],["週五","舞蹈、太極或敏捷踏步 30–45 分鐘","平衡、協調與認知刺激"],["週六","健走或健行 45–60 分鐘","地形與感覺刺激；注意防跌"],["週日","輕鬆散步、伸展、回顧疼痛與疲勞","恢復與自我調整"]];
+let wk=store.get("bn_week",[]);
+$("#week").innerHTML=WK.map(([d,a,n],i)=>`<label class="ck"><input type="checkbox" id="wk${i}" ${wk.includes(i)?"checked":""}><span><b>${d}</b>　${a}<br><span class="small">${n}</span></span></label>`).join("");
+function wkUpd(){wk=[...document.querySelectorAll("#week input:checked")].map(x=>+x.id.slice(2));store.set("bn_week",wk);$("#wkBar").style.width=(wk.length/7*100)+"%";$("#wkN").textContent=`${wk.length} / 7`;$("#wkMsg").textContent=wk.length===7?"一週全部完成！給自己一個大大的讚。":wk.length>=4?"已經過半，繼續保持！":""}
+document.querySelectorAll("#week input").forEach(c=>c.addEventListener("change",wkUpd));
+$("#wkReset").addEventListener("click",()=>{document.querySelectorAll("#week input").forEach(c=>c.checked=false);wkUpd()});wkUpd();
+
+/* self check */
+const CK=["身高明顯變矮","駝背越來越明顯","持續背痛或骨痛","曾經輕微外力就骨折","活動量下降、肌力變弱","最近有跌倒","記憶力明顯下降","長期情緒低落或睡不好"];
+$("#checks").innerHTML=CK.map((t,i)=>`<label class="ck"><input type="checkbox" id="ck${i}"><span>${t}</span></label>`).join("");
+function ckUpd(){const n=document.querySelectorAll("#checks input:checked").length;$("#ckBar").style.width=(n/CK.length*100)+"%";$("#ckN").textContent=`${n} / ${CK.length}`;$("#ckMsg").textContent=n===0?"":n<=2?"先記錄下來，下次回診時提出來。":"符合的項目不少：建議和醫師討論骨密度、跌倒預防，以及認知、情緒與睡眠的整合評估。"}
+document.querySelectorAll("#checks input").forEach(c=>c.addEventListener("change",ckUpd));
+
+/* refs */
+$("#refList").innerHTML=`<div class="card" style="padding:16px 18px"><h3 style="margin-bottom:8px">學術文獻</h3><ol>${REFS.map((r,i)=>`<li id="ref${i+1}"><a href="${r.u}" target="_blank" rel="noopener">${esc(r.t)}</a><br><span>${esc(r.a)}</span>${r.d?` DOI: <a href="https://doi.org/${r.d}" target="_blank" rel="noopener">${r.d}</a>`:""}<div class="one">${r.one}</div></li>`).join("")}</ol></div>
+<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="margin-bottom:8px">中醫經典與穴位標準</h3><ol>${TREFS.map((r,i)=>`<li id="tref${i+1}"><a href="${r[1]}" target="_blank" rel="noopener">${r[0]}</a></li>`).join("")}</ol></div>`;
+
+const tt=$("#toTop");addEventListener("scroll",()=>{tt.hidden=scrollY<600},{passive:true});tt.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
+select("hub");
+})();
+</script>
+
+</body>
+</html>
