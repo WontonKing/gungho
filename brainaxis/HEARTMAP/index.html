@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#2455c7">
+<meta name="description" content="點開上半身剖面圖，認識心臟、肺臟、血管、自律神經、睡眠呼吸、橫膈膜與運動肌群如何和大腦雙向溝通；附證據標籤、中醫經絡穴位、呼吸與間歇快走跟著做與小測驗。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/BRAINAXIS/HEARTMAP/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="心肺顧得好，大腦更年輕？｜腦軸大探險">
+<meta property="og:description" content="點開上半身剖面圖，認識心臟、肺臟、血管、自律神經、睡眠呼吸、橫膈膜與運動肌群如何和大腦雙向溝通；附證據標籤、中醫經絡穴位、呼吸與間歇快走跟著做與小測驗。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/BRAINAXIS/HEARTMAP/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20120%20130%27%3E%3Cpath%20d%3D%27M60%2030%20C44%2010%2022%2014%2020%2026%20C34%2036%2050%2036%2060%2030Z%27%20fill%3D%27%235ad6a4%27%20stroke%3D%27%231f2a44%27%20stroke-width%3D%273%27/%3E%3Cpath%20d%3D%27M60%2024%20C74%204%2098%208%20100%2020%20C86%2032%2070%2032%2060%2024Z%27%20fill%3D%27%237ee3b8%27%20stroke%3D%27%231f2a44%27%20stroke-width%3D%273%27/%3E%3Cellipse%20cx%3D%2760%27%20cy%3D%2788%27%20rx%3D%2740%27%20ry%3D%2738%27%20fill%3D%27%237ee3b8%27%20stroke%3D%27%231f2a44%27%20stroke-width%3D%273.5%27/%3E%3C/svg%3E">
+<style>[hidden]{display:none!important}</style>
+<title>心肺顧得好，大腦更年輕？｜腦軸大探險</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&display=swap">
+<style>
+/* Layout: 共好小學堂單元頁 × 探險地圖：左側可點上半身心肺剖面圖、右側學習面板；粗墨線＋位移陰影的卡通風 */
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c; --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff; --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --rose:#f06595; --rose-l:#ffe3ee;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7; --white:#ffffff;
+  --lvA:#15803d; --lvB:#b45309; --lvC:#1d4ed8; --lvT:#0f8a7a; --lvO:#7c3aed; --lvQ:#c2410c;
+  --f-display:"Huninn","LXGW WenKai TC","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --f-body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+section,#panel,[id^=ref]{scroll-margin-top:76px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background-color:var(--bg);background-image:radial-gradient(circle at 6% 4%,var(--sun-l) 0,transparent 30%),radial-gradient(circle at 96% 10%,var(--rose-l) 0,transparent 28%),radial-gradient(circle at 90% 75%,var(--mint-l) 0,transparent 32%),radial-gradient(circle at 6% 85%,var(--sky-l) 0,transparent 32%);background-attachment:fixed;color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.85}
+a{color:var(--blue)}
+.wrap{max-width:1220px;margin:0 auto;padding-inline:16px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.3;margin:0}
+h2{font-size:clamp(1.6rem,3.4vw,2.3rem)}
+h3{font-size:1.2rem}
+p{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:8px}
+.hl{background:linear-gradient(transparent 60%,var(--sun) 0);padding:0 .1em}
+.nw{white-space:nowrap}
+.card{background:var(--white);border:3px solid var(--ink);border-radius:22px;box-shadow:0 4px 0 var(--ink)}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:3px dashed var(--line)}
+.top .wrap{display:flex;align-items:center;gap:10px;padding-block:8px}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink)}
+.brand svg{width:38px;height:40px}
+.brand b{font-family:var(--f-display);font-size:1.15rem;display:block;line-height:1.1}
+.brand small{font-size:.66rem;letter-spacing:.14em;color:var(--ink-2);font-weight:700}
+.top nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.pill{text-decoration:none;color:var(--ink);font-size:.86rem;font-weight:700;padding:3px 12px;border-radius:999px;border:2px solid var(--ink);background:var(--white)}
+.pill.back{background:var(--sun)}
+@media (max-width:820px){.top nav .pill:not(.back){display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:36px 64px}
+.hero .bubbleBg{position:absolute;border-radius:50%;opacity:.5;z-index:-1}
+.hero .grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px;align-items:center}
+.tag{display:inline-block;background:var(--sun-l);border:2px solid var(--ink);border-radius:999px;padding:2px 14px;font-weight:700;font-size:.9rem}
+.hero h1{font-size:clamp(2.2rem,5.6vw,3.7rem);margin-top:14px}
+.hero .lede{font-size:1.08rem;color:var(--ink-2);margin-top:14px;max-width:32em}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:3px solid var(--ink);border-radius:999px;padding:9px 22px;font-weight:900;cursor:pointer;text-decoration:none;color:var(--ink);box-shadow:0 4px 0 var(--ink);transition:transform .12s,box-shadow .12s;background:var(--white)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 var(--ink)}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 var(--ink)}
+.btn.pri{background:var(--blue);color:#fff}
+.btn.sun{background:var(--sun)}
+.btn.sm{padding:5px 14px;font-size:.9rem}
+.heroArt{width:100%;max-width:520px;justify-self:center;height:auto}
+.float{animation:float 3.4s ease-in-out infinite}
+.float2{animation:float 4.2s ease-in-out infinite reverse}
+@keyframes float{50%{transform:translateY(-8px)}}
+.wave{position:absolute;left:0;right:0;bottom:0;width:100%;height:46px}
+
+/* section scaffolding */
+section.blk{padding-block:34px}
+.sechead{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px}
+.num{flex:none;width:52px;height:52px;border:3px solid var(--ink);border-radius:14px;display:grid;place-items:center;font-family:var(--f-display);font-size:1.5rem;transform:rotate(-6deg);box-shadow:3px 3px 0 var(--ink)}
+.eyebrow{font-size:.74rem;letter-spacing:.16em;font-weight:900;color:var(--ink-2)}
+.sechead p.sub{color:var(--ink-2);max-width:52em;margin-top:4px}
+.tint{border-radius:28px;padding:26px 18px;margin-inline:-2px}
+
+/* key points */
+.keyp{display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;align-items:center;padding:20px}
+.keyp svg{width:110px;height:120px}
+.say{position:relative;background:var(--white);border:3px solid var(--ink);border-radius:20px;padding:14px 18px;font-size:1.02rem}
+.say::before{content:"";position:absolute;left:-14px;top:30px;border:10px solid transparent;border-right-color:var(--ink)}
+.say ul{margin:6px 0 0;padding-left:1.2em}
+.say .warn{margin-top:8px;background:var(--coral-l);border-radius:12px;padding:6px 12px;font-weight:700}
+
+/* legend */
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:.88rem;color:var(--ink-2);margin-top:12px}
+.lv{display:inline-flex;align-items:center;justify-content:center;min-width:1.7em;height:1.6em;padding:0 .45em;border-radius:7px;font-weight:900;font-size:.76rem;margin-right:6px;flex:none;white-space:nowrap;border:1.5px solid currentColor}
+.lv[data-l=A]{color:var(--lvA);background:#e7f7ec}
+.lv[data-l=B]{color:var(--lvB);background:#fff3df}
+.lv[data-l=C]{color:var(--lvC);background:#e6edff}
+.lv[data-l=T]{color:var(--lvT);background:#dff5f1}
+.lv[data-l=原]{color:var(--lvO);background:var(--grape-l)}
+.lv[data-l=待]{color:var(--lvQ);background:var(--orange-l)}
+
+/* map */
+.mapgrid{display:grid;grid-template-columns:minmax(0,500px) minmax(0,1fr);gap:22px;align-items:start}
+.headcard{position:sticky;top:70px;padding:12px 12px 14px}
+.tools{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;padding:0 4px 4px;font-size:.86rem}
+.toggle{display:inline-flex;gap:6px;align-items:center;cursor:pointer;font-weight:700}
+.toggle input{width:17px;height:17px;accent-color:var(--blue)}
+#headSvg{width:100%;height:auto;display:block;max-height:calc(100vh - 230px)}
+#headSvg .st{cursor:pointer;transition:opacity .25s,filter .2s}
+#headSvg .st:hover,#headSvg .st:focus-visible{filter:drop-shadow(0 0 6px var(--glow)) brightness(1.06);outline:none}
+#headSvg.dim .st:not(.on){opacity:.35}
+#headSvg .st.on{animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{filter:drop-shadow(0 0 9px var(--glow)) brightness(1.1)}}
+#headSvg .lbl{font-family:var(--f-display);font-size:16px;fill:var(--ink);cursor:pointer}
+#headSvg .lblg.on .lbl{font-weight:700;fill:var(--glow)}
+#headSvg .lblline{stroke:var(--ink-2);stroke-width:.9;stroke-dasharray:2 2;fill:none}
+#merL,#routeL,#ptL,#headSvg .lblline,#regL{pointer-events:none}
+#headSvg .mer{fill:none;stroke-linecap:round;stroke-linejoin:round}
+#headSvg .mer.all{stroke:#8a96ad;stroke-width:1.5;stroke-dasharray:1 4}
+#headSvg .mer.hot{stroke-width:2.8;stroke-dasharray:2 5;animation:flow 1.4s linear infinite}
+#headSvg .route{fill:none;stroke-width:3.4;stroke-dasharray:7 6;animation:flow .9s linear infinite;stroke-linecap:round}
+@keyframes flow{to{stroke-dashoffset:-26}}
+#headSvg .rtxt{font-size:12.5px;font-weight:900;paint-order:stroke;stroke:#fff;stroke-width:4px}
+#headSvg .pt .halo{animation:halo 1.8s ease-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes halo{from{transform:scale(.6);opacity:.8}to{transform:scale(2.3);opacity:0}}
+#headSvg .pt text{font-size:12.5px;font-weight:900;paint-order:stroke;stroke:#fff;stroke-width:4px;fill:var(--ink)}
+#headSvg .reg{opacity:0;transition:opacity .3s}
+#headSvg.hubon .reg{opacity:1}
+#headSvg .reg text{font-size:11.5px;font-weight:900;paint-order:stroke;stroke:#fff;stroke-width:3.5px;fill:var(--blue-d)}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:#fff;font-size:.82rem;padding:2px 10px;border-radius:8px;transform:translate(-50%,-135%);white-space:nowrap;opacity:0;transition:opacity .12s}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chip{display:inline-flex;align-items:center;gap:5px;border:2.5px solid var(--ink);background:var(--white);border-radius:999px;padding:2px 10px 2px 3px;font-size:.86rem;cursor:pointer;font-weight:700}
+.chip svg{width:26px;height:26px}
+.chip[aria-pressed=true]{background:var(--cl);box-shadow:0 3px 0 var(--ink)}
+.passport{margin-top:10px;font-size:.84rem;color:var(--ink-2);display:flex;align-items:center;gap:8px;font-weight:700}
+.passport .bar{flex:1;height:12px;border-radius:99px;border:2px solid var(--ink);background:var(--white);overflow:hidden}
+.passport .bar i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint) 0 8px,#5fd6ad 8px 16px);transition:width .4s}
+
+/* panel */
+.panel{overflow:hidden;min-width:0}
+.phead{display:flex;gap:14px;align-items:center;padding:16px 20px;background:var(--cl);border-bottom:3px solid var(--ink)}
+.phead svg.m{width:80px;height:80px;flex:none}
+.phead .en{font-size:.74rem;letter-spacing:.14em;font-weight:900;color:var(--ink-2)}
+.phead h3{font-size:1.65rem}
+.phead .hook{font-size:1rem;margin-top:2px}
+.tabs{display:flex;gap:4px;padding:10px 12px 0;overflow-x:auto;border-bottom:3px dashed var(--line)}
+.tab{border:0;background:none;padding:7px 12px;border-radius:12px 12px 0 0;cursor:pointer;font-weight:900;font-size:.94rem;color:var(--ink-2);white-space:nowrap;border-bottom:4px solid transparent}
+.tab[aria-selected=true]{color:var(--ink);border-bottom-color:var(--cc);background:var(--cl)}
+.pbody{padding:20px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.meta{background:var(--cl);border:2.5px dashed var(--ink);border-radius:18px;padding:12px 16px}
+.paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.pathc{position:relative;border:2.5px solid var(--ink);border-radius:16px;padding:20px 12px 10px;background:var(--white)}
+.pathc .badge{position:absolute;top:-12px;left:10px;background:var(--cc);color:var(--ink);border:2px solid var(--ink);border-radius:999px;font-size:.74rem;font-weight:900;padding:0 10px}
+.pathc strong{font-family:var(--f-display);font-size:1.05rem;display:block}
+.pathc p{font-size:.9rem;color:var(--ink-2)}
+.ev{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.ev li{display:flex;gap:8px;align-items:flex-start;padding:10px 12px;border-radius:14px;background:var(--white);border:2px solid var(--line);font-size:.96rem}
+.ev li>div{min-width:0}
+a.src{display:inline-block;font-size:.72rem;font-weight:900;text-decoration:none;background:var(--blue-l);color:var(--blue-d);border-radius:999px;padding:0 8px;margin-left:4px;line-height:1.7;vertical-align:.1em;white-space:nowrap}
+.quote{border-left:5px solid var(--lvT);background:#effaf7;padding:10px 14px;border-radius:0 14px 14px 0}
+.quote q{font-family:var(--f-display);font-size:1.12rem;quotes:"「" "」"}
+.quote cite{display:block;font-style:normal;font-size:.82rem;color:var(--ink-2)}
+.quotes{display:flex;flex-direction:column;gap:8px}
+.mers{display:flex;flex-wrap:wrap;gap:6px}
+.mers span{font-size:.86rem;border:2px solid var(--ink);border-radius:999px;padding:0 10px;background:var(--white);font-weight:700}
+.acus{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.acu{border:2.5px solid var(--ink);border-radius:16px;padding:12px;background:var(--white);display:flex;flex-direction:column;gap:3px;font-size:.88rem}
+.acu .nm{display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+.acu .nm b{font-family:var(--f-display);font-size:1.2rem}
+.acu .code{font-size:.72rem;font-weight:900;background:var(--cc);border:1.5px solid var(--ink);border-radius:6px;padding:0 6px}
+.acu .k{font-weight:900;color:var(--ink-2);margin-right:4px}
+.bridge{background:linear-gradient(135deg,var(--cl),#effaf7);border:2.5px solid var(--ink);border-radius:18px;padding:12px 16px}
+.bridge strong{font-family:var(--f-display)}
+.note{font-size:.86rem;color:var(--ink-2);border-top:2px dashed var(--line);padding-top:10px}
+.tips{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.tips li{background:var(--white);border:2px solid var(--line);border-radius:14px;padding:8px 12px;font-size:.93rem}
+.tips li::before{content:"✓ ";color:var(--mint);font-weight:900}
+.red{border:3px solid var(--coral);border-radius:18px;padding:12px 16px;background:var(--coral-l)}
+.red strong{color:#c92a2a}
+.red ul{margin:6px 0 0;padding-left:1.2em;font-size:.94rem}
+.cycle{width:100%;max-width:520px;height:auto;display:block;margin:0 auto}
+.hubgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.hubbtn{display:flex;flex-direction:column;align-items:center;border:2.5px solid var(--ink);border-radius:16px;background:var(--cl);padding:8px 4px;cursor:pointer;font-weight:900;font-size:.88rem;box-shadow:0 3px 0 var(--ink)}
+.hubbtn svg{width:48px;height:48px}
+
+/* quiz */
+.q{border:2.5px solid var(--ink);border-radius:18px;padding:14px;background:var(--white)}
+.qt{font-weight:900;margin-bottom:8px}
+.opts{display:grid;gap:6px}
+.opt{text-align:left;border:2.5px solid var(--line);background:var(--white);border-radius:14px;padding:8px 12px;cursor:pointer;font-size:.96rem}
+.opt:hover:not(:disabled){border-color:var(--ink)}
+.opt.ok{border-color:var(--mint);background:var(--mint-l)}
+.opt.no{border-color:var(--coral);background:var(--coral-l)}
+.opt:disabled{cursor:default}
+.expl{margin-top:8px;font-size:.92rem;padding:8px 12px;border-radius:12px;background:var(--sun-l)}
+.score{font-weight:900;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.score .big{font-family:var(--f-display);font-size:1.6rem}
+
+/* practice */
+.prac{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pcard{padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.pcard h3{display:flex;align-items:center;gap:8px}
+.stage{border:2.5px solid var(--ink);border-radius:18px;background:var(--cl);min-height:190px;display:grid;place-items:center;text-align:center;padding:10px;position:relative}
+.syll{font-family:var(--f-display);font-size:3.4rem;line-height:1}
+.syl-sub{font-size:.9rem;color:var(--ink-2);margin-top:6px}
+.beats{display:flex;gap:6px;justify-content:center;margin-top:10px}
+.beats i{width:14px;height:14px;border-radius:50%;border:2px solid var(--ink);background:var(--white)}
+.beats i.on{background:var(--orange)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.small{font-size:.84rem;color:var(--ink-2)}
+#tongueFace{width:150px;height:150px}
+#tongueFace #tg{transition:transform .45s cubic-bezier(.4,1.6,.6,1)}
+.ring{width:150px;height:150px}
+.timeline{display:grid;gap:12px;position:relative}
+.tl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:start}
+.tl .dot{width:46px;height:46px;border-radius:50%;border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--f-display);font-weight:700;box-shadow:2px 2px 0 var(--ink)}
+.tl .box{padding:10px 14px}
+.tl .box b{font-family:var(--f-display);font-size:1.1rem}
+.tl .box .n{font-size:.86rem;color:var(--ink-2)}
+.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.ck{display:flex;gap:10px;align-items:flex-start;padding:10px 14px;cursor:pointer;font-size:.96rem;border:2.5px solid var(--ink);border-radius:16px;background:var(--white)}
+.ck input{appearance:none;flex:none;width:24px;height:24px;border:2.5px solid var(--ink);border-radius:7px;margin-top:3px;display:grid;place-items:center;background:var(--white)}
+.ck input:checked{background:var(--coral)}
+.ck input:checked::after{content:"✓";color:#fff;font-weight:900;font-size:15px;line-height:1}
+.prog{height:16px;border:2.5px solid var(--ink);border-radius:99px;overflow:hidden;background:var(--white)}
+.prog i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--coral) 0 8px,#ff8f8f 8px 16px);transition:width .3s}
+.tblwrap{overflow-x:auto;border:3px solid var(--ink);border-radius:22px;background:var(--white);box-shadow:0 4px 0 var(--ink)}
+table.cmp{border-collapse:collapse;width:100%;min-width:860px;font-size:.9rem}
+table.cmp th,table.cmp td{padding:10px 12px;border-bottom:2px dashed var(--line);text-align:left;vertical-align:top}
+table.cmp thead th{background:var(--blue);color:#fff;font-family:var(--f-display);font-weight:400;font-size:1rem}
+table.cmp td:first-child{font-weight:900;white-space:nowrap}
+table.cmp td:first-child i{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--cc);border:2px solid var(--ink);margin-right:6px;vertical-align:-1px}
+table.cmp tbody tr{cursor:pointer}
+table.cmp tbody tr:hover{background:var(--sun-l)}
+.chal{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,280px);gap:18px;align-items:start}
+.cbox{padding:20px}
+.cside{padding:16px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
+.cside svg{width:120px;height:120px}
+.ctag{display:inline-block;font-size:.8rem;font-weight:900;background:var(--cl);border:2px solid var(--ink);border-radius:999px;padding:0 12px;margin-bottom:6px}
+.refs ol{margin:0;padding-left:1.6em;display:flex;flex-direction:column;gap:8px;font-size:.9rem;word-break:break-word}
+.refs li:target{background:var(--sun-l);border-radius:8px}
+.refs .one{color:var(--ink-2);font-size:.86rem}
+.fix{border:2.5px dashed var(--orange);background:var(--orange-l);border-radius:16px;padding:12px 16px;font-size:.92rem;margin-bottom:14px}
+.fix b{color:#b35400}
+.disc{border:4px solid #c92a2a;background:var(--coral-l);border-radius:24px;padding:6px}
+.disc .in{border:2.5px dashed #c92a2a;border-radius:18px;padding:16px 18px}
+.disc h2{font-size:1.4rem;color:#c92a2a}
+.disc .first{background:#fff;color:#c92a2a;font-weight:900;border-radius:12px;padding:8px 12px;margin:10px 0}
+.disc ul{margin:0;padding-left:1.2em;font-size:.95rem}
+footer{background:var(--blue-d);color:#fff;margin-top:36px;padding-block:30px 40px}
+footer .wrap{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+footer .trio{display:flex;gap:10px;align-items:flex-end}
+footer .trio svg{width:70px;height:72px}
+footer .gold{font-family:var(--f-display);font-size:1.3rem}
+footer .slogan{background:var(--sun);color:var(--ink);font-weight:900;border-radius:999px;padding:4px 16px;font-size:.92rem}
+footer a{color:var(--sun)}
+footer small{opacity:.85}
+#toTop{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:48px;height:48px;border-radius:50%;border:3px solid var(--ink);background:var(--sun);font-weight:900;font-size:1.3rem;cursor:pointer;box-shadow:0 4px 0 var(--ink);z-index:50}
+
+@media (max-width:980px){.mapgrid{grid-template-columns:1fr}.headcard{position:static}#headSvg{max-height:none}}
+@media (max-width:820px){
+  .hero .grid,.prac,.chal,.checks,.tips,.paths{grid-template-columns:1fr}
+  .keyp{grid-template-columns:1fr;justify-items:center}
+  .say::before{display:none}
+  .hubgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .phead svg.m{width:60px;height:60px}
+  .phead h3{font-size:1.3rem}
+  .pbody{padding:16px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+</defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><svg aria-hidden="true"><use href="#sprout"/></svg><span><b>腦軸大探險</b><small>BRAIN AXIS ADVENTURE</small></span></a>
+    <nav aria-label="頁內導覽">
+      <a class="pill" href="#map">探險地圖</a><a class="pill" href="#practice">跟著做</a><a class="pill" href="#challenge">挑戰</a><a class="pill" href="#refs">參考</a>
+      <a class="pill back" href="../index.html">← 返回探險基地</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="bubbleBg" style="width:340px;height:340px;background:var(--coral-l);left:-120px;top:-60px"></div>
+    <div class="bubbleBg" style="width:260px;height:260px;background:var(--sky-l);right:-80px;top:40px"></div>
+    <div class="bubbleBg" style="width:200px;height:200px;background:var(--sun-l);left:40%;bottom:-60px"></div>
+    <div class="wrap grid">
+      <div>
+        <span class="tag">✦ 大腦保健小知識 · 心肺腦軸探險地圖</span>
+        <h1>心肺顧得好，<span class="hl nw">大腦更年輕？</span></h1>
+        <p class="lede">大腦只占體重約 2%，卻用掉全身約 20% 的氧氣與葡萄糖。心臟、肺臟、血管和自律神經，天天幫大腦送氧、傳訊號。點開上半身剖面圖，看看研究怎麼說、中醫經絡怎麼看，再一起跟著練呼吸、算運動量。</p>
+        <div class="cta"><a class="btn pri" href="#map">開始探險 →</a><a class="btn sun" href="#practice">直接跟著做</a></div>
+      </div>
+      <svg class="heroArt" id="heroArt" viewBox="0 0 520 400" role="img" aria-label="小芽、藍鳥、星星和愛心寶寶站在草地上，說：心跳穩穩，大腦亮亮！"></svg>
+    </div>
+    <svg class="wave" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C150 0 300 46 450 24 C600 2 750 46 900 22 C1050 0 1130 30 1200 20 L1200 46 L0 46Z" fill="var(--white)" opacity=".8"/></svg>
+  </section>
+
+  <div class="wrap">
+    <section class="blk" aria-labelledby="kph">
+      <div class="sechead"><div class="num" style="background:var(--blue-l)">1</div><div><p class="eyebrow">KEY POINTS</p><h2 id="kph">先說重點</h2></div></div>
+      <div class="card keyp">
+        <svg aria-hidden="true"><use href="#bird"/></svg>
+        <div class="say">
+          <b>藍鳥幫你整理三件事：</b>
+          <ul>
+            <li>大腦非常依賴氧氣與血流。心臟、肺臟功能下降，腦部灌流不足，注意力、記憶與做事能力都可能受影響。</li>
+            <li>這是雙向的：強烈壓力和焦慮會改變心跳、血壓與呼吸，嚴重時甚至引發像心肌梗塞的「心碎症候群」。</li>
+            <li>好消息是：心肺適能可以練。規律有氧加肌力、管理三高、處理睡眠呼吸問題、練習放鬆，都在幫大腦加分。</li>
+          </ul>
+          <p class="warn">要分清楚：很多研究看到的是「相關」，有心臟或肺部疾病的人，運動強度要先請醫師評估。</p>
+        </div>
+      </div>
+      <div class="legend" aria-label="證據標籤說明">
+        <span><b class="lv" data-l="A">A</b>人體試驗或其統合分析、臨床共識</span>
+        <span><b class="lv" data-l="B">B</b>觀察性研究或回顧，看得到關聯</span>
+        <span><b class="lv" data-l="C">C</b>動物或機制研究</span>
+        <span><b class="lv" data-l="T">T</b>中醫經典理論</span>
+        <span><b class="lv" data-l="原">原稿整理</b>原稿的整理或建議，未附直接出處</span>
+      </div>
+    </section>
+
+    <section class="blk" id="map" aria-labelledby="maph">
+      <div class="sechead"><div class="num" style="background:var(--coral-l)">2</div><div><p class="eyebrow">EXPLORATION MAP</p><h2 id="maph">點一站，看氧氣和訊號怎麼到大腦</h2><p class="sub">這是上半身的正面剖面圖（面向你，所以圖的左邊是身體右側）。被選中的部位會亮起，彩色虛線畫出它和大腦之間的路線；切到「中醫經絡」分頁，圖上會標出相關經絡與穴位。</p></div></div>
+      <div class="mapgrid">
+        <div class="card headcard" id="headcard">
+          <div class="tools">
+            <label class="toggle"><input type="checkbox" id="allMer">顯示全部經絡</label>
+            <label class="toggle"><input type="checkbox" id="showLbl" checked>部位名稱</label>
+          </div>
+          <div style="position:relative" id="svgWrap">
+            <svg id="headSvg" viewBox="-6 10 472 700" role="group" aria-label="上半身心肺剖面圖">
+              <defs>
+                <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff1e4"/><stop offset="1" stop-color="#ffe2cc"/></linearGradient>
+                <path id="half" d="M230,130 L214,130 C214,146 212,154 208,160 C190,168 168,170 152,178 C134,186 126,202 124,224 C122,262 118,300 114,340 C112,380 108,420 104,452 C102,468 100,480 104,490 C110,498 120,496 122,486 C124,470 128,452 132,430 C136,390 140,350 144,316 C146,300 150,280 152,264 C154,300 156,340 160,380 C162,410 158,440 154,470 C150,520 152,570 156,640 C158,660 160,680 162,705 L198,705 C198,680 198,660 200,640 C204,580 208,530 214,500 C220,480 226,474 230,472 Z"/>
+              </defs>
+              <g fill="#1f2a44" stroke="#1f2a44" stroke-width="7" stroke-linejoin="round"><use href="#half"/><use href="#half" transform="matrix(-1 0 0 1 460 0)"/><ellipse cx="230" cy="80" rx="46" ry="54"/></g>
+              <g fill="url(#skin)"><use href="#half"/><use href="#half" transform="matrix(-1 0 0 1 460 0)"/><ellipse cx="230" cy="80" rx="46" ry="54"/></g>
+              <!-- face -->
+              <circle cx="214" cy="84" r="3.5" fill="#1f2a44"/><circle cx="246" cy="84" r="3.5" fill="#1f2a44"/>
+              <ellipse cx="204" cy="98" rx="6" ry="3.5" fill="#ff9aa2" opacity=".7"/><ellipse cx="256" cy="98" rx="6" ry="3.5" fill="#ff9aa2" opacity=".7"/>
+              <path d="M222,108 Q230,114 238,108" stroke="#1f2a44" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <!-- ribs & spine (context) -->
+              <g fill="none" stroke="#e7d7b4" stroke-width="5" stroke-linecap="round" opacity=".9">
+                <path d="M222,206 C196,204 172,214 166,232"/><path d="M238,206 C264,204 288,214 294,232"/>
+                <path d="M222,226 C192,224 166,238 162,260"/><path d="M238,226 C268,224 294,238 298,260"/>
+                <path d="M222,248 C190,248 164,262 162,288"/><path d="M238,248 C270,248 296,262 298,288"/>
+                <path d="M222,272 C192,274 168,288 166,312"/><path d="M238,272 C268,274 292,288 294,312"/>
+              </g>
+              <rect x="225" y="196" width="10" height="96" rx="4" fill="#f3ead2" stroke="#b9a676" stroke-width="1.4"/>
+              <!-- abdomen context -->
+              <path d="M188,360 C200,350 260,350 272,360 C276,390 270,420 230,430 C190,420 184,390 188,360 Z" fill="#ffe0c2" opacity=".7"/>
+
+              <g id="stations">
+                <!-- muscles: thighs -->
+                <g class="st" data-s="muscle" tabindex="0" role="button" aria-label="運動肌群：運動與心肺適能">
+                  <path d="M178,500 C194,500 206,520 206,560 C204,600 196,624 186,632 C174,622 162,598 162,560 C162,526 168,502 178,500 Z" fill="#e46aa9" stroke="#1f2a44" stroke-width="2.5"/>
+                  <path d="M282,500 C266,500 254,520 254,560 C256,600 264,624 274,632 C286,622 298,598 298,560 C298,526 292,502 282,500 Z" fill="#e46aa9" stroke="#1f2a44" stroke-width="2.5"/>
+                  <path d="M178,506 C180,546 182,590 186,626 M282,506 C280,546 278,590 274,626" stroke="#f7b4d6" stroke-width="1.6" fill="none"/>
+                  <path d="M136,250 C146,252 152,276 150,300 C148,316 142,322 138,320 C132,306 130,280 132,264 Z" fill="#e46aa9" stroke="#1f2a44" stroke-width="2.2" opacity=".85"/>
+                  <path d="M324,250 C314,252 308,276 310,300 C312,316 318,322 322,320 C328,306 330,280 328,264 Z" fill="#e46aa9" stroke="#1f2a44" stroke-width="2.2" opacity=".85"/>
+                </g>
+                <!-- diaphragm -->
+                <g class="st" data-s="diaph" tabindex="0" role="button" aria-label="橫膈膜：呼吸與放鬆">
+                  <path d="M160,334 C170,300 210,296 230,312 C250,296 290,300 300,334 C290,326 250,320 230,330 C210,320 170,326 160,334 Z" fill="#ffb36b" stroke="#1f2a44" stroke-width="2.5"/>
+                </g>
+                <!-- lungs -->
+                <g class="st" data-s="lung" tabindex="0" role="button" aria-label="肺臟：換氣站">
+                  <path d="M220,198 C196,190 174,208 170,248 C166,286 168,312 178,322 C194,330 212,322 220,310 C224,272 224,232 220,198 Z" fill="#8cc4e3" stroke="#1f2a44" stroke-width="2.5"/>
+                  <path d="M240,200 C264,190 286,208 290,248 C294,286 292,312 282,322 C270,330 254,324 248,312 C256,296 256,282 244,272 Z" fill="#8cc4e3" stroke="#1f2a44" stroke-width="2.5"/>
+                  <path d="M178,256 C190,258 202,252 212,242 M180,288 C194,288 206,284 216,276 M284,262 C272,262 262,258 252,250" stroke="#3b7fa8" stroke-width="1.5" fill="none"/>
+                </g>
+                <!-- airway (throat + trachea) -->
+                <g class="st" data-s="airway" tabindex="0" role="button" aria-label="呼吸道與睡眠">
+                  <path d="M224,112 C224,122 222,130 222,140 L222,196 L238,196 L238,140 C238,130 236,122 236,112 Z" fill="#cfe9f7" stroke="#1f2a44" stroke-width="2.4"/>
+                  <path d="M224,150 h14 M224,162 h14 M224,174 h14 M224,186 h14" stroke="#5a9cc4" stroke-width="1.5"/>
+                  <path d="M230,196 C222,200 216,206 212,216 M230,196 C238,200 244,206 248,216" stroke="#1f2a44" stroke-width="5" fill="none" stroke-linecap="round"/>
+                  <path d="M230,196 C222,200 216,206 212,216 M230,196 C238,200 244,206 248,216" stroke="#cfe9f7" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+                </g>
+                <!-- vessels -->
+                <g class="st" data-s="vessel" tabindex="0" role="button" aria-label="血管與腦血流">
+                  <path d="M238,250 C238,230 250,224 262,232 C268,240 266,256 262,268" stroke="#c0303a" stroke-width="6" fill="none" stroke-linecap="round"/>
+                  <path d="M240,236 C238,200 244,170 246,140 C248,120 244,100 236,86" stroke="#e5484d" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+                  <path d="M244,232 C226,206 216,176 214,140 C212,120 216,100 224,86" stroke="#e5484d" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+                  <path d="M262,268 C262,320 262,380 260,440" stroke="#c0303a" stroke-width="5" fill="none" stroke-linecap="round" opacity=".8"/>
+                </g>
+                <!-- heart -->
+                <g class="st" data-s="heart" tabindex="0" role="button" aria-label="心臟：全身的幫浦">
+                  <path d="M228,252 C214,256 210,274 218,290 C226,304 244,312 256,314 C268,304 272,288 266,270 C262,254 244,246 228,252 Z" fill="#e5484d" stroke="#1f2a44" stroke-width="2.6"/>
+                  <path d="M240,262 C244,278 248,294 254,308" stroke="#ff9ea2" stroke-width="1.6" fill="none"/>
+                </g>
+                <!-- autonomic nerves -->
+                <g class="st" data-s="nerve" tabindex="0" role="button" aria-label="自律神經：油門與煞車">
+                  <path d="M226,100 C220,130 216,170 220,210 C222,240 228,262 236,276" stroke="#e6a800" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+                  <path d="M234,100 C240,130 244,170 240,210 C238,236 244,258 250,276" stroke="#e6a800" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+                  <path d="M218,206 C206,226 196,244 190,262 M242,206 C254,226 264,244 270,262" stroke="#e6a800" stroke-width="2.4" fill="none" stroke-linecap="round" opacity=".8"/>
+                  <g fill="#ffc93c" stroke="#1f2a44" stroke-width="1.5"><circle cx="210" cy="210" r="3.5"/><circle cx="210" cy="236" r="3.5"/><circle cx="210" cy="262" r="3.5"/><circle cx="210" cy="288" r="3.5"/><circle cx="250" cy="210" r="3.5"/><circle cx="250" cy="236" r="3.5"/><circle cx="250" cy="262" r="3.5"/><circle cx="250" cy="288" r="3.5"/></g>
+                </g>
+                <!-- brain -->
+                <g class="st" data-s="hub" tabindex="0" role="button" aria-label="大腦：心肺腦軸總機">
+                  <path d="M230,34 C214,32 200,40 196,50 C186,52 182,62 186,70 C184,78 190,86 200,86 C208,92 220,92 230,88 C240,92 252,92 260,86 C270,86 276,78 274,70 C278,62 274,52 264,50 C260,40 246,32 230,34 Z" fill="#ffb3cf" stroke="#1f2a44" stroke-width="2.6"/>
+                  <path d="M230,36 L230,88 M206,48 C214,52 214,60 208,64 M200,72 C208,68 216,72 218,78 M254,48 C246,52 246,60 252,64 M260,72 C252,68 244,72 242,78" stroke="#c94f80" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                </g>
+              </g>
+              <g id="lblL"></g>
+              <g id="merL"></g>
+              <g id="routeL"></g>
+              <g id="ptL"></g>
+            </svg>
+            <div class="tip" id="tip"></div>
+          </div>
+          <div class="chips" id="chips"></div>
+          <div class="passport"><span id="ppT">探險章 0 / 7</span><span class="bar"><i id="ppB"></i></span></div>
+        </div>
+        <article class="card panel" id="panel" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section class="blk tint" id="practice" style="background:linear-gradient(160deg,var(--sky-l),var(--mint-l))" aria-labelledby="prh">
+      <div class="sechead"><div class="num" style="background:var(--sky)">3</div><div><p class="eyebrow">LET'S PRACTICE</p><h2 id="prh">跟著做：呼吸、強度、間歇快走</h2><p class="sub">有心血管疾病、肺病，或運動中出現胸痛、明顯喘、暈眩的人，請先請醫師評估運動強度與安全界線。</p></div></div>
+      <div class="prac">
+        <div class="card pcard" style="--cl:var(--mint-l)">
+          <h3>呼吸放鬆 <span class="lv" data-l="原">原稿建議</span></h3>
+          <div class="stage"><div><svg viewBox="0 0 160 160" width="150" height="150" aria-hidden="true"><circle cx="80" cy="80" r="70" fill="#fff" stroke="#e3e8f3" stroke-width="3"/><circle id="bCirc" cx="80" cy="80" r="34" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3" style="transition:r 4s ease-in-out"/><text id="bTxt" x="80" y="86" text-anchor="middle" font-family="Huninn,Noto Sans TC" font-size="20" fill="#1f2a44">準備</text></svg><div class="syl-sub" id="bSub">每天約 10 分鐘，跟著圓圈慢慢吸、慢慢吐</div></div></div>
+          <div class="row"><button class="btn sm sun" id="bGo">開始</button><button class="btn sm" id="bStop">停止</button><label class="small">時間 <select id="bMin"><option value="3">3 分</option><option value="5">5 分</option><option value="10" selected>10 分</option></select></label></div>
+          <p class="small">示範節奏：吸氣 4 秒、吐氣 6 秒，覺得不舒服就照自己的步調。</p>
+        </div>
+        <div class="card pcard" style="--cl:var(--orange-l)">
+          <h3>運動強度自我檢查 <span class="lv" data-l="原">原稿建議</span></h3>
+          <div class="stage"><div style="width:100%"><div class="syll" id="rNum" style="font-size:3rem">12</div><div class="syl-sub">主觀用力感 RPE（6–20）</div><input type="range" id="rpe" min="6" max="20" value="12" aria-label="主觀用力感 RPE" style="width:100%;accent-color:#ff9f43;margin-top:8px"><div id="rMsg" style="font-weight:900;margin-top:6px"></div></div></div>
+          <p class="small">中等強度：呼吸心跳加快，但還能用短句交談，大約是 RPE 11–13。</p>
+        </div>
+        <div class="card pcard" style="--cl:var(--coral-l)">
+          <h3>間歇快走計時 <span class="lv" data-l="原">原稿建議</span></h3>
+          <div class="stage" aria-live="polite"><div><div class="syll" id="iPh" style="font-size:2.4rem">快走</div><div class="syll" id="iT" style="font-size:2.6rem;margin-top:6px">3:00</div><div class="syl-sub" id="iR">第 1 輪</div></div></div>
+          <div class="row"><button class="btn sm sun" id="iGo">開始</button><button class="btn sm" id="iStop">暫停</button><button class="btn sm" id="iReset">重來</button><label class="small">輪數 <select id="iN"><option>6</option><option>7</option><option>8</option></select></label></div>
+          <p class="small">快走 3 分鐘＋慢走 2 分鐘，重複 6–8 輪。過程中留意心跳與身體感覺。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="blk" aria-labelledby="wkh">
+      <div class="sechead"><div class="num" style="background:var(--mint-l)">4</div><div><p class="eyebrow">WEEKLY PLAN</p><h2 id="wkh">一週心肺腦軸運動表 <span class="lv" data-l="原">原稿建議</span></h2><p class="sub">適用一般中高齡、沒有嚴重心肺禁忌的人。做完就打勾，勾選只存在你自己的瀏覽器。</p></div></div>
+      <div class="checks" id="week"></div>
+      <div class="row" style="margin-top:12px"><div class="prog" style="flex:1"><i id="wkBar" style="background:repeating-linear-gradient(45deg,var(--mint) 0 8px,#5fd6ad 8px 16px)"></i></div><b id="wkN">0 / 7</b> <button class="btn sm" id="wkReset">新的一週</button></div>
+      <p id="wkMsg" class="small" style="margin-top:6px"></p>
+      <div class="card" style="padding:14px 18px;margin-top:14px"><b style="font-family:var(--f-display)">日常小習慣</b>
+        <ul style="margin:6px 0 0;padding-left:1.2em"><li>每久坐 30–60 分鐘，起身走動或伸展 2–5 分鐘。</li><li>維持規律睡眠。</li><li>每天安排約 10 分鐘的呼吸放鬆、靜坐或正念練習。</li></ul></div>
+    </section>
+
+    <section class="blk tint" style="background:linear-gradient(160deg,var(--coral-l),#fff)" aria-labelledby="ckh">
+      <div class="sechead"><div class="num" style="background:var(--coral)">5</div><div><p class="eyebrow">SELF CHECK</p><h2 id="ckh">自我觀察清單</h2><p class="sub">這不是診斷工具，勾選結果也不會儲存。符合的項目記錄下來，帶去和醫師討論。</p></div></div>
+      <div class="checks" id="checks"></div>
+      <div class="row" style="margin-top:12px"><div class="prog" style="flex:1"><i id="ckBar"></i></div><b id="ckN">0 / 8</b></div>
+      <p id="ckMsg" class="small" style="margin-top:6px"></p>
+      <div class="red" style="margin-top:14px"><strong>這些情況請立即就醫或撥 119</strong><ul>
+        <li>突發胸痛、嚴重呼吸急促、暈厥。</li>
+        <li>單側無力、臉歪、口齒不清或意識改變（排除急性心臟或腦血管事件）。</li>
+        <li>運動中胸痛、顯著呼吸困難、暈眩、昏厥、異常心悸或心跳不規則：立刻停止運動並就醫。</li>
+      </ul></div>
+    </section>
+
+    <section class="blk" id="compare" aria-labelledby="cmh">
+      <div class="sechead"><div class="num" style="background:var(--grape-l)">6</div><div><p class="eyebrow">EAST MEETS WEST</p><h2 id="cmh">現代研究 × 中醫經絡對照表</h2><p class="sub">中醫的「心」「肺」是功能系統，不等於解剖器官。點任一列，可以回到地圖看那一站的中醫分頁。</p></div></div>
+      <div class="tblwrap"><table class="cmp" id="cmp"></table></div>
+    </section>
+
+    <section class="blk" id="challenge" aria-labelledby="chh">
+      <div class="sechead"><div class="num" style="background:var(--sun)">7</div><div><p class="eyebrow">QUIZ</p><h2 id="chh">心肺腦軸小挑戰</h2><p class="sub">從題庫隨機抽 6 題，每題作答後馬上看解說。</p></div></div>
+      <div class="chal"><div class="card cbox" id="cbox"></div><aside class="card cside" id="cside"></aside></div>
+    </section>
+
+    <section class="blk refs" id="refs" aria-labelledby="rfh">
+      <div class="sechead"><div class="num" style="background:var(--sky-l)">8</div><div><p class="eyebrow">REFERENCES</p><h2 id="rfh">參考資料</h2><p class="sub">現代醫學文獻已用 PubMed 與出版社頁面核對題名、期刊、年份與 DOI；中醫原文引自《黃帝內經》《難經》（維基文庫），穴位定位依 WHO 西太平洋區標準。</p></div></div>
+      <div id="refList"></div>
+    </section>
+
+    <section class="blk" aria-labelledby="dch">
+      <div class="disc"><div class="in">
+        <h2 id="dch">⚠ 重要聲明｜請先看這裡</h2>
+        <p class="first">本站資訊僅供參考，實際以醫療專業人員評估為準。</p>
+        <ul>
+          <li><b>僅供參考：</b>本頁為一般健康教育，不構成醫療建議，不能取代醫師、物理治療師或中醫師的個別評估與治療。</li>
+          <li><b>運動安全：</b>已確診心血管疾病、心衰竭、嚴重肺病，或有暈厥、胸痛的人，開始運動前請先接受醫師評估。</li>
+          <li><b>無任何推薦或行銷：</b>本頁未推薦任何產品、診所或療法。</li>
+          <li><b>資料時點：</b>內容整理於 2026-10-14，研究持續更新，請留意最新資訊。</li>
+          <li><b>使用前查證：</b>文中標示「原稿整理」的內容，引用前請再確認出處。</li>
+        </ul>
+        <p style="margin-top:10px;font-weight:700">緊急狀況（突發胸痛、嚴重喘、暈厥、單側無力或說話不清）請撥 119。情緒壓力很大時，可撥 1925 安心專線。</p>
+      </div></div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="trio"><svg aria-hidden="true"><use href="#sprout"/></svg><svg aria-hidden="true"><use href="#bird"/></svg><svg aria-hidden="true"><use href="#star"/></svg></div>
+    <p class="gold">每一次多懂一點，都是送給自己的小禮物。</p>
+    <p class="slogan">本站資訊僅供參考，實際以醫療專業人員評估為準</p>
+    <p><a href="../index.html">← 返回探險基地</a></p>
+    <small>共好小學堂 ✦ 一起學習，一起共好｜本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-10-14</small>
+  </div>
+</footer>
+<button id="toTop" aria-label="回到頂端" hidden>↑</button>
+
+<script>
+(function(){
+"use strict";
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const INK="#1f2a44";
+function face(cx,cy,s){s=s||1;return `<circle cx="${cx-9*s}" cy="${cy}" r="${4.2*s}" fill="${INK}"/><circle cx="${cx+9*s}" cy="${cy}" r="${4.2*s}" fill="${INK}"/><circle cx="${cx-7.8*s}" cy="${cy-1.4*s}" r="${1.4*s}" fill="#fff"/><circle cx="${cx+10.2*s}" cy="${cy-1.4*s}" r="${1.4*s}" fill="#fff"/><ellipse cx="${cx-17*s}" cy="${cy+8*s}" rx="${5.5*s}" ry="${3.2*s}" fill="#ff9aa2" opacity=".8"/><ellipse cx="${cx+17*s}" cy="${cy+8*s}" rx="${5.5*s}" ry="${3.2*s}" fill="#ff9aa2" opacity=".8"/><path d="M${cx-6*s} ${cy+9*s} Q${cx} ${cy+15*s} ${cx+6*s} ${cy+9*s}" stroke="${INK}" stroke-width="${2.8*s}" fill="none" stroke-linecap="round"/>`}
+const SW=`stroke="${INK}" stroke-width="3" stroke-linejoin="round"`;
+const M={
+ hub:()=>`<path d="M50 12c-10 0-16 6-18 12-8 0-15 7-15 15 0 4 2 8 5 10-2 3-3 6-2 10 1 8 8 13 16 13 3 6 9 9 14 9s11-3 14-9c8 0 15-5 16-13 1-4 0-7-2-10 3-2 5-6 5-10 0-8-7-15-15-15-2-6-8-12-18-12z" fill="#ffb3cf" ${SW}/><path d="M50 14v14M34 28c6 2 8 8 6 12M66 28c-6 2-8 8-6 12" stroke="#c94f80" stroke-width="2.2" fill="none" stroke-linecap="round"/>`+face(50,56,.9),
+ heart:()=>`<path d="M50 90C18 68 10 52 10 36c0-13 10-23 22-23 8 0 14 4 18 11 4-7 10-11 18-11 12 0 22 10 22 23 0 16-8 32-40 54z" fill="#ff6b6b" ${SW}/>`+face(50,46,.9),
+ lung:()=>`<path d="M46 14v26M54 14v26" stroke="${INK}" stroke-width="3" stroke-linecap="round"/><path d="M44 30C30 22 14 34 12 58c-2 22 4 32 16 32 12 0 18-8 18-20V34z" fill="#8cc4e3" ${SW}/><path d="M56 30c14-8 30 4 32 28 2 22-4 32-16 32-12 0-18-8-18-20V34z" fill="#8cc4e3" ${SW}/>`+face(50,66,.7),
+ vessel:()=>`<path d="M14 64c10-30 26-44 36-44s26 14 36 44" stroke="#e5484d" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M14 64c10-30 26-44 36-44s26 14 36 44" stroke="${INK}" stroke-width="3" fill="none" stroke-linecap="round" opacity=".0"/><circle cx="50" cy="62" r="24" fill="#ff8a8a" ${SW}/>`+face(50,60,.75),
+ nerve:()=>`<path d="M58 6L22 56h24l-8 38 40-54H54z" fill="#ffc93c" ${SW}/>`+face(50,50,.75),
+ airway:()=>`<path d="M38 8h24v40c0 6 10 10 16 22M38 48c0 6-10 10-16 22" stroke="${INK}" stroke-width="3" fill="#cfe9f7"/><ellipse cx="50" cy="62" rx="30" ry="28" fill="#cfe9f7" ${SW}/><path d="M66 22l8-6M70 30l10-2" stroke="#8a5cf6" stroke-width="3" stroke-linecap="round"/><text x="72" y="16" font-size="14" font-weight="900" fill="#8a5cf6">z</text>`+face(50,60,.8),
+ diaph:()=>`<path d="M8 70C16 30 44 26 50 44c6-18 34-14 42 26-12-8-30-10-42-2-12-8-30-6-42 2z" fill="#ffb36b" ${SW}/>`+face(50,56,.75),
+ muscle:()=>`<rect x="16" y="8" width="68" height="6" rx="3" fill="#8a97a0"/><rect x="10" y="2" width="10" height="18" rx="3" fill="#56636b"/><rect x="80" y="2" width="10" height="18" rx="3" fill="#56636b"/><circle cx="50" cy="60" r="32" fill="#e46aa9" ${SW}/><rect x="20" y="36" width="60" height="8" rx="4" fill="#ffd166" stroke="${INK}" stroke-width="2"/>`+face(50,62,.85)
+};
+const masc=(k,cls)=>`<svg viewBox="0 0 100 100" class="${cls||""}" aria-hidden="true">${M[k]()}</svg>`;
+$("#heroArt").innerHTML=`<ellipse cx="260" cy="350" rx="230" ry="34" fill="#dcf7ec" stroke="${INK}" stroke-width="3"/>
+<g class="float2"><circle cx="70" cy="80" r="22" fill="#e0f4ff" stroke="${INK}" stroke-width="2.5"/><path d="M58 80h6l4-8 6 16 4-8h6" stroke="#2455c7" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g class="float"><circle cx="468" cy="150" r="16" fill="#cfe9f7" stroke="${INK}" stroke-width="2.5"/><circle cx="440" cy="128" r="9" fill="#cfe9f7" stroke="${INK}" stroke-width="2.5"/></g>
+<g class="float2"><path d="M110 160 l10 -16 l10 16 l-10 16 z" fill="#ffc93c" stroke="${INK}" stroke-width="2.5"/></g>
+<g transform="translate(36,190) scale(1.15)"><use href="#sprout" width="120" height="130"/></g>
+<g transform="translate(176,150) scale(1.7)"><svg width="100" height="100" viewBox="0 0 100 100">${M.heart()}</svg></g>
+<g transform="translate(340,210) scale(1.05)"><use href="#bird" width="120" height="110"/></g>
+<g class="float" transform="translate(410,60)"><use href="#star" width="80" height="80"/></g>
+<g transform="translate(150,20)"><rect width="250" height="56" rx="20" fill="#fff" stroke="${INK}" stroke-width="3"/><path d="M110 56 l14 18 l8 -18" fill="#fff" stroke="${INK}" stroke-width="3" stroke-linejoin="round"/><rect x="108" y="50" width="30" height="8" fill="#fff"/><text x="125" y="36" text-anchor="middle" font-family="Huninn,Noto Sans TC,sans-serif" font-size="20" fill="${INK}">心跳穩穩，大腦亮亮！</text></g>`;
+
+/* ---------- references ---------- */
+const REFS=[
+ {t:"Heart failure and cognitive impairment: a narrative review.",a:"Uchmanowicz I, et al. ESC Heart Fail. 2026;13(4).",d:"10.1093/eschf/xvag192",u:"https://academic.oup.com/eschf/article/13/4/xvag192/8733300",one:"敘述性回顧：心衰竭與認知障礙的關係、篩檢與照護。"},
+ {t:"Cognitive Impairment in Patients With Cardiac Disease: Implications for Clinical Practice.",a:"Stroke（American Heart Association）.",d:"10.1161/STROKEAHA.123.040499",u:"https://www.ahajournals.org/doi/10.1161/STROKEAHA.123.040499",one:"心臟病患者的認知障礙與臨床照護意涵。"},
+ {t:"The Heart-Brain Axis in Heart Failure: Implications for Neuropharmacological Intervention.",a:"Epelde F. Curr Neuropharmacol. 2025.",d:"10.2174/011570159X414456251017065225",u:"https://pubmed.ncbi.nlm.nih.gov/41193445/",one:"回顧：心衰竭與腦血流下降、灰質萎縮、白質病變相關，特別影響執行功能；認知下降又會讓自我照顧變差，形成雙向關係。"},
+ {t:"Exercise training alters resting brain-derived neurotrophic factor concentration in older adults: A systematic review with meta-analysis of randomized-controlled trials.",a:"Gholami F, et al. Exp Gerontol. 2024;199:112658.",d:"10.1016/j.exger.2024.112658",u:"https://pubmed.ncbi.nlm.nih.gov/39674562/",one:"35 篇隨機對照試驗：運動讓長者 BDNF 上升（SMD 0.56）；有氧、阻力、綜合訓練都有效；12 週、中高強度、每週 3–4 次效果最大。"},
+ {t:"Connecting the dots: A narrative review of the relationship between heart failure and cognitive impairment.",a:"Massussi M, et al. ESC Heart Fail. 2025;12(2):1119-1131.",d:"10.1002/ehf2.15144",u:"https://pubmed.ncbi.nlm.nih.gov/39477682/",one:"敘述性回顧：心衰竭與認知障礙共享房顫、高血壓、肥胖、第二型糖尿病等危險因子；機制包括灌流不足、微小栓塞、缺血與腦部發炎。"},
+ {t:"Cognitive impairment in heart failure patients.",a:"Leto L, Feola M. J Geriatr Cardiol. 2014;11(4):316-328.",d:"10.11909/j.issn.1671-5411.2014.04.007",u:"https://pubmed.ncbi.nlm.nih.gov/25593581/",one:"回顧：腦血流減少、心輸出量下降、腦血管反應性與血壓改變是主要機制；認知受損影響自我照顧。"},
+ {t:"The heart-brain axis: unraveling the interconnections between cardiovascular and Alzheimer's diseases.",a:"Toyli A, et al. Front Cardiovasc Med. 2025;12:1685461.",d:"10.3389/fcvm.2025.1685461",u:"https://pubmed.ncbi.nlm.nih.gov/41367378/",one:"回顧：腦灌流不足、發炎、血腦屏障失能、自律神經失衡串連心血管病與阿茲海默症；中年心血管病對晚年認知影響最大。"},
+ {t:"Cognitive Impairment in Heart Failure: Landscape, Challenges, and Future Directions.",a:"Yang M, et al. Front Cardiovasc Med. 2022;8:831734.",d:"10.3389/fcvm.2021.831734",u:"https://pubmed.ncbi.nlm.nih.gov/35198608/",one:"回顧：約 40%、高齡者甚至 60% 的心衰竭患者有認知障礙，將近一半未被診斷。"},
+ {t:"Impact of physical exercise on the regulation of brain-derived neurotrophic factor in people with neurodegenerative diseases.",a:"Romero Garavito A, et al. Front Neurol. 2025;15:1505879.",d:"10.3389/fneur.2024.1505879",u:"https://pubmed.ncbi.nlm.nih.gov/39935805/",one:"回顧：BDNF 對維持腦健康很關鍵，運動後 BDNF 上升，可作為神經退化疾病的輔助方式。"},
+ {t:"Heart-brain interaction in cardiogenic dementia: pathophysiology and therapeutic potential.",a:"Liu J, et al. Front Cardiovasc Med. 2024;11:1304864.",d:"10.3389/fcvm.2024.1304864",u:"https://pubmed.ncbi.nlm.nih.gov/38327496/",one:"回顧：冠心病、心肌梗塞、心衰竭、房顫與瓣膜疾病都和認知改變有關；長期心輸出量下降造成腦灌流不足是主要機制之一。"},
+ {t:"Cognitive Safety and Outcomes of Pharmacological Management in Heart Failure: A Systematic Review.",a:"Balcerzak W, et al. Pharmaceuticals (Basel). 2025;18(11):1671.",d:"10.3390/ph18111671",u:"https://pubmed.ncbi.nlm.nih.gov/41304916/",one:"系統性回顧 11 篇、58,190 人：積極降壓與較低 MCI／失智風險相關；常用心衰竭藥物未見明顯傷害認知。"},
+ {t:"Broken heart syndrome – Symptoms and causes.",a:"Mayo Clinic.",d:"",u:"https://www.mayoclinic.org/diseases-conditions/broken-heart-syndrome/symptoms-causes/syc-20354617",one:"強烈情緒或身體壓力引發的短暫心臟問題，症狀像心肌梗塞，但冠狀動脈沒有阻塞。"},
+ {t:"Physical activity – Fact sheet.",a:"World Health Organization. 2024.",d:"",u:"https://www.who.int/news-room/fact-sheets/detail/physical-activity",one:"成人每週至少 150 分鐘中等強度身體活動。"}
+];
+const TREFS=[
+ ["《黃帝內經》全文（素問、靈樞），維基文庫","https://zh.wikisource.org/wiki/黃帝內經"],
+ ["《黃帝內經·素問》第七卷：經脈別論、宣明五氣篇，維基文庫","https://zh.wikisource.org/wiki/黃帝內經/素問第七卷"],
+ ["《難經》（四十五難：八會穴），維基文庫","https://zh.wikisource.org/wiki/難經"],
+ ["Lim S. WHO Standard Acupuncture Point Locations. Evid Based Complement Alternat Med. 2010;7(2):167–168","https://pmc.ncbi.nlm.nih.gov/articles/PMC2862941/"],
+ ["NCCIH. Acupuncture: Effectiveness and Safety","https://www.nccih.nih.gov/health/acupuncture-what-you-need-to-know"],
+ ["NCCIH. Tai Chi: What You Need To Know","https://www.nccih.nih.gov/health/tai-chi-what-you-need-to-know"]
+];
+function src(list){return (list||[]).map(r=>typeof r==="number"?`<a class="src" href="#ref${r}">參考 ${r}</a>`:`<a class="src" href="#tref${r.slice(1)}">典 ${r.slice(1)}</a>`).join("")}
+
+/* ---------- acupoints & meridians ---------- */
+const PTS={
+ GV20:{n:"百會",m:"督脈",x:230,y:30,loc:"頭頂正中線上，前髮際正中直上 5 寸。",how:"指腹輕揉 1 分鐘，配合慢慢深呼吸。",use:"傳統用於頭暈、精神不振、安神。",warn:"頭部有傷口或術後不要按。"},
+ PC6:{n:"內關",m:"手厥陰心包經",x:341,y:430,loc:"前臂掌側，腕橫紋上 2 寸，兩條肌腱之間。",how:"拇指按揉 1–2 分鐘，以痠脹可忍受為度。",use:"傳統用於胸悶、心悸、安神。",warn:"胸痛時先就醫，不要用按壓代替。"},
+ HT7:{n:"神門",m:"手少陰心經",x:124,y:458,loc:"腕掌側橫紋小指側端，尺側腕屈肌腱的橈側凹陷。",how:"拇指指尖輕按 1 分鐘，睡前可做。",use:"傳統用於心悸、失眠、健忘。",warn:"失眠或心悸持續，請就醫評估。"},
+ CV17:{n:"膻中",m:"任脈",x:230,y:262,loc:"前正中線上，平第 4 肋間隙（約兩乳頭連線中點）。",how:"掌心貼住輕揉，吐氣時放鬆肩膀。",use:"八會穴之「氣會」，傳統用於胸悶、氣短。",warn:"胸痛時先就醫。"},
+ LU9:{n:"太淵",m:"手太陰肺經",x:108,y:452,loc:"腕掌側橫紋拇指側，橈動脈搏動處。",how:"輕觸感受脈搏，輕揉 30 秒即可。",use:"肺經原穴、八會穴之「脈會」。",warn:"位在動脈上，不可用力壓迫。"},
+ LU1:{n:"中府",m:"手太陰肺經",x:174,y:192,loc:"胸前壁外上方，鎖骨下窩外側，平第 1 肋間隙，前正中線旁開 6 寸。",how:"指腹輕揉，配合擴胸與深呼吸。",use:"傳統用於咳嗽、胸悶、氣喘。",warn:"不要用力深壓胸壁。"},
+ CV22:{n:"天突",m:"任脈",x:230,y:166,loc:"前頸正中線上，胸骨上窩中央。",how:"指腹輕觸即可，不要往內壓。",use:"傳統用於咳嗽、喉嚨不適。",warn:"不可用力按壓氣管。"},
+ ST36:{n:"足三里",m:"足陽明胃經",x:168,y:676,loc:"小腿前外側，膝眼下 3 寸，脛骨前緣外一橫指。",how:"拇指按揉或握拳輕敲 1–2 分鐘，運動後也可以做。",use:"傳統保健要穴，用於疲倦乏力、調理脾胃。",warn:"局部有靜脈曲張或傷口時避免。"}
+};
+const MER={
+ lu:{n:"手太陰肺經",p:[[174,192],[150,206],[138,260],[130,330],[120,400],[108,452],[104,488]]},
+ ht:{n:"手少陰心經",p:[[154,252],[148,300],[142,360],[132,420],[124,458],[120,490]]},
+ pc:{n:"手厥陰心包經",p:[[284,262],[306,262],[318,320],[328,380],[341,430],[346,488]]},
+ ren:{n:"任脈",p:[[230,150],[230,166],[230,262],[230,470]]},
+ st:{n:"足陽明胃經",p:[[200,330],[194,420],[184,480],[176,560],[170,630],[168,676],[172,705]]},
+ du:{n:"督脈",p:[[204,38],[218,30],[230,28],[242,30],[256,38]]}
+};
+
+/* ---------- stations ---------- */
+const ORDER=["heart","lung","vessel","nerve","airway","diaph","muscle"];
+const COL={hub:["var(--blue)","var(--blue-l)"],heart:["var(--coral)","var(--coral-l)"],lung:["var(--sky)","var(--sky-l)"],vessel:["var(--rose)","var(--rose-l)"],nerve:["var(--sun)","var(--sun-l)"],airway:["var(--grape)","var(--grape-l)"],diaph:["var(--orange)","var(--orange-l)"],muscle:["var(--mint)","var(--mint-l)"]};
+const HEX={hub:"#2455c7",heart:"#e8494d",lung:"#1e90d6",vessel:"#d6336c",nerve:"#d99a00",airway:"#7048e8",diaph:"#ea7d12",muscle:"#1f9e75"};
+const S={
+hub:{name:"大腦總機",en:"BRAIN HUB",hook:"大腦只占體重約 2%，卻用掉全身約 20% 的氧氣與葡萄糖。",mers:["du"],pts:["GV20"]},
+heart:{name:"心臟",en:"HEART",hook:"心臟每跳一下，就是在幫大腦送一次貨。",
+ route:[[244,282],[242,236],[244,190],[244,140],[232,74]],rlabel:"血流供氧",
+ meta:"心臟是全身的<b>幫浦</b>，大腦是最耗電的<b>工廠</b>。幫浦力氣變小（例如心衰竭），送到大腦的血就變少；反過來，認知變差也會讓人忘記吃藥、照顧不好自己，心臟病更難控制。",
+ paths:[["血流","心輸出量下降，與腦血流下降、腦結構改變和認知障礙相關。"],["共同危險因子","房顫、高血壓、糖尿病等共病同時傷害心臟和大腦。"],["自我照顧","認知障礙降低用藥遵從與自我管理，讓心血管病更難控制。"]],
+ ev:[["B","心衰竭患者約 40%、高齡患者甚至達 60% 有認知障礙，而且將近一半沒有被診斷出來。",[8]],
+     ["B","心衰竭與腦血流下降、灰質萎縮、白質病變相關，尤其影響注意力、記憶與執行功能。",[3,6]],
+     ["B","心衰竭與認知障礙共享房顫、高血壓、肥胖、第二型糖尿病等危險因子；機制包括灌流不足、微小栓塞、缺血與腦部發炎。",[5,1]],
+     ["B","冠心病、心肌梗塞、心衰竭、房顫與瓣膜疾病，都和認知改變有關。",[10]],
+     ["A","系統性回顧：常用的心衰竭藥物沒有看到明顯傷害認知；依醫囑好好治療，反而可能伴隨認知改善。",[11]]],
+ tcm:{view:"中醫說「心主脈」「心藏神」，心既推動血脈，也主宰精神意識。心氣不足，古人觀察到的是心悸、健忘、精神不濟。",
+  quotes:[["心者，君主之官也，神明出焉。","《素問·靈蘭秘典論》","T1"],["心主脈，肺主皮，肝主筋，脾主肉，腎主骨。","《素問·宣明五氣》","T2"]],
+  mers:["ht","pc"],pts:["PC6","HT7"],bridge:"「心主神明」和現代心腦軸說的是同一件事：心臟出狀況，精神與認知也會受牽連。差別是：今天我們能用心臟超音波、認知篩檢把它量出來，也知道規則治療可以保護大腦。"},
+ tips:["依醫囑治療心衰竭、冠心病與心房顫動","依醫囑控制血壓、血糖與血脂","和醫師討論是否適合心臟復健","家人留意：記憶、注意力、處理藥物與金錢的能力"],
+ red:["突發胸痛、嚴重呼吸急促、暈厥（立即撥 119）","記憶、做事能力或情緒持續惡化，影響日常生活"],
+ quiz:[["心衰竭患者大約有多少比例出現認知障礙？",["約 40%，高齡者可達 60%","不到 1%","約 5%","幾乎 100%"],0,"回顧研究指出約 40%、高齡者甚至 60%，而且將近一半沒被診斷出來。"],
+       ["關於心衰竭常用藥物與認知，系統性回顧的結論是？",["沒有看到明顯傷害認知，好好治療反而可能伴隨改善","吃藥一定會變笨","應該停藥保護大腦","完全沒有研究"],0,"常用藥物未見明顯認知傷害；不要因為擔心大腦而自行停藥。"]]},
+lung:{name:"肺臟",en:"LUNGS",hook:"肺是換氣站：氧氣從這裡上車，一路送到大腦。",
+ route:[[196,262],[226,236],[240,200],[242,140],[232,74]],rlabel:"氧氣經血液",
+ meta:"肺負責把氧氣吸進來、把二氧化碳排出去。慢性肺病或夜裡呼吸不順，會讓大腦長期<b>「缺一點氧」</b>，加上睡不好，注意力和情緒都會受影響。",
+ paths:[["氣體交換","攝取氧氣、排出二氧化碳，是大腦供氧的第一站。"],["慢性低氧","慢性肺病與睡眠呼吸障礙造成低氧，可能影響認知與情緒。"],["心肺適能","心肺適能低落，與較高的失智與中風風險相關。"]],
+ ev:[["原","慢性阻塞性肺病（COPD）患者可見注意力、記憶與執行功能受損，可能和慢性低氧、睡眠片段化與血管風險有關。",[]],
+     ["原","心肺適能（CRF）低落與較高失智及中風風險相關，有氧能力是大腦老化可以調整的因子。",[]],
+     ["原","有慢性肺病的人，應接受胸腔專科評估；肺復健與適當治療可以改善氧合與生活品質。",[]]],
+ tcm:{view:"中醫說「肺者，氣之本」「肺朝百脈」：全身的氣由肺主管，各處的血脈也匯聚到肺。肺又「藏魄」，和人的感覺、反應有關。",
+  quotes:[["肺者，氣之本，魄之處也。","《素問·六節藏象論》","T1"],["肺朝百脈。","《素問·經脈別論》","T2"]],
+  mers:["lu"],pts:["LU1","LU9"],bridge:"「肺朝百脈」很像在描述肺循環：全身的血都要流過肺換氣。古人強調養肺氣，現代版本就是規律有氧運動與好好治療慢性肺病。"},
+ tips:["慢性肺病依醫囑治療，和醫師討論肺復健","規律有氧活動，慢慢提升心肺適能","運動時感覺明顯喘、胸悶，就停下來休息並告訴醫師"],
+ red:["嚴重呼吸急促","嘴唇發紫、意識不清（立即撥 119）"],
+ quiz:[["肺在心肺腦軸中最主要的角色是？",["攝取氧氣、排出二氧化碳","分泌胰島素","過濾尿毒素","製造骨鈣素"],0,"肺是供氧的第一站，慢性低氧可能影響認知與情緒。"],
+       ["《素問·經脈別論》說「肺朝百脈」，最接近哪個現代觀念？",["全身的血都要流經肺換氣","肺只負責說話","肺和血液無關","肺負責消化"],0,"全身血脈匯聚於肺，與現代肺循環的概念相呼應。"]]},
+vessel:{name:"血管與腦血流",en:"VESSELS",hook:"頸動脈是通往大腦的高速公路，塞車或車禍都會傷腦。",
+ route:[[240,236],[244,180],[246,130],[236,80]],rlabel:"腦部灌流",
+ meta:"心臟送出的血，要經過頸部動脈才能到大腦。血壓忽高忽低、心律不整（房顫）形成的小血塊，都可能讓<b>大腦供血不足</b>或發生<b>栓塞</b>。",
+ paths:[["灌流","心衰竭、冠心病、血壓異常可降低腦灌流。"],["栓塞","心房顫動增加腦栓塞風險。"],["血管病變","促進血管性與退化性認知障礙。"]],
+ ev:[["B","心房顫動、高血壓等可降低腦灌流或增加栓塞風險，促進血管性與退化性認知障礙。",[5,10]],
+     ["B","心血管病與阿茲海默症透過腦灌流不足、發炎與血腦屏障失能互相牽連；中年時期的心血管病對晚年認知影響最大。",[7]],
+     ["A","系統性回顧：積極控制血壓，與較低的輕度認知障礙（MCI）或失智風險相關。",[11]]],
+ tcm:{view:"中醫說「心主脈」，血脈由心推動；《難經》把手腕的太淵穴定為「脈會」，脈搏的狀態被看作全身血脈的縮影。",
+  quotes:[["心主脈。","《素問·宣明五氣》","T2"],["脈會太淵。","《難經·四十五難》","T3"]],
+  mers:["lu","pc"],pts:["LU9","PC6"],bridge:"中醫把脈看血脈，現代用血壓計、心電圖看血管和心律。兩者都提醒：脈搏不規則、血壓不穩，要認真處理。"},
+ tips:["依醫囑控制血壓、血糖與血脂","心房顫動要規律治療，和醫師討論是否需要抗凝血藥","定期量血壓並記錄，回診時帶給醫師看"],
+ red:["單側無力、臉歪、口齒不清（疑似中風，立即撥 119）","突發意識改變"],
+ quiz:[["心房顫動對大腦最需要注意的風險是？",["增加腦栓塞（中風）風險","讓頭髮變白","造成近視","讓牙齒鬆動"],0,"房顫容易形成血塊，跟著血流進入腦部造成栓塞。"],
+       ["系統性回顧中，積極控制血壓與什麼有關？",["較低的 MCI 或失智風險","較高的失智風險","無法入睡","肌肉萎縮"],0,"高風險族群積極控制血壓，可能帶來認知上的好處。"]]},
+nerve:{name:"自律神經",en:"AUTONOMIC NERVES",hook:"大腦踩油門、踩煞車，心跳和呼吸就跟著變。",
+ route:[[230,100],[222,160],[222,220],[236,276]],rlabel:"迷走神經雙向傳訊",
+ meta:"自律神經像車子的<b>油門（交感）</b>和<b>煞車（副交感、迷走神經）</b>。大腦透過它調整心跳、血壓與呼吸；心臟的感覺訊號也經迷走神經回傳大腦。長期壓力就像一直踩油門。",
+ paths:[["大腦→心肺","交感與副交感神經調節心跳、血壓與呼吸。"],["心肺→大腦","心臟的感覺訊號經迷走神經等路徑影響腦部調控。"],["長期壓力","交感持續亢奮、心率變異度下降。"]],
+ ev:[["A","強烈情緒或身體壓力可能引發「心碎症候群」（章魚壺心肌症）：胸痛、喘、昏倒，症狀像心肌梗塞，但冠狀動脈沒有阻塞。",[12]],
+     ["原","長期壓力與焦慮使交感神經持續亢奮、心率變異度下降，增加高血壓、心律不整與冠心病風險，間接影響腦灌流與認知。",[]],
+     ["B","自律神經失衡是心血管病和阿茲海默症之間的連結路徑之一。",[7]]],
+ tcm:{view:"中醫很早就把情緒和心肺放在一起看：「心藏神，肺藏魄」，過度的喜樂傷心、憂愁傷肺。",
+  quotes:[["心藏神，肺藏魄，肝藏魂，脾藏意，腎藏志。","《素問·宣明五氣》","T2"],["喜傷心……憂傷肺。","《素問·陰陽應象大論》","T1"]],
+  mers:["ht","pc"],pts:["HT7","PC6"],bridge:"古人說「情志傷臟」，現代說「壓力→交感神經→心血管」。兩者都提醒我們：照顧情緒，就是在照顧心臟和大腦。"},
+ tips:["每天 10 分鐘腹式呼吸、靜坐或正念","瑜伽、太極等身心練習","心理諮商、信仰或社會支持，都能減輕慢性壓力","選擇自己喜歡、能長期做的運動"],
+ red:["強烈情緒衝擊後出現胸痛、呼吸急促（立即撥 119）","長期情緒低落或焦慮影響生活：尋求身心科或心理師協助（1925 安心專線）"],
+ quiz:[["「心碎症候群」（章魚壺心肌症）最常由什麼引發？",["強烈的情緒或身體壓力","吃太甜","睡太多","喝太多水"],0,"症狀像心肌梗塞，但冠狀動脈沒有阻塞，一樣要立即就醫。"],
+       ["長期壓力對自律神經的影響是？",["交感神經持續亢奮、心率變異度下降","副交感神經變得更強","完全沒有影響","心跳一定變慢"],0,"像一直踩油門，增加高血壓與心律不整風險。"]]},
+airway:{name:"呼吸道與睡眠",en:"AIRWAY & SLEEP",hook:"晚上打鼾、呼吸暫停，大腦整夜都在缺氧。",
+ route:[[230,176],[226,130],[230,74]],rlabel:"夜間低氧・睡眠中斷",
+ meta:"睡覺時呼吸道如果反覆塌陷，就會<b>打鼾、呼吸暫停</b>。大腦一整晚反覆低氧、睡眠被切成碎片，白天就容易昏沉、記不住。",
+ paths:[["夜間低氧","睡眠呼吸中止造成夜間反覆低氧。"],["睡眠片段化","呼吸一停就醒，睡眠被打斷。"],["血管風險","也和心血管風險有關。"]],
+ ev:[["原","睡眠呼吸中止症可見注意力、記憶與執行功能受損，可能和夜間反覆低氧、睡眠片段化及血管風險有關。",[]],
+     ["原","持續打鼾、被看到呼吸暫停、晨起頭痛或白天嗜睡，應及早做睡眠呼吸評估。",[]],
+     ["原","接受睡眠醫學或胸腔專科評估與適當治療，可以改善氧合與生活品質。",[]]],
+ tcm:{view:"《內經》說喉嚨是「氣之所以上下者」，也說胸中的宗氣「出於喉嚨」。呼吸道通不通暢，在古人眼中直接關係到氣的運行。",
+  quotes:[["咽喉者，水穀之道也；喉嚨者，氣之所以上下者也。","《靈樞·憂恚無言》","T1"],["宗氣積於胸中，出於喉嚨，以貫心脈，而行呼吸焉。","《靈樞·邪客》","T1"]],
+  mers:["ren"],pts:["CV22"],bridge:"古人看到的是「氣的通道」，現代看到的是「睡眠時呼吸道塌陷」。不管哪一套，打鼾合併呼吸暫停都不是小事，要找睡眠或胸腔專科評估。"},
+ tips:["維持規律睡眠","家人留意：打鼾、睡著時呼吸暫停","晨起頭痛、白天嗜睡要記錄下來","懷疑睡眠呼吸中止，找睡眠醫學或胸腔專科評估"],
+ red:["白天嗜睡到開車、工作時打瞌睡","睡眠中呼吸暫停合併胸悶、心悸"],
+ quiz:[["下列哪一項最需要做睡眠呼吸評估？",["持續打鼾、被看到呼吸暫停、白天嗜睡","偶爾做夢","晚上起來喝一次水","睡前看書"],0,"這些是睡眠呼吸中止的常見警訊。"],
+       ["睡眠呼吸中止為什麼會影響大腦？",["夜間反覆低氧、睡眠被切成碎片","讓血糖變低","讓肌肉變多","讓視力變好"],0,"反覆低氧加上睡不好，白天注意力與記憶都會受影響。"]]},
+diaph:{name:"橫膈膜",en:"DIAPHRAGM",hook:"慢慢吸、慢慢吐，是隨時能用的「煞車」。",
+ route:[[230,318],[222,250],[222,160],[230,100]],rlabel:"呼吸節律・放鬆",
+ meta:"橫膈膜是位在胸腔和肚子之間的<b>呼吸主力肌</b>。吸氣時它往下、肚子微微鼓起，這就是腹式呼吸。放慢呼吸，是少數我們能自己控制、又能影響自律神經的方法。",
+ paths:[["呼吸主力","吸氣時橫膈膜下降，讓肺擴張。"],["放鬆","腹式呼吸、正念、瑜伽可降低慢性壓力對交感神經的負擔。"],["天天可做","每天約 10 分鐘的呼吸放鬆或靜坐。"]],
+ ev:[["原","腹式呼吸、正念、瑜伽、心理諮商、信仰或社會支持，可以降低慢性壓力對交感神經與心血管系統的負擔。",[]],
+     ["T","太極等身心運動可能改善心血管病患的生活品質與心理健康，但多數研究規模小。",["T6"]]],
+ tcm:{view:"中醫說胸中有「宗氣」，同時推動心跳和呼吸。膻中穴位在兩乳之間，是八會穴中的「氣會」。調呼吸，在傳統養生裡就是調氣。",
+  quotes:[["宗氣積於胸中，出於喉嚨，以貫心脈，而行呼吸焉。","《靈樞·邪客》","T1"]],
+  mers:["ren"],pts:["CV17"],bridge:"「宗氣貫心脈而行呼吸」像在描述心肺耦合；現代版的養宗氣，就是緩慢的腹式呼吸和規律有氧運動。"},
+ tips:["每天約 10 分鐘腹式呼吸：吸氣時肚子微鼓，吐氣時慢慢收","搭配正念、靜坐或瑜伽","呼吸練習時覺得頭暈，就恢復自然呼吸"],
+ red:["呼吸練習時出現胸痛、明顯喘或頭暈不止：停止並就醫"],
+ quiz:[["腹式呼吸主要是靠哪一塊肌肉？",["橫膈膜","二頭肌","小腿肌","咬肌"],0,"吸氣時橫膈膜下降、肚子微鼓。"],
+       ["原稿建議每天安排多久的呼吸放鬆或正念練習？",["約 10 分鐘","約 3 小時","每週 1 分鐘","不需要"],0,"每天約 10 分鐘的呼吸放鬆、靜坐或正念練習。"]]},
+muscle:{name:"運動肌群",en:"EXERCISE",hook:"雙腿動起來，大腦就收到 BDNF 這份禮物。",
+ route:[[200,560],[196,450],[206,340],[244,282],[244,180],[232,74]],rlabel:"BDNF・血流",
+ meta:"運動時，大肌肉群需要大量氧氣，心肺跟著加班，久了<b>心肺適能</b>就變好。運動也會讓腦源性神經營養因子（BDNF）上升，它像大腦的<b>肥料</b>，支持神經存活與學習記憶。",
+ paths:[["BDNF","支持神經存活、突觸可塑性與學習記憶。"],["VEGF","與血管新生、腦灌流調節相關。"],["心肺適能","可以練出來的保護因子。"]],
+ ev:[["A","35 篇隨機對照試驗的統合分析：運動讓長者 BDNF 上升；有氧、阻力、綜合訓練都有效；12 週、中高強度、每週 3–4 次效果最大。",[4]],
+     ["B","運動後 BDNF 上升，可作為神經退化疾病的輔助方式。",[9]],
+     ["A","世界衛生組織建議成人每週至少 150 分鐘中等強度身體活動。",[13]],
+     ["原","較高心肺適能與較佳整體認知、執行功能、較低失智風險相關；腦影像也顯示灰質、白質與功能連接較好。",[]],
+     ["原","結合有氧、阻力與認知任務的多元運動，可能比單一運動更有利於大腦。",[]]],
+ tcm:{view:"《內經》的「五勞所傷」說：躺太久傷氣，坐太久傷肉。中醫又說「脾主肉」，肌肉的力量來自脾胃。動起來，是古今一致的處方。",
+  quotes:[["久視傷血，久臥傷氣，久坐傷肉，久立傷骨，久行傷筋。","《素問·宣明五氣》","T2"]],
+  mers:["st"],pts:["ST36"],bridge:"「久臥傷氣、久坐傷肉」和現代的久坐風險不謀而合；太極、八段錦等傳統導引，正好結合了動作、呼吸與專注。"},
+ tips:["每週至少 150 分鐘中等強度有氧，或 75 分鐘高強度，分散在 3–5 天","阻力訓練每週 2–3 次：腿、背、胸、核心，每動作 2–3 組、每組 8–12 下，不要憋氣","雙重任務：邊走邊心算、邊踏步邊回憶詞語、羽球、桌球、舞蹈","每久坐 30–60 分鐘，起身走動 2–5 分鐘"],
+ red:["運動中胸痛、明顯喘、暈眩、異常心悸：立刻停止並就醫"],
+ quiz:[["統合分析中，運動讓 BDNF 上升效果最大的頻率是？",["每週 3–4 次","每月 1 次","每年 1 次","每天 5 次以上"],0,"12 週、中高強度、每週 3–4 次的訓練效果最大。"],
+       ["一般成人每週建議至少多少分鐘中等強度有氧？",["150 分鐘","15 分鐘","500 分鐘","不需要"],0,"世界衛生組織的建議是每週至少 150 分鐘中等強度。"]]}
+};
+const HUBQ=[
+ ["大腦約占體重 2%，卻消耗全身大約多少氧氣與葡萄糖？",["約 20%","約 2%","約 50%","約 80%"],0,"大腦是最耗能的器官之一，所以對心肺供氧特別敏感。","hub"],
+ ["「心藏神，肺藏魄」出自哪一篇？",["《素問·宣明五氣》","《傷寒論》","《本草綱目》","《千金方》"],0,"《素問·宣明五氣》：「心藏神，肺藏魄，肝藏魂，脾藏意，腎藏志。」","hub"]
+];
+
+/* ---------- map ---------- */
+const svg=$("#headSvg");
+const LBL=[["hub","大腦",60,60,196,60,"end"],["airway","呼吸道",60,150,222,160,"end"],["lung","肺臟",60,250,176,256,"end"],["diaph","橫膈膜",60,336,168,326,"end"],["muscle","運動肌群",60,560,170,560,"end"],
+ ["vessel","頸動脈",400,130,246,140,"start"],["nerve","自律神經",400,200,240,214,"start"],["heart","心臟",400,290,262,292,"start"]];
+$("#lblL").innerHTML=LBL.map(([id,t,x,y,px,py,a])=>`<g class="lblg" data-s="${id}" style="--glow:${HEX[id]}"><path class="lblline" d="M${a==="end"?x+4:x-4},${y-5} L${px},${py}"/><circle cx="${px}" cy="${py}" r="2.6" fill="${INK}"/><text class="lbl" x="${x}" y="${y}" text-anchor="${a}">${t}</text></g>`).join("");
+$("#lblL").querySelectorAll(".lblg").forEach(g=>g.addEventListener("click",()=>select(g.dataset.s,true)));
+$("#showLbl").addEventListener("change",e=>{$("#lblL").style.display=e.target.checked?"":"none"});
+function smooth(p){let d=`M${p[0][0]},${p[0][1]}`;for(let i=0;i<p.length-1;i++){const p0=p[i-1]||p[i],p1=p[i],p2=p[i+1],p3=p[i+2]||p2;d+=` C${(p1[0]+(p2[0]-p0[0])/6).toFixed(1)},${(p1[1]+(p2[1]-p0[1])/6).toFixed(1)} ${(p2[0]-(p3[0]-p1[0])/6).toFixed(1)},${(p2[1]-(p3[1]-p1[1])/6).toFixed(1)} ${p2[0]},${p2[1]}`}return d}
+const tip=$("#tip");
+svg.querySelectorAll(".st").forEach(g=>{const id=g.dataset.s;g.style.setProperty("--glow",HEX[id]);
+ g.addEventListener("click",()=>select(id,true));
+ g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(id,true)}});
+ g.addEventListener("mousemove",e=>{const r=$("#svgWrap").getBoundingClientRect();tip.textContent=g.getAttribute("aria-label");tip.style.left=(e.clientX-r.left)+"px";tip.style.top=(e.clientY-r.top)+"px";tip.style.opacity=1});
+ g.addEventListener("mouseleave",()=>tip.style.opacity=0);});
+$("#chips").innerHTML=["hub",...ORDER].map(id=>`<button class="chip" data-s="${id}" style="--cl:${COL[id][1]}" aria-pressed="false">${masc(id)}${S[id].name}<span data-st="${id}"></span></button>`).join("");
+$("#chips").querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>select(b.dataset.s,true)));
+$("#allMer").addEventListener("change",draw);
+const visited=new Set(store.get("hl_v",[]));const qdone=store.get("hl_q",{});
+function passport(){let n=0;ORDER.forEach(id=>{if(visited.has(id))n++;const e=document.querySelector(`[data-st="${id}"]`);if(e)e.textContent=qdone[id]?" ★":(visited.has(id)?" ✓":"")});$("#ppT").textContent=`探險章 ${n} / 7`;$("#ppB").style.width=(n/7*100)+"%"}
+let cur="hub",tab="learn";
+function draw(){
+ const s=S[cur],t=s.tcm||s,hot=new Set(t.mers||[]),all=$("#allMer").checked,c=HEX[cur];
+ let m="";Object.entries(MER).forEach(([k,v])=>{if(hot.has(k))m+=`<path class="mer hot" d="${smooth(v.p)}" stroke="${c}"><title>${v.n}</title></path>`;else if(all)m+=`<path class="mer all" d="${smooth(v.p)}"/>`});
+ $("#merL").innerHTML=m;
+ $("#ptL").innerHTML=(t.pts||[]).filter(k=>PTS[k].x!=null).map(k=>{const P=PTS[k],left=P.x<230;return `<g class="pt"><circle class="halo" cx="${P.x}" cy="${P.y}" r="6" fill="${c}"/><circle cx="${P.x}" cy="${P.y}" r="5.5" fill="${c}" stroke="#fff" stroke-width="2"/><text x="${left?P.x-9:P.x+9}" y="${P.y+4}" text-anchor="${left?"end":"start"}">${P.n}</text></g>`}).join("");
+ let r="";if(s.route){const p=s.route,mid=p[Math.floor(p.length/2)];r=`<path class="route" d="${smooth(p)}" stroke="${c}"/><circle cx="${p[0][0]}" cy="${p[0][1]}" r="6" fill="${c}" stroke="#fff" stroke-width="2"/><circle cx="${p[p.length-1][0]}" cy="${p[p.length-1][1]}" r="7" fill="${c}" stroke="#fff" stroke-width="2"/><text class="rtxt" x="${mid[0]+12}" y="${mid[1]}" text-anchor="start" fill="${c}">${s.rlabel}</text>`}
+ $("#routeL").innerHTML=r;
+}
+function select(id,scroll){
+ cur=id;if(id==="hub")tab="learn";
+ if(id!=="hub"){visited.add(id);store.set("hl_v",[...visited])}
+ svg.classList.toggle("dim",id!=="hub");
+ svg.querySelectorAll(".st").forEach(g=>g.classList.toggle("on",g.dataset.s===id));
+ svg.querySelectorAll(".lblg").forEach(g=>g.classList.toggle("on",g.dataset.s===id));
+ document.querySelectorAll(".chip").forEach(b=>b.setAttribute("aria-pressed",b.dataset.s===id?"true":"false"));
+ draw();render();passport();
+ if(scroll&&innerWidth<=980)$("#panel").scrollIntoView({behavior:"smooth"});
+}
+const evLi=([l,t,r])=>`<li><b class="lv" data-l="${l}">${l==="原"?"原稿整理":l}</b><div>${t}${src(r)}</div></li>`;
+const qH=([q,c,r])=>`<div class="quote"><q>${q}</q><cite>${c} ${src([r])}</cite></div>`;
+const acuH=k=>{const P=PTS[k];return `<div class="acu"><div class="nm"><b>${P.n}</b><span class="code">${k}</span><span class="small">${P.m}</span></div><div><span class="k">位置</span>${P.loc}</div><div><span class="k">方法</span>${P.how}</div><div><span class="k">傳統</span>${P.use}</div><div><span class="k">注意</span>${P.warn}</div></div>`};
+function render(){
+ const id=cur,s=S[id],p=$("#panel");p.style.setProperty("--cc",COL[id][0]);p.style.setProperty("--cl",COL[id][1]);
+ let h=`<div class="phead">${masc(id,"m float")}<div><div class="en">${s.en}</div><h3>${s.name}</h3><p class="hook">${s.hook}</p></div></div>`;
+ if(id==="hub"){p.innerHTML=h+`<div class="pbody">${hubBody()}</div>`;p.querySelectorAll(".hubbtn").forEach(b=>b.addEventListener("click",()=>select(b.dataset.s,true)));return}
+ const T=[["learn","認識"],["ev","研究證據"],["tcm","中醫經絡"],["life","生活處方"],["quiz","小測驗"]];
+ h+=`<div class="tabs" role="tablist">${T.map(([k,t])=>`<button class="tab" role="tab" data-t="${k}" aria-selected="${tab===k}">${t}</button>`).join("")}</div>`;
+ let b="";
+ if(tab==="learn")b=`<div class="meta"><b>白話比喻：</b>${s.meta}</div><div class="paths">${s.paths.map(([t,d],i)=>`<div class="pathc"><span class="badge">重點 ${i+1}</span><strong>${t}</strong><p>${d}</p></div>`).join("")}</div><p class="note">圖上的彩色虛線是「${s.rlabel}」的示意路線。想知道每個說法有多可靠，請看「研究證據」分頁的標籤。</p>`;
+ else if(tab==="ev")b=`<ul class="ev">${s.ev.map(evLi).join("")}</ul><p class="note">A 人體試驗或統合分析　B 觀察性研究或回顧　C 動物／機制研究　原稿整理：原稿的整理，未附直接出處。點「參考 n」可跳到頁尾文獻。</p>`;
+ else if(tab==="tcm"){const t=s.tcm;b=`<p>${t.view}</p><div class="quotes">${t.quotes.map(qH).join("")}</div><div><h3 style="margin-bottom:6px">相關經絡</h3><div class="mers">${t.mers.map(k=>`<span>${MER[k].n}</span>`).join("")}</div></div><div><h3 style="margin-bottom:6px">自我保健穴位</h3><div class="acus">${t.pts.map(acuH).join("")}</div></div><div class="bridge"><strong>中西對話：</strong>${t.bridge}</div><p class="note"><b class="lv" data-l="T">T</b>穴位定位依 WHO 西太平洋區標準${src(["T4"])}。穴位按壓屬放鬆與自我保健；美國 NCCIH 提醒不要用針灸或按壓延誤就醫${src(["T5"])}。</p>`}
+ else if(tab==="life")b=`<ul class="tips">${s.tips.map(t=>`<li>${t}</li>`).join("")}</ul><div class="red"><strong>出現這些情況請就醫</strong><ul>${s.red.map(r=>`<li>${r}</li>`).join("")}</ul></div>`;
+ else b=quizHTML(s.quiz.map(q=>q.concat([id])))+`<div class="score" id="pScore"></div>`;
+ p.innerHTML=h+`<div class="pbody" role="tabpanel">${b}</div>`;
+ p.querySelectorAll(".tab").forEach(x=>x.addEventListener("click",()=>{tab=x.dataset.t;render();const n=p.querySelector(`.tab[data-t="${tab}"]`);if(n)n.focus()}));
+ if(tab==="quiz")bindQuiz(p,(sc,tot)=>{$("#pScore").innerHTML=`<span class="big">${sc} / ${tot}</span>${sc===tot?"全對！護照蓋上金星 ★":"再看一次「認識」分頁，可以重新挑戰。"} <button class="btn sm" id="pRe">重新作答</button>`;if(sc===tot){qdone[id]=1;store.set("hl_q",qdone);passport()}$("#pRe").addEventListener("click",render)});
+}
+function hubBody(){
+ const two=`<svg class="cycle" viewBox="0 0 520 220" role="img" aria-label="雙向關係：大腦的壓力與情緒改變心跳血壓呼吸；心肺功能下降造成腦灌流不足與認知受損">
+ <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="${INK}"/></marker></defs>
+ <g font-family="Huninn,Noto Sans TC,sans-serif" text-anchor="middle" fill="${INK}">
+ <rect x="20" y="70" width="150" height="80" rx="20" fill="#ffb3cf" stroke="${INK}" stroke-width="3"/><text x="95" y="118" font-size="20">大腦</text>
+ <rect x="350" y="70" width="150" height="80" rx="20" fill="#ffe5e5" stroke="${INK}" stroke-width="3"/><text x="425" y="118" font-size="20">心・肺</text>
+ <path d="M175 88 C240 50 290 50 345 88" stroke="${INK}" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+ <path d="M345 134 C290 172 240 172 175 134" stroke="${INK}" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+ <text x="260" y="40" font-size="14">壓力、焦慮 → 心跳、血壓、呼吸改變</text>
+ <text x="260" y="196" font-size="14">心肺功能下降 → 腦灌流不足、認知受損</text>
+ </g></svg>`;
+ return `<p>心肺腦軸是心臟、肺臟與大腦之間，透過<b>自律神經、血液循環與生化信使</b>形成的雙向溝通系統。心肺功能與適能，直接影響腦部灌流、神經可塑性與認知老化的速度。</p>
+ <div class="hubgrid">${ORDER.map(id=>`<button class="hubbtn" data-s="${id}" style="--cl:${COL[id][1]}">${masc(id)}${S[id].name}</button>`).join("")}</div>
+ <h3>一條雙向道</h3>${two}
+ <h3>中醫怎麼看</h3>
+ <div class="quotes">${qH(["心藏神，肺藏魄，肝藏魂，脾藏意，腎藏志。","《素問·宣明五氣》","T2"])}${qH(["心者，君主之官也，神明出焉。","《素問·靈蘭秘典論》","T1"])}</div>
+ <div class="bridge"><strong>中西對話：</strong>中醫把精神活動放在心、肺等臟腑上，現代研究則找到灌流、自律神經與 BDNF 這些路徑。兩邊都在說：<b>心肺顧好，大腦才有好燃料。</b></div>
+ <div class="acus">${acuH("GV20")}</div>`;
+}
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function quizHTML(qs,noNum){return qs.map((q,i)=>`<div class="q" data-ans="${q[2]}"><div class="qt">${noNum?"":(i+1)+". "}${q[0]}</div><div class="opts">${shuffle(q[1].map((_,k)=>k)).map(k=>`<button class="opt" data-k="${k}">${q[1][k]}</button>`).join("")}</div><div class="expl" hidden>${q[3]}</div></div>`).join("")}
+function bindQuiz(root,done){const qs=root.querySelectorAll(".q");let n=0,sc=0;qs.forEach(q=>q.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>{const a=+q.dataset.ans,k=+b.dataset.k;q.querySelectorAll(".opt").forEach(o=>{o.disabled=true;if(+o.dataset.k===a)o.classList.add("ok")});if(k===a)sc++;else b.classList.add("no");n++;const e=q.querySelector(".expl");e.innerHTML=(k===a?"<b>答對了！</b> ":"<b>差一點！</b> ")+e.innerHTML;e.hidden=false;if(n===qs.length)done(sc,qs.length)})))}
+
+/* compare */
+const ROWS={heart:["心衰竭與認知障礙、腦灌流、自我照顧","心主脈、心藏神、神明出焉","手少陰心經、手厥陰心包經","內關、神門"],
+ lung:["氣體交換、慢性低氧、心肺適能","肺者氣之本、肺朝百脈、肺藏魄","手太陰肺經","中府、太淵"],
+ vessel:["腦灌流、房顫栓塞、血壓控制","心主脈、脈會太淵","手太陰肺經、手厥陰心包經","太淵、內關"],
+ nerve:["交感／副交感、迷走神經、心碎症候群","心藏神、喜傷心、憂傷肺","手少陰心經、手厥陰心包經","神門、內關"],
+ airway:["睡眠呼吸中止、夜間低氧","喉嚨為氣之上下、宗氣出於喉嚨","任脈","天突"],
+ diaph:["腹式呼吸、壓力調節","宗氣積於胸中、膻中為氣會","任脈","膻中"],
+ muscle:["BDNF、VEGF、每週 150 分鐘","久臥傷氣、久坐傷肉、脾主肉","足陽明胃經","足三里"]};
+$("#cmp").innerHTML=`<thead><tr><th>站點</th><th>現代研究關鍵詞</th><th>中醫理論</th><th>相關經絡</th><th>自我保健穴位</th></tr></thead><tbody>`+ORDER.map(id=>`<tr data-s="${id}" tabindex="0" style="--cc:${COL[id][0]}"><td><i></i>${S[id].name}</td>${ROWS[id].map(x=>`<td>${x}</td>`).join("")}</tr>`).join("")+`</tbody>`;
+$("#cmp").querySelectorAll("tr[data-s]").forEach(tr=>{const go=()=>{tab="tcm";select(tr.dataset.s);$("#map").scrollIntoView({behavior:"smooth"})};tr.addEventListener("click",go);tr.addEventListener("keydown",e=>{if(e.key==="Enter")go()})});
+
+/* challenge */
+const POOL=[];ORDER.forEach(id=>S[id].quiz.forEach(q=>POOL.push(q.concat([id]))));HUBQ.forEach(q=>POOL.push(q));
+let cq=[],ci=0,cs=0;const NQ=6;
+function startC(){cq=shuffle(POOL).slice(0,NQ);ci=0;cs=0;showQ();side()}
+function showQ(){const box=$("#cbox");
+ if(ci>=NQ){box.innerHTML=`<div class="prog"><i style="width:100%;background:var(--sun)"></i></div><h3 style="font-size:1.7rem;margin-top:12px">得分 ${cs} / ${NQ}</h3><p style="margin:6px 0 14px">${cs===NQ?"滿分！你是心肺腦軸小達人。":cs>=4?"很不錯！回地圖再逛一圈，下次拿滿分。":"沒關係，回地圖看看每一站，再來挑戰一次。"}</p><button class="btn pri" id="cRe">再抽 ${NQ} 題</button>`;$("#cRe").addEventListener("click",startC);side(true);return}
+ const q=cq[ci],id=q[4];box.style.setProperty("--cl",COL[id][1]);
+ box.innerHTML=`<div class="prog"><i style="width:${ci/NQ*100}%;background:var(--sun)"></i></div><div style="margin-top:12px"><span class="ctag">${S[id].name}</span> <span class="small">第 ${ci+1} / ${NQ} 題 · 目前 ${cs} 分</span></div>`+quizHTML([q],true)+`<div style="margin-top:12px"><button class="btn pri sm" id="cN" hidden>下一題 →</button></div>`;
+ bindQuiz(box,s=>{cs+=s;const n=$("#cN");n.hidden=false;n.textContent=ci===NQ-1?"看結果 →":"下一題 →";n.addEventListener("click",()=>{ci++;showQ()});n.focus()});
+}
+function side(end){const best=store.get("hl_best",0);if(end&&cs>best)store.set("hl_best",cs);const b=Math.max(best,end?cs:0);
+ $("#cside").innerHTML=`<svg viewBox="0 0 120 120" class="float" aria-hidden="true"><use href="#star"/></svg><b style="font-family:var(--f-display);font-size:1.2rem">${end?(cs===NQ?"太厲害了！":"繼續加油！"):"星星陪你答題"}</b><p class="small">題目隨機抽選，每次都不一樣。${b?`最佳紀錄：${b} / ${NQ}`:""}</p>`}
+startC();
+
+/* practice: breathing */
+let bT=null,bLeft=0,bPh=0,bSec=0;
+function bStep(){const c=$("#bCirc"),t=$("#bTxt");if(bPh===0){c.style.transition="r 4s ease-in-out";c.setAttribute("r","62");t.textContent="吸 4";bSec=4}else{c.style.transition="r 6s ease-in-out";c.setAttribute("r","34");t.textContent="吐 6";bSec=6}}
+$("#bGo").addEventListener("click",()=>{if(bT)return;bLeft=+$("#bMin").value*60;bPh=0;bStep();bT=setInterval(()=>{bLeft--;bSec--;const t=$("#bTxt");t.textContent=(bPh===0?"吸 ":"吐 ")+Math.max(bSec,0);$("#bSub").textContent=`剩下 ${Math.floor(bLeft/60)} 分 ${String(bLeft%60).padStart(2,"0")} 秒`;if(bLeft<=0){clearInterval(bT);bT=null;$("#bTxt").textContent="完成";$("#bSub").textContent="做得很好！慢慢回到自然呼吸。";$("#bCirc").setAttribute("r","34");return}if(bSec<=0){bPh=1-bPh;bStep()}},1000)});
+$("#bStop").addEventListener("click",()=>{clearInterval(bT);bT=null;$("#bTxt").textContent="準備";$("#bCirc").setAttribute("r","34")});
+
+/* practice: RPE */
+function rUpd(){const v=+$("#rpe").value;$("#rNum").textContent=v;const m=$("#rMsg");if(v<11){m.textContent="偏輕鬆：可以再加一點速度或坡度。";m.style.color="#1d4ed8"}else if(v<=13){m.textContent="中等強度：呼吸心跳加快、還能說短句，正是目標區！";m.style.color="#15803d"}else{m.textContent="偏高強度：有心肺疾病的人請先和醫師確認安全界線。";m.style.color="#c2410c"}}
+$("#rpe").addEventListener("input",rUpd);rUpd();
+
+/* practice: interval walk */
+let iT=null,iSec=180,iPh=0,iR=1;
+function iShow(){$("#iPh").textContent=iPh===0?"快走":"慢走";$("#iPh").style.color=iPh===0?"#c2410c":"#15803d";$("#iT").textContent=`${Math.floor(iSec/60)}:${String(iSec%60).padStart(2,"0")}`;$("#iR").textContent=`第 ${iR} / ${$("#iN").value} 輪`}
+$("#iGo").addEventListener("click",()=>{if(iT)return;iT=setInterval(()=>{iSec--;if(iSec<0){if(iPh===0){iPh=1;iSec=120}else{iPh=0;iSec=180;iR++;if(iR>+$("#iN").value){clearInterval(iT);iT=null;iR=1;$("#iPh").textContent="完成！";$("#iT").textContent="👏";$("#iR").textContent="慢慢走 5 分鐘收操";return}}}iShow()},1000)});
+$("#iStop").addEventListener("click",()=>{clearInterval(iT);iT=null});
+$("#iReset").addEventListener("click",()=>{clearInterval(iT);iT=null;iSec=180;iPh=0;iR=1;iShow()});
+$("#iN").addEventListener("change",iShow);iShow();
+
+/* weekly plan */
+const WK=[["週一","快走或慢跑 30–40 分鐘","微喘但可說話，注意姿勢與呼吸"],["週二","全身阻力訓練：深蹲、划船、推舉、臀橋，各 2–3 組、每組 8–12 下","控制動作與呼吸，避免憋氣"],["週三","游泳或騎車 30 分鐘＋簡易記憶任務","結合有氧與輕度認知刺激"],["週四","散步、伸展或瑜伽 20–30 分鐘","恢復、活動度與壓力調節"],["週五","羽球、桌球或舞蹈 45–60 分鐘","反應、協調、空間判斷與社交"],["週六","間歇快走：快走 3 分鐘＋慢走 2 分鐘，重複 6–8 輪","漸進提升心肺能力，觀察心跳與症狀"],["週日","輕鬆散步、社交與回顧本週活動","恢復與維持動機"]];
+let wk=store.get("hl_week",[]);
+$("#week").innerHTML=WK.map(([d,a,n],i)=>`<label class="ck"><input type="checkbox" id="wk${i}" ${wk.includes(i)?"checked":""}><span><b>${d}</b>　${a}<br><span class="small">${n}</span></span></label>`).join("");
+function wkUpd(){wk=[...document.querySelectorAll("#week input:checked")].map(x=>+x.id.slice(2));store.set("hl_week",wk);$("#wkBar").style.width=(wk.length/7*100)+"%";$("#wkN").textContent=`${wk.length} / 7`;$("#wkMsg").textContent=wk.length===7?"一週全部完成！給自己一個大大的讚。":wk.length>=4?"已經過半，繼續保持！":""}
+document.querySelectorAll("#week input").forEach(c=>c.addEventListener("change",wkUpd));
+$("#wkReset").addEventListener("click",()=>{document.querySelectorAll("#week input").forEach(c=>c.checked=false);wkUpd()});wkUpd();
+
+/* self check */
+const CK=["持續打鼾","有人看到你睡覺時呼吸暫停","早上起床頭痛","白天常常想睡","爬樓梯或走路比以前更喘","常感到心悸或心跳不規則","最近記憶或注意力明顯變差","長期壓力大、焦慮或情緒低落"];
+$("#checks").innerHTML=CK.map((t,i)=>`<label class="ck"><input type="checkbox" id="ck${i}"><span>${t}</span></label>`).join("");
+function ckUpd(){const box=[...document.querySelectorAll("#checks input")];const n=box.filter(c=>c.checked).length;const sleep=box.slice(0,4).some(c=>c.checked);$("#ckBar").style.width=(n/CK.length*100)+"%";$("#ckN").textContent=`${n} / ${CK.length}`;$("#ckMsg").textContent=n===0?"":(sleep?"前四項和睡眠呼吸有關，建議找睡眠醫學或胸腔專科評估。":"")+(n>=3?" 符合的項目不少，建議和醫師討論心臟、肺功能或認知評估。":n>0&&!sleep?"先記錄下來，下次回診時提出來。":"")}
+document.querySelectorAll("#checks input").forEach(c=>c.addEventListener("change",ckUpd));
+
+/* refs */
+$("#refList").innerHTML=`<div class="card" style="padding:16px 18px"><h3 style="margin-bottom:8px">現代醫學文獻與資料</h3><ol>${REFS.map((r,i)=>`<li id="ref${i+1}"><a href="${r.u}" target="_blank" rel="noopener">${esc(r.t)}</a><br><span>${esc(r.a)}</span>${r.d?` DOI: <a href="https://doi.org/${r.d}" target="_blank" rel="noopener">${r.d}</a>`:""}<div class="one">${r.one}</div></li>`).join("")}</ol></div>
+<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="margin-bottom:8px">中醫經典與穴位標準</h3><ol>${TREFS.map((r,i)=>`<li id="tref${i+1}"><a href="${r[1]}" target="_blank" rel="noopener">${r[0]}</a></li>`).join("")}</ol></div>`;
+
+const tt=$("#toTop");addEventListener("scroll",()=>{tt.hidden=scrollY<600},{passive:true});tt.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
+select("hub");
+})();
+</script>
+
+</body>
+</html>
