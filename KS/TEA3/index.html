@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2455c7">
+<title>白茶、綠茶、紅茶，差在哪？｜共好小學堂</title>
+<meta name="description" content="白茶、綠茶、紅茶都來自同一種茶樹，差別主要在氧化程度。認識兒茶素、茶黃素、茶胺酸與咖啡因，看懂喝茶研究的證據等級與 EGCG 補充劑的安全提醒，附氧化滑桿、咖啡因計算器與每週喝茶打卡。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/TEA3/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="白茶、綠茶、紅茶，差在哪？製程、成分與健康｜共好小學堂">
+<meta property="og:description" content="沒有哪一種茶最健康。看懂氧化、成分與研究證據，喝得安心、適量。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/TEA3/">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 130'%3E%3Cpath d='M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z' fill='%235ad6a4' stroke='%231f2a44' stroke-width='5'/%3E%3Cpath d='M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Cellipse cx='60' cy='88' rx='40' ry='38' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Ccircle cx='46' cy='84' r='6' fill='%231f2a44'/%3E%3Ccircle cx='74' cy='84' r='6' fill='%231f2a44'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c;  --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff;  --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7;
+  --round:'Huninn','Noto Sans TC',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans TC',system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:var(--blue)}
+h1,h2,h3,h4{font-family:var(--round);line-height:1.35;margin:0 0 .5em;font-weight:400}
+p{margin:0 0 1em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.hl{background:linear-gradient(transparent 58%,var(--sun) 58%,var(--sun) 92%,transparent 92%);padding:0 2px}
+.nw{white-space:nowrap}
+b,strong{font-weight:700}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.94);backdrop-filter:blur(8px);border-bottom:3px solid var(--ink)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex-shrink:0}
+.brand svg{width:40px;height:44px}
+.brand b{font-family:var(--round);font-weight:400;font-size:19px;display:block;line-height:1.1}
+.brand small{font-size:10px;letter-spacing:.14em;color:var(--ink-2);display:block}
+.navpills{display:flex;gap:6px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.navpills::-webkit-scrollbar{display:none}
+.navpills a{white-space:nowrap;text-decoration:none;font-size:14px;color:var(--ink);padding:4px 11px;border:2px solid var(--ink);border-radius:99px;background:#fff}
+.navpills a:hover{background:var(--sun-l)}
+.back{white-space:nowrap;text-decoration:none;font-family:var(--round);background:var(--blue);color:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:5px 14px;box-shadow:0 3px 0 var(--ink);font-size:15px;flex-shrink:0}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--blue-l),var(--bg));padding:56px 0 90px}
+.blob{position:absolute;border-radius:50%;opacity:.55;z-index:0}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.tag{display:inline-block;font-family:var(--round);background:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:4px 14px;font-size:15px;box-shadow:0 3px 0 var(--ink);margin-bottom:18px}
+.hero h1{font-size:clamp(32px,5vw,52px);margin-bottom:16px}
+.hero .lead{font-size:18.5px;color:var(--ink-2);max-width:34em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{font-family:var(--round);text-decoration:none;font-size:17px;padding:10px 22px;border:3px solid var(--ink);border-radius:16px;box-shadow:0 4px 0 var(--ink);color:var(--ink);background:#fff;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--sun)}
+.meta{font-size:13.5px;color:var(--ink-2);margin-top:18px}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block}
+.bubble{position:absolute;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:8px 14px;font-family:var(--round);font-size:17px;box-shadow:0 4px 0 var(--ink);white-space:nowrap}
+.bubble::after{content:"";position:absolute;width:14px;height:14px;background:#fff;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg);bottom:-9px;left:30px}
+.hero .bubble{top:2%;left:4%}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:60px;z-index:1}
+.float{animation:float 4.5s ease-in-out infinite}
+.float.d2{animation-delay:-1.5s}.float.d3{animation-delay:-3s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media (prefers-reduced-motion:reduce){.float{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
+
+/* sections */
+section.sec{padding:64px 0;position:relative}
+section.alt{background:linear-gradient(180deg,var(--tint,#fff),var(--bg))}
+.sec-head{display:flex;align-items:flex-start;gap:18px;margin-bottom:26px}
+.num{flex-shrink:0;width:58px;height:58px;display:grid;place-items:center;font-family:var(--round);font-size:28px;color:#fff;background:var(--c,var(--blue));border:3px solid var(--ink);border-radius:16px;transform:rotate(-6deg);box-shadow:4px 4px 0 var(--ink)}
+.eyebrow{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--c,var(--blue));font-weight:700;display:block}
+.sec-head h2{font-size:clamp(25px,3.4vw,34px);margin:2px 0 0}
+.intro{color:var(--ink-2);max-width:46em}
+hr.dash{border:0;border-top:3px dashed var(--line);margin:34px 0}
+
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:0 5px 0 var(--ink)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card h3{font-size:21px;margin-bottom:.35em}
+.card p:last-child{margin-bottom:0}
+.small{font-size:14.5px;color:var(--ink-2)}
+.note{font-size:14.5px;color:var(--ink-2);background:#fff;border:2px dashed var(--line);border-radius:14px;padding:10px 14px;margin-top:16px}
+.ico{width:96px;height:96px;display:block;margin-bottom:10px}
+.src{display:inline-block;font-size:12px;line-height:1;text-decoration:none;background:var(--blue-l);color:var(--blue-d);border:1.5px solid var(--blue);border-radius:99px;padding:4px 8px;margin:0 2px;vertical-align:2px;font-weight:700;white-space:nowrap}
+.src:hover{background:var(--sun-l)}
+.badge{display:inline-block;font-size:12.5px;font-weight:700;border:2px solid var(--ink);border-radius:99px;padding:1px 10px;background:var(--sun-l);margin-bottom:8px}
+
+/* talk */
+.talk{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;margin-bottom:22px}
+.talk.r{grid-template-columns:1fr 150px}
+.talk.r .who{order:2}
+.who svg{width:130px;height:130px}
+.say{position:relative;background:#fff;border:3px solid var(--ink);border-radius:22px;padding:18px 22px;box-shadow:6px 6px 0 var(--c,var(--sun))}
+.say::before{content:"";position:absolute;left:-12px;top:42px;width:18px;height:18px;background:#fff;border-left:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg)}
+.talk.r .say::before{left:auto;right:-12px;transform:rotate(-135deg)}
+.say .name{font-family:var(--round);color:var(--c,var(--blue));font-size:15px;display:block;margin-bottom:4px}
+.say p:last-child{margin-bottom:0}
+.qs{counter-reset:q;list-style:none;padding:0;margin:.4em 0 1em}
+.qs li{counter-increment:q;padding-left:40px;position:relative;margin:6px 0}
+.qs li::before{content:counter(q);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;background:var(--sun);border:2.5px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:15px}
+.warn{background:var(--coral-l);border:3px solid var(--ink);border-radius:18px;padding:14px 18px;margin-top:14px}
+.warn b{color:#c33}
+
+/* evidence chips */
+.ev{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.ev .card{padding:16px;box-shadow:0 4px 0 var(--ink)}
+.ev h4{font-size:17px;margin:0 0 4px}
+.ev .k{font-size:13.5px;color:var(--ink-2);margin:0}
+.ev .u{font-size:14px;margin-top:8px;padding-top:8px;border-top:2px dashed var(--line)}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tab{font-family:var(--round);font-size:16px;cursor:pointer;border:2.5px solid var(--ink);background:#fff;border-radius:14px;padding:7px 14px;color:var(--ink);box-shadow:0 3px 0 var(--ink)}
+.tab[aria-selected="true"]{background:var(--c,var(--blue));color:#fff}
+.tab:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.panel{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:24px;box-shadow:6px 6px 0 var(--c,var(--blue))}
+.panel[hidden]{display:none}
+.panel-grid{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:start}
+.panel-grid svg{width:110px;height:110px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0}
+.kv dt{font-weight:700;color:var(--c,var(--blue));white-space:nowrap}
+.kv dd{margin:0}
+
+/* mechanism cards */
+.mech{position:relative;padding-top:30px}
+.mech .pin{position:absolute;top:-16px;left:20px;background:var(--c);color:#fff;font-family:var(--round);font-size:14px;border:2.5px solid var(--ink);border-radius:99px;padding:2px 12px;transform:rotate(-4deg)}
+.mech .key{margin-top:12px;padding-top:10px;border-top:2px dashed var(--line);font-weight:700}
+
+/* age matrix */
+.agechips{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.mtx{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.mtx div{border:2.5px solid var(--ink);border-radius:16px;padding:10px 12px;background:var(--bgc,#fff)}
+.mtx b{display:block;font-family:var(--round);font-weight:400;font-size:15px;color:var(--ink-2)}
+.mtx span{font-weight:700}
+
+/* table-like */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:20px;overflow:hidden;background:#fff;font-size:15.5px}
+.tbl th,.tbl td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:2px solid var(--line)}
+.tbl thead th{font-family:var(--round);font-weight:400;font-size:16.5px;color:#fff;background:var(--blue)}
+.tbl thead th:nth-child(2){background:var(--coral)}
+.tbl thead th:nth-child(3){background:var(--orange)}
+.tbl thead th:nth-child(4){background:var(--mint)}
+.tbl thead th:first-child{background:var(--ink)}
+.tbl tbody th{background:var(--sun-l);font-weight:700;white-space:nowrap}
+.tbl tr:last-child td,.tbl tr:last-child th{border-bottom:0}
+.tbl td.r{text-align:right;font-family:var(--round);font-size:18px}
+
+.prod{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.prod .card{padding:18px 20px;box-shadow:0 4px 0 var(--ink)}
+.prod .co{display:inline-block;font-family:var(--round);color:#fff;background:var(--c);border:2.5px solid var(--ink);border-radius:12px;padding:1px 12px;margin-bottom:8px}
+.prod h4{font-size:17.5px;margin:0 0 6px}
+.prod .ask{margin-top:10px;padding:8px 12px;background:var(--grape-l);border-radius:12px;font-size:15px}
+.prod .ask::before{content:"❓ 要追問：";font-weight:700}
+
+/* calculators */
+.calc{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:6px 6px 0 var(--c,var(--sky))}
+.calc label{font-weight:700;display:block;margin-bottom:4px}
+.calc input[type=range]{width:100%;accent-color:var(--blue);height:28px}
+.calc input[type=number]{font:inherit;font-family:var(--round);font-size:22px;width:120px;padding:4px 10px;border:3px solid var(--ink);border-radius:12px}
+.bars{display:grid;gap:12px;margin-top:16px}
+.bar{display:grid;grid-template-columns:96px 1fr 110px;gap:10px;align-items:center}
+.bar .tr{height:28px;border:2.5px solid var(--ink);border-radius:99px;background:#f4f6fb;overflow:hidden}
+.bar .fill{height:100%;border-radius:99px;transition:width .3s}
+.bar .v{font-family:var(--round);font-size:19px;text-align:right}
+.verdict{margin-top:14px;font-weight:700;background:var(--sun-l);border-radius:14px;padding:10px 14px}
+.agegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.agebox{border:3px solid var(--ink);border-radius:18px;padding:12px 14px;background:#fff}
+.agebox .st{font-family:var(--round);font-size:18px}
+.agebox.ok{background:var(--mint-l)}
+.agebox.no{background:var(--coral-l)}
+
+/* compare 3 companies */
+.cmp{display:grid;grid-template-columns:150px repeat(3,1fr);border:3px solid var(--ink);border-radius:22px;overflow:hidden;background:#fff;font-size:15.5px}
+.cmp > div{padding:11px 13px;border-bottom:2px solid var(--line);border-left:2px solid var(--line)}
+.cmp .h{font-family:var(--round);color:#fff;font-size:17px;border-left:0}
+.cmp .h.c1{background:var(--blue)}.cmp .h.c2{background:var(--coral)}.cmp .h.c3{background:var(--mint)}
+.cmp .h.c0{background:var(--ink)}
+.cmp .rh{background:var(--sun-l);font-weight:700;border-left:0}
+.cmp .m{display:none}
+
+/* timeline */
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:14px 18px 14px 70px;background:#fff;border:3px solid var(--ink);border-radius:18px}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:var(--mint);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--round);font-size:20px}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:33px;bottom:-17px;height:17px;border-left:3px dashed var(--ink)}
+
+/* formula */
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:10px 0}
+.formula .t{border:2.5px solid var(--ink);border-radius:12px;padding:4px 12px;background:#fff;font-size:15.5px}
+.formula .t.p{background:var(--coral-l)}.formula .t.m{background:var(--mint-l)}
+.formula .op{font-family:var(--round);font-size:24px;line-height:1}
+.formula .eq{background:var(--sun);font-weight:700}
+
+/* checklist */
+.chk{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.chk label{display:flex;gap:14px;align-items:flex-start;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px 16px;cursor:pointer;box-shadow:0 4px 0 var(--ink);transition:background .2s}
+.chk input{position:absolute;opacity:0;pointer-events:none}
+.chk .box{flex-shrink:0;width:30px;height:30px;border:3px solid var(--ink);border-radius:9px;background:#fff;display:grid;place-items:center;font-size:19px;color:#fff;margin-top:2px}
+.chk input:checked + .box{background:var(--mint)}
+.chk input:checked + .box::after{content:"✓"}
+.chk input:focus-visible + .box{outline:3px solid var(--sun);outline-offset:2px}
+.chk label.on{background:var(--mint-l)}
+.chk b{display:block;font-family:var(--round);font-weight:400;font-size:18px}
+.chk span.d{font-size:14.5px;color:var(--ink-2);line-height:1.6;display:block}
+.prog{margin:20px 0 8px;display:flex;align-items:center;gap:14px}
+.prog .tr{flex:1;height:26px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden}
+.prog .fill{height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 10px,#5ad6a4 10px,#5ad6a4 20px);transition:width .3s}
+.prog .n{font-family:var(--round);font-size:20px;white-space:nowrap}
+.cheer{display:none;background:var(--sun-l);border:3px solid var(--ink);border-radius:18px;padding:12px 16px;font-weight:700;margin-top:12px}
+.cheer.show{display:block}
+
+/* quiz */
+.quiz{display:grid;gap:18px}
+.q h4{font-size:18.5px}
+.opts{display:grid;gap:10px}
+.opt{text-align:left;font:inherit;font-size:16px;cursor:pointer;background:#fff;border:2.5px solid var(--ink);border-radius:14px;padding:10px 14px;color:var(--ink)}
+.opt:hover:not(:disabled){background:var(--sky-l)}
+.opt:disabled{cursor:default}
+.opt.right{background:var(--mint-l);border-color:var(--mint);font-weight:700}
+.opt.wrong{background:var(--coral-l);border-color:var(--coral)}
+.exp{display:none;margin-top:10px;background:var(--sun-l);border-radius:14px;padding:10px 14px;font-size:15.5px}
+.exp.show{display:block}
+.score{display:none;text-align:center;font-family:var(--round);font-size:22px;background:var(--blue);color:#fff;border:3px solid var(--ink);border-radius:20px;padding:14px;box-shadow:0 5px 0 var(--ink)}
+.score.show{display:block}
+
+/* refs */
+.refs h3{font-size:19px;margin-top:22px;color:var(--blue-d)}
+.refs ol{padding-left:0;list-style:none;margin:0}
+.refs li{background:#fff;border:2px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:10px;font-size:15px;line-height:1.7;word-break:break-word}
+.refs li:target{border-color:var(--sun);background:var(--sun-l)}
+.refs .rid{display:inline-block;font-family:var(--round);background:var(--blue);color:#fff;border-radius:8px;padding:0 8px;margin-right:6px;font-size:13.5px}
+.refs .loc{display:block;color:var(--ink-2);font-size:13.5px}
+.refs a{word-break:break-all;font-size:13.5px}
+
+.disc{background:var(--sun-l);border:3px dashed var(--ink);border-radius:20px;padding:18px 22px;font-size:15.5px}
+.disc b{font-family:var(--round);font-weight:400;font-size:18px;display:block;margin-bottom:4px}
+
+.bigdisc{background:var(--coral-l);border:4px solid var(--ink);border-radius:24px;box-shadow:8px 8px 0 var(--coral);padding:22px 26px;outline:3px dashed var(--coral);outline-offset:-14px}
+.bd-head{display:flex;align-items:center;gap:12px;font-family:var(--round);font-size:clamp(22px,3vw,28px);color:#b42318;margin-bottom:10px}
+.bd-ico{flex-shrink:0;width:46px;height:46px;border-radius:50%;background:var(--coral);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-size:24px}
+.bd-key{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:8px 14px;margin:0 0 12px;font-weight:900;font-size:18px;color:#b42318}
+.bigdisc ul{margin:0;padding-left:1.2em}
+.bigdisc li{margin:6px 0;line-height:1.75}
+.bigdisc li b:first-child{color:#b42318}
+.ftdisc{display:inline-block;background:var(--sun);color:var(--ink);font-weight:700;border:3px solid var(--ink);border-radius:14px;padding:6px 16px;margin:4px 0 14px;font-size:15.5px}
+@media (max-width:820px){.bigdisc{padding:18px 16px;outline-offset:-10px}}
+footer{background:var(--blue-d);color:#fff;text-align:center;padding:46px 0 34px;margin-top:40px;border-top:4px solid var(--ink)}
+footer .pals{display:flex;justify-content:center;gap:12px;margin-bottom:12px}
+footer .pals svg{width:80px;height:80px}
+footer .quote{font-family:var(--round);font-size:22px;margin-bottom:10px}
+footer a{color:var(--sun)}
+footer .fine{font-size:13px;opacity:.8;margin-top:10px}
+#toTop{position:fixed;right:18px;bottom:18px;width:52px;height:52px;border-radius:50%;background:var(--sun);border:3px solid var(--ink);box-shadow:0 4px 0 var(--ink);font-size:22px;font-family:var(--round);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;z-index:60;color:var(--ink)}
+#toTop.show{opacity:1;pointer-events:auto}
+
+@media (max-width:1000px){.ev{grid-template-columns:repeat(3,1fr)}.agechips{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .navpills{display:none}
+  .back{margin-left:auto}
+  .hero{padding:34px 0 80px}
+  .hero .wrap,.grid2,.grid3,.prod,.chk,.agegrid{grid-template-columns:1fr}
+  .hero-art{max-width:420px;margin:0 auto;width:100%}
+  .ev{grid-template-columns:1fr 1fr}
+  .mtx{grid-template-columns:1fr 1fr}
+  .talk,.talk.r{grid-template-columns:1fr;gap:6px}
+  .talk.r .who{order:0}
+  .who svg{width:96px;height:96px}
+  .say::before{left:40px;top:-12px;transform:rotate(135deg)}
+  .talk.r .say::before{left:40px;right:auto;transform:rotate(135deg)}
+  .panel-grid{grid-template-columns:1fr}
+  .panel-grid svg{width:84px;height:84px}
+  .kv{grid-template-columns:1fr}
+  .cmp{grid-template-columns:1fr 1fr 1fr}
+  .cmp .h.c0{display:none}
+  .cmp .h{font-size:15px;padding:9px 8px}
+  .cmp .rh{grid-column:1/-1}
+  .cmp > div{font-size:14.5px;padding:9px 8px}
+  .cmp > div:nth-child(n){border-left:0}
+  .cmp .v{border-left:2px solid var(--line)}
+  .cmp .v1{border-left:0}
+  .bar{grid-template-columns:72px 1fr 92px}
+  .sec-head{gap:14px}
+  .num{width:48px;height:48px;font-size:23px}
+  section.sec{padding:48px 0}
+  .tbl{font-size:14.5px}
+  .tbl th,.tbl td{padding:9px 9px}
+  .tblwrap{overflow-x:auto}
+  .card,.panel,.calc{padding:18px 16px}
+}
+@media (max-width:420px){.ev{grid-template-columns:1fr}.agechips{grid-template-columns:repeat(2,1fr)}.hero .bubble{font-size:15px}}
+
+/* ---- TEA3 專用 ---- */
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.vs>*{min-width:0}
+.bignum{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.bignum .card{text-align:center}
+.bignum .n{font-family:var(--round);font-size:40px;line-height:1.1;color:var(--c);display:block}
+.ox{display:grid;grid-template-columns:170px 1fr;gap:20px;align-items:center}
+.ox .leafbox{width:150px;height:150px;margin:0 auto}
+.ox input[type=range]{width:100%;accent-color:var(--orange)}
+.ox .lbls{display:flex;justify-content:space-between;font-size:13.5px;color:#4a5570}
+.oxbar{margin-top:10px}
+.oxbar .t{font-size:14.5px;font-weight:700;display:flex;justify-content:space-between}
+.oxbar .tr{height:16px;border:2.5px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden;margin-top:4px}
+.oxbar .tr i{display:block;height:100%;transition:width .3s}
+.cups{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.cups label{font-weight:700;font-size:15px;display:block}
+.cups .st{display:flex;align-items:center;gap:8px;margin-top:6px}
+.cups .st button{width:38px;height:38px;border:3px solid var(--ink);border-radius:12px;background:var(--sun);font-family:var(--round);font-size:20px;cursor:pointer;color:var(--ink)}
+.cups .st output{font-family:var(--round);font-size:24px;min-width:28px;text-align:center}
+.meter{height:22px;border:3px solid var(--ink);border-radius:99px;background:#fff;position:relative;overflow:hidden;margin:14px 0 6px}
+.meter i{position:absolute;top:0;bottom:0;background:var(--sun-l)}
+.meter b{position:absolute;top:0;bottom:0;background:var(--orange)}
+.meter s{position:absolute;top:-3px;bottom:-3px;width:3px;background:var(--coral)}
+.sorter{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sorter .item{background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px 16px;min-width:0}
+.sorter .item h4{margin:0 0 8px;font-size:16.5px}
+.sit{display:flex;flex-wrap:wrap;gap:10px}
+.sit button{font-family:var(--round);font-size:16px;border:3px solid var(--ink);border-radius:14px;background:#fff;color:var(--ink);padding:8px 14px;cursor:pointer;box-shadow:0 3px 0 var(--ink)}
+.sit button[aria-pressed=true]{background:var(--mint-l)}
+.tblw{overflow-x:auto}
+#s6 .tbl td:first-child{white-space:nowrap}
+@media (max-width:820px){.vs,.bignum,.ox,.sorter{grid-template-columns:1fr}}
+@media (max-width:520px){.cups{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+<symbol id="grandma" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="60" cy="14" r="13" fill="#d9dde8" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M24 60 C22 34 40 24 60 24 C80 24 98 34 96 60Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="60" cy="64" r="34" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M28 52 C40 40 80 40 92 52 C86 34 34 34 28 52Z" fill="#d9dde8" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="48" cy="64" r="4.5" fill="#1f2a44"/><circle cx="72" cy="64" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="62.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="62.6" r="1.4" fill="#fff"/>
+  <ellipse cx="39" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="81" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M51 80 Q60 88 69 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="grandpa" viewBox="0 0 120 150">
+  <path d="M30 150 C30 112 40 100 60 100 C80 100 90 112 90 150Z" fill="#8a5cf6" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M52 100 L60 116 L68 100" fill="#fff" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="60" cy="62" r="36" fill="#ffd8b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M26 56 C24 40 32 30 40 30 M94 56 C96 40 88 30 80 30" stroke="#1f2a44" stroke-width="3" fill="#eef1f7" stroke-linecap="round"/>
+  <path d="M27 52 C22 44 26 34 36 34 L36 52Z M93 52 C98 44 94 34 84 34 L84 52Z" fill="#eef1f7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="47" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/><circle cx="73" cy="60" r="9" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M56 60 H64" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="47" cy="61" r="3.5" fill="#1f2a44"/><circle cx="73" cy="61" r="3.5" fill="#1f2a44"/>
+  <circle cx="48.2" cy="59.8" r="1.2" fill="#fff"/><circle cx="74.2" cy="59.8" r="1.2" fill="#fff"/>
+  <ellipse cx="38" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="82" cy="76" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M50 80 Q60 88 70 80" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="heart" viewBox="0 0 120 120">
+  <path d="M60 104 C20 78 10 56 14 40 C18 22 42 16 60 36 C78 16 102 22 106 40 C110 56 100 78 60 104Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="48" cy="56" r="4.5" fill="#1f2a44"/><circle cx="72" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="54.6" r="1.4" fill="#fff"/><circle cx="73.4" cy="54.6" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 茶壺 -->
+<symbol id="teapot" viewBox="0 0 150 120">
+  <path d="M108 52 Q138 40 140 22" stroke="#1f2a44" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M30 56 Q8 56 10 76 Q12 92 34 90" stroke="#1f2a44" stroke-width="5" fill="none"/>
+  <ellipse cx="70" cy="76" rx="44" ry="36" fill="#ffd166" stroke="#1f2a44" stroke-width="4"/>
+  <path d="M46 44 Q70 30 94 44" fill="#ffb347" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="70" cy="32" r="6" fill="#ff8c42" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="58" cy="74" r="4.5" fill="#1f2a44"/><circle cx="82" cy="74" r="4.5" fill="#1f2a44"/>
+  <circle cx="59.4" cy="72.6" r="1.5" fill="#fff"/><circle cx="83.4" cy="72.6" r="1.5" fill="#fff"/>
+  <path d="M62 86 Q70 93 78 86" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="48" cy="84" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="92" cy="84" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+<!-- 茶杯（顏色由 style 的 --tea 決定） -->
+<symbol id="cup" viewBox="0 0 90 80">
+  <path d="M8 18 H68 V38 Q68 64 38 64 Q8 64 8 38Z" fill="#fff" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M12 24 H64 V36 Q64 58 38 58 Q12 58 12 36Z" fill="var(--tea,#d9f2b4)"/>
+  <path d="M68 26 Q86 26 84 40 Q82 50 66 48" fill="none" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="38" cy="70" rx="34" ry="6" fill="#eef3ff" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="30" cy="38" r="3" fill="#1f2a44"/><circle cx="46" cy="38" r="3" fill="#1f2a44"/>
+  <path d="M33 46 Q38 50 43 46" stroke="#1f2a44" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 茶葉 -->
+<symbol id="tealeaf" viewBox="0 0 100 100">
+  <path d="M50 92 C14 74 10 30 50 8 C90 30 86 74 50 92Z" fill="currentColor" stroke="#1f2a44" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M50 88 V16 M50 40 L34 30 M50 56 L66 44 M50 70 L36 62" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round" opacity=".55"/>
+  <circle cx="40" cy="50" r="3.5" fill="#1f2a44"/><circle cx="60" cy="50" r="3.5" fill="#1f2a44"/>
+  <path d="M44 60 Q50 65 56 60" stroke="#1f2a44" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</symbol>
+</defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://www.gungho.idv.tw/KS/index.html" aria-label="回共好小學堂首頁">
+      <svg aria-hidden="true"><use href="#sprout"/></svg>
+      <span><b>共好小學堂</b><small>GROW &amp; LEARN TOGETHER</small></span>
+    </a>
+    <nav class="navpills" aria-label="章節">
+      <a href="#s1">製程與氧化</a><a href="#s2">成分與咖啡因</a><a href="#s3">兒茶素</a><a href="#s4">茶黃素</a><a href="#s5">茶胺酸</a><a href="#s6">證據等級</a><a href="#s7">怎麼喝</a><a href="#quiz">小測驗</a><a href="#refs">參考資料</a>
+    </nav>
+    <a class="back" href="https://www.gungho.idv.tw/KS/index.html">← 回小學堂</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <span class="blob" style="width:320px;height:320px;background:var(--mint-l);top:-90px;right:-60px"></span>
+  <span class="blob" style="width:220px;height:220px;background:var(--sun-l);bottom:30px;left:-70px"></span>
+  <span class="blob" style="width:140px;height:140px;background:var(--coral-l);top:40%;left:46%"></span>
+  <div class="wrap">
+    <div>
+      <span class="tag">✦ 健康練習小知識</span>
+      <h1>白茶、綠茶、紅茶，<span class="hl nw">差在哪？</span></h1>
+      <p class="lead">三種茶都來自<b>同一種茶樹</b>（Camellia sinensis），最大的差別是製作時的<b>氧化程度</b>。白茶、綠茶保留較多兒茶素；紅茶的兒茶素多半轉成茶黃素和茶紅素。但「白茶一定最健康、紅茶一定比較差」太簡化了：好處還要看<b>喝多少、怎麼泡、個人體質和整體飲食</b>。</p>
+      <div class="btns">
+        <a class="btn pri" href="#start">開始認識 →</a>
+        <a class="btn" href="#s2">算算咖啡因</a>
+      </div>
+      <p class="meta">資料查核日：2026年10月18日｜資料來源：歐洲食品安全局（EFSA）、美國俄勒岡州立大學 Linus Pauling 研究所、《JAMA》《Archives of Internal Medicine》《PLoS One》等</p>
+    </div>
+    <div class="hero-art">
+      <div class="bubble">同一棵樹，三種滋味</div>
+      <svg viewBox="0 0 520 400" role="img" aria-label="笑臉茶壺與三杯淺黃、綠、紅色的茶，阿嬤與阿公在旁邊，還有茶葉、小芽、藍鳥和星星">
+        <ellipse cx="260" cy="368" rx="230" ry="26" fill="#dcf7ec"/>
+        <use href="#grandma" x="20" y="190" width="115" height="146"/>
+        <use href="#grandpa" x="390" y="190" width="115" height="146"/>
+        <g class="float"><use href="#teapot" x="170" y="120" width="180" height="144"/></g>
+        <use href="#cup" x="150" y="286" width="80" height="71" style="--tea:#f4e7a1"/>
+        <use href="#cup" x="226" y="290" width="80" height="71" style="--tea:#b6e08a"/>
+        <use href="#cup" x="302" y="286" width="80" height="71" style="--tea:#c8553d"/>
+        <g class="float d2" style="color:#7ee3b8"><use href="#tealeaf" x="120" y="80" width="60" height="60"/></g>
+        <use href="#star" x="380" y="100" width="44" height="44"/>
+        <use href="#sprout" x="100" y="300" width="46" height="50"/>
+        <use href="#bird" x="340" y="40" width="56" height="50"/>
+      </svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C240 60 480 0 720 30 C960 60 1200 0 1440 30 V60 H0Z" fill="#fffdf7"/></svg>
+</section>
+
+<section class="sec" id="start">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">★</div><div><span class="eyebrow">Key Points</span><h2>先說重點</h2></div></div>
+    <div class="talk" style="--c:var(--mint)">
+      <div class="who"><svg aria-hidden="true"><use href="#sprout"/></svg></div>
+      <div class="say"><span class="name">小芽說</span>
+        <p>茶葉的「發酵」其實多半是指<b>酵素氧化</b>，不是細菌或酵母的發酵。茶葉裡的多酚氧化酶（PPO）碰到兒茶素，就會把它氧化、結合成茶黃素和茶紅素。<a class="src" href="#ref5">參考 5</a><a class="src" href="#ref6">參考 6</a></p>
+      </div>
+    </div>
+    <div class="talk r" style="--c:var(--coral)">
+      <div class="who"><svg aria-hidden="true"><use href="#bird"/></svg></div>
+      <div class="say"><span class="name">藍鳥提醒</span>
+        <p>很多茶的健康研究來自細胞、動物或觀察研究，人體試驗多半規模小、時間短。目前的證據<b>不足以說哪一種茶能治病、抗老或延長壽命</b>。<a class="src" href="#ref4">參考 4</a></p>
+      </div>
+    </div>
+    <div class="grid3">
+      <div class="card" style="box-shadow:6px 6px 0 var(--mint)"><h3>🍵 喝茶，一般安全</h3><p>傳統沖泡的綠茶，兒茶素一般被認為是安全的。<a class="src" href="#ref1">參考 1</a></p></div>
+      <div class="card" style="box-shadow:6px 6px 0 var(--coral)"><h3>💊 萃取物要小心</h3><p>補充劑每天 EGCG 800 毫克以上，人體試驗觀察到肝指數上升。<a class="src" href="#ref1">參考 1</a></p></div>
+      <div class="card" style="box-shadow:6px 6px 0 var(--sun)"><h3>☕ 茶也有咖啡因</h3><p>一杯紅茶約 42–79 毫克，一杯綠茶約 9–63 毫克，差異很大。<a class="src" href="#ref6">參考 6</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="s1" style="--tint:var(--mint-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">1</div><div><span class="eyebrow">Processing &amp; Oxidation</span><h2>製程與氧化：同一片葉子的三種旅程</h2></div></div>
+    <div class="calc ox" style="--c:var(--orange)">
+      <div><svg class="leafbox" id="leafSvg" viewBox="0 0 100 100" aria-hidden="true" style="color:#7ed957"><use href="#tealeaf"/></svg></div>
+      <div>
+        <h3>🎚 拉拉看：氧化越多，會變成什麼茶？</h3>
+        <label for="oxR" class="small">氧化程度：<b id="oxV">5%</b></label>
+        <input type="range" id="oxR" min="0" max="100" value="5" step="5">
+        <div class="lbls"><span>幾乎不氧化</span><span>部分氧化</span><span>充分氧化</span></div>
+        <div class="oxbar"><div class="t"><span>🟢 兒茶素（如 EGCG）</span></div><div class="tr"><i id="barC" style="background:var(--mint)"></i></div></div>
+        <div class="oxbar"><div class="t"><span>🟤 茶黃素＋茶紅素</span></div><div class="tr"><i id="barT" style="background:#c8553d"></i></div></div>
+        <div class="verdict" id="oxOut" aria-live="polite"></div>
+        <p class="small">示意圖，不是實際含量；實際成分會因品種、季節、採摘部位與製程而不同。</p>
+      </div>
+    </div>
+    <div class="tabs" role="tablist" aria-label="三種茶的製程" data-tabs style="margin-top:22px">
+      <button class="tab" role="tab" aria-selected="true" aria-controls="p1" id="pb1">🤍 白茶</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p2" id="pb2" tabindex="-1">💚 綠茶</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p3" id="pb3" tabindex="-1">❤️ 紅茶</button>
+    </div>
+    <div class="panel" role="tabpanel" id="p1" aria-labelledby="pb1"><dl class="kv" style="--c:var(--mint)"><dt>原料</dt><dd>嫩芽和幼葉。</dd><dt>主要工序</dt><dd>採摘 → 萎凋 → 乾燥；各地做法不同，也有用蒸或炒來停止酵素作用的做法。</dd><dt>氧化程度</dt><dd>低，會隨萎凋時間、溫度與濕度改變，並不是「完全不氧化」。</dd><dt>主要成分</dt><dd>兒茶素保留多、茶胺酸、咖啡因（白茶的咖啡因資料不多）。<a class="src" href="#ref6">參考 6</a></dd></dl></div>
+    <div class="panel" role="tabpanel" id="p2" aria-labelledby="pb2" hidden><dl class="kv" style="--c:var(--mint)"><dt>原料</dt><dd>比白茶成熟一些的葉子。</dd><dt>主要工序</dt><dd>採摘 →（萎凋）→ 殺青（蒸或炒，高溫讓 PPO 失去作用）→ 揉捻 → 乾燥。</dd><dt>氧化程度</dt><dd>很低，保留大量未氧化的兒茶素，以 EGCG 為主。</dd><dt>主要成分</dt><dd>EGCG 等兒茶素、茶胺酸、咖啡因。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref6">參考 6</a></dd></dl></div>
+    <div class="panel" role="tabpanel" id="p3" aria-labelledby="pb3" hidden><dl class="kv" style="--c:var(--coral)"><dt>原料</dt><dd>成熟茶葉。</dd><dt>主要工序</dt><dd>採摘 → 萎凋 → 揉捻或切碎（讓細胞破裂）→ 充分氧化 → 乾燥。</dd><dt>氧化程度</dt><dd>高。PPO 和兒茶素接觸後，形成茶黃素（兩個分子結合）和茶紅素（更大的聚合物），帶來紅湯和醇厚口感。</dd><dt>主要成分</dt><dd>茶黃素、茶紅素、咖啡因；EGCG 等單體兒茶素較少。<a class="src" href="#ref5">參考 5</a><a class="src" href="#ref6">參考 6</a></dd></dl></div>
+    <div class="note">🫖 <b>烏龍茶和黑茶呢？</b>烏龍茶是「部分氧化」，茶黃素和茶紅素介於綠茶和紅茶之間；黑茶（如普洱熟茶）則多了微生物參與的「後發酵」。<a class="src" href="#ref6">參考 6</a><a class="src" href="#ref7">參考 7</a></div>
+  </div>
+</section>
+
+<section class="sec" id="s2">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--orange)"><div class="num">2</div><div><span class="eyebrow">Composition &amp; Caffeine</span><h2>成分比較與咖啡因計算</h2></div></div>
+    <div class="tblw">
+      <table class="tbl">
+        <thead><tr><th>成分／特性</th><th>🤍 白茶</th><th>💚 綠茶</th><th>❤️ 紅茶</th></tr></thead>
+        <tbody>
+          <tr><td>兒茶素單體</td><td>多，但因品種與製程而異</td><td>多，以未氧化的 EGCG 為主</td><td>較少，多轉成聚合物</td></tr>
+          <tr><td>主要多酚</td><td>EGCG、EGC、ECG 等兒茶素</td><td>EGCG 為主</td><td>茶黃素、茶紅素</td></tr>
+          <tr><td>茶胺酸</td><td>嫩芽中較多</td><td>中到高</td><td>中等</td></tr>
+          <tr><td>咖啡因（每杯約 235 毫升）</td><td>資料少，可能和綠茶相近或略高</td><td>約 9–63 毫克</td><td>約 42–79 毫克</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">咖啡因數字來自 Linus Pauling 研究所的整理；同一類茶的含量，會因品種、採摘部位、季節、沖泡時間與水溫差很多。<a class="src" href="#ref6">參考 6</a></p>
+
+    <div class="calc" style="--c:var(--orange);margin-top:20px">
+      <h3>☕ 今天喝了幾杯？算算咖啡因</h3>
+      <div class="cups">
+        <div><label>💚 綠茶（杯）</label><div class="st"><button type="button" data-c="g" data-d="-1" aria-label="綠茶減一杯">−</button><output id="cg">0</output><button type="button" data-c="g" data-d="1" aria-label="綠茶加一杯">＋</button></div></div>
+        <div><label>❤️ 紅茶（杯）</label><div class="st"><button type="button" data-c="b" data-d="-1" aria-label="紅茶減一杯">−</button><output id="cb">0</output><button type="button" data-c="b" data-d="1" aria-label="紅茶加一杯">＋</button></div></div>
+        <div><label>☕ 滴濾咖啡（杯）</label><div class="st"><button type="button" data-c="k" data-d="-1" aria-label="咖啡減一杯">−</button><output id="ck">0</output><button type="button" data-c="k" data-d="1" aria-label="咖啡加一杯">＋</button></div></div>
+      </div>
+      <div class="meter" aria-hidden="true"><i id="mRange"></i><b id="mMin"></b><s style="left:50%" title="400 毫克"></s><s style="left:25%" title="200 毫克"></s></div>
+      <div class="lbls small" style="display:flex;justify-content:space-between"><span>0</span><span>200</span><span>400</span><span>600</span><span>800 毫克</span></div>
+      <div class="verdict" id="cafOut" aria-live="polite"></div>
+      <p class="small">以每杯約 235 毫升估算（咖啡 72–130 毫克）。EFSA 認為健康成人每天咖啡因 400 毫克以下、單次 200 毫克以下，一般不至於有安全疑慮；孕婦與哺乳者每天 200 毫克以下。<a class="src" href="#ref10">參考 10</a> 對咖啡因敏感、焦慮、心律不整或失眠的人，量要更少。不會儲存。</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="s3" style="--tint:var(--blue-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">3</div><div><span class="eyebrow">Catechins &amp; EGCG</span><h2>兒茶素與 EGCG：潛力和界線</h2></div></div>
+    <div class="vs">
+      <div>
+        <p>EGCG 是綠茶和白茶裡最重要的兒茶素，在實驗中有抗氧化、抗發炎和調節代謝的潛力；但多數證據來自細胞、動物或短期人體試驗，<b>不能直接推論喝茶能治療或預防特定疾病</b>。<a class="src" href="#ref4">參考 4</a><a class="src" href="#ref8">參考 8</a></p>
+        <p>減重方面：綠茶兒茶素加咖啡因的配方，對能量代謝和部分體重、血脂指標有<b>小幅</b>效果。一項過重或肥胖女性的統合分析，平均體重少約 1.2 公斤、腰圍少約 3.5 公分，低於臨床上有意義的門檻。茶<b>不能當成治療肥胖的主要方法</b>，只能搭配飲食、運動與醫療。<a class="src" href="#ref7">參考 7</a></p>
+        <p>吃進去的兒茶素，腸道吸收少、代謝又快，血液中能維持的量不高，這也是實驗室效果難以複製到人體的原因之一。<a class="src" href="#ref7">參考 7</a></p>
+      </div>
+      <div>
+        <h3>💊 茶湯 vs. 補充劑：EGCG 有多少？</h3>
+        <div class="bignum" style="grid-template-columns:1fr">
+          <div class="card" style="--c:var(--mint)"><span class="n">90–300</span>毫克／天：歐洲成人喝綠茶平均攝取的 EGCG<a class="src" href="#ref1">參考 1</a></div>
+          <div class="card" style="--c:var(--orange)"><span class="n">5–1,000</span>毫克／天：綠茶補充劑提供的 EGCG<a class="src" href="#ref1">參考 1</a></div>
+          <div class="card" style="--c:var(--coral)"><span class="n">≥800</span>毫克／天：補充劑試驗中觀察到肝指數（轉胺酶）上升<a class="src" href="#ref1">參考 1</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="warn"><b>⚠️ 補充劑提醒：</b>EFSA 指出補充劑濃度高、常在空腹時一次吃下，和邊吃飯邊喝茶不同；800 毫克以下雖未見肝損傷，但<b>無法訂出「安全劑量」</b>。即使只喝茶湯，也有極少數人發生不可預期的肝損傷。<a class="src" href="#ref2">參考 2</a> 有肝病、飲酒、懷孕哺乳或正在吃藥的人，使用前請先問醫師或藥師。研究也提醒要留意兒茶素和藥物的交互作用。<a class="src" href="#ref8">參考 8</a></div>
+  </div>
+</section>
+
+<section class="sec" id="s4">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--coral)"><div class="num">4</div><div><span class="eyebrow">Theaflavins &amp; Heart</span><h2>茶黃素與心血管：兩項常被引用的研究</h2></div></div>
+    <div class="vs">
+      <div class="card mech" style="--c:var(--coral)"><span class="pin">隨機對照試驗</span><h3>富含茶黃素的綠茶萃取物</h3><p>中國 6 家醫院、240 位輕中度膽固醇偏高、正在吃低脂飲食的成人，每天吃 375 毫克膠囊，12 週後 <b>LDL 膽固醇下降約 16.4%</b>、總膽固醇下降約 11.3%，安慰劑組沒有明顯改變。<a class="src" href="#ref9">參考 9</a></p><p class="key">注意：這是「添加茶黃素的綠茶萃取物」膠囊，是特定產品和劑量，不能推論成「喝紅茶就能降膽固醇」。</p></div>
+      <div class="card mech" style="--c:var(--blue)"><span class="pin">統合分析</span><h3>茶和血管內皮功能</h3><p>整合 9 項對照試驗：每天約 500 毫升茶（2–3 杯），手臂動脈的「血流介導擴張」（FMD，反映血管內皮功能）<b>增加約 2.6 個百分點</b>，研究之間差異很大。<a class="src" href="#ref11">參考 11</a></p><p class="key">這是血管功能的中間指標，不是心臟病或中風發生率；也不能取代高血壓或心血管疾病的治療。作者任職於食品公司研發部門。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="s5" style="--tint:var(--grape-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">5</div><div><span class="eyebrow">L-Theanine</span><h2>茶胺酸與專注：放鬆但不昏睡？</h2></div></div>
+    <div class="vs">
+      <div>
+        <p>茶胺酸（L-theanine）是茶葉特有的胺基酸。有研究讓 27 位健康成人比較「50 毫克咖啡因」和「50 毫克咖啡因＋100 毫克茶胺酸」：兩者合用時，<b>注意力切換作業更快更準</b>，記憶作業也比較不容易被干擾。<a class="src" href="#ref12">參考 12</a></p>
+        <p class="small">這是小型、短時間的實驗，使用的是固定劑量，不是一般茶湯；研究團隊也來自茶飲公司。效果會因劑量、咖啡因量和個人敏感度而不同。</p>
+      </div>
+      <div class="talk" style="--c:var(--sun);margin:0">
+        <div class="who"><svg aria-hidden="true"><use href="#star"/></svg></div>
+        <div class="say"><span class="name">星星提醒</span>
+          <p>「茶胺酸能完全抵銷咖啡因造成的心悸」說得太絕對。對咖啡因敏感、焦慮、心律不整或失眠的人，還是要<b>控制咖啡因總量和喝的時間</b>。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="s6">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--mint)"><div class="num">6</div><div><span class="eyebrow">Levels of Evidence</span><h2>看懂證據：這是哪一種研究？</h2></div></div>
+    <div class="vs">
+      <div>
+        <p>日本大崎研究追蹤 <b>40,530 位</b> 40–79 歲成人長達 11 年：每天喝 5 杯以上綠茶的人，全因死亡風險男性約低 12%、女性約低 23%，心血管死亡的關聯更明顯，<b>癌症死亡則沒有差別</b>。<a class="src" href="#ref3">參考 3</a></p>
+        <p>但這是<b>觀察性研究</b>，只能看到「有關聯」，不能證明是綠茶造成的；喝茶習慣可能和吸菸、飲食、運動、社經地位等因素一起出現。</p>
+        <div class="tblw">
+          <table class="tbl">
+            <thead><tr><th>茶類</th><th>研究中的潛在效益</th><th>證據界線</th></tr></thead>
+            <tbody>
+              <tr><td>💚 綠茶</td><td>代謝、血脂、胰島素敏感性</td><td>觀察性與小型試驗為主</td></tr>
+              <tr><td>🤍 白茶</td><td>抗氧化、心血管、神經保護</td><td>多為細胞或動物研究，人體證據有限</td></tr>
+              <tr><td>❤️ 紅茶</td><td>冠心病、中風風險較低</td><td>多為觀察研究，紅茶的研究相對少</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small">整理自 2026 年的茶類健康效益回顧。<a class="src" href="#ref4">參考 4</a></p>
+      </div>
+      <div>
+        <p class="intro" style="margin-top:0">🧩 小遊戲：下面這些發現，屬於哪一種研究？</p>
+        <div class="sorter" id="sorter" style="grid-template-columns:1fr"></div>
+        <div class="score" id="sortScore"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="s7" style="--tint:var(--sun-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--orange)"><div class="num">7</div><div><span class="eyebrow">How to Drink</span><h2>怎麼喝比較安心？</h2></div></div>
+    <p class="intro">選一個你的情況：</p>
+    <div class="sit" id="sit">
+      <button type="button" data-s="0" aria-pressed="false">🌅 早上提神</button>
+      <button type="button" data-s="1" aria-pressed="false">🌙 晚上想喝</button>
+      <button type="button" data-s="2" aria-pressed="false">😣 腸胃比較敏感</button>
+      <button type="button" data-s="3" aria-pressed="false">🩸 在補鐵、貧血</button>
+      <button type="button" data-s="4" aria-pressed="false">💊 有在吃藥</button>
+      <button type="button" data-s="5" aria-pressed="false">🧋 愛喝手搖飲</button>
+    </div>
+    <div class="verdict" id="sitOut" aria-live="polite" style="margin-top:14px"></div>
+    <div class="note">🌡 <b>沖泡參考：</b>一般常見的做法是綠茶、白茶用約 80–85°C 的水，紅茶用約 90–95°C；實際溫度和時間，可以依茶葉說明和自己的口味調整。</div>
+
+    <h3 style="margin-top:26px">✅ 本週喝茶打卡</h3>
+    <div class="chk" id="chk">
+      <label><input type="checkbox" data-k="c1"><span class="box"></span><span><b>🍵 選無糖或少糖</b><span class="d">茶本身熱量很低，糖才是負擔</span></span></label>
+      <label><input type="checkbox" data-k="c2"><span class="box"></span><span><b>🍚 飯後再喝</b><span class="d">空腹喝茶容易胃不舒服的人</span></span></label>
+      <label><input type="checkbox" data-k="c3"><span class="box"></span><span><b>🩸 和鐵劑、高鐵餐錯開</b><span class="d">需要補鐵的人</span></span></label>
+      <label><input type="checkbox" data-k="c4"><span class="box"></span><span><b>🌙 下午以後少喝含咖啡因的茶</b><span class="d">怕睡不好的人</span></span></label>
+      <label><input type="checkbox" data-k="c5"><span class="box"></span><span><b>☕ 算一次今天的咖啡因</b><span class="d">茶、咖啡、可樂、能量飲料都算</span></span></label>
+      <label><input type="checkbox" data-k="c6"><span class="box"></span><span><b>🚫 不自己買高劑量萃取物</b><span class="d">想用之前先問醫師或藥師</span></span></label>
+    </div>
+    <div class="prog"><div class="tr"><div class="fill" id="pFill"></div></div><span class="n" id="pN">0 / 6</span></div>
+    <div class="cheer" id="cheer">🎉 六項都做到了！你這週喝得聰明又安心。</div>
+    <p class="small">🔒 只存在你自己的瀏覽器，每週一自動重新開始。<button type="button" id="chkReset" style="font:inherit;font-size:14px;border:2px solid var(--ink);border-radius:10px;background:#fff;padding:1px 10px;cursor:pointer;margin-left:6px">清除重來</button></p>
+  </div>
+</section>
+
+<section class="sec" id="wrap">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--blue)"><div class="num">8</div><div><span class="eyebrow">Wrap-up</span><h2>結論：沒有「最健康的那一種茶」</h2></div></div>
+    <div class="talk" style="--c:var(--mint)">
+      <div class="who"><svg aria-hidden="true"><use href="#sprout"/></svg></div>
+      <div class="say"><span class="name">小芽總結</span>
+        <p>白茶、綠茶、紅茶的差異，主要來自<b>氧化程度和多酚結構</b>，不是單純「有沒有發酵」。綠茶、白茶保留較多兒茶素，紅茶富含茶黃素與茶紅素。<a class="src" href="#ref5">參考 5</a><a class="src" href="#ref6">參考 6</a></p>
+        <p>目前的證據還不足以支持「某一種茶能治療疾病、延緩衰老或延長壽命」。選自己喜歡、喝得舒服的茶，<b>無糖、適量、注意咖啡因</b>，比挑「最健康的茶」更重要。<a class="src" href="#ref4">參考 4</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="quiz" style="--tint:var(--blue-l)">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--grape)"><div class="num">?</div><div><span class="eyebrow">Quick Quiz</span><h2>小測驗：五題就好</h2></div></div>
+    <div class="quiz" id="quizBox">
+      <div class="card q" data-ans="b">
+        <h4>Q1. 白茶、綠茶、紅茶最主要的差別是？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">來自不同的植物</button>
+          <button class="opt" data-v="b">製作時的氧化程度</button>
+          <button class="opt" data-v="c">有沒有加細菌發酵</button>
+        </div>
+        <div class="exp">三種茶都來自同一種茶樹；所謂「發酵」多半是指酵素氧化。</div>
+      </div>
+      <div class="card q" data-ans="c">
+        <h4>Q2. 紅茶裡比較多的是哪一類成分？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">未氧化的 EGCG</button>
+          <button class="opt" data-v="b">維生素 C</button>
+          <button class="opt" data-v="c">茶黃素和茶紅素</button>
+        </div>
+        <div class="exp">充分氧化時，兒茶素結合成茶黃素和茶紅素，形成紅湯。</div>
+      </div>
+      <div class="card q" data-ans="a">
+        <h4>Q3. EFSA 對綠茶補充劑的提醒是什麼？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">每天 EGCG 800 毫克以上，試驗中觀察到肝指數上升</button>
+          <button class="opt" data-v="b">補充劑比喝茶更安全</button>
+          <button class="opt" data-v="c">吃越多越好</button>
+        </div>
+        <div class="exp">EFSA 也表示無法訂出補充劑的安全劑量；傳統沖泡的茶湯一般被認為安全。</div>
+      </div>
+      <div class="card q" data-ans="b">
+        <h4>Q4. 大崎研究發現多喝綠茶和較低死亡風險有關，這代表？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">綠茶一定能延長壽命</button>
+          <button class="opt" data-v="b">有關聯，但觀察研究不能證明因果</button>
+          <button class="opt" data-v="c">綠茶能預防所有癌症</button>
+        </div>
+        <div class="exp">該研究中癌症死亡並沒有差別；而且可能有其他生活習慣的影響。</div>
+      </div>
+      <div class="card q" data-ans="c">
+        <h4>Q5. 正在吃鐵劑的人，喝茶要注意什麼？</h4>
+        <div class="opts">
+          <button class="opt" data-v="a">配鐵劑一起喝效果更好</button>
+          <button class="opt" data-v="b">完全不能喝茶</button>
+          <button class="opt" data-v="c">和鐵劑、高鐵的一餐錯開</button>
+        </div>
+        <div class="exp">隨餐喝一杯茶，可能讓那一餐的非血基質鐵吸收減少約 70%。</div>
+      </div>
+      <div class="score" id="score"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec refs" id="refs">
+  <div class="wrap">
+    <div class="sec-head" style="--c:var(--ink)"><div class="num">§</div><div><span class="eyebrow">References</span><h2>參考資料</h2></div></div>
+    <p class="small">以下資料於<b>2026年10月18日</b>查核。</p>
+    <ol>
+      <li id="ref1"><span class="rid">1</span>EFSA ANS Panel, Younes M, et al. <b>Scientific opinion on the safety of green tea catechins.</b> <i>EFSA Journal.</i> 2018;16(4):e05239.<span class="loc">歐洲成人喝綠茶平均攝取 EGCG 90–300 mg/天，重度飲用者最高約 866 mg；補充劑 5–1,000 mg/天；傳統沖泡茶湯一般安全，但有極少數特異性肝損傷；補充劑 ≥800 mg EGCG/天在介入試驗中使轉胺酶顯著上升。</span><a href="https://doi.org/10.2903/j.efsa.2018.5239" target="_blank" rel="noopener">DOI: 10.2903/j.efsa.2018.5239</a></li>
+      <li id="ref2"><span class="rid">2</span>European Food Safety Authority. <b>EFSA assesses safety of green tea catechins.</b> 新聞稿，2018年4月18日。<span class="loc">補充劑濃度高、常空腹單次服用；800 mg/天以下未見肝損傷，但無法訂出安全劑量；建議標示更清楚。</span><a href="https://www.efsa.europa.eu/en/press/news/180418" target="_blank" rel="noopener">efsa.europa.eu</a></li>
+      <li id="ref3"><span class="rid">3</span>Kuriyama S, Shimazu T, Ohmori K, et al. <b>Green tea consumption and mortality due to cardiovascular disease, cancer, and all causes in Japan: the Ohsaki study.</b> <i>JAMA.</i> 2006;296(10):1255-1265.<span class="loc">40,530 位 40–79 歲成人，追蹤最長 11 年；每天 ≥5 杯綠茶，全因死亡 HR 男 0.88、女 0.77；心血管死亡關聯更強；癌症死亡無顯著差異。</span><a href="https://doi.org/10.1001/jama.296.10.1255" target="_blank" rel="noopener">DOI: 10.1001/jama.296.10.1255</a></li>
+      <li id="ref4"><span class="rid">4</span>Piyasena KGNP, Napagoda MT, Kalinga J, Jayasinghe L, et al. <b>Health benefits of different types of tea: a review.</b> <i>Food &amp; Nutrition Health.</i> 2026;3:11.<span class="loc">綠茶、紅茶、白茶的潛在效益整理；許多證據來自細胞、動物或觀察研究，紅茶研究相對少，白茶多為臨床前研究；需要更多人體研究確認。</span><a href="https://doi.org/10.1007/s44403-026-00056-1" target="_blank" rel="noopener">DOI: 10.1007/s44403-026-00056-1</a></li>
+      <li id="ref5"><span class="rid">5</span>Abudureheman B, Yu X, Fang D, Zhang H. <b>Enzymatic Oxidation of Tea Catechins and Its Mechanism.</b> <i>Molecules.</i> 2022;27(3):942.<span class="loc">綠茶、烏龍茶、紅茶製程與成分的差異；兒茶素經酵素氧化形成二聚體（茶黃素）與茶紅素的途徑。</span><a href="https://doi.org/10.3390/molecules27030942" target="_blank" rel="noopener">DOI: 10.3390/molecules27030942</a></li>
+      <li id="ref6"><span class="rid">6</span>Linus Pauling Institute, Oregon State University. <b>Tea.</b> Micronutrient Information Center（日文版最後更新 2026年1月26日）。<span class="loc">白、綠、烏龍、紅茶製程與氧化；茶黃素為二聚體、茶紅素為聚合物；每杯（235 mL）咖啡因：綠茶 9–63 mg、紅茶 42–79 mg、滴濾咖啡 72–130 mg；隨餐一杯茶可使非血基質鐵吸收減少約 70%；大量綠茶可能減弱 warfarin 效果。</span><a href="https://lpi.oregonstate.edu/mic/food-beverages/tea" target="_blank" rel="noopener">lpi.oregonstate.edu</a></li>
+      <li id="ref7"><span class="rid">7</span>Hu Y, Huang G, Soonjae K. <b>Tea Bioactive Compounds in Obesity Prevention and Management: Processing-Dependent Composition, Molecular Mechanisms, Human Evidence, and Translational Challenges.</b> <i>International Journal of Molecular Sciences.</i> 2026;27(16):7203.<span class="loc">綠茶兒茶素＋咖啡因對能量代謝與部分體位、血脂指標有小幅效果；過重或肥胖女性統合分析體重 −1.23 kg、腰圍 −3.46 cm；生體可用率低；茶不宜作為肥胖主要治療。</span><a href="https://doi.org/10.3390/ijms27167203" target="_blank" rel="noopener">DOI: 10.3390/ijms27167203</a></li>
+      <li id="ref8"><span class="rid">8</span>Ferrari E, Naponelli V. <b>Catechins and Human Health: Breakthroughs from Clinical Trials.</b> <i>Molecules.</i> 2025;30(15):3128.<span class="loc">回顧 17 項綠茶萃取物或 EGCG 臨床研究；強調解讀肝指數時考慮基因型、評估藥物與兒茶素交互作用。</span><a href="https://doi.org/10.3390/molecules30153128" target="_blank" rel="noopener">DOI: 10.3390/molecules30153128</a></li>
+      <li id="ref9"><span class="rid">9</span>Maron DJ, Lu GP, Cai NS, et al. <b>Cholesterol-lowering effect of a theaflavin-enriched green tea extract: a randomized controlled trial.</b> <i>Archives of Internal Medicine.</i> 2003;163(12):1448-1453.<span class="loc">240 位輕中度高膽固醇成人，每天 375 mg，12 週；LDL −16.4%、總膽固醇 −11.3%，安慰劑組無顯著變化。</span><a href="https://doi.org/10.1001/archinte.163.12.1448" target="_blank" rel="noopener">DOI: 10.1001/archinte.163.12.1448</a></li>
+      <li id="ref10"><span class="rid">10</span>EFSA NDA Panel. <b>Scientific Opinion on the safety of caffeine.</b> <i>EFSA Journal.</i> 2015;13(5):4102.<span class="loc">健康成人每天 400 mg、單次 200 mg 以下一般無安全疑慮；孕婦與哺乳者每天 200 mg 以下。</span><a href="https://doi.org/10.2903/j.efsa.2015.4102" target="_blank" rel="noopener">DOI: 10.2903/j.efsa.2015.4102</a></li>
+      <li id="ref11"><span class="rid">11</span>Ras RT, Zock PL, Draijer R. <b>Tea consumption enhances endothelial-dependent vasodilation; a meta-analysis.</b> <i>PLoS One.</i> 2011;6(3):e16974.<span class="loc">9 項研究、15 個試驗組；每天約 500 mL 茶，FMD 絕對增加 2.6%；研究間異質性大；作者任職於 Unilever 研發部門。</span><a href="https://doi.org/10.1371/journal.pone.0016974" target="_blank" rel="noopener">DOI: 10.1371/journal.pone.0016974</a></li>
+      <li id="ref12"><span class="rid">12</span>Owen GN, Parnell H, De Bruin EA, Rycroft JA. <b>The combined effects of L-theanine and caffeine on cognitive performance and mood.</b> <i>Nutritional Neuroscience.</i> 2008;11(4):193-198.<span class="loc">27 位健康成人交叉試驗；50 mg 咖啡因＋100 mg 茶胺酸改善注意力切換的速度與正確率，並減少記憶作業的干擾；作者任職於 Unilever 研發部門。</span><a href="https://doi.org/10.1179/147683008X301513" target="_blank" rel="noopener">DOI: 10.1179/147683008X301513</a></li>
+    </ol>
+
+    <div class="bigdisc" role="note" aria-label="免責聲明" style="margin-top:30px">
+      <div class="bd-head"><span class="bd-ico">⚠</span><span>重要聲明｜請先看這裡</span></div>
+      <p class="bd-key">本站資訊僅供參考，實際以醫師、營養師、藥師等專業人員建議為準。</p>
+      <ul>
+        <li><b>僅供參考：</b>本頁為飲食衛教整理，不構成醫療診斷、治療或營養處方；咖啡因計算器只是粗估。</li>
+        <li><b>無任何推薦或行銷：</b>本頁不推薦、不銷售任何茶葉、茶飲、品牌或補充劑，與文中作者及機構無任何合作關係。</li>
+        <li><b>特別族群：</b>懷孕哺乳、肝病、心律不整、貧血，或正在服用抗凝血劑等藥物的人，請先諮詢醫療專業人員。</li>
+        <li><b>資料時點：</b>資料以2026年9月底前公開資料為準，查核於2026年10月18日。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="pals" aria-hidden="true"><svg><use href="#sprout"/></svg><svg><use href="#bird"/></svg><svg><use href="#star"/></svg></div>
+    <p class="quote">每一次多懂一點，都是送給自己的小禮物。</p>
+    <p class="ftdisc">⚠ 僅供參考｜無任何推薦或行銷｜不能取代專業建議<br>本站資訊僅供參考，實際以醫療專業人員建議為準</p>
+    <p><a href="https://www.gungho.idv.tw/KS/index.html">← 回共好小學堂</a></p>
+    <p class="fine">共好小學堂 ✦ 一起學習，一起共好<br>本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-10-18</p>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到頂端">↑</button>
+
+<script>
+(function(){
+  function load(k,d){try{var v=JSON.parse(localStorage.getItem(k)||'null');return v==null?d:v;}catch(e){return d;}}
+  function save(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+
+  // tabs
+  document.querySelectorAll('[data-tabs]').forEach(function(list){
+    var tabs=[].slice.call(list.querySelectorAll('[role=tab]'));
+    function select(t,focus){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on?'true':'false');x.tabIndex=on?0:-1;var p=document.getElementById(x.getAttribute('aria-controls'));if(p)p.hidden=!on;});if(focus)t.focus();}
+    tabs.forEach(function(t,i){t.addEventListener('click',function(){select(t);});t.addEventListener('keydown',function(e){var n=null;if(e.key==='ArrowRight')n=tabs[(i+1)%tabs.length];if(e.key==='ArrowLeft')n=tabs[(i-1+tabs.length)%tabs.length];if(n){e.preventDefault();select(n,true);}});});
+  });
+
+  // oxidation slider
+  var oxR=document.getElementById('oxR'),leaf=document.getElementById('leafSvg');
+  function mix(a,b,t){return 'rgb('+a.map(function(v,i){return Math.round(v+(b[i]-v)*t);}).join(',')+')';}
+  function rOx(){var v=+oxR.value,t=v/100;document.getElementById('oxV').textContent=v+'%';
+    leaf.style.color=t<.5?mix([126,217,87],[201,160,70],t*2):mix([201,160,70],[150,70,40],(t-.5)*2);
+    document.getElementById('barC').style.width=Math.round(95-80*t)+'%';document.getElementById('barT').style.width=Math.round(5+85*t)+'%';
+    document.getElementById('oxOut').textContent=v<=15?'🤍💚 白茶、綠茶：氧化很少，兒茶素保留得多。綠茶靠高溫殺青讓氧化酶停工。':(v<=70?'🫖 烏龍茶：部分氧化，茶黃素和茶紅素介於綠茶與紅茶之間。':'❤️ 紅茶：揉捻後充分氧化，兒茶素多半結合成茶黃素、茶紅素，茶湯變紅。');}
+  oxR.addEventListener('input',rOx);rOx();
+
+  // caffeine calc
+  var C={g:0,b:0,k:0},R={g:[9,63],b:[42,79],k:[72,130]};
+  function rCaf(){var lo=0,hi=0;Object.keys(C).forEach(function(k){document.getElementById('c'+k).textContent=C[k];lo+=C[k]*R[k][0];hi+=C[k]*R[k][1];});
+    var p=function(x){return Math.min(100,x/800*100)+'%';};document.getElementById('mMin').style.width=p(lo);var mr=document.getElementById('mRange');mr.style.left='0';mr.style.width=p(hi);
+    var o=document.getElementById('cafOut');
+    if(!hi){o.textContent='按「＋」加上今天喝的杯數。';return;}
+    o.textContent='大約 '+lo+'–'+hi+' 毫克咖啡因。'+(hi>400?'上限可能超過健康成人每天 400 毫克的參考值，可以減少幾杯，或改喝低咖啡因、無咖啡因飲品。':(hi>200?'在成人每天 400 毫克的參考範圍內；但孕婦、哺乳者的參考值是 200 毫克，對咖啡因敏感的人也要再少一點。':'在一般參考範圍內。下午以後喝，還是可能影響睡眠。'));}
+  document.querySelectorAll('.cups .st button').forEach(function(b){b.addEventListener('click',function(){var k=b.dataset.c;C[k]=Math.max(0,Math.min(12,C[k]+(+b.dataset.d)));rCaf();});});
+  rCaf();
+
+  // evidence sorter
+  var F=[['EGCG 在培養皿裡抑制癌細胞生長',0,'細胞實驗只能提供線索，人體裡的濃度和反應常常不同。'],
+         ['喝綠茶多的日本成人，心血管死亡風險較低',1,'大崎研究是觀察性世代研究：有關聯，不等於因果。'],
+         ['隨機分組吃茶黃素綠茶萃取物 12 週，LDL 下降',2,'隨機對照試驗能檢驗因果，但只適用於該產品與劑量。'],
+         ['白茶萃取物讓實驗小鼠體重增加較少',0,'動物研究，劑量和人類飲用量差很多。']];
+  var so=document.getElementById('sorter'),L=['細胞／動物研究','觀察研究','隨機試驗'],sd=0,sr=0;
+  F.forEach(function(f){var w=document.createElement('div');w.className='item';var h=document.createElement('h4');h.textContent=f[0];w.appendChild(h);var ob=document.createElement('div');ob.className='opts';
+    L.forEach(function(l,j){var b=document.createElement('button');b.type='button';b.className='opt';b.dataset.v=j;b.textContent=l;ob.appendChild(b);});w.appendChild(ob);var ex=document.createElement('div');ex.className='exp';w.appendChild(ex);so.appendChild(w);
+    var os=ob.querySelectorAll('.opt');os.forEach(function(o){o.addEventListener('click',function(){var ok=+o.dataset.v===f[1];os.forEach(function(x){x.disabled=true;if(+x.dataset.v===f[1])x.classList.add('right');});if(!ok)o.classList.add('wrong');ex.textContent=(ok?'✅ ':'💡 答案是「'+L[f[1]]+'」。')+f[2];ex.classList.add('show');sd++;if(sd===F.length){var s=document.getElementById('sortScore');s.textContent='四題答對 '+(sr+(ok?1:0))+' 題！看到健康新聞時，先問「這是哪一種研究？」🔎';s.classList.add('show');}if(ok)sr++;});});});
+
+  // situations
+  var S=['紅茶或綠茶都可以，算一下咖啡因總量（見第 2 節）；有服藥的人，留意咖啡因和藥物的交互作用。',
+         '茶也含咖啡因，晚上容易睡不好的人，可改喝無咖啡因的飲品，或把茶留到早上。',
+         '有些人空腹喝茶會胃不舒服，可以改在飯後喝、泡淡一點；胃食道逆流、胃炎或潰瘍的人，請和醫師討論。',
+         '隨餐喝一杯茶，可能讓那一餐非血基質鐵（植物性食物的鐵）吸收減少約 70%。補鐵的人，茶和鐵劑、高鐵的一餐要錯開。',
+         '大量綠茶可能減弱抗凝血劑 warfarin 的效果；不少藥物也會影響咖啡因代謝。正在吃藥的人，大量喝茶或使用茶萃取物前，請先問醫師或藥師。',
+         '茶本身熱量很低，手搖飲的負擔多半來自糖和奶精。點「無糖」或「微糖」，比挑哪一種茶更重要。'];
+  var sb=[].slice.call(document.querySelectorAll('#sit button')),sout=document.getElementById('sitOut');
+  sb.forEach(function(b){b.addEventListener('click',function(){sb.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});sout.textContent=S[+b.dataset.s];});});
+  sout.textContent='點上面的按鈕，看看小提醒。';
+
+  // weekly checklist
+  function wkey(){var d=new Date();d.setHours(0,0,0,0);d.setDate(d.getDate()-((d.getDay()+6)%7));return d.toDateString();}
+  var KEY='gungho-ks-tea3-chk',boxes=[].slice.call(document.querySelectorAll('#chk input')),raw=load(KEY,{}),st=(raw&&raw.w===wkey())?(raw.s||{}):{};
+  function upd(){var n=0;boxes.forEach(function(b){b.parentNode.classList.toggle('on',b.checked);if(b.checked)n++;});document.getElementById('pFill').style.width=(n/boxes.length*100)+'%';document.getElementById('pN').textContent=n+' / '+boxes.length;document.getElementById('cheer').classList.toggle('show',n===boxes.length);}
+  boxes.forEach(function(b){b.checked=!!st[b.dataset.k];b.addEventListener('change',function(){st[b.dataset.k]=b.checked;save(KEY,{w:wkey(),s:st});upd();});});
+  document.getElementById('chkReset').addEventListener('click',function(){st={};boxes.forEach(function(b){b.checked=false;});try{localStorage.removeItem(KEY);}catch(e){}upd();});
+  upd();
+
+  // quiz
+  var qs=[].slice.call(document.querySelectorAll('#quizBox .q')),answered=0,right=0;
+  qs.forEach(function(q){var a=q.dataset.ans,opts=q.querySelectorAll('.opt');opts.forEach(function(o){o.addEventListener('click',function(){var ok=o.dataset.v===a;opts.forEach(function(x){x.disabled=true;if(x.dataset.v===a)x.classList.add('right');});if(!ok)o.classList.add('wrong');var exp=q.querySelector('.exp');exp.innerHTML=(ok?'<b>✅ 答對了！</b> ':'<b>💡 再想想～</b> ')+exp.innerHTML;exp.classList.add('show');answered++;if(ok)right++;if(answered===qs.length){var s=document.getElementById('score');s.textContent='你答對了 '+right+' / '+qs.length+' 題！'+(right===qs.length?' 太厲害了 🎉':' 每多懂一點都是收穫 🌱');s.classList.add('show');}});});});
+
+  var tt=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('show',window.scrollY>600);},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
+})();
+</script>
+</body>
+</html>
