@@ -63,8 +63,6 @@ window.SCHOOL_TOPICS = [
 ,{ title: '房子要怎麼傳給孩子？', description: '生前贈與、死後繼承、二親等買賣怎麼選？比較稅負與控制權，附取得成本試算、四種傳承工具與檢核清單。', category: '退休理財', url: '/KS/HOMEPASS/', date: '2026-10-24' }
 ,{ title: '老朋友，不必天天聯絡也很好？', description: '從社會情感選擇理論看熟齡社交減法：低維持成本朋友的特質與身心好處，附社交同心圓小工具與友誼檢核。', category: '樂活空間', url: '/KS/EASYPAL/', date: '2026-10-24' }
 ,{ title: '土肉桂葉茶，真的能養生嗎？', description: '土肉桂葉和傳統肉桂差在哪？用 A～D 證據等級分開中醫觀點與研究結果，附泡茶計時器、證據分類小遊戲與安全檢核。', category: '醫療新知', url: '/KS/TWCINN/', date: '2026-10-24' }
-
-
    
    // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/', date: '日期XXXX-XX-XX' }
 ];
