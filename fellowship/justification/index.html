@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>因信稱義｜羅馬書與加拉太書</title>
+<meta name="description" content="罪人蒙神接納，根基在耶穌基督的救贖，並藉信心領受恩典；這恩典也使人在聖靈裡活出愛，與不同背景的信徒成為一家。">
+<meta property="og:title" content="因信稱義｜羅馬書與加拉太書">
+<meta property="og:description" content="罪人蒙神接納，根基在耶穌基督的救贖，並藉信心領受恩典；這恩典也使人在聖靈裡活出愛，與不同背景的信徒成為一家。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23FBF7EE'/%3E%3Cpath d='M32 12v40M20 24h24' stroke='%23B8893B' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700;900&display=swap" rel="stylesheet">
+<script src="config.js"></script>
+<style>
+:root{
+  --bg:#FBF8F1; --bg2:#F4EEE1; --paper:#FFFEFA;
+  --ink:#2A2F3A; --ink2:#5B6170; --ink3:#8A8F9B;
+  --gold:#B8893B; --gold-soft:#F3E6C8;
+  --sky:#5E8FBF; --sky-soft:#E4EEF7;
+  --clay:#B9562F; --clay-soft:#F6E1D6;
+  --olive:#6F8A5A; --olive-soft:#E8EFDF;
+  --line:#E7DFCD;
+  --serif:"Noto Serif TC","Songti TC",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --r:18px;
+  --shadow:0 1px 2px rgba(60,50,20,.05),0 8px 28px rgba(60,50,20,.07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.85;
+  background-image:radial-gradient(1200px 600px at 85% -10%,#FFF3D6 0,transparent 60%),radial-gradient(900px 500px at -10% 30%,#EAF2FA 0,transparent 60%);
+  background-attachment:fixed}
+a{color:var(--sky)}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.4;margin:0}
+p{margin:.6em 0}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+
+.bar{position:sticky;top:0;z-index:20;background:rgba(251,248,241,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;gap:12px}
+.brand{font-family:var(--serif);font-weight:700;letter-spacing:.08em;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.brand i{width:22px;height:22px;border-radius:50%;background:radial-gradient(circle,#FFE7A8 0,#F3D27A 45%,transparent 70%);display:inline-block}
+.bar nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.bar nav a{font-size:14px;color:var(--ink2);text-decoration:none;padding:6px 12px;border-radius:999px;white-space:nowrap}
+.bar nav a:hover,.bar nav a.on{background:var(--gold-soft);color:var(--ink)}
+.progress{position:absolute;left:0;bottom:-1px;height:2px;background:linear-gradient(90deg,var(--gold),var(--clay));width:0}
+
+.hero{min-height:86vh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;padding:80px 0}
+.halo{position:absolute;width:620px;height:620px;border-radius:50%;left:50%;top:44%;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(255,236,180,.85) 0,rgba(255,236,180,.25) 40%,transparent 70%);animation:breathe 7s ease-in-out infinite;pointer-events:none}
+@keyframes breathe{50%{transform:translate(-50%,-50%) scale(1.07);opacity:.85}}
+.hero small{display:block;letter-spacing:.4em;color:var(--gold);font-size:14px;margin-bottom:18px;position:relative}
+.hero h1{font-size:clamp(44px,8.5vw,96px);font-weight:900;letter-spacing:.06em;position:relative;line-height:1.25}
+.hero .sub{font-family:var(--serif);font-size:clamp(17px,2.2vw,22px);color:var(--ink2);margin-top:16px;position:relative}
+.hero .by{margin-top:24px;color:var(--ink3);letter-spacing:.2em;font-size:14px;position:relative}
+.hero .scroll{margin-top:46px;display:inline-flex;flex-direction:column;align-items:center;gap:6px;color:var(--ink3);font-size:13px;text-decoration:none;position:relative}
+.hero .scroll span{width:1px;height:42px;background:linear-gradient(var(--gold),transparent);animation:drip 2.2s infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+section.s{padding:84px 0}
+.eyebrow{font-size:13px;letter-spacing:.28em;color:var(--clay);margin-bottom:10px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.eyebrow b{font-weight:500;color:var(--ink3);letter-spacing:.1em}
+.s h2{font-size:clamp(28px,4.4vw,42px);margin-bottom:22px}
+.sub-h{font-size:clamp(20px,2.6vw,25px);margin:44px 0 12px;display:flex;gap:12px;align-items:baseline}
+.sub-h .no{font-family:var(--serif);color:var(--gold);font-size:.85em;flex:none}
+.lead{font-size:18.5px;color:var(--ink2);max-width:780px}
+.prose{max-width:780px;color:var(--ink2)}
+.prose strong{color:var(--ink)}
+.takeaway{font-family:var(--serif);font-size:clamp(19px,2.4vw,23px);margin-top:30px;padding-left:18px;border-left:3px solid var(--gold);color:var(--ink);max-width:800px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px 18px;box-shadow:var(--shadow)}
+.card h3{font-size:20px;margin:4px 0 8px}
+.card .tag{font-size:12.5px;letter-spacing:.12em;color:var(--gold)}
+.card p{color:var(--ink2);font-size:16px}
+.card.sky{background:linear-gradient(160deg,#fff,var(--sky-soft))}
+.card.gold{background:linear-gradient(160deg,#fff,var(--gold-soft))}
+.card.clay{background:linear-gradient(160deg,#fff,var(--clay-soft))}
+.card.olive{background:linear-gradient(160deg,#fff,var(--olive-soft))}
+
+.thesis{max-width:820px;margin:0 auto;background:linear-gradient(160deg,#FFFDF5,#FBF0D3);border:1px solid #EFDDB0;border-radius:24px;padding:30px 32px;box-shadow:var(--shadow)}
+.thesis .lbl,.reflect .lbl{display:inline-block;font-size:12.5px;letter-spacing:.2em;color:#fff;background:var(--gold);border-radius:6px;padding:2px 9px;margin-bottom:8px}
+.thesis p{font-family:var(--serif);font-size:18px;line-height:2;margin:.3em 0}
+.readnote{max-width:820px;margin:22px auto 0;font-size:14.5px;color:var(--ink3);border:1px solid var(--line);background:#fff;border-radius:14px;padding:14px 18px}
+.readnote b{color:var(--ink2)}
+
+.scripture{margin:20px 0;max-width:800px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:14px;padding:16px 22px;box-shadow:var(--shadow)}
+.scripture .src{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:13px;color:var(--ink3);margin-top:8px}
+.scripture + .scripture{margin-top:-6px}
+blockquote.v{margin:0;font-family:var(--serif);font-size:18px;line-height:1.95;color:var(--ink)}
+blockquote.v::before{content:"「";color:var(--gold)}
+blockquote.v::after{content:"」";color:var(--gold)}
+.ref{display:inline-flex;align-items:center;gap:5px;font-family:var(--sans);font-size:13px;line-height:1;padding:5px 10px 5px 8px;margin:2px;border-radius:999px;
+  border:1px solid var(--line);background:#fff;color:var(--ink2);cursor:pointer;transition:.18s;vertical-align:middle}
+.ref::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.ref:hover{border-color:var(--gold);color:var(--ink);transform:translateY(-1px);box-shadow:0 3px 10px rgba(184,137,59,.18)}
+
+.reflect{margin-top:22px;max-width:800px;background:linear-gradient(160deg,#FFFDF5,#FBF0D3);border:1px solid #EFDDB0;border-radius:var(--r);padding:18px 24px}
+.reflect p{margin:.3em 0;color:var(--ink)}
+.caution{margin-top:16px;max-width:800px;font-size:15px;color:var(--ink2);background:var(--sky-soft);border-radius:14px;padding:12px 18px;border:1px solid #D3E1EF}
+.caution::before{content:"界線　";color:var(--sky);font-weight:700;letter-spacing:.1em}
+.aside{margin-top:18px;display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--ink2);background:#fff;border:1px dashed #D9C9A3;border-radius:14px;padding:12px 16px;max-width:760px}
+.aside::before{content:"旁白";flex:none;font-size:12px;letter-spacing:.15em;color:#fff;background:var(--gold);border-radius:6px;padding:2px 7px;margin-top:3px}
+
+.table-wrap{overflow-x:auto;border-radius:var(--r);box-shadow:var(--shadow)}
+.cmp{width:100%;min-width:640px;border-collapse:separate;border-spacing:0;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;font-size:15.5px}
+.cmp th,.cmp td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.cmp tr:last-child td,.cmp tr:last-child th{border-bottom:0}
+.cmp thead th{font-family:var(--serif);font-size:17px;background:var(--bg2)}
+.cmp tbody th{color:var(--ink3);font-weight:500;width:18%;white-space:nowrap}
+.cmp.jj thead th:nth-child(2){color:var(--sky)}
+.cmp.jj thead th:nth-child(3){color:var(--clay)}
+
+.questions{counter-reset:q;display:grid;gap:12px;max-width:820px;padding:0;margin:16px 0 0;list-style:none}
+.questions li{counter-increment:q;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 18px 14px 60px;position:relative;font-family:var(--serif);font-size:17px}
+.questions li::before{content:counter(q);position:absolute;left:16px;top:12px;width:30px;height:30px;border-radius:50%;background:var(--gold-soft);color:#8A6420;display:grid;place-items:center;font-size:15px}
+
+.closing{max-width:760px;margin:0 auto;text-align:center}
+.closing p{font-family:var(--serif);font-size:19px;line-height:2.05;color:var(--ink)}
+
+.illus{margin:28px auto 8px;max-width:680px}
+.illus svg{width:100%;height:auto;display:block;border-radius:var(--r);border:1px solid var(--line);box-shadow:var(--shadow)}
+.illus figcaption{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px;margin-top:10px;font-family:var(--serif);font-size:15px;color:var(--ink2);text-align:center}
+.tw{animation:tw 4s ease-in-out infinite}
+@keyframes tw{50%{opacity:.25}}
+.glow{animation:breathe2 3.4s ease-in-out infinite}
+@keyframes breathe2{50%{opacity:.35}}
+.spin{transform-box:fill-box;transform-origin:50% 50%;animation:sway 6s ease-in-out infinite}
+@keyframes sway{50%{transform:rotate(4deg) translateX(6px)}}
+
+.refs{columns:2 300px;column-gap:36px;font-size:15px;padding-left:1.2em}
+.refs li{break-inside:avoid;margin-bottom:8px;color:var(--ink2)}
+.refs a,.srcs a{text-decoration:none;border-bottom:1px solid #C9D9EA;word-break:break-all}
+.refs a:hover,.srcs a:hover{border-color:var(--sky)}
+.srcs{font-size:15px;color:var(--ink2);padding-left:1.2em}
+.srcs li{margin-bottom:12px}
+.srcs .why{display:block;color:var(--ink3);font-size:14px}
+footer{padding:40px 0 60px;text-align:center;color:var(--ink3);font-size:14px;border-top:1px solid var(--line)}
+
+dialog{border:0;padding:0;border-radius:22px;max-width:min(620px,calc(100vw - 32px));width:100%;background:var(--paper);color:var(--ink);box-shadow:0 30px 80px rgba(40,30,10,.25)}
+dialog::backdrop{background:rgba(42,47,58,.35);backdrop-filter:blur(3px)}
+.dlg{padding:28px 28px 22px}
+.dlg .head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+.dlg h3{font-size:22px}
+.dlg .x{border:0;background:var(--bg2);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:18px;color:var(--ink2)}
+.dlg .ver{font-size:12.5px;color:var(--ink3);letter-spacing:.1em}
+.dlg blockquote.v{font-size:18px;padding:16px 18px;background:#FFFBF0;border-radius:14px;border:1px solid #EFE2C2}
+.dlg .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.dlg .links a{font-size:14px;text-decoration:none;padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--ink)}
+.dlg .links a:hover{border-color:var(--sky);color:var(--sky)}
+
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.halo,.hero .scroll span,.tw,.glow,.spin{animation:none}}
+@media (max-width:640px){body{font-size:16px}section.s{padding:62px 0}.card{padding:20px}.bar nav{display:none}.thesis{padding:24px 20px}.thesis p{font-size:16.5px}}
+@media print{.bar,.hero .scroll,.halo{display:none}.rv{opacity:1;transform:none}section.s{padding:30px 0}}
+.vs{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+.vs .col{border-radius:var(--r);padding:22px 24px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.vs .col.a{background:linear-gradient(160deg,#fff,#FBF1DD)}
+.vs .col.b{background:linear-gradient(160deg,#fff,var(--sky-soft))}
+.vs h3{font-size:21px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.vs h3 small{font-family:var(--sans);font-size:13px;color:var(--ink3);font-weight:400}
+.vs dl{margin:0;display:grid;grid-template-columns:5.5em 1fr;gap:12px 14px;font-size:15px}
+.vs dt{font-weight:700;color:var(--ink)}
+.vs dd{margin:0;color:var(--ink2)}
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top"><i></i><span data-cfg="title">羅馬書與加拉太書的因信稱義</span></a>
+    <nav id="nav">
+      <a href="#core">核心</a>
+      <a href="#context">處境</a>
+      <a href="#romans">羅馬書</a>
+      <a href="#galatians">加拉太書</a>
+      <a href="#spirit">聖靈更新</a>
+      <a href="#james">保羅與雅各</a>
+      <a href="#church">教會</a>
+      <a href="#limits">界線</a>
+      <a href="#apply">應用</a>
+      <a href="#refs">參考資料</a>
+    </nav>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="halo"></div>
+  <div class="wrap">
+    <small data-cfg="eyebrow">查經與神學研讀擴充稿</small>
+    <h1 data-cfg-html="titleHtml">羅馬書與加拉太書的<br>因信稱義</h1>
+    <p class="sub" data-cfg="subtitle">以和合本經文理解基督的救恩與信徒的新生命</p>
+    <p class="by">老山羊 · 2026 年 10 月 26 日</p>
+    <a class="scroll" href="#thesis">往下讀<span></span></a>
+  </div>
+</section>
+
+<section class="s" id="thesis">
+  <div class="wrap rv">
+    <div class="thesis">
+      <span class="lbl">總綱</span>
+      <p>《羅馬書》與《加拉太書》共同宣告：罪人蒙神接納，根基在耶穌基督的救贖，並藉信心領受恩典，不能以行律法、族群身分或宗教成就取得稱義。</p>
+      <p>這恩典也使人歸入基督，在聖靈裡活出愛，並與不同背景的信徒成為一家。</p>
+    </div>
+    <div class="grid g2" style="max-width:820px;margin:20px auto 0">
+      <div class="card clay"><span class="tag">加拉太書</span><h3>直接捍衛福音</h3><p>面對有人要求外邦信徒受割禮的危機。</p></div>
+      <div class="card sky"><span class="tag">羅馬書</span><h3>較廣泛地說明</h3><p>罪、稱義、與基督聯合、聖靈、以色列及群體生活之間的關係。</p></div>
+    </div>
+    <p class="prose" style="max-width:820px;margin:14px auto 0">兩卷書都是寫給具體教會的書信，不能將前者縮成論戰、後者讀成脫離處境的教科書。</p>
+    <div class="readnote"><b>閱讀說明</b>：經文引文採繁體和合本神版，未完整引用的句子標為「節錄」，版本附註另行說明。正文將<b>經文</b>、<b>神學綜合</b>及<b>存在分歧的解釋</b>分開表達。稱義與成聖的區分主要沿用改教傳統常見用語，並在後文說明其他基督教傳統的表述差異。</div>
+  </div>
+</section>
+
+<!-- 一 -->
+<section class="s" id="core">
+  <div class="wrap rv">
+    <div class="eyebrow">一 <b>共同核心</b></div>
+    <h2>共同核心是基督的救恩</h2>
+    <div class="scripture"><blockquote class="v">所以我們看定了：人稱義是因著信，不在乎遵行律法。</blockquote>
+      <div class="src">羅馬書 3:28 <button class="ref" data-r="Rom3:28">羅 3:28</button></div></div>
+    <div class="scripture"><blockquote class="v">既知道人稱義不是因行律法，乃是因信耶穌基督</blockquote>
+      <div class="src">加拉太書 2:16，節錄 <button class="ref" data-r="Gal2:16">加 2:16</button></div></div>
+
+    <h3 class="sub-h"><span class="no">◆</span>稱義不是自我評分合格</h3>
+    <div class="prose">
+      <p>在保羅的論述中，稱義包含神對罪人的判定與接納。人不能因自認善良、宗教資歷深厚或比較別人更好，就要求神承認自己有義。羅 3:23–26 把稱義放在世人犯罪、神施恩、基督救贖的脈絡中。<button class="ref" data-r="Rom3:23-26">羅 3:23–26</button></p>
+      <p>法庭式的宣告是重要面向，但其結果也涉及與神相和、同屬神的家及新生命，不能只剩抽象身分。</p>
+    </div>
+    <div class="scripture"><blockquote class="v">如今卻蒙神的恩典，因基督耶穌的救贖，就白白地稱義。</blockquote>
+      <div class="src">羅馬書 3:24 <button class="ref" data-r="Rom3:24">羅 3:24</button></div></div>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));max-width:860px">
+      <div class="card gold"><span class="tag">恩典</span><h3>救恩出於神的主動</h3></div>
+      <div class="card gold"><span class="tag">基督的救贖</span><h3>稱義的根基</h3></div>
+      <div class="card gold"><span class="tag">白白地</span><h3>不是自己應得的工價</h3></div>
+    </div>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 260" role="img" aria-label="左邊是一袋工錢和一張薪資單被劃掉，右邊是一份發光的禮物">
+        <defs><linearGradient id="a1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FBF5EA"/><stop offset="1" stop-color="#F3ECDD"/></linearGradient>
+        <radialGradient id="a1g"><stop offset="0" stop-color="#FFF0C4"/><stop offset="1" stop-color="#FFF0C4" stop-opacity="0"/></radialGradient></defs>
+        <rect width="600" height="260" fill="url(#a1)"/>
+        <path d="M0 210 H600 V260 H0Z" fill="#E6DAC0"/>
+        <g opacity=".55">
+          <path d="M120 210 q-34 0 -34 -40 q0 -30 30 -50 l-10 -16 h48 l-10 16 q30 20 30 50 q0 40 -34 40Z" fill="#C9B48A"/>
+          <path d="M104 104 h48" stroke="#A9925F" stroke-width="5"/>
+          <text x="128" y="180" text-anchor="middle" font-family="Noto Serif TC" font-size="26" fill="#8A7650">工</text>
+          <rect x="178" y="130" width="70" height="80" rx="4" fill="#F4EEDF" stroke="#CDBE9C"/>
+          <g stroke="#CDBE9C" stroke-width="3"><line x1="190" y1="150" x2="236" y2="150"/><line x1="190" y1="166" x2="230" y2="166"/><line x1="190" y1="182" x2="236" y2="182"/></g>
+        </g>
+        <path d="M80 100 L260 220" stroke="#B9562F" stroke-width="5" stroke-linecap="round" opacity=".75"/>
+        <circle class="glow" cx="430" cy="160" r="110" fill="url(#a1g)"/>
+        <rect x="370" y="140" width="120" height="70" rx="6" fill="#F0D59A"/>
+        <rect x="362" y="122" width="136" height="24" rx="5" fill="#E8C677"/>
+        <rect x="422" y="122" width="16" height="88" fill="#B9562F"/>
+        <path d="M430 122 q-30 -34 -44 -12 q-4 14 44 12 q30 -34 44 -12 q4 14 -44 12Z" fill="#B9562F"/>
+        <g font-family="Noto Serif TC" font-size="15" fill="#8A8F9B"><text x="168" y="240" text-anchor="middle">應得的工價</text><text x="430" y="240" text-anchor="middle">白白的恩典</text></g>
+      </svg>
+      <figcaption><span>「做工的得工價，不算恩典，乃是該得的。」</span><button class="ref" data-r="Rom4:4-5">羅 4:4–5</button></figcaption>
+    </figure>
+    <div class="aside">神在這裡不發薪水，只送禮物。薪水可以討價還價，禮物只能收下。</div>
+    <p class="takeaway">信心不是另一種值得神付酬的功德，而是倚靠並領受祂在基督裡所賜的救恩。</p>
+
+    <h3 class="sub-h"><span class="no">◆</span>信心有對象也有生命方向</h3>
+    <div class="prose">
+      <p>因信稱義不是「只要有信念就能得救」。保羅所說的信，是信靠為我們捨己、從死裡復活的耶穌基督。<button class="ref" data-r="Rom4:23-25">羅 4:23–25</button><button class="ref" data-r="Gal2:20">加 2:20</button></p>
+      <p>信心也不只是知道某項教義正確；它使人將自己交託基督，並在祂裡面學習順服。順服不能取代基督的救贖，卻也不能被排除在信徒生活之外。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 二 -->
+<section class="s" id="context">
+  <div class="wrap rv">
+    <div class="eyebrow">二 <b>兩卷書的處境與論述重點</b></div>
+    <h2>重心不同，不是兩種福音</h2>
+    <div class="table-wrap">
+    <table class="cmp jj">
+      <thead><tr><th>比較面向</th><th>羅馬書</th><th>加拉太書</th></tr></thead>
+      <tbody>
+        <tr><th>教會處境</th><td>保羅尚未到訪；關注猶太與外邦信徒的接納及往西班牙的宣教計畫</td><td>有攪擾者推動割禮；保羅的使徒身分與所傳福音受到挑戰</td></tr>
+        <tr><th>經文定位</th><td>羅 1:10–15；14:1–15:13；15:22–29 <button class="ref" data-r="Rom15:24">羅 15:24</button></td><td>加 1:6–12；2:1–16；5:2–12；6:12–13 <button class="ref" data-r="Gal1:6-7">加 1:6–7</button><button class="ref" data-r="Gal5:2">加 5:2</button></td></tr>
+        <tr><th>主要鋪陳</th><td>普世之罪、稱義、新生命、神對以色列的信實、共同生活</td><td>福音來源、亞伯拉罕的應許、律法的角色、兒女身分、聖靈與自由</td></tr>
+        <tr><th>亞伯拉罕的用途</th><td>信心被算為義，且在受割禮以前</td><td>應許先於律法；屬基督者承受應許</td></tr>
+        <tr><th>生活的落點</th><td>獻上自己、彼此接納、以愛成全律法</td><td>用愛互相服事、結聖靈果子、互擔重擔</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="prose" style="margin-top:20px">
+      <p>上述差異是重心差異，不是兩種不同福音。加 2:16 也直接處理罪人如何稱義，羅 3:29–30 也直接處理猶太與外邦人的共同地位。<button class="ref" data-r="Rom3:29-30">羅 3:29–30</button></p>
+    </div>
+    <div class="caution">原稿將羅馬書的對象概括為律法主義者，容易過度簡化；書中亦有對外邦信徒自高的警告<button class="ref" data-r="Rom11:17-18">羅 11:17–18</button>及彼此論斷的勸戒<button class="ref" data-r="Rom14:1">羅 14:1</button>。<sup>[1][2]</sup></div>
+  </div>
+</section>
+
+<!-- 三 -->
+<section class="s" id="romans">
+  <div class="wrap rv">
+    <div class="eyebrow">三 <b>羅馬書</b></div>
+    <h2>從普世的罪談到白白稱義</h2>
+
+    <h3 class="sub-h"><span class="no">1</span>宗教身分不能使人免於審判</h3>
+    <div class="prose">
+      <p>羅 1:18–3:20 逐步揭露人的罪，也拆穿站在審判他人位置上的自義。羅 2:1 將責問轉向論斷者<button class="ref" data-r="Rom2:1">羅 2:1</button>；羅 3:9 說猶太人與希臘人都在罪惡之下<button class="ref" data-r="Rom3:9">羅 3:9</button>。這不是說每個人的惡行程度相同，而是無人能憑自身資格向神誇口。擁有律法與知道善惡，並不等於已經遵行。</p>
+      <p>羅 2:6–13 提到神按各人行為施行審判，也說行律法的稱義。<button class="ref" data-r="Rom2:6">羅 2:6</button><button class="ref" data-r="Rom2:13">羅 2:13</button>這些話不能略過。放在羅 1–3 章中，它至少否定「只要聽見或擁有律法便可蒙悅納」。</p>
+    </div>
+    <div class="caution">羅 2 章與末日審判、聖靈更新之行為的關係，各釋經傳統有不同說明；不能直接拿來推翻羅 3:20–28，也不能以因信稱義為由否認保羅認真看待人的行為。</div>
+
+    <h3 class="sub-h"><span class="no">2</span>律法是聖潔的，卻不是罪人的自救能力</h3>
+    <div class="grid g2">
+      <div class="card sky"><span class="tag">律法顯明罪</span><h3>使人知罪</h3><p>羅 3:20 指出律法使人知罪。<button class="ref" data-r="Rom3:20">羅 3:20</button></p></div>
+      <div class="card gold"><span class="tag">律法本身</span><h3>聖潔、公義、良善</h3><p>羅 7:12 肯定律法與誡命的聖潔、公義、良善。<button class="ref" data-r="Rom7:12">羅 7:12</button></p></div>
+    </div>
+    <div class="prose" style="margin-top:14px">
+      <p>問題不是神的命令邪惡，而是罪借著誡命發動作用，人又受肉體軟弱限制。<button class="ref" data-r="Rom8:3">羅 8:3</button>因此，不宜籠統說「律法使人犯罪」，而應分辨律法顯明罪，以及罪利用誡命這兩層意思。</p>
+    </div>
+    <div class="caution">羅 7 章第一人稱的掙扎，究竟主要描述未信者、信徒、以色列或具代表性的人，是有爭議的釋經問題。本文不靠選定其中一說來建立結論；清楚的共同點是，人不能藉律法自救，釋放與新生命必須從基督及聖靈而來。</div>
+
+    <h3 class="sub-h"><span class="no">3</span>十字架與復活共同構成救恩中心</h3>
+    <div class="prose">
+      <p>羅 3:21 說神的義在律法以外顯明，又有律法和先知為證。<button class="ref" data-r="Rom3:21">羅 3:21</button>這表示稱義不以守律法為取得方式，卻不是與舊約啟示斷裂。羅 3:25–26 將基督的血與神的公義連在一起：神不輕忽罪，也稱信耶穌的人為義。</p>
+    </div>
+    <div class="scripture"><blockquote class="v">耶穌被交給人，是為我們的過犯；復活，是為叫我們稱義。</blockquote>
+      <div class="src">羅馬書 4:25，採和合本正文，未列另譯附註 <button class="ref" data-r="Rom4:25">羅 4:25</button></div></div>
+    <div class="prose">
+      <p>稱義不能只剩「相信一個觀念」；它立基於基督真實的死與復活。羅 5:12–21 更將亞當的悖逆與基督的順服作對照，<button class="ref" data-r="Rom5:19">羅 5:19</button>使救恩不僅是個別罪過被處理，也涉及人從亞當之下的罪與死，進入基督所帶來的生命。</p>
+    </div>
+
+    <h3 class="sub-h"><span class="no">4</span>亞伯拉罕的信不是神欠他的工價</h3>
+    <div class="scripture"><blockquote class="v">惟有不做工的，只信稱罪人為義的神，他的信就算為義。</blockquote>
+      <div class="src">羅馬書 4:5 <button class="ref" data-r="Rom4:4-5">羅 4:4–5</button></div></div>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 270" role="img" aria-label="亞伯蘭站在帳棚外仰望滿天星辰">
+        <defs><linearGradient id="b1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D9E4F2"/><stop offset=".78" stop-color="#FBF3DF"/></linearGradient></defs>
+        <rect width="600" height="270" fill="url(#b1)"/>
+        <g fill="#C9A24E"><circle class="tw" style="animation-delay:2.49s" cx="387" cy="151" r="1.4"/><circle class="tw" style="animation-delay:3.36s" cx="275" cy="29" r="1.8"/><circle class="tw" style="animation-delay:0.45s" cx="500" cy="79" r="2.8"/><circle class="tw" style="animation-delay:2.18s" cx="275" cy="19" r="1.8"/><circle class="tw" style="animation-delay:1.63s" cx="206" cy="115" r="1.8"/><circle class="tw" style="animation-delay:3.05s" cx="93" cy="51" r="2.8"/><circle class="tw" style="animation-delay:0.51s" cx="21" cy="17" r="1.8"/><circle class="tw" style="animation-delay:3.09s" cx="189" cy="58" r="2.2"/><circle class="tw" style="animation-delay:1.25s" cx="223" cy="154" r="1.8"/><circle class="tw" style="animation-delay:0.73s" cx="221" cy="114" r="2.2"/><circle class="tw" style="animation-delay:0.09s" cx="444" cy="58" r="1.8"/><circle class="tw" style="animation-delay:1.06s" cx="359" cy="93" r="1.4"/><circle class="tw" style="animation-delay:2.38s" cx="366" cy="32" r="2.2"/><circle class="tw" style="animation-delay:1.42s" cx="333" cy="139" r="2.2"/><circle class="tw" style="animation-delay:0.74s" cx="503" cy="61" r="1.4"/><circle class="tw" style="animation-delay:1.02s" cx="43" cy="107" r="2.8"/><circle class="tw" style="animation-delay:0.07s" cx="448" cy="109" r="2.8"/><circle class="tw" style="animation-delay:2.31s" cx="29" cy="131" r="1.4"/><circle class="tw" style="animation-delay:2.83s" cx="221" cy="46" r="1.8"/><circle class="tw" style="animation-delay:3.72s" cx="493" cy="104" r="2.2"/><circle class="tw" style="animation-delay:3.57s" cx="276" cy="134" r="1.4"/><circle class="tw" style="animation-delay:2.36s" cx="396" cy="91" r="1.4"/><circle class="tw" style="animation-delay:1.73s" cx="113" cy="69" r="2.2"/><circle class="tw" style="animation-delay:2.05s" cx="391" cy="53" r="2.2"/><circle class="tw" style="animation-delay:1.10s" cx="578" cy="39" r="2.2"/><circle class="tw" style="animation-delay:2.74s" cx="333" cy="61" r="1.4"/><circle class="tw" style="animation-delay:2.51s" cx="336" cy="139" r="1.8"/><circle class="tw" style="animation-delay:2.88s" cx="102" cy="152" r="2.8"/><circle class="tw" style="animation-delay:0.13s" cx="372" cy="80" r="2.8"/><circle class="tw" style="animation-delay:2.60s" cx="169" cy="30" r="1.4"/><circle class="tw" style="animation-delay:3.21s" cx="362" cy="69" r="1.8"/><circle class="tw" style="animation-delay:3.93s" cx="155" cy="121" r="1.4"/><circle class="tw" style="animation-delay:0.68s" cx="401" cy="54" r="1.4"/><circle class="tw" style="animation-delay:3.38s" cx="321" cy="52" r="2.8"/><circle class="tw" style="animation-delay:3.69s" cx="193" cy="149" r="2.8"/><circle class="tw" style="animation-delay:3.84s" cx="345" cy="138" r="2.2"/><circle class="tw" style="animation-delay:1.16s" cx="433" cy="53" r="1.4"/><circle class="tw" style="animation-delay:1.51s" cx="564" cy="61" r="2.8"/><circle class="tw" style="animation-delay:3.47s" cx="204" cy="38" r="2.8"/><circle class="tw" style="animation-delay:1.09s" cx="534" cy="108" r="1.4"/><circle class="tw" style="animation-delay:3.14s" cx="384" cy="24" r="2.2"/><circle class="tw" style="animation-delay:1.45s" cx="307" cy="140" r="2.2"/><circle class="tw" style="animation-delay:3.08s" cx="320" cy="103" r="1.8"/><circle class="tw" style="animation-delay:2.32s" cx="31" cy="137" r="2.2"/><circle class="tw" style="animation-delay:1.30s" cx="300" cy="134" r="2.2"/><circle class="tw" style="animation-delay:3.27s" cx="385" cy="105" r="2.2"/><circle class="tw" style="animation-delay:2.58s" cx="438" cy="105" r="1.8"/><circle class="tw" style="animation-delay:3.48s" cx="480" cy="109" r="2.2"/><circle class="tw" style="animation-delay:2.07s" cx="562" cy="58" r="1.8"/><circle class="tw" style="animation-delay:3.35s" cx="508" cy="88" r="1.4"/><circle class="tw" style="animation-delay:2.88s" cx="446" cy="59" r="2.8"/><circle class="tw" style="animation-delay:1.21s" cx="297" cy="23" r="1.8"/><circle class="tw" style="animation-delay:0.64s" cx="471" cy="62" r="1.8"/><circle class="tw" style="animation-delay:3.04s" cx="204" cy="26" r="2.8"/><circle class="tw" style="animation-delay:3.92s" cx="189" cy="29" r="1.8"/><circle class="tw" style="animation-delay:0.44s" cx="205" cy="139" r="1.8"/><circle class="tw" style="animation-delay:2.19s" cx="445" cy="135" r="2.2"/><circle class="tw" style="animation-delay:1.52s" cx="93" cy="68" r="1.8"/><circle class="tw" style="animation-delay:2.87s" cx="402" cy="16" r="2.2"/><circle class="tw" style="animation-delay:1.62s" cx="305" cy="120" r="1.4"/></g>
+        <path d="M100 56l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#E0B04F"/><path d="M480 40l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#E0B04F"/>
+        <path d="M0 214 Q150 180 300 206 T600 196 V270 H0Z" fill="#EADFC6"/><path d="M0 240 Q220 222 600 238 V270 H0Z" fill="#E1D1AE"/>
+        <polygon points="380,232 440,170 500,232" fill="#D39A68"/><polygon points="430,232 440,194 450,232" fill="#8C5A3A"/>
+        <g transform="translate(296,236)"><line x1="-12" y1="-50" x2="-15" y2="2" stroke="#8A6420" stroke-width="3" stroke-linecap="round"/><path d="M-8 -40 L8 -40 L14 0 L-14 0Z" fill="#6E7890"/><circle cx="0" cy="-48" r="7" fill="#5B6170"/><line x1="5" y1="-36" x2="20" y2="-62" stroke="#6E7890" stroke-width="4" stroke-linecap="round"/></g>
+      </svg>
+      <figcaption><span>「亞伯蘭信耶和華，耶和華就以此為他的義。」</span><button class="ref" data-r="Gen15:6">創 15:6</button></figcaption>
+    </figure>
+    <div class="prose">
+      <p>「不做工」要與 4:4 的工價比喻一同閱讀，不是禁止工作或行善，而是否定以工作報酬的模式取得稱義。</p>
+      <p>羅 4:9–12 再指出，亞伯拉罕被算為義在受割禮之前；割禮是記號和印證，不是使他被算為義的原因。<button class="ref" data-r="Rom4:10-11">羅 4:10–11</button>這同時除去個人的誇口與族群的壟斷。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 四 -->
+<section class="s" id="galatians">
+  <div class="wrap rv">
+    <div class="eyebrow">四 <b>加拉太書</b></div>
+    <h2>捍衛應許與福音自由</h2>
+
+    <h3 class="sub-h"><span class="no">1</span>餐桌上的隔離也是福音問題</h3>
+    <div class="prose">
+      <p>加 2:11–14 記載磯法原與外邦信徒同吃，後來因怕奉割禮的人而退去。<button class="ref" data-r="Gal2:12">加 2:12</button><button class="ref" data-r="Gal2:14">加 2:14</button>保羅的責備顯示，福音不只在講台上是否說對，也關乎教會如何待人。</p>
+      <p>若外邦信徒必須先採納另一族群的身分標記，才配被平等接納，就在行動上削弱了基督救恩的充分性。</p>
+    </div>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 250" role="img" aria-label="一張擺好餅和杯的長桌，一端有幾張椅子被移開">
+        <defs><linearGradient id="c1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF8E8"/><stop offset="1" stop-color="#F4ECDC"/></linearGradient></defs>
+        <rect width="600" height="250" fill="url(#c1)"/>
+        <rect x="0" y="206" width="600" height="44" fill="#EADFC6"/>
+        <g fill="#8C5A3A">
+          <g transform="translate(150,0)"><rect x="0" y="108" width="7" height="100"/><rect x="0" y="160" width="40" height="7"/><rect x="33" y="160" width="7" height="48"/></g>
+          <g transform="translate(260,0)"><rect x="0" y="108" width="7" height="100"/><rect x="0" y="160" width="40" height="7"/><rect x="33" y="160" width="7" height="48"/></g>
+        </g>
+        <rect x="90" y="132" width="420" height="14" rx="4" fill="#A86E45"/>
+        <path d="M90 144 h420 v20 q-210 14 -420 0Z" fill="#F4E9D2" stroke="#E0CFA8"/>
+        <rect x="110" y="160" width="10" height="50" fill="#8C5A3A"/><rect x="480" y="160" width="10" height="50" fill="#8C5A3A"/>
+        <g fill="#D9A863"><ellipse cx="140" cy="128" rx="20" ry="8"/><ellipse cx="250" cy="128" rx="20" ry="8"/><ellipse cx="360" cy="128" rx="20" ry="8"/><ellipse cx="460" cy="128" rx="20" ry="8"/></g>
+        <g fill="#B8893B"><path d="M190 130 h16 l-3 -18 h-10z"/><path d="M300 130 h16 l-3 -18 h-10z"/><path d="M410 130 h16 l-3 -18 h-10z"/></g>
+        <g fill="#B49A7A" opacity=".75">
+          <g transform="translate(540,10) rotate(12 20 160)"><rect x="0" y="108" width="7" height="100"/><rect x="0" y="160" width="40" height="7"/><rect x="33" y="160" width="7" height="48"/></g>
+          <g transform="translate(470,26) rotate(-6 20 160)"><rect x="0" y="108" width="7" height="100"/><rect x="0" y="160" width="40" height="7"/><rect x="33" y="160" width="7" height="48"/></g>
+        </g>
+        <path d="M430 100 q30 -20 70 -6" stroke="#C9B48A" stroke-width="2" fill="none" stroke-dasharray="3 6"/>
+      </svg>
+      <figcaption><span>「及至他們來到，就因怕奉割禮的人，退去與外邦人隔開了。」</span><button class="ref" data-r="Gal2:12">加 2:12</button></figcaption>
+    </figure>
+    <div class="aside">教會的福音問題，有時不在講台上的講章，而在餐桌的座位表上。</div>
+    <div class="caution">經文稱來者為「從雅各那裡來的人」，不能據此斷言雅各本人授意隔離外邦人。對攪擾者的身分與動機，也應以書信所提供的資訊為限，不把整個猶太民族或猶太信仰描述為靠功德自救。保羅自己是猶太人，他的論證不容許反猶太的優越感。</div>
+    <div class="scripture"><blockquote class="v">我不廢掉神的恩；義若是藉著律法得的，基督就是徒然死了。</blockquote>
+      <div class="src">加拉太書 2:21 <button class="ref" data-r="Gal2:21">加 2:21</button></div></div>
+    <div class="prose">
+      <p>保羅反對的是把行律法設為稱義的根據，不是反對一切道德努力。加 5:3 將割禮與遵行全律法的義務連在一起，<button class="ref" data-r="Gal5:3">加 5:3</button>因此「律法的行為」不能只縮成幾項無關道德的族群標誌。割禮在當時是爭議焦點，背後卻牽涉人究竟倚靠基督，還是把守律法當成取得義的途徑。</p>
+    </div>
+
+    <h3 class="sub-h"><span class="no">2</span>應許先於律法，並在基督裡成就</h3>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+      <div class="card"><span class="tag">加 3:6–9</span><h3>因信算為義</h3><p>引用創 15:6，連結萬國蒙福的應許。<button class="ref" data-r="Gal3:8">加 3:8</button></p></div>
+      <div class="card"><span class="tag">加 3:15–18</span><h3>律法不能廢約</h3><p>後來的律法不能廢掉先前的約。<button class="ref" data-r="Gal3:17">加 3:17</button></p></div>
+      <div class="card gold"><span class="tag">加 3:16</span><h3>那一個子孫</h3><p>應許集中於基督。<button class="ref" data-r="Gal3:16">加 3:16</button></p></div>
+      <div class="card gold"><span class="tag">加 3:29</span><h3>屬基督的承受應許</h3><p>屬基督的人是亞伯拉罕的後裔。<button class="ref" data-r="Gal3:29">加 3:29</button></p></div>
+    </div>
+    <div class="caution">加 3:17 的四百三十年，在保羅此處的功能，是強調應許先於律法，不應只憑這一節重建所有舊約年代。</div>
+    <div class="scripture"><blockquote class="v">這樣，律法是我們訓蒙的師傅，引我們到基督那裡，使我們因信稱義。</blockquote>
+      <div class="src">加拉太書 3:24 <button class="ref" data-r="Gal3:24">加 3:24</button><button class="ref" data-r="Gal3:23-25">加 3:23–25</button></div></div>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 250" role="img" aria-label="一位家僕牽著孩子，沿著小路走向一扇透著光的門">
+        <defs><linearGradient id="d1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF3F8"/><stop offset="1" stop-color="#FAF4E6"/></linearGradient>
+        <radialGradient id="d1g"><stop offset="0" stop-color="#FFF3CF"/><stop offset="1" stop-color="#FFE7A8"/></radialGradient></defs>
+        <rect width="600" height="250" fill="url(#d1)"/>
+        <path d="M0 206 H600 V250 H0Z" fill="#E6DAC0"/>
+        <rect x="420" y="60" width="130" height="148" fill="#E3D3B2"/><rect x="412" y="52" width="146" height="12" fill="#D3BF97"/>
+        <path d="M454 208 V120 a31 31 0 0 1 62 0 V208Z" fill="url(#d1g)"/>
+        <circle class="glow" cx="485" cy="160" r="60" fill="#FFEFC2" opacity=".45"/>
+        <path d="M60 232 C160 220 300 214 450 208" stroke="#EFE2C2" stroke-width="18" fill="none" stroke-linecap="round"/>
+        <g transform="translate(250,214)"><path d="M-9 -44 L9 -44 L15 0 L-15 0Z" fill="#7C8698"/><circle cx="0" cy="-52" r="8" fill="#5B6170"/><line x1="8" y1="-36" x2="26" y2="-24" stroke="#7C8698" stroke-width="4" stroke-linecap="round"/></g>
+        <g transform="translate(284,214) scale(.62)"><path d="M-9 -44 L9 -44 L15 0 L-15 0Z" fill="#B9562F"/><circle cx="0" cy="-52" r="8" fill="#5B6170"/><path d="M-8 -60 h16 v-6 h-16Z" fill="#6E5A3A"/></g>
+        <g transform="translate(284,214) scale(.62)"><rect x="-22" y="-34" width="12" height="16" rx="2" fill="#C9A24E"/></g>
+      </svg>
+      <figcaption><span>「但這因信得救的理既然來到，我們從此就不在師傅的手下了。」</span><button class="ref" data-r="Gal3:23-25">加 3:25</button></figcaption>
+    </figure>
+    <div class="prose">
+      <p>閱讀重點須連到 3:23、25 所說的看守與不再受其監管，不能只理解成現代課堂上的老師，更不能把整段縮成每個人的心理歷程。這首先是在說明律法、應許與基督來到之間的救恩歷史關係。<sup>[2]</sup></p>
+    </div>
+    <div class="aside">「訓蒙的師傅」比較像負責接送、看管孩子的家僕，不是站講台的老師。孩子長大承受產業，就不再歸他管了。</div>
+
+    <h3 class="sub-h"><span class="no">3</span>基督擔當咒詛，使人領受聖靈</h3>
+    <div class="scripture"><blockquote class="v">基督既為我們受了咒詛，就贖出我們脫離律法的咒詛</blockquote>
+      <div class="src">加拉太書 3:13，節錄；省略「受」字的原文附註 <button class="ref" data-r="Gal3:13">加 3:13</button></div></div>
+    <div class="prose">
+      <p>咒詛指向違背律法所招致的審判，不能讀作律法本身邪惡。保羅接著在 3:14 說明目的：亞伯拉罕的福臨到外邦人，信徒因信得著所應許的聖靈。<button class="ref" data-r="Gal3:14">加 3:14</button></p>
+      <p>加 4:4–7 再把神差遣兒子與差遣兒子的靈連在一起，展開救贖、兒女身分與承受產業的關係。<button class="ref" data-r="Gal4:4-7">加 4:4–7</button></p>
+    </div>
+  </div>
+</section>
+
+<!-- 五 -->
+<section class="s" id="spirit">
+  <div class="wrap rv">
+    <div class="eyebrow">五 <b>稱義與聖靈更新</b></div>
+    <h2>可以分辨，不可割裂</h2>
+    <div class="scripture"><blockquote class="v">如今，那些在基督耶穌裡的就不定罪了。</blockquote>
+      <div class="src">羅馬書 8:1 <button class="ref" data-r="Rom8:1">羅 8:1</button></div></div>
+    <div class="prose">
+      <p>這份確據以「在基督耶穌裡」為中心，不是對任何自我宣稱有信仰的人發出放縱許可。羅 6:1–14 明確拒絕繼續活在罪中，並將洗禮、與基督同死同復活、新生的樣式連在一起。<button class="ref" data-r="Rom6:1-4">羅 6:1–4</button>羅 8:9 也指出，沒有基督的靈就不是屬基督的。<button class="ref" data-r="Rom8:9">羅 8:9</button></p>
+    </div>
+    <div class="scripture"><blockquote class="v">我已經與基督同釘十字架，現在活著的不再是我，乃是基督在我裡面活著</blockquote>
+      <div class="src">加拉太書 2:20，節錄 <button class="ref" data-r="Gal2:20">加 2:20</button></div></div>
+    <div class="grid g2">
+      <div class="card sky"><span class="tag">稱義</span><h3>蒙赦罪、被算為義的地位</h3></div>
+      <div class="card olive"><span class="tag">成聖</span><h3>聖靈使生命更新</h3></div>
+    </div>
+    <div class="prose" style="margin-top:14px">
+      <p>改教傳統常這樣區分，用意是避免把成長程度變成神接納人的代價，同時肯定神所救贖的人也蒙召離罪、愛人。</p>
+    </div>
+    <div class="caution">原稿的救恩箭頭只能作教學概括，不宜理解為聖靈要等稱義完成一段時間才介入。保羅將信、歸入基督、領受聖靈與兒女身分緊密連結<button class="ref" data-r="Gal3:2">加 3:2</button><button class="ref" data-r="Gal4:4-7">加 4:6</button>，並未在這些段落建立所有事件的機械式時間表。</div>
+
+    <h3 class="sub-h"><span class="no">◆</span>自由的方向是愛與服事</h3>
+    <div class="scripture"><blockquote class="v">原來在基督耶穌裡，受割禮不受割禮全無功效，惟獨使人生發仁愛的信心才有功效。</blockquote>
+      <div class="src">加拉太書 5:6 <button class="ref" data-r="Gal5:6">加 5:6</button></div></div>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 300" role="img" aria-label="一棵結了九種果子的樹，每個果子標著一種聖靈的果子">
+        <defs><linearGradient id="e1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3F8EC"/><stop offset="1" stop-color="#FBF6EA"/></linearGradient></defs>
+        <rect width="600" height="300" fill="url(#e1)"/>
+        <path d="M0 268 Q300 250 600 268 V300 H0Z" fill="#CBDABA"/>
+        <path d="M288 268 C290 230 286 200 296 170 L304 170 C314 200 310 230 312 268Z" fill="#9C7650"/>
+        <path d="M298 190 C270 170 240 160 214 150 M302 186 C330 168 362 158 388 148 M300 176 C300 150 300 120 300 96" stroke="#9C7650" stroke-width="7" fill="none" stroke-linecap="round"/>
+        <g fill="#A8C58A" opacity=".9"><ellipse cx="300" cy="118" rx="190" ry="86"/></g>
+        <g fill="#93B676" opacity=".9"><ellipse cx="220" cy="120" rx="80" ry="54"/><ellipse cx="380" cy="120" rx="80" ry="54"/><ellipse cx="300" cy="80" rx="90" ry="50"/></g>
+        <g font-family="Noto Serif TC" font-size="13" text-anchor="middle" fill="#4A3E2A"><g><circle cx="160" cy="128" r="16" fill="#D9534F" opacity=".9"/><text x="160" y="133" fill="#fff" font-size="12.5">仁愛</text></g><g><circle cx="206" cy="92" r="16" fill="#E8A33D" opacity=".9"/><text x="206" y="97" fill="#fff" font-size="12.5">喜樂</text></g><g><circle cx="256" cy="66" r="16" fill="#7FA3C4" opacity=".9"/><text x="256" y="71" fill="#fff" font-size="12.5">和平</text></g><g><circle cx="310" cy="58" r="16" fill="#9C7FB5" opacity=".9"/><text x="310" y="63" fill="#fff" font-size="12.5">忍耐</text></g><g><circle cx="364" cy="66" r="16" fill="#E07B5F" opacity=".9"/><text x="364" y="71" fill="#fff" font-size="12.5">恩慈</text></g><g><circle cx="414" cy="92" r="16" fill="#D6AE5A" opacity=".9"/><text x="414" y="97" fill="#fff" font-size="12.5">良善</text></g><g><circle cx="460" cy="128" r="16" fill="#B9562F" opacity=".9"/><text x="460" y="133" fill="#fff" font-size="12.5">信實</text></g><g><circle cx="260" cy="138" r="16" fill="#C97E9C" opacity=".9"/><text x="260" y="143" fill="#fff" font-size="12.5">溫柔</text></g><g><circle cx="360" cy="138" r="16" fill="#6F8A5A" opacity=".9"/><text x="360" y="143" fill="#fff" font-size="12.5">節制</text></g></g>
+      </svg>
+      <figcaption><span>「聖靈所結的果子，就是仁愛、喜樂、和平、忍耐、恩慈、良善、信實、溫柔、節制。」</span><button class="ref" data-r="Gal5:22-23">加 5:22–23</button></figcaption>
+    </figure>
+    <div class="prose">
+      <p>加 5:13–14 將自由導向愛的服事<button class="ref" data-r="Gal5:13-14">加 5:13–14</button>，5:22–23 列出聖靈所結的果子，6:1–2 要求溫柔挽回跌倒者、互相擔當重擔。<button class="ref" data-r="Gal6:1-2">加 6:1–2</button>這些行動不是額外的救恩價格，而是蒙恩生命的方向。加 5:19–21 對情慾之事的嚴肅警告也不能被抹去。<button class="ref" data-r="Gal5:21">加 5:21</button></p>
+    </div>
+    <div class="reflect"><span class="lbl">牧養提醒</span>
+      <p>「活的信心會結出果子」不等於每位信徒立刻成熟或不再跌倒。加 5:17 承認內在爭戰<button class="ref" data-r="Gal5:17">加 5:17</button>，6:1 也預設有人會被過犯所勝。教會應幫助人悔改、恢復並持續成長，不能只以外在績效替人量度得救程度。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 六 -->
+<section class="s" id="james">
+  <div class="wrap rv">
+    <div class="eyebrow">六 <b>保羅與雅各如何一同閱讀</b></div>
+    <h2>兩段看似衝突的經文</h2>
+    <div class="scripture"><blockquote class="v">這樣，信心若沒有行為就是死的。</blockquote>
+      <div class="src">雅各書 2:17 <button class="ref" data-r="Jas2:17">雅 2:17</button></div></div>
+    <div class="scripture"><blockquote class="v">這樣看來，人稱義是因著行為，不是單因著信。</blockquote>
+      <div class="src">雅各書 2:24 <button class="ref" data-r="Jas2:24">雅 2:24</button></div></div>
+    <p class="prose">這兩句不能因看似與保羅衝突就略去。雅 2:14 首先問的是：有人說自己有信心，卻沒有行為，這樣的信能救他嗎？<button class="ref" data-r="Jas2:14">雅 2:14</button>接著以不供應缺衣少食的弟兄姊妹為例，<button class="ref" data-r="Jas2:15-16">雅 2:15–16</button>指出只有言語的關心並不足夠。</p>
+    <div class="vs" style="margin-top:18px">
+      <div class="col b"><h3>保羅 <small>羅 4:1–5</small></h3>
+        <dl><dt>反對</dt><dd>把稱義當成工價</dd><dt>亞伯拉罕</dt><dd>聚焦創 15:6，信被算為義 <button class="ref" data-r="Gen15:6">創 15:6</button></dd></dl></div>
+      <div class="col a"><h3>雅各 <small>雅 2:14–26</small></h3>
+        <dl><dt>反對</dt><dd>把沒有行動的承認當成活的信</dd><dt>亞伯拉罕</dt><dd>與創 22 章獻以撒的行動相連，信心與行為並行，且因行為得成全 <button class="ref" data-r="Jas2:21-22">雅 2:21–22</button></dd></dl></div>
+    </div>
+    <div class="caution">改教傳統常將雅各所說的稱義解為真信心得到顯明或證實；其他傳統對行為在稱義中的關係另有強調。因此，不能只說「兩個稱義必定完全不同意思」便結束討論，也不能忽略兩段文脈，把雅各讀成鼓勵靠功德購買救恩。</div>
+    <p class="takeaway">基督的恩典排除自誇，活的信心也拒絕對人的需要無動於衷。</p>
+  </div>
+</section>
+
+<!-- 七 -->
+<section class="s" id="church">
+  <div class="wrap rv">
+    <div class="eyebrow">七 <b>稱義也改變教會如何彼此相待</b></div>
+    <h2>在基督耶穌裡都成為一</h2>
+    <div class="scripture"><blockquote class="v">並不分猶太人、希臘人，自主的、為奴的，或男或女，因為你們在基督耶穌裡都成為一了。</blockquote>
+      <div class="src">加拉太書 3:28 <button class="ref" data-r="Gal3:28">加 3:28</button></div></div>
+    <div class="prose">
+      <p>本節置於因信成為神兒女、受洗歸入基督、承受應許的脈絡中。它否定以族群、身分或性別建立救恩等級；但若教會仍羞辱弱勢、排斥不同背景的信徒，便與這合一的方向衝突。</p>
+    </div>
+    <div class="caution">本節並不是宣稱所有生活差異已經消失，也不能單憑一節解決每項教會職分爭議。</div>
+
+    <h3 class="sub-h"><span class="no">◆</span>神對以色列的信實</h3>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 270" role="img" aria-label="一棵橄欖樹，其中一根顏色不同的野橄欖枝被接在樹上，共享同一個根">
+        <defs><linearGradient id="f1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F1F5EA"/><stop offset="1" stop-color="#FBF5E8"/></linearGradient></defs>
+        <rect width="600" height="270" fill="url(#f1)"/>
+        <path d="M0 220 Q300 204 600 220 V270 H0Z" fill="#D9CCB0"/>
+        <g stroke="#9C8A6A" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8"><path d="M300 224 C280 240 250 250 220 262"/><path d="M300 224 C320 242 350 252 384 262"/><path d="M300 224 V262"/></g>
+        <path d="M284 222 C280 190 270 170 280 140 C286 124 296 118 300 110 C306 120 318 128 320 146 C326 172 318 196 316 222Z" fill="#8E7B5E"/>
+        <path d="M292 150 C260 130 230 120 190 116 M310 146 C340 124 380 110 420 108 M300 130 C300 100 304 80 310 60" stroke="#8E7B5E" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <g fill="#9CB58A" opacity=".85"><ellipse cx="190" cy="108" rx="56" ry="24"/><ellipse cx="310" cy="60" rx="56" ry="26"/><ellipse cx="250" cy="86" rx="46" ry="22"/></g>
+        <path d="M352 126 C380 108 404 96 432 84" stroke="#B88A4E" stroke-width="7" fill="none" stroke-linecap="round"/>
+        <rect x="346" y="118" width="14" height="14" rx="3" fill="#D9C7A0" stroke="#B88A4E" transform="rotate(-25 353 125)"/>
+        <g fill="#C7C47A" opacity=".95"><ellipse cx="428" cy="80" rx="46" ry="20"/><ellipse cx="390" cy="98" rx="30" ry="14"/></g>
+        <g fill="#5E6B4A"><circle cx="180" cy="114" r="4"/><circle cx="206" cy="104" r="4"/><circle cx="300" cy="66" r="4"/><circle cx="324" cy="54" r="4"/><circle cx="244" cy="92" r="4"/></g>
+        <g fill="#8A7A3A"><circle cx="420" cy="86" r="4"/><circle cx="440" cy="74" r="4"/><circle cx="394" cy="100" r="4"/></g>
+        <g font-family="Noto Serif TC" font-size="14" fill="#8A8F9B"><text x="456" y="60">接上的野橄欖枝</text><text x="392" y="250">同一個根</text></g>
+      </svg>
+      <figcaption><span>「當知道不是你托著根，乃是根托著你。」</span><button class="ref" data-r="Rom11:17-18">羅 11:17–18</button></figcaption>
+    </figure>
+    <div class="prose">
+      <p>羅 9–11 章將問題進一步推向神對以色列的信實。羅 11:1 否認神棄絕祂的百姓<button class="ref" data-r="Rom11:1">羅 11:1</button>，11:17–22 警告外邦枝子不可向原來的枝子誇口，11:28–29 強調神的恩賜和選召。<button class="ref" data-r="Rom11:29">羅 11:29</button></p>
+      <p>因信稱義不能成為外邦教會自認高於猶太人的理由。</p>
+    </div>
+    <div class="caution">「以色列全家都要得救」<button class="ref" data-r="Rom11:26">羅 11:26</button>的具體解釋仍有不同立場。</div>
+
+    <h3 class="sub-h"><span class="no">◆</span>彼此接納，也要分辨</h3>
+    <div class="prose">
+      <p>羅 14 章與 15:1–7 把福音落在飲食、日子、強弱者相處及彼此接納。<button class="ref" data-r="Rom15:7">羅 15:7</button>接納不表示任何教導都無須分辨：加 1:6–9 對扭曲福音的警告仍然有效。<button class="ref" data-r="Gal1:8">加 1:8</button></p>
+    </div>
+    <p class="takeaway">分辨福音根基與可容許差異：不把文化習慣升格為救恩條件，也不把愛心當成放棄真理。</p>
+  </div>
+</section>
+
+<!-- 八 -->
+<section class="s" id="limits">
+  <div class="wrap rv">
+    <div class="eyebrow">八 <b>解釋上的重要界線</b></div>
+    <h2>四條界線</h2>
+    <div class="grid g2">
+      <div class="card"><span class="tag">界線一</span><h3>不要把猶太教簡化成靠行為得救</h3>
+        <p>保羅的對手必須從個別書信辨認。「律法主義」可描述以守律法取得稱義的傾向，卻不是整個猶太教的完整定義。羅 3:1–2 肯定猶太人領受神聖言的益處<button class="ref" data-r="Rom3:1-2">羅 3:1–2</button>；羅 9:4–5 也列出以色列所得的恩賜<button class="ref" data-r="Rom9:4-5">羅 9:4–5</button>。正確閱讀保羅，必須同時保留這些肯定與他的批判。</p></div>
+      <div class="card"><span class="tag">界線二</span><h3>群體身分不能取代罪得赦免</h3>
+        <p>原稿提到「保羅新觀」與家事法庭的比喻。群體歸屬的面向確實可由加 2 章、3:26–29 及羅 3:29–30 看到；但「家事法庭」是現代解說，不是保羅的原句，也不能取代羅 3:23–26 對罪、救贖與神之義的論述。新觀也不是單一學說，不能用一個比喻代表全部研究。</p></div>
+      <div class="card"><span class="tag">界線三</span><h3>基督的信實與人對基督的信靠</h3>
+        <p>加 2:16 等處的希臘文詞組，在研究中有「信耶穌基督」與「耶穌基督的信實」等解讀。本文引用遵照和合本，不自行改寫譯文。加 2:16 也明說「連我們也信了基督耶穌」<button class="ref" data-r="Gal2:16">加 2:16</button>，不能以語法討論取消人的信靠；同樣不能將信心說成人自足的成就，忽略基督為我們捨己。<sup>[2]</sup></p></div>
+      <div class="card"><span class="tag">界線四</span><h3>不同教會傳統的表述須如實區分</h3>
+        <p>改教傳統常強調稱義與成聖的區分；天主教傳統在稱義的說明中更緊密連結赦罪與內在更新。路德宗世界聯會與天主教的《稱義教義聯合聲明》第 15 段共同表達：人因恩典、藉信基督的救贖蒙神接納，不是因自身功德，並領受使心更新、引向善行的聖靈。第 22–24、37–40 段進一步討論更新、善行及仍然存在的表述差異。<sup>[3]</sup></p></div>
+    </div>
+    <div class="caution">這項共識不表示所有宗派爭議都已消失，也不能代表每個基督教群體的全部立場。研讀時應先準確掌握經文，再說明所採神學框架，避免將自己的術語直接等同於所有基督徒唯一可能的說法。</div>
+  </div>
+</section>
+
+<!-- 九 -->
+<section class="s" id="apply">
+  <div class="wrap rv">
+    <div class="eyebrow">九 <b>查經與生命應用</b></div>
+    <h2>四種處境</h2>
+    <div class="grid g2">
+      <div class="card sky"><span class="tag">面對失敗</span><h3>先回到基督的恩典</h3>
+        <p>不是用更多宗教表現交換赦免；同時認罪，停止傷害，接受合宜的勸戒與幫助。<button class="ref" data-r="Rom8:1">羅 8:1–4</button><button class="ref" data-r="Gal6:1-2">加 6:1</button></p></div>
+      <div class="card gold"><span class="tag">面對服事</span><h3>不把付出當籌碼</h3>
+        <p>檢視自己是否把付出當作神必須報答的籌碼。恩典使人願意服事，而不靠比較工作量建立優越感。<button class="ref" data-r="Rom4:4-5">羅 4:4–5</button><button class="ref" data-r="Gal5:13-14">加 5:13</button></p></div>
+      <div class="card clay"><span class="tag">面對群體差異</span><h3>在餐桌上實踐稱義</h3>
+        <p>思想教會是否以教育、財富、文化或資歷區分誰更配被接納。因信稱義應表現在餐桌、關係及資源分享之中。<button class="ref" data-r="Gal2:12">加 2:11–16</button><button class="ref" data-r="Gal3:28">加 3:28</button><button class="ref" data-r="Rom15:7">羅 15:7</button></p></div>
+      <div class="card olive"><span class="tag">面對成長緩慢</span><h3>不假裝完全，也不放棄順服</h3>
+        <p>可以在聖靈裡持續學習愛、節制與承擔責任。<button class="ref" data-r="Gal5:16">加 5:16–25</button><button class="ref" data-r="Gal6:9-10">加 6:9–10</button></p></div>
+    </div>
+    <h3 class="sub-h"><span class="no">✦</span>討論問題</h3>
+    <ol class="questions">
+      <li>若稱義是白白的恩典，我最容易拿什麼當成自己值得被愛的證據？</li>
+      <li>加拉太書中的同桌吃飯，與今天教會接納不同背景的人有何關係？</li>
+      <li>羅 4:5 的工價比喻，與雅 2:15–17 對實際援助的要求，如何一起指引生活？</li>
+      <li>我是否把自己的習慣升格為別人的救恩條件？哪些事情則涉及不可妥協的福音根基？</li>
+      <li>我可以如何在本週具體實踐互擔重擔，而不是只口頭認同因信稱義？</li>
+    </ol>
+    <div class="closing" style="margin-top:50px">
+      <p>兩卷書共同把人的盼望指向基督：祂為罪人捨己並且復活，神藉祂施恩，使信的人蒙接納。</p>
+      <p>這福音既除去靠自己誇口的理由，也呼召信徒在聖靈裡活出新的關係。稱義的教義若被正確領受，應使人更謙卑、更有確據，也更願意愛與服事。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 十 -->
+<section class="s" id="refs">
+  <div class="wrap">
+    <div class="eyebrow">十 <b>可溯源</b></div>
+    <h2>經文索引與參考資料</h2>
+    <p class="lead" style="font-size:16px">第一手依據為聖經。點擊任一經文標籤可看經文，並連到 Bible Gateway 核對上下文，另附 KJV 對照。多譯本網站請選繁體中文和合本 CUV，不要與新譯本或和合本修訂版混用。網頁查閱日期均為 2026 年 10 月 26 日。</p>
+    <h3 style="font-size:20px;margin:28px 0 12px">經文索引（依出現順序）</h3>
+    <ol class="refs" id="refList"></ol>
+    <h4 style="font-size:16px;margin:22px 0 10px;color:var(--ink2)">原稿所附的章節查閱連結</h4>
+    <ul class="srcs">
+      <li><a href="https://www.cnbible.com/romans/3.htm" target="_blank" rel="noopener">羅馬書 3 章</a>　罪與恩典稱義</li>
+      <li><a href="https://www.cnbible.com/romans/4.htm" target="_blank" rel="noopener">羅馬書 4 章</a>　亞伯拉罕與基督復活</li>
+      <li><a href="https://www.cnbible.com/cu/romans/8.htm" target="_blank" rel="noopener">羅馬書 8 章</a>　聖靈與兒女身分</li>
+      <li><a href="https://www.cnbible.com/cu/galatians/2.htm" target="_blank" rel="noopener">加拉太書 2 章</a>　福音真理與稱義</li>
+      <li><a href="https://www.cnbible.com/galatians/3-24.htm" target="_blank" rel="noopener">加拉太書 3:24</a>　律法與基督</li>
+      <li><a href="https://www.cnbible.com/cu/galatians/5.htm" target="_blank" rel="noopener">加拉太書 5 章</a>　自由與聖靈果子</li>
+      <li><a href="https://www.cnbible.com/cu/james/2.htm" target="_blank" rel="noopener">雅各書 2 章</a>　信心與行為</li>
+      <li><a href="https://bible.fhl.net/" target="_blank" rel="noopener">信望愛聖經查詢</a>　其餘經文可依書卷章節查閱</li>
+      <li>延伸研讀範圍：創 15:1–6、17:1–14、22:1–19；羅 1:1–17、2:1–29、5–7 章、9–11 章、12:1–2、13:8–10、14:1–15:13；加 1 章、3:1–4:7、6:1–16。這些段落協助保持書信及救恩歷史的脈絡，不應只抽取一句作結論。</li>
+    </ul>
+    <h3 style="font-size:20px;margin:30px 0 12px">輔助導讀與教會對話文件</h3>
+    <ol class="srcs">
+      <li>[1] BibleProject. <a href="https://bibleproject.com/guides/book-of-romans/" target="_blank" rel="noopener">Book of Romans — Guide with Key Information and Resources</a>.<span class="why">協助掌握全書由福音、亞伯拉罕、聖靈、以色列至教會合一的結構。其對羅馬教會歷史的重建屬導讀解釋；本文對寫信目的優先依據羅馬書本身。</span></li>
+      <li>[2] BibleProject. <a href="https://bibleproject.com/guides/book-of-galatians/" target="_blank" rel="noopener">Book of Galatians — Guide with Key Information and Resources</a>.<span class="why">參照割禮爭議、亞伯拉罕應許、律法監護、聖靈生命，以及 faith of Jesus 詞組的解釋選項。此為基督教教育導讀，不是各宗派或所有學者的共同定論。</span></li>
+      <li>[3] Lutheran World Federation and the Catholic Church. <a href="https://www.christianunity.va/content/unitacristiani/en/dialoghi/sezione-occidentale/luterani/dialogo/documenti-di-dialogo/1999-dichiarazione-congiunta-sulla-dottrina-della-giustificazion/en.html" target="_blank" rel="noopener">Joint Declaration on the Doctrine of Justification</a>. 1999 年簽署，參閱第 15、22–24、37–40 段。<span class="why">路德宗與天主教如何表達恩典、信心、更新與善行的第一手對話資料。官方頁面的瀏覽標題帶有 1997 字樣；本文以文件正式名稱、雙方機構及段號定位內容。</span></li>
+    </ol>
+    <p class="note" style="font-size:14px;color:var(--ink3)">資料使用原則：聖經是本文的主要論證依據；導讀補充結構，教會聲明說明傳統間的共識與差異。原稿僅列網站名稱的括號標記，未提供足以辨認文章的書目資訊，故不沿用為已核實引用。</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span data-cfg="title">羅馬書與加拉太書的因信稱義</span> · 老山羊 · 經文引自《和合本》</div>
+</footer>
+
+<dialog id="dlg">
+  <div class="dlg">
+    <div class="head"><div><div class="ver" id="dVer">和合本</div><h3 id="dTitle"></h3></div><button class="x" id="dClose" aria-label="關閉">×</button></div>
+    <blockquote class="v" id="dText"></blockquote>
+    <div class="links" id="dLinks"></div>
+  </div>
+</dialog>
+
+<script>
+const CFG = Object.assign({
+  title: document.title, subtitle: "", eyebrow: "", tabTitle: "",
+  description: "", bibleVersion: "CUVMPT"
+}, window.SITE_CONFIG || {});
+(function applyConfig(c){
+  document.title = c.tabTitle || c.title;
+  const setMeta = (sel, v) => { const m = document.querySelector(sel); if (m && v) m.setAttribute("content", v); };
+  setMeta('meta[name="description"]', c.description);
+  setMeta('meta[property="og:title"]', c.tabTitle || c.title);
+  setMeta('meta[property="og:description"]', c.description);
+  document.querySelectorAll("[data-cfg]").forEach(el => { const v = c[el.dataset.cfg]; if (v) el.textContent = v; });
+  document.querySelectorAll("[data-cfg-html]").forEach(el => { const v = c[el.dataset.cfgHtml]; if (v) el.innerHTML = v; });
+})(CFG);
+
+/* 經文資料：和合本 */
+const V = {
+  "Rom3:28":{zh:"羅馬書 3:28",en:"Romans 3:28",t:"所以我們看定了：人稱義是因著信，不在乎遵行律法。"},
+  "Gal2:16":{zh:"加拉太書 2:16",en:"Galatians 2:16",t:"既知道人稱義不是因行律法，乃是因信耶穌基督，連我們也信了基督耶穌，使我們因信基督稱義，不因行律法稱義；因為凡有血氣的，沒有一人因行律法稱義。"},
+  "Rom3:23-26":{zh:"羅馬書 3:23–26",en:"Romans 3:23-26",t:"因為世人都犯了罪，虧缺了神的榮耀；如今卻蒙神的恩典，因基督耶穌的救贖，就白白地稱義。神設立耶穌作挽回祭，是憑著耶穌的血，藉著人的信，要顯明神的義；因為他用忍耐的心寬容人先時所犯的罪，好在今時顯明他的義，使人知道他自己為義，也稱信耶穌的人為義。"},
+  "Rom3:24":{zh:"羅馬書 3:24",en:"Romans 3:24",t:"如今卻蒙神的恩典，因基督耶穌的救贖，就白白地稱義。"},
+  "Rom4:4-5":{zh:"羅馬書 4:4–5",en:"Romans 4:4-5",t:"做工的得工價，不算恩典，乃是該得的；惟有不做工的，只信稱罪人為義的神，他的信就算為義。"},
+  "Rom4:23-25":{zh:"羅馬書 4:23–25",en:"Romans 4:23-25",t:"算為他義的這句話，不是單為他寫的，也是為我們將來得算為義之人寫的，就是我們這信神使我們的主耶穌從死裡復活的人。耶穌被交給人，是為我們的過犯；復活，是為叫我們稱義。"},
+  "Gal2:20":{zh:"加拉太書 2:20",en:"Galatians 2:20",t:"我已經與基督同釘十字架，現在活著的不再是我，乃是基督在我裡面活著；並且我如今在肉身活著，是因信神的兒子而活；他是愛我，為我捨己。"},
+  "Rom15:24":{zh:"羅馬書 15:24",en:"Romans 15:24",t:"我盼望往士班雅去的時候，從你們那裡經過，得見你們，先與你們彼此交往，心裡稍微滿足，然後蒙你們送行。"},
+  "Gal1:6-7":{zh:"加拉太書 1:6–7",en:"Galatians 1:6-7",t:"我希奇你們這麼快離開那藉著基督之恩召你們的，去從別的福音。那並不是福音，不過有些人攪擾你們，要把基督的福音更改了。"},
+  "Gal5:2":{zh:"加拉太書 5:2",en:"Galatians 5:2",t:"我保羅告訴你們，若受割禮，基督就與你們無益了。"},
+  "Rom3:29-30":{zh:"羅馬書 3:29–30",en:"Romans 3:29-30",t:"難道神只作猶太人的神嗎？不也是作外邦人的神嗎？是的，也作外邦人的神。神既是一位，他就要因信稱那受割禮的為義，也要因信稱那未受割禮的為義。"},
+  "Rom11:17-18":{zh:"羅馬書 11:17–18",en:"Romans 11:17-18",t:"若有幾根枝子被折下來，你這野橄欖得接在其中，一同得著橄欖根的肥汁，你就不可向舊枝子誇口；若是誇口，當知道不是你托著根，乃是根托著你。"},
+  "Rom14:1":{zh:"羅馬書 14:1",en:"Romans 14:1",t:"信心軟弱的，你們要接納，但不要辯論所疑惑的事。"},
+  "Rom2:1":{zh:"羅馬書 2:1",en:"Romans 2:1",t:"你這論斷人的，無論你是誰，也無可推諉。你在甚麼事上論斷人，就在甚麼事上定自己的罪；因你這論斷人的，自己所行卻和別人一樣。"},
+  "Rom3:9":{zh:"羅馬書 3:9",en:"Romans 3:9",t:"這卻怎麼樣呢？我們比他們強嗎？決不是的！因我們已經證明：猶太人和希臘人都在罪惡之下。"},
+  "Rom2:6":{zh:"羅馬書 2:6",en:"Romans 2:6",t:"他必照各人的行為報應各人。"},
+  "Rom2:13":{zh:"羅馬書 2:13",en:"Romans 2:13",t:"（原來在神面前，不是聽律法的為義，乃是行律法的稱義。"},
+  "Rom3:20":{zh:"羅馬書 3:20",en:"Romans 3:20",t:"所以凡有血氣的，沒有一個因行律法能在神面前稱義，因為律法本是叫人知罪。"},
+  "Rom7:12":{zh:"羅馬書 7:12",en:"Romans 7:12",t:"這樣看來，律法是聖潔的，誡命也是聖潔、公義、良善的。"},
+  "Rom8:3":{zh:"羅馬書 8:3",en:"Romans 8:3",t:"律法既因肉體軟弱，有所不能行的，神就差遣自己的兒子，成為罪身的形狀，作了贖罪祭，在肉體中定了罪案，"},
+  "Rom3:21":{zh:"羅馬書 3:21",en:"Romans 3:21",t:"但如今，神的義在律法以外已經顯明出來，有律法和先知為證："},
+  "Rom4:25":{zh:"羅馬書 4:25",en:"Romans 4:25",t:"耶穌被交給人，是為我們的過犯；復活，是為叫我們稱義。"},
+  "Rom5:19":{zh:"羅馬書 5:19",en:"Romans 5:19",t:"因一人的悖逆，眾人成為罪人；照樣，因一人的順從，眾人也成為義了。"},
+  "Gen15:6":{zh:"創世記 15:6",en:"Genesis 15:6",t:"亞伯蘭信耶和華，耶和華就以此為他的義。"},
+  "Rom4:10-11":{zh:"羅馬書 4:10–11",en:"Romans 4:10-11",t:"是怎麼算的呢？是在他受割禮的時候呢？是在他未受割禮的時候呢？不是在受割禮的時候，乃是在未受割禮的時候。並且他受了割禮的記號，作他未受割禮的時候因信稱義的印證，叫他作一切未受割禮而信之人的父，使他們也算為義；"},
+  "Gal2:12":{zh:"加拉太書 2:12",en:"Galatians 2:12",t:"從雅各那裡來的人未到以先，他和外邦人一同吃飯；及至他們來到，就因怕奉割禮的人，退去與外邦人隔開了。"},
+  "Gal2:14":{zh:"加拉太書 2:14",en:"Galatians 2:14",t:"但我一看見他們行的不正，與福音的真理不合，就在眾人面前對磯法說：你既是猶太人，若隨外邦人行事，不隨猶太人行事，怎麼還勉強外邦人隨猶太人呢？"},
+  "Gal2:21":{zh:"加拉太書 2:21",en:"Galatians 2:21",t:"我不廢掉神的恩；義若是藉著律法得的，基督就是徒然死了。"},
+  "Gal5:3":{zh:"加拉太書 5:3",en:"Galatians 5:3",t:"我再指著凡受割禮的人確實地說，他是欠著行全律法的債。"},
+  "Gal3:8":{zh:"加拉太書 3:8",en:"Galatians 3:8",t:"並且聖經既然預先看明，神要叫外邦人因信稱義，就早已傳福音給亞伯拉罕，說：萬國都必因你得福。"},
+  "Gal3:17":{zh:"加拉太書 3:17",en:"Galatians 3:17",t:"我是這麼說，神預先所立的約，不能被那四百三十年以後的律法廢掉，叫應許歸於虛空。"},
+  "Gal3:16":{zh:"加拉太書 3:16",en:"Galatians 3:16",t:"所應許的原是向亞伯拉罕和他子孫說的。神並不是說眾子孫，指著許多人，乃是說你那一個子孫，指著一個人，就是基督。"},
+  "Gal3:29":{zh:"加拉太書 3:29",en:"Galatians 3:29",t:"你們既屬乎基督，就是亞伯拉罕的後裔，是照著應許承受產業的了。"},
+  "Gal3:24":{zh:"加拉太書 3:24",en:"Galatians 3:24",t:"這樣，律法是我們訓蒙的師傅，引我們到基督那裡，使我們因信稱義。"},
+  "Gal3:23-25":{zh:"加拉太書 3:23–25",en:"Galatians 3:23-25",t:"但這因信得救的理還未來以先，我們被看守在律法之下，直圈到那將來的真道顯明出來。這樣，律法是我們訓蒙的師傅，引我們到基督那裡，使我們因信稱義。但這因信得救的理既然來到，我們從此就不在師傅的手下了。"},
+  "Gal3:13":{zh:"加拉太書 3:13",en:"Galatians 3:13",t:"基督既為我們受了（受：原文是成）咒詛，就贖出我們脫離律法的咒詛；因為經上記著：凡掛在木頭上都是被咒詛的。"},
+  "Gal3:14":{zh:"加拉太書 3:14",en:"Galatians 3:14",t:"這便叫亞伯拉罕的福，因基督耶穌可以臨到外邦人，使我們因信得著所應許的聖靈。"},
+  "Gal4:4-7":{zh:"加拉太書 4:4–7",en:"Galatians 4:4-7",t:"及至時候滿足，神就差遣他的兒子，為女子所生，且生在律法以下，要把律法以下的人贖出來，叫我們得著兒子的名分。你們既為兒子，神就差他兒子的靈進入你們（原文是我們）的心，呼叫：阿爸！父！可見，從此以後，你不是奴僕，乃是兒子了；既是兒子，就靠著神為後嗣。"},
+  "Rom8:1":{zh:"羅馬書 8:1",en:"Romans 8:1",t:"如今，那些在基督耶穌裡的就不定罪了。"},
+  "Rom6:1-4":{zh:"羅馬書 6:1–4",en:"Romans 6:1-4",t:"這樣，怎麼說呢？我們可以仍在罪中，叫恩典顯多嗎？斷乎不可！我們在罪上死了的人豈可仍在罪中活著呢？豈不知我們這受洗歸入基督耶穌的人是受洗歸入他的死嗎？所以，我們藉著洗禮歸入死，和他一同埋葬，原是叫我們一舉一動有新生的樣式，像基督藉著父的榮耀從死裡復活一樣。"},
+  "Rom8:9":{zh:"羅馬書 8:9",en:"Romans 8:9",t:"如果神的靈住在你們心裡，你們就不屬肉體，乃屬聖靈了。人若沒有基督的靈，就不是屬基督的。"},
+  "Gal3:2":{zh:"加拉太書 3:2",en:"Galatians 3:2",t:"我只要問你們這一件：你們受了聖靈，是因行律法呢？是因聽信福音呢？"},
+  "Gal5:6":{zh:"加拉太書 5:6",en:"Galatians 5:6",t:"原來在基督耶穌裡，受割禮不受割禮全無功效，惟獨使人生發仁愛的信心才有功效。"},
+  "Gal5:22-23":{zh:"加拉太書 5:22–23",en:"Galatians 5:22-23",t:"聖靈所結的果子，就是仁愛、喜樂、和平、忍耐、恩慈、良善、信實、溫柔、節制。這樣的事沒有律法禁止。"},
+  "Gal5:13-14":{zh:"加拉太書 5:13–14",en:"Galatians 5:13-14",t:"弟兄們，你們蒙召是要得自由，只是不可將你們的自由當作放縱情慾的機會，總要用愛心互相服事。因為全律法都包在愛人如己這一句話之內了。"},
+  "Gal6:1-2":{zh:"加拉太書 6:1–2",en:"Galatians 6:1-2",t:"弟兄們，若有人偶然被過犯所勝，你們屬靈的人就當用溫柔的心把他挽回過來；又當自己小心，恐怕也被引誘。你們各人的重擔要互相擔當，如此，就完全了基督的律法。"},
+  "Gal5:21":{zh:"加拉太書 5:21",en:"Galatians 5:21",t:"嫉妒（有古卷在此有：兇殺二字）、醉酒、荒宴等類。我從前告訴你們，現在又告訴你們，行這樣事的人必不能承受神的國。"},
+  "Gal5:17":{zh:"加拉太書 5:17",en:"Galatians 5:17",t:"因為情慾和聖靈相爭，聖靈和情慾相爭，這兩個是彼此相敵，使你們不能做所願意做的。"},
+  "Jas2:17":{zh:"雅各書 2:17",en:"James 2:17",t:"這樣，信心若沒有行為就是死的。"},
+  "Jas2:24":{zh:"雅各書 2:24",en:"James 2:24",t:"這樣看來，人稱義是因著行為，不是單因著信。"},
+  "Jas2:14":{zh:"雅各書 2:14",en:"James 2:14",t:"我的弟兄們，若有人說自己有信心，卻沒有行為，有甚麼益處呢？這信心能救他嗎？"},
+  "Jas2:15-16":{zh:"雅各書 2:15–16",en:"James 2:15-16",t:"若是弟兄或是姐妹，赤身露體，又缺了日用的飲食，就是你們中間有人對他們說：平平安安地去吧！願你們穿得暖，吃得飽，卻不給他們身體所需用的，這有甚麼益處呢？"},
+  "Jas2:21-22":{zh:"雅各書 2:21–22",en:"James 2:21-22",t:"我們的祖宗亞伯拉罕把他兒子以撒獻在壇上，豈不是因行為稱義嗎？可見，信心是與他的行為並行，而且信心因著行為才得成全。"},
+  "Gal3:28":{zh:"加拉太書 3:28",en:"Galatians 3:28",t:"並不分猶太人、希臘人，自主的、為奴的，或男或女，因為你們在基督耶穌裡都成為一了。"},
+  "Rom11:1":{zh:"羅馬書 11:1",en:"Romans 11:1",t:"我且說，神棄絕了他的百姓嗎？斷乎沒有！因為我也是以色列人，是亞伯拉罕的後裔，屬便雅憫支派的。"},
+  "Rom11:29":{zh:"羅馬書 11:29",en:"Romans 11:29",t:"因為神的恩賜和選召是沒有後悔的。"},
+  "Rom11:26":{zh:"羅馬書 11:26",en:"Romans 11:26",t:"於是以色列全家都要得救。如經上所記：必有一位救主從錫安出來，要消除雅各家的一切罪惡；"},
+  "Rom15:7":{zh:"羅馬書 15:7",en:"Romans 15:7",t:"所以，你們要彼此接納，如同基督接納你們一樣，使榮耀歸與神。"},
+  "Gal1:8":{zh:"加拉太書 1:8",en:"Galatians 1:8",t:"但無論是我們，是天上來的使者，若傳福音給你們，與我們所傳給你們的不同，他就應當被咒詛。"},
+  "Rom3:1-2":{zh:"羅馬書 3:1–2",en:"Romans 3:1-2",t:"這樣說來，猶太人有甚麼長處？割禮有甚麼益處呢？凡事大有好處：第一是神的聖言交託他們。"},
+  "Rom9:4-5":{zh:"羅馬書 9:4–5",en:"Romans 9:4-5",t:"他們是以色列人；那兒子的名分、榮耀、諸約、律法、禮儀、應許都是他們的。列祖就是他們的祖宗，按肉體說，基督也是從他們出來的，他是在萬有之上，永遠可稱頌的神。阿們！"},
+  "Gal5:16":{zh:"加拉太書 5:16",en:"Galatians 5:16",t:"我說，你們當順著聖靈而行，就不放縱肉體的情慾了。"},
+  "Gal6:9-10":{zh:"加拉太書 6:9–10",en:"Galatians 6:9-10",t:"我們行善，不可喪志；若不灰心，到了時候就要收成。所以，有了機會就當向眾人行善，向信徒一家的人更當這樣。"}
+};
+const bg = (en, ver) => `https://www.biblegateway.com/passage/?search=${encodeURIComponent(en)}&version=${ver}`;
+function linksFor(v){
+  if (v.links) return v.links;
+  const main = CFG.bibleVersion || "CUVMPT";
+  const out = [["和合本（新式標點）原文", bg(v.en, main)]];
+  if (main !== "CUV") out.push(["和合本（神版）", bg(v.en, "CUV")]);
+  out.push(["KJV 英文對照", bg(v.en, "KJV")]);
+  return out;
+}
+const dlg = document.getElementById('dlg');
+function openRef(key){
+  const v = V[key]; if (!v) return;
+  document.getElementById('dTitle').textContent = v.zh;
+  document.getElementById('dVer').textContent = v.ver || '和合本';
+  document.getElementById('dText').textContent = v.t;
+  document.getElementById('dLinks').innerHTML = linksFor(v).map(([n,u]) => `<a href="${u}" target="_blank" rel="noopener">${n} ↗</a>`).join('');
+  if (dlg.showModal) dlg.showModal(); else window.open(linksFor(v)[0][1]);
+}
+document.addEventListener('click', e => { const b = e.target.closest('.ref'); if (b) { e.preventDefault(); openRef(b.dataset.r); } });
+document.getElementById('dClose').onclick = () => dlg.close();
+dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+
+const seen = new Set(), list = document.getElementById('refList');
+document.querySelectorAll('main .ref').forEach(b => {
+  const k = b.dataset.r; if (seen.has(k) || !V[k] || V[k].links) return; seen.add(k);
+  const v = V[k], li = document.createElement('li');
+  li.innerHTML = `<a href="${bg(v.en, CFG.bibleVersion)}" target="_blank" rel="noopener">${v.zh}</a>　<span style="color:var(--ink3);font-size:13px">${v.en}</span>`;
+  list.appendChild(li);
+});
+
+const io = new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); } }), {threshold:.08});
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+const prog = document.getElementById('progress'), navA = [...document.querySelectorAll('#nav a')];
+const targets = navA.map(a => document.querySelector(a.getAttribute('href')));
+addEventListener('scroll', () => {
+  const h = document.documentElement; prog.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+  let cur = -1; targets.forEach((t,i) => { if (t && t.getBoundingClientRect().top < 120) cur = i; });
+  navA.forEach((a,i) => a.classList.toggle('on', i === cur));
+}, {passive:true});
+</script>
+</body>
+</html>
