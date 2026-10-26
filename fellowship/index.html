@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>共好小團契｜讀經筆記</title>
+<meta name="description" content="共好小團契的讀經筆記與分享。">
+<meta property="og:title" content="共好小團契｜讀經筆記">
+<meta property="og:description" content="共好小團契的讀經筆記與分享。">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FBF8F1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23FBF7EE'/%3E%3Cpath d='M32 12v40M20 24h24' stroke='%23B8893B' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700;900&display=swap" rel="stylesheet">
+<script src="config.js"></script>
+<style>
+:root{
+  --bg:#FBF8F1; --paper:#FFFEFA;
+  --ink:#2A2F3A; --ink2:#5B6170; --ink3:#8A8F9B;
+  --gold:#B8893B; --gold-soft:#F3E6C8;
+  --sky:#5E8FBF; --sky-soft:#E4EEF7;
+  --olive:#6F8A5A; --olive-soft:#E8EFDF;
+  --line:#E7DFCD;
+  --serif:"Noto Serif TC","Songti TC",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.8;
+  background-image:radial-gradient(1100px 560px at 85% -8%,#FFF1CF 0,transparent 60%),radial-gradient(900px 520px at -10% 20%,#E8F1FA 0,transparent 60%),radial-gradient(800px 500px at 50% 110%,#EEF4E6 0,transparent 60%);
+  background-attachment:fixed}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px 12px;border-radius:8px;z-index:50}
+.skip:focus{left:12px;top:12px}
+
+/* header */
+.bar{position:sticky;top:0;z-index:20;background:rgba(251,248,241,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.brand{font-family:var(--serif);font-weight:700;font-size:19px;letter-spacing:.12em;text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand i{width:24px;height:24px;border-radius:50%;background:radial-gradient(circle,#FFE7A8 0,#F3D27A 45%,transparent 70%);display:inline-block}
+.pod{display:inline-flex;align-items:center;gap:10px;text-decoration:none;padding:6px 14px 6px 6px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:14.5px;transition:.2s}
+.pod:hover{border-color:var(--gold);box-shadow:0 4px 14px rgba(184,137,59,.2);transform:translateY(-1px)}
+.pod .ic{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(160deg,#F6DFA6,#E9B85E);color:#fff;position:relative}
+.pod .ic::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(233,184,94,.45);animation:ping 2.6s ease-out infinite}
+@keyframes ping{0%{transform:scale(.85);opacity:.9}100%{transform:scale(1.35);opacity:0}}
+.pod svg{width:18px;height:18px}
+@media (max-width:560px){.pod .t{display:none}.pod{padding:6px}}
+
+/* hero */
+.hero{padding:64px 0 10px;text-align:center}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(46px,9vw,92px);letter-spacing:.14em;margin:0;line-height:1.2}
+.hero h1 .dot{color:var(--gold)}
+.verse{max-width:720px;margin:26px auto 0}
+.verse blockquote{margin:0;font-family:var(--serif);font-size:clamp(19px,2.6vw,24px);line-height:1.9;color:var(--ink)}
+.verse blockquote::before{content:"「";color:var(--gold)}
+.verse blockquote::after{content:"」";color:var(--gold)}
+.verse cite{display:inline-block;margin-top:10px;font-style:normal;font-size:14px;letter-spacing:.12em}
+.verse cite a{color:var(--gold);text-decoration:none;border-bottom:1px solid #E6D3A6}
+.verse cite a:hover{border-color:var(--gold)}
+
+.scene{max-width:960px;margin:34px auto 0;padding:0 12px}
+.scene svg{width:100%;height:auto;display:block;border-radius:26px;border:1px solid var(--line);box-shadow:0 1px 2px rgba(60,50,20,.05),0 14px 40px rgba(60,50,20,.08)}
+.scene figcaption{margin-top:10px;text-align:center;font-family:var(--serif);font-size:15px;color:var(--ink2)}
+.scene figcaption a{color:var(--gold);text-decoration:none;font-family:var(--sans);font-size:13px;margin-left:6px}
+
+/* notes list */
+main{padding:56px 0 30px}
+.sec-h{display:flex;align-items:baseline;gap:14px;margin:0 0 10px}
+.sec-h h2{font-family:var(--serif);font-weight:700;font-size:clamp(26px,4vw,34px);margin:0}
+.sec-h span{color:var(--ink3);font-size:14px}
+.notes{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.notes li{border-bottom:1px solid var(--line)}
+.notes a{display:grid;grid-template-columns:22px 1fr auto;gap:4px 14px;align-items:baseline;padding:18px 6px;text-decoration:none;transition:background .2s,padding .2s}
+.notes a:hover,.notes a:focus-visible{background:rgba(243,230,200,.35);padding-left:12px}
+.notes .bul{width:9px;height:9px;border-radius:50%;background:var(--gold);align-self:center;justify-self:center;box-shadow:0 0 0 4px rgba(184,137,59,.14)}
+.notes .tt{font-family:var(--serif);font-size:20px;font-weight:600;color:var(--ink)}
+.notes .st{grid-column:2;font-size:15px;color:var(--ink2)}
+.notes .dt{grid-column:3;grid-row:1;font-size:13px;color:var(--ink3);white-space:nowrap}
+.notes .go{grid-column:3;grid-row:2;justify-self:end;color:var(--gold);font-size:15px;transition:transform .2s}
+.notes a:hover .go{transform:translateX(4px)}
+
+.listen{margin-top:40px;font-size:16px;color:var(--ink2)}
+.listen a{color:var(--gold);text-decoration:none;border-bottom:1px solid #E6D3A6;font-weight:500}
+
+footer{padding:36px 0 54px;text-align:center;color:var(--ink3);font-size:14px;border-top:1px solid var(--line);margin-top:40px}
+footer a{color:var(--ink2)}
+
+/* motion */
+.drift{animation:drift 30s linear infinite}
+@keyframes drift{from{transform:translateX(-60px)}to{transform:translateX(60px)}}
+.halo{animation:halo 5s ease-in-out infinite}
+@keyframes halo{50%{opacity:.45}}
+.flow{stroke-dasharray:14 22;animation:flow 3s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-72}}
+.sip{transform-box:fill-box;transform-origin:0% 0%;animation:sip 4s ease-in-out infinite}
+@keyframes sip{50%{transform:rotate(-4deg)}}
+.leaf{transform-box:fill-box;transform-origin:50% 100%;animation:leaf 6s ease-in-out infinite}
+@keyframes leaf{50%{transform:rotate(1.4deg)}}
+@media (prefers-reduced-motion:reduce){.drift,.halo,.flow,.sip,.leaf,.pod .ic::after{animation:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#notes">跳到讀經筆記</a>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top"><i></i><span data-cfg="siteTitle">共好小團契</span></a>
+    <a class="pod" id="podLink" href="https://open.firstory.fm/user/oldgoat/platforms" target="_blank" rel="noopener" aria-label="收聽 Podcast：老山羊的讀經筆記" title="老山羊的讀經筆記">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2.5" width="6" height="11" rx="3"/><path d="M5.5 10.5a6.5 6.5 0 0 0 13 0"/><line x1="12" y1="17" x2="12" y2="21.5"/><line x1="8.5" y1="21.5" x2="15.5" y2="21.5"/></svg></span>
+      <span class="t" id="podTitle">老山羊的讀經筆記</span>
+    </a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <h1 data-cfg="siteTitle">共好小團契</h1>
+    <div class="verse">
+      <blockquote id="verseText">但願使人有盼望的神，因信將諸般的喜樂、平安充滿你們的心，使你們藉着聖靈的能力大有盼望！</blockquote>
+      <cite><a id="verseRef" href="https://www.biblegateway.com/passage/?search=Romans%2015%3A13&amp;version=CUVMPT" target="_blank" rel="noopener">羅馬書 15:13</a></cite>
+    </div>
+  </div>
+  <figure class="scene">
+    <svg viewBox="0 0 960 440" role="img" aria-label="晨光中，山丘上立著十字架，一棵青橄欖樹長在溪邊，一隻小鹿低頭喝著溪水">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DDEBF7"/><stop offset=".55" stop-color="#FDF4E2"/><stop offset="1" stop-color="#FFF8EC"/></linearGradient>
+        <radialGradient id="sun"><stop offset="0" stop-color="#FFF4CF"/><stop offset=".5" stop-color="#FFE7A8" stop-opacity=".7"/><stop offset="1" stop-color="#FFE7A8" stop-opacity="0"/></radialGradient>
+        <radialGradient id="crossGlow"><stop offset="0" stop-color="#FFF6D8"/><stop offset="1" stop-color="#FFF6D8" stop-opacity="0"/></radialGradient>
+        <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFDDF2"/><stop offset="1" stop-color="#8FC0E4"/></linearGradient>
+        <linearGradient id="meadow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CFE3B4"/><stop offset="1" stop-color="#B7D49A"/></linearGradient>
+      </defs>
+      <rect width="960" height="440" fill="url(#sky)"/>
+      <!-- sun -->
+      <circle cx="760" cy="96" r="150" fill="url(#sun)"/>
+      <circle cx="760" cy="96" r="38" fill="#FCD98B"/>
+      <g stroke="#FBE3A6" stroke-width="3" stroke-linecap="round" opacity=".8"><line x1="760" y1="30" x2="760" y2="10"/><line x1="820" y1="50" x2="836" y2="36"/><line x1="836" y1="96" x2="858" y2="96"/><line x1="700" y1="50" x2="684" y2="36"/><line x1="684" y1="96" x2="662" y2="96"/></g>
+      <!-- clouds -->
+      <g class="drift" fill="#fff" opacity=".9"><ellipse cx="260" cy="70" rx="58" ry="18"/><ellipse cx="300" cy="58" rx="40" ry="20"/><ellipse cx="560" cy="110" rx="46" ry="14"/><ellipse cx="590" cy="100" rx="30" ry="15"/></g>
+      <!-- far hills -->
+      <path d="M0 250 Q140 200 280 228 Q420 186 560 222 Q700 192 960 230 V440 H0Z" fill="#DCE9CB"/>
+      <!-- cross hill -->
+      <path d="M0 276 Q90 168 230 214 Q310 240 392 314 V440 H0Z" fill="#C9DEAE"/>
+      <circle class="halo" cx="140" cy="150" r="78" fill="url(#crossGlow)"/>
+      <rect x="133" y="106" width="14" height="92" rx="2" fill="#A97B51"/>
+      <rect x="110" y="128" width="60" height="12" rx="2" fill="#A97B51"/>
+      <!-- meadow -->
+      <path d="M0 316 Q260 282 520 300 Q760 316 960 296 V440 H0Z" fill="url(#meadow)"/>
+      <!-- stream -->
+      <path d="M612 258 C604 274 560 284 520 300 C470 320 420 340 404 372 C392 398 400 420 410 440 L640 440 C620 410 618 388 640 360 C664 330 700 316 704 296 C708 280 676 268 652 258 Z" fill="url(#water)"/>
+      <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".85">
+        <path class="flow" d="M628 270 C600 290 540 304 500 322"/>
+        <path class="flow" style="animation-delay:-1s" d="M560 330 C520 350 470 370 450 400"/>
+        <path class="flow" style="animation-delay:-2s" d="M640 330 C620 360 590 390 560 430"/>
+      </g>
+      <!-- stones -->
+      <g fill="#D8CDB8"><ellipse cx="392" cy="384" rx="16" ry="8"/><ellipse cx="652" cy="404" rx="14" ry="7"/><ellipse cx="420" cy="342" rx="10" ry="5"/></g>
+      <!-- olive tree -->
+      <g class="leaf">
+        <path d="M790 352 C786 320 772 298 782 266 C788 248 800 240 806 226 C812 242 826 250 830 270 C838 300 824 326 826 352Z" fill="#A9825A"/>
+        <path d="M796 270 C770 256 742 250 716 250 M818 262 C846 244 872 238 900 240" stroke="#A9825A" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <g fill="#9CC07E"><ellipse cx="720" cy="232" rx="54" ry="30"/><ellipse cx="900" cy="226" rx="52" ry="30"/><ellipse cx="808" cy="180" rx="76" ry="44"/><ellipse cx="760" cy="206" rx="50" ry="32"/><ellipse cx="860" cy="204" rx="50" ry="32"/></g>
+        <g fill="#B4D395"><ellipse cx="790" cy="166" rx="40" ry="20"/><ellipse cx="884" cy="214" rx="26" ry="12"/><ellipse cx="732" cy="222" rx="24" ry="12"/></g>
+        <g fill="#6E9A45"><circle cx="742" cy="236" r="5"/><circle cx="754" cy="244" r="5"/><circle cx="800" cy="200" r="5"/><circle cx="812" cy="208" r="5"/><circle cx="866" cy="218" r="5"/><circle cx="890" cy="238" r="5"/><circle cx="836" cy="178" r="5"/><circle cx="780" cy="178" r="5"/></g>
+      </g>
+      <!-- flowers -->
+      <g><g fill="#F6C1C9"><circle cx="70" cy="380" r="5"/><circle cx="120" cy="404" r="5"/><circle cx="880" cy="392" r="5"/></g><g fill="#FFF3B0"><circle cx="96" cy="364" r="4.5"/><circle cx="300" cy="408" r="4.5"/><circle cx="910" cy="370" r="4.5"/><circle cx="740" cy="410" r="4.5"/></g><g fill="#fff"><circle cx="190" cy="420" r="4"/><circle cx="830" cy="420" r="4"/></g></g>
+      <g stroke="#93B776" stroke-width="2" stroke-linecap="round"><path d="M40 410 l-4 -14 M46 410 l2 -16 M52 410 l6 -12"/><path d="M700 426 l-4 -14 M706 426 l2 -16"/><path d="M930 420 l-4 -14 M936 420 l4 -12"/></g>
+      <!-- deer -->
+      <g>
+        <ellipse cx="292" cy="408" rx="64" ry="8" fill="#9FC283" opacity=".6"/>
+        <g fill="#B97F52"><rect x="252" y="356" width="8" height="48" rx="4"/><rect x="270" y="360" width="8" height="46" rx="4"/><rect x="316" y="360" width="8" height="46" rx="4"/><rect x="334" y="356" width="8" height="48" rx="4"/></g>
+        <g fill="#7A5236"><rect x="252" y="398" width="8" height="8" rx="2"/><rect x="270" y="400" width="8" height="8" rx="2"/><rect x="316" y="400" width="8" height="8" rx="2"/><rect x="334" y="398" width="8" height="8" rx="2"/></g>
+        <ellipse cx="296" cy="344" rx="56" ry="28" fill="#D29B6A"/>
+        <ellipse cx="292" cy="356" rx="40" ry="12" fill="#F2DCC2"/>
+        <ellipse cx="240" cy="330" rx="10" ry="8" fill="#FFF7EC"/>
+        <g fill="#FFF3E2" opacity=".95"><circle cx="276" cy="330" r="4"/><circle cx="296" cy="324" r="4"/><circle cx="316" cy="332" r="4"/><circle cx="286" cy="342" r="3.5"/><circle cx="306" cy="344" r="3.5"/></g>
+        <g class="sip">
+          <path d="M334 330 C350 334 368 348 380 368 L366 378 C354 362 340 352 326 350Z" fill="#D29B6A"/>
+          <ellipse cx="382" cy="380" rx="22" ry="13" transform="rotate(35 382 380)" fill="#D29B6A"/>
+          <ellipse cx="394" cy="392" rx="8" ry="6" transform="rotate(35 394 392)" fill="#F2DCC2"/>
+          <circle cx="398" cy="396" r="3" fill="#5A3B28"/>
+          <circle cx="380" cy="374" r="3.4" fill="#3A2A20"/><circle cx="381" cy="373" r="1.1" fill="#fff"/>
+          <ellipse cx="366" cy="362" rx="12" ry="6" transform="rotate(-30 366 362)" fill="#C08657"/>
+          <ellipse cx="367" cy="362" rx="7" ry="3" transform="rotate(-30 367 362)" fill="#F2C9A8"/>
+          <g stroke="#8C6A4A" stroke-width="3" stroke-linecap="round" fill="none"><path d="M372 356 C368 344 370 334 378 328 M370 344 C364 340 360 336 360 330"/></g>
+        </g>
+        <g fill="none" stroke="#fff" stroke-width="2" opacity=".85"><ellipse cx="404" cy="404" rx="10" ry="3"/><ellipse cx="404" cy="404" rx="18" ry="5" opacity=".6"/></g>
+      </g>
+    </svg>
+    <figcaption>「神啊，我的心切慕你，如鹿切慕溪水。」<a href="https://www.biblegateway.com/passage/?search=Psalm%2042%3A1&amp;version=CUVMPT" target="_blank" rel="noopener">詩篇 42:1 ↗</a></figcaption>
+  </figure>
+</section>
+
+<main id="notes">
+  <div class="wrap">
+    <div class="sec-h"><h2 id="notesHeading">讀經筆記</h2><span id="notesCount">5 篇</span></div>
+    <ul class="notes" id="notesList">
+      <li><a href="https://www.gungho.idv.tw/fellowship/2samuel-4/"><span class="bul"></span><span class="tt">在陰暗歷史中辨識信仰</span><span class="st">撒母耳記下第四章</span><span class="go">→</span></a></li>
+      <li><a href="https://www.gungho.idv.tw/fellowship/job-jonah/"><span class="bul"></span><span class="tt">在苦難與憐憫中認識神</span><span class="st">約拿書與約伯記</span><span class="go">→</span></a></li>
+      <li><a href="https://www.gungho.idv.tw/fellowship/2samuel-11/"><span class="bul"></span><span class="tt">以色列歷史上最不名譽的事件</span><span class="st">撒母耳記下 11 章：大衛、拔示巴與烏利亞</span><span class="dt">2026.11.11</span><span class="go">→</span></a></li>
+      <li><a href="https://www.gungho.idv.tw/fellowship/GST/"><span class="bul"></span><span class="tt">來學與往教</span><span class="st">從亞伯拉罕、雅各，到基督與初代教會</span><span class="go">→</span></a></li>
+      <li><a href="https://www.gungho.idv.tw/fellowship/justification/"><span class="bul"></span><span class="tt">羅馬書與加拉太書的因信稱義</span><span class="st">以和合本經文理解基督的救恩與信徒的新生命</span><span class="go">→</span></a></li>
+    </ul>
+    <p class="listen">想用聽的？收聽 Podcast <a id="podLink2" href="https://open.firstory.fm/user/oldgoat/platforms" target="_blank" rel="noopener">老山羊的讀經筆記</a>。</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap"><span data-cfg="siteTitle">共好小團契</span> · 經文引自《和合本》</div>
+</footer>
+
+<script>
+(function () {
+  var c = window.SITE_CONFIG;
+  if (!c) return; // 沒有 config.js 時保留頁面上的預設內容
+
+  function setMeta(sel, v) { var m = document.querySelector(sel); if (m && v) m.setAttribute("content", v); }
+  if (c.tabTitle || c.siteTitle) document.title = c.tabTitle || c.siteTitle;
+  setMeta('meta[name="description"]', c.description);
+  setMeta('meta[property="og:title"]', c.tabTitle || c.siteTitle);
+  setMeta('meta[property="og:description"]', c.description);
+  if (c.siteTitle) document.querySelectorAll('[data-cfg="siteTitle"]').forEach(function (el) { el.textContent = c.siteTitle; });
+
+  if (c.verse) {
+    if (c.verse.text) document.getElementById("verseText").textContent = c.verse.text;
+    var r = document.getElementById("verseRef");
+    if (c.verse.ref) r.textContent = c.verse.ref;
+    if (c.verse.url) r.href = c.verse.url;
+  }
+
+  if (c.podcast) {
+    ["podLink", "podLink2"].forEach(function (id) { var a = document.getElementById(id); if (a && c.podcast.url) a.href = c.podcast.url; });
+    if (c.podcast.title) {
+      document.getElementById("podTitle").textContent = c.podcast.title;
+      document.getElementById("podLink2").textContent = c.podcast.title;
+      var p = document.getElementById("podLink");
+      p.title = c.podcast.title; p.setAttribute("aria-label", "收聽 Podcast：" + c.podcast.title);
+    }
+  }
+
+  if (c.notesHeading) document.getElementById("notesHeading").textContent = c.notesHeading;
+  if (Array.isArray(c.notes)) {
+    var ul = document.getElementById("notesList");
+    ul.textContent = "";
+    c.notes.forEach(function (n) {
+      if (!n || !n.url || !n.title) return;
+      var li = document.createElement("li"), a = document.createElement("a");
+      a.href = n.url;
+      if (n.newTab) { a.target = "_blank"; a.rel = "noopener"; }
+      function span(cls, txt) { var s = document.createElement("span"); s.className = cls; if (txt) s.textContent = txt; a.appendChild(s); }
+      span("bul"); span("tt", n.title);
+      if (n.subtitle) span("st", n.subtitle);
+      if (n.date) span("dt", n.date);
+      span("go", "→");
+      li.appendChild(a); ul.appendChild(li);
+    });
+    document.getElementById("notesCount").textContent = ul.children.length + " 篇";
+  }
+})();
+</script>
+</body>
+</html>
