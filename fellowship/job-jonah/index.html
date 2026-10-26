@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>在苦難與憐憫中認識神｜約拿書與約伯記</title>
+<meta name="description" content="約伯記追問敬畏神的人為何受苦，約拿書揭露人為何不願神憐憫仇敵；在基督的十字架與復活中，公義與憐憫同時彰顯。">
+<meta property="og:title" content="在苦難與憐憫中認識神｜約拿書與約伯記">
+<meta property="og:description" content="約伯記追問敬畏神的人為何受苦，約拿書揭露人為何不願神憐憫仇敵；在基督的十字架與復活中，公義與憐憫同時彰顯。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23FBF7EE'/%3E%3Cpath d='M32 12v40M20 24h24' stroke='%23B8893B' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700;900&display=swap" rel="stylesheet">
+<script src="config.js"></script>
+<style>
+:root{
+  --bg:#FBF8F1; --bg2:#F4EEE1; --paper:#FFFEFA;
+  --ink:#2A2F3A; --ink2:#5B6170; --ink3:#8A8F9B;
+  --gold:#B8893B; --gold-soft:#F3E6C8;
+  --sky:#5E8FBF; --sky-soft:#E4EEF7;
+  --clay:#B9562F; --clay-soft:#F6E1D6;
+  --olive:#6F8A5A; --olive-soft:#E8EFDF;
+  --line:#E7DFCD;
+  --serif:"Noto Serif TC","Songti TC",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --r:18px;
+  --shadow:0 1px 2px rgba(60,50,20,.05),0 8px 28px rgba(60,50,20,.07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.85;
+  background-image:radial-gradient(1200px 600px at 85% -10%,#FFF3D6 0,transparent 60%),radial-gradient(900px 500px at -10% 30%,#EAF2FA 0,transparent 60%);
+  background-attachment:fixed}
+a{color:var(--sky)}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.4;margin:0}
+p{margin:.6em 0}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+
+.bar{position:sticky;top:0;z-index:20;background:rgba(251,248,241,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;gap:12px}
+.brand{font-family:var(--serif);font-weight:700;letter-spacing:.08em;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.brand i{width:22px;height:22px;border-radius:50%;background:radial-gradient(circle,#FFE7A8 0,#F3D27A 45%,transparent 70%);display:inline-block}
+.bar nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.bar nav a{font-size:14px;color:var(--ink2);text-decoration:none;padding:6px 12px;border-radius:999px;white-space:nowrap}
+.bar nav a:hover,.bar nav a.on{background:var(--gold-soft);color:var(--ink)}
+.progress{position:absolute;left:0;bottom:-1px;height:2px;background:linear-gradient(90deg,var(--gold),var(--clay));width:0}
+
+.hero{min-height:86vh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;padding:80px 0}
+.halo{position:absolute;width:620px;height:620px;border-radius:50%;left:50%;top:44%;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(255,236,180,.85) 0,rgba(255,236,180,.25) 40%,transparent 70%);animation:breathe 7s ease-in-out infinite;pointer-events:none}
+@keyframes breathe{50%{transform:translate(-50%,-50%) scale(1.07);opacity:.85}}
+.hero small{display:block;letter-spacing:.4em;color:var(--gold);font-size:14px;margin-bottom:18px;position:relative}
+.hero h1{font-size:clamp(44px,8.5vw,96px);font-weight:900;letter-spacing:.06em;position:relative;line-height:1.25}
+.hero .sub{font-family:var(--serif);font-size:clamp(17px,2.2vw,22px);color:var(--ink2);margin-top:16px;position:relative}
+.hero .by{margin-top:24px;color:var(--ink3);letter-spacing:.2em;font-size:14px;position:relative}
+.hero .scroll{margin-top:46px;display:inline-flex;flex-direction:column;align-items:center;gap:6px;color:var(--ink3);font-size:13px;text-decoration:none;position:relative}
+.hero .scroll span{width:1px;height:42px;background:linear-gradient(var(--gold),transparent);animation:drip 2.2s infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+section.s{padding:84px 0}
+.eyebrow{font-size:13px;letter-spacing:.28em;color:var(--clay);margin-bottom:10px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.eyebrow b{font-weight:500;color:var(--ink3);letter-spacing:.1em}
+.s h2{font-size:clamp(28px,4.4vw,42px);margin-bottom:22px}
+.sub-h{font-size:clamp(20px,2.6vw,25px);margin:44px 0 12px;display:flex;gap:12px;align-items:baseline}
+.sub-h .no{font-family:var(--serif);color:var(--gold);font-size:.85em;flex:none}
+.lead{font-size:18.5px;color:var(--ink2);max-width:780px}
+.prose{max-width:780px;color:var(--ink2)}
+.prose strong{color:var(--ink)}
+.takeaway{font-family:var(--serif);font-size:clamp(19px,2.4vw,23px);margin-top:30px;padding-left:18px;border-left:3px solid var(--gold);color:var(--ink);max-width:800px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px 18px;box-shadow:var(--shadow)}
+.card h3{font-size:20px;margin:4px 0 8px}
+.card .tag{font-size:12.5px;letter-spacing:.12em;color:var(--gold)}
+.card p{color:var(--ink2);font-size:16px}
+.card.sky{background:linear-gradient(160deg,#fff,var(--sky-soft))}
+.card.gold{background:linear-gradient(160deg,#fff,var(--gold-soft))}
+.card.clay{background:linear-gradient(160deg,#fff,var(--clay-soft))}
+.card.olive{background:linear-gradient(160deg,#fff,var(--olive-soft))}
+
+.thesis{max-width:820px;margin:0 auto;background:linear-gradient(160deg,#FFFDF5,#FBF0D3);border:1px solid #EFDDB0;border-radius:24px;padding:30px 32px;box-shadow:var(--shadow)}
+.thesis .lbl,.reflect .lbl{display:inline-block;font-size:12.5px;letter-spacing:.2em;color:#fff;background:var(--gold);border-radius:6px;padding:2px 9px;margin-bottom:8px}
+.thesis p{font-family:var(--serif);font-size:18px;line-height:2;margin:.3em 0}
+.readnote{max-width:820px;margin:22px auto 0;font-size:14.5px;color:var(--ink3);border:1px solid var(--line);background:#fff;border-radius:14px;padding:14px 18px}
+.readnote b{color:var(--ink2)}
+
+.scripture{margin:20px 0;max-width:800px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:14px;padding:16px 22px;box-shadow:var(--shadow)}
+.scripture .src{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:13px;color:var(--ink3);margin-top:8px}
+.scripture + .scripture{margin-top:-6px}
+blockquote.v{margin:0;font-family:var(--serif);font-size:18px;line-height:1.95;color:var(--ink)}
+blockquote.v::before{content:"「";color:var(--gold)}
+blockquote.v::after{content:"」";color:var(--gold)}
+.ref{display:inline-flex;align-items:center;gap:5px;font-family:var(--sans);font-size:13px;line-height:1;padding:5px 10px 5px 8px;margin:2px;border-radius:999px;
+  border:1px solid var(--line);background:#fff;color:var(--ink2);cursor:pointer;transition:.18s;vertical-align:middle}
+.ref::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.ref:hover{border-color:var(--gold);color:var(--ink);transform:translateY(-1px);box-shadow:0 3px 10px rgba(184,137,59,.18)}
+
+.reflect{margin-top:22px;max-width:800px;background:linear-gradient(160deg,#FFFDF5,#FBF0D3);border:1px solid #EFDDB0;border-radius:var(--r);padding:18px 24px}
+.reflect p{margin:.3em 0;color:var(--ink)}
+.caution{margin-top:16px;max-width:800px;font-size:15px;color:var(--ink2);background:var(--sky-soft);border-radius:14px;padding:12px 18px;border:1px solid #D3E1EF}
+.caution::before{content:"界線　";color:var(--sky);font-weight:700;letter-spacing:.1em}
+.aside{margin-top:18px;display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--ink2);background:#fff;border:1px dashed #D9C9A3;border-radius:14px;padding:12px 16px;max-width:760px}
+.aside::before{content:"旁白";flex:none;font-size:12px;letter-spacing:.15em;color:#fff;background:var(--gold);border-radius:6px;padding:2px 7px;margin-top:3px}
+
+.table-wrap{overflow-x:auto;border-radius:var(--r);box-shadow:var(--shadow)}
+.cmp{width:100%;min-width:640px;border-collapse:separate;border-spacing:0;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;font-size:15.5px}
+.cmp th,.cmp td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.cmp tr:last-child td,.cmp tr:last-child th{border-bottom:0}
+.cmp thead th{font-family:var(--serif);font-size:17px;background:var(--bg2)}
+.cmp tbody th{color:var(--ink3);font-weight:500;width:18%;white-space:nowrap}
+.cmp.jj thead th:nth-child(2){color:var(--sky)}
+.cmp.jj thead th:nth-child(3){color:var(--clay)}
+
+.questions{counter-reset:q;display:grid;gap:12px;max-width:820px;padding:0;margin:16px 0 0;list-style:none}
+.questions li{counter-increment:q;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 18px 14px 60px;position:relative;font-family:var(--serif);font-size:17px}
+.questions li::before{content:counter(q);position:absolute;left:16px;top:12px;width:30px;height:30px;border-radius:50%;background:var(--gold-soft);color:#8A6420;display:grid;place-items:center;font-size:15px}
+
+.closing{max-width:760px;margin:0 auto;text-align:center}
+.closing p{font-family:var(--serif);font-size:19px;line-height:2.05;color:var(--ink)}
+
+.illus{margin:28px auto 8px;max-width:680px}
+.illus svg{width:100%;height:auto;display:block;border-radius:var(--r);border:1px solid var(--line);box-shadow:var(--shadow)}
+.illus figcaption{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px;margin-top:10px;font-family:var(--serif);font-size:15px;color:var(--ink2);text-align:center}
+.tw{animation:tw 4s ease-in-out infinite}
+@keyframes tw{50%{opacity:.25}}
+.glow{animation:breathe2 3.4s ease-in-out infinite}
+@keyframes breathe2{50%{opacity:.35}}
+.spin{transform-box:fill-box;transform-origin:50% 50%;animation:sway 6s ease-in-out infinite}
+@keyframes sway{50%{transform:rotate(4deg) translateX(6px)}}
+
+.refs{columns:2 300px;column-gap:36px;font-size:15px;padding-left:1.2em}
+.refs li{break-inside:avoid;margin-bottom:8px;color:var(--ink2)}
+.refs a,.srcs a{text-decoration:none;border-bottom:1px solid #C9D9EA;word-break:break-all}
+.refs a:hover,.srcs a:hover{border-color:var(--sky)}
+.srcs{font-size:15px;color:var(--ink2);padding-left:1.2em}
+.srcs li{margin-bottom:12px}
+.srcs .why{display:block;color:var(--ink3);font-size:14px}
+footer{padding:40px 0 60px;text-align:center;color:var(--ink3);font-size:14px;border-top:1px solid var(--line)}
+
+dialog{border:0;padding:0;border-radius:22px;max-width:min(620px,calc(100vw - 32px));width:100%;background:var(--paper);color:var(--ink);box-shadow:0 30px 80px rgba(40,30,10,.25)}
+dialog::backdrop{background:rgba(42,47,58,.35);backdrop-filter:blur(3px)}
+.dlg{padding:28px 28px 22px}
+.dlg .head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+.dlg h3{font-size:22px}
+.dlg .x{border:0;background:var(--bg2);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:18px;color:var(--ink2)}
+.dlg .ver{font-size:12.5px;color:var(--ink3);letter-spacing:.1em}
+.dlg blockquote.v{font-size:18px;padding:16px 18px;background:#FFFBF0;border-radius:14px;border:1px solid #EFE2C2}
+.dlg .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.dlg .links a{font-size:14px;text-decoration:none;padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--ink)}
+.dlg .links a:hover{border-color:var(--sky);color:var(--sky)}
+
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.halo,.hero .scroll span,.tw,.glow,.spin{animation:none}}
+@media (max-width:640px){body{font-size:16px}section.s{padding:62px 0}.card{padding:20px}.bar nav{display:none}.thesis{padding:24px 20px}.thesis p{font-size:16.5px}}
+@media print{.bar,.hero .scroll,.halo{display:none}.rv{opacity:1;transform:none}section.s{padding:30px 0}}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top"><i></i><span data-cfg="title">在苦難與憐憫中認識神</span></a>
+    <nav id="nav">
+      <a href="#compare">對照</a>
+      <a href="#job">約伯記</a>
+      <a href="#jonah">約拿書</a>
+      <a href="#christ">在基督裡</a>
+      <a href="#truths">真理與界線</a>
+      <a href="#life">今日提醒</a>
+      <a href="#refs">參考資料</a>
+    </nav>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="halo"></div>
+  <div class="wrap">
+    <small data-cfg="eyebrow">約拿書與約伯記</small>
+    <h1 data-cfg-html="titleHtml">在苦難與憐憫中<br>認識神</h1>
+    <p class="sub" data-cfg="subtitle">以和合本經文及基督的救恩為中心的擴充稿</p>
+    <p class="by">老山羊 · 修訂於 2026 年 10 月 26 日</p>
+    <a class="scroll" href="#thesis">往下讀<span></span></a>
+  </div>
+</section>
+
+<!-- 核心命題 -->
+<section class="s" id="thesis">
+  <div class="wrap rv">
+    <div class="thesis">
+      <span class="lbl">核心命題</span>
+      <p>約伯記追問「敬畏神的人為何受苦」，約拿書揭露「人為何不願神憐憫仇敵」。兩書共同挑戰人以有限經驗、利益與道德計算掌握神的企圖。</p>
+      <p>從整本聖經、尤其基督的十字架與復活來讀，神的公義與憐憫並非彼此抵銷；祂既正視罪惡，也主動拯救罪人，並使受苦者得著超越眼前處境的盼望。</p>
+    </div>
+    <div class="readnote"><b>閱讀說明</b>：經文引文採《聖經》和合本繁體神版，節錄均標示「節錄」。段落中的解釋不是經文原句。本文區分<b>經文明說</b>、<b>跨經卷的基督教神學綜合</b>與<b>可供討論的學術解讀</b>，不將某一宗派的全部立場視為所有基督徒一致的答案。點經文標籤可核對上下文。</div>
+  </div>
+</section>
+
+<!-- 一 -->
+<section class="s" id="compare">
+  <div class="wrap rv">
+    <div class="eyebrow">一 <b>兩卷書的核心對照</b></div>
+    <h2>同一位神，兩種困惑</h2>
+    <div class="table-wrap">
+    <table class="cmp jj">
+      <thead><tr><th>面向</th><th>約伯記</th><th>約拿書</th></tr></thead>
+      <tbody>
+        <tr><th>敘事的起點</th><td>神肯定約伯完全正直、敬畏神 <button class="ref" data-r="Job1:1">伯 1:1</button><button class="ref" data-r="Job1:8">1:8</button><button class="ref" data-r="Job2:3">2:3</button></td><td>神差遣約拿向惡行達到祂面前的尼尼微宣告 <button class="ref" data-r="Jonah1:1-3">拿 1:1–3</button></td></tr>
+        <tr><th>人的困惑</th><td>為何持守正直仍遭災難？</td><td>為何作惡的外邦城竟能免受所宣告的災禍？</td></tr>
+        <tr><th>受挑戰的公式</th><td>受苦必定表示犯了相稱的罪</td><td>蒙揀選者可以決定誰有資格得憐憫</td></tr>
+        <tr><th>神的回應</th><td>以創造與治理世界的提問，使人承認知識有限 <button class="ref" data-r="Job38:4">伯 38–41</button></td><td>以蓖麻的得失與對大城的反問，教導先知憐惜生命 <button class="ref" data-r="Jonah4:6-8">拿 4:6–11</button></td></tr>
+        <tr><th>結尾</th><td>約伯謙卑回應；神責備三友，接納代求並恢復約伯 <button class="ref" data-r="Job42:7">伯 42</button></td><td>神以問題結束；經文沒有交代約拿最後的回答 <button class="ref" data-r="Jonah4:11">拿 4:11</button></td></tr>
+        <tr><th>新約的明確連結</th><td>雅各書提及約伯的忍耐與主的憐憫 <button class="ref" data-r="Jas5:11">雅 5:11</button></td><td>耶穌以約拿的經歷說明人子的神蹟與悔改的呼召 <button class="ref" data-r="Matt12:40">太 12:40–41</button></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="takeaway">這不是「舊約有兩位不同性格的神」，也不是公義與慈愛互相競爭。約伯記也有慈悲，約拿書也有對惡的審判。</p>
+  </div>
+</section>
+
+<!-- 二 約伯記 -->
+<section class="s" id="job">
+  <div class="wrap rv">
+    <div class="eyebrow">二 <b>約伯記</b></div>
+    <h2>義人的苦難與信心的真實</h2>
+
+    <h3 class="sub-h"><span class="no">1</span>敬畏神不等於獲得免受苦難的保證</h3>
+    <div class="scripture"><blockquote class="v">地上再沒有人像他完全正直，敬畏神，遠離惡事。</blockquote>
+      <div class="src">約伯記 2:3，節錄 <button class="ref" data-r="Job2:3">伯 2:3</button></div></div>
+    <div class="prose">
+      <p>約伯的正直是敘事一開始就給讀者的資訊，不是他受苦之後替自己的辯解。神在同節還說他遭到「無故地」毀滅；因此，不能把這場災難解釋成他暗中犯罪所應得的報應。不過，「完全正直」也不等於約伯具有基督那樣絕對無罪的地位，或他的每一句話都毫無偏差。</p>
+      <p>「約伯敬畏神，豈是無故呢？」<button class="ref" data-r="Job1:9">伯 1:9</button>更把問題指向信仰的動機：人敬拜神，是因神值得信靠，還是因祂提供健康、財富與保障？這不是要求受苦者證明自己夠忠心，而是揭露把信仰當交換利益的危險。</p>
+    </div>
+    <div class="caution">序幕讓讀者看見天上的對話，卻沒有記載神後來將這些細節告訴約伯。我們不能據此宣稱，今日每一場疾病或災禍背後都有相同的天上試驗。</div>
+
+    <h3 class="sub-h"><span class="no">2</span>不可從別人的苦難，倒推出他的罪</h3>
+    <div class="scripture"><blockquote class="v">也不是這人犯了罪，也不是他父母犯了罪，是要在他身上顯出神的作為來。</blockquote>
+      <div class="src">約翰福音 9:3 <button class="ref" data-r="John9:3">約 9:3</button></div></div>
+    <div class="prose">
+      <p>約伯的三位朋友把一般性的道德秩序，硬套成每個個案的解釋。到了伯 42:7，神明確責備他們議論祂不如約伯說得對。<button class="ref" data-r="Job42:7">伯 42:7</button>這使我們不能將朋友的發言，因為收錄於聖經，就一律當成神對約伯的判語。</p>
+      <p>耶穌面對生來瞎眼的人，也拒絕門徒那種「必定是誰犯罪才會如此」的二選一推論。這段經文不是說當事人及父母從未犯罪，而是否定以特定犯罪解釋這項失明。</p>
+    </div>
+    <p class="takeaway">聖經承認罪有後果，卻不授權我們把疾病、失業、喪親或貧困當成他人屬靈失敗的證據。</p>
+
+    <h3 class="sub-h"><span class="no">3</span>信心可以包含哀哭、質問與等候</h3>
+    <div class="prose">
+      <p>約伯曾咒詛自己的生日<button class="ref" data-r="Job3:1">伯 3:1</button>，也向神陳明痛苦與不解<button class="ref" data-r="Job7:11">伯 7:11</button><button class="ref" data-r="Job13:15">伯 13:15</button>。聖經沒有將這些話抹去。因此，忍耐不能被簡化為不哭、不問、沒有情緒。</p>
+    </div>
+    <div class="scripture"><blockquote class="v">你們聽見過約伯的忍耐，也知道主給他的結局，明顯主是滿心憐憫，大有慈悲。</blockquote>
+      <div class="src">雅各書 5:11，節錄 <button class="ref" data-r="Jas5:11">雅 5:11</button></div></div>
+    <div class="prose">
+      <p>雅各把約伯的故事導向主的慈悲，而不只是人的意志力。約伯有需要受糾正的言語，但他仍不斷向神說話、尋求神。</p>
+    </div>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 270" role="img" aria-label="暮色中，約伯坐在灰堆上，三位朋友圍著他靜靜坐在地上">
+        <defs><linearGradient id="j1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E3E4F0"/><stop offset=".7" stop-color="#F8F1E6"/></linearGradient></defs>
+        <rect width="600" height="270" fill="url(#j1)"/>
+        <g fill="#C9A24E"><circle class="tw" cx="70" cy="40" r="2"/><circle class="tw" style="animation-delay:1s" cx="150" cy="70" r="1.6"/><circle class="tw" style="animation-delay:2s" cx="230" cy="30" r="2.2"/><circle class="tw" style="animation-delay:.5s" cx="380" cy="50" r="1.8"/><circle class="tw" style="animation-delay:1.5s" cx="460" cy="28" r="2.4"/><circle class="tw" style="animation-delay:2.5s" cx="540" cy="66" r="1.6"/><circle class="tw" style="animation-delay:3s" cx="320" cy="84" r="1.4"/></g>
+        <path d="M500 46 a20 20 0 1 0 14 34 a16 16 0 1 1 -14 -34Z" fill="#EFD9A2"/>
+        <path d="M0 220 Q300 196 600 220 V270 H0Z" fill="#E2D6BE"/>
+        <path d="M240 226 Q300 182 360 226Z" fill="#B9B1A3"/>
+        <g transform="translate(300,206)"><path d="M-13 0 Q-15 -14 -9 -24 L9 -24 Q15 -14 13 0Z" fill="#6E7890"/><circle cy="-31" r="7" fill="#5B6170"/></g>
+        <g transform="translate(178,236)"><path d="M-13 0 Q-15 -14 -9 -24 L9 -24 Q15 -14 13 0Z" fill="#8C7A64"/><circle cy="-31" r="7" fill="#5B6170"/></g>
+        <g transform="translate(424,236)"><path d="M-13 0 Q-15 -14 -9 -24 L9 -24 Q15 -14 13 0Z" fill="#7C8698"/><circle cy="-31" r="7" fill="#5B6170"/></g>
+        <g transform="translate(236,252)"><path d="M-13 0 Q-15 -14 -9 -24 L9 -24 Q15 -14 13 0Z" fill="#A08A6A"/><circle cy="-31" r="7" fill="#5B6170"/></g>
+      </svg>
+      <figcaption><span>「他們就陪他七天七夜坐在地上，一個人也不向他說句話，因為他極其痛苦。」</span><button class="ref" data-r="Job2:11-13">伯 2:11–13</button></figcaption>
+    </figure>
+    <div class="reflect"><span class="lbl">牧養應用</span>
+      <p>陪伴受苦者把真實痛楚帶到神面前，不要求他先整理出漂亮的信仰答案。朋友起初與他同坐、哀哭；這比後來急於定罪的辯論，更值得陪伴者學習。</p>
+    </div>
+    <div class="aside">約伯三位朋友表現最好的時候，是開口之前的那七天。</div>
+
+    <h3 class="sub-h"><span class="no">4</span>神的回答帶來相遇，也修正人的判斷</h3>
+    <div class="scripture"><blockquote class="v">我所說的是我不明白的；這些事太奇妙，是我不知道的。</blockquote>
+      <div class="src">約伯記 42:3，節錄 <button class="ref" data-r="Job42:3">伯 42:3</button></div></div>
+    <div class="scripture"><blockquote class="v">我從前風聞有你，現在親眼看見你。</blockquote>
+      <div class="src">約伯記 42:5 <button class="ref" data-r="Job42:5">伯 42:5</button></div></div>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 280" role="img" aria-label="遼闊的天地與海洋上方有旋風，地上一人仰望">
+        <defs><linearGradient id="j2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DDE7F2"/><stop offset=".72" stop-color="#FBF4E4"/></linearGradient></defs>
+        <rect width="600" height="280" fill="url(#j2)"/>
+        <g class="spin" fill="none" stroke="#B7A27A" stroke-linecap="round">
+          <ellipse cx="300" cy="40" rx="150" ry="18" stroke-width="3" opacity=".55"/>
+          <ellipse cx="306" cy="66" rx="118" ry="15" stroke-width="3" opacity=".6"/>
+          <ellipse cx="312" cy="90" rx="86" ry="12" stroke-width="3" opacity=".65"/>
+          <ellipse cx="316" cy="112" rx="58" ry="9" stroke-width="2.6" opacity=".7"/>
+          <ellipse cx="320" cy="130" rx="34" ry="6" stroke-width="2.2" opacity=".75"/>
+          <path d="M322 136 Q326 160 318 178" stroke-width="2"/>
+        </g>
+        <path d="M0 200 Q100 150 200 176 Q260 130 340 170 Q420 140 600 182 V280 H0Z" fill="#D9CCB0"/>
+        <path d="M0 214 H230 Q200 236 230 280 H0Z" fill="#B7CFE4"/>
+        <g fill="none" stroke="#9DBBD8" stroke-width="2"><path d="M10 232 q15 -8 30 0 t30 0 t30 0"/><path d="M40 254 q15 -8 30 0 t30 0 t30 0"/></g>
+        <path d="M230 214 Q400 200 600 222 V280 H230 Q200 240 230 214Z" fill="#E6DAC0"/>
+        <g transform="translate(470,240)"><path d="M-8 -40 L8 -40 L14 0 L-14 0Z" fill="#6E7890"/><circle cx="0" cy="-48" r="7" fill="#5B6170"/><line x1="-4" y1="-36" x2="-20" y2="-60" stroke="#6E7890" stroke-width="4" stroke-linecap="round"/></g>
+      </svg>
+      <figcaption><span>耶和華從旋風中回答：「我立大地根基的時候，你在哪裡呢？」</span><button class="ref" data-r="Job38:1">伯 38:1</button><button class="ref" data-r="Job38:4">伯 38:4</button></figcaption>
+    </figure>
+    <div class="prose">
+      <p>伯 38–41 章的創造圖景，顯示神的治理遠超出約伯所能掌握的範圍。這不是「有權力就不必講公義」：伯 40:8 直接觸及約伯是否為顯自己有理而定神有罪。<button class="ref" data-r="Job40:8">伯 40:8</button>神既糾正約伯的推論，也在 42:7–9 為他向三友作見證。<button class="ref" data-r="Job42:8">伯 42:8</button></p>
+      <p>伯 42:6 的和合本附註容許將「自己」理解為「我的言語」。<button class="ref" data-r="Job42:6">伯 42:6</button>因此，約伯的懊悔不能直接讀成承認朋友所有指控，更不能倒過來證明他起初的苦難果然是刑罰。<sup>[1]</sup></p>
+    </div>
+
+    <h3 class="sub-h"><span class="no">5</span>恢復是恩典，不是成功公式</h3>
+    <div class="grid g2">
+      <div class="card gold"><span class="tag">伯 42:10–17</span><h3>恢復是恩典</h3>
+        <p>經文記述約伯的恢復，卻沒有給所有信徒一張「忍耐到最後，財產必加倍」的保證書。<button class="ref" data-r="Job42:10">伯 42:10</button></p></div>
+      <div class="card sky"><span class="tag">來 11:35–40</span><h3>因信得救，也因信受苦</h3>
+        <p>同時記述因信經歷拯救與因信承受逼迫、死亡的人。新約的盼望並不以每個人今生都恢復富足為必要條件。<button class="ref" data-r="Heb11:35-40">來 11:35–40</button></p></div>
+    </div>
+    <div class="reflect"><span class="lbl">牧養應用</span>
+      <p>約伯後來有新的家庭喜樂，也不表示先前失去的兒女可以被替代、哀傷可以被數量抵銷。應保留對喪失的尊重，而非催促悲傷的人趕快看見「好處」。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 三 約拿書 -->
+<section class="s" id="jonah">
+  <div class="wrap rv">
+    <div class="eyebrow">三 <b>約拿書</b></div>
+    <h2>神的恩典超越人的敵我界線</h2>
+
+    <h3 class="sub-h"><span class="no">1</span>約拿知道神慈愛，卻抗拒慈愛臨到他人</h3>
+    <div class="scripture"><blockquote class="v">我知道你是有恩典有憐憫的神，不輕易發怒，有豐盛的慈愛，並且後悔不降所說的災，所以我急速逃往他施去。</blockquote>
+      <div class="src">約拿書 4:2，節錄 <button class="ref" data-r="Jonah4:2">拿 4:2</button></div></div>
+    <div class="prose">
+      <p>本節給出約拿對自己逃跑的解釋。<strong>經文明說的理由，是他知道神可能施憐憫；經文並未逐一排除他所有其他情緒。</strong></p>
+      <p>約拿的宣認與出 34:6–7 相呼應。<button class="ref" data-r="Exod34:6-7">出 34:6–7</button>他並非不知道正確的神學用語，而是不願讓自己所認識的恩典臨到尼尼微。<sup>[2]</sup></p>
+    </div>
+    <div class="reflect"><span class="lbl">反省</span><p>我們是否只在自己蒙赦免時讚美神，卻在不喜歡的人有悔改機會時感到不平？</p></div>
+
+    <h3 class="sub-h"><span class="no">2</span>憐憫並未抹去惡，悔改也不是購買恩典</h3>
+    <div class="scripture"><blockquote class="v">於是神察看他們的行為，見他們離開惡道，他就後悔，不把所說的災禍降與他們了。</blockquote>
+      <div class="src">約拿書 3:10 <button class="ref" data-r="Jonah3:10">拿 3:10</button></div></div>
+    <div class="prose">
+      <p>神先指出尼尼微的惡<button class="ref" data-r="Jonah1:2">拿 1:2</button>，王的命令也要求百姓離開惡道及手中的強暴<button class="ref" data-r="Jonah3:8">拿 3:8</button>。所以，這不是對暴力視而不見，而是罪人真實轉向、停止作惡的敘事。</p>
+      <p><strong>尼尼微人以信服、離惡回應警告，神施憐憫，撤回所宣告的災禍。</strong><button class="ref" data-r="Jonah3:5">拿 3:5</button>依弗 2:8–10 作基督教神學綜合，得救源於恩典，而善行是蒙恩生命的果子。<button class="ref" data-r="Eph2:8-10">弗 2:8–10</button></p>
+    </div>
+    <div class="caution">拿 3:10 直接記述的是城免受這次災禍，不能僅憑本節判定城中每個人的永恆歸宿。</div>
+
+    <h3 class="sub-h"><span class="no">3</span>神「後悔」如何與祂的信實並讀？</h3>
+    <div class="scripture"><blockquote class="v">我所說的那一邦，若是轉意離開他們的惡，我就必後悔，不將我想要施行的災禍降與他們。</blockquote>
+      <div class="src">耶利米書 18:8 <button class="ref" data-r="Jer18:8">耶 18:8</button></div></div>
+    <div class="prose">
+      <p>耶 18:7–10 提供重要的先知書背景：審判宣告包含呼召人回轉的作用。神因人離惡而不降災，不必被理解為祂先前道德判斷錯誤；在這個敘事中，祂對罪的態度與樂意憐憫的性情都得到表達。</p>
+      <p>基督教不同神學傳統，對神不變性、預知與歷史中回應的關係有不同說明。本文採取的整合讀法是：<strong>神的聖潔與信實不變，而祂真實回應人的悔改。</strong>這是跨經文的神學解釋，不是單靠「後悔」一詞就能解決所有形上學問題。</p>
+    </div>
+
+    <h3 class="sub-h"><span class="no">4</span>神也在憐憫那位不願憐憫人的先知</h3>
+    <div class="prose">
+      <p>神的話「二次臨到約拿」<button class="ref" data-r="Jonah3:1">拿 3:1</button>；第四章中，神沒有立即丟棄發怒的先知，而是藉問題和蓖麻教導他。<button class="ref" data-r="Jonah4:4">拿 4:4</button>約拿既是恩典的傳遞者，也是不斷需要恩典的人。</p>
+    </div>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 280" role="img" aria-label="城東山坡上，約拿坐在棚下，蓖麻枝葉遮蔭，遠處是尼尼微城">
+        <defs><linearGradient id="k1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FCEFD2"/><stop offset="1" stop-color="#F6F1E5"/></linearGradient></defs>
+        <rect width="600" height="280" fill="url(#k1)"/>
+        <circle cx="110" cy="62" r="30" fill="#F4C96E"/><circle class="glow" cx="110" cy="62" r="50" fill="#F7DA92" opacity=".45"/>
+        <g fill="#DACBA8"><rect x="430" y="150" width="30" height="40"/><rect x="464" y="132" width="40" height="58"/><rect x="508" y="154" width="24" height="36"/><rect x="536" y="140" width="34" height="50"/><circle cx="484" cy="132" r="16"/></g>
+        <path d="M0 230 Q180 170 380 200 Q480 186 600 196 V280 H0Z" fill="#E6D8B8"/>
+        <path d="M110 280 Q170 236 262 228 Q340 226 420 280Z" fill="#DCCBA4"/>
+        <g stroke="#8C5A3A" stroke-width="5" stroke-linecap="round"><line x1="210" y1="232" x2="210" y2="150"/><line x1="320" y1="232" x2="320" y2="150"/><line x1="200" y1="152" x2="330" y2="152"/></g>
+        <path d="M196 150 L334 150 L318 136 L212 136Z" fill="#C9B48A"/>
+        <g fill="#7E9F5F"><ellipse cx="226" cy="128" rx="24" ry="14" transform="rotate(-20 226 128)"/><ellipse cx="262" cy="120" rx="26" ry="15"/><ellipse cx="302" cy="128" rx="24" ry="14" transform="rotate(20 302 128)"/><ellipse cx="244" cy="106" rx="18" ry="11" transform="rotate(-30 244 106)"/><ellipse cx="284" cy="104" rx="18" ry="11" transform="rotate(30 284 104)"/></g>
+        <path d="M330 232 C340 200 336 170 320 150" stroke="#6F8A5A" stroke-width="4" fill="none"/>
+        <path d="M332 214 q6 -6 12 -2 q4 4 10 0" stroke="#A47A3B" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <g transform="translate(262,232)"><path d="M-13 0 Q-15 -14 -9 -24 L9 -24 Q15 -14 13 0Z" fill="#7C8698"/><circle cy="-31" r="7" fill="#5B6170"/></g>
+      </svg>
+      <figcaption><span>神安排蓖麻遮蔭，又安排蟲子和東風，好教導發怒的先知。</span><button class="ref" data-r="Jonah4:6-8">拿 4:6–8</button></figcaption>
+    </figure>
+    <div class="prose">
+      <p>神透過安排、對話及質問與約拿互動，結尾沒有交代約拿如何回應；不宜單憑這段故事，斷定自由意志與神主權的全部關係。</p>
+      <p>拿 4:11 將人的生命與牲畜都放進神的憐惜之中。<button class="ref" data-r="Jonah4:11">拿 4:11</button>「不能分辨左手右手」究竟專指幼兒，或表達更廣泛的無知，存在解釋差異；本文不據此推算尼尼微總人口。經文明確的重點，是神所看重的生命遠超過約拿所珍惜的一棵蓖麻。</p>
+    </div>
+    <div class="aside">約拿的情緒曲線：為一棵蓖麻「大大喜樂」，為一座大城的得救「大大不悅」。神在第四章沒有罵他，只是一直問他。</div>
+  </div>
+</section>
+
+<!-- 四 在基督裡 -->
+<section class="s" id="christ">
+  <div class="wrap rv">
+    <div class="eyebrow">四 <b>在耶穌基督裡</b></div>
+    <h2>兩書的問題得到更深的照明</h2>
+
+    <h3 class="sub-h"><span class="no">1</span>約拿與基督：新約明說的連結</h3>
+    <div class="scripture"><blockquote class="v">約拿三日三夜在大魚肚腹中，人子也要這樣三日三夜在地裡頭。</blockquote>
+      <div class="src">馬太福音 12:40 <button class="ref" data-r="Matt12:40">太 12:40</button></div></div>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 250" role="img" aria-label="海面上方三彎新月，海面下有一條大魚">
+        <defs><linearGradient id="m1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6EBF4"/><stop offset=".42" stop-color="#F7F1E6"/><stop offset=".43" stop-color="#CFE0EF"/><stop offset="1" stop-color="#A9C6E0"/></linearGradient></defs>
+        <rect width="600" height="250" fill="url(#m1)"/>
+        <g fill="#E6C77E"><path d="M170 40 a18 18 0 1 0 12 30 a14 14 0 1 1 -12 -30Z"/><path d="M300 30 a18 18 0 1 0 12 30 a14 14 0 1 1 -12 -30Z"/><path d="M430 40 a18 18 0 1 0 12 30 a14 14 0 1 1 -12 -30Z"/></g>
+        <g fill="none" stroke="#9DBBD8" stroke-width="3"><path d="M0 108 q25 -10 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0"/></g>
+        <path d="M150 180 Q240 120 360 170 Q392 150 424 132 L418 182 L436 224 Q392 202 360 196 Q240 240 150 180Z" fill="#6F97BD"/>
+        <circle cx="186" cy="168" r="5" fill="#2A2F3A"/>
+        <g fill="none" stroke="#BCD3E7" stroke-width="2"><circle cx="128" cy="160" r="5"/><circle cx="116" cy="142" r="3.5"/><circle cx="122" cy="126" r="2.5"/></g>
+      </svg>
+      <figcaption><span>「耶和華安排一條大魚吞了約拿，他在魚腹中三日三夜。」</span><button class="ref" data-r="Jonah1:17">拿 1:17</button></figcaption>
+    </figure>
+    <div class="prose">
+      <p>這不是後來讀者任意找出的相似性，而是耶穌親自使用的比較。太 12:41 又以尼尼微人的悔改，向聽見耶穌卻不回應的人提出警告。<button class="ref" data-r="Matt12:41">太 12:41</button>重點不只有特殊經歷，也在於人應如何回應神的呼召。</p>
+    </div>
+    <div class="grid g2" style="margin-top:14px">
+      <div class="card"><span class="tag">約拿</span><h3>逃避差遣；對仇敵蒙憐憫發怒</h3></div>
+      <div class="card gold"><span class="tag">基督</span><h3>順服至死；為罪人捨命</h3>
+        <p><button class="ref" data-r="Phil2:8">腓 2:8</button><button class="ref" data-r="Rom5:8">羅 5:8</button></p></div>
+    </div>
+    <div class="caution">這是跨經卷的神學比較，不代表約拿故事的每個細節都必須對應基督生平。</div>
+
+    <h3 class="sub-h"><span class="no">2</span>約伯與基督：義人受苦的主題，不是人物完全等同</h3>
+    <div class="scripture"><blockquote class="v">因基督也曾一次為罪受苦……就是義的代替不義的，為要引我們到神面前。</blockquote>
+      <div class="src">彼得前書 3:18，節錄；省略處包含和合本的古卷異文附註 <button class="ref" data-r="1Pet3:18">彼前 3:18</button></div></div>
+    <div class="prose">
+      <p>約伯使人看見，受苦不能自動證明受苦者有罪；基督的十字架更顯示，真正無罪者為罪人受苦。然而，約伯的苦難沒有被經文說成具有基督那樣的贖罪功效，不能把兩者等同。</p>
+      <p>伯 19:25「我知道我的救贖主活著」<button class="ref" data-r="Job19:25">伯 19:25</button>在基督教傳統中常被連結到基督與復活盼望；但該段「救贖主」的身分、約伯期待伸冤的方式及時間，在釋經上有討論。本文因此不把這一句當成約伯已完整理解新約救恩的證據。</p>
+    </div>
+
+    <h3 class="sub-h"><span class="no">3</span>十字架顯明公義與憐憫可以同時成立</h3>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 250" role="img" aria-label="晨光中山丘上一座空的十字架">
+        <defs><linearGradient id="c3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FCE6CC"/><stop offset=".75" stop-color="#FFF8EC"/></linearGradient>
+        <radialGradient id="c3g"><stop offset="0" stop-color="#FFF0C4"/><stop offset="1" stop-color="#FFF0C4" stop-opacity="0"/></radialGradient></defs>
+        <rect width="600" height="250" fill="url(#c3)"/>
+        <circle class="glow" cx="300" cy="100" r="120" fill="url(#c3g)"/>
+        <g stroke="#F3D59A" stroke-width="2" opacity=".7"><line x1="300" y1="100" x2="120" y2="20"/><line x1="300" y1="100" x2="200" y2="0"/><line x1="300" y1="100" x2="400" y2="0"/><line x1="300" y1="100" x2="480" y2="20"/><line x1="300" y1="100" x2="540" y2="90"/><line x1="300" y1="100" x2="60" y2="90"/></g>
+        <path d="M0 210 Q150 190 230 170 Q300 140 370 170 Q450 190 600 206 V250 H0Z" fill="#DCE6CF"/>
+        <rect x="294" y="58" width="12" height="104" fill="#8C5A3A"/><rect x="266" y="80" width="68" height="10" fill="#8C5A3A"/>
+      </svg>
+      <figcaption><span>「就是義的代替不義的，為要引我們到神面前。」</span><button class="ref" data-r="1Pet3:18">彼前 3:18</button></figcaption>
+    </figure>
+    <div class="scripture"><blockquote class="v">好在今時顯明他的義，使人知道他自己為義，也稱信耶穌的人為義。</blockquote>
+      <div class="src">羅馬書 3:26 <button class="ref" data-r="Rom3:26">羅 3:26</button><button class="ref" data-r="Rom3:23-26">羅 3:23–26</button></div></div>
+    <div class="prose">
+      <p>若只讀約伯記，人可能停在「神的智慧超過我」；若只讀約拿書，人可能停在「神願意施憐憫」。羅 3:23–26 則把兩者引向救恩的核心：神沒有假裝罪不存在，而是在基督的救贖中，使信祂的人得以稱義。</p>
+    </div>
+    <p class="takeaway">十字架不是良善的神終於被迫放棄公義，而是祂對罪的審判與對罪人的愛同時彰顯。</p>
+    <div class="caution">歷史上各種贖罪論如何解釋這奧祕，不能縮減為本文一段文字已窮盡。</div>
+
+    <h3 class="sub-h"><span class="no">4</span>復活的盼望超越今生補償</h3>
+    <div class="prose">
+      <p>基督復活是基督徒盼望的根基<button class="ref" data-r="1Cor15:20">林前 15:20–26</button>，不是「每一件壞事都會立即變成好事」的保證。啟 21:4 所指向的，是神最終除去死亡、悲哀、哭號與疼痛。<button class="ref" data-r="Rev21:4">啟 21:4</button></p>
+    </div>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 250" role="img" aria-label="清晨的空墳墓，墓口的大石頭已經滾開">
+        <defs><linearGradient id="t1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FDEBD2"/><stop offset=".7" stop-color="#FFF9EF"/></linearGradient>
+        <radialGradient id="t1g"><stop offset="0" stop-color="#FFF4D3"/><stop offset="1" stop-color="#FFE7A8"/></radialGradient></defs>
+        <rect width="600" height="250" fill="url(#t1)"/>
+        <circle cx="490" cy="80" r="30" fill="#F6C979" opacity=".85"/>
+        <path d="M120 220 Q120 80 280 70 Q420 70 440 220Z" fill="#D2C4A6"/>
+        <path d="M150 140 Q160 120 190 118 M380 120 Q410 130 420 160" stroke="#BFAF8D" stroke-width="2" fill="none"/>
+        <path d="M230 220 V170 a40 40 0 0 1 80 0 V220Z" fill="url(#t1g)"/>
+        <circle class="glow" cx="270" cy="190" r="34" fill="#FFF1C4" opacity=".6"/>
+        <circle cx="360" cy="190" r="34" fill="#BDAE8E"/><circle cx="360" cy="190" r="26" fill="none" stroke="#A9997A" stroke-width="2"/>
+        <path d="M0 220 H600 V250 H0Z" fill="#CBDABA"/>
+        <g stroke="#7E9F5F" stroke-width="2" stroke-linecap="round"><line x1="80" y1="222" x2="76" y2="208"/><line x1="90" y1="222" x2="94" y2="206"/><line x1="470" y1="222" x2="466" y2="206"/><line x1="480" y1="222" x2="486" y2="208"/><line x1="200" y1="222" x2="198" y2="210"/></g>
+        <g fill="#FFFDF5"><circle cx="76" cy="206" r="4"/><circle cx="94" cy="204" r="4"/><circle cx="466" cy="204" r="4"/><circle cx="486" cy="206" r="4"/></g>
+      </svg>
+      <figcaption><span>「他不在這裡，照他所說的，已經復活了。」</span><button class="ref" data-r="Matt28:6">太 28:6</button></figcaption>
+    </figure>
+    <p class="takeaway">我們可以承認現在仍有無法解開的傷痛，同時相信苦難和死亡沒有最後的決定權。</p>
+  </div>
+</section>
+
+<!-- 五 -->
+<section class="s" id="truths">
+  <div class="wrap rv">
+    <div class="eyebrow">五 <b>神的主權、公義與慈愛如何共同呈現？</b></div>
+    <h2>六項真理與它們的界線</h2>
+    <div class="table-wrap">
+    <table class="cmp">
+      <thead><tr><th>真理</th><th>經文依據</th><th>本文的理解與界線</th></tr></thead>
+      <tbody>
+        <tr><th>神有主權</th><td><button class="ref" data-r="Job1:12">伯 1:12</button><button class="ref" data-r="Job2:6">伯 2:6</button><button class="ref" data-r="Jonah1:17">拿 1:17</button><button class="ref" data-r="Jonah4:6-8">拿 4:6–8</button></td><td>惡與災難並非與神平起平坐的力量；但人不因此知道每件苦難的原因</td></tr>
+        <tr><th>神有智慧</th><td><button class="ref" data-r="Job38:4">伯 38:1–4</button><button class="ref" data-r="Job42:3">伯 42:3</button></td><td>承認有限，避免把個人經驗當成判斷一切的尺度</td></tr>
+        <tr><th>神是公義的</th><td><button class="ref" data-r="Job40:8">伯 40:8</button><button class="ref" data-r="Jonah1:2">拿 1:2</button><button class="ref" data-r="Rom3:23-26">羅 3:25–26</button></td><td>神正視罪與強暴；不可用憐憫之名要求受害者接受持續的傷害</td></tr>
+        <tr><th>神施憐憫</th><td><button class="ref" data-r="Jonah4:2">拿 4:2</button><button class="ref" data-r="Jonah4:11">拿 4:11</button><button class="ref" data-r="Jas5:11">雅 5:11</button></td><td>恩典超越人的資格與敵我界線，也臨到需要被糾正的信徒</td></tr>
+        <tr><th>神呼召人回應</th><td><button class="ref" data-r="Jonah3:5">拿 3:5–10</button><button class="ref" data-r="Matt12:41">太 12:41</button></td><td>悔改具有離惡的實際方向，並非只有情緒或儀式</td></tr>
+        <tr><th>神在基督裡施行救恩</th><td><button class="ref" data-r="1Pet3:18">彼前 3:18</button><button class="ref" data-r="Rom3:26">羅 3:26</button><button class="ref" data-r="1Cor15:20">林前 15:20–26</button></td><td>基督是救恩中心；不可把一般人的受苦直接等同祂的贖罪</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- 六 -->
+<section class="s" id="life">
+  <div class="wrap rv">
+    <div class="eyebrow">六 <b>對今日信仰生活的具體提醒</b></div>
+    <h2>四個提醒</h2>
+    <div class="grid g2">
+      <div class="card sky"><span class="tag">面對受苦者</span><h3>先陪伴，再謹慎發言</h3>
+        <p>信徒蒙召與哀哭的人同哭。<button class="ref" data-r="Rom12:15">羅 12:15</button>正確的神學名詞若被用來草率定罪，也會傷人。探訪、傾聽、照顧與實際援助，常比解釋「神為何如此安排」更合宜。</p></div>
+      <div class="card clay"><span class="tag">面對仇敵</span><h3>盼望其悔改，同時拒絕其惡行</h3>
+        <p>耶穌教導愛仇敵、為逼迫者禱告。<button class="ref" data-r="Matt5:44">太 5:44</button>這不表示取消保護受害者、停止暴力及追究責任的必要。離開強暴，正說明悔改必須接觸真實行為。<button class="ref" data-r="Jonah3:8">拿 3:8</button></p></div>
+      <div class="card olive"><span class="tag">面對自己的不解</span><h3>保留向神禱告的路</h3>
+        <p>約伯不必先理解一切，才可以向神說話；信徒也不必把哀傷包裝成順服。信靠包含願意被神糾正，也包含不離開祂、繼續求問。</p></div>
+      <div class="card gold"><span class="tag">面對自己的優越感</span><h3>記得自己也是蒙恩者</h3>
+        <p>約拿需要第二次呼召，約伯的朋友需要代求。<button class="ref" data-r="Job42:8">伯 42:8–9</button>教會傳講恩典時，也必須容許恩典修正自身的成見。</p></div>
+    </div>
+    <h3 class="sub-h"><span class="no">✦</span>可供查經討論的問題</h3>
+    <ol class="questions">
+      <li>我是否曾把他人的疾病或挫折，當成其信心不足或犯罪的證據？</li>
+      <li>我能否允許受苦者有一段沒有答案、仍需哀哭的時間？</li>
+      <li>當我不喜歡的人真實悔改時，我盼望他得更新，還是只希望他受懲罰？</li>
+      <li>如果神沒有照我期待的方式改善處境，我的信仰還剩下什麼？</li>
+      <li>基督的十字架與復活，如何使我同時重視公義、憐憫與未來的盼望？</li>
+    </ol>
+  </div>
+</section>
+
+<!-- 七 -->
+<section class="s" id="closing">
+  <div class="wrap rv">
+    <div class="eyebrow" style="justify-content:center">七 <b>結語</b></div>
+    <div class="closing">
+      <p>約伯記教導我們，不能從苦難直接推定一個人被神定罪；約拿書教導我們，不能用敵我界線限制神向人施憐憫。</p>
+      <p>兩書都把人帶到一個需要謙卑的位置：我不能完全解釋神，也不能替祂決定誰值得被愛。</p>
+      <p>在基督裡，這份謙卑不只是承認無知，更是有對象的信靠。那位為不義者受苦、並且從死裡復活的主，使人得以在未明白之處繼續禱告，在受傷之處接受陪伴，也在面對仇敵時，仍願意盼望真實的悔改與更新。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 八 參考資料 -->
+<section class="s" id="refs">
+  <div class="wrap">
+    <div class="eyebrow">八 <b>可溯源</b></div>
+    <h2>經文與參考資料</h2>
+    <p class="lead" style="font-size:16px">經文採《和合本》繁體神版（公有領域）。點擊任一經文標籤可看經文，並連到 Bible Gateway 核對上下文，另附 KJV 對照。核對時請選「和合本（CUV）」而非「和合本修訂版」。</p>
+
+    <h3 style="font-size:20px;margin:28px 0 12px">A. 第一手資料：和合本聖經</h3>
+    <p class="prose" style="font-size:15px">以下經卷章節是本文論證的主要依據；線上經文平台是查閱入口，並非另加於聖經之上的權威。</p>
+    <ol class="refs" id="refList"></ol>
+    <h4 style="font-size:16px;margin:22px 0 10px;color:var(--ink2)">原稿所附的章節查閱連結</h4>
+    <ul class="srcs">
+      <li><a href="https://www.cnbible.com/cu/job/2.htm" target="_blank" rel="noopener">約伯記 2 章</a>　約伯的正直、苦難與陪伴（伯 1–2）</li>
+      <li><a href="https://www.cnbible.com/cu/job/42.htm" target="_blank" rel="noopener">約伯記 42 章</a>　神的回應與約伯的轉變（伯 38–42）</li>
+      <li><a href="https://www.cnbible.com/cu/jonah/3.htm" target="_blank" rel="noopener">約拿書 3 章</a>　尼尼微悔改、免受災禍；<a href="https://bible.fhl.net/new/read.php?TABFLAG=1&amp;VERSION=unv&amp;chap=3&amp;chineses=%E6%8B%BF&amp;m=&amp;sec=4%2C10" target="_blank" rel="noopener">信望愛：拿 3:4、10</a></li>
+      <li><a href="https://www.cnbible.com/jonah/4-2.htm" target="_blank" rel="noopener">約拿書 4:2 及上下文</a>　約拿抗拒神的恩慈</li>
+      <li><a href="https://www.cnbible.com/cu/jeremiah/18.htm" target="_blank" rel="noopener">耶利米書 18 章</a>　審判宣告與悔改</li>
+      <li><a href="https://www.cnbible.com/cu/john/9.htm" target="_blank" rel="noopener">約翰福音 9 章</a>　拒絕以個人罪推論失明</li>
+      <li><a href="https://bible.fhl.net/new/read.php?TABFLAG=0&amp;VERSION1=unv&amp;chap=12&amp;chineses=%E5%A4%AA&amp;sec=38-50&amp;strongflag=0" target="_blank" rel="noopener">信望愛：太 12:38–50</a>　約拿與人子的神蹟</li>
+      <li><a href="https://www.cnbible.com/james/5-11.htm" target="_blank" rel="noopener">雅各書 5:11 及上下文</a>　約伯的忍耐與主的慈悲</li>
+      <li><a href="https://www.cnbible.com/cu/1_peter/3.htm" target="_blank" rel="noopener">彼得前書 3 章</a>　基督代罪受苦</li>
+      <li><a href="https://www.cnbible.com/romans/3-26.htm" target="_blank" rel="noopener">羅馬書 3:26 及上下文</a>　神的義與因信稱義</li>
+      <li>延伸查經：出 34:6–7；伯 19:25–27；太 5:43–48；羅 5:6–10、12:15；林前 15:20–26；弗 2:8–10；腓 2:5–11；來 11:35–40；啟 21:1–5。可於 <a href="https://bible.fhl.net/" target="_blank" rel="noopener">信望愛聖經查詢</a> 選擇和合本查閱。</li>
+    </ul>
+
+    <h3 style="font-size:20px;margin:30px 0 12px">B. 輔助閱讀：基督教經卷導讀</h3>
+    <ol class="srcs">
+      <li>[1] BibleProject. <a href="https://bibleproject.com/guides/book-of-job/" target="_blank" rel="noopener">Book of Job: Guide with Key Information and Resources</a>. 查閱日期：2026-10-26。<span class="why">協助掌握受苦、三友的報應推論及神回應的敘事脈絡。本文不將該網站所有文學或歷史判斷視為定論；主要論證仍以約伯記原文脈絡為準。</span></li>
+      <li>[2] BibleProject. <a href="https://bibleproject.com/guides/book-of-jonah/" target="_blank" rel="noopener">Book of Jonah: Guide with Key Information and Resources</a>. 查閱日期：2026-10-26。<span class="why">參考約拿對仇敵蒙憐憫的抗拒及全書結尾的讀者反省。網站對人物內心或文類的延伸推測，不等同經文明說。</span></li>
+    </ol>
+
+    <h3 style="font-size:20px;margin:30px 0 12px">C. 原稿所引資料的查核與處理</h3>
+    <ol class="srcs">
+      <li>[3] Tang, Ho Sum. <em>Prophet Tradition and Cognitive Dissonance: Jonah's Anger (4:1) and the Evolution of Divine Perception</em>. 2024 SBL Annual Meeting, Psychology and Biblical Studies，會議論文。<a href="https://www.theology.cuhk.edu.hk/publication/newsletter/issue82/article/tang" target="_blank" rel="noopener">原稿所列網址</a><span class="why">以認知失調及推定的希臘化時期讀者處境作分析，屬特定學術模型，不是經文明說，也不是本文確立基督教教義的依據。</span></li>
+      <li>原稿另引韓國期刊文章、Bible Gateway 百科與《Journal of Scriptural Reasoning》文章；因未完成充分核驗，不作為已核實論據。原稿有價值的比較主題已保留，引用則改以可核對的經文及已讀取的導讀資料支撐。</li>
+    </ol>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span data-cfg="title">在苦難與憐憫中認識神</span> · 老山羊 · 經文引自《和合本》</div>
+</footer>
+
+<dialog id="dlg">
+  <div class="dlg">
+    <div class="head"><div><div class="ver" id="dVer">和合本</div><h3 id="dTitle"></h3></div><button class="x" id="dClose" aria-label="關閉">×</button></div>
+    <blockquote class="v" id="dText"></blockquote>
+    <div class="links" id="dLinks"></div>
+  </div>
+</dialog>
+
+<script>
+const CFG = Object.assign({
+  title: document.title, subtitle: "", eyebrow: "", tabTitle: "",
+  description: "", bibleVersion: "CUVMPT"
+}, window.SITE_CONFIG || {});
+(function applyConfig(c){
+  document.title = c.tabTitle || c.title;
+  const setMeta = (sel, v) => { const m = document.querySelector(sel); if (m && v) m.setAttribute("content", v); };
+  setMeta('meta[name="description"]', c.description);
+  setMeta('meta[property="og:title"]', c.tabTitle || c.title);
+  setMeta('meta[property="og:description"]', c.description);
+  document.querySelectorAll("[data-cfg]").forEach(el => { const v = c[el.dataset.cfg]; if (v) el.textContent = v; });
+  document.querySelectorAll("[data-cfg-html]").forEach(el => { const v = c[el.dataset.cfgHtml]; if (v) el.innerHTML = v; });
+})(CFG);
+
+/* 經文資料：和合本 */
+const V = {
+  "Job1:1":{zh:"約伯記 1:1",en:"Job 1:1",t:"烏斯地有一個人名叫約伯；那人完全正直，敬畏神，遠離惡事。"},
+  "Job1:8":{zh:"約伯記 1:8",en:"Job 1:8",t:"耶和華問撒但說：你曾用心察看我的僕人約伯沒有？地上再沒有人像他完全正直，敬畏神，遠離惡事。"},
+  "Job1:9":{zh:"約伯記 1:9",en:"Job 1:9",t:"撒但回答耶和華說：約伯敬畏神，豈是無故呢？"},
+  "Job1:12":{zh:"約伯記 1:12",en:"Job 1:12",t:"耶和華對撒但說：凡他所有的都在你手中，只是不可伸手加害於他。於是撒但從耶和華面前退去。"},
+  "Job2:3":{zh:"約伯記 2:3",en:"Job 2:3",t:"耶和華問撒但說：你曾用心察看我的僕人約伯沒有？地上再沒有人像他完全正直，敬畏神，遠離惡事。你雖激動我攻擊他，無故地毀滅他，他仍然持守他的純正。"},
+  "Job2:6":{zh:"約伯記 2:6",en:"Job 2:6",t:"耶和華對撒但說：他在你手中，只要存留他的性命。"},
+  "Job2:11-13":{zh:"約伯記 2:11–13",en:"Job 2:11-13",t:"約伯的三個朋友，提幔人以利法、書亞人比勒達、拿瑪人瑣法，聽說有這一切的災禍臨到他身上，各人就從本處約會同來，為他悲傷，安慰他。他們遠遠地舉目觀看，認不出他來，就放聲大哭。各人撕裂外袍，把塵土向天揚起來，落在自己的頭上。他們就陪他七天七夜坐在地上，一個人也不向他說句話，因為他極其痛苦。"},
+  "Job3:1":{zh:"約伯記 3:1",en:"Job 3:1",t:"此後，約伯開口咒詛自己的生日，"},
+  "Job7:11":{zh:"約伯記 7:11",en:"Job 7:11",t:"我不禁止我口；我靈愁苦，要發出言語；我心苦惱，要吐露哀情。"},
+  "Job13:15":{zh:"約伯記 13:15",en:"Job 13:15",t:"他必殺我，我雖無指望，然而我在他面前還要辯明我所行的。"},
+  "Job19:25":{zh:"約伯記 19:25",en:"Job 19:25",t:"我知道我的救贖主活著，末了必站立在地上。"},
+  "Job38:1":{zh:"約伯記 38:1",en:"Job 38:1",t:"那時，耶和華從旋風中回答約伯說："},
+  "Job38:4":{zh:"約伯記 38:4",en:"Job 38:4",t:"我立大地根基的時候，你在哪裡呢？你若有聰明，只管說吧！"},
+  "Job40:8":{zh:"約伯記 40:8",en:"Job 40:8",t:"你豈可廢棄我所擬定的？豈可定我有罪，好顯自己為義嗎？"},
+  "Job42:3":{zh:"約伯記 42:3",en:"Job 42:3",t:"誰用無知的言語使你的旨意隱藏呢？我所說的是我不明白的；這些事太奇妙，是我不知道的。"},
+  "Job42:5":{zh:"約伯記 42:5",en:"Job 42:5",t:"我從前風聞有你，現在親眼看見你。"},
+  "Job42:6":{zh:"約伯記 42:6",en:"Job 42:6",t:"因此我厭惡自己（或譯：我的言語），在塵土和爐灰中懊悔。"},
+  "Job42:7":{zh:"約伯記 42:7",en:"Job 42:7",t:"耶和華對約伯說話以後，就對提幔人以利法說：我的怒氣向你和你兩個朋友發作，因為你們議論我不如我的僕人約伯說的是。"},
+  "Job42:8":{zh:"約伯記 42:8",en:"Job 42:8",t:"現在你們要取七隻公牛，七隻公羊，到我僕人約伯那裡去，為自己獻上燔祭，我的僕人約伯就為你們祈禱。我因悅納他，就不按你們的愚妄辦你們。你們議論我，不如我的僕人約伯說的是。"},
+  "Job42:10":{zh:"約伯記 42:10",en:"Job 42:10",t:"約伯為他的朋友祈禱。耶和華就使約伯從苦境轉回，並且耶和華賜給他的比他從前所有的加倍。"},
+  "John9:3":{zh:"約翰福音 9:3",en:"John 9:3",t:"耶穌回答說：也不是這人犯了罪，也不是他父母犯了罪，是要在他身上顯出神的作為來。"},
+  "Jas5:11":{zh:"雅各書 5:11",en:"James 5:11",t:"那先前忍耐的人，我們稱他們是有福的。你們聽見過約伯的忍耐，也知道主給他的結局，明顯主是滿心憐憫，大有慈悲。"},
+  "Heb11:35-40":{zh:"希伯來書 11:35–40（節錄 35、39 節）",en:"Hebrews 11:35-40",t:"有婦人得自己的死人復活；又有人忍受嚴刑，不肯苟且得釋放，為要得著更美的復活。……這些人都是因信得了美好的證據，卻仍未得著所應許的；"},
+  "Jonah1:1-3":{zh:"約拿書 1:1–3",en:"Jonah 1:1-3",t:"耶和華的話臨到亞米太的兒子約拿，說：你起來往尼尼微大城去，向其中的居民呼喊，因為他們的惡達到我面前。約拿卻起來，逃往他施去躲避耶和華，下到約帕，遇見一隻船，要往他施去。他就給了船價，上了船，要與船上的人同往他施去躲避耶和華。"},
+  "Jonah1:2":{zh:"約拿書 1:2",en:"Jonah 1:2",t:"你起來往尼尼微大城去，向其中的居民呼喊，因為他們的惡達到我面前。"},
+  "Jonah1:17":{zh:"約拿書 1:17",en:"Jonah 1:17",t:"耶和華安排一條大魚吞了約拿，他在魚腹中三日三夜。"},
+  "Jonah3:1":{zh:"約拿書 3:1",en:"Jonah 3:1",t:"耶和華的話二次臨到約拿說："},
+  "Jonah3:5":{zh:"約拿書 3:5",en:"Jonah 3:5",t:"尼尼微人信服神，便宣告禁食，從最大的到至小的都穿麻衣。"},
+  "Jonah3:8":{zh:"約拿書 3:8",en:"Jonah 3:8",t:"人與牲畜都當披上麻布，人要切切求告神。各人回頭離開所行的惡道，丟棄手中的強暴。"},
+  "Jonah3:10":{zh:"約拿書 3:10",en:"Jonah 3:10",t:"於是神察看他們的行為，見他們離開惡道，他就後悔，不把所說的災禍降與他們了。"},
+  "Jonah4:2":{zh:"約拿書 4:2",en:"Jonah 4:2",t:"就禱告耶和華說：耶和華啊，我在本國的時候豈不是這樣說嗎？我知道你是有恩典、有憐憫的神，不輕易發怒，有豐盛的慈愛，並且後悔不降所說的災，所以我急速逃往他施去。"},
+  "Jonah4:4":{zh:"約拿書 4:4",en:"Jonah 4:4",t:"耶和華說：你這樣發怒合乎理嗎？"},
+  "Jonah4:6-8":{zh:"約拿書 4:6–8",en:"Jonah 4:6-8",t:"耶和華神安排一棵蓖麻，使其發生高過約拿，影兒遮蓋他的頭，救他脫離苦楚；約拿因這棵蓖麻大大喜樂。次日黎明，神卻安排一條蟲子咬這蓖麻，以致枯槁。日頭出來的時候，神安排炎熱的東風，日頭曝曬約拿的頭，使他發昏。他就為自己求死，說：我死了比活著還好！"},
+  "Jonah4:11":{zh:"約拿書 4:11",en:"Jonah 4:11",t:"何況這尼尼微大城，其中不能分辨左手右手的有十二萬多人，並有許多牲畜，我豈能不愛惜呢？"},
+  "Exod34:6-7":{zh:"出埃及記 34:6–7",en:"Exodus 34:6-7",t:"耶和華在他面前宣告說：耶和華，耶和華，是有憐憫有恩典的神，不輕易發怒，並有豐盛的慈愛和誠實，為千萬人存留慈愛，赦免罪孽、過犯，和罪惡，萬不以有罪的為無罪，必追討他的罪，自父及子，直到三四代。"},
+  "Eph2:8-10":{zh:"以弗所書 2:8–10",en:"Ephesians 2:8-10",t:"你們得救是本乎恩，也因著信；這並不是出於自己，乃是神所賜的；也不是出於行為，免得有人自誇。我們原是他的工作，在基督耶穌裡造成的，為要叫我們行善，就是神所預備叫我們行的。"},
+  "Jer18:8":{zh:"耶利米書 18:8",en:"Jeremiah 18:8",t:"我所說的那一邦，若是轉意離開他們的惡，我就必後悔，不將我想要施行的災禍降與他們。"},
+  "Matt12:40":{zh:"馬太福音 12:40",en:"Matthew 12:40",t:"約拿三日三夜在大魚肚腹中，人子也要這樣三日三夜在地裡頭。"},
+  "Matt12:41":{zh:"馬太福音 12:41",en:"Matthew 12:41",t:"當審判的時候，尼尼微人要起來定這世代的罪，因為尼尼微人聽了約拿所傳的就悔改了。看哪，在這裡有一人比約拿更大！"},
+  "Phil2:8":{zh:"腓立比書 2:8",en:"Philippians 2:8",t:"既有人的樣子，就自己卑微，存心順服，以至於死，且死在十字架上。"},
+  "Rom5:8":{zh:"羅馬書 5:8",en:"Romans 5:8",t:"惟有基督在我們還作罪人的時候為我們死，神的愛就在此向我們顯明了。"},
+  "1Pet3:18":{zh:"彼得前書 3:18",en:"1 Peter 3:18",t:"因基督也曾一次為罪受苦（有古卷：受死），就是義的代替不義的，為要引我們到神面前。按著肉體說，他被治死；按著靈性說，他復活了。"},
+  "Rom3:26":{zh:"羅馬書 3:26",en:"Romans 3:26",t:"好在今時顯明他的義，使人知道他自己為義，也稱信耶穌的人為義。"},
+  "Rom3:23-26":{zh:"羅馬書 3:23–26",en:"Romans 3:23-26",t:"因為世人都犯了罪，虧缺了神的榮耀；如今卻蒙神的恩典，因基督耶穌的救贖，就白白地稱義。神設立耶穌作挽回祭，是憑著耶穌的血，藉著人的信，要顯明神的義；因為他用忍耐的心寬容人先時所犯的罪，好在今時顯明他的義，使人知道他自己為義，也稱信耶穌的人為義。"},
+  "1Cor15:20":{zh:"哥林多前書 15:20（15:20–26 的首節）",en:"1 Corinthians 15:20-26",t:"但基督已經從死裡復活，成為睡了之人初熟的果子。"},
+  "Rev21:4":{zh:"啟示錄 21:4",en:"Revelation 21:4",t:"神要擦去他們一切的眼淚；不再有死亡，也不再有悲哀、哭號、疼痛，因為以前的事都過去了。"},
+  "Matt28:6":{zh:"馬太福音 28:6",en:"Matthew 28:6",t:"他不在這裡，照他所說的，已經復活了。你們來看安放主的地方。"},
+  "Rom12:15":{zh:"羅馬書 12:15",en:"Romans 12:15",t:"與喜樂的人要同樂；與哀哭的人要同哭。"},
+  "Matt5:44":{zh:"馬太福音 5:44",en:"Matthew 5:44",t:"只是我告訴你們，要愛你們的仇敵，為那逼迫你們的禱告。"}
+};
+const bg = (en, ver) => `https://www.biblegateway.com/passage/?search=${encodeURIComponent(en)}&version=${ver}`;
+function linksFor(v){
+  if (v.links) return v.links;
+  const main = CFG.bibleVersion || "CUVMPT";
+  const out = [["和合本（新式標點）原文", bg(v.en, main)]];
+  if (main !== "CUV") out.push(["和合本（神版）", bg(v.en, "CUV")]);
+  out.push(["KJV 英文對照", bg(v.en, "KJV")]);
+  return out;
+}
+const dlg = document.getElementById('dlg');
+function openRef(key){
+  const v = V[key]; if (!v) return;
+  document.getElementById('dTitle').textContent = v.zh;
+  document.getElementById('dVer').textContent = v.ver || '和合本';
+  document.getElementById('dText').textContent = v.t;
+  document.getElementById('dLinks').innerHTML = linksFor(v).map(([n,u]) => `<a href="${u}" target="_blank" rel="noopener">${n} ↗</a>`).join('');
+  if (dlg.showModal) dlg.showModal(); else window.open(linksFor(v)[0][1]);
+}
+document.addEventListener('click', e => { const b = e.target.closest('.ref'); if (b) { e.preventDefault(); openRef(b.dataset.r); } });
+document.getElementById('dClose').onclick = () => dlg.close();
+dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+
+const seen = new Set(), list = document.getElementById('refList');
+document.querySelectorAll('main .ref').forEach(b => {
+  const k = b.dataset.r; if (seen.has(k) || !V[k] || V[k].links) return; seen.add(k);
+  const v = V[k], li = document.createElement('li');
+  li.innerHTML = `<a href="${bg(v.en, CFG.bibleVersion)}" target="_blank" rel="noopener">${v.zh}</a>　<span style="color:var(--ink3);font-size:13px">${v.en}</span>`;
+  list.appendChild(li);
+});
+
+const io = new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); } }), {threshold:.08});
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+const prog = document.getElementById('progress'), navA = [...document.querySelectorAll('#nav a')];
+const targets = navA.map(a => document.querySelector(a.getAttribute('href')));
+addEventListener('scroll', () => {
+  const h = document.documentElement; prog.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+  let cur = -1; targets.forEach((t,i) => { if (t && t.getBoundingClientRect().top < 120) cur = i; });
+  navA.forEach((a,i) => a.classList.toggle('on', i === cur));
+}, {passive:true});
+</script>
+</body>
+</html>
