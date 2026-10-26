@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>撒母耳記下 11 章｜以色列歷史上最不名譽的事件</title>
+<meta name="description" content="大衛、拔示巴與烏利亞：從王宮平頂開始的罪，血債血仇血還的後果，以及仍在家譜中延續的恩典。">
+<meta property="og:title" content="撒母耳記下 11 章｜以色列歷史上最不名譽的事件">
+<meta property="og:description" content="大衛、拔示巴與烏利亞：從王宮平頂開始的罪，血債血仇血還的後果，以及仍在家譜中延續的恩典。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23FBF7EE'/%3E%3Cpath d='M32 12v40M20 24h24' stroke='%23B8893B' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700;900&display=swap" rel="stylesheet">
+<script src="config.js"></script>
+<style>
+:root{
+  --bg:#FBF8F1; --bg2:#F4EEE1; --paper:#FFFEFA;
+  --ink:#2A2F3A; --ink2:#5B6170; --ink3:#8A8F9B;
+  --gold:#B8893B; --gold-soft:#F3E6C8;
+  --sky:#5E8FBF; --sky-soft:#E4EEF7;
+  --clay:#B9562F; --clay-soft:#F6E1D6;
+  --olive:#6F8A5A; --olive-soft:#E8EFDF;
+  --line:#E7DFCD;
+  --serif:"Noto Serif TC","Songti TC",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --r:18px;
+  --shadow:0 1px 2px rgba(60,50,20,.05),0 8px 28px rgba(60,50,20,.07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.85;
+  background-image:radial-gradient(1200px 600px at 85% -10%,#FFF3D6 0,transparent 60%),radial-gradient(900px 500px at -10% 30%,#EAF2FA 0,transparent 60%);
+  background-attachment:fixed}
+a{color:var(--sky)}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.4;margin:0}
+p{margin:.6em 0}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+
+.bar{position:sticky;top:0;z-index:20;background:rgba(251,248,241,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;gap:12px}
+.brand{font-family:var(--serif);font-weight:700;letter-spacing:.08em;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.brand i{width:22px;height:22px;border-radius:50%;background:radial-gradient(circle,#FFE7A8 0,#F3D27A 45%,transparent 70%);display:inline-block}
+.bar nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.bar nav a{font-size:14px;color:var(--ink2);text-decoration:none;padding:6px 12px;border-radius:999px;white-space:nowrap}
+.bar nav a:hover,.bar nav a.on{background:var(--gold-soft);color:var(--ink)}
+.progress{position:absolute;left:0;bottom:-1px;height:2px;background:linear-gradient(90deg,var(--gold),var(--clay));width:0}
+
+.hero{min-height:86vh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;padding:80px 0}
+.halo{position:absolute;width:620px;height:620px;border-radius:50%;left:50%;top:44%;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(255,236,180,.85) 0,rgba(255,236,180,.25) 40%,transparent 70%);animation:breathe 7s ease-in-out infinite;pointer-events:none}
+@keyframes breathe{50%{transform:translate(-50%,-50%) scale(1.07);opacity:.85}}
+.hero small{display:block;letter-spacing:.4em;color:var(--gold);font-size:14px;margin-bottom:18px;position:relative}
+.hero h1{font-size:clamp(44px,8.5vw,96px);font-weight:900;letter-spacing:.06em;position:relative;line-height:1.25}
+.hero .sub{font-family:var(--serif);font-size:clamp(17px,2.2vw,22px);color:var(--ink2);margin-top:16px;position:relative}
+.hero .by{margin-top:24px;color:var(--ink3);letter-spacing:.2em;font-size:14px;position:relative}
+.hero .scroll{margin-top:46px;display:inline-flex;flex-direction:column;align-items:center;gap:6px;color:var(--ink3);font-size:13px;text-decoration:none;position:relative}
+.hero .scroll span{width:1px;height:42px;background:linear-gradient(var(--gold),transparent);animation:drip 2.2s infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+section.s{padding:84px 0}
+.eyebrow{font-size:13px;letter-spacing:.28em;color:var(--clay);margin-bottom:10px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.eyebrow b{font-weight:500;color:var(--ink3);letter-spacing:.1em}
+.s h2{font-size:clamp(28px,4.4vw,42px);margin-bottom:22px}
+.sub-h{font-size:clamp(20px,2.6vw,25px);margin:44px 0 12px;display:flex;gap:12px;align-items:baseline}
+.sub-h .no{font-family:var(--serif);color:var(--gold);font-size:.85em;flex:none}
+.lead{font-size:18.5px;color:var(--ink2);max-width:780px}
+.prose{max-width:780px;color:var(--ink2)}
+.prose strong{color:var(--ink)}
+.takeaway{font-family:var(--serif);font-size:clamp(19px,2.4vw,23px);margin-top:30px;padding-left:18px;border-left:3px solid var(--gold);color:var(--ink);max-width:800px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px 18px;box-shadow:var(--shadow)}
+.card h3{font-size:20px;margin:4px 0 8px}
+.card .tag{font-size:12.5px;letter-spacing:.12em;color:var(--gold)}
+.card p{color:var(--ink2);font-size:16px}
+.card.sky{background:linear-gradient(160deg,#fff,var(--sky-soft))}
+.card.gold{background:linear-gradient(160deg,#fff,var(--gold-soft))}
+.card.clay{background:linear-gradient(160deg,#fff,var(--clay-soft))}
+.card.olive{background:linear-gradient(160deg,#fff,var(--olive-soft))}
+
+.thesis{max-width:820px;margin:0 auto;background:linear-gradient(160deg,#FFFDF5,#FBF0D3);border:1px solid #EFDDB0;border-radius:24px;padding:30px 32px;box-shadow:var(--shadow)}
+.thesis .lbl,.reflect .lbl{display:inline-block;font-size:12.5px;letter-spacing:.2em;color:#fff;background:var(--gold);border-radius:6px;padding:2px 9px;margin-bottom:8px}
+.thesis p{font-family:var(--serif);font-size:18px;line-height:2;margin:.3em 0}
+.readnote{max-width:820px;margin:22px auto 0;font-size:14.5px;color:var(--ink3);border:1px solid var(--line);background:#fff;border-radius:14px;padding:14px 18px}
+.readnote b{color:var(--ink2)}
+
+.scripture{margin:20px 0;max-width:800px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:14px;padding:16px 22px;box-shadow:var(--shadow)}
+.scripture .src{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:13px;color:var(--ink3);margin-top:8px}
+.scripture + .scripture{margin-top:-6px}
+blockquote.v{margin:0;font-family:var(--serif);font-size:18px;line-height:1.95;color:var(--ink)}
+blockquote.v::before{content:"「";color:var(--gold)}
+blockquote.v::after{content:"」";color:var(--gold)}
+.ref{display:inline-flex;align-items:center;gap:5px;font-family:var(--sans);font-size:13px;line-height:1;padding:5px 10px 5px 8px;margin:2px;border-radius:999px;
+  border:1px solid var(--line);background:#fff;color:var(--ink2);cursor:pointer;transition:.18s;vertical-align:middle}
+.ref::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.ref:hover{border-color:var(--gold);color:var(--ink);transform:translateY(-1px);box-shadow:0 3px 10px rgba(184,137,59,.18)}
+
+.reflect{margin-top:22px;max-width:800px;background:linear-gradient(160deg,#FFFDF5,#FBF0D3);border:1px solid #EFDDB0;border-radius:var(--r);padding:18px 24px}
+.reflect p{margin:.3em 0;color:var(--ink)}
+.caution{margin-top:16px;max-width:800px;font-size:15px;color:var(--ink2);background:var(--sky-soft);border-radius:14px;padding:12px 18px;border:1px solid #D3E1EF}
+.caution::before{content:"界線　";color:var(--sky);font-weight:700;letter-spacing:.1em}
+.aside{margin-top:18px;display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--ink2);background:#fff;border:1px dashed #D9C9A3;border-radius:14px;padding:12px 16px;max-width:760px}
+.aside::before{content:"旁白";flex:none;font-size:12px;letter-spacing:.15em;color:#fff;background:var(--gold);border-radius:6px;padding:2px 7px;margin-top:3px}
+
+.table-wrap{overflow-x:auto;border-radius:var(--r);box-shadow:var(--shadow)}
+.cmp{width:100%;min-width:640px;border-collapse:separate;border-spacing:0;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;font-size:15.5px}
+.cmp th,.cmp td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.cmp tr:last-child td,.cmp tr:last-child th{border-bottom:0}
+.cmp thead th{font-family:var(--serif);font-size:17px;background:var(--bg2)}
+.cmp tbody th{color:var(--ink3);font-weight:500;width:18%;white-space:nowrap}
+.cmp.jj thead th:nth-child(2){color:var(--sky)}
+.cmp.jj thead th:nth-child(3){color:var(--clay)}
+
+.questions{counter-reset:q;display:grid;gap:12px;max-width:820px;padding:0;margin:16px 0 0;list-style:none}
+.questions li{counter-increment:q;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 18px 14px 60px;position:relative;font-family:var(--serif);font-size:17px}
+.questions li::before{content:counter(q);position:absolute;left:16px;top:12px;width:30px;height:30px;border-radius:50%;background:var(--gold-soft);color:#8A6420;display:grid;place-items:center;font-size:15px}
+
+.closing{max-width:760px;margin:0 auto;text-align:center}
+.closing p{font-family:var(--serif);font-size:19px;line-height:2.05;color:var(--ink)}
+
+.illus{margin:28px auto 8px;max-width:680px}
+.illus svg{width:100%;height:auto;display:block;border-radius:var(--r);border:1px solid var(--line);box-shadow:var(--shadow)}
+.illus figcaption{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px;margin-top:10px;font-family:var(--serif);font-size:15px;color:var(--ink2);text-align:center}
+.tw{animation:tw 4s ease-in-out infinite}
+@keyframes tw{50%{opacity:.25}}
+.glow{animation:breathe2 3.4s ease-in-out infinite}
+@keyframes breathe2{50%{opacity:.35}}
+.spin{transform-box:fill-box;transform-origin:50% 50%;animation:sway 6s ease-in-out infinite}
+@keyframes sway{50%{transform:rotate(4deg) translateX(6px)}}
+
+.refs{columns:2 300px;column-gap:36px;font-size:15px;padding-left:1.2em}
+.refs li{break-inside:avoid;margin-bottom:8px;color:var(--ink2)}
+.refs a,.srcs a{text-decoration:none;border-bottom:1px solid #C9D9EA;word-break:break-all}
+.refs a:hover,.srcs a:hover{border-color:var(--sky)}
+.srcs{font-size:15px;color:var(--ink2);padding-left:1.2em}
+.srcs li{margin-bottom:12px}
+.srcs .why{display:block;color:var(--ink3);font-size:14px}
+footer{padding:40px 0 60px;text-align:center;color:var(--ink3);font-size:14px;border-top:1px solid var(--line)}
+
+dialog{border:0;padding:0;border-radius:22px;max-width:min(620px,calc(100vw - 32px));width:100%;background:var(--paper);color:var(--ink);box-shadow:0 30px 80px rgba(40,30,10,.25)}
+dialog::backdrop{background:rgba(42,47,58,.35);backdrop-filter:blur(3px)}
+.dlg{padding:28px 28px 22px}
+.dlg .head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+.dlg h3{font-size:22px}
+.dlg .x{border:0;background:var(--bg2);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:18px;color:var(--ink2)}
+.dlg .ver{font-size:12.5px;color:var(--ink3);letter-spacing:.1em}
+.dlg blockquote.v{font-size:18px;padding:16px 18px;background:#FFFBF0;border-radius:14px;border:1px solid #EFE2C2}
+.dlg .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.dlg .links a{font-size:14px;text-decoration:none;padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--ink)}
+.dlg .links a:hover{border-color:var(--sky);color:var(--sky)}
+
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.halo,.hero .scroll span,.tw,.glow,.spin{animation:none}}
+@media (max-width:640px){body{font-size:16px}section.s{padding:62px 0}.card{padding:20px}.bar nav{display:none}.thesis{padding:24px 20px}.thesis p{font-size:16.5px}}
+@media print{.bar,.hero .scroll,.halo{display:none}.rv{opacity:1;transform:none}section.s{padding:30px 0}}
+
+:root{--wine:#7A2E3F;--wine-soft:#F5E4E8}
+.hero h1 .t2{display:block;font-size:.46em;font-weight:700;letter-spacing:.08em;margin-top:.35em;color:var(--wine)}
+.s h2 .em{color:var(--wine)}
+
+/* reading */
+.passage{max-width:820px}
+.passage .blk{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px 24px 16px;box-shadow:var(--shadow);margin-bottom:16px}
+.passage .blk h3{font-size:19px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.passage .blk h3 .rg{font-family:var(--sans);font-size:13px;color:var(--gold);font-weight:500;letter-spacing:.05em}
+.passage p{font-family:var(--serif);font-size:17.5px;line-height:2;margin:.25em 0;color:var(--ink)}
+.passage sup{font-family:var(--sans);font-size:11.5px;color:var(--wine);margin-right:4px;vertical-align:.45em}
+.passage .blk.last{border-left:4px solid var(--wine)}
+.passage .blk.last p:last-child{font-weight:700;color:var(--wine)}
+.passage .note-o{font-family:var(--sans);font-size:13.5px;color:var(--ink3)}
+
+/* two roofs */
+.roofs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:20px}
+.roof{border-radius:var(--r);padding:20px 22px;border:1px solid var(--line);background:#fff;box-shadow:var(--shadow)}
+.roof .tag{font-size:12.5px;letter-spacing:.12em;color:var(--gold)}
+.roof p{font-family:var(--serif);font-size:18px;margin:.4em 0 0}
+
+/* outline */
+.outline{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.outline a{display:block;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;box-shadow:var(--shadow);transition:.2s}
+.outline a:hover{transform:translateY(-2px);border-color:var(--gold)}
+.outline .n{font-family:var(--serif);color:var(--wine);font-size:14px}
+.outline b{display:block;font-family:var(--serif);font-size:20px;margin:4px 0}
+.outline span{font-size:14.5px;color:var(--ink2)}
+
+.verdict{margin-top:20px;max-width:820px;background:var(--wine-soft);border:1px solid #EBCBD2;border-radius:var(--r);padding:18px 22px}
+.verdict blockquote.v{font-size:18px}
+.verdict .src{font-size:13px;color:var(--wine);margin-top:6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+
+/* family chain */
+.family{display:grid;grid-template-columns:minmax(220px,320px) 1fr;gap:28px;align-items:start}
+.chain{display:flex;flex-direction:column;align-items:stretch;gap:0}
+.chain .node{border-radius:14px;padding:14px 18px;border:1px solid var(--line)}
+.chain .node b{font-family:var(--serif);font-size:20px;display:block}
+.chain .node span{font-size:14px;color:var(--ink2)}
+.chain .arrow{height:26px;display:flex;justify-content:center;color:var(--ink3)}
+.chain .n1{background:#F6F1EA}.chain .n2{background:var(--gold-soft)}.chain .n3{background:var(--wine-soft)}
+.family .facts h3{font-size:20px;margin:0 0 6px}
+.family .facts p{color:var(--ink2)}
+.family .facts .hl{color:var(--wine)}
+@media (max-width:700px){.family{grid-template-columns:1fr}}
+
+/* joab rows */
+.rows{display:grid;gap:12px;max-width:900px}
+.row{display:grid;grid-template-columns:200px 1fr;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:18px 22px;box-shadow:var(--shadow)}
+.row h3{font-size:20px}
+.row .rf{margin-top:4px}
+.row p{margin:0;color:var(--ink2)}
+.row.hot{background:var(--wine-soft);border-color:#EBCBD2}
+.row.hot h3{color:var(--wine)}
+@media (max-width:640px){.row{grid-template-columns:1fr;gap:6px}}
+
+.warnq{margin:18px 0;max-width:860px;background:linear-gradient(160deg,#FFFDF8,#F7EBEE);border:1px solid #EBCBD2;border-left:4px solid var(--wine);border-radius:14px;padding:18px 22px}
+.warnq p{font-family:var(--serif);font-size:19px;margin:0}
+.warnq .src{font-size:13px;color:var(--ink3);margin-top:6px}
+.cards3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:14px}
+.cards3 div{background:var(--wine-soft);border-radius:14px;padding:16px 18px}
+.cards3 b{display:block;font-family:var(--serif);font-size:18px;color:var(--wine);margin-bottom:4px}
+.cards3 span{font-size:15px;color:var(--ink2)}
+.band{margin-top:22px;max-width:900px;background:var(--wine);color:#FBEFF1;border-radius:14px;padding:16px 22px;font-family:var(--serif);font-size:18px}
+
+/* blood timeline */
+.tl{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.tl .st{background:var(--wine-soft);border-radius:var(--r);padding:18px;border:1px solid #EBCBD2}
+.tl .st .n{font-family:var(--serif);color:var(--gold);font-size:22px}
+.tl .st h3{font-size:19px;color:var(--wine);margin:2px 0 6px}
+.tl .st p{font-size:15px;color:var(--ink2);margin:0}
+.tl .st.dark{background:var(--wine);border-color:var(--wine)}
+.tl .st.dark h3,.tl .st.dark p{color:#FBEFF1}
+
+/* genealogy */
+.gene{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:var(--shadow);max-width:860px;margin:10px auto 0}
+.gline{display:flex;flex-direction:column;align-items:center;gap:6px}
+.gpair{display:grid;grid-template-columns:200px 22px 230px;align-items:center;gap:6px}
+.gp{border-radius:10px;padding:8px 12px;text-align:center;font-size:15px;border:1px solid var(--line);background:#FBF8F1}
+.gp.m{font-family:var(--serif);font-weight:600}
+.gp.w{background:var(--wine-soft);border-color:#E3B9C3;color:var(--wine)}
+.gp.dv{border:2px solid var(--wine);font-family:var(--serif);font-weight:700}
+.gplus{text-align:center;color:var(--ink3)}
+.gdown{color:var(--ink3);font-size:13px;line-height:1;width:200px;text-align:center;margin-right:258px}
+.gsplit{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:14px}
+.gcol{display:flex;flex-direction:column;align-items:center;gap:6px}
+.gcol .lbl{font-size:13px;color:var(--ink3)}
+.gcol .gp{width:100%;max-width:240px}
+.gold .gp{background:#FBF1DD;border-color:#E6CF9C}
+.gblue .gp{background:#E9F0F7;border-color:#C9D9EA}
+.gjesus{margin:16px auto 0;width:200px;text-align:center;background:var(--wine);color:#fff;border-radius:12px;padding:12px;font-family:var(--serif);font-size:22px;font-weight:700}
+.glegend{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:14px;font-size:13.5px;color:var(--ink2)}
+.glegend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+@media (max-width:640px){.gpair{grid-template-columns:1fr 18px 1fr}.gdown{width:auto;margin-right:0}.gp{font-size:13.5px}}
+
+/* compare */
+.vs{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+.vs .col{border-radius:var(--r);padding:22px 24px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.vs .col.a{background:linear-gradient(160deg,#fff,#FBF1DD)}
+.vs .col.b{background:linear-gradient(160deg,#fff,var(--sky-soft))}
+.vs h3{font-size:21px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.vs h3 small{font-family:var(--sans);font-size:13px;color:var(--ink3);font-weight:400}
+.vs dl{margin:0;display:grid;grid-template-columns:5.5em 1fr;gap:12px 14px;font-size:15px}
+.vs dt{font-weight:700;color:var(--ink)}
+.vs dd{margin:0;color:var(--ink2)}
+
+.g2x2{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:700px){.g2x2{grid-template-columns:1fr}}
+.finale-q{text-align:center}
+.finale-q .big{font-family:var(--serif);font-size:clamp(32px,6vw,58px);font-weight:700;line-height:1.45;color:var(--wine)}
+.finale-q .lead{margin:14px auto 0}
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top"><i></i><span data-cfg="title">撒母耳記下 11 章</span></a>
+    <nav id="nav">
+      <a href="#read">讀經</a>
+      <a href="#people">人物</a>
+      <a href="#plot">情節</a>
+      <a href="#cost">後果</a>
+      <a href="#grace">恩典</a>
+      <a href="#compare">延伸比較</a>
+      <a href="#refs">參考資料</a>
+    </nav>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="halo"></div>
+  <div class="wrap">
+    <small data-cfg="eyebrow">2026.11.11 解經</small>
+    <h1 data-cfg-html="titleHtml">撒母耳記下 11 章<span class="t2">以色列歷史上最不名譽的事件</span></h1>
+    <p class="sub" data-cfg="subtitle">大衛、拔示巴與烏利亞</p>
+    <p class="by">老山羊</p>
+    <a class="scroll" href="#read">往下讀<span></span></a>
+  </div>
+</section>
+
+<!-- 讀經 -->
+<section class="s" id="read">
+  <div class="wrap rv">
+    <div class="eyebrow">讀經 <b>撒母耳記下 11:1–27（和合本）</b></div>
+    <h2>先把經文讀完</h2>
+    <p class="lead">這一章不長，二十七節，卻寫盡了權力如何一步步把人帶往深淵。<button class="ref" data-r="2Sam11:1-27">撒下 11:1–27</button></p>
+    <div class="passage" style="margin-top:22px">
+      <div class="blk"><h3>王宮的平頂 <span class="rg">11:1–5</span><button class="ref" data-r="2Sam11:1-5">撒下 11:1–5</button></h3>
+        <p><sup>1</sup>過了一年，到列王出戰的時候，大衛又差派約押，率領臣僕和以色列眾人出戰。他們就打敗亞捫人，圍攻拉巴。大衛仍住在耶路撒冷。</p>
+        <p><sup>2</sup>一日，太陽平西，大衛從床上起來，在王宮的平頂上遊行，看見一個婦人沐浴，容貌甚美，</p>
+        <p><sup>3</sup>大衛就差人打聽那婦人是誰。有人說：「她是以連的女兒，赫人烏利亞的妻拔示巴。」</p>
+        <p><sup>4</sup>大衛差人去，將婦人接來；那時她的月經才得潔淨。她來了，大衛與她同房，她就回家去了。</p>
+        <p><sup>5</sup>於是她懷了孕，打發人去告訴大衛說：「我懷了孕。」</p></div>
+      <div class="blk"><h3>召回烏利亞 <span class="rg">11:6–9</span><button class="ref" data-r="2Sam11:6-9">撒下 11:6–9</button></h3>
+        <p><sup>6</sup>大衛差人到約押那裡，說：「你打發赫人烏利亞到我這裡來。」約押就打發烏利亞去見大衛。</p>
+        <p><sup>7</sup>烏利亞來了，大衛問約押好，也問兵好，又問爭戰的事怎樣。</p>
+        <p><sup>8</sup>大衛對烏利亞說：「你回家去，洗洗腳吧！」烏利亞出了王宮，隨後王送他一分食物。</p>
+        <p><sup>9</sup>烏利亞卻和他主人的僕人一同睡在宮門外，沒有回家去。</p></div>
+      <div class="blk"><h3>烏利亞不肯回家 <span class="rg">11:10–13</span><button class="ref" data-r="2Sam11:10-13">撒下 11:10–13</button></h3>
+        <p><sup>10</sup>有人告訴大衛說：「烏利亞沒有回家去。」大衛就問烏利亞說：「你從遠路上來，為甚麼不回家去呢？」</p>
+        <p><sup>11</sup>烏利亞對大衛說：「約櫃和以色列與猶大兵都住在棚裡，我主約押和我主（或譯：王）的僕人都在田野安營，我豈可回家吃喝、與妻子同寢呢？我敢在王面前起誓（原文是我指著王和王的性命起誓）：我決不行這事！」</p>
+        <p><sup>12</sup>大衛吩咐烏利亞說：「你今日仍住在這裡，明日我打發你去。」於是烏利亞那日和次日住在耶路撒冷。</p>
+        <p><sup>13</sup>大衛召了烏利亞來，叫他在自己面前吃喝，使他喝醉。到了晚上，烏利亞出去與他主的僕人一同住宿，還沒有回到家裡去。</p></div>
+      <div class="blk"><h3>親手帶去的密信 <span class="rg">11:14–17</span><button class="ref" data-r="2Sam11:14-17">撒下 11:14–17</button></h3>
+        <p><sup>14</sup>次日早晨，大衛寫信與約押，交烏利亞隨手帶去。</p>
+        <p><sup>15</sup>信內寫著說：「要派烏利亞前進，到陣勢極險之處，你們便退後，使他被殺。」</p>
+        <p><sup>16</sup>約押圍城的時候，知道敵人那裡有勇士，便將烏利亞派在那裡。</p>
+        <p><sup>17</sup>城裡的人出來和約押打仗；大衛的僕人中有幾個被殺的，赫人烏利亞也死了。</p></div>
+      <div class="blk"><h3>約押的囑咐 <span class="rg">11:18–21</span><button class="ref" data-r="2Sam11:18-21">撒下 11:18–21</button></h3>
+        <p><sup>18</sup>於是，約押差人去將爭戰的一切事告訴大衛，</p>
+        <p><sup>19</sup>又囑咐使者說：「你把爭戰的一切事對王說完了，</p>
+        <p><sup>20</sup>王若發怒，問你說：『你們打仗為甚麼挨近城牆呢？豈不知敵人必從城上射箭嗎？</p>
+        <p><sup>21</sup>從前打死耶路‧比設（就是耶路‧巴力，見士師記九章一節）兒子亞比米勒的是誰呢？豈不是一個婦人從城上拋下一塊上磨石來，打在他身上，他就死在提備斯麼？你們為甚麼挨近城牆呢？』你就說：『王的僕人赫人烏利亞也死了。』」</p></div>
+      <div class="blk"><h3>王的回覆 <span class="rg">11:22–25</span><button class="ref" data-r="2Sam11:22-25">撒下 11:22–25</button></h3>
+        <p><sup>22</sup>使者起身，來見大衛，照著約押所吩咐他的話奏告大衛。</p>
+        <p><sup>23</sup>使者對大衛說：「敵人強過我們，出到郊野與我們打仗，我們追殺他們，直到城門口。</p>
+        <p><sup>24</sup>射箭的從城上射王的僕人，射死幾個，赫人烏利亞也死了。」</p>
+        <p><sup>25</sup>王向使者說：「你告訴約押說：『不要因這事愁悶，刀劍或吞滅這人或吞滅那人，沒有一定的；你只管竭力攻城，將城傾覆。』可以用這話勉勵約押。」</p></div>
+      <div class="blk last"><h3>耶和華甚不喜悅 <span class="rg">11:26–27</span><button class="ref" data-r="2Sam11:26-27">撒下 11:26–27</button></h3>
+        <p><sup>26</sup>烏利亞的妻聽見丈夫烏利亞死了，就為他哀哭。</p>
+        <p><sup>27</sup>哀哭的日子過了，大衛差人將她接到宮裡，她就作了大衛的妻，給大衛生了一個兒子。</p>
+        <p>但大衛所行的這事，耶和華甚不喜悅。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 場景 -->
+<section class="s" id="scene">
+  <div class="wrap rv">
+    <div class="eyebrow">場景 <b>耶路撒冷，黃昏</b></div>
+    <h2>兩個屋頂</h2>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 280" role="img" aria-label="黃昏時的耶路撒冷，王宮平頂上有一人獨自往下看，前方是層層的城中房屋">
+        <defs><linearGradient id="r1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6D9C6"/><stop offset=".55" stop-color="#FCEFDF"/><stop offset="1" stop-color="#F6EEE2"/></linearGradient></defs>
+        <rect width="600" height="280" fill="url(#r1)"/>
+        <circle cx="470" cy="118" r="34" fill="#F3B97A" opacity=".85"/><circle class="glow" cx="470" cy="118" r="60" fill="#F6CE9A" opacity=".35"/>
+        <path d="M0 168 Q150 140 300 158 T600 150 V280 H0Z" fill="#E7D3B6"/>
+        <g fill="#DCC6A2"><rect x="270" y="176" width="40" height="30"/><rect x="318" y="186" width="34" height="24"/><rect x="360" y="170" width="46" height="36"/><rect x="414" y="184" width="32" height="26"/><rect x="452" y="176" width="44" height="34"/><rect x="504" y="188" width="36" height="24"/><rect x="546" y="178" width="40" height="32"/></g>
+        <g fill="#CFB68E"><rect x="300" y="214" width="46" height="34"/><rect x="354" y="222" width="40" height="28"/><rect x="402" y="212" width="52" height="38"/><rect x="462" y="224" width="40" height="28"/><rect x="510" y="216" width="50" height="34"/></g>
+        <g fill="#B99F78"><rect x="408" y="222" width="10" height="10"/><rect x="520" y="226" width="10" height="10"/><rect x="314" y="224" width="10" height="10"/></g>
+        <path d="M0 280 V110 h40 v-20 h30 v20 h40 v-20 h30 v20 h60 V280Z" fill="#D9C19A"/>
+        <rect x="0" y="146" width="210" height="10" fill="#C6AB80"/>
+        <g fill="#C6AB80"><rect x="20" y="170" width="22" height="34" rx="11"/><rect x="70" y="170" width="22" height="34" rx="11"/><rect x="120" y="170" width="22" height="34" rx="11"/><rect x="170" y="170" width="22" height="34" rx="11"/></g>
+        <g stroke="#B99A6D" stroke-width="3"><line x1="150" y1="146" x2="150" y2="124"/><line x1="180" y1="146" x2="180" y2="124"/><line x1="210" y1="146" x2="210" y2="124"/><line x1="146" y1="124" x2="214" y2="124"/></g>
+        <g transform="translate(176,146)"><path d="M-8 -40 L8 -40 L14 0 L-14 0Z" fill="#6E7890"/><circle cx="0" cy="-48" r="7" fill="#5B6170"/><path d="M-7 -55 l3 -6 l4 4 l4 -4 l3 6Z" fill="#C9A24E"/></g>
+      </svg>
+      <figcaption><span>「一日，太陽平西，大衛從床上起來，在王宮的平頂上遊行。」</span><button class="ref" data-r="2Sam11:2">撒下 11:2</button></figcaption>
+    </figure>
+    <div class="roofs">
+      <div class="roof"><span class="tag">王宮的平頂</span><p>睡到黃昏起床的中年大叔。他是國王，前線還在打仗。</p></div>
+      <div class="roof" style="background:var(--wine-soft)"><span class="tag">遠處的院子</span><p>行潔淨禮的年輕少婦。丈夫和父親是國王的生死之交，在前線打仗；祖父是國王的參謀長。</p></div>
+    </div>
+    <div class="aside">經文第一句已經埋下伏筆：「到列王出戰的時候……大衛仍住在耶路撒冷。」該出門的時候，他留在家裡。</div>
+  </div>
+</section>
+
+<!-- 解經大綱 -->
+<section class="s" id="outline">
+  <div class="wrap rv">
+    <div class="eyebrow">解經</div>
+    <h2>四個角度</h2>
+    <div class="outline">
+      <a href="#people"><span class="n">一</span><b>人物</b><span>烏利亞 · 拔示巴 · 約押</span></a>
+      <a href="#plot"><span class="n">二</span><b>情節</b><span>警訊 · 政治盤算</span></a>
+      <a href="#cost"><span class="n">三</span><b>後果</b><span>血債血仇血還</span></a>
+      <a href="#grace"><span class="n">四</span><b>恩典</b><span>耶穌的家譜</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 一 人物 -->
+<section class="s" id="people">
+  <div class="wrap rv">
+    <div class="eyebrow">一、人物 <b>烏利亞</b></div>
+    <h2>烏利亞：<span class="em">真真切切大能的勇士</span></h2>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr))">
+      <div class="card sky"><span class="tag">外籍精英部隊</span><h3>赫人</h3>
+        <p>烏利亞是「赫人」（異族人），他能打破族群限制進入大衛的核心侍衛團（三十勇士），完全是憑藉著極高的忠誠度與赫赫戰功。</p></div>
+      <div class="card gold"><span class="tag">無與倫比的忠誠</span><h3>不肯回家</h3>
+        <p>大衛企圖掩蓋罪行，召他回家與妻子同房，他卻以約櫃和眾兵都住在棚裡為由拒絕。他的信仰與軍人操守，甚至高過了大衛。<button class="ref" data-r="2Sam11:11">撒下 11:11</button></p></div>
+      <div class="card clay"><span class="tag">勇士名冊的最後一位</span><h3>名單的終點，罪惡的起點</h3>
+        <p>大衛勇士名冊以「赫人烏利亞」作結，而大衛的罪正是從他開始。<button class="ref" data-r="2Sam23:39">撒下 23:39</button></p></div>
+    </div>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 260" role="img" aria-label="夜裡田野中的軍營帳棚，約櫃也停在棚中">
+        <defs><linearGradient id="u1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E1E5F0"/><stop offset=".7" stop-color="#F7F1E5"/></linearGradient></defs>
+        <rect width="600" height="260" fill="url(#u1)"/>
+        <g fill="#C9A24E"><circle class="tw" cx="60" cy="40" r="2"/><circle class="tw" style="animation-delay:1s" cx="140" cy="70" r="1.6"/><circle class="tw" style="animation-delay:2s" cx="250" cy="34" r="2.2"/><circle class="tw" style="animation-delay:.6s" cx="350" cy="60" r="1.8"/><circle class="tw" style="animation-delay:1.6s" cx="470" cy="30" r="2.4"/><circle class="tw" style="animation-delay:2.6s" cx="560" cy="72" r="1.6"/></g>
+        <path d="M70 34 a18 18 0 1 0 12 30 a14 14 0 1 1 -12 -30Z" fill="#EFD9A2" transform="translate(440,0)"/>
+        <path d="M0 200 Q300 176 600 200 V260 H0Z" fill="#DDD0B5"/>
+        <g fill="#CDBB96"><polygon points="40,214 90,160 140,214"/><polygon points="420,212 466,164 512,212"/><polygon points="500,220 540,180 580,220"/><polygon points="120,222 156,186 192,222"/></g>
+        <g fill="#B49A6A"><polygon points="84,214 90,186 96,214"/><polygon points="460,212 466,188 472,212"/></g>
+        <path d="M220 214 L300 150 L380 214Z" fill="#E7DAC0" stroke="#CDBB96" stroke-width="2"/>
+        <rect x="270" y="190" width="60" height="24" fill="#D9B566"/><rect x="262" y="198" width="76" height="4" fill="#B8893B"/>
+        <path d="M274 190 q8 -10 16 -2 M326 190 q-8 -10 -16 -2" stroke="#B8893B" stroke-width="3" fill="none"/>
+        <circle class="glow" cx="300" cy="196" r="30" fill="#FFEBB3" opacity=".35"/>
+      </svg>
+      <figcaption><span>「約櫃和以色列與猶大兵都住在棚裡……我豈可回家吃喝、與妻子同寢呢？」</span><button class="ref" data-r="2Sam11:11">撒下 11:11</button></figcaption>
+    </figure>
+    <div class="verdict">
+      <blockquote class="v">因為大衛除了赫人烏利亞那件事，都是行耶和華眼中看為正的事，一生沒有違背耶和華一切所吩咐的。</blockquote>
+      <div class="src">列王紀上 15:5　歷史的評價 <button class="ref" data-r="1Kgs15:5">王上 15:5</button></div>
+    </div>
+  </div>
+
+  <div class="wrap rv" style="margin-top:70px">
+    <div class="eyebrow">一、人物 <b>拔示巴</b></div>
+    <h2>拔示巴：<span class="em">勇士之女、謀士之孫</span></h2>
+    <div class="family">
+      <div class="chain">
+        <div class="node n1"><b>亞希多弗</b><span>基羅人，大衛的頂級謀士</span></div>
+        <div class="arrow">↓</div>
+        <div class="node n2"><b>以連</b><span>大衛三十勇士之一</span></div>
+        <div class="arrow">↓</div>
+        <div class="node n3"><b>拔示巴</b><span>以連的女兒，烏利亞的妻</span></div>
+      </div>
+      <div class="facts">
+        <h3>父親以連</h3>
+        <p>拔示巴的父親名叫以連<button class="ref" data-r="2Sam11:3">撒下 11:3</button>，同樣是大衛「三十勇士」之一。<button class="ref" data-r="2Sam23:34">撒下 23:34</button></p>
+        <p class="hl">案發當時，以連與烏利亞同在前線。</p>
+        <h3 style="margin-top:20px">祖父亞希多弗</h3>
+        <p>以連的父親是基羅人亞希多弗，也就是大衛身邊最著名的頂級謀士。<button class="ref" data-r="2Sam15:12">撒下 15:12</button><button class="ref" data-r="2Sam16:23">撒下 16:23</button></p>
+        <p class="hl">拔示巴出身於大衛最核心的軍事與謀略圈子。</p>
+      </div>
+    </div>
+    <div class="caution">撒下 11:3 的以連與 23:34「亞希多弗的兒子以連」是否同一人，經文沒有直接說明；許多註釋者認為很可能是同一人，本段依此推論。</div>
+  </div>
+
+  <div class="wrap rv" style="margin-top:70px">
+    <div class="eyebrow">一、人物 <b>約押</b></div>
+    <h2>約押：<span class="em">政治敏感的共犯</span></h2>
+    <div class="rows">
+      <div class="row"><div><h3>身分</h3><div class="rf"><button class="ref" data-r="2Sam8:16">撒下 8:16</button><button class="ref" data-r="1Chr2:16">代上 2:16</button></div></div>
+        <p>大衛姐姐洗魯雅的兒子，即大衛的外甥，長期擔任大衛的軍隊總司令。</p></div>
+      <div class="row"><div><h3>謀殺押尼珥</h3><div class="rf"><button class="ref" data-r="2Sam3:26-27">撒下 3:26–27</button></div></div>
+        <p>為消除政治威脅與私仇，瞞著大衛派人追回押尼珥，在城門洞裡假裝與他密談，趁機刺死他；表面理由是為弟弟亞撒黑報仇。</p></div>
+      <div class="row hot"><div><h3>烏利亞事件</h3><div class="rf"><button class="ref" data-r="2Sam11:14-17">撒下 11:14–17</button><button class="ref" data-r="2Sam11:18-21">11:18–21</button></div></div>
+        <p>大衛罪行的完美共犯：接下密信並執行，換來政治回報。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 二 情節 -->
+<section class="s" id="plot">
+  <div class="wrap rv">
+    <div class="eyebrow">二、情節 <b>警訊</b></div>
+    <h2>「國王，那是……」</h2>
+    <p class="lead">大衛在王宮平頂上往下看，差人去打聽那女人是誰。手下回報的那句話，若把 11:3 與 23:34 合起來讀，等於是說：</p>
+    <div class="warnq">
+      <p>「這不是基羅人亞希多弗的孫女、以連的女兒、赫人烏利亞的妻子拔示巴嗎？」</p>
+      <div class="src">依 撒下 11:3 與 23:34 合讀的意譯，非和合本原句 <button class="ref" data-r="2Sam11:3">撒下 11:3</button></div>
+    </div>
+    <p class="prose">這句話是個強烈的警訊，提醒大衛：</p>
+    <div class="cards3">
+      <div><b>生死與共的兄弟</b><span>你當年在山洞裡生死與共的兄弟以連的女兒</span></div>
+      <div><b>最忠心的勇士</b><span>你手下最忠心的勇士烏利亞的妻子</span></div>
+      <div><b>親眼看著長大</b><span>是你親眼看著長大的晚輩</span></div>
+    </div>
+    <p class="takeaway" style="border-color:var(--wine)">對長年忠心耿耿、生死與共的袍澤家族，最徹底的背叛與踐踏。</p>
+    <div class="caution">「山洞裡生死與共」「親眼看著長大」是依大衛逃亡時期與勇士們同在亞杜蘭洞等經文所作的推想，經文沒有直接記載以連的家庭與大衛的這段淵源。<button class="ref" data-r="1Sam22:1-2">撒上 22:1–2</button></div>
+  </div>
+
+  <div class="wrap rv" style="margin-top:70px">
+    <div class="eyebrow">二、情節 <b>政治盤算</b></div>
+    <h2>約押的算計</h2>
+    <div class="grid g2x2">
+      <div class="card gold"><span class="tag">掌握把柄</span><h3>知道最多秘密的人</h3>
+        <p>掌握國王最致命的道德把柄。知道國王秘密最多的人，權力最穩固。</p></div>
+      <div class="card gold"><span class="tag">轉嫁軍事失誤</span><h3>讓軍隊過於靠近城牆</h3>
+        <p>採取錯誤的軍事戰術，導致數名勇士陪同烏利亞一起犧牲。<button class="ref" data-r="2Sam11:17">撒下 11:17</button></p></div>
+      <div class="card gold"><span class="tag">密報：通關密語</span><h3>「王的僕人赫人烏利亞也死了」</h3>
+        <p>教科書等級的政治密碼溝通：「王若發怒……你就說：『王的僕人赫人烏利亞也死了。』」<button class="ref" data-r="2Sam11:18-21">撒下 11:20–21</button></p></div>
+      <div class="card gold"><span class="tag">鞏固元帥地位</span><h3>王的回覆</h3>
+        <p>「不要因這事愁悶，刀劍或吞滅這人或吞滅那人……」<button class="ref" data-r="2Sam11:25">撒下 11:25</button></p></div>
+    </div>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 240" role="img" aria-label="一封捲起並以紅色封蠟封住的信，放在桌上">
+        <defs><linearGradient id="l1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FBF5EA"/><stop offset="1" stop-color="#F1E8D8"/></linearGradient></defs>
+        <rect width="600" height="240" fill="url(#l1)"/>
+        <path d="M0 176 H600 V240 H0Z" fill="#D9C4A0"/><path d="M0 176 H600" stroke="#C4AC84" stroke-width="3"/>
+        <g transform="translate(300,150) rotate(-8)">
+          <rect x="-150" y="-26" width="300" height="52" rx="6" fill="#F6ECD4" stroke="#D8C49A"/>
+          <ellipse cx="-150" cy="0" rx="14" ry="26" fill="#E8D9B6" stroke="#D8C49A"/>
+          <ellipse cx="150" cy="0" rx="14" ry="26" fill="#EFE2C2" stroke="#D8C49A"/>
+          <path d="M-10 -26 V26 M10 -26 V26" stroke="#8C3E3E" stroke-width="4"/>
+          <circle cx="0" cy="0" r="20" fill="#9C3B45"/><circle cx="0" cy="0" r="13" fill="none" stroke="#7A2E3F" stroke-width="2"/>
+          <path d="M-5 -4 l5 -5 l5 5 l-5 9Z" fill="#7A2E3F"/>
+        </g>
+        <path d="M460 120 q20 -40 0 -80" stroke="#C9B48A" stroke-width="2" fill="none" stroke-dasharray="3 6"/>
+      </svg>
+      <figcaption><span>「次日早晨，大衛寫信與約押，交烏利亞隨手帶去。」</span><button class="ref" data-r="2Sam11:14-17">撒下 11:14</button></figcaption>
+    </figure>
+    <div class="aside">約押的使者口信，前面任王怎麼發怒都照念，只要最後一句說出口，王立刻就不罵了。這大概是聖經裡最早有記錄的「通關密語」。</div>
+    <div class="band">用幾名士兵和烏利亞的性命，換取了自己後半生的政治免責權。</div>
+  </div>
+</section>
+
+<!-- 三 後果 -->
+<section class="s" id="cost">
+  <div class="wrap rv">
+    <div class="eyebrow">三、後果</div>
+    <h2>血債血仇血還</h2>
+    <div class="tl">
+      <div class="st"><span class="n">01</span><h3>背叛</h3><p>亞希多弗後來背叛大衛，極大的原因是為孫女拔示巴和孫女婿烏利亞復仇。<button class="ref" data-r="2Sam15:12">撒下 15:12</button></p></div>
+      <div class="st"><span class="n">02</span><h3>同一個平頂</h3><p>建議押沙龍在光天化日之下，在王宮平頂上與大衛的妃嬪同房。<button class="ref" data-r="2Sam16:21-22">撒下 16:21–22</button></p></div>
+      <div class="st"><span class="n">03</span><h3>請纓追殺</h3><p>要求親率一萬二千人漏夜追趕，明言「我就單殺王一人」。<button class="ref" data-r="2Sam17:1-2">撒下 17:1–2</button></p></div>
+      <div class="st dark"><span class="n">04</span><h3>預言應驗</h3><p>先知拿單對大衛預言「刀劍必永不離開你的家」的慘烈實現。<button class="ref" data-r="2Sam12:10">撒下 12:10</button></p></div>
+    </div>
+    <p class="takeaway" style="border-color:var(--wine)">罪在王宮平頂上開始（11:2），報應也在同一個平頂上公開上演（16:22）。</p>
+    <div class="caution">經文記載亞希多弗投向押沙龍，但沒有直接說明他的動機；「為孫女復仇」是根據前述親屬關係所作的解經推論。</div>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 240" role="img" aria-label="一把刀劍懸在一座房屋上方，天色陰沉">
+        <defs><linearGradient id="w1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E8E2E6"/><stop offset="1" stop-color="#F6F0E6"/></linearGradient></defs>
+        <rect width="600" height="240" fill="url(#w1)"/>
+        <g fill="#DCD3D6" opacity=".9"><ellipse cx="140" cy="54" rx="80" ry="20"/><ellipse cx="200" cy="44" rx="60" ry="18"/><ellipse cx="460" cy="60" rx="90" ry="20"/><ellipse cx="400" cy="48" rx="56" ry="16"/></g>
+        <path d="M0 200 H600 V240 H0Z" fill="#E1D5BD"/>
+        <rect x="230" y="128" width="140" height="74" fill="#E3D3B2"/><rect x="222" y="120" width="156" height="10" fill="#D3BF97"/>
+        <path d="M286 202 V164 a14 14 0 0 1 28 0 V202Z" fill="#8F7556"/>
+        <rect x="250" y="148" width="22" height="18" fill="#C9B48A"/><rect x="328" y="148" width="22" height="18" fill="#C9B48A"/>
+        <g transform="translate(300,22)">
+          <rect x="-4" y="0" width="8" height="18" fill="#7A5A3A"/><rect x="-18" y="18" width="36" height="6" rx="2" fill="#9C7A4E"/>
+          <path d="M-6 24 L6 24 L4 82 L0 92 L-4 82Z" fill="#B9BCC4" stroke="#9EA2AC"/>
+        </g>
+      </svg>
+      <figcaption><span>「你既藐視我……所以刀劍必永不離開你的家。」</span><button class="ref" data-r="2Sam12:10">撒下 12:10</button></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 四 恩典 -->
+<section class="s" id="grace">
+  <div class="wrap rv">
+    <div class="eyebrow">四、恩典 <b>耶穌的家譜｜太 1 章 · 路 3 章</b></div>
+    <h2>恩典的延續</h2>
+    <div class="grid g2">
+      <div class="card clay"><span class="tag">太 1:6</span><h3>「大衛從烏利亞的妻子生所羅門」</h3>
+        <p>家譜仍記下她是「烏利亞的妻子」。<button class="ref" data-r="Matt1:6">太 1:6</button></p></div>
+      <div class="card gold"><span class="tag">撒下 12:25</span><h3>「耶底底亞」</h3>
+        <p>意思是「耶和華所愛的」。<button class="ref" data-r="2Sam12:24-25">撒下 12:24–25</button></p></div>
+    </div>
+    <div class="gene rv">
+      <div class="gline">
+        <div class="gpair"><div class="gp m">猶大</div><div class="gplus">+</div><div class="gp w">他瑪（兒媳）</div></div>
+        <div class="gdown">↓</div>
+        <div class="gpair"><div class="gp">法勒斯 ⋯ 拿順</div><div></div><div></div></div>
+        <div class="gdown">↓</div>
+        <div class="gpair"><div class="gp m">撒門</div><div class="gplus">+</div><div class="gp w">喇合（妓女）</div></div>
+        <div class="gdown">↓</div>
+        <div class="gpair"><div class="gp m">波阿斯</div><div class="gplus">+</div><div class="gp w">路得（摩押女子）</div></div>
+        <div class="gdown">↓</div>
+        <div class="gpair"><div class="gp">俄備得 → 耶西</div><div></div><div></div></div>
+        <div class="gdown">↓</div>
+        <div class="gpair"><div class="gp dv">大衛王</div><div class="gplus">+</div><div class="gp w"><b>拔示巴（烏利亞妻）</b></div></div>
+      </div>
+      <div class="gsplit">
+        <div class="gcol gold"><span class="lbl">馬太 1 章 · 王室線</span><div class="gp m">所羅門</div><span class="lbl">⋮</span><div class="gp">雅各</div><span class="lbl">↓</span><div class="gp m">約瑟</div></div>
+        <div class="gcol gblue"><span class="lbl">路加 3 章 · 非王室線</span><div class="gp m">拿單（所羅門之弟）</div><span class="lbl">⋮</span><div class="gp">希里</div><span class="lbl">↓</span><div class="gp m">瑪利亞</div></div>
+      </div>
+      <div class="gjesus">耶穌</div>
+      <div class="glegend"><span><i style="background:#E3B9C3"></i>家譜中的女性</span><span><i style="background:#E6CF9C"></i>約瑟線（王室）</span><span><i style="background:#C9D9EA"></i>瑪利亞線</span></div>
+      <p style="text-align:center;margin:10px 0 0"><button class="ref" data-r="Matt1:3-6">太 1:3–6</button><button class="ref" data-r="Matt1:16">太 1:16</button><button class="ref" data-r="Luke3:23">路 3:23</button><button class="ref" data-r="Luke3:31">路 3:31</button></p>
+    </div>
+    <div class="caution">路加 3:23 寫「約瑟是希里的兒子」。把路加家譜理解為瑪利亞一系（希里為瑪利亞之父），是傳統常見的解釋之一，另有學者認為兩份家譜都是約瑟一系。</div>
+    <figure class="illus rv">
+      <svg viewBox="0 0 600 240" role="img" aria-label="被砍下的樹墩上長出一根嫩枝">
+        <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FDF0D8"/><stop offset=".7" stop-color="#FFF9EF"/></linearGradient></defs>
+        <rect width="600" height="240" fill="url(#g1)"/>
+        <circle class="glow" cx="300" cy="96" r="80" fill="#FFEFC2" opacity=".55"/>
+        <path d="M0 196 Q300 176 600 196 V240 H0Z" fill="#CBDABA"/>
+        <path d="M244 200 L252 140 L348 140 L356 200Z" fill="#A9825A"/>
+        <ellipse cx="300" cy="140" rx="48" ry="12" fill="#D6B48A"/><ellipse cx="300" cy="140" rx="32" ry="8" fill="none" stroke="#B8935F" stroke-width="2"/><ellipse cx="300" cy="140" rx="16" ry="4" fill="none" stroke="#B8935F" stroke-width="2"/>
+        <path d="M232 200 q-16 6 -28 0 M368 200 q16 6 28 0" stroke="#A9825A" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <path d="M318 138 C320 110 330 92 346 72" stroke="#6F8A5A" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <g fill="#8FB06E"><ellipse cx="332" cy="104" rx="14" ry="7" transform="rotate(-30 332 104)"/><ellipse cx="348" cy="84" rx="12" ry="6" transform="rotate(20 348 84)"/><ellipse cx="324" cy="120" rx="11" ry="5.5" transform="rotate(30 324 120)"/><ellipse cx="352" cy="68" rx="10" ry="5" transform="rotate(-40 352 68)"/></g>
+      </svg>
+      <figcaption><span>「從耶西的本必發一條；從他根生的枝子必結果實。」</span><button class="ref" data-r="Isa11:1">賽 11:1</button></figcaption>
+    </figure>
+    <div class="prose">
+      <p>拿單當面指出「你就是那人」之後，大衛認罪：「我得罪耶和華了！」<button class="ref" data-r="2Sam12:13">撒下 12:13</button>罪的後果沒有被取消，但赦免與恩典也沒有被收回。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 結語 -->
+<section class="s finale-q" id="end">
+  <div class="wrap rv">
+    <div class="eyebrow" style="justify-content:center">撒母耳記下 11:27</div>
+    <p class="big">但大衛所行的這事，<br>耶和華甚不喜悅。</p>
+    <p><button class="ref" data-r="2Sam11:26-27">撒下 11:27</button></p>
+    <p class="lead">罪的代價真實而沉重；神的恩典卻仍在家譜中延續。</p>
+  </div>
+</section>
+
+<!-- 延伸比較 -->
+<section class="s" id="compare">
+  <div class="wrap rv">
+    <div class="eyebrow">延伸比較 <b>猶太拉比 vs. 現代以色列</b></div>
+    <h2>大衛濫用權力了嗎？</h2>
+    <div class="vs">
+      <div class="col a"><h3>猶太拉比傳統 <small>《塔木德》Shabbat 56a</small></h3>
+        <dl>
+          <dt>技術解套</dt><dd>「凡說大衛犯了罪的，都是錯的。」出征者先寫條件式離婚書，拔示巴不算有夫之婦；烏利亞稱約押為「我主」，被視為背叛王權。</dd>
+          <dt>仍有指責</dt><dd>大衛「本該將烏利亞交由公會（Sanhedrin）審判」卻沒有，等同越過司法程序。</dd>
+          <dt>內部異議</dt><dd>拉夫（Rav）直言：拉比猶大是大衛的後裔，才設法替他辯護。中世紀的亞伯拉巴內爾則認定大衛「大大犯罪，也徹底悔改」。</dd>
+        </dl></div>
+      <div class="col b"><h3>現代以色列 <small>1950 年代至今</small></h3>
+        <dl>
+          <dt>宗教錫安派</dt><dd>「平視聖經」（Tanakh at Eye Level）讀法：梅丹拉比〈拔示巴卷〉（1992）、賓農拉比主張照字面讀，大衛確實犯罪；阿維納拉比等人反對，爭議延燒至 2012 年課綱。</dd>
+          <dt>世俗文學</dt><dd>作家摩西．沙米爾的小說《窮人的羊羔》（Kivsat HaRash，1956）重寫此事，英譯本名為《赫人必死》。</dd>
+          <dt>法治社會</dt><dd>前總統卡察夫性侵案判決（2011）：「沒有人在法律之上。」可與先知拿單當面責備君王對照。<button class="ref" data-r="2Sam12:7">撒下 12:7</button></dd>
+        </dl></div>
+    </div>
+    <div class="band">拉比問：大衛的行為合法嗎？　現代以色列人更常問：掌權者可以不受審判嗎？</div>
+    <div class="caution">本節的人物、年份與引語取自講義，網頁製作時未逐條核對原始出處；引用前建議先查證，《塔木德》原文可見 Sefaria。</div>
+  </div>
+</section>
+
+<!-- 參考資料 -->
+<section class="s" id="refs">
+  <div class="wrap">
+    <div class="eyebrow">可溯源</div>
+    <h2>參考資料</h2>
+    <p class="lead" style="font-size:16px">經文採《和合本》（公有領域），讀經段落照講義所列和合本原文。點擊任一經文標籤可看經文，並連到 Bible Gateway 核對上下文，另附 KJV 對照。</p>
+    <h3 style="font-size:20px;margin:28px 0 12px">經文索引（依出現順序）</h3>
+    <ol class="refs" id="refList"></ol>
+    <h3 style="font-size:20px;margin:30px 0 12px">其他來源</h3>
+    <ul class="srcs">
+      <li>楊穎鋒，〈撒母耳記下 11 章：以色列歷史上最不名譽的事件〉解經講義，2026 年 11 月 11 日。<span class="why">本頁的人物分析、警訊、政治盤算、血債血仇血還、家譜與延伸比較架構。</span></li>
+      <li><a href="https://www.sefaria.org/Shabbat.56a" target="_blank" rel="noopener">Babylonian Talmud, Shabbat 56a（Sefaria）</a><span class="why">「凡說大衛犯了罪的，都是錯的」與條件式離婚書等拉比討論。</span></li>
+      <li>和合本線上資源：<a href="https://bible.fhl.net/" target="_blank" rel="noopener">信望愛站 bible.fhl.net</a>、<a href="https://www.biblegateway.com/versions/Chinese-Union-Version-Modern-Punctuation-Bible/" target="_blank" rel="noopener">Bible Gateway · CUVMPT</a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span data-cfg="title">撒母耳記下 11 章</span> · 老山羊 · 經文引自《和合本》</div>
+</footer>
+
+<dialog id="dlg">
+  <div class="dlg">
+    <div class="head"><div><div class="ver" id="dVer">和合本</div><h3 id="dTitle"></h3></div><button class="x" id="dClose" aria-label="關閉">×</button></div>
+    <blockquote class="v" id="dText"></blockquote>
+    <div class="links" id="dLinks"></div>
+  </div>
+</dialog>
+
+<script>
+const CFG = Object.assign({
+  title: document.title, subtitle: "", eyebrow: "", tabTitle: "",
+  description: "", bibleVersion: "CUVMPT"
+}, window.SITE_CONFIG || {});
+(function applyConfig(c){
+  document.title = c.tabTitle || c.title;
+  const setMeta = (sel, v) => { const m = document.querySelector(sel); if (m && v) m.setAttribute("content", v); };
+  setMeta('meta[name="description"]', c.description);
+  setMeta('meta[property="og:title"]', c.tabTitle || c.title);
+  setMeta('meta[property="og:description"]', c.description);
+  document.querySelectorAll("[data-cfg]").forEach(el => { const v = c[el.dataset.cfg]; if (v) el.textContent = v; });
+  document.querySelectorAll("[data-cfg-html]").forEach(el => { const v = c[el.dataset.cfgHtml]; if (v) el.innerHTML = v; });
+})(CFG);
+
+/* 經文資料：和合本 */
+const V = {
+  "2Sam11:1-27":{zh:"撒母耳記下 11:1–27",en:"2 Samuel 11:1-27",t:"全章共 27 節，已完整列於本頁「讀經」段落；點下方連結可在線上核對和合本原文。"},
+  "2Sam11:1-5":{zh:"撒母耳記下 11:1–5",en:"2 Samuel 11:1-5",t:"過了一年，到列王出戰的時候，大衛又差派約押，率領臣僕和以色列眾人出戰。他們就打敗亞捫人，圍攻拉巴。大衛仍住在耶路撒冷。一日，太陽平西，大衛從床上起來，在王宮的平頂上遊行，看見一個婦人沐浴，容貌甚美，大衛就差人打聽那婦人是誰。有人說：她是以連的女兒，赫人烏利亞的妻拔示巴。大衛差人去，將婦人接來；那時她的月經才得潔淨。她來了，大衛與她同房，她就回家去了。於是她懷了孕，打發人去告訴大衛說：我懷了孕。"},
+  "2Sam11:2":{zh:"撒母耳記下 11:2",en:"2 Samuel 11:2",t:"一日，太陽平西，大衛從床上起來，在王宮的平頂上遊行，看見一個婦人沐浴，容貌甚美，"},
+  "2Sam11:3":{zh:"撒母耳記下 11:3",en:"2 Samuel 11:3",t:"大衛就差人打聽那婦人是誰。有人說：她是以連的女兒，赫人烏利亞的妻拔示巴。"},
+  "2Sam11:6-9":{zh:"撒母耳記下 11:6–9",en:"2 Samuel 11:6-9",t:"大衛差人到約押那裡，說：你打發赫人烏利亞到我這裡來。約押就打發烏利亞去見大衛。烏利亞來了，大衛問約押好，也問兵好，又問爭戰的事怎樣。大衛對烏利亞說：你回家去，洗洗腳吧！烏利亞出了王宮，隨後王送他一分食物。烏利亞卻和他主人的僕人一同睡在宮門外，沒有回家去。"},
+  "2Sam11:10-13":{zh:"撒母耳記下 11:10–13",en:"2 Samuel 11:10-13",t:"有人告訴大衛說：烏利亞沒有回家去。大衛就問烏利亞說：你從遠路上來，為甚麼不回家去呢？烏利亞對大衛說：約櫃和以色列與猶大兵都住在棚裡，我主約押和我主（或譯：王）的僕人都在田野安營，我豈可回家吃喝、與妻子同寢呢？我敢在王面前起誓（原文是我指著王和王的性命起誓）：我決不行這事！大衛吩咐烏利亞說：你今日仍住在這裡，明日我打發你去。於是烏利亞那日和次日住在耶路撒冷。大衛召了烏利亞來，叫他在自己面前吃喝，使他喝醉。到了晚上，烏利亞出去與他主的僕人一同住宿，還沒有回到家裡去。"},
+  "2Sam11:11":{zh:"撒母耳記下 11:11",en:"2 Samuel 11:11",t:"烏利亞對大衛說：約櫃和以色列與猶大兵都住在棚裡，我主約押和我主（或譯：王）的僕人都在田野安營，我豈可回家吃喝、與妻子同寢呢？我敢在王面前起誓（原文是我指著王和王的性命起誓）：我決不行這事！"},
+  "2Sam11:14-17":{zh:"撒母耳記下 11:14–17",en:"2 Samuel 11:14-17",t:"次日早晨，大衛寫信與約押，交烏利亞隨手帶去。信內寫著說：要派烏利亞前進，到陣勢極險之處，你們便退後，使他被殺。約押圍城的時候，知道敵人那裡有勇士，便將烏利亞派在那裡。城裡的人出來和約押打仗；大衛的僕人中有幾個被殺的，赫人烏利亞也死了。"},
+  "2Sam11:17":{zh:"撒母耳記下 11:17",en:"2 Samuel 11:17",t:"城裡的人出來和約押打仗；大衛的僕人中有幾個被殺的，赫人烏利亞也死了。"},
+  "2Sam11:18-21":{zh:"撒母耳記下 11:18–21",en:"2 Samuel 11:18-21",t:"於是，約押差人去將爭戰的一切事告訴大衛，又囑咐使者說：你把爭戰的一切事對王說完了，王若發怒，問你說：你們打仗為甚麼挨近城牆呢？豈不知敵人必從城上射箭嗎？從前打死耶路‧比設（就是耶路‧巴力，見士師記九章一節）兒子亞比米勒的是誰呢？豈不是一個婦人從城上拋下一塊上磨石來，打在他身上，他就死在提備斯麼？你們為甚麼挨近城牆呢？你就說：王的僕人赫人烏利亞也死了。"},
+  "2Sam11:22-25":{zh:"撒母耳記下 11:22–25",en:"2 Samuel 11:22-25",t:"使者起身，來見大衛，照著約押所吩咐他的話奏告大衛。使者對大衛說：敵人強過我們，出到郊野與我們打仗，我們追殺他們，直到城門口。射箭的從城上射王的僕人，射死幾個，赫人烏利亞也死了。王向使者說：你告訴約押說：不要因這事愁悶，刀劍或吞滅這人或吞滅那人，沒有一定的；你只管竭力攻城，將城傾覆。可以用這話勉勵約押。"},
+  "2Sam11:25":{zh:"撒母耳記下 11:25",en:"2 Samuel 11:25",t:"王向使者說：你告訴約押說：不要因這事愁悶，刀劍或吞滅這人或吞滅那人，沒有一定的；你只管竭力攻城，將城傾覆。可以用這話勉勵約押。"},
+  "2Sam11:26-27":{zh:"撒母耳記下 11:26–27",en:"2 Samuel 11:26-27",t:"烏利亞的妻聽見丈夫烏利亞死了，就為他哀哭。哀哭的日子過了，大衛差人將她接到宮裡，她就作了大衛的妻，給大衛生了一個兒子。但大衛所行的這事，耶和華甚不喜悅。"},
+  "2Sam23:39":{zh:"撒母耳記下 23:39",en:"2 Samuel 23:39",t:"赫人烏利亞，共有三十七人。"},
+  "1Kgs15:5":{zh:"列王紀上 15:5",en:"1 Kings 15:5",t:"因為大衛除了赫人烏利亞那件事，都是行耶和華眼中看為正的事，一生沒有違背耶和華一切所吩咐的。"},
+  "2Sam23:34":{zh:"撒母耳記下 23:34",en:"2 Samuel 23:34",t:"瑪迦人亞哈拜的兒子以利法列，基羅人亞希多弗的兒子以連，"},
+  "2Sam15:12":{zh:"撒母耳記下 15:12",en:"2 Samuel 15:12",t:"押沙龍獻祭的時候，打發人去將大衛的謀士基羅人亞希多弗從他本城請了來。於是叛逆的勢派甚大，因為隨從押沙龍的人民日漸增多。"},
+  "2Sam16:23":{zh:"撒母耳記下 16:23",en:"2 Samuel 16:23",t:"那時，亞希多弗所出的主意好像人問神的話一樣；他昔日給大衛，今日給押沙龍出的主意，都是這樣。"},
+  "2Sam8:16":{zh:"撒母耳記下 8:16",en:"2 Samuel 8:16",t:"洗魯雅的兒子約押作元帥；亞希律的兒子約沙法作史官；"},
+  "1Chr2:16":{zh:"歷代志上 2:16",en:"1 Chronicles 2:16",t:"他們的姊妹是洗魯雅和亞比該。洗魯雅的兒子是亞比篩、約押、亞撒黑，共三人。"},
+  "2Sam3:26-27":{zh:"撒母耳記下 3:26–27",en:"2 Samuel 3:26-27",t:"約押從大衛那裡出來，就打發人去追趕押尼珥，在西拉井追上他，將他帶回來；大衛卻不知道。押尼珥回到希伯崙，約押領他到城門的甕洞，假作要與他說機密話，就在那裡刺透他的肚腹，殺了他，報殺他兄弟亞撒黑的仇。"},
+  "1Sam22:1-2":{zh:"撒母耳記上 22:1–2",en:"1 Samuel 22:1-2",t:"大衛就離開那裡，逃到亞杜蘭洞。他的弟兄和他父親的全家聽見了，就都下到他那裡。凡受窘迫的、欠債的、心裡苦惱的都聚集到大衛那裡；大衛就作他們的頭目，跟隨他的約有四百人。"},
+  "2Sam16:21-22":{zh:"撒母耳記下 16:21–22",en:"2 Samuel 16:21-22",t:"亞希多弗對押沙龍說：你父所留下看守宮殿的妃嬪，你可以與她們親近；以色列眾人聽見你父親厭惡你，凡歸順你人的手就更堅強。於是人為押沙龍在宮殿的平頂上支搭帳棚；押沙龍在以色列眾人眼前，與他父的妃嬪親近。"},
+  "2Sam17:1-2":{zh:"撒母耳記下 17:1–2",en:"2 Samuel 17:1-2",t:"亞希多弗又對押沙龍說：求你准我挑選一萬二千人，今夜起來追趕大衛。趁他疲乏手軟，我就追上他，使他驚惶；跟隨他的民必都逃跑，我就單殺王一人，"},
+  "2Sam12:10":{zh:"撒母耳記下 12:10",en:"2 Samuel 12:10",t:"你既藐視我，娶了赫人烏利亞的妻為妻，所以刀劍必永不離開你的家。"},
+  "2Sam12:7":{zh:"撒母耳記下 12:7",en:"2 Samuel 12:7",t:"拿單對大衛說：你就是那人！耶和華以色列的神如此說：我膏你作以色列的王，救你脫離掃羅的手；"},
+  "2Sam12:13":{zh:"撒母耳記下 12:13",en:"2 Samuel 12:13",t:"大衛對拿單說：我得罪耶和華了！拿單說：耶和華已經除掉你的罪，你必不至於死。"},
+  "2Sam12:24-25":{zh:"撒母耳記下 12:24–25",en:"2 Samuel 12:24-25",t:"大衛安慰他的妻拔示巴，與她同寢，她就生了兒子，給他起名叫所羅門。耶和華也喜愛他，就藉先知拿單賜他一個名字，叫耶底底亞，因為耶和華愛他。"},
+  "Matt1:6":{zh:"馬太福音 1:6",en:"Matthew 1:6",t:"耶西生大衛王。大衛從烏利亞的妻子生所羅門；"},
+  "Matt1:3-6":{zh:"馬太福音 1:3–6",en:"Matthew 1:3-6",t:"猶大從他瑪氏生法勒斯和謝拉；法勒斯生希斯崙；希斯崙生亞蘭；亞蘭生亞米拿達；亞米拿達生拿順；拿順生撒門；撒門從喇合氏生波阿斯；波阿斯從路得氏生俄備得；俄備得生耶西；耶西生大衛王。大衛從烏利亞的妻子生所羅門；"},
+  "Matt1:16":{zh:"馬太福音 1:16",en:"Matthew 1:16",t:"雅各生約瑟，就是馬利亞的丈夫。那稱為基督的耶穌是從馬利亞生的。"},
+  "Luke3:23":{zh:"路加福音 3:23",en:"Luke 3:23",t:"耶穌開頭傳道，年紀約有三十歲。依人看來，他是約瑟的兒子，約瑟是希里的兒子，"},
+  "Luke3:31":{zh:"路加福音 3:31",en:"Luke 3:31",t:"以利亞敬是米利亞的兒子；米利亞是緬南的兒子；緬南是瑪達他的兒子；瑪達他是拿單的兒子；拿單是大衛的兒子；"},
+  "Isa11:1":{zh:"以賽亞書 11:1",en:"Isaiah 11:1",t:"從耶西的本必發一條；從他根生的枝子必結果實。"}
+};
+const bg = (en, ver) => `https://www.biblegateway.com/passage/?search=${encodeURIComponent(en)}&version=${ver}`;
+function linksFor(v){
+  if (v.links) return v.links;
+  const main = CFG.bibleVersion || "CUVMPT";
+  const out = [["和合本（新式標點）原文", bg(v.en, main)]];
+  if (main !== "CUV") out.push(["和合本（神版）", bg(v.en, "CUV")]);
+  out.push(["KJV 英文對照", bg(v.en, "KJV")]);
+  return out;
+}
+const dlg = document.getElementById('dlg');
+function openRef(key){
+  const v = V[key]; if (!v) return;
+  document.getElementById('dTitle').textContent = v.zh;
+  document.getElementById('dVer').textContent = v.ver || '和合本';
+  document.getElementById('dText').textContent = v.t;
+  document.getElementById('dLinks').innerHTML = linksFor(v).map(([n,u]) => `<a href="${u}" target="_blank" rel="noopener">${n} ↗</a>`).join('');
+  if (dlg.showModal) dlg.showModal(); else window.open(linksFor(v)[0][1]);
+}
+document.addEventListener('click', e => { const b = e.target.closest('.ref'); if (b) { e.preventDefault(); openRef(b.dataset.r); } });
+document.getElementById('dClose').onclick = () => dlg.close();
+dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+
+const seen = new Set(), list = document.getElementById('refList');
+document.querySelectorAll('main .ref').forEach(b => {
+  const k = b.dataset.r; if (seen.has(k) || !V[k] || V[k].links) return; seen.add(k);
+  const v = V[k], li = document.createElement('li');
+  li.innerHTML = `<a href="${bg(v.en, CFG.bibleVersion)}" target="_blank" rel="noopener">${v.zh}</a>　<span style="color:var(--ink3);font-size:13px">${v.en}</span>`;
+  list.appendChild(li);
+});
+
+const io = new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); } }), {threshold:.08});
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+const prog = document.getElementById('progress'), navA = [...document.querySelectorAll('#nav a')];
+const targets = navA.map(a => document.querySelector(a.getAttribute('href')));
+addEventListener('scroll', () => {
+  const h = document.documentElement; prog.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+  let cur = -1; targets.forEach((t,i) => { if (t && t.getBoundingClientRect().top < 120) cur = i; });
+  navA.forEach((a,i) => a.classList.toggle('on', i === cur));
+}, {passive:true});
+</script>
+</body>
+</html>
