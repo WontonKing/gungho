@@ -22,6 +22,12 @@ window.SITE_CONFIG = {
 
   notes: [
     {
+  title: "從伊甸園到新耶路撒冷",
+  subtitle: "從失落的同在，到在基督裡成全的永恆盼望",
+  url: "https://www.gungho.idv.tw/fellowship/eden-new-jerusalem/",
+  date: ""
+},
+   {
       title: "在陰暗歷史中辨識信仰",
       subtitle: "撒母耳記下第四章",
       url: "https://www.gungho.idv.tw/fellowship/2samuel-4/",
