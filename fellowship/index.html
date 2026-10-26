@@ -24,10 +24,11 @@
   --line:#E7DFCD;
   --serif:"Noto Serif TC","Songti TC",serif;
   --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --bh:106px; /* 固定橫幅高度，由 JS 依實際高度更新 */
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.8;
+html{scroll-behavior:smooth;scroll-padding-top:var(--bh)}
+body{margin:0;padding-top:var(--bh);background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.8;
   background-image:radial-gradient(1100px 560px at 85% -8%,#FFF1CF 0,transparent 60%),radial-gradient(900px 520px at -10% 20%,#E8F1FA 0,transparent 60%),radial-gradient(800px 500px at 50% 110%,#EEF4E6 0,transparent 60%);
   background-attachment:fixed}
 a{color:inherit}
@@ -35,21 +36,64 @@ a{color:inherit}
 .skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px 12px;border-radius:8px;z-index:50}
 .skip:focus{left:12px;top:12px}
 
-/* header */
-.bar{position:sticky;top:0;z-index:20;background:rgba(251,248,241,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
-.brand{font-family:var(--serif);font-weight:700;font-size:19px;letter-spacing:.12em;text-decoration:none;display:flex;align-items:center;gap:10px}
-.brand i{width:24px;height:24px;border-radius:50%;background:radial-gradient(circle,#FFE7A8 0,#F3D27A 45%,transparent 70%);display:inline-block}
-.pod{display:inline-flex;align-items:center;gap:10px;text-decoration:none;padding:6px 14px 6px 6px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:14.5px;transition:.2s}
+/* ===== 固定橫幅 ===== */
+.bar{position:fixed;top:0;left:0;right:0;z-index:30;background:rgba(251,248,241,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.row1{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
+.lft{display:flex;align-items:center;gap:10px;min-width:0}
+.brand{font-family:var(--serif);font-weight:700;font-size:19px;letter-spacing:.12em;text-decoration:none;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.brand i{width:24px;height:24px;border-radius:50%;background:radial-gradient(circle,#FFE7A8 0,#F3D27A 45%,transparent 70%);display:inline-block;flex:none}
+.back{display:none;align-items:center;gap:4px;height:34px;padding:0 12px 0 8px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink);font:inherit;font-size:14.5px;cursor:pointer;transition:.2s}
+.back:hover{border-color:var(--gold)}
+.back svg{width:18px;height:18px}
+body.reading .back{display:inline-flex}
+.pod{display:inline-flex;align-items:center;gap:10px;text-decoration:none;padding:5px 14px 5px 5px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:14.5px;transition:.2s;flex:none}
 .pod:hover{border-color:var(--gold);box-shadow:0 4px 14px rgba(184,137,59,.2);transform:translateY(-1px)}
-.pod .ic{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(160deg,#F6DFA6,#E9B85E);color:#fff;position:relative}
+.pod .ic{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(160deg,#F6DFA6,#E9B85E);color:#fff;position:relative}
 .pod .ic::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(233,184,94,.45);animation:ping 2.6s ease-out infinite}
 @keyframes ping{0%{transform:scale(.85);opacity:.9}100%{transform:scale(1.35);opacity:0}}
-.pod svg{width:18px;height:18px}
-@media (max-width:560px){.pod .t{display:none}.pod{padding:6px}}
+.pod svg{width:17px;height:17px}
+
+/* 朗讀列 */
+.tts{position:relative;display:flex;align-items:center;gap:8px;height:50px;border-top:1px dashed var(--line)}
+.tb{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--ink);display:grid;place-items:center;cursor:pointer;padding:0;text-decoration:none;transition:.2s}
+.tb svg{width:16px;height:16px}
+.tb:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.tb:disabled{opacity:.38;cursor:default}
+.tb.play{width:40px;height:40px;border:0;color:#fff;background:linear-gradient(160deg,#F2D08A,#D9A24A);box-shadow:0 3px 10px rgba(184,137,59,.3)}
+.tb.play:hover:not(:disabled){color:#fff;transform:scale(1.05)}
+.tb.play:disabled{box-shadow:none}
+.tb.play .ip{display:none}
+.tb.play.on .ip{display:block}.tb.play.on .ir{display:none}
+.tst{flex:1;min-width:0;font-size:14px;color:var(--ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-left:4px}
+.tst b{font-family:var(--serif);font-weight:600;color:var(--ink);margin-right:6px}
+.tst .wave{display:inline-flex;gap:2px;vertical-align:-1px;margin-right:6px}
+.tst .wave i{width:3px;height:12px;background:var(--gold);border-radius:2px;animation:wv 1s ease-in-out infinite}
+.tst .wave i:nth-child(2){animation-delay:-.3s}.tst .wave i:nth-child(3){animation-delay:-.6s}
+@keyframes wv{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+.opts{display:none;position:absolute;right:20px;top:calc(100% + 6px);z-index:5;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 14px 40px rgba(60,50,20,.14);min-width:250px;max-width:calc(100vw - 32px)}
+.opts.on{display:grid;gap:10px}
+.opts label{display:grid;gap:4px;font-size:13px;color:var(--ink2)}
+.opts select{font:inherit;font-size:15px;color:var(--ink);padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--paper);max-width:100%}
+.prog{position:absolute;left:0;right:0;bottom:-1px;height:3px}
+.prog i{display:block;height:100%;width:0;background:var(--gold);transition:width .4s}
+.tts.off .tb{display:none}
+
+@media (max-width:560px){
+  .pod .t{display:none}.pod{padding:5px}
+  body.reading .brand span{display:none}
+  .wrap{padding:0 14px}
+  .tts{gap:6px}
+  .tb{width:32px;height:32px}
+}
+
+/* 閱讀區（點入的筆記載入於此） */
+#reader{display:none;position:fixed;top:var(--bh);left:0;right:0;bottom:0;z-index:20;background:var(--paper)}
+#reader iframe{display:block;width:100%;height:100%;border:0;background:transparent}
+body.reading{overflow:hidden}
+body.reading #reader{display:block}
 
 /* hero */
-.hero{padding:64px 0 10px;text-align:center}
+.hero{padding:56px 0 10px;text-align:center}
 .hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(46px,9vw,92px);letter-spacing:.14em;margin:0;line-height:1.2}
 .hero h1 .dot{color:var(--gold)}
 .verse{max-width:720px;margin:26px auto 0}
@@ -98,21 +142,57 @@ footer a{color:var(--ink2)}
 @keyframes sip{50%{transform:rotate(-4deg)}}
 .leaf{transform-box:fill-box;transform-origin:50% 100%;animation:leaf 6s ease-in-out infinite}
 @keyframes leaf{50%{transform:rotate(1.4deg)}}
-@media (prefers-reduced-motion:reduce){.drift,.halo,.flow,.sip,.leaf,.pod .ic::after{animation:none}}
+@media (prefers-reduced-motion:reduce){.drift,.halo,.flow,.sip,.leaf,.pod .ic::after,.tst .wave i{animation:none}}
 </style>
 </head>
 <body>
 <a class="skip" href="#notes">跳到讀經筆記</a>
 
-<header class="bar">
-  <div class="wrap">
-    <a class="brand" href="#top"><i></i><span data-cfg="siteTitle">共好小團契</span></a>
+<header class="bar" id="bar">
+  <div class="wrap row1">
+    <div class="lft">
+      <button class="back" id="backBtn" type="button" aria-label="返回筆記列表"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>返回</button>
+      <a class="brand" id="brandLink" href="#top"><i></i><span data-cfg="siteTitle">共好小團契</span></a>
+    </div>
     <a class="pod" id="podLink" href="https://open.firstory.fm/user/oldgoat/platforms" target="_blank" rel="noopener" aria-label="收聽 Podcast：老山羊的讀經筆記" title="老山羊的讀經筆記">
       <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2.5" width="6" height="11" rx="3"/><path d="M5.5 10.5a6.5 6.5 0 0 0 13 0"/><line x1="12" y1="17" x2="12" y2="21.5"/><line x1="8.5" y1="21.5" x2="15.5" y2="21.5"/></svg></span>
       <span class="t" id="podTitle">老山羊的讀經筆記</span>
     </a>
   </div>
+
+  <div class="wrap tts" id="tts" role="region" aria-label="語音朗讀">
+    <button class="tb" id="tPrev" type="button" aria-label="上一段" title="上一段" disabled><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+    <button class="tb play" id="tPlay" type="button" aria-label="播放" title="播放 / 暫停" disabled>
+      <svg class="ir" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      <svg class="ip" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+    </button>
+    <button class="tb" id="tNext" type="button" aria-label="下一段" title="下一段" disabled><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+    <button class="tb" id="tStop" type="button" aria-label="停止" title="停止" disabled><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="1.5"/></svg></button>
+    <div class="tst" id="tStatus">點選下方任一篇讀經筆記，即可在此聆聽朗讀</div>
+    <a class="tb" id="tOpen" href="#" target="_blank" rel="noopener" aria-label="在新分頁開啟本篇" title="在新分頁開啟" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+    <button class="tb" id="tOpt" type="button" aria-label="朗讀設定" title="朗讀設定" aria-expanded="false" aria-controls="tOpts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></button>
+    <div class="opts" id="tOpts">
+      <label>語速
+        <select id="tRate">
+          <option value="0.75">0.75×（慢）</option>
+          <option value="0.9">0.9×</option>
+          <option value="1" selected>1×（正常）</option>
+          <option value="1.15">1.15×</option>
+          <option value="1.3">1.3×</option>
+          <option value="1.5">1.5×（快）</option>
+        </select>
+      </label>
+      <label>聲音
+        <select id="tVoice"><option value="">系統預設</option></select>
+      </label>
+    </div>
+  </div>
+  <div class="prog" aria-hidden="true"><i id="tProg"></i></div>
 </header>
+
+<div id="reader" aria-label="讀經筆記內容">
+  <iframe id="rframe" title="讀經筆記內容"></iframe>
+</div>
 
 <section class="hero" id="top">
   <div class="wrap">
@@ -203,7 +283,7 @@ footer a{color:var(--ink2)}
       <li><a href="https://www.gungho.idv.tw/fellowship/GST/"><span class="bul"></span><span class="tt">來學與往教</span><span class="st">從亞伯拉罕、雅各，到基督與初代教會</span><span class="go">→</span></a></li>
       <li><a href="https://www.gungho.idv.tw/fellowship/justification/"><span class="bul"></span><span class="tt">羅馬書與加拉太書的因信稱義</span><span class="st">以和合本經文理解基督的救恩與信徒的新生命</span><span class="go">→</span></a></li>
     </ul>
-    <p class="listen">想用聽的？收聽 Podcast <a id="podLink2" href="https://open.firstory.fm/user/oldgoat/platforms" target="_blank" rel="noopener">老山羊的讀經筆記</a>。</p>
+    <p class="listen">想用聽的？點開任一篇筆記，按上方橫幅的 ▶ 即可朗讀；或收聽 Podcast <a id="podLink2" href="https://open.firstory.fm/user/oldgoat/platforms" target="_blank" rel="noopener">老山羊的讀經筆記</a>。</p>
   </div>
 </main>
 
@@ -212,6 +292,7 @@ footer a{color:var(--ink2)}
 </footer>
 
 <script>
+/* ===== 1. 套用 config.js 設定 ===== */
 (function () {
   var c = window.SITE_CONFIG;
   if (!c) return; // 沒有 config.js 時保留頁面上的預設內容
@@ -258,6 +339,335 @@ footer a{color:var(--ink2)}
     });
     document.getElementById("notesCount").textContent = ul.children.length + " 篇";
   }
+})();
+
+/* ===== 2. 固定橫幅 + 站內閱讀 + 語音朗讀（Web Speech API） =====
+ * 點選筆記 → 在本頁的閱讀區載入該篇 → 橫幅的播放鍵朗讀內文。
+ * 朗讀程式只放在這一頁，各篇筆記頁面不需要任何修改。
+ * 註：瀏覽器只允許讀取「同網域」頁面的文字，所以本頁需與筆記放在同一網站上。
+ */
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var bar = $("bar"), frame = $("rframe");
+  var tPlay = $("tPlay"), tPrev = $("tPrev"), tNext = $("tNext"), tStop = $("tStop");
+  var tStatus = $("tStatus"), tProg = $("tProg"), tOpen = $("tOpen"), tOpt = $("tOpt"), tOpts = $("tOpts");
+  var tRate = $("tRate"), tVoice = $("tVoice");
+  var baseTitle = document.title;
+  var cfg = window.SITE_CONFIG || {};
+  var siteTitle = cfg.siteTitle || "共好小團契";
+
+  /* --- 橫幅高度 --- */
+  function setBH() { document.documentElement.style.setProperty("--bh", bar.offsetHeight + "px"); }
+  setBH(); window.addEventListener("resize", setBH);
+
+  /* --- 筆記清單 --- */
+  var NOTES = [];
+  document.querySelectorAll("#notesList a").forEach(function (a) {
+    var tt = a.querySelector(".tt");
+    a.setAttribute("data-i", NOTES.length);
+    NOTES.push({ url: a.href, title: (tt || a).textContent.trim(), newTab: a.target === "_blank" });
+  });
+
+  // 同一網站有無 www 都視為同站，改成目前網域的網址，避免跨網域讀不到內文
+  function sameSiteUrl(url) {
+    try {
+      var u = new URL(url, location.href), strip = function (h) { return h.replace(/^www\./, ""); };
+      if (/^https?:$/.test(location.protocol) && strip(u.hostname) === strip(location.hostname)) {
+        return location.origin + u.pathname + u.search + u.hash;
+      }
+      return u.href;
+    } catch (e) { return url; }
+  }
+
+  /* --- 語音 --- */
+  var synth = window.speechSynthesis;
+  var OK = !!(synth && window.SpeechSynthesisUtterance);
+  var MAX = 110; // 每次送出的字數上限（避免部分瀏覽器長句中斷）
+  var BLOCK = "h1,h2,h3,h4,h5,h6,p,li,blockquote,pre,figcaption,dt,dd,th,td,caption";
+  var SKIP = "nav,footer,aside,script,style,noscript,button,form,select,[hidden],[aria-hidden='true']";
+  var S = { segs: [], blocks: [], first: [], idx: 0, on: false, token: 0, doc: null, cur: null, note: "", label: "" };
+  var current = null; // 目前開啟的筆記
+
+  var pref = { rate: 1, voice: "" };
+  try { var sv = JSON.parse(localStorage.getItem("gh-tts") || "{}"); if (sv.rate) pref.rate = +sv.rate; if (sv.voice) pref.voice = sv.voice; } catch (e) {}
+  function savePref() { try { localStorage.setItem("gh-tts", JSON.stringify(pref)); } catch (e) {} }
+  tRate.value = String(pref.rate);
+  if (tRate.value !== String(pref.rate)) { pref.rate = 1; tRate.value = "1"; }
+
+  var voices = [];
+  function rankVoice(v) {
+    var l = v.lang.replace("_", "-").toLowerCase();
+    if (l === "zh-tw" || l.indexOf("hant-tw") > -1) return 0;
+    if (l === "zh-cn" || l.indexOf("cmn") === 0) return 1;
+    if (l === "zh-hk") return 2;
+    return 3;
+  }
+  function loadVoices() {
+    if (!OK) return;
+    var all = synth.getVoices() || [];
+    if (!all.length) return;
+    var zh = all.filter(function (v) { return /^(zh|cmn|yue)/i.test(v.lang); });
+    voices = (zh.length ? zh : all).slice().sort(function (a, b) { return rankVoice(a) - rankVoice(b); });
+    tVoice.textContent = "";
+    voices.forEach(function (v) {
+      var o = document.createElement("option");
+      o.value = v.voiceURI; o.textContent = v.name + "（" + v.lang + "）";
+      tVoice.appendChild(o);
+    });
+    var hit = voices.some(function (v) { return v.voiceURI === pref.voice; });
+    tVoice.value = hit ? pref.voice : (voices[0] ? voices[0].voiceURI : "");
+  }
+  function getVoice() {
+    var id = tVoice.value;
+    for (var i = 0; i < voices.length; i++) if (voices[i].voiceURI === id) return voices[i];
+    return voices[0] || null;
+  }
+
+  function clean(t) { return (t || "").replace(/\s+/g, " ").trim(); }
+  function splitText(t) {
+    var out = [];
+    t.replace(/([。！？!?；;…]+[」』”’）)]*)/g, "$1\n").split("\n").forEach(function (s) {
+      s = s.trim(); if (!s) return;
+      if (s.length <= MAX) { out.push(s); return; }
+      var buf = "";
+      s.replace(/([，,、：:])/g, "$1\n").split("\n").forEach(function (p) {
+        while (p.length > MAX) { if (buf) { out.push(buf); buf = ""; } out.push(p.slice(0, MAX)); p = p.slice(MAX); }
+        if ((buf + p).length > MAX) { out.push(buf); buf = p; } else buf += p;
+      });
+      if (buf) out.push(buf);
+    });
+    return out.filter(function (x) { return /[\p{L}\p{N}]/u.test(x); });
+  }
+
+  function halt() { S.token++; S.on = false; if (OK) synth.cancel(); }
+
+  function play(from) {
+    if (!OK || !S.segs.length) return;
+    halt();
+    if (from != null) S.idx = from;
+    if (S.idx >= S.segs.length || S.idx < 0) S.idx = 0;
+    S.on = true; S.note = "";
+    var t = S.token;
+    setTimeout(function () { if (t === S.token) step(); }, 60);
+    ui();
+  }
+  function step() {
+    if (!S.on) return;
+    if (S.idx >= S.segs.length) { S.on = false; S.idx = 0; mark(-1); S.note = "朗讀完畢"; ui(); return; }
+    var seg = S.segs[S.idx], t = S.token;
+    mark(seg.b);
+    var u = new SpeechSynthesisUtterance(seg.text), v = getVoice();
+    if (v) { u.voice = v; u.lang = v.lang; } else u.lang = "zh-TW";
+    u.rate = pref.rate;
+    u.onend = function () { if (t !== S.token) return; S.idx++; step(); };
+    u.onerror = function (e) {
+      if (t !== S.token) return;
+      if (e.error === "not-allowed") { halt(); S.note = "瀏覽器暫停了語音，請再按一次 ▶"; ui(); return; }
+      S.idx++; step();
+    };
+    if (synth.paused) synth.resume();
+    synth.speak(u);
+    ui();
+  }
+  function pause() { halt(); ui(); }            // 保留位置，下次從該句繼續
+  function stop() { halt(); S.idx = 0; mark(-1); S.note = ""; ui(); }
+  function jump(d) {
+    if (!S.segs.length) return;
+    var i = Math.min(S.idx, S.segs.length - 1), b = S.segs[i].b;
+    if (d > 0) { while (i < S.segs.length && S.segs[i].b === b) i++; if (i >= S.segs.length) return; }
+    else {
+      var s = i; while (s > 0 && S.segs[s - 1].b === b) s--;
+      if (s === i && s > 0) { var pb = S.segs[s - 1].b; s--; while (s > 0 && S.segs[s - 1].b === pb) s--; }
+      i = s;
+    }
+    if (S.on) play(i); else { S.idx = i; mark(S.segs[i].b); ui(); }
+  }
+
+  function mark(b) {
+    if (S.cur) { try { S.cur.classList.remove("tts-now"); } catch (e) {} S.cur = null; }
+    var el = S.blocks[b];
+    if (!el) return;
+    el.classList.add("tts-now"); S.cur = el;
+    try {
+      var w = S.doc.defaultView, r = el.getBoundingClientRect();
+      if (r.top < 70 || r.bottom > w.innerHeight - 40) el.scrollIntoView({ block: "center", behavior: "smooth" });
+    } catch (e) {}
+  }
+
+  function ui() {
+    var has = OK && S.segs.length > 0;
+    tPlay.disabled = !has; tPrev.disabled = !has; tNext.disabled = !has;
+    tStop.disabled = !(S.on || S.idx > 0);
+    tPlay.classList.toggle("on", S.on);
+    tPlay.setAttribute("aria-label", S.on ? "暫停" : "播放");
+    tProg.style.width = has ? (S.idx / S.segs.length * 100) + "%" : "0";
+    tOpen.hidden = !current;
+    if (current) tOpen.href = current.url;
+
+    tStatus.textContent = "";
+    if (!current) {
+      tStatus.textContent = OK ? "點選下方任一篇讀經筆記，即可在此聆聽朗讀" : "此瀏覽器不支援語音朗讀，仍可點選下方筆記閱讀";
+      return;
+    }
+    var bEl = document.createElement("b"); bEl.textContent = S.label || current.title; tStatus.appendChild(bEl);
+    var total = S.blocks.length || S.segs.length;
+    var pos = has ? (S.segs[Math.min(S.idx, S.segs.length - 1)].b + 1) + " / " + total + " 段" : "";
+    var msg;
+    if (S.on) {
+      var w = document.createElement("span"); w.className = "wave"; w.innerHTML = "<i></i><i></i><i></i>"; tStatus.appendChild(w);
+      msg = "朗讀中 " + pos;
+    } else if (S.note) msg = S.note;
+    else if (!OK) msg = "此瀏覽器不支援語音朗讀";
+    else if (S.idx > 0) msg = "已暫停 " + pos;
+    else msg = has ? "按 ▶ 開始，或點文中任一段落從該處朗讀" : "";
+    tStatus.appendChild(document.createTextNode(msg));
+    tStatus.title = tStatus.textContent;
+  }
+
+  /* --- 解析載入的筆記頁 --- */
+  var INJECT_CSS =
+    "[data-tts-b]{cursor:pointer;transition:background-color .25s,box-shadow .25s;border-radius:4px}" +
+    "[data-tts-b]:hover{background-color:rgba(243,230,200,.45)}" +
+    ".tts-now,.tts-now:hover{background-color:#FFF0C9 !important;box-shadow:0 0 0 5px #FFF0C9}";
+
+  function prepare(doc, label) {
+    halt();
+    S.doc = doc; S.segs = []; S.blocks = []; S.first = []; S.idx = 0; S.cur = null; S.note = ""; S.label = label;
+
+    var st = doc.createElement("style"); st.textContent = INJECT_CSS;
+    (doc.head || doc.documentElement).appendChild(st);
+
+    // 外站連結改在新分頁開啟，避免閱讀區跳離本站
+    doc.querySelectorAll("a[href]").forEach(function (a) {
+      try { if (new URL(a.href).origin !== location.origin) { a.target = "_blank"; a.rel = "noopener"; } } catch (e) {}
+    });
+
+    var root = doc.querySelector("article, main, [role='main']") || doc.body;
+    root.querySelectorAll(BLOCK).forEach(function (el) {
+      if (el.closest(SKIP) || el.querySelector(BLOCK) || !el.getClientRects().length) return;
+      var parts = splitText(clean(el.innerText || el.textContent));
+      if (!parts.length) return;
+      var b = S.blocks.length;
+      S.blocks.push(el); S.first.push(S.segs.length);
+      el.setAttribute("data-tts-b", b);
+      parts.forEach(function (p) { S.segs.push({ text: p, b: b }); });
+    });
+    if (!S.segs.length) { // 頁面沒有段落標記時，退而逐行朗讀
+      (root.innerText || "").split(/\n+/).forEach(function (line, n) {
+        splitText(clean(line)).forEach(function (p) { S.segs.push({ text: p, b: n }); });
+      });
+    }
+
+    // 點段落 → 從該段開始朗讀
+    doc.addEventListener("click", function (e) {
+      var t = e.target;
+      if (!t.closest || t.closest("a,button,input,select,textarea,summary,label")) return;
+      var el = t.closest("[data-tts-b]");
+      if (!el || !OK) return;
+      var sel = doc.getSelection ? String(doc.getSelection()) : "";
+      if (sel) return; // 使用者正在選取文字
+      play(S.first[+el.getAttribute("data-tts-b")]);
+    });
+    doc.defaultView.addEventListener("pagehide", function () { if (S.doc === doc) { halt(); ui(); } });
+
+    if (!S.segs.length) S.note = "此頁沒有可朗讀的文字";
+    ui();
+  }
+
+  frame.addEventListener("load", function () {
+    if (!current) return;
+    var doc = null, href = "";
+    try { doc = frame.contentDocument; href = frame.contentWindow.location.href; } catch (e) { doc = null; }
+    if (href === "about:blank") return;
+    if (!doc || !doc.body) {
+      halt(); S.doc = null; S.segs = []; S.blocks = []; S.idx = 0; S.label = "";
+      S.note = "此頁面不在本站網域，瀏覽器不允許讀取內容，無法朗讀";
+      ui(); return;
+    }
+    // 筆記頁裡點回首頁 → 直接關閉閱讀區
+    try {
+      var loc = frame.contentWindow.location;
+      if (loc.pathname === location.pathname && loc.origin === location.origin) { back(); return; }
+    } catch (e) {}
+    var label = sameSiteUrl(href).split("#")[0] === sameSiteUrl(current.url).split("#")[0]
+      ? current.title : clean(doc.title) || current.title;
+    document.title = label + "｜" + siteTitle;
+    prepare(doc, label);
+  });
+
+  /* --- 開啟 / 關閉閱讀區 --- */
+  function openNote(i, push) {
+    var n = NOTES[i]; if (!n) return;
+    halt();
+    current = { url: sameSiteUrl(n.url), title: n.title };
+    S.doc = null; S.segs = []; S.blocks = []; S.idx = 0; S.cur = null; S.label = ""; S.note = "載入中…";
+    document.body.classList.add("reading");
+    frame.src = current.url;
+    if (push) history.pushState({ r: i }, "", "#read/" + i);
+    document.title = n.title + "｜" + siteTitle;
+    closeOpts(); setBH(); ui();
+  }
+  function closeReader(push) {
+    halt();
+    current = null; S.doc = null; S.segs = []; S.blocks = []; S.idx = 0; S.cur = null; S.note = "";
+    frame.src = "about:blank";
+    document.body.classList.remove("reading");
+    document.title = baseTitle;
+    if (push) history.pushState(null, "", location.pathname + location.search);
+    ui();
+  }
+  function back() {
+    if (history.state && history.state.r != null) history.back();
+    else closeReader(true);
+  }
+  function route() {
+    var m = location.hash.match(/^#read\/(\d+)$/);
+    if (m && NOTES[+m[1]]) openNote(+m[1], false);
+    else if (current) closeReader(false);
+  }
+  window.addEventListener("popstate", route);
+
+  document.getElementById("notesList").addEventListener("click", function (e) {
+    var a = e.target.closest("a[data-i]");
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var i = +a.getAttribute("data-i");
+    if (NOTES[i].newTab) return; // config 中設定 newTab 的項目維持在新分頁開啟
+    e.preventDefault();
+    openNote(i, true);
+  });
+  $("backBtn").addEventListener("click", back);
+  $("brandLink").addEventListener("click", function (e) {
+    if (current) { e.preventDefault(); back(); }
+  });
+
+  /* --- 控制鍵 --- */
+  tPlay.addEventListener("click", function () { S.on ? pause() : play(); });
+  tStop.addEventListener("click", stop);
+  tPrev.addEventListener("click", function () { jump(-1); });
+  tNext.addEventListener("click", function () { jump(1); });
+
+  function closeOpts() { tOpts.classList.remove("on"); tOpt.setAttribute("aria-expanded", "false"); }
+  tOpt.addEventListener("click", function (e) {
+    e.stopPropagation();
+    var on = tOpts.classList.toggle("on");
+    tOpt.setAttribute("aria-expanded", on ? "true" : "false");
+  });
+  document.addEventListener("click", function (e) { if (!tOpts.contains(e.target)) closeOpts(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeOpts(); });
+  tRate.addEventListener("change", function () { pref.rate = +tRate.value || 1; savePref(); if (S.on) play(S.idx); });
+  tVoice.addEventListener("change", function () { pref.voice = tVoice.value; savePref(); if (S.on) play(S.idx); });
+
+  /* --- 初始化 --- */
+  if (OK) {
+    synth.cancel(); // 清掉重新整理前殘留的朗讀
+    loadVoices();
+    if ("onvoiceschanged" in synth) synth.addEventListener("voiceschanged", loadVoices);
+    window.addEventListener("pagehide", function () { synth.cancel(); });
+  } else {
+    $("tts").classList.add("off");
+  }
+  ui();
+  route();
 })();
 </script>
 </body>
