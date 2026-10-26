@@ -16,10 +16,94 @@
   .sort-toggle button[aria-pressed="true"]{background:#2455c7;color:#fff;box-shadow:0 2px 6px rgba(36,85,199,.25)}
   .sort-toggle button:focus-visible{outline:3px solid #ffdd73;outline-offset:2px}
   @media (max-width:480px){.sort-bar{justify-content:flex-start}}
+
+  /* ===== 固定朗讀橫幅（Web Speech API） ===== */
+  :root{--tts-bh:58px;--tts-blue:#2455c7;--tts-yellow:#ffdd73;--tts-ink:#1f2a44;--tts-ink2:#5b6475;--tts-line:#d6def3}
+  html{scroll-padding-top:var(--tts-bh)}
+  body{padding-top:var(--tts-bh)}
+  .tts-bar{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--tts-line);box-shadow:0 2px 12px rgba(36,85,199,.06)}
+  .tts-in{position:relative;max-width:1180px;margin:0 auto;padding:0 20px;height:57px;display:flex;align-items:center;gap:8px}
+  .tts-tag{flex:none;display:inline-flex;align-items:center;gap:6px;font-size:.88rem;font-weight:700;color:var(--tts-blue);padding:.3rem .75rem;border-radius:999px;background:#eef2fb;white-space:nowrap}
+  .tts-back{display:none;flex:none;align-items:center;gap:2px;height:36px;padding:0 .8rem 0 .5rem;border-radius:999px;border:1px solid var(--tts-line);background:#fff;color:var(--tts-blue);font:inherit;font-size:.9rem;font-weight:700;cursor:pointer}
+  .tts-back:hover{background:#eef2fb}
+  .tts-back svg{width:18px;height:18px}
+  body.tts-reading .tts-back{display:inline-flex}
+  body.tts-reading .tts-tag{display:none}
+  .tts-b{flex:none;width:36px;height:36px;border-radius:50%;border:1px solid var(--tts-line);background:#fff;color:var(--tts-ink);display:grid;place-items:center;cursor:pointer;padding:0;text-decoration:none;transition:background .2s,color .2s,transform .2s}
+  .tts-b svg{width:16px;height:16px}
+  .tts-b:hover:not(:disabled){color:var(--tts-blue);background:#eef2fb}
+  .tts-b:disabled{opacity:.35;cursor:default}
+  .tts-b:focus-visible,.tts-back:focus-visible{outline:3px solid var(--tts-yellow);outline-offset:2px}
+  .tts-b.tts-play{width:42px;height:42px;border:0;background:var(--tts-blue);color:#fff;box-shadow:0 3px 10px rgba(36,85,199,.3)}
+  .tts-b.tts-play:hover:not(:disabled){background:#1c45a6;color:#fff;transform:scale(1.05)}
+  .tts-b.tts-play:disabled{box-shadow:none}
+  .tts-play .tts-ip{display:none}
+  .tts-play.on .tts-ip{display:block}.tts-play.on .tts-ir{display:none}
+  .tts-st{flex:1;min-width:0;font-size:.9rem;color:var(--tts-ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-left:4px}
+  .tts-st b{color:var(--tts-ink);margin-right:6px}
+  .tts-wave{display:inline-flex;gap:2px;vertical-align:-1px;margin-right:6px}
+  .tts-wave i{width:3px;height:12px;background:var(--tts-blue);border-radius:2px;animation:ttswv 1s ease-in-out infinite}
+  .tts-wave i:nth-child(2){animation-delay:-.3s}.tts-wave i:nth-child(3){animation-delay:-.6s}
+  @keyframes ttswv{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+  .tts-opts{display:none;position:absolute;right:20px;top:calc(100% + 6px);z-index:5;background:#fff;border:1px solid var(--tts-line);border-radius:14px;padding:14px 16px;box-shadow:0 14px 40px rgba(31,42,68,.16);min-width:250px;max-width:calc(100vw - 32px)}
+  .tts-opts.on{display:grid;gap:10px}
+  .tts-opts label{display:grid;gap:4px;font-size:.82rem;color:var(--tts-ink2)}
+  .tts-opts select{font:inherit;font-size:.95rem;color:var(--tts-ink);padding:6px 8px;border:1px solid var(--tts-line);border-radius:8px;background:#fff;max-width:100%}
+  .tts-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px}
+  .tts-prog i{display:block;height:100%;width:0;background:var(--tts-yellow);transition:width .4s}
+  .tts-bar.off .tts-b:not(#ttsOpen){display:none}
+  #ttsReader{display:none;position:fixed;top:var(--tts-bh);left:0;right:0;bottom:0;z-index:999;background:#fff}
+  #ttsReader iframe{display:block;width:100%;height:100%;border:0}
+  body.tts-reading{overflow:hidden}
+  body.tts-reading #ttsReader{display:block}
+  @media (max-width:600px){
+    .tts-in{padding:0 12px;gap:5px}
+    .tts-b{width:32px;height:32px}
+    .tts-b.tts-play{width:38px;height:38px}
+    .tts-back span,.tts-tag span{display:none}
+    .tts-back{padding:0 .5rem}
+  }
+  @media (prefers-reduced-motion:reduce){.tts-wave i{animation:none}}
 </style>
 </head>
 <body>
 <a class="skip" href="#lessons">跳至學習主題</a>
+
+<!-- ===== 固定朗讀橫幅 ===== -->
+<div class="tts-bar" id="ttsBar" role="region" aria-label="語音朗讀">
+  <div class="tts-in">
+    <button class="tts-back" id="ttsBack" type="button" aria-label="返回學習主題"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg><span>返回</span></button>
+    <span class="tts-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg><span>朗讀</span></span>
+    <button class="tts-b" id="ttsPrev" type="button" aria-label="上一段" title="上一段" disabled><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+    <button class="tts-b tts-play" id="ttsPlay" type="button" aria-label="播放" title="播放 / 暫停" disabled>
+      <svg class="tts-ir" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      <svg class="tts-ip" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+    </button>
+    <button class="tts-b" id="ttsNext" type="button" aria-label="下一段" title="下一段" disabled><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+    <button class="tts-b" id="ttsStop" type="button" aria-label="停止" title="停止" disabled><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="1.5"/></svg></button>
+    <div class="tts-st" id="ttsStatus">點選下方任一個學習主題，即可在此聆聽朗讀</div>
+    <a class="tts-b" id="ttsOpen" href="#" target="_blank" rel="noopener" aria-label="在新分頁開啟本篇" title="在新分頁開啟" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+    <button class="tts-b" id="ttsOpt" type="button" aria-label="朗讀設定" title="朗讀設定" aria-expanded="false" aria-controls="ttsOpts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></button>
+    <div class="tts-opts" id="ttsOpts">
+      <label>語速
+        <select id="ttsRate">
+          <option value="0.75">0.75×（慢）</option>
+          <option value="0.9">0.9×</option>
+          <option value="1" selected>1×（正常）</option>
+          <option value="1.15">1.15×</option>
+          <option value="1.3">1.3×</option>
+          <option value="1.5">1.5×（快）</option>
+        </select>
+      </label>
+      <label>聲音
+        <select id="ttsVoice"><option value="">系統預設</option></select>
+      </label>
+    </div>
+  </div>
+  <div class="tts-prog" aria-hidden="true"><i id="ttsProg"></i></div>
+</div>
+<div id="ttsReader" aria-label="學習主題內容"><iframe id="ttsFrame" title="學習主題內容"></iframe></div>
+
 <header class="wrap"><a class="brand" href="#" aria-label="共好小學堂首頁"><span class="brand-symbol" aria-hidden="true">✦</span><span>共好<span class="brand-blue">小學堂</span><small>GROW & LEARN TOGETHER</small></span></a><a class="nav" href="#lessons">探索小知識</a></header>
 <main>
 <section class="hero wrap" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow"><span aria-hidden="true">✦</span> 歡迎來到我們的小學堂</p><h1 id="hero-title">每天懂一點，<br>一起<span class="highlight">好一點。</span></h1><p class="lead">讓好奇心發芽，讓知識陪伴生活。<br>從一個小問題開始，慢慢認識健康的模樣。</p><a class="primary" href="#lessons">今天，想認識什麼？</a><p class="little-note">帶著好奇就好，我們一起學。</p></div><div class="hero-art"><img src="assets/learning-friends.png" alt="小芽、藍鳥與星星三位原創卡通夥伴，一起開心地閱讀" width="1536" height="1024" fetchpriority="high"><span class="art-label">小小知識，大大收穫</span></div></section>
@@ -35,6 +119,329 @@
 <div class="lessons" id="lesson-list" aria-live="polite"></div><noscript><p><a href="/KS/GLP">閱讀 GLP-1 小知識</a></p></noscript><aside class="coming"><span class="coming-star" aria-hidden="true">✦</span><div><h3>還有更多好奇，正在發芽。</h3><p>小學堂會陸續加入新主題，歡迎常常回來看看。</p></div></aside></section>
 <section class="quote wrap"><p>「每一次多懂一點，<br class="mobile-break">都是送給自己的小禮物。」</p><span>和共好小學堂，一起累積生活裡的美好。</span></section>
 </main><footer class="wrap"><span>共好小學堂 <span aria-hidden="true">✦</span> 一起學習，一起共好</span><small></small></footer>
+
+<script>
+/* ===== 固定橫幅 + 站內閱讀 + 語音朗讀（Web Speech API） =====
+ * 點選「學習主題」→ 在本頁閱讀區載入該篇 → 橫幅的播放鍵朗讀內文。
+ * 朗讀程式只放在首頁，各篇內容頁不需要任何修改。
+ * 學習主題卡片由 app.js 產生，這裡用事件委派，排序重繪後仍有效。
+ * 註：瀏覽器只允許讀取「同網域」頁面的文字，內容頁需與首頁在同一網站。
+ */
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var bar = $("ttsBar"), frame = $("ttsFrame");
+  var bPlay = $("ttsPlay"), bPrev = $("ttsPrev"), bNext = $("ttsNext"), bStop = $("ttsStop");
+  var stEl = $("ttsStatus"), progEl = $("ttsProg"), bOpen = $("ttsOpen"), bOpt = $("ttsOpt"), optsEl = $("ttsOpts");
+  var selRate = $("ttsRate"), selVoice = $("ttsVoice");
+  var baseTitle = document.title, SITE = "共好小學堂";
+
+  function setBH() { document.documentElement.style.setProperty("--tts-bh", bar.offsetHeight + "px"); }
+  setBH(); window.addEventListener("resize", setBH);
+
+  /* --- 語音設定 --- */
+  var synth = window.speechSynthesis;
+  var OK = !!(synth && window.SpeechSynthesisUtterance);
+  var MAX = 110;
+  var BLOCK = "h1,h2,h3,h4,h5,h6,p,li,blockquote,pre,figcaption,dt,dd,th,td,caption";
+  var SKIP = "nav,footer,aside,script,style,noscript,button,form,select,[hidden],[aria-hidden='true']";
+  var S = { segs: [], blocks: [], first: [], idx: 0, on: false, token: 0, doc: null, cur: null, note: "", label: "" };
+  var current = null;
+
+  var pref = { rate: 1, voice: "" };
+  try { var sv = JSON.parse(localStorage.getItem("ks-tts") || "{}"); if (sv.rate) pref.rate = +sv.rate; if (sv.voice) pref.voice = sv.voice; } catch (e) {}
+  function savePref() { try { localStorage.setItem("ks-tts", JSON.stringify(pref)); } catch (e) {} }
+  selRate.value = String(pref.rate);
+  if (selRate.value !== String(pref.rate)) { pref.rate = 1; selRate.value = "1"; }
+
+  var voices = [];
+  function rank(v) {
+    var l = v.lang.replace("_", "-").toLowerCase();
+    if (l === "zh-tw" || l.indexOf("hant-tw") > -1) return 0;
+    if (l === "zh-cn" || l.indexOf("cmn") === 0) return 1;
+    if (l === "zh-hk") return 2;
+    return 3;
+  }
+  function loadVoices() {
+    if (!OK) return;
+    var all = synth.getVoices() || [];
+    if (!all.length) return;
+    var zh = all.filter(function (v) { return /^(zh|cmn|yue)/i.test(v.lang); });
+    voices = (zh.length ? zh : all).slice().sort(function (a, b) { return rank(a) - rank(b); });
+    selVoice.textContent = "";
+    voices.forEach(function (v) {
+      var o = document.createElement("option");
+      o.value = v.voiceURI; o.textContent = v.name + "（" + v.lang + "）";
+      selVoice.appendChild(o);
+    });
+    var hit = voices.some(function (v) { return v.voiceURI === pref.voice; });
+    selVoice.value = hit ? pref.voice : (voices[0] ? voices[0].voiceURI : "");
+  }
+  function getVoice() {
+    for (var i = 0; i < voices.length; i++) if (voices[i].voiceURI === selVoice.value) return voices[i];
+    return voices[0] || null;
+  }
+
+  function clean(t) { return (t || "").replace(/\s+/g, " ").trim(); }
+  function splitText(t) {
+    var out = [];
+    t.replace(/([。！？!?；;…]+[」』”’）)]*)/g, "$1\n").split("\n").forEach(function (s) {
+      s = s.trim(); if (!s) return;
+      if (s.length <= MAX) { out.push(s); return; }
+      var buf = "";
+      s.replace(/([，,、：:])/g, "$1\n").split("\n").forEach(function (p) {
+        while (p.length > MAX) { if (buf) { out.push(buf); buf = ""; } out.push(p.slice(0, MAX)); p = p.slice(MAX); }
+        if ((buf + p).length > MAX) { out.push(buf); buf = p; } else buf += p;
+      });
+      if (buf) out.push(buf);
+    });
+    return out.filter(function (x) { return /[\p{L}\p{N}]/u.test(x); });
+  }
+
+  /* --- 播放控制 --- */
+  function halt() { S.token++; S.on = false; if (OK) synth.cancel(); }
+  function play(from) {
+    if (!OK || !S.segs.length) return;
+    halt();
+    if (from != null) S.idx = from;
+    if (S.idx >= S.segs.length || S.idx < 0) S.idx = 0;
+    S.on = true; S.note = "";
+    var t = S.token;
+    setTimeout(function () { if (t === S.token) step(); }, 60);
+    ui();
+  }
+  function step() {
+    if (!S.on) return;
+    if (S.idx >= S.segs.length) { S.on = false; S.idx = 0; mark(-1); S.note = "朗讀完畢"; ui(); return; }
+    var seg = S.segs[S.idx], t = S.token;
+    mark(seg.b);
+    var u = new SpeechSynthesisUtterance(seg.text), v = getVoice();
+    if (v) { u.voice = v; u.lang = v.lang; } else u.lang = "zh-TW";
+    u.rate = pref.rate;
+    u.onend = function () { if (t !== S.token) return; S.idx++; step(); };
+    u.onerror = function (e) {
+      if (t !== S.token) return;
+      if (e.error === "not-allowed") { halt(); S.note = "瀏覽器暫停了語音，請再按一次 ▶"; ui(); return; }
+      S.idx++; step();
+    };
+    if (synth.paused) synth.resume();
+    synth.speak(u);
+    ui();
+  }
+  function pause() { halt(); ui(); }
+  function stop() { halt(); S.idx = 0; mark(-1); S.note = ""; ui(); }
+  function jump(d) {
+    if (!S.segs.length) return;
+    var i = Math.min(S.idx, S.segs.length - 1), b = S.segs[i].b;
+    if (d > 0) { while (i < S.segs.length && S.segs[i].b === b) i++; if (i >= S.segs.length) return; }
+    else {
+      var s = i; while (s > 0 && S.segs[s - 1].b === b) s--;
+      if (s === i && s > 0) { var pb = S.segs[s - 1].b; s--; while (s > 0 && S.segs[s - 1].b === pb) s--; }
+      i = s;
+    }
+    if (S.on) play(i); else { S.idx = i; mark(S.segs[i].b); ui(); }
+  }
+  function mark(b) {
+    if (S.cur) { try { S.cur.classList.remove("tts-now"); } catch (e) {} S.cur = null; }
+    var el = S.blocks[b];
+    if (!el) return;
+    el.classList.add("tts-now"); S.cur = el;
+    try {
+      var w = S.doc.defaultView, r = el.getBoundingClientRect();
+      if (r.top < 70 || r.bottom > w.innerHeight - 40) el.scrollIntoView({ block: "center", behavior: "smooth" });
+    } catch (e) {}
+  }
+
+  function ui() {
+    var has = OK && S.segs.length > 0;
+    bPlay.disabled = !has; bPrev.disabled = !has; bNext.disabled = !has;
+    bStop.disabled = !(S.on || S.idx > 0);
+    bPlay.classList.toggle("on", S.on);
+    bPlay.setAttribute("aria-label", S.on ? "暫停" : "播放");
+    progEl.style.width = has ? (S.idx / S.segs.length * 100) + "%" : "0";
+    bOpen.hidden = !current;
+    if (current) bOpen.href = current.url;
+
+    stEl.textContent = "";
+    if (!current) {
+      stEl.textContent = OK ? "點選下方任一個學習主題，即可在此聆聽朗讀" : "此瀏覽器不支援語音朗讀，仍可點選下方主題閱讀";
+      return;
+    }
+    var bEl = document.createElement("b"); bEl.textContent = S.label || current.title; stEl.appendChild(bEl);
+    var total = S.blocks.length || S.segs.length;
+    var pos = has ? (S.segs[Math.min(S.idx, S.segs.length - 1)].b + 1) + " / " + total + " 段" : "";
+    var msg;
+    if (S.on) {
+      var w = document.createElement("span"); w.className = "tts-wave"; w.innerHTML = "<i></i><i></i><i></i>"; stEl.appendChild(w);
+      msg = "朗讀中 " + pos;
+    } else if (S.note) msg = S.note;
+    else if (!OK) msg = "此瀏覽器不支援語音朗讀";
+    else if (S.idx > 0) msg = "已暫停 " + pos;
+    else msg = has ? "按 ▶ 開始，或點文中任一段落從該處朗讀" : "";
+    stEl.appendChild(document.createTextNode(msg));
+    stEl.title = stEl.textContent;
+  }
+
+  /* --- 解析載入的內容頁 --- */
+  var INJECT_CSS =
+    "[data-tts-b]{cursor:pointer;transition:background-color .25s,box-shadow .25s;border-radius:4px}" +
+    "[data-tts-b]:hover{background-color:rgba(255,221,115,.28)}" +
+    ".tts-now,.tts-now:hover{background-color:#FFF3C4 !important;box-shadow:0 0 0 5px #FFF3C4}";
+
+  function prepare(doc, label) {
+    halt();
+    S.doc = doc; S.segs = []; S.blocks = []; S.first = []; S.idx = 0; S.cur = null; S.note = ""; S.label = label;
+    var st = doc.createElement("style"); st.textContent = INJECT_CSS;
+    (doc.head || doc.documentElement).appendChild(st);
+
+    doc.querySelectorAll("a[href]").forEach(function (a) {
+      try { if (new URL(a.href).origin !== location.origin) { a.target = "_blank"; a.rel = "noopener"; } } catch (e) {}
+    });
+
+    var root = doc.querySelector("article, main, [role='main']") || doc.body;
+    root.querySelectorAll(BLOCK).forEach(function (el) {
+      if (el.closest(SKIP) || el.querySelector(BLOCK) || !el.getClientRects().length) return;
+      var parts = splitText(clean(el.innerText || el.textContent));
+      if (!parts.length) return;
+      var b = S.blocks.length;
+      S.blocks.push(el); S.first.push(S.segs.length);
+      el.setAttribute("data-tts-b", b);
+      parts.forEach(function (p) { S.segs.push({ text: p, b: b }); });
+    });
+    if (!S.segs.length) {
+      (root.innerText || "").split(/\n+/).forEach(function (line, n) {
+        splitText(clean(line)).forEach(function (p) { S.segs.push({ text: p, b: n }); });
+      });
+    }
+
+    doc.addEventListener("click", function (e) {
+      var t = e.target;
+      if (!t.closest || t.closest("a,button,input,select,textarea,summary,label")) return;
+      var el = t.closest("[data-tts-b]");
+      if (!el || !OK) return;
+      if (doc.getSelection && String(doc.getSelection())) return;
+      play(S.first[+el.getAttribute("data-tts-b")]);
+    });
+    doc.defaultView.addEventListener("pagehide", function () { if (S.doc === doc) { halt(); ui(); } });
+
+    if (!S.segs.length) S.note = "此頁沒有可朗讀的文字";
+    ui();
+  }
+
+  frame.addEventListener("load", function () {
+    if (!current) return;
+    var doc = null, href = "";
+    try { doc = frame.contentDocument; href = frame.contentWindow.location.href; } catch (e) { doc = null; }
+    if (href === "about:blank") return;
+    if (!doc || !doc.body) {
+      halt(); S.doc = null; S.segs = []; S.blocks = []; S.idx = 0; S.label = "";
+      S.note = "此頁面不在本站網域，瀏覽器不允許讀取內容，無法朗讀";
+      ui(); return;
+    }
+    try {
+      var loc = frame.contentWindow.location;
+      if (loc.origin === location.origin && loc.pathname === location.pathname) { back(); return; }
+    } catch (e) {}
+    var same = href.split("#")[0] === current.url.split("#")[0];
+    var label = same ? current.title : (clean(doc.title) || current.title);
+    document.title = label + "｜" + SITE;
+    prepare(doc, label);
+  });
+
+  /* --- 開啟 / 關閉閱讀區 --- */
+  // 只接受同站路徑，避免 #read= 被用來嵌入外站頁面
+  function toUrl(path) {
+    try {
+      var u = new URL(path, location.href);
+      if (u.origin !== location.origin) return null;
+      return u.href;
+    } catch (e) { return null; }
+  }
+  function titleFor(url) {
+    var links = document.querySelectorAll("#lesson-list a[href]");
+    for (var i = 0; i < links.length; i++) if (links[i].href.split("#")[0] === url.split("#")[0]) return cardTitle(links[i]);
+    return "";
+  }
+  function cardTitle(a) {
+    var h = a.querySelector("h1,h2,h3,h4,strong") || (a.closest("article,li,div") || a).querySelector("h1,h2,h3,h4,strong");
+    var t = clean((h || a).textContent);
+    return t.length > 40 ? t.slice(0, 40) + "…" : t;
+  }
+  function openUrl(url, title, push) {
+    halt();
+    current = { url: url, title: title || "學習主題" };
+    S.doc = null; S.segs = []; S.blocks = []; S.idx = 0; S.cur = null; S.label = ""; S.note = "載入中…";
+    document.body.classList.add("tts-reading");
+    frame.src = url;
+    var u = new URL(url);
+    if (push) history.pushState({ tts: 1 }, "", "#read=" + encodeURIComponent(u.pathname + u.search));
+    document.title = current.title + "｜" + SITE;
+    closeOpts(); setBH(); ui();
+  }
+  function closeReader(push) {
+    halt();
+    current = null; S.doc = null; S.segs = []; S.blocks = []; S.idx = 0; S.cur = null; S.note = "";
+    frame.src = "about:blank";
+    document.body.classList.remove("tts-reading");
+    document.title = baseTitle;
+    if (push) history.pushState(null, "", location.pathname + location.search + "#lessons");
+    ui();
+  }
+  function back() {
+    if (history.state && history.state.tts) history.back();
+    else closeReader(true);
+  }
+  function route() {
+    var m = location.hash.match(/^#read=(.+)$/);
+    var url = m ? toUrl(decodeURIComponent(m[1])) : null;
+    if (url) { if (!current || current.url !== url) openUrl(url, titleFor(url), false); }
+    else if (current) closeReader(false);
+  }
+  window.addEventListener("popstate", route);
+
+  // 點學習主題卡片 → 在本頁開啟（卡片由 app.js 產生，用事件委派）
+  document.getElementById("lesson-list").addEventListener("click", function (e) {
+    var a = e.target.closest("a[href]");
+    if (!a || e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (a.target === "_blank" || a.hasAttribute("download")) return;
+    var raw = a.getAttribute("href") || "";
+    if (raw.charAt(0) === "#" || /^(mailto|tel|javascript):/i.test(raw)) return;
+    var url = toUrl(a.href);
+    if (!url) return; // 外站連結維持原本行為
+    e.preventDefault();
+    openUrl(url, cardTitle(a), true);
+  });
+  $("ttsBack").addEventListener("click", back);
+
+  bPlay.addEventListener("click", function () { S.on ? pause() : play(); });
+  bStop.addEventListener("click", stop);
+  bPrev.addEventListener("click", function () { jump(-1); });
+  bNext.addEventListener("click", function () { jump(1); });
+
+  function closeOpts() { optsEl.classList.remove("on"); bOpt.setAttribute("aria-expanded", "false"); }
+  bOpt.addEventListener("click", function (e) {
+    e.stopPropagation();
+    var on = optsEl.classList.toggle("on");
+    bOpt.setAttribute("aria-expanded", on ? "true" : "false");
+  });
+  document.addEventListener("click", function (e) { if (!optsEl.contains(e.target)) closeOpts(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeOpts(); });
+  selRate.addEventListener("change", function () { pref.rate = +selRate.value || 1; savePref(); if (S.on) play(S.idx); });
+  selVoice.addEventListener("change", function () { pref.voice = selVoice.value; savePref(); if (S.on) play(S.idx); });
+
+  if (OK) {
+    synth.cancel();
+    loadVoices();
+    if ("onvoiceschanged" in synth) synth.addEventListener("voiceschanged", loadVoices);
+    window.addEventListener("pagehide", function () { synth.cancel(); });
+  } else {
+    bar.classList.add("off");
+  }
+  ui();
+  route();
+  // app.js 晚於本段執行，卡片出現後再補上標題
+  window.addEventListener("load", function () { if (current && current.title === "學習主題") { var t = titleFor(current.url); if (t) { current.title = t; ui(); } } });
+})();
+</script>
 
 </body></html>
 
