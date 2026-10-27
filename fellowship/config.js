@@ -21,6 +21,12 @@ window.SITE_CONFIG = {
   notesHeading: "讀經筆記",
 
   notes: [
+ {
+  "title": "聖經中的苦難與神的教導",
+  "subtitle": "不急著解釋，先學會同在：從約伯、生來瞎眼的人，到十字架與新天新地",
+  url: "https://www.gungho.idv.tw/fellowship/suffer-teach/",
+  date: ""
+},
   {
   "title": "起初，神創造天地",
   "subtitle": "從經文、希伯來文與古代近東背景讀創世記第一章，並在基督裡看創造與新造",
