@@ -21,6 +21,12 @@ window.SITE_CONFIG = {
   notesHeading: "讀經筆記",
 
   notes: [
+  {
+  "title": "起初，神創造天地",
+  "subtitle": "從經文、希伯來文與古代近東背景讀創世記第一章，並在基督裡看創造與新造",
+  url: "https://www.gungho.idv.tw/fellowship/genesis1/",
+  date: ""
+},
     {
   title: "從伊甸園到新耶路撒冷",
   subtitle: "從失落的同在，到在基督裡成全的永恆盼望",
@@ -43,7 +49,7 @@ window.SITE_CONFIG = {
       title: "以色列歷史上最不名譽的事件",
       subtitle: "撒母耳記下 11 章：大衛、拔示巴與烏利亞",
       url: "https://www.gungho.idv.tw/fellowship/2samuel-11/",
-      date: "2026.11.11"
+      date: ""
     },
     {
       title: "來學與往教",
