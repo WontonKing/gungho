@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>起初，神創造天地｜創世記第一章查經</title>
+<meta name="description" content="六日工作、第七日安息：從經文、希伯來文與古代近東背景讀創世記第一章，並在基督裡看創造與新造。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="起初，神創造天地｜創世記第一章查經">
+<meta property="og:description" content="六日工作、第七日安息：從經文、希伯來文與古代近東背景讀創世記第一章，並在基督裡看創造與新造。">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@500;700;800;900&family=Noto+Serif+Hebrew:wght@500&display=swap" rel="stylesheet">
+<script src="config.js"></script>
+<style>
+:root{
+  --bg:#FBF8F1;--paper:#FFFDF8;--ink:#2E2A24;--muted:#6B6358;--line:#E7DCC6;
+  --gold:#B8893B;--gold-soft:#F3E4C2;--sky:#5E8FBF;--sky-soft:#E3EEF7;--terra:#B9562F;--olive:#6F8A5A;
+  --serif:'Noto Serif TC','Noto Serif CJK TC',serif;--sans:'Noto Sans TC','Noto Sans CJK TC',sans-serif;
+  --heb:'Noto Serif Hebrew','SBL Hebrew','Times New Roman',serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;color:var(--ink);font:17px/1.9 var(--sans);
+  background:var(--bg) radial-gradient(1100px 600px at 85% -10%,#F6E7C4 0,transparent 60%) no-repeat,
+  radial-gradient(900px 500px at -10% 30%,#E1ECF6 0,transparent 60%) no-repeat;background-color:var(--bg)}
+a{color:var(--sky)}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--terra));z-index:50}
+nav.top{position:sticky;top:0;z-index:40;background:rgba(251,248,241,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.top .in{max-width:1080px;margin:auto;display:flex;align-items:center;gap:18px;padding:8px 16px;overflow-x:auto;scrollbar-width:none}
+nav.top .in::-webkit-scrollbar{display:none}
+.brand{display:flex;align-items:center;gap:8px;font:700 16px var(--serif);color:var(--ink);text-decoration:none;white-space:nowrap}
+.brand i{width:12px;height:12px;border-radius:50%;background:radial-gradient(circle,#FFF3CF,var(--gold));box-shadow:0 0 10px #F2C35B}
+nav.top a.l{font-size:14px;color:var(--muted);text-decoration:none;white-space:nowrap}
+nav.top a.l:hover{color:var(--gold)}
+header.cover{position:relative;text-align:center;padding:96px 16px 72px;overflow:hidden}
+header.cover::before{content:"";position:absolute;left:50%;top:-140px;width:620px;height:620px;transform:translateX(-50%);
+  background:radial-gradient(circle,#FFF6DC 0,#F8E6B8 35%,transparent 68%);z-index:-1}
+header.cover small{display:inline-block;letter-spacing:.3em;color:var(--gold);font:600 15px var(--serif)}
+header.cover h1{font:900 clamp(30px,6vw,54px)/1.3 var(--serif);margin:14px 0 10px}
+header.cover .sub{font:500 clamp(16px,2.6vw,21px) var(--serif);color:var(--muted);margin:0}
+header.cover .meta{margin-top:22px;font-size:14px;color:var(--muted)}
+main{max-width:860px;margin:auto;padding:0 16px 40px}
+section{padding:34px 0 18px;border-top:1px dashed var(--line)}
+section:first-of-type{border-top:0}
+.eyebrow{font:600 13px var(--sans);letter-spacing:.18em;color:var(--sky)}
+h2{font:800 clamp(23px,3.8vw,30px)/1.45 var(--serif);margin:4px 0 14px}
+h3{font:700 20px/1.5 var(--serif);margin:26px 0 8px;color:#4a3b22}
+p{margin:.6em 0}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:16px 0;box-shadow:0 2px 10px rgba(120,90,40,.05)}
+blockquote.verse{margin:16px 0;padding:16px 20px;background:linear-gradient(90deg,#FFF8E6,var(--paper));border-left:4px solid var(--gold);border-radius:0 14px 14px 0;font:500 18px/1.95 var(--serif)}
+blockquote.verse footer{font:14px var(--sans);color:var(--muted);margin-top:6px}
+.pills{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0}
+.pill{background:var(--sky-soft);color:#2d5a85;border-radius:999px;padding:4px 14px;font:600 15px var(--serif)}
+.pill.g{background:var(--gold-soft);color:#7a5a1f}
+.pills .arr{color:var(--gold)}
+.takeaway{margin:18px 0 6px;padding:4px 0 4px 16px;border-left:4px solid var(--gold);font:700 17px/1.8 var(--serif);color:#5b4520}
+.aside{margin:16px 0;padding:10px 16px;border:1.5px dashed #D9C39A;border-radius:12px;font-size:15px;color:#6b5a3e;background:#FFFCF3}
+.aside b{color:var(--terra);font-weight:700;margin-right:6px}
+.tbl{overflow-x:auto;margin:14px 0}
+table{border-collapse:collapse;width:100%;min-width:520px;background:var(--paper);border-radius:12px;overflow:hidden;font-size:15.5px}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#F6EEDC;font:700 15px var(--serif)}
+.days{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin:16px 0}
+.day{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px}
+.day .n{font:800 15px var(--serif);color:var(--gold)}
+.day .c{font:700 17px var(--serif);margin:2px 0}
+.day .f{font-size:14px;color:var(--muted)}
+.day.seven{background:linear-gradient(160deg,#FFF6E2,#FFFDF8);border-color:var(--gold)}
+.heb{font:500 28px/1.6 var(--heb);direction:rtl;text-align:center;color:#3c2f1a;margin:6px 0 0}
+.tr{text-align:center;font-style:italic;color:var(--muted);margin:0}
+.heb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.heb-grid .card{margin:0;text-align:center}
+.heb-grid .card p{font-size:15px;text-align:left}
+ul.dots{padding-left:1.2em}ul.dots li{margin:.3em 0}
+ol.steps{counter-reset:s;list-style:none;padding:0}
+ol.steps li{counter-increment:s;position:relative;padding:12px 14px 12px 52px;margin:10px 0;background:var(--paper);border:1px solid var(--line);border-radius:14px}
+ol.steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--gold);color:#fff;font:700 14px/26px var(--sans);text-align:center}
+.diff{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:14px 0}
+.diff div{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--olive);border-radius:12px;padding:12px 14px;font-size:15.5px}
+.diff b{display:block;font:700 16px var(--serif);color:#4d6340}
+button.ref{font:600 13.5px var(--sans);color:#2d5a85;background:var(--sky-soft);border:1px solid #c7dcee;border-radius:999px;padding:1px 10px;margin:0 2px;cursor:pointer;white-space:nowrap;vertical-align:1px}
+button.ref:hover,button.ref:focus-visible{background:#d2e4f3;outline:2px solid var(--sky);outline-offset:1px}
+figure.illus{margin:26px 0;background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+figure.illus svg{display:block;width:100%;height:auto}
+figure.illus figcaption{padding:10px 16px 12px;font:500 15px/1.7 var(--serif);color:var(--muted)}
+.prayer{background:linear-gradient(160deg,#FFF6E2,#F3F8FC);border:1px solid var(--line);border-radius:18px;padding:22px 24px;font:500 17px/2 var(--serif)}
+.refs li{margin:.35em 0;font-size:15px}
+.refs h3{font-size:17px}
+footer.site{border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px;padding:26px 16px 40px}
+dialog{border:0;border-radius:18px;padding:0;max-width:min(620px,92vw);box-shadow:0 18px 60px rgba(40,30,10,.25);background:var(--paper);color:var(--ink)}
+dialog::backdrop{background:rgba(46,42,36,.35)}
+dialog .hd{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line);background:#FFF8E6}
+dialog .hd b{font:800 19px var(--serif)}
+dialog .hd button{border:0;background:none;font-size:24px;cursor:pointer;color:var(--muted)}
+dialog .bd{padding:16px 20px;font:500 17px/2 var(--serif);max-height:58vh;overflow:auto}
+dialog .bd sup{color:var(--gold);font:700 11px var(--sans);margin:0 2px}
+dialog .ft{padding:12px 20px 16px;font-size:14px;display:flex;flex-wrap:wrap;gap:10px;border-top:1px solid var(--line)}
+dialog .ft a{text-decoration:none;background:var(--sky-soft);border-radius:999px;padding:3px 12px}
+dialog .ver{width:100%;color:var(--muted);font-size:13px}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+@media (max-width:600px){body{font-size:16px}header.cover{padding:70px 16px 50px}blockquote.verse{font-size:17px}}
+@media print{nav.top,#progress,dialog{display:none!important}body{background:#fff}.reveal{opacity:1;transform:none}
+  section{break-inside:auto}figure.illus,.card{break-inside:avoid}button.ref{border:0;background:none;padding:0}}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<nav class="top" aria-label="章節"><div class="in"><a class="brand" href="#top"><i></i><span data-cfg="title">起初，神創造天地</span></a><a class="l" href="#s0">摘要</a><a class="l" href="#s2">七日</a><a class="l" href="#s3">結構</a><a class="l" href="#s4">希伯來文</a><a class="l" href="#s5">近東背景</a><a class="l" href="#s6">神學</a><a class="l" href="#s7">原則</a><a class="l" href="#s8">界線</a><a class="l" href="#s9">在基督裡</a><a class="l" href="#s10">安息</a><a class="l" href="#s11">反思</a><a class="l" href="#s12">參考</a></div></nav>
+<header class="cover" id="top">
+  <small data-cfg="eyebrow">七日創造・古代近東・希伯來文結構</small>
+  <h1 data-cfg="title">起初，神創造天地</h1>
+  <p class="sub" data-cfg="subtitle">《創世記》1:1–2:3 經文核對與基督信仰擴充版</p>
+  <p class="meta">經文採《和合本》神版・點經文標籤可看全文與出處</p>
+</header>
+<main>
+
+<section id="s0" class="reveal">
+  <div class="eyebrow">摘要</div>
+  <h2>三個問題，一條敘事弧線</h2>
+  <p>本頁整理《創世記》第一章的三個核心問題：七日創造的內容與文學結構、《創世記》與古代近東神話的關係，以及希伯來文結構對解經的影響。</p>
+  <p>核心結論是：<button class="ref" type="button" data-r="Gen1:1-2:3">創 1:1–2:3</button> 是一篇以「六日工作、第七日安息」為架構的精心設計敘事。它使用古代近東讀者熟悉的世界觀語彙，卻以獨一上帝、話語創造、人類尊嚴與神聖安息，重構了創造的意義。</p>
+  <div class="pills"><span class="pill">上帝說話</span><span class="arr">→</span><span class="pill">秩序形成</span><span class="arr">→</span><span class="pill">空虛被充滿</span><span class="arr">→</span><span class="pill">一切甚好</span><span class="arr">→</span><span class="pill g">上帝安息</span></div>
+  <figure class="illus"><svg viewBox="0 0 800 340" role="img" aria-labelledby="t1"><title id="t1">光照進黑暗的深水之上</title>
+<defs><linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6DF"/><stop offset=".55" stop-color="#E9E3D6"/><stop offset="1" stop-color="#7F95A8"/></linearGradient>
+<linearGradient id="sea1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5E8FBF"/><stop offset="1" stop-color="#22374d"/></linearGradient>
+<linearGradient id="ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF3CF"/><stop offset="1" stop-color="#FFF3CF" stop-opacity="0"/></linearGradient>
+<radialGradient id="glow1" cx="400" cy="0" r="260" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFBEF"/><stop offset=".4" stop-color="#F6E3B0" stop-opacity=".7"/><stop offset="1" stop-color="#F6E3B0" stop-opacity="0"/></radialGradient></defs>
+<rect width="800" height="340" fill="url(#sky1)"/>
+<rect y="215" width="800" height="125" fill="url(#sea1)"/>
+<polygon points="400,0 -8,330 70,330" fill="url(#ray)" opacity="0.22"/><polygon points="400,0 133,330 186,330" fill="url(#ray)" opacity="0.35"/><polygon points="400,0 232,330 273,330" fill="url(#ray)" opacity="0.22"/><polygon points="400,0 312,330 348,330" fill="url(#ray)" opacity="0.35"/><polygon points="400,0 383,330 417,330" fill="url(#ray)" opacity="0.22"/><polygon points="400,0 452,330 488,330" fill="url(#ray)" opacity="0.35"/><polygon points="400,0 527,330 568,330" fill="url(#ray)" opacity="0.22"/><polygon points="400,0 614,330 667,330" fill="url(#ray)" opacity="0.35"/><polygon points="400,0 730,330 808,330" fill="url(#ray)" opacity="0.22"/>
+<circle cx="400" cy="0" r="260" fill="url(#glow1)"/>
+<path d="M0,240.0 L10,241.5 L20,242.6 L30,243.0 L40,242.6 L50,241.5 L60,240.0 L70,238.5 L80,237.4 L90,237.0 L100,237.4 L110,238.5 L120,240.0 L130,241.5 L140,242.6 L150,243.0 L160,242.6 L170,241.5 L180,240.0 L190,238.5 L200,237.4 L210,237.0 L220,237.4 L230,238.5 L240,240.0 L250,241.5 L260,242.6 L270,243.0 L280,242.6 L290,241.5 L300,240.0 L310,238.5 L320,237.4 L330,237.0 L340,237.4 L350,238.5 L360,240.0 L370,241.5 L380,242.6 L390,243.0 L400,242.6 L410,241.5 L420,240.0 L430,238.5 L440,237.4 L450,237.0 L460,237.4 L470,238.5 L480,240.0 L490,241.5 L500,242.6 L510,243.0 L520,242.6 L530,241.5 L540,240.0 L550,238.5 L560,237.4 L570,237.0 L580,237.4 L590,238.5 L600,240.0 L610,241.5 L620,242.6 L630,243.0 L640,242.6 L650,241.5 L660,240.0 L670,238.5 L680,237.4 L690,237.0 L700,237.4 L710,238.5 L720,240.0 L730,241.5 L740,242.6 L750,243.0 L760,242.6 L770,241.5 L780,240.0 L790,238.5 L800,237.4" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1.6" fill="none"/><path d="M0,266.0 L10,265.4 L20,264.2 L30,262.5 L40,260.8 L50,259.2 L60,258.3 L70,258.0 L80,258.6 L90,259.8 L100,261.5 L110,263.2 L120,264.8 L130,265.7 L140,266.0 L150,265.4 L160,264.2 L170,262.5 L180,260.8 L190,259.2 L200,258.3 L210,258.0 L220,258.6 L230,259.8 L240,261.5 L250,263.2 L260,264.8 L270,265.7 L280,266.0 L290,265.4 L300,264.2 L310,262.5 L320,260.8 L330,259.2 L340,258.3 L350,258.0 L360,258.6 L370,259.8 L380,261.5 L390,263.2 L400,264.8 L410,265.7 L420,266.0 L430,265.4 L440,264.2 L450,262.5 L460,260.8 L470,259.2 L480,258.3 L490,258.0 L500,258.6 L510,259.8 L520,261.5 L530,263.2 L540,264.8 L550,265.7 L560,266.0 L570,265.4 L580,264.2 L590,262.5 L600,260.8 L610,259.2 L620,258.3 L630,258.0 L640,258.6 L650,259.8 L660,261.5 L670,263.2 L680,264.8 L690,265.7 L700,266.0 L710,265.4 L720,264.2 L730,262.5 L740,260.8 L750,259.2 L760,258.3 L770,258.0 L780,258.6 L790,259.8 L800,261.5" stroke="#ffffff" stroke-opacity="0.22999999999999998" stroke-width="1.6" fill="none"/><path d="M0,285.2 L10,283.2 L20,281.4 L30,280.0 L40,279.1 L50,279.1 L60,279.7 L70,281.1 L80,282.8 L90,284.8 L100,286.6 L110,288.0 L120,288.9 L130,288.9 L140,288.3 L150,286.9 L160,285.2 L170,283.2 L180,281.4 L190,280.0 L200,279.1 L210,279.1 L220,279.7 L230,281.1 L240,282.8 L250,284.8 L260,286.6 L270,288.0 L280,288.9 L290,288.9 L300,288.3 L310,286.9 L320,285.2 L330,283.2 L340,281.4 L350,280.0 L360,279.1 L370,279.1 L380,279.7 L390,281.1 L400,282.8 L410,284.8 L420,286.6 L430,288.0 L440,288.9 L450,288.9 L460,288.3 L470,286.9 L480,285.2 L490,283.2 L500,281.4 L510,280.0 L520,279.1 L530,279.1 L540,279.7 L550,281.1 L560,282.8 L570,284.8 L580,286.6 L590,288.0 L600,288.9 L610,288.9 L620,288.3 L630,286.9 L640,285.2 L650,283.2 L660,281.4 L670,280.0 L680,279.1 L690,279.1 L700,279.7 L710,281.1 L720,282.8 L730,284.8 L740,286.6 L750,288.0 L760,288.9 L770,288.9 L780,288.3 L790,286.9 L800,285.2" stroke="#ffffff" stroke-opacity="0.28" stroke-width="1.6" fill="none"/><path d="M0,302.0 L10,300.7 L20,300.1 L30,300.1 L40,300.9 L50,302.3 L60,304.1 L70,306.2 L80,308.2 L90,310.0 L100,311.3 L110,311.9 L120,311.9 L130,311.1 L140,309.7 L150,307.9 L160,305.8 L170,303.8 L180,302.0 L190,300.7 L200,300.1 L210,300.1 L220,300.9 L230,302.3 L240,304.1 L250,306.2 L260,308.2 L270,310.0 L280,311.3 L290,311.9 L300,311.9 L310,311.1 L320,309.7 L330,307.9 L340,305.8 L350,303.8 L360,302.0 L370,300.7 L380,300.1 L390,300.1 L400,300.9 L410,302.3 L420,304.1 L430,306.2 L440,308.2 L450,310.0 L460,311.3 L470,311.9 L480,311.9 L490,311.1 L500,309.7 L510,307.9 L520,305.8 L530,303.8 L540,302.0 L550,300.7 L560,300.1 L570,300.1 L580,300.9 L590,302.3 L600,304.1 L610,306.2 L620,308.2 L630,310.0 L640,311.3 L650,311.9 L660,311.9 L670,311.1 L680,309.7 L690,307.9 L700,305.8 L710,303.8 L720,302.0 L730,300.7 L740,300.1 L750,300.1 L760,300.9 L770,302.3 L780,304.1 L790,306.2 L800,308.2" stroke="#ffffff" stroke-opacity="0.33" stroke-width="1.6" fill="none"/><path d="M0,321.0 L10,321.2 L20,322.1 L30,323.5 L40,325.4 L50,327.6 L60,329.7 L70,331.8 L80,333.4 L90,334.5 L100,335.0 L110,334.8 L120,333.9 L130,332.5 L140,330.6 L150,328.4 L160,326.3 L170,324.2 L180,322.6 L190,321.5 L200,321.0 L210,321.2 L220,322.1 L230,323.5 L240,325.4 L250,327.6 L260,329.7 L270,331.8 L280,333.4 L290,334.5 L300,335.0 L310,334.8 L320,333.9 L330,332.5 L340,330.6 L350,328.4 L360,326.3 L370,324.2 L380,322.6 L390,321.5 L400,321.0 L410,321.2 L420,322.1 L430,323.5 L440,325.4 L450,327.6 L460,329.7 L470,331.8 L480,333.4 L490,334.5 L500,335.0 L510,334.8 L520,333.9 L530,332.5 L540,330.6 L550,328.4 L560,326.3 L570,324.2 L580,322.6 L590,321.5 L600,321.0 L610,321.2 L620,322.1 L630,323.5 L640,325.4 L650,327.6 L660,329.7 L670,331.8 L680,333.4 L690,334.5 L700,335.0 L710,334.8 L720,333.9 L730,332.5 L740,330.6 L750,328.4 L760,326.3 L770,324.2 L780,322.6 L790,321.5 L800,321.0" stroke="#ffffff" stroke-opacity="0.38" stroke-width="1.6" fill="none"/>
+<ellipse cx="400" cy="222" rx="170" ry="7" fill="#FFF3CF" opacity=".55"/>
+<path d="M120 196 C 220 180, 300 206, 400 192 S 600 178, 690 194" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.4" fill="none" stroke-dasharray="2 7"/>
+</svg><figcaption>地是空虛混沌，淵面黑暗；神說要有光，就有了光。<button class="ref" type="button" data-r="Gen1:1-3">創 1:1–3</button></figcaption></figure>
+</section>
+
+<section id="s1" class="reveal">
+  <div class="eyebrow">一・經文範圍與版本</div>
+  <h2>從「起初」到「定為聖日」</h2>
+  <p>經文範圍是 <button class="ref" type="button" data-r="Gen1:1-2:3">創 1:1–2:3</button>。這段經文以「起初，神創造天地」開始，以「神賜福給第七日，定為聖日」結束。因此第七日不是附錄，而是整個創造敘事的完成與高峰。</p>
+  <blockquote class="verse">起初，神創造天地。地是空虛混沌，淵面黑暗；神的靈運行在水面上。神說：「要有光」，就有了光。<footer>——創世記 1:1–3 <button class="ref" type="button" data-r="Gen1:1-3">全文</button></footer></blockquote>
+  <blockquote class="verse">神就照著自己的形像造人，乃是照著他的形像造男造女。<footer>——創世記 1:27 <button class="ref" type="button" data-r="Gen1:27">全文</button></footer></blockquote>
+  <blockquote class="verse">到第七日，神造物的工已經完畢，就在第七日歇了他一切的工，安息了。神賜福給第七日，定為聖日；因為在這日，神歇了他一切創造的工，就安息了。<footer>——創世記 2:2–3 <button class="ref" type="button" data-r="Gen2:1-3">全文</button></footer></blockquote>
+  <div class="card"><b>版本與範圍提醒</b>
+    <p>和合本在 <button class="ref" type="button" data-r="Gen1:6-8">創 1:6–8</button> 使用「空氣」；本頁的「穹蒼／穹頂／廣闊空間」屬原文討論用語，並非和合本原句。「七日創造」是慣用稱呼；嚴格說來，前六日敘述創造工作，第七日敘述完成、安息、賜福與成聖。</p></div>
+</section>
+
+<section id="s2" class="reveal">
+  <div class="eyebrow">二・七日創造的內容</div>
+  <h2>六日工作，一日安息</h2>
+  <p>前六日並非任意排列，而是由「形成空間」到「充滿空間」的遞進；第七日則使整個敘事達到完成。</p>
+  <div class="days">
+    <div class="day"><div class="n">第一日</div><div class="c">光；分晝夜</div><div class="f">建立時間與光暗秩序</div><button class="ref" type="button" data-r="Gen1:3-5">創 1:3–5</button></div>
+    <div class="day"><div class="n">第二日</div><div class="c">穹蒼；分上下的水</div><div class="f">建立天空與水的界域</div><button class="ref" type="button" data-r="Gen1:6-8">創 1:6–8</button></div>
+    <div class="day"><div class="n">第三日</div><div class="c">旱地與海；植物</div><div class="f">建立大地、海洋與植物</div><button class="ref" type="button" data-r="Gen1:9-13">創 1:9–13</button></div>
+    <div class="day"><div class="n">第四日</div><div class="c">日、月、星辰</div><div class="f">管理晝夜、節令、日子、年歲</div><button class="ref" type="button" data-r="Gen1:14-19">創 1:14–19</button></div>
+    <div class="day"><div class="n">第五日</div><div class="c">水中生物與飛鳥</div><div class="f">充滿海與天空</div><button class="ref" type="button" data-r="Gen1:20-23">創 1:20–23</button></div>
+    <div class="day"><div class="n">第六日</div><div class="c">地上動物；人類</div><div class="f">充滿大地；人承受治理使命</div><button class="ref" type="button" data-r="Gen1:24-31">創 1:24–31</button></div>
+    <div class="day seven"><div class="n">第七日</div><div class="c">安息、賜福、定為聖</div><div class="f">創造完成與神聖安息</div><button class="ref" type="button" data-r="Gen2:1-3">創 2:1–3</button></div>
+  </div>
+  <p>經文反覆使用「神說」、「事就這樣成了」、「神看著是好的」等句式，前六日另以「有晚上，有早晨」標示段落結束。這些句式並非每一日全部出現；它們使文本具有儀式般的節奏，也把創造呈現為有秩序、有目的、被上帝逐日評價的過程。</p>
+  <p class="takeaway">七日不是一張清單，而是一段走向安息的節奏。</p>
+</section>
+
+<section id="s3" class="reveal">
+  <div class="eyebrow">三・文學結構</div>
+  <h2>6 + 1 與兩個三日</h2>
+  <h3>1. 七日架構</h3>
+  <p>基本架構是 6 + 1：六日工作，第七日安息。第七日沒有「有晚上，有早晨」的收尾句，許多解經者據此認為上帝的安息具有開放性或延續性。無論如何，第七日明確是全章的高峰與結束。</p>
+  <h3>2. 形成與充滿</h3>
+  <p>「形成與充滿」是一種有助閱讀的結構分析：前三日較著重界域與生活環境的安排；後三日較著重光體、動物與人在各界域中的位置與使命。</p>
+  <figure class="illus"><svg viewBox="-10 -36 680 340" role="img" aria-labelledby="t2"><title id="t2">前三日形成界域，後三日充滿界域，第七日安息</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#B8893B"/></marker>
+<radialGradient id="halo2"><stop offset="0" stop-color="#FFE9B0"/><stop offset="1" stop-color="#FFE9B0" stop-opacity="0"/></radialGradient></defs>
+<text x="0" y="-14" font-family="'Noto Serif TC','Noto Serif CJK TC',serif" font-size="14" fill="#5E8FBF" font-weight="700">形成界域</text>
+<g transform="translate(0,0)"><rect width="150" height="128" rx="14" fill="#FFFDF7" stroke="#E4D9C3"/><text x="14" y="26" font-family="'Noto Serif TC','Noto Serif CJK TC',serif" font-size="14" fill="#2E2A24" font-weight="700">第一日　光</text><rect x="20" y="42" width="55" height="70" rx="6" fill="#FFF3CF"/><rect x="75" y="42" width="55" height="70" rx="6" fill="#3a4a5c"/><circle cx="75" cy="77" r="16" fill="#FFE7A3"/></g><g transform="translate(160,0)"><rect width="150" height="128" rx="14" fill="#FFFDF7" stroke="#E4D9C3"/><text x="14" y="26" font-family="'Noto Serif TC','Noto Serif CJK TC',serif" font-size="14" fill="#2E2A24" font-weight="700">第二日　天與水</text><rect x="20" y="40" width="110" height="20" rx="4" fill="#9CC0E0"/><rect x="20" y="64" width="110" height="10" fill="#DCEAF5"/><rect x="20" y="78" width="110" height="34" rx="4" fill="#5E8FBF"/></g><g transform="translate(320,0)"><rect width="150" height="128" rx="14" fill="#FFFDF7" stroke="#E4D9C3"/><text x="14" y="26" font-family="'Noto Serif TC','Noto Serif CJK TC',serif" font-size="14" fill="#2E2A24" font-weight="700">第三日　地、海、植物</text><rect x="20" y="88" width="110" height="24" rx="4" fill="#5E8FBF"/><path d="M20 92 Q60 60 100 80 L130 88 L130 112 L20 112Z" fill="#C9A86A"/><path d="M62 80 L62 58" stroke="#6F8A5A" stroke-width="3"/><circle cx="62" cy="54" r="10" fill="#6F8A5A"/><path d="M90 82 q4 -12 8 0 M94 82 l0 -10" stroke="#6F8A5A" stroke-width="2" fill="none"/></g><g transform="translate(0,160)"><rect width="150" height="128" rx="14" fill="#FFFBF0" stroke="#E4D9C3"/><text x="14" y="26" font-family="'Noto Serif TC','Noto Serif CJK TC',serif" font-size="14" fill="#2E2A24" font-weight="700">第四日　光體</text><rect x="20" y="40" width="110" height="72" rx="6" fill="#40546b"/><circle cx="30" cy="50" r="1.6" fill="#fff"/><circle cx="46" cy="98" r="1.6" fill="#fff"/><circle cx="112" cy="52" r="1.6" fill="#fff"/><circle cx="124" cy="100" r="1.6" fill="#fff"/><circle cx="100" cy="104" r="1.6" fill="#fff"/><circle cx="58" cy="72" r="15" fill="#F2C35B"/><path d="M104 62 a13 13 0 1 0 6 24 a10 10 0 1 1 -6 -24Z" fill="#F4EEDC"/></g><g transform="translate(160,160)"><rect width="150" height="128" rx="14" fill="#FFFBF0" stroke="#E4D9C3"/><text x="14" y="26" font-family="'Noto Serif TC','Noto Serif CJK TC',serif" font-size="14" fill="#2E2A24" font-weight="700">第五日　魚與鳥</text><rect x="20" y="40" width="110" height="30" rx="4" fill="#CFE2F2"/><rect x="20" y="74" width="110" height="38" rx="4" fill="#5E8FBF"/><g transform="translate(40,52)"><path d="M0 0 q7 -7 14 0 q7 -7 14 0" stroke="#3a4a5c" stroke-width="2.2" fill="none"/></g><g transform="translate(84,58) scale(.8)"><path d="M0 0 q7 -7 14 0 q7 -7 14 0" stroke="#3a4a5c" stroke-width="2.2" fill="none"/></g><g transform="translate(36,90)"><path d="M0 0 q14 -10 28 0 q-14 10 -28 0Z M28 0 l9 -7 l0 14Z" fill="#2E5A82"/></g><g transform="translate(80,100) scale(.8)"><path d="M0 0 q14 -10 28 0 q-14 10 -28 0Z M28 0 l9 -7 l0 14Z" fill="#2E5A82"/></g></g><g transform="translate(320,160)"><rect width="150" height="128" rx="14" fill="#FFFBF0" stroke="#E4D9C3"/><text x="14" y="26" font-family="'Noto Serif TC','Noto Serif CJK TC',serif" font-size="14" fill="#2E2A24" font-weight="700">第六日　動物與人</text><rect x="20" y="90" width="110" height="22" rx="4" fill="#C9A86A"/><path d="M30 90 l4 -16 h22 l6 -8 l4 3 l-4 8 l0 13 M38 90 v-6 M54 90 v-6" fill="#8C6B3E" stroke="#8C6B3E" stroke-width="3" stroke-linejoin="round"/><g transform="translate(92,90)" fill="#B9562F"><circle cx="0" cy="-30" r="6"/><path d="M-7 -22 h14 l3 22 h-20Z"/></g><g transform="translate(112,90)" fill="#B9562F" opacity=".85"><circle cx="0" cy="-30" r="6"/><path d="M-7 -22 h14 l3 22 h-20Z"/></g></g><path d="M75 133 v22" stroke="#B8893B" stroke-width="2" stroke-dasharray="3 4" marker-end="url(#ah)"/><path d="M235 133 v22" stroke="#B8893B" stroke-width="2" stroke-dasharray="3 4" marker-end="url(#ah)"/><path d="M395 133 v22" stroke="#B8893B" stroke-width="2" stroke-dasharray="3 4" marker-end="url(#ah)"/>
+<text x="0" y="150" font-family="'Noto Serif TC','Noto Serif CJK TC',serif" font-size="14" fill="#B9562F" font-weight="700">充滿界域</text>
+<path d="M478 144 h16" stroke="#B8893B" stroke-width="2" marker-end="url(#ah)"/>
+<g transform="translate(500,0)"><rect width="150" height="288" rx="16" fill="#FFF6E2" stroke="#B8893B" stroke-width="1.5"/><circle cx="75" cy="128" r="58" fill="url(#halo2)"/><circle cx="75" cy="128" r="22" fill="none" stroke="#B8893B" stroke-width="1.5"/><text x="75" y="134" text-anchor="middle" font-family="'Noto Serif TC','Noto Serif CJK TC',serif" font-size="18" fill="#B8893B" font-weight="700">聖</text><text x="75" y="34" text-anchor="middle" font-family="'Noto Serif TC','Noto Serif CJK TC',serif" font-size="17" fill="#2E2A24" font-weight="700">第七日</text><text x="75" y="226" text-anchor="middle" font-family="'Noto Serif TC','Noto Serif CJK TC',serif" font-size="14" fill="#2E2A24">安息・賜福</text><text x="75" y="248" text-anchor="middle" font-family="'Noto Serif TC','Noto Serif CJK TC',serif" font-size="14" fill="#2E2A24">定為聖日</text></g>
+</svg><figcaption>前三日形成界域，後三日充滿界域，第七日安息並定為聖日。<button class="ref" type="button" data-r="Gen2:1-3">創 2:1–3</button></figcaption></figure>
+  <p>這個結構回應 <button class="ref" type="button" data-r="Gen1:2">創 1:2</button> 的詞組 <i>tōhû wāḇōhû</i>「空虛混沌」：<i>tōhû</i> 有無形、混亂、荒廢之意；<i>bōhû</i> 有空無、空虛之意。</p>
+  <p>這種配對有說明力，但不是兩個希伯來詞的字典定義，也不是完全對稱：第三日已出現植物；海到第三日才被命名，第五日才出現水中動物。因此不宜把每一項創造都硬套進一對一表格。文學對稱本身也不能決定創造日的時間長度。</p>
+  <h3>3. 重複句式與例外</h3>
+  <p>反覆出現的敘事元素包括：神說話、受造之事成就、神作出評價、分別或命名，以及日次的結語。它們不是每天固定不變的流程。直接核對和合本，可見幾個重要例外：</p>
+  <ul class="dots">
+    <li>第二日沒有「神看著是好的」；第三日有兩次（1:10、12）。<button class="ref" type="button" data-r="Gen1:6-8">創 1:6–8</button> <button class="ref" type="button" data-r="Gen1:9-13">創 1:9–13</button></li>
+    <li>第六日先評價地上動物為好（1:25），再總評一切所造的「都甚好」（1:31）。<button class="ref" type="button" data-r="Gen1:31">創 1:31</button></li>
+    <li>「神說」在第一章出現十次（1:3、6、9、11、14、20、24、26、28、29），並非每天只有一次。</li>
+    <li>命名集中在前面幾日；第七日沒有「有晚上，有早晨」的結語。</li>
+  </ul>
+  <div class="aside"><b>旁白</b>表格很整齊，經文偶爾「破格」。這不是排版失誤，而是提醒讀者：別急著把每一日塞進試算表的格子裡。</div>
+  <p class="takeaway">重複不是冗贅，而是分段與強調：創造出於上帝的命令，且其結果是好的。</p>
+</section>
+
+<section id="s4" class="reveal">
+  <div class="eyebrow">四・希伯來文結構</div>
+  <h2>句法、詞組與動詞如何影響解經</h2>
+  <figure class="illus"><svg viewBox="0 0 800 320" role="img" aria-labelledby="t3"><title id="t3">展開的希伯來文經卷與一盞油燈</title>
+<defs><radialGradient id="flame" cx="732" cy="186" r="120" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFE7A3" stop-opacity=".9"/><stop offset="1" stop-color="#FFE7A3" stop-opacity="0"/></radialGradient>
+<linearGradient id="parch" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F1E3C2"/><stop offset=".5" stop-color="#FBF3DF"/><stop offset="1" stop-color="#EEDDB8"/></linearGradient></defs>
+<rect width="800" height="320" fill="#FBF8F1"/>
+<circle cx="732" cy="186" r="120" fill="url(#flame)"/>
+<rect x="170" y="70" width="380" height="190" fill="url(#parch)" stroke="#D8C49A"/>
+<rect x="150" y="56" width="22" height="218" rx="10" fill="#8C6B3E"/><rect x="548" y="56" width="22" height="218" rx="10" fill="#8C6B3E"/>
+<text x="522" y="122" text-anchor="start" direction="rtl" font-family="'Noto Serif Hebrew','SBL Hebrew','Times New Roman',serif" font-size="30" fill="#2E2A24">בְּרֵאשִׁית בָּרָא אֱלֹהִים</text>
+<line x1="220" y1="150" x2="522" y2="150" stroke="#C9B38A" stroke-width="2.4" stroke-linecap="round"/><line x1="250" y1="167" x2="522" y2="167" stroke="#C9B38A" stroke-width="2.4" stroke-linecap="round"/><line x1="280" y1="184" x2="522" y2="184" stroke="#C9B38A" stroke-width="2.4" stroke-linecap="round"/><line x1="220" y1="201" x2="522" y2="201" stroke="#C9B38A" stroke-width="2.4" stroke-linecap="round"/><line x1="250" y1="218" x2="522" y2="218" stroke="#C9B38A" stroke-width="2.4" stroke-linecap="round"/><line x1="280" y1="235" x2="522" y2="235" stroke="#C9B38A" stroke-width="2.4" stroke-linecap="round"/>
+<g transform="translate(640,220)"><path d="M-62 0 Q-60 34 0 36 Q52 34 70 8 L92 -4 Q60 -2 40 -8 Q0 -16 -62 0Z" fill="#B9562F"/>
+<ellipse cx="-6" cy="-6" rx="14" ry="5" fill="#7a3a20"/><path d="M78 -6 q14 -6 22 -2" stroke="#B9562F" stroke-width="6" stroke-linecap="round" fill="none"/></g>
+<path d="M640 160 C 630 182, 636 200, 640 206 C 646 200, 652 182, 640 160Z" fill="#F2B544" transform="translate(92,-6)"/>
+<path d="M640 176 C 636 188, 638 198, 640 202 C 643 198, 645 188, 640 176Z" fill="#FFF3CF" transform="translate(92,-6)"/>
+</svg><figcaption>希伯來文「起初，神創造」由右向左書寫。<button class="ref" type="button" data-r="Gen1:1">創 1:1</button></figcaption></figure>
+  <h3>1. 字序與背景句</h3>
+  <p>希伯來散文敘事常以 <i>wayyiqtol</i> 動詞形式推進事件；不能把所有「連接詞＋動詞」都視為同一種時態或敘事功能。</p>
+  <div class="card"><p class="heb">וַיֹּאמֶר אֱלֹהִים</p><p class="tr">wayyōʾmer ʾĕlōhîm・「神說」</p>
+    <p><button class="ref" type="button" data-r="Gen1:3-5">創 1:3</button> 是典型的希伯來敘事句式。<button class="ref" type="button" data-r="Gen1:2">創 1:2</button> 則採「連接詞＋名詞＋動詞 <i>hāyāh</i>」的句式，通常被理解為背景或狀態描述：它描述創造工作展開前的地與深淵狀況，而不是另一個與 1:1 並列的主要創造事件。</p></div>
+  <h3>2. 創 1:1 的兩種讀法</h3>
+  <div class="tbl"><table><tr><th>讀法</th><th>句法理解</th><th>解經效果</th></tr>
+    <tr><td>獨立主句</td><td>「起初，神創造天地。」</td><td>1:1 為總題，1:2 以下詳述創造過程</td></tr>
+    <tr><td>時間從句</td><td>「當神開始創造天地時，地是空虛混沌……」</td><td>強調 1:2 的原始狀態，創造敘事自 1:3 展開</td></tr></table></div>
+  <p>古代譯本與現代學者對此有不同處理。本頁隨和合本採獨立句讀法；這不表示另一讀法已被文法排除。即使採獨立句，仍可討論第 1 節是全段總題，或先敘述初始的創造行動。NET 譯註也列出這些選項。〔R1〕</p>
+  <h3>3. 空虛混沌、天地、分開與命名</h3>
+  <div class="heb-grid">
+    <div class="card"><p class="heb">תֹהוּ וָבֹהוּ</p><p class="tr">tōhû wāḇōhû・空虛混沌</p><p>固定詞組，不應拆成兩個孤立形容詞。另一處重要用例是 <button class="ref" type="button" data-r="Jer4:23">耶 4:23</button>。它描述的不是「邪惡的混沌神」，而是敘事開始時尚未適於居住的狀態。</p></div>
+    <div class="card"><p class="heb">הַשָּׁמַיִם וְהָאָרֶץ</p><p class="tr">haššāmayim wəhāʾāreṣ・天地</p><p>對舉（merism）：以兩端代表整個宇宙。「有晚上，有早晨」首先是時間結語；把它歸為 merism 屬可討論的修辭分析。</p></div>
+    <div class="card"><p class="heb">בָּדַל ・ קָרָא</p><p class="tr">bādal 分開・qārāʾ 稱／命名</p><p>上帝分光暗、分上下的水、分海與旱地，並為之命名。命名涉及界定與賦予功能：創造也是建立可辨識、可居住的秩序。</p></div>
+  </div>
+  <h3>4. 關鍵動詞</h3>
+  <div class="tbl"><table><tr><th>希伯來文</th><th>音譯</th><th>意義</th><th>解經作用</th></tr>
+    <tr><td class="heb" style="font-size:22px">בָּרָא</td><td><i>bārāʾ</i></td><td>創造</td><td>在表示神創造的常見 Qal 用法中，神為主詞；不可混同其他詞義與詞幹</td></tr>
+    <tr><td class="heb" style="font-size:22px">אָמַר</td><td><i>ʾāmar</i></td><td>說</td><td>創造以話語命令進行，凸顯上帝主權</td></tr>
+    <tr><td class="heb" style="font-size:22px">עָשָׂה</td><td><i>ʿāśāh</i></td><td>造、做成</td><td>廣義的做、造；不能只由此詞推定創造方式</td></tr>
+    <tr><td class="heb" style="font-size:22px">שָׁבַת</td><td><i>šāḇat</i></td><td>停止、安息</td><td>第七日安息，成為安息日的語源</td></tr></table></div>
+  <div class="aside"><b>旁白</b>希伯來文由右往左讀。第一次看的人，視線常會跟著書頁一起倒著走一段。</div>
+  <p class="takeaway">先讀句法，再作神學推論：上帝說話，秩序形成，空虛被充滿，一切甚好，上帝安息。</p>
+</section>
+
+<section id="s5" class="reveal">
+  <div class="eyebrow">五・古代近東背景</div>
+  <h2>共同語言，不同的神觀</h2>
+  <p>《創世記》1–11 章，特別是創造與洪水，長期被置於美索不達米亞與迦南的文學傳統中比較，相關文本包括巴比倫《埃努瑪・埃利什》（<i>Enūma eliš</i>）、古巴比倫《阿特拉哈西斯史詩》（<i>Atraḫasīs</i>）、《吉爾伽美什史詩》與烏加里特《巴力循環》。它們與《創世記》共享原始大水、宇宙由分開而形成、人由泥土造成、洪水與倖存等母題；但各文本時期與目的不同，不應合併成單一的「近東神話」。〔R2–R4〕</p>
+  <div class="tbl"><table><tr><th>主題</th><th>古代近東文本</th><th>《創世記》</th></tr>
+    <tr><td>原始水</td><td>《埃努瑪・埃利什》中的阿普蘇與提亞馬特</td><td>創 1:2 的「淵」與水面</td></tr>
+    <tr><td>宇宙形成</td><td>馬爾杜克擊敗提亞馬特，分其屍為天地</td><td>上帝分光暗、水分上下、海與旱地</td></tr>
+    <tr><td>人類起源</td><td>《阿特拉哈西斯》：黏土與神血</td><td><button class="ref" type="button" data-r="Gen2:7">創 2:7</button>：塵土與生命之氣</td></tr>
+    <tr><td>洪水</td><td>烏特納皮什提、阿特拉哈西斯</td><td>挪亞、方舟、放出鳥類、獻祭</td></tr>
+    <tr><td>人類目的</td><td>為諸神服勞役</td><td>按上帝形像受造，治理大地</td></tr></table></div>
+  <p>《埃努瑪・埃利什》的重點之一，是藉馬爾杜克的勝利確立巴比倫與其主神的地位；《阿特拉哈西斯》則涉及人代諸神勞動、人口與喧鬧引發衝突，以及災難與倖存。〔R3〕洪水與塵土造人的比較涉及創 2–9 章，屬背景延伸。</p>
+  <h3>關鍵差異</h3>
+  <div class="diff">
+    <div><b>獨一上帝</b>不是眾神鬥爭，而是獨一上帝創造萬有。</div>
+    <div><b>話語創造</b>上帝說「要有光」，就有了光；沒有與混沌怪獸搏鬥。</div>
+    <div><b>自然界非神</b>日、月、星辰、海與大魚都是受造物，不是神明。</div>
+    <div><b>人類尊嚴</b>人按上帝形像受造，受託治理大地，而非為神服苦役。</div>
+    <div><b>安息</b>第七日的安息是神聖、賜福與分別為聖的行動。</div>
+  </div>
+  <figure class="illus"><svg viewBox="0 0 800 340" role="img" aria-labelledby="t4"><title id="t4">夜空中的日、月、星辰，海中有大魚與群魚</title>
+<defs><linearGradient id="sky4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3f57"/><stop offset=".55" stop-color="#5E8FBF"/><stop offset="1" stop-color="#F6E3B0"/></linearGradient>
+<linearGradient id="sea4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7AA8D2"/><stop offset="1" stop-color="#1f3a55"/></linearGradient>
+<radialGradient id="sun4" cx="640" cy="150" r="70" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFF3CF"/><stop offset="1" stop-color="#FFF3CF" stop-opacity="0"/></radialGradient></defs>
+<rect width="800" height="200" fill="url(#sky4)"/><circle cx="351" cy="52" r="1.3" fill="#fff" opacity="1"/><circle cx="69" cy="32" r="1.8" fill="#fff" opacity="0.6"/><circle cx="394" cy="28" r="1.8" fill="#fff" opacity="0.6"/><circle cx="58" cy="36" r="1.3" fill="#fff" opacity="0.85"/><circle cx="91" cy="75" r="1" fill="#fff" opacity="1"/><circle cx="454" cy="29" r="1.8" fill="#fff" opacity="0.6"/><circle cx="248" cy="29" r="1.8" fill="#fff" opacity="1"/><circle cx="426" cy="26" r="1" fill="#fff" opacity="0.6"/><circle cx="590" cy="48" r="1.3" fill="#fff" opacity="0.85"/><circle cx="167" cy="44" r="1.8" fill="#fff" opacity="0.85"/><circle cx="593" cy="60" r="1" fill="#fff" opacity="1"/><circle cx="604" cy="62" r="1.3" fill="#fff" opacity="0.6"/><circle cx="580" cy="30" r="1.8" fill="#fff" opacity="0.6"/><circle cx="653" cy="66" r="1.3" fill="#fff" opacity="1"/><circle cx="564" cy="123" r="1.3" fill="#fff" opacity="0.85"/><circle cx="619" cy="130" r="1.3" fill="#fff" opacity="0.85"/><circle cx="274" cy="60" r="1.8" fill="#fff" opacity="0.6"/><circle cx="103" cy="90" r="1.8" fill="#fff" opacity="0.85"/><circle cx="371" cy="128" r="1.3" fill="#fff" opacity="1"/><circle cx="94" cy="44" r="1.8" fill="#fff" opacity="0.85"/><circle cx="188" cy="101" r="1" fill="#fff" opacity="0.85"/><circle cx="451" cy="24" r="1.8" fill="#fff" opacity="0.6"/><circle cx="591" cy="94" r="1.3" fill="#fff" opacity="1"/><circle cx="378" cy="141" r="1.8" fill="#fff" opacity="0.85"/><circle cx="90" cy="37" r="1.3" fill="#fff" opacity="0.85"/><circle cx="733" cy="30" r="1" fill="#fff" opacity="1"/><circle cx="738" cy="93" r="1.8" fill="#fff" opacity="1"/><circle cx="717" cy="128" r="1.3" fill="#fff" opacity="1"/><circle cx="415" cy="102" r="1" fill="#fff" opacity="0.85"/><circle cx="383" cy="57" r="1.8" fill="#fff" opacity="0.6"/><circle cx="525" cy="29" r="1" fill="#fff" opacity="0.85"/><circle cx="152" cy="77" r="1.3" fill="#fff" opacity="0.85"/><circle cx="528" cy="34" r="1" fill="#fff" opacity="0.85"/><circle cx="431" cy="85" r="1" fill="#fff" opacity="0.85"/><circle cx="583" cy="85" r="1.8" fill="#fff" opacity="0.85"/><circle cx="387" cy="111" r="1" fill="#fff" opacity="0.6"/><circle cx="104" cy="59" r="1" fill="#fff" opacity="0.6"/><circle cx="694" cy="73" r="1" fill="#fff" opacity="0.85"/><circle cx="623" cy="60" r="1.3" fill="#fff" opacity="0.85"/><circle cx="24" cy="51" r="1.3" fill="#fff" opacity="1"/><circle cx="398" cy="95" r="1" fill="#fff" opacity="1"/><circle cx="547" cy="27" r="1.3" fill="#fff" opacity="1"/>
+<path d="M168 58 a26 26 0 1 0 14 48 a20 20 0 1 1 -14 -48Z" fill="#F4EEDC"/>
+<circle cx="640" cy="150" r="70" fill="url(#sun4)"/><circle cx="640" cy="150" r="26" fill="#F2C35B"/>
+<rect y="196" width="800" height="144" fill="url(#sea4)"/>
+<path d="M0,198.0 L10,199.9 L20,201.0 L30,200.6 L40,199.0 L50,197.0 L60,195.4 L70,195.0 L80,196.1 L90,198.0 L100,199.9 L110,201.0 L120,200.6 L130,199.0 L140,197.0 L150,195.4 L160,195.0 L170,196.1 L180,198.0 L190,199.9 L200,201.0 L210,200.6 L220,199.0 L230,197.0 L240,195.4 L250,195.0 L260,196.1 L270,198.0 L280,199.9 L290,201.0 L300,200.6 L310,199.0 L320,197.0 L330,195.4 L340,195.0 L350,196.1 L360,198.0 L370,199.9 L380,201.0 L390,200.6 L400,199.0 L410,197.0 L420,195.4 L430,195.0 L440,196.1 L450,198.0 L460,199.9 L470,201.0 L480,200.6 L490,199.0 L500,197.0 L510,195.4 L520,195.0 L530,196.1 L540,198.0 L550,199.9 L560,201.0 L570,200.6 L580,199.0 L590,197.0 L600,195.4 L610,195.0 L620,196.1 L630,198.0 L640,199.9 L650,201.0 L660,200.6 L670,199.0 L680,197.0 L690,195.4 L700,195.0 L710,196.1 L720,198.0 L730,199.9 L740,201.0 L750,200.6 L760,199.0 L770,197.0 L780,195.4 L790,195.0 L800,196.1" stroke="#fff" stroke-opacity=".5" stroke-width="2" fill="none"/>
+<g transform="translate(330,262)"><path d="M-110 0 C -60 -46, 70 -46, 110 0 C 70 40, -60 40, -110 0Z" fill="#2E5A82"/><path d="M108 0 L160 -34 L148 0 L160 34Z" fill="#2E5A82"/><path d="M-20 -30 q20 -24 46 -4" fill="#3c6f9b"/><path d="M-40 6 q50 22 110 0" stroke="#4f86b5" stroke-width="2" fill="none"/></g><g transform="translate(560,250) scale(1.1)"><path d="M0 0 q14 -10 28 0 q-14 10 -28 0Z M28 0 l9 -7 l0 14Z" fill="#2E5A82"/></g><g transform="translate(600,282) scale(0.9)"><path d="M0 0 q14 -10 28 0 q-14 10 -28 0Z M28 0 l9 -7 l0 14Z" fill="#2E5A82"/></g><g transform="translate(130,296) scale(0.9)"><path d="M0 0 q14 -10 28 0 q-14 10 -28 0Z M28 0 l9 -7 l0 14Z" fill="#2E5A82"/></g><g transform="translate(620,230) scale(0.7)"><path d="M0 0 q14 -10 28 0 q-14 10 -28 0Z M28 0 l9 -7 l0 14Z" fill="#2E5A82"/></g>
+</svg><figcaption>日、月、星辰與海中的大魚，在經文中都是受造之物。<button class="ref" type="button" data-r="Gen1:14-19">創 1:14–19</button> <button class="ref" type="button" data-r="Gen1:20-23">創 1:20–23</button></figcaption></figure>
+  <div class="aside"><b>旁白</b>古代近東的神明常常一開場就忙著打仗；《創世記》的開場安靜得多，只有一句話。</div>
+  <h3>Tehom 與 Tiamat</h3>
+  <p>希伯來文「深淵」<span class="heb" style="font-size:20px">תְּהוֹם</span>（<i>təhôm</i>）常與阿卡德文鹹水女神 Tiāmat 放在閃語的海水、深淵詞彙背景下比較；語詞相近並不能證明希伯來文直接借用女神名字，更不能單憑一詞判定傳承路線。〔R1〕在《創世記》中，<i>təhôm</i> 不是需要被殺的女神，而是敘事中的深水；上帝沒有與它戰鬥，而是直接命令光、穹蒼與旱地出現。</p>
+  <h3>如何定性兩者關係</h3>
+  <ol class="steps">
+    <li><b>共同文化語言：</b>以色列作者使用古代近東熟悉的意象與敘事形式。</li>
+    <li><b>傳統改寫：</b>《創世記》可能改寫廣泛流傳的創造與洪水傳統。</li>
+    <li><b>神學對照或反駁的解釋：</b>文本確實呈現不同神觀；至於是否有意針對某一特定史詩，仍須另行論證。</li>
+  </ol>
+  <p class="takeaway">共有母題是比較的起點，不是抄寫或毫無關係的證明；還須檢查語言、年代、接觸途徑與敘事細節。</p>
+</section>
+<section id="s6" class="reveal">
+  <div class="eyebrow">六・神學主題</div>
+  <h2>主權、良善、身分、安息</h2>
+  <div class="card"><b>1. 上帝的主權</b><p>創造完全出於上帝的話語與命令。文本沒有描寫上帝需要材料、助手或戰鬥才能取勝；上帝一說，事就成了。</p></div>
+  <div class="card"><b>2. 秩序與良善</b><p>「神看著是好的」反覆出現，最後說「神看著一切所造的都甚好」<button class="ref" type="button" data-r="Gen1:31">創 1:31</button>。這是神學宣告，本身沒有提供對所有自然機制的技術性說明。</p></div>
+  <div class="card"><b>3. 人類的身分</b><p><button class="ref" type="button" data-r="Gen1:26-28">創 1:26–28</button> 將人放在創造的高峰：人按上帝形像受造，有男有女，並受託治理受造界。這不是剝削自然的許可證，而是代表上帝治理的責任。</p></div>
+  <figure class="illus"><svg viewBox="0 0 800 320" role="img" aria-labelledby="t5"><title id="t5">一男一女的剪影站在園中，四周有樹與飛鳥</title>
+<defs><linearGradient id="sky5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCEAF5"/><stop offset="1" stop-color="#FBF3DF"/></linearGradient>
+<radialGradient id="sun5" cx="395" cy="120" r="170" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFF3CF"/><stop offset="1" stop-color="#FFF3CF" stop-opacity="0"/></radialGradient></defs>
+<rect width="800" height="320" fill="url(#sky5)"/><circle cx="395" cy="120" r="170" fill="url(#sun5)"/>
+<path d="M0 230 Q200 200 400 228 T800 222 V320 H0Z" fill="#B7C99A"/>
+<path d="M0 262 Q260 244 520 266 T800 258 V320 H0Z" fill="#9CB57E"/>
+<g transform="translate(120,214) scale(1.2)"><rect x="-5" y="-10" width="10" height="60" fill="#8C6B3E"/><circle cx="0" cy="-30" r="34" fill="#6F8A5A"/><circle cx="-22" cy="-12" r="22" fill="#6F8A5A"/><circle cx="22" cy="-14" r="24" fill="#6F8A5A"/></g><g transform="translate(210,236) scale(0.8)"><rect x="-5" y="-10" width="10" height="60" fill="#8C6B3E"/><circle cx="0" cy="-30" r="34" fill="#86A26C"/><circle cx="-22" cy="-12" r="22" fill="#86A26C"/><circle cx="22" cy="-14" r="24" fill="#86A26C"/></g><g transform="translate(640,220) scale(1.1)"><rect x="-5" y="-10" width="10" height="60" fill="#8C6B3E"/><circle cx="0" cy="-30" r="34" fill="#6F8A5A"/><circle cx="-22" cy="-12" r="22" fill="#6F8A5A"/><circle cx="22" cy="-14" r="24" fill="#6F8A5A"/></g><g transform="translate(720,242) scale(0.75)"><rect x="-5" y="-10" width="10" height="60" fill="#8C6B3E"/><circle cx="0" cy="-30" r="34" fill="#86A26C"/><circle cx="-22" cy="-12" r="22" fill="#86A26C"/><circle cx="22" cy="-14" r="24" fill="#86A26C"/></g>
+<g fill="#B9562F"><circle cx="560" cy="270" r="5"/><circle cx="574" cy="276" r="4"/><circle cx="548" cy="280" r="4"/></g>
+<g transform="translate(360,262)" fill="#2E2A24"><circle cx="0" cy="-118" r="16"/><path d="M-22 -98 h44 l8 66 h-14 l-4 32 h-24 l-4 -32 h-14Z"/></g><g transform="translate(430,262)" fill="#2E2A24" opacity=".88"><circle cx="0" cy="-112" r="15"/><path d="M-18 -94 h36 l18 94 h-72Z"/></g><g transform="translate(560,70) scale(1.2)"><path d="M0 0 q7 -7 14 0 q7 -7 14 0" stroke="#3a4a5c" stroke-width="2.2" fill="none"/></g><g transform="translate(600,92) scale(1)"><path d="M0 0 q7 -7 14 0 q7 -7 14 0" stroke="#3a4a5c" stroke-width="2.2" fill="none"/></g><g transform="translate(250,60) scale(0.9)"><path d="M0 0 q7 -7 14 0 q7 -7 14 0" stroke="#3a4a5c" stroke-width="2.2" fill="none"/></g>
+</svg><figcaption>神照著自己的形像造男造女，並將人安置在園中修理看守。<button class="ref" type="button" data-r="Gen1:27">創 1:27</button> <button class="ref" type="button" data-r="Gen2:15">創 2:15</button></figcaption></figure>
+  <div class="card"><b>4. 安息</b><p>第七日使工作與安息都進入神聖秩序。上帝不是因疲乏而休息，而是在創造完成後停止、賜福並分別為聖；這為後來以色列的安息日誡命提供創造論基礎。</p></div>
+</section>
+
+<section id="s7" class="reveal">
+  <div class="eyebrow">七・解經原則</div>
+  <h2>六條讀經的界線</h2>
+  <ol class="steps">
+    <li><b>先讀希伯來文句法，再作神學推論：</b>分辨創 1:1 是否為獨立句，以及創 1:2 是否為背景句。</li>
+    <li><b>把重複視為修辭訊號：</b>「神說」、「事就這樣成了」、「神看著是好的」標示段落與神學評價。</li>
+    <li><b>按詞組理解關鍵詞：</b><i>tōhû wāḇōhû</i> 應作整體理解，不宜只憑單詞字根推論。</li>
+    <li><b>辨識修辭並保留界線：</b>「天地」常作總括語；「有晚上，有早晨」首先是時間結語，不宜只憑修辭分類決定日子長短。</li>
+    <li><b>區分文學架構與科學問題：</b>七日結構首先呈現創造的秩序與意義；歷史、時間與科學討論應在文本焦點確立後再進行。</li>
+    <li><b>以古代近東比較作背景，而非代替經文：</b>比較能照亮《創世記》的獨特主張，但不能取代對希伯來文本身的分析。</li>
+  </ol>
+</section>
+
+<section id="s8" class="reveal">
+  <div class="eyebrow">八・原文與解經界線</div>
+  <h2>一個字解答不了所有問題</h2>
+  <h3>1. 「創造」與從無創造</h3>
+  <p><i>bārāʾ</i> 強調神的創造作為，但該詞本身沒有把「使用何種材料」或「經過多少時間」編碼在字義裡。基督教「從無創造」的教義，須從整本聖經對萬有依賴神的見證建立。〔R1〕</p>
+  <blockquote class="verse">萬物是藉著他造的；凡被造的，沒有一樣不是藉著他造的。<footer>——約翰福音 1:3 <button class="ref" type="button" data-r="John1:3">全文</button></footer></blockquote>
+  <p>即使討論創 1:1 的不同句法，也不必把其中一種句法直接等同於否認神創造萬有。句法問題與整體教義相關，卻不是同一層次的問題。</p>
+  <h3>2. 「神的靈」與三一信仰</h3>
+  <p><button class="ref" type="button" data-r="Gen1:2">創 1:2</button> 的 <i>rûaḥ ʾĕlōhîm</i>，和合本譯為「神的靈」；由於 <i>rûaḥ</i> 可指靈、風或氣息，學術譯本有不同處理。〔R1〕基督徒可以按整本聖經，從父、子、聖靈的啟示理解創造；但不能只因 <i>ʾĕlōhîm</i> 形態為複數，便說創 1:1 已直接證明三位一體——該節「創造」動詞是單數。<button class="ref" type="button" data-r="Gen1:26-28">創 1:26</button> 的「我們」也有不同解釋，須與 1:27 及新約一同閱讀。</p>
+  <h3>3. 「空氣」不是現代大氣的科學名詞</h3>
+  <p><button class="ref" type="button" data-r="Gen1:6-8">創 1:6–8</button> 和合本的「空氣」，原文 <i>rāqîaʿ</i> 涉及展開的天空／穹蒼。這有助避免把「空氣」讀成氧氣、氮氣或大氣層模型；反過來，也不能只靠字根重建作者心目中所有宇宙構造。本段明文是：神分開諸水，並稱此界域為天。</p>
+  <div class="aside"><b>旁白</b>和合本的「空氣」不是在報告氧氣佔百分之二十一。</div>
+  <h3>4. 七日如何理解？</h3>
+  <div class="tbl"><table><tr><th>讀法</th><th>重視的經文線索</th><th>應說明的問題</th></tr>
+    <tr><td>普通日／連續日</td><td>日次、晚上與早晨，以及 <button class="ref" type="button" data-r="Exod20:8-11">出 20:8–11</button> 的工作安息模式</td><td>第四日以前的日次、整段文學對應，以及與其他知識的關係</td></tr>
+    <tr><td>日齡</td><td>「日」在不同上下文可指不同長度的時段</td><td>不能只憑字義可能性，便證明每一日是漫長地質時代</td></tr>
+    <tr><td>文學框架</td><td>第一至三日與第四至六日的對應，及第七日的高峰</td><td>有結構不等於沒有歷史指涉；仍須說明日次與敘事形式</td></tr>
+    <tr><td>類比日</td><td>神的工作與安息成為人類週期的模式</td><td>類比的相同與不同之處須明說，不能用它跳過文本難題</td></tr></table></div>
+  <p>此表是閱讀取向的概括，不聲稱所有支持者意見一致，也不替宇宙年齡作裁決。共同可確認的是：文本以六日工作、第七日安息呈現神創造、賜福與成聖的作為。</p>
+</section>
+
+<section id="s9" class="reveal">
+  <div class="eyebrow">九・在基督裡閱讀創造</div>
+  <h2>由萬有受造到新造的人</h2>
+  <h3>1. 基督是萬有受造與存立的中心</h3>
+  <blockquote class="verse">他在萬有之先；萬有也靠他而立。<footer>——歌羅西書 1:17 <button class="ref" type="button" data-r="Col1:17">全文</button></footer></blockquote>
+  <p><button class="ref" type="button" data-r="Col1:15-20">西 1:15–20</button> 把創造與救贖連在一起：萬有藉著愛子而造、為祂而造；祂也藉十字架成就和平。救恩不是創造主放棄原有世界，而是創造之主在基督裡施行和好與更新。「首生的，在一切被造的以先」須連同下一節閱讀：萬有都藉祂而造，不能孤立解作基督只是第一個受造物。</p>
+  <h3>2. 創造之光與福音之光</h3>
+  <blockquote class="verse">那吩咐光從黑暗裡照出來的神，已經照在我們心裡，叫我們得知神榮耀的光顯在耶穌基督的面上。<footer>——哥林多後書 4:6 <button class="ref" type="button" data-r="2Cor4:6-7">全文</button></footer></blockquote>
+  <p>這是新約作者明確以創造之光說明福音光照的例子，比任意把每一日配成一個靈命階段更有根據。保羅接著用「瓦器」形容人的軟弱：信主不是變得無所不能，而是在有限與苦難中倚靠神。</p>
+  <figure class="illus"><svg viewBox="0 0 800 320" role="img" aria-labelledby="t6"><title id="t6">一道光從黑暗中照下，落在有裂紋的瓦器上</title>
+<defs><linearGradient id="bg6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3a4a"/><stop offset="1" stop-color="#4c5d70"/></linearGradient>
+<linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF3CF" stop-opacity=".85"/><stop offset="1" stop-color="#FFF3CF" stop-opacity=".15"/></linearGradient>
+<radialGradient id="jg" cx="400" cy="196" r="110" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFE7A3" stop-opacity=".8"/><stop offset="1" stop-color="#FFE7A3" stop-opacity="0"/></radialGradient></defs>
+<rect width="800" height="320" fill="url(#bg6)"/>
+<polygon points="340,0 460,0 470,290 330,290" fill="url(#beam)"/>
+<circle cx="400" cy="196" r="110" fill="url(#jg)"/>
+<path d="M0 290 H800 V320 H0Z" fill="#3a4757"/>
+<g transform="translate(400,0)"><path d="M-22 120 h44 v10 q0 8 10 14 q42 26 42 80 q0 50 -40 66 h-68 q-40 -16 -40 -66 q0 -54 42 -80 q10 -6 10 -14Z" fill="#B9562F"/>
+<ellipse cx="0" cy="120" rx="24" ry="6" fill="#FFE7A3"/>
+<path d="M-30 170 l12 18 l-8 14 l14 20 M34 196 l-10 14 l8 12" stroke="#7a3a20" stroke-width="2" fill="none"/>
+<path d="M-50 230 q50 14 100 0" stroke="#d07a50" stroke-width="3" fill="none" opacity=".7"/></g>
+</svg><figcaption>光從黑暗裡照出來；寶貝放在瓦器裡，莫大的能力出於神。<button class="ref" type="button" data-r="2Cor4:6-7">林後 4:6–7</button></figcaption></figure>
+  <h3>3. 神的形像與更新的人</h3>
+  <p>人的尊嚴先於成就，也不隨衰老、失能、疾病或社會地位而消失。<button class="ref" type="button" data-r="Gen9:6">創 9:6</button> 與 <button class="ref" type="button" data-r="Jas3:9-10">雅 3:9–10</button> 在罪已進入世界之後，仍以神的形像作為尊重人的理由。<button class="ref" type="button" data-r="Col3:9-14">西 3:9–14</button> 談新人照造他主的形像更新，接著要求憐憫、恩慈、謙虛、溫柔與忍耐：尊重生命、拒絕羞辱、照顧弱小，是回應創造與救贖的具體方式。</p>
+  <h3>4. 新創造不是否定物質世界</h3>
+  <blockquote class="verse">若有人在基督裡，他就是新造的人，舊事已過，都變成新的了。<footer>——哥林多後書 5:17 <button class="ref" type="button" data-r="2Cor5:17-21">全文</button></footer></blockquote>
+  <p>上下文是神在基督裡使人與祂和好，不是保證所有困難立即消失。<button class="ref" type="button" data-r="Rom8:19-23">羅 8:19–23</button> 把受造界的盼望與身體得贖相連；<button class="ref" type="button" data-r="Rev21:1-4">啟 21:1–4</button> 指向新天新地、神與人同住。基督徒因此珍惜今日的身體、關係與受造世界，同時等候神完成最終更新。</p>
+  <p class="takeaway">創造的主，也是在基督裡施行和好與更新的主。</p>
+</section>
+
+<section id="s10" class="reveal">
+  <div class="eyebrow">十・第七日的安息</div>
+  <h2>完成、信靠與人的界線</h2>
+  <blockquote class="verse">神賜福給第七日，定為聖日；因為在這日，神歇了他一切創造的工，就安息了。<footer>——創世記 2:3 <button class="ref" type="button" data-r="Gen2:1-3">全文</button></footer></blockquote>
+  <p>創造敘事的最後焦點不在生產更多事物，而在神賜福並定為聖的時間：生命的目的不應只由產能或效率界定。</p>
+  <figure class="illus"><svg viewBox="0 0 800 320" role="img" aria-labelledby="t7"><title id="t7">暮色中的田野，鋤頭放在地上，鳥停在枝頭</title>
+<defs><linearGradient id="sky7" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a6f8c"/><stop offset=".55" stop-color="#E8B98A"/><stop offset="1" stop-color="#FBE6C4"/></linearGradient>
+<radialGradient id="sun7" cx="560" cy="200" r="110" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFF0C8"/><stop offset="1" stop-color="#FFF0C8" stop-opacity="0"/></radialGradient></defs>
+<rect width="800" height="320" fill="url(#sky7)"/><circle cx="90" cy="40" r="1.5" fill="#fff" opacity=".9"/><circle cx="180" cy="70" r="1.5" fill="#fff" opacity=".9"/><circle cx="300" cy="30" r="1.5" fill="#fff" opacity=".9"/><circle cx="520" cy="46" r="1.5" fill="#fff" opacity=".9"/><circle cx="610" cy="80" r="1.5" fill="#fff" opacity=".9"/><circle cx="700" cy="36" r="1.5" fill="#fff" opacity=".9"/><circle cx="430" cy="60" r="1.5" fill="#fff" opacity=".9"/>
+<circle cx="560" cy="200" r="110" fill="url(#sun7)"/><circle cx="560" cy="200" r="24" fill="#F7D07A"/>
+<path d="M0 214 Q180 176 360 206 T800 196 V320 H0Z" fill="#8E9A73"/>
+<path d="M0 252 Q240 228 480 254 T800 246 V320 H0Z" fill="#6F8A5A"/>
+<g stroke="#5c7349" stroke-width="2"><line x1="60" y1="300" x2="66" y2="262"/><line x1="82" y1="300" x2="88" y2="262"/><line x1="104" y1="300" x2="110" y2="262"/><line x1="126" y1="300" x2="132" y2="262"/><line x1="148" y1="300" x2="154" y2="262"/><line x1="170" y1="300" x2="176" y2="262"/><line x1="192" y1="300" x2="198" y2="262"/><line x1="214" y1="300" x2="220" y2="262"/><line x1="236" y1="300" x2="242" y2="262"/><line x1="258" y1="300" x2="264" y2="262"/><line x1="280" y1="300" x2="286" y2="262"/><line x1="302" y1="300" x2="308" y2="262"/><line x1="324" y1="300" x2="330" y2="262"/></g>
+<g transform="translate(470,284) rotate(-8)"><rect x="0" y="-3" width="150" height="6" rx="3" fill="#8C6B3E"/><path d="M146 -14 h18 v28 h-18Z" fill="#5d5d5d"/></g>
+<path d="M690 250 L690 150 M690 180 L730 160" stroke="#4a3a2a" stroke-width="5" stroke-linecap="round"/>
+<g transform="translate(722,150)" fill="#2E2A24"><ellipse cx="0" cy="0" rx="11" ry="7"/><circle cx="9" cy="-6" r="5"/><path d="M-10 0 l-10 4 l10 2Z"/></g>
+</svg><figcaption>到第七日，神造物的工已經完畢，就安息了；神賜福給第七日，定為聖日。<button class="ref" type="button" data-r="Gen2:1-3">創 2:1–3</button></figcaption></figure>
+  <p><button class="ref" type="button" data-r="Exod20:8-11">出 20:8–11</button> 以創造為安息日的理由；<button class="ref" type="button" data-r="Deut5:12-15">申 5:12–15</button> 則提醒以色列曾在埃及為奴。兩段經文使安息帶有群體倫理：僕婢與其他受託照顧者也應得休息，不能只要求自己享有安息，卻把負擔轉嫁給別人。</p>
+  <blockquote class="verse">這樣看來，必另有一安息日的安息為神的子民存留。<footer>——希伯來書 4:9 <button class="ref" type="button" data-r="Heb4:9-11">全文</button></footer></blockquote>
+  <p>希伯來書第四章以創造的安息、詩篇 95 的警告與信心回應相連，勸人不要硬心。這不只是生活管理技巧，更涉及對神應許的信靠。不同教會對安息日、主日與新約實踐的關係有不同理解；本段本身不足以取代整個議題的研究。</p>
+  <p>神安息也不是疲累或從此不再維繫世界。<button class="ref" type="button" data-r="Isa40:28">賽 40:28</button> 說創造主不疲乏；<button class="ref" type="button" data-r="John5:17">約 5:17</button> 記載耶穌說父作事直到如今。應區分創造工作的完成與神持續的眷顧。</p>
+  <div class="aside"><b>旁白</b>連創造的記載都把「停下來」寫進週曆；我們的行事曆，也可以誠實地留一格空白。</div>
+</section>
+
+<section id="s11" class="reveal">
+  <div class="eyebrow">十一・查經反思</div>
+  <h2>反思與回應禱告</h2>
+  <ol class="steps">
+    <li>讀 <button class="ref" type="button" data-r="Gen1:26-28">創 1:26–28</button>：我是否以能力或成就衡量人的價值？我可以怎樣尊重一位容易被忽略的人？</li>
+    <li>讀 <button class="ref" type="button" data-r="Gen1:31">創 1:31</button> 與 <button class="ref" type="button" data-r="Gen2:15">創 2:15</button>：珍惜受造世界如何落實於工作、消費與照顧環境？哪些是忠心管理，哪些只是無限制占有？</li>
+    <li>讀 <button class="ref" type="button" data-r="2Cor4:6-7">林後 4:6–7</button>：我是否把信仰理解成自我強化？福音如何使我在軟弱中仍能倚靠基督？</li>
+    <li>讀 <button class="ref" type="button" data-r="Deut5:12-15">申 5:12–15</button>：我安排自己的休息時，是否也尊重同事、家人與照顧者的休息？</li>
+    <li>讀 <button class="ref" type="button" data-r="Heb4:9-11">來 4:9–11</button>（宜細讀 4:1–11）：在焦慮中，我有哪些事需要停止靠掌控維持安全感，轉而忠心行動並信靠神？</li>
+  </ol>
+  <div class="prayer"><b>禱告</b><br>創造萬有的父神，感謝祢以良善與智慧賜下生命。求祢使我們尊重每一位按祢形像受造的人，忠心管理所領受的託付。感謝祢藉耶穌基督使我們與祢和好，並以聖靈更新我們。求祢教導我們勤勞，也教導我們安息；使我們在有限中信靠祢，在受苦者身旁實踐愛，等候祢成全新創造的應許。奉主耶穌基督的名禱告，阿們。</div>
+</section>
+
+<section id="s12" class="reveal refs">
+  <div class="eyebrow">十二・參考資料</div>
+  <h2>經文出處與查核說明</h2>
+  <p>以下資料分為經文、已查閱研究與延伸書目；不是所有列出的作品都已通讀全文。</p>
+  <h3>本頁引用經文（依出現順序，點開可對照 Bible Gateway）</h3>
+  <ol id="autoRefs"></ol>
+  <h3>和合本線上資源</h3>
+  <ul>
+    <li><a href="https://www.ch.fhl.net/modules/tw_bible/" target="_blank" rel="noopener">信望愛站聖經（創世記 1–2 章經文依此核對）</a></li>
+    <li><a href="https://www.cnbible.com/cu/genesis/1.htm" target="_blank" rel="noopener">CNBible 和合本：創世記 1</a>、<a href="https://www.cnbible.com/cu/genesis/2.htm" target="_blank" rel="noopener">創世記 2</a></li>
+    <li><a href="https://www.biblegateway.com/versions/Chinese-Union-Version-Modern-Punctuation-Traditional/" target="_blank" rel="noopener">Bible Gateway：和合本（新標點，繁體）</a></li>
+  </ul>
+  <h3>已查閱的譯註、研究與館藏資料</h3>
+  <ul>
+    <li>〔R1〕NET Bible, <a href="https://bible.org/sites/bible.org/resources/netbible/gen1_notes.htm" target="_blank" rel="noopener">Genesis 1 Notes</a>。參考創 1:1–2 對句法、創造動詞、深淵與神的靈的說明；譯註含編者立場，不代表學界共識。</li>
+    <li>〔R2〕Clifford, Richard J. “The Hebrew Scriptures and the Theology of Creation.” <i>Theological Studies</i> 46 (1985): 507–523。<a href="https://theologicalstudies.net/wp-content/uploads/2022/08/46.3.3.pdf" target="_blank" rel="noopener">期刊全文 PDF</a>。</li>
+    <li>〔R3〕The Metropolitan Museum of Art, <a href="https://www.metmuseum.org/art/collection/search/321999" target="_blank" rel="noopener">Cuneiform tablet: Atra-hasis, Babylonian flood myth</a>。館藏泥板約為西元前 7 至 6 世紀；館藏年代不等於故事最初形成的年代。</li>
+    <li>〔R4〕British Museum, <a href="https://artsandculture.google.com/asset/cuneiform-tablet-telling-the-epic-of-creation/agF5dgQPXf9L3g?hl=en" target="_blank" rel="noopener">Cuneiform tablet telling the Epic of Creation</a>（K.3473，館方於 Google Arts &amp; Culture 的展品說明）。</li>
+  </ul>
+  <h3>延伸閱讀</h3>
+  <ul>
+    <li>〔R5〕Marlowe, W. Creighton. “Patterns, Parallels, and Poetics in Genesis 1.” <i>The Journal of Inductive Biblical Studies</i> 3, no. 1 (2016): 6–27。<a href="https://place.asburyseminary.edu/jibs/vol3/iss1/3/" target="_blank" rel="noopener">期刊書目頁</a>。</li>
+  </ul>
+  <p class="aside" style="border-style:solid"><b>說明</b>插圖皆為象徵畫面，不描繪神或耶穌的形像；人物以無五官剪影表現。</p>
+</section>
+
+<section class="reveal">
+  <div class="eyebrow">結語</div>
+  <p class="takeaway">創世記 1:1–2:3 以有節奏的敘事宣告：天地出於神，受造世界被祂看為好，人按祂的形像領受使命，時間也在祂的賜福與成聖之下。古代近東背景與希伯來文分析幫助我們讀得更準確；新約則使基督徒看見，創造的主也是在基督裡施行救贖與更新的主。</p>
+</section>
+</main>
+<footer class="site"><span data-cfg="title">起初，神創造天地</span>・經文採《和合本》（公有領域）・整理日期 2026 年 10 月 27 日</footer>
+
+<dialog id="dlg" aria-labelledby="dlgT">
+  <div class="hd"><b id="dlgT"></b><button type="button" aria-label="關閉" onclick="this.closest('dialog').close()">×</button></div>
+  <div class="bd" id="dlgB"></div>
+  <div class="ft" id="dlgF"></div>
+</dialog>
+
+<script>
+const CFG = Object.assign({
+  title: (document.querySelector("h1") || {}).textContent || document.title, subtitle: "", eyebrow: "", tabTitle: "",
+  description: "", bibleVersion: "CUVMPT"
+}, window.SITE_CONFIG || {});
+(function applyConfig(c){
+  document.title = c.tabTitle || c.title;
+  const setMeta = (sel, v) => { const m = document.querySelector(sel); if (m && v) m.setAttribute("content", v); };
+  setMeta('meta[name="description"]', c.description);
+  setMeta('meta[property="og:title"]', c.tabTitle || c.title);
+  setMeta('meta[property="og:description"]', c.description);
+  document.querySelectorAll("[data-cfg]").forEach(el => { const v = c[el.dataset.cfg]; if (v) el.textContent = v; });
+  document.querySelectorAll("[data-cfg-html]").forEach(el => { const v = c[el.dataset.cfgHtml]; if (v) el.innerHTML = v; });
+})(CFG);
+
+/* ===== 經文資料（和合本，公有領域）=====
+   創世記 1 章逐節存在 G1，其餘段落存在 X。改經文請改這裡。 */
+const DATA = {
+"g1": {
+"1": "起初，神創造天地。",
+"2": "地是空虛混沌，淵面黑暗；神的靈運行在水面上。",
+"3": "神說：要有光，就有了光。",
+"4": "神看光是好的，就把光暗分開了。",
+"5": "神稱光為晝，稱暗為夜。有晚上，有早晨，這是頭一日。",
+"6": "神說：諸水之間要有空氣，將水分為上下。",
+"7": "神就造出空氣，將空氣以下的水、空氣以上的水分開了。事就這樣成了。",
+"8": "神稱空氣為天。有晚上，有早晨，是第二日。",
+"9": "神說：天下的水要聚在一處，使旱地露出來。事就這樣成了。",
+"10": "神稱旱地為地，稱水的聚處為海。神看著是好的。",
+"11": "神說：地要發生青草和結種子的菜蔬，並結果子的樹木，各從其類，果子都包著核。事就這樣成了。",
+"12": "於是地發生了青草和結種子的菜蔬，各從其類；並結果子的樹木，各從其類；果子都包著核。神看著是好的。",
+"13": "有晚上，有早晨，是第三日。",
+"14": "神說：天上要有光體，可以分晝夜，作記號，定節令、日子、年歲，",
+"15": "並要發光在天空，普照在地上。事就這樣成了。",
+"16": "於是神造了兩個大光，大的管晝，小的管夜，又造眾星，",
+"17": "就把這些光擺列在天空，普照在地上，",
+"18": "管理晝夜，分別明暗。神看著是好的。",
+"19": "有晚上，有早晨，是第四日。",
+"20": "神說：水要多多滋生有生命的物；要有雀鳥飛在地面以上，天空之中。",
+"21": "神就造出大魚和水中所滋生各樣有生命的動物，各從其類；又造出各樣飛鳥，各從其類。神看著是好的。",
+"22": "神就賜福給這一切，說：滋生繁多，充滿海中的水；雀鳥也要多生在地上。",
+"23": "有晚上，有早晨，是第五日。",
+"24": "神說：地要生出活物來，各從其類；牲畜、昆蟲、野獸，各從其類。事就這樣成了。",
+"25": "於是神造出野獸，各從其類；牲畜，各從其類；地上一切昆蟲，各從其類。神看著是好的。",
+"26": "神說：我們要照著我們的形像、按著我們的樣式造人，使他們管理海裏的魚、空中的鳥、地上的牲畜，和全地，地上所爬的一切昆蟲。",
+"27": "神就照著自己的形像造人，乃是照著他的形像造男造女。",
+"28": "神就賜福給他們，又對他們說：要生養眾多，遍滿地面，治理這地，也要管理海裏的魚、空中的鳥，和地上各樣動的活物。",
+"29": "神說：看哪，我將遍地上一切結種子的菜蔬和一切樹上所結有核的果子全賜給你們作食物。",
+"30": "至於地上的走獸和空中的飛鳥，並各樣爬在地上有生命的物，我將青草賜給他們作食物。事就這樣成了。",
+"31": "神看著一切所造的都甚好。有晚上，有早晨，是第六日。"
+},
+"x": {
+"Gen2:1-3": {
+"zh": "創世記 2:1–3",
+"en": "Genesis 2:1-3",
+"t": "天地萬物都造齊了。到第七日，神造物的工已經完畢，就在第七日歇了他一切的工，安息了。神賜福給第七日，定為聖日；因為在這日，神歇了他一切創造的工，就安息了。"
+},
+"Gen2:7": {
+"zh": "創世記 2:7",
+"en": "Genesis 2:7",
+"t": "耶和華神用地上的塵土造人，將生氣吹在他鼻孔裏，他就成了有靈的活人，名叫亞當。"
+},
+"Gen2:15": {
+"zh": "創世記 2:15",
+"en": "Genesis 2:15",
+"t": "耶和華神將那人安置在伊甸園，使他修理，看守。"
+},
+"Gen9:6": {
+"zh": "創世記 9:6",
+"en": "Genesis 9:6",
+"t": "凡流人血的，他的血也必被人所流，因為神造人是照自己的形像造的。"
+},
+"Jer4:23": {
+"zh": "耶利米書 4:23",
+"en": "Jeremiah 4:23",
+"t": "我觀看地，不料，地是空虛混沌；我觀看天，天也無光。"
+},
+"John1:3": {
+"zh": "約翰福音 1:3",
+"en": "John 1:3",
+"t": "萬物是藉著他造的；凡被造的，沒有一樣不是藉著他造的。"
+},
+"John5:17": {
+"zh": "約翰福音 5:17",
+"en": "John 5:17",
+"t": "耶穌就對他們說：我父作事直到如今，我也作事。"
+},
+"Isa40:28": {
+"zh": "以賽亞書 40:28",
+"en": "Isaiah 40:28",
+"t": "你豈不曾知道嗎？你豈不曾聽見嗎？永在的神耶和華，創造地極的主，並不疲乏，也不困倦；他的智慧無法測度。"
+},
+"Exod20:8-11": {
+"zh": "出埃及記 20:8–11",
+"en": "Exodus 20:8-11",
+"t": "當記念安息日，守為聖日。六日要勞碌做你一切的工，但第七日是向耶和華你神當守的安息日。這一日你和你的兒女、僕婢、牲畜，並在你城裡寄居的客旅，無論何工都不可做；因為六日之內，耶和華造天、地、海，和其中的萬物，第七日便安息，所以耶和華賜福與安息日，定為聖日。"
+},
+"Deut5:12-15": {
+"zh": "申命記 5:12–15",
+"en": "Deuteronomy 5:12-15",
+"t": "當照耶和華你神所吩咐的守安息日為聖日。六日要勞碌做你一切的工，但第七日是向耶和華你神當守的安息日。這一日，你和你的兒女、僕婢、牛、驢、牲畜，並在你城裡寄居的客旅，無論何工都不可做，使你的僕婢可以和你一樣安息。你也要記念你在埃及地作過奴僕；耶和華你神用大能的手和伸出來的膀臂將你從那裡領出來。因此，耶和華你神吩咐你守安息日。"
+},
+"Col1:15-20": {
+"zh": "歌羅西書 1:15–20",
+"en": "Colossians 1:15-20",
+"t": "愛子是那不能看見之神的像，是首生的，在一切被造的以先。因為萬有都是靠他造的，無論是天上的，地上的；能看見的，不能看見的；或是有位的，主治的，執政的，掌權的；一概都是藉著他造的，又是為他造的。他在萬有之先；萬有也靠他而立。他也是教會全體之首；他是元始，是從死裡首先復生的，使他可以在凡事上居首位。因為父喜歡叫一切的豐盛在他裡面居住。既然藉著他在十字架上所流的血成就了和平，便藉著他叫萬有，無論是地上的、天上的，都與自己和好了。"
+},
+"Col1:17": {
+"zh": "歌羅西書 1:17",
+"en": "Colossians 1:17",
+"t": "他在萬有之先；萬有也靠他而立。"
+},
+"2Cor4:6-7": {
+"zh": "哥林多後書 4:6–7",
+"en": "2 Corinthians 4:6-7",
+"t": "那吩咐光從黑暗裡照出來的神，已經照在我們心裡，叫我們得知神榮耀的光顯在耶穌基督的面上。我們有這寶貝放在瓦器裡，要顯明這莫大的能力是出於神，不是出於我們。"
+},
+"2Cor5:17-21": {
+"zh": "哥林多後書 5:17–21",
+"en": "2 Corinthians 5:17-21",
+"t": "若有人在基督裡，他就是新造的人，舊事已過，都變成新的了。一切都是出於神，他藉著基督使我們與他和好，又將勸人與他和好的職分賜給我們。這就是神在基督裡叫世人與自己和好，不將他們的過犯歸到他們身上，並且將這和好的道理託付了我們。所以，我們作基督的使者，就好像神藉我們勸你們一般。我們替基督求你們與神和好。神使那無罪的，替我們成為罪，好叫我們在他裡面成為神的義。"
+},
+"Jas3:9-10": {
+"zh": "雅各書 3:9–10",
+"en": "James 3:9-10",
+"t": "我們用舌頭頌讚那為主為父的，又用舌頭咒詛那照著神形像被造的人。頌讚和咒詛從一個口裡出來！我的弟兄們，這是不應當的。"
+},
+"Col3:9-14": {
+"zh": "歌羅西書 3:9–14",
+"en": "Colossians 3:9-14",
+"t": "不要彼此說謊；因你們已經脫去舊人和舊人的行為，穿上了新人。這新人在知識上漸漸更新，正如造他主的形像。在此並不分希臘人、猶太人，受割禮的、未受割禮的，化外人、西古提人，為奴的、自主的，惟有基督是包括一切，又住在各人之內。所以，你們既是神的選民，聖潔蒙愛的人，就要存憐憫、恩慈、謙虛、溫柔、忍耐的心。倘若這人與那人有嫌隙，總要彼此包容，彼此饒恕；主怎樣饒恕了你們，你們也要怎樣饒恕人。在這一切之外，要存著愛心，愛心就是聯絡全德的。"
+},
+"Rom8:19-23": {
+"zh": "羅馬書 8:19–23",
+"en": "Romans 8:19-23",
+"t": "受造之物切望等候神的眾子顯出來。因為受造之物服在虛空之下，不是自己願意，乃是因那叫他如此的。但受造之物仍然指望脫離敗壞的轄制，得享神兒女自由的榮耀。我們知道一切受造之物一同歎息，勞苦，直到如今。不但如此，就是我們這有聖靈初結果子的，也是自己心裡歎息，等候得著兒子的名分，乃是我們的身體得贖。"
+},
+"Rev21:1-4": {
+"zh": "啟示錄 21:1–4",
+"en": "Revelation 21:1-4",
+"t": "我又看見一個新天新地；因為先前的天地已經過去了，海也不再有了。我又看見聖城新耶路撒冷由神那裡從天而降，預備好了，就如新婦妝飾整齊，等候丈夫。我聽見有大聲音從寶座出來說：看哪，神的帳幕在人間。他要與人同住，他們要作他的子民。神要親自與他們同在，作他們的神。神要擦去他們一切的眼淚；不再有死亡，也不再有悲哀、哭號、疼痛，因為以前的事都過去了。"
+},
+"Heb4:9-11": {
+"zh": "希伯來書 4:9–11",
+"en": "Hebrews 4:9-11",
+"t": "這樣看來，必另有一安息日的安息為神的子民存留。因為那進入安息的，乃是歇了自己的工，正如神歇了他的工一樣。所以，我們務必竭力進入那安息，免得有人學那不信從的樣子跌倒了。"
+}
+}
+};
+const G1 = DATA.g1;
+const V = {};
+const G1_RANGES = [[1,3],[1,1],[2,2],[3,5],[6,8],[9,13],[14,19],[20,23],[24,31],[26,28],[27,27],[31,31]];
+const sup = n => `<sup>${n}</sup>`;
+G1_RANGES.forEach(([a,b]) => {
+  const k = a === b ? `Gen1:${a}` : `Gen1:${a}-${b}`;
+  let t = ""; for (let i = a; i <= b; i++) t += sup(i) + G1[i];
+  V[k] = { zh: a === b ? `創世記 1:${a}` : `創世記 1:${a}–${b}`, en: a === b ? `Genesis 1:${a}` : `Genesis 1:${a}-${b}`, t, html: true };
+});
+(function(){ let t = ""; for (let i = 1; i <= 31; i++) t += sup(i) + G1[i];
+  t += "<br><br><b>第二章</b> " + DATA.x["Gen2:1-3"].t;
+  V["Gen1:1-2:3"] = { zh: "創世記 1:1–2:3", en: "Genesis 1:1-2:3", t, html: true }; })();
+Object.assign(V, DATA.x);
+
+/* ===== 經文標籤與對話框 ===== */
+const bg = (en, ver) => `https://www.biblegateway.com/passage/?search=${encodeURIComponent(en)}&version=${ver}`;
+const esc = s => s.replace(/[&<>]/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[ch]));
+const dlg = document.getElementById("dlg");
+function openRef(key){
+  const v = V[key]; if (!v) return;
+  document.getElementById("dlgT").textContent = v.zh;
+  document.getElementById("dlgB").innerHTML = v.html ? v.t : esc(v.t);
+  const main = CFG.bibleVersion || "CUVMPT";
+  const vers = [[main, "和合本（" + main + "）"]];
+  if (main !== "CUV") vers.push(["CUV", "和合本 CUV"]);
+  vers.push(["KJV", "KJV 英文"]);
+  document.getElementById("dlgF").innerHTML =
+    vers.map(([code, label]) => `<a href="${bg(v.en, code)}" target="_blank" rel="noopener">${label} ↗</a>`).join("") +
+    `<span class="ver">《和合本》神版（公有領域）。上線前可點連結對照用字。</span>`;
+  if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open", "");
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("button.ref"); if (b) openRef(b.dataset.r);
+});
+dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+
+/* ===== 頁尾：依出現順序自動列出經文 ===== */
+(function(){
+  const seen = new Set(), ol = document.getElementById("autoRefs");
+  document.querySelectorAll("button.ref").forEach(b => {
+    const k = b.dataset.r; if (seen.has(k) || !V[k]) return; seen.add(k);
+    const li = document.createElement("li");
+    li.innerHTML = `<a href="${bg(V[k].en, CFG.bibleVersion)}" target="_blank" rel="noopener">${V[k].zh}</a>`;
+    ol.appendChild(li);
+  });
+})();
+
+/* ===== 進度條與淡入 ===== */
+const bar = document.getElementById("progress");
+addEventListener("scroll", () => {
+  const h = document.documentElement; bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + "%";
+}, { passive: true });
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (reduce || !("IntersectionObserver" in window)) document.querySelectorAll(".reveal").forEach(el => el.classList.add("in"));
+else { const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px" });
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el)); }
+addEventListener("beforeprint", () => document.querySelectorAll(".reveal").forEach(el => el.classList.add("in")));
+
+</script>
+</body>
+</html>
