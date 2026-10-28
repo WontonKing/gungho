@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>四活物：在寶座前學習敬拜</title>
+<meta name="description" content="以西結書與啟示錄讀經心得：從四活物的異象學習以神為中心的敬拜、在祂面前誠實、隨聖靈而行，並與萬有一同歸榮耀給神。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="四活物：在寶座前學習敬拜">
+<meta property="og:description" content="以西結書與啟示錄讀經心得">
+<meta property="og:url" content="https://www.gungho.idv.tw/fellowship/four-living-creatures/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF8F1; --paper:#FFFFFF; --ink:#3A3328; --muted:#6E6556; --line:#E8DFCC;
+  --gold:#B8893B; --gold-soft:#F4E7C9; --sky:#5E8FBF; --sky-soft:#E3EDF6;
+  --clay:#B9562F; --clay-soft:#F6E2D8; --olive:#6F8A5A; --olive-soft:#E6EDDF;
+  --serif:"Noto Serif TC","Songti TC","PMingLiU",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --r:18px; --shadow:0 6px 24px rgba(120,96,50,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;font-family:var(--sans);color:var(--ink);line-height:1.9;font-size:17px;
+  background:var(--bg);
+  background-image:radial-gradient(1200px 600px at 85% -10%, rgba(244,231,201,.85), transparent 60%),
+                   radial-gradient(900px 500px at -10% 10%, rgba(227,237,246,.9), transparent 60%);
+  background-attachment:fixed;}
+a{color:var(--sky)}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--sky));z-index:60}
+header.top{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);background:rgba(251,248,241,.86);border-bottom:1px solid var(--line)}
+.top .in{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:16px}
+.brand{font-family:var(--serif);font-weight:700;color:var(--ink);text-decoration:none;white-space:nowrap}
+.brand b{color:var(--gold)}
+nav.toc{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin-left:auto}
+nav.toc::-webkit-scrollbar{display:none}
+nav.toc a{font-size:14px;color:var(--muted);text-decoration:none;padding:4px 10px;border-radius:999px;white-space:nowrap}
+nav.toc a.on,nav.toc a:hover{background:var(--gold-soft);color:var(--ink)}
+
+.hero{position:relative;text-align:center;padding:96px 16px 72px;overflow:hidden}
+.hero::before{content:"";position:absolute;left:50%;top:44%;width:620px;height:620px;max-width:140vw;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(255,244,214,.95) 0%,rgba(244,231,201,.55) 38%,transparent 70%);z-index:-1}
+.eyebrow{display:inline-block;font-size:14px;letter-spacing:.2em;color:var(--gold);border:1px solid var(--gold);border-radius:999px;padding:2px 14px;background:rgba(255,255,255,.6)}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(34px,6vw,60px);line-height:1.3;margin:22px 0 10px;letter-spacing:.04em}
+.hero .sub{font-family:var(--serif);font-size:clamp(17px,2.4vw,22px);color:var(--muted);margin:0}
+.hero .thesis{max-width:680px;margin:30px auto 0;font-size:17px;background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:var(--r);padding:18px 22px}
+.hero .thesis strong{color:var(--clay)}
+.trisagion{margin-top:28px;font-family:var(--serif);font-size:20px;letter-spacing:.5em;color:var(--gold)}
+
+main{max-width:880px;margin:0 auto;padding:0 16px 40px}
+section{padding:56px 0 24px;border-top:1px dashed var(--line)}
+section:first-of-type{border-top:0}
+.kicker{font-size:13px;letter-spacing:.18em;color:var(--sky);font-weight:700}
+h2{font-family:var(--serif);font-size:clamp(26px,4vw,34px);margin:6px 0 18px;line-height:1.4}
+h3{font-family:var(--serif);font-size:22px;margin:34px 0 10px;display:flex;align-items:center;gap:10px}
+h3 .no{flex:none;width:32px;height:32px;border-radius:50%;background:var(--gold-soft);color:var(--gold);display:grid;place-items:center;font-size:16px;font-family:var(--sans);font-weight:700}
+p{margin:0 0 1em}
+
+.verse{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 22px 14px 26px;margin:14px 0;box-shadow:var(--shadow)}
+.verse::before{content:"";position:absolute;left:0;top:16px;bottom:16px;width:4px;border-radius:4px;background:var(--gold)}
+.verse.nt::before{background:var(--sky)}
+.verse q{font-family:var(--serif);font-size:18px;quotes:"「" "」";display:block}
+.verse .src{text-align:right;margin-top:6px}
+.lead{font-size:15px;color:var(--muted);margin:22px 0 4px}
+
+.ref{font:inherit;font-size:13.5px;line-height:1;cursor:pointer;border:1px solid var(--sky);color:var(--sky);background:var(--sky-soft);border-radius:999px;padding:5px 10px;margin:0 2px;vertical-align:1px;transition:.15s}
+.ref:hover,.ref:focus-visible{background:var(--sky);color:#fff;outline:none}
+
+.takeaway{margin:22px 0 8px;padding:6px 0 6px 18px;border-left:4px solid var(--gold);font-family:var(--serif);font-size:19px;font-weight:700}
+.aside{margin:18px 0;padding:12px 16px;border:1.5px dashed var(--olive);border-radius:14px;background:rgba(230,237,223,.45);font-size:15px;color:#4F5F42}
+.aside::before{content:"旁白　";font-weight:700}
+.reflect{margin:16px 0;padding:14px 18px;border-radius:14px;background:var(--clay-soft);color:#6B3218}
+.reflect b{color:var(--clay)}
+
+.tbl{width:100%;border-collapse:separate;border-spacing:0;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);font-size:15.5px}
+.tbl th,.tbl td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.tbl tr:last-child td{border-bottom:0}
+.tbl thead th{background:var(--gold-soft);font-family:var(--serif)}
+.tbl.cmp thead th:nth-child(3){background:var(--sky-soft)}
+.tbl tbody th{color:var(--muted);font-weight:500;white-space:nowrap;width:5.5em}
+.tbl-wrap{overflow-x:auto;margin:16px 0}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:18px 0}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow);border-top:5px solid var(--c,var(--gold))}
+.card .big{font-family:var(--serif);font-size:30px;font-weight:900;color:var(--c,var(--gold));line-height:1}
+.card .tag{font-size:13px;color:var(--muted);margin:6px 0 8px}
+.card p{margin:0;font-size:15.5px}
+
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:18px 0}
+.pill{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:15px}
+.pill.hl{background:var(--gold-soft);border-color:var(--gold)}
+.flow .arr{color:var(--gold)}
+
+.steps{counter-reset:s;display:grid;gap:14px;margin:18px 0}
+.step{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px 16px 70px;box-shadow:var(--shadow)}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:18px;top:16px;width:36px;height:36px;border-radius:50%;background:var(--sky);color:#fff;display:grid;place-items:center;font-weight:700}
+.step h4{margin:0 0 4px;font-family:var(--serif);font-size:18px}
+.step p{margin:0;font-size:15.5px}
+
+figure.illus{margin:30px 0;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+figure.illus svg{display:block;width:100%;height:auto}
+figure.illus figcaption{padding:10px 16px;font-size:14.5px;color:var(--muted);border-top:1px solid var(--line)}
+
+.prayer{background:linear-gradient(180deg,#FFFDF6,#FFF8E6);border:1px solid var(--gold-soft);border-radius:24px;padding:30px 26px;text-align:center;font-family:var(--serif);font-size:18.5px;line-height:2.1;box-shadow:var(--shadow)}
+.prayer p{margin:0}
+.prayer .amen{margin-top:14px;color:var(--gold);font-weight:700}
+
+.refs h3{font-size:19px}
+.refs ol{padding-left:1.4em;font-size:15px}
+.refs li{margin:6px 0}
+#scripture-list{columns:2;column-gap:28px}
+@media (max-width:600px){#scripture-list{columns:1}}
+footer{text-align:center;padding:36px 16px 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+footer .tri{font-family:var(--serif);color:var(--gold);letter-spacing:.4em}
+
+dialog{border:0;border-radius:20px;padding:0;max-width:min(560px,92vw);box-shadow:0 20px 60px rgba(60,40,10,.25);color:var(--ink)}
+dialog::backdrop{background:rgba(58,51,40,.35)}
+.dlg-h{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--gold-soft);font-family:var(--serif);font-weight:700}
+.dlg-h button{border:0;background:none;font-size:22px;cursor:pointer;color:var(--muted)}
+.dlg-b{padding:18px 20px;font-family:var(--serif);font-size:17.5px;line-height:2;max-height:60vh;overflow:auto}
+.dlg-f{padding:10px 20px 16px;font-size:13.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 14px}
+
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+@media (max-width:600px){body{font-size:16px}.hero{padding:64px 16px 48px}.step{padding-left:62px}.tbl{font-size:14.5px}.top .brand span{display:none}}
+@media print{header.top,#progress,dialog{display:none!important}body{background:#fff}.reveal{opacity:1;transform:none}
+  section{break-inside:avoid-page}.ref{border:0;background:none;padding:0;color:var(--ink)}figure.illus{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+<header class="top"><div class="in">
+  <a class="brand" href="#top"><b>四活物</b><span>：在寶座前學習敬拜</span></a>
+  <nav class="toc" aria-label="章節">
+    <a href="#vision">異象</a><a href="#compare">對照</a><a href="#faces">四臉</a><a href="#theology">反省</a><a href="#apply">應用</a><a href="#prayer">禱告</a><a href="#refs">參考</a>
+  </nav>
+</div></header>
+
+<div class="hero" id="top">
+  <span class="eyebrow">以西結書 · 啟示錄　讀經心得</span>
+  <h1>四活物：在寶座前學習敬拜</h1>
+  <p class="sub">以西結書與啟示錄讀經心得</p>
+  <div class="thesis">四活物不是供人好奇的神秘生物，而是指向一個核心真理：<strong>宇宙的中心不是人的權勢，而是神的寶座；受造物最高的尊嚴，是在神的聖潔面前敬拜。</strong></div>
+  <div class="trisagion" aria-hidden="true">聖哉 聖哉 聖哉</div>
+</div>
+
+<main>
+
+<section id="vision" class="reveal">
+  <div class="kicker">一　經文</div>
+  <h2>寶座前的異象</h2>
+  <p>先知以西結和一群被擄的同胞住在巴比倫的迦巴魯河邊<button class="ref" data-r="Ezk1:1">結 1:1</button><button class="ref" data-r="Ezk1:2-3">結 1:2-3</button>。就在那裡，天開了，他看見神的榮耀：</p>
+  <div class="verse"><q>我觀看，見狂風從北方颳來，隨著有一朵包括閃爍火的大雲，周圍有光輝；從其中的火內發出好像光耀的精金。</q><div class="src"><button class="ref" data-r="Ezk1:4">以西結書 1:4</button></div></div>
+  <div class="verse"><q>至於臉的形像：前面各有人的臉，右面各有獅子的臉，左面各有牛的臉，後面各有鷹的臉。</q><div class="src"><button class="ref" data-r="Ezk1:10">以西結書 1:10</button></div></div>
+  <div class="verse"><q>靈往哪裡去，活物就往那裡去；活物上升，輪也在活物旁邊上升，因為活物的靈在輪中。</q><div class="src"><button class="ref" data-r="Ezk1:20">以西結書 1:20</button></div></div>
+
+  <figure class="illus"><svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="北方颳來的狂風、閃爍火的大雲與河邊的先知剪影"><defs>
+<linearGradient id="s1sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9EEF3"/><stop offset=".7" stop-color="#FBF3E2"/></linearGradient>
+<radialGradient id="s1core" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFF6D8"/><stop offset=".35" stop-color="#F2C86B"/><stop offset=".7" stop-color="#B8893B" stop-opacity=".55"/><stop offset="1" stop-color="#B8893B" stop-opacity="0"/></radialGradient>
+<linearGradient id="s1river" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFD3E6"/><stop offset="1" stop-color="#8FB0CF"/></linearGradient></defs><rect width="800" height="420" fill="url(#s1sky)"/><path d="M-20 40 C 150 10, 260 90, 390 150" fill="none" stroke="#5E8FBF" stroke-opacity="0.18" stroke-width="3.0" stroke-linecap="round"/><path d="M-12 62 C 160 32, 260 112, 390 156" fill="none" stroke="#5E8FBF" stroke-opacity="0.23" stroke-width="2.7" stroke-linecap="round"/><path d="M-4 84 C 170 54, 260 134, 390 162" fill="none" stroke="#5E8FBF" stroke-opacity="0.28" stroke-width="2.4" stroke-linecap="round"/><path d="M4 106 C 180 76, 260 156, 390 168" fill="none" stroke="#5E8FBF" stroke-opacity="0.33" stroke-width="2.1" stroke-linecap="round"/><path d="M12 128 C 190 98, 260 178, 390 174" fill="none" stroke="#5E8FBF" stroke-opacity="0.38" stroke-width="1.8" stroke-linecap="round"/><path d="M20 150 C 200 120, 260 200, 390 180" fill="none" stroke="#5E8FBF" stroke-opacity="0.43" stroke-width="1.5" stroke-linecap="round"/><ellipse cx="400" cy="160" rx="210" ry="78" fill="#C9CFD6" fill-opacity="0.55"/><ellipse cx="320" cy="150" rx="110" ry="60" fill="#C9CFD6" fill-opacity="0.6"/><ellipse cx="490" cy="145" rx="120" ry="62" fill="#C9CFD6" fill-opacity="0.6"/><ellipse cx="400" cy="120" rx="130" ry="60" fill="#C9CFD6" fill-opacity="0.55"/><ellipse cx="400" cy="190" rx="170" ry="48" fill="#C9CFD6" fill-opacity="0.5"/><circle cx="400" cy="160" r="120" fill="url(#s1core)"/><path d="M434.0 160.0 Q458.8 148.1 475.6 179.3" stroke="#B9562F" stroke-opacity=".55" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M429.4 177.0 Q456.9 179.1 455.8 214.5" stroke="#B9562F" stroke-opacity=".55" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M417.0 189.4 Q439.7 205.0 421.1 235.1" stroke="#B9562F" stroke-opacity=".55" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M400.0 194.0 Q411.9 218.8 380.7 235.6" stroke="#B9562F" stroke-opacity=".55" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M383.0 189.4 Q380.9 216.9 345.5 215.8" stroke="#B9562F" stroke-opacity=".55" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M370.6 177.0 Q355.0 199.7 324.9 181.1" stroke="#B9562F" stroke-opacity=".55" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M366.0 160.0 Q341.2 171.9 324.4 140.7" stroke="#B9562F" stroke-opacity=".55" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M370.6 143.0 Q343.1 140.9 344.2 105.5" stroke="#B9562F" stroke-opacity=".55" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M383.0 130.6 Q360.3 115.0 378.9 84.9" stroke="#B9562F" stroke-opacity=".55" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M400.0 126.0 Q388.1 101.2 419.3 84.4" stroke="#B9562F" stroke-opacity=".55" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M417.0 130.6 Q419.1 103.1 454.5 104.2" stroke="#B9562F" stroke-opacity=".55" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M429.4 143.0 Q445.0 120.3 475.1 138.9" stroke="#B9562F" stroke-opacity=".55" stroke-width="2.2" fill="none" stroke-linecap="round"/><circle cx="400" cy="160" r="22" fill="#FFF8E4"/><path d="M0 330 Q200 315 400 328 T800 322 V420 H0Z" fill="url(#s1river)"/><path d="M60 345 q30 -6 60 0" stroke="#fff" stroke-opacity=".7" stroke-width="2" fill="none"/><path d="M460 349 q25 -5 50 0" stroke="#fff" stroke-opacity=".6" stroke-width="2" fill="none"/><path d="M130 359 q30 -6 60 0" stroke="#fff" stroke-opacity=".7" stroke-width="2" fill="none"/><path d="M515 363 q25 -5 50 0" stroke="#fff" stroke-opacity=".6" stroke-width="2" fill="none"/><path d="M200 373 q30 -6 60 0" stroke="#fff" stroke-opacity=".7" stroke-width="2" fill="none"/><path d="M570 377 q25 -5 50 0" stroke="#fff" stroke-opacity=".6" stroke-width="2" fill="none"/><path d="M270 387 q30 -6 60 0" stroke="#fff" stroke-opacity=".7" stroke-width="2" fill="none"/><path d="M625 391 q25 -5 50 0" stroke="#fff" stroke-opacity=".6" stroke-width="2" fill="none"/><path d="M340 401 q30 -6 60 0" stroke="#fff" stroke-opacity=".7" stroke-width="2" fill="none"/><path d="M680 405 q25 -5 50 0" stroke="#fff" stroke-opacity=".6" stroke-width="2" fill="none"/><path d="M0 330 Q120 300 250 318 L250 330 Q120 340 0 345Z" fill="#6F8A5A" fill-opacity=".55"/><path d="M30 322 q-4 -30 2 -52" stroke="#6F8A5A" stroke-width="2.2" fill="none"/><path d="M44 322 q-4 -30 2 -52" stroke="#6F8A5A" stroke-width="2.2" fill="none"/><path d="M58 322 q-4 -30 2 -52" stroke="#6F8A5A" stroke-width="2.2" fill="none"/><path d="M200 322 q-4 -30 2 -52" stroke="#6F8A5A" stroke-width="2.2" fill="none"/><path d="M214 322 q-4 -30 2 -52" stroke="#6F8A5A" stroke-width="2.2" fill="none"/><g fill="#3A3328" fill-opacity=".82"><circle cx="140" cy="262" r="10"/><path d="M128 276 Q140 270 152 276 L158 318 L122 318Z"/><path d="M150 280 L176 256" stroke="#3A3328" stroke-width="5" stroke-linecap="round"/></g><text x="34" y="36" font-size="15" fill="#5E8FBF" font-family="serif">北 ↘</text><text x="770" y="404" font-size="13" fill="#fff" text-anchor="end" font-family="sans-serif">迦巴魯河邊</text></svg><figcaption>狂風從北方颳來，閃爍火的大雲中心如光耀的精金；先知在被擄之地的河邊仰望。<button class="ref" data-r="Ezk1:4">結 1:4</button></figcaption></figure>
+
+  <p class="lead">啟示錄則把讀者帶到天上的寶座前：</p>
+  <div class="verse nt"><q>寶座前好像一個玻璃海，如同水晶。寶座中和寶座周圍有四個活物，前後遍體都滿了眼睛。</q><div class="src"><button class="ref" data-r="Rev4:6">啟示錄 4:6</button></div></div>
+  <div class="verse nt"><q>四活物各有六個翅膀，遍體內外都滿了眼睛。他們晝夜不住地說：聖哉！聖哉！聖哉！主神是昔在、今在、以後永在的全能者。</q><div class="src"><button class="ref" data-r="Rev4:8">啟示錄 4:8</button></div></div>
+  <div class="verse nt"><q>每逢四活物將榮耀、尊貴、感謝歸給那坐在寶座上、活到永永遠遠者的時候，那二十四位長老就俯伏在坐寶座的面前，敬拜那活到永永遠遠的，又把他們的冠冕放在寶座前，說：我們的主，我們的神，你是配得榮耀、尊貴、權柄的；因為你創造了萬物，並且萬物是因你的旨意被創造而有的。</q><div class="src"><button class="ref" data-r="Rev4:9-11">啟示錄 4:9-11</button></div></div>
+
+  <figure class="illus"><svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="二十四頂冠冕放在寶座前"><defs><radialGradient id="s5g" cx=".5" cy="0" r=".9"><stop offset="0" stop-color="#FFF4D2"/><stop offset=".6" stop-color="#FBF8F1"/><stop offset="1" stop-color="#EEF3F8"/></radialGradient></defs><rect width="800" height="420" fill="url(#s5g)"/><line x1="400" y1="-20" x2="1100.0" y2="-20.0" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="1094.5" y2="67.7" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="1078.0" y2="154.1" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="1050.8" y2="237.7" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="1013.4" y2="317.2" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="966.3" y2="391.4" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="910.3" y2="459.2" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="846.2" y2="519.4" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="775.1" y2="571.0" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="698.0" y2="613.4" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="616.3" y2="645.7" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="531.2" y2="667.6" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="444.0" y2="678.6" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="356.0" y2="678.6" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="268.8" y2="667.6" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="183.7" y2="645.7" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="102.0" y2="613.4" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="24.9" y2="571.0" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="-46.2" y2="519.4" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="-110.3" y2="459.2" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="-166.3" y2="391.4" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="-213.4" y2="317.2" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="-250.8" y2="237.7" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="-278.0" y2="154.1" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="-294.5" y2="67.7" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><line x1="400" y1="-20" x2="-300.0" y2="-20.0" stroke="#B8893B" stroke-opacity=".07" stroke-width="8"/><g transform="translate(88.3,263.4) scale(1.00)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(145.0,269.9) scale(1.00)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(201.7,275.8) scale(1.00)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(258.3,280.6) scale(1.00)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(315.0,284.0) scale(1.00)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(371.7,285.8) scale(1.00)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(428.3,285.8) scale(1.00)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(485.0,284.0) scale(1.00)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(541.7,280.6) scale(1.00)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(598.3,275.8) scale(1.00)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(655.0,269.9) scale(1.00)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(711.7,263.4) scale(1.00)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(125.0,319.4) scale(1.15)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(175.0,325.9) scale(1.15)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(225.0,331.8) scale(1.15)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(275.0,336.6) scale(1.15)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(325.0,340.0) scale(1.15)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(375.0,341.8) scale(1.15)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(425.0,341.8) scale(1.15)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(475.0,340.0) scale(1.15)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(525.0,336.6) scale(1.15)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(575.0,331.8) scale(1.15)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(625.0,325.9) scale(1.15)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><g transform="translate(675.0,319.4) scale(1.15)"><path d="M-18 8 L-20 -10 L-10 -2 L0 -16 L10 -2 L20 -10 L18 8Z" fill="#F2C86B" stroke="#B8893B" stroke-width="1.6" stroke-linejoin="round"/><rect x="-18" y="8" width="36" height="6" rx="2" fill="#B8893B"/><circle cy="-16" r="2.6" fill="#B9562F"/><circle cx="-20" cy="-10" r="2" fill="#5E8FBF"/><circle cx="20" cy="-10" r="2" fill="#5E8FBF"/></g><path d="M260 150 Q400 100 540 150" stroke="#B8893B" stroke-width="3" fill="none" stroke-dasharray="1 9" stroke-linecap="round"/><rect x="300" y="160" width="200" height="40" rx="20" fill="#fff" stroke="#B8893B" stroke-width="2"/><text x="400" y="187" text-anchor="middle" font-size="18" fill="#3A3328" font-family="serif">你是配得的</text><path d="M0 395 H800" stroke="#B8893B" stroke-opacity=".3" stroke-width="2"/></svg><figcaption>二十四位長老把冠冕放在寶座前：最尊貴的冠冕，也只配放在祂腳前。<button class="ref" data-r="Rev4:9-11">啟 4:9-11</button></figcaption></figure>
+
+  <div class="flow" aria-label="敬拜擴展的次序">
+    <span class="pill hl">四活物</span><span class="arr">→</span><span class="pill">二十四位長老</span><span class="arr">→</span><span class="pill">千千萬萬天使</span><span class="arr">→</span><span class="pill hl">一切被造之物</span>
+  </div>
+  <p class="takeaway">敬拜從寶座最近處開始，一圈一圈擴展，直到萬有同聲。</p>
+</section>
+
+<section id="compare" class="reveal">
+  <div class="kicker">二　對照</div>
+  <h2>舊約與新約的異象</h2>
+  <div class="tbl-wrap"><table class="tbl cmp">
+    <thead><tr><th>項目</th><th>以西結書 1、10 章</th><th>啟示錄 4 章</th></tr></thead>
+    <tbody>
+      <tr><th>數量</th><td>四個活物 <button class="ref" data-r="Ezk1:5-6">結 1:5-6</button></td><td>四個活物 <button class="ref" data-r="Rev4:6">啟 4:6</button></td></tr>
+      <tr><th>形態</th><td>每個活物各有四臉：人、獅、牛、鷹 <button class="ref" data-r="Ezk1:10">結 1:10</button></td><td>四活物分別像獅、牛、人、鷹 <button class="ref" data-r="Rev4:7">啟 4:7</button></td></tr>
+      <tr><th>翅膀</th><td>各有四翅</td><td>各有六翅（如以賽亞所見的撒拉弗）<button class="ref" data-r="Isa6:1-3">賽 6:1-3</button></td></tr>
+      <tr><th>眼睛</th><td>輪輞周圍滿有眼睛 <button class="ref" data-r="Ezk1:18">結 1:18</button></td><td>前後遍體、內外都滿了眼睛 <button class="ref" data-r="Rev4:8">啟 4:8</button></td></tr>
+      <tr><th>身分</th><td>以西結稱之為基路伯 <button class="ref" data-r="Ezk10:20">結 10:20</button></td><td>融合基路伯與撒拉弗的特質</td></tr>
+      <tr><th>職分</th><td>與神的寶座戰車同行，彰顯神的榮耀與行動</td><td>晝夜敬拜，並引導萬有歸榮耀給神</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="aside">四張臉朝四方，「行走並不轉身」<button class="ref" data-r="Ezk1:12">結 1:12</button>——不必倒車，也不必迴轉，哪個方向都是正前方。古代版的全景鏡頭，連後照鏡都省了。</div>
+
+  <p>以西結書的異象出現在被擄的處境中：約雅斤王被擄後第五年，以色列人遠離聖殿、寄居外邦，耶路撒冷不久也將傾覆。看起來一切都失敗了，但神的榮耀仍在，神的寶座仍在，神仍在歷史中行動——而且祂的榮耀一路來到了被擄之地。</p>
+
+  <figure class="illus"><svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="輪中套輪，輪輞周圍滿有眼睛，隨靈上升"><defs><radialGradient id="s2bg" cx=".5" cy=".45" r=".6"><stop offset="0" stop-color="#FFF7E4"/><stop offset="1" stop-color="#EAF0F6"/></radialGradient>
+<linearGradient id="s2rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9FC2B8"/><stop offset="1" stop-color="#6E9E92"/></linearGradient></defs><rect width="800" height="420" fill="url(#s2bg)"/><path d="M40 90 C 200 30, 300 150, 400 90 S 640 30, 760 90" fill="none" stroke="#5E8FBF" stroke-opacity=".22" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/><path d="M40 330 C 200 390, 300 270, 400 330 S 640 390, 760 330" fill="none" stroke="#5E8FBF" stroke-opacity=".22" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/><path d="M40 210 C 200 150, 300 270, 400 210 S 640 150, 760 210" fill="none" stroke="#5E8FBF" stroke-opacity=".22" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/><circle cx="400" cy="210" r="150" fill="none" stroke="url(#s2rim)" stroke-width="12"/><ellipse cx="400" cy="210" rx="58" ry="150" fill="none" stroke="url(#s2rim)" stroke-width="10"/><ellipse cx="400" cy="210" rx="150" ry="52" fill="none" stroke="#9FC2B8" stroke-opacity=".7" stroke-width="7"/><line x1="550.0" y1="210.0" x2="250.0" y2="210.0" stroke="#9FC2B8" stroke-opacity=".35" stroke-width="2"/><line x1="538.6" y1="267.4" x2="261.4" y2="152.6" stroke="#9FC2B8" stroke-opacity=".35" stroke-width="2"/><line x1="506.1" y1="316.1" x2="293.9" y2="103.9" stroke="#9FC2B8" stroke-opacity=".35" stroke-width="2"/><line x1="457.4" y1="348.6" x2="342.6" y2="71.4" stroke="#9FC2B8" stroke-opacity=".35" stroke-width="2"/><line x1="400.0" y1="360.0" x2="400.0" y2="60.0" stroke="#9FC2B8" stroke-opacity=".35" stroke-width="2"/><line x1="342.6" y1="348.6" x2="457.4" y2="71.4" stroke="#9FC2B8" stroke-opacity=".35" stroke-width="2"/><line x1="293.9" y1="316.1" x2="506.1" y2="103.9" stroke="#9FC2B8" stroke-opacity=".35" stroke-width="2"/><line x1="261.4" y1="267.4" x2="538.6" y2="152.6" stroke="#9FC2B8" stroke-opacity=".35" stroke-width="2"/><circle cx="400" cy="210" r="16" fill="#B8893B" fill-opacity=".85"/><g transform="translate(550.0,210.0) rotate(90.0) scale(1.05)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(538.6,267.4) rotate(112.5) scale(1.05)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(506.1,316.1) rotate(135.0) scale(1.05)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(457.4,348.6) rotate(157.5) scale(1.05)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(400.0,360.0) rotate(180.0) scale(1.05)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(342.6,348.6) rotate(202.5) scale(1.05)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(293.9,316.1) rotate(225.0) scale(1.05)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(261.4,267.4) rotate(247.5) scale(1.05)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(250.0,210.0) rotate(270.0) scale(1.05)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(261.4,152.6) rotate(292.5) scale(1.05)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(293.9,103.9) rotate(315.0) scale(1.05)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(342.6,71.4) rotate(337.5) scale(1.05)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(400.0,60.0) rotate(360.0) scale(1.05)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(457.4,71.4) rotate(382.5) scale(1.05)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(506.1,103.9) rotate(405.0) scale(1.05)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(538.6,152.6) rotate(427.5) scale(1.05)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(453.6,267.4) rotate(0.0) scale(0.80)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(422.2,348.6) rotate(0.0) scale(0.80)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(377.8,348.6) rotate(0.0) scale(0.80)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(346.4,267.4) rotate(0.0) scale(0.80)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(346.4,152.6) rotate(0.0) scale(0.80)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(377.8,71.4) rotate(0.0) scale(0.80)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(422.2,71.4) rotate(0.0) scale(0.80)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><g transform="translate(453.6,152.6) rotate(0.0) scale(0.80)"><path d="M-9 0 Q0 -7 9 0 Q0 7 -9 0Z" fill="#fff" stroke="#B8893B" stroke-width="1.4"/><circle r="2.8" fill="#5E8FBF"/></g><path d="M180 300 V150 M168 166 L180 150 L192 166" stroke="#B8893B" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/><path d="M620 300 V150 M608 166 L620 150 L632 166" stroke="#B8893B" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/></svg><figcaption>輪中套輪，輪輞周圍滿有眼睛；靈往哪裡去，活物與輪就往那裡去。<button class="ref" data-r="Ezk1:16">結 1:16</button><button class="ref" data-r="Ezk1:18">1:18</button><button class="ref" data-r="Ezk1:20">1:20</button></figcaption></figure>
+
+  <p>啟示錄則把這個異象帶到終末的高峰：四活物不僅環繞寶座，更帶領二十四位長老、天使，最後帶領「天上、地上、地底下、滄海裡和天地間一切所有被造之物」敬拜神與羔羊<button class="ref" data-r="Rev5:13">啟 5:13</button>，而四活物以一聲「阿們」作結<button class="ref" data-r="Rev5:14">啟 5:14</button>。</p>
+  <p class="takeaway">在被擄的河邊，寶座沒有缺席；在終末的天上，寶座仍是中心。</p>
+</section>
+
+<section id="faces" class="reveal">
+  <div class="kicker">三　象徵</div>
+  <h2>四臉的意義</h2>
+  <p>四活物的「人、獅、牛、鷹」，可理解為受造界主要類別的代表：人類、野獸、家畜與飛鳥。牠們在寶座前敬拜，象徵整個受造界都蒙召歸榮耀給創造主。</p>
+  <div class="cards">
+    <div class="card" style="--c:var(--sky)"><div class="big">人</div><div class="tag">人類的代表</div><p>智慧、理性、責任與神的形象。</p></div>
+    <div class="card" style="--c:var(--gold)"><div class="big">獅</div><div class="tag">野獸的代表</div><p>威嚴、力量與王權。</p></div>
+    <div class="card" style="--c:var(--clay)"><div class="big">牛</div><div class="tag">家畜的代表</div><p>服事、耐勞、忍耐與獻祭。</p></div>
+    <div class="card" style="--c:var(--olive)"><div class="big">鷹</div><div class="tag">飛鳥的代表</div><p>敏捷、超越、保守與屬天的視野。</p></div>
+  </div>
+
+  <figure class="illus"><svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="人、獅、牛、鷹四個象徵徽記"><defs><linearGradient id="s3bg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FBF3E2"/><stop offset="1" stop-color="#EEF3F8"/></linearGradient></defs><rect width="800" height="420" fill="url(#s3bg)"/><g transform="translate(110,190)"><circle r="78" fill="#fff" stroke="#5E8FBF" stroke-width="3"/><circle r="68" fill="#5E8FBF" fill-opacity=".08"/><path d="M-6 -44 C 22 -46 30 -22 26 -8 L36 6 L26 10 L28 22 C 26 30 16 30 8 30 L6 50 L-30 50 C -26 30 -40 10 -34 -12 C -30 -32 -22 -42 -6 -44Z" fill="#5E8FBF" fill-opacity=".85"/></g><text x="110" y="320" text-anchor="middle" font-size="30" fill="#5E8FBF" font-family="serif" font-weight="700">人</text><g transform="translate(303,190)"><circle r="78" fill="#fff" stroke="#B8893B" stroke-width="3"/><circle r="68" fill="#B8893B" fill-opacity=".08"/><path d="M0 0 L58.0 0.0 L56.1 14.9Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L56.0 15.0 L50.3 28.9Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L50.2 29.0 L41.1 40.9Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L41.0 41.0 L29.1 50.2Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L29.0 50.2 L15.1 56.0Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L15.0 56.0 L0.1 58.0Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L0.0 58.0 L-14.9 56.1Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L-15.0 56.0 L-28.9 50.3Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L-29.0 50.2 L-40.9 41.1Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L-41.0 41.0 L-50.2 29.1Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L-50.2 29.0 L-56.0 15.1Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L-56.0 15.0 L-58.0 0.1Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L-58.0 0.0 L-56.1 -14.9Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L-56.0 -15.0 L-50.3 -28.9Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L-50.2 -29.0 L-41.1 -40.9Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L-41.0 -41.0 L-29.1 -50.2Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L-29.0 -50.2 L-15.1 -56.0Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L-15.0 -56.0 L-0.1 -58.0Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L-0.0 -58.0 L14.9 -56.1Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L15.0 -56.0 L28.9 -50.3Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L29.0 -50.2 L40.9 -41.1Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L41.0 -41.0 L50.2 -29.1Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L50.2 -29.0 L56.0 -15.1Z" fill="#B8893B" fill-opacity=".55"/><path d="M0 0 L56.0 -15.0 L58.0 -0.1Z" fill="#B8893B" fill-opacity=".55"/><circle r="34" fill="#B8893B"/><path d="M-26 -24 L-20 -40 L-10 -30Z M26 -24 L20 -40 L10 -30Z" fill="#B8893B"/><path d="M-10 12 Q0 22 10 12" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/></g><text x="303" y="320" text-anchor="middle" font-size="30" fill="#B8893B" font-family="serif" font-weight="700">獅</text><g transform="translate(496,190)"><circle r="78" fill="#fff" stroke="#B9562F" stroke-width="3"/><circle r="68" fill="#B9562F" fill-opacity=".08"/><path d="M-26 -28 C -60 -30 -64 -56 -48 -64 C -50 -48 -38 -40 -22 -40Z M26 -28 C 60 -30 64 -56 48 -64 C 50 -48 38 -40 22 -40Z" fill="#B9562F" fill-opacity=".8"/><path d="M-30 -36 Q0 -48 30 -36 L28 10 Q22 46 0 50 Q-22 46 -28 10Z" fill="#B9562F"/><path d="M-44 -24 L-30 -18 L-30 -8Z M44 -24 L30 -18 L30 -8Z" fill="#B9562F"/><ellipse cx="0" cy="34" rx="14" ry="9" fill="#fff" fill-opacity=".55"/></g><text x="496" y="320" text-anchor="middle" font-size="30" fill="#B9562F" font-family="serif" font-weight="700">牛</text><g transform="translate(689,190)"><circle r="78" fill="#fff" stroke="#6F8A5A" stroke-width="3"/><circle r="68" fill="#6F8A5A" fill-opacity=".08"/><g fill="#6F8A5A"><path d="M-8 -6 L-22 -34 L-26 -24 L-8 6Z"/><path d="M-8 -6 L-31 -25 L-35 -15 L-8 6Z"/><path d="M-8 -6 L-40 -16 L-44 -6 L-8 6Z"/><path d="M-8 -6 L-49 -7 L-53 3 L-8 6Z"/><path d="M8 -6 L22 -34 L26 -24 L8 6Z"/><path d="M8 -6 L31 -25 L35 -15 L8 6Z"/><path d="M8 -6 L40 -16 L44 -6 L8 6Z"/><path d="M8 -6 L49 -7 L53 3 L8 6Z"/><ellipse cx="0" cy="4" rx="12" ry="22"/><circle cx="0" cy="-24" r="9"/><path d="M4 -26 Q14 -24 10 -16 L6 -20Z" fill="#B8893B"/><path d="M-10 24 L0 46 L10 24Z"/></g></g><text x="689" y="320" text-anchor="middle" font-size="30" fill="#6F8A5A" font-family="serif" font-weight="700">鷹</text><text x="400" y="380" text-anchor="middle" font-size="15" fill="#3A3328" fill-opacity=".7" font-family="sans-serif">人類 · 野獸 · 家畜 · 飛鳥——受造界的代表一同在寶座前</text><text x="400" y="70" text-anchor="middle" font-size="14" fill="#3A3328" fill-opacity=".5" font-family="sans-serif">象徵徽記，非寫實描繪</text></svg><figcaption>人、獅、牛、鷹——以象徵徽記表示受造界的四類代表。<button class="ref" data-r="Ezk1:10">結 1:10</button><button class="ref" data-r="Rev4:7">啟 4:7</button></figcaption></figure>
+
+  <h3>教父的四福音聯想</h3>
+  <p>早期教父愛任紐（Irenaeus）在《反異端》第三卷第十一章將四活物與四福音書連結：獅子象徵基督有效的工作、領導與王權；牛犢象徵祂祭司性與犧牲性的職分；人的臉面象徵祂道成肉身；飛鷹象徵聖靈如展翅般覆庇教會。</p>
+  <p>不過，這種對應在不同教父與教會傳統中並不一致：</p>
+  <div class="tbl-wrap"><table class="tbl">
+    <thead><tr><th>傳統</th><th>人</th><th>獅</th><th>牛</th><th>鷹</th></tr></thead>
+    <tbody>
+      <tr><th>愛任紐</th><td>馬太</td><td>約翰</td><td>路加</td><td>馬可</td></tr>
+      <tr><th>奧古斯丁</th><td>馬可</td><td>馬太</td><td>路加</td><td>約翰</td></tr>
+      <tr><th>耶柔米（西方通行）</th><td>馬太</td><td>馬可</td><td>路加</td><td>約翰</td></tr>
+    </tbody>
+  </table></div>
+  <div class="aside">誰配哪張臉，教父們各有主張；唯一的共識大概是路加一直被分到牛。看來排座位這件事，自古以來就不容易。</div>
+  <p class="takeaway">四福音的對應可作為靈修與藝術傳統，不宜當作經文本身明確規定的解釋。</p>
+</section>
+
+<section id="theology" class="reveal">
+  <div class="kicker">四　神學反省</div>
+  <h2>在寶座前，重新校準生命</h2>
+
+  <h3><span class="no">1</span>神是中心，人是敬拜者</h3>
+  <p>四活物最突出的行動不是講道、爭辯或掌權，而是不斷宣告：「聖哉！聖哉！聖哉！」<button class="ref" data-r="Rev4:8">啟 4:8</button>。這與以賽亞在聖殿中所聽見撒拉弗的呼喊相呼應<button class="ref" data-r="Isa6:1-3">賽 6:1-3</button>。敬拜不是教會活動的點綴，而是受造物存在的根本方向。</p>
+  <p>當我們把工作、家庭、成就、意見甚至宗教活動放在生命中心時，四活物的異象重新校準我們：唯有神坐在寶座上；人最自由、最真實的位置，是在祂面前俯伏與讚美。</p>
+
+  <figure class="illus"><svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="虹圍繞的寶座、七盞火燈與如水晶的玻璃海；只以光表示神的同在"><defs><radialGradient id="s4glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFFBEF"/><stop offset=".45" stop-color="#F6DE9F" stop-opacity=".8"/><stop offset="1" stop-color="#F6DE9F" stop-opacity="0"/></radialGradient>
+<linearGradient id="s4sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E4F0F7"/><stop offset="1" stop-color="#B9D3E6"/></linearGradient>
+<linearGradient id="s4bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3F1EA"/><stop offset="1" stop-color="#FBF8F1"/></linearGradient></defs><rect width="800" height="420" fill="url(#s4bg)"/><path d="M200 270 A200 200 0 0 1 600 270" fill="none" stroke="#8CC7A1" stroke-width="12"/><path d="M212 270 A188 188 0 0 1 588 270" fill="none" stroke="#A9D6B4" stroke-width="12"/><path d="M224 270 A176 176 0 0 1 576 270" fill="none" stroke="#C8E5CC" stroke-width="12"/><path d="M236 270 A164 164 0 0 1 564 270" fill="none" stroke="#E5F2DF" stroke-width="12"/><circle cx="400" cy="185" r="160" fill="url(#s4glow)"/><line x1="340.0" y1="200.0" x2="270.0" y2="200.0" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="341.0" y1="189.0" x2="272.2" y2="176.1" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="344.1" y1="178.3" x2="278.8" y2="153.0" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="349.0" y1="168.4" x2="289.5" y2="131.6" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="355.7" y1="159.6" x2="303.9" y2="112.4" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="363.8" y1="152.1" x2="321.7" y2="96.3" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="373.3" y1="146.3" x2="342.1" y2="83.6" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="383.6" y1="142.3" x2="364.4" y2="75.0" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="394.5" y1="140.3" x2="388.0" y2="70.6" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="405.5" y1="140.3" x2="412.0" y2="70.6" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="416.4" y1="142.3" x2="435.6" y2="75.0" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="426.7" y1="146.3" x2="457.9" y2="83.6" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="436.2" y1="152.1" x2="478.3" y2="96.3" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="444.3" y1="159.6" x2="496.1" y2="112.4" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="451.0" y1="168.4" x2="510.5" y2="131.6" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="455.9" y1="178.3" x2="521.2" y2="153.0" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="459.0" y1="189.0" x2="527.8" y2="176.1" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><line x1="460.0" y1="200.0" x2="530.0" y2="200.0" stroke="#B8893B" stroke-opacity=".35" stroke-width="2"/><path d="M362 150 Q400 128 438 150 L438 214 L452 214 L452 262 L348 262 L348 214 L362 214Z" fill="#FFF6DC" stroke="#B8893B" stroke-width="3"/><rect x="352" y="262" width="96" height="10" rx="3" fill="#B8893B"/><path d="M200.0 92 q-7 -12 0 -24 q7 12 0 24Z" fill="#B9562F" fill-opacity=".75"/><circle cx="200.0" cy="86" r="3" fill="#FFF3C8"/><path d="M266.7 92 q-7 -12 0 -24 q7 12 0 24Z" fill="#B9562F" fill-opacity=".75"/><circle cx="266.7" cy="86" r="3" fill="#FFF3C8"/><path d="M333.4 92 q-7 -12 0 -24 q7 12 0 24Z" fill="#B9562F" fill-opacity=".75"/><circle cx="333.4" cy="86" r="3" fill="#FFF3C8"/><path d="M400.1 92 q-7 -12 0 -24 q7 12 0 24Z" fill="#B9562F" fill-opacity=".75"/><circle cx="400.1" cy="86" r="3" fill="#FFF3C8"/><path d="M466.8 92 q-7 -12 0 -24 q7 12 0 24Z" fill="#B9562F" fill-opacity=".75"/><circle cx="466.8" cy="86" r="3" fill="#FFF3C8"/><path d="M533.5 92 q-7 -12 0 -24 q7 12 0 24Z" fill="#B9562F" fill-opacity=".75"/><circle cx="533.5" cy="86" r="3" fill="#FFF3C8"/><path d="M600.2 92 q-7 -12 0 -24 q7 12 0 24Z" fill="#B9562F" fill-opacity=".75"/><circle cx="600.2" cy="86" r="3" fill="#FFF3C8"/><path d="M0 290 H800 V420 H0Z" fill="url(#s4sea)"/><path d="M330 290 L470 290 L520 420 L280 420Z" fill="#FFF6DC" fill-opacity=".55"/><line x1="40" y1="304" x2="760" y2="304" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/><line x1="60" y1="320" x2="740" y2="320" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/><line x1="80" y1="336" x2="720" y2="336" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/><line x1="100" y1="352" x2="700" y2="352" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/><line x1="120" y1="368" x2="680" y2="368" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/><line x1="140" y1="384" x2="660" y2="384" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/><line x1="160" y1="400" x2="640" y2="400" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/><path d="M120 314 L122 318 L126 320 L122 322 L120 326 L118 322 L114 320 L118 318Z" fill="#fff"/><path d="M660 334 L662 338 L666 340 L662 342 L660 346 L658 342 L654 340 L658 338Z" fill="#fff"/><path d="M240 374 L242 378 L246 380 L242 382 L240 386 L238 382 L234 380 L238 378Z" fill="#fff"/><path d="M560 389 L562 393 L566 395 L562 397 L560 401 L558 397 L554 395 L558 393Z" fill="#fff"/><path d="M720 304 L722 308 L726 310 L722 312 L720 316 L718 312 L714 310 L718 308Z" fill="#fff"/></svg><figcaption>虹圍著寶座，七盞火燈在寶座前點著，寶座前好像玻璃海——畫面只以光表示坐寶座者的同在。<button class="ref" data-r="Rev4:3">啟 4:3</button><button class="ref" data-r="Rev4:5">4:5</button><button class="ref" data-r="Rev4:6">4:6</button></figcaption></figure>
+
+  <h3><span class="no">2</span>神的全知與人的敞開</h3>
+  <p>「遍體內外都滿了眼睛」<button class="ref" data-r="Rev4:8">啟 4:8</button>象徵神洞察萬有。這不是令人恐懼的監視，而是令人安息的真理：沒有一個祕密、眼淚、委屈或罪惡，是神看不見的<button class="ref" data-r="Heb4:13">來 4:13</button>。</p>
+  <div class="reflect"><b>反省：</b>我是否願意在這位洞察萬有的神面前誠實？我是否只把想讓人看見的部分帶到教會，卻把真正的恐懼、羞恥與傷痛藏起來？</div>
+
+  <h3><span class="no">3</span>順服聖靈的行動</h3>
+  <p>以西結書說：「靈往哪裡去，活物就往那裡去。」<button class="ref" data-r="Ezk1:20">結 1:20</button>四活物不是依自己的計畫移動，而是隨神的靈而行。這描繪出真正的屬靈生命：不是為神提供計畫，而是敏銳於神的引導<button class="ref" data-r="Rom8:14">羅 8:14</button><button class="ref" data-r="Gal5:25">加 5:25</button>。</p>
+  <div class="reflect"><b>反省：</b>我的禱告是否常是「主啊，請祢照我的計畫行」，而非「主啊，願祢的靈引導我」？</div>
+
+  <h3><span class="no">4</span>萬有的敬拜與受造界的尊嚴</h3>
+  <p>啟示錄第四章的四活物，在第五章擴展為一切受造之物的敬拜<button class="ref" data-r="Rev5:13">啟 5:13</button>。Richard Bauckham 認為，四活物代表整個受造界；牠們的敬拜預示萬有最終都要歸榮耀給創造主，而受造之物也正等候得贖的那一日<button class="ref" data-r="Rom8:21">羅 8:21</button>。</p>
+  <p>這不是泛神論，而是聖經的創造觀：受造界不是神，卻因神的創造而具有尊嚴；人不是萬有的中心，卻蒙召在受造界中作忠心的管家與敬拜者<button class="ref" data-r="Gen2:15">創 2:15</button>。</p>
+
+  <figure class="illus"><svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="天空飛鳥、地上牲畜、海中魚類一同讚美"><defs><linearGradient id="s6sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EAF1F8"/><stop offset="1" stop-color="#FCF2DE"/></linearGradient>
+<linearGradient id="s6sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9DBFDA"/><stop offset="1" stop-color="#6F9AC0"/></linearGradient>
+<radialGradient id="s6sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFF3C8"/><stop offset=".5" stop-color="#F6D27C" stop-opacity=".7"/><stop offset="1" stop-color="#F6D27C" stop-opacity="0"/></radialGradient></defs><rect width="800" height="420" fill="url(#s6sky)"/><circle cx="600" cy="170" r="110" fill="url(#s6sun)"/><circle cx="600" cy="170" r="34" fill="#FBE3A2"/><path d="M143.2 80 q8.4 -8 16.8 0 q8.4 -8 16.8 0" stroke="#3A3328" stroke-opacity=".6" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M197.4 104 q6.3 -8 12.6 0 q6.3 -8 12.6 0" stroke="#3A3328" stroke-opacity=".6" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M236.0 70 q7.0 -8 14.0 0 q7.0 -8 14.0 0" stroke="#3A3328" stroke-opacity=".6" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M408.8 60 q5.6 -8 11.2 0 q5.6 -8 11.2 0" stroke="#3A3328" stroke-opacity=".6" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M454.6 90 q7.7 -8 15.4 0 q7.7 -8 15.4 0" stroke="#3A3328" stroke-opacity=".6" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M0 230 Q120 190 260 214 Q340 226 400 262 L400 420 L0 420Z" fill="#6F8A5A" fill-opacity=".7"/><path d="M0 262 Q150 236 300 260 L380 300 L0 300Z" fill="#6F8A5A" fill-opacity=".35"/><rect x="84" y="166" width="10" height="50" fill="#7A5B3A"/><circle cx="89" cy="160" r="28" fill="#6F8A5A"/><circle cx="72" cy="172" r="18" fill="#6F8A5A"/><circle cx="106" cy="172" r="18" fill="#6F8A5A"/><g transform="translate(190,236)" fill="#FBF8F1"><ellipse rx="20" ry="12"/><circle cx="-14" cy="-8" r="8"/><circle cx="0" cy="-10" r="9"/><circle cx="14" cy="-7" r="8"/><ellipse cx="22" cy="-6" rx="7" ry="5" fill="#3A3328" fill-opacity=".7"/><rect x="-12" y="8" width="3" height="10" fill="#3A3328" fill-opacity=".6"/><rect x="10" y="8" width="3" height="10" fill="#3A3328" fill-opacity=".6"/></g><g transform="translate(250,252)" fill="#FBF8F1"><ellipse rx="20" ry="12"/><circle cx="-14" cy="-8" r="8"/><circle cx="0" cy="-10" r="9"/><circle cx="14" cy="-7" r="8"/><ellipse cx="22" cy="-6" rx="7" ry="5" fill="#3A3328" fill-opacity=".7"/><rect x="-12" y="8" width="3" height="10" fill="#3A3328" fill-opacity=".6"/><rect x="10" y="8" width="3" height="10" fill="#3A3328" fill-opacity=".6"/></g><g transform="translate(320,262)" fill="#B9562F" fill-opacity=".85"><path d="M-30 -14 Q0 -22 26 -14 L28 8 L-28 8Z"/><path d="M26 -16 L40 -20 L44 -8 L28 -4Z"/><path d="M38 -20 q4 -8 10 -8" stroke="#B9562F" stroke-width="3" fill="none"/><rect x="-24" y="8" width="5" height="16"/><rect x="18" y="8" width="5" height="16"/></g><path d="M400 262 Q420 250 460 250 L800 250 L800 420 L400 420Z" fill="url(#s6sea)"/><path d="M560 252 L640 252 L680 420 L520 420Z" fill="#FFF3C8" fill-opacity=".25"/><path d="M450 272 q20 -8 40 0 t40 0 t40 0" stroke="#fff" stroke-opacity=".6" stroke-width="2" fill="none"/><path d="M460 298 q20 -8 40 0 t40 0 t40 0" stroke="#fff" stroke-opacity=".6" stroke-width="2" fill="none"/><path d="M470 324 q20 -8 40 0 t40 0 t40 0" stroke="#fff" stroke-opacity=".6" stroke-width="2" fill="none"/><path d="M480 350 q20 -8 40 0 t40 0 t40 0" stroke="#fff" stroke-opacity=".6" stroke-width="2" fill="none"/><path d="M490 376 q20 -8 40 0 t40 0 t40 0" stroke="#fff" stroke-opacity=".6" stroke-width="2" fill="none"/><g transform="translate(560,330) scale(1.20,1.20)" fill="#FBF8F1" fill-opacity=".9"><path d="M-16 0 Q0 -10 14 0 Q0 10 -16 0Z"/><path d="M14 0 L24 -8 L24 8Z"/></g><g transform="translate(640,372) scale(-1.00,1.00)" fill="#FBF8F1" fill-opacity=".9"><path d="M-16 0 Q0 -10 14 0 Q0 10 -16 0Z"/><path d="M14 0 L24 -8 L24 8Z"/></g><g transform="translate(720,320) scale(0.90,0.90)" fill="#FBF8F1" fill-opacity=".9"><path d="M-16 0 Q0 -10 14 0 Q0 10 -16 0Z"/><path d="M14 0 L24 -8 L24 8Z"/></g><g transform="translate(500,390) scale(-0.80,0.80)" fill="#FBF8F1" fill-opacity=".9"><path d="M-16 0 Q0 -10 14 0 Q0 10 -16 0Z"/><path d="M14 0 L24 -8 L24 8Z"/></g><text x="400" y="404" text-anchor="middle" font-size="14" fill="#fff" font-family="sans-serif">天上 · 地上 · 滄海——一切被造之物</text></svg><figcaption>天上的飛鳥、地上的牲畜、滄海中的魚——一切被造之物同聲頌讚坐寶座的和羔羊。<button class="ref" data-r="Rev5:13">啟 5:13</button></figcaption></figure>
+  <p class="takeaway">受造界不是神；但受造界的每一聲讚美，神都看重。</p>
+</section>
+
+<section id="apply" class="reveal">
+  <div class="kicker">五　生活應用</div>
+  <h2>從寶座前出發</h2>
+  <div class="steps">
+    <div class="step"><h4>每天以敬拜開始</h4><p>在讀經與禱告前，先安靜承認神是主、是聖潔的，讓生活從寶座前出發。</p></div>
+    <div class="step"><h4>在真實中敬拜</h4><p>把隱藏的罪、恐懼、傷痛帶到洞察萬有的神面前，不假裝屬靈。</p></div>
+    <div class="step"><h4>隨聖靈而行</h4><p>在抉擇前問：「這是出於我的控制與焦慮，還是順服神的引導？」</p></div>
+    <div class="step"><h4>尊重受造界</h4><p>珍惜生命、善待動物、節制消費、關心環境，因為萬有終要一同歸榮耀給神。</p></div>
+  </div>
+</section>
+
+<section id="prayer" class="reveal">
+  <div class="kicker">六　禱告</div>
+  <h2>同聲說：聖哉</h2>
+  <div class="prayer">
+    <p>聖哉、聖哉、聖哉的主神，昔在、今在、以後永在的全能者，</p>
+    <p>祢坐在寶座上，天地萬有都屬於祢。</p>
+    <p>求祢潔淨我的眼目，使我看見祢的榮耀；</p>
+    <p>求祢敞開我的心，使我在祢面前誠實無偽。</p>
+    <p>願我不靠自己的計畫而行，而願意順服祢的靈；</p>
+    <p>願我的家庭、工作、教會與世界，都成為歸榮耀給祢的地方。</p>
+    <p>主耶穌，願萬口承認祢是主，萬膝向祢跪拜；<button class="ref" data-r="Phil2:10-11">腓 2:10-11</button></p>
+    <p>願一切受造之物同聲說：頌讚、尊貴、榮耀、權勢都歸給坐寶座的和羔羊，直到永永遠遠。<button class="ref" data-r="Rev5:13">啟 5:13</button></p>
+    <p class="amen">奉主耶穌基督的名禱告，阿們。</p>
+  </div>
+</section>
+
+<section id="refs" class="refs reveal">
+  <div class="kicker">溯源</div>
+  <h2>參考資料</h2>
+  <h3>本頁引用經文（和合本，依出現順序）</h3>
+  <ol id="scripture-list"></ol>
+  <h3>研究與註釋</h3>
+  <ol>
+    <li>Daniel I. Block, <i>The Book of Ezekiel, Chapters 1–24</i>（NICOT；Eerdmans, 1997）：詳註以西結書第一章的四活物、輪、靈與神榮耀的異象，及其與基路伯傳統的關係。</li>
+    <li>Richard Bauckham, <i>The Theology of the Book of Revelation</i>（Cambridge University Press, 1993）：論啟示錄四活物融合以西結書的基路伯與以賽亞書的撒拉弗，並代表整個受造界在寶座前敬拜。</li>
+    <li>Richard Bauckham, <i>Living with Other Creatures: Green Exegesis and Theology</i>（Baylor University Press, 2011）：進一步詮釋四活物為人類、野獸、家畜與飛鳥的代表。</li>
+    <li>Irenaeus, <i>Against Heresies</i> 3.11.8：<a href="https://www.newadvent.org/fathers/0103311.htm" target="_blank" rel="noopener">New Advent 英譯全文</a>，四活物與四福音對應的關鍵文獻。</li>
+    <li>The Banner, “Creation’s Praise”：整理當代啟示錄研究對四活物的理解，指出牠們象徵神接納所有受造物的敬拜。</li>
+  </ol>
+  <h3>和合本線上資源</h3>
+  <ol>
+    <li><a href="https://bible.fhl.net/" target="_blank" rel="noopener">信望愛站 · 聖經工具</a></li>
+    <li><a href="https://www.biblegateway.com/versions/Chinese-Union-Version-Modern-Punctuation-Bible/" target="_blank" rel="noopener">Bible Gateway · 和合本（新式標點）</a></li>
+  </ol>
+</section>
+
+</main>
+
+<footer>
+  <div class="tri">聖哉 聖哉 聖哉</div>
+  <p>四活物：在寶座前學習敬拜 · 以西結書與啟示錄讀經心得</p>
+  <p>經文引自《和合本》（公有領域）；點選經文標籤可查看全文並連往 Bible Gateway 核對。</p>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dlg-t">
+  <div class="dlg-h"><span id="dlg-t"></span><button type="button" aria-label="關閉" data-close>×</button></div>
+  <div class="dlg-b" id="dlg-b"></div>
+  <div class="dlg-f" id="dlg-f"></div>
+</dialog>
+
+<script>
+const BIBLE_VER = "CUVMPT";
+const bg = (en, ver) => `https://www.biblegateway.com/passage/?search=${encodeURIComponent(en)}&version=${ver}`;
+const V = {
+  "Ezk1:1":{zh:"以西結書 1:1",en:"Ezekiel 1:1",t:"當三十年四月初五日，以西結（原文是我）在迦巴魯河邊被擄的人中，天就開了，得見神的異象。"},
+  "Ezk1:2-3":{zh:"以西結書 1:2-3",en:"Ezekiel 1:2-3",t:"正是約雅斤王被擄去第五年，四月初五日，在迦勒底人之地、迦巴魯河邊，耶和華的話特特臨到布西的兒子祭司以西結；耶和華的靈（原文是手）在那裡降在他身上。"},
+  "Ezk1:4":{zh:"以西結書 1:4",en:"Ezekiel 1:4",t:"我觀看，見狂風從北方颳來，隨著有一朵包括閃爍火的大雲，周圍有光輝；從其中的火內發出好像光耀的精金。"},
+  "Ezk1:5-6":{zh:"以西結書 1:5-6",en:"Ezekiel 1:5-6",t:"又從其中顯出四個活物的形像來。他們的形狀是這樣：有人的形像，各有四個臉面，四個翅膀。"},
+  "Ezk1:10":{zh:"以西結書 1:10",en:"Ezekiel 1:10",t:"至於臉的形像：前面各有人的臉，右面各有獅子的臉，左面各有牛的臉，後面各有鷹的臉。"},
+  "Ezk1:12":{zh:"以西結書 1:12",en:"Ezekiel 1:12",t:"他們俱各直往前行。靈往哪裡去，他們就往那裡去，行走並不轉身。"},
+  "Ezk1:16":{zh:"以西結書 1:16",en:"Ezekiel 1:16",t:"輪的形狀和顏色（原文是工作）好像水蒼玉。四輪都是一個樣式，形狀和作法好像輪中套輪。"},
+  "Ezk1:18":{zh:"以西結書 1:18",en:"Ezekiel 1:18",t:"至於輪輞，高而可畏；四個輪輞周圍滿有眼睛。"},
+  "Ezk1:20":{zh:"以西結書 1:20",en:"Ezekiel 1:20",t:"靈往哪裡去，活物就往那裡去；活物上升，輪也在活物旁邊上升，因為活物的靈在輪中。"},
+  "Ezk10:20":{zh:"以西結書 10:20",en:"Ezekiel 10:20",t:"這是我在迦巴魯河邊所見以色列神榮耀以下的活物，我就知道他們是基路伯。"},
+  "Isa6:1-3":{zh:"以賽亞書 6:1-3",en:"Isaiah 6:1-3",t:"當烏西雅王崩的那年，我見主坐在高高的寶座上；他的衣裳垂下，遮滿聖殿。其上有撒拉弗侍立，各有六個翅膀：用兩個翅膀遮臉，兩個翅膀遮腳，兩個翅膀飛翔；彼此呼喊說：聖哉！聖哉！聖哉！萬軍之耶和華；他的榮光充滿全地！"},
+  "Rev4:3":{zh:"啟示錄 4:3",en:"Revelation 4:3",t:"看那坐著的，好像碧玉和紅寶石；又有虹圍著寶座，好像綠寶石。"},
+  "Rev4:5":{zh:"啟示錄 4:5",en:"Revelation 4:5",t:"有閃電、聲音、雷轟從寶座中發出。又有七盞火燈在寶座前點著；這七燈就是神的七靈。"},
+  "Rev4:6":{zh:"啟示錄 4:6",en:"Revelation 4:6",t:"寶座前好像一個玻璃海，如同水晶。寶座中和寶座周圍有四個活物，前後遍體都滿了眼睛。"},
+  "Rev4:7":{zh:"啟示錄 4:7",en:"Revelation 4:7",t:"第一個活物像獅子，第二個像牛犢，第三個臉面像人，第四個像飛鷹。"},
+  "Rev4:8":{zh:"啟示錄 4:8",en:"Revelation 4:8",t:"四活物各有六個翅膀，遍體內外都滿了眼睛。他們晝夜不住地說：聖哉！聖哉！聖哉！主神是昔在、今在、以後永在的全能者。"},
+  "Rev4:9-11":{zh:"啟示錄 4:9-11",en:"Revelation 4:9-11",t:"每逢四活物將榮耀、尊貴、感謝歸給那坐在寶座上、活到永永遠遠者的時候，那二十四位長老就俯伏在坐寶座的面前，敬拜那活到永永遠遠的，又把他們的冠冕放在寶座前，說：我們的主，我們的神，你是配得榮耀、尊貴、權柄的；因為你創造了萬物，並且萬物是因你的旨意被創造而有的。"},
+  "Rev5:13":{zh:"啟示錄 5:13",en:"Revelation 5:13",t:"我又聽見在天上、地上、地底下、滄海裡和天地間一切所有被造之物，都說：但願頌讚、尊貴、榮耀、權勢都歸給坐寶座的和羔羊，直到永永遠遠！"},
+  "Rev5:14":{zh:"啟示錄 5:14",en:"Revelation 5:14",t:"四活物就說：阿們！眾長老也俯伏敬拜。"},
+  "Heb4:13":{zh:"希伯來書 4:13",en:"Hebrews 4:13",t:"並且被造的沒有一樣在他面前不顯然的；原來萬物在那與我們有關係的主眼前，都是赤露敞開的。"},
+  "Rom8:14":{zh:"羅馬書 8:14",en:"Romans 8:14",t:"因為凡被神的靈引導的，都是神的兒子。"},
+  "Gal5:25":{zh:"加拉太書 5:25",en:"Galatians 5:25",t:"我們若是靠聖靈得生，就當靠聖靈行事。"},
+  "Rom8:21":{zh:"羅馬書 8:21",en:"Romans 8:21",t:"但受造之物仍然指望脫離敗壞的轄制，得享神兒女自由的榮耀。"},
+  "Gen2:15":{zh:"創世記 2:15",en:"Genesis 2:15",t:"耶和華神將那人安置在伊甸園，使他修理看守。"},
+  "Phil2:10-11":{zh:"腓立比書 2:10-11",en:"Philippians 2:10-11",t:"叫一切在天上的、地上的，和地底下的，因耶穌的名無不屈膝，無不口稱耶穌基督為主，使榮耀歸與父神。"}
+};
+
+const dlg = document.getElementById('dlg');
+function openRef(key){
+  const v = V[key]; if(!v) return;
+  document.getElementById('dlg-t').textContent = `${v.zh}（${v.ver || "和合本"}）`;
+  document.getElementById('dlg-b').textContent = v.t;
+  const f = document.getElementById('dlg-f'); f.innerHTML = '';
+  const links = v.links || [["Bible Gateway 和合本（新式標點）", bg(v.en, BIBLE_VER)], ["和合本（CUV）", bg(v.en, "CUV")], ["KJV", bg(v.en, "KJV")]];
+  links.forEach(([n,u]) => { const a = document.createElement('a'); a.href = u; a.target = '_blank'; a.rel = 'noopener'; a.textContent = n + ' ↗'; f.appendChild(a); });
+  if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open','');
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('.ref'); if (b) { openRef(b.dataset.r); return; }
+  if (e.target.closest('[data-close]') || e.target === dlg) dlg.close();
+});
+
+// 參考資料：依出現順序去重列出
+(function(){
+  const seen = new Set(), ol = document.getElementById('scripture-list');
+  document.querySelectorAll('main .ref').forEach(b => {
+    const k = b.dataset.r; if (seen.has(k) || !V[k]) return; seen.add(k);
+    const v = V[k], li = document.createElement('li'), a = document.createElement('a');
+    a.href = v.links ? v.links[0][1] : bg(v.en, BIBLE_VER); a.target = '_blank'; a.rel = 'noopener';
+    a.textContent = v.zh; li.appendChild(a); ol.appendChild(li);
+  });
+})();
+
+// 進度條、導覽高亮、淡入
+const prog = document.getElementById('progress');
+const navLinks = [...document.querySelectorAll('nav.toc a')];
+const secs = navLinks.map(a => document.querySelector(a.getAttribute('href')));
+function onScroll(){
+  const h = document.documentElement, max = h.scrollHeight - h.clientHeight;
+  prog.style.width = (max > 0 ? h.scrollTop / max * 100 : 0) + '%';
+  let cur = -1; secs.forEach((s,i) => { if (s && s.getBoundingClientRect().top < 120) cur = i; });
+  navLinks.forEach((a,i) => a.classList.toggle('on', i === cur));
+}
+addEventListener('scroll', onScroll, {passive:true}); onScroll();
+if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+} else document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+</script>
+</body>
+</html>
