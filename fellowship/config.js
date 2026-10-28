@@ -26,7 +26,11 @@ window.SITE_CONFIG = {
   subtitle: "從應許到成全",
   url: "https://www.gungho.idv.tw/fellowship/five-leaders-last-words/",
 },
-
+{
+  title: "從一人入罪到從一人救贖",
+  subtitle: "亞當與基督的神學脈絡",
+  url: "https://www.gungho.idv.tw/fellowship/adam-and-christ/",
+},
 {
   "title": "葡萄樹與無花果樹",
   "subtitle": "聖經所描繪的和平，不只是戰爭止息，更是神以公義治理，使人能安居、免於恐懼，並與鄰舍共享平安。",
