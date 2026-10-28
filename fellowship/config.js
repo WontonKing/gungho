@@ -22,6 +22,12 @@ window.SITE_CONFIG = {
 
   notes: [
 {
+  title: "聖經五位屬靈領袖的臨終禱告、祝福與遺囑",
+  subtitle: "從應許到成全",
+  url: "https://www.gungho.idv.tw/fellowship/five-leaders-last-words/",
+},
+
+{
   "title": "葡萄樹與無花果樹",
   "subtitle": "聖經所描繪的和平，不只是戰爭止息，更是神以公義治理，使人能安居、免於恐懼，並與鄰舍共享平安。",
    url: "https://www.gungho.idv.tw/fellowship/vine-and-fig/",
