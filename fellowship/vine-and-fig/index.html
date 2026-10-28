@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>葡萄樹與無花果樹｜以賽亞書與彌迦書的和平異象</title>
+<meta name="description" content="聖經所描繪的和平，不只是戰爭止息，更是神以公義治理，使人能安居、免於恐懼，並與鄰舍共享平安。">
+<meta property="og:title" content="葡萄樹與無花果樹｜以賽亞書與彌迦書的和平異象">
+<meta property="og:description" content="聖經所描繪的和平，不只是戰爭止息，更是神以公義治理，使人能安居、免於恐懼，並與鄰舍共享平安。">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
+<script src="config.js"></script>
+<style>
+:root{
+  --bg:#FBF8F1; --paper:#FFFDF8; --ink:#3A3328; --muted:#6E655A; --line:#E7DDCB;
+  --gold:#B8893B; --gold-soft:#F3E6C9; --sky:#5E8FBF; --sky-soft:#E4EEF7;
+  --clay:#B9562F; --clay-soft:#F6E3D9; --olive:#6F8A5A; --olive-soft:#E6EEDD;
+  --serif:"Noto Serif TC","Songti TC",serif; --sans:"Noto Sans TC","PingFang TC",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.9 var(--sans);
+  background-image:radial-gradient(ellipse 70% 50% at 15% 0%,#F6E9C9 0,transparent 60%),
+  radial-gradient(ellipse 60% 45% at 95% 10%,#E1ECF6 0,transparent 60%);background-attachment:fixed}
+a{color:var(--sky)}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--sky));z-index:60}
+nav.top{position:sticky;top:0;z-index:50;background:rgba(251,248,241,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.top .in{max-width:980px;margin:auto;display:flex;align-items:center;gap:18px;padding:10px 16px;overflow-x:auto;white-space:nowrap}
+.brand{font:700 16px var(--serif);color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:8px}
+.brand i{width:12px;height:12px;border-radius:50%;background:radial-gradient(circle,#F6D98A,var(--gold));box-shadow:0 0 10px #F6D98A}
+nav.top a.l{color:var(--muted);text-decoration:none;font-size:14px}
+nav.top a.l:hover{color:var(--gold)}
+main{max-width:860px;margin:auto;padding:0 16px 40px}
+header.cover{text-align:center;padding:64px 0 24px;position:relative}
+header.cover::before{content:"";position:absolute;left:50%;top:30px;width:340px;height:340px;transform:translateX(-50%);
+  background:radial-gradient(circle,rgba(246,217,138,.45),transparent 65%);z-index:-1}
+header.cover small{display:inline-block;font-size:14px;letter-spacing:.3em;color:var(--gold);border:1px solid var(--gold-soft);border-radius:99px;padding:2px 16px;background:var(--paper)}
+header.cover h1{font:900 clamp(34px,7vw,56px)/1.25 var(--serif);margin:18px 0 10px;letter-spacing:.06em}
+header.cover .sub{font:500 clamp(17px,3vw,21px) var(--serif);color:var(--muted);margin:0}
+.thesis{margin:34px auto 10px;max-width:680px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 26px;text-align:left;position:relative}
+.thesis b{display:block;font:700 14px var(--sans);color:var(--gold);letter-spacing:.2em;margin-bottom:4px}
+.thesis p{margin:0;font:500 18px/1.9 var(--serif)}
+section{padding:46px 0 10px;border-top:1px dashed var(--line)}
+section:first-of-type{border-top:0}
+.eyebrow{font-size:13px;letter-spacing:.25em;color:var(--sky);font-weight:700}
+h2{font:700 clamp(24px,4.4vw,32px)/1.4 var(--serif);margin:4px 0 18px}
+h2 .n{color:var(--gold);margin-right:.35em}
+h3{font:700 19px var(--serif);margin:0 0 6px}
+p{margin:0 0 1em}
+blockquote.verse{margin:20px 0;padding:18px 22px;background:linear-gradient(90deg,var(--gold-soft),var(--paper));border-radius:14px;font:500 19px/1.9 var(--serif)}
+blockquote.verse .ref{margin-left:6px}
+button.ref{font:500 13px var(--sans);color:var(--sky);background:var(--sky-soft);border:1px solid #CFE0F0;border-radius:99px;padding:1px 10px;cursor:pointer;vertical-align:2px;margin:0 2px;line-height:1.7}
+button.ref:hover,button.ref:focus-visible{background:var(--sky);color:#fff;outline:none}
+.takeaway{border-left:4px solid var(--gold);padding:6px 0 6px 18px;margin:22px 0 6px;font:700 18px/1.8 var(--serif)}
+.aside{border:1.5px dashed #D9C9A6;border-radius:14px;padding:12px 16px;margin:20px 0;font-size:15px;color:var(--muted);background:rgba(255,253,248,.7)}
+.aside::before{content:"旁白";display:inline-block;font-weight:700;color:var(--clay);margin-right:8px;font-size:13px;letter-spacing:.15em}
+.note{font-size:15px;color:var(--muted);background:var(--sky-soft);border-radius:12px;padding:12px 16px}
+.table-wrap{overflow-x:auto;margin:18px 0}
+table{width:100%;border-collapse:separate;border-spacing:0;background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:16px}
+th,td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:var(--gold-soft);font:700 15px var(--serif)}
+tr:last-child td{border-bottom:0}
+td:first-child{white-space:nowrap}
+.pills{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:18px 0}
+.pill{background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:6px 16px;font:700 15px var(--serif)}
+.pill.g{border-color:var(--gold);color:#8A6524}
+.arrow{color:var(--gold);font-weight:700}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:18px 0}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 18px;position:relative}
+.step .k{font:900 28px var(--serif);color:var(--gold-soft);position:absolute;right:14px;top:6px}
+.step h3{color:var(--olive)}
+.step p{margin:0;font-size:15.5px}
+.cards{display:grid;gap:14px;margin:18px 0}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px 20px;display:grid;grid-template-columns:auto 1fr;gap:14px}
+.card .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font:700 18px var(--serif);color:#fff}
+.card p{margin:0}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
+.compare>div{border-radius:16px;padding:16px 18px;border:1px solid var(--line);background:var(--paper)}
+.compare h3{font-size:17px}
+.compare p{margin:0;font-size:15.5px}
+.compare .past{background:#F7F2E6}
+.compare .hope{background:var(--olive-soft);border-color:#CBD9BB}
+figure.illus{margin:28px 0;background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+figure.illus svg{display:block;width:100%;height:auto}
+figure.illus figcaption{padding:12px 18px;font-size:15px;color:var(--muted);border-top:1px solid var(--line)}
+.refs ol{padding-left:1.4em;font-size:15px}
+.refs li{margin:4px 0}
+.refs h3{margin-top:22px}
+footer{text-align:center;color:var(--muted);font-size:14px;padding:30px 16px 50px;border-top:1px solid var(--line);max-width:860px;margin:auto}
+dialog{border:0;border-radius:20px;padding:0;max-width:min(560px,92vw);width:100%;background:var(--paper);color:var(--ink);box-shadow:0 20px 60px rgba(58,51,40,.25)}
+dialog::backdrop{background:rgba(58,51,40,.35)}
+dialog .hd{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--line);background:var(--gold-soft)}
+dialog .hd b{font:700 19px var(--serif)}
+dialog .hd small{color:var(--muted);margin-left:8px}
+dialog .bd{padding:18px 22px;font:500 18px/2 var(--serif);max-height:55vh;overflow:auto;white-space:pre-line}
+dialog .bd sup{color:var(--gold);font:700 12px var(--sans);margin-right:3px}
+dialog .ft{padding:12px 20px 18px;display:flex;flex-wrap:wrap;gap:8px;font-size:14px;align-items:center}
+dialog .ft a{background:var(--sky-soft);border-radius:99px;padding:4px 12px;text-decoration:none}
+dialog .x{border:0;background:none;font-size:24px;cursor:pointer;color:var(--muted);line-height:1}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s,transform .7s}
+.reveal.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+@media (max-width:600px){body{font-size:16px}.compare{grid-template-columns:1fr}.thesis{padding:18px}td:first-child{white-space:normal}}
+@media print{nav.top,#progress,dialog,.aside{display:none}body{background:#fff}.reveal{opacity:1;transform:none}section{break-inside:avoid-page}figure.illus{break-inside:avoid}}
+</style>
+</head>
+<body id="top">
+<div id="progress"></div>
+<nav class="top"><div class="in">
+  <a class="brand" href="#top"><i></i><span data-cfg="title">葡萄樹與無花果樹</span></a>
+  <a class="l" href="#s1">共同異象</a><a class="l" href="#s2">樹下安居</a><a class="l" href="#s3">和平與公義</a>
+  <a class="l" href="#s4">到基督信仰</a><a class="l" href="#s5">今日省思</a><a class="l" href="#refs">參考資料</a>
+</div></nav>
+
+<main>
+<header class="cover">
+  <small data-cfg="eyebrow">以賽亞書 · 彌迦書</small>
+  <h1 data-cfg="title">葡萄樹與無花果樹</h1>
+  <p class="sub" data-cfg="subtitle">以賽亞書與彌迦書的和平異象</p>
+  <figure class="illus reveal" style="margin-top:34px">
+    <svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="葡萄樹與無花果樹下安坐的人"><defs><linearGradient id="sk1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9F1F8"/><stop offset="1" stop-color="#FDF6E6"/></linearGradient><radialGradient id="sun1"><stop offset="0" stop-color="#FFF3C9"/><stop offset="1" stop-color="#FFF3C9" stop-opacity="0"/></radialGradient></defs><rect width="800" height="420" fill="url(#sk1)"/><circle cx="400" cy="200" r="150" fill="url(#sun1)"/><circle cx="400" cy="200" r="42" fill="#F6D98A"/><path d="M0,300 Q200,250 400,285 T800,270 L800,420 L0,420Z" fill="#DCE6C9"/><path d="M0,340 Q250,310 500,335 T800,325 L800,420 L0,420Z" fill="#C9D8B1"/><rect x="90" y="210" width="8" height="140" fill="#8C6A45"/><rect x="250" y="210" width="8" height="140" fill="#8C6A45"/><rect x="80" y="205" width="185" height="8" rx="3" fill="#8C6A45"/><path d="M100,350 C120,300 80,260 130,220 S220,200 250,215" stroke="#6B5236" stroke-width="6" fill="none"/><g transform="translate(95,200) rotate(-30)" fill="#6F8A5A"><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(-55)"/><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(0)"/><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(55)"/><circle r="5.7"/></g><g transform="translate(121,208) rotate(7)" fill="#6F8A5A"><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(-55)"/><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(0)"/><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(55)"/><circle r="5.7"/></g><g transform="translate(147,200) rotate(-16)" fill="#6F8A5A"><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(-55)"/><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(0)"/><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(55)"/><circle r="5.7"/></g><g transform="translate(173,208) rotate(21)" fill="#6F8A5A"><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(-55)"/><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(0)"/><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(55)"/><circle r="5.7"/></g><g transform="translate(199,200) rotate(-2)" fill="#6F8A5A"><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(-55)"/><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(0)"/><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(55)"/><circle r="5.7"/></g><g transform="translate(225,208) rotate(-25)" fill="#6F8A5A"><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(-55)"/><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(0)"/><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(55)"/><circle r="5.7"/></g><g transform="translate(251,200) rotate(12)" fill="#6F8A5A"><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(-55)"/><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(0)"/><ellipse cx="0" cy="-8.25" rx="5.3999999999999995" ry="9.3" transform="rotate(55)"/><circle r="5.7"/></g><circle cx="111.0" cy="222.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="120.0" cy="222.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="129.0" cy="222.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="111.0" cy="230.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="120.0" cy="230.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="129.0" cy="230.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="115.5" cy="238.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="124.5" cy="238.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="115.5" cy="246.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="124.5" cy="246.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="120.0" cy="254.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><path d="M120,216.0 q3,-8 9,-10" stroke="#6F8A5A" stroke-width="2" fill="none"/><circle cx="161.0" cy="222.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="170.0" cy="222.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="179.0" cy="222.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="161.0" cy="230.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="170.0" cy="230.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="179.0" cy="230.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="165.5" cy="238.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="174.5" cy="238.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="165.5" cy="246.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="174.5" cy="246.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="170.0" cy="254.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><path d="M170,216.0 q3,-8 9,-10" stroke="#6F8A5A" stroke-width="2" fill="none"/><circle cx="211.0" cy="222.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="220.0" cy="222.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="229.0" cy="222.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="211.0" cy="230.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="220.0" cy="230.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="229.0" cy="230.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="215.5" cy="238.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="224.5" cy="238.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="215.5" cy="246.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="224.5" cy="246.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><circle cx="220.0" cy="254.0" r="5.0" fill="#7B5A8C" opacity="0.85"/><path d="M220,216.0 q3,-8 9,-10" stroke="#6F8A5A" stroke-width="2" fill="none"/><path d="M600,350 C595,300 610,260 585,220 M600,300 C630,270 660,250 690,240 M597,270 C560,250 540,240 520,235" stroke="#7A5C3E" stroke-width="14" fill="none" stroke-linecap="round"/><g transform="translate(520,220) rotate(-45)" fill="#6F8A5A"><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(-55)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(0)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(55)"/><circle r="9.120000000000001"/></g><g transform="translate(545,195) rotate(2)" fill="#5F7B4C"><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(-55)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(0)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(55)"/><circle r="9.120000000000001"/></g><g transform="translate(580,180) rotate(-41)" fill="#6F8A5A"><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(-55)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(0)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(55)"/><circle r="9.120000000000001"/></g><g transform="translate(615,170) rotate(6)" fill="#5F7B4C"><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(-55)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(0)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(55)"/><circle r="9.120000000000001"/></g><g transform="translate(650,185) rotate(-37)" fill="#6F8A5A"><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(-55)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(0)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(55)"/><circle r="9.120000000000001"/></g><g transform="translate(690,215) rotate(10)" fill="#5F7B4C"><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(-55)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(0)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(55)"/><circle r="9.120000000000001"/></g><g transform="translate(700,245) rotate(-33)" fill="#6F8A5A"><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(-55)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(0)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(55)"/><circle r="9.120000000000001"/></g><g transform="translate(560,220) rotate(14)" fill="#5F7B4C"><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(-55)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(0)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(55)"/><circle r="9.120000000000001"/></g><g transform="translate(600,205) rotate(-29)" fill="#6F8A5A"><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(-55)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(0)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(55)"/><circle r="9.120000000000001"/></g><g transform="translate(640,215) rotate(18)" fill="#5F7B4C"><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(-55)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(0)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(55)"/><circle r="9.120000000000001"/></g><g transform="translate(670,200) rotate(-25)" fill="#6F8A5A"><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(-55)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(0)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(55)"/><circle r="9.120000000000001"/></g><g transform="translate(530,250) rotate(22)" fill="#5F7B4C"><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(-55)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(0)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(55)"/><circle r="9.120000000000001"/></g><g transform="translate(625,240) rotate(-21)" fill="#6F8A5A"><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(-55)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(0)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(55)"/><circle r="9.120000000000001"/></g><g transform="translate(585,245) rotate(26)" fill="#5F7B4C"><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(-55)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(0)"/><ellipse cx="0" cy="-13.200000000000001" rx="8.64" ry="14.879999999999999" transform="rotate(55)"/><circle r="9.120000000000001"/></g><ellipse cx="560" cy="232" rx="7" ry="9" fill="#8E6A9A"/><ellipse cx="612" cy="222" rx="7" ry="9" fill="#8E6A9A"/><ellipse cx="660" cy="230" rx="7" ry="9" fill="#8E6A9A"/><circle cx="640" cy="306.0" r="9.0" fill="#3A3328"/><path d="M629.0,316.0 q11.0,-8.0 22.0,0 l3.0,22.0 l20.0,0 l0,14.0 l-8.0,0 l0,-6.0 l-38.0,0 z" fill="#3A3328"/><path d="M0,352 L800,352" stroke="#B7C79B" stroke-width="2"/></svg>
+    <figcaption>「人人都要坐在自己葡萄樹下和無花果樹下，無人驚嚇。」<button class="ref" data-r="Mic4:4">彌 4:4</button></figcaption>
+  </figure>
+  <div class="thesis reveal"><b>主旨</b>
+    <p>聖經所描繪的和平，不只是戰爭止息，更是神以公義治理，使人能安居、免於恐懼，並與鄰舍共享平安。</p>
+  </div>
+</header>
+
+<section id="s1" class="reveal">
+  <div class="eyebrow">舊約 · 賽 2／彌 4</div>
+  <h2><span class="n">一</span>兩位先知共同的異象</h2>
+  <p>《以賽亞書》2:2–4<button class="ref" data-r="Isa2:2-4">賽 2:2–4</button>與《彌迦書》4:1–3<button class="ref" data-r="Mic4:1-3">彌 4:1–3</button>都預言「末後的日子」萬民尋求耶和華的教導，神為列國斷定是非，人遂「將刀打成犁頭，把槍打成鐮刀」，不再學習戰事。</p>
+  <figure class="illus">
+    <svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="萬民從兩側山路走向山頂的殿"><defs><linearGradient id="sk2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E3EEF7"/><stop offset="1" stop-color="#FBF3E2"/></linearGradient></defs><rect width="800" height="420" fill="url(#sk2)"/><g opacity="0.35" stroke="#B8893B" stroke-width="2"><line x1="400" y1="95" x2="213" y2="62"/><line x1="400" y1="95" x2="229" y2="12"/><line x1="400" y1="95" x2="259" y2="-32"/><line x1="400" y1="95" x2="299" y2="-66"/><line x1="400" y1="95" x2="348" y2="-88"/><line x1="400" y1="95" x2="400" y2="-95"/><line x1="400" y1="95" x2="452" y2="-88"/><line x1="400" y1="95" x2="501" y2="-66"/><line x1="400" y1="95" x2="541" y2="-32"/><line x1="400" y1="95" x2="571" y2="12"/><line x1="400" y1="95" x2="587" y2="62"/></g><path d="M60,420 L250,250 L320,280 L400,120 L480,270 L560,240 L740,420Z" fill="#CBD9C0"/><path d="M378,118 L400,98 L422,118 Z" fill="#B8893B"/><rect x="382" y="118" width="36" height="22" fill="#E9D7AE" stroke="#B8893B" stroke-width="2"/><path d="M0,420 Q400,350 800,420Z" fill="#B8CBA4"/><path d="M130,400 L190,370 L240,345 L280,320 L310,290 L340,250 L365,200 L385,160" stroke="#E8DCC0" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="130" cy="362.45" r="4.95" fill="#B9562F"/><path d="M123.95,369.6 q6.050000000000001,-3.3000000000000003 12.100000000000001,0 l2.2,19.25 l-16.5,0 z" fill="#B9562F"/><rect x="125.05" y="382.91" width="3.8500000000000005" height="13.090000000000002" rx="1.1" fill="#B9562F"/><rect x="131.1" y="382.91" width="3.8500000000000005" height="13.090000000000002" rx="1.1" fill="#B9562F"/><circle cx="190" cy="335.5" r="4.5" fill="#5E8FBF"/><path d="M184.5,342.0 q5.5,-3.0 11.0,0 l2.0,17.5 l-15.0,0 z" fill="#5E8FBF"/><rect x="185.5" y="354.1" width="3.5" height="11.9" rx="1.0" fill="#5E8FBF"/><rect x="191.0" y="354.1" width="3.5" height="11.9" rx="1.0" fill="#5E8FBF"/><circle cx="240" cy="313.55" r="4.050000000000001" fill="#6F8A5A"/><path d="M235.05,319.4 q4.950000000000001,-2.7 9.900000000000002,0 l1.8000000000000003,15.750000000000002 l-13.500000000000002,0 z" fill="#6F8A5A"/><rect x="235.95" y="330.29" width="3.1500000000000004" height="10.710000000000003" rx="0.9000000000000001" fill="#6F8A5A"/><rect x="240.9" y="330.29" width="3.1500000000000004" height="10.710000000000003" rx="0.9000000000000001" fill="#6F8A5A"/><circle cx="280" cy="291.6" r="3.6" fill="#3A3328"/><path d="M275.6,296.8 q4.4,-2.4000000000000004 8.8,0 l1.6,14.0 l-12.0,0 z" fill="#3A3328"/><rect x="276.4" y="306.48" width="2.8000000000000003" height="9.520000000000001" rx="0.8" fill="#3A3328"/><rect x="280.8" y="306.48" width="2.8000000000000003" height="9.520000000000001" rx="0.8" fill="#3A3328"/><circle cx="310" cy="264.65" r="3.1500000000000004" fill="#B9562F"/><path d="M306.15,269.2 q3.8500000000000005,-2.1 7.700000000000001,0 l1.4000000000000001,12.250000000000002 l-10.500000000000002,0 z" fill="#B9562F"/><rect x="306.85" y="277.67" width="2.45" height="8.330000000000002" rx="0.7000000000000001" fill="#B9562F"/><rect x="310.7" y="277.67" width="2.45" height="8.330000000000002" rx="0.7000000000000001" fill="#B9562F"/><circle cx="340" cy="227.7" r="2.7" fill="#5E8FBF"/><path d="M336.7,231.6 q3.3000000000000007,-1.8000000000000003 6.600000000000001,0 l1.2000000000000002,10.500000000000002 l-9.000000000000002,0 z" fill="#5E8FBF"/><rect x="337.3" y="238.85999999999999" width="2.1000000000000005" height="7.1400000000000015" rx="0.6000000000000001" fill="#5E8FBF"/><rect x="340.6" y="238.85999999999999" width="2.1000000000000005" height="7.1400000000000015" rx="0.6000000000000001" fill="#5E8FBF"/><circle cx="365" cy="180.75" r="2.25" fill="#6F8A5A"/><path d="M362.25,184.0 q2.75,-1.5 5.5,0 l1.0,8.75 l-7.5,0 z" fill="#6F8A5A"/><rect x="362.75" y="190.05" width="1.75" height="5.95" rx="0.5" fill="#6F8A5A"/><rect x="365.5" y="190.05" width="1.75" height="5.95" rx="0.5" fill="#6F8A5A"/><path d="M690,405 L630,375 L580,350 L530,320 L495,285 L465,245 L440,200 L418,160" stroke="#E8DCC0" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="690" cy="367.45" r="4.95" fill="#B9562F"/><path d="M683.95,374.6 q6.050000000000001,-3.3000000000000003 12.100000000000001,0 l2.2,19.25 l-16.5,0 z" fill="#B9562F"/><rect x="685.05" y="387.91" width="3.8500000000000005" height="13.090000000000002" rx="1.1" fill="#B9562F"/><rect x="691.1" y="387.91" width="3.8500000000000005" height="13.090000000000002" rx="1.1" fill="#B9562F"/><circle cx="630" cy="340.5" r="4.5" fill="#5E8FBF"/><path d="M624.5,347.0 q5.5,-3.0 11.0,0 l2.0,17.5 l-15.0,0 z" fill="#5E8FBF"/><rect x="625.5" y="359.1" width="3.5" height="11.9" rx="1.0" fill="#5E8FBF"/><rect x="631.0" y="359.1" width="3.5" height="11.9" rx="1.0" fill="#5E8FBF"/><circle cx="580" cy="318.55" r="4.050000000000001" fill="#6F8A5A"/><path d="M575.05,324.4 q4.950000000000001,-2.7 9.900000000000002,0 l1.8000000000000003,15.750000000000002 l-13.500000000000002,0 z" fill="#6F8A5A"/><rect x="575.95" y="335.29" width="3.1500000000000004" height="10.710000000000003" rx="0.9000000000000001" fill="#6F8A5A"/><rect x="580.9" y="335.29" width="3.1500000000000004" height="10.710000000000003" rx="0.9000000000000001" fill="#6F8A5A"/><circle cx="530" cy="291.6" r="3.6" fill="#3A3328"/><path d="M525.6,296.8 q4.4,-2.4000000000000004 8.8,0 l1.6,14.0 l-12.0,0 z" fill="#3A3328"/><rect x="526.4" y="306.48" width="2.8000000000000003" height="9.520000000000001" rx="0.8" fill="#3A3328"/><rect x="530.8" y="306.48" width="2.8000000000000003" height="9.520000000000001" rx="0.8" fill="#3A3328"/><circle cx="495" cy="259.65" r="3.1500000000000004" fill="#B9562F"/><path d="M491.15,264.2 q3.8500000000000005,-2.1 7.700000000000001,0 l1.4000000000000001,12.250000000000002 l-10.500000000000002,0 z" fill="#B9562F"/><rect x="491.85" y="272.67" width="2.45" height="8.330000000000002" rx="0.7000000000000001" fill="#B9562F"/><rect x="495.7" y="272.67" width="2.45" height="8.330000000000002" rx="0.7000000000000001" fill="#B9562F"/><circle cx="465" cy="222.7" r="2.7" fill="#5E8FBF"/><path d="M461.7,226.6 q3.3000000000000007,-1.8000000000000003 6.600000000000001,0 l1.2000000000000002,10.500000000000002 l-9.000000000000002,0 z" fill="#5E8FBF"/><rect x="462.3" y="233.85999999999999" width="2.1000000000000005" height="7.1400000000000015" rx="0.6000000000000001" fill="#5E8FBF"/><rect x="465.6" y="233.85999999999999" width="2.1000000000000005" height="7.1400000000000015" rx="0.6000000000000001" fill="#5E8FBF"/><circle cx="440" cy="180.75" r="2.25" fill="#6F8A5A"/><path d="M437.25,184.0 q2.75,-1.5 5.5,0 l1.0,8.75 l-7.5,0 z" fill="#6F8A5A"/><rect x="437.75" y="190.05" width="1.75" height="5.95" rx="0.5" fill="#6F8A5A"/><rect x="440.5" y="190.05" width="1.75" height="5.95" rx="0.5" fill="#6F8A5A"/></svg>
+    <figcaption>萬民都要流歸耶和華殿的山，要領受祂的道。<button class="ref" data-r="Isa2:2-4">賽 2:2–4</button></figcaption>
+  </figure>
+  <p>這不是單靠武力平衡維持的停戰，而是有一個次序：</p>
+  <div class="pills">
+    <span class="pill">遵行神的道</span><span class="arrow">→</span>
+    <span class="pill">建立公義</span><span class="arrow">→</span>
+    <span class="pill g">實現和平</span>
+  </div>
+  <p>兩書的重點略有不同：</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>經文</th><th>特別強調</th><th>信仰意義</th></tr></thead>
+    <tbody>
+      <tr><td><button class="ref" data-r="Isa2:2-5">賽 2:2–5</button></td><td>萬民領受教導，並受邀「在耶和華的光明中行走」</td><td>和平與悔改、行義相連</td></tr>
+      <tr><td><button class="ref" data-r="Mic4:1-5">彌 4:1–5</button></td><td>人人在自家葡萄樹、無花果樹下「無人驚嚇」</td><td>公共和平必須落實為家庭與個人的安全</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">以賽亞與彌迦同為主前八世紀的先知<button class="ref" data-r="Isa1:1">賽 1:1</button><button class="ref" data-r="Mic1:1">彌 1:1</button>，但兩段平行預言究竟何者先成文，不能僅憑事奉年代斷定；也可能共同承襲較早的先知傳統。</p>
+  <div class="aside">兩位同時代的先知寫出幾乎一樣的段落，學者至今仍在討論誰「抄」誰。不過比起著作權，經文更在意的是：這異象值得被說兩次。</div>
+  <p class="takeaway">聖經的和平有次序：先有神的道與公義，才有刀劍止息。</p>
+</section>
+
+<section id="s2" class="reveal">
+  <div class="eyebrow">舊約 · 彌 4:4</div>
+  <h2><span class="n">二</span>葡萄樹與無花果樹：和平進入日常生活</h2>
+  <blockquote class="verse">人人都要坐在自己葡萄樹下和無花果樹下，無人驚嚇。<button class="ref" data-r="Mic4:4">彌 4:4</button></blockquote>
+  <p>這幅景象包含三層意思：</p>
+  <div class="steps">
+    <div class="step"><span class="k">1</span><h3>有生計</h3><p>土地與作物能供應生活。</p></div>
+    <div class="step"><span class="k">2</span><h3>有安居</h3><p>不必因侵略、剝削而流離。</p></div>
+    <div class="step"><span class="k">3</span><h3>有安息</h3><p>不再日日活在威脅之中。</p></div>
+  </div>
+  <p>此意象並非孤例：</p>
+  <div class="compare">
+    <div class="past"><h3>曾有而會失去的太平</h3><p>《列王紀上》以同樣的樹下安居，描寫所羅門時代的太平。<button class="ref" data-r="1Ki4:25">王上 4:25</button></p></div>
+    <div class="hope"><h3>延伸到鄰舍的平安</h3><p>《撒迦利亞書》描繪鄰舍彼此邀請到樹下，將平安延伸至人際和睦。<button class="ref" data-r="Zec3:10">亞 3:10</button></p></div>
+  </div>
+  <figure class="illus">
+    <svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="兩家之間的樹下，一人邀請鄰舍同坐"><defs><linearGradient id="sk3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EAF2F8"/><stop offset="1" stop-color="#FDF4E3"/></linearGradient></defs><rect width="800" height="420" fill="url(#sk3)"/><path d="M0,330 Q400,300 800,330 L800,420 L0,420Z" fill="#D6E2C2"/><path d="M60,330 L60,250 L120,205 L180,250 L180,330Z" fill="#F1E4C8" stroke="#B8893B" stroke-width="2"/><rect x="105" y="285" width="30" height="45" fill="#B9562F" opacity="0.7"/><path d="M620,330 L620,250 L680,205 L740,250 L740,330Z" fill="#F1E4C8" stroke="#B8893B" stroke-width="2"/><rect x="665" y="285" width="30" height="45" fill="#5E8FBF" opacity="0.7"/><path d="M400,335 C398,290 405,260 395,225" stroke="#7A5C3E" stroke-width="16" fill="none" stroke-linecap="round"/><g transform="translate(340,215) rotate(-40)" fill="#5F7B4C"><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(-55)"/><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(0)"/><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(55)"/><circle r="11.4"/></g><g transform="translate(370,185) rotate(1)" fill="#6F8A5A"><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(-55)"/><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(0)"/><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(55)"/><circle r="11.4"/></g><g transform="translate(405,170) rotate(-38)" fill="#5F7B4C"><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(-55)"/><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(0)"/><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(55)"/><circle r="11.4"/></g><g transform="translate(440,185) rotate(3)" fill="#6F8A5A"><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(-55)"/><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(0)"/><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(55)"/><circle r="11.4"/></g><g transform="translate(465,215) rotate(-36)" fill="#5F7B4C"><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(-55)"/><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(0)"/><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(55)"/><circle r="11.4"/></g><g transform="translate(360,240) rotate(5)" fill="#6F8A5A"><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(-55)"/><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(0)"/><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(55)"/><circle r="11.4"/></g><g transform="translate(445,240) rotate(-34)" fill="#5F7B4C"><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(-55)"/><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(0)"/><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(55)"/><circle r="11.4"/></g><g transform="translate(400,205) rotate(7)" fill="#6F8A5A"><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(-55)"/><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(0)"/><ellipse cx="0" cy="-16.5" rx="10.799999999999999" ry="18.6" transform="rotate(55)"/><circle r="11.4"/></g><rect x="330" y="318" width="140" height="8" rx="3" fill="#8C6A45"/><rect x="340" y="326" width="6" height="12" fill="#8C6A45"/><rect x="454" y="326" width="6" height="12" fill="#8C6A45"/><rect x="200" y="305" width="6" height="32" fill="#C9AE7E"/><rect x="218" y="305" width="6" height="32" fill="#C9AE7E"/><rect x="236" y="305" width="6" height="32" fill="#C9AE7E"/><rect x="254" y="305" width="6" height="32" fill="#C9AE7E"/><rect x="272" y="305" width="6" height="32" fill="#C9AE7E"/><rect x="290" y="305" width="6" height="32" fill="#C9AE7E"/><rect x="510" y="305" width="6" height="32" fill="#C9AE7E"/><rect x="528" y="305" width="6" height="32" fill="#C9AE7E"/><rect x="546" y="305" width="6" height="32" fill="#C9AE7E"/><rect x="564" y="305" width="6" height="32" fill="#C9AE7E"/><rect x="582" y="305" width="6" height="32" fill="#C9AE7E"/><rect x="600" y="305" width="6" height="32" fill="#C9AE7E"/><rect x="198" y="314" width="100" height="5" fill="#C9AE7E"/><rect x="508" y="314" width="100" height="5" fill="#C9AE7E"/><circle cx="300" cy="280.05" r="8.549999999999999" fill="#B9562F"/><path d="M289.55,292.4 q10.45,-5.699999999999999 20.9,0 l3.8,33.25 l-28.5,0 z" fill="#B9562F"/><rect x="291.45" y="315.39" width="6.6499999999999995" height="22.610000000000003" rx="1.9" fill="#B9562F"/><rect x="301.9" y="315.39" width="6.6499999999999995" height="22.610000000000003" rx="1.9" fill="#B9562F"/><path d="M308.55,296.2 l24.7,-9.5" stroke="#B9562F" stroke-width="5.699999999999999" stroke-linecap="round"/><circle cx="520" cy="280.05" r="8.549999999999999" fill="#5E8FBF"/><path d="M509.55,292.4 q10.45,-5.699999999999999 20.9,0 l3.8,33.25 l-28.5,0 z" fill="#5E8FBF"/><rect x="511.45" y="315.39" width="6.6499999999999995" height="22.610000000000003" rx="1.9" fill="#5E8FBF"/><rect x="521.9" y="315.39" width="6.6499999999999995" height="22.610000000000003" rx="1.9" fill="#5E8FBF"/></svg>
+    <figcaption>「當那日，你們各人要請鄰舍坐在葡萄樹和無花果樹下。」<button class="ref" data-r="Zec3:10">亞 3:10</button></figcaption>
+  </figure>
+  <div class="aside">樹下的座位不必訂位、不收清潔費，還附贈鄰居。這大概是聖經裡最好的「共享空間」。</div>
+  <p class="takeaway">相較於過去曾有而會失去的太平，彌迦將盼望指向神終必成全的國度。</p>
+</section>
+
+<section id="s3" class="reveal">
+  <div class="eyebrow">舊約 · 彌 2–3、6</div>
+  <h2><span class="n">三</span>和平不能脫離公義</h2>
+  <p>彌迦並未忽略當時社會的罪。他譴責有權勢者「貪圖田地就佔據」<button class="ref" data-r="Mic2:1-2">彌 2:1–2</button>，也責備領袖屈枉正直<button class="ref" data-r="Mic3:9-11">彌 3:9–11</button>。</p>
+  <figure class="illus">
+    <svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="天平兩端是田產與家屋，平衡不偏"><defs><linearGradient id="sk4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EDF2F6"/><stop offset="1" stop-color="#FBF5E8"/></linearGradient></defs><rect width="800" height="420" fill="url(#sk4)"/><path d="M0,340 L800,340 L800,420 L0,420Z" fill="#E3D9BE"/><rect x="0" y="340" width="160" height="80" fill="#E8DDB9"/><line x1="14" y1="352" x2="146" y2="352" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="14" y1="366" x2="146" y2="366" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="14" y1="380" x2="146" y2="380" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="14" y1="394" x2="146" y2="394" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="14" y1="408" x2="146" y2="408" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><path d="M-6,350 l6,-14 l6,14z" fill="#9C8F78"/><rect x="160" y="340" width="160" height="80" fill="#D7E3C0"/><line x1="174" y1="352" x2="306" y2="352" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="174" y1="366" x2="306" y2="366" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="174" y1="380" x2="306" y2="380" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="174" y1="394" x2="306" y2="394" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="174" y1="408" x2="306" y2="408" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><path d="M154,350 l6,-14 l6,14z" fill="#9C8F78"/><rect x="320" y="340" width="160" height="80" fill="#E8DDB9"/><line x1="334" y1="352" x2="466" y2="352" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="334" y1="366" x2="466" y2="366" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="334" y1="380" x2="466" y2="380" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="334" y1="394" x2="466" y2="394" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="334" y1="408" x2="466" y2="408" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><path d="M314,350 l6,-14 l6,14z" fill="#9C8F78"/><rect x="480" y="340" width="160" height="80" fill="#D7E3C0"/><line x1="494" y1="352" x2="626" y2="352" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="494" y1="366" x2="626" y2="366" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="494" y1="380" x2="626" y2="380" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="494" y1="394" x2="626" y2="394" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="494" y1="408" x2="626" y2="408" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><path d="M474,350 l6,-14 l6,14z" fill="#9C8F78"/><rect x="640" y="340" width="160" height="80" fill="#E8DDB9"/><line x1="654" y1="352" x2="786" y2="352" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="654" y1="366" x2="786" y2="366" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="654" y1="380" x2="786" y2="380" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="654" y1="394" x2="786" y2="394" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><line x1="654" y1="408" x2="786" y2="408" stroke="#BFA97A" stroke-width="1.5" opacity="0.6"/><path d="M634,350 l6,-14 l6,14z" fill="#9C8F78"/><rect x="394" y="120" width="12" height="215" fill="#B8893B"/><path d="M360,340 L440,340 L420,320 L380,320Z" fill="#B8893B"/><circle cx="400" cy="112" r="12" fill="#B8893B"/><rect x="230" y="128" width="340" height="8" rx="4" fill="#B8893B"/><line x1="250" y1="136" x2="200" y2="230" stroke="#B8893B" stroke-width="2"/><line x1="250" y1="136" x2="300" y2="230" stroke="#B8893B" stroke-width="2"/><path d="M188,230 Q250,268 312,230Z" fill="#E9D7AE" stroke="#B8893B" stroke-width="2"/><line x1="550" y1="136" x2="500" y2="230" stroke="#B8893B" stroke-width="2"/><line x1="550" y1="136" x2="600" y2="230" stroke="#B8893B" stroke-width="2"/><path d="M488,230 Q550,268 612,230Z" fill="#E9D7AE" stroke="#B8893B" stroke-width="2"/><line x1="232" y1="235" x2="226" y2="190" stroke="#6F8A5A" stroke-width="2"/><ellipse cx="226.0" cy="192" rx="3" ry="6" fill="#C9A35A"/><ellipse cx="227.5" cy="200" rx="3" ry="6" fill="#C9A35A"/><ellipse cx="229.0" cy="208" rx="3" ry="6" fill="#C9A35A"/><ellipse cx="230.5" cy="216" rx="3" ry="6" fill="#C9A35A"/><line x1="241" y1="235" x2="238" y2="190" stroke="#6F8A5A" stroke-width="2"/><ellipse cx="238.0" cy="192" rx="3" ry="6" fill="#C9A35A"/><ellipse cx="238.8" cy="200" rx="3" ry="6" fill="#C9A35A"/><ellipse cx="239.5" cy="208" rx="3" ry="6" fill="#C9A35A"/><ellipse cx="240.2" cy="216" rx="3" ry="6" fill="#C9A35A"/><line x1="250" y1="235" x2="250" y2="190" stroke="#6F8A5A" stroke-width="2"/><ellipse cx="250.0" cy="192" rx="3" ry="6" fill="#C9A35A"/><ellipse cx="250.0" cy="200" rx="3" ry="6" fill="#C9A35A"/><ellipse cx="250.0" cy="208" rx="3" ry="6" fill="#C9A35A"/><ellipse cx="250.0" cy="216" rx="3" ry="6" fill="#C9A35A"/><line x1="259" y1="235" x2="262" y2="190" stroke="#6F8A5A" stroke-width="2"/><ellipse cx="262.0" cy="192" rx="3" ry="6" fill="#C9A35A"/><ellipse cx="261.2" cy="200" rx="3" ry="6" fill="#C9A35A"/><ellipse cx="260.5" cy="208" rx="3" ry="6" fill="#C9A35A"/><ellipse cx="259.8" cy="216" rx="3" ry="6" fill="#C9A35A"/><line x1="268" y1="235" x2="274" y2="190" stroke="#6F8A5A" stroke-width="2"/><ellipse cx="274.0" cy="192" rx="3" ry="6" fill="#C9A35A"/><ellipse cx="272.5" cy="200" rx="3" ry="6" fill="#C9A35A"/><ellipse cx="271.0" cy="208" rx="3" ry="6" fill="#C9A35A"/><ellipse cx="269.5" cy="216" rx="3" ry="6" fill="#C9A35A"/><path d="M525,236 L525,205 L550,186 L575,205 L575,236Z" fill="#F1E4C8" stroke="#B9562F" stroke-width="2"/><rect x="543" y="216" width="14" height="20" fill="#B9562F" opacity="0.7"/></svg>
+    <figcaption>田地與房屋不被強奪，是「人人坐在自己樹下」的前提。<button class="ref" data-r="Mic2:1-2">彌 2:1–2</button></figcaption>
+  </figure>
+  <p>因此，「人人坐在自己的樹下」不只是田園詩意，更含有不被掠奪、尊嚴受到保障的公義要求。神的和平並非掩蓋不義，而是使不義受到糾正<button class="ref" data-r="Isa1:17">參賽 1:17</button><button class="ref" data-r="Mic6:8">彌 6:8</button>。</p>
+  <p class="takeaway">「自己的」葡萄樹——這三個字裡，有一整套公義。</p>
+</section>
+
+<section id="s4" class="reveal">
+  <div class="eyebrow">新約 · 弗 2／約 14／太 5／啟 21</div>
+  <h2><span class="n">四</span>從先知應許到基督信仰</h2>
+  <p>基督徒可從整本聖經理解這異象：</p>
+  <div class="cards">
+    <div class="card"><div class="ic" style="background:var(--gold)">根</div><div><h3>和平的根基</h3><p>耶穌基督使人與神和好，也拆毀人與人之間的隔閡<button class="ref" data-r="Eph2:14-17">弗 2:14–17</button>；這是新約對和好的重要宣告，並非宣稱彌迦原文只指某一政治制度。</p></div></div>
+    <div class="card"><div class="ic" style="background:var(--olive)">行</div><div><h3>和平的生活</h3><p>耶穌所賜的平安不同於世界所給的平安<button class="ref" data-r="Jn14:27">約 14:27</button>；信徒也蒙召使人和睦<button class="ref" data-r="Mt5:9">太 5:9</button>。</p></div></div>
+    <div class="card"><div class="ic" style="background:var(--sky)">終</div><div><h3>和平的終局</h3><p>啟示錄描繪神除去死亡、悲哀、哭號和疼痛<button class="ref" data-r="Rev21:4">啟 21:4</button>，與先知對無懼生活的盼望彼此呼應。</p></div></div>
+  </div>
+  <figure class="illus">
+    <svg viewBox="0 130 800 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="中間隔斷的牆倒塌，兩人從缺口相遇"><defs><linearGradient id="sk5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6EFF8"/><stop offset="1" stop-color="#FCF3E0"/></linearGradient><radialGradient id="gl5"><stop offset="0" stop-color="#FFF1C2"/><stop offset="1" stop-color="#FFF1C2" stop-opacity="0"/></radialGradient></defs><rect width="800" height="420" fill="url(#sk5)"/><path d="M0,340 L800,340 L800,420 L0,420Z" fill="#D9E3C6"/><ellipse cx="400" cy="250" rx="140" ry="170" fill="url(#gl5)"/><rect x="0" y="180" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="60" y="180" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="120" y="180" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="180" y="180" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="240" y="180" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="300" y="180" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="480" y="180" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="540" y="180" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="600" y="180" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="660" y="180" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="720" y="180" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="780" y="180" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="-30" y="206" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="30" y="206" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="90" y="206" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="150" y="206" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="210" y="206" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="270" y="206" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="510" y="206" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="570" y="206" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="630" y="206" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="690" y="206" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="750" y="206" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="0" y="232" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="60" y="232" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="120" y="232" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="180" y="232" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="240" y="232" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="300" y="232" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="480" y="232" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="540" y="232" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="600" y="232" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="660" y="232" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="720" y="232" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="780" y="232" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="-30" y="258" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="30" y="258" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="90" y="258" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="150" y="258" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="210" y="258" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="270" y="258" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="510" y="258" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="570" y="258" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="630" y="258" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="690" y="258" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="750" y="258" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="0" y="284" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="60" y="284" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="120" y="284" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="180" y="284" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="240" y="284" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="300" y="284" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="480" y="284" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="540" y="284" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="600" y="284" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="660" y="284" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="720" y="284" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="780" y="284" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="-30" y="310" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="30" y="310" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="90" y="310" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="150" y="310" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="210" y="310" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="270" y="310" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="330" y="310" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="450" y="310" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="510" y="310" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="570" y="310" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="630" y="310" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="690" y="310" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="750" y="310" width="56" height="22" rx="2" fill="#D8C7A4" stroke="#B9A57E"/><rect x="350" y="316" width="26" height="14" rx="2" fill="#CDBA93" transform="rotate(12 350 330)"/><rect x="395" y="320" width="31" height="14" rx="2" fill="#CDBA93" transform="rotate(22 395 334)"/><rect x="440" y="314" width="24" height="14" rx="2" fill="#CDBA93" transform="rotate(8 440 328)"/><rect x="470" y="322" width="27" height="14" rx="2" fill="#CDBA93" transform="rotate(14 470 336)"/><rect x="330" y="322" width="29" height="14" rx="2" fill="#CDBA93" transform="rotate(18 330 336)"/><circle cx="355" cy="286.15" r="7.6499999999999995" fill="#B9562F"/><path d="M345.65,297.2 q9.35,-5.1 18.7,0 l3.4,29.75 l-25.5,0 z" fill="#B9562F"/><rect x="347.35" y="317.77" width="5.95" height="20.23" rx="1.7" fill="#B9562F"/><rect x="356.7" y="317.77" width="5.95" height="20.23" rx="1.7" fill="#B9562F"/><circle cx="445" cy="286.15" r="7.6499999999999995" fill="#5E8FBF"/><path d="M435.65,297.2 q9.35,-5.1 18.7,0 l3.4,29.75 l-25.5,0 z" fill="#5E8FBF"/><rect x="437.35" y="317.77" width="5.95" height="20.23" rx="1.7" fill="#5E8FBF"/><rect x="446.7" y="317.77" width="5.95" height="20.23" rx="1.7" fill="#5E8FBF"/></svg>
+    <figcaption>「他使我們和睦……拆毀了中間隔斷的牆。」<button class="ref" data-r="Eph2:14-17">弗 2:14</button></figcaption>
+  </figure>
+  <p class="takeaway">這些經文呈現從當下活出公義與和睦，到將來完全更新的張力；不宜把末世應許簡化成某項現世政策已經實現。</p>
+</section>
+
+<section id="s5" class="reveal">
+  <div class="eyebrow">應用</div>
+  <h2><span class="n">五</span>今日的省思</h2>
+  <figure class="illus">
+    <svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="刀與槍在鐵砧上被打成犁頭與鐮刀"><defs><linearGradient id="sk6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ECF1F6"/><stop offset="1" stop-color="#FBF4E6"/></linearGradient></defs><rect width="800" height="420" fill="url(#sk6)"/><path d="M0,350 L800,350 L800,420 L0,420Z" fill="#E6DBC0"/><g transform="translate(120,90) rotate(20)"><path d="M0,0 L10,0 L10,170 L5,190 L0,170Z" fill="#A9AFB5"/><rect x="-18" y="170" width="46" height="8" rx="3" fill="#7D7F82"/><rect x="0" y="178" width="10" height="40" rx="3" fill="#6E5A44"/></g><g transform="translate(200,60) rotate(-12)"><rect x="0" y="40" width="6" height="250" fill="#8C6A45"/><path d="M3,0 L13,40 L-7,40Z" fill="#A9AFB5"/></g><path d="M330,290 L470,290 L455,310 L345,310Z" fill="#5A5148"/><rect x="370" y="310" width="60" height="40" fill="#4A433C"/><path d="M320,270 L480,270 L470,290 L330,290Z" fill="#6A6056"/><g transform="rotate(-30 430 200)"><rect x="425" y="160" width="10" height="90" rx="3" fill="#8C6A45"/><rect x="405" y="148" width="50" height="22" rx="4" fill="#5A5148"/></g><line x1="379" y1="254" x2="351" y2="244" stroke="#B8893B" stroke-width="3" stroke-linecap="round"/><line x1="383" y1="248" x2="360" y2="229" stroke="#B8893B" stroke-width="3" stroke-linecap="round"/><line x1="389" y1="243" x2="374" y2="217" stroke="#B8893B" stroke-width="3" stroke-linecap="round"/><line x1="396" y1="240" x2="391" y2="211" stroke="#B8893B" stroke-width="3" stroke-linecap="round"/><line x1="404" y1="240" x2="409" y2="211" stroke="#B8893B" stroke-width="3" stroke-linecap="round"/><line x1="411" y1="243" x2="426" y2="217" stroke="#B8893B" stroke-width="3" stroke-linecap="round"/><line x1="417" y1="248" x2="440" y2="229" stroke="#B8893B" stroke-width="3" stroke-linecap="round"/><line x1="421" y1="254" x2="449" y2="244" stroke="#B8893B" stroke-width="3" stroke-linecap="round"/><path d="M270,200 Q330,170 300,230" stroke="#B8893B" stroke-width="0" fill="none"/><path d="M490,230 C520,200 540,200 565,215" stroke="#B8893B" stroke-width="3" fill="none" stroke-dasharray="6 6"/><path d="M565,215 l-12,-2 l6,10z" fill="#B8893B"/><path d="M600,300 L660,250 L700,300 L660,315Z" fill="#9AA0A6" stroke="#6E7378" stroke-width="2"/><rect x="655" y="190" width="8" height="70" rx="3" fill="#8C6A45" transform="rotate(25 659 250)"/><path d="M700,150 C760,150 770,220 720,240 C745,210 735,170 700,170Z" fill="#9AA0A6"/><rect x="694" y="165" width="8" height="120" rx="3" fill="#8C6A45" transform="rotate(-8 698 225)"/><path d="M600,350 q-2,-14 -10,-20 M600,350 q2,-14 10,-22 M600,350 l0,-24" stroke="#6F8A5A" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M625,350 q-2,-14 -10,-20 M625,350 q2,-14 10,-22 M625,350 l0,-24" stroke="#6F8A5A" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M650,350 q-2,-14 -10,-20 M650,350 q2,-14 10,-22 M650,350 l0,-24" stroke="#6F8A5A" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M740,350 q-2,-14 -10,-20 M740,350 q2,-14 10,-22 M740,350 l0,-24" stroke="#6F8A5A" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M765,350 q-2,-14 -10,-20 M765,350 q2,-14 10,-22 M765,350 l0,-24" stroke="#6F8A5A" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+    <figcaption>「他們要將刀打成犁頭，把槍打成鐮刀。」<button class="ref" data-r="Isa2:2-4">賽 2:4</button></figcaption>
+  </figure>
+  <p>「刀打成犁頭」象徵毀滅性的力量轉向滋養生命；「葡萄樹與無花果樹」則提醒我們，真正的和平要看三件事：</p>
+  <div class="pills">
+    <span class="pill">弱勢者能否免於恐懼</span>
+    <span class="pill">家庭能否安居</span>
+    <span class="pill">鄰里能否互相信任</span>
+  </div>
+  <div class="aside">從刀到犁頭，大概是人類史上最值得的「產品轉型」：原料不變，用途從收割人命改成收割麥子。</div>
+  <p class="takeaway">信仰不只盼望遠方的和平，也要求今日按公義、憐憫與謙卑行事。<button class="ref" data-r="Mic6:8">彌 6:8</button></p>
+</section>
+
+<section id="refs" class="refs reveal">
+  <div class="eyebrow">可溯源</div>
+  <h2>經文與參考資料</h2>
+  <h3>本頁引用經文（依出現順序，點連結到 Bible Gateway）</h3>
+  <ol id="refList"></ol>
+  <h3>和合本線上資源</h3>
+  <ol>
+    <li><a href="https://bible.fhl.net/" target="_blank" rel="noopener">信望愛站 · 線上聖經（和合本）</a></li>
+    <li><a href="https://www.biblegateway.com/versions/Chinese-Union-Version-Modern-Punctuation-Bible/" target="_blank" rel="noopener">Bible Gateway · 新標點和合本</a></li>
+  </ol>
+  <h3>釋經參考</h3>
+  <ol>
+    <li><a href="https://biblehub.com/micah/4-4.htm" target="_blank" rel="noopener">Bible Hub · Micah 4:4 commentary and cross references</a>（跨經卷背景與釋經參考）</li>
+  </ol>
+  <p class="note"><b>閱讀說明：</b>引號內為和合本經文短引；其餘為綜合經文的解釋與應用。關於兩卷書平行段落的先後及來源，屬有爭議的歷史研究問題，不宜作絕對判斷。</p>
+</section>
+</main>
+
+<footer><span data-cfg="title">葡萄樹與無花果樹</span> · 經文引自《和合本》（新標點，公有領域）</footer>
+
+<dialog id="dlg" aria-labelledby="dlgT">
+  <div class="hd"><div><b id="dlgT"></b><small id="dlgV"></small></div><button class="x" aria-label="關閉" onclick="dlg.close()">×</button></div>
+  <div class="bd" id="dlgB"></div>
+  <div class="ft" id="dlgF"></div>
+</dialog>
+
+<script>
+const CFG = Object.assign({
+  title: (document.querySelector("h1")||{}).textContent || document.title, subtitle: "", eyebrow: "", tabTitle: document.title,
+  description: "", bibleVersion: "CUVMPT"
+}, window.SITE_CONFIG || {});
+(function applyConfig(c){
+  document.title = c.tabTitle || c.title;
+  const setMeta = (sel, v) => { const m = document.querySelector(sel); if (m && v) m.setAttribute("content", v); };
+  setMeta('meta[name="description"]', c.description);
+  setMeta('meta[property="og:title"]', c.tabTitle || c.title);
+  setMeta('meta[property="og:description"]', c.description);
+  document.querySelectorAll("[data-cfg]").forEach(el => { const v = c[el.dataset.cfg]; if (v) el.textContent = v; });
+  document.querySelectorAll("[data-cfg-html]").forEach(el => { const v = c[el.dataset.cfgHtml]; if (v) el.innerHTML = v; });
+})(CFG);
+
+/* 經文資料：和合本（新標點）。t 內以「⟨節⟩」標節號。 */
+const V = {
+ "Isa2:2-4": {
+  "zh": "以賽亞書 2:2–4",
+  "en": "Isaiah 2:2-4",
+  "t": "⟨2⟩末後的日子，耶和華殿的山必堅立，超乎諸山，高舉過於萬嶺；萬民都要流歸這山。\n⟨3⟩必有許多國的民前往，說：來吧！我們登耶和華的山，奔雅各神的殿。主必將他的道教訓我們；我們也要行他的路。因為訓誨必出於錫安；耶和華的言語必出於耶路撒冷。\n⟨4⟩他必在列國中施行審判，為許多國民斷定是非。他們要將刀打成犁頭，把槍打成鐮刀。這國不舉刀攻擊那國；他們也不再學習戰事。"
+ },
+ "Isa2:2-5": {
+  "zh": "以賽亞書 2:2–5",
+  "en": "Isaiah 2:2-5",
+  "t": "⟨2⟩末後的日子，耶和華殿的山必堅立，超乎諸山，高舉過於萬嶺；萬民都要流歸這山。\n⟨3⟩必有許多國的民前往，說：來吧！我們登耶和華的山，奔雅各神的殿。主必將他的道教訓我們；我們也要行他的路。因為訓誨必出於錫安；耶和華的言語必出於耶路撒冷。\n⟨4⟩他必在列國中施行審判，為許多國民斷定是非。他們要將刀打成犁頭，把槍打成鐮刀。這國不舉刀攻擊那國；他們也不再學習戰事。\n⟨5⟩雅各家啊，來吧！我們在耶和華的光明中行走。"
+ },
+ "Mic4:1-3": {
+  "zh": "彌迦書 4:1–3",
+  "en": "Micah 4:1-3",
+  "t": "⟨1⟩末後的日子，耶和華殿的山必堅立，超乎諸山，高舉過於萬嶺；萬民都要流歸這山。\n⟨2⟩必有許多國的民前往，說：來吧！我們登耶和華的山，奔雅各神的殿；主必將他的道教導我們；我們也要行他的路。因為訓誨必出於錫安；耶和華的言語必出於耶路撒冷。\n⟨3⟩他必在多國的民中施行審判，為遠方強盛的國斷定是非。他們要將刀打成犁頭，把槍打成鐮刀。這國不舉刀攻擊那國；他們也不再學習戰事。"
+ },
+ "Mic4:1-5": {
+  "zh": "彌迦書 4:1–5",
+  "en": "Micah 4:1-5",
+  "t": "⟨1⟩末後的日子，耶和華殿的山必堅立，超乎諸山，高舉過於萬嶺；萬民都要流歸這山。\n⟨2⟩必有許多國的民前往，說：來吧！我們登耶和華的山，奔雅各神的殿；主必將他的道教導我們；我們也要行他的路。因為訓誨必出於錫安；耶和華的言語必出於耶路撒冷。\n⟨3⟩他必在多國的民中施行審判，為遠方強盛的國斷定是非。他們要將刀打成犁頭，把槍打成鐮刀。這國不舉刀攻擊那國；他們也不再學習戰事。\n⟨4⟩人人都要坐在自己葡萄樹下和無花果樹下，無人驚嚇。這是萬軍之耶和華親口說的。\n⟨5⟩萬民各奉己神的名而行；我們卻永永遠遠奉耶和華─我們神的名而行。"
+ },
+ "Mic4:4": {
+  "zh": "彌迦書 4:4",
+  "en": "Micah 4:4",
+  "t": "⟨4⟩人人都要坐在自己葡萄樹下和無花果樹下，無人驚嚇。這是萬軍之耶和華親口說的。"
+ },
+ "Isa1:1": {
+  "zh": "以賽亞書 1:1",
+  "en": "Isaiah 1:1",
+  "t": "⟨1⟩當烏西雅、約坦、亞哈斯、希西家作猶大王的時候，亞摩斯的兒子以賽亞得默示，論到猶大和耶路撒冷。"
+ },
+ "Mic1:1": {
+  "zh": "彌迦書 1:1",
+  "en": "Micah 1:1",
+  "t": "⟨1⟩當猶大王約坦、亞哈斯、希西家在位的時候，耶和華的話臨到摩利沙人彌迦，就是他得默示論撒馬利亞和耶路撒冷的話。"
+ },
+ "1Ki4:25": {
+  "zh": "列王紀上 4:25",
+  "en": "1 Kings 4:25",
+  "t": "⟨25⟩所羅門在世的日子，從但到別是巴的猶大人和以色列人都在自己的葡萄樹下和無花果樹下安然居住。"
+ },
+ "Zec3:10": {
+  "zh": "撒迦利亞書 3:10",
+  "en": "Zechariah 3:10",
+  "t": "⟨10⟩萬軍之耶和華說：當那日，你們各人要請鄰舍坐在葡萄樹和無花果樹下。"
+ },
+ "Mic2:1-2": {
+  "zh": "彌迦書 2:1–2",
+  "en": "Micah 2:1-2",
+  "t": "⟨1⟩禍哉！那些在床上圖謀罪孽、造作奸惡的，天一發亮，因手有能力就行出來了。\n⟨2⟩他們貪圖田地就佔據，貪圖房屋便奪取；他們欺壓人，霸佔房屋和產業。"
+ },
+ "Mic3:9-11": {
+  "zh": "彌迦書 3:9–11",
+  "en": "Micah 3:9-11",
+  "t": "⟨9⟩雅各家的首領、以色列家的官長啊，當聽我的話！你們厭惡公平，在一切事上屈枉正直；\n⟨10⟩以人血建立錫安，以罪孽建造耶路撒冷。\n⟨11⟩首領為賄賂行審判；祭司為雇價施訓誨；先知為銀錢行占卜。他們卻倚賴耶和華，說：耶和華不是在我們中間嗎？災禍必不臨到我們。"
+ },
+ "Isa1:17": {
+  "zh": "以賽亞書 1:17",
+  "en": "Isaiah 1:17",
+  "t": "⟨17⟩學習行善，尋求公平，解救受欺壓的；給孤兒伸冤，為寡婦辨屈。"
+ },
+ "Mic6:8": {
+  "zh": "彌迦書 6:8",
+  "en": "Micah 6:8",
+  "t": "⟨8⟩世人哪，耶和華已指示你何為善。他向你所要的是甚麼呢？只要你行公義，好憐憫，存謙卑的心，與你的神同行。"
+ },
+ "Eph2:14-17": {
+  "zh": "以弗所書 2:14–17",
+  "en": "Ephesians 2:14-17",
+  "t": "⟨14⟩因他使我們和睦，將兩下合而為一，拆毀了中間隔斷的牆；\n⟨15⟩而且以自己的身體廢掉冤仇，就是那記在律法上的規條，為要將兩下藉著自己造成一個新人，如此便成就了和睦。\n⟨16⟩既在十字架上滅了冤仇，便藉這十字架使兩下歸為一體，與神和好了，\n⟨17⟩並且來傳和平的福音給你們遠處的人，也給那近處的人。"
+ },
+ "Jn14:27": {
+  "zh": "約翰福音 14:27",
+  "en": "John 14:27",
+  "t": "⟨27⟩我留下平安給你們；我將我的平安賜給你們。我所賜的，不像世人所賜的。你們心裡不要憂愁，也不要膽怯。"
+ },
+ "Mt5:9": {
+  "zh": "馬太福音 5:9",
+  "en": "Matthew 5:9",
+  "t": "⟨9⟩使人和睦的人有福了！因為他們必稱為神的兒子。"
+ },
+ "Rev21:4": {
+  "zh": "啟示錄 21:4",
+  "en": "Revelation 21:4",
+  "t": "⟨4⟩神要擦去他們一切的眼淚；不再有死亡，也不再有悲哀、哭號、疼痛，因為以前的事都過去了。"
+ }
+};
+
+const bg = (en, ver) => `https://www.biblegateway.com/passage/?search=${encodeURIComponent(en)}&version=${ver}`;
+const dlg = document.getElementById("dlg");
+function fmt(t){ return t.replace(/⟨(\d+)⟩/g, '<sup>$1</sup>'); }
+function openRef(k){
+  const v = V[k]; if(!v) return;
+  document.getElementById("dlgT").textContent = v.zh;
+  document.getElementById("dlgV").textContent = v.ver || "和合本";
+  document.getElementById("dlgB").innerHTML = fmt(v.t);
+  const f = document.getElementById("dlgF");
+  if (v.links) f.innerHTML = v.links.map(([n,u]) => `<a href="${u}" target="_blank" rel="noopener">${n}</a>`).join("");
+  else f.innerHTML = `<span>查看原文：</span><a href="${bg(v.en, CFG.bibleVersion)}" target="_blank" rel="noopener">Bible Gateway（${CFG.bibleVersion}）</a>`
+    + `<a href="${bg(v.en,'CUV')}" target="_blank" rel="noopener">CUV</a><a href="${bg(v.en,'KJV')}" target="_blank" rel="noopener">KJV</a>`;
+  dlg.showModal();
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("button.ref"); if (b) openRef(b.dataset.r);
+  if (e.target === dlg) dlg.close();
+});
+/* 參考資料：依出現順序自動去重 */
+(function(){
+  const seen = new Set(), ol = document.getElementById("refList");
+  document.querySelectorAll("main button.ref").forEach(b => {
+    const k = b.dataset.r; if (seen.has(k) || !V[k] || b.closest("#refs")) return; seen.add(k);
+    const v = V[k], li = document.createElement("li");
+    li.innerHTML = `${v.zh}：<a href="${bg(v.en, CFG.bibleVersion)}" target="_blank" rel="noopener">${v.en}</a>`;
+    ol.appendChild(li);
+  });
+})();
+/* 進度條與淡入 */
+const bar = document.getElementById("progress");
+addEventListener("scroll", () => {
+  const h = document.documentElement; bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + "%";
+}, {passive:true});
+if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("on"); io.unobserve(e.target); } }), {threshold:.08});
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+} else document.querySelectorAll(".reveal").forEach(el => el.classList.add("on"));
+</script>
+</body>
+</html>
