@@ -27,6 +27,11 @@ window.SITE_CONFIG = {
    url: "https://www.gungho.idv.tw/fellowship/vine-and-fig/",
 },
 {
+  title: "四活物：在寶座前學習敬拜",
+  subtitle: "以西結書與啟示錄讀經心得",
+  url: "https://www.gungho.idv.tw/fellowship/four-living-creatures/",
+},    
+{
   "title": "聖經中的苦難與神的教導",
   "subtitle": "不急著解釋，先學會同在：從約伯、生來瞎眼的人，到十字架與新天新地",
   url: "https://www.gungho.idv.tw/fellowship/suffer-teach/",
