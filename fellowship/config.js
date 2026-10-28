@@ -21,7 +21,12 @@ window.SITE_CONFIG = {
   notesHeading: "讀經筆記",
 
   notes: [
- {
+{
+  "title": "葡萄樹與無花果樹",
+  "subtitle": "聖經所描繪的和平，不只是戰爭止息，更是神以公義治理，使人能安居、免於恐懼，並與鄰舍共享平安。",
+   url: "https://www.gungho.idv.tw/fellowship/vine-and-fig/",
+},
+{
   "title": "聖經中的苦難與神的教導",
   "subtitle": "不急著解釋，先學會同在：從約伯、生來瞎眼的人，到十字架與新天新地",
   url: "https://www.gungho.idv.tw/fellowship/suffer-teach/",
