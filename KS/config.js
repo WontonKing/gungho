@@ -68,6 +68,8 @@ window.SCHOOL_TOPICS = [
 ,{ title:'家裡怎麼擺，全家更安心？', description:'擁擠、噪音、採光和動線會影響生活壓力，家人互動也決定空間怎麼用。附居家安全分區檢核清單與家庭會議兩週試行卡。', category:'樂活空間', url:'/KS/HOMESAFE/', date:'2026-10-25' }
 ,{ title:'一句話傷人，怎麼說才能修復？', description:'認識傷關係的四種溝通模式與解方，用事實、感受、請求重新說話。附換句話說練習、修復句組合器與二十分鐘暫停計時器。', category:'家庭婚姻', url:'/KS/REPAIR/', date:'2026-10-25' }
 ,{ title:'錢的壓力，也會壓到健康嗎？', description:'還不出的債務和憂鬱、主觀健康較差有關，但因果複雜。整理研究證據與三類財務風險，附現金緩衝試算與每月財務健檢清單。', category:'退休理財', url:'/KS/FINSTRESS/', date:'2026-10-25' }
+,{ title: '繼承的房子有貸款，怎麼辦？', description: '家人留下有房貸或幫人擔保的房子，要不要自己還？白話整理限定責任、抵押權、遺產稅扣除與拋棄繼承，附試算與處理清單。', category: '退休理財', url: '/KS/ESTMORT/', date: '2026-10-30' }
+
    
    // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/', date: '日期XXXX-XX-XX' }
 ];
