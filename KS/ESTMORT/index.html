@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2455c7">
+<title>繼承的房子有貸款，怎麼辦？｜共好小學堂</title>
+<meta name="description" content="家人過世留下有房貸或抵押的房子，繼承人要不要用自己的錢還？用白話整理概括繼承、限定責任、抵押權、物上保證、遺產稅扣除、拋棄繼承與遺產清冊，附試算與檢核清單。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/ESTMORT/">
+<meta property="og:title" content="繼承的房子有貸款，怎麼辦？｜共好小學堂">
+<meta property="og:description" content="房子會不會被拍？要不要拿自己的錢還？一次看懂繼承與抵押權的重點。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/ESTMORT/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 130'%3E%3Cpath d='M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z' fill='%235ad6a4' stroke='%231f2a44' stroke-width='4'/%3E%3Cpath d='M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z' fill='%237ee3b8' stroke='%231f2a44' stroke-width='4'/%3E%3Cellipse cx='60' cy='88' rx='40' ry='38' fill='%237ee3b8' stroke='%231f2a44' stroke-width='4'/%3E%3Ccircle cx='46' cy='84' r='5' fill='%231f2a44'/%3E%3Ccircle cx='74' cy='84' r='5' fill='%231f2a44'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c;  --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff;  --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7;
+  --r:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden}
+h1,h2,h3,.hn{font-family:"Huninn","Noto Sans TC",sans-serif;font-weight:400;line-height:1.35}
+a{color:var(--blue)}
+img,svg{max-width:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.hl{background:linear-gradient(transparent 58%,var(--sun) 58%,var(--sun) 92%,transparent 92%);padding:0 .1em;white-space:nowrap}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* top bar */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.94);backdrop-filter:blur(6px);border-bottom:3px solid var(--ink)}
+.topbar .wrap{display:flex;align-items:center;gap:14px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex-shrink:0}
+.brand svg{width:38px;height:40px}
+.brand b{font-family:"Huninn",sans-serif;font-weight:400;font-size:19px;display:block;line-height:1.1}
+.brand small{font-size:10px;letter-spacing:.14em;color:var(--ink-2);display:block}
+.navpills{display:flex;gap:6px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.navpills::-webkit-scrollbar{display:none}
+.navpills a{flex-shrink:0;font-size:13.5px;text-decoration:none;color:var(--ink);border:2px solid var(--ink);border-radius:99px;padding:3px 11px;background:#fff;white-space:nowrap}
+.navpills a:hover{background:var(--sun-l)}
+.backbtn{flex-shrink:0;font-size:14px;font-weight:700;text-decoration:none;color:#fff;background:var(--blue);border:2px solid var(--ink);border-radius:99px;padding:5px 14px;box-shadow:0 3px 0 var(--ink);white-space:nowrap}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:54px 0 90px;background:linear-gradient(180deg,var(--blue-l),var(--bg))}
+.hero .blob{position:absolute;border-radius:50%;opacity:.55}
+.b1{width:300px;height:300px;background:var(--sun-l);top:-80px;left:-90px}
+.b2{width:220px;height:220px;background:var(--mint-l);bottom:30px;right:-60px}
+.b3{width:140px;height:140px;background:var(--coral-l);top:40px;right:30%}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.tag{display:inline-block;background:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:3px 14px;font-weight:700;font-size:14px;box-shadow:3px 3px 0 var(--sun)}
+.hero h1{font-size:46px;margin:18px 0 14px}
+.hero p.lead{font-size:18.5px;color:var(--ink-2);margin:0 0 24px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;border:3px solid var(--ink);border-radius:16px;padding:10px 20px;box-shadow:0 4px 0 var(--ink);color:var(--ink);background:#fff;transition:transform .12s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--sun)}
+.heroart{position:relative}
+.heroart svg.scene{width:100%;height:auto;display:block}
+.float{animation:float 4.5s ease-in-out infinite}
+.float.d2{animation-delay:-1.5s}.float.d3{animation-delay:-3s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:60px}
+
+/* sections */
+section{padding:62px 0;position:relative}
+section.tint{background:linear-gradient(180deg,var(--tint,#fff),var(--bg))}
+.shead{display:flex;align-items:center;gap:16px;margin-bottom:24px}
+.num{flex-shrink:0;width:58px;height:58px;border:3px solid var(--ink);border-radius:16px;display:grid;place-items:center;font-family:"Huninn",sans-serif;font-size:28px;color:#fff;background:var(--c,var(--blue));transform:rotate(-6deg);box-shadow:4px 4px 0 var(--ink)}
+.eyebrow{font-size:12.5px;letter-spacing:.18em;color:var(--c,var(--blue));font-weight:900;text-transform:uppercase;display:block}
+.shead h2{margin:2px 0 0;font-size:31px}
+.card{background:#fff;border:3px solid var(--ink);border-radius:var(--r);padding:22px 24px;box-shadow:0 5px 0 var(--ink);min-width:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.grid2>*,.grid3>*,.grid4>*{min-width:0}
+.card h3{margin:0 0 8px;font-size:21px}
+.card p{margin:0}
+.ico{width:96px;height:96px;display:block;margin:0 auto 10px}
+.center{text-align:center}
+.dash{border:0;border-top:3px dashed var(--line);margin:30px 0}
+.pt{margin-top:14px;font-weight:700;border-top:2px dashed var(--line);padding-top:10px}
+.lawbox{background:var(--blue-l);border:3px solid var(--ink);border-radius:var(--r);padding:20px 24px;position:relative;margin-bottom:22px}
+.lawbox .lbl{position:absolute;top:-15px;left:20px;background:var(--blue);color:#fff;border:2.5px solid var(--ink);border-radius:10px;padding:0 12px;font-size:14px;font-weight:700}
+.src{display:inline-block;font-size:12px;font-weight:700;text-decoration:none;background:var(--sky-l);color:var(--blue-d);border:1.5px solid var(--blue);border-radius:99px;padding:0 8px;margin:0 2px;line-height:1.7;vertical-align:2px;white-space:nowrap}
+.src:hover{background:var(--sun-l)}
+ul.dots{padding-left:1.2em;margin:8px 0 0}
+ul.dots li{margin:4px 0}
+
+/* talk */
+.talk{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pal{display:flex;flex-direction:column;align-items:center;gap:8px;min-width:0}
+.pal svg{width:96px;height:96px}
+.bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:14px 18px;font-family:"Huninn","Noto Sans TC",sans-serif;font-size:17px;box-shadow:4px 4px 0 var(--sun);width:100%}
+.bubble::after{content:"";position:absolute;top:-13px;left:50%;margin-left:-10px;border:10px solid transparent;border-bottom-color:var(--ink);border-top:0}
+.bubble b{color:var(--coral)}
+.warnline{margin-top:22px;background:var(--coral-l);border:3px dashed var(--coral);border-radius:18px;padding:14px 20px;font-weight:700}
+
+/* concept bars */
+.cbar{margin:10px 0 4px}
+.cbar .row{display:flex;align-items:center;gap:10px;margin:8px 0}
+.cbar .lab{width:92px;flex-shrink:0;font-weight:700;font-size:15px}
+.cbar .track{flex:1;height:30px;border:2.5px solid var(--ink);border-radius:12px;background:#f4f6fb;overflow:hidden;position:relative;min-width:0}
+.cbar .fill{height:100%;border-right:2.5px solid var(--ink);transition:width .35s}
+.cbar .val{width:96px;flex-shrink:0;text-align:right;font-family:"Huninn",sans-serif;font-size:15px}
+.f-asset{background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 10px,#4fd1a5 10px,#4fd1a5 20px)}
+.f-debt{background:repeating-linear-gradient(45deg,var(--coral),var(--coral) 10px,#ff8a8a 10px,#ff8a8a 20px)}
+.f-own{background:repeating-linear-gradient(45deg,var(--sky),var(--sky) 10px,#6dc8ff 10px,#6dc8ff 20px)}
+
+/* outcome cards */
+.oc{position:relative;padding-top:30px}
+.badge{position:absolute;top:-16px;left:18px;background:var(--c);color:#fff;border:2.5px solid var(--ink);border-radius:12px;padding:1px 12px;font-weight:700;font-size:14px;transform:rotate(-3deg)}
+
+/* tabs */
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.tabs button{font:inherit;font-weight:700;font-size:16px;cursor:pointer;border:3px solid var(--ink);border-radius:16px;padding:8px 16px;background:#fff;color:var(--ink);box-shadow:0 4px 0 var(--ink)}
+.tabs button[aria-selected="true"]{background:var(--orange);color:#fff;transform:translateY(2px);box-shadow:0 2px 0 var(--ink)}
+.panel{display:none}
+.panel.on{display:block}
+.panel .card{border-color:var(--ink)}
+.subh{font-family:"Huninn",sans-serif;font-size:19px;margin:16px 0 4px;color:var(--orange)}
+.note{background:var(--orange-l);border-radius:14px;padding:10px 16px;margin-top:14px;font-size:15.5px}
+
+/* big table */
+.tblw{overflow-x:auto;border:3px solid var(--ink);border-radius:var(--r);box-shadow:0 5px 0 var(--ink);background:#fff}
+table.cmp{border-collapse:collapse;width:100%;min-width:620px;font-size:16px}
+table.cmp th,table.cmp td{padding:12px 14px;border-bottom:2px solid var(--line);text-align:left;vertical-align:top}
+table.cmp thead th{color:#fff;font-family:"Huninn",sans-serif;font-weight:400;font-size:17px}
+table.cmp thead th:nth-child(1){background:var(--ink)}
+table.cmp thead th:nth-child(2){background:var(--grape)}
+table.cmp thead th:nth-child(3){background:var(--mint)}
+table.cmp tbody th{background:var(--grape-l);width:140px}
+table.cmp tr:last-child td,table.cmp tr:last-child th{border-bottom:0}
+
+/* timeline */
+.tl{position:relative;padding-left:0;list-style:none;margin:0}
+.tl li{position:relative;padding:0 0 22px 64px}
+.tl li::before{content:"";position:absolute;left:21px;top:40px;bottom:0;border-left:3px dashed var(--sky)}
+.tl li:last-child::before{display:none}
+.tl .dot{position:absolute;left:0;top:0;width:46px;height:46px;border-radius:50%;background:var(--sky);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-family:"Huninn",sans-serif;font-size:20px;box-shadow:0 3px 0 var(--ink)}
+.tl h3{margin:4px 0 4px;font-size:19px}
+.tl p{margin:0}
+
+/* myths */
+.myth{display:grid;grid-template-columns:1fr 1fr;gap:0;border:3px solid var(--ink);border-radius:var(--r);overflow:hidden;box-shadow:0 5px 0 var(--ink);margin-bottom:16px;background:#fff}
+.myth>div{padding:14px 18px;min-width:0}
+.myth .no{background:var(--coral-l);border-right:3px dashed var(--ink)}
+.myth .yes{background:var(--mint-l)}
+.myth .k{display:block;font-weight:900;font-size:13px;letter-spacing:.1em}
+.myth .no .k{color:#d64545}.myth .yes .k{color:#14855f}
+
+/* tool */
+.tool{background:#fff;border:3px solid var(--ink);border-radius:var(--r);box-shadow:6px 6px 0 var(--sun);padding:24px}
+.slider{margin:14px 0}
+.slider label{display:flex;justify-content:space-between;font-weight:700;gap:10px;flex-wrap:wrap}
+.slider label output{font-family:"Huninn",sans-serif;color:var(--blue)}
+input[type=range]{width:100%;accent-color:var(--blue);height:28px}
+.result{margin-top:16px;border:3px dashed var(--ink);border-radius:18px;padding:14px 18px;background:var(--sky-l);font-weight:500}
+.result b{font-family:"Huninn",sans-serif;font-weight:400;font-size:19px}
+.assume{font-size:14px;color:var(--ink-2);margin-top:10px}
+.rolepick{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.rolepick button{font:inherit;font-size:15px;cursor:pointer;border:2.5px solid var(--ink);border-radius:12px;padding:4px 12px;background:#fff}
+.rolepick button[aria-pressed="true"]{background:var(--blue);color:#fff}
+
+/* checklist */
+.prog{height:26px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden;margin:6px 0 4px}
+.prog i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 12px,#5ad6a4 12px,#5ad6a4 24px);transition:width .3s}
+.progtxt{font-family:"Huninn",sans-serif;font-size:18px}
+.chk{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.chk label{display:flex;gap:12px;align-items:flex-start;background:#fff;border:3px solid var(--ink);border-radius:16px;padding:12px 14px;cursor:pointer;box-shadow:0 3px 0 var(--ink);min-width:0}
+.chk input{position:absolute;opacity:0;pointer-events:none}
+.chk .box{flex-shrink:0;width:28px;height:28px;border:3px solid var(--ink);border-radius:8px;background:#fff;display:grid;place-items:center;font-weight:900;color:#fff;margin-top:2px}
+.chk input:checked+.box{background:var(--mint)}
+.chk input:checked+.box::after{content:"✓"}
+.chk input:focus-visible+.box{outline:3px solid var(--blue);outline-offset:2px}
+.chk label.done{background:var(--mint-l)}
+.cheer{display:none;margin-top:14px;background:var(--sun-l);border:3px solid var(--ink);border-radius:16px;padding:12px 16px;font-weight:700}
+.cheer.on{display:block}
+.reset{font:inherit;font-size:14px;cursor:pointer;background:none;border:2px solid var(--ink-2);border-radius:10px;padding:2px 10px;color:var(--ink-2);margin-top:10px}
+
+/* quiz */
+.q{margin-bottom:18px}
+.q .opts{display:grid;gap:8px;margin-top:10px}
+.q .opts button{font:inherit;text-align:left;cursor:pointer;border:2.5px solid var(--ink);border-radius:14px;padding:9px 14px;background:#fff;color:var(--ink)}
+.q .opts button:hover:not(:disabled){background:var(--sun-l)}
+.q .opts button.right{background:var(--mint-l);border-color:var(--mint)}
+.q .opts button.wrong{background:var(--coral-l);border-color:var(--coral)}
+.q .exp{display:none;margin-top:10px;border-radius:12px;padding:10px 14px;background:var(--blue-l);font-size:15.5px}
+.q .exp.on{display:block}
+.score{display:none;font-family:"Huninn",sans-serif;font-size:22px;text-align:center;background:var(--sun);border:3px solid var(--ink);border-radius:18px;padding:12px;box-shadow:0 4px 0 var(--ink)}
+.score.on{display:block}
+
+/* refs */
+ol.refs{padding-left:1.4em;margin:0}
+ol.refs li{margin:0 0 12px;padding-left:4px;scroll-margin-top:80px}
+ol.refs li:target{background:var(--sun-l);border-radius:8px}
+ol.refs .why{display:block;font-size:14.5px;color:var(--ink-2)}
+
+/* disclaimer */
+.disc{background:var(--coral);border:4px solid var(--ink);border-radius:var(--r);padding:8px;box-shadow:0 6px 0 var(--ink)}
+.disc .in{border:3px dashed #fff;border-radius:16px;padding:20px 24px;color:#fff}
+.disc h2{margin:0 0 12px;font-size:26px}
+.disc .first{background:#fff;color:#d63c3c;border-radius:12px;padding:10px 14px;font-weight:900;margin-bottom:12px}
+.disc ul{margin:0;padding-left:1.2em}
+.disc li{margin:4px 0}
+
+footer{background:var(--blue-d);color:#fff;padding:44px 0 34px;margin-top:60px;text-align:center}
+footer .pals{display:flex;justify-content:center;gap:10px;margin-bottom:10px}
+footer .pals svg{width:70px;height:70px}
+footer .quote2{font-family:"Huninn",sans-serif;font-size:22px;margin:6px 0 14px}
+footer .strip{display:inline-block;background:var(--sun);color:var(--ink);border:3px solid var(--ink);border-radius:14px;padding:6px 16px;font-weight:700;margin-bottom:14px}
+footer a{color:var(--sun)}
+footer small{display:block;opacity:.85;margin-top:10px}
+.totop{position:fixed;right:18px;bottom:18px;width:50px;height:50px;border-radius:50%;background:var(--sun);border:3px solid var(--ink);box-shadow:0 4px 0 var(--ink);font-size:22px;font-weight:900;cursor:pointer;display:none;z-index:60;color:var(--ink)}
+.totop.on{display:block}
+
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .navpills{display:none}
+  .topbar .wrap{justify-content:space-between}
+  .backbtn{margin-left:auto}
+  .hero{padding:34px 0 80px}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero h1{font-size:34px}
+  .grid2,.grid3,.grid4,.talk,.chk{grid-template-columns:1fr}
+  .shead h2{font-size:25px}
+  .num{width:50px;height:50px;font-size:24px}
+  .myth{grid-template-columns:1fr}
+  .myth .no{border-right:0;border-bottom:3px dashed var(--ink)}
+  .cbar .lab{width:64px;font-size:14px}
+  .cbar .val{width:78px;font-size:13.5px}
+  .card{padding:18px}
+  .tool{padding:18px}
+}
+@media (prefers-reduced-motion:reduce){
+  .float{animation:none}
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+<!-- 房子（掛抵押牌） -->
+<symbol id="house" viewBox="0 0 140 130">
+  <path d="M18 62 L70 18 L122 62" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="28" y="58" width="84" height="62" rx="6" fill="#fff5d6" stroke="#1f2a44" stroke-width="3.5"/>
+  <rect x="60" y="84" width="22" height="36" rx="4" fill="#ff9f43" stroke="#1f2a44" stroke-width="3"/>
+  <rect x="38" y="70" width="16" height="16" rx="3" fill="#e0f4ff" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="54" cy="100" r="2" fill="#1f2a44"/>
+  <circle cx="90" cy="76" r="3" fill="#1f2a44"/><circle cx="102" cy="76" r="3" fill="#1f2a44"/>
+  <path d="M91 86 Q96 90 101 86" stroke="#1f2a44" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <ellipse cx="86" cy="83" rx="4" ry="2.4" fill="#ff9aa2" opacity=".8"/><ellipse cx="107" cy="83" rx="4" ry="2.4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M112 64 L124 84" stroke="#1f2a44" stroke-width="3"/>
+  <rect x="112" y="84" width="24" height="18" rx="4" fill="#ffc93c" stroke="#1f2a44" stroke-width="3" transform="rotate(8 124 93)"/>
+</symbol>
+<!-- 遺產桶 -->
+<symbol id="bucket" viewBox="0 0 120 120">
+  <path d="M30 34 Q60 6 90 34" fill="none" stroke="#1f2a44" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M22 40 L98 40 L88 108 L32 108Z" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="40" rx="38" ry="8" fill="#e0f4ff" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="50" cy="34" r="8" fill="#ffc93c" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="68" cy="32" r="8" fill="#ffc93c" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="50" cy="70" r="4.5" fill="#1f2a44"/><circle cx="70" cy="70" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.3" cy="68.6" r="1.4" fill="#fff"/><circle cx="71.3" cy="68.6" r="1.4" fill="#fff"/>
+  <path d="M53 82 Q60 88 67 82" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="80" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="80" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+<!-- 文件 -->
+<symbol id="doc" viewBox="0 0 120 120">
+  <path d="M30 14 H78 L94 30 V106 H30Z" fill="#fff" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M78 14 V30 H94" fill="#efe8ff" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M42 42 H80 M42 54 H80 M42 66 H66" stroke="#8a5cf6" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="72" cy="88" r="13" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M66 88 l4 4 l8 -8" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<!-- 銀行 -->
+<symbol id="bank" viewBox="0 0 120 120">
+  <path d="M14 44 L60 16 L106 44Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <rect x="20" y="44" width="80" height="8" fill="#e6eeff" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M30 54 V92 M48 54 V92 M72 54 V92 M90 54 V92" stroke="#1f2a44" stroke-width="7" stroke-linecap="round"/>
+  <path d="M30 54 V92 M48 54 V92 M72 54 V92 M90 54 V92" stroke="#fff5d6" stroke-width="3" stroke-linecap="round"/>
+  <rect x="14" y="94" width="92" height="12" rx="3" fill="#ffc93c" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="60" cy="33" r="5" fill="#ffc93c" stroke="#1f2a44" stroke-width="2.5"/>
+</symbol>
+<!-- 天秤 -->
+<symbol id="scale" viewBox="0 0 120 120">
+  <path d="M60 18 V96" stroke="#1f2a44" stroke-width="4" stroke-linecap="round"/>
+  <path d="M24 34 H96" stroke="#1f2a44" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="60" cy="18" r="6" fill="#ffc93c" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M24 34 L12 64 H36Z M96 34 L84 58 H108Z" fill="none" stroke="#1f2a44" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M10 64 Q24 78 38 64Z" fill="#2bb88a" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M82 58 Q96 72 110 58Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="40" y="96" width="40" height="10" rx="4" fill="#8a5cf6" stroke="#1f2a44" stroke-width="3"/>
+</symbol>
+</defs>
+</svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="共好小學堂首頁">
+      <svg aria-hidden="true"><use href="#sprout"/></svg>
+      <span><b>共好小學堂</b><small>GROW &amp; LEARN TOGETHER</small></span>
+    </a>
+    <nav class="navpills" aria-label="章節">
+      <a href="#s1">限定責任</a><a href="#s2">抵押權</a><a href="#s3">三種情境</a><a href="#s4">遺產稅</a><a href="#s5">登記塗銷</a><a href="#s7">拋棄或清冊</a><a href="#tool">試算</a><a href="#check">清單</a><a href="#quiz">測驗</a>
+    </nav>
+    <a class="backbtn" href="../index.html">← 回小學堂</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-label="單元介紹">
+  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+  <div class="wrap">
+    <div>
+      <span class="tag">✦ 退休理財小知識</span>
+      <h1>繼承的房子<span class="hl">有貸款，</span><span style="white-space:nowrap">怎麼辦？</span></h1>
+      <p class="lead">家人走了，留下一間還在繳房貸、或幫別人擔保的房子。要不要拿自己的錢還？房子會不會被拍賣？我們一起把「繼承」和「抵押權」這兩件事分清楚。</p>
+      <div class="btns">
+        <a class="btn pri" href="#s1">開始認識 →</a>
+        <a class="btn" href="#tool">直接跳互動區</a>
+      </div>
+    </div>
+    <div class="heroart">
+      <svg class="scene" viewBox="0 0 460 360" role="img" aria-label="小芽、藍鳥和星星站在一間掛著抵押牌的房子前">
+        <ellipse cx="230" cy="322" rx="210" ry="26" fill="#dcf7ec"/>
+        <g class="float d2"><use href="#doc" x="20" y="40" width="70" height="70"/></g>
+        <g class="float d3"><use href="#bank" x="372" y="150" width="70" height="70"/></g>
+        <use href="#house" x="130" y="120" width="200" height="186"/>
+        <use href="#sprout" x="40" y="214" width="96" height="104"/>
+        <use href="#bird" x="330" y="236" width="96" height="88"/>
+        <g class="float"><use href="#star" x="206" y="40" width="56" height="56"/></g>
+        <rect x="282" y="24" width="168" height="62" rx="18" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+        <path d="M300 84 L290 104 L318 86Z" fill="#fff" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+        <rect x="296" y="80" width="26" height="8" fill="#fff"/>
+        <text x="366" y="62" text-anchor="middle" font-family="Huninn, Noto Sans TC, sans-serif" font-size="19" fill="#1f2a44">先盤點，再決定！</text>
+      </svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q180 0 360 30 T720 30 T1080 30 T1440 30 V60 H0Z" fill="#fffdf7"/></svg>
+</section>
+
+<section id="summary" aria-label="先說重點">
+  <div class="wrap">
+    <div class="shead"><div class="num" style="--c:var(--sun);color:var(--ink)">★</div><div><span class="eyebrow" style="--c:#c48a00">QUICK TAKE</span><h2>先說重點</h2></div></div>
+    <div class="talk">
+      <div class="pal"><svg aria-hidden="true"><use href="#sprout"/></svg>
+        <div class="bubble">現在的繼承是「全部接收，但<b>只用遺產還</b>」：爸媽欠的錢，原則上不會叫你掏自己的存款補。</div></div>
+      <div class="pal"><svg aria-hidden="true"><use href="#bird"/></svg>
+        <div class="bubble">房子上的<b>抵押權不會因為過世就消失</b>。貸款沒還清，銀行還是可以依程序對那間房子主張優先受償。</div></div>
+      <div class="pal"><svg aria-hidden="true"><use href="#star"/></svg>
+        <div class="bubble">要先弄清楚：過世的人是<b>自己借錢</b>，還是<b>拿房子幫別人擔保</b>？兩種情況差很多！</div></div>
+    </div>
+    <p class="warnline">⚠ 要分清楚：「以遺產為限」不等於可以只挑房子、不接貸款；也不等於銀行只能拍那間房子。還有拋棄繼承有 3 個月期限，別拖。</p>
+  </div>
+</section>
+
+<!-- 1 -->
+<section id="s1" class="tint" style="--tint:var(--blue-l)">
+  <div class="wrap">
+    <div class="shead"><div class="num" style="--c:var(--blue)">1</div><div><span class="eyebrow" style="--c:var(--blue)">THE BIG RULE</span><h2>核心原則：概括繼承、限定責任</h2></div></div>
+    <div class="lawbox"><span class="lbl">民法第 1148 條</span>
+      繼承人從繼承開始時，<b>承受過世者財產上的一切權利和義務</b>；但對過世者的債務，<b>只以「因繼承得到的遺產」為限</b>負清償責任。<a class="src" href="#ref1">參考 1</a>
+    </div>
+    <div class="grid2">
+      <div class="card">
+        <h3>白話說，就是兩句話</h3>
+        <ul class="dots">
+          <li><b>概括繼承</b>：好的壞的一起來，不能只拿房子、存款，把貸款丟掉。</li>
+          <li><b>限定責任</b>：債務用遺產去還；遺產不夠，原則上不必拿自己原本的財產（法律上叫「固有財產」）補。</li>
+        </ul>
+        <p class="pt">一句重點：不是「不用還」，而是「用遺產還」。</p>
+      </div>
+      <div class="card">
+        <h3>示意：遺產桶 vs. 債務</h3>
+        <div class="cbar" aria-hidden="true">
+          <div class="row"><span class="lab">遺產</span><span class="track"><span class="fill f-asset" style="display:block;width:60%"></span></span><span class="val">600 萬</span></div>
+          <div class="row"><span class="lab">債務</span><span class="track"><span class="fill f-debt" style="display:block;width:85%"></span></span><span class="val">850 萬</span></div>
+          <div class="row"><span class="lab">你的存款</span><span class="track"><span class="fill f-own" style="display:block;width:45%"></span></span><span class="val">原則不動</span></div>
+        </div>
+        <p style="font-size:15px;color:var(--ink-2)">數字為示範。遺產 600 萬、債務 850 萬時，以 600 萬遺產為限清償；不足的 250 萬，原則上不用繼承人自己補。</p>
+      </div>
+    </div>
+    <hr class="dash">
+    <h3 class="hn" style="font-size:22px;margin:0 0 14px">「以遺產為限」實際上要做的四件事</h3>
+    <div class="grid4">
+      <div class="card center"><svg class="ico" aria-hidden="true"><use href="#bucket"/></svg><h3>盤點遺產</h3><p>房子、存款、股票、保單、對別人的債權、車子等都要列。</p></div>
+      <div class="card center"><svg class="ico" aria-hidden="true"><use href="#doc"/></svg><h3>盤點債務</h3><p>抵押貸款本金、利息、違約金，以及其他確實存在的債務。</p></div>
+      <div class="card center"><svg class="ico" aria-hidden="true"><use href="#scale"/></svg><h3>比一比</h3><p>遺產夠，就用遺產還；不夠，原則上不用自己的財產補足。</p></div>
+      <div class="card center"><svg class="ico" aria-hidden="true"><use href="#star"/></svg><h3>守規矩</h3><p>沒依程序處理，或有不當處分、隱匿遺產，可能影響「有限責任」的保護。<a class="src" href="#ref1">參考 1</a></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 -->
+<section id="s2">
+  <div class="wrap">
+    <div class="shead"><div class="num" style="--c:var(--coral)">2</div><div><span class="eyebrow" style="--c:var(--coral)">MORTGAGE STAYS</span><h2>抵押權不會因為繼承而消失</h2></div></div>
+    <div class="grid2" style="margin-bottom:26px">
+      <div class="card">
+        <p>抵押權是一種「擔保物權」，綁在<b>房子本身</b>上。房子設定抵押擔保債務後，就算所有人過世、房子由子女繼承，抵押權也<b>不會當然消滅</b>。債務沒還清，債權人仍可就那間房子主張<b>優先受償</b>。</p>
+        <p class="pt">法律上說抵押權有「追及效力」：房子換了主人，抵押權還是跟著房子走。<a class="src" href="#ref2">參考 2</a><a class="src" href="#ref9">參考 9</a></p>
+      </div>
+      <div class="card center"><svg viewBox="0 0 140 130" style="width:180px;height:168px" role="img" aria-label="掛著抵押牌的房子"><use href="#house"/></svg>
+        <p style="font-family:Huninn,sans-serif">牌子不會因為換主人就自己掉下來</p></div>
+    </div>
+    <h3 class="hn" style="font-size:22px;margin:0 0 22px">繼承後最常見的三種結果</h3>
+    <div class="grid3">
+      <div class="card oc" style="--c:var(--mint)"><span class="badge">結果 1</span><h3>繼續按期還</h3><p><b>法律效果：</b>抵押權繼續存在，房子可以繼續持有。</p><p class="pt">怎麼做：跟銀行確認還款方式、扣款帳戶和債務人變更事宜。</p></div>
+      <div class="card oc" style="--c:var(--sky)"><span class="badge">結果 2</span><h3>一次清償完畢</h3><p><b>法律效果：</b>債務消滅後，可以辦抵押權塗銷登記。</p><p class="pt">怎麼做：拿到清償證明或塗銷同意文件，到地政事務所辦塗銷。<a class="src" href="#ref5">參考 5</a></p></div>
+      <div class="card oc" style="--c:var(--coral)"><span class="badge">結果 3</span><h3>沒還也沒處理</h3><p><b>法律效果：</b>債權人可依程序就抵押的房子主張權利，例如聲請拍賣。</p><p class="pt">怎麼做：儘早和債權人協商，免得利息、違約金越滾越大。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section id="s3" class="tint" style="--tint:var(--orange-l)">
+  <div class="wrap">
+    <div class="shead"><div class="num" style="--c:var(--orange)">3</div><div><span class="eyebrow" style="--c:var(--orange)">THREE SITUATIONS</span><h2>過世的人是哪一種角色？</h2></div></div>
+    <p>同樣是「房子有抵押」，過世的人扮演的角色不同，繼承人的責任範圍就不同。點選看看：</p>
+    <div class="tabs" role="tablist" aria-label="三種情境">
+      <button role="tab" id="t1" aria-controls="p1" aria-selected="true">① 借款人兼抵押人</button>
+      <button role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1">② 物上保證人</button>
+      <button role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1">③ 最高限額抵押權</button>
+    </div>
+
+    <div class="panel on" role="tabpanel" id="p1" aria-labelledby="t1">
+      <div class="card">
+        <h3>自己的房子、自己借錢（最常見）</h3>
+        <p>過世的人生前用自己名下的房子設定抵押，向銀行借款。他<b>既是借款人，也是抵押人</b>。</p>
+        <div class="subh">繼承人的責任</div>
+        <ul class="dots">
+          <li><b>金錢債務：</b>是過世者的債務，繼承人概括承受，但只以遺產為限負清償責任。<a class="src" href="#ref1">參考 1</a></li>
+          <li><b>抵押權：</b>繼續存在於房子上，沒還時債權人可依程序就房子優先受償。<a class="src" href="#ref9">參考 9</a></li>
+          <li><b>其他遺產：</b>拍賣房子後還不夠，債權人能不能再對其他遺產求償，要看債務範圍、遺產內容和繼承程序。不能一概說「只能拍房子、其他遺產不能動」。</li>
+        </ul>
+        <div class="subh">實務上要小心</div>
+        <ul class="dots">
+          <li>過世之後，貸款利息、違約金和相關費用可能<b>繼續累積</b>。</li>
+          <li>沒及時處理扣款、展延、清償或協商，債權人可能開始催收或執行。</li>
+          <li>兄弟姊妹私下說好「由某人承接房貸」，如果沒有經過銀行同意、辦債務承擔或相關登記，<b>不一定能對抗銀行</b>。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+      <div class="card">
+        <h3>拿自己的房子，幫別人擔保</h3>
+        <p>過世的人只是提供名下房子，替<b>別人</b>的借款設定抵押，自己並沒有借錢。這種角色叫「<b>物上保證人</b>」。</p>
+        <div class="subh">基本原則</div>
+        <ul class="dots">
+          <li>他沒有直接向債權人借錢，所以遺產承受的主要是「<b>提供這間房子當擔保</b>」的義務。</li>
+          <li>主債務人（真正借錢的人）沒還時，債權人仍可就這間房子優先受償；物上保證人過世後，法院也會准許對其繼承人就該房子拍賣。<a class="src" href="#ref10">參考 10</a></li>
+          <li>原則上，債權人不能只因為他是物上保證人，就對他的一般財產或其他遺產求償。司法實務見解認為物上保證人以擔保物負擔保責任；個案仍要回到原始裁判全文確認。</li>
+        </ul>
+        <div class="subh">重要例外</div>
+        <ul class="dots">
+          <li>如果他<b>同時</b>是連帶保證人、共同借款人，或曾用其他方式承諾清償，責任範圍就不一樣。例如連帶保證人的繼承人，會被判決在繼承遺產範圍內連帶清償。<a class="src" href="#ref11">參考 11</a></li>
+          <li>房子拍賣後不足清償，債權人對主債務人仍有債權；但對物上保證人的其他財產，原則上不能任意執行。</li>
+          <li>請找齊借款契約、抵押權設定契約、借據、保證書、銀行往來紀錄和登記謄本，確認他真正的法律地位。</li>
+        </ul>
+        <p class="note">💡 「只是保人」這句話太模糊：物上保證、連帶保證、共同借款是三種完全不同的角色。</p>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+      <div class="card">
+        <h3>謄本上寫著「最高限額」的抵押權</h3>
+        <p>最高限額抵押權，是在一個「最高金額」以內，擔保一定範圍內<b>不特定</b>的多筆債務（例如現在和將來的借款、透支等）。</p>
+        <div class="subh">過世會不會讓它「確定」？</div>
+        <p>常見說法是「債務人或抵押人一死亡，擔保範圍就當然確定」，這樣講太絕對。民法第 881 條之 11 規定：<b>最高限額抵押權不因抵押權人、抵押人或債務人死亡而受影響</b>；但如果契約有約定把死亡當成原債權確定的事由，就依約定。<a class="src" href="#ref2">參考 2</a></p>
+        <p>所以實際擔保哪些債務，要看<b>契約約定、債務發生時間</b>和其他法定確定事由，個案判斷。</p>
+        <div class="subh">實務建議</div>
+        <ul class="dots">
+          <li>向銀行索取借款契約、抵押權設定契約、餘額證明和債務明細。</li>
+          <li>確認最高限額、擔保債務範圍、利息、違約金、保證人和主債務人是誰。</li>
+          <li><b>不要只看謄本上的「最高限額」金額</b>，就推論實際欠多少、或拍賣後能分回多少。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 -->
+<section id="s4">
+  <div class="wrap">
+    <div class="shead"><div class="num" style="--c:var(--mint)">4</div><div><span class="eyebrow" style="--c:var(--mint)">ESTATE TAX</span><h2>遺產稅：沒還完的債可以扣，但要有證明</h2></div></div>
+    <div class="lawbox" style="background:var(--mint-l)"><span class="lbl" style="background:var(--mint)">遺產及贈與稅法 第 17 條第 1 項第 9 款</span>
+      被繼承人死亡前<b>未償的債務，具有確實證明者</b>，可以從遺產總額中扣除。<a class="src" href="#ref3">參考 3</a><a class="src" href="#ref6">參考 6</a>
+    </div>
+    <div class="grid2">
+      <div class="card">
+        <h3>📂 常見要準備的文件</h3>
+        <ul class="dots">
+          <li>銀行或債權人開立的<b>死亡時債務餘額證明</b></li>
+          <li>借款契約、借據、抵押權設定契約</li>
+          <li>貸款帳戶明細、還款紀錄、利息計算資料</li>
+          <li>如果是替別人擔保：主債務契約、保證契約、抵押權相關文件</li>
+        </ul>
+      </div>
+      <div class="card" style="background:var(--sun-l)">
+        <h3>⚠ 兩個特別要注意的地方</h3>
+        <p><b>重病期間借的錢：</b>如果債務發生在過世者重病、無法處理事務的期間，繼承人要說明借款原因、證明資金用途；說不清楚，那筆錢仍可能被列入遺產課稅。<a class="src" href="#ref4">參考 4</a><a class="src" href="#ref6">參考 6</a></p>
+        <p style="margin-top:10px"><b>過了時效的債：</b>債權人請求權已罹於時效，而且債務人依法拒絕給付，這筆債就不存在，不能再扣除；但如果債務人曾用契約承認債務，債務仍可能存在，可依規定扣除。<a class="src" href="#ref8">參考 8</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 -->
+<section id="s5" class="tint" style="--tint:var(--sky-l)">
+  <div class="wrap">
+    <div class="shead"><div class="num" style="--c:var(--sky)">5</div><div><span class="eyebrow" style="--c:#1a8fd6">REGISTRATION</span><h2>繼承登記、塗銷與跟銀行溝通</h2></div></div>
+    <ol class="tl">
+      <li><span class="dot">1</span><h3>辦繼承登記：「帶抵押權繼承」</h3><p>房子過戶到繼承人名下時，原本的抵押權原則上會繼續存在，並且呈現在登記資料上。</p></li>
+      <li><span class="dot">2</span><h3>想繼續住、繼續繳：先找銀行</h3><p>儘早聯絡債權銀行，確認要不要辦債務人變更、債務承擔、延長授信、變更扣款帳戶等程序。銀行同不同意、要不要重新徵信、會不會調整利率或要求新增保證人，要看個別貸款契約和銀行授信政策。</p></li>
+      <li><span class="dot">3</span><h3>還清之後：拿清償證明</h3><p>向債權人取得清償證明或抵押權塗銷同意文件。</p></li>
+      <li><span class="dot">4</span><h3>到地政事務所辦塗銷</h3><p>土地登記規則規定：土地權利因債務清償等原因消滅時，應申請塗銷登記；如果是因「拋棄」申請登記，而該權利上另有他項權利，要附他項權利人同意書並同時申請塗銷。<a class="src" href="#ref5">參考 5</a></p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 6 -->
+<section id="s6">
+  <div class="wrap">
+    <div class="shead"><div class="num" style="--c:var(--sun);color:var(--ink)">6</div><div><span class="eyebrow" style="--c:#c48a00">PARTITION</span><h2>遺產分割，擋不住抵押權</h2></div></div>
+    <p>兄弟姊妹之間可以協議分割遺產，例如把有抵押的房子分給某一個人。但這份協議主要管的是<b>家人之間的內部分擔</b>，不會當然改變抵押權的效力，也不會當然免除其他繼承人對過世者債務的法定責任。</p>
+    <h3 class="hn" style="font-size:22px;margin:22px 0 14px">常見的誤會 vs. 比較正確的理解</h3>
+    <div class="myth"><div class="no"><span class="k">✗ 常見誤會</span>「房子分給我，貸款也全部由我負責，其他人就沒事了。」</div><div class="yes"><span class="k">✓ 比較正確</span>內部可以約定由特定人負擔，但未必能對抗債權人，也不一定免除其他繼承人的法定責任。</div></div>
+    <div class="myth"><div class="no"><span class="k">✗ 常見誤會</span>「只要辦好繼承登記，抵押權就會消失。」</div><div class="yes"><span class="k">✓ 比較正確</span>抵押權不因繼承而當然消滅，要清償或依法塗銷後才會消滅。<a class="src" href="#ref5">參考 5</a></div></div>
+    <div class="myth"><div class="no"><span class="k">✗ 常見誤會</span>「爸爸只是保人，所以完全沒有債務。」</div><div class="yes"><span class="k">✓ 比較正確</span>物上保證、連帶保證、共同借款的法律地位不同，要看契約與事實判斷。</div></div>
+    <div class="myth"><div class="no"><span class="k">✗ 常見誤會</span>「拋棄繼承之後就完全沒關係，什麼時候辦都可以。」</div><div class="yes"><span class="k">✓ 比較正確</span>拋棄要在期限內向法院以書面為之；拋棄後應繼分歸誰，由民法規定，不是自己指定。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref7">參考 7</a></div></div>
+  </div>
+</section>
+
+<!-- 7 -->
+<section id="s7" class="tint" style="--tint:var(--grape-l)">
+  <div class="wrap">
+    <div class="shead"><div class="num" style="--c:var(--grape)">7</div><div><span class="eyebrow" style="--c:var(--grape)">RENOUNCE OR INVENTORY</span><h2>拋棄繼承 vs. 陳報遺產清冊</h2></div></div>
+    <p>債務明顯比資產多，可以評估拋棄繼承；決定繼承，可以評估開具遺產清冊陳報法院。兩條路對照看：</p>
+    <div class="tblw">
+      <table class="cmp">
+        <thead><tr><th scope="col">比一比</th><th scope="col">拋棄繼承</th><th scope="col">陳報遺產清冊</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">適合誰</th><td>遺產的債務明顯大於資產</td><td>選擇繼承，想把資產和債務釐清</td></tr>
+          <tr><th scope="row">期限</th><td>知悉得繼承之時起 <b>3 個月內</b><a class="src" href="#ref1">參考 1</a></td><td>知悉得繼承之時起 <b>3 個月內</b>開具遺產清冊陳報法院<a class="src" href="#ref1">參考 1</a></td></tr>
+          <tr><th scope="row">怎麼辦</th><td>以<b>書面</b>向法院為之，並以書面通知因拋棄而應為繼承的人（不能通知者除外）<a class="src" href="#ref7">參考 7</a></td><td>向法院陳報，依程序公示催告、讓債權人申報債權</td></tr>
+          <tr><th scope="row">效果</th><td>不再繼承任何權利義務；應繼分依民法規定歸屬，<b>不能指定由誰承接</b></td><td>有助於依程序處理債權、降低因程序不當而影響有限責任保護的風險</td></tr>
+          <tr><th scope="row">要小心</th><td>逾期就不能拋棄；下一順位的家人可能因此成為繼承人</td><td>是否逾期、有無不正當事由、是否曾處分遺產，都會影響個案效果</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="background:#fff;border:2.5px solid var(--grape)">💡 這兩件事都和期限有關，也都牽涉法院程序，建議找律師或專業人員依個案評估。</p>
+  </div>
+</section>
+
+<!-- tool -->
+<section id="tool">
+  <div class="wrap">
+    <div class="shead"><div class="num" style="--c:var(--blue)">✎</div><div><span class="eyebrow" style="--c:var(--blue)">TRY IT</span><h2>互動試算：遺產夠不夠還？</h2></div></div>
+    <div class="tool">
+      <p style="margin:0">先選過世者的角色，再拉動滑桿，看看「以遺產為限」大概會長什麼樣子。</p>
+      <div class="rolepick" role="group" aria-label="過世者角色">
+        <button type="button" data-role="borrower" aria-pressed="true">借款人兼抵押人</button>
+        <button type="button" data-role="guarantor" aria-pressed="false">物上保證人</button>
+      </div>
+      <div class="grid2">
+        <div>
+          <div class="slider"><label for="in-house">抵押房子的價值 <output id="o-house">1,000 萬</output></label><input type="range" id="in-house" min="0" max="3000" step="50" value="1000"></div>
+          <div class="slider"><label for="in-other">其他遺產（存款、股票等） <output id="o-other">200 萬</output></label><input type="range" id="in-other" min="0" max="2000" step="50" value="200"></div>
+        </div>
+        <div>
+          <div class="slider"><label for="in-debt">抵押擔保的債務餘額 <output id="o-debt">1,300 萬</output></label><input type="range" id="in-debt" min="0" max="4000" step="50" value="1300"></div>
+          <div class="cbar" aria-hidden="true">
+            <div class="row"><span class="lab">遺產</span><span class="track"><span class="fill f-asset" id="b-asset" style="display:block"></span></span><span class="val" id="v-asset"></span></div>
+            <div class="row"><span class="lab">債務</span><span class="track"><span class="fill f-debt" id="b-debt" style="display:block"></span></span><span class="val" id="v-debt"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="result" id="result" aria-live="polite"></div>
+      <p class="assume">示範假設：金額單位為新臺幣「萬元」；不計拍賣折價、執行費用、稅負、利息與違約金；只有一筆債務、繼承人未拋棄繼承且依法定程序處理。實際結果依契約、債權順位與法院程序而定。</p>
+    </div>
+  </div>
+</section>
+
+<!-- checklist -->
+<section id="check" class="tint" style="--tint:var(--mint-l)">
+  <div class="wrap">
+    <div class="shead"><div class="num" style="--c:var(--mint)">✓</div><div><span class="eyebrow" style="--c:var(--mint)">TO-DO LIST</span><h2>實務處理清單（10 項）</h2></div></div>
+    <div class="progtxt"><span id="cnt">0</span> / 10 完成</div>
+    <div class="prog" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" id="pbar"><i></i></div>
+    <div class="chk" id="chk"></div>
+    <div class="cheer" id="cheer">🎉 十項都完成了！資料齊全，跟專業人員討論會更有效率。辛苦了，也記得照顧好自己。</div>
+    <button type="button" class="reset" id="reset">清除勾選</button>
+    <p class="assume">勾選紀錄只存在你自己的瀏覽器，不會上傳到任何地方。</p>
+  </div>
+</section>
+
+<!-- quiz -->
+<section id="quiz">
+  <div class="wrap">
+    <div class="shead"><div class="num" style="--c:var(--coral)">?</div><div><span class="eyebrow" style="--c:var(--coral)">QUIZ</span><h2>小測驗：你分清楚了嗎？</h2></div></div>
+    <div id="qbox"></div>
+    <div class="score" id="score"></div>
+  </div>
+</section>
+
+<!-- refs -->
+<section id="refs" class="tint" style="--tint:var(--blue-l)">
+  <div class="wrap">
+    <div class="shead"><div class="num" style="--c:var(--ink)">📚</div><div><span class="eyebrow" style="--c:var(--ink)">REFERENCES</span><h2>參考資料</h2></div></div>
+    <div class="card">
+      <ol class="refs">
+        <li id="ref1">全國法規資料庫：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=B0000001" target="_blank" rel="noopener">民法（繼承編）</a>第 1148 條、第 1156 條、第 1163 條、第 1174 條、第 1176 條。<span class="why">概括繼承、以遺產為限負清償責任；3 個月內陳報遺產清冊；有不當行為時不得主張有限責任；3 個月內以書面向法院拋棄繼承；拋棄後應繼分歸屬。</span></li>
+        <li id="ref2">全國法規資料庫：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=B0000001" target="_blank" rel="noopener">民法（物權編）</a>第 867 條、第 873 條、第 881 條之 11、第 881 條之 17。<span class="why">抵押物讓與他人時抵押權不受影響；屆期未受清償可聲請拍賣；最高限額抵押權不因當事人死亡而受影響，但約定為確定事由者除外。</span></li>
+        <li id="ref3">全國法規資料庫：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=G0340072" target="_blank" rel="noopener">遺產及贈與稅法</a>第 17 條第 1 項第 9 款。<span class="why">被繼承人死亡前未償之債務，具有確實之證明者，自遺產總額中扣除。</span></li>
+        <li id="ref4">全國法規資料庫：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=G0340073" target="_blank" rel="noopener">遺產及贈與稅法施行細則</a>第 13 條；另見財政部南區國稅局 2025 年 9 月新聞說明（<a href="https://www.ctee.com.tw/news/20250905701189-430103" target="_blank" rel="noopener">工商時報報導</a>）。<span class="why">重病無法處理事務期間舉債、出售財產或提領存款，繼承人不能證明用途者，仍列入遺產課稅。</span></li>
+        <li id="ref5">全國法規資料庫：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0060003" target="_blank" rel="noopener">土地登記規則</a>第 143 條。<span class="why">土地權利因拋棄、混同、終止、存續期間屆滿、債務清償等致權利消滅時，應申請塗銷登記；因拋棄申請時另有他項權利者，應附同意書並同時塗銷。</span></li>
+        <li id="ref6">財政部稅務入口網：<a href="https://www.etax.nat.gov.tw/" target="_blank" rel="noopener">遺產稅常見問答「被繼承人死亡前未清償之債務，可否自遺產總額中扣除？」</a><span class="why">具確實債務證明文件可扣除；重病期間發生的債務需說明借款原因與資金用途。</span></li>
+        <li id="ref7">財政部稅務入口網：<a href="https://www.etax.nat.gov.tw/" target="_blank" rel="noopener">遺產稅常見問答「繼承人應如何辦理拋棄繼承權？」</a><span class="why">得知有繼承權之日起 3 個月內以書面向法院聲請，並書面通知因拋棄而應為繼承之人。</span></li>
+        <li id="ref8">財政部賦稅函釋：<a href="https://law-out.mof.gov.tw/" target="_blank" rel="noopener">被繼承人死亡前未償債務罹於時效之扣除認定</a>（財政部法令查詢系統）。<span class="why">請求權罹於時效且債務人拒絕給付者，債務不存在不得扣除；以契約承認債務者，仍可依規定扣除。</span></li>
+        <li id="ref9">臺灣士林地方法院 113 年度司拍字第 239 號民事裁定（2024-11-06），<a href="https://judgment.judicial.gov.tw/FILES/SLDV/113,司拍,239,20241106,1.pdf" target="_blank" rel="noopener">司法院裁判書</a>。<span class="why">抵押人死亡後由繼承人繼承，法院准予拍賣抵押物，程序費用由相對人「以繼承所得遺產為限」負擔；並引民法第 867 條說明抵押權不因讓與而受影響。</span></li>
+        <li id="ref10">臺灣臺南地方法院 113 年度司拍字第 301 號民事裁定（2024-12-09），<a href="https://judgment.judicial.gov.tw/FILES/TNDV/113,司拍,301,20241209,4.pdf" target="_blank" rel="noopener">司法院裁判書</a>。<span class="why">被繼承人為物上保證人，死亡後債權人得就該不動產對其繼承人行使抵押權。</span></li>
+        <li id="ref11">臺灣臺北地方法院 114 年度訴字第 6803 號民事判決（2026-02-12），<a href="https://judgment.judicial.gov.tw/FILES/TPDV/114%2c%e8%a8%b4%2c6803%2c20260212%2c1.pdf" target="_blank" rel="noopener">司法院裁判書</a>。<span class="why">被繼承人為連帶保證人，判決其繼承人應於繼承遺產範圍內與主債務人連帶給付，顯示連帶保證與物上保證責任範圍不同。</span></li>
+        <li id="ref12">財政部稅務入口網：<a href="https://www.etax.nat.gov.tw/" target="_blank" rel="noopener">遺產稅常見問答「被繼承人死亡前 5 年內繼承之未償債務，於死亡時尚未清償可否扣除？」</a><span class="why">延伸閱讀，本頁未直接引用。</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section aria-label="重要聲明" style="padding-top:20px">
+  <div class="wrap">
+    <div class="disc">
+      <div class="in">
+        <h2 class="hn">⚠ 重要聲明｜請先看這裡</h2>
+        <div class="first">本站資訊僅供參考，實際以官方資料及律師、地政士、會計師等專業人員評估為準。</div>
+        <ul>
+          <li><b>僅供參考：</b>本頁整理一般法律資訊，不構成法律、稅務或投資建議。</li>
+          <li><b>無任何推薦或行銷：</b>本頁不推薦任何銀行、事務所或金融商品。</li>
+          <li><b>資料時點：</b>資料以2026年9月底前公開資料為準，查核於2026年10月30日。</li>
+          <li><b>以契約或專業評估為準：</b>實際責任依借款契約、抵押權設定契約、登記資料、繼承人狀況與法院程序認定。</li>
+          <li><b>使用前查證：</b>拋棄繼承、遺產清冊與遺產稅申報都有期限，請儘早向法院、國稅局或專業人員確認最新規定。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="pals" aria-hidden="true"><svg><use href="#sprout"/></svg><svg><use href="#bird"/></svg><svg><use href="#star"/></svg></div>
+    <p class="quote2">每一次多懂一點，都是送給自己的小禮物。</p>
+    <div class="strip">先盤點、守期限、問專家：繼承不是只看房子，也要看債務。</div>
+    <p><a href="../index.html">← 回共好小學堂</a></p>
+    <small>共好小學堂 ✦ 一起學習，一起共好</small>
+    <small>本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-10-30</small>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="回到頂端">↑</button>
+
+<script>
+(function(){
+  // tabs
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  function sel(t){
+    tabs.forEach(function(x){
+      var on=x===t; x.setAttribute('aria-selected',on); x.tabIndex=on?0:-1;
+      var p=document.getElementById(x.getAttribute('aria-controls'));
+      p.hidden=!on; p.classList.toggle('on',on);
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){sel(t)});
+    t.addEventListener('keydown',function(e){
+      var k=e.key, n=null;
+      if(k==='ArrowRight') n=tabs[(i+1)%tabs.length];
+      if(k==='ArrowLeft') n=tabs[(i-1+tabs.length)%tabs.length];
+      if(n){e.preventDefault(); sel(n); n.focus();}
+    });
+  });
+
+  // tool
+  var role='borrower';
+  var $=function(id){return document.getElementById(id)};
+  function fmt(n){return n.toLocaleString('zh-TW')+' 萬'}
+  function calc(){
+    var h=+$('in-house').value, o=+$('in-other').value, d=+$('in-debt').value;
+    $('o-house').textContent=fmt(h); $('o-other').textContent=fmt(o); $('o-debt').textContent=fmt(d);
+    var assets = role==='borrower' ? h+o : h;
+    var max=Math.max(assets,d,1);
+    $('b-asset').style.width=(assets/max*100)+'%'; $('b-debt').style.width=(d/max*100)+'%';
+    $('v-asset').textContent=fmt(assets); $('v-debt').textContent=fmt(d);
+    var msg;
+    if(role==='borrower'){
+      if(d<=h){
+        msg='<b>房子本身大致就夠擔保。</b>債務 '+fmt(d)+' 不超過房子價值 '+fmt(h)+'。若選擇繼續持有，就要和銀行談好怎麼繼續繳；若清償，可辦塗銷。';
+      }else if(d<=h+o){
+        msg='<b>房子不夠，但遺產總額夠。</b>房子拍賣後不足的 '+fmt(d-h)+'，債權人可能再就其他遺產求償（需看債務範圍與程序）。遺產總額 '+fmt(h+o)+' 足以清償。';
+      }else{
+        msg='<b>遺產不夠還。</b>遺產 '+fmt(h+o)+'、債務 '+fmt(d)+'。依「以遺產為限」原則，不足的 '+fmt(d-h-o)+' 原則上不用繼承人拿自己的財產補；但也可在 3 個月內評估是否拋棄繼承或陳報遺產清冊。';
+      }
+    }else{
+      msg='<b>物上保證人：原則上只以這間房子負擔保責任。</b>債權人可就房子（價值 '+fmt(h)+'）優先受償'+(d>h?'；不足的 '+fmt(d-h)+' 要向真正借錢的主債務人追，原則上不能動其他遺產 '+fmt(o)+'。':'。')+' 但如果他同時是連帶保證人或共同借款人，結果就不同。';
+    }
+    $('result').innerHTML=msg;
+  }
+  ['in-house','in-other','in-debt'].forEach(function(id){$(id).addEventListener('input',calc)});
+  [].forEach.call(document.querySelectorAll('[data-role]'),function(b){
+    b.addEventListener('click',function(){
+      role=b.getAttribute('data-role');
+      [].forEach.call(document.querySelectorAll('[data-role]'),function(x){x.setAttribute('aria-pressed',x===b)});
+      calc();
+    });
+  });
+  calc();
+
+  // checklist
+  var items=['取得死亡證明、戶籍資料、繼承系統表及全體繼承人資料','調閱不動產謄本，確認所有權、抵押權、最高限額、債權人及設定日期','向銀行索取貸款餘額、還款紀錄、契約、保證人與抵押權資料','區分過世者是借款人、連帶保證人、共同借款人或物上保證人','盤點全部遺產與債務，評估遺產淨值與現金流','評估拋棄繼承、陳報遺產清冊或依一般程序繼承','與債權銀行確認還款、展延、債務承擔或塗銷程序','若辦遺產分割，書面寫清楚內部負擔，但不假設能對抗債權人','保存所有契約、金流、完稅、登記與溝通紀錄','在法定期限內處理拋棄繼承、遺產清冊及遺產稅申報'];
+  var KEY='gungho-ks-estmort-check', st=[];
+  try{st=JSON.parse(localStorage.getItem(KEY)||'[]')||[]}catch(e){st=[]}
+  var box=$('chk');
+  items.forEach(function(t,i){
+    var l=document.createElement('label');
+    var inp=document.createElement('input'); inp.type='checkbox'; inp.checked=!!st[i];
+    var sp=document.createElement('span'); sp.className='box'; sp.setAttribute('aria-hidden','true');
+    var tx=document.createElement('span'); tx.textContent=(i+1)+'. '+t;
+    l.appendChild(inp); l.appendChild(sp); l.appendChild(tx);
+    inp.addEventListener('change',function(){st[i]=inp.checked; save(); upd();});
+    box.appendChild(l);
+  });
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}}
+  function upd(){
+    var ls=box.querySelectorAll('label'), n=0;
+    [].forEach.call(ls,function(l,i){var c=l.querySelector('input').checked; l.classList.toggle('done',c); if(c)n++;});
+    $('cnt').textContent=n; $('pbar').setAttribute('aria-valuenow',n);
+    $('pbar').querySelector('i').style.width=(n*10)+'%';
+    $('cheer').classList.toggle('on',n===items.length);
+  }
+  $('reset').addEventListener('click',function(){st=[];save();[].forEach.call(box.querySelectorAll('input'),function(x){x.checked=false});upd();});
+  upd();
+
+  // quiz
+  var Q=[
+    {q:'媽媽過世，留下一間值 500 萬的房子，但房貸還欠 700 萬。小美決定繼承，以下哪個說法比較正確？',o:['房子歸小美，房貸跟她無關','小美要拿自己的存款補足 200 萬','原則上以遺產為限清償，不足部分不必用自己原本的財產補','抵押權因媽媽過世而消失'],a:2,e:'民法第 1148 條：繼承人承受一切權利義務，但對被繼承人債務以因繼承所得遺產為限負清償責任。抵押權也不會因過世而消失。'},
+    {q:'爸爸生前只是拿自己的房子，替叔叔的借款設定抵押，自己沒借錢。叔叔沒還，銀行原則上可以怎麼做？',o:['就這間房子主張優先受償','直接扣爸爸遺產裡的所有存款','要求子女用自己的薪水還','什麼都不能做'],a:0,e:'這是「物上保證人」。原則上以擔保物負擔保責任，債權人可就房子優先受償，但不能只因此就對其他遺產求償（若同時是連帶保證人則不同）。'},
+    {q:'三兄妹協議「房子給老大，房貸也由老大負責」，但沒有通知銀行或辦債務承擔。這份協議的效果是？',o:['銀行從此只能找老大','抵押權自動塗銷','主要拘束兄妹之間，未必能對抗銀行','協議無效，一定要重簽'],a:2,e:'遺產分割協議主要規範繼承人之間的內部權利義務，不當然改變抵押權效力，也不當然免除其他繼承人的法定責任。'},
+    {q:'想要拋棄繼承，下列哪一個做法正確？',o:['口頭跟其他家人說一聲就好','知悉得繼承之時起 3 個月內，以書面向法院為之','等一年後看情況再決定','拋棄後可以指定由哥哥承接全部遺產'],a:1,e:'民法第 1174 條：應於知悉其得繼承之時起三個月內，以書面向法院為之，並書面通知因其拋棄而應為繼承之人；拋棄後應繼分依法歸屬，不能自行指定。'}
+  ];
+  var qb=$('qbox'), answered=0, right=0;
+  Q.forEach(function(it,qi){
+    var c=document.createElement('div'); c.className='card q';
+    var h=document.createElement('h3'); h.textContent='第 '+(qi+1)+' 題｜'+it.q; c.appendChild(h);
+    var os=document.createElement('div'); os.className='opts';
+    var ex=document.createElement('div'); ex.className='exp';
+    it.o.forEach(function(t,oi){
+      var b=document.createElement('button'); b.type='button'; b.textContent=String.fromCharCode(65+oi)+'. '+t;
+      b.addEventListener('click',function(){
+        var bs=os.querySelectorAll('button');
+        [].forEach.call(bs,function(x){x.disabled=true});
+        bs[it.a].classList.add('right');
+        if(oi!==it.a){b.classList.add('wrong'); ex.textContent='再想想！正解是 '+String.fromCharCode(65+it.a)+'。'+it.e;}
+        else{right++; ex.textContent='答對了！'+it.e;}
+        ex.classList.add('on'); answered++;
+        if(answered===Q.length){var s=$('score'); s.textContent='你答對了 '+right+' / '+Q.length+' 題'+(right===Q.length?'，太厲害了！🎉':'，再回去看看重點也很棒！'); s.classList.add('on');}
+      });
+      os.appendChild(b);
+    });
+    c.appendChild(os); c.appendChild(ex); qb.appendChild(c);
+  });
+
+  // to top
+  var tt=$('totop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('on',window.scrollY>600)},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+})();
+</script>
+</body>
+</html>
