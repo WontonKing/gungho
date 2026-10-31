@@ -1,0 +1,1038 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>用看的禱告</title>
+<meta name="description" content="從守望、定睛基督，到愛中行動與安息。以和合本經文為根據的靈修報告擴充版，每處經文可點開全文溯源。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用看的禱告">
+<meta property="og:description" content="從守望、定睛基督，到愛中行動與安息">
+<meta property="og:url" content="https://www.gungho.idv.tw/fellowship/prayer-of-seeing/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF8F1; --paper:#FFFDF8; --ink:#2F2A22; --muted:#6B6253; --line:#E7DDCB;
+  --gold:#B8893B; --gold-soft:#F3E4C3; --sky:#5E8FBF; --sky-soft:#E3EDF6;
+  --clay:#B9562F; --clay-soft:#F6E2D8; --olive:#6F8A5A; --olive-soft:#E6ECDD;
+  --serif:"Noto Serif TC","Songti TC",serif; --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --r:14px; --shadow:0 1px 2px rgba(80,60,20,.05),0 8px 24px rgba(80,60,20,.06);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;font-family:var(--sans);color:var(--ink);line-height:1.85;font-size:17px;
+  background:var(--bg);
+  background-image:radial-gradient(1200px 600px at 85% -10%,rgba(184,137,59,.13),transparent 60%),
+                   radial-gradient(900px 500px at -10% 20%,rgba(94,143,191,.10),transparent 60%);
+  background-attachment:fixed}
+a{color:var(--sky)}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--clay));z-index:60}
+header.top{position:sticky;top:0;z-index:50;background:rgba(251,248,241,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .in{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:16px;padding:10px 16px}
+.brand{font-family:var(--serif);font-weight:700;color:var(--ink);text-decoration:none;white-space:nowrap}
+.brand span{color:var(--gold)}
+nav.toc{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1}
+nav.toc::-webkit-scrollbar{display:none}
+nav.toc a{font-size:14px;color:var(--muted);text-decoration:none;padding:4px 10px;border-radius:999px;white-space:nowrap}
+nav.toc a:hover,nav.toc a.on{background:var(--gold-soft);color:var(--ink)}
+main{max-width:860px;margin:0 auto;padding:0 16px 40px}
+.cover{text-align:center;padding:88px 0 56px;position:relative}
+.cover::before{content:"";position:absolute;left:50%;top:40px;width:360px;height:360px;transform:translateX(-50%);
+  background:radial-gradient(circle,rgba(243,201,120,.45),rgba(243,201,120,0) 65%);z-index:-1}
+.eyebrow{display:inline-block;font-size:13px;letter-spacing:.12em;color:var(--gold);border:1px solid var(--gold-soft);background:var(--paper);padding:4px 14px;border-radius:999px}
+.cover h1{font-family:var(--serif);font-weight:900;font-size:clamp(40px,8vw,68px);line-height:1.2;margin:22px 0 10px;letter-spacing:.06em}
+.cover .sub{font-family:var(--serif);font-size:clamp(18px,3vw,22px);color:var(--muted);margin:0}
+.cover .eye{margin:34px auto 0;width:64px;height:64px;opacity:.9}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:28px}
+.chip{font-size:14px;padding:4px 12px;border-radius:999px;background:var(--paper);border:1px solid var(--line);color:var(--muted)}
+section{padding:40px 0 12px;border-top:1px dashed var(--line)}
+section.rev{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+section.rev.in{opacity:1;transform:none}
+.kicker{font-size:13px;letter-spacing:.14em;color:var(--clay);font-weight:700}
+h2{font-family:var(--serif);font-size:clamp(25px,4.4vw,32px);line-height:1.35;margin:6px 0 18px}
+h3{font-family:var(--serif);font-size:19px;margin:0 0 6px}
+p{margin:0 0 14px}
+blockquote.vs{margin:18px 0;padding:18px 22px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);font-family:var(--serif);font-size:18.5px;line-height:1.9;position:relative}
+blockquote.vs::before{content:"“";position:absolute;left:10px;top:-14px;font-size:54px;color:var(--gold-soft);font-family:Georgia,serif}
+blockquote.vs footer{font-family:var(--sans);font-size:14px;color:var(--muted);margin-top:6px}
+.ref{font:inherit;font-size:14px;font-family:var(--sans);cursor:pointer;border:1px solid #D9C49A;background:#FFF7E6;color:#8A6424;border-radius:999px;padding:1px 10px;margin:0 2px;line-height:1.7;white-space:nowrap}
+.ref:hover,.ref:focus-visible{background:var(--gold);color:#fff;border-color:var(--gold);outline:none}
+.note{background:var(--sky-soft);border-radius:var(--r);padding:14px 18px;font-size:15.5px;color:#34506D;margin:18px 0}
+.note b{color:#24405C}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;box-shadow:var(--shadow)}
+.card .tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.1em;padding:2px 10px;border-radius:999px;margin-bottom:8px}
+.card.ctx .tag{background:var(--sky-soft);color:#3E6A93}
+.card.app .tag{background:var(--olive-soft);color:#4F6A3C}
+.card p:last-child{margin-bottom:0}
+.reflect{display:flex;gap:12px;align-items:flex-start;background:var(--clay-soft);border-radius:var(--r);padding:14px 18px;margin:14px 0;color:#6E3218}
+.reflect .ico{flex:none;font-family:var(--serif);font-weight:900;background:var(--clay);color:#fff;border-radius:8px;padding:0 8px;font-size:14px;line-height:26px;margin-top:2px}
+.pray{margin:14px 0;padding:16px 20px;border-radius:var(--r);background:linear-gradient(135deg,#FFF9EC,#FBF1DC);border:1px solid var(--gold-soft);font-family:var(--serif)}
+.pray .lab{font-family:var(--sans);font-size:13px;color:var(--gold);font-weight:700;letter-spacing:.12em;display:block;margin-bottom:4px}
+.take{margin:22px 0 8px;padding:6px 0 6px 18px;border-left:4px solid var(--gold);font-family:var(--serif);font-weight:700;font-size:19px;color:#4A3A1E}
+.aside{margin:18px 0;border:1.5px dashed #CDB98F;border-radius:var(--r);padding:12px 16px;font-size:15px;color:var(--muted);background:rgba(255,253,248,.6)}
+.aside b{color:var(--clay);font-weight:700;margin-right:6px}
+figure.illus{margin:26px 0;border-radius:18px;overflow:hidden;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow)}
+figure.illus svg{display:block;width:100%;height:auto;aspect-ratio:640/300}
+figure.illus figcaption{padding:10px 16px;font-size:14.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.pills{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:18px 0}
+.pill{padding:6px 14px;border-radius:999px;background:var(--paper);border:1px solid var(--line);font-weight:500;font-size:15px}
+.pill:nth-child(4n+1){border-color:#D9C49A}.pill:nth-child(4n+3){border-color:#B8CDE2}
+.arr{color:var(--gold)}
+.steps{display:grid;gap:12px;margin:18px 0;counter-reset:s}
+.step{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:14px 18px;box-shadow:var(--shadow)}
+.step::before{counter-increment:s;content:counter(s);grid-row:span 3;width:34px;height:34px;border-radius:50%;background:var(--gold);color:#fff;display:grid;place-items:center;font-weight:700;font-family:var(--serif)}
+.step h3{margin:0;font-size:18px}
+.step .time{font-size:13px;color:var(--olive);font-weight:700}
+.step p{margin:0;font-size:15.5px}
+ol.q{padding-left:1.4em}
+ol.q li{margin:6px 0}
+.closing{background:var(--paper);border:1px solid var(--gold-soft);border-radius:20px;padding:28px 26px;font-family:var(--serif);font-size:18px;line-height:2;box-shadow:var(--shadow);position:relative}
+.closing p{text-indent:2em}
+.closing .amen{text-align:right;text-indent:0;font-weight:700;color:var(--gold)}
+.reflist{list-style:none;padding:0;margin:10px 0 18px;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
+.reflist li{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:14.5px}
+.reflist li a{text-decoration:none}
+.reflist li small{display:block;color:var(--muted)}
+table.src{width:100%;border-collapse:collapse;font-size:14.5px;margin:10px 0}
+table.src th,table.src td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+table.src th{color:var(--muted);font-weight:500}
+footer.site{max-width:860px;margin:0 auto;padding:30px 16px 60px;color:var(--muted);font-size:14px;text-align:center;border-top:1px solid var(--line)}
+dialog{border:none;border-radius:18px;padding:0;max-width:min(640px,92vw);width:100%;box-shadow:0 20px 60px rgba(40,30,10,.25);background:var(--paper);color:var(--ink)}
+dialog::backdrop{background:rgba(40,32,20,.35);backdrop-filter:blur(2px)}
+.dlg-h{display:flex;justify-content:space-between;align-items:center;padding:16px 20px 6px}
+.dlg-h h3{margin:0;font-size:20px}
+.dlg-h .ver{font-size:13px;color:var(--muted)}
+.dlg-x{border:none;background:var(--gold-soft);border-radius:50%;width:34px;height:34px;font-size:18px;cursor:pointer;color:var(--ink)}
+.dlg-b{padding:6px 20px 8px;font-family:var(--serif);font-size:17.5px;line-height:1.95;max-height:58vh;overflow:auto}
+.dlg-b sup{color:var(--gold);font-family:var(--sans);font-size:11px;margin-right:2px}
+.dlg-f{padding:10px 20px 18px;display:flex;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line)}
+.dlg-f a{font-size:14px;text-decoration:none;padding:4px 12px;border-radius:999px;border:1px solid var(--line)}
+.dlg-f a.main{background:var(--sky);color:#fff;border-color:var(--sky)}
+@media (max-width:640px){
+  body{font-size:16px}
+  .two{grid-template-columns:1fr}
+  .cover{padding:64px 0 40px}
+  .brand{display:none}
+  .closing{padding:22px 18px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  section.rev{opacity:1;transform:none;transition:none}
+}
+@media print{
+  header.top,#progress,dialog{display:none}
+  body{background:#fff;font-size:12pt}
+  section.rev{opacity:1;transform:none}
+  section{break-inside:avoid-page}
+  .ref{border:none;background:none;padding:0;color:#000}
+  figure.illus{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<header class="top"><div class="in">
+  <a class="brand" href="#top">用看的<span>禱告</span></a>
+  <nav class="toc" aria-label="章節導覽">
+    <a href="#intro">導言</a><a href="#s1">守望</a><a href="#s2">敬畏</a><a href="#s3">定睛基督</a>
+    <a href="#s4">十字架與復活</a><a href="#s5">聖靈</a><a href="#s6">智慧與善行</a><a href="#s7">安息</a>
+    <a href="#s8">盼望</a><a href="#s9">每日操練</a><a href="#s10">結束禱告</a><a href="#refs">參考資料</a>
+  </nav>
+</div></header>
+
+<main id="top">
+<div class="cover">
+  <span class="eyebrow">聖經與基督信仰擴充版｜2026年10月31日</span>
+  <h1>用看的禱告</h1>
+  <p class="sub">從守望、定睛基督，到愛中行動與安息</p>
+  <svg class="eye" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#FFF7E6" stroke="#E4CFA2"/><path d="M14 33 Q32 16 50 33 Q32 50 14 33Z" fill="none" stroke="#B8893B" stroke-width="2.5"/><circle cx="32" cy="33" r="6" fill="#B8893B"/><path d="M32 8 V14 M32 52 V58" stroke="#E4CFA2" stroke-width="2" stroke-linecap="round"/></svg>
+  <div class="chips"><span class="chip">守望</span><span class="chip">敬畏</span><span class="chip">定睛基督</span><span class="chip">善行</span><span class="chip">安息</span><span class="chip">盼望</span></div>
+</div>
+
+<section id="intro" class="rev">
+  <div class="kicker">導言</div>
+  <h2>讓神的話重新引導我們的目光</h2>
+  <p>當生活充滿難題，我們常在禱告中急著尋找答案：事情何時改變？痛苦何時結束？神為何還沒有回應？「用看的禱告」提醒我們停下來，重新注意神的作為、聖潔、智慧與應許。本篇保留「守望、敬畏、善行、安息」的主線，並以耶穌基督的救恩作為整篇的中心。</p>
+  <div class="note"><b>「用看的禱告」是本報告採用的靈修比喻，並非聖經所命名的獨立禱告方法。</b>這裡的「看」，是藉著聖經認識神、憑信心仰望基督，並留意身邊需要愛的人；不要求看見異象、想像神的形貌，或藉某種觀想使願望實現。</div>
+  <blockquote class="vs">因我們行事為人是憑著信心，不是憑著眼見。<footer><button class="ref" data-r="2Cor5:7">林後 5:7</button></footer></blockquote>
+  <p>這句話的上下文談到身體的有限、與主同住的盼望，以及立志討主喜悅。因此，「用看的禱告」也包括：尚未看見結果，仍因神的信實而信靠祂。禱告中的安靜、言語、眼淚與歎息，都可以成為向神敞開的方式。</p>
+  <div class="aside"><b>旁白</b>這裡說的「看」，比較像換上一副對焦正確的眼鏡，而不是打開投影機等特效畫面。</div>
+  <div class="note"><b>閱讀說明：</b>經文採繁體中文《和合本》（非《和合本修訂版》）。點任何<button class="ref" data-r="Hab2:1">經文標籤</button>可看整段經文，並連到 Bible Gateway 對照。各段「經文脈絡」與「靈修應用」分開呈現，避免把應用比喻當成經文本身的原意。</div>
+  <div class="pills" aria-label="全篇路線"><span class="pill">守望</span><span class="arr">→</span><span class="pill">敬畏</span><span class="arr">→</span><span class="pill">定睛基督</span><span class="arr">→</span><span class="pill">十字架與復活</span><span class="arr">→</span><span class="pill">聖靈幫助</span><span class="arr">→</span><span class="pill">善行</span><span class="arr">→</span><span class="pill">安息</span><span class="arr">→</span><span class="pill">盼望</span></div>
+  <p class="take">「看」是藉著聖經認識神、憑信心仰望基督，並留意身邊需要愛的人。</p>
+</section>
+
+<section id="s1" class="rev">
+  <div class="kicker">一　守望</div>
+  <h2>把困惑帶到神面前，等候祂的話</h2>
+  <blockquote class="vs">我要站在守望所，立在望樓上觀看，看耶和華對我說甚麼話，我可用甚麼話向他訴冤（向他訴冤：或譯回答所疑問的）。<footer><button class="ref" data-r="Hab2:1">哈 2:1</button></footer></blockquote>
+  <div class="two">
+    <div class="card ctx"><span class="tag">經文脈絡</span>
+      <p>哈巴谷的守望承接第一章對強暴、不公，以及神使用迦勒底人的疑問。第二章的回答涉及神對驕傲、掠奪與暴行的審判，也要求人在應許尚未成就時等候。守望的關鍵，是預備領受神的回答，而不是靠著登高取得更強的屬靈能力。</p>
+      <p>「守望所」可以作為靈修中的等候意象，但經文本身沒有把它定義為某種「心靈高處」；這段經文也不能保證每個信徒都會像先知一樣得到新的默示。</p></div>
+    <div class="card app"><span class="tag">靈修應用</span>
+      <p>我們可以把真實疑問帶到神面前，不必先裝作已經明白。守望也意味著願意受教：讀經時，不只尋找支持自己想法的句子，也留意神如何指出我們的驕傲、急躁與不義。</p>
+      <p>若某個念頭在禱告中浮現，可以記下來、對照聖經的上下文，並與成熟的信徒一同分辨；不宜立刻把個人感受宣告成神對別人的命令。</p></div>
+  </div>
+  <figure class="illus"><svg viewBox="0 0 640 300" role="img" aria-label="晨光中的守望樓，一人站在樓上向遠方觀看" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <linearGradient id="twsky" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#DCE8F3"/><stop offset=".7" stop-color="#F7E9CF"/><stop offset="1" stop-color="#FBEFD8"/>
+ </linearGradient>
+ <radialGradient id="twglow" cx="470" cy="150" r="140" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#F6D58E" stop-opacity=".9"/><stop offset="1" stop-color="#F6D58E" stop-opacity="0"/>
+ </radialGradient>
+</defs>
+<rect width="640" height="300" fill="url(#twsky)"/>
+<circle cx="470" cy="150" r="140" fill="url(#twglow)"/>
+<g stroke="#B8893B" stroke-opacity=".35" stroke-width="2" stroke-linecap="round">
+ <line x1="470" y1="96" x2="470" y2="66"/><line x1="428" y1="112" x2="408" y2="92"/>
+ <line x1="512" y1="112" x2="532" y2="92"/><line x1="414" y1="150" x2="388" y2="150"/>
+ <line x1="526" y1="150" x2="552" y2="150"/>
+</g>
+<circle cx="470" cy="150" r="34" fill="#F3C978"/>
+<path d="M0 205 Q160 190 320 200 T640 196 V300 H0Z" fill="#C9D6B8"/>
+<path d="M0 232 Q120 196 230 214 Q330 230 420 222 Q540 212 640 236 V300 H0Z" fill="#A9BC92"/>
+<path d="M60 300 L118 210 Q170 176 222 210 L282 300Z" fill="#6F8A5A" opacity=".85"/>
+<g fill="#8A6A44">
+ <path d="M146 196 L152 108 H192 L198 196Z"/>
+ <rect x="142" y="100" width="60" height="10" rx="2"/>
+ <rect x="142" y="88" width="10" height="12"/><rect x="159" y="88" width="10" height="12"/>
+ <rect x="176" y="88" width="10" height="12"/><rect x="192" y="88" width="10" height="12"/>
+</g>
+<rect x="164" y="150" width="16" height="24" rx="8" fill="#5B4630"/>
+<g fill="#3B3326">
+ <circle cx="181" cy="64" r="6.5"/>
+ <path d="M174 72 Q181 69 188 72 L190 88 H172Z"/>
+</g>
+<text x="620" y="288" text-anchor="end" font-size="11" fill="#7A6A52" font-family="Noto Sans TC, sans-serif">象徵示意</text>
+</svg><figcaption>守望是預備領受神的話，不是登高取得能力。<button class="ref" data-r="Hab2:1">哈 2:1–4</button></figcaption></figure>
+  <div class="aside"><b>旁白</b>守望所不是觀景台，門票也不包含「保證看到日出」。它比較像安靜守在收件匣前，而且願意把整封信讀完，不只看主旨。</div>
+  <div class="reflect"><span class="ico">省察</span><div>我願意讓神調整我的問題與期待嗎？還是只願接受符合自己時間表的答案？</div></div>
+  <div class="pray"><span class="lab">回應禱告</span>主啊，我把尚未明白的事帶到祢面前。求祢使我誠實，也使我受教；在等候中，仍願照祢已經顯明的真理生活。</div>
+  <p class="take">守望不是登高取得屬靈能力，而是預備領受神的回答。</p>
+</section>
+
+<section id="s2" class="rev">
+  <div class="kicker">二　敬畏</div>
+  <h2>在永活的神面前安靜，也正視不義</h2>
+  <blockquote class="vs">惟耶和華在他的聖殿中；全地的人都當在他面前肅敬靜默。<footer><button class="ref" data-r="Hab2:20">哈 2:20</button></footer></blockquote>
+  <div class="two">
+    <div class="card ctx"><span class="tag">經文脈絡</span>
+      <p>這節之前責備沒有氣息、不能教導人的偶像，並宣告對掠奪、暴力與剝削的審判。因此，肅敬靜默首先是全地在永活之主面前的敬畏，不只是讓情緒平靜的技巧。</p>
+      <p>這節也沒有敘述先知當下親眼看見聖殿異象；它宣告的是神的尊榮與主權。</p></div>
+    <div class="card app"><span class="tag">靈修應用</span>
+      <p>我們可以安靜承認：我不能掌握一切，也不能把神變成達成自己目的的工具。這樣的安靜容許認罪、哀哭與傾訴，不要求把痛苦壓抑下去。</p>
+      <p>敬畏神也使我們更認真看待受苦的人。既然哈巴谷書責備強暴與掠奪，就不能用「交託神」勸人對傷害保持沉默。合宜的回應可以是停止自己的傷害、保護受害者，或在能力範圍內尋求公義。</p></div>
+  </div>
+  <figure class="illus"><svg viewBox="0 0 640 300" role="img" aria-label="星空下靜止的湖面與群山" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <linearGradient id="lksky" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#6E86B0"/><stop offset=".6" stop-color="#A9B9D6"/><stop offset="1" stop-color="#E9DCC6"/>
+ </linearGradient>
+ <linearGradient id="lkwater" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#C9D3E3"/><stop offset="1" stop-color="#8FA5C6"/>
+ </linearGradient>
+</defs>
+<rect width="640" height="300" fill="url(#lksky)"/>
+<circle cx="341" cy="27" r="1.6" fill="#FFFFFF" opacity="0.9"/><circle cx="59" cy="17" r="0.8" fill="#FFFFFF" opacity="0.7"/><circle cx="606" cy="15" r="1" fill="#FFFFFF" opacity="0.5"/><circle cx="98" cy="63" r="1.6" fill="#FFFFFF" opacity="0.5"/><circle cx="256" cy="19" r="1.6" fill="#FFFFFF" opacity="0.5"/><circle cx="589" cy="23" r="1" fill="#FFFFFF" opacity="0.9"/><circle cx="606" cy="15" r="1.6" fill="#FFFFFF" opacity="0.5"/><circle cx="236" cy="13" r="1" fill="#FFFFFF" opacity="0.7"/><circle cx="439" cy="26" r="0.8" fill="#FFFFFF" opacity="0.9"/><circle cx="325" cy="79" r="1" fill="#FFFFFF" opacity="0.5"/><circle cx="605" cy="81" r="1" fill="#FFFFFF" opacity="0.7"/><circle cx="109" cy="78" r="0.8" fill="#FFFFFF" opacity="0.9"/><circle cx="71" cy="87" r="1" fill="#FFFFFF" opacity="0.7"/><circle cx="554" cy="62" r="1.3" fill="#FFFFFF" opacity="0.7"/><circle cx="609" cy="66" r="1.3" fill="#FFFFFF" opacity="0.7"/><circle cx="264" cy="109" r="1" fill="#FFFFFF" opacity="0.9"/><circle cx="259" cy="18" r="1.3" fill="#FFFFFF" opacity="0.9"/><circle cx="516" cy="120" r="1.3" fill="#FFFFFF" opacity="0.9"/><circle cx="469" cy="44" r="0.8" fill="#FFFFFF" opacity="0.5"/><circle cx="534" cy="61" r="1" fill="#FFFFFF" opacity="0.7"/><circle cx="165" cy="70" r="1.6" fill="#FFFFFF" opacity="0.5"/><circle cx="89" cy="105" r="1.3" fill="#FFFFFF" opacity="0.7"/><circle cx="368" cy="84" r="1.6" fill="#FFFFFF" opacity="0.9"/><circle cx="477" cy="16" r="0.8" fill="#FFFFFF" opacity="0.7"/><circle cx="495" cy="97" r="0.8" fill="#FFFFFF" opacity="0.5"/><circle cx="327" cy="90" r="1.6" fill="#FFFFFF" opacity="0.7"/><circle cx="405" cy="93" r="1.3" fill="#FFFFFF" opacity="0.5"/><circle cx="482" cy="53" r="1" fill="#FFFFFF" opacity="0.9"/><circle cx="129" cy="71" r="0.8" fill="#FFFFFF" opacity="0.5"/><circle cx="304" cy="24" r="1" fill="#FFFFFF" opacity="0.7"/><circle cx="410" cy="119" r="1.6" fill="#FFFFFF" opacity="0.5"/><circle cx="180" cy="65" r="1.6" fill="#FFFFFF" opacity="0.9"/><circle cx="294" cy="25" r="1.6" fill="#FFFFFF" opacity="0.9"/><circle cx="295" cy="98" r="1.6" fill="#FFFFFF" opacity="0.7"/><circle cx="399" cy="37" r="1" fill="#FFFFFF" opacity="0.5"/><circle cx="190" cy="27" r="1" fill="#FFFFFF" opacity="0.9"/><circle cx="248" cy="9" r="1.6" fill="#FFFFFF" opacity="0.9"/><circle cx="196" cy="41" r="1.3" fill="#FFFFFF" opacity="0.5"/><circle cx="159" cy="61" r="1.3" fill="#FFFFFF" opacity="0.9"/><circle cx="589" cy="48" r="1" fill="#FFFFFF" opacity="0.9"/><circle cx="537" cy="87" r="0.8" fill="#FFFFFF" opacity="0.7"/><circle cx="582" cy="58" r="1.6" fill="#FFFFFF" opacity="0.7"/><circle cx="413" cy="21" r="1.6" fill="#FFFFFF" opacity="0.9"/><circle cx="420" cy="15" r="1" fill="#FFFFFF" opacity="0.5"/><circle cx="223" cy="64" r="1" fill="#FFFFFF" opacity="0.5"/><circle cx="358" cy="84" r="0.8" fill="#FFFFFF" opacity="0.5"/><circle cx="10" cy="80" r="1" fill="#FFFFFF" opacity="0.9"/><circle cx="113" cy="54" r="0.8" fill="#FFFFFF" opacity="0.5"/><circle cx="222" cy="86" r="1.6" fill="#FFFFFF" opacity="0.5"/><circle cx="268" cy="52" r="1.3" fill="#FFFFFF" opacity="0.7"/><circle cx="135" cy="22" r="1.6" fill="#FFFFFF" opacity="0.7"/><circle cx="501" cy="69" r="1.3" fill="#FFFFFF" opacity="0.5"/><circle cx="157" cy="21" r="1.3" fill="#FFFFFF" opacity="0.9"/><circle cx="281" cy="69" r="1" fill="#FFFFFF" opacity="0.9"/><circle cx="33" cy="34" r="1.3" fill="#FFFFFF" opacity="0.5"/><circle cx="566" cy="11" r="1.3" fill="#FFFFFF" opacity="0.9"/><circle cx="103" cy="97" r="1.3" fill="#FFFFFF" opacity="0.9"/><circle cx="385" cy="29" r="1.3" fill="#FFFFFF" opacity="0.5"/><circle cx="555" cy="77" r="1.3" fill="#FFFFFF" opacity="0.9"/><circle cx="238" cy="86" r="1" fill="#FFFFFF" opacity="0.5"/>
+<path d="M0 180 L80 120 L140 150 L230 90 L320 160 L400 110 L480 150 L560 100 L640 150 V180Z" fill="#7C8BA6"/>
+<path d="M0 180 L60 156 L150 170 L250 140 L340 174 L450 150 L560 166 L640 160 V180Z" fill="#69789A"/>
+<rect y="180" width="640" height="120" fill="url(#lkwater)"/>
+<g opacity=".28" transform="translate(0 360) scale(1 -1)">
+ <path d="M0 180 L80 120 L140 150 L230 90 L320 160 L400 110 L480 150 L560 100 L640 150 V180Z" fill="#5E6E8C"/>
+</g>
+<g stroke="#FFFFFF" stroke-opacity=".55" stroke-linecap="round">
+ <line x1="120" y1="214" x2="190" y2="214"/><line x1="300" y1="236" x2="400" y2="236"/>
+ <line x1="470" y1="222" x2="530" y2="222"/><line x1="200" y1="262" x2="260" y2="262"/>
+</g>
+<text x="620" y="288" text-anchor="end" font-size="11" fill="#FFFFFF" fill-opacity=".8" font-family="Noto Sans TC, sans-serif">象徵示意</text>
+</svg><figcaption>全地在永活的主面前肅敬靜默。<button class="ref" data-r="Hab2:20">哈 2:18–20</button></figcaption></figure>
+  <div class="reflect"><span class="ico">省察</span><div>我把什麼當成最終保障？我的安靜，是願意聽從神，還是在逃避應當面對的責任？</div></div>
+  <div class="pray"><span class="lab">回應禱告</span>聖潔的主，求祢拆除我心中的偶像，使我在祢面前謙卑，也有勇氣停止不義、關懷受苦的人。</div>
+  <p class="take">肅敬靜默是敬畏神，不是對不義保持沉默。</p>
+</section>
+
+<section id="s3" class="rev">
+  <div class="kicker">三　定睛基督</div>
+  <h2>藉著道成肉身的主認識神</h2>
+  <blockquote class="vs">從來沒有人看見神，只有在父懷裡的獨生子將他表明出來。<footer><button class="ref" data-r="John1:18">約 1:18</button></footer></blockquote>
+  <blockquote class="vs">仰望為我們信心創始成終的耶穌。<footer><button class="ref" data-r="Heb12:2">來 12:2 上（節錄）</button></footer></blockquote>
+  <div class="two">
+    <div class="card ctx"><span class="tag">經文脈絡</span>
+      <p>約翰福音 1:14–18 把神的榮耀、恩典與真理連於道成肉身的耶穌。希伯來書 12:1–3 則勉勵信徒放下重擔、脫去罪，思想忍受十字架苦難的主，繼續奔跑信心的道路。「仰望」因此包含對基督的信靠、思想與跟隨。</p></div>
+    <div class="card app"><span class="tag">靈修應用</span>
+      <p>若只談「看見神的作為」，容易把順利當成神同在的證明，把挫折當成神離開的證明。基督使我們的眼光有更穩固的根據：認識神，要回到祂在耶穌身上所顯明的恩典與真理。</p>
+      <p>實際操練時，可以讀一小段福音書，留意耶穌如何對待人、如何面對試探、如何順服天父，再把所讀的轉成禱告。這不是要求腦中出現耶穌的影像，而是讓祂的言行糾正我們對神與人的想法。</p></div>
+  </div>
+  <figure class="illus"><svg viewBox="0 0 640 300" role="img" aria-label="雲彩之下，一人在通往遠方的路上奔跑" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <linearGradient id="pcsky" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#CFE0EF"/><stop offset="1" stop-color="#F8EEDC"/>
+ </linearGradient>
+</defs>
+<rect width="640" height="300" fill="url(#pcsky)"/>
+<g transform="translate(80 50) scale(1.1)" fill="#FFFFFF" opacity=".92"><ellipse cx="0" cy="0" rx="40" ry="16"/><ellipse cx="-26" cy="4" rx="24" ry="12"/><ellipse cx="28" cy="5" rx="26" ry="11"/><ellipse cx="6" cy="-10" rx="22" ry="14"/></g><g transform="translate(210 34) scale(0.8)" fill="#FFFFFF" opacity=".92"><ellipse cx="0" cy="0" rx="40" ry="16"/><ellipse cx="-26" cy="4" rx="24" ry="12"/><ellipse cx="28" cy="5" rx="26" ry="11"/><ellipse cx="6" cy="-10" rx="22" ry="14"/></g><g transform="translate(330 60) scale(1.2)" fill="#FFFFFF" opacity=".92"><ellipse cx="0" cy="0" rx="40" ry="16"/><ellipse cx="-26" cy="4" rx="24" ry="12"/><ellipse cx="28" cy="5" rx="26" ry="11"/><ellipse cx="6" cy="-10" rx="22" ry="14"/></g><g transform="translate(460 30) scale(0.9)" fill="#FFFFFF" opacity=".92"><ellipse cx="0" cy="0" rx="40" ry="16"/><ellipse cx="-26" cy="4" rx="24" ry="12"/><ellipse cx="28" cy="5" rx="26" ry="11"/><ellipse cx="6" cy="-10" rx="22" ry="14"/></g><g transform="translate(580 58) scale(1.1)" fill="#FFFFFF" opacity=".92"><ellipse cx="0" cy="0" rx="40" ry="16"/><ellipse cx="-26" cy="4" rx="24" ry="12"/><ellipse cx="28" cy="5" rx="26" ry="11"/><ellipse cx="6" cy="-10" rx="22" ry="14"/></g><g transform="translate(140 98) scale(0.7)" fill="#FFFFFF" opacity=".92"><ellipse cx="0" cy="0" rx="40" ry="16"/><ellipse cx="-26" cy="4" rx="24" ry="12"/><ellipse cx="28" cy="5" rx="26" ry="11"/><ellipse cx="6" cy="-10" rx="22" ry="14"/></g><g transform="translate(520 102) scale(0.75)" fill="#FFFFFF" opacity=".92"><ellipse cx="0" cy="0" rx="40" ry="16"/><ellipse cx="-26" cy="4" rx="24" ry="12"/><ellipse cx="28" cy="5" rx="26" ry="11"/><ellipse cx="6" cy="-10" rx="22" ry="14"/></g>
+<path d="M0 170 Q320 150 640 170 V300 H0Z" fill="#D9E2C6"/>
+<path d="M300 162 L340 162 L470 300 L170 300Z" fill="#E8D6B4"/>
+<path d="M318 162 L322 162 L330 300 L310 300Z" fill="#FFFFFF" opacity=".5"/>
+<g stroke="#3B3326" stroke-width="5" stroke-linecap="round" fill="none">
+ <path d="M318 222 L312 246 L300 262"/><path d="M312 246 L326 258 L330 276"/>
+ <path d="M320 200 L318 222"/><path d="M320 204 L334 214 L342 206"/><path d="M319 205 L306 214 L298 224"/>
+</g>
+<circle cx="321" cy="190" r="8" fill="#3B3326"/>
+<text x="620" y="288" text-anchor="end" font-size="11" fill="#7A6A52" font-family="Noto Sans TC, sans-serif">象徵示意</text>
+</svg><figcaption>有許多見證人如雲彩圍著，存心忍耐奔那前頭的路程。<button class="ref" data-r="Heb12:2">來 12:1–3</button></figcaption></figure>
+  <div class="reflect"><span class="ico">省察</span><div>我所期待的耶穌，只是幫助我完成計畫的主，還是我願意聽從、跟隨的主？</div></div>
+  <div class="pray"><span class="lab">回應禱告</span>主耶穌，求祢藉著聖經使我更認識祢；當我疲倦灰心，提醒我思想祢的忍耐，繼續跟隨祢。</div>
+  <p class="take">認識神，要回到祂在耶穌身上顯明的恩典與真理。</p>
+</section>
+
+<section id="s4" class="rev">
+  <div class="kicker">四　十字架與復活</div>
+  <h2>禱告的根基是救恩</h2>
+  <blockquote class="vs">因我們的大祭司並非不能體恤我們的軟弱。他也曾凡事受過試探，與我們一樣，只是他沒有犯罪。<footer><button class="ref" data-r="Heb4:15">來 4:15</button></footer></blockquote>
+  <blockquote class="vs">有基督耶穌已經死了，而且從死裡復活，現今在神的右邊，也替我們祈求。<footer><button class="ref" data-r="Rom8:34">羅 8:34（節錄）</button></footer></blockquote>
+  <div class="two">
+    <div class="card ctx"><span class="tag">經文脈絡</span>
+      <p>希伯來書 4:14–16 把坦然來到神面前的根據，放在神的兒子、尊榮的大祭司耶穌身上。羅馬書 8:31–39 則把信徒的確據連於基督的死、復活與代求，並在患難、危險甚至死亡的處境中宣告神的愛。</p></div>
+    <div class="card app"><span class="tag">靈修應用</span>
+      <p>基督信仰中的禱告，建立在神藉基督接納人的恩典上。我們不必先證明自己足夠虔誠、足夠平靜、足夠會禱告，才有資格來到祂面前。</p>
+      <p>仰望十字架，使我們承認罪的真實，也領受赦免與和好的盼望；仰望復活的主，使我們知道苦難和死亡並不是最後的結局。當禱告後情況仍未改變，基督的代求仍是我們倚靠的根據。</p></div>
+  </div>
+  <figure class="illus"><svg viewBox="0 0 640 300" role="img" aria-label="晨光中石頭已滾開的空墳墓，遠山有三個十字架" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <linearGradient id="tbsky" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#F3D9B8"/><stop offset=".55" stop-color="#FBEBD2"/><stop offset="1" stop-color="#FDF6E8"/>
+ </linearGradient>
+ <radialGradient id="tbglow" cx="520" cy="120" r="160" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#FFE3A3" stop-opacity=".95"/><stop offset="1" stop-color="#FFE3A3" stop-opacity="0"/>
+ </radialGradient>
+</defs>
+<rect width="640" height="300" fill="url(#tbsky)"/>
+<circle cx="520" cy="120" r="160" fill="url(#tbglow)"/>
+<circle cx="520" cy="120" r="30" fill="#F5C979"/>
+<path d="M330 190 Q420 150 520 168 Q600 180 640 176 V300 H330Z" fill="#CBBE9C"/>
+<g stroke="#9C8A6A" stroke-width="2.5" stroke-linecap="round" opacity=".7">
+ <line x1="438" y1="160" x2="438" y2="138"/><line x1="431" y1="145" x2="445" y2="145"/>
+ <line x1="458" y1="158" x2="458" y2="132"/><line x1="450" y1="140" x2="466" y2="140"/>
+ <line x1="478" y1="160" x2="478" y2="138"/><line x1="471" y1="145" x2="485" y2="145"/>
+</g>
+<path d="M0 300 V150 Q60 92 170 98 Q280 104 330 168 Q350 200 352 300Z" fill="#B8A684"/>
+<path d="M118 300 V214 Q118 172 160 172 Q202 172 202 214 V300Z" fill="#3E3428"/>
+<circle cx="262" cy="250" r="46" fill="#9E8C6C"/>
+<circle cx="262" cy="250" r="46" fill="none" stroke="#7E6D52" stroke-width="3"/>
+<path d="M0 286 Q160 270 330 282 T640 280 V300 H0Z" fill="#6F8A5A" opacity=".7"/>
+<g fill="#6F8A5A"><path d="M40 286 l4 -16 l4 16Z"/><path d="M360 284 l4 -14 l4 14Z"/><path d="M590 284 l4 -18 l4 18Z"/></g>
+<text x="620" y="276" text-anchor="end" font-size="11" fill="#7A6A52" font-family="Noto Sans TC, sans-serif">象徵示意</text>
+</svg><figcaption>基督已經死了，而且從死裡復活，現今也替我們祈求。<button class="ref" data-r="Rom8:34">羅 8:31–39</button></figcaption></figure>
+  <div class="reflect"><span class="ico">省察</span><div>我是否把禱告當成換取祝福的表現？我願意帶著需要赦免、需要幫助的真實自己來到主面前嗎？</div></div>
+  <div class="pray"><span class="lab">回應禱告</span>救主耶穌，謝謝祢為罪人捨命，也從死裡復活。求祢使我因祢的恩典親近天父，在軟弱中仍持守祢的救恩。</div>
+  <p class="take">禱告的根基不是我們的表現，而是基督的死、復活與代求。</p>
+</section>
+
+<section id="s5" class="rev">
+  <div class="kicker">五　聖靈的幫助</div>
+  <h2>看不清、說不出時，仍可禱告</h2>
+  <blockquote class="vs">況且，我們的軟弱有聖靈幫助，我們本不曉得當怎樣禱告，只是聖靈親自用說不出來的歎息替我們禱告。<footer><button class="ref" data-r="Rom8:26">羅 8:26</button></footer></blockquote>
+  <div class="two">
+    <div class="card ctx"><span class="tag">經文脈絡</span>
+      <p>羅馬書 8 章同時談到受造界的歎息、信徒等候身體得贖，以及聖靈的幫助。信徒有聖靈，仍可能在盼望中歎息。</p>
+      <p>第 27 節又說，聖靈照著神的旨意替聖徒祈求；這不等於我們心中每個衝動都是神的旨意。</p></div>
+    <div class="card app"><span class="tag">靈修應用</span>
+      <p>有些時候，我們讀不進去，想不清楚，甚至只能說：「主啊，幫助我。」這並不表示禱告失敗。神的幫助不受我們表達能力的限制。</p>
+      <p>「用看的禱告」若使人焦慮地追問「我怎麼還沒有看見什麼」，就偏離了恩典。可以停止勉強自己製造感受，只把當下的軟弱交給神，也容許弟兄姊妹陪伴、代禱。</p></div>
+  </div>
+  <div class="reflect"><span class="ico">省察</span><div>我是否把強烈感動當成神垂聽的唯一證據？我能否在平淡甚至混亂中，仍向祂敞開？</div></div>
+  <div class="pray"><span class="lab">回應禱告</span>天父，我不知道該怎樣禱告。求聖靈幫助我，在說不出話的時候，仍使我倚靠祢。</div>
+  <p class="take">說不出話的時候，禱告並沒有失敗。</p>
+</section>
+
+<section id="s6" class="rev">
+  <div class="kicker">六　智慧與善行</div>
+  <h2>禱告使人學習溫柔、誠實與和平</h2>
+  <blockquote class="vs">你們中間誰是有智慧有見識的呢？他就當在智慧的溫柔上顯出他的善行來。<footer><button class="ref" data-r="Jas3:13">雅 3:13</button></footer></blockquote>
+  <blockquote class="vs">你們得救是本乎恩，也因著信；這並不是出於自己，乃是神所賜的；也不是出於行為，免得有人自誇。<footer><button class="ref" data-r="Eph2:8">弗 2:8–9</button></footer></blockquote>
+  <div class="two">
+    <div class="card ctx"><span class="tag">經文脈絡</span>
+      <p>雅各書 3:13–18 以清潔、和平、溫柔、憐憫與善果，對照嫉妒和紛爭。這裡的「看見」是本報告的應用：智慧要在生活中顯明，經文本身並未教導某種觀看式禱告。</p>
+      <p>以弗所書 2:8–10 同時指出，救恩是恩典，蒙恩的新生命則被呼召去行善。</p></div>
+    <div class="card app"><span class="tag">靈修應用</span>
+      <p>善行不是換取救恩的代價，而是回應恩典的生活。禱告後，可以問：今天有誰需要我耐心聽完？有哪一句傷人的話需要道歉？有什麼能做的善事，我一直拖延？</p>
+      <p>智慧的溫柔也包含清潔與誠實。追求和平，不表示縱容傷害或掩蓋事實；而是在不放棄真理的情況下，避免以嫉妒、報復和羞辱待人。</p></div>
+  </div>
+  <h3>生活中的例子</h3>
+  <div class="steps">
+    <div class="step"><h3>在家庭中</h3><p>少一句嘲諷、多一次聆聽。</p></div>
+    <div class="step"><h3>在工作中</h3><p>誠實呈現資料，不把過失推給同事。</p></div>
+    <div class="step"><h3>在教會或社區中</h3><p>陪伴孤單者，或實際分擔照顧者的辛勞。</p></div>
+  </div>
+  <p style="font-size:14.5px;color:var(--muted)">以上是依經文提出的生活例子，不是經文逐項列出的規定。</p>
+  <div class="aside"><b>旁白</b>禱告會裡的「阿們」說得很順口；第二個「阿們」，常常是在洗碗槽前、或在會議室裡承認「那是我弄錯的」時候才說出來。</div>
+  <div class="reflect"><span class="ico">省察</span><div>我的屬靈言語是否很多，待人卻愈來愈苛刻？今天能把哪一項代禱，化為能力所及的幫助？</div></div>
+  <div class="pray"><span class="lab">回應禱告</span>主啊，願祢的恩典改變我的言語與行動，使我有清潔的動機、溫柔的態度，也有實際行善的勇氣。</div>
+  <p class="take">善行不是換取救恩的代價，而是回應恩典的生活。</p>
+</section>
+
+<section id="s7" class="rev">
+  <div class="kicker">七　安息</div>
+  <h2>在未解決的事中，將自己交託神</h2>
+  <blockquote class="vs">我兒，要謹守真智慧和謀略，不可使他離開你的眼目。<footer><button class="ref" data-r="Prov3:21">箴 3:21</button></footer></blockquote>
+  <blockquote class="vs">你躺下，必不懼怕；你躺臥，睡得香甜。<footer><button class="ref" data-r="Prov3:21">箴 3:24</button></footer></blockquote>
+  <blockquote class="vs">神所賜、出人意外的平安必在基督耶穌裡保守你們的心懷意念。<footer><button class="ref" data-r="Phil4:7">腓 4:7</button></footer></blockquote>
+  <div class="two">
+    <div class="card ctx"><span class="tag">經文脈絡</span>
+      <p>箴言 3 章把安穩連於倚靠耶和華、敬畏祂、持守智慧，也談到管教與對鄰舍行善。按智慧文學的性質及整本聖經的見證，這段話不宜被讀成「每位虔誠者每晚必定熟睡」的機械保證。</p>
+      <p>腓立比書 4:6–9 鼓勵人把需要告訴神，並思念真實、公義、清潔的事，將所領受的付諸實踐。應許的焦點是人在基督裡蒙保守，不是所有困難都立即消失。</p></div>
+    <div class="card app"><span class="tag">靈修應用</span>
+      <p>睡前可以分辨：哪些事今天已經盡力，哪些事明天仍需負責，哪些事確實超出我的掌握。交託不是不負責任，而是承認自己的有限，不再要求自己整夜控制一切。</p>
+      <p>對仍然失眠、哀傷或恐懼的人，不應以這些經文判定他信心不足。耶穌在客西馬尼也曾極其憂傷，並在痛苦中禱告、順服天父<button class="ref" data-r="Matt26:39">太 26:36–46</button>。陪伴與體恤，比催促對方「趕快有平安」更合宜。</p></div>
+  </div>
+  <div class="pills" aria-label="睡前分辨"><span class="pill">今天已經盡力的</span><span class="pill">明天仍需負責的</span><span class="pill">超出我掌握的 → 交託</span></div>
+  <figure class="illus"><svg viewBox="0 0 640 300" role="img" aria-label="夜晚的拱窗外有新月與星，窗下是安靜的床鋪" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <linearGradient id="wnwall" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#F4EADB"/><stop offset="1" stop-color="#EADCC5"/>
+ </linearGradient>
+ <linearGradient id="wnnight" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#2F4467"/><stop offset="1" stop-color="#5A77A3"/>
+ </linearGradient>
+ <clipPath id="wnclip"><path d="M240 250 V110 Q240 50 320 50 Q400 50 400 110 V250Z"/></clipPath>
+</defs>
+<rect width="640" height="300" fill="url(#wnwall)"/>
+<g clip-path="url(#wnclip)">
+ <rect x="240" y="50" width="160" height="200" fill="url(#wnnight)"/>
+ <circle cx="350" cy="105" r="22" fill="#FFF4D2"/><circle cx="361" cy="98" r="20" fill="#36507A"/>
+ <g fill="#FFFFFF"><circle cx="270" cy="90" r="1.6"/><circle cx="300" cy="72" r="1.2"/><circle cx="292" cy="130" r="1.4"/>
+ <circle cx="380" cy="150" r="1.2"/><circle cx="262" cy="170" r="1.1"/><circle cx="320" cy="190" r="1.5"/></g>
+ <path d="M240 230 Q300 206 400 222 V250 H240Z" fill="#253656"/>
+</g>
+<path d="M240 250 V110 Q240 50 320 50 Q400 50 400 110 V250Z" fill="none" stroke="#9C7A4E" stroke-width="8"/>
+<line x1="320" y1="54" x2="320" y2="250" stroke="#9C7A4E" stroke-width="5"/>
+<line x1="242" y1="150" x2="398" y2="150" stroke="#9C7A4E" stroke-width="5"/>
+<rect x="226" y="248" width="188" height="12" rx="3" fill="#8A6A44"/>
+<path d="M200 40 Q214 150 196 262 L226 262 Q236 150 226 40Z" fill="#B9562F" opacity=".55"/>
+<path d="M440 40 Q426 150 444 262 L414 262 Q404 150 414 40Z" fill="#B9562F" opacity=".55"/>
+<rect x="200" y="32" width="244" height="8" rx="4" fill="#8A6A44"/>
+<path d="M60 300 V278 Q60 264 76 264 H170 Q186 264 186 278 V300Z" fill="#DCCDB4"/>
+<ellipse cx="90" cy="266" rx="28" ry="10" fill="#FFFFFF" opacity=".85"/>
+<text x="620" y="288" text-anchor="end" font-size="11" fill="#7A6A52" font-family="Noto Sans TC, sans-serif">象徵示意</text>
+</svg><figcaption>你躺下，必不懼怕；你躺臥，睡得香甜。<button class="ref" data-r="Prov3:21">箴 3:21–26</button></figcaption></figure>
+  <div class="reflect"><span class="ico">省察</span><div>我是否把「完全不害怕」當成蒙神接納的條件？今晚可以把哪一件無法掌控的事交託祂？</div></div>
+  <div class="pray"><span class="lab">回應禱告</span>主啊，今天尚有未完成的事，我心裡也仍有牽掛。求祢保守我的心，賜我所需的休息，並帶領我明天忠心面對當做的事。</div>
+  <p class="take">交託不是不負責任，而是承認自己的有限。</p>
+</section>
+
+<section id="s8" class="rev">
+  <div class="kicker">八　盼望</div>
+  <h2>眼前尚未改變，仍因救我的神喜樂</h2>
+  <blockquote class="vs">然而，我要因耶和華歡欣，因救我的神喜樂。<footer><button class="ref" data-r="Hab3:18">哈 3:18</button></footer></blockquote>
+  <blockquote class="vs">神要擦去他們一切的眼淚；不再有死亡，也不再有悲哀、哭號、疼痛，因為以前的事都過去了。<footer><button class="ref" data-r="Rev21:4">啟 21:4</button></footer></blockquote>
+  <div class="two">
+    <div class="card ctx"><span class="tag">經文脈絡</span>
+      <p>哈巴谷書 3:16–19 沒有把恐懼隱藏起來：先知身體戰兢，也面對田地與牲畜可能失去供應的境況。他的喜樂是對拯救之神的信靠，不是因為所有損失都已恢復。</p>
+      <p>啟示錄 21:1–5 則把盼望帶向神與人同住、新天新地的終末應許。</p></div>
+    <div class="card app"><span class="tag">靈修應用</span>
+      <p>基督徒可以一面流淚，一面持守盼望。這份盼望不要求我們稱苦難為美好，也不把未來的完全更新提前宣稱為今生每一刻的經驗。</p>
+      <p>因此，整篇靈修的終點不只是今晚能否安睡，而是學習在神面前生活：有答案時感謝，尚未明白時等候，有能力時行善，軟弱時求助，並盼望神完成祂的救贖。</p></div>
+  </div>
+  <figure class="illus"><svg viewBox="0 0 640 300" role="img" aria-label="不結果的無花果樹與空羊圈，遠方晨光升起" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <linearGradient id="fgsky" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#D7E3EE"/><stop offset=".65" stop-color="#F6E3C2"/><stop offset="1" stop-color="#F9EAD0"/>
+ </linearGradient>
+ <radialGradient id="fgglow" cx="480" cy="178" r="150" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#F7CF84" stop-opacity=".85"/><stop offset="1" stop-color="#F7CF84" stop-opacity="0"/>
+ </radialGradient>
+</defs>
+<rect width="640" height="300" fill="url(#fgsky)"/>
+<circle cx="480" cy="178" r="150" fill="url(#fgglow)"/>
+<circle cx="480" cy="178" r="28" fill="#F2BF68"/>
+<path d="M0 214 Q320 204 640 214 V300 H0Z" fill="#D8C7A2"/>
+<g stroke="#8E7A5C" stroke-width="2" stroke-dasharray="0" opacity=".55">
+ <line x1="30" y1="246" x2="600" y2="250"/><line x1="60" y1="262" x2="560" y2="268"/>
+</g>
+<g stroke="#6B5236" stroke-linecap="round" fill="none">
+ <path d="M170 280 Q166 230 172 190" stroke-width="12"/>
+ <path d="M172 196 Q150 160 112 140" stroke-width="7"/>
+ <path d="M172 192 Q196 150 236 128" stroke-width="7"/>
+ <path d="M170 210 Q130 196 96 196" stroke-width="5"/>
+ <path d="M174 206 Q214 196 250 186" stroke-width="5"/>
+ <path d="M130 150 Q124 128 128 108" stroke-width="3.5"/>
+ <path d="M212 140 Q222 118 216 100" stroke-width="3.5"/>
+ <path d="M112 140 Q92 136 78 124" stroke-width="3"/>
+ <path d="M236 128 Q256 118 266 104" stroke-width="3"/>
+</g>
+<g stroke="#8A6A44" stroke-width="4" stroke-linecap="round">
+ <line x1="330" y1="280" x2="330" y2="244"/><line x1="370" y1="280" x2="370" y2="244"/>
+ <line x1="410" y1="280" x2="410" y2="244"/><line x1="450" y1="280" x2="450" y2="244"/>
+ <line x1="324" y1="254" x2="456" y2="254"/><line x1="324" y1="270" x2="456" y2="270"/>
+</g>
+<text x="620" y="292" text-anchor="end" font-size="11" fill="#7A6A52" font-family="Noto Sans TC, sans-serif">象徵示意</text>
+</svg><figcaption>雖然無花果樹不發旺、圈中絕了羊，仍因救我的神喜樂。<button class="ref" data-r="Hab3:18">哈 3:16–19</button></figcaption></figure>
+  <div class="pray"><span class="lab">回應禱告</span>救我的神，眼前仍有缺乏，我也仍會流淚。求祢使我因基督的復活持守盼望，在等候祢更新萬有的日子，忠心走今天的路。</div>
+  <p class="take">一面流淚，一面持守盼望。</p>
+</section>
+
+<section id="s9" class="rev">
+  <div class="kicker">九　每日操練</div>
+  <h2>把經文轉成禱告與行動</h2>
+  <p>以下約十五分鐘的安排，是實用建議，不是聖經規定的次序、時間或得恩典的條件。</p>
+  <div class="steps">
+    <div class="step"><h3>誠實守望</h3><span class="time">約 2 分鐘 · <button class="ref" data-r="Hab2:1">哈 2:1</button></span><p>說出一件真實的困惑，不急著替神回答。</p></div>
+    <div class="step"><h3>讀經仰望</h3><span class="time">約 4 分鐘 · <button class="ref" data-r="Heb12:2">來 12:1–3</button></span><p>閱讀整段，注意耶穌的忍耐與信徒的回應。</p></div>
+    <div class="step"><h3>認罪與交託</h3><span class="time">約 3 分鐘 · <button class="ref" data-r="Heb4:15">來 4:14–16</button><button class="ref" data-r="Rom8:26">羅 8:26–27</button></span><p>承認需要改變之處，把說不清的需要也交給神。</p></div>
+    <div class="step"><h3>回應與代禱</h3><span class="time">約 3 分鐘 · <button class="ref" data-r="Jas3:13">雅 3:13–18</button></span><p>為一個人禱告，選一項今天可做的溫柔善行。</p></div>
+    <div class="step"><h3>感謝與安息</h3><span class="time">約 3 分鐘 · <button class="ref" data-r="Phil4:7">腓 4:6–9</button></span><p>感謝一件具體恩典，把尚未解決的事交託主。</p></div>
+  </div>
+  <p>若只剩片刻，也可以讀一節經文，簡單禱告。操練的目的在於親近神、聽從祂，不在於完成時數。</p>
+  <div class="aside"><b>旁白</b>十五分鐘是建議，不是打卡；天父的門口沒有放計時器。</div>
+  <figure class="illus"><svg viewBox="0 0 640 300" role="img" aria-label="攤開的經卷旁，一盞點亮的陶油燈" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <radialGradient id="lsbg" cx="470" cy="136" r="300" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#FFF1CF"/><stop offset="1" stop-color="#EFE3CC"/>
+ </radialGradient>
+ <radialGradient id="lsglow" cx="470" cy="136" r="90" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#FFD98A" stop-opacity=".9"/><stop offset="1" stop-color="#FFD98A" stop-opacity="0"/>
+ </radialGradient>
+</defs>
+<rect width="640" height="300" fill="url(#lsbg)"/>
+<circle cx="470" cy="136" r="90" fill="url(#lsglow)"/>
+<rect y="240" width="640" height="60" fill="#C9A97A"/>
+<rect y="236" width="640" height="6" fill="#B08E60"/>
+<rect x="134" y="100" width="250" height="136" fill="#F7EBD3" stroke="#C8AE84" stroke-width="2"/>
+<path d="M150 120 q20 -3 40 0 t40 0 t40 0 t40 0 t36 0" stroke="#A58A62" stroke-width="2" fill="none" opacity=".55"/><path d="M150 136 q20 -3 40 0 t40 0 t40 0 t40 0 t36 0" stroke="#A58A62" stroke-width="2" fill="none" opacity=".55"/><path d="M150 152 q20 -3 40 0 t40 0 t40 0 t40 0 t36 0" stroke="#A58A62" stroke-width="2" fill="none" opacity=".55"/><path d="M150 168 q20 -3 40 0 t40 0 t40 0 t40 0 t36 0" stroke="#A58A62" stroke-width="2" fill="none" opacity=".55"/><path d="M150 184 q20 -3 40 0 t40 0 t40 0 t40 0 t36 0" stroke="#A58A62" stroke-width="2" fill="none" opacity=".55"/><path d="M150 200 q20 -3 40 0 t40 0 t40 0 t40 0 t36 0" stroke="#A58A62" stroke-width="2" fill="none" opacity=".55"/><path d="M150 216 q20 -3 40 0 t40 0 t40 0 t40 0 t36 0" stroke="#A58A62" stroke-width="2" fill="none" opacity=".55"/>
+<rect x="118" y="92" width="22" height="152" rx="11" fill="#C59D63"/>
+<rect x="378" y="92" width="22" height="152" rx="11" fill="#C59D63"/>
+<rect x="124" y="84" width="10" height="168" rx="5" fill="#8A6A44"/>
+<rect x="384" y="84" width="10" height="168" rx="5" fill="#8A6A44"/>
+<path d="M420 214 Q420 192 470 190 Q526 192 530 212 Q526 232 470 234 Q420 232 420 214Z" fill="#B9562F"/>
+<path d="M520 204 Q540 196 556 186 Q552 204 528 214Z" fill="#B9562F"/>
+<ellipse cx="470" cy="196" rx="20" ry="5" fill="#7A3B20"/>
+<path d="M470 110 Q484 138 470 154 Q456 138 470 110Z" fill="#F4B23E"/>
+<path d="M470 126 Q476 140 470 150 Q464 140 470 126Z" fill="#FFF0B8"/>
+<line x1="470" y1="154" x2="470" y2="194" stroke="#5B4630" stroke-width="2"/>
+<text x="620" y="288" text-anchor="end" font-size="11" fill="#6A5638" font-family="Noto Sans TC, sans-serif">象徵示意</text>
+</svg><figcaption>你的話是我腳前的燈，是我路上的光。<button class="ref" data-r="Ps119:105">詩 119:105</button></figcaption></figure>
+  <h3>小組討論題</h3>
+  <ol class="q">
+    <li>哈巴谷的守望，與要求神立即照我的意思回答，有什麼不同？</li>
+    <li>耶穌的十字架與復活，如何幫助我們理解禱告後仍然存在的苦難？</li>
+    <li>如何分辨禱告中的個人感受與聖經清楚的教導？</li>
+    <li>本週有哪些言語或行動，可以結出溫柔與和平的果子？</li>
+    <li>面對仍失眠、悲傷或等候答案的人，我們能如何陪伴？</li>
+  </ol>
+</section>
+
+<section id="s10" class="rev">
+  <div class="kicker">十　整合結束禱告</div>
+  <h2>在等候中仍有忠心</h2>
+  <div class="closing">
+    <p>天父，我帶著今天的困惑、需要與疲憊來到祢面前。求祢使我在守望中聽從祢，在安靜中敬畏祢，也在祢的話語裡看清自己的罪與有限。</p>
+    <p>主耶穌，祢將父顯明給我們，也為我們受死、復活。當我只看見眼前的失敗，求祢使我記得祢的恩典；當我疲倦灰心，求祢使我思想祢的忍耐，繼續跟隨祢。</p>
+    <p>聖靈啊，求祢幫助我的軟弱。在我不知如何禱告的時候，扶持我；在我容易自以為是的時候，引導我接受真理的光照。</p>
+    <p>求祢使我的禱告結出溫柔、誠實與憐憫，使我留意身旁的人，願意認錯，也願意行善。今晚，求祢保守我的心；即使問題尚未解決，也使我把自己交託祢。</p>
+    <p>願我在眼淚中仍有盼望，在等候中仍有忠心，直到祢更新萬有的日子。奉主耶穌基督的名禱告，</p>
+    <p class="amen">阿們。</p>
+  </div>
+</section>
+
+<section id="refs" class="rev">
+  <div class="kicker">十一　可溯源參考資料</div>
+  <h2>參考資料</h2>
+  <p>本篇以聖經文本為主要依據，未以未核實的講道、網路格言或學者名言作為論證。解釋與生活應用由本報告綜整，不代表各網站另有提供相同的解經結論。</p>
+  <h3>本篇引用經文（依出現順序）</h3>
+  <ul class="reflist" id="reflist"></ul>
+  <h3>原報告來源頁</h3>
+  <table class="src">
+    <thead><tr><th>經文範圍</th><th>本文用途</th></tr></thead>
+    <tbody id="srctable"></tbody>
+  </table>
+  <h3>和合本線上資源</h3>
+  <ul class="reflist">
+    <li><a href="https://bible.fhl.net/" target="_blank" rel="noopener">信望愛站 線上聖經</a><small>和合本與原文工具</small></li>
+    <li><a href="https://www.biblegateway.com/versions/Chinese-Union-Version-Modern-Punctuation-Bible/" target="_blank" rel="noopener">Bible Gateway：和合本（新標點）</a><small>CUVMPT</small></li>
+    <li><a href="https://www.biblegateway.com/versions/Chinese-Union-Version-Bible/" target="_blank" rel="noopener">Bible Gateway：和合本</a><small>CUV</small></li>
+  </ul>
+  <div class="note"><b>查經建議：</b>先讀完整段落，分辨經文對原來讀者說什麼，再思想如何在基督裡應用於今日。不要把先知的特定默示當成每個人必有的經驗，也不要把智慧文學或終末應許，化成今日一切順遂的保證。</div>
+</section>
+</main>
+
+<footer class="site">
+  <div><b>用看的禱告</b>｜從守望、定睛基督，到愛中行動與安息</div>
+  <div>聖經與基督信仰擴充版．2026年10月31日．經文引自《和合本》（公有領域）</div>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dlg-t">
+  <div class="dlg-h"><div><h3 id="dlg-t"></h3><div class="ver" id="dlg-v"></div></div><button class="dlg-x" id="dlg-x" aria-label="關閉">×</button></div>
+  <div class="dlg-b" id="dlg-b"></div>
+  <div class="dlg-f" id="dlg-f"></div>
+</dialog>
+
+<script>
+const BIBLE_VER = "CUVMPT";
+const bg = (en, ver) => `https://www.biblegateway.com/passage/?search=${encodeURIComponent(en)}&version=${ver}`;
+const CN = "https://cnbible.com/cu/";
+const V = {
+"2Cor5:7": {
+"zh": "哥林多後書 5:6–9",
+"en": "2 Corinthians 5:6-9",
+"src": "2_corinthians/5.htm",
+"v": [
+[
+6,
+"所以，我們時常坦然無懼，並且曉得我們住在身內便與主相離。"
+],
+[
+7,
+"因我們行事為人是憑著信心，不是憑著眼見。"
+],
+[
+8,
+"我們坦然無懼，是更願意離開身體與主同住。"
+],
+[
+9,
+"所以，無論是住在身內，離開身外，我們立了志向，要得主的喜悅。"
+]
+]
+},
+"Hab2:1": {
+"zh": "哈巴谷書 2:1–4",
+"en": "Habakkuk 2:1-4",
+"src": "habakkuk/2.htm",
+"v": [
+[
+1,
+"我要站在守望所，立在望樓上觀看，看耶和華對我說甚麼話，我可用甚麼話向他訴冤（向他訴冤：或譯回答所疑問的）。"
+],
+[
+2,
+"他對我說：將這默示明明地寫在版上，使讀的人容易讀（或譯：隨跑隨讀）。"
+],
+[
+3,
+"因為這默示有一定的日期，快要應驗，並不虛謊。雖然遲延，還要等候；因為必然臨到，不再遲延。"
+],
+[
+4,
+"迦勒底人自高自大，心不正直；惟義人因信得生（或譯：義人因他的信得生）。"
+]
+]
+},
+"Hab2:20": {
+"zh": "哈巴谷書 2:18–20",
+"en": "Habakkuk 2:18-20",
+"src": "habakkuk/2.htm",
+"v": [
+[
+18,
+"雕刻的偶像，人將它刻出來，有甚麼益處呢？鑄造的偶像，就是虛謊的師傅；製造者倚靠這啞巴偶像有甚麼益處呢？"
+],
+[
+19,
+"對木偶說：醒起！對啞巴石像說：起來！那人有禍了！這個還能教訓人嗎？看哪，是包裹金銀的，其中毫無氣息。"
+],
+[
+20,
+"惟耶和華在他的聖殿中；全地的人都當在他面前肅敬靜默。"
+]
+]
+},
+"John1:18": {
+"zh": "約翰福音 1:14–18",
+"en": "John 1:14-18",
+"src": "john/1.htm",
+"v": [
+[
+14,
+"道成了肉身，住在我們中間，充充滿滿地有恩典有真理。我們也見過他的榮光，正是父獨生子的榮光。"
+],
+[
+15,
+"約翰為他作見證，喊著說：這就是我曾說：那在我以後來的，反成了在我以前的，因他本來在我以前。"
+],
+[
+16,
+"從他豐滿的恩典裡，我們都領受了，而且恩上加恩。"
+],
+[
+17,
+"律法本是藉著摩西傳的；恩典和真理都是由耶穌基督來的。"
+],
+[
+18,
+"從來沒有人看見神，只有在父懷裡的獨生子將他表明出來。"
+]
+]
+},
+"Heb12:2": {
+"zh": "希伯來書 12:1–3",
+"en": "Hebrews 12:1-3",
+"src": "hebrews/12.htm",
+"v": [
+[
+1,
+"我們既有這許多的見證人，如同雲彩圍著我們，就當放下各樣的重擔，脫去容易纏累我們的罪，存心忍耐，奔那擺在我們前頭的路程，"
+],
+[
+2,
+"仰望為我們信心創始成終的耶穌（或譯：仰望那將真道創始成終的耶穌）。他因那擺在前面的喜樂，就輕看羞辱，忍受了十字架的苦難，便坐在神寶座的右邊。"
+],
+[
+3,
+"那忍受罪人這樣頂撞的，你們要思想，免得疲倦灰心。"
+]
+]
+},
+"Heb4:15": {
+"zh": "希伯來書 4:14–16",
+"en": "Hebrews 4:14-16",
+"src": "hebrews/4.htm",
+"v": [
+[
+14,
+"我們既然有一位已經升入高天尊榮的大祭司，就是神的兒子耶穌，便當持定所承認的道。"
+],
+[
+15,
+"因我們的大祭司並非不能體恤我們的軟弱。他也曾凡事受過試探，與我們一樣，只是他沒有犯罪。"
+],
+[
+16,
+"所以，我們只管坦然無懼地來到施恩的寶座前，為要得憐恤，蒙恩惠，作隨時的幫助。"
+]
+]
+},
+"Rom8:34": {
+"zh": "羅馬書 8:31–39",
+"en": "Romans 8:31-39",
+"src": "romans/8.htm",
+"v": [
+[
+31,
+"既是這樣，還有甚麼說的呢？神若幫助我們，誰能敵擋我們呢？"
+],
+[
+32,
+"神既不愛惜自己的兒子，為我們眾人捨了，豈不也把萬物和他一同白白地賜給我們嗎？"
+],
+[
+33,
+"誰能控告神所揀選的人呢？有神稱他們為義了。"
+],
+[
+34,
+"誰能定他們的罪呢？有基督耶穌已經死了，而且從死裡復活，現今在神的右邊，也替我們祈求。"
+],
+[
+35,
+"誰能使我們與基督的愛隔絕呢？難道是患難嗎？是困苦嗎？是逼迫嗎？是飢餓嗎？是赤身露體嗎？是危險嗎？是刀劍嗎？"
+],
+[
+36,
+"如經上所記：我們為你的緣故終日被殺；人看我們如將宰的羊。"
+],
+[
+37,
+"然而，靠著愛我們的主，在這一切的事上已經得勝有餘了。"
+],
+[
+38,
+"因為我深信無論是死，是生，是天使，是掌權的，是有能的，是現在的事，是將來的事，"
+],
+[
+39,
+"是高處的，是低處的，是別的受造之物，都不能叫我們與神的愛隔絕；這愛是在我們的主基督耶穌裡的。"
+]
+]
+},
+"Rom8:26": {
+"zh": "羅馬書 8:26–27",
+"en": "Romans 8:26-27",
+"src": "romans/8.htm",
+"v": [
+[
+26,
+"況且，我們的軟弱有聖靈幫助，我們本不曉得當怎樣禱告，只是聖靈親自用說不出來的歎息替我們禱告。"
+],
+[
+27,
+"鑒察人心的，曉得聖靈的意思，因為聖靈照著神的旨意替聖徒祈求。"
+]
+]
+},
+"Jas3:13": {
+"zh": "雅各書 3:13–18",
+"en": "James 3:13-18",
+"src": "james/3.htm",
+"v": [
+[
+13,
+"你們中間誰是有智慧有見識的呢？他就當在智慧的溫柔上顯出他的善行來。"
+],
+[
+14,
+"你們心裡若懷著苦毒的嫉妒和紛爭，就不可自誇，也不可說謊話抵擋真道。"
+],
+[
+15,
+"這樣的智慧不是從上頭來的，乃是屬地的，屬情慾的，屬鬼魔的。"
+],
+[
+16,
+"在何處有嫉妒、紛爭，就在何處有擾亂和各樣的壞事。"
+],
+[
+17,
+"惟獨從上頭來的智慧，先是清潔，後是和平，溫良柔順，滿有憐憫，多結善果，沒有偏見，沒有假冒。"
+],
+[
+18,
+"並且使人和平的，是用和平所栽種的義果。"
+]
+]
+},
+"Eph2:8": {
+"zh": "以弗所書 2:8–10",
+"en": "Ephesians 2:8-10",
+"src": "ephesians/2.htm",
+"v": [
+[
+8,
+"你們得救是本乎恩，也因著信；這並不是出於自己，乃是神所賜的；"
+],
+[
+9,
+"也不是出於行為，免得有人自誇。"
+],
+[
+10,
+"我們原是他的工作，在基督耶穌裡造成的，為要叫我們行善，就是神所預備叫我們行的。"
+]
+]
+},
+"Prov3:21": {
+"zh": "箴言 3:21–26",
+"en": "Proverbs 3:21-26",
+"v": [
+[
+21,
+"我兒，要謹守真智慧和謀略，不可使他離開你的眼目。"
+],
+[
+22,
+"這樣，他必作你的生命，頸項的美飾。"
+],
+[
+23,
+"你就坦然行路，不致碰腳。"
+],
+[
+24,
+"你躺下，必不懼怕；你躺臥，睡得香甜。"
+],
+[
+25,
+"忽然來的驚恐，不要害怕；惡人遭毀滅，也不要恐懼；"
+],
+[
+26,
+"因為耶和華是你所倚靠的；他必保守你的腳不陷入網羅。"
+]
+]
+},
+"Matt26:39": {
+"zh": "馬太福音 26:36–46",
+"en": "Matthew 26:36-46",
+"src": "matthew/26.htm",
+"v": [
+[
+36,
+"耶穌同門徒來到一個地方，名叫客西馬尼，就對他們說：你們坐在這裡，等我到那邊去禱告。"
+],
+[
+37,
+"於是帶著彼得和西庇太的兩個兒子同去，就憂愁起來，極其難過，"
+],
+[
+38,
+"便對他們說：我心裡甚是憂傷，幾乎要死；你們在這裡等候，和我一同警醒。"
+],
+[
+39,
+"他就稍往前走，俯伏在地，禱告說：我父啊，倘若可行，求你叫這杯離開我。然而，不要照我的意思，只要照你的意思。"
+],
+[
+40,
+"來到門徒那裡，見他們睡著了，就對彼得說：怎麼樣？你們不能同我警醒片時嗎？"
+],
+[
+41,
+"總要警醒禱告，免得入了迷惑。你們心靈固然願意，肉體卻軟弱了。"
+],
+[
+42,
+"第二次又去禱告說：我父啊，這杯若不能離開我，必要我喝，就願你的意旨成全。"
+],
+[
+43,
+"又來，見他們睡著了，因為他們的眼睛困倦。"
+],
+[
+44,
+"耶穌又離開他們去了。第三次禱告，說的話還是與先前一樣。"
+],
+[
+45,
+"於是來到門徒那裡，對他們說：現在你們仍然睡覺安歇吧（吧：或譯麼？）！時候到了，人子被賣在罪人手裡了。"
+],
+[
+46,
+"起來！我們走吧。看哪，賣我的人近了。"
+]
+]
+},
+"Phil4:7": {
+"zh": "腓立比書 4:6–9",
+"en": "Philippians 4:6-9",
+"src": "philippians/4.htm",
+"v": [
+[
+6,
+"應當一無掛慮，只要凡事藉著禱告、祈求，和感謝，將你們所要的告訴神。"
+],
+[
+7,
+"神所賜、出人意外的平安必在基督耶穌裡保守你們的心懷意念。"
+],
+[
+8,
+"弟兄們，我還有未盡的話：凡是真實的、可敬的、公義的、清潔的、可愛的、有美名的，若有甚麼德行，若有甚麼稱讚，這些事你們都要思念。"
+],
+[
+9,
+"你們在我身上所學習的，所領受的，所聽見的，所看見的，這些事你們都要去行，賜平安的神就必與你們同在。"
+]
+]
+},
+"Hab3:18": {
+"zh": "哈巴谷書 3:16–19",
+"en": "Habakkuk 3:16-19",
+"src": "habakkuk/3.htm",
+"v": [
+[
+16,
+"我聽見耶和華的聲音，身體戰兢，嘴唇發顫，骨中朽爛；我在所立之處戰兢。我只可安靜等候災難之日臨到，犯境之民上來。"
+],
+[
+17,
+"雖然無花果樹不發旺，葡萄樹不結果，橄欖樹也不效力，田地不出糧食，圈中絕了羊，棚內也沒有牛；"
+],
+[
+18,
+"然而，我要因耶和華歡欣，因救我的神喜樂。"
+],
+[
+19,
+"主耶和華是我的力量；他使我的腳快如母鹿的蹄，又使我穩行在高處。這歌交與伶長，用絲弦的樂器。"
+]
+]
+},
+"Rev21:4": {
+"zh": "啟示錄 21:1–5",
+"en": "Revelation 21:1-5",
+"src": "revelation/21.htm",
+"v": [
+[
+1,
+"我又看見一個新天新地；因為先前的天地已經過去了，海也不再有了。"
+],
+[
+2,
+"我又看見聖城新耶路撒冷由神那裡從天而降，預備好了，就如新婦妝飾整齊，等候丈夫。"
+],
+[
+3,
+"我聽見有大聲音從寶座出來說：看哪，神的帳幕在人間。他要與人同住，他們要作他的子民。神要親自與他們同在，作他們的神。"
+],
+[
+4,
+"神要擦去他們一切的眼淚；不再有死亡，也不再有悲哀、哭號、疼痛，因為以前的事都過去了。"
+],
+[
+5,
+"坐寶座的說：看哪，我將一切都更新了！又說：你要寫上；因這些話是可信的，是真實的。"
+]
+]
+},
+"Ps119:105": {
+"zh": "詩篇 119:105",
+"en": "Psalm 119:105",
+"v": [
+[
+105,
+"你的話是我腳前的燈，是我路上的光。"
+]
+]
+}
+};
+const USE = [["2Cor5:7", "哥林多後書 5:1–10、14–19", "憑信心而行、復活盼望與為主而活"], ["Hab2:1", "哈巴谷書 2:1–4、6–20", "守望、等候、公義、偶像與肅敬"], ["John1:18", "約翰福音 1:14–18", "道成肉身，子將父表明出來"], ["Heb12:2", "希伯來書 12:1–3", "仰望基督、忍耐與跟隨"], ["Heb4:15", "希伯來書 4:12–16", "神話語的光照與基督大祭司的恩典"], ["Rom8:34", "羅馬書 8:18–39", "歎息、聖靈幫助、基督復活代求與神的愛"], ["Jas3:13", "雅各書 3:13–18", "屬天智慧、溫柔、憐憫與和平"], ["Eph2:8", "以弗所書 2:8–10", "恩典、信心與善行的關係"], ["Prov3:21", "箴言 3:5–12、21–28", "倚靠、智慧、安息與鄰舍責任"], ["Phil4:7", "腓立比書 4:6–9", "祈求、感謝、平安與實踐"], ["Matt26:39", "馬太福音 26:36–46", "耶穌的憂傷、禱告與順服"], ["Hab3:18", "哈巴谷書 3:16–19", "在戰兢與缺乏中信靠神"], ["Rev21:4", "啟示錄 21:1–5", "新天新地、神同住與終末盼望"]];
+
+const dlg = document.getElementById('dlg');
+function openRef(k){
+  const v = V[k]; if(!v) return;
+  document.getElementById('dlg-t').textContent = v.zh;
+  document.getElementById('dlg-v').textContent = '和合本（新式標點）';
+  document.getElementById('dlg-b').innerHTML = v.v.map(([n,t])=>`<sup>${n}</sup>${t}`).join(' ');
+  const f = document.getElementById('dlg-f');
+  f.innerHTML = `<a class="main" href="${bg(v.en,BIBLE_VER)}" target="_blank" rel="noopener">Bible Gateway 和合本</a>`+
+    `<a href="${bg(v.en,'CUV')}" target="_blank" rel="noopener">CUV</a>`+
+    `<a href="${bg(v.en,'KJV')}" target="_blank" rel="noopener">KJV</a>`+
+    (v.src?`<a href="${CN+v.src}" target="_blank" rel="noopener">原報告來源頁</a>`:'');
+  if(dlg.showModal) dlg.showModal(); else dlg.setAttribute('open','');
+}
+document.addEventListener('click', e=>{
+  const b = e.target.closest('.ref'); if(b){ openRef(b.dataset.r); }
+});
+document.getElementById('dlg-x').onclick = ()=>dlg.close();
+dlg.addEventListener('click', e=>{ if(e.target===dlg) dlg.close(); });
+
+// 參考資料：依出現順序去重
+(function(){
+  const seen = new Set(), ul = document.getElementById('reflist');
+  document.querySelectorAll('main .ref').forEach(b=>{
+    const k=b.dataset.r; if(seen.has(k)||!V[k]) return; seen.add(k);
+    const v=V[k], li=document.createElement('li');
+    li.innerHTML=`<a href="${bg(v.en,BIBLE_VER)}" target="_blank" rel="noopener">${v.zh}</a><small>${v.en}</small>`;
+    ul.appendChild(li);
+  });
+  const tb = document.getElementById('srctable');
+  USE.forEach(([k,range,use])=>{
+    const v=V[k]; const tr=document.createElement('tr');
+    tr.innerHTML=`<td>${v.src?`<a href="${CN+v.src}" target="_blank" rel="noopener">${range}</a>`:`<a href="${bg(v.en,'CUV')}" target="_blank" rel="noopener">${range}</a>`}</td><td>${use}</td>`;
+    tb.appendChild(tr);
+  });
+})();
+
+// 閱讀進度、導覽高亮、淡入
+const bar=document.getElementById('progress');
+const links=[...document.querySelectorAll('nav.toc a')];
+const secs=[...document.querySelectorAll('main section')];
+function onScroll(){
+  const h=document.documentElement; const p=h.scrollTop/(h.scrollHeight-h.clientHeight);
+  bar.style.width=(Math.max(0,Math.min(1,p))*100)+'%';
+  let cur=null; secs.forEach(s=>{ if(s.getBoundingClientRect().top<120) cur=s.id; });
+  links.forEach(a=>a.classList.toggle('on', a.getAttribute('href')==='#'+cur));
+}
+addEventListener('scroll',onScroll,{passive:true}); onScroll();
+if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('in'); io.unobserve(e.target);} }),{rootMargin:'0px 0px -10% 0px'});
+  secs.forEach(s=>io.observe(s));
+} else secs.forEach(s=>s.classList.add('in'));
+</script>
+</body>
+</html>
