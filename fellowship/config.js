@@ -21,7 +21,7 @@ window.SITE_CONFIG = {
   notesHeading: "讀經筆記",
 
   notes: [
-{  title: "用看的禱告",  subtitle: "從守望、定睛基督，到愛中行動與安息",  url: "/fellowship/prayer-of-seeing/",},
+{  title: "用看的禱告",  subtitle: "從守望、定睛基督，到愛中行動與安息",  url: '/fellowship/prayer-of-seeing/index.html',},
 {  title: "神所愛的，祂必管教",  subtitle: "管教不是被棄絕的記號，而是蒙愛、被收納的記號",  url: "https://www.gungho.idv.tw/fellowship/discipline-of-love/",},
 {  title: "禱告與心意更新",   subtitle: "從經文看禱告、交託與醫治",  url: "https://www.gungho.idv.tw/fellowship/prayer-and-healing/",},
 {  title: "聖經五位屬靈領袖的臨終禱告、祝福與遺囑",  subtitle: "從應許到成全",  url: "https://www.gungho.idv.tw/fellowship/five-leaders-last-words/",},
