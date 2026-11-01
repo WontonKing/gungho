@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2455c7">
+<title>幾點吃飯，也會影響健康？｜共好小學堂</title>
+<meta name="description" content="什麼時候吃，會影響腸道菌與代謝嗎？整理小鼠研究與三個限時進食人體試驗的結果和限制，附一天進食時鐘、生活清單與小測驗。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/MEALTIME/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="幾點吃飯，也會影響健康？｜共好小學堂">
+<meta property="og:description" content="什麼時候吃，會影響腸道菌與代謝嗎？整理小鼠研究與三個限時進食人體試驗的結果和限制，附一天進食時鐘、生活清單與小測驗。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/MEALTIME/">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 130'%3E%3Cpath d='M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z' fill='%235ad6a4' stroke='%231f2a44' stroke-width='3'/%3E%3Cpath d='M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z' fill='%237ee3b8' stroke='%231f2a44' stroke-width='3'/%3E%3Cellipse cx='60' cy='88' rx='40' ry='38' fill='%237ee3b8' stroke='%231f2a44' stroke-width='3.5'/%3E%3Ccircle cx='46' cy='84' r='5' fill='%231f2a44'/%3E%3Ccircle cx='74' cy='84' r='5' fill='%231f2a44'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c;  --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff;  --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7;
+  --round:'Huninn','Noto Sans TC',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans TC',system-ui,sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:var(--blue)}
+h1,h2,h3,h4{font-family:var(--round);line-height:1.35;margin:0 0 .5em}
+p{margin:.4em 0 .9em}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.nowrap{white-space:nowrap}
+.hl{background:linear-gradient(transparent 58%,var(--sun) 58%);padding:0 .1em}
+
+/* top bar */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.94);backdrop-filter:blur(6px);border-bottom:3px solid var(--ink)}
+.topbar .wrap{display:flex;align-items:center;gap:14px;height:64px}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink)}
+.brand svg{width:38px;height:40px}
+.brand b{font-family:var(--round);font-size:19px;display:block;line-height:1.1}
+.brand small{font-size:10px;letter-spacing:.12em;color:var(--ink-2);display:block}
+.navpills{display:flex;gap:6px;margin-left:auto;flex-wrap:nowrap;overflow:hidden}
+.navpills a{font-size:14px;text-decoration:none;color:var(--ink);border:2px solid var(--ink);border-radius:99px;padding:2px 12px;background:#fff;white-space:nowrap}
+.navpills a:hover{background:var(--sun-l)}
+.backbtn{font-size:14px;text-decoration:none;color:#fff;background:var(--blue);border:2px solid var(--ink);border-radius:99px;padding:3px 14px;white-space:nowrap;box-shadow:0 3px 0 var(--ink)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--sky-l),var(--bg));padding:56px 0 90px}
+.hero .bub{position:absolute;border-radius:50%;opacity:.55}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.tag{display:inline-block;font-family:var(--round);background:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:2px 14px;font-size:15px;box-shadow:0 3px 0 var(--ink)}
+.hero h1{font-size:46px;margin:18px 0 12px}
+.hero .lead{font-size:19px;color:var(--ink-2);max-width:34em}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.btn{font-family:var(--round);text-decoration:none;font-size:17px;border:3px solid var(--ink);border-radius:16px;padding:8px 20px;box-shadow:0 4px 0 var(--ink);color:var(--ink);background:#fff;display:inline-block;cursor:pointer}
+.btn.pri{background:var(--sun)}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--ink)}
+.heroart{position:relative;min-width:0}
+.heroart svg.main{width:100%;height:auto;display:block}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:60px}
+.float{animation:float 4s ease-in-out infinite}
+.float.d2{animation-delay:1.3s}.float.d3{animation-delay:2.4s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+/* sections */
+section{padding:60px 0;position:relative}
+section.tint-blue{background:linear-gradient(180deg,var(--blue-l),var(--bg))}
+section.tint-coral{background:linear-gradient(180deg,var(--coral-l),var(--bg))}
+section.tint-orange{background:linear-gradient(180deg,var(--orange-l),var(--bg))}
+section.tint-mint{background:linear-gradient(180deg,var(--mint-l),var(--bg))}
+section.tint-sky{background:linear-gradient(180deg,var(--sky-l),var(--bg))}
+section.tint-sun{background:linear-gradient(180deg,var(--sun-l),var(--bg))}
+section.tint-grape{background:linear-gradient(180deg,var(--grape-l),var(--bg))}
+.sechead{display:flex;align-items:center;gap:18px;margin-bottom:22px}
+.secno{flex:none;width:58px;height:58px;border:3px solid var(--ink);border-radius:16px;display:grid;place-items:center;font-family:var(--round);font-size:26px;color:#fff;transform:rotate(-6deg);box-shadow:0 4px 0 var(--ink)}
+.eyebrow{font-size:13px;letter-spacing:.16em;color:var(--ink-2);text-transform:uppercase;font-weight:700}
+.sechead h2{font-size:30px;margin:0}
+.divider{border:0;border-top:3px dashed var(--line);margin:0}
+
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px;box-shadow:0 4px 0 var(--ink);min-width:0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid3>*,.grid2>*{min-width:0}
+.icoc{width:110px;height:110px;margin:0 auto 6px;display:block}
+.card h3{font-size:21px}
+.card .kicker{font-weight:700;margin-top:10px;margin-bottom:0}
+
+.src{display:inline-block;font-size:12px;line-height:1.6;text-decoration:none;background:var(--blue-l);color:var(--blue-d);border:1.5px solid var(--blue);border-radius:99px;padding:0 8px;margin:0 2px;vertical-align:2px;white-space:nowrap;font-family:'Noto Sans TC',sans-serif}
+.src:hover{background:var(--blue);color:#fff}
+
+/* talk */
+.talk{display:flex;gap:16px;align-items:flex-start;margin:16px 0}
+.talk.r{flex-direction:row-reverse}
+.talk .face{flex:none;width:78px;height:80px}
+.bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:12px 18px;font-family:var(--round);font-size:17px;box-shadow:0 4px 0 var(--ink);min-width:0}
+.bubble::before{content:"";position:absolute;top:22px;left:-13px;border:10px solid transparent;border-right-color:var(--ink)}
+.talk.r .bubble::before{left:auto;right:-13px;border-right-color:transparent;border-left-color:var(--ink)}
+.bubble b{color:var(--blue-d)}
+.mustknow{margin-top:18px;background:var(--sun-l);border:3px dashed var(--orange);border-radius:18px;padding:14px 18px;font-weight:500}
+
+/* mech */
+.mech{position:relative;padding-top:30px}
+.mech .badge{position:absolute;top:-16px;left:20px;background:var(--orange);color:#fff;border:3px solid var(--ink);border-radius:12px;padding:2px 14px;font-family:var(--round);box-shadow:0 3px 0 var(--ink)}
+.mech.m2 .badge{background:var(--grape)}
+.limitnote{margin-top:12px;background:var(--orange-l);border-radius:14px;padding:10px 14px;font-size:15.5px}
+
+/* tabs */
+.tablist{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.tablist button{font-family:var(--round);font-size:16px;border:3px solid var(--ink);background:#fff;border-radius:14px;padding:6px 16px;cursor:pointer;color:var(--ink);box-shadow:0 3px 0 var(--ink)}
+.tablist button[aria-selected="true"]{background:var(--mint);color:#fff}
+.tabpanel[hidden]{display:none}
+.bignums{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 0}
+.bignums>div{background:var(--mint-l);border:2.5px solid var(--ink);border-radius:18px;padding:12px;text-align:center;min-width:0}
+.bignums .n{font-family:var(--round);font-size:30px;color:var(--blue-d);line-height:1.2}
+.bignums .l{font-size:14.5px;color:var(--ink-2);line-height:1.5}
+.design{font-size:15.5px;color:var(--ink-2);background:#f6f8fc;border-radius:12px;padding:8px 12px}
+.plain{background:var(--sky-l);border-left:6px solid var(--sky);border-radius:12px;padding:10px 14px;margin-top:12px;font-size:16px}
+.vsbox{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center;margin-top:20px}
+.vsbox>div{min-width:0}
+.vsbox .vs{font-family:var(--round);font-size:28px;color:var(--coral)}
+.vsbox .side{border:3px solid var(--ink);border-radius:18px;padding:14px;background:#fff;text-align:center;font-family:var(--round)}
+.vsbox .side.ok{background:var(--mint-l)}
+.vsbox .side.no{background:var(--coral-l)}
+
+/* clock tool */
+.tool{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}
+.tool>*{min-width:0}
+.ctrl label{display:block;font-family:var(--round);font-size:17px;margin-top:12px}
+.ctrl label output{float:right;color:var(--blue-d);font-size:20px}
+.ctrl input[type=range]{width:100%;accent-color:var(--blue);height:28px}
+.presets{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.presets button{font-size:14px;border:2px solid var(--ink);background:var(--sun-l);border-radius:99px;padding:3px 12px;cursor:pointer;font-family:'Noto Sans TC',sans-serif;color:var(--ink)}
+.presets button:hover{background:var(--sun)}
+.ring{width:100%;max-width:380px;margin:0 auto;display:block}
+.readout{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.readout>div{border:2.5px solid var(--ink);border-radius:16px;padding:10px;text-align:center;background:#fff;min-width:0}
+.readout .n{font-family:var(--round);font-size:30px;color:var(--blue-d)}
+.readout .l{font-size:14px;color:var(--ink-2)}
+.toolmsg{margin-top:12px;background:var(--blue-l);border-radius:14px;padding:12px 14px;font-size:16px}
+.demo{display:inline-block;background:var(--coral);color:#fff;font-size:13px;border-radius:8px;padding:0 8px;margin-left:6px;vertical-align:3px;font-family:'Noto Sans TC',sans-serif}
+.askdoc{margin-top:22px;background:var(--coral-l);border:3px solid var(--coral);border-radius:20px;padding:16px 20px}
+.askdoc h3{color:#c23b3b;font-size:20px}
+.askdoc ul{margin:.3em 0 .3em 1.2em;padding:0}
+
+/* multi angle cards */
+.anglecard{text-align:center}
+.anglecard p{text-align:left}
+
+/* checklist */
+.chk{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.chk label{display:flex;gap:12px;align-items:flex-start;background:#fff;border:2.5px solid var(--ink);border-radius:16px;padding:12px 14px;cursor:pointer;min-width:0}
+.chk input{position:absolute;opacity:0;width:1px;height:1px}
+.chk .box{flex:none;width:26px;height:26px;border:3px solid var(--ink);border-radius:8px;background:#fff;display:grid;place-items:center;margin-top:2px}
+.chk input:checked + .box{background:var(--mint)}
+.chk input:checked + .box::after{content:"✓";color:#fff;font-weight:900;font-size:17px;line-height:1}
+.chk input:focus-visible + .box{outline:3px solid var(--sky);outline-offset:2px}
+.prog{margin-top:18px;display:flex;align-items:center;gap:12px}
+.progtrack{flex:1;height:22px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden}
+.progfill{height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint) 0 10px,#5ad6a4 10px 20px);transition:width .3s}
+.progtxt{font-family:var(--round);font-size:20px;min-width:64px;text-align:right}
+.cheer{margin-top:10px;font-family:var(--round);color:var(--mint);font-size:18px;min-height:1.6em}
+.note{font-size:14.5px;color:var(--ink-2)}
+
+/* limits */
+.limits{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.limits li{display:flex;gap:14px;align-items:flex-start;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px 16px;min-width:0}
+.limits .dot{flex:none;width:34px;height:34px;border-radius:50%;background:var(--grape);color:#fff;border:2.5px solid var(--ink);display:grid;place-items:center;font-family:var(--round)}
+
+/* quiz */
+.qcard{margin-bottom:18px}
+.qcard h3{font-size:19px}
+.opts{display:grid;gap:8px}
+.opts button{text-align:left;font-family:'Noto Sans TC',sans-serif;font-size:16px;border:2.5px solid var(--ink);border-radius:14px;padding:8px 14px;background:#fff;cursor:pointer;color:var(--ink)}
+.opts button:hover:not(:disabled){background:var(--sun-l)}
+.opts button.right{background:var(--mint-l);border-color:var(--mint)}
+.opts button.wrong{background:var(--coral-l);border-color:var(--coral)}
+.opts button:disabled{cursor:default}
+.explain{margin-top:10px;font-size:15.5px;background:#f6f8fc;border-radius:12px;padding:10px 14px}
+.explain[hidden]{display:none}
+.score{font-family:var(--round);font-size:22px;text-align:center;padding:16px;border:3px solid var(--ink);border-radius:20px;background:var(--sun);box-shadow:0 4px 0 var(--ink)}
+.score[hidden]{display:none}
+
+/* refs */
+.refs{padding-left:1.4em}
+.refs li{margin-bottom:12px;font-size:15.5px;line-height:1.7;scroll-margin-top:80px}
+.refs li:target{background:var(--sun-l);border-radius:8px}
+.refs .one{display:block;color:var(--ink-2)}
+.refs a{word-break:break-all}
+
+/* disclaimer */
+.disc{background:var(--coral);border:4px solid var(--ink);border-radius:24px;padding:10px;box-shadow:6px 6px 0 var(--sun)}
+.disc .in{border:3px dashed #fff;border-radius:18px;padding:18px 22px;color:#fff}
+.disc h2{color:#fff;font-size:24px}
+.disc .first{background:#fff;color:#c62828;font-weight:900;border-radius:12px;padding:8px 14px;margin-bottom:12px}
+.disc ul{margin:0;padding-left:1.2em}
+.disc li{margin-bottom:6px}
+.disc .help{margin-top:12px;background:rgba(255,255,255,.18);border-radius:12px;padding:10px 14px}
+
+footer{background:var(--blue-d);color:#fff;padding:40px 0 30px;text-align:center}
+footer .pals{display:flex;justify-content:center;gap:12px;margin-bottom:10px}
+footer .pals svg{width:70px;height:72px}
+footer .gold{font-family:var(--round);font-size:20px;margin:6px 0 14px}
+footer .slogan{display:inline-block;background:var(--sun);color:var(--ink);border-radius:12px;padding:6px 16px;font-weight:700;margin-bottom:14px}
+footer a{color:var(--sun)}
+footer .small{font-size:13.5px;opacity:.85}
+.totop{position:fixed;right:18px;bottom:18px;width:50px;height:50px;border-radius:50%;border:3px solid var(--ink);background:var(--sun);font-size:22px;font-weight:900;box-shadow:0 4px 0 var(--ink);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s;z-index:60;color:var(--ink)}
+.totop.show{opacity:1;pointer-events:auto}
+
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .navpills a:not(.backbtn){display:none}
+  .navpills{margin-left:auto}
+  .hero{padding:34px 0 80px}
+  .hero .wrap,.grid3,.grid2,.tool,.chk{grid-template-columns:1fr}
+  .hero h1{font-size:34px}
+  .sechead h2{font-size:24px}
+  .secno{width:48px;height:48px;font-size:22px}
+  .bignums{grid-template-columns:1fr 1fr}
+  .bignums>div:last-child:nth-child(odd){grid-column:1/-1}
+  .vsbox{grid-template-columns:1fr}
+  .vsbox .vs{text-align:center}
+  .talk .face{width:60px;height:62px}
+  section{padding:46px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  .float{animation:none}
+  html{scroll-behavior:auto}
+  .progfill{transition:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+<!-- 主題圖：時鐘餐盤 -->
+<symbol id="plateclock" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="50" fill="#fff" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="60" cy="60" r="38" fill="#fff5d6" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 26 v6 M60 88 v6 M26 60 h6 M88 60 h6" stroke="#1f2a44" stroke-width="3" stroke-linecap="round"/>
+  <path d="M60 60 L60 38 M60 60 L76 68" stroke="#1f2a44" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="60" cy="60" r="4" fill="#ff6b6b" stroke="#1f2a44" stroke-width="2"/>
+    <path d="M6 30 v26 M2 30 v12 M10 30 v12 M2 42 q4 6 8 0" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M114 30 c-8 4 -8 18 0 22 v22" stroke="#1f2a44" stroke-width="3" fill="#ffc93c" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<!-- 主題圖：小鼠 -->
+<symbol id="mouse" viewBox="0 0 120 110">
+  <path d="M96 78 C110 80 114 92 104 100" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="62" cy="72" rx="38" ry="28" fill="#c9cfdc" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="34" cy="34" r="14" fill="#ffb3c1" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="72" cy="30" r="14" fill="#ffb3c1" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="52" cy="56" r="26" fill="#dfe3ec" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="43" cy="54" r="4.5" fill="#1f2a44"/><circle cx="61" cy="54" r="4.5" fill="#1f2a44"/>
+  <circle cx="44.3" cy="52.7" r="1.4" fill="#fff"/><circle cx="62.3" cy="52.7" r="1.4" fill="#fff"/>
+  <circle cx="52" cy="64" r="3.5" fill="#ff6b6b" stroke="#1f2a44" stroke-width="2"/>
+  <ellipse cx="36" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="68" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+  <path d="M46 70 Q52 75 58 70" stroke="#1f2a44" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 主題圖：腸道菌（笑臉小菌） -->
+<symbol id="microbe" viewBox="0 0 120 120">
+  <path d="M30 40 l-12 -12 M90 40 l12 -12 M30 82 l-12 12 M90 82 l12 12 M60 22 v-14 M60 98 v14" stroke="#1f2a44" stroke-width="3" stroke-linecap="round"/>
+  <rect x="24" y="30" width="72" height="62" rx="31" fill="#b9a3ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="50" cy="58" r="4.5" fill="#1f2a44"/><circle cx="70" cy="58" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.3" cy="56.7" r="1.4" fill="#fff"/><circle cx="71.3" cy="56.7" r="1.4" fill="#fff"/>
+  <ellipse cx="40" cy="68" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="80" cy="68" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+  <path d="M53 70 Q60 76 67 70" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="38" cy="42" r="3" fill="#efe8ff"/><circle cx="84" cy="80" r="3" fill="#efe8ff"/>
+</symbol>
+<!-- 主題圖：月亮便當（輪班） -->
+<symbol id="nightbox" viewBox="0 0 120 120">
+  <path d="M44 14 a24 24 0 1 0 24 30 a18 18 0 1 1 -24 -30Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="18" y="58" width="84" height="48" rx="12" fill="#ff9f43" stroke="#1f2a44" stroke-width="3.5"/>
+  <rect x="18" y="58" width="84" height="14" rx="7" fill="#ffc98f" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="48" cy="86" r="4" fill="#1f2a44"/><circle cx="72" cy="86" r="4" fill="#1f2a44"/>
+  <circle cx="49.2" cy="84.8" r="1.3" fill="#fff"/><circle cx="73.2" cy="84.8" r="1.3" fill="#fff"/>
+  <ellipse cx="40" cy="94" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="80" cy="94" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+  <path d="M54 94 Q60 99 66 94" stroke="#1f2a44" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M92 20 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3Z" fill="#fff" stroke="#1f2a44" stroke-width="2"/>
+</symbol>
+<!-- 主題圖：共餐桌 -->
+<symbol id="table" viewBox="0 0 120 120">
+  <ellipse cx="60" cy="70" rx="50" ry="20" fill="#ffe5e5" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M30 86 v22 M90 86 v22" stroke="#1f2a44" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="40" cy="66" rx="12" ry="5" fill="#fff" stroke="#1f2a44" stroke-width="2.5"/>
+  <ellipse cx="80" cy="66" rx="12" ry="5" fill="#fff" stroke="#1f2a44" stroke-width="2.5"/>
+  <path d="M50 58 q10 -14 20 0Z" fill="#2bb88a" stroke="#1f2a44" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M56 46 q-2 -6 2 -10 M64 46 q-2 -6 2 -10" stroke="#ff9f43" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M60 18 c-6 -8 -18 -2 -10 8 l10 10 10 -10 c8 -10 -4 -16 -10 -8Z" fill="#ff6b6b" stroke="#1f2a44" stroke-width="2.5" stroke-linejoin="round"/>
+</symbol>
+</defs>
+</svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="https://www.gungho.idv.tw/KS/index.html"><svg aria-hidden="true"><use href="#sprout"/></svg><span><b>共好小學堂</b><small>GROW &amp; LEARN TOGETHER</small></span></a>
+    <nav class="navpills" aria-label="章節">
+      <a href="#s1">兩種時鐘</a>
+      <a href="#s3">人體試驗</a>
+      <a href="#clock">進食時鐘</a>
+      <a href="#do">跟著做</a>
+      <a href="#quiz">小測驗</a>
+      <a class="backbtn" href="https://www.gungho.idv.tw/KS/index.html">← 回小學堂</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <span class="bub" style="width:260px;height:260px;background:var(--sun-l);left:-60px;top:-40px"></span>
+  <span class="bub" style="width:200px;height:200px;background:var(--mint-l);right:8%;top:20px"></span>
+  <span class="bub" style="width:140px;height:140px;background:var(--grape-l);left:40%;bottom:30px"></span>
+  <div class="wrap">
+    <div>
+      <span class="tag">✦ 健康練習小知識</span>
+      <h1>幾點吃飯，也會影響<span class="hl nowrap">健康？</span></h1>
+      <p class="lead">不只「吃什麼」，「什麼時候吃」也可能和腸道菌、代謝有關。不過，小鼠研究和人體試驗說的是兩回事。我們一起把證據的界線看清楚，再挑自己做得到的方法。</p>
+      <div class="btns">
+        <a class="btn pri" href="#key">開始認識 →</a>
+        <a class="btn" href="#clock">直接玩進食時鐘</a>
+      </div>
+    </div>
+    <div class="heroart">
+      <svg class="main" viewBox="0 0 440 340" role="img" aria-label="小芽、藍鳥和星星圍著時鐘餐盤，旁邊漂浮著笑臉小菌和月亮便當">
+        <ellipse cx="220" cy="300" rx="190" ry="26" fill="#dcf7ec"/>
+        <g class="float"><use href="#plateclock" x="160" y="140" width="130" height="130"/></g>
+        <use href="#sprout" x="40" y="180" width="110" height="120"/>
+        <use href="#bird" x="300" y="200" width="110" height="100"/>
+        <g class="float d2"><use href="#star" x="330" y="96" width="70" height="70"/></g>
+        <g class="float d3"><use href="#microbe" x="30" y="96" width="70" height="70"/></g>
+        <g class="float d2"><use href="#nightbox" x="372" y="20" width="56" height="56"/></g>
+        <rect x="120" y="22" width="232" height="60" rx="18" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+        <path d="M200 82 L192 102 L216 82Z" fill="#fff" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+        <rect x="196" y="78" width="22" height="6" fill="#fff"/>
+        <text x="236" y="60" text-anchor="middle" font-family="Huninn, 'Noto Sans TC', sans-serif" font-size="22" fill="#1f2a44">吃的時間，也有學問</text>
+      </svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C200 60 400 0 600 30 C800 60 1000 0 1200 30 V60 H0Z" fill="#fffdf7"/></svg>
+</section>
+
+<section id="key">
+  <div class="wrap">
+    <div class="sechead"><div class="secno" style="background:var(--blue)">★</div><div><div class="eyebrow">Key points</div><h2>先說重點</h2></div></div>
+    <div class="talk">
+      <svg class="face" aria-hidden="true"><use href="#sprout"/></svg>
+      <div class="bubble">身體裡有「時鐘」：腦袋的主時鐘看<b>光</b>，腸道、肝臟這些周邊時鐘會受<b>吃東西的時間</b>影響，腸道菌也有日夜起伏。</div>
+    </div>
+    <div class="talk r">
+      <svg class="face" aria-hidden="true"><use href="#bird"/></svg>
+      <div class="bubble">小鼠實驗看到「什麼時候餵」會改變菌相的日夜變化；但人體試驗裡，<b>限時進食</b>加上少吃熱量，一年下來並沒有比單純少吃熱量多瘦得明顯。</div>
+    </div>
+    <div class="talk">
+      <svg class="face" aria-hidden="true"><use href="#star"/></svg>
+      <div class="bubble">所以先從<b>規律三餐、睡前不吃大餐、睡好、蔬果纖維吃夠</b>開始就很好。有用降血糖藥的人，改吃飯時間前一定先問醫師！</div>
+    </div>
+    <div class="mustknow">⚠ 要分清楚：「吃飯時間可能影響生理」≠「限時進食優於所有飲食法」，也≠「改吃飯時間就能精準重設腸道菌、保證減重控糖」。</div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="s1" class="tint-blue">
+  <div class="wrap">
+    <div class="sechead"><div class="secno" style="background:var(--blue)">1</div><div><div class="eyebrow">Two kinds of clocks</div><h2>身體裡的兩種時鐘</h2></div></div>
+    <p>我們的生理時鐘不只一個。這個研究架構是合理的，但人體細節還有很多不確定。</p>
+    <div class="grid3">
+      <div class="card">
+        <svg class="icoc" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="var(--sun-l)"/><use href="#star" x="22" y="22" width="76" height="76"/></svg>
+        <h3>腦中主時鐘：看光</h3>
+        <p>大腦的<strong>視交叉上核（SCN）</strong>是主時鐘，主要靠「光線」來對時，像是全身的總指揮。</p>
+        <p class="kicker">白天晚上，主要由光來分辨。</p>
+      </div>
+      <div class="card">
+        <svg class="icoc" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="var(--orange-l)"/><use href="#plateclock" x="18" y="18" width="84" height="84"/></svg>
+        <h3>周邊時鐘：看吃飯</h3>
+        <p>腸道、肝臟等器官也有自己的<strong>周邊時鐘</strong>，會受到「什麼時候吃東西」這個訊號影響。</p>
+        <p class="kicker">吃飯時間，是周邊時鐘的提示鈴。</p>
+      </div>
+      <div class="card">
+        <svg class="icoc" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="var(--grape-l)"/><use href="#microbe" x="18" y="18" width="84" height="84"/></svg>
+        <h3>腸道菌：也有日夜起伏</h3>
+        <p>腸道裡的<strong>微生物組</strong>（各種細菌的總稱）會有日夜變動。但「人體有多少比例的菌種會照 24 小時節律起伏」，目前沒有可重複的固定數字。</p>
+        <p class="kicker">不能拿單一比例或小鼠結果，直接套到人身上。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="s2" class="tint-coral">
+  <div class="wrap">
+    <div class="sechead"><div class="secno" style="background:var(--coral)">2</div><div><div class="eyebrow">What mice tell us</div><h2>小鼠研究：告訴我們「可能發生什麼」</h2></div></div>
+    <div class="grid2" style="margin-top:30px">
+      <div class="card mech">
+        <span class="badge">機制 1</span>
+        <svg class="icoc" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="var(--coral-l)"/><use href="#mouse" x="16" y="20" width="88" height="80"/></svg>
+        <h3>宿主時鐘和腸道菌，會互相影響</h3>
+        <p>Thaiss 等人 2014 年在《Cell》發表的研究，主要用小鼠，也分析了少數有時差的人的糞便樣本。結果看到：腸道菌的日夜起伏和「進食節律」有關；打亂時鐘或製造時差，菌的節律會跟著亂掉，小鼠出現血糖耐受變差、變胖。把這樣的菌移植到無菌小鼠身上，也看到類似變化。<a class="src" href="#ref1">參考 1</a></p>
+        <div class="limitnote">限制：這類機制實驗告訴我們「可能有這條路」，不能直接變成人的食譜建議。</div>
+        <p class="kicker">節律亂掉 → 菌相跟著亂（在小鼠身上）。</p>
+      </div>
+      <div class="card mech m2">
+        <span class="badge">機制 2</span>
+        <svg class="icoc" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="var(--grape-l)"/><use href="#microbe" x="18" y="18" width="84" height="84"/></svg>
+        <h3>吃的內容和吃的時段，改變菌的日夜波動</h3>
+        <p>Zarrinpar 等人 2014 年在《Cell Metabolism》研究小鼠：吃一般飼料、晚上進食的瘦小鼠，腸道菌日夜起伏明顯；吃高脂飼料、整天隨時吃的小鼠，起伏變得平平的。把高脂小鼠的進食限制在夜間，部分起伏又回來了。<a class="src" href="#ref2">參考 2</a></p>
+        <div class="limitnote">限制：物種不同、籠養環境、飼料完全控制，和人的真實生活差很多，轉譯到人身上有侷限。</div>
+        <p class="kicker">「什麼時候吃」會改變小鼠菌相的節奏。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="s3" class="tint-mint">
+  <div class="wrap">
+    <div class="sechead"><div class="secno" style="background:var(--mint)">3</div><div><div class="eyebrow">Human trials</div><h2>人體試驗：限時進食真的比較好嗎？</h2></div></div>
+    <p><strong>限時進食</strong>（time-restricted eating，簡稱 TRE）是把一天的吃東西時間壓縮在固定幾小時內；<strong>早時段限時進食</strong>（eTRF）則是把進食窗放在早上到下午。下面三個常被引用的隨機試驗，結果並不一樣，點頁籤看看：</p>
+    <div class="tablist" role="tablist" aria-label="三個人體試驗">
+      <button role="tab" id="t-a" aria-controls="p-a" aria-selected="true">早時段 6 小時（2018）</button>
+      <button role="tab" id="t-b" aria-controls="p-b" aria-selected="false" tabindex="-1">中午到晚上 8 點（2020）</button>
+      <button role="tab" id="t-c" aria-controls="p-c" aria-selected="false" tabindex="-1">一年減重試驗（2022）</button>
+    </div>
+    <div class="card tabpanel" role="tabpanel" id="p-a" aria-labelledby="t-a">
+      <h3>Sutton 2018：早時段限時進食，體重沒變但代謝指標改善</h3>
+      <p class="design">設計：8 位有糖尿病前期、肥胖的男性，交叉試驗（每人兩種吃法都做）。一種是約早上 8 點到下午 2 點、6 小時內吃完；另一種是 12 小時內吃完。每段 5 週、中間間隔 7 週，食物和熱量相同，只改時間。<a class="src" href="#ref4">參考 4</a></p>
+      <div class="bignums">
+        <div><div class="n">8 人</div><div class="l">人數很少，而且只有男性</div></div>
+        <div><div class="n">約 10–11</div><div class="l">血壓下降（mmHg，收縮壓與舒張壓）</div></div>
+        <div><div class="n">≈ 0</div><div class="l">體重變化（刻意讓熱量相同、體重不變）</div></div>
+      </div>
+      <p>早時段組的胰島素敏感度變好、血壓下降，晚上的食慾也比較低。</p>
+      <div class="plain">白話：在「吃一樣多」的條件下，把進食時間挪早，少數人的血糖調控和血壓指標有改善。但只有 8 人、5 週，不能推論到女性、長者或一般人長期的效果。</div>
+    </div>
+    <div class="card tabpanel" role="tabpanel" id="p-b" aria-labelledby="t-b" hidden>
+      <h3>Lowe 2020（TREAT）：中午 12 點到晚上 8 點，減重沒比三餐組多</h3>
+      <p class="design">設計：116 位體重過重或肥胖的成人（18–64 歲），12 週。限時組中午 12 點到晚上 8 點隨意吃，其他時間不吃；對照組是規律三餐。大多數人透過手機 App 遠距參加。<a class="src" href="#ref5">參考 5</a></p>
+      <div class="bignums">
+        <div><div class="n">−0.94 kg</div><div class="l">限時組 12 週體重變化</div></div>
+        <div><div class="n">−0.26 kg</div><div class="l">兩組差距（95% 信賴區間 −1.30 到 0.78，不顯著）</div></div>
+        <div><div class="n">肌肉 ↓</div><div class="l">限時組四肢瘦體重（肌肉為主）下降比較多</div></div>
+      </div>
+      <div class="plain">白話：「信賴區間」跨過 0，代表兩組差距可能根本是 0。作者結論是：單靠限時進食、沒有其他介入，減重效果沒有比整天正常吃好。限時組流失較多四肢瘦體重，對本來肌肉就少的長者特別要留意。</div>
+    </div>
+    <div class="card tabpanel" role="tabpanel" id="p-c" aria-labelledby="t-c" hidden>
+      <h3>Liu 2022（NEJM）：限熱量＋限時，和只限熱量差不多</h3>
+      <p class="design">設計：139 位肥胖成人，隨機分成兩組，追蹤 12 個月。兩組都限制熱量（男性每天 1500–1800 大卡、女性 1200–1500 大卡）；其中一組再加上只在早上 8 點到下午 4 點吃。118 人完成一年追蹤。<a class="src" href="#ref3">參考 3</a></p>
+      <div class="bignums">
+        <div><div class="n">−8.0 kg</div><div class="l">限熱量＋限時組，一年體重變化</div></div>
+        <div><div class="n">−6.3 kg</div><div class="l">只限熱量組，一年體重變化</div></div>
+        <div><div class="n">−1.8 kg</div><div class="l">兩組差距（95% 信賴區間 −4.0 到 0.4，P = 0.11）</div></div>
+      </div>
+      <div class="plain">白話：兩組都瘦了，但差距在統計上不顯著。腰圍、體脂、血壓和代謝指標也是類似結果。真正讓體重下降的主力，看起來是「總熱量變少」，而不是「時間窗」本身。</div>
+    </div>
+    <div class="vsbox">
+      <div class="side ok">✓ 吃飯時間<br>可能影響生理</div>
+      <div class="vs">≠</div>
+      <div class="side no">✗ 限時進食<br>優於所有飲食法</div>
+    </div>
+  </div>
+</section>
+
+<section id="clock" class="tint-sky">
+  <div class="wrap">
+    <div class="sechead"><div class="secno" style="background:var(--sky)">4</div><div><div class="eyebrow">Interactive tool</div><h2>一天進食時鐘 <span class="demo">示範用途</span></h2></div></div>
+    <p>拉動滑桿，設定你通常「第一口」和「最後一口」的時間，以及就寢時間。圓環會畫出你的進食窗，並算出最後一口離睡覺還有幾小時。這只是幫你看見自己的作息，<strong>不是處方，也沒有「幾小時一定最健康」的標準答案</strong>。</p>
+    <div class="card tool">
+      <div class="ctrl">
+        <label for="first">第一口 <output id="o-first">07:30</output></label>
+        <input type="range" id="first" min="0" max="23.5" step="0.5" value="7.5">
+        <label for="last">最後一口 <output id="o-last">19:00</output></label>
+        <input type="range" id="last" min="0" max="23.5" step="0.5" value="19">
+        <label for="bed">就寢 <output id="o-bed">23:00</output></label>
+        <input type="range" id="bed" min="0" max="23.5" step="0.5" value="23">
+        <div class="presets" aria-label="快速套用">
+          <button type="button" data-f="7.5" data-l="19" data-b="23">一般三餐示範</button>
+          <button type="button" data-f="8" data-l="14" data-b="22">早 8 點–下午 2 點（2018 試驗）</button>
+          <button type="button" data-f="12" data-l="20" data-b="23">中午–晚上 8 點（2020 試驗）</button>
+          <button type="button" data-f="8" data-l="16" data-b="22">早 8 點–下午 4 點（2022 試驗）</button>
+          <button type="button" data-f="18" data-l="6" data-b="9">夜班示範</button>
+        </div>
+        <p class="note">你調整的時間只存在你自己的瀏覽器。</p>
+      </div>
+      <div>
+        <svg class="ring" id="ring" viewBox="-14 -14 328 328" role="img" aria-label="24 小時進食時鐘">
+          <circle cx="150" cy="150" r="118" fill="none" stroke="#e3e8f3" stroke-width="30"/>
+          <path id="arc" d="" fill="none" stroke="#ff9f43" stroke-width="30" stroke-linecap="butt"/>
+          <g id="ticks"></g>
+          <circle cx="150" cy="150" r="96" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+          <circle cx="150" cy="150" r="133" fill="none" stroke="#1f2a44" stroke-width="3"/>
+          <circle cx="150" cy="150" r="103" fill="none" stroke="#1f2a44" stroke-width="2" stroke-dasharray="4 5"/>
+          <g id="bedmark"><circle r="13" fill="#8a5cf6" stroke="#1f2a44" stroke-width="2.5"/><text text-anchor="middle" dy="5" font-size="14" fill="#fff">☾</text></g>
+          <text x="150" y="138" text-anchor="middle" font-family="Huninn, 'Noto Sans TC', sans-serif" font-size="17" fill="#4a5674">進食窗</text>
+          <text id="ctxt" x="150" y="172" text-anchor="middle" font-family="Huninn, 'Noto Sans TC', sans-serif" font-size="34" fill="#173a8f">11.5 小時</text>
+        </svg>
+        <div class="readout">
+          <div><div class="n" id="r-win">11.5</div><div class="l">進食窗（小時）</div></div>
+          <div><div class="n" id="r-bed">4</div><div class="l">最後一口到就寢（小時）</div></div>
+        </div>
+        <div class="toolmsg" id="msg" aria-live="polite"></div>
+      </div>
+    </div>
+    <div class="askdoc">
+      <h3>⚠ 這些朋友，改吃飯時間前請先問醫師</h3>
+      <ul>
+        <li><strong>糖尿病用藥者</strong>，尤其是打<strong>胰島素</strong>或吃<strong>磺醯尿素類</strong>藥物的人：拉長空腹時間，可能發生<strong>低血糖</strong>。</li>
+        <li><strong>孕婦</strong>：孕期營養需求高，不宜自己延長禁食。</li>
+        <li>有<strong>飲食障礙病史</strong>（例如厭食、暴食）的人。</li>
+        <li><strong>體重過輕、營養不足的長者</strong>：少吃一餐可能吃不夠蛋白質，增加<strong>肌少</strong>的風險（2020 年的試驗也看到限時組肌肉流失較多）。<a class="src" href="#ref5">參考 5</a></li>
+        <li>需要<strong>隨餐吃藥</strong>的人：吃飯時間一改，吃藥時間也要跟著調整。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="s5" class="tint-orange">
+  <div class="wrap">
+    <div class="sechead"><div class="secno" style="background:var(--orange)">5</div><div><div class="eyebrow">Many angles</div><h2>不只是生理：工作、家庭與文化</h2></div></div>
+    <div class="grid3">
+      <div class="card anglecard">
+        <svg class="icoc" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="var(--mint-l)"/><use href="#sprout" x="22" y="18" width="76" height="82"/></svg>
+        <h3>身體和心情</h3>
+        <p>睡眠、日照、輪班和吃飯時間彼此牽動。一味追求「晚餐越早越好」，可能反而增加工作和家庭壓力。有進食障礙病史、懷孕、長者營養不足或需隨餐用藥的人，不適合自己延長禁食。</p>
+      </div>
+      <div class="card anglecard">
+        <svg class="icoc" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="var(--orange-l)"/><use href="#nightbox" x="18" y="16" width="84" height="84"/></svg>
+        <h3>輪班和工作環境</h3>
+        <p>輪班工作者不一定能選擇固定的早餐或晚餐時間。公司供餐、學校課表、照護輪班和長者共餐服務，比起要求每個人準時吃飯，更該在意大家<strong>能不能吃到規律而且足量的餐點</strong>。</p>
+      </div>
+      <div class="card anglecard">
+        <svg class="icoc" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="var(--coral-l)"/><use href="#table" x="16" y="14" width="88" height="88"/></svg>
+        <h3>信仰和文化</h3>
+        <p>一家人一起吃飯，傳達的是連結與接待的心意，這是社會與價值層面的意義。宗教的禁食習慣有它自己的意義，但不應直接宣稱它有「治療腸道菌」的功效。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="do" class="tint-sun">
+  <div class="wrap">
+    <div class="sechead"><div class="secno" style="background:var(--sun);color:var(--ink)">6</div><div><div class="eyebrow">Try it</div><h2>跟著做：從規律開始的生活清單</h2></div></div>
+    <div class="talk">
+      <svg class="face" aria-hidden="true"><use href="#bird"/></svg>
+      <div class="bubble">不用急著挑戰禁食！先把這幾件做穩，評估時看的是<b>營養夠不夠、血糖、睡眠，還有能不能長久做下去</b>，不是期待菌相馬上被「校正」。</div>
+    </div>
+    <div class="chk" id="chk">
+      <label><input type="checkbox" data-k="c1"><span class="box"></span><span>這週三餐時間大致規律</span></label>
+      <label><input type="checkbox" data-k="c2"><span class="box"></span><span>睡前沒有吃大量食物</span></label>
+      <label><input type="checkbox" data-k="c3"><span class="box"></span><span>睡覺、起床時間大致固定</span></label>
+      <label><input type="checkbox" data-k="c4"><span class="box"></span><span>每天都有吃到足量的蔬菜水果（纖維）</span></label>
+      <label><input type="checkbox" data-k="c5"><span class="box"></span><span>夜班時，依工作節奏安排穩定的用餐時間</span></label>
+      <label><input type="checkbox" data-k="c6"><span class="box"></span><span>有用降血糖藥的話，改變吃飯時間前已先問過醫師（沒用藥就直接勾）</span></label>
+    </div>
+    <div class="prog"><div class="progtrack"><div class="progfill" id="pfill"></div></div><div class="progtxt" id="ptxt">0 / 6</div></div>
+    <div class="cheer" id="cheer" aria-live="polite"></div>
+    <p class="note">勾選狀態只存在你自己的瀏覽器，不會上傳。</p>
+  </div>
+</section>
+
+<section id="s7" class="tint-grape">
+  <div class="wrap">
+    <div class="sechead"><div class="secno" style="background:var(--grape)">7</div><div><div class="eyebrow">Limits of evidence</div><h2>證據的界線：還不知道的事</h2></div></div>
+    <ul class="limits">
+      <li><span class="dot">1</span><span>多數「腸道菌時鐘」的機制研究仍依賴動物模型，尤其是小鼠。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref2">參考 2</a></span></li>
+      <li><span class="dot">2</span><span>人體試驗的設計、每個人原本的腸道菌狀態、吃的內容和總熱量不同，讓「時間」本身的效果很難單獨分離出來。</span></li>
+      <li><span class="dot">3</span><span>三個常被引用的隨機試驗，人數從 8 人到 139 人、時間從 5 週到 1 年，進食窗也不同（早上到下午、中午到晚上），結論不能互相直接套用。<a class="src" href="#ref4">參考 4</a><a class="src" href="#ref5">參考 5</a><a class="src" href="#ref3">參考 3</a></span></li>
+      <li><span class="dot">4</span><span>「人體有固定百分之幾的菌種會日夜震盪」「某個時間吃一定更健康」這類說法，目前都還需要更多實證。</span></li>
+    </ul>
+    <div class="talk r" style="margin-top:22px">
+      <svg class="face" aria-hidden="true"><use href="#star"/></svg>
+      <div class="bubble">看到「幾點前吃完就能養好菌、一定瘦」的說法，先想想：這是小鼠還是人？有沒有和「只少吃熱量」比較過？</div>
+    </div>
+  </div>
+</section>
+
+<section id="quiz" class="tint-blue">
+  <div class="wrap">
+    <div class="sechead"><div class="secno" style="background:var(--blue)">?</div><div><div class="eyebrow">Quiz</div><h2>小測驗：考考你</h2></div></div>
+    <div id="quizbox"></div>
+    <div class="score" id="score" hidden></div>
+  </div>
+</section>
+
+<section id="sources">
+  <div class="wrap">
+    <div class="sechead"><div class="secno" style="background:var(--ink-2)">📚</div><div><div class="eyebrow">References</div><h2>參考資料</h2></div></div>
+    <ol class="refs">
+      <li id="ref1">Thaiss CA, Zeevi D, Levy M, et al. Transkingdom control of microbiota diurnal oscillations promotes metabolic homeostasis. <i>Cell</i>. 2014;159(3):514–529. DOI: <a href="https://doi.org/10.1016/j.cell.2014.09.048" target="_blank" rel="noopener">10.1016/j.cell.2014.09.048</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/25417104/" target="_blank" rel="noopener">PubMed 25417104</a><span class="one">重點：以小鼠為主並含少數人類時差樣本；進食節律影響腸道菌日夜起伏，時差造成的菌相失調可經糞便移植傳給無菌小鼠。</span></li>
+      <li id="ref2">Zarrinpar A, Chaix A, Yooseph S, Panda S. Diet and feeding pattern affect the diurnal dynamics of the gut microbiome. <i>Cell Metabolism</i>. 2014;20(6):1006–1017. DOI: <a href="https://doi.org/10.1016/j.cmet.2014.11.008" target="_blank" rel="noopener">10.1016/j.cmet.2014.11.008</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/25470548/" target="_blank" rel="noopener">PubMed 25470548</a><span class="one">重點：小鼠研究；高脂飲食讓菌相日夜起伏變平，限時餵食可部分恢復。</span></li>
+      <li id="ref3">Liu D, Huang Y, Huang C, et al. Calorie restriction with or without time-restricted eating in weight loss. <i>New England Journal of Medicine</i>. 2022;386(16):1495–1504. DOI: <a href="https://doi.org/10.1056/NEJMoa2114833" target="_blank" rel="noopener">10.1056/NEJMoa2114833</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/35443107/" target="_blank" rel="noopener">PubMed 35443107</a><span class="one">重點：139 位肥胖成人、12 個月；限熱量加 8:00–16:00 進食，與只限熱量的體重差 −1.8 kg，不顯著。</span></li>
+      <li id="ref4">Sutton EF, Beyl R, Early KS, Cefalu WT, Ravussin E, Peterson CM. Early time-restricted feeding improves insulin sensitivity, blood pressure, and oxidative stress even without weight loss in men with prediabetes. <i>Cell Metabolism</i>. 2018;27(6):1212–1221.e3. DOI: <a href="https://doi.org/10.1016/j.cmet.2018.04.010" target="_blank" rel="noopener">10.1016/j.cmet.2018.04.010</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/29754952/" target="_blank" rel="noopener">PubMed 29754952</a><span class="one">重點：8 位糖尿病前期男性、交叉試驗各 5 週；熱量相同下，6 小時早時段進食改善胰島素敏感度與血壓。</span></li>
+      <li id="ref5">Lowe DA, Wu N, Rohdin-Bibby L, et al. Effects of time-restricted eating on weight loss and other metabolic parameters in women and men with overweight and obesity: the TREAT randomized clinical trial. <i>JAMA Internal Medicine</i>. 2020;180(11):1491–1499. DOI: <a href="https://doi.org/10.1001/jamainternmed.2020.4153" target="_blank" rel="noopener">10.1001/jamainternmed.2020.4153</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/32986097/" target="_blank" rel="noopener">PubMed 32986097</a><span class="one">重點：116 位成人、12 週；中午至晚上 8 點進食，與三餐組體重差 −0.26 kg，不顯著；四肢瘦體重下降較多。</span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="disclaimer">
+  <div class="wrap">
+    <div class="disc">
+      <div class="in">
+        <h2>⚠ 重要聲明｜請先看這裡</h2>
+        <div class="first">本站資訊僅供參考，實際以醫療專業人員評估為準。</div>
+        <ul>
+          <li><strong>僅供參考：</strong>本頁為衛教整理，不構成醫療建議，也不能取代醫師、營養師的個別評估。</li>
+          <li><strong>無任何推薦或行銷：</strong>本頁不推薦任何飲食產品、課程或療程。</li>
+          <li><strong>資料時點：</strong>資料以2026年9月底前公開資料為準，查核於2026年11月01日。</li>
+          <li><strong>以專業評估為準：</strong>糖尿病用藥者（尤其胰島素、磺醯尿素類）、孕婦、有飲食障礙病史者、體重過輕或營養不足的長者，改變進食時間或禁食前請先問醫師，避免低血糖與肌肉流失。</li>
+          <li><strong>使用前查證：</strong>研究持續更新，請以最新文獻與專業意見為準；進食時鐘只是示範工具。</li>
+        </ul>
+        <div class="help">需要協助時：安心專線 <strong>1925</strong>（24 小時）｜生命線 <strong>1995</strong>｜緊急狀況請撥 <strong>119</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="pals" aria-hidden="true">
+      <svg viewBox="0 0 120 130"><use href="#sprout"/></svg>
+      <svg viewBox="0 0 120 110"><use href="#bird"/></svg>
+      <svg viewBox="0 0 120 120"><use href="#star"/></svg>
+    </div>
+    <div class="gold">每一次多懂一點，都是送給自己的小禮物。</div>
+    <div class="slogan">吃飯時間可能有影響，但規律、吃夠、睡好最實在；用藥者改作息前先問醫師。</div>
+    <p><a href="https://www.gungho.idv.tw/KS/index.html">← 回共好小學堂</a></p>
+    <p class="small">共好小學堂 ✦ 一起學習，一起共好<br>本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-11-01</p>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="回到頂端">↑</button>
+
+<script>
+(function(){
+  var PFX='gungho-ks-mealtime-';
+  function lsGet(k){try{return localStorage.getItem(PFX+k);}catch(e){return null;}}
+  function lsSet(k,v){try{localStorage.setItem(PFX+k,v);}catch(e){}}
+  function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+
+  /* tabs */
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  function sel(t){
+    tabs.forEach(function(b){var on=b===t;b.setAttribute('aria-selected',on?'true':'false');b.tabIndex=on?0:-1;document.getElementById(b.getAttribute('aria-controls')).hidden=!on;});
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){sel(t);});
+    t.addEventListener('keydown',function(e){
+      var n=null;if(e.key==='ArrowRight')n=tabs[(i+1)%tabs.length];if(e.key==='ArrowLeft')n=tabs[(i-1+tabs.length)%tabs.length];
+      if(n){e.preventDefault();sel(n);n.focus();}
+    });
+  });
+
+  /* clock */
+  var f=document.getElementById('first'),l=document.getElementById('last'),b=document.getElementById('bed');
+  var CX=150,CY=150,R=118;
+  function fmt(h){var hh=Math.floor(h),mm=Math.round((h-hh)*60);return (hh<10?'0':'')+hh+':'+(mm<10?'0':'')+mm;}
+  function pt(h,r){var a=(h/24)*2*Math.PI-Math.PI/2;return [CX+r*Math.cos(a),CY+r*Math.sin(a)];}
+  function num(x){return (Math.round(x*10)/10).toString();}
+  var ticks=document.getElementById('ticks'),tk='';
+  for(var h=0;h<24;h+=3){var p=pt(h,148),q=pt(h,133),r2=pt(h,135);
+    tk+='<text x="'+p[0].toFixed(1)+'" y="'+(p[1]+4).toFixed(1)+'" text-anchor="middle" font-size="11" fill="#4a5674" font-family="Noto Sans TC, sans-serif">'+h+'</text>';}
+  ticks.innerHTML=tk;
+  try{var s=JSON.parse(lsGet('clock')||'null');if(s&&typeof s.f==='number'){f.value=s.f;l.value=s.l;b.value=s.b;}}catch(e){}
+  function draw(){
+    var F=+f.value,L=+l.value,B=+b.value;
+    var win=(L-F+24)%24; var toBed=(B-L+24)%24;
+    document.getElementById('o-first').textContent=fmt(F);
+    document.getElementById('o-last').textContent=fmt(L);
+    document.getElementById('o-bed').textContent=fmt(B);
+    var arc=document.getElementById('arc');
+    if(win===0){arc.setAttribute('d','');}
+    else{var s=pt(F,R),e=pt(L,R),large=win>12?1:0;
+      arc.setAttribute('d','M'+s[0].toFixed(2)+' '+s[1].toFixed(2)+' A'+R+' '+R+' 0 '+large+' 1 '+e[0].toFixed(2)+' '+e[1].toFixed(2));}
+    var bp=pt(B,R);document.getElementById('bedmark').setAttribute('transform','translate('+bp[0].toFixed(1)+' '+bp[1].toFixed(1)+')');
+    document.getElementById('ctxt').textContent=num(win)+' 小時';
+    document.getElementById('r-win').textContent=num(win);
+    var m='';
+    var inside = win>0 && ((B-F+24)%24) < win;
+    document.getElementById('r-bed').textContent=inside?'—':num(toBed);
+    if(win===0){m='第一口和最後一口設成同一個時間了，請再調整一下。';}
+    else if(inside){m='你的就寢時間落在進食窗裡面，代表睡著前後還在吃東西。原則是<strong>減少睡前大量進食</strong>；如果是輪班，先求依工作節奏把用餐時間穩定下來。';}
+    else{
+      m='你的進食窗約 <strong>'+esc(num(win))+' 小時</strong>，最後一口到就寢約 <strong>'+esc(num(toBed))+' 小時</strong>。';
+      if(win<=10){m+='參考一下：三個試驗的進食窗是 6–8 小時，但它們的結論並不相同，進食窗短不等於一定比較好。';}
+      else{m+='不需要硬把時間壓短，先做到三餐規律、睡前不吃大餐就是好的開始。';}
+    }
+    m+=' <span class="note">（示範用途，不是醫療建議）</span>';
+    document.getElementById('msg').innerHTML=m;
+    lsSet('clock',JSON.stringify({f:F,l:L,b:B}));
+  }
+  [f,l,b].forEach(function(x){x.addEventListener('input',draw);});
+  [].forEach.call(document.querySelectorAll('.presets button'),function(btn){
+    btn.addEventListener('click',function(){f.value=btn.dataset.f;l.value=btn.dataset.l;b.value=btn.dataset.b;draw();});
+  });
+  draw();
+
+  /* checklist */
+  var boxes=[].slice.call(document.querySelectorAll('#chk input'));
+  var saved={};try{saved=JSON.parse(lsGet('check')||'{}')||{};}catch(e){saved={};}
+  boxes.forEach(function(x){x.checked=!!saved[x.dataset.k];x.addEventListener('change',upd);});
+  function upd(){
+    var n=0,st={};boxes.forEach(function(x){if(x.checked){n++;st[x.dataset.k]=1;}});
+    document.getElementById('pfill').style.width=(n/boxes.length*100)+'%';
+    document.getElementById('ptxt').textContent=n+' / '+boxes.length;
+    document.getElementById('cheer').textContent=n===boxes.length?'全部做到了！規律就是最好的起點，繼續保持 🌱':(n>0?'很好，一步一步來。':'');
+    lsSet('check',JSON.stringify(st));
+  }
+  upd();
+
+  /* quiz */
+  var Q=[
+    {q:'小鼠研究發現「什麼時候餵」會改變腸道菌的日夜起伏。這代表什麼？',o:['人照著小鼠的時段吃，就能重設腸道菌','提供「可能有這條機制」的線索，還不能直接當人的食譜','腸道菌和吃飯時間完全無關'],a:1,e:'動物機制研究告訴我們「可能發生什麼」，但物種、環境、飼料都和人不同，不能直接變成人的飲食建議。'},
+    {q:'2022 年 NEJM 一年試驗：限熱量＋限時進食 vs. 只限熱量，結果如何？',o:['限時組多瘦了 10 公斤以上','兩組都瘦了，差距約 1.8 公斤但統計上不顯著','只限熱量組完全沒瘦'],a:1,e:'限時組 −8.0 kg、只限熱量組 −6.3 kg，差 −1.8 kg（95% 信賴區間 −4.0 到 0.4），不顯著。主力看起來是總熱量變少。'},
+    {q:'2020 年 TREAT 試驗（中午到晚上 8 點進食）有一個值得長者留意的發現，是哪一個？',o:['限時組四肢瘦體重（肌肉為主）下降比較多','限時組血壓大幅下降','限時組完全不會餓'],a:0,e:'TREAT 中限時組減重沒比三餐組多，但四肢瘦體重流失較多。本來肌肉就少、體重過輕的長者，更要注意吃夠蛋白質，改作息前先問醫師。'},
+    {q:'王伯伯每天打胰島素，想試試「下午 2 點後就不吃」。最好的做法是？',o:['明天直接開始，餓了忍一下就好','先和醫師討論，必要時調整藥物，避免低血糖','把胰島素停掉比較安全'],a:1,e:'使用胰島素或磺醯尿素類藥物的人，拉長空腹可能低血糖；更不能自己停藥。改變進食時間前一定先問醫師。'}
+  ];
+  var box=document.getElementById('quizbox'),html='';
+  Q.forEach(function(it,i){
+    html+='<div class="card qcard" data-i="'+i+'"><h3>第 '+(i+1)+' 題｜'+esc(it.q)+'</h3><div class="opts">';
+    it.o.forEach(function(o,j){html+='<button type="button" data-j="'+j+'">'+String.fromCharCode(65+j)+'. '+esc(o)+'</button>';});
+    html+='</div><div class="explain" hidden></div></div>';
+  });
+  box.innerHTML=html;
+  var answered=0,correct=0;
+  [].forEach.call(box.querySelectorAll('.qcard'),function(card){
+    var i=+card.dataset.i,it=Q[i];
+    [].forEach.call(card.querySelectorAll('.opts button'),function(btn){
+      btn.addEventListener('click',function(){
+        var j=+btn.dataset.j,ok=j===it.a;
+        [].forEach.call(card.querySelectorAll('.opts button'),function(x){x.disabled=true;if(+x.dataset.j===it.a)x.classList.add('right');});
+        if(!ok)btn.classList.add('wrong');
+        var ex=card.querySelector('.explain');ex.hidden=false;
+        ex.innerHTML=(ok?'✅ 答對了！':'❌ 再想想。正解是 '+String.fromCharCode(65+it.a)+'。')+' '+esc(it.e);
+        answered++;if(ok)correct++;
+        if(answered===Q.length){var sc=document.getElementById('score');sc.hidden=false;
+          sc.textContent='你答對 '+correct+' / '+Q.length+' 題！'+(correct===Q.length?'太厲害了，證據的界線你都抓到了 🌟':'回頭看看上面的章節，再挑戰一次也很好 💪');}
+      });
+    });
+  });
+
+  /* to top */
+  var tt=document.getElementById('totop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('show',window.scrollY>600);},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+})();
+</script>
+</body>
+</html>
