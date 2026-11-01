@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>舊約先知書預言查經</title>
+<meta name="description" content="以基督與救贖歷史為主軸，認識先知書的背景、文類與信息，並查考新約如何在基督裡使用舊約預言。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="舊約先知書預言查經">
+<meta property="og:description" content="從先知書看基督與救贖歷史">
+<meta property="og:url" content="https://www.gungho.idv.tw/fellowship/prophets-and-christ/">
+<meta name="theme-color" content="#FBF8F1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF8F1; --paper:#FFFDF8; --ink:#2E2A24; --muted:#6B6358; --line:#E7DDCB;
+  --gold:#B8893B; --gold-soft:#F4E6C6; --sky:#5E8FBF; --sky-soft:#E3EDF7;
+  --clay:#B9562F; --clay-soft:#F6E2D8; --olive:#6F8A5A; --olive-soft:#E6EDDD;
+  --serif:"Noto Serif TC","Songti TC",serif; --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --r:16px; --shadow:0 6px 24px rgba(120,96,50,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;font-family:var(--sans);color:var(--ink);line-height:1.85;font-size:17px;
+  background:var(--bg);
+  background-image:radial-gradient(1200px 600px at 85% -10%,rgba(244,214,140,.35),transparent 60%),
+                   radial-gradient(900px 500px at -10% 20%,rgba(160,195,228,.28),transparent 60%);
+  background-attachment:fixed; overflow-x:hidden}
+a{color:var(--sky)}
+h1,h2,h3,h4{font-family:var(--serif);line-height:1.4;margin:0 0 .5em}
+p{margin:.6em 0}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--sky));z-index:30}
+
+/* nav */
+.topbar{position:sticky;top:0;z-index:20;background:rgba(251,248,241,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.topbar .in{max-width:1040px;margin:0 auto;display:flex;align-items:center;gap:14px;padding:8px 16px}
+.brand{font-family:var(--serif);font-weight:700;white-space:nowrap;color:var(--ink);text-decoration:none;font-size:15px}
+.brand span{color:var(--gold)}
+nav.toc{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+nav.toc::-webkit-scrollbar{display:none}
+nav.toc a{white-space:nowrap;text-decoration:none;color:var(--muted);font-size:14px;padding:5px 10px;border-radius:999px}
+nav.toc a.on,nav.toc a:hover{background:var(--gold-soft);color:#7A5A22}
+
+/* cover */
+.cover{position:relative;text-align:center;padding:84px 16px 64px;overflow:hidden}
+.cover::before{content:"";position:absolute;left:50%;top:-140px;width:620px;height:620px;transform:translateX(-50%);
+  background:radial-gradient(circle,rgba(255,226,150,.55),rgba(255,226,150,0) 65%);pointer-events:none}
+.eyebrow{display:inline-block;font-size:14px;letter-spacing:.2em;color:var(--gold);border:1px solid var(--gold);border-radius:999px;padding:3px 14px;background:rgba(255,253,248,.7)}
+.cover h1{font-size:clamp(34px,6vw,56px);font-weight:900;margin:18px 0 6px;position:relative}
+.cover .sub{font-family:var(--serif);font-size:clamp(18px,3vw,24px);color:var(--muted);position:relative}
+.motto{max-width:620px;margin:34px auto 0;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:20px 24px;box-shadow:var(--shadow);position:relative}
+.motto q{font-family:var(--serif);font-size:20px;quotes:"「" "」"}
+
+main{max-width:880px;margin:0 auto;padding:0 16px 40px}
+section{padding:44px 0 12px;border-top:1px dashed var(--line)}
+section:first-of-type{border-top:0}
+.sec-no{font-family:var(--serif);color:var(--gold);font-size:15px;letter-spacing:.15em}
+h2{font-size:clamp(26px,4vw,34px)}
+h3{font-size:22px}
+
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;box-shadow:var(--shadow);margin:16px 0}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin:16px 0}
+.grid .card{margin:0}
+.theme-card h4{font-size:18px;margin-bottom:4px}
+.theme-card p{margin:0;color:var(--muted);font-size:15.5px}
+.theme-card .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px;vertical-align:middle}
+
+.steps{counter-reset:s;display:grid;gap:12px;margin:16px 0}
+.step{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:14px 18px}
+.step::before{counter-increment:s;content:counter(s);flex:0 0 32px;height:32px;border-radius:50%;background:var(--gold-soft);color:#7A5A22;font-family:var(--serif);font-weight:700;display:grid;place-items:center}
+
+.twin{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.twin .card{margin:0}
+.twin .ctx{border-top:4px solid var(--sky)}
+.twin .app{border-top:4px solid var(--olive)}
+.twin h4{font-size:17px}
+.twin .ctx h4{color:var(--sky)} .twin .app h4{color:var(--olive)}
+
+.tablewrap{overflow-x:auto;margin:14px 0;border-radius:var(--r);border:1px solid var(--line);background:var(--paper)}
+table{border-collapse:collapse;width:100%;font-size:15.5px;min-width:520px}
+th,td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:var(--gold-soft);font-family:var(--serif);color:#5E4519;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700;white-space:nowrap}
+
+.pills{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0}
+.pill{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:15px}
+.pill.hl{background:var(--gold-soft);border-color:#E5CD95;font-weight:700}
+.arrow{color:var(--gold);font-size:14px}
+
+.aside{border:1.5px dashed #D9C8A6;border-radius:12px;padding:10px 16px;margin:16px 0;font-size:15px;color:var(--muted);background:rgba(255,253,248,.6)}
+.aside b{color:var(--clay);font-weight:500;margin-right:6px}
+
+.takeaway{border-left:4px solid var(--gold);padding:6px 0 6px 16px;margin:18px 0 6px;font-family:var(--serif);font-size:18px;font-weight:700;color:#4A3B22}
+
+.reflect{background:var(--sky-soft);border-radius:12px;padding:12px 18px;margin:14px 0}
+.reflect h4{font-size:16px;color:#3F6B96;margin:0 0 4px}
+.reflect ol{margin:0;padding-left:1.4em}
+.reflect li{margin:2px 0}
+
+.warn{background:var(--clay-soft);border-radius:12px;padding:12px 18px;margin:14px 0;font-size:15.5px}
+.warn b{color:var(--clay)}
+
+.pcard{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px 22px 14px;margin:22px 0;box-shadow:var(--shadow)}
+.pc-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;margin-bottom:8px}
+.pc-head .num{font-family:var(--serif);font-size:28px;font-weight:900;color:var(--gold-soft);-webkit-text-stroke:1px var(--gold)}
+.pc-head h3{margin:0}
+.tag{font-size:13px;border-radius:999px;padding:2px 10px;background:var(--olive-soft);color:#4F6740}
+.tag.typ{background:var(--sky-soft);color:#3F6B96}
+.tag.cx{background:var(--clay-soft);color:var(--clay)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0 6px}
+.pair div{border-radius:10px;padding:8px 12px;font-size:15px}
+.pair .ot{background:#F7EEDB} .pair .nt{background:#EAF1F8}
+.pair b{font-family:var(--serif);margin-right:6px}
+
+button.ref{font:inherit;font-size:.9em;border:1px solid #DCC593;background:#FFF8E6;color:#7A5A22;border-radius:8px;padding:0 7px;margin:1px 2px;cursor:pointer;line-height:1.7;white-space:nowrap}
+button.ref:hover,button.ref:focus-visible{background:var(--gold);color:#fff;border-color:var(--gold);outline:none}
+
+figure.illus{margin:26px 0;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+figure.illus svg{display:block;width:100%;height:auto}
+figure.illus figcaption{padding:10px 16px;font-size:15px;color:var(--muted);font-family:var(--serif)}
+.ill-tag{font:12px var(--sans);fill:#7D6F5A;paint-order:stroke;stroke:#FFFDF8;stroke-width:3px;stroke-linejoin:round}
+
+.prayer{background:linear-gradient(135deg,#FFF7E3,#EEF4FA);border:1px solid #E8D6AA;border-radius:var(--r);padding:22px 24px;margin:20px 0;font-family:var(--serif);font-size:18px}
+.prayer h3{color:var(--gold)}
+
+ol.discuss{padding-left:0;list-style:none;counter-reset:d;display:grid;gap:10px}
+ol.discuss li{counter-increment:d;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 16px 12px 52px;position:relative}
+ol.discuss li::before{content:counter(d);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--olive-soft);color:#4F6740;display:grid;place-items:center;font-size:14px;font-weight:700}
+
+.reflist{columns:2 240px;padding-left:1.2em;font-size:15px}
+.reflist li{break-inside:avoid;margin:2px 0}
+.small{font-size:14.5px;color:var(--muted)}
+ul.notes li{margin:6px 0}
+
+footer{border-top:1px solid var(--line);text-align:center;padding:28px 16px 40px;color:var(--muted);font-size:14px}
+footer a{color:var(--muted)}
+
+/* dialog */
+dialog{border:0;border-radius:18px;padding:0;max-width:640px;width:calc(100% - 32px);box-shadow:0 20px 60px rgba(60,40,10,.25);background:var(--paper);color:var(--ink)}
+dialog::backdrop{background:rgba(46,42,36,.35)}
+.dlg-h{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--line);background:var(--gold-soft)}
+.dlg-h h3{margin:0;font-size:20px}
+.dlg-x{border:0;background:transparent;font-size:26px;line-height:1;cursor:pointer;color:var(--muted)}
+.dlg-b{padding:14px 20px;max-height:58vh;overflow:auto;font-family:var(--serif);font-size:17px}
+.dlg-b p{margin:.35em 0}
+.dlg-b sup{color:var(--gold);font-family:var(--sans);font-size:12px;margin-right:4px}
+.dlg-f{padding:12px 20px 16px;border-top:1px solid var(--line);font-size:14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.dlg-f a{text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:3px 12px}
+.dlg-f .ver{color:var(--muted);margin-right:auto}
+
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+@media (max-width:640px){
+  body{font-size:16px}
+  .twin,.pair{grid-template-columns:1fr}
+  .cover{padding:60px 16px 44px}
+  .brand{display:none}
+  .pcard{padding:18px 16px 10px}
+  table{min-width:0;font-size:14.5px}
+  th,td{padding:8px 10px}
+  th{white-space:normal}
+}
+@media print{
+  .topbar,#progress,dialog{display:none!important}
+  body{background:#fff}
+  .reveal{opacity:1;transform:none}
+  .card,.pcard,figure.illus{box-shadow:none;break-inside:avoid}
+  button.ref{border:0;background:none;padding:0;color:#000}
+}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<header class="topbar"><div class="in">
+  <a class="brand" href="#top">先知書<span>・</span>基督</a>
+  <nav class="toc" aria-label="章節導覽">
+    <a href="#intro">引言</a><a href="#goals">目標</a><a href="#prophets">先知</a><a href="#overview">總覽</a><a href="#reading">讀法</a><a href="#messiah">彌賽亞</a><a href="#newcov">新約時代</a><a href="#kingdom">神國</a><a href="#story">主線</a><a href="#discuss">討論</a><a href="#refs">參考</a>
+  </nav>
+</div></header>
+
+<div class="cover" id="top">
+  <span class="eyebrow">舊約・先知書查經講義</span>
+  <h1>舊約先知書預言查經</h1>
+  <div class="sub">從先知書看基督與救贖歷史</div>
+  <div class="motto">
+    <q>因為預言中的靈意乃是為耶穌作見證。</q>
+    <div class="small" style="margin-top:6px">主題經文 <button class="ref" data-r="Rev19:10">啟 19:10</button></div>
+  </div>
+</div>
+
+<main>
+
+<section id="intro" class="reveal">
+  <div class="sec-no">引言</div>
+  <h2>先聽先知當年怎麼說，再看基督怎樣成全</h2>
+  <p>這份講義以「基督與救贖歷史」為主軸，幫助我們認識先知書的歷史背景、文學形式、神學主題，以及新約如何使用舊約先知信息。</p>
+  <p>它不把每段舊約經文都機械化地解釋為對耶穌的直接預測，而是按經文脈絡辨識兩件事：先知如何向當代聽眾說話；福音書與使徒書信又如何在基督裡理解並應用這些信息。</p>
+  <figure class="illus"><svg viewBox="0 0 640 280" role="img" aria-label="展開的經卷與發光的油燈" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="sl-bg" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#FFF6DF"/><stop offset="1" stop-color="#F3EBDA"/></radialGradient><radialGradient id="sl-halo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFE4A3" stop-opacity=".95"/><stop offset=".45" stop-color="#F6D27E" stop-opacity=".35"/><stop offset="1" stop-color="#F6D27E" stop-opacity="0"/></radialGradient><linearGradient id="sl-flame" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#E07A2E"/><stop offset=".6" stop-color="#F2B441"/><stop offset="1" stop-color="#FFF1B8"/></linearGradient></defs><rect width="640" height="280" fill="url(#sl-bg)"/><rect x="0" y="228" width="640" height="52" fill="#E9DCC2"/><line x1="0" y1="228" x2="640" y2="228" stroke="#CDB892" stroke-width="2"/><path d="M140 104 Q260 96 380 104 L380 216 Q260 208 140 216 Z" fill="#FBF3DE" stroke="#CFB98D" stroke-width="2"/><g stroke="#C9B48A" stroke-width="3" stroke-linecap="round" opacity=".8"><line x1="150" y1="118" x2="360" y2="118"/><line x1="150" y1="132" x2="360" y2="132"/><line x1="150" y1="146" x2="330" y2="146"/><line x1="150" y1="160" x2="360" y2="160"/><line x1="150" y1="174" x2="360" y2="174"/><line x1="150" y1="188" x2="330" y2="188"/><line x1="150" y1="202" x2="360" y2="202"/></g><rect x="118" y="94" width="26" height="132" rx="13" fill="#D8C095" stroke="#B89C68" stroke-width="2"/><rect x="376" y="94" width="26" height="132" rx="13" fill="#D8C095" stroke="#B89C68" stroke-width="2"/><rect x="125" y="82" width="12" height="156" rx="6" fill="#9C7A45"/><rect x="383" y="82" width="12" height="156" rx="6" fill="#9C7A45"/><circle cx="452" cy="176" r="95" fill="url(#sl-halo)"/><path d="M440 214 Q470 186 520 190 L560 196 Q572 200 566 208 Q540 228 470 226 Q446 224 440 214 Z" fill="#B9562F"/><ellipse cx="490" cy="200" rx="18" ry="5" fill="#8E3F21"/><path d="M556 198 Q566 186 572 192" stroke="#8E3F21" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M452 206 Q438 186 452 158 Q466 186 452 206 Z" fill="url(#sl-flame)"/><path d="M452 204 Q446 192 452 178 Q458 192 452 204 Z" fill="#FFF7D6"/><text x="626" y="268" text-anchor="end" class="ill-tag">象徵示意</text></svg>
+    <figcaption>「你的話是我腳前的燈，是我路上的光。」<button class="ref" data-r="Ps119:105">詩 119:105</button></figcaption>
+  </figure>
+</section>
+
+<section id="goals" class="reveal">
+  <div class="sec-no">一、課程目標</div>
+  <h2>透過本課程，我們將能⋯⋯</h2>
+  <div class="steps">
+    <div class="step"><div>認識先知在以色列歷史中的角色，以及先知書的基本文類與信息。</div></div>
+    <div class="step"><div>掌握閱讀先知書的基本原則，避免把所有舊約經文都直接等同於末世時間表。</div></div>
+    <div class="step"><div>理解神對以色列、列國、審判、復興與新創造的計畫。</div></div>
+    <div class="step"><div>認識先知書如何指向基督：包括直接預告、預表、主題呼應與新約引述。</div></div>
+    <div class="step"><div>建立以創造、墮落、揀選、出埃及、王國、被擄、歸回、基督與新創造為主軸的救贖歷史觀。</div></div>
+  </div>
+</section>
+
+<section id="prophets" class="reveal">
+  <div class="sec-no">二、先知是誰？</div>
+  <h2>神的代言人，不是預言家</h2>
+  <h3>1. 先知的身分</h3>
+  <p>舊約的「先知」（希伯來文 <i>nāḇîʾ</i>）不是單純的預言家，而是被神差遣、向君王、祭司與百姓傳達神話語的代言人。先知的信息常包括警告、責備、呼籲悔改、宣告審判，也包含安慰、盼望與復興的應許。</p>
+  <p>先知不是只談未來；他們首先是在當代歷史處境中，指出以色列與列國是否忠於耶和華的約。所以讀先知書要依序問兩個問題：</p>
+  <div class="twin">
+    <div class="card ctx"><h4>第一問・當時</h4><p>這段話當時對誰說？他們正面對什麼問題？</p></div>
+    <div class="card app"><h4>第二問・在基督裡</h4><p>新約如何在基督與教會的脈絡中理解它？</p></div>
+  </div>
+  <div class="aside"><b>旁白</b>先知比較像「傳令官」而不是「算命師」：重點不在預報明天的天氣，而是一字不差地轉達王的命令。</div>
+
+  <figure class="illus"><svg viewBox="0 0 640 280" role="img" aria-label="立在望樓上觀看的守望者" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wt-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCEAF6"/><stop offset="1" stop-color="#FBF3E2"/></linearGradient><radialGradient id="wt-sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFE7A8"/><stop offset="1" stop-color="#FFE7A8" stop-opacity="0"/></radialGradient></defs><rect width="640" height="280" fill="url(#wt-sky)"/><circle cx="470" cy="190" r="90" fill="url(#wt-sun)"/><circle cx="470" cy="190" r="26" fill="#F7D98C"/><path d="M0 200 Q160 170 320 196 T640 186 L640 280 L0 280Z" fill="#C9D6B4"/><path d="M0 230 Q200 206 380 232 T640 222 L640 280 L0 280Z" fill="#A9BC8E"/><path d="M150 236 L166 104 L238 104 L254 236 Z" fill="#D9C6A2" stroke="#B49E77" stroke-width="2"/><g fill="#C7B28C"><rect x="164" y="120" width="26" height="9" rx="2"/><rect x="194" y="142" width="26" height="9" rx="2"/><rect x="164" y="164" width="26" height="9" rx="2"/><rect x="194" y="186" width="26" height="9" rx="2"/><rect x="164" y="208" width="26" height="9" rx="2"/></g><rect x="156" y="88" width="92" height="18" fill="#CBB690" stroke="#B49E77" stroke-width="2"/><g fill="#CBB690" stroke="#B49E77" stroke-width="2"><rect x="156" y="74" width="12" height="16"/><rect x="176" y="74" width="12" height="16"/><rect x="196" y="74" width="12" height="16"/><rect x="216" y="74" width="12" height="16"/><rect x="236" y="74" width="12" height="16"/></g><path d="M192 236 L192 206 Q202 194 212 206 L212 236 Z" fill="#8C744C"/><g fill="#5B6B7E"><circle cx="210" cy="50" r="9"/><path d="M200 88 L203 62 Q210 56 217 62 L220 88 Z"/><path d="M216 66 L232 58" stroke="#5B6B7E" stroke-width="4" stroke-linecap="round"/></g><path d="M640 214 Q520 220 420 236 Q360 248 330 280" stroke="#E8DCC0" stroke-width="10" fill="none" opacity=".8"/><text x="626" y="268" text-anchor="end" class="ill-tag">象徵示意</text></svg>
+    <figcaption>先知像守望的人，先聽神說什麼，再向百姓傳講。<button class="ref" data-r="Hab2:1">哈 2:1</button></figcaption>
+  </figure>
+
+  <h3>2. 先知書的常見主題</h3>
+  <div class="grid">
+    <div class="card theme-card"><h4><span class="dot" style="background:var(--gold)"></span>盟約與忠心</h4><p>以色列蒙召成為屬神的子民，應當敬拜獨一真神。</p></div>
+    <div class="card theme-card"><h4><span class="dot" style="background:var(--olive)"></span>公義與憐憫</h4><p>真實敬拜必須表現在對孤兒、寡婦、窮人與受欺壓者的公義行動中。</p></div>
+    <div class="card theme-card"><h4><span class="dot" style="background:var(--clay)"></span>審判與悔改</h4><p>罪帶來審判，但審判警告的目的常是呼籲人回轉。</p></div>
+    <div class="card theme-card"><h4><span class="dot" style="background:var(--sky)"></span>列國與普世</h4><p>神不只掌管以色列，也掌管亞述、巴比倫、埃及與萬國。</p></div>
+    <div class="card theme-card"><h4><span class="dot" style="background:#8C7BB0"></span>餘民與復興</h4><p>審判之後，神保守餘民，並應許更新、恢復與新約。</p></div>
+    <div class="card theme-card"><h4><span class="dot" style="background:#C9A35A"></span>彌賽亞盼望</h4><p>先知期待大衛家出現公義君王，帶來和平、救恩與神國的統治。</p></div>
+  </div>
+  <p class="takeaway">先知先對當代說話，他們的話卻一路指向更大的成全。</p>
+</section>
+
+<section id="overview" class="reveal">
+  <div class="sec-no">三、先知書總覽</div>
+  <h2>五卷大先知書，十二卷小先知書</h2>
+  <h3>大先知書</h3>
+  <div class="tablewrap"><table>
+    <thead><tr><th>書卷</th><th>主要時代／處境</th><th>核心信息</th></tr></thead>
+    <tbody>
+      <tr><td>以賽亞書</td><td>亞述威脅、猶大危機與日後被擄的背景</td><td>神的聖潔、審判、餘民、僕人、救恩與新天新地</td></tr>
+      <tr><td>耶利米書</td><td>猶大末年、耶路撒冷被毀前後</td><td>審判必至、呼籲悔改、新約與歸回盼望</td></tr>
+      <tr><td>耶利米哀歌</td><td>耶路撒冷被毀後</td><td>為毀滅哀哭，同時肯定神的信實與憐憫</td></tr>
+      <tr><td>以西結書</td><td>被擄巴比倫時期</td><td>神的榮耀、個人責任、新靈、新心與復興</td></tr>
+      <tr><td>但以理書</td><td>被擄時期與列國興衰</td><td>神掌管歷史、列國終必過去、神國永存</td></tr>
+    </tbody>
+  </table></div>
+  <h3>十二小先知書</h3>
+  <div class="tablewrap"><table>
+    <thead><tr><th>書卷</th><th>主要對象／主題</th><th>核心信息</th></tr></thead>
+    <tbody>
+      <tr><td>何西阿書</td><td>北國以色列</td><td>以婚姻比喻盟約的破裂與神不變的愛</td></tr>
+      <tr><td>約珥書</td><td>猶大／耶路撒冷</td><td>蝗災、耶和華的日子、悔改與聖靈澆灌</td></tr>
+      <tr><td>阿摩司書</td><td>北國以色列</td><td>社會不義與宗教虛偽必受審判</td></tr>
+      <tr><td>俄巴底亞書</td><td>以東</td><td>對幸災樂禍、趁人之危者的審判</td></tr>
+      <tr><td>約拿書</td><td>尼尼微／亞述</td><td>神的憐憫廣及悔改的外邦人</td></tr>
+      <tr><td>彌迦書</td><td>猶大與以色列</td><td>審判不義、應許伯利恆君王與普世和平</td></tr>
+      <tr><td>那鴻書</td><td>尼尼微／亞述</td><td>神必審判不悔改而殘暴的帝國</td></tr>
+      <tr><td>哈巴谷書</td><td>猶大與巴比倫</td><td>義人因信得生；神在歷史中仍公義掌權</td></tr>
+      <tr><td>西番雅書</td><td>猶大</td><td>耶和華的日子、審判與謙卑者的盼望</td></tr>
+      <tr><td>哈該書</td><td>歸回後的猶大</td><td>重建聖殿與神同在的應許</td></tr>
+      <tr><td>撒迦利亞書</td><td>歸回後的猶大</td><td>復興、君王、潔淨與神國盼望</td></tr>
+      <tr><td>瑪拉基書</td><td>歸回後的猶大</td><td>約的忠誠、審判、煉淨與那日將至</td></tr>
+    </tbody>
+  </table></div>
+  <div class="aside"><b>旁白</b>「小先知」的小，是指篇幅，不是分量——就像短篇小說家不見得比長篇小說家矮。</div>
+</section>
+
+<section id="reading" class="reveal">
+  <div class="sec-no">四、如何讀先知書的預言</div>
+  <h2>先讀上下文，再分辨類型</h2>
+  <h3>1. 先讀上下文</h3>
+  <p>預言不是散落的謎語，而是出現在特定歷史、文學與神學脈絡中的信息。讀者應先確認：先知向誰說話？當時的危機是什麼？經文屬於警告、審判、安慰、應許，還是異象？</p>
+  <div class="twin">
+    <div class="card ctx"><h4>原始處境・<button class="ref" data-r="Isa7:14">賽 7:14</button></h4><p>涉及亞哈斯王與猶大面對的危機，是給當時君王的一個兆頭。</p></div>
+    <div class="card app"><h4>新約閱讀・<button class="ref" data-r="Mt1:22-23">太 1:22–23</button></h4><p>馬太在耶穌誕生的敘事中，按「以馬內利」的主題與彌賽亞盼望引用它。</p></div>
+  </div>
+  <p>這兩層閱讀不必互相取消，反而幫助我們看見經文的深度。</p>
+
+  <h3>2. 區分不同類型</h3>
+  <div class="tablewrap"><table>
+    <thead><tr><th>類型</th><th>說明</th><th>例子</th></tr></thead>
+    <tbody>
+      <tr><td>直接預告</td><td>舊約經文指向尚未發生的未來事件</td><td><button class="ref" data-r="Mic5:2">彌 5:2</button> 提到伯利恆將出現掌權者；<button class="ref" data-r="Mt2:5-6">太 2:5–6</button> 將其與耶穌誕生相連。</td></tr>
+      <tr><td>預表</td><td>舊約的人物、事件或制度，在新約中被視為指向基督的模式</td><td>約拿在魚腹中三日，耶穌用以說明人子將三日後復活（<button class="ref" data-r="Mt12:38-41">太 12:40</button>）。</td></tr>
+      <tr><td>主題呼應</td><td>舊約主題在基督身上得到更深的實現</td><td><button class="ref" data-r="Isa40:3">賽 40:3</button> 的「預備道路」主題，被用於施洗約翰與耶穌的事工（<button class="ref" data-r="Mt3:3">太 3:3</button><button class="ref" data-r="Mk1:2-3">可 1:2–3</button>）。</td></tr>
+      <tr><td>新約引述</td><td>新約作者引用舊約，說明耶穌的事件應驗、延續或成全經文</td><td><button class="ref" data-r="Mt8:17">太 8:17</button> 引賽 53:4，說明耶穌醫治事工的意義。</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>3. 避免兩種極端</h3>
+  <div class="twin">
+    <div class="card" style="border-top:4px solid var(--clay)"><h4 style="color:var(--clay)">避免「凡事都是預言」</h4><p>不是每個舊約細節都直接預測耶穌；有些經文首先是對當代以色列或列國說話。</p></div>
+    <div class="card" style="border-top:4px solid var(--clay)"><h4 style="color:var(--clay)">避免「與基督無關」</h4><p>也不應只把先知書當作古代歷史資料，而忽略新約如何在基督裡理解救恩、新約、聖靈與新創造。</p></div>
+  </div>
+  <div class="aside"><b>旁白</b>把先知書當成末世時刻表來查，就像拿詩集去查火車時刻——不是書錯了，是讀法錯了。</div>
+  <p class="takeaway">先問當時，再問基督；兩層都讀，經文才立體。</p>
+</section>
+
+<section id="messiah" class="reveal">
+  <div class="sec-no">五、重要彌賽亞預言</div>
+  <h2>八段經文，八個查經入口</h2>
+
+  <article class="pcard" id="p1">
+    <div class="pc-head"><span class="num">01</span><h3>童女懷孕生子</h3></div>
+    <div class="pair"><div class="ot"><b>舊約</b><button class="ref" data-r="Isa7:14">賽 7:14</button></div><div class="nt"><b>新約</b><button class="ref" data-r="Mt1:22-23">太 1:22–23</button></div></div>
+    <p>以賽亞書 7:14 原初指向亞哈斯時代的記號與拯救；馬太則在耶穌誕生敘事中引用「童女懷孕生子」與「以馬內利」，表明耶穌的降生成全了神同在的應許。</p>
+    <div class="reflect"><h4>查經問題</h4><ol><li>以賽亞書 7 章的歷史危機是什麼？</li><li>「以馬內利」在原初處境與馬太福音中分別有何意義？</li><li>為何馬太選擇引用這段經文？</li></ol></div>
+    <p class="takeaway">給亞哈斯的兆頭，在耶穌身上成為「神與我們同在」。</p>
+  </article>
+
+  <article class="pcard" id="p2">
+    <div class="pc-head"><span class="num">02</span><h3>生於伯利恆</h3><span class="tag typ">直接預告</span></div>
+    <div class="pair"><div class="ot"><b>舊約</b><button class="ref" data-r="Mic5:2">彌 5:2</button></div><div class="nt"><b>新約</b><button class="ref" data-r="Mt2:5-6">太 2:5–6</button></div></div>
+    <p>彌迦書宣告伯利恆將出現一位治理以色列、根源從亙古而有的掌權者。馬太福音記載祭司長與文士引用此經文，回答希律有關基督當生在何處的問題。</p>
+    <figure class="illus"><svg viewBox="0 0 640 280" role="img" aria-label="星空下的伯利恆小城" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bt-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FA9CF"/><stop offset=".6" stop-color="#D9CFE6"/><stop offset="1" stop-color="#F8E9D6"/></linearGradient></defs><rect width="640" height="280" fill="url(#bt-sky)"/><circle cx="341" cy="27" r="2" fill="#FFFBEA" opacity="1"/><circle cx="59" cy="17" r="1" fill="#FFFBEA" opacity="0.8"/><circle cx="606" cy="15" r="1.2" fill="#FFFBEA" opacity="0.6"/><circle cx="98" cy="63" r="2" fill="#FFFBEA" opacity="0.6"/><circle cx="256" cy="19" r="2" fill="#FFFBEA" opacity="0.6"/><circle cx="589" cy="23" r="1.2" fill="#FFFBEA" opacity="1"/><circle cx="606" cy="15" r="2" fill="#FFFBEA" opacity="0.6"/><circle cx="236" cy="13" r="1.2" fill="#FFFBEA" opacity="0.8"/><circle cx="439" cy="26" r="1" fill="#FFFBEA" opacity="1"/><circle cx="325" cy="79" r="1.2" fill="#FFFBEA" opacity="0.6"/><circle cx="605" cy="81" r="1.2" fill="#FFFBEA" opacity="0.8"/><circle cx="109" cy="78" r="1" fill="#FFFBEA" opacity="1"/><circle cx="71" cy="87" r="1.2" fill="#FFFBEA" opacity="0.8"/><circle cx="554" cy="62" r="1.6" fill="#FFFBEA" opacity="0.8"/><circle cx="609" cy="66" r="1.6" fill="#FFFBEA" opacity="0.8"/><circle cx="264" cy="109" r="1.2" fill="#FFFBEA" opacity="1"/><circle cx="259" cy="18" r="1.6" fill="#FFFBEA" opacity="1"/><circle cx="516" cy="120" r="1.6" fill="#FFFBEA" opacity="1"/><circle cx="469" cy="44" r="1" fill="#FFFBEA" opacity="0.6"/><circle cx="534" cy="61" r="1.2" fill="#FFFBEA" opacity="0.8"/><circle cx="165" cy="70" r="2" fill="#FFFBEA" opacity="0.6"/><circle cx="89" cy="105" r="1.6" fill="#FFFBEA" opacity="0.8"/><circle cx="368" cy="84" r="2" fill="#FFFBEA" opacity="1"/><circle cx="477" cy="16" r="1" fill="#FFFBEA" opacity="0.8"/><circle cx="495" cy="97" r="1" fill="#FFFBEA" opacity="0.6"/><circle cx="327" cy="90" r="2" fill="#FFFBEA" opacity="0.8"/><circle cx="405" cy="93" r="1.6" fill="#FFFBEA" opacity="0.6"/><circle cx="482" cy="53" r="1.2" fill="#FFFBEA" opacity="1"/><circle cx="129" cy="71" r="1" fill="#FFFBEA" opacity="0.6"/><circle cx="304" cy="24" r="1.2" fill="#FFFBEA" opacity="0.8"/><circle cx="410" cy="119" r="2" fill="#FFFBEA" opacity="0.6"/><circle cx="180" cy="65" r="2" fill="#FFFBEA" opacity="1"/><circle cx="294" cy="25" r="2" fill="#FFFBEA" opacity="1"/><circle cx="295" cy="98" r="2" fill="#FFFBEA" opacity="0.8"/><circle cx="399" cy="37" r="1.2" fill="#FFFBEA" opacity="0.6"/><circle cx="190" cy="27" r="1.2" fill="#FFFBEA" opacity="1"/><circle cx="248" cy="9" r="2" fill="#FFFBEA" opacity="1"/><circle cx="196" cy="41" r="1.6" fill="#FFFBEA" opacity="0.6"/><circle cx="159" cy="61" r="1.6" fill="#FFFBEA" opacity="1"/><circle cx="589" cy="48" r="1.2" fill="#FFFBEA" opacity="1"/><circle cx="537" cy="87" r="1" fill="#FFFBEA" opacity="0.8"/><circle cx="582" cy="58" r="2" fill="#FFFBEA" opacity="0.8"/><circle cx="413" cy="21" r="2" fill="#FFFBEA" opacity="1"/><circle cx="420" cy="15" r="1.2" fill="#FFFBEA" opacity="0.6"/><circle cx="223" cy="64" r="1.2" fill="#FFFBEA" opacity="0.6"/><circle cx="358" cy="84" r="1" fill="#FFFBEA" opacity="0.6"/><path d="M0 230 Q140 214 200 206 Q320 140 460 200 Q560 214 640 222 L640 280 L0 280Z" fill="#B7A27E"/><rect x="250" y="178" width="46" height="34" fill="#E7D4B3" stroke="#BFA57B" stroke-width="1.5"/><rect x="268.0" y="191.0" width="10" height="10" rx="2" fill="#F4C76A"/><rect x="292" y="168" width="52" height="44" fill="#E7D4B3" stroke="#BFA57B" stroke-width="1.5"/><rect x="313.0" y="186.0" width="10" height="10" rx="2" fill="#F4C76A"/><rect x="340" y="182" width="40" height="30" fill="#E7D4B3" stroke="#BFA57B" stroke-width="1.5"/><rect x="355.0" y="193.0" width="10" height="10" rx="2" fill="#F4C76A"/><rect x="378" y="172" width="50" height="40" fill="#E7D4B3" stroke="#BFA57B" stroke-width="1.5"/><rect x="398.0" y="188.0" width="10" height="10" rx="2" fill="#F4C76A"/><rect x="222" y="192" width="40" height="28" fill="#E7D4B3" stroke="#BFA57B" stroke-width="1.5"/><rect x="237.0" y="202.0" width="10" height="10" rx="2" fill="#F4C76A"/><rect x="424" y="190" width="44" height="30" fill="#E7D4B3" stroke="#BFA57B" stroke-width="1.5"/><rect x="441.0" y="201.0" width="10" height="10" rx="2" fill="#F4C76A"/><rect x="310" y="150" width="36" height="22" fill="#E7D4B3" stroke="#BFA57B" stroke-width="1.5"/><rect x="323.0" y="157.0" width="10" height="10" rx="2" fill="#F4C76A"/><path d="M0 250 Q220 232 400 252 T640 246 L640 280 L0 280Z" fill="#9FA97C"/><g fill="#5E6B57"><ellipse cx="96" cy="250" rx="14" ry="8"/><ellipse cx="124" cy="256" rx="12" ry="7"/><ellipse cx="560" cy="252" rx="13" ry="7"/></g><text x="626" y="268" text-anchor="end" class="ill-tag">象徵示意</text></svg>
+      <figcaption>「伯利恆以法他啊，你在猶大諸城中為小⋯⋯」<button class="ref" data-r="Mic5:2">彌 5:2</button></figcaption>
+    </figure>
+    <div class="reflect"><h4>查經問題</h4><ol><li>為何彌迦特別提到伯利恆，而不是較大的城市？</li><li>「根源從亙古、從太初就有」如何指向這位君王的超越性？</li><li>伯利恆的應許如何與大衛家的君王傳統相連？</li></ol></div>
+    <p class="takeaway">神從最小的城，興起根源從亙古就有的君王。</p>
+  </article>
+
+  <article class="pcard" id="p3">
+    <div class="pc-head"><span class="num">03</span><h3>預備道路的使者</h3><span class="tag typ">主題呼應</span></div>
+    <div class="pair"><div class="ot"><b>舊約</b><button class="ref" data-r="Isa40:3">賽 40:3</button><button class="ref" data-r="Mal3:1">瑪 3:1</button></div><div class="nt"><b>新約</b><button class="ref" data-r="Mt3:3">太 3:3</button><button class="ref" data-r="Mk1:2-3">可 1:2–3</button></div></div>
+    <p>以賽亞書 40 章以「預備耶和華的路」宣告安慰與歸回；瑪拉基書則提到使者預備主的道路。福音書將這些主題連於施洗約翰，並以他為耶穌事工的先鋒。</p>
+    <figure class="illus"><svg viewBox="0 0 640 280" role="img" aria-label="曠野中修平的道路" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="dr-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D6E6F4"/><stop offset="1" stop-color="#FCEFD8"/></linearGradient><radialGradient id="dr-sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFE3A0"/><stop offset="1" stop-color="#FFE3A0" stop-opacity="0"/></radialGradient></defs><rect width="640" height="280" fill="url(#dr-sky)"/><circle cx="320" cy="128" r="110" fill="url(#dr-sun)"/><circle cx="320" cy="128" r="30" fill="#F6D27E"/><path d="M0 150 Q120 128 240 150 L400 150 Q520 126 640 148 L640 280 L0 280Z" fill="#EAD3A6"/><path d="M0 190 Q90 166 200 186 Q240 194 270 180 L370 180 Q420 170 470 186 Q560 206 640 182 L640 280 L0 280Z" fill="#DEBF89"/><path d="M314 150 L326 150 L430 280 L210 280 Z" fill="#F7EBD0"/><path d="M320 156 L320 280" stroke="#D8BF8F" stroke-width="3" stroke-dasharray="10 12"/><g fill="#C4A271"><ellipse cx="170" cy="240" rx="22" ry="10"/><ellipse cx="480" cy="236" rx="18" ry="9"/><ellipse cx="520" cy="252" rx="12" ry="6"/></g><g fill="#6A5A48"><circle cx="110" cy="164" r="6"/><path d="M104 190 L106 172 Q110 168 114 172 L116 190Z"/><line x1="118" y1="160" x2="118" y2="192" stroke="#6A5A48" stroke-width="2.5"/></g><text x="626" y="268" text-anchor="end" class="ill-tag">象徵示意</text></svg>
+      <figcaption>「在曠野預備耶和華的路，在沙漠地修平我們神的道。」<button class="ref" data-r="Isa40:3">賽 40:3</button></figcaption>
+    </figure>
+    <div class="reflect"><h4>查經問題</h4><ol><li>「曠野」在以色列歷史與先知傳統中有何意義？</li><li>施洗約翰如何承擔「預備道路」的角色？</li><li>耶穌的來臨如何成全「耶和華要來」的盼望？</li></ol></div>
+    <p class="takeaway">曠野裡的呼聲，把安慰與歸回的盼望，帶到耶穌面前。</p>
+  </article>
+
+  <article class="pcard" id="p4">
+    <div class="pc-head"><span class="num">04</span><h3>騎驢進耶路撒冷</h3></div>
+    <div class="pair"><div class="ot"><b>舊約</b><button class="ref" data-r="Zech9:9">亞 9:9</button></div><div class="nt"><b>新約</b><button class="ref" data-r="Mt21:4-5">太 21:4–5</button></div></div>
+    <p>撒迦利亞書描繪一位公義、施行拯救、謙卑地騎著驢駒進城的君王。耶穌進耶路撒冷的事件，被馬太理解為這位謙和君王應許的實現。</p>
+    <figure class="illus"><svg viewBox="0 0 640 280" role="img" aria-label="城門前鋪著衣服的驢駒與棕樹枝" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="dk-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E3EEF7"/><stop offset="1" stop-color="#FBF4E4"/></linearGradient></defs><rect width="640" height="280" fill="url(#dk-sky)"/><rect x="360" y="70" width="280" height="170" fill="#E6D6B6" stroke="#C7AF85" stroke-width="2"/><g fill="#E6D6B6" stroke="#C7AF85" stroke-width="2"><rect x="362" y="54" width="18" height="18"/><rect x="390" y="54" width="18" height="18"/><rect x="418" y="54" width="18" height="18"/><rect x="446" y="54" width="18" height="18"/><rect x="474" y="54" width="18" height="18"/><rect x="502" y="54" width="18" height="18"/><rect x="530" y="54" width="18" height="18"/><rect x="558" y="54" width="18" height="18"/><rect x="586" y="54" width="18" height="18"/><rect x="614" y="54" width="18" height="18"/></g><path d="M440 240 L440 140 Q490 92 540 140 L540 240Z" fill="#B99E72"/><g stroke="#D3BE97" stroke-width="1.5"><line x1="360" y1="100" x2="640" y2="100"/><line x1="360" y1="128" x2="640" y2="128"/><line x1="360" y1="156" x2="640" y2="156"/><line x1="360" y1="184" x2="640" y2="184"/><line x1="360" y1="212" x2="640" y2="212"/></g><rect x="0" y="232" width="640" height="48" fill="#E5D5B3"/><g transform="translate(120 258) rotate(80)" stroke="#6F8A5A" stroke-width="3" stroke-linecap="round"><line x1="0" y1="10" x2="0" y2="-58"/><line x1="0" y1="-7" x2="-10" y2="-15"/><line x1="0" y1="-7" x2="10" y2="-15"/><line x1="0" y1="-14" x2="-14" y2="-22"/><line x1="0" y1="-14" x2="14" y2="-22"/><line x1="0" y1="-21" x2="-10" y2="-29"/><line x1="0" y1="-21" x2="10" y2="-29"/><line x1="0" y1="-28" x2="-14" y2="-36"/><line x1="0" y1="-28" x2="14" y2="-36"/><line x1="0" y1="-35" x2="-10" y2="-43"/><line x1="0" y1="-35" x2="10" y2="-43"/><line x1="0" y1="-42" x2="-14" y2="-50"/><line x1="0" y1="-42" x2="14" y2="-50"/><line x1="0" y1="-49" x2="-10" y2="-57"/><line x1="0" y1="-49" x2="10" y2="-57"/></g><g transform="translate(250 262) rotate(100)" stroke="#6F8A5A" stroke-width="3" stroke-linecap="round"><line x1="0" y1="10" x2="0" y2="-58"/><line x1="0" y1="-7" x2="-10" y2="-15"/><line x1="0" y1="-7" x2="10" y2="-15"/><line x1="0" y1="-14" x2="-14" y2="-22"/><line x1="0" y1="-14" x2="14" y2="-22"/><line x1="0" y1="-21" x2="-10" y2="-29"/><line x1="0" y1="-21" x2="10" y2="-29"/><line x1="0" y1="-28" x2="-14" y2="-36"/><line x1="0" y1="-28" x2="14" y2="-36"/><line x1="0" y1="-35" x2="-10" y2="-43"/><line x1="0" y1="-35" x2="10" y2="-43"/><line x1="0" y1="-42" x2="-14" y2="-50"/><line x1="0" y1="-42" x2="14" y2="-50"/><line x1="0" y1="-49" x2="-10" y2="-57"/><line x1="0" y1="-49" x2="10" y2="-57"/></g><g transform="translate(360 258) rotate(76)" stroke="#6F8A5A" stroke-width="3" stroke-linecap="round"><line x1="0" y1="10" x2="0" y2="-58"/><line x1="0" y1="-7" x2="-10" y2="-15"/><line x1="0" y1="-7" x2="10" y2="-15"/><line x1="0" y1="-14" x2="-14" y2="-22"/><line x1="0" y1="-14" x2="14" y2="-22"/><line x1="0" y1="-21" x2="-10" y2="-29"/><line x1="0" y1="-21" x2="10" y2="-29"/><line x1="0" y1="-28" x2="-14" y2="-36"/><line x1="0" y1="-28" x2="14" y2="-36"/><line x1="0" y1="-35" x2="-10" y2="-43"/><line x1="0" y1="-35" x2="10" y2="-43"/><line x1="0" y1="-42" x2="-14" y2="-50"/><line x1="0" y1="-42" x2="14" y2="-50"/><line x1="0" y1="-49" x2="-10" y2="-57"/><line x1="0" y1="-49" x2="10" y2="-57"/></g><g fill="#8A7A6A"><ellipse cx="250" cy="192" rx="58" ry="24"/><path d="M296 184 Q312 150 326 140 L340 146 Q332 166 316 196 Z"/><ellipse cx="338" cy="148" rx="20" ry="11" transform="rotate(25 338 148)"/><path d="M322 132 L318 108 L328 130Z"/><path d="M330 134 L332 110 L338 134Z"/><rect x="206" y="206" width="9" height="34" rx="4"/><rect x="226" y="208" width="9" height="32" rx="4"/><rect x="270" y="208" width="9" height="32" rx="4"/><rect x="290" y="206" width="9" height="34" rx="4"/><path d="M194 186 Q182 194 184 214" stroke="#8A7A6A" stroke-width="4" fill="none" stroke-linecap="round"/></g><path d="M222 172 Q252 162 282 172 L278 196 Q252 204 226 196Z" fill="#5E8FBF" opacity=".85"/><text x="626" y="268" text-anchor="end" class="ill-tag">象徵示意</text></svg>
+      <figcaption>「看哪，你的王來到你這裡！⋯⋯謙謙和和地騎著驢。」<button class="ref" data-r="Zech9:9">亞 9:9</button></figcaption>
+    </figure>
+    <div class="reflect"><h4>查經問題</h4><ol><li>驢駒象徵什麼樣的王權？</li><li>群眾為何以「和散那」迎接耶穌？</li><li>耶穌的君王身分與羅馬帝國的政治期待有何不同？</li></ol></div>
+    <p class="takeaway">這位王不騎戰馬，而以謙和進城；他的國不靠刀劍建立。</p>
+  </article>
+
+  <article class="pcard" id="p5">
+    <div class="pc-head"><span class="num">05</span><h3>三十塊銀子</h3><span class="tag cx">複雜引用</span></div>
+    <div class="pair"><div class="ot"><b>舊約</b><button class="ref" data-r="Zech11:12-13">亞 11:12–13</button></div><div class="nt"><b>新約</b><button class="ref" data-r="Mt26:14-16">太 26:14–16</button><button class="ref" data-r="Mt27:3-10">太 27:3–10</button></div></div>
+    <p>撒迦利亞書 11 章有「三十塊錢」的工價，以及在耶和華殿中把錢丟給窯戶的意象；馬太福音 27 章則記載猶大把銀錢丟在殿裡，祭司長說這是血價、不可放在庫裡，便用來買了窯戶的田。馬太將耶穌被賣、猶大所得銀錢及其結局，與這段經文的語言和主題相連。</p>
+    <div class="warn"><b>核實提醒：</b>這不是一個可以簡化為「撒迦利亞逐字預測猶大」的例子。讀者應分辨：馬太同時涉及耶利米書傳統、撒迦利亞書語言，以及猶大賣主事件的敘事；這是早期教會在基督事件中重新閱讀舊約的重要案例。</div>
+    <div class="reflect"><h4>查經問題</h4><ol><li>撒迦利亞書 11 章的「牧人」與「羊群」代表什麼？</li><li>三十塊銀子在當時有何價值與象徵？</li><li>馬太為何將賣主事件與舊約經文連結？</li></ol></div>
+    <p class="takeaway">三十塊錢的估價，顯出人怎樣看待神所差來的牧人。</p>
+  </article>
+
+  <article class="pcard" id="p6">
+    <div class="pc-head"><span class="num">06</span><h3>被刺透</h3></div>
+    <div class="pair"><div class="ot"><b>舊約</b><button class="ref" data-r="Zech12:10">亞 12:10</button></div><div class="nt"><b>新約</b><button class="ref" data-r="Jn19:34-37">約 19:34–37</button></div></div>
+    <p>撒迦利亞書 12:10 談到居民為「他們所扎的」悲哀；約翰福音在耶穌被釘十字架後引用此意象，指向人對被刺透者的仰望與哀慟。</p>
+    <div class="reflect"><h4>查經問題</h4><ol><li>撒迦利亞書 12 章的「大衛家和耶路撒冷的居民」是誰？</li><li>「仰望我所扎的」表達什麼樣的悔改與哀傷？</li><li>約翰如何將這段經文連於十字架？</li></ol></div>
+    <p class="takeaway">被扎的那一位，成了悔改者仰望與哀慟的中心。</p>
+  </article>
+
+  <article class="pcard" id="p7">
+    <div class="pc-head"><span class="num">07</span><h3>受苦僕人</h3><span class="tag typ">新約引述</span></div>
+    <div class="pair"><div class="ot"><b>舊約</b><button class="ref" data-r="Isa52:13-53:12">賽 52:13–53:12</button></div><div class="nt"><b>新約</b><button class="ref" data-r="Mt8:17">太 8:17</button><button class="ref" data-r="1Pet2:22-25">彼前 2:22–25</button></div></div>
+    <p>以賽亞書 53 章描述一位被藐視、受苦、擔當他人罪孽的僕人。馬太福音 8:17 引用賽 53:4，將耶穌的醫治事工與僕人擔當人的軟弱相連；彼得前書 2 章則將基督的受苦與擔罪、信徒離罪向義而活相連。</p>
+    <div class="reflect"><h4>查經問題</h4><ol><li>以賽亞書 52:13 至 53:12 的「僕人」是誰？</li><li>僕人的受苦如何帶來「平安」與「醫治」？</li><li>馬太與彼得分別從哪個角度使用以賽亞書？</li></ol></div>
+    <p class="takeaway">因他受的鞭傷，我們得醫治。</p>
+  </article>
+
+  <article class="pcard" id="p8">
+    <div class="pc-head"><span class="num">08</span><h3>約拿與三日復活</h3><span class="tag typ">預表</span></div>
+    <div class="pair"><div class="ot"><b>舊約</b><button class="ref" data-r="Jon1:17">拿 1:17</button></div><div class="nt"><b>新約</b><button class="ref" data-r="Mt12:38-41">太 12:38–41</button></div></div>
+    <p>耶穌說，約拿三日三夜在大魚肚腹中，人子也要照樣三日三夜在地裡頭。這是「預表」而非傳統意義上的直接彌賽亞預測：約拿的經歷成為耶穌死亡與復活的模式。</p>
+    <figure class="illus"><svg viewBox="0 0 640 280" role="img" aria-label="海中的大魚" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gf-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E4EEF6"/><stop offset="1" stop-color="#F4F1E6"/></linearGradient><linearGradient id="gf-sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9DBBD6"/><stop offset="1" stop-color="#5E8FBF"/></linearGradient></defs><rect width="640" height="280" fill="url(#gf-sky)"/><rect x="0" y="110" width="640" height="170" fill="url(#gf-sea)"/><path d="M0 110 Q40 100 80 110 T160 110 T240 110 T320 110 T400 110 T480 110 T560 110 T640 110" stroke="#F7FAFC" stroke-width="3" fill="none"/><path d="M470 100 L560 100 L546 116 L484 116 Z" fill="#B9562F"/><line x1="514" y1="100" x2="514" y2="58" stroke="#8E3F21" stroke-width="3"/><path d="M516 60 L548 96 L516 96Z" fill="#F4EAD4"/><path d="M150 196 Q230 140 360 160 Q430 172 450 196 Q430 222 360 232 Q230 250 150 196 Z" fill="#6E8DA8"/><path d="M150 196 L96 150 Q108 196 96 242 Z" fill="#6E8DA8"/><path d="M300 160 Q320 128 352 150" fill="#6E8DA8"/><path d="M310 230 Q326 252 350 236" fill="#6E8DA8"/><path d="M250 182 q8 8 0 16" stroke="#4E7192" stroke-width="2" fill="none" opacity=".5"/><path d="M250 202 q8 8 0 16" stroke="#4E7192" stroke-width="2" fill="none" opacity=".5"/><path d="M272 182 q8 8 0 16" stroke="#4E7192" stroke-width="2" fill="none" opacity=".5"/><path d="M272 202 q8 8 0 16" stroke="#4E7192" stroke-width="2" fill="none" opacity=".5"/><path d="M294 182 q8 8 0 16" stroke="#4E7192" stroke-width="2" fill="none" opacity=".5"/><path d="M294 202 q8 8 0 16" stroke="#4E7192" stroke-width="2" fill="none" opacity=".5"/><path d="M316 182 q8 8 0 16" stroke="#4E7192" stroke-width="2" fill="none" opacity=".5"/><path d="M316 202 q8 8 0 16" stroke="#4E7192" stroke-width="2" fill="none" opacity=".5"/><path d="M338 182 q8 8 0 16" stroke="#4E7192" stroke-width="2" fill="none" opacity=".5"/><path d="M338 202 q8 8 0 16" stroke="#4E7192" stroke-width="2" fill="none" opacity=".5"/><path d="M360 182 q8 8 0 16" stroke="#4E7192" stroke-width="2" fill="none" opacity=".5"/><path d="M360 202 q8 8 0 16" stroke="#4E7192" stroke-width="2" fill="none" opacity=".5"/><path d="M382 182 q8 8 0 16" stroke="#4E7192" stroke-width="2" fill="none" opacity=".5"/><path d="M382 202 q8 8 0 16" stroke="#4E7192" stroke-width="2" fill="none" opacity=".5"/><circle cx="418" cy="188" r="6" fill="#F6F2E6"/><circle cx="419" cy="188" r="3" fill="#2F465C"/><path d="M448 198 Q436 204 424 204" stroke="#2F465C" stroke-width="2.5" fill="none"/><path d="M392 168 Q398 196 390 224" stroke="#56718A" stroke-width="2.5" fill="none"/><g fill="#EAF2F8" opacity=".8"><circle cx="470" cy="170" r="5"/><circle cx="482" cy="150" r="3.5"/><circle cx="476" cy="132" r="2.5"/></g><text x="626" y="268" text-anchor="end" class="ill-tag">象徵示意</text></svg>
+      <figcaption>「耶和華安排一條大魚吞了約拿，他在魚腹中三日三夜。」<button class="ref" data-r="Jon1:17">拿 1:17</button></figcaption>
+    </figure>
+    <div class="reflect"><h4>查經問題</h4><ol><li>約拿書 1:17 的原初敘事重點是什麼？</li><li>耶穌為何以約拿作比擬？</li><li>「一個邪惡淫亂的世代」如何理解約拿的神蹟？</li></ol></div>
+    <p class="takeaway">約拿的三日三夜，成了人子死而復活的記號；在這裡有一人比約拿更大。</p>
+  </article>
+</section>
+
+<section id="newcov" class="reveal">
+  <div class="sec-no">六、新約時代的預言</div>
+  <h2>心版上的約，凡有血氣的都得著靈</h2>
+
+  <article class="pcard">
+    <div class="pc-head"><span class="num">01</span><h3>新約的建立</h3></div>
+    <div class="pair"><div class="ot"><b>舊約</b><button class="ref" data-r="Jer31:31-34">耶 31:31–34</button></div><div class="nt"><b>新約</b><button class="ref" data-r="Lk22:20">路 22:20</button><button class="ref" data-r="Heb8:6,13">來 8:6、13</button><button class="ref" data-r="Heb10:16-18">來 10:16–18</button></div></div>
+    <p>耶利米宣告神將另立新約，把律法放在人裡面、寫在心上，並赦免人的罪孽。耶穌在最後晚餐中以杯說：「這杯是用我血所立的新約」，將自己的死理解為新約的建立。希伯來書 8–10 章則反覆引用耶利米的話，說明這約的更美。</p>
+    <figure class="illus"><svg viewBox="0 0 640 280" role="img" aria-label="杯與擘開的餅" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="cb-bg" cx=".5" cy=".35" r=".75"><stop offset="0" stop-color="#FFF4DA"/><stop offset="1" stop-color="#F1E7D3"/></radialGradient><linearGradient id="cb-cup" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B88A3D"/><stop offset=".5" stop-color="#E2C27A"/><stop offset="1" stop-color="#A57A33"/></linearGradient></defs><rect width="640" height="280" fill="url(#cb-bg)"/><rect x="0" y="206" width="640" height="74" fill="#D9C29A"/><line x1="0" y1="206" x2="640" y2="206" stroke="#BFA171" stroke-width="2"/><path d="M60 206 L580 206 L600 236 L40 236 Z" fill="#F5EEDD" opacity=".9"/><path d="M230 96 L330 96 Q330 150 290 164 L270 164 Q230 150 230 96 Z" fill="url(#cb-cup)"/><ellipse cx="280" cy="96" rx="50" ry="10" fill="#8E3F21"/><ellipse cx="280" cy="96" rx="50" ry="10" fill="none" stroke="#B88A3D" stroke-width="3"/><rect x="273" y="164" width="14" height="30" fill="#B88A3D"/><ellipse cx="280" cy="200" rx="36" ry="8" fill="#A57A33"/><path d="M370 196 Q372 160 410 156 Q438 156 442 196 Z" fill="#D7A35E"/><path d="M378 194 Q382 170 404 166" stroke="#B9823F" stroke-width="3" fill="none"/><path d="M452 198 Q456 168 482 162 L486 198 Z" fill="#D7A35E"/><path d="M442 196 L446 176 L440 162" stroke="#F3D9A8" stroke-width="3" fill="none"/><path d="M452 198 L456 178 L452 164" stroke="#F3D9A8" stroke-width="3" fill="none"/><g stroke="#F2D58D" stroke-width="2" opacity=".55"><line x1="320" y1="0" x2="120" y2="70"/><line x1="320" y1="0" x2="170" y2="70"/><line x1="320" y1="0" x2="220" y2="70"/><line x1="320" y1="0" x2="270" y2="70"/><line x1="320" y1="0" x2="320" y2="70"/><line x1="320" y1="0" x2="370" y2="70"/><line x1="320" y1="0" x2="420" y2="70"/><line x1="320" y1="0" x2="470" y2="70"/><line x1="320" y1="0" x2="520" y2="70"/></g><text x="626" y="268" text-anchor="end" class="ill-tag">象徵示意</text></svg>
+      <figcaption>「這杯是用我血所立的新約，是為你們流出來的。」<button class="ref" data-r="Lk22:20">路 22:20</button></figcaption>
+    </figure>
+    <div class="reflect"><h4>查經問題</h4><ol><li>舊約與新約的核心差別是什麼？</li><li>「寫在心上」對信徒的靈命有何意義？</li><li>耶穌的血如何成全新約的赦免應許？</li></ol></div>
+    <p class="takeaway">律法從石版寫到心版，赦免由基督的血立定。</p>
+  </article>
+
+  <article class="pcard">
+    <div class="pc-head"><span class="num">02</span><h3>聖靈的澆灌</h3></div>
+    <div class="pair"><div class="ot"><b>舊約</b><button class="ref" data-r="Joel2:28-32">珥 2:28–32</button></div><div class="nt"><b>新約</b><button class="ref" data-r="Acts2:16-21">徒 2:16–21</button></div></div>
+    <p>約珥書應許神將把靈澆灌凡有血氣的，使兒女、老年人、少年人、僕人和使女都領受啟示與見證的能力。彼得在五旬節宣告，這正是約珥所說的應驗。</p>
+    <div class="reflect"><h4>查經問題</h4><ol><li>約珥書 2 章的「耶和華的日子」有何警告與盼望？</li><li>彼得為何說五旬節是約珥預言的應驗？</li><li>聖靈澆灌如何擴展神子民的範圍？</li></ol></div>
+    <p class="takeaway">不分老少、不分主僕，神的靈澆灌凡有血氣的。</p>
+  </article>
+</section>
+
+<section id="kingdom" class="reveal">
+  <div class="sec-no">七、末世與神國預言</div>
+  <h2>人子得國，萬物更新</h2>
+
+  <article class="pcard">
+    <div class="pc-head"><span class="num">01</span><h3>人子得國度</h3></div>
+    <div class="pair"><div class="ot"><b>舊約</b><button class="ref" data-r="Dan7:13-14">但 7:13–14</button></div><div class="nt"><b>新約</b><button class="ref" data-r="Mt26:64">太 26:64</button><button class="ref" data-r="Mk14:62">可 14:62</button></div></div>
+    <p>但以理書 7 章描寫一位「像人子的」駕雲而來，從亙古常在者得著權柄、榮耀與永不敗壞的國度。耶穌在大祭司面前自稱人子，並將但以理書的異象與自己的權柄、受苦及將來榮耀相連。</p>
+    <div class="reflect"><h4>查經問題</h4><ol><li>但以理書 7 章的四獸與人子國度形成什麼對比？</li><li>「駕雲而來」在舊約與新約中各有何意義？</li><li>耶穌的國度如何同時涉及十字架與榮耀？</li></ol></div>
+    <p class="takeaway">受審的那一位，正是將來駕雲降臨的人子。</p>
+  </article>
+
+  <article class="pcard">
+    <div class="pc-head"><span class="num">02</span><h3>新天新地</h3></div>
+    <div class="pair"><div class="ot"><b>舊約</b><button class="ref" data-r="Isa65:17">賽 65:17</button><button class="ref" data-r="Isa66:22">賽 66:22</button></div><div class="nt"><b>新約</b><button class="ref" data-r="Rev21:1-5">啟 21:1–5</button></div></div>
+    <p>以賽亞書應許神要造新天新地，不再記念從前的患難；啟示錄則以新耶路撒冷、神與人同住、擦去眼淚與除去死亡，完成這一盼望。</p>
+    <figure class="illus"><svg viewBox="0 0 640 280" role="img" aria-label="從天而降、光照四圍的聖城" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="nj-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FDF1D6"/><stop offset=".55" stop-color="#E2EEF8"/><stop offset="1" stop-color="#F7F3E8"/></linearGradient><radialGradient id="nj-glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFE9AE" stop-opacity=".95"/><stop offset="1" stop-color="#FFE9AE" stop-opacity="0"/></radialGradient><linearGradient id="nj-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6E7BE"/><stop offset="1" stop-color="#E4CB8E"/></linearGradient></defs><rect width="640" height="280" fill="url(#nj-sky)"/><circle cx="320" cy="118" r="170" fill="url(#nj-glow)"/><g stroke="#F3D58A" stroke-width="2" opacity=".6"><line x1="320" y1="118" x2="20" y2="0"/><line x1="320" y1="118" x2="95" y2="0"/><line x1="320" y1="118" x2="170" y2="0"/><line x1="320" y1="118" x2="245" y2="0"/><line x1="320" y1="118" x2="320" y2="0"/><line x1="320" y1="118" x2="395" y2="0"/><line x1="320" y1="118" x2="470" y2="0"/><line x1="320" y1="118" x2="545" y2="0"/><line x1="320" y1="118" x2="620" y2="0"/></g><rect x="170" y="140" width="300" height="70" fill="url(#nj-wall)" stroke="#C9A35A" stroke-width="2"/><rect x="150" y="124" width="34" height="86" fill="url(#nj-wall)" stroke="#C9A35A" stroke-width="2"/><rect x="456" y="124" width="34" height="86" fill="url(#nj-wall)" stroke="#C9A35A" stroke-width="2"/><path d="M206 210 L206 180 Q220 164 234 180 L234 210Z" fill="#F9F3E3" stroke="#C9A35A" stroke-width="2"/><path d="M306 210 L306 180 Q320 164 334 180 L334 210Z" fill="#F9F3E3" stroke="#C9A35A" stroke-width="2"/><path d="M406 210 L406 180 Q420 164 434 180 L434 210Z" fill="#F9F3E3" stroke="#C9A35A" stroke-width="2"/><g fill="url(#nj-wall)" stroke="#C9A35A" stroke-width="2"><rect x="176" y="128" width="16" height="14"/><rect x="206" y="128" width="16" height="14"/><rect x="236" y="128" width="16" height="14"/><rect x="266" y="128" width="16" height="14"/><rect x="296" y="128" width="16" height="14"/><rect x="326" y="128" width="16" height="14"/><rect x="356" y="128" width="16" height="14"/><rect x="386" y="128" width="16" height="14"/><rect x="416" y="128" width="16" height="14"/><rect x="446" y="128" width="16" height="14"/></g><path d="M0 214 Q320 198 640 214 L640 280 L0 280Z" fill="#C8D9B0"/><path d="M320 210 Q300 232 330 252 Q360 268 340 280 L300 280 Q318 266 296 252 Q272 234 310 210 Z" fill="#9CC0DD"/><g fill="#6F8A5A"><circle cx="250" cy="236" r="11"/><rect x="248" y="244" width="4" height="12" fill="#7A6143"/><circle cx="270" cy="250" r="11"/><rect x="268" y="258" width="4" height="12" fill="#7A6143"/><circle cx="380" cy="240" r="11"/><rect x="378" y="248" width="4" height="12" fill="#7A6143"/><circle cx="402" cy="252" r="11"/><rect x="400" y="260" width="4" height="12" fill="#7A6143"/><circle cx="96" cy="232" r="11"/><rect x="94" y="240" width="4" height="12" fill="#7A6143"/><circle cx="560" cy="234" r="11"/><rect x="558" y="242" width="4" height="12" fill="#7A6143"/></g><g fill="#7B6A5A"><circle cx="520" cy="244" r="5"/><path d="M515 266 L517 251 Q520 248 523 251 L525 266Z"/><circle cx="536" cy="246" r="4.5"/><path d="M532 266 L533 253 Q536 250 539 253 L540 266Z"/></g><text x="626" y="268" text-anchor="end" class="ill-tag">象徵示意</text></svg>
+      <figcaption>「我又看見聖城新耶路撒冷由神那裡從天而降。」<button class="ref" data-r="Rev21:1-5">啟 21:2</button></figcaption>
+    </figure>
+    <div class="reflect"><h4>查經問題</h4><ol><li>「新天新地」是否只是靈魂上天堂？</li><li>神與人同住對今日教會有何意義？</li><li>新創造的盼望如何影響信徒對公義、受苦與盼望的理解？</li></ol></div>
+    <p class="takeaway">盼望不是逃離受造界，而是神與人同住的新創造。</p>
+  </article>
+</section>
+
+<section id="story" class="reveal">
+  <div class="sec-no">八、救贖歷史主線</div>
+  <h2>從創造到新創造</h2>
+  <p>原稿將主線濃縮為：</p>
+  <div class="pills">
+    <span class="pill">悔改</span><span class="arrow">→</span><span class="pill">審判</span><span class="arrow">→</span><span class="pill">復興</span><span class="arrow">→</span><span class="pill hl">彌賽亞</span><span class="arrow">→</span><span class="pill">神國降臨</span>
+  </div>
+  <p>較完整的救贖歷史架構可擴充為：</p>
+  <div class="pills">
+    <span class="pill">創造</span><span class="arrow">→</span><span class="pill">墮落</span><span class="arrow">→</span><span class="pill">揀選與盟約</span><span class="arrow">→</span><span class="pill">出埃及</span><span class="arrow">→</span><span class="pill">王國</span><span class="arrow">→</span><span class="pill">先知警告與審判</span><span class="arrow">→</span><span class="pill">被擄與餘民</span><span class="arrow">→</span><span class="pill">歸回與復興</span><span class="arrow">→</span><span class="pill hl">基督降臨、受死與復活</span><span class="arrow">→</span><span class="pill">新約與聖靈</span><span class="arrow">→</span><span class="pill">教會見證</span><span class="arrow">→</span><span class="pill hl">基督再來與新天新地</span>
+  </div>
+  <p class="takeaway">先知書不是孤立的預言集，而是神在歷史中持續說話、保守餘民，並指向基督與新創造的見證。</p>
+</section>
+
+<section id="discuss" class="reveal">
+  <div class="sec-no">九、查經小組討論</div>
+  <h2>一起想、一起談</h2>
+  <ol class="discuss">
+    <li>先知書中，哪一卷最吸引你？為什麼？</li>
+    <li>「審判」與「憐憫」如何在同一位神身上並存？</li>
+    <li>你如何分辨一段舊約經文是直接預告、預表，還是主題呼應？</li>
+    <li>以賽亞書 53 章如何幫助你理解耶穌的十字架？</li>
+    <li>新約與聖靈澆灌的應許，對今日教會有什麼挑戰？</li>
+    <li>新天新地的盼望，如何影響你面對苦難、不公與死亡？</li>
+    <li>從約拿書與那鴻書，你學到神對尼尼微的憐憫與審判有何關係？</li>
+  </ol>
+  <div class="prayer">
+    <h3>回應禱告</h3>
+    <p>主啊，謝謝你藉著眾先知多次多方地說話，又在你兒子耶穌身上成全你的應許。求你開我們的眼睛，讀經時先聽明白你當時怎樣說，也看見基督怎樣成全。把你的律法寫在我們心上，用你的靈澆灌我們，使我們在等候新天新地的日子裡，行公義、好憐憫，存謙卑的心與你同行。奉主耶穌的名，阿們。</p>
+  </div>
+</section>
+
+<section id="refs" class="reveal">
+  <div class="sec-no">十、可溯源參考資料</div>
+  <h2>參考資料</h2>
+  <h3>本頁經文（和合本・依出現順序）</h3>
+  <p class="small">點經文可開 Bible Gateway 和合本新標點；經文依《和合本》整理，「或作」小字異文省略。</p>
+  <ol class="reflist" id="autoRefs"></ol>
+
+  <h3>原講義列出的資料</h3>
+  <div class="tablewrap"><table>
+    <thead><tr><th>資料</th><th>用途</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://www.biblegateway.com/passage/?search=Isaiah%2053&amp;version=CUVMPT" target="_blank" rel="noopener">Bible Gateway：以賽亞書 53</a></td><td>多譯本閱讀與交叉引用，查考「受苦僕人」與新約引用。</td></tr>
+      <tr><td><a href="https://www.biblegateway.com/passage/?search=Matthew%208%3A14-17&amp;version=CUVMPT" target="_blank" rel="noopener">Bible Gateway：馬太福音 8:14–17</a></td><td>馬太如何引用賽 53:4，連於耶穌醫治與趕鬼的事工。</td></tr>
+      <tr><td><a href="https://www.biblegateway.com/passage/?search=1%20Peter%202%3A24&amp;version=CUVMPT" target="_blank" rel="noopener">Bible Gateway：彼得前書 2:24</a></td><td>基督擔罪、受苦與信徒向義而活，連於以賽亞書的僕人傳統。</td></tr>
+      <tr><td>Bible Society：但以理書 7</td><td>但 7:13–14 的交叉引用，包括太 24:30、26:64、啟 1:7、1:13。</td></tr>
+      <tr><td><a href="https://www.biblestudytools.com/" target="_blank" rel="noopener">Bible Study Tools</a>〈Messianic Prophecies of Jesus: 6 Things to Know〉</td><td>概述賽 7:14、何 11:1、亞 9:9 等與新約的關係，入門比較用。</td></tr>
+      <tr><td><a href="https://biblehub.com/" target="_blank" rel="noopener">Bible Hub</a>〈What other biblical events show God's sovereignty in fulfilling prophecy?〉</td><td>常見彌賽亞預言對照，適合初步檢索；正式研究仍應回到經文與註釋。</td></tr>
+      <tr><td><a href="https://www.esv.org/" target="_blank" rel="noopener">ESV Study Bible</a></td><td>各先知書的歷史背景、大綱、地圖、注釋與新約引用。</td></tr>
+      <tr><td><a href="https://netbible.org/" target="_blank" rel="noopener">NET Bible</a></td><td>翻譯註釋，處理希伯來文、希臘文譯文差異與新約引舊約的文本問題。</td></tr>
+      <tr><td><a href="https://www.blueletterbible.org/" target="_blank" rel="noopener">Blue Letter Bible</a></td><td>原文編號、詞彙出現處、交叉引用；適合研究「先知」「僕人」「新約」「人子」。</td></tr>
+      <tr><td><a href="https://www.stepbible.org/" target="_blank" rel="noopener">STEP Bible</a></td><td>原文、詞彙與經文平行對照，研究先知書與新約引文的關係。</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>和合本線上資源</h3>
+  <ul>
+    <li><a href="https://bible.fhl.net/" target="_blank" rel="noopener">信望愛站・線上聖經</a>（和合本、原文工具）</li>
+    <li><a href="https://www.biblegateway.com/versions/Chinese-Union-Version-Modern-Punctuation-Traditional-CUVMPT/" target="_blank" rel="noopener">Bible Gateway・和合本新標點（CUVMPT）</a></li>
+  </ul>
+
+  <h3>核實備註</h3>
+  <ul class="notes">
+    <li><b>已核實：</b>以賽亞書 53 章與馬太福音 8:17、彼得前書 2:24 的關係；馬太引用賽 53:4，彼得則將僕人的受苦與基督擔罪相連。</li>
+    <li><b>已核實：</b>但以理書 7:13–14 與馬太福音 26:64 的交叉引用關係。</li>
+    <li><b>已釐清：</b>「三十塊銀子」的對照，不能只以亞 11:12–13 → 太 26:15 呈現；應同時閱讀太 27:3–10，並承認馬太的引文涉及複雜的舊約引用與詮釋。和合本亞 11:13 的用語是在殿中「丟給窯戶」，「庫」的字眼出自太 27:6。</li>
+    <li><b>已釐清：</b>約拿書 1:17 與馬太福音 12:40 的關係，應稱為「預表」，而非與以賽亞書 7:14、彌迦書 5:2 完全相同類型的直接預言。</li>
+    <li><b>釋經提醒：</b>先知書的預言應在歷史、文學與神學脈絡中閱讀；不可將所有舊約經文都直接解為對現代事件的密碼或精確時間表。</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <div>舊約先知書預言查經・從先知書看基督與救贖歷史</div>
+  <div style="margin-top:6px">經文引自《和合本》（公有領域）・插圖為原創象徵示意・<a href="../">回團契目錄</a></div>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dlgTitle">
+  <div class="dlg-h"><h3 id="dlgTitle"></h3><button class="dlg-x" aria-label="關閉" data-close>×</button></div>
+  <div class="dlg-b" id="dlgBody"></div>
+  <div class="dlg-f" id="dlgFoot"></div>
+</dialog>
+
+<script>
+const BIBLE_VER = "CUVMPT";
+const V = {"Rev19:10":{"zh":"啟示錄 19:10","en":"Revelation 19:10","v":[[10,"我就俯伏在他腳前要拜他。他說：「千萬不可！我和你，並你那些為耶穌作見證的弟兄同是作僕人的，你要敬拜神。因為預言中的靈意乃是為耶穌作見證。」"]]},"Ps119:105":{"zh":"詩篇 119:105","en":"Psalm 119:105","v":[[105,"你的話是我腳前的燈，是我路上的光。"]]},"Hab2:1":{"zh":"哈巴谷書 2:1","en":"Habakkuk 2:1","v":[[1,"我要站在守望所，立在望樓上觀看，看耶和華對我說甚麼話，我可用甚麼話向他訴冤。"]]},"Isa7:14":{"zh":"以賽亞書 7:14","en":"Isaiah 7:14","v":[[14,"因此，主自己要給你們一個兆頭，必有童女懷孕生子，給他起名叫以馬內利。"]]},"Mt1:22-23":{"zh":"馬太福音 1:22–23","en":"Matthew 1:22-23","v":[[22,"這一切的事成就是要應驗主藉先知所說的話，"],[23,"說：「必有童女懷孕生子；人要稱他的名為以馬內利。」（以馬內利翻出來就是「神與我們同在」。）"]]},"Mic5:2":{"zh":"彌迦書 5:2","en":"Micah 5:2","v":[[2,"伯利恆以法他啊，你在猶大諸城中為小，將來必有一位從你那裡出來，在以色列中為我作掌權的；他的根源從亙古，從太初就有。"]]},"Mt2:5-6":{"zh":"馬太福音 2:5–6","en":"Matthew 2:5-6","v":[[5,"他們回答說：「在猶太的伯利恆。因為有先知記著說："],[6,"『猶大地的伯利恆啊，你在猶大諸城中並不是最小的；因為將來有一位君王要從你那裡出來，牧養我以色列民。』」"]]},"Isa40:3":{"zh":"以賽亞書 40:3","en":"Isaiah 40:3","v":[[3,"有人聲喊著說：在曠野預備耶和華的路，在沙漠地修平我們神的道。"]]},"Mal3:1":{"zh":"瑪拉基書 3:1","en":"Malachi 3:1","v":[[1,"萬軍之耶和華說：「我要差遣我的使者在我前面預備道路。你們所尋求的主必忽然進入他的殿；立約的使者，就是你們所仰慕的，快要來到。」"]]},"Mt3:3":{"zh":"馬太福音 3:3","en":"Matthew 3:3","v":[[3,"這人就是先知以賽亞所說的，他說：在曠野有人聲喊著說：預備主的道，修直他的路！"]]},"Mk1:2-3":{"zh":"馬可福音 1:2–3","en":"Mark 1:2-3","v":[[2,"正如先知以賽亞書上記著說：「看哪，我要差遣我的使者在你前面，預備道路。"],[3,"在曠野有人聲喊著說：預備主的道，修直他的路。」"]]},"Zech9:9":{"zh":"撒迦利亞書 9:9","en":"Zechariah 9:9","v":[[9,"錫安的民哪，應當大大喜樂；耶路撒冷的民哪，應當歡呼。看哪，你的王來到你這裡！他是公義的，並且施行拯救，謙謙和和地騎著驢，就是騎著驢的駒子。"]]},"Mt21:4-5":{"zh":"馬太福音 21:4–5","en":"Matthew 21:4-5","v":[[4,"這事成就，是要應驗先知的話，說："],[5,"「要對錫安的居民說：看哪，你的王來到你這裡，是溫柔的，又騎著驢，就是騎著驢駒子。」"]]},"Zech11:12-13":{"zh":"撒迦利亞書 11:12–13","en":"Zechariah 11:12-13","v":[[12,"我對他們說：「你們若以為美，就給我工價；不然，就罷了！」於是他們給了三十塊錢作為我的工價。"],[13,"耶和華吩咐我說：「要把眾人所估定美好的價值丟給窯戶。」我便將這三十塊錢，在耶和華的殿中丟給窯戶了。"]]},"Mt26:14-16":{"zh":"馬太福音 26:14–16","en":"Matthew 26:14-16","v":[[14,"當下，十二門徒裡有一個稱為加略人猶大的，去見祭司長，說："],[15,"「我把他交給你們，你們願意給我多少錢？」他們就給了他三十塊錢。"],[16,"從那時候，他就找機會要把耶穌交給他們。"]]},"Mt27:3-10":{"zh":"馬太福音 27:3–10","en":"Matthew 27:3-10","v":[[3,"這時候，賣耶穌的猶大看見耶穌已經定了罪，就後悔，把那三十塊錢拿回來給祭司長和長老，"],[4,"說：「我賣了無辜之人的血是有罪了。」他們說：「那與我們有甚麼相干？你自己承當吧！」"],[5,"猶大就把那銀錢丟在殿裡，出去吊死了。"],[6,"祭司長拾起銀錢來，說：「這是血價，不可放在庫裡。」"],[7,"他們商議，就用那銀錢買了窯戶的一塊田，為要埋葬外鄉人。"],[8,"所以那塊田直到今日還叫做「血田」。"],[9,"這就應了先知耶利米的話，說：「他們用那三十塊錢，就是被估定之人的價錢，是以色列人中所估定的，"],[10,"買了窯戶的一塊田；這是照著主所吩咐我的。」"]]},"Zech12:10":{"zh":"撒迦利亞書 12:10","en":"Zechariah 12:10","v":[[10,"我必將那施恩叫人懇求的靈，澆灌大衛家和耶路撒冷的居民。他們必仰望我，就是他們所扎的；必為我悲哀，如喪獨生子，又為我愁苦，如喪長子。"]]},"Jn19:34-37":{"zh":"約翰福音 19:34–37","en":"John 19:34-37","v":[[34,"惟有一個兵拿槍扎他的肋旁，隨即有血和水流出來。"],[35,"看見這事的那人就作見證，他的見證也是真的，並且他知道自己所說的是真的，叫你們也可以信。"],[36,"這些事成了，為要應驗經上的話說：「他的骨頭一根也不可折斷。」"],[37,"經上又有一句說：「他們要仰望自己所扎的人。」"]]},"Isa52:13-53:12":{"zh":"以賽亞書 52:13–53:12","en":"Isaiah 52:13-53:12","v":[["52:13","我的僕人行事必有智慧，必被高舉上升，且成為至高。"],["52:14","許多人因他驚奇；他的面貌比別人憔悴，他的形容比世人枯槁。"],["52:15","這樣，他必洗淨許多國民，君王要向他閉口。因所未曾傳與他們的，他們必看見；未曾聽見的，他們要明白。"],["53:1","我們所傳的有誰信呢？耶和華的膀臂向誰顯露呢？"],["53:2","他在耶和華面前生長如嫩芽，像根出於乾地。他無佳形美容；我們看見他的時候，也無美貌使我們羨慕他。"],["53:3","他被藐視，被人厭棄；多受痛苦，常經憂患。他被藐視，好像被人掩面不看的一樣；我們也不尊重他。"],["53:4","他誠然擔當我們的憂患，背負我們的痛苦；我們卻以為他受責罰，被神擊打苦待了。"],["53:5","哪知他為我們的過犯受害，為我們的罪孽壓傷。因他受的刑罰，我們得平安；因他受的鞭傷，我們得醫治。"],["53:6","我們都如羊走迷，各人偏行己路；耶和華使我們眾人的罪孽都歸在他身上。"],["53:7","他被欺壓，在受苦的時候卻不開口；他像羊羔被牽到宰殺之地，又像羊在剪毛的人手下無聲，他也是這樣不開口。"],["53:8","因受欺壓和審判，他被奪去，至於他同世的人，誰想他受鞭打、從活人之地被剪除，是因我百姓的罪過呢？"],["53:9","他雖然未行強暴，口中也沒有詭詐，人還使他與惡人同埋；誰知死的時候與財主同葬。"],["53:10","耶和華卻定意將他壓傷，使他受痛苦。耶和華以他為贖罪祭。他必看見後裔，並且延長年日；耶和華所喜悅的事必在他手中亨通。"],["53:11","他必看見自己勞苦的功效，便心滿意足。有許多人因認識我的義僕得稱為義；並且他要擔當他們的罪孽。"],["53:12","所以，我要使他與位大的同分，與強盛的均分擄物。因為他將命傾倒，以致於死；他也被列在罪犯之中。他卻擔當多人的罪，又為罪犯代求。"]]},"Mt8:17":{"zh":"馬太福音 8:17","en":"Matthew 8:17","v":[[17,"這是要應驗先知以賽亞的話，說：「他代替我們的軟弱，擔當我們的疾病。」"]]},"1Pet2:22-25":{"zh":"彼得前書 2:22–25","en":"1 Peter 2:22-25","v":[[22,"他並沒有犯罪，口裡也沒有詭詐。"],[23,"他被罵不還口，受害不說威嚇的話，只將自己交託那按公義審判人的主。"],[24,"他被掛在木頭上，親身擔當了我們的罪，使我們既然在罪上死，就得以在義上活。因他受的鞭傷，你們便得了醫治。"],[25,"你們從前好像迷路的羊，如今卻歸到你們靈魂的牧人監督了。"]]},"Jon1:17":{"zh":"約拿書 1:17","en":"Jonah 1:17","v":[[17,"耶和華安排一條大魚吞了約拿，他在魚腹中三日三夜。"]]},"Mt12:38-41":{"zh":"馬太福音 12:38–41","en":"Matthew 12:38-41","v":[[38,"當時，有幾個文士和法利賽人對耶穌說：「夫子，我們願意你顯個神蹟給我們看。」"],[39,"耶穌回答說：「一個邪惡淫亂的世代求看神蹟，除了先知約拿的神蹟以外，再沒有神蹟給他們看。"],[40,"約拿三日三夜在大魚肚腹中，人子也要這樣三日三夜在地裡頭。"],[41,"當審判的時候，尼尼微人要起來定這世代的罪，因為尼尼微人聽了約拿所傳的就悔改了。看哪，在這裡有一人比約拿更大！」"]]},"Jer31:31-34":{"zh":"耶利米書 31:31–34","en":"Jeremiah 31:31-34","v":[[31,"耶和華說：「日子將到，我要與以色列家和猶大家另立新約，"],[32,"不像我拉著他們祖宗的手，領他們出埃及地的時候，與他們所立的約。我雖作他們的丈夫，他們卻背了我的約。這是耶和華說的。」"],[33,"耶和華說：「那些日子以後，我與以色列家所立的約乃是這樣：我要將我的律法放在他們裡面，寫在他們心上。我要作他們的神，他們要作我的子民。"],[34,"他們各人不再教導自己的鄰舍和自己的弟兄，說：『你該認識耶和華』；因為他們從最小的到至大的，都必認識我。我要赦免他們的罪孽，不再記念他們的罪惡。這是耶和華說的。」"]]},"Lk22:20":{"zh":"路加福音 22:20","en":"Luke 22:20","v":[[20,"飯後也照樣拿起杯來，說：「這杯是用我血所立的新約，是為你們流出來的。」"]]},"Heb8:6,13":{"zh":"希伯來書 8:6、13","en":"Hebrews 8:6-13","v":[[6,"如今耶穌所得的職任是更美的，正如他作更美之約的中保；這約原是憑更美之應許立的。"],[13,"既說新約，就以前約為舊了；但那漸舊漸衰的，就必快歸無有了。"]]},"Heb10:16-18":{"zh":"希伯來書 10:16–18","en":"Hebrews 10:16-18","v":[[16,"「主說：那些日子以後，我與他們所立的約乃是這樣：我要將我的律法寫在他們心上，又要放在他們的裡面」；"],[17,"以後就說：「我不再記念他們的罪愆和他們的過犯。」"],[18,"這些罪過既已赦免，就不用再為罪獻祭了。"]]},"Joel2:28-32":{"zh":"約珥書 2:28–32","en":"Joel 2:28-32","v":[[28,"「以後，我要將我的靈澆灌凡有血氣的。你們的兒女要說預言，你們的老年人要做異夢，少年人要見異象。"],[29,"在那些日子，我要將我的靈澆灌我的僕人和使女。"],[30,"在天上地下，我要顯出奇事，有血，有火，有煙柱。"],[31,"日頭要變為黑暗，月亮要變為血，這都在耶和華大而可畏的日子未到以前。"],[32,"到那時候，凡求告耶和華名的就必得救；因為照耶和華所說的，在錫安山，在耶路撒冷，必有逃脫的人，在剩下的人中必有耶和華所召的。」"]]},"Acts2:16-21":{"zh":"使徒行傳 2:16–21","en":"Acts 2:16-21","v":[[16,"這正是先知約珥所說的："],[17,"『神說：在末後的日子，我要將我的靈澆灌凡有血氣的。你們的兒女要說預言；你們的少年人要見異象；老年人要做異夢。"],[18,"在那些日子，我要將我的靈澆灌我的僕人和使女，他們就要說預言。"],[19,"在天上，我要顯出奇事；在地下，我要顯出神蹟；有血，有火，有煙霧。"],[20,"日頭要變為黑暗，月亮要變為血，這都在主大而明顯的日子未到以前。"],[21,"到那時候，凡求告主名的，就必得救。』"]]},"Dan7:13-14":{"zh":"但以理書 7:13–14","en":"Daniel 7:13-14","v":[[13,"我在夜間的異象中觀看，見有一位像人子的，駕著天雲而來，被領到亙古常在者面前，"],[14,"得了權柄、榮耀、國度，使各方、各國、各族的人都事奉他。他的權柄是永遠的，不能廢去；他的國必不敗壞。"]]},"Mt26:64":{"zh":"馬太福音 26:64","en":"Matthew 26:64","v":[[64,"耶穌對他說：「你說的是。然而，我告訴你們，後來你們要看見人子坐在那權能者的右邊，駕著天上的雲降臨。」"]]},"Mk14:62":{"zh":"馬可福音 14:62","en":"Mark 14:62","v":[[62,"耶穌說：「我是。你們必看見人子坐在那權能者的右邊，駕著天上的雲降臨。」"]]},"Isa65:17":{"zh":"以賽亞書 65:17","en":"Isaiah 65:17","v":[[17,"看哪！我造新天新地；從前的事不再被記念，也不再追想。"]]},"Isa66:22":{"zh":"以賽亞書 66:22","en":"Isaiah 66:22","v":[[22,"耶和華說：「我所要造的新天新地，怎樣在我面前長存，你們的後裔和你們的名字也必照樣長存。」"]]},"Rev21:1-5":{"zh":"啟示錄 21:1–5","en":"Revelation 21:1-5","v":[[1,"我又看見一個新天新地；因為先前的天地已經過去了，海也不再有了。"],[2,"我又看見聖城新耶路撒冷由神那裡從天而降，預備好了，就如新婦妝飾整齊，等候丈夫。"],[3,"我聽見有大聲音從寶座出來說：「看哪，神的帳幕在人間。他要與人同住，他們要作他的子民。神要親自與他們同在，作他們的神。"],[4,"神要擦去他們一切的眼淚；不再有死亡，也不再有悲哀、哭號、疼痛，因為以前的事都過去了。」"],[5,"坐寶座的說：「看哪，我將一切都更新了！」又說：「你要寫上；因這些話是可信的，是真實的。」"]]}};
+const bg = (en, ver) => `https://www.biblegateway.com/passage/?search=${encodeURIComponent(en)}&version=${ver}`;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+const dlg = document.getElementById("dlg");
+function openRef(key){
+  const v = V[key]; if(!v) return;
+  document.getElementById("dlgTitle").textContent = v.zh;
+  document.getElementById("dlgBody").innerHTML = v.v.map(([n,t]) => `<p><sup>${esc(n)}</sup>${esc(t)}</p>`).join("");
+  document.getElementById("dlgFoot").innerHTML =
+    `<span class="ver">和合本（新式標點）</span>` +
+    `<a href="${bg(v.en, BIBLE_VER)}" target="_blank" rel="noopener">Bible Gateway 和合本</a>` +
+    `<a href="${bg(v.en, "CUV")}" target="_blank" rel="noopener">CUV</a>` +
+    `<a href="${bg(v.en, "KJV")}" target="_blank" rel="noopener">KJV</a>` +
+    (v.src ? `<a href="${esc(v.src)}" target="_blank" rel="noopener">原來源</a>` : "");
+  if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open","");
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("button.ref"); if (b) { openRef(b.dataset.r); return; }
+  if (e.target.closest("[data-close]") || e.target === dlg) dlg.close();
+});
+
+// 參考資料：依出現順序去重
+(() => {
+  const seen = new Set(), ol = document.getElementById("autoRefs");
+  document.querySelectorAll("main button.ref, .cover button.ref").forEach(b => {
+    const k = b.dataset.r; if (seen.has(k) || !V[k]) return; seen.add(k);
+    const li = document.createElement("li");
+    li.innerHTML = `<a href="${bg(V[k].en, BIBLE_VER)}" target="_blank" rel="noopener">${esc(V[k].zh)}</a>`;
+    ol.appendChild(li);
+  });
+})();
+
+// 進度條、導覽高亮
+const bar = document.getElementById("progress");
+const links = [...document.querySelectorAll("nav.toc a")];
+const secs = links.map(a => document.querySelector(a.getAttribute("href")));
+function onScroll(){
+  const h = document.documentElement;
+  bar.style.width = (h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight) * 100) + "%";
+  let cur = 0; secs.forEach((s,i) => { if (s && s.getBoundingClientRect().top < 120) cur = i; });
+  links.forEach((a,i) => a.classList.toggle("on", i === cur));
+}
+addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+// 捲動淡入
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const rv = document.querySelectorAll(".reveal");
+if (reduce || !("IntersectionObserver" in window)) rv.forEach(el => el.classList.add("in"));
+else {
+  const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } }), {threshold:.05});
+  rv.forEach(el => io.observe(el));
+}
+addEventListener("beforeprint", () => rv.forEach(el => el.classList.add("in")));
+</script>
+</body>
+</html>
