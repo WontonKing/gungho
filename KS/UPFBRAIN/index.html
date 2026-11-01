@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2455c7">
+<title>超加工食品，會傷大腦嗎？｜共好小學堂</title>
+<meta name="description" content="大型觀察研究發現超加工食品吃得多的人，認知下降較快、失智風險較高，但相關不等於因果。用 NOVA 翻牌遊戲學會看成分表，再挑一週換一樣。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/UPFBRAIN/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="超加工食品，會傷大腦嗎？｜共好小學堂">
+<meta property="og:description" content="大型觀察研究發現超加工食品吃得多的人，認知下降較快、失智風險較高，但相關不等於因果。用 NOVA 翻牌遊戲學會看成分表，再挑一週換一樣。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/UPFBRAIN/">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 130'%3E%3Cpath d='M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z' fill='%235ad6a4' stroke='%231f2a44' stroke-width='3'/%3E%3Cpath d='M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z' fill='%237ee3b8' stroke='%231f2a44' stroke-width='3'/%3E%3Cellipse cx='60' cy='88' rx='40' ry='38' fill='%237ee3b8' stroke='%231f2a44' stroke-width='3.5'/%3E%3Ccircle cx='46' cy='84' r='5' fill='%231f2a44'/%3E%3Ccircle cx='74' cy='84' r='5' fill='%231f2a44'/%3E%3Cpath d='M52 98 Q60 106 68 98' stroke='%231f2a44' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#2455c7; --blue-d:#173a8f; --blue-l:#e6eeff;
+  --sun:#ffc93c;  --sun-l:#fff5d6;
+  --coral:#ff6b6b; --coral-l:#ffe5e5;
+  --mint:#2bb88a; --mint-l:#dcf7ec;
+  --grape:#8a5cf6; --grape-l:#efe8ff;
+  --sky:#38b6ff;  --sky-l:#e0f4ff;
+  --orange:#ff9f43; --orange-l:#fff0e0;
+  --ink:#1f2a44; --ink-2:#4a5674; --line:#e3e8f3; --bg:#fffdf7;
+  --round:'Huninn','Noto Sans TC',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans TC',system-ui,-apple-system,'PingFang TC','Microsoft JhengHei',sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:var(--blue)}
+h1,h2,h3,h4{font-family:var(--round);line-height:1.35;margin:0 0 .5em}
+p{margin:0 0 1em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.hl{background:linear-gradient(transparent 58%,var(--sun) 58%);padding:0 2px}
+.nw{white-space:nowrap}
+
+/* top bar */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.94);backdrop-filter:blur(6px);border-bottom:3px solid var(--ink)}
+.topbar .wrap{display:flex;align-items:center;gap:12px;height:62px}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);flex-shrink:0}
+.brand svg{width:38px;height:42px}
+.brand b{font-family:var(--round);font-size:19px;display:block;line-height:1.1}
+.brand small{font-size:10px;letter-spacing:.12em;color:var(--ink-2);display:block}
+.tnav{display:flex;gap:6px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.tnav::-webkit-scrollbar{display:none}
+.tnav a{white-space:nowrap;text-decoration:none;font-size:14px;padding:4px 12px;border:2px solid var(--ink);border-radius:99px;color:var(--ink);background:#fff;font-weight:500}
+.tnav a:hover{background:var(--sun-l)}
+.backbtn{white-space:nowrap;text-decoration:none;font-size:14px;padding:5px 14px;border-radius:99px;background:var(--blue);color:#fff;font-weight:700;border:2px solid var(--ink);box-shadow:0 3px 0 var(--ink);flex-shrink:0}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--sun-l),#fff 55%,var(--mint-l));padding:56px 0 96px}
+.hero .bub{position:absolute;border-radius:50%;opacity:.55}
+.hero .b1{width:280px;height:280px;background:var(--coral-l);top:-80px;left:-90px}
+.hero .b2{width:200px;height:200px;background:var(--sky-l);bottom:30px;right:4%}
+.hero .b3{width:120px;height:120px;background:var(--grape-l);top:40px;right:38%}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:28px;align-items:center}
+.tag{display:inline-block;font-family:var(--round);background:var(--ink);color:var(--sun);padding:4px 14px;border-radius:99px;font-size:15px;margin-bottom:14px}
+.hero h1{font-size:clamp(32px,5.2vw,54px);margin-bottom:16px}
+.hero .lead{font-size:18.5px;color:var(--ink-2);max-width:34em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{display:inline-block;font-family:var(--round);text-decoration:none;font-size:17px;padding:10px 22px;border-radius:16px;border:3px solid var(--ink);box-shadow:0 4px 0 var(--ink);color:var(--ink);background:#fff;cursor:pointer;transition:transform .12s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--blue);color:#fff}
+.btn.sm{font-size:15px;padding:6px 14px;border-radius:12px;box-shadow:0 3px 0 var(--ink)}
+.hero-art{position:relative;min-width:0}
+.hero-art svg{display:block;width:100%;height:auto}
+.wave{position:absolute;left:0;right:0;bottom:-2px;width:100%;height:60px;display:block}
+.float{animation:float 4s ease-in-out infinite}
+.float.d2{animation-delay:-1.4s}.float.d3{animation-delay:-2.6s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+/* sections */
+section{padding:64px 0;position:relative}
+section.tint-coral{background:linear-gradient(180deg,var(--coral-l),#fff 70%)}
+section.tint-mint{background:linear-gradient(180deg,var(--mint-l),#fff 70%)}
+section.tint-sky{background:linear-gradient(180deg,var(--sky-l),#fff 70%)}
+section.tint-grape{background:linear-gradient(180deg,var(--grape-l),#fff 70%)}
+section.tint-sun{background:linear-gradient(180deg,var(--sun-l),#fff 70%)}
+.sechead{display:flex;align-items:center;gap:16px;margin-bottom:24px}
+.num{flex-shrink:0;width:58px;height:58px;display:grid;place-items:center;font-family:var(--round);font-size:28px;color:#fff;border:3px solid var(--ink);border-radius:16px;transform:rotate(-6deg);box-shadow:0 4px 0 var(--ink)}
+.eyebrow{font-size:13px;letter-spacing:.16em;color:var(--ink-2);font-weight:700;text-transform:uppercase}
+.sechead h2{font-size:clamp(25px,3.4vw,34px);margin:0}
+.c-blue{background:var(--blue)}.c-coral{background:var(--coral)}.c-orange{background:var(--orange)}.c-mint{background:var(--mint)}.c-sky{background:var(--sky)}.c-sun{background:var(--sun);color:var(--ink)!important}.c-grape{background:var(--grape)}
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px;box-shadow:0 4px 0 var(--ink);min-width:0}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid2>*,.grid3>*{min-width:0}
+.dash{border:none;border-top:3px dashed var(--line);margin:28px 0}
+.src{display:inline-block;font-size:12.5px;line-height:1.5;padding:1px 9px;margin:0 2px;border-radius:99px;background:var(--blue-l);color:var(--blue-d);text-decoration:none;font-weight:700;border:1.5px solid var(--blue);vertical-align:1px;white-space:nowrap}
+.src:hover{background:var(--blue);color:#fff}
+.icn{width:110px;height:110px;display:block;margin:0 auto 8px}
+
+/* talk */
+.talk{display:flex;gap:14px;align-items:flex-start;margin:14px 0}
+.talk svg{width:72px;height:72px;flex-shrink:0}
+.talk.r{flex-direction:row-reverse}
+.say{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:12px 18px;font-family:var(--round);font-size:17.5px;line-height:1.7;box-shadow:4px 4px 0 var(--sun);min-width:0}
+.say::before{content:"";position:absolute;left:-12px;top:22px;width:16px;height:16px;background:#fff;border-left:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg)}
+.talk.r .say::before{left:auto;right:-12px;transform:rotate(-135deg)}
+.say.mint{box-shadow:4px 4px 0 var(--mint)}.say.sky{box-shadow:4px 4px 0 var(--sky)}.say.coral{box-shadow:4px 4px 0 var(--coral)}
+.warnline{margin-top:16px;background:var(--coral-l);border:3px solid var(--ink);border-radius:18px;padding:12px 18px;font-weight:700}
+
+/* tabs */
+.tablist{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tablist button{font-family:var(--round);font-size:16px;padding:8px 16px;border-radius:14px;border:3px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer}
+.tablist button[aria-selected="true"]{background:var(--ink);color:var(--sun);box-shadow:0 3px 0 var(--orange)}
+.tabpanel{display:none}
+.tabpanel.on{display:block}
+.novaflex{display:flex;gap:20px;align-items:center}
+.novaflex svg{width:120px;height:120px;flex-shrink:0}
+.chip{display:inline-block;font-size:14px;padding:2px 10px;border-radius:99px;border:2px solid var(--ink);margin:3px 4px 3px 0;background:var(--sun-l)}
+
+/* mythbox */
+.myth{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
+.myth>div{border:3px solid var(--ink);border-radius:18px;padding:16px 18px;min-width:0}
+.myth .no{background:var(--coral-l)}.myth .yes{background:var(--mint-l)}
+.myth h4{font-size:18px}
+
+/* food game */
+.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.fcard{position:relative;min-width:0;border:3px solid var(--ink);border-radius:20px;background:#fff;box-shadow:0 4px 0 var(--ink);padding:14px 12px;text-align:center;display:flex;flex-direction:column;min-height:236px}
+.fcard .emo{font-size:44px;line-height:1.2}
+.fcard .fname{font-family:var(--round);font-size:17px;margin:4px 0 2px}
+.fcard .fsub{font-size:13px;color:var(--ink-2);line-height:1.5;flex:1}
+.fbtns{display:flex;gap:6px;margin-top:8px}
+.fbtns button{flex:1;font-family:var(--round);font-size:14.5px;padding:6px 4px;border-radius:12px;border:2.5px solid var(--ink);cursor:pointer;background:var(--coral-l);color:var(--ink)}
+.fbtns button.notupf{background:var(--mint-l)}
+.fback{display:none;font-size:14px;line-height:1.6;text-align:left;margin-top:8px;flex:1}
+.fcard.done .fbtns{display:none}
+.fcard.done .fback{display:block}
+.fcard.done .fsub{flex:0}
+.fcard.ok{background:var(--mint-l)}
+.fcard.bad{background:var(--sun-l)}
+.verdict{font-family:var(--round);font-size:16px;display:block;margin-bottom:2px}
+.gamebar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:0 0 16px}
+.score{font-family:var(--round);font-size:20px;background:#fff;border:3px solid var(--ink);border-radius:14px;padding:4px 14px}
+.gamemsg{margin-top:16px;font-family:var(--round);font-size:18px;display:none}
+.gamemsg.on{display:block}
+
+/* evidence */
+.bignum{font-family:var(--round);font-size:clamp(40px,6vw,58px);line-height:1;color:var(--coral);margin:6px 0}
+.bignum.blue{color:var(--blue)}
+.facts{list-style:none;padding:0;margin:10px 0 0}
+.facts li{padding-left:24px;position:relative;margin-bottom:6px}
+.facts li::before{content:"✦";position:absolute;left:0;color:var(--orange)}
+.explain{background:var(--sky-l);border:3px dashed var(--sky);border-radius:18px;padding:16px 18px;margin-top:20px}
+.slopebox{display:grid;grid-template-columns:1.1fr 1fr;gap:20px;align-items:center;margin-top:20px}
+.slopebox>*{min-width:0}
+.slopebox .card svg{width:100%;height:auto;display:block}
+
+/* mech */
+.mech{position:relative;padding-top:30px}
+.badge{position:absolute;top:-16px;left:18px;font-family:var(--round);font-size:14px;padding:3px 12px;border-radius:99px;border:2.5px solid var(--ink);background:var(--sun)}
+.mech .bottom{font-weight:700;border-top:2px dashed var(--line);padding-top:10px;margin-top:10px;margin-bottom:0}
+
+/* swap */
+.swapgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.swap{min-width:0;border:3px solid var(--ink);border-radius:18px;background:#fff;padding:14px 16px;cursor:pointer;text-align:left;font:inherit;color:inherit;box-shadow:0 3px 0 var(--ink);display:block;width:100%}
+.swap .from{text-decoration:line-through;color:var(--ink-2);font-size:15px}
+.swap .to{font-family:var(--round);font-size:19px;display:block}
+.swap .tip{font-size:14px;color:var(--ink-2);display:block;line-height:1.6;margin-top:4px}
+.swap[aria-pressed="true"]{background:var(--mint-l);box-shadow:0 3px 0 var(--mint);outline:3px solid var(--mint);outline-offset:2px}
+.picked{margin-top:18px;font-family:var(--round);font-size:18px}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:12px}
+.day{min-width:0;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;user-select:none}
+.day input{position:absolute;opacity:0;width:1px;height:1px}
+.day .box{width:46px;height:46px;border:3px solid var(--ink);border-radius:14px;background:#fff;display:grid;place-items:center;font-size:24px;color:transparent;transition:background .15s}
+.day input:checked + .box{background:var(--mint);color:#fff}
+.day input:focus-visible + .box{outline:3px solid var(--blue);outline-offset:2px}
+.day span.dl{font-size:14px;font-weight:700}
+.prog{margin-top:16px;height:26px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden;position:relative}
+.prog i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint) 0 12px,#5ad6a4 12px 24px);transition:width .3s}
+.progtxt{font-family:var(--round);margin-top:6px}
+.cheer{display:none;margin-top:10px;background:var(--sun-l);border:3px solid var(--ink);border-radius:16px;padding:10px 16px;font-family:var(--round)}
+.cheer.on{display:block}
+.note{font-size:14px;color:var(--ink-2)}
+.noterow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.noterow input{flex:1;min-width:0;font:inherit;font-size:16px;padding:8px 12px;border:3px solid var(--ink);border-radius:12px}
+.mynote{margin-top:10px;font-family:var(--round)}
+
+/* quiz */
+.qcard{margin-bottom:18px}
+.qcard h3{font-size:19px}
+.opts{display:grid;gap:8px}
+.opts button{text-align:left;font:inherit;font-size:16px;padding:10px 14px;border:2.5px solid var(--ink);border-radius:14px;background:#fff;cursor:pointer;color:var(--ink)}
+.opts button:hover:not(:disabled){background:var(--blue-l)}
+.opts button.right{background:var(--mint-l);border-color:var(--mint);font-weight:700}
+.opts button.wrong{background:var(--coral-l);border-color:var(--coral)}
+.opts button:disabled{cursor:default}
+.qexp{display:none;margin-top:10px;padding:10px 14px;border-radius:14px;background:var(--sun-l);border:2px dashed var(--orange);font-size:15.5px}
+.qexp.on{display:block}
+.qscore{display:none;font-family:var(--round);font-size:22px;text-align:center;padding:16px;border:3px solid var(--ink);border-radius:18px;background:var(--grape-l);box-shadow:0 4px 0 var(--ink)}
+.qscore.on{display:block}
+
+/* refs */
+.refs{padding-left:0;list-style:none;counter-reset:r}
+.refs li{background:#fff;border:2.5px solid var(--ink);border-radius:16px;padding:12px 16px;margin-bottom:12px;font-size:15.5px;line-height:1.7;scroll-margin-top:80px}
+.refs li:target{background:var(--sun-l)}
+.refs .pt{display:block;color:var(--ink-2);margin-top:4px}
+.refs a{word-break:break-all}
+
+/* disclaimer */
+.disc{background:var(--coral);border:4px solid var(--ink);border-radius:24px;padding:10px;box-shadow:0 6px 0 var(--ink)}
+.disc-in{border:3px dashed #fff;border-radius:18px;padding:20px 22px;color:#fff}
+.disc h2{font-size:24px;color:#fff}
+.disc .first{background:#fff;color:#d63a3a;font-weight:900;border-radius:12px;padding:10px 14px;margin-bottom:12px}
+.disc ul{margin:0;padding-left:1.2em}
+.disc li{margin-bottom:6px}
+
+/* footer */
+footer{background:var(--blue-d);color:#fff;padding:44px 0 36px;text-align:center;margin-top:56px}
+.trio{display:flex;justify-content:center;gap:14px;margin-bottom:10px}
+.trio svg{width:70px;height:70px}
+.motto{font-family:var(--round);font-size:22px;margin:6px 0 14px}
+.slogan{display:inline-block;background:var(--sun);color:var(--ink);font-weight:700;border-radius:12px;padding:8px 16px;margin:6px 0 16px;border:3px solid var(--ink)}
+footer a{color:var(--sun)}
+footer small{display:block;opacity:.85;margin-top:10px}
+.totop{position:fixed;right:18px;bottom:18px;width:50px;height:50px;border-radius:50%;border:3px solid var(--ink);background:var(--sun);font-size:22px;font-weight:900;cursor:pointer;box-shadow:0 4px 0 var(--ink);opacity:0;pointer-events:none;transition:opacity .2s;z-index:60;color:var(--ink)}
+.totop.on{opacity:1;pointer-events:auto}
+
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .tnav{display:none}
+  .backbtn{margin-left:auto}
+  .hero{padding:34px 0 84px}
+  .hero-grid,.grid2,.grid3,.slopebox,.myth{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .fcard{padding:12px 8px;min-height:226px}
+  .fcard .emo{font-size:38px}
+  .fbtns{flex-direction:column}
+  .swapgrid{grid-template-columns:1fr}
+  .day .box{width:38px;height:38px;font-size:20px;border-radius:11px}
+  .days{gap:4px}
+  .novaflex{flex-direction:column;align-items:flex-start}
+  .novaflex svg{width:96px;height:96px}
+  section{padding:48px 0}
+  .talk svg{width:58px;height:58px}
+  .say{font-size:16.5px;padding:10px 14px}
+}
+@media (prefers-reduced-motion:reduce){
+  .float{animation:none}
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+<!-- 主題專屬：腦袋寶寶 -->
+<symbol id="brain" viewBox="0 0 120 110">
+  <path d="M30 70 C14 68 10 50 20 42 C16 26 32 16 44 22 C50 10 70 10 76 22 C90 16 104 28 98 42 C110 50 104 70 90 70 C86 84 70 88 60 80 C50 88 34 84 30 70Z" fill="#ffb3c7" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M60 24 C56 34 64 40 60 50 M38 36 C46 38 46 46 40 50 M82 36 C74 38 74 46 80 50" stroke="#e57a9a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="48" cy="58" r="4.5" fill="#1f2a44"/><circle cx="72" cy="58" r="4.5" fill="#1f2a44"/>
+  <circle cx="49.4" cy="56.6" r="1.5" fill="#fff"/><circle cx="73.4" cy="56.6" r="1.5" fill="#fff"/>
+  <ellipse cx="38" cy="66" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="82" cy="66" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M54 66 Q60 72 66 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M52 86 v12 M68 86 v12" stroke="#1f2a44" stroke-width="3.5" stroke-linecap="round"/>
+</symbol>
+<!-- 主題專屬：汽水罐 -->
+<symbol id="soda" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="50" fill="#ffe5e5"/>
+  <rect x="36" y="24" width="48" height="74" rx="10" fill="#ff6b6b" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M40 24 h40" stroke="#1f2a44" stroke-width="3.5" stroke-linecap="round"/>
+  <rect x="36" y="44" width="48" height="22" fill="#fff5d6" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M46 55 h28" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="50" cy="78" r="3" fill="#1f2a44"/><circle cx="70" cy="78" r="3" fill="#1f2a44"/>
+  <path d="M55 86 Q60 90 65 86" stroke="#1f2a44" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <circle cx="92" cy="22" r="5" fill="#e0f4ff" stroke="#1f2a44" stroke-width="2.5"/><circle cx="100" cy="36" r="3.5" fill="#e0f4ff" stroke="#1f2a44" stroke-width="2.5"/>
+</symbol>
+<!-- 主題專屬：綠花椰 -->
+<symbol id="broc" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="50" fill="#dcf7ec"/>
+  <path d="M50 70 L46 100 h28 L70 70Z" fill="#b8f0d4" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="42" cy="54" r="16" fill="#2bb88a" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="78" cy="54" r="16" fill="#2bb88a" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="60" cy="40" r="20" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="53" cy="84" r="3" fill="#1f2a44"/><circle cx="67" cy="84" r="3" fill="#1f2a44"/>
+  <ellipse cx="48" cy="90" rx="4" ry="2.4" fill="#ff9aa2" opacity=".8"/><ellipse cx="72" cy="90" rx="4" ry="2.4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M56 91 Q60 95 64 91" stroke="#1f2a44" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</symbol>
+<!-- 主題專屬：放大鏡看成分表 -->
+<symbol id="label" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="50" fill="#e6eeff"/>
+  <rect x="26" y="20" width="56" height="76" rx="8" fill="#fff" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M36 34 h36 M36 46 h30 M36 58 h36 M36 70 h22" stroke="#4a5674" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="78" cy="74" r="17" fill="#e0f4ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M90 87 L104 101" stroke="#1f2a44" stroke-width="6" stroke-linecap="round"/>
+  <path d="M70 74 h16" stroke="#ff6b6b" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<!-- 主題專屬：餅乾 -->
+<symbol id="cookie" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="50" fill="#fff0e0"/>
+  <circle cx="60" cy="60" r="32" fill="#ffc98a" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="44" r="4" fill="#7a4a2a"/><circle cx="76" cy="48" r="4" fill="#7a4a2a"/><circle cx="70" cy="78" r="4" fill="#7a4a2a"/><circle cx="44" cy="74" r="3.5" fill="#7a4a2a"/>
+  <circle cx="54" cy="60" r="3.5" fill="#1f2a44"/><circle cx="68" cy="60" r="3.5" fill="#1f2a44"/>
+  <path d="M56 68 Q61 72 66 68" stroke="#1f2a44" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</symbol>
+</defs>
+</svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="回共好小學堂首頁">
+      <svg viewBox="0 0 120 130"><use href="#sprout"/></svg>
+      <span><b>共好小學堂</b><small>GROW &amp; LEARN TOGETHER</small></span>
+    </a>
+    <nav class="tnav" aria-label="章節">
+      <a href="#key">重點</a><a href="#nova">NOVA</a><a href="#game">翻牌</a><a href="#evidence">研究</a><a href="#limits">限制</a><a href="#views">多面向</a><a href="#swap">換一樣</a><a href="#quiz">測驗</a>
+    </nav>
+    <a class="backbtn" href="../index.html">← 回小學堂</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <span class="bub b1"></span><span class="bub b2"></span><span class="bub b3"></span>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag">✦ 大腦保健小知識</span>
+      <h1>超加工食品，<br>會<span class="hl nw">傷大腦嗎？</span></h1>
+      <p class="lead">大型研究看到：超加工食品吃得多的人，認知退得比較快、失智風險也比較高。不過這是「一起出現」，還不是「誰造成誰」。我們一起把研究看清楚，再從一樣小東西開始換。</p>
+      <div class="btns">
+        <a class="btn pri" href="#key">開始認識</a>
+        <a class="btn" href="#game">直接玩翻牌</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 520 380" role="img" aria-label="小芽、藍鳥、星星和腦袋寶寶站在一起，旁邊漂浮著汽水罐、綠花椰和成分表">
+        <ellipse cx="260" cy="338" rx="230" ry="30" fill="#dcf7ec" stroke="#1f2a44" stroke-width="3"/>
+        <g class="float"><use href="#soda" x="8" y="150" width="86" height="86"/></g>
+        <g class="float d2"><use href="#broc" x="424" y="150" width="86" height="86"/></g>
+        <g class="float d3"><use href="#label" x="18" y="40" width="74" height="74"/></g>
+        <use href="#sprout" x="72" y="214" width="112" height="122"/>
+        <use href="#brain" x="186" y="172" width="160" height="160"/>
+        <use href="#bird" x="340" y="232" width="110" height="100"/>
+        <use href="#star" x="420" y="262" width="70" height="70"/>
+        <g>
+          <rect x="140" y="28" width="300" height="94" rx="22" fill="#fff" stroke="#1f2a44" stroke-width="3"/>
+          <path d="M262 120 L270 150 L288 120Z" fill="#fff" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+          <rect x="264" y="116" width="22" height="8" fill="#fff"/>
+          <text x="290" y="68" text-anchor="middle" font-family="Huninn, 'Noto Sans TC', sans-serif" font-size="25" fill="#1f2a44">一起出現，</text>
+          <text x="290" y="102" text-anchor="middle" font-family="Huninn, 'Noto Sans TC', sans-serif" font-size="25" fill="#1f2a44">不等於誰害誰！</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C240 60 480 0 720 26 C960 52 1200 8 1440 30 V60 H0Z" fill="#fffdf7"/></svg>
+</section>
+
+<section id="key">
+  <div class="wrap">
+    <div class="sechead"><div class="num c-blue">★</div><div><div class="eyebrow">Key points</div><h2>先說重點</h2></div></div>
+    <div class="talk"><svg viewBox="0 0 120 130"><use href="#sprout"/></svg>
+      <div class="say mint">巴西和英國的大型追蹤研究都發現：吃比較多超加工食品的人，認知功能下降比較快、失智風險也比較高。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref2">參考 2</a></div></div>
+    <div class="talk r"><svg viewBox="0 0 120 110"><use href="#bird"/></svg>
+      <div class="say sky">但這些都是觀察研究，證明的是「相關」。還不能說「每一樣超加工食品都直接傷害大腦屏障」，也不能說「吃幾次就會失智」。</div></div>
+    <div class="talk"><svg viewBox="0 0 120 120"><use href="#star"/></svg>
+      <div class="say">「超加工」看的是加工的目的和配方，不是數添加物有沒有超過五種。冷凍蔬菜、無加糖的罐裝豆子也有加工，但不必通通丟掉。<a class="src" href="#ref3">參考 3</a></div></div>
+    <div class="warnline">⚠ 要分清楚：研究說「吃比較多的人，平均來看退化比較快」，不是「你吃了就一定會失智」。也別因為怕而把長輩的飯量砍掉，吃不夠一樣傷身。</div>
+  </div>
+</section>
+
+<section id="nova" class="tint-coral">
+  <div class="wrap">
+    <div class="sechead"><div class="num c-coral">1</div><div><div class="eyebrow">What is NOVA</div><h2>NOVA 分級：看「怎麼加工」，不是看名字難不難念</h2></div></div>
+    <p>NOVA 是巴西學者提出的食物分類法，依照<b>工業加工的程度和目的</b>把食物分成四類。重點是食物怎麼被做出來、配方長什麼樣，而不是成分表上有沒有「難念的化學名稱」。<a class="src" href="#ref3">參考 3</a> 點頁籤看看四類的差別：</p>
+    <div class="card">
+      <div class="tablist" role="tablist" aria-label="NOVA 四類">
+        <button role="tab" id="t-n1" aria-controls="p-n1" aria-selected="true">第 1 類</button>
+        <button role="tab" id="t-n2" aria-controls="p-n2" aria-selected="false" tabindex="-1">第 2 類</button>
+        <button role="tab" id="t-n3" aria-controls="p-n3" aria-selected="false" tabindex="-1">第 3 類</button>
+        <button role="tab" id="t-n4" aria-controls="p-n4" aria-selected="false" tabindex="-1">第 4 類 超加工</button>
+      </div>
+      <div class="tabpanel on" role="tabpanel" id="p-n1" aria-labelledby="t-n1">
+        <div class="novaflex"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#broc"/></svg>
+        <div><h3>未加工或極少加工食物</h3><p>原本的樣子，或只經過清洗、切分、冷凍、乾燥這類簡單處理。像新鮮或冷凍蔬菜、水果、燕麥、豆類。</p><span class="chip">冷凍蔬菜</span><span class="chip">全果</span><span class="chip">原味燕麥</span><span class="chip">豆類</span></div></div>
+      </div>
+      <div class="tabpanel" role="tabpanel" id="p-n2" aria-labelledby="t-n2" hidden>
+        <div class="novaflex"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#label"/></svg>
+        <div><h3>烹調用材料</h3><p>從第 1 類食物取出、用來煮菜的材料，例如油、鹽、糖。它們通常不單獨吃，而是拿來料理第 1 類食物。</p><span class="chip">油</span><span class="chip">鹽</span><span class="chip">糖</span></div></div>
+      </div>
+      <div class="tabpanel" role="tabpanel" id="p-n3" aria-labelledby="t-n3" hidden>
+        <div class="novaflex"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#broc"/></svg>
+        <div><h3>加工食品</h3><p>第 1 類食物加上鹽、糖、油這類材料，用罐裝、醃漬等方式保存或加味。成分簡單、看得出原本是什麼食物，例如水煮罐裝豆子。</p><span class="chip">罐裝無加糖豆類</span></div></div>
+      </div>
+      <div class="tabpanel" role="tabpanel" id="p-n4" aria-labelledby="t-n4" hidden>
+        <div class="novaflex"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#soda"/></svg>
+        <div><h3>超加工食品（UPF）</h3><p>用工業手法把食物拆成成分、改造後重新組合，常加上讓外觀、口感、香味更吸引人的添加物，再配上精美包裝。目標是便宜、放得久、方便、非常好吃，很容易把原型食物從餐桌上擠掉。<a class="src" href="#ref3">參考 3</a></p><span class="chip">含糖飲料</span><span class="chip">夾心餅乾</span><span class="chip">調味零食</span></div></div>
+      </div>
+    </div>
+
+    <div class="myth">
+      <div class="no"><h4>✗ 常見說法</h4><p style="margin:0">「添加物超過五種，就是超加工。」「名字難念的就是壞東西。」</p></div>
+      <div class="yes"><h4>✓ 比較正確的看法</h4><p style="margin:0">NOVA 看的是<b>加工目的和成分型態</b>，沒有固定的添加物件數。簡單判斷法：成分表裡只要出現<b>一樣</b>「家裡廚房很少用的東西」，例如高果糖糖漿、水解蛋白，或香料、乳化劑、甜味劑、增稠劑這類添加物，就可能屬於超加工。<a class="src" href="#ref3">參考 3</a></p></div>
+    </div>
+    <div class="talk r" style="margin-top:22px"><svg viewBox="0 0 120 120"><use href="#star"/></svg>
+      <div class="say coral">有些加工食品還是有營養價值喔！分類要和糖、鈉、飽和脂肪，還有整體飲食品質一起看。<a class="src" href="#ref3">參考 3</a></div></div>
+  </div>
+</section>
+
+<section id="game">
+  <div class="wrap">
+    <div class="sechead"><div class="num c-orange">2</div><div><div class="eyebrow">Flip game</div><h2>翻牌小遊戲：這是超加工嗎？</h2></div></div>
+    <p>每張卡片按一次「超加工」或「不是」，卡片會翻過來告訴你答案和原因。提示：想像自己在看包裝背面的成分表。</p>
+    <div class="gamebar"><span class="score" id="gscore">答對 0 / 8</span><button class="btn sm" id="greset" type="button">重新洗牌</button></div>
+    <div class="fgrid" id="fgrid"></div>
+    <div class="gamemsg card" id="gmsg" role="status" aria-live="polite"></div>
+    <p class="note" style="margin-top:14px">＊卡片是教學示範。同一種食物，不同牌子的配方可能不一樣，實際以包裝上的成分表為準。</p>
+  </div>
+</section>
+
+<section id="evidence" class="tint-sky">
+  <div class="wrap">
+    <div class="sechead"><div class="num c-sky">3</div><div><div class="eyebrow">What studies found</div><h2>研究數字怎麼讀？</h2></div></div>
+    <div class="grid2">
+      <div class="card">
+        <svg class="icn" viewBox="0 0 120 110" aria-hidden="true"><use href="#brain"/></svg>
+        <h3>巴西 ELSA-Brasil 研究</h3>
+        <div class="bignum">28%・25%</div>
+        <p>追蹤 <b>10,775</b> 位巴西成年人（開始時平均約 51.6 歲，中位數追蹤約 8 年）。超加工食品占每日<b>熱量</b>比例較高的人，跟吃最少的那四分之一相比，<b>整體認知</b>下降速度快約 28%，<b>執行功能</b>（計畫、專注、切換工作的能力）下降速度快約 25%。<a class="src" href="#ref1">參考 1</a></p>
+      </div>
+      <div class="card">
+        <svg class="icn" viewBox="0 0 120 120" aria-hidden="true"><use href="#cookie"/></svg>
+        <h3>英國 UK Biobank 研究</h3>
+        <div class="bignum blue">72,083 人</div>
+        <p>分析英國 55 歲以上、一開始沒有失智的成年人，中位數追蹤約 10 年。超加工食品占飲食<b>重量</b>比例較高，跟失智風險較高有關。研究也用統計模型推估「把一部分超加工食品換成未加工或極少加工食物」，風險估計會比較低。<a class="src" href="#ref2">參考 2</a></p>
+      </div>
+    </div>
+
+    <div class="slopebox">
+      <div class="card">
+        <svg viewBox="0 0 360 230" role="img" aria-label="示意圖：兩條往下的線，紅線斜率較陡，代表下降速度較快，不是少掉百分之二十八">
+          <line x1="40" y1="20" x2="40" y2="190" stroke="#1f2a44" stroke-width="3"/>
+          <line x1="40" y1="190" x2="340" y2="190" stroke="#1f2a44" stroke-width="3"/>
+          <text x="12" y="110" font-size="14" fill="#4a5674" transform="rotate(-90 18 110)" text-anchor="middle">認知分數</text>
+          <text x="190" y="216" font-size="14" fill="#4a5674" text-anchor="middle">追蹤時間 →</text>
+          <path d="M44 50 L330 92" stroke="#2bb88a" stroke-width="5" stroke-linecap="round"/>
+          <path d="M44 50 L330 104" stroke="#ff6b6b" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 0"/>
+          <circle cx="44" cy="50" r="6" fill="#ffc93c" stroke="#1f2a44" stroke-width="2.5"/>
+          <rect x="196" y="120" width="140" height="56" rx="12" fill="#fff" stroke="#1f2a44" stroke-width="2.5"/>
+          <circle cx="212" cy="138" r="6" fill="#2bb88a"/><text x="224" y="143" font-size="13" fill="#1f2a44">吃最少的一組</text>
+          <circle cx="212" cy="160" r="6" fill="#ff6b6b"/><text x="224" y="165" font-size="13" fill="#1f2a44">吃較多的組別</text>
+        </svg>
+        <p class="note" style="margin:6px 0 0">示意圖，非實際資料比例：差別在「線斜一點」，兩條線的距離其實很小。</p>
+      </div>
+      <div>
+        <div class="talk"><svg viewBox="0 0 120 110"><use href="#bird"/></svg>
+          <div class="say sky">「快 28%」是統計模型算出的<b>平均下降速度</b>相對差異，不是每個人的認知能力少了 28%！</div></div>
+        <div class="talk r"><svg viewBox="0 0 120 130"><use href="#sprout"/></svg>
+          <div class="say mint">「換成原型食物風險較低」也是模型推估，不是真的讓人隨機換餐做出來的實驗結果。<a class="src" href="#ref2">參考 2</a></div></div>
+      </div>
+    </div>
+
+    <div class="explain">
+      <b>📏 看到數字先問三件事：</b>
+      <ul class="facts">
+        <li><b>分母是什麼？</b>巴西研究用「占每日熱量的比例」，英國研究用「占飲食重量的比例」，兩個數字不能直接比。</li>
+        <li><b>跟誰比？</b>巴西研究是拿吃得較多的人，跟吃最少的那四分之一比較。</li>
+        <li><b>追蹤多久、模型假設什麼？</b>追蹤 8 到 10 年，統計模型會調整一些已知因素，但沒量到、調不到的因素還是可能存在。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="limits">
+  <div class="wrap">
+    <div class="sechead"><div class="num c-mint">4</div><div><div class="eyebrow">Correlation ≠ causation</div><h2>相關，不等於因果</h2></div></div>
+    <p>這兩個研究都是<b>觀察性研究</b>：研究者只是記錄大家平常吃什麼，再看後來誰退化得快。這種設計很有價值，但有三個天生的限制：</p>
+    <div class="grid3">
+      <div class="card"><div style="font-size:42px">📝</div><h3>飲食問卷有誤差</h3><p style="margin:0">吃了什麼靠回想填寫，記不清、填不準在所難免，分組可能不夠精確。</p></div>
+      <div class="card"><div style="font-size:42px">🧩</div><h3>殘餘混雜</h3><p style="margin:0">常吃超加工食品的人，可能也比較忙、收入不同、運動較少。統計能調整一部分，但總有調不乾淨的因素。</p></div>
+      <div class="card"><div style="font-size:42px">🔄</div><h3>反向因果</h3><p style="margin:0">也可能是記憶開始變差的人，比較少下廚、改吃方便食品，而不是食物先造成退化。</p></div>
+    </div>
+
+    <hr class="dash">
+    <h3>那「為什麼可能有關」？目前是假說</h3>
+    <div class="grid3" style="margin-top:28px">
+      <div class="card mech"><span class="badge">假說 1</span><h3>腸腦軸</h3><p>腸道和大腦會互相溝通，飲食可能透過腸道影響大腦。</p><p class="bottom">有道理，但還不能直接證明是人類失智的病因。</p></div>
+      <div class="card mech"><span class="badge" style="background:var(--coral-l)">假說 2</span><h3>發炎</h3><p>飲食型態可能和身體的慢性發炎有關，發炎又被懷疑和大腦老化有關。</p><p class="bottom">機制合理，不等於已經證實。</p></div>
+      <div class="card mech"><span class="badge" style="background:var(--sky-l)">假說 3</span><h3>胰島素阻抗</h3><p>身體對胰島素反應變差，可能影響大腦能量利用。</p><p class="bottom">仍需更多人體研究逐一確認。</p></div>
+    </div>
+    <div class="warnline" style="background:var(--sun-l)">🔍 網路上常見「超加工食品會直接破壞血腦屏障」「會像毒品一樣成癮」的說法，目前都<b>不是</b>已被一致證實的人體致病原因，看到要打個問號。</div>
+  </div>
+</section>
+
+<section id="views" class="tint-grape">
+  <div class="wrap">
+    <div class="sechead"><div class="num c-grape">5</div><div><div class="eyebrow">Wider view</div><h2>不只是吃什麼：四個角度一起看</h2></div></div>
+    <div class="card">
+      <div class="tablist" role="tablist" aria-label="多面向分析">
+        <button role="tab" id="t-v1" aria-controls="p-v1" aria-selected="true">🍽 健康與行為</button>
+        <button role="tab" id="t-v2" aria-controls="p-v2" aria-selected="false" tabindex="-1">🏠 心理與社會</button>
+        <button role="tab" id="t-v3" aria-controls="p-v3" aria-selected="false" tabindex="-1">🏛 產業與政策</button>
+        <button role="tab" id="t-v4" aria-controls="p-v4" aria-selected="false" tabindex="-1">🤝 信仰與照護</button>
+      </div>
+      <div class="tabpanel on" role="tabpanel" id="p-v1" aria-labelledby="t-v1">
+        <p>非常好吃、隨手就買得到的食物，可能讓人不知不覺吃過量。但超加工食品彼此的營養差很多。</p>
+        <p style="margin:0">如果只把「加工」當成唯一的壞蛋，就可能忽略熱量、膳食纖維、經濟條件、運動量這些一起作用的因素。</p>
+      </div>
+      <div class="tabpanel" role="tabpanel" id="p-v2" aria-labelledby="t-v2" hidden>
+        <p>時間不夠、輪班、要顧小孩，或住的地方附近買不到新鮮食物（所謂「食物沙漠」），都可能讓一個家庭常靠常溫即食和冷凍食品過日子。</p>
+        <p style="margin:0">健康宣導應該提供<b>買得起、做得到</b>的替代方案，而不是讓人覺得「吃這個很丟臉」。</p>
+      </div>
+      <div class="tabpanel" role="tabpanel" id="p-v3" aria-labelledby="t-v3" hidden>
+        <p>食品標示和學校營養午餐政策，可以把重點放在資訊清楚、營養改善。</p>
+        <p style="margin:0">管理加工技術時，要分開評估食品安全、糖鹽油負擔和衛生條件，不該把所有加工一視同仁。</p>
+      </div>
+      <div class="tabpanel" role="tabpanel" id="p-v4" aria-labelledby="t-v4" hidden>
+        <p>一起備餐、關心資源不夠的家庭，可以是教會或宗教團體參與的好方式。</p>
+        <p style="margin:0">不過「吃原型食物在道德上比較高尚」這種想法沒有合理根據。吃什麼是健康選擇，不是品格考試。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="swap" class="tint-mint">
+  <div class="wrap">
+    <div class="sechead"><div class="num c-mint">6</div><div><div class="eyebrow">One swap a week</div><h2>一週「換一樣」就好</h2></div></div>
+    <p>不用一次全改。從你<b>最常吃</b>的含糖飲料、餅乾甜點或加工零食開始，挑一樣換掉，慢慢來。點一張卡片當作這週的目標：</p>
+    <div class="swapgrid" id="swapgrid"></div>
+    <div class="picked" id="picked">還沒選這週要換哪一樣。</div>
+    <div class="card" style="margin-top:14px">
+      <b>這週做到的日子：</b>
+      <div class="days" id="days"></div>
+      <div class="prog" aria-hidden="true"><i id="progbar"></i></div>
+      <div class="progtxt" id="progtxt">0 / 7 天</div>
+      <div class="cheer" id="cheer">🎉 一整週都做到了！下週可以再換下一樣，或繼續保持這一樣。</div>
+      <div class="noterow">
+        <label for="mynote" class="note" style="width:100%">我自己想換的（例：午餐飲料改成白開水）</label>
+        <input id="mynote" type="text" maxlength="60" placeholder="寫下一句話">
+        <button class="btn sm" id="savenote" type="button">記下來</button>
+      </div>
+      <div class="mynote" id="mynoteview"></div>
+      <p class="note" style="margin:10px 0 0">選擇、打勾和筆記只存在你自己的瀏覽器裡，每週一自動換新的一週。</p>
+    </div>
+    <div class="grid2" style="margin-top:22px">
+      <div class="talk"><svg viewBox="0 0 120 130"><use href="#sprout"/></svg>
+        <div class="say mint">冷凍蔬菜、無加糖的罐裝豆子，雖然有加工，不必因此全部排除。買東西時一起看每份的糖、鈉、纖維。</div></div>
+      <div class="talk"><svg viewBox="0 0 120 120"><use href="#star"/></svg>
+        <div class="say coral">家裡長輩胃口小、或有飲食障礙的人，換菜時要小心別讓熱量和蛋白質不夠，有疑問先問營養師或醫師。</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="quiz" class="tint-sun">
+  <div class="wrap">
+    <div class="sechead"><div class="num c-sun">7</div><div><div class="eyebrow">Quick quiz</div><h2>小測驗：考考你</h2></div></div>
+    <div id="quizbox"></div>
+    <div class="qscore" id="qscore" role="status" aria-live="polite"></div>
+  </div>
+</section>
+
+<section id="refs">
+  <div class="wrap">
+    <div class="sechead"><div class="num c-blue">📚</div><div><div class="eyebrow">References</div><h2>參考資料</h2></div></div>
+    <ol class="refs">
+      <li id="ref1"><b>1.</b> Gonçalves NG, Ferreira NV, Khandpur N, et al. (2023). Association Between Consumption of Ultraprocessed Foods and Cognitive Decline. <i>JAMA Neurology</i>, 80(2), 142–150. DOI: <a href="https://doi.org/10.1001/jamaneurol.2022.4397" target="_blank" rel="noopener">10.1001/jamaneurol.2022.4397</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/36469335/" target="_blank" rel="noopener">PubMed 36469335</a>
+        <span class="pt">巴西 ELSA-Brasil 世代研究，10,775 人、中位數追蹤 8 年；超加工食品熱量占比較高者，整體認知與執行功能下降速度分別快約 28% 與 25%。</span></li>
+      <li id="ref2"><b>2.</b> Li H, Li S, Yang H, et al. (2022). Association of Ultraprocessed Food Consumption With Risk of Dementia: A Prospective Cohort Study. <i>Neurology</i>, 99(10), e1056–e1066. DOI: <a href="https://doi.org/10.1212/WNL.0000000000200871" target="_blank" rel="noopener">10.1212/WNL.0000000000200871</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/36219796/" target="_blank" rel="noopener">PubMed 36219796</a>
+        <span class="pt">英國 UK Biobank 72,083 名 55 歲以上成年人，中位數追蹤 10 年；超加工食品攝取較高與失智風險較高相關，替代模型為統計推估。</span></li>
+      <li id="ref3"><b>3.</b> Monteiro CA, Cannon G, Levy RB, et al. (2019). Ultra-processed foods: what they are and how to identify them. <i>Public Health Nutrition</i>, 22(5), 936–941. DOI: <a href="https://doi.org/10.1017/S1368980018003762" target="_blank" rel="noopener">10.1017/S1368980018003762</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/30744710/" target="_blank" rel="noopener">PubMed 30744710</a>
+        <span class="pt">NOVA 分類的說明文章：依加工程度與目的分類，成分表出現家庭廚房少用的物質或香料、乳化劑等添加物，即可能屬超加工。</span></li>
+    </ol>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="disc" role="note">
+      <div class="disc-in">
+        <h2>⚠ 重要聲明｜請先看這裡</h2>
+        <div class="first">本站資訊僅供參考，實際以醫療專業人員評估為準。</div>
+        <ul>
+          <li><b>僅供參考：</b>本頁整理公開研究，不構成醫療、營養或任何專業建議，也不能用來診斷失智或認知問題。</li>
+          <li><b>研究限制：</b>本頁引用的是觀察性研究，只能說明相關，不能證明某種食物直接造成失智。</li>
+          <li><b>無任何推薦或行銷：</b>本頁不推薦、不代言任何食品、品牌或產品。</li>
+          <li><b>資料時點：</b>資料以2026年9月底前公開資料為準，查核於2026年11月01日。</li>
+          <li><b>以專業評估為準：</b>有慢性病、吞嚥或咀嚼困難、體重減輕、飲食障礙，或擔心記憶變差，請先諮詢醫師或營養師再調整飲食。</li>
+          <li><b>使用前查證：</b>研究持續更新，請以最新正式文獻與專業意見為準。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="trio">
+      <svg viewBox="0 0 120 130" aria-hidden="true"><use href="#sprout"/></svg>
+      <svg viewBox="0 0 120 110" aria-hidden="true"><use href="#bird"/></svg>
+      <svg viewBox="0 0 120 120" aria-hidden="true"><use href="#star"/></svg>
+    </div>
+    <div class="motto">每一次多懂一點，都是送給自己的小禮物。</div>
+    <div class="slogan">超加工食品和大腦的關係目前是「相關」，不是「定論」；一週換一樣，量力而為。</div>
+    <p style="margin:0">本頁僅供衛教參考，不構成醫療建議。<a href="../index.html">← 回共好小學堂</a></p>
+    <small>共好小學堂 ✦ 一起學習，一起共好</small>
+    <small>本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-11-01</small>
+  </div>
+</footer>
+<button class="totop" id="totop" type="button" aria-label="回到頂端">↑</button>
+
+<script>
+(function(){
+  'use strict';
+  var KEY='gungho-ks-upfbrain-';
+  function lsGet(k){try{return localStorage.getItem(KEY+k);}catch(e){return null;}}
+  function lsSet(k,v){try{localStorage.setItem(KEY+k,v);}catch(e){}}
+  function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+
+  /* tabs */
+  document.querySelectorAll('[role="tablist"]').forEach(function(list){
+    var tabs=[].slice.call(list.querySelectorAll('[role="tab"]'));
+    function act(t){
+      tabs.forEach(function(x){
+        var on=x===t;x.setAttribute('aria-selected',on?'true':'false');x.tabIndex=on?0:-1;
+        var p=document.getElementById(x.getAttribute('aria-controls'));
+        if(p){p.classList.toggle('on',on);p.hidden=!on;}
+      });
+    }
+    tabs.forEach(function(t,i){
+      t.addEventListener('click',function(){act(t);});
+      t.addEventListener('keydown',function(e){
+        var j=null;if(e.key==='ArrowRight')j=(i+1)%tabs.length;if(e.key==='ArrowLeft')j=(i-1+tabs.length)%tabs.length;
+        if(j!==null){e.preventDefault();act(tabs[j]);tabs[j].focus();}
+      });
+    });
+  });
+
+  /* food flip game */
+  var foods=[
+    {e:'🥤',n:'含糖汽水',s:'成分：水、高果糖糖漿、香料、色素',upf:true,x:'成分表有高果糖糖漿和香料，屬於第 4 類超加工。含糖飲料也是最值得先換掉的一樣。'},
+    {e:'🥦',n:'冷凍綠花椰菜',s:'成分：綠花椰菜',upf:false,x:'只是清洗、切好再冷凍，屬於第 1 類極少加工。有加工，不等於超加工。'},
+    {e:'🫘',n:'罐裝無加糖豆類',s:'成分：豆子、水、鹽',upf:false,x:'豆子加水加鹽裝罐，成分簡單，屬於第 3 類加工食品，不是超加工，不必因此排除。'},
+    {e:'🥣',n:'原味燕麥片',s:'成分：燕麥',upf:false,x:'只有燕麥一樣，屬於極少加工，是替換零食的好選擇。'},
+    {e:'🍪',n:'夾心餅乾',s:'成分：麵粉、糖、植物油、乳化劑、香料',upf:true,x:'有乳化劑、香料這類家裡廚房不會用的添加物，屬於超加工。'},
+    {e:'🍎',n:'新鮮蘋果',s:'整顆水果',upf:false,x:'原型食物，第 1 類。吃全果比喝甜飲多了纖維。'},
+    {e:'🍿',n:'調味洋芋片',s:'成分：馬鈴薯、油、調味粉（含香料、甜味劑）',upf:true,x:'調味粉裡有香料、甜味劑，屬於超加工。重點在「配方」，不是名字。'},
+    {e:'🥛',n:'調味優格',s:'成分：牛乳、糖、增稠劑、香料',upf:true,x:'加了增稠劑和香料，屬於超加工；只用牛乳和菌種做的原味優格則不算。'}
+  ];
+  var grid=document.getElementById('fgrid'),gscore=document.getElementById('gscore'),gmsg=document.getElementById('gmsg');
+  var answered=0,correct=0;
+  function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+  function buildGame(){
+    answered=0;correct=0;grid.innerHTML='';gmsg.classList.remove('on');gmsg.textContent='';
+    gscore.textContent='答對 0 / '+foods.length;
+    shuffle(foods).forEach(function(f){
+      var c=document.createElement('div');c.className='fcard';
+      c.innerHTML='<div class="emo" aria-hidden="true">'+f.e+'</div><div class="fname">'+esc(f.n)+'</div><div class="fsub">'+esc(f.s)+'</div>'+
+        '<div class="fbtns"><button type="button" class="isupf">超加工</button><button type="button" class="notupf">不是</button></div>'+
+        '<div class="fback" aria-live="polite"></div>';
+      function pick(guess){
+        if(c.classList.contains('done'))return;
+        var ok=guess===f.upf;answered++;if(ok)correct++;
+        c.classList.add('done',ok?'ok':'bad');
+        c.querySelector('.fback').innerHTML='<span class="verdict">'+(ok?'✓ 答對了！':'✗ 再想想')+'｜'+(f.upf?'超加工（第 4 類）':'不是超加工')+'</span>'+esc(f.x);
+        gscore.textContent='答對 '+correct+' / '+foods.length;
+        if(answered===foods.length){
+          gmsg.textContent=correct===foods.length?'🌟 全部答對！你已經會看成分表了。':'完成！答對 '+correct+' 題。記住：看成分表裡有沒有「家裡廚房很少用」的東西。';
+          gmsg.classList.add('on');
+          lsSet('game-best',String(Math.max(correct,parseInt(lsGet('game-best')||'0',10)||0)));
+        }
+      }
+      c.querySelector('.isupf').addEventListener('click',function(){pick(true);});
+      c.querySelector('.notupf').addEventListener('click',function(){pick(false);});
+      grid.appendChild(c);
+    });
+  }
+  document.getElementById('greset').addEventListener('click',buildGame);
+  buildGame();
+
+  /* weekly swap */
+  var swaps=[
+    {id:'drink-water',from:'含糖飲料',to:'白開水',tip:'隨身帶一個水壺，想買飲料時先喝幾口。'},
+    {id:'drink-nosugar',from:'含糖飲料',to:'無糖飲品',tip:'點飲料時直接說「無糖」。'},
+    {id:'sweet-fruit',from:'餅乾甜點',to:'一份全果',tip:'吃整顆水果，不是果汁。'},
+    {id:'snack-oat',from:'加工零食',to:'原味燕麥',tip:'熱水沖一碗，可以加點水果。'},
+    {id:'snack-bean',from:'加工零食',to:'豆類小點',tip:'無加糖罐裝豆類也可以。'},
+    {id:'side-veg',from:'即食加工配菜',to:'簡便蔬菜',tip:'冷凍蔬菜燙一下就上桌。'}
+  ];
+  function monday(){var d=new Date();var w=(d.getDay()+6)%7;d.setDate(d.getDate()-w);
+    var m=d.getMonth()+1,dd=d.getDate();return d.getFullYear()+'-'+(m<10?'0':'')+m+'-'+(dd<10?'0':'')+dd;}
+  var wk=monday();
+  var sg=document.getElementById('swapgrid'),picked=document.getElementById('picked');
+  var cur=lsGet('pick');
+  function renderPick(){
+    sg.querySelectorAll('.swap').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.id===cur?'true':'false');});
+    var s=swaps.filter(function(x){return x.id===cur;})[0];
+    picked.innerHTML=s?'✅ 這週目標：把「'+esc(s.from)+'」換成「'+esc(s.to)+'」':'還沒選這週要換哪一樣。';
+  }
+  swaps.forEach(function(s){
+    var b=document.createElement('button');b.type='button';b.className='swap';b.dataset.id=s.id;
+    b.innerHTML='<span class="from">'+esc(s.from)+'</span> → <span class="to">'+esc(s.to)+'</span><span class="tip">'+esc(s.tip)+'</span>';
+    b.addEventListener('click',function(){cur=s.id;lsSet('pick',cur);renderPick();});
+    sg.appendChild(b);
+  });
+  renderPick();
+
+  var dayNames=['一','二','三','四','五','六','日'];
+  var state=[false,false,false,false,false,false,false];
+  try{var raw=lsGet('week-'+wk);if(raw){var arr=JSON.parse(raw);if(Array.isArray(arr)&&arr.length===7)state=arr.map(Boolean);}}catch(e){}
+  var daysEl=document.getElementById('days');
+  function renderProg(){
+    var n=state.filter(Boolean).length;
+    document.getElementById('progbar').style.width=(n/7*100)+'%';
+    document.getElementById('progtxt').textContent=n+' / 7 天';
+    document.getElementById('cheer').classList.toggle('on',n===7);
+  }
+  dayNames.forEach(function(nm,i){
+    var l=document.createElement('label');l.className='day';
+    l.innerHTML='<input type="checkbox" aria-label="星期'+nm+'做到了"><span class="box">✓</span><span class="dl">週'+nm+'</span>';
+    var inp=l.querySelector('input');inp.checked=state[i];
+    inp.addEventListener('change',function(){state[i]=inp.checked;lsSet('week-'+wk,JSON.stringify(state));renderProg();});
+    daysEl.appendChild(l);
+  });
+  renderProg();
+
+  var noteIn=document.getElementById('mynote'),noteView=document.getElementById('mynoteview');
+  function showNote(v){noteView.innerHTML=v?'📝 我的替換：'+esc(v):'';}
+  var savedNote=lsGet('note')||'';noteIn.value=savedNote;showNote(savedNote);
+  document.getElementById('savenote').addEventListener('click',function(){var v=noteIn.value.trim().slice(0,60);lsSet('note',v);showNote(v);});
+
+  /* quiz */
+  var qs=[
+    {q:'巴西研究說超加工食品吃得多的人，整體認知「下降速度快約 28%」。這代表什麼？',o:['每個人的認知能力都會少掉 28%','統計模型估計的平均下降速度，比吃最少的一組快約 28%','吃超加工食品的人有 28% 會失智'],a:1,x:'28% 是相對的「下降速度」差異，而且是群體平均，不是每個人的能力減少 28%，也不是失智機率。'},
+    {q:'NOVA 判斷一樣食物是不是「超加工」，主要看什麼？',o:['添加物有沒有超過五種','名字是不是很難念','工業加工的目的和配方型態'],a:2,x:'NOVA 沒有固定的添加物件數。成分表裡出現家庭廚房很少用的東西，例如高果糖糖漿、乳化劑、香料，就可能是超加工。'},
+    {q:'阿姨想少吃超加工食品，下列哪個做法比較合適？',o:['從最常喝的含糖飲料開始，換成白開水','冷凍蔬菜和罐裝豆子也有加工，全部不能吃','一次把所有零食和點心全部停掉'],a:0,x:'從最常吃的一樣慢慢換最可行。冷凍蔬菜、無加糖罐裝豆類不必因有加工就排除；長輩改飲食也要注意熱量和蛋白質夠不夠。'},
+    {q:'為什麼目前還不能說「超加工食品會造成失智」？',o:['因為研究人數太少','因為超加工食品其實對大腦有益','因為主要是觀察性研究，只能看到相關，可能有問卷誤差、混雜因素和反向因果'],a:2,x:'兩個研究人數都很多（上萬到七萬多人），但觀察研究本身無法證明因果；腸腦軸、發炎等機制也還是假說。'}
+  ];
+  var qb=document.getElementById('quizbox'),qdone=0,qright=0;
+  qs.forEach(function(item,qi){
+    var d=document.createElement('div');d.className='card qcard';
+    var h='<h3>Q'+(qi+1)+'. '+esc(item.q)+'</h3><div class="opts">';
+    item.o.forEach(function(op,oi){h+='<button type="button" data-i="'+oi+'">'+String.fromCharCode(65+oi)+'. '+esc(op)+'</button>';});
+    h+='</div><div class="qexp"></div>';d.innerHTML=h;
+    var btns=d.querySelectorAll('.opts button');
+    btns.forEach(function(b){b.addEventListener('click',function(){
+      var i=+b.dataset.i;btns.forEach(function(x){x.disabled=true;});
+      btns[item.a].classList.add('right');if(i!==item.a)b.classList.add('wrong');else qright++;
+      var ex=d.querySelector('.qexp');ex.innerHTML=(i===item.a?'✓ 答對了！':'✗ 正確答案是 '+String.fromCharCode(65+item.a)+'。')+' '+esc(item.x);ex.classList.add('on');
+      qdone++;if(qdone===qs.length){var s=document.getElementById('qscore');s.textContent='你答對了 '+qright+' / '+qs.length+' 題！'+(qright===qs.length?' 太厲害了 🌟':' 再回頭看看上面的內容吧 💪');s.classList.add('on');}
+    });});
+    qb.appendChild(d);
+  });
+
+  /* to top */
+  var tt=document.getElementById('totop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('on',window.scrollY>600);},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+})();
+</script>
+</body>
+</html>
