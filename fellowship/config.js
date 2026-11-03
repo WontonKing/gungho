@@ -21,6 +21,7 @@ window.SITE_CONFIG = {
   notesHeading: "讀經筆記",
 
   notes: [
+{  title: "四位使徒的同心福音",  subtitle: "彼得、雅各、約翰與保羅的神學對照與整合",  url: "four-apostles-one-gospel/",},
 {  title: "舊約先知書預言查經",  subtitle: "從先知書看基督與救贖歷史",  url: "prophets-and-christ/",},
 {  title: "用看的禱告",  subtitle: "從守望、定睛基督，到愛中行動與安息",  url: '/fellowship/prayer-of-seeing/index.html',},
 {  title: "神所愛的，祂必管教",  subtitle: "管教不是被棄絕的記號，而是蒙愛、被收納的記號",  url: "https://www.gungho.idv.tw/fellowship/discipline-of-love/",},
