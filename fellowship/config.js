@@ -21,6 +21,7 @@ window.SITE_CONFIG = {
   notesHeading: "讀經筆記",
 
   notes: [
+{  title: "屬靈成長、忠心服事與屬靈爭戰",  subtitle: "以基督信仰真理擴充、經文核實與生活實踐",  url: "spiritual-growth-armor/",},
 {  title: "四位使徒的同心福音",  subtitle: "彼得、雅各、約翰與保羅的神學對照與整合",  url: "four-apostles-one-gospel/",},
 {  title: "舊約先知書預言查經",  subtitle: "從先知書看基督與救贖歷史",  url: "prophets-and-christ/",},
 {  title: "用看的禱告",  subtitle: "從守望、定睛基督，到愛中行動與安息",  url: '/fellowship/prayer-of-seeing/index.html',},
