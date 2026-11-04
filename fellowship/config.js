@@ -21,6 +21,7 @@ window.SITE_CONFIG = {
   notesHeading: "讀經筆記",
 
   notes: [
+{  title: "在耶和華面前靜默無聲",  subtitle: "西番雅書1:7與撒迦利亞書2:13：在神面前的敬畏、等候與盼望",  url: "silent-before-the-lord/",},
 {  title: "屬靈成長、忠心服事與屬靈爭戰",  subtitle: "以基督信仰真理擴充、經文核實與生活實踐",  url: "spiritual-growth-armor/",},
 {  title: "四位使徒的同心福音",  subtitle: "彼得、雅各、約翰與保羅的神學對照與整合",  url: "four-apostles-one-gospel/",},
 {  title: "舊約先知書預言查經",  subtitle: "從先知書看基督與救贖歷史",  url: "prophets-and-christ/",},
