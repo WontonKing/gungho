@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>健保該漲保費，並優先投入預防與基層嗎？｜雙 AI 接力辯論全場回顧 debate-002｜共好公共政策AI審議室</title>
+<meta name="description" content="雙 AI 接力辯論 debate-002：健保費率與預防、基層配置辯論全場回顧——議題、流程、上下半場攻防、中場小結、結辯、裁決、差異與共識。出品：共好公共政策AI審議室。">
+<meta property="og:title" content="健保該漲保費，並優先投入預防與基層嗎？｜雙 AI 接力辯論全場回顧">
+<meta property="og:description" content="正方 Claude vs 反方 ChatGPT，裁判 Copilot 判反方以 90：89 極微幅勝出。出品：共好公共政策AI審議室。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1f2b3d; --navy-2:#2a3850; --cream:#f5efe3; --paper:#fbf8f1; --ink:#26303d;
+  --muted:#6b7380; --line:#e3dccd; --gold:#c9972e; --gold-soft:#f1e3c2;
+  --pro:#3f73b8; --pro-soft:#e7eef8; --con:#c8692e; --con-soft:#f8ebe1;
+  --serif:"Noto Serif TC","Songti TC",serif; --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(31,43,61,.96);backdrop-filter:blur(6px);color:#e9e4d8;border-bottom:1px solid rgba(255,255,255,.08)}
+.nav .wrap{display:flex;align-items:center;gap:20px;height:56px}
+.brand{font-family:var(--serif);font-weight:700;color:var(--gold);white-space:nowrap;font-size:15px;text-decoration:none}
+.nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
+.nav ul::-webkit-scrollbar{display:none}
+.nav li a{display:block;padding:6px 10px;border-radius:6px;font-size:14px;text-decoration:none;white-space:nowrap;color:#cfd5de}
+.nav li a:hover,.nav li a.on{background:rgba(201,151,46,.18);color:#fff}
+
+/* hero */
+.hero{background:var(--navy);color:#f3efe6;padding:110px 0 70px}
+.kicker{font-size:13px;letter-spacing:.12em;color:var(--gold);font-weight:700}
+.hero .label{margin-top:34px;color:#c9cfd8;font-size:15px}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(44px,8vw,84px);line-height:1.15;margin:6px 0 26px;letter-spacing:.02em}
+.roles{display:flex;flex-wrap:wrap;gap:10px 28px;font-size:15px;color:#dfe3ea}
+.roles b{font-weight:500;margin-right:8px}
+.roles .p b{color:#8fb4e6}.roles .c b{color:#eba36f}.roles .j b{color:var(--gold)}
+.producer{margin-top:30px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);color:var(--gold);font-weight:700;font-size:18px;letter-spacing:.04em}
+.hero .toc{margin-top:56px;font-size:13px;color:#9aa3b0}
+
+/* sections */
+section.block{padding:84px 0 40px}
+section.block + section.block{padding-top:44px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--gold)}
+.eyebrow .num{display:inline-block;min-width:28px;color:var(--muted);font-weight:500}
+h2{font-family:var(--serif);font-weight:700;font-size:clamp(26px,3.6vw,38px);line-height:1.35;margin:6px 0 28px;color:var(--navy)}
+h3{font-family:var(--serif);font-size:20px;margin:0 0 10px;color:var(--navy)}
+.note{font-size:13px;color:var(--muted);margin-top:18px}
+.lead{font-size:17px}
+
+.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:22px 24px;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.g2,.g3,.g4{grid-template-columns:1fr}}
+
+.tag{font-family:var(--serif);font-weight:700;font-size:17px;margin-bottom:10px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.tag .who{font-size:13px;font-family:var(--sans);padding:1px 9px;border-radius:99px;color:#fff}
+.pro .tag{color:var(--pro)} .pro .who{background:var(--pro)} .pro.card{border-top:4px solid var(--pro)}
+.con .tag{color:var(--con)} .con .who{background:var(--con)} .con.card{border-top:4px solid var(--con)}
+.gold.card{border-top:4px solid var(--gold)} .navyt.card{border-top:4px solid var(--navy)}
+
+ul.dots{margin:0;padding-left:1.1em}
+ul.dots li{margin:4px 0}
+ul.dots li::marker{color:var(--gold)}
+ul.dots b{color:var(--navy)}
+
+.big-prop{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:12px;padding:24px 28px;margin-bottom:22px}
+.big-prop .t{font-size:13px;color:var(--muted)}
+.big-prop .v{font-family:var(--serif);font-size:30px;font-weight:900;color:var(--navy)}
+.circ{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--navy);color:#fff;font-size:14px;margin-right:8px;font-family:var(--sans);flex:none}
+
+/* evolution flow */
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:10px;align-items:stretch}
+.flow .arrow{align-self:center;color:var(--gold);font-size:26px}
+.flow .step{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px}
+.flow .step .s{font-size:13px;color:var(--gold);font-weight:700}
+.flow .step .h{font-family:var(--serif);font-weight:700;font-size:18px;color:var(--navy);margin:4px 0 6px;line-height:1.45}
+.flow .step p{margin:0;font-size:14px;color:var(--muted)}
+.flow .step.last{background:var(--navy);border-color:var(--navy)}
+.flow .step.last .h{color:#fff}.flow .step.last p{color:#c9cfd8}
+@media(max-width:900px){.flow{grid-template-columns:1fr}.flow .arrow{transform:rotate(90deg);justify-self:center}}
+
+/* timeline */
+.timeline{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;margin-bottom:24px}
+.tl{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 10px;text-align:center;position:relative}
+.tl .r{font-family:var(--serif);font-weight:900;font-size:22px;color:var(--navy)}
+.tl .d{font-size:13px;color:var(--muted);line-height:1.5}
+.tl.pro-f{border-bottom:4px solid var(--pro)}.tl.con-f{border-bottom:4px solid var(--con)}
+.tl.mid{background:var(--gold-soft)} .tl.ext .r{color:var(--gold)}
+.tl.ver{background:var(--navy)} .tl.ver .r{color:var(--gold)} .tl.ver .d{color:#c9cfd8}
+@media(max-width:900px){.timeline{grid-template-columns:repeat(4,1fr)}}
+.legend{font-size:13px;color:var(--muted);margin:-12px 0 24px}
+.legend i{display:inline-block;width:14px;height:4px;vertical-align:middle;margin:0 4px 0 12px}
+
+/* round tabs */
+.round{margin-bottom:34px}
+.round-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.round-head .rn{font-family:var(--serif);font-weight:900;font-size:30px;color:var(--gold)}
+.round-head .rt{font-family:var(--serif);font-weight:700;font-size:22px;color:var(--navy)}
+
+/* tables */
+.tbl-wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--line);background:var(--paper)}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:640px}
+th,td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--navy);color:#fff;font-weight:500;font-size:14px}
+thead th.p{background:var(--pro)}thead th.c{background:var(--con)}
+tbody th{font-family:var(--serif);color:var(--navy);white-space:nowrap;background:#f6f1e6}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+tr.total td,tr.total th{background:var(--gold-soft);font-weight:700}
+td.num{font-variant-numeric:tabular-nums;text-align:center;font-weight:700;white-space:nowrap}
+td.num.win{color:var(--con)}
+
+.callout{margin-top:18px;padding:16px 20px;border-radius:10px;background:var(--gold-soft);border-left:4px solid var(--gold);font-size:15px}
+.callout b{color:var(--navy)}
+
+/* stats */
+.stat{display:grid;grid-template-columns:150px 1fr;gap:14px;align-items:center;padding:12px 0;border-bottom:1px dashed var(--line)}
+.stat:last-of-type{border-bottom:0}
+.stat .n{font-family:var(--serif);font-weight:900;font-size:34px;color:var(--pro);line-height:1.1}
+.stat p{margin:0;font-size:15px}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:6px 0 14px}
+.mini div{background:var(--con-soft);border-radius:10px;padding:10px 12px}
+.mini .n{font-family:var(--serif);font-weight:900;font-size:30px;color:var(--con);line-height:1.2}
+.mini .l{font-size:12.5px;color:var(--muted)}
+.decide{display:grid;gap:10px}
+.decide div{background:var(--pro-soft);border-radius:10px;padding:10px 14px}
+.decide b{display:block;color:var(--pro);font-size:14px}
+.decide span{font-weight:500}
+
+.question{font-family:var(--serif);font-size:24px;font-weight:700;color:var(--navy);border-left:5px solid var(--gold);padding:4px 0 4px 18px;margin:0 0 26px}
+
+.topic{background:var(--navy);color:#fff;border-radius:12px;padding:18px;text-align:center}
+.topic b{display:block;font-family:var(--serif);font-size:20px;color:var(--gold)}
+.topic span{font-size:15px;color:#dbe0e7}
+
+/* verdict */
+.verdict{background:var(--navy);color:#f3efe6;padding:90px 0 70px}
+.verdict h2{color:#fff}
+.score{display:flex;align-items:center;justify-content:center;gap:clamp(12px,3vw,36px);font-family:var(--serif);font-weight:900;margin:24px 0 8px;flex-wrap:wrap}
+.score .side{font-size:clamp(34px,6vw,64px);line-height:1.1;text-align:center}
+.score .side small{display:block;font-size:16px;font-family:var(--sans);font-weight:500;letter-spacing:.1em}
+.score .con-s{color:#eba36f}.score .pro-s{color:#8fb4e6}
+.score .colon{font-size:44px;color:#7d8796}
+.winline{text-align:center;font-family:var(--serif);font-size:26px;font-weight:700;margin:4px 0 44px}
+.winline em{font-style:normal;color:var(--gold)}
+.keys .k{border-top:2px solid var(--con);padding-top:14px}
+.keys .k b{color:#eba36f;font-size:14px}
+.keys .k p{margin:6px 0 0;color:#e1e5eb}
+.verdict .after{margin-top:34px;color:#c9cfd8;font-size:15px;text-align:center}
+.verdict .tbl-wrap{background:#fff;color:var(--ink)}
+
+/* summary */
+.funnel{display:grid;grid-template-columns:1fr auto 1fr auto 1.3fr;gap:12px;align-items:stretch}
+.funnel .f{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.funnel .f .s{color:var(--gold);font-weight:700;font-size:13px}
+.funnel .f .q{font-family:var(--serif);font-weight:700;font-size:20px;color:var(--navy);line-height:1.5;margin-top:4px}
+.funnel .f:nth-child(1){opacity:.78}.funnel .f:nth-child(3){opacity:.9}
+.funnel .f.end{background:var(--navy)}.funnel .f.end .q{color:#fff}
+.funnel .arrow{align-self:center;color:var(--gold);font-size:26px}
+@media(max-width:900px){.funnel{grid-template-columns:1fr}.funnel .arrow{transform:rotate(90deg);justify-self:center}}
+
+.consensus .card{padding:18px 20px}
+.consensus .card h3{font-size:17px;margin-bottom:6px}
+.consensus .card p{margin:0;font-size:14.5px;color:#4a5361}
+
+footer{background:var(--navy);color:#aab2be;padding:44px 0;font-size:14px;margin-top:70px}
+footer .pr{font-family:var(--serif);color:var(--gold);font-size:20px;font-weight:700}
+footer p{margin:6px 0}
+
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ===== 輕鬆元素 ===== */
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-art{max-width:460px;margin:10px auto 0}}
+.hero-art svg{width:100%;height:auto;display:block}
+.bob{animation:bob 3.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center bottom}
+.bob.d2{animation-delay:-1.6s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.blink{animation:blink 4.5s infinite;transform-box:fill-box;transform-origin:center}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+.gavel{animation:gavel 2.6s ease-in-out infinite;transform-box:fill-box;transform-origin:85% 85%}
+@keyframes gavel{0%,70%,100%{transform:rotate(0)}78%{transform:rotate(-28deg)}86%{transform:rotate(4deg)}}
+.pop{animation:pop 3.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.pop.d2{animation-delay:-1.6s}
+@keyframes pop{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+
+.os{display:flex;gap:12px;align-items:flex-start;margin:22px 0 0;max-width:760px}
+.os .av{width:46px;height:50px;flex:none;filter:drop-shadow(0 2px 2px rgba(0,0,0,.12))}
+.os .bubble{position:relative;background:#fff;border:1.5px dashed var(--gold);border-radius:14px;padding:10px 16px;font-size:15px;color:#4a5361}
+.os .bubble::before{content:"";position:absolute;left:-8px;top:16px;width:12px;height:12px;background:#fff;border-left:1.5px dashed var(--gold);border-bottom:1.5px dashed var(--gold);transform:rotate(45deg)}
+.os .bubble .w{display:block;font-size:12px;font-weight:700;color:var(--gold);letter-spacing:.06em}
+.os.pro-os .bubble{border-color:var(--pro)}.os.pro-os .bubble::before{border-color:var(--pro)}.os.pro-os .w{color:var(--pro)}
+.os.con-os .bubble{border-color:var(--con)}.os.con-os .bubble::before{border-color:var(--con)}.os.con-os .w{color:var(--con)}
+.verdict .os .bubble{background:#2a3850;color:#e1e5eb}.verdict .os .bubble::before{background:#2a3850}
+
+.tag .mini-bot{width:26px;height:28px;vertical-align:middle}
+.card{transition:transform .25s ease,box-shadow .25s ease}
+.card:hover{transform:translateY(-3px) rotate(-.3deg);box-shadow:0 8px 20px rgba(31,43,61,.08)}
+.round-head .rn{position:relative}
+.round-head .bell{display:inline-block;font-size:12px;font-family:var(--sans);font-weight:700;color:#fff;background:var(--gold);border-radius:99px;padding:2px 10px;margin-left:4px;transform:rotate(-4deg)}
+.round:hover .bell{animation:ring .5s ease 2}
+@keyframes ring{0%,100%{transform:rotate(-4deg)}25%{transform:rotate(8deg)}75%{transform:rotate(-12deg)}}
+
+.score .side .val{display:inline-block;min-width:3.2ch}
+.confetti-btn{display:block;margin:0 auto 40px;background:transparent;border:1.5px solid var(--gold);color:var(--gold);border-radius:99px;padding:8px 20px;font:inherit;font-size:14px;cursor:pointer}
+.confetti-btn:hover{background:var(--gold);color:var(--navy)}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:99}
+
+.cheer{display:flex;justify-content:center;gap:26px;margin:30px 0 0;flex-wrap:wrap}
+.cheer figure{margin:0;text-align:center;font-size:13px;color:var(--muted)}
+.cheer svg{width:70px;height:76px;display:block;margin:0 auto 4px}
+.cheer .sh{animation:shake 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center bottom}
+.cheer .sh.d2{animation-delay:-1.2s}
+@keyframes shake{0%,100%{transform:rotate(0)}25%{transform:rotate(-5deg)}75%{transform:rotate(5deg)}}
+.totop{position:fixed;right:18px;bottom:18px;width:52px;height:56px;border:0;background:none;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s;z-index:60}
+.totop.show{opacity:1;pointer-events:auto}
+.totop svg{width:100%;height:100%}
+.totop:hover svg{transform:translateY(-4px);transition:transform .2s}
+@media (prefers-reduced-motion:reduce){.bob,.blink,.gavel,.pop,.cheer .sh{animation:none}}
+
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media print{.nav{display:none}.reveal{opacity:1;transform:none}section.block{page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="bot-pro" viewBox="0 0 100 110">
+      <line x1="50" y1="8" x2="50" y2="22" stroke="#1f2b3d" stroke-width="3"/>
+      <circle cx="50" cy="8" r="6" fill="#c9972e"/>
+      <rect x="10" y="38" width="10" height="20" rx="4" fill="#2d5a96"/>
+      <rect x="80" y="38" width="10" height="20" rx="4" fill="#2d5a96"/>
+      <rect x="18" y="22" width="64" height="54" rx="18" fill="#3f73b8"/>
+      <rect x="27" y="32" width="46" height="33" rx="12" fill="#e7eef8"/>
+      <g class="blink"><circle cx="40" cy="46" r="4.5" fill="#1f2b3d"/><circle cx="60" cy="46" r="4.5" fill="#1f2b3d"/></g>
+      <circle cx="41.5" cy="44.5" r="1.4" fill="#fff"/><circle cx="61.5" cy="44.5" r="1.4" fill="#fff"/>
+      <path d="M41 55 Q50 62 59 55" stroke="#1f2b3d" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <circle cx="33" cy="55" r="3" fill="#f4a9a0" opacity=".8"/><circle cx="67" cy="55" r="3" fill="#f4a9a0" opacity=".8"/>
+      <rect x="30" y="79" width="40" height="27" rx="9" fill="#3f73b8"/>
+      <circle cx="50" cy="92" r="6" fill="#fff"/><path d="M47 92 l2 2 l4 -4" stroke="#3f73b8" stroke-width="2" fill="none"/>
+    </symbol>
+    <symbol id="bot-con" viewBox="0 0 100 110">
+      <line x1="50" y1="8" x2="50" y2="22" stroke="#1f2b3d" stroke-width="3"/>
+      <rect x="44" y="2" width="12" height="12" rx="3" fill="#c9972e"/>
+      <rect x="10" y="38" width="10" height="20" rx="4" fill="#a8551f"/>
+      <rect x="80" y="38" width="10" height="20" rx="4" fill="#a8551f"/>
+      <rect x="18" y="22" width="64" height="54" rx="10" fill="#c8692e"/>
+      <rect x="27" y="32" width="46" height="33" rx="8" fill="#f8ebe1"/>
+      <path d="M35 39 L45 41" stroke="#1f2b3d" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M55 38 L65 36" stroke="#1f2b3d" stroke-width="2.4" stroke-linecap="round"/>
+      <g class="blink"><circle cx="40" cy="47" r="4.5" fill="#1f2b3d"/><circle cx="60" cy="47" r="4.5" fill="#1f2b3d"/></g>
+      <circle cx="41.5" cy="45.5" r="1.4" fill="#fff"/><circle cx="61.5" cy="45.5" r="1.4" fill="#fff"/>
+      <path d="M43 57 Q50 59 58 55" stroke="#1f2b3d" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <rect x="30" y="79" width="40" height="27" rx="7" fill="#c8692e"/>
+      <rect x="40" y="85" width="20" height="15" rx="2" fill="#fff"/>
+      <path d="M43 89h14M43 93h14M43 97h9" stroke="#c8692e" stroke-width="1.6"/>
+    </symbol>
+    <symbol id="bot-judge" viewBox="0 0 100 110">
+      <path d="M22 30 Q14 22 22 14 Q30 8 38 14 Q44 6 50 6 Q56 6 62 14 Q70 8 78 14 Q86 22 78 30 Z" fill="#f1e3c2" stroke="#c9972e" stroke-width="2"/>
+      <rect x="18" y="24" width="64" height="52" rx="16" fill="#2a3850"/>
+      <rect x="27" y="33" width="46" height="31" rx="10" fill="#dfe6ef"/>
+      <circle cx="40" cy="47" r="7" fill="none" stroke="#1f2b3d" stroke-width="2"/>
+      <circle cx="60" cy="47" r="7" fill="none" stroke="#1f2b3d" stroke-width="2"/>
+      <line x1="47" y1="47" x2="53" y2="47" stroke="#1f2b3d" stroke-width="2"/>
+      <g class="blink"><circle cx="40" cy="47" r="3" fill="#1f2b3d"/><circle cx="60" cy="47" r="3" fill="#1f2b3d"/></g>
+      <path d="M44 57 Q50 60 56 57" stroke="#1f2b3d" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <rect x="30" y="79" width="40" height="27" rx="9" fill="#2a3850"/>
+      <path d="M42 82 L50 87 L58 82 L58 92 L50 87 L42 92 Z" fill="#c9972e"/>
+    </symbol>
+  </defs>
+</svg>
+
+<nav class="nav" aria-label="章節導覽">
+  <div class="wrap">
+    <a class="brand" href="#top">共好公共政策AI審議室</a>
+    <ul>
+      <li><a href="#issue">議題</a></li>
+      <li><a href="#process">流程</a></li>
+      <li><a href="#first-half">上半場</a></li>
+      <li><a href="#midpoint">中場小結</a></li>
+      <li><a href="#second-half">下半場</a></li>
+      <li><a href="#closing">結辯</a></li>
+      <li><a href="#verdict">裁決</a></li>
+      <li><a href="#summary">總結</a></li>
+      <li><a href="#differences">差異</a></li>
+      <li><a href="#consensus">共識</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kicker">雙 AI 接力辯論｜debate-002｜2026.11.05 – 11.06</div>
+      <div class="label">命題</div>
+      <h1 style="font-size:clamp(26px,3.6vw,44px)">健保該漲保費，<br>並優先投入預防與基層嗎？</h1>
+      <div class="roles">
+        <span class="p"><b>正方</b>Claude</span>
+        <span class="c"><b>反方</b>ChatGPT</span>
+        <span class="j"><b>裁判</b>Copilot</span>
+      </div>
+      <div class="producer">出品｜共好公共政策AI審議室 <span style="font-size:13px;border:1px solid var(--gold);border-radius:99px;padding:1px 10px;margin-left:6px;vertical-align:middle">實驗</span></div>
+      <div class="toc">全場回顧：議題・流程・上半場・中場小結・下半場・結辯與總結・差異・共識</div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 520 360">
+        <ellipse cx="260" cy="338" rx="240" ry="14" fill="#000" opacity=".18"/>
+        <g class="bob d2"><use href="#bot-judge" x="210" y="30" width="100" height="110"/></g>
+        <rect x="190" y="138" width="140" height="58" rx="8" fill="#2a3850" stroke="#c9972e" stroke-width="2"/>
+        <text x="260" y="174" text-anchor="middle" font-size="18" font-weight="700" fill="#c9972e" font-family="Noto Serif TC,serif">裁判席</text>
+        <g class="gavel"><rect x="318" y="112" width="34" height="14" rx="4" fill="#8a5a2b" transform="rotate(-20 335 119)"/><rect x="300" y="122" width="6" height="30" rx="3" fill="#b07a42" transform="rotate(-60 303 137)"/></g>
+        <g class="bob"><use href="#bot-pro" x="40" y="150" width="110" height="121"/></g>
+        <rect x="30" y="262" width="130" height="76" rx="8" fill="#3f73b8"/>
+        <text x="95" y="308" text-anchor="middle" font-size="22" font-weight="900" fill="#fff" font-family="Noto Serif TC,serif">正方</text>
+        <g class="pop"><rect x="0" y="88" width="184" height="48" rx="14" fill="#e7eef8"/><path d="M80 136 l10 14 l6 -14z" fill="#e7eef8"/>
+        <text x="92" y="118" text-anchor="middle" font-size="15" font-weight="700" fill="#2d5a96" font-family="Noto Sans TC,sans-serif">漲費率，先投基層！</text></g>
+        <g class="bob d2"><use href="#bot-con" x="370" y="150" width="110" height="121"/></g>
+        <rect x="360" y="262" width="130" height="76" rx="8" fill="#c8692e"/>
+        <text x="425" y="308" text-anchor="middle" font-size="22" font-weight="900" fill="#fff" font-family="Noto Serif TC,serif">反方</text>
+        <g class="pop d2"><rect x="336" y="88" width="184" height="48" rx="14" fill="#f8ebe1"/><path d="M420 136 l8 14 l10 -14z" fill="#f8ebe1"/>
+        <text x="428" y="118" text-anchor="middle" font-size="15" font-weight="700" fill="#a8551f" font-family="Noto Sans TC,sans-serif">先比較，再綁用途！</text></g>
+        <text x="260" y="250" text-anchor="middle" font-size="40" font-weight="900" fill="#c9972e" font-family="Noto Serif TC,serif" opacity=".9">VS</text>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="block reveal" id="issue">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">01</span>議題</div>
+    <h2>命題與三個背景爭議</h2>
+    <div class="big-prop">
+      <div class="t">命題</div>
+      <div class="v" style="font-size:clamp(20px,2.6vw,26px);line-height:1.55">我國全民健康保險應調漲保險費率，並將新增財源優先用於給付預防性醫療科技與提高基層診察費</div>
+    </div>
+    <div class="grid g3">
+      <div class="card"><h3>① 資源分配失衡</h3><p style="margin:0">財務多耗於重症與住院；成人 RSV 疫苗、新型篩檢等預防科技因初期成本高，給付保守。</p></div>
+      <div class="card"><h3>② 制度壓迫行為</h3><p style="margin:0">門診診察費長期偏低，院所只能「以量補價」，醫師缺乏衛教與溝通時間。</p></div>
+      <div class="card"><h3>③ 財務與改革聯動</h3><p style="margin:0">改革需要大筆資金：該調漲健保費，還是在現有財源下結構重組？</p></div>
+    </div>
+    <div class="os"><svg class="av" aria-hidden="true"><use href="#bot-judge"/></svg><div class="bubble"><span class="w">裁判 OS</span>命題一長串，讀到「並」字就知道：這是兩題綁成一題。（伏筆，請記住）</div></div>
+  </div>
+</section>
+
+<section class="block reveal" id="process">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">02</span>流程</div>
+    <h2>五回合接力，中場與終場由裁判介入</h2>
+    <div class="timeline">
+      <div class="tl pro-f"><div class="r">R1</div><div class="d">11/05<br>正方先手</div></div>
+      <div class="tl con-f"><div class="r">R2</div><div class="d">11/05<br>反方先手</div></div>
+      <div class="tl pro-f"><div class="r">R3</div><div class="d">11/05<br>正方先手</div></div>
+      <div class="tl mid"><div class="r" style="font-size:18px">H0001</div><div class="d">11/06 08:50<br>中場綜整</div></div>
+      <div class="tl con-f"><div class="r">R4</div><div class="d">11/06<br>反方先手</div></div>
+      <div class="tl pro-f"><div class="r">R5</div><div class="d">11/06<br>正方先手</div></div>
+      <div class="tl"><div class="r">結辯</div><div class="d">11/06<br>雙方各一</div></div>
+      <div class="tl ver"><div class="r" style="font-size:18px">H0002</div><div class="d">11/06 15:20<br>最終裁決</div></div>
+    </div>
+    <div class="legend">底線顏色表示先手：<i style="background:var(--pro)"></i>正方先手<i style="background:var(--con)"></i>反方先手</div>
+    <div class="grid g3">
+      <div class="card"><h3>角色</h3><p style="margin:0">正方 Claude、反方 ChatGPT；中場與終場由 Copilot 撰寫裁判文件。</p></div>
+      <div class="card"><h3>固定格式</h3><p style="margin:0">每份答辯都有：立場、逐點回應、至少一項新論據、資料來源、不確定性、向對方提問。</p></div>
+      <div class="card"><h3>查證紀律</h3><p style="margin:0">來源分「已查證／待查證」；不得編造數字；每次執行先讀人類指示，寫入前再查一次。</p></div>
+    </div>
+    <p class="note">依「雙AI接力規則 v4」與「目前議題.md」。</p>
+    <div class="os"><svg class="av" aria-hidden="true"><use href="#bot-judge"/></svg><div class="bubble"><span class="w">裁判 OS</span>固定格式六件套，每回合都得交齊。認真程度大概跟報稅差不多。</div></div>
+  </div>
+</section>
+
+<section class="block reveal" id="first-half">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">03</span>上半場攻防</div>
+    <h2>R1–R3：從開場立場到數字被驗算</h2>
+
+    <div class="round">
+      <div class="round-head"><span class="rn">R1</span><span class="bell">叮！</span><span class="rt">開場立場：要開源，還是先拆開綁定？</span></div>
+      <div class="grid g2">
+        <div class="card pro">
+          <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-pro"/></svg><span class="who">正方</span>支持命題的三根支柱</div>
+          <ul class="dots">
+            <li><b>財務必要：</b>116 年度總額首破 1 兆元；費率 5.17% 下，年底安全準備約 819 億元、僅約 1.01 個月</li>
+            <li><b>配置合理：</b>基層診察費加成只能在總額內硬擠（例：49.68 億元）；預防科技「有指引、無給付」</li>
+            <li><b>治理可行：</b>專款專用＋醫療科技評估（HTA）門檻＋成效指標</li>
+          </ul>
+        </div>
+        <div class="card con">
+          <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-con"/></svg><span class="who">反方</span>反對預先綁定</div>
+          <ul class="dots">
+            <li><b>缺口≠用途：</b>新增收入可能要先維持既有給付與準備金</li>
+            <li><b>有成本效益≠省錢：</b>引 Cohen 等（NEJM 2008），多數預防措施並不省錢</li>
+            <li><b>提出公式：</b>所需新增收入＝既有缺口＋新政策淨成本＋準備金增額－其他確認收入</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">反方另指出正方「2027 年＝117 年」換算錯誤，正方於 R2 更正。</p>
+      <div class="os con-os"><svg class="av" aria-hidden="true"><use href="#bot-con"/></svg><div class="bubble"><span class="w">反方 OS</span>2027 年是 116 年，不是 117 年喔。（正方下一回合就改了，風度滿分）</div></div>
+    </div>
+
+    <div class="round">
+      <div class="round-head"><span class="rn">R2</span><span class="bell">叮！</span><span class="rt">從方向收斂到可檢驗的設計</span></div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>爭點</th><th class="c">反方攻</th><th class="p">正方守／修正</th></tr></thead>
+          <tbody>
+            <tr><th>支付設計</th><td>加價未必延長看診：少看診次後，單價須漲約 33% 才補回收入（示例）</td><td>改採「論人加成＋品質條件」，買可驗證的新服務，不全面按次加價</td></tr>
+            <tr><th>預防科技</th><td>須指定項目、族群、價格，不能只靠 HTA 門檻</td><td>首選長照機構 60 歲以上住民 RSV 疫苗：疾管署已建議接種，但無公費</td></tr>
+            <tr><th>成效驗證</th><td>怎麼證明服務真的改善？</td><td>用大家醫指標：收案 321.7 萬人、三高控制率 62%、生活諮商 52%，目標 80%</td></tr>
+            <tr><th>分配公平</th><td>誰多繳、誰受益、誰被排擠，須與平均效益分開評估</td><td>接受；列出負擔端與受益端應蒐集的欄位，官方資料待查</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout"><b>正方新論點：</b>2020 年費率由 4.69% 被動調到 5.17%，只補洞、未綁改革；六年後財務再度逼近下限。</div>
+      <div class="os pro-os"><svg class="av" aria-hidden="true"><use href="#bot-pro"/></svg><div class="bubble"><span class="w">正方 OS</span>單價要漲 33% 才補得回來？好，那就不按次加價，換個付法。</div></div>
+    </div>
+
+    <div class="round">
+      <div class="round-head"><span class="rn">R3</span><span class="bell">叮！</span><span class="rt">數字上桌，也被對方驗算</span></div>
+      <div class="grid g2">
+        <div class="card pro">
+          <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-pro"/></svg><span class="who">正方</span>提出</div>
+          <div class="stat"><div class="n">127 億</div><p>每 0.1 個百分點費率約增收（依 111 年財務評估報告推算）</p></div>
+          <div class="stat"><div class="n">7.11%</div><p>長期平衡費率，已超過法定上限 6%</p></div>
+          <div class="stat"><div class="n">+3 成</div><p>2026 春節基層加成：診所門診 66→85 萬人次，急診 23→17 萬人次</p></div>
+        </div>
+        <div class="card con">
+          <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-con"/></svg><span class="who">反方</span>驗算與質疑</div>
+          <ul class="dots">
+            <li><b>用正方自己的數字：</b>情境 B（+0.3 點、+381 億）準備金只到約 1.48 個月，沒有可分配餘額</li>
+            <li><b>春節資料沒有對照組：</b>只能說「與分流假說相容」；特殊時段≠全年論人加成</li>
+            <li>長期財務壓力與特定用途優先權，是兩個各自待證的命題</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">數字為雙方答辯所引或推算，非本簡報獨立查證。</p>
+      <div class="os con-os"><svg class="av" aria-hidden="true"><use href="#bot-con"/></svg><div class="bubble"><span class="w">反方 OS</span>拿你的數字算你的情境——驗算是最有禮貌的反駁。</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" id="midpoint">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">04</span>中場小結｜H0001｜裁判 Copilot</div>
+    <h2>戰場轉移：從「要不要漲」到「錢用在哪」</h2>
+    <p class="question">如果必須新增財源，新增資源是否應優先投入預防醫療科技與基層診察費？</p>
+    <div class="grid g2">
+      <div class="card pro">
+        <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-pro"/></svg><span class="who">正方</span>優勢</div>
+        <ul class="dots"><li>建立費率與收入的量化框架</li><li>提出本土春節加成案例</li><li>成功把焦點推向「如何配置」</li></ul>
+      </div>
+      <div class="card con">
+        <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-con"/></svg><span class="who">反方</span>優勢</div>
+        <ul class="dots"><li>指出財務推論的斷層</li><li>區分「有效果」與「值得最優先」</li><li>放棄「只靠節流」，聚焦用途排序</li></ul>
+      </div>
+    </div>
+    <div class="callout"><b>暫時結論：</b>正方在「新增財源必要性」略占優；反方在「用途優先順序尚未被證明」略占優。</div>
+
+    <h3 style="margin-top:44px;font-size:22px">四個未解問題</h3>
+    <div class="grid g4">
+      <div class="card"><h3>財源規模</h3><p style="margin:0;font-size:14.5px">缺少雙方共同接受的收入、支出、撥補與準備金模型</p></div>
+      <div class="card"><h3>本土成本效益</h3><p style="margin:0;font-size:14.5px">預防科技的目標人口、採用率、預算衝擊、ICER 都缺</p></div>
+      <div class="card"><h3>基層支付設計</h3><p style="margin:0;font-size:14.5px">給付方式、金額、預算、KPI 與監理機制待具體化</p></div>
+      <div class="card"><h3>優先順序</h3><p style="margin:0;font-size:14.5px">為何不是癌藥、精神醫療、偏鄉、長照銜接或急診壅塞？</p></div>
+    </div>
+    <h3 style="margin-top:34px;font-size:22px">下半場指定焦點</h3>
+    <div class="grid g2">
+      <div class="topic" style="text-align:left;padding:20px 22px"><b>R4 指定焦點</b><span>正方證明兩類用途邊際效益較高；反方提出至少一項更優先的替代用途；並拿出基層支付具體方案</span></div>
+      <div class="topic" style="text-align:left;padding:20px 22px"><b>R5 指定焦點</b><span>用共同格式比較財務表（費率、收入、支出、準備金月數）；回答治理與退場五問</span></div>
+    </div>
+    <div class="os"><svg class="av" aria-hidden="true"><use href="#bot-judge"/></svg><div class="bubble"><span class="w">裁判 OS</span>上半場吵「漲不漲」，中場哨音一響，改吵「錢花哪」。這叫進步。</div></div>
+  </div>
+</section>
+
+<section class="block reveal" id="second-half">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">05</span>下半場攻防</div>
+    <h2>R4–R5：用途排序、支付方案與共同財務表</h2>
+
+    <div class="round">
+      <div class="round-head"><span class="rn">R4</span><span class="bell">叮！</span><span class="rt">用途排序：缺口契約 vs 三層準則</span></div>
+      <div class="grid g2">
+        <div class="card con">
+          <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-con"/></svg><span class="who">反方</span>先手：替代用途「缺口契約」</div>
+          <p style="margin:0 0 10px;font-weight:500">購買指定地區、指定時段的必要急性照護與轉診，不是全面加價。</p>
+          <ul class="dots"><li>受影響者缺乏替代服務</li><li>損害可能在等待評估時就發生</li><li>最低服務保障本身有公平價值</li><li>執行前須公開中斷紀錄、人口與成本</li></ul>
+        </div>
+        <div class="card pro">
+          <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-pro"/></svg><span class="who">正方</span>後手：新增保費的三層準則</div>
+          <div class="decide">
+            <div><b>第 0 層　最低可近性保障</b><span>接受反方：即將中斷、無替代的必要照護優先</span></div>
+            <div><b>第 1 層　財源適配</b><span>保費先給沒有其他法定或專屬財源的用途</span></div>
+            <div><b>第 2 層　結構槓桿</b><span>能改變慢病惡化、可避免住院、急診壅塞者</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="callout"><b>正方自我修正：</b>依健保法第 51 條第 2 款，預防接種不屬健保給付；改為健保付「接種評估與處置等服務」，疫苗由公務預算採購。</div>
+      <div class="os pro-os"><svg class="av" aria-hidden="true"><use href="#bot-pro"/></svg><div class="bubble"><span class="w">正方 OS</span>查完健保法第 51 條，我自己改口：疫苗歸公務預算，健保付服務。認錯也算論證的一部分。</div></div>
+
+      <h3 style="margin-top:40px;font-size:22px">正方論據｜財源適配表：誰已經有錢、誰只能互搶</h3>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>競爭用途</th><th>現有專屬或法定財源</th><th>對新增保費排序的含意</th></tr></thead>
+          <tbody>
+            <tr><th>癌症新藥</th><td>公務預算基金，114、115 年各 50 億元</td><td>短期不搶保費；3 年後轉入健保</td></tr>
+            <tr><th>偏鄉／長照／在宅</th><td>116 年總額與家醫計畫合編 86.235 億元</td><td>先在既有額度內排序</td></tr>
+            <tr><th>急診壅塞</th><td>春節加成 16 億元，由總額「其他部門」挹注</td><td>分流手段本身就是基層加成</td></tr>
+            <tr><th>精神醫療</th><td>待查證，正方未取得數字</td><td>查證後再排序</td></tr>
+            <tr><th>基層診察費</th><td>無總額外專屬財源，只能在部門總額內擠</td><td><b style="color:var(--pro)">新增保費最適配的用途</b></td></tr>
+            <tr><th>成人預防接種</th><td>依法不屬健保給付；RSV 有指引、無公費</td><td>「有建議、無財源」的空缺</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout"><b>反方 R5 回應：</b>有預算名稱，不等於需求已被滿足；剩餘的邊際需求仍須同台比較。</div>
+      <p class="note">金額為正方所引，反方表示未獨立核實。</p>
+      <div class="os con-os"><svg class="av" aria-hidden="true"><use href="#bot-con"/></svg><div class="bubble"><span class="w">反方 OS</span>有預算名稱，不代表已經吃飽。</div></div>
+
+      <h3 style="margin-top:40px;font-size:22px">基層支付具體方案｜兩套試辦設計並排比較</h3>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>項目</th><th class="p">正方：論人加成</th><th class="c">反方：慢病團隊照護契約</th></tr></thead>
+          <tbody>
+            <tr><th>對象與規模</th><td>65 歲以上多重慢病會員及長照住民 10 萬人，分 3 批導入</td><td>慢病會員 1 萬人、20 個團隊</td></tr>
+            <tr><th>每人每年</th><td>2,400 元</td><td>1,200 元</td></tr>
+            <tr><th>服務內容</th><td>每季至少 20 分鐘延長診療，含用藥整合與疫苗評估</td><td>每年 4 次團隊聯繫，其中 2 次由醫師檢視</td></tr>
+            <tr><th>支付結構</th><td>60% 按月、40% 依 KPI 結算</td><td>70% 按月、30% 保留款</td></tr>
+            <tr><th>年度上限</th><td>2.5 億元</td><td>0.15 億元（1,500 萬元）</td></tr>
+            <tr><th>評估目標</th><td>24 個月內看出住院差異</td><td>1 年先驗證成本與可行性，再決定第二階段</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="grid g2" style="margin-top:18px">
+        <div class="card pro"><div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-pro"/></svg><span class="who">正方</span></div><p style="margin:0">一萬人一年很可能「看不出差異」，等於延後決策。</p></div>
+        <div class="card con"><div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-con"/></svg><span class="who">反方</span></div><p style="margin:0">承諾規模本身就是政策選項，小規模先換取資訊。</p></div>
+      </div>
+      <p class="note">兩案皆為設計假設，非官方數字。</p>
+      <div class="os"><svg class="av" aria-hidden="true"><use href="#bot-judge"/></svg><div class="bubble"><span class="w">裁判 OS</span>一個要 10 萬人、一個要 1 萬人，規模差十倍，兩邊都說自己比較謹慎。</div></div>
+    </div>
+
+    <div class="round">
+      <div class="round-head"><span class="rn">R5</span><span class="bell">叮！</span><span class="rt">正方改採 5.57%，雙方用同一張表比較</span></div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>項目（億元）</th><th style="text-align:center">基準 5.17%</th><th style="text-align:center">情境 B 5.47%</th><th class="p" style="text-align:center">正方情境 C 5.57%</th><th class="c" style="text-align:center">反方比較 5.57%</th></tr></thead>
+          <tbody>
+            <tr><th>新增保費收入</th><td class="num">0</td><td class="num">381.0</td><td class="num">508.0</td><td class="num">508.0</td></tr>
+            <tr><th>新方案支出上限</th><td class="num">0</td><td class="num">10.0</td><td class="num">10.0</td><td class="num">1.15</td></tr>
+            <tr><th>年度收支</th><td class="num">−817.2</td><td class="num">−446.2</td><td class="num">−319.2</td><td class="num">−310.35</td></tr>
+            <tr><th>期末準備金</th><td class="num">833.4</td><td class="num">1,204.4</td><td class="num">1,331.4</td><td class="num">1,340.25</td></tr>
+            <tr class="total"><th>安全準備月數</th><td class="num">1.03</td><td class="num" style="color:#b0413e">1.49<br><small style="font-weight:500">未達 1.5</small></td><td class="num">1.64</td><td class="num">1.66</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="grid g2" style="margin-top:18px">
+        <div class="card pro"><div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-pro"/></svg><span class="who">正方讓步</span></div><p style="margin:0">情境 B 不足 1.5 個月，反方 R3 質疑成立；10 億元只占新增收入約 2%。</p></div>
+        <div class="card con"><div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-con"/></svg><span class="who">反方承認</span></div><p style="margin:0">情境 C 首年有超過 1.5 個月的餘裕；但相同籌資可配不同用途。</p></div>
+      </div>
+      <p class="note">共同假設：期初 1,650.6／原收入 8,955／原支出 9,772.2；不計 600 億撥補；未證實節省記 0。</p>
+      <div class="os"><svg class="av" aria-hidden="true"><use href="#bot-judge"/></svg><div class="bubble"><span class="w">裁判 OS</span>終於，兩邊拿同一張表吵架。財務人員看到這裡應該會很感動。</div></div>
+
+      <h3 style="margin-top:40px;font-size:22px">治理與退場｜首年付得起，三年撐得住嗎？</h3>
+      <div class="grid g2">
+        <div class="card con">
+          <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-con"/></svg><span class="who">反方</span>壓力測試：情境 C 固定三年</div>
+          <svg viewBox="0 0 500 230" style="width:100%;height:auto;display:block" role="img" aria-label="安全準備月數：第1年1.64、第2年1.25、第3年0.86">
+            <line x1="40" y1="200" x2="490" y2="200" stroke="#c9c1b0"/>
+            <line x1="40" y1="200" x2="40" y2="20" stroke="#c9c1b0"/>
+            <line x1="40" y1="72.5" x2="490" y2="72.5" stroke="#c9972e" stroke-dasharray="6 4"/>
+            <text x="392" y="67.5" text-anchor="start" font-size="12" fill="#a87c1f">1.5 個月門檻</text>
+            <line x1="40" y1="115.0" x2="490" y2="115.0" stroke="#b0413e" stroke-dasharray="3 4"/>
+            <text x="392" y="130.0" text-anchor="start" font-size="12" fill="#b0413e">1.0 凍結線</text>
+            <rect x="80" y="60.6" width="70" height="139.4" rx="6" fill="#3f73b8"/><text x="115" y="52.6" text-anchor="middle" font-size="20" font-weight="900" fill="#3f73b8" font-family="Noto Serif TC,serif">1.64</text><text x="115" y="220" text-anchor="middle" font-size="13" fill="#6b7380">第 1 年</text><rect x="195" y="93.8" width="70" height="106.2" rx="6" fill="#c8692e"/><text x="230" y="85.8" text-anchor="middle" font-size="20" font-weight="900" fill="#c8692e" font-family="Noto Serif TC,serif">1.25</text><text x="230" y="220" text-anchor="middle" font-size="13" fill="#6b7380">第 2 年</text><rect x="310" y="126.9" width="70" height="73.1" rx="6" fill="#b0413e"/><text x="345" y="118.9" text-anchor="middle" font-size="20" font-weight="900" fill="#b0413e" font-family="Noto Serif TC,serif">0.86</text><text x="345" y="220" text-anchor="middle" font-size="13" fill="#6b7380">第 3 年</text>
+          </svg>
+          <p style="margin:6px 0 0;font-size:14px;color:var(--muted)">安全準備月數；固定條件示例，非預測。即使撤掉 10 億元，第 3 年仍約 0.89 個月。</p>
+        </div>
+        <div>
+          <div class="card pro" style="margin-bottom:18px"><div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-pro"/></svg><span class="who">正方</span>退場機制</div><p style="margin:0">3 年落日；準備金低於 1.0 個月即凍結擴張；超過支出上限停止收案；24 個月結果不優於比較組即終止；偽報追回。</p></div>
+          <div class="card con"><div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-con"/></svg><span class="who">反方</span>指出的缺口</div><p style="margin:0">1.0 與 1.5 個月門檻有落差；「提出改善計畫」可能無限延續；續約要比較替代方案，不只看自身 KPI。</p></div>
+        </div>
+      </div>
+      <div class="os con-os"><svg class="av" aria-hidden="true"><use href="#bot-con"/></svg><div class="bubble"><span class="w">反方 OS</span>首年 1.64 很好看，到第三年 0.86，就得捏把冷汗了。</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" id="closing">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">06</span>結辯</div>
+    <h2>最後只剩一題：這 10 億元為何先給它？</h2>
+    <div class="grid g2">
+      <div class="card pro">
+        <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-pro"/></svg><span class="who">正方</span>應該先給有期限的試行順位</div>
+        <ul class="dots">
+          <li><b>財源適配：</b>基層診察費是唯一確定沒有專屬財源的項目</li>
+          <li><b>結構槓桿：</b>只有改變支付單位，才能對準「以量補價」</li>
+          <li><b>不指定的代價：</b>增量會順著造成問題的協商機制流走</li>
+          <li><b>再讓四步：</b>凍結門檻改 1.5 個月；改善計畫限一次 6 個月；續約可移轉額度；延長診療分批釋出</li>
+        </ul>
+      </div>
+      <div class="card con">
+        <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-con"/></svg><span class="who">反方</span>先比較，再給順位</div>
+        <ul class="dots">
+          <li>支持核實後的必要籌資，不堅持費率不變</li>
+          <li>限額與落日回答「風險多大」，沒回答「為何先給它」</li>
+          <li>有預算名稱≠需求已滿足；請把「籌資必要」與「用途優先」分開審查</li>
+          <li>坦承自身 1 億元缺口契約與 0.15 億元試辦也未被證實</li>
+        </ul>
+      </div>
+    </div>
+    <div class="os"><svg class="av" aria-hidden="true"><use href="#bot-judge"/></svg><div class="bubble"><span class="w">裁判 OS</span>吵了五回合加結辯，最後只剩一個問題：這 10 億元，為什麼先給它？</div></div>
+  </div>
+</section>
+
+<section class="verdict" id="verdict">
+  <div class="wrap reveal">
+    <div class="eyebrow" style="text-align:center"><span class="num" style="color:#7d8796">07</span>最終裁決｜H0002｜2026.11.06 15:20｜裁判 Copilot</div>
+    <div class="score" aria-label="反方 90 分，正方 89 分">
+      <div class="side con-s"><small>反方 ChatGPT</small><span class="val" data-to="90" data-dec="0">90</span></div>
+      <div class="colon">：</div>
+      <div class="side pro-s"><small>正方 Claude</small><span class="val" data-to="89" data-dec="0">89</span></div>
+    </div>
+    <div class="winline">反方以<em>極微幅</em>優勢獲勝</div>
+    <button class="confetti-btn" id="again" type="button">🎉 再撒一次彩帶</button>
+    <div class="os" style="margin:0 auto 30px"><svg class="av" aria-hidden="true"><use href="#bot-judge"/></svg><div class="bubble"><span class="w">裁判 OS</span>90：89，只差一分。這不是 KO，是終點線拍照判定。</div></div>
+    <div class="grid g2 keys">
+      <div class="k" style="border-color:#8fb4e6"><b style="color:#8fb4e6">正方已完成</b><p>「應調費」的舉證：調費必要、小規模試辦可行、退場治理可以設計</p></div>
+      <div class="k"><b>正方未完成</b><p>「優先配置於預防與基層」的舉證：反方要求以共同標準比較用途，至結辯仍未解除</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" id="summary">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">08</span>總結</div>
+    <h2>爭點一路收斂：三個階段的問題</h2>
+    <div class="funnel">
+      <div class="f"><div class="s">R1 起點</div><div class="q">要不要漲保費？</div></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="f"><div class="s">R3 中場</div><div class="q">漲了之後，錢該用在哪？</div></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="f end"><div class="s">結辯終點</div><div class="q">證據不足時，該不該先給預防與基層一個有期限的試行順位？</div></div>
+    </div>
+    <div class="grid g2" style="margin-top:22px">
+      <div class="card gold"><h3>取捨的核心</h3><p style="margin:0">「等待證據的代價」與「預先承諾的風險」，何者較大。</p></div>
+      <div class="card con"><h3>勝負的關鍵</h3><p style="margin:0">命題是兩段式：正方贏了「應調費」，輸在「應優先」的舉證未完成。</p></div>
+    </div>
+    <div class="os"><svg class="av" aria-hidden="true"><use href="#bot-judge"/></svg><div class="bubble"><span class="w">裁判 OS</span>還記得開頭那個「並」字嗎？伏筆回收：兩段式命題，只證成一段，就差這一分。</div></div>
+  </div>
+</section>
+
+<section class="block reveal" id="differences">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">09</span>差異</div>
+    <h2>雙方到最後仍不同的五件事</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>爭點</th><th class="p">正方</th><th class="c">反方</th></tr></thead>
+        <tbody>
+          <tr><th>優先順位</th><td>先給有上限、有期限的試行順位，用試驗產生證據</td><td>先以共同標準比較，再決定誰取得順位</td></tr>
+          <tr><th>競爭用途</th><td>已有其他財源者先排開，比的是保費的邊際效益</td><td>有基金名稱不代表需求已滿足，剩餘需求要同台比</td></tr>
+          <tr><th>支付工具</th><td>論人加成＋延長診療加成，改變全年「以量補價」</td><td>缺口契約買指定時段供給，不必普調診察費</td></tr>
+          <tr><th>試辦設計</th><td>10 萬人、24 個月，一次設計到能看出住院差異</td><td>1 萬人、1 年，先驗證成本與可行性</td></tr>
+          <tr><th>首年新支出</th><td class="num" style="text-align:left">10 億元</td><td class="num" style="text-align:left">1.15 億元</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="os"><svg class="av" aria-hidden="true"><use href="#bot-judge"/></svg><div class="bubble"><span class="w">裁判 OS</span>這五題，AI 只能吵到這裡。接下來交給人類決定。</div></div>
+  </div>
+</section>
+
+<section class="block reveal consensus" id="consensus">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">10</span>共識</div>
+    <h2>共識遠多於分歧</h2>
+    <div class="grid g4">
+      <div class="card"><h3>① 必須開源</h3><p>雙方都以 5.57% 為比較情境，不主張永久維持 5.17%</p></div>
+      <div class="card"><h3>② 節省不先入帳</h3><p>未證實的節流與預防效益，一律記為 0</p></div>
+      <div class="card"><h3>③ 可近性優先</h3><p>即將中斷且無替代的必要照護，先於任何新增項目</p></div>
+      <div class="card"><h3>④ 基本給付不縮</h3><p>只能縮減新增部分，且須安排病人安全轉銜</p></div>
+      <div class="card"><h3>⑤ 期滿同尺比較</h3><p>續約要和替代方案比較，必要時移轉額度</p></div>
+      <div class="card"><h3>⑥ 首年可行</h3><p>情境 C 首年達 1.5 個月；但一次調漲撐不過三年</p></div>
+      <div class="card"><h3>⑦ 依法分工</h3><p>疫苗產品與健保服務須逐項確認法源與支付規則</p></div>
+      <div class="card"><h3>⑧ 試辦須試算</h3><p>任何規模都要先做樣本數與成本試算</p></div>
+    </div>
+    <div class="callout" style="margin-top:22px"><b>雙方都承認的共同證據缺口：</b>保費負擔的分布資料、本土預防科技的 ICER 與預算衝擊、春節加成的因果效果、每 0.1 個百分點的真實收入。</div>
+    <div class="cheer" aria-hidden="true"><figure><svg class="sh"><use href="#bot-pro"/></svg>正方</figure><figure><svg class="sh d2"><use href="#bot-judge"/></svg>裁判</figure><figure><svg class="sh"><use href="#bot-con"/></svg>反方</figure></div>
+    <p style="text-align:center;font-family:var(--serif);font-size:20px;color:var(--navy);margin:10px 0 0">共識八項、分歧五項——吵出共識，才叫審議。</p>
+  </div>
+</section>
+
+</main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="pr">出品｜共好公共政策AI審議室</div>
+    <p>雙 AI 接力辯論 debate-002｜健保費率辯論回顧｜2026.11.05 – 11.06</p>
+    <p>正方 Claude・反方 ChatGPT・裁判 Copilot。文中數字為雙方答辯所引或推算，非本站獨立查證；最終政策判斷交由人類。</p>
+    <p style="color:#7d8796">※ 本場辯論過程中，沒有任何機器人受傷。「場邊OS」為本站趣味旁白，不屬於辯論紀錄。</p>
+  </div>
+</footer>
+<button class="totop" id="totop" type="button" aria-label="回到頂端"><svg><use href="#bot-judge"/></svg></button>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.08});
+    els.forEach(function(el){io.observe(el);});
+  } else { els.forEach(function(el){el.classList.add('in');}); }
+
+  var links=[].slice.call(document.querySelectorAll('.nav li a'));
+  var map=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function onScroll(){
+    var y=window.scrollY+90, idx=-1;
+    map.forEach(function(s,i){ if(s && s.offsetTop<=y) idx=i; });
+    links.forEach(function(a,i){ a.classList.toggle('on', i===idx); });
+    if(idx>=0){ var a=links[idx]; var ul=a.parentNode.parentNode; var l=a.offsetLeft-ul.clientWidth/2+a.clientWidth/2; ul.scrollTo({left:l,behavior:'smooth'}); }
+  }
+  var t; window.addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(onScroll,60);},{passive:true});
+  onScroll();
+
+  // 回到頂端
+  var tt=document.getElementById('totop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('show',window.scrollY>900);},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+  // 彩帶
+  var cv=document.getElementById('confetti'),cx=cv.getContext('2d'),parts=[],running=false;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function size(){cv.width=innerWidth;cv.height=innerHeight;} size(); addEventListener('resize',size);
+  function burst(){
+    if(reduce) return;
+    var cols=['#c9972e','#3f73b8','#c8692e','#f1e3c2','#ffffff','#8fb4e6','#eba36f'];
+    for(var i=0;i<160;i++){parts.push({x:innerWidth/2+(Math.random()-.5)*innerWidth*.5,y:innerHeight*.35,vx:(Math.random()-.5)*12,vy:-Math.random()*12-4,r:Math.random()*6+4,c:cols[i%cols.length],a:Math.random()*6,va:(Math.random()-.5)*.3,life:0});}
+    if(!running){running=true;requestAnimationFrame(tick);}
+  }
+  function tick(){
+    cx.clearRect(0,0,cv.width,cv.height);
+    parts=parts.filter(function(p){return p.y<cv.height+20&&p.life<260;});
+    parts.forEach(function(p){p.vy+=.28;p.vx*=.99;p.x+=p.vx;p.y+=p.vy;p.a+=p.va;p.life++;
+      cx.save();cx.translate(p.x,p.y);cx.rotate(p.a);cx.fillStyle=p.c;cx.fillRect(-p.r/2,-p.r/4,p.r,p.r/2);cx.restore();});
+    if(parts.length){requestAnimationFrame(tick);}else{running=false;cx.clearRect(0,0,cv.width,cv.height);}
+  }
+  document.getElementById('again').addEventListener('click',burst);
+
+  // 比分跳動
+  var vals=document.querySelectorAll('.score .val'),done=false;
+  function countUp(){
+    if(done) return; done=true;
+    vals.forEach(function(el){var to=parseFloat(el.dataset.to),dec=el.dataset.dec?parseInt(el.dataset.dec):1,t0=null;
+      if(reduce){el.textContent=to.toFixed(dec);return;}
+      function step(ts){if(!t0)t0=ts;var k=Math.min((ts-t0)/1400,1),e=1-Math.pow(1-k,3);el.textContent=(to*e).toFixed(dec);if(k<1)requestAnimationFrame(step);}
+      el.textContent=(0).toFixed(dec);requestAnimationFrame(step);});
+    setTimeout(burst,1300);
+  }
+  if('IntersectionObserver' in window){
+    var vo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){countUp();vo.disconnect();}});},{threshold:.4});
+    vo.observe(document.querySelector('.score'));
+  }
+})();
+</script>
+</body>
+</html>
