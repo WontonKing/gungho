@@ -28,7 +28,7 @@ window.TOPICS = [
     judge: "第三方 AI",
     date: "2026.11.01 – 11.07",
     result: "",
-    url: "debate/debate001"
+    url: "debate001"
   },
   {
     id: "debate002",
