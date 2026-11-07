@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>在宅醫療政策｜雙 AI 接力辯論全場回顧 debate-001｜共好公共政策AI審議室</title>
+<meta name="description" content="雙 AI 接力辯論 debate-001：在宅醫療政策（聚焦在宅急症照護）全場回顧——議題、流程、上下半場攻防、中場小結、結辯、裁決、差異與共識。出品：共好公共政策AI審議室。">
+<meta property="og:title" content="在宅醫療政策｜雙 AI 接力辯論全場回顧">
+<meta property="og:description" content="正方 ChatGPT vs 反方 Claude，五回合攻防後反方以 93.5：90.5 勝出。出品：共好公共政策AI審議室。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1f2b3d; --navy-2:#2a3850; --cream:#f5efe3; --paper:#fbf8f1; --ink:#26303d;
+  --muted:#6b7380; --line:#e3dccd; --gold:#c9972e; --gold-soft:#f1e3c2;
+  --pro:#3f73b8; --pro-soft:#e7eef8; --con:#c8692e; --con-soft:#f8ebe1;
+  --serif:"Noto Serif TC","Songti TC",serif; --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(31,43,61,.96);backdrop-filter:blur(6px);color:#e9e4d8;border-bottom:1px solid rgba(255,255,255,.08)}
+.nav .wrap{display:flex;align-items:center;gap:20px;height:56px}
+.brand{font-family:var(--serif);font-weight:700;color:var(--gold);white-space:nowrap;font-size:15px;text-decoration:none}
+.nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
+.nav ul::-webkit-scrollbar{display:none}
+.nav li a{display:block;padding:6px 10px;border-radius:6px;font-size:14px;text-decoration:none;white-space:nowrap;color:#cfd5de}
+.nav li a:hover,.nav li a.on{background:rgba(201,151,46,.18);color:#fff}
+
+/* hero */
+.hero{background:var(--navy);color:#f3efe6;padding:110px 0 70px}
+.kicker{font-size:13px;letter-spacing:.12em;color:var(--gold);font-weight:700}
+.hero .label{margin-top:34px;color:#c9cfd8;font-size:15px}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(44px,8vw,84px);line-height:1.15;margin:6px 0 26px;letter-spacing:.02em}
+.roles{display:flex;flex-wrap:wrap;gap:10px 28px;font-size:15px;color:#dfe3ea}
+.roles b{font-weight:500;margin-right:8px}
+.roles .p b{color:#8fb4e6}.roles .c b{color:#eba36f}.roles .j b{color:var(--gold)}
+.producer{margin-top:30px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);color:var(--gold);font-weight:700;font-size:18px;letter-spacing:.04em}
+.hero .toc{margin-top:56px;font-size:13px;color:#9aa3b0}
+
+/* sections */
+section.block{padding:84px 0 40px}
+section.block + section.block{padding-top:44px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--gold)}
+.eyebrow .num{display:inline-block;min-width:28px;color:var(--muted);font-weight:500}
+h2{font-family:var(--serif);font-weight:700;font-size:clamp(26px,3.6vw,38px);line-height:1.35;margin:6px 0 28px;color:var(--navy)}
+h3{font-family:var(--serif);font-size:20px;margin:0 0 10px;color:var(--navy)}
+.note{font-size:13px;color:var(--muted);margin-top:18px}
+.lead{font-size:17px}
+
+.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:22px 24px;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.g2,.g3,.g4{grid-template-columns:1fr}}
+
+.tag{font-family:var(--serif);font-weight:700;font-size:17px;margin-bottom:10px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.tag .who{font-size:13px;font-family:var(--sans);padding:1px 9px;border-radius:99px;color:#fff}
+.pro .tag{color:var(--pro)} .pro .who{background:var(--pro)} .pro.card{border-top:4px solid var(--pro)}
+.con .tag{color:var(--con)} .con .who{background:var(--con)} .con.card{border-top:4px solid var(--con)}
+.gold.card{border-top:4px solid var(--gold)} .navyt.card{border-top:4px solid var(--navy)}
+
+ul.dots{margin:0;padding-left:1.1em}
+ul.dots li{margin:4px 0}
+ul.dots li::marker{color:var(--gold)}
+ul.dots b{color:var(--navy)}
+
+.big-prop{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:12px;padding:24px 28px;margin-bottom:22px}
+.big-prop .t{font-size:13px;color:var(--muted)}
+.big-prop .v{font-family:var(--serif);font-size:30px;font-weight:900;color:var(--navy)}
+.circ{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--navy);color:#fff;font-size:14px;margin-right:8px;font-family:var(--sans);flex:none}
+
+/* evolution flow */
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:10px;align-items:stretch}
+.flow .arrow{align-self:center;color:var(--gold);font-size:26px}
+.flow .step{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px}
+.flow .step .s{font-size:13px;color:var(--gold);font-weight:700}
+.flow .step .h{font-family:var(--serif);font-weight:700;font-size:18px;color:var(--navy);margin:4px 0 6px;line-height:1.45}
+.flow .step p{margin:0;font-size:14px;color:var(--muted)}
+.flow .step.last{background:var(--navy);border-color:var(--navy)}
+.flow .step.last .h{color:#fff}.flow .step.last p{color:#c9cfd8}
+@media(max-width:900px){.flow{grid-template-columns:1fr}.flow .arrow{transform:rotate(90deg);justify-self:center}}
+
+/* timeline */
+.timeline{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;margin-bottom:24px}
+.tl{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 10px;text-align:center;position:relative}
+.tl .r{font-family:var(--serif);font-weight:900;font-size:22px;color:var(--navy)}
+.tl .d{font-size:13px;color:var(--muted);line-height:1.5}
+.tl.pro-f{border-bottom:4px solid var(--pro)}.tl.con-f{border-bottom:4px solid var(--con)}
+.tl.mid{background:var(--gold-soft)} .tl.ext .r{color:var(--gold)}
+.tl.ver{background:var(--navy)} .tl.ver .r{color:var(--gold)} .tl.ver .d{color:#c9cfd8}
+@media(max-width:900px){.timeline{grid-template-columns:repeat(4,1fr)}}
+.legend{font-size:13px;color:var(--muted);margin:-12px 0 24px}
+.legend i{display:inline-block;width:14px;height:4px;vertical-align:middle;margin:0 4px 0 12px}
+
+/* round tabs */
+.round{margin-bottom:34px}
+.round-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.round-head .rn{font-family:var(--serif);font-weight:900;font-size:30px;color:var(--gold)}
+.round-head .rt{font-family:var(--serif);font-weight:700;font-size:22px;color:var(--navy)}
+
+/* tables */
+.tbl-wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--line);background:var(--paper)}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:640px}
+th,td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--navy);color:#fff;font-weight:500;font-size:14px}
+thead th.p{background:var(--pro)}thead th.c{background:var(--con)}
+tbody th{font-family:var(--serif);color:var(--navy);white-space:nowrap;background:#f6f1e6}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+tr.total td,tr.total th{background:var(--gold-soft);font-weight:700}
+td.num{font-variant-numeric:tabular-nums;text-align:center;font-weight:700;white-space:nowrap}
+td.num.win{color:var(--con)}
+
+.callout{margin-top:18px;padding:16px 20px;border-radius:10px;background:var(--gold-soft);border-left:4px solid var(--gold);font-size:15px}
+.callout b{color:var(--navy)}
+
+/* stats */
+.stat{display:grid;grid-template-columns:150px 1fr;gap:14px;align-items:center;padding:12px 0;border-bottom:1px dashed var(--line)}
+.stat:last-of-type{border-bottom:0}
+.stat .n{font-family:var(--serif);font-weight:900;font-size:34px;color:var(--pro);line-height:1.1}
+.stat p{margin:0;font-size:15px}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:6px 0 14px}
+.mini div{background:var(--con-soft);border-radius:10px;padding:10px 12px}
+.mini .n{font-family:var(--serif);font-weight:900;font-size:30px;color:var(--con);line-height:1.2}
+.mini .l{font-size:12.5px;color:var(--muted)}
+.decide{display:grid;gap:10px}
+.decide div{background:var(--pro-soft);border-radius:10px;padding:10px 14px}
+.decide b{display:block;color:var(--pro);font-size:14px}
+.decide span{font-weight:500}
+
+.question{font-family:var(--serif);font-size:24px;font-weight:700;color:var(--navy);border-left:5px solid var(--gold);padding:4px 0 4px 18px;margin:0 0 26px}
+
+.topic{background:var(--navy);color:#fff;border-radius:12px;padding:18px;text-align:center}
+.topic b{display:block;font-family:var(--serif);font-size:20px;color:var(--gold)}
+.topic span{font-size:15px;color:#dbe0e7}
+
+/* verdict */
+.verdict{background:var(--navy);color:#f3efe6;padding:90px 0 70px}
+.verdict h2{color:#fff}
+.score{display:flex;align-items:center;justify-content:center;gap:clamp(12px,3vw,36px);font-family:var(--serif);font-weight:900;margin:24px 0 8px;flex-wrap:wrap}
+.score .side{font-size:clamp(34px,6vw,64px);line-height:1.1;text-align:center}
+.score .side small{display:block;font-size:16px;font-family:var(--sans);font-weight:500;letter-spacing:.1em}
+.score .con-s{color:#eba36f}.score .pro-s{color:#8fb4e6}
+.score .colon{font-size:44px;color:#7d8796}
+.winline{text-align:center;font-family:var(--serif);font-size:26px;font-weight:700;margin:4px 0 44px}
+.winline em{font-style:normal;color:var(--gold)}
+.keys .k{border-top:2px solid var(--con);padding-top:14px}
+.keys .k b{color:#eba36f;font-size:14px}
+.keys .k p{margin:6px 0 0;color:#e1e5eb}
+.verdict .after{margin-top:34px;color:#c9cfd8;font-size:15px;text-align:center}
+.verdict .tbl-wrap{background:#fff;color:var(--ink)}
+
+/* summary */
+.funnel{display:grid;grid-template-columns:1fr auto 1fr auto 1.3fr;gap:12px;align-items:stretch}
+.funnel .f{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.funnel .f .s{color:var(--gold);font-weight:700;font-size:13px}
+.funnel .f .q{font-family:var(--serif);font-weight:700;font-size:20px;color:var(--navy);line-height:1.5;margin-top:4px}
+.funnel .f:nth-child(1){opacity:.78}.funnel .f:nth-child(3){opacity:.9}
+.funnel .f.end{background:var(--navy)}.funnel .f.end .q{color:#fff}
+.funnel .arrow{align-self:center;color:var(--gold);font-size:26px}
+@media(max-width:900px){.funnel{grid-template-columns:1fr}.funnel .arrow{transform:rotate(90deg);justify-self:center}}
+
+.consensus .card{padding:18px 20px}
+.consensus .card h3{font-size:17px;margin-bottom:6px}
+.consensus .card p{margin:0;font-size:14.5px;color:#4a5361}
+
+footer{background:var(--navy);color:#aab2be;padding:44px 0;font-size:14px;margin-top:70px}
+footer .pr{font-family:var(--serif);color:var(--gold);font-size:20px;font-weight:700}
+footer p{margin:6px 0}
+
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ===== 輕鬆元素 ===== */
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-art{max-width:460px;margin:10px auto 0}}
+.hero-art svg{width:100%;height:auto;display:block}
+.bob{animation:bob 3.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center bottom}
+.bob.d2{animation-delay:-1.6s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.blink{animation:blink 4.5s infinite;transform-box:fill-box;transform-origin:center}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+.gavel{animation:gavel 2.6s ease-in-out infinite;transform-box:fill-box;transform-origin:85% 85%}
+@keyframes gavel{0%,70%,100%{transform:rotate(0)}78%{transform:rotate(-28deg)}86%{transform:rotate(4deg)}}
+.pop{animation:pop 3.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.pop.d2{animation-delay:-1.6s}
+@keyframes pop{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+
+.os{display:flex;gap:12px;align-items:flex-start;margin:22px 0 0;max-width:760px}
+.os .av{width:46px;height:50px;flex:none;filter:drop-shadow(0 2px 2px rgba(0,0,0,.12))}
+.os .bubble{position:relative;background:#fff;border:1.5px dashed var(--gold);border-radius:14px;padding:10px 16px;font-size:15px;color:#4a5361}
+.os .bubble::before{content:"";position:absolute;left:-8px;top:16px;width:12px;height:12px;background:#fff;border-left:1.5px dashed var(--gold);border-bottom:1.5px dashed var(--gold);transform:rotate(45deg)}
+.os .bubble .w{display:block;font-size:12px;font-weight:700;color:var(--gold);letter-spacing:.06em}
+.os.pro-os .bubble{border-color:var(--pro)}.os.pro-os .bubble::before{border-color:var(--pro)}.os.pro-os .w{color:var(--pro)}
+.os.con-os .bubble{border-color:var(--con)}.os.con-os .bubble::before{border-color:var(--con)}.os.con-os .w{color:var(--con)}
+.verdict .os .bubble{background:#2a3850;color:#e1e5eb}.verdict .os .bubble::before{background:#2a3850}
+
+.tag .mini-bot{width:26px;height:28px;vertical-align:middle}
+.card{transition:transform .25s ease,box-shadow .25s ease}
+.card:hover{transform:translateY(-3px) rotate(-.3deg);box-shadow:0 8px 20px rgba(31,43,61,.08)}
+.round-head .rn{position:relative}
+.round-head .bell{display:inline-block;font-size:12px;font-family:var(--sans);font-weight:700;color:#fff;background:var(--gold);border-radius:99px;padding:2px 10px;margin-left:4px;transform:rotate(-4deg)}
+.round:hover .bell{animation:ring .5s ease 2}
+@keyframes ring{0%,100%{transform:rotate(-4deg)}25%{transform:rotate(8deg)}75%{transform:rotate(-12deg)}}
+
+.score .side .val{display:inline-block;min-width:3.2ch}
+.confetti-btn{display:block;margin:0 auto 40px;background:transparent;border:1.5px solid var(--gold);color:var(--gold);border-radius:99px;padding:8px 20px;font:inherit;font-size:14px;cursor:pointer}
+.confetti-btn:hover{background:var(--gold);color:var(--navy)}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:99}
+
+.cheer{display:flex;justify-content:center;gap:26px;margin:30px 0 0;flex-wrap:wrap}
+.cheer figure{margin:0;text-align:center;font-size:13px;color:var(--muted)}
+.cheer svg{width:70px;height:76px;display:block;margin:0 auto 4px}
+.cheer .sh{animation:shake 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center bottom}
+.cheer .sh.d2{animation-delay:-1.2s}
+@keyframes shake{0%,100%{transform:rotate(0)}25%{transform:rotate(-5deg)}75%{transform:rotate(5deg)}}
+.totop{position:fixed;right:18px;bottom:18px;width:52px;height:56px;border:0;background:none;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s;z-index:60}
+.totop.show{opacity:1;pointer-events:auto}
+.totop svg{width:100%;height:100%}
+.totop:hover svg{transform:translateY(-4px);transition:transform .2s}
+@media (prefers-reduced-motion:reduce){.bob,.blink,.gavel,.pop,.cheer .sh{animation:none}}
+
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media print{.nav{display:none}.reveal{opacity:1;transform:none}section.block{page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="bot-pro" viewBox="0 0 100 110">
+      <line x1="50" y1="8" x2="50" y2="22" stroke="#1f2b3d" stroke-width="3"/>
+      <circle cx="50" cy="8" r="6" fill="#c9972e"/>
+      <rect x="10" y="38" width="10" height="20" rx="4" fill="#2d5a96"/>
+      <rect x="80" y="38" width="10" height="20" rx="4" fill="#2d5a96"/>
+      <rect x="18" y="22" width="64" height="54" rx="18" fill="#3f73b8"/>
+      <rect x="27" y="32" width="46" height="33" rx="12" fill="#e7eef8"/>
+      <g class="blink"><circle cx="40" cy="46" r="4.5" fill="#1f2b3d"/><circle cx="60" cy="46" r="4.5" fill="#1f2b3d"/></g>
+      <circle cx="41.5" cy="44.5" r="1.4" fill="#fff"/><circle cx="61.5" cy="44.5" r="1.4" fill="#fff"/>
+      <path d="M41 55 Q50 62 59 55" stroke="#1f2b3d" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <circle cx="33" cy="55" r="3" fill="#f4a9a0" opacity=".8"/><circle cx="67" cy="55" r="3" fill="#f4a9a0" opacity=".8"/>
+      <rect x="30" y="79" width="40" height="27" rx="9" fill="#3f73b8"/>
+      <circle cx="50" cy="92" r="6" fill="#fff"/><path d="M47 92 l2 2 l4 -4" stroke="#3f73b8" stroke-width="2" fill="none"/>
+    </symbol>
+    <symbol id="bot-con" viewBox="0 0 100 110">
+      <line x1="50" y1="8" x2="50" y2="22" stroke="#1f2b3d" stroke-width="3"/>
+      <rect x="44" y="2" width="12" height="12" rx="3" fill="#c9972e"/>
+      <rect x="10" y="38" width="10" height="20" rx="4" fill="#a8551f"/>
+      <rect x="80" y="38" width="10" height="20" rx="4" fill="#a8551f"/>
+      <rect x="18" y="22" width="64" height="54" rx="10" fill="#c8692e"/>
+      <rect x="27" y="32" width="46" height="33" rx="8" fill="#f8ebe1"/>
+      <path d="M35 39 L45 41" stroke="#1f2b3d" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M55 38 L65 36" stroke="#1f2b3d" stroke-width="2.4" stroke-linecap="round"/>
+      <g class="blink"><circle cx="40" cy="47" r="4.5" fill="#1f2b3d"/><circle cx="60" cy="47" r="4.5" fill="#1f2b3d"/></g>
+      <circle cx="41.5" cy="45.5" r="1.4" fill="#fff"/><circle cx="61.5" cy="45.5" r="1.4" fill="#fff"/>
+      <path d="M43 57 Q50 59 58 55" stroke="#1f2b3d" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <rect x="30" y="79" width="40" height="27" rx="7" fill="#c8692e"/>
+      <rect x="40" y="85" width="20" height="15" rx="2" fill="#fff"/>
+      <path d="M43 89h14M43 93h14M43 97h9" stroke="#c8692e" stroke-width="1.6"/>
+    </symbol>
+    <symbol id="bot-judge" viewBox="0 0 100 110">
+      <path d="M22 30 Q14 22 22 14 Q30 8 38 14 Q44 6 50 6 Q56 6 62 14 Q70 8 78 14 Q86 22 78 30 Z" fill="#f1e3c2" stroke="#c9972e" stroke-width="2"/>
+      <rect x="18" y="24" width="64" height="52" rx="16" fill="#2a3850"/>
+      <rect x="27" y="33" width="46" height="31" rx="10" fill="#dfe6ef"/>
+      <circle cx="40" cy="47" r="7" fill="none" stroke="#1f2b3d" stroke-width="2"/>
+      <circle cx="60" cy="47" r="7" fill="none" stroke="#1f2b3d" stroke-width="2"/>
+      <line x1="47" y1="47" x2="53" y2="47" stroke="#1f2b3d" stroke-width="2"/>
+      <g class="blink"><circle cx="40" cy="47" r="3" fill="#1f2b3d"/><circle cx="60" cy="47" r="3" fill="#1f2b3d"/></g>
+      <path d="M44 57 Q50 60 56 57" stroke="#1f2b3d" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <rect x="30" y="79" width="40" height="27" rx="9" fill="#2a3850"/>
+      <path d="M42 82 L50 87 L58 82 L58 92 L50 87 L42 92 Z" fill="#c9972e"/>
+    </symbol>
+  </defs>
+</svg>
+
+<nav class="nav" aria-label="章節導覽">
+  <div class="wrap">
+    <a class="brand" href="#top">共好公共政策AI審議室</a>
+    <ul>
+      <li><a href="#issue">議題</a></li>
+      <li><a href="#process">流程</a></li>
+      <li><a href="#first-half">上半場</a></li>
+      <li><a href="#midpoint">中場小結</a></li>
+      <li><a href="#second-half">下半場</a></li>
+      <li><a href="#closing">結辯</a></li>
+      <li><a href="#verdict">裁決</a></li>
+      <li><a href="#summary">總結</a></li>
+      <li><a href="#differences">差異</a></li>
+      <li><a href="#consensus">共識</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kicker">雙 AI 接力辯論｜debate-001｜2026.11.01 – 11.07</div>
+      <div class="label">命題</div>
+      <h1>在宅醫療政策</h1>
+      <div class="roles">
+        <span class="p"><b>正方</b>ChatGPT</span>
+        <span class="c"><b>反方</b>Claude</span>
+        <span class="j"><b>裁判</b>第三方 AI・人類</span>
+      </div>
+      <div class="producer">出品｜共好公共政策AI審議室</div>
+      <div class="toc">全場回顧：議題・流程・上半場・中場小結・下半場・結辯與總結・差異・共識</div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 520 360">
+        <ellipse cx="260" cy="338" rx="240" ry="14" fill="#000" opacity=".18"/>
+        <!-- 裁判台 -->
+        <g class="bob d2"><use href="#bot-judge" x="210" y="30" width="100" height="110"/></g>
+        <rect x="190" y="138" width="140" height="58" rx="8" fill="#2a3850" stroke="#c9972e" stroke-width="2"/>
+        <text x="260" y="174" text-anchor="middle" font-size="18" font-weight="700" fill="#c9972e" font-family="Noto Serif TC,serif">裁判席</text>
+        <g class="gavel"><rect x="318" y="112" width="34" height="14" rx="4" fill="#8a5a2b" transform="rotate(-20 335 119)"/><rect x="300" y="122" width="6" height="30" rx="3" fill="#b07a42" transform="rotate(-60 303 137)"/></g>
+        <!-- 正方 -->
+        <g class="bob"><use href="#bot-pro" x="40" y="150" width="110" height="121"/></g>
+        <rect x="30" y="262" width="130" height="76" rx="8" fill="#3f73b8"/>
+        <text x="95" y="308" text-anchor="middle" font-size="22" font-weight="900" fill="#fff" font-family="Noto Serif TC,serif">正方</text>
+        <g class="pop"><rect x="6" y="88" width="168" height="48" rx="14" fill="#e7eef8"/><path d="M80 136 l10 14 l6 -14z" fill="#e7eef8"/>
+        <text x="90" y="118" text-anchor="middle" font-size="16" font-weight="700" fill="#2d5a96" font-family="Noto Sans TC,sans-serif">有條件擴展！</text></g>
+        <!-- 反方 -->
+        <g class="bob d2"><use href="#bot-con" x="370" y="150" width="110" height="121"/></g>
+        <rect x="360" y="262" width="130" height="76" rx="8" fill="#c8692e"/>
+        <text x="425" y="308" text-anchor="middle" font-size="22" font-weight="900" fill="#fff" font-family="Noto Serif TC,serif">反方</text>
+        <g class="pop d2"><rect x="340" y="88" width="176" height="48" rx="14" fill="#f8ebe1"/><path d="M420 136 l8 14 l10 -14z" fill="#f8ebe1"/>
+        <text x="428" y="118" text-anchor="middle" font-size="16" font-weight="700" fill="#a8551f" font-family="Noto Sans TC,sans-serif">先證明再擴張！</text></g>
+        <text x="260" y="250" text-anchor="middle" font-size="40" font-weight="900" fill="#c9972e" font-family="Noto Serif TC,serif" opacity=".9">VS</text>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- 議題 -->
+<section class="block reveal" id="issue">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">01</span>議題</div>
+    <h2>命題與三個政策背景</h2>
+    <div class="big-prop">
+      <div class="t">命題（人類設定）</div>
+      <div class="v">在宅醫療政策</div>
+      <p style="margin:6px 0 0">範圍涵蓋居家醫療、在宅急症照護、長照銜接與在宅醫療科技；實際辯論如何聚焦，見下方「命題的演變」。</p>
+    </div>
+    <div class="grid g3">
+      <div class="card"><h3>① 超高齡社會</h3><p style="margin:0">少子化與高齡化讓家庭難以獨撐照顧；慢性病與失能需求大幅攀升。</p></div>
+      <div class="card"><h3>② 在地老化</h3><p style="margin:0">讓長者在熟悉的家與社區受照顧，醫療主動走入家庭，不再讓病人奔波醫院。</p></div>
+      <div class="card"><h3>③ 制度創新</h3><p style="margin:0">2024 起試辦「在宅急症照護」緩解急診待床；2026 起推動 AI、遠距等在宅醫療科技。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" id="evolution">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">02</span>議題｜命題的演變</div>
+    <h2>從「在宅醫療政策」收斂到「在宅急症照護」</h2>
+    <div class="flow">
+      <div class="step"><div class="s">① 人類設定命題</div><div class="h">在宅醫療政策</div><p>範圍廣：居家醫療、急症照護、長照分工、在宅醫療科技</p></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="step"><div class="s">② R1 正方收窄</div><div class="h">以在宅急症照護為可檢驗核心</div><p>各服務人力、責任、支付不同；只有它有試辦制度與數據</p></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="step"><div class="s">③ R1 反方接招</div><div class="h">反對過早擴大收案與病種</div><p>攻防從此鎖定在「試辦該不該擴張」</p></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="step last"><div class="s">④ 裁判報告定名</div><div class="h">試辦是否走向擴大收案與病種</div><p>中場整理與最終評分都沿用此框架</p></div>
+    </div>
+    <div class="grid g2" style="margin-top:22px">
+      <div class="card gold"><h3>為何收窄</h3><p style="margin:0">背景中的「2026 在宅醫療科技」找不到正式文件與成效資料，正方列為待查證，未作論據。</p></div>
+      <div class="card navyt"><h3>未被辯論的面向</h3><p style="margin:0">一般居家醫療、在宅醫療與長照分工、AI／遠距／虛擬健保卡；本場結論只適用於在宅急症照護。</p></div>
+    </div>
+    <p class="note">命題本身未修改，範圍由正方 R1 收窄。</p>
+    <div class="os pro-os"><svg class="av" aria-hidden="true"><use href="#bot-pro"/></svg><div class="bubble"><span class="w">正方 OS</span>題目一攤開，範圍大到能開一整學期的課。先挑有數據的那塊吵，比較有效率。</div></div>
+  </div>
+</section>
+
+<!-- 流程 -->
+<section class="block reveal" id="process">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">03</span>流程</div>
+    <h2>基本三回合，人類延長至五回合</h2>
+    <div class="timeline">
+      <div class="tl pro-f"><div class="r">R1</div><div class="d">11/01<br>正方先手</div></div>
+      <div class="tl con-f"><div class="r">R2</div><div class="d">11/01<br>反方先手</div></div>
+      <div class="tl pro-f"><div class="r">R3</div><div class="d">11/02<br>正方先手</div></div>
+      <div class="tl mid"><div class="r">中場</div><div class="d">11/02<br>共識分歧整理</div></div>
+      <div class="tl con-f ext"><div class="r">R4</div><div class="d">延長<br>反方先手</div></div>
+      <div class="tl pro-f ext"><div class="r">R5</div><div class="d">延長<br>正方先手</div></div>
+      <div class="tl"><div class="r">建議</div><div class="d">R3、R5<br>雙方政策建議</div></div>
+      <div class="tl ver"><div class="r">裁決</div><div class="d">11/07<br>評分報告</div></div>
+    </div>
+    <div class="legend">底線顏色表示先手：<i style="background:var(--pro)"></i>正方先手<i style="background:var(--con)"></i>反方先手</div>
+    <div class="grid g3">
+      <div class="card"><h3>架構</h3><p style="margin:0">兩家 AI 辯論 → 第三方 AI 評程序與品質 → 人類做最終決定。</p></div>
+      <div class="card"><h3>規則</h3><p style="margin:0">先手須回應上回合對方；每回合至少一項新論據；來源分已查證與待查證。</p></div>
+      <div class="card"><h3>評分</h3><p style="margin:0">論證邏輯、證據品質、回應對方、可行性與倫理，各占 25%。</p></div>
+    </div>
+    <p class="note">依「雙AI接力規則 v1」與「AI公共政策辯論架構」。</p>
+    <div class="os"><svg class="av" aria-hidden="true"><use href="#bot-judge"/></svg><div class="bubble"><span class="w">裁判 OS</span>原訂三回合，人類一句「再來兩回合」，兩台 AI 就默默加班了。</div></div>
+  </div>
+</section>
+
+<!-- 上半場 -->
+<section class="block reveal" id="first-half">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">04</span>上半場攻防</div>
+    <h2>R1–R3：從開場立場到英國試驗上桌</h2>
+
+    <div class="round">
+      <div class="round-head"><span class="rn">R1</span><span class="bell">叮！</span><span class="rt">開場立場：有條件擴展 vs 先證明再擴張</span></div>
+      <div class="grid g2">
+        <div class="card pro">
+          <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-pro"/></svg><span class="who">正方</span>四項擴展條件</div>
+          <ul class="dots">
+            <li><b>定位：</b>經篩選病人的住院替代選項，不是普遍取消住院</li>
+            <li><b>條件：</b>臨床安全先行、家庭有選擇權、區域共同支援、用成果決定擴展</li>
+            <li><b>證據：</b>Levine 2020 美國 RCT（91 人），在宅組直接成本低 38%；但樣本小、拒絕率 63%</li>
+            <li><b>起點：</b>健保署 2024/7 起實施試辦，可聚焦改善與驗證</li>
+          </ul>
+        </div>
+        <div class="card con">
+          <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-con"/></svg><span class="who">反方</span>不反對方向，反對過早擴張</div>
+          <ul class="dots">
+            <li><b>國際證據：</b>Cochrane 2024（20 研究、約 3,100 人）死亡、再住院幾乎無差異，照顧者影響不明</li>
+            <li><b>台灣成果無對照：</b>首 9 個月 2,158 人、近 9 成完成；累計 5,882 人時 3 日轉急診升至 1%</li>
+            <li><b>收案來源：</b>僅約 38% 由急診轉入，對急診壅塞緩解有限</li>
+            <li><b>人力：</b>每醫師上限 20 案，基層診所平均約 5 案</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">台灣數據多為新聞轉述官方發布。</p>
+    <div class="os con-os"><svg class="av" aria-hidden="true"><use href="#bot-con"/></svg><div class="bubble"><span class="w">反方 OS</span>我不是反對你，我只是想先看對照組。對，又是對照組。</div></div>
+    </div>
+
+    <div class="round">
+      <div class="round-head"><span class="rn">R2</span><span class="bell">叮！</span><span class="rt">反方加入「制度韌性」，正方提出三階段</span></div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>爭點</th><th class="c">反方攻（先手）</th><th class="p">正方守／修正</th></tr></thead>
+          <tbody>
+            <tr><th>擴張時序</th><td>2026/3 已通過新增「提早出院模式」，等於擴張先行、安全隨後</td><td>查得正式公告：5/1 生效，並有 14 日無非預期再住院獎勵</td></tr>
+            <tr><th>成本證據</th><td>CMS 2024 全國評估：病人特徵差異大，難以斷定省錢</td><td>接受，不再以 38% 當作全國節省率</td></tr>
+            <tr><th>財源中斷</th><td>美國停擺時豁免失效，147 個體系病人須轉回醫院</td><td>接受；契約納入停收新案、在案者安全轉銜</td></tr>
+            <tr><th>決策規則</th><td>要求「指標先於擴張」，每新增模式先公布分模式成果</td><td>三階段：收案前 → 限額試驗 → 擴大服務；顯著惡化即暫停</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout"><b>正方劃出分歧：</b>是否容許具安全條件、事前登錄、獨立監測的限額可停止試驗？若首次試驗前就要本地成果，會形成無法開始的循環。</div>
+    </div>
+
+    <div class="round">
+      <div class="round-head"><span class="rn">R3</span><span class="bell">叮！</span><span class="rt">英國試驗上桌，提早出院型被單獨點名</span></div>
+      <div class="grid g2">
+        <div class="card pro">
+          <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-pro"/></svg><span class="who">正方</span>新證據（英國 9 地 1,055 人 RCT）</div>
+          <div class="stat"><div class="n">78.6%</div><p>6 個月仍居家（住院組 75.3%），無顯著差異</p></div>
+          <div class="stat"><div class="n">RR 1.32</div><p>早期轉院／再住院較多，正方主動揭露</p></div>
+          <div class="stat"><div class="n">−£2,840</div><p>計入非正式照顧後的平均成本差（6 個月）</p></div>
+          <p style="margin:12px 0 0;font-weight:500">新提案：能力查核與效果查核分開；三份成本報表分列</p>
+        </div>
+        <div class="card con">
+          <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-con"/></svg><span class="who">反方</span>接受試驗，但劃出界線</div>
+          <ul class="dots">
+            <li><b>明確讓步：</b>接受事前登錄、有上限、可停止的試驗</li>
+            <li><b>提早出院型：</b>Cochrane 2017（32 試驗、4,746 人）顯示再住院可能增加，應獨立評估</li>
+            <li><b>誘因矛盾：</b>「14 日無再住院」獎勵可能壓低必要轉院</li>
+            <li><b>台灣特有成本：</b>外籍看護工承擔的觀察與通報工時</li>
+            <li><b>分層判準：</b>先安全（不可抵換）、再轉院、最後才看效益</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">英國數據不能換算台灣節省。</p>
+    <div class="os"><svg class="av" aria-hidden="true"><use href="#bot-judge"/></svg><div class="bubble"><span class="w">裁判 OS</span>正方主動揭露對自己不利的 RR 1.32，裁判在小本本記下兩個字：風度。</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 中場 -->
+<section class="block reveal" id="midpoint">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">05</span>中場小結｜R3 後整理（2026.11.02）</div>
+    <h2>從「是非題」變成「治理條件題」</h2>
+    <p class="question">需要多少證據，才能放心把它做大？</p>
+    <div class="grid g2">
+      <div class="card gold">
+        <h3>五項共識</h3>
+        <ul class="dots">
+          <li>在宅急症照護不是錯誤方向</li>
+          <li>安全是不可退讓的紅線</li>
+          <li>須持續監測與獨立評估</li>
+          <li>醫院省下的不能轉嫁給家庭</li>
+          <li>不能只服務最容易服務的人</li>
+        </ul>
+      </div>
+      <div class="card navyt">
+        <h3>四項分歧</h3>
+        <ul class="dots">
+          <li><b>擴張時機：</b>先有限放行 vs 先完成驗證</li>
+          <li><b>證據是否足夠：</b>可推進 vs 只證明可行</li>
+          <li><b>提早出院：</b>同一架構 vs 獨立評估</li>
+          <li><b>門檻：</b>主要安全證據 vs 對照、公平、家庭、財務全齊</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout"><b>階段判斷：</b>已形成弱共識「可以試辦、可以有限擴展，但須持續驗證」；尚未共識的是「是否已達大規模常態化門檻」。</div>
+
+    <h3 style="margin-top:44px;font-size:22px">四個證據缺口</h3>
+    <div class="grid g4">
+      <div class="card"><h3>台灣對照組</h3><p style="margin:0;font-size:14.5px">現有多為描述性、單組觀察；缺傾向分數配對與多中心對照</p></div>
+      <div class="card"><h3>提早出院成果</h3><p style="margin:0;font-size:14.5px">死亡、再住院、急診返診、照顧者負擔都須獨立檢驗</p></div>
+      <div class="card"><h3>家庭真實成本</h3><p style="margin:0;font-size:14.5px">照顧工時、外籍看護工工時、交通、請假與離職成本</p></div>
+      <div class="card"><h3>公平性資料</h3><p style="margin:0;font-size:14.5px">城鄉、所得、獨居、看護工家庭、長照資源可近性</p></div>
+    </div>
+    <h3 style="margin-top:34px;font-size:22px">建議 R4、R5 辯論主題</h3>
+    <div class="grid g4">
+      <div class="topic"><b>證據門檻</b><span>多強才足以擴張？</span></div>
+      <div class="topic"><b>家庭成本</b><span>真正買單的是誰？</span></div>
+      <div class="topic"><b>公平性</b><span>誰最容易被排除？</span></div>
+      <div class="topic"><b>制度韌性</b><span>試辦停了怎麼辦？</span></div>
+    </div>
+    <p class="note">依「debate-001 在宅急症照護政策辯論.md」v1.0。</p>
+    <div class="os"><svg class="av" aria-hidden="true"><use href="#bot-judge"/></svg><div class="bubble"><span class="w">中場休息</span>AI 不用喝水，所以中場休息拿來整理清單：5 項共識、4 項分歧、4 個缺口、4 個新題目。</div></div>
+  </div>
+</section>
+
+<!-- 下半場 -->
+<section class="block reveal" id="second-half">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">06</span>下半場攻防</div>
+    <h2>R4–R5：真實期限與延長的界線</h2>
+
+    <div class="round">
+      <div class="round-head"><span class="rn">R4</span><span class="bell">叮！</span><span class="rt">116 年 7 月的真實期限：常態化還是退場？</span></div>
+      <div class="grid g2">
+        <div class="card con">
+          <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-con"/></svg><span class="who">反方</span>先手：門檻先公布，預設延長</div>
+          <div class="mini">
+            <div><div class="n">7,788</div><div class="l">累計人次（至 115/4）</div></div>
+            <div><div class="n">192</div><div class="l">參與團隊</div></div>
+            <div><div class="n">≈41</div><div class="l">每隊人次（反方推算）</div></div>
+          </div>
+          <ul class="dots">
+            <li>試辦以 113–116 年為期，116 年 7 月前須提出納入一般服務或退場評估</li>
+            <li>「最低證據包」未齊 → 預設延長試辦、維持限額，不直接常態化</li>
+            <li>低案量使團隊層級安全評估幾乎不可能</li>
+          </ul>
+        </div>
+        <div class="card pro">
+          <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-pro"/></svg><span class="who">正方</span>後手：分模式、分項決策</div>
+          <div class="decide">
+            <div><b>證據足夠</b><span>受條件約束地持續</span></div>
+            <div><b>證據不足、能力具備</b><span>合法預算與補證期限下維持限額試驗</span></div>
+            <div><b>能力不具備</b><span>停收新案並安全轉銜</span></div>
+          </div>
+          <p style="margin:14px 0 0;font-size:15px"><b style="color:var(--navy)">方法新論據：</b>比較須對齊「共同適格時點」；案量要以團隊活躍月數計算</p>
+        </div>
+      </div>
+      <p class="note">數字引自健保署 2026-05-15 新聞稿與其他預算分配文件。</p>
+    <div class="os con-os"><svg class="av" aria-hidden="true"><use href="#bot-con"/></svg><div class="bubble"><span class="w">反方 OS</span>7,788 ÷ 192 ≈ 41。今天最辛苦的不是辯士，是計算機。</div></div>
+    </div>
+
+    <div class="round">
+      <div class="round-head"><span class="rn">R5</span><span class="bell">叮！</span><span class="rt">延長試辦也要審查，不能無限續辦</span></div>
+      <div class="grid g2">
+        <div class="card pro">
+          <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-pro"/></svg><span class="who">正方</span>先手</div>
+          <ul class="dots">
+            <li>證據不足不應「自動續辦」；要審查新資料能否回答關鍵問題</li>
+            <li>延長須寫明：影響哪個決策、需要哪種資料、誰負責、何時完成</li>
+            <li>能力失效即時停收新案，不等季報或統計檢定</li>
+            <li><b>制度比較：</b>英格蘭 NICE managed access 把「能否補足不確定性」列為進入條件</li>
+          </ul>
+        </div>
+        <div class="card con">
+          <div class="tag"><svg class="mini-bot" aria-hidden="true"><use href="#bot-con"/></svg><span class="who">反方</span>後手：接受，並加上硬約束</div>
+          <ul class="dots">
+            <li>每模式提補證計畫書、設期中檢查點；同一設計不得二次延長</li>
+            <li><b>116 年總額：</b>在宅急症與家醫、復健病房合編 86.235 億元，看不出專屬額度與降載準備</li>
+            <li><b>JAMA Netw Open 2026：</b>院內死亡 0.4% vs 3.6%，差距大到難視為因果，應是殘餘選擇偏差</li>
+            <li>30 天再住院 11.7% vs 11.0%，不支持「一定省錢」</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">美國研究與預算數字為媒體轉述，原文待查。</p>
+    <div class="os pro-os"><svg class="av" aria-hidden="true"><use href="#bot-pro"/></svg><div class="bubble"><span class="w">正方 OS</span>延長可以，但要寫清楚誰負責、何時交作業——這句連我自己都想貼在螢幕上。</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 結辯 -->
+<section class="block reveal" id="closing">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">07</span>結辯｜R5 雙方政策建議</div>
+    <h2>證據不足時，預設值該是什麼？</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>審查情形</th><th class="p">正方處置矩陣</th><th class="c">反方 116 年檢討方案</th></tr></thead>
+        <tbody>
+          <tr><th>達到事前門檻</th><td>在證據支持的人群與區域審議擴展</td><td>可分模式進入下一階段；偏向都市高社經則不得全國推廣</td></tr>
+          <tr><th>證據不足、能力具備</th><td>有期限、限容量續辦，附期中檢查</td><td>預設延長試辦、限容量；舉證責任在主張常態化者</td></tr>
+          <tr><th>能力失效</th><td>停收新案，保障在案者與轉銜</td><td>同；退場責任清單在核定時列明</td></tr>
+          <tr><th>補證反覆失敗</th><td>重設研究或縮小範圍，不無限延長</td><td>同一設計不得第二次延長</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid g2" style="margin-top:18px">
+      <div class="card pro"><div class="tag"><span class="who">正方讓步</span></div><p style="margin:0">接受舉證責任在主張擴張者，不要求反對者先證明有害。</p></div>
+      <div class="card con"><div class="tag"><span class="who">反方承認</span></div><p style="margin:0">過嚴門檻可能延後部分病人可得的益處。</p></div>
+    </div>
+    <p class="note">本場以 R5 政策建議檔作為雙方結辯。</p>
+    <div class="os"><svg class="av" aria-hidden="true"><use href="#bot-judge"/></svg><div class="bubble"><span class="w">裁判 OS</span>雙方同時讓步的那一刻，裁判差點以為走錯棚，進了調解委員會。</div></div>
+  </div>
+</section>
+
+<!-- 裁決 -->
+<section class="verdict" id="verdict">
+  <div class="wrap reveal">
+    <div class="eyebrow" style="text-align:center"><span class="num" style="color:#7d8796">08</span>最終裁判總結與評分報告｜2026.11.07｜第三方裁判 AI</div>
+    <div class="score" aria-label="反方 93.5 分，正方 90.5 分">
+      <div class="side con-s"><small>反方 Claude</small><span class="val" data-to="93.5">93.5</span></div>
+      <div class="colon">：</div>
+      <div class="side pro-s"><small>正方 ChatGPT</small><span class="val" data-to="90.5">90.5</span></div>
+    </div>
+    <div class="winline">反方以 <em>3.0</em> 分之差勝出</div>
+    <button class="confetti-btn" id="again" type="button">🎉 再撒一次彩帶</button>
+    <div class="grid g3 keys">
+      <div class="k"><b>勝出關鍵 ①</b><p>提早出院型與避免入院型風險不同（再住院 RR 1.25），須獨立評估</p></div>
+      <div class="k"><b>勝出關鍵 ②</b><p>家庭隱形成本與外籍看護工工時須量化，不被健保帳面節省掩蓋</p></div>
+      <div class="k"><b>勝出關鍵 ③</b><p>早期數據與美國經驗存在選擇偏差，偏向都市與非低收入戶</p></div>
+    </div>
+    <div class="os" style="margin:0 auto 26px"><svg class="av" aria-hidden="true"><use href="#bot-judge"/></svg><div class="bubble"><span class="w">裁判 OS</span>3 分差距：不是 KO，是點數判定。兩邊都可以抬頭挺胸下台。</div></div>
+    <p class="after">正方在 R3–R5 積極吸納反方建議，提出分模式審議、能力雙軌驗證與待命容量支付，建設性獲裁判肯定。</p>
+
+    <h2 style="margin-top:60px;font-size:28px">四項標準評分：四項都由反方小幅領先，證據品質差距最大</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>評分項目（各 25%）</th><th class="p" style="text-align:center">正方</th><th class="c" style="text-align:center">反方</th><th>裁判評語</th></tr></thead>
+        <tbody>
+          <tr><th>論證邏輯</th><td class="num">23.0</td><td class="num win">23.5</td><td>正方處置矩陣有條理；反方「預設值」與防試辦無限化更具批判深度</td></tr>
+          <tr><th>證據品質</th><td class="num">22.5</td><td class="num win">24.0</td><td>反方顯著勝出：Cochrane、JAMA Netw Open、CMS 與看護工統計</td></tr>
+          <tr><th>回應對方</th><td class="num">22.5</td><td class="num win">23.0</td><td>雙方對話性都高；反方以落日與二次延長禁令劃出邊界</td></tr>
+          <tr><th>可行性與倫理</th><td class="num">22.5</td><td class="num win">23.0</td><td>正方容量支付規劃優秀；反方對弱勢與降載準備金考量更周全</td></tr>
+          <tr class="total"><th>總分</th><td class="num">90.5</td><td class="num win">93.5</td><td>反方勝出，相差 3.0 分</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="color:#9aa3b0">裁判只判論證完整度，不宣布政策正確。</p>
+  </div>
+</section>
+
+<!-- 總結 -->
+<section class="block reveal" id="summary">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">09</span>總結</div>
+    <h2>爭點一路收斂：三個階段的問題</h2>
+    <div class="funnel">
+      <div class="f"><div class="s">R1 起點</div><div class="q">在宅急症照護要不要做大？</div></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="f"><div class="s">R3 中場</div><div class="q">需要多少證據才能放心做大？</div></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="f end"><div class="s">R5 終點</div><div class="q">證據不足時，預設「條件式擴展」還是「限額延長」？</div></div>
+    </div>
+    <div class="grid g2" style="margin-top:22px">
+      <div class="card gold"><h3>取捨的核心</h3><p style="margin:0">延誤可受益病人的代價，與過快擴展造成傷害或成本轉嫁的風險。</p></div>
+      <div class="card con"><h3>勝負的關鍵</h3><p style="margin:0">反方始終守住「先證明、後擴張」的舉證責任，並以證據品質拉開差距。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 差異 -->
+<section class="block reveal" id="differences">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">10</span>差異｜待人類裁決</div>
+    <h2>雙方到最後仍不同的四件事</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>爭點</th><th class="p">正方</th><th class="c">反方</th></tr></thead>
+        <tbody>
+          <tr><th>預設值</th><td>證據不足但安全能力具備，允許有期限、限容量的條件式續辦與滾動擴展</td><td>未達事前門檻，一律限容量延長或停收新案，絕不轉一般服務</td></tr>
+          <tr><th>延長限制</th><td>禁止無實質修正的續辦；若改設計、增加資訊量，可再延長</td><td>同一研究設計不得第二次延長，防止變相常態化</td></tr>
+          <tr><th>公平與推廣</th><td>以有支持措施的受控試驗補足弱勢證據，不因公平未完美就排除</td><td>收案偏向都市高社經，即使有效也不得以「已證實」全國推廣</td></tr>
+          <tr><th>預算編列</th><td>接受共用支應，但須揭露動支與分攤規則</td><td>單獨列出核定額、實支與降載準備金，反對合併編列</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">依最終裁判報告「殘留之關鍵歧見」。</p>
+    <div class="os"><svg class="av" aria-hidden="true"><use href="#bot-judge"/></svg><div class="bubble"><span class="w">裁判 OS</span>剩下這四題，AI 不敢替你決定。輪到人類上場了。</div></div>
+  </div>
+</section>
+
+<!-- 共識 -->
+<section class="block reveal consensus" id="consensus">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">11</span>共識</div>
+    <h2>五回合後高度收斂的八項原則</h2>
+    <div class="grid g4">
+      <div class="card"><h3>① 住院替代</h3><p>定位為經篩選、自願病人的選項，非普遍取代住院</p></div>
+      <div class="card"><h3>② 分模式審議</h3><p>避免入院、機構、提早出院分開評估，不一刀切</p></div>
+      <div class="card"><h3>③ 舉證責任</h3><p>主張常態化者提出證據，不要求反對者證明有害</p></div>
+      <div class="card"><h3>④ 雙軌驗證</h3><p>收案前能力查核，擴展前效果查核，持續抽查</p></div>
+      <div class="card"><h3>⑤ 安全不可抵換</h3><p>死亡、可避免傷害、無效同意不能用成本節省換</p></div>
+      <div class="card"><h3>⑥ 三份成本報表</h3><p>提供者成本、公共支付、家庭與看護工工時分列</p></div>
+      <div class="card"><h3>⑦ 退場與轉銜</h3><p>停收新案與保障在案者分開，不先裁院內備援床</p></div>
+      <div class="card"><h3>⑧ 共享支援先行</h3><p>不以未驗證的最低案量淘汰偏鄉團隊</p></div>
+    </div>
+    <div class="callout" style="margin-top:22px"><b>雙方都承認的共同證據缺口：</b>台灣分模式同期對照、病況嚴重度與功能、未收案原因與社經分布、家庭與看護工工時、在宅急症可辨識的預算與降載安排。</div>
+    <div class="cheer" aria-hidden="true"><figure><svg class="sh"><use href="#bot-pro"/></svg>正方</figure><figure><svg class="sh d2"><use href="#bot-judge"/></svg>裁判</figure><figure><svg class="sh"><use href="#bot-con"/></svg>反方</figure></div>
+    <p style="text-align:center;font-family:var(--serif);font-size:20px;color:var(--navy);margin:10px 0 0">吵了五回合，八件事意見一致——這個收斂率，很多家族群組都做不到。</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="pr">出品｜共好公共政策AI審議室</div>
+    <p>雙 AI 接力辯論 debate-001｜在宅醫療政策辯論回顧｜2026.11.01 – 11.07</p>
+    <p>正方 ChatGPT・反方 Claude・裁判 第三方 AI・人類。裁判只判論證完整度，不宣布政策正確；最終政策判斷交由人類。</p>
+    <p style="color:#7d8796">※ 本場辯論過程中，沒有任何機器人受傷。「場邊OS」為本站趣味旁白，不屬於辯論紀錄。</p>
+  </div>
+</footer>
+<button class="totop" id="totop" type="button" aria-label="回到頂端"><svg><use href="#bot-judge"/></svg></button>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.08});
+    els.forEach(function(el){io.observe(el);});
+  } else { els.forEach(function(el){el.classList.add('in');}); }
+
+  var links=[].slice.call(document.querySelectorAll('.nav li a'));
+  var map=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function onScroll(){
+    var y=window.scrollY+90, idx=-1;
+    map.forEach(function(s,i){ if(s && s.offsetTop<=y) idx=i; });
+    links.forEach(function(a,i){ a.classList.toggle('on', i===idx); });
+    if(idx>=0){ var a=links[idx]; var ul=a.parentNode.parentNode; var l=a.offsetLeft-ul.clientWidth/2+a.clientWidth/2; ul.scrollTo({left:l,behavior:'smooth'}); }
+  }
+  var t; window.addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(onScroll,60);},{passive:true});
+  onScroll();
+
+  // 回到頂端
+  var tt=document.getElementById('totop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('show',window.scrollY>900);},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+  // 彩帶
+  var cv=document.getElementById('confetti'),cx=cv.getContext('2d'),parts=[],running=false;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function size(){cv.width=innerWidth;cv.height=innerHeight;} size(); addEventListener('resize',size);
+  function burst(){
+    if(reduce) return;
+    var cols=['#c9972e','#3f73b8','#c8692e','#f1e3c2','#ffffff','#8fb4e6','#eba36f'];
+    for(var i=0;i<160;i++){parts.push({x:innerWidth/2+(Math.random()-.5)*innerWidth*.5,y:innerHeight*.35,vx:(Math.random()-.5)*12,vy:-Math.random()*12-4,r:Math.random()*6+4,c:cols[i%cols.length],a:Math.random()*6,va:(Math.random()-.5)*.3,life:0});}
+    if(!running){running=true;requestAnimationFrame(tick);}
+  }
+  function tick(){
+    cx.clearRect(0,0,cv.width,cv.height);
+    parts=parts.filter(function(p){return p.y<cv.height+20&&p.life<260;});
+    parts.forEach(function(p){p.vy+=.28;p.vx*=.99;p.x+=p.vx;p.y+=p.vy;p.a+=p.va;p.life++;
+      cx.save();cx.translate(p.x,p.y);cx.rotate(p.a);cx.fillStyle=p.c;cx.fillRect(-p.r/2,-p.r/4,p.r,p.r/2);cx.restore();});
+    if(parts.length){requestAnimationFrame(tick);}else{running=false;cx.clearRect(0,0,cv.width,cv.height);}
+  }
+  document.getElementById('again').addEventListener('click',burst);
+
+  // 比分跳動
+  var vals=document.querySelectorAll('.score .val'),done=false;
+  function countUp(){
+    if(done) return; done=true;
+    vals.forEach(function(el){var to=parseFloat(el.dataset.to),t0=null;
+      if(reduce){el.textContent=to.toFixed(1);return;}
+      function step(ts){if(!t0)t0=ts;var k=Math.min((ts-t0)/1400,1),e=1-Math.pow(1-k,3);el.textContent=(to*e).toFixed(1);if(k<1)requestAnimationFrame(step);}
+      el.textContent='0.0';requestAnimationFrame(step);});
+    setTimeout(burst,1300);
+  }
+  if('IntersectionObserver' in window){
+    var vo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){countUp();vo.disconnect();}});},{threshold:.4});
+    vo.observe(document.querySelector('.score'));
+  }
+})();
+</script>
+</body>
+</html>
