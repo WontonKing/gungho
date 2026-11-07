@@ -20,7 +20,7 @@
    ============================================================ */
 window.TOPICS = [
   {
-    id: "debate-001",
+    id: "debate001",
     status: "done",
     title: "在宅急症照護，該從試辦走向擴張嗎？",
     pro: "ChatGPT",
@@ -31,7 +31,7 @@ window.TOPICS = [
     url: "./debate001/"
   },
   {
-    id: "debate-002",
+    id: "debate002",
     status: "done",
     title: "健保該漲保費，並優先投入預防與基層嗎？",
     pro: "Claude",
