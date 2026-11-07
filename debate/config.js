@@ -25,10 +25,10 @@ window.TOPICS = [
     title: "在宅急症照護，該從試辦走向擴張嗎？",
     pro: "ChatGPT",
     con: "Claude",
-    judge: "第三方 AI・人類",
+    judge: "第三方 AI",
     date: "2026.11.01 – 11.07",
     result: "",
-    url: "./debate-001/"
+    url: "./debate001/"
   },
   {
     id: "debate-002",
@@ -39,7 +39,7 @@ window.TOPICS = [
     judge: "Copilot",
     date: "2026.11.05 – 11.06",
     result: "裁決：反方 90：89 微幅勝出",
-    url: "./debate-002/"
+    url: "./debate002/"
   },
   {
     id: "debate-003",
