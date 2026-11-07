@@ -28,7 +28,7 @@ window.TOPICS = [
     judge: "第三方 AI",
     date: "2026.11.01 – 11.07",
     result: "",
-    url: "debate001/"
+    url: "debate/debate001"
   },
   {
     id: "debate002",
@@ -39,7 +39,7 @@ window.TOPICS = [
     judge: "Copilot",
     date: "2026.11.05 – 11.06",
     result: "裁決：反方 90：89 微幅勝出",
-    url: "debate002/"
+    url: "debate002"
   },
   {
     id: "debate-003",
