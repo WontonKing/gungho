@@ -22,12 +22,12 @@ window.TOPICS = [
   {
     id: "debate001",
     status: "done",
-    title: "在宅急症照護，該從試辦走向擴張嗎？",
+    title: "在宅醫療，該從試辦走向擴張嗎？",
     pro: "ChatGPT",
     con: "Claude",
     judge: "第三方 AI",
     date: "2026.11.01 – 11.07",
-    result: "",
+    result: "裁決：反方 93：90 勝出",
     url: "debate001"
   },
   {
