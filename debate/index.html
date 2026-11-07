@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>共好公共政策 AI 審議室｜多智能體辯論 MAD</title>
+<meta name="description" content="共好公共政策 AI 審議室以多智能體辯論（Multi-Agent Debate, MAD）研究公共議題，公開分享 AI 辯論的過程與結果。">
+<meta property="og:title" content="共好公共政策 AI 審議室｜讓 AI 們先吵一架，再給答案">
+<meta property="og:description" content="多智能體辯論（MAD）是什麼？怎麼運作？看 AI 們如何彼此質疑、修正、聚合共識，以及我們的議題辯論紀錄。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fffdf6; --ink:#2b3445; --muted:#6b7385; --line:#ece4d2;
+  --sun:#ffc93c; --sun-soft:#fff3cc;
+  --pro:#3f86d9; --pro-soft:#e6f1fd;
+  --con:#f08a4b; --con-soft:#fff0e6;
+  --mint:#2fb391; --mint-soft:#e2f7f0;
+  --grape:#8b6ad8; --grape-soft:#f0ebfc;
+  --pink:#f2709c;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --serif:"Noto Serif TC","Songti TC",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.8;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,253,246,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:18px;height:60px}
+.brand{display:flex;align-items:center;gap:8px;font-family:var(--serif);font-weight:900;font-size:16px;text-decoration:none;white-space:nowrap}
+.brand svg{width:30px;height:33px}
+.nav ul{display:flex;gap:2px;list-style:none;margin:0 0 0 auto;padding:0;overflow-x:auto;scrollbar-width:none}
+.nav ul::-webkit-scrollbar{display:none}
+.nav li a{display:block;padding:6px 12px;border-radius:99px;font-size:14px;text-decoration:none;white-space:nowrap;color:var(--muted);font-weight:500}
+.nav li a:hover,.nav li a.on{background:var(--sun-soft);color:var(--ink)}
+.nav li a.hl{background:var(--sun);color:var(--ink);font-weight:700}
+@media(max-width:760px){.brand span{display:none}}
+/* hero */
+.hero{position:relative;overflow:hidden;padding:70px 0 60px;background:
+  radial-gradient(circle at 12% 20%,#e6f1fd 0,transparent 32%),
+  radial-gradient(circle at 88% 12%,#fff0e6 0,transparent 30%),
+  radial-gradient(circle at 70% 92%,#e2f7f0 0,transparent 30%),var(--bg)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid var(--line);border-radius:99px;padding:4px 14px;font-size:13px;font-weight:700;color:var(--muted)}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 4px var(--mint-soft)}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(34px,5.2vw,58px);line-height:1.25;margin:18px 0 12px;letter-spacing:.01em}
+.hero h1 .hl{background:linear-gradient(transparent 62%,var(--sun) 62%);padding:0 4px}
+.hero .sub{font-size:clamp(17px,2vw,20px);font-weight:700;color:var(--pro);margin:0 0 14px}
+.hero p.lead{font-size:16.5px;color:#4a5263;max-width:560px;margin:0}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:99px;font-weight:700;text-decoration:none;font-size:15px;border:2px solid var(--ink);transition:transform .15s, box-shadow .15s}
+.btn.primary{background:var(--sun);box-shadow:3px 3px 0 var(--ink)}
+.btn.ghost{background:#fff}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--ink)}
+.hero-art svg{width:100%;height:auto;display:block}
+.round-chip{font-family:var(--sans);font-weight:900}
+/* sections */
+section.block{padding:80px 0 30px}
+.eyebrow{display:inline-block;font-size:13px;font-weight:900;letter-spacing:.12em;color:var(--pro);background:var(--pro-soft);padding:3px 12px;border-radius:99px}
+h2{font-family:var(--serif);font-weight:900;font-size:clamp(26px,3.6vw,38px);line-height:1.35;margin:12px 0 10px}
+.intro{color:var(--muted);max-width:760px;margin:0 0 30px}
+h3{font-size:19px;margin:0 0 8px;font-weight:900}
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.g3{grid-template-columns:1fr}}
+@media(max-width:700px){.g2{grid-template-columns:1fr}}
+.card{background:#fff;border:2px solid var(--ink);border-radius:20px;padding:22px 24px;box-shadow:4px 4px 0 var(--line);transition:transform .2s, box-shadow .2s}
+.card:hover{transform:translateY(-4px) rotate(-.4deg);box-shadow:6px 8px 0 var(--line)}
+.card svg.ill{width:100%;height:auto;display:block;margin:-4px 0 10px;border-radius:14px}
+.card p{margin:0;color:#4a5263}
+.c-pro{background:var(--pro-soft)}.c-con{background:var(--con-soft)}.c-mint{background:var(--mint-soft)}.c-grape{background:var(--grape-soft)}.c-sun{background:var(--sun-soft)}
+.badge{display:inline-block;font-size:12px;font-weight:900;padding:2px 10px;border-radius:99px;background:var(--ink);color:#fff;margin-bottom:8px}
+/* topics */
+.topics-sec{background:linear-gradient(180deg,var(--bg),#fff8e3)}
+.topic-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.topic{position:relative;display:flex;flex-direction:column;background:#fff;border:2px solid var(--ink);border-radius:22px;padding:20px 22px 18px;text-decoration:none;box-shadow:5px 5px 0 var(--ink);transition:transform .18s, box-shadow .18s}
+a.topic:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--ink)}
+.topic .top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+.topic .id{font-family:ui-monospace,Menlo,monospace;font-size:13px;font-weight:700;color:var(--muted)}
+.status{font-size:12px;font-weight:900;padding:2px 10px;border-radius:99px}
+.status.done{background:var(--mint-soft);color:#1e8a6e}
+.status.live{background:var(--con-soft);color:#c4612a}
+.status.soon{background:#f0f0f0;color:#888}
+.topic h3{font-family:var(--serif);font-size:21px;line-height:1.45;margin:0 0 12px}
+.vs{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13.5px;margin-bottom:10px}
+.vs span{display:inline-flex;align-items:center;gap:4px;padding:2px 10px 2px 4px;border-radius:99px;font-weight:700}
+.vs svg{width:22px;height:24px}
+.vs .p{background:var(--pro-soft);color:#2a69b3}.vs .c{background:var(--con-soft);color:#c4612a}.vs .j{background:var(--sun-soft);color:#9a7310}
+.vs b{font-weight:900;color:var(--muted);font-size:12px}
+.topic .meta{font-size:13px;color:var(--muted);margin-top:auto}
+.topic .res{font-size:14px;font-weight:700;color:var(--ink);margin:2px 0 8px}
+.topic .go{margin-top:12px;font-weight:900;font-size:14px;color:var(--pro)}
+.topic.soon{border-style:dashed;box-shadow:none;background:transparent;align-items:center;justify-content:center;text-align:center;min-height:220px;color:var(--muted)}
+.topic.soon svg{width:70px;height:76px;opacity:.7}
+/* concept compare */
+.compare{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:stretch}
+.compare .arrow{align-self:center;font-size:34px;font-weight:900;color:var(--sun)}
+@media(max-width:800px){.compare{grid-template-columns:1fr}.compare .arrow{transform:rotate(90deg);justify-self:center}}
+.defbox{margin-top:26px;background:#fff;border:2px dashed var(--pro);border-radius:20px;padding:20px 24px;font-size:16.5px}
+.defbox b{color:var(--pro)}
+/* flow */
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;align-items:stretch}
+.flow .arrow{align-self:center;font-size:30px;font-weight:900;color:var(--sun)}
+@media(max-width:900px){.flow{grid-template-columns:1fr}.flow .arrow{transform:rotate(90deg);justify-self:center}}
+.step-n{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;font-weight:900;margin-right:8px;font-size:15px}
+.step-h{display:flex;align-items:center;margin-bottom:8px}
+.step-h h3{margin:0}
+.step-h small{display:block;font-size:12px;color:var(--muted);font-weight:700}
+.devil{margin:22px auto 0;max-width:720px;text-align:center;font-size:15px;color:var(--muted)}
+.devil b{color:var(--con)}
+/* modes */
+.mode .scene{font-size:13px;margin-top:12px;padding-top:12px;border-top:2px dotted rgba(0,0,0,.12)}
+.mode .scene b{display:block;font-size:12px;letter-spacing:.08em;color:var(--muted)}
+/* adv */
+.adv{display:flex;gap:16px;align-items:flex-start}
+.adv .ic{flex:none;width:56px;height:56px;border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:28px;background:#fff;border:2px solid var(--ink)}
+/* cases */
+.case h3{display:flex;align-items:center;gap:10px;font-size:20px}
+.case h3 .em{font-size:28px}
+.case .lab{display:inline-block;font-size:12px;font-weight:900;letter-spacing:.06em;color:#fff;background:var(--ink);border-radius:6px;padding:1px 8px;margin:12px 0 6px}
+.case p{font-size:15px}
+.case ul{margin:0;padding-left:1.1em;font-size:14.5px;color:#4a5263}
+.case li{margin:6px 0}
+.case li b{color:var(--ink)}
+.agents{display:flex;flex-direction:column;gap:6px;font-size:14.5px}
+.agents span{background:#fff;border-radius:10px;padding:6px 12px;border:1.5px solid rgba(0,0,0,.08)}
+.agents em{font-style:normal;font-size:13.5px;color:var(--muted);padding:2px 4px}
+.lead2{font-size:16px;color:#4a5263;max-width:820px;margin:-14px 0 28px}
+/* tools */
+.tool{display:flex;flex-direction:column;gap:6px}
+.tool .no{font-family:var(--serif);font-size:40px;font-weight:900;line-height:1;color:var(--sun);-webkit-text-stroke:1.5px var(--ink)}
+/* footer */
+footer{margin-top:80px;background:#fff8e3;border-top:2px solid var(--ink);padding:44px 0 56px;font-size:14px;color:var(--muted)}
+footer .pr{font-family:var(--serif);font-weight:900;font-size:20px;color:var(--ink);display:flex;align-items:center;gap:10px}
+footer .pr svg{width:36px;height:40px}
+footer p{margin:6px 0}
+.totop{position:fixed;right:18px;bottom:18px;width:54px;height:58px;border:0;background:none;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s;z-index:60}
+.totop.show{opacity:1;pointer-events:auto}
+.totop svg{width:100%;height:100%}
+.totop:hover svg{transform:translateY(-4px);transition:transform .2s}
+/* motion */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+.bob{animation:bob 3.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center bottom}
+.bob.d2{animation-delay:-1.1s}.bob.d3{animation-delay:-2.1s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.blink{animation:blink 4.5s infinite;transform-box:fill-box;transform-origin:center}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+.spin{animation:spin 14s linear infinite;transform-box:fill-box;transform-origin:center}
+@keyframes spin{to{transform:rotate(360deg)}}
+.dash{stroke-dasharray:6 8;animation:dash 1.2s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-28}}
+.pop{animation:pop 2.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.pop.d2{animation-delay:-.9s}.pop.d3{animation-delay:-1.7s}
+@keyframes pop{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.zap{animation:zap 1s steps(2) infinite}
+@keyframes zap{50%{opacity:.25}}
+.bubble-cycle text{transition:opacity .4s}
+@media (prefers-reduced-motion:reduce){.bob,.blink,.spin,.dash,.pop,.zap{animation:none}.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media print{.nav,.totop{display:none}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- 機器人角色（原創） -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="bot-pro" viewBox="0 0 100 110">
+    <line x1="50" y1="8" x2="50" y2="22" stroke="#2b3445" stroke-width="3"/><circle cx="50" cy="8" r="6" fill="#ffc93c"/>
+    <rect x="10" y="38" width="10" height="20" rx="4" fill="#2a69b3"/><rect x="80" y="38" width="10" height="20" rx="4" fill="#2a69b3"/>
+    <rect x="18" y="22" width="64" height="54" rx="18" fill="#3f86d9"/><rect x="27" y="32" width="46" height="33" rx="12" fill="#e6f1fd"/>
+    <g class="blink"><circle cx="40" cy="46" r="4.5" fill="#2b3445"/><circle cx="60" cy="46" r="4.5" fill="#2b3445"/></g>
+    <circle cx="41.5" cy="44.5" r="1.4" fill="#fff"/><circle cx="61.5" cy="44.5" r="1.4" fill="#fff"/>
+    <path d="M41 55 Q50 62 59 55" stroke="#2b3445" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <circle cx="33" cy="55" r="3" fill="#f4a9a0" opacity=".8"/><circle cx="67" cy="55" r="3" fill="#f4a9a0" opacity=".8"/>
+    <rect x="30" y="79" width="40" height="27" rx="9" fill="#3f86d9"/>
+    <circle cx="50" cy="92" r="6" fill="#fff"/><path d="M47 92 l2 2 l4 -4" stroke="#3f86d9" stroke-width="2" fill="none"/>
+  </symbol>
+  <symbol id="bot-con" viewBox="0 0 100 110">
+    <line x1="50" y1="8" x2="50" y2="22" stroke="#2b3445" stroke-width="3"/><rect x="44" y="2" width="12" height="12" rx="3" fill="#ffc93c"/>
+    <rect x="10" y="38" width="10" height="20" rx="4" fill="#c4612a"/><rect x="80" y="38" width="10" height="20" rx="4" fill="#c4612a"/>
+    <rect x="18" y="22" width="64" height="54" rx="10" fill="#f08a4b"/><rect x="27" y="32" width="46" height="33" rx="8" fill="#fff0e6"/>
+    <path d="M35 39 L45 41" stroke="#2b3445" stroke-width="2.4" stroke-linecap="round"/><path d="M55 38 L65 36" stroke="#2b3445" stroke-width="2.4" stroke-linecap="round"/>
+    <g class="blink"><circle cx="40" cy="47" r="4.5" fill="#2b3445"/><circle cx="60" cy="47" r="4.5" fill="#2b3445"/></g>
+    <circle cx="41.5" cy="45.5" r="1.4" fill="#fff"/><circle cx="61.5" cy="45.5" r="1.4" fill="#fff"/>
+    <path d="M43 57 Q50 59 58 55" stroke="#2b3445" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <rect x="30" y="79" width="40" height="27" rx="7" fill="#f08a4b"/><rect x="40" y="85" width="20" height="15" rx="2" fill="#fff"/>
+    <path d="M43 89h14M43 93h14M43 97h9" stroke="#f08a4b" stroke-width="1.6"/>
+  </symbol>
+  <symbol id="bot-mint" viewBox="0 0 100 110">
+    <path d="M50 4 l4 8 l9 1 l-7 6 l2 9 l-8 -5 l-8 5 l2 -9 l-7 -6 l9 -1z" fill="#ffc93c" transform="translate(0,-2) scale(1)"/>
+    <rect x="10" y="38" width="10" height="20" rx="4" fill="#1e8a6e"/><rect x="80" y="38" width="10" height="20" rx="4" fill="#1e8a6e"/>
+    <rect x="18" y="24" width="64" height="52" rx="26" fill="#2fb391"/><rect x="27" y="34" width="46" height="31" rx="15" fill="#e2f7f0"/>
+    <g class="blink"><circle cx="40" cy="48" r="4.5" fill="#2b3445"/><circle cx="60" cy="48" r="4.5" fill="#2b3445"/></g>
+    <circle cx="41.5" cy="46.5" r="1.4" fill="#fff"/><circle cx="61.5" cy="46.5" r="1.4" fill="#fff"/>
+    <ellipse cx="50" cy="58" rx="5" ry="3.5" fill="#2b3445"/>
+    <rect x="30" y="79" width="40" height="27" rx="13" fill="#2fb391"/>
+    <path d="M44 88 q6 -6 12 0 q-6 10 -12 0z" fill="#fff"/>
+  </symbol>
+  <symbol id="bot-judge" viewBox="0 0 100 110">
+    <path d="M22 30 Q14 22 22 14 Q30 8 38 14 Q44 6 50 6 Q56 6 62 14 Q70 8 78 14 Q86 22 78 30 Z" fill="#fff3cc" stroke="#e0a91c" stroke-width="2"/>
+    <rect x="18" y="24" width="64" height="52" rx="16" fill="#8b6ad8"/><rect x="27" y="33" width="46" height="31" rx="10" fill="#f0ebfc"/>
+    <circle cx="40" cy="47" r="7" fill="none" stroke="#2b3445" stroke-width="2"/><circle cx="60" cy="47" r="7" fill="none" stroke="#2b3445" stroke-width="2"/>
+    <line x1="47" y1="47" x2="53" y2="47" stroke="#2b3445" stroke-width="2"/>
+    <g class="blink"><circle cx="40" cy="47" r="3" fill="#2b3445"/><circle cx="60" cy="47" r="3" fill="#2b3445"/></g>
+    <path d="M44 57 Q50 60 56 57" stroke="#2b3445" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <rect x="30" y="79" width="40" height="27" rx="9" fill="#8b6ad8"/><path d="M42 82 L50 87 L58 82 L58 92 L50 87 L42 92 Z" fill="#ffc93c"/>
+  </symbol>
+</defs></svg>
+
+<nav class="nav" aria-label="主選單"><div class="wrap">
+  <a class="brand" href="#top"><svg aria-hidden="true"><use href="#bot-judge"/></svg><span>共好公共政策 AI 審議室</span></a>
+  <ul>
+    <li><a href="#topics" class="hl">議題展示</a></li>
+    <li><a href="#what">MAD 是什麼</a></li>
+    <li><a href="#flow">運作流程</a></li>
+    <li><a href="#modes">辯論模式</a></li>
+    <li><a href="#why">優勢</a></li>
+    <li><a href="#cases">應用場景</a></li>
+    <li><a href="#tools">工具</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill"><i></i>多智能體辯論 Multi-Agent Debate</span>
+      <h1>共好公共政策<br><span class="hl">AI 審議室</span></h1>
+      <p class="sub">讓 AI 們先吵一架，再給答案。</p>
+      <p class="lead">這裡採用多智能體辯論（Multi-Agent Debate, MAD）進行議題研究，並將 AI 辯論的過程和結果與大家分享。辯論平台是共好研究室自行架設，歡迎討論，平台恕不公開開放。</p>
+      <div class="cta">
+        <a class="btn primary" href="#topics">🗂️ 看議題展示</a>
+        <a class="btn ghost" href="#what">🤖 MAD 是什麼？</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 540 430">
+        <!-- 背景圓 -->
+        <circle cx="270" cy="225" r="190" fill="#fff" stroke="#ece4d2" stroke-width="2"/>
+        <!-- 循環箭頭 -->
+        <g class="spin">
+          <circle cx="270" cy="250" r="150" fill="none" stroke="#ffc93c" stroke-width="5" stroke-dasharray="70 40" stroke-linecap="round"/>
+        </g>
+        <!-- 裁判 -->
+        <g class="bob d3"><use href="#bot-judge" x="225" y="20" width="90" height="99"/></g>
+        <!-- 圓桌 -->
+        <ellipse cx="270" cy="300" rx="150" ry="44" fill="#ffe7a3" stroke="#2b3445" stroke-width="3"/>
+        <ellipse cx="270" cy="294" rx="150" ry="44" fill="#fff3cc" stroke="#2b3445" stroke-width="3"/>
+        <!-- 中央 Round 標 -->
+        <rect x="222" y="278" width="96" height="32" rx="16" fill="#2b3445"/>
+        <text id="roundTxt" class="round-chip" x="270" y="300" text-anchor="middle" font-size="16" fill="#ffc93c">Round 1</text>
+        <!-- 三位 Agent -->
+        <g class="bob"><use href="#bot-pro" x="62" y="180" width="110" height="121"/></g>
+        <g class="bob d2"><use href="#bot-mint" x="215" y="146" width="110" height="121"/></g>
+        <g class="bob d3"><use href="#bot-con" x="368" y="180" width="110" height="121"/></g>
+        <!-- 對話框 -->
+        <g class="pop bubble-cycle">
+          <rect x="10" y="110" width="150" height="46" rx="16" fill="#e6f1fd" stroke="#3f86d9" stroke-width="2"/>
+          <path d="M90 156 l8 14 l8 -14z" fill="#e6f1fd" stroke="#3f86d9" stroke-width="2"/><rect x="88" y="152" width="20" height="5" fill="#e6f1fd"/>
+          <text id="b1" x="85" y="139" text-anchor="middle" font-size="15" font-weight="700" fill="#2a69b3" font-family="Noto Sans TC,sans-serif">我先想想…</text>
+        </g>
+        <g class="pop d3 bubble-cycle">
+          <rect x="380" y="110" width="150" height="46" rx="16" fill="#fff0e6" stroke="#f08a4b" stroke-width="2"/>
+          <path d="M438 156 l8 14 l8 -14z" fill="#fff0e6" stroke="#f08a4b" stroke-width="2"/><rect x="436" y="152" width="20" height="5" fill="#fff0e6"/>
+          <text id="b3" x="455" y="139" text-anchor="middle" font-size="15" font-weight="700" fill="#c4612a" font-family="Noto Sans TC,sans-serif">我也有答案！</text>
+        </g>
+        <!-- 腳下陰影與標籤 -->
+        <ellipse cx="270" cy="400" rx="200" ry="10" fill="#2b3445" opacity=".08"/>
+        <g font-family="Noto Sans TC,sans-serif" font-size="13" font-weight="900">
+          <rect x="72" y="352" width="90" height="26" rx="13" fill="#3f86d9"/><text x="117" y="370" text-anchor="middle" fill="#fff">Agent A</text>
+          <rect x="225" y="352" width="90" height="26" rx="13" fill="#2fb391"/><text x="270" y="370" text-anchor="middle" fill="#fff">Agent B</text>
+          <rect x="378" y="352" width="90" height="26" rx="13" fill="#f08a4b"/><text x="423" y="370" text-anchor="middle" fill="#fff">Agent C</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- 議題展示 -->
+<section class="block topics-sec reveal" id="topics">
+  <div class="wrap">
+    <span class="eyebrow">議題展示</span>
+    <h2>🗂️ 審議室裡吵過的議題</h2>
+    <p class="intro">每一場都是 AI 正反方多輪接力答辯、裁判評分後的全場回顧。點進卡片，看雙方怎麼攻防、在哪裡讓步、最後又凝聚出哪些共識。</p>
+    <div class="topic-grid" id="topicGrid"></div>
+    <noscript><p>請開啟 JavaScript 以顯示議題列表。</p></noscript>
+  </div>
+</section>
+
+<!-- MAD 是什麼 -->
+<section class="block reveal" id="what">
+  <div class="wrap">
+    <span class="eyebrow">MAD 是什麼</span>
+    <h2>一個 AI 想不透的，交給一群 AI 吵吵看</h2>
+    <div class="compare">
+      <div class="card c-sun">
+        <svg class="ill" viewBox="0 0 320 170" aria-hidden="true">
+          <rect width="320" height="170" fill="#fff"/>
+          <path d="M20 140 Q90 140 140 110 T250 90" stroke="#ece4d2" stroke-width="16" fill="none" stroke-linecap="round"/>
+          <path d="M250 90 L300 90 L300 170 L250 170 Z" fill="#fff3cc"/>
+          <path d="M248 86 l0 84" stroke="#2b3445" stroke-width="3" stroke-dasharray="5 5"/>
+          <text x="275" y="80" text-anchor="middle" font-size="26">⚠️</text>
+          <g class="bob"><use href="#bot-pro" x="150" y="40" width="70" height="77"/></g>
+          <text x="58" y="40" font-size="14" font-weight="700" fill="#6b7385" font-family="Noto Sans TC,sans-serif">算錯了也沒發現…</text>
+        </svg>
+        <span class="badge">單一 AI</span>
+        <h3>一條路走到黑</h3>
+        <p>容易陷入特定思考盲點；中間算錯了，也毫無自覺地一路推到底。</p>
+      </div>
+      <div class="arrow" aria-hidden="true">➜</div>
+      <div class="card c-mint">
+        <svg class="ill" viewBox="0 0 320 170" aria-hidden="true">
+          <rect width="320" height="170" fill="#fff"/>
+          <g class="bob"><use href="#bot-pro" x="20" y="70" width="70" height="77"/></g>
+          <g class="bob d2"><use href="#bot-mint" x="125" y="30" width="70" height="77"/></g>
+          <g class="bob d3"><use href="#bot-con" x="230" y="70" width="70" height="77"/></g>
+          <path class="dash" d="M85 95 Q110 60 128 62" stroke="#3f86d9" stroke-width="3" fill="none"/>
+          <path class="dash" d="M192 62 Q215 60 236 95" stroke="#f08a4b" stroke-width="3" fill="none"/>
+          <path class="dash" d="M90 135 Q160 165 232 135" stroke="#2fb391" stroke-width="3" fill="none"/>
+          <circle cx="160" cy="135" r="15" fill="#2fb391"/><path d="M152 135 l6 6 l10 -12" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span class="badge" style="background:#2fb391">多智能體辯論</span>
+        <h3>互相質疑，一起修正</h3>
+        <p>多輪結構化交談、相互審查，藉由群體智慧（Ensemble）把錯誤抓出來。</p>
+      </div>
+    </div>
+    <div class="defbox">
+      <b>多智能體辯論（Multi-Agent Debate, MAD）</b>是一種將多個大型語言模型（LLM）或同一個模型的複數實例組合成代理（Agents），並透過多輪結構化交談、相互質疑與修正來解決複雜問題的 AI 設計模式。這種機制打破了傳統單一 AI 容易陷入特定思考盲點的限制，藉由群體智慧（Ensemble）與相互審查，顯著提升模型在數學、邏輯推理以及事實查核等基準測試上的準確度。
+    </div>
+  </div>
+</section>
+
+<!-- 流程 -->
+<section class="block reveal" id="flow">
+  <div class="wrap">
+    <span class="eyebrow">核心運作流程</span>
+    <h2>三個階段：先各自想、再互相吵、最後收斂</h2>
+    <p class="intro">這種系統的魔鬼通常藏在「迭代循環」的細節中，標準的 MAD 架構可以分為以下三個階段：</p>
+    <div class="flow">
+      <div class="card c-pro">
+        <svg class="ill" viewBox="0 0 300 160" aria-hidden="true">
+          <rect width="300" height="160" fill="#fff"/>
+          <line x1="100" y1="20" x2="100" y2="150" stroke="#ece4d2" stroke-width="3" stroke-dasharray="6 6"/>
+          <line x1="200" y1="20" x2="200" y2="150" stroke="#ece4d2" stroke-width="3" stroke-dasharray="6 6"/>
+          <g class="bob"><use href="#bot-pro" x="22" y="70" width="58" height="64"/></g>
+          <g class="bob d2"><use href="#bot-mint" x="121" y="70" width="58" height="64"/></g>
+          <g class="bob d3"><use href="#bot-con" x="220" y="70" width="58" height="64"/></g>
+          <g font-family="Noto Sans TC,sans-serif" font-weight="900" font-size="20" text-anchor="middle">
+            <g class="pop"><circle cx="58" cy="40" r="20" fill="#e6f1fd"/><circle cx="44" cy="64" r="4" fill="#e6f1fd"/><text x="58" y="47" fill="#3f86d9">?</text></g>
+            <g class="pop d2"><circle cx="158" cy="40" r="20" fill="#e2f7f0"/><circle cx="144" cy="64" r="4" fill="#e2f7f0"/><text x="158" y="47" fill="#2fb391">!</text></g>
+            <g class="pop d3"><circle cx="258" cy="40" r="20" fill="#fff0e6"/><circle cx="244" cy="64" r="4" fill="#fff0e6"/><text x="258" y="47" fill="#f08a4b">…</text></g>
+          </g>
+        </svg>
+        <div class="step-h"><span class="step-n">1</span><div><small>Round 1</small><h3>獨立思考</h3></div></div>
+        <p>系統將初始問題分發給所有參與的 Agent。這些 Agent 通常被賦予不同的角色（如專家、批判者、或來自不同廠商如 OpenAI、Claude、Gemini 的模型）。他們會彼此獨立給出第一版的答案與推理過程。</p>
+      </div>
+      <div class="arrow" aria-hidden="true">➜</div>
+      <div class="card c-con">
+        <svg class="ill" viewBox="0 0 300 160" aria-hidden="true">
+          <rect width="300" height="160" fill="#fff"/>
+          <g class="spin"><circle cx="150" cy="88" r="52" fill="none" stroke="#ffc93c" stroke-width="4" stroke-dasharray="30 18" stroke-linecap="round"/></g>
+          <text x="150" y="95" text-anchor="middle" font-size="18" font-weight="900" fill="#2b3445" font-family="Noto Sans TC,sans-serif">×3–5輪</text>
+          <g class="bob"><use href="#bot-pro" x="20" y="88" width="58" height="64"/></g>
+          <g class="bob d2"><use href="#bot-mint" x="121" y="4" width="58" height="64"/></g>
+          <g class="bob d3"><use href="#bot-con" x="222" y="88" width="58" height="64"/></g>
+          <path class="dash" d="M70 95 L112 60" stroke="#3f86d9" stroke-width="3"/>
+          <path class="dash" d="M188 60 L230 95" stroke="#f08a4b" stroke-width="3"/>
+          <path class="dash" d="M80 140 L220 140" stroke="#2fb391" stroke-width="3"/>
+          <g class="zap"><text x="88" y="70" font-size="18">⚡</text><text x="196" y="70" font-size="18">⚡</text></g>
+        </svg>
+        <div class="step-h"><span class="step-n">2</span><div><small>Iterative Rounds</small><h3>多輪交叉辯論</h3></div></div>
+        <p>進入第二輪後，每個 Agent 都會讀取其他所有成員在上一輪的回答與論點。Agent 需要指出他人的錯誤，並結合有價值的反饋重新審視並修正自己的答案。這個互相質詢的過程可能會重複 3 到 5 輪。</p>
+      </div>
+      <div class="arrow" aria-hidden="true">➜</div>
+      <div class="card c-grape">
+        <svg class="ill" viewBox="0 0 300 160" aria-hidden="true">
+          <rect width="300" height="160" fill="#fff"/>
+          <g class="pop"><circle cx="40" cy="30" r="14" fill="#3f86d9"/></g>
+          <g class="pop d2"><circle cx="75" cy="22" r="14" fill="#2fb391"/></g>
+          <g class="pop d3"><circle cx="110" cy="30" r="14" fill="#f08a4b"/></g>
+          <path d="M20 55 L130 55 L95 100 L95 130 L55 130 L55 100 Z" fill="#f0ebfc" stroke="#8b6ad8" stroke-width="3" stroke-linejoin="round"/>
+          <path class="dash" d="M135 112 L178 112" stroke="#8b6ad8" stroke-width="3"/>
+          <g class="pop"><path d="M222 60 l10 20 l22 3 l-16 15 l4 22 l-20 -11 l-20 11 l4 -22 l-16 -15 l22 -3z" fill="#ffc93c" stroke="#2b3445" stroke-width="2.5" stroke-linejoin="round"/></g>
+          <text x="222" y="148" text-anchor="middle" font-size="15" font-weight="900" fill="#2b3445" font-family="Noto Sans TC,sans-serif">最優解</text>
+          <use href="#bot-judge" x="236" y="2" width="52" height="57"/>
+        </svg>
+        <div class="step-h"><span class="step-n">3</span><div><small>Aggregation &amp; Resolution</small><h3>共識聚合</h3></div></div>
+        <p>在完成預設的辯論輪數後，系統會透過投票、評審代理（Judged/Aggregator Agent）或一致性演算法，將各方的論點進行總結，產出最終的最優解。</p>
+      </div>
+    </div>
+    <p class="devil">😈 魔鬼藏在細節裡：真正決定品質的，是<b>每一輪怎麼讀、怎麼駁、怎麼改</b>。</p>
+  </div>
+</section>
+
+<!-- 模式 -->
+<section class="block reveal" id="modes">
+  <div class="wrap">
+    <span class="eyebrow">常見的辯論範式與設計</span>
+    <h2>三種吵法，各有用途</h2>
+    <p class="intro">微軟的 AutoGen 框架與學術界對此衍生出了多種設計模式：</p>
+    <div class="grid g3">
+      <div class="card mode c-con">
+        <svg class="ill" viewBox="0 0 300 150" aria-hidden="true">
+          <rect width="300" height="150" fill="#fff"/>
+          <g class="bob"><use href="#bot-pro" x="30" y="40" width="80" height="88"/></g>
+          <g class="bob d2"><use href="#bot-con" x="190" y="40" width="80" height="88"/></g>
+          <g class="zap"><path d="M158 30 L138 78 L154 78 L140 120 L170 66 L154 66 L168 30 Z" fill="#ffc93c" stroke="#2b3445" stroke-width="2.5" stroke-linejoin="round"/></g>
+          <g font-family="Noto Sans TC,sans-serif" font-weight="900" font-size="14"><text x="70" y="24" text-anchor="middle" fill="#3f86d9">正方</text><text x="230" y="24" text-anchor="middle" fill="#f08a4b">反方</text></g>
+        </svg>
+        <span class="badge" style="background:#f08a4b">CopMAD</span>
+        <h3>競爭型辯論</h3>
+        <p>Agent 被強制劃分成正反兩方，各自持有相反立場，進行激烈的對抗與攻擊。</p>
+        <div class="scene"><b>適用場景</b>壓力測試、商業決策模擬、尋找方案漏洞。</div>
+      </div>
+      <div class="card mode c-mint">
+        <svg class="ill" viewBox="0 0 300 150" aria-hidden="true">
+          <rect width="300" height="150" fill="#fff"/>
+          <circle cx="120" cy="80" r="52" fill="#3f86d9" opacity=".22"/>
+          <circle cx="180" cy="80" r="52" fill="#f08a4b" opacity=".22"/>
+          <circle cx="150" cy="80" r="52" fill="none" stroke="#ece4d2" stroke-width="0"/>
+          <g class="pop"><path d="M150 100 C 128 84 132 66 144 66 C 148 66 150 70 150 72 C 150 70 152 66 156 66 C 168 66 172 84 150 100Z" fill="#f2709c"/></g>
+          <use href="#bot-pro" x="40" y="70" width="56" height="62"/>
+          <use href="#bot-con" x="204" y="70" width="56" height="62"/>
+          <text x="150" y="128" text-anchor="middle" font-size="13" font-weight="900" fill="#2b3445" font-family="Noto Sans TC,sans-serif">最大公約數</text>
+        </svg>
+        <span class="badge" style="background:#2fb391">CosMAD</span>
+        <h3>共識尋求型</h3>
+        <p>Agent 的核心驅動力是「尋求最大公約數」，彼此妥協並靠攏。</p>
+        <div class="scene"><b>適用場景</b>腦暴想法、團隊合作解題、數學與邏輯推理。</div>
+      </div>
+      <div class="card mode c-grape">
+        <svg class="ill" viewBox="0 0 300 150" aria-hidden="true">
+          <rect width="300" height="150" fill="#fff"/>
+          <g class="bob d3"><use href="#bot-judge" x="118" y="2" width="64" height="70"/></g>
+          <rect x="100" y="70" width="100" height="20" rx="6" fill="#8b6ad8"/>
+          <text x="150" y="85" text-anchor="middle" font-size="12" font-weight="900" fill="#fff" font-family="Noto Sans TC,sans-serif">裁判席</text>
+          <g class="bob"><use href="#bot-pro" x="22" y="74" width="62" height="68"/></g>
+          <g class="bob d2"><use href="#bot-con" x="216" y="74" width="62" height="68"/></g>
+          <text x="150" y="128" text-anchor="middle" font-size="26" font-weight="900" fill="#ffc93c" stroke="#2b3445" stroke-width="1" font-family="Noto Serif TC,serif">VS</text>
+        </svg>
+        <span class="badge" style="background:#8b6ad8">Judged Debate</span>
+        <h3>專家評審型</h3>
+        <p>由 2-3 個 Agent 在台上辯論，另外由一個更高階、客觀的模型擔任裁判。</p>
+        <div class="scene"><b>適用場景</b>程式碼審查、法律合規性評估、事實查核。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 優勢 -->
+<section class="block reveal" id="why">
+  <div class="wrap">
+    <span class="eyebrow">優勢與潛在挑戰</span>
+    <h2>🌟 我們該用它嗎？先看核心優勢</h2>
+    <div class="grid g2" style="margin-top:24px">
+      <div class="card c-sun adv">
+        <div class="ic">🧭</div>
+        <div><h3>打破思維定勢</h3><p>單一 Agent 經常會「一條路走到黑」，即使中間算錯了也毫無自覺。多 Agent 的視角能有效促成自我修正（Self-Correction）。</p></div>
+      </div>
+      <div class="card c-pro adv">
+        <div class="ic">🧩</div>
+        <div><h3>異質模型互補</h3><p>結合不同廠商的模型（例如：擅長邏輯的 Claude 搭配擅長創意的 OpenAI），可以讓彼此的強項最大化，補足單一模型的知識盲區。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 應用 -->
+<section class="block reveal" id="cases">
+  <div class="wrap">
+    <span class="eyebrow">企業級真實應用場景</span>
+    <h2>從實驗室走進會議室</h2>
+    <p class="lead2" style="margin-top:0">在企業級的真實應用中，多智能體辯論（MAD）已經從實驗室的技術指標（Benchmark）走向實際落地的商業場景。企業在引入這項技術時，通常是用於「容錯率極低」、「需要多角度審查」或「存在利益衝突」的高階決策與自動化工作流中。以下盤點當前最主要的商業實例，以及哪些頂尖企業正在應用（或受其架構啟發）：</p>
+    <div class="grid g2">
+      <div class="card case c-pro">
+        <h3><span class="em">💹</span>金融與投資決策：多空方策略壓力測試</h3>
+        <p>金融機構在進行大筆投資或併購（M&amp;A）前，最怕決策者陷入「確認偏誤」（只看想看的證據）。</p>
+        <span class="lab">實例應用</span>
+        <p>系統指派 Agent A 擔任「牛市派（多方專家）」，全力尋找該半導體企業的增長潛力與技術優勢；Agent B 擔任「熊市派（空方批判者）」，專門挑出財報漏洞、地緣政治風險與供應鏈隱憂。兩者讀取相同的市場數據進行多輪辯論，最後由一個精通風險管理的裁判 Agent 總結，產出極具抗壓性的投資備忘錄。</p>
+        <span class="lab">應用企業</span>
+        <ul>
+          <li><b>高盛（Goldman Sachs）與摩根大通（JPMorgan Chase）</b>：這類華爾街巨頭在其內部 AI 平台（如摩根大通的 IndexGPT）中，利用多代理模型對複雜衍生品與宏觀經濟預測進行黑客式攻擊與驗證（Red Teaming）。</li>
+          <li><b>FinTech 獨角獸與量化基金</b>：利用 MAS（多智能體系統）模擬高頻交易中的對手盤行為（Opponent Modeling），在虛擬市場中讓代理彼此博弈以優化交易策略。</li>
+        </ul>
+      </div>
+      <div class="card case c-mint">
+        <h3><span class="em">💻</span>科技與軟體開發：AI 自動化 Code Review</h3>
+        <p>單純讓 AI 寫程式很容易出現資安漏洞（Bug），企業引入「開發者 Agent」與「審查者 Agent」來重現真實軟體工程團隊的協作。</p>
+        <span class="lab">實例應用</span>
+        <div class="agents">
+          <span>① <b>實作 Agent</b>：根據需求規格書撰寫 Python 或 Java 代碼。</span>
+          <span>② <b>紅隊/安全 Agent</b>：專職尋找 SQL 注入、內存洩漏等安全漏洞。</span>
+          <span>③ <b>效能 Agent</b>：質疑演算法的時間複雜度，並提出優化反駁。</span>
+          <em>兩到三個 Agent 在背景「吵架」修正，直到雙方對代碼品質達成共識再提交給人類工程師。</em>
+        </div>
+        <span class="lab">應用企業</span>
+        <ul>
+          <li><b>微軟（Microsoft）</b>：積極將多智能體辯論模式整合進其開源的 AutoGen 框架，並應用於內部的 Azure 雲端自動化運維與開發工具中。</li>
+          <li><b>Meta</b>：利用多代理對抗訓練（Red Teaming LLMs）來抓取 Llama 模型生成代碼時的潛在安全威脅。</li>
+        </ul>
+      </div>
+      <div class="card case c-sun">
+        <h3><span class="em">📦</span>大型跨國物流與供應鏈：動態調度博弈</h3>
+        <p>當全球供應鏈面臨颱風、港口罷工或大缺貨時，單一中央計算系統很難即時應變。</p>
+        <span class="lab">實例應用</span>
+        <p>每個港口、每艘貨輪、每間倉庫都有一個專屬的 Agent 代理。當 A 港口塞港時，倉儲 Agent 會與多個航運 Agent 進行「動態定價與路線辯論（調解協商）」：運費、時效、天氣權重在多方代理交談中快速迭代，在數秒內自動辯論出最符合成本效益的改道方案。</p>
+        <span class="lab">應用企業</span>
+        <ul>
+          <li><b>亞馬遜（Amazon）</b>：智慧物流中心（Kiva 機器人與供應鏈控制塔）深入應用多智能體系統，讓數萬個機器代理在共享空間中透過「peer-to-peer 協議」談判路線與上下游配貨。</li>
+          <li><b>馬士基（Maersk）與聯邦快遞（FedEx）</b>：運用這類架構優化全球貨櫃動態動線，預測延誤並即時重新分配運力。</li>
+        </ul>
+      </div>
+      <div class="card case c-con">
+        <h3><span class="em">🩺</span>法律合規與制藥研發：嚴謹的事實查核</h3>
+        <p>醫學與法律容不得半點 AI 幻覺（Hallucination）。</p>
+        <span class="lab">實例應用</span>
+        <p>在新藥合規或訴訟策略分析中，一個 Agent 負責根據文獻產出結論，另一個 Agent 扮演「嚴苛的法官」，專門對上一輪發言的「每一句宣稱」要求出示醫學期刊 PMID 或法規條文條號。若拿不出證據，該論點在下一輪辯論中就會被抹除。</p>
+        <span class="lab">應用企業</span>
+        <ul>
+          <li><b>Harvey AI</b>：這家由 OpenAI 創投基金投資、被普華永道（PwC）和多間跨國律師事務所採用的法律 AI 先驅，其工作流中便包含多代理角色分離與獨立驗證機制，用以審查跨國合約的潛在法律風險。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 工具 -->
+<section class="block reveal" id="tools">
+  <div class="wrap">
+    <span class="eyebrow">企業實施 MAD 架構的 3 大主流工具</span>
+    <h2>🛠️ 想自己搭一座辯論場？</h2>
+    <p class="intro">如果您在企業內部想著手建置這樣的辯論系統，目前業界主要依賴以下平台進行 Agent 的調度與編排：</p>
+    <div class="grid g3">
+      <div class="card tool c-pro"><span class="no">01</span><h3>Microsoft AutoGen</h3><p>原生支援並提供「多智能體辯論」的標準設計範式（包含 Solver Agents 與 Aggregator Agent 的 sparse 通訊拓樸）。</p></div>
+      <div class="card tool c-mint"><span class="no">02</span><h3>LangGraph（LangChain 旗下）</h3><p>適合需要精細控制「辯論狀態（State）」與「交談循環（Loops）」的複雜企業場景。</p></div>
+      <div class="card tool c-con"><span class="no">03</span><h3>CrewAI</h3><p>企業愛用的基於角色的代理框架，能輕鬆定義「分析師」與「批判者」角色並讓他們展開協作。</p></div>
+    </div>
+    <div style="text-align:center;margin-top:44px">
+      <a class="btn primary" href="#topics">🗂️ 去看我們的議題辯論</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="pr"><svg aria-hidden="true"><use href="#bot-judge"/></svg>共好公共政策 AI 審議室</div>
+    <p>以多智能體辯論（MAD）研究公共議題，公開分享 AI 辯論的過程與結果。辯論平台由共好研究室自行架設，歡迎討論，平台恕不公開開放。</p>
+    <p>AI 辯論內容為論證演練，不代表政策正確答案；最終政策判斷交由人類。</p>
+    <p>本站的機器人角色都是原創插圖，吵得再兇也只是動口不動手。</p>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="回到頂端"><svg aria-hidden="true"><use href="#bot-judge"/></svg></button>
+
+<script src="config.js"></script>
+<script>
+(function(){
+  var lab={done:"已裁決",live:"辯論中",soon:"籌備中"};
+  function esc(s){return String(s||"").replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+  var TOPICS=(window.TOPICS&&window.TOPICS.length)?window.TOPICS:null;
+  var g=document.getElementById('topicGrid'), h="";
+  if(!TOPICS){g.innerHTML='<p style="color:#6b7385">議題清單載入失敗：請確認 config.js 與 index.html 放在同一個資料夾。</p>';return;}
+  TOPICS.forEach(function(t){
+    if(t.status==="soon" && !t.url){
+      h+='<div class="topic soon"><svg aria-hidden="true"><use href="#bot-mint"/></svg><div class="id">'+esc(t.id)+'</div><h3 style="margin:6px 0 4px">'+esc(t.title)+'</h3><div class="meta">機器人們正在磨刀（不是），敬請期待！</div></div>';
+      return;
+    }
+    var tag=t.url?'a':'div', href=t.url?' href="'+esc(t.url)+'"':'';
+    h+='<'+tag+' class="topic"'+href+'>'
+      +'<div class="top"><span class="id">'+esc(t.id)+'</span><span class="status '+esc(t.status)+'">'+(lab[t.status]||esc(t.status))+'</span></div>'
+      +'<h3>'+esc(t.title)+'</h3>'
+      +'<div class="vs">'
+      +(t.pro?'<span class="p"><svg aria-hidden="true"><use href="#bot-pro"/></svg>正方 '+esc(t.pro)+'</span>':'')
+      +(t.con?'<b>VS</b><span class="c"><svg aria-hidden="true"><use href="#bot-con"/></svg>反方 '+esc(t.con)+'</span>':'')
+      +'</div>'
+      +(t.judge?'<div class="vs"><span class="j"><svg aria-hidden="true"><use href="#bot-judge"/></svg>裁判 '+esc(t.judge)+'</span></div>':'')
+      +(t.result?'<div class="res">🏅 '+esc(t.result)+'</div>':'')
+      +'<div class="meta">'+esc(t.date)+'</div>'
+      +(t.url?'<div class="go">看全場回顧 →</div>':'<div class="go" style="color:#999">網頁整理中</div>')
+      +'</'+tag+'>';
+  });
+  g.innerHTML=h;
+})();
+
+(function(){
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // reveal
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.06});
+    els.forEach(function(el){io.observe(el);});
+  } else { els.forEach(function(el){el.classList.add('in');}); }
+  // nav highlight
+  var links=[].slice.call(document.querySelectorAll('.nav li a'));
+  var map=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function onScroll(){
+    var y=window.scrollY+100, idx=-1;
+    map.forEach(function(s,i){ if(s && s.offsetTop<=y) idx=i; });
+    links.forEach(function(a,i){ a.classList.toggle('on', i===idx); });
+  }
+  var t; window.addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(onScroll,60);},{passive:true}); onScroll();
+  var tt=document.getElementById('totop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('show',window.scrollY>800);},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});});
+  // hero 辯論小劇場
+  var script=[
+    ["Round 1","我先想想…","我也有答案！"],
+    ["Round 2","你第三步錯了！","你的數據呢？"],
+    ["Round 3","好，我修正。","這點我同意。"],
+    ["共識 ✓","收斂完成！","最優解出爐！"]
+  ];
+  var i=0, r=document.getElementById('roundTxt'), b1=document.getElementById('b1'), b3=document.getElementById('b3');
+  if(!reduce){ setInterval(function(){ i=(i+1)%script.length; r.textContent=script[i][0]; b1.textContent=script[i][1]; b3.textContent=script[i][2]; },2600); }
+})();
+</script>
+</body>
+</html>
