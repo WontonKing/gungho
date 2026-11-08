@@ -74,6 +74,13 @@ window.SCHOOL_TOPICS = [
 ,{ title:'幾點吃飯，也會影響健康？', description:'什麼時候吃，會影響腸道菌與代謝嗎？整理小鼠研究與三個限時進食人體試驗的結果和限制，附一天進食時鐘、生活清單與小測驗。', category:'健康練習', url:'/KS/MEALTIME/', date:'2026-11-01' }
 ,{ title:'讓 AI 扮成逝去的家人，好嗎？', description:'AI 逝者化身和相簿錄音不一樣。用持續連結與延長哀傷研究，分清健康懷念與卡住警訊，附檢核清單、情境卡與小測驗。', category:'科技生活', url:'/KS/GRIEFBOT/', date:'2026-11-01' }
 ,{ title:'退休理財，卡在心裡那一關？', description:'認識損失規避、過度自信、心理帳戶等退休理財心理關卡，含偏誤自我檢測、報酬順序風險示範、三套預算清單與小測驗。', category:'退休理財', url:'/KS/RETBIAS/', date:'2026-11-01' }
+,{ title:'聽音樂吃飯，味道會變嗎？', description:'聲音和味道之間有跨感官連結，本頁解讀2026年腦造影研究能說與不能說什麼，並附不加糖的餐桌觀察記錄卡。', category:'樂活空間', url:'/KS/MUSICTASTE/', date:'2026-11-08' }
+,{ title:'朋友失去家人，怎麼陪伴？', description:'慰問不是要對方快點振作。整理傾聽原則、可調整的例句與具體幫忙的提法，並附關心訊息小幫手。', category:'睡眠情緒', url:'/KS/CONDOLE/', date:'2026-11-08' }
+,{ title:'賞鳥，能讓大腦更靈光？', description:'賞鳥需要觀察、比較和記憶。說明專家大腦研究與手機回報研究測了什麼、不能推論什麼，並附觀察紀錄本。', category:'大腦保健', url:'/KS/BIRDING/', date:'2026-11-08' }
+,{ title:'一個人老後，要先準備什麼？', description:'獨居不是一種病。用五個面向盤點晚年準備，說明意定監護何時生效，並附可存在自己瀏覽器的支援地圖。', category:'退休理財', url:'/KS/SOLOPLAN/', date:'2026-11-08' }
+,{ title:'臉色蒼白，就是缺鐵嗎？', description:'看臉只能提醒，不能確診。說明缺鐵與貧血的差別、鐵蛋白怎麼看、AI看臉判讀的限制，並附判讀順序互動。', category:'醫療新知', url:'/KS/IRONLOOK/', date:'2026-11-08' }
+,{ title:'感冒了，吃什麼才有用？', description:'維生素C、鋅、蜂蜜、雞湯各有多少證據？依三份考科藍回顧拆開四種說法，並附宣稱分類小遊戲。', category:'醫療新知', url:'/KS/COLDFOOD/', date:'2026-11-08' }
+,{ title:'日常多動一點，有差嗎？', description:'NEAT是運動以外的日常活動耗能。說明經典研究支持什麼、不能保證什麼，並附依跌倒風險調整的久坐小幫手。', category:'健康練習', url:'/KS/NEAT/', date:'2026-11-08' }
    
    // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/', date: '日期XXXX-XX-XX' }
 ];
