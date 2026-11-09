@@ -41,6 +41,17 @@ window.TOPICS = [
     result: "裁決：反方 90：89 微幅勝出",
     url: "debate002"
   },
+ {
+    id: "debate003",
+    status: "done",
+    title: "65歲以上免健保費，應全國性無差別實施嗎？",
+    pro: "ChatGPT",
+    con: "Claude",
+    judge: "Copilot",
+    date: "2026.11.08 – 11.09",
+    result: "裁決：反方 95：87 勝出",
+    url: "debate003"
+  },
   {
     id: "debate-003",
     status: "soon",
