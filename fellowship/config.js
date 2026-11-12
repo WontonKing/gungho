@@ -21,6 +21,7 @@ window.SITE_CONFIG = {
   notesHeading: "讀經筆記",
 
   notes: [
+{  title: "《約翰一書》三章 6 與 9 節「不犯罪」之解經",  subtitle: "不是今生無罪完全，而是不再以罪為生活常態",  url: "abiding-not-sinning/",},
 {  title: "被看見，仍被愛",  subtitle: "神不要我們假裝完美，神要我們真實",  url: "beyond-the-mask/",},    
 {  title: "卸下憂慮與信心的實踐",  subtitle: "在謙卑交託中經歷神的顧念、平安與喜樂",  url: "cast-your-cares/",},
 {  title: "在耶和華面前靜默無聲",  subtitle: "西番雅書1:7與撒迦利亞書2:13：在神面前的敬畏、等候與盼望",  url: "silent-before-the-lord/",},
