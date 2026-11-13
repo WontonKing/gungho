@@ -21,6 +21,7 @@ window.SITE_CONFIG = {
   notesHeading: "讀經筆記",
 
   notes: [
+{  title: "《路加福音》：路加的田野調查與聖經真理核實",  subtitle: "從目擊見證到信仰確據——分辨聖經明說、合理推論與學術假說",  url: "luke-eyewitness-inquiry/",},
 {  title: "約翰與保羅對福音與信仰的詮釋",  subtitle: "聖經真理核實與系統神學整合",  url: "john-paul-gospel/",},
 {  title: "《約翰一書》5:8：聖靈、水與血的見證",  subtitle: "三重見證，一致指向耶穌基督",  url: "spirit-water-blood/",},
 {  title: "《約翰一書》三章 6 與 9 節「不犯罪」之解經",  subtitle: "不是今生無罪完全，而是不再以罪為生活常態",  url: "abiding-not-sinning/",},
