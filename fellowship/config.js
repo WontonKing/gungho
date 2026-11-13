@@ -21,6 +21,7 @@ window.SITE_CONFIG = {
   notesHeading: "讀經筆記",
 
   notes: [
+{  title: "約翰與保羅對福音與信仰的詮釋",  subtitle: "聖經真理核實與系統神學整合",  url: "john-paul-gospel/",},
 {  title: "《約翰一書》5:8：聖靈、水與血的見證",  subtitle: "三重見證，一致指向耶穌基督",  url: "spirit-water-blood/",},
 {  title: "《約翰一書》三章 6 與 9 節「不犯罪」之解經",  subtitle: "不是今生無罪完全，而是不再以罪為生活常態",  url: "abiding-not-sinning/",},
 {  title: "被看見，仍被愛",  subtitle: "神不要我們假裝完美，神要我們真實",  url: "beyond-the-mask/",},    
