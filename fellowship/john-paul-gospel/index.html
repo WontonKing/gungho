@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>約翰與保羅對福音與信仰的詮釋</title>
+<meta name="description" content="從「法庭宣告與救贖歷史」（保羅）與「生命重生與三一相交」（約翰）兩個互補視角，對照正典經文、希臘文語法與早期教會文獻，見證同一位道成肉身、死而復活的耶穌基督。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="約翰與保羅對福音與信仰的詮釋">
+<meta property="og:description" content="聖經真理核實與系統神學整合">
+<meta property="og:url" content="https://www.gungho.idv.tw/fellowship/john-paul-gospel/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF8F1; --paper:#FFFDF8; --ink:#2F2A24; --muted:#6E655A; --line:#E7DCC8;
+  --gold:#B8893B; --gold-soft:#F3E6C9; --sky:#5E8FBF; --sky-soft:#E3EDF7;
+  --clay:#B9562F; --clay-soft:#F6E2D8; --olive:#6F8A5A; --olive-soft:#E7EEDD;
+  --serif:"Noto Serif TC","Songti TC",serif; --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;font-family:var(--sans);color:var(--ink);line-height:1.9;font-size:17px;
+  background:var(--bg);
+  background-image:radial-gradient(1100px 600px at 15% -5%,rgba(243,230,201,.75),transparent 60%),
+                   radial-gradient(900px 520px at 95% 8%,rgba(227,237,247,.85),transparent 60%);
+  background-attachment:fixed}
+a{color:var(--sky)}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--sky));z-index:60}
+header.top{position:sticky;top:0;z-index:50;background:rgba(251,248,241,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .in{max-width:1080px;margin:auto;display:flex;align-items:center;gap:18px;padding:10px 20px}
+.brand{font-family:var(--serif);font-weight:700;color:var(--gold);white-space:nowrap;text-decoration:none}
+nav.toc{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav.toc::-webkit-scrollbar{display:none}
+nav.toc a{color:var(--muted);text-decoration:none;font-size:14px;padding:4px 10px;border-radius:99px;white-space:nowrap}
+nav.toc a:hover,nav.toc a.on{background:var(--gold-soft);color:var(--ink)}
+main{max-width:860px;margin:auto;padding:0 20px 40px}
+.cover{position:relative;text-align:center;padding:84px 0 56px}
+.cover:before{content:"";position:absolute;left:50%;top:40px;width:340px;height:340px;transform:translateX(-50%);
+  background:radial-gradient(circle,rgba(184,137,59,.22),rgba(184,137,59,0) 70%);z-index:-1}
+.eyebrow{font-size:13px;letter-spacing:.2em;color:var(--gold);font-weight:700}
+h1{font-family:var(--serif);font-weight:900;font-size:clamp(30px,6vw,48px);line-height:1.35;margin:14px 0 10px}
+.subtitle{font-family:var(--serif);font-size:clamp(18px,3vw,23px);color:var(--muted);margin:0 0 26px}
+.lead{max-width:680px;margin:0 auto;text-align:left;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px 24px;font-size:16px}
+.lead b{color:var(--clay)}
+.pills{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:20px 0 0}
+.pill{font-size:14px;padding:5px 14px;border-radius:99px;border:1px solid var(--line);background:#fff}
+.pill.j{background:var(--sky-soft);border-color:#c8dbee}
+.pill.p{background:var(--clay-soft);border-color:#efcab8}
+.pill.u{background:var(--gold-soft);border-color:#e6cf9c}
+section{padding:34px 0 10px;border-top:1px dashed var(--line)}
+h2{font-family:var(--serif);font-size:clamp(23px,4vw,30px);margin:0 0 6px;line-height:1.4}
+h2 small{display:block;font-size:13px;letter-spacing:.18em;color:var(--gold);font-family:var(--sans);font-weight:700}
+h3{font-family:var(--serif);font-size:20px;margin:30px 0 8px;color:#3d352b}
+.greek{font-family:"Times New Roman",serif;font-style:italic;color:var(--clay);white-space:nowrap}
+.ref{font:inherit;font-size:.85em;border:1px solid #c8dbee;background:var(--sky-soft);color:#2f5f8e;border-radius:6px;padding:0 6px;margin:0 2px;cursor:pointer;white-space:nowrap;line-height:1.6}
+.ref:hover{background:#d3e3f3}
+.ref:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:16px 0}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.card h4{margin:0 0 6px;font-family:var(--serif);font-size:17px}
+.card.j{border-top:4px solid var(--sky)} .card.p{border-top:4px solid var(--clay)}
+.card.ctx{border-top:4px solid var(--olive)} .card.app{border-top:4px solid var(--gold)}
+.card .tag{font-size:12px;letter-spacing:.12em;font-weight:700}
+.card.j .tag{color:var(--sky)} .card.p .tag{color:var(--clay)} .card.ctx .tag{color:var(--olive)} .card.app .tag{color:var(--gold)}
+.takeaway{border-left:4px solid var(--gold);background:linear-gradient(90deg,var(--gold-soft),transparent);padding:10px 16px;margin:22px 0;font-family:var(--serif);font-weight:700;border-radius:0 10px 10px 0}
+.aside{border:1.5px dashed #d8c39b;border-radius:12px;padding:10px 14px;margin:18px 0;font-size:15px;color:var(--muted);background:rgba(255,255,255,.55)}
+.aside:before{content:"旁白 ｜ ";color:var(--gold);font-weight:700}
+.tablewrap{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:15px;line-height:1.75}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+thead th{background:#f6efe1;font-family:var(--serif)}
+thead th.j{color:var(--sky)} thead th.p{color:var(--clay)}
+tbody th{font-family:var(--serif);white-space:nowrap;color:var(--gold)}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+td.refs{font-size:14px}
+td.refs .vs{display:block;color:var(--muted);font-size:12px;margin:2px 0}
+.steps{counter-reset:s;display:grid;gap:12px;margin:16px 0}
+.step{counter-increment:s;position:relative;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 18px 14px 62px}
+.step:before{content:counter(s);position:absolute;left:16px;top:14px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-weight:700;color:#fff;background:var(--sky)}
+.steps.p .step:before{background:var(--clay)}
+.step b{font-family:var(--serif)}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:14px 0}
+.flow span{padding:4px 12px;border-radius:99px;background:#fff;border:1px solid var(--line);font-size:14px}
+.flow i{color:var(--gold);font-style:normal}
+.chat{display:grid;gap:10px;margin:16px 0}
+.bubble{max-width:88%;padding:12px 16px;border-radius:16px;background:var(--paper);border:1px solid var(--line)}
+.bubble .who{font-size:12px;font-weight:700;letter-spacing:.1em;display:block;margin-bottom:2px}
+.bubble.q{justify-self:start;border-bottom-left-radius:4px;background:#fff}
+.bubble.q .who{color:var(--clay)}
+.bubble.a{justify-self:end;border-bottom-right-radius:4px;background:var(--sky-soft);border-color:#c8dbee}
+.bubble.a .who{color:var(--sky)}
+.bubble.u{justify-self:end;border-bottom-right-radius:4px;background:var(--gold-soft);border-color:#e6cf9c}
+.bubble.u .who{color:var(--gold)}
+.reflect{background:var(--olive-soft);border:1px solid #cfdcc0;border-radius:14px;padding:14px 20px;margin:20px 0}
+.reflect h4{margin:0;font-family:var(--serif);color:var(--olive)}
+.reflect ol{margin:6px 0 0;padding-left:1.4em}
+.prayer{text-align:center;background:var(--paper);border:1px solid #e6cf9c;border-radius:18px;padding:22px 24px;margin:24px 0;font-family:var(--serif);box-shadow:0 0 0 6px rgba(243,230,201,.45)}
+.prayer h4{margin:0 0 6px;color:var(--gold);letter-spacing:.2em;font-size:15px}
+.note{font-size:14px;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 14px}
+figure.illus{margin:26px 0;background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+figure.illus .art{position:relative}
+figure.illus svg{display:block;width:100%;height:auto}
+figure.illus .art:after{content:"象徵示意";position:absolute;right:10px;bottom:8px;font-size:11px;color:rgba(110,101,90,.8);background:rgba(255,253,248,.8);padding:1px 8px;border-radius:99px}
+figure.illus figcaption{padding:10px 16px 12px;font-size:14.5px;color:var(--muted);border-top:1px solid var(--line)}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+dialog{border:0;border-radius:18px;padding:0;max-width:min(640px,92vw);width:100%;box-shadow:0 20px 60px rgba(47,42,36,.25);background:var(--paper);color:var(--ink)}
+dialog::backdrop{background:rgba(47,42,36,.35)}
+.dlg-h{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding:18px 22px 8px;border-bottom:1px solid var(--line)}
+.dlg-h h5{margin:0;font-family:var(--serif);font-size:20px}
+.dlg-h .ver{font-size:12px;color:var(--muted)}
+.dlg-x{border:0;background:var(--gold-soft);border-radius:50%;width:32px;height:32px;font-size:18px;cursor:pointer;flex:none}
+.dlg-b{padding:12px 22px;max-height:55vh;overflow:auto;font-family:var(--serif);font-size:17px;line-height:2}
+.dlg-b sup{color:var(--gold);font-family:var(--sans);font-size:11px;margin-right:3px;font-weight:700}
+.dlg-f{padding:10px 22px 18px;display:flex;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line)}
+.dlg-f a{font-size:13px;text-decoration:none;padding:4px 12px;border-radius:99px;border:1px solid #c8dbee;background:var(--sky-soft)}
+.dlg-f a.main{background:var(--sky);color:#fff;border-color:var(--sky)}
+#refs ol{columns:2 260px;column-gap:28px;font-size:14.5px;padding-left:1.4em}
+#refs li{break-inside:avoid;margin-bottom:2px}
+.srcs{font-size:14.5px}
+.srcs li{margin-bottom:4px}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:30px 20px 50px;border-top:1px solid var(--line)}
+@media (max-width:640px){
+  body{font-size:16px}
+  header.top .in{padding:8px 14px;gap:10px}
+  .brand{font-size:15px}
+  .cover{padding:56px 0 40px}
+  .step{padding-left:56px}
+  .bubble{max-width:96%}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+}
+@media print{
+  body{background:#fff;font-size:12pt}
+  header.top,#progress,dialog,.dlg-f{display:none}
+  .reveal{opacity:1;transform:none}
+  section{break-inside:auto;border-top:1px solid #ccc}
+  figure.illus,.card,.step,.takeaway{break-inside:avoid}
+  .ref{border:0;background:none;color:#000;padding:0}
+  a{color:#000}
+}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<header class="top"><div class="in">
+  <a class="brand" href="#top">約翰與保羅</a>
+  <nav class="toc" aria-label="章節導覽">
+    <a href="#s1">導言</a><a href="#s2">對照</a><a href="#s3">約翰</a><a href="#s4">保羅</a><a href="#s5">難題</a><a href="#s6">教會史</a><a href="#s7">回應</a><a href="#refs">參考</a>
+  </nav>
+</div></header>
+
+<main id="top">
+<div class="cover">
+  <div class="eyebrow">新約神學 ・ 約翰福音與書信 × 保羅書信</div>
+  <h1>約翰與保羅對福音與信仰的詮釋</h1>
+  <p class="subtitle">聖經真理核實與系統神學整合</p>
+  <div class="lead">
+    本文整合使徒約翰（福音書與書信）與使徒保羅（保羅書信）對「福音本質」與「得救信仰」的詮釋。透過正典經文對照、希臘文原文語法核實與早期教父文獻，可以看見兩者並非互相競爭的神學系統，而是從<b>「法庭宣告與救贖歷史」（保羅）</b>與<b>「生命重生與三一相交」（約翰）</b>兩個互補視角，共同見證同一位道成肉身、死而復活的耶穌基督。
+  </div>
+  <div class="pills"><span class="pill p">保羅：被算為義</span><span class="pill j">約翰：得著生命</span><span class="pill u">同一位基督</span></div>
+</div>
+
+<section id="s1" class="reveal">
+  <h2><small>第一部分</small>導言：兩種神學進路的有機統一</h2>
+  <p>在新約正典中，使徒約翰與使徒保羅代表初期教會最深邃的兩種神學表達。</p>
+  <div class="cards">
+    <div class="card p"><span class="tag">保羅 ｜ 救贖歷史與法庭架構</span><h4>福音的大廈建築師</h4>
+      善用希臘羅馬修辭、舊約聖約神學與法庭辯論用語，系統地論證罪人如何藉著基督的代贖，在神面前站立得住。</div>
+    <div class="card j"><span class="tag">約翰 ｜ 生命本體與相交架構</span><h4>福音的居住者</h4>
+      用螺旋式思維、光明與黑暗、生命與死亡、真理與虛謊的對比，以及親密的牧養語言，揭示信徒如何接待基督、領受神的生命，進入與三一神的相交（<span class="greek">κοινωνία</span><button class="ref" data-r="1Jn1:3">約一 1:3</button>）。</div>
+  </div>
+  <p>兩者不是「理性教義」與「神秘體驗」的割裂，而是<strong>救贖功成的客觀宣告（保羅）</strong>與<strong>救贖實體的內在經歷（約翰）</strong>合在一起，構成完整的福音。</p>
+  <div class="aside">保羅寫信，常像在法庭上逐條陳詞：「這卻怎麼樣呢？」「斷乎不可！」約翰寫信，比較像長輩坐在門口跟孫子說話：「我小子們哪……」<button class="ref" data-r="1Jn2:1">約一 2:1</button>。口氣不同，講的是同一位主。</div>
+  <figure class="illus reveal"><div class="art"><svg viewBox="0 0 800 340" role="img" aria-label="夜色中一盞油燈照亮攤開的經卷" xmlns="http://www.w3.org/2000/svg"><defs>
+<linearGradient id="l-sky" x1="0" x2="1"><stop offset="0" stop-color="#2E3E5C"/><stop offset=".55" stop-color="#6E7FA0"/><stop offset="1" stop-color="#F3E6C9"/></linearGradient>
+<radialGradient id="l-glow" cx="400" cy="168" r="210" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFF4D2" stop-opacity=".95"/><stop offset=".4" stop-color="#F6DFA4" stop-opacity=".45"/><stop offset="1" stop-color="#F6DFA4" stop-opacity="0"/></radialGradient>
+<linearGradient id="l-flame" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#E08A3A"/><stop offset=".6" stop-color="#F7C65A"/><stop offset="1" stop-color="#FFF3C4"/></linearGradient>
+</defs>
+<rect width="800" height="340" fill="url(#l-sky)"/><circle cx="101" cy="43" r="1.4" fill="#fff" opacity="0.34"/><circle cx="160" cy="90" r="0.7" fill="#fff" opacity="0.60"/><circle cx="20" cy="105" r="0.7" fill="#fff" opacity="0.35"/><circle cx="129" cy="192" r="0.7" fill="#fff" opacity="0.43"/><circle cx="186" cy="218" r="1.3" fill="#fff" opacity="0.54"/><circle cx="283" cy="20" r="1.6" fill="#fff" opacity="0.47"/><circle cx="50" cy="36" r="1.0" fill="#fff" opacity="0.79"/><circle cx="61" cy="138" r="1.4" fill="#fff" opacity="0.52"/><circle cx="163" cy="24" r="0.7" fill="#fff" opacity="0.42"/><circle cx="201" cy="104" r="1.0" fill="#fff" opacity="0.65"/><circle cx="137" cy="76" r="1.6" fill="#fff" opacity="0.72"/><circle cx="78" cy="136" r="1.2" fill="#fff" opacity="0.83"/><circle cx="214" cy="73" r="1.8" fill="#fff" opacity="0.37"/><circle cx="127" cy="177" r="0.8" fill="#fff" opacity="0.59"/><circle cx="21" cy="157" r="1.5" fill="#fff" opacity="0.64"/><circle cx="255" cy="79" r="1.4" fill="#fff" opacity="0.66"/><circle cx="172" cy="110" r="1.6" fill="#fff" opacity="0.87"/><circle cx="143" cy="156" r="0.7" fill="#fff" opacity="0.72"/><circle cx="191" cy="228" r="1.6" fill="#fff" opacity="0.47"/><circle cx="118" cy="157" r="0.6" fill="#fff" opacity="0.58"/><circle cx="57" cy="36" r="0.7" fill="#fff" opacity="0.76"/><circle cx="46" cy="64" r="1.1" fill="#fff" opacity="0.82"/><circle cx="33" cy="109" r="1.3" fill="#fff" opacity="0.83"/><circle cx="239" cy="200" r="0.9" fill="#fff" opacity="0.55"/><circle cx="110" cy="205" r="1.7" fill="#fff" opacity="0.39"/><circle cx="59" cy="61" r="0.9" fill="#fff" opacity="0.59"/><circle cx="175" cy="68" r="0.6" fill="#fff" opacity="0.55"/><circle cx="113" cy="135" r="1.7" fill="#fff" opacity="0.71"/><circle cx="154" cy="146" r="1.4" fill="#fff" opacity="0.33"/><circle cx="262" cy="182" r="1.6" fill="#fff" opacity="0.78"/><circle cx="120" cy="98" r="0.7" fill="#fff" opacity="0.68"/><circle cx="27" cy="25" r="0.9" fill="#fff" opacity="0.40"/><circle cx="105" cy="22" r="0.6" fill="#fff" opacity="0.39"/><circle cx="38" cy="90" r="0.6" fill="#fff" opacity="0.82"/><circle cx="182" cy="43" r="0.9" fill="#fff" opacity="0.51"/><circle cx="112" cy="37" r="1.6" fill="#fff" opacity="0.90"/><circle cx="140" cy="116" r="0.7" fill="#fff" opacity="0.36"/><circle cx="106" cy="68" r="1.6" fill="#fff" opacity="0.40"/><circle cx="16" cy="219" r="1.2" fill="#fff" opacity="0.39"/><circle cx="162" cy="16" r="1.2" fill="#fff" opacity="0.89"/><circle cx="252" cy="163" r="0.9" fill="#fff" opacity="0.52"/><circle cx="57" cy="180" r="1.2" fill="#fff" opacity="0.77"/><circle cx="102" cy="59" r="1.6" fill="#fff" opacity="0.89"/><circle cx="249" cy="187" r="1.6" fill="#fff" opacity="0.74"/><circle cx="73" cy="124" r="1.0" fill="#fff" opacity="0.32"/><circle cx="18" cy="71" r="0.9" fill="#fff" opacity="0.72"/><circle cx="400" cy="168" r="210" fill="url(#l-glow)"/><line x1="356" y1="168" x2="260" y2="168" stroke="#FFF1C9" stroke-width="2" stroke-linecap="round" opacity=".5"/><line x1="357" y1="157" x2="265" y2="132" stroke="#FFF1C9" stroke-width="2" stroke-linecap="round" opacity=".5"/><line x1="362" y1="146" x2="279" y2="98" stroke="#FFF1C9" stroke-width="2" stroke-linecap="round" opacity=".5"/><line x1="369" y1="137" x2="301" y2="69" stroke="#FFF1C9" stroke-width="2" stroke-linecap="round" opacity=".5"/><line x1="378" y1="130" x2="330" y2="47" stroke="#FFF1C9" stroke-width="2" stroke-linecap="round" opacity=".5"/><line x1="389" y1="125" x2="364" y2="33" stroke="#FFF1C9" stroke-width="2" stroke-linecap="round" opacity=".5"/><line x1="400" y1="124" x2="400" y2="28" stroke="#FFF1C9" stroke-width="2" stroke-linecap="round" opacity=".5"/><line x1="411" y1="125" x2="436" y2="33" stroke="#FFF1C9" stroke-width="2" stroke-linecap="round" opacity=".5"/><line x1="422" y1="130" x2="470" y2="47" stroke="#FFF1C9" stroke-width="2" stroke-linecap="round" opacity=".5"/><line x1="431" y1="137" x2="499" y2="69" stroke="#FFF1C9" stroke-width="2" stroke-linecap="round" opacity=".5"/><line x1="438" y1="146" x2="521" y2="98" stroke="#FFF1C9" stroke-width="2" stroke-linecap="round" opacity=".5"/><line x1="443" y1="157" x2="535" y2="132" stroke="#FFF1C9" stroke-width="2" stroke-linecap="round" opacity=".5"/><line x1="444" y1="168" x2="540" y2="168" stroke="#FFF1C9" stroke-width="2" stroke-linecap="round" opacity=".5"/><rect x="0" y="268" width="800" height="72" fill="#8A6A44"/><rect x="0" y="268" width="800" height="6" fill="#A5835A"/><path d="M150 272 Q260 250 370 262 L370 274 L150 280 Z" fill="#F7EBCF" stroke="#C9AE7E" stroke-width="2"/>
+<rect x="136" y="246" width="20" height="36" rx="9" fill="#D9C39A" stroke="#A88A5C" stroke-width="2"/><line x1="176" y1="266" x2="352" y2="262" stroke="#B9A176" stroke-width="1.4"/><line x1="179" y1="263" x2="352" y2="259" stroke="#B9A176" stroke-width="1.4"/><line x1="182" y1="260" x2="352" y2="256" stroke="#B9A176" stroke-width="1.4"/><line x1="185" y1="257" x2="352" y2="253" stroke="#B9A176" stroke-width="1.4"/><path d="M650 272 Q540 250 430 262 L430 274 L650 280 Z" fill="#F7EBCF" stroke="#C9AE7E" stroke-width="2"/>
+<rect x="644" y="246" width="20" height="36" rx="9" fill="#D9C39A" stroke="#A88A5C" stroke-width="2"/><line x1="448" y1="262" x2="624" y2="266" stroke="#B9A176" stroke-width="1.4"/><line x1="448" y1="259" x2="621" y2="263" stroke="#B9A176" stroke-width="1.4"/><line x1="448" y1="256" x2="618" y2="260" stroke="#B9A176" stroke-width="1.4"/><line x1="448" y1="253" x2="615" y2="257" stroke="#B9A176" stroke-width="1.4"/><ellipse cx="400" cy="270" rx="70" ry="6" fill="#6E5234" opacity=".5"/>
+<path d="M332 262 Q352 236 378 232 L404 204 Q410 198 404 196 L396 196 Q392 200 388 206 L356 232 Q324 238 318 254 Q330 268 360 268 Q420 268 440 254 Q440 240 410 232" fill="#B9562F" stroke="#8F3E21" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="380" cy="244" rx="20" ry="5" fill="#8F3E21"/>
+<path d="M440 248 Q462 244 462 232 Q456 228 448 236" fill="none" stroke="#8F3E21" stroke-width="5" stroke-linecap="round"/>
+<rect x="398" y="190" width="4" height="10" rx="2" fill="#5A3A22"/>
+<path d="M400 142 C386 162 388 182 400 192 C412 182 414 162 400 142 Z" fill="url(#l-flame)"/>
+<path d="M400 164 C395 174 396 182 400 186 C404 182 405 174 400 164 Z" fill="#FFFBEA"/>
+</svg></div><figcaption>「光照在黑暗裡，黑暗卻不接受光。」道成肉身的基督是照亮人的真光。<button class="ref" data-r="Jn1:5">約 1:5</button></figcaption></figure>
+  <p class="takeaway">保羅說明我們怎樣在神面前被算為義；約翰說明我們怎樣在神裡面得著生命。兩人講的都是同一位基督。</p>
+</section>
+
+<section id="s2" class="reveal">
+  <h2><small>第二部分</small>福音核心與神學範疇全覽</h2>
+  <p>下表把兩位使徒在六個神學維度上的重點並列，每格經文都可點開核對和合本原文。</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>神學維度</th><th class="j">使徒約翰（福音書與書信）</th><th class="p">使徒保羅（保羅書信）</th><th>經文對照</th></tr></thead>
+    <tbody>
+    <tr><th>福音焦點</th><td>耶穌是道成肉身（<span class="greek">Λόγος</span>）的神子，向人啟示父神並賜下永生。</td><td>基督照聖經所說為我們的罪死了、埋葬、復活，成就救贖，使人與神和好。</td>
+      <td class="refs"><button class="ref" data-r="Jn1:14">約 1:14</button><button class="ref" data-r="Jn1:18">約 1:18</button><button class="ref" data-r="1Jn1:1-3">約一 1:1–3</button><span class="vs">對照</span><button class="ref" data-r="1Co15:3-4">林前 15:3–4</button><button class="ref" data-r="Ro1:3-4">羅 1:3–4</button></td></tr>
+    <tr><th>核心問題</th><td>活在黑暗與死亡中的人，怎樣得著神的生命、認識獨一的真神？</td><td>陷在罪惡與律法咒詛下的罪人，怎樣在公義的神面前被算為義？</td>
+      <td class="refs"><button class="ref" data-r="Jn3:3-5">約 3:3–5</button><button class="ref" data-r="Jn17:3">約 17:3</button><span class="vs">對照</span><button class="ref" data-r="Ro1:17-18">羅 1:17–18</button><button class="ref" data-r="Ro3:19-24">羅 3:19–24</button></td></tr>
+    <tr><th>救恩語言</th><td><b>生命</b>（<span class="greek">ζωή</span>）、<b>重生</b>（<span class="greek">γεννάω</span>）、<b>光</b>、<b>真理</b>、<b>住在裡面</b>（<span class="greek">μένω</span>）。</td><td><b>稱義</b>（<span class="greek">δικαιόω</span>）、<b>和好</b>（<span class="greek">καταλλαγή</span>）、<b>救贖</b>（<span class="greek">ἀπολύτρωσις</span>）、<b>在基督裡</b>。</td>
+      <td class="refs"><button class="ref" data-r="Jn1:12">約 1:12</button><button class="ref" data-r="Jn3:16">約 3:16</button><button class="ref" data-r="Jn15:4">約 15:4</button><span class="vs">對照</span><button class="ref" data-r="Ro3:24-28">羅 3:24–28</button><button class="ref" data-r="Ro5:1">羅 5:1</button><button class="ref" data-r="Ro5:10">羅 5:10</button><button class="ref" data-r="2Co5:17">林後 5:17</button></td></tr>
+    <tr><th>信仰的本質</th><td>接待耶穌、認識他、委身跟隨，並持續「住在」他的話語與愛中。</td><td>放下倚靠肉體與律法功德，空手信靠基督的血與復活的大能。</td>
+      <td class="refs"><button class="ref" data-r="Jn1:12">約 1:12</button><button class="ref" data-r="Jn6:29">約 6:29</button><button class="ref" data-r="Jn8:31-32">約 8:31–32</button><span class="vs">對照</span><button class="ref" data-r="Ga2:16">加 2:16</button><button class="ref" data-r="Php3:7-9">腓 3:7–9</button><button class="ref" data-r="Eph2:8-9">弗 2:8–9</button></td></tr>
+    <tr><th>末世論視角</th><td><b>已然實現的末世論</b>：信的人「已經」出死入生，現在就有永生，同時盼望主顯現時必要像他。</td><td><b>已然／未然的張力</b>：今生已稱義、領受聖靈初結的果子，仍嘆息等候身體得贖與基督再來。</td>
+      <td class="refs"><button class="ref" data-r="Jn5:24">約 5:24</button><button class="ref" data-r="1Jn2:8">約一 2:8</button><button class="ref" data-r="1Jn3:2">約一 3:2</button><span class="vs">對照</span><button class="ref" data-r="Ro8:23-25">羅 8:23–25</button><button class="ref" data-r="1Co15:20-28">林前 15:20–28</button></td></tr>
+    <tr><th>成聖與倫理</th><td>遵守主的命令、行在光明中、彼此相愛，是「從神而生」的必然印記。</td><td>靠聖靈治死身體的惡行，脫去舊人、穿上新人，結出聖靈的果子。</td>
+      <td class="refs"><button class="ref" data-r="Jn13:34-35">約 13:34–35</button><button class="ref" data-r="1Jn2:3-6">約一 2:3–6</button><button class="ref" data-r="1Jn3:14">約一 3:14</button><span class="vs">對照</span><button class="ref" data-r="Ro6:11-14">羅 6:11–14</button><button class="ref" data-r="Ga5:16">加 5:16</button><button class="ref" data-r="Ga5:22-23">加 5:22–23</button></td></tr>
+    </tbody>
+  </table></div>
+  <p class="takeaway">一位用「生命」的語言，一位用「稱義」的語言；兩人回答的是不同的問題，指向的是同一個答案。</p>
+</section>
+
+<section id="s3" class="reveal">
+  <h2><small>第三部分</small>使徒約翰：信而得生命與三一相交</h2>
+  <h3>「信」是動態的關係（<span class="greek">πιστεύω εἰς</span>）</h3>
+  <p>《約翰福音》從頭到尾沒有用過名詞「信心」（<span class="greek">πίστις</span>），卻用了將近一百次動詞「相信」（<span class="greek">πιστεύω</span>），而且常搭配介系詞 <span class="greek">εἰς</span>（「進入……裡面」），例如「叫一切<b>信入</b>他的」<button class="ref" data-r="Jn3:16">約 3:16</button>。在約翰神學裡，信不只是理智上的認同，而是<strong>位格性的委身與聯合</strong>。</p>
+  <div class="aside">約翰似乎不太想把「信心」當成名詞擺在櫥窗裡展示，他寧願讓它當動詞——一直在動、一直往主裡面走。</div>
+  <div class="cards">
+    <div class="card ctx"><span class="tag">經文脈絡</span><h4>信，是做神的工</h4>
+      眾人問耶穌該行甚麼才算做神的工，耶穌回答：「信神所差來的，這就是做神的工。」<button class="ref" data-r="Jn6:29">約 6:29</button> 救恩是恩典：人不是靠宗教功德換取生命，而是信靠基督來領受生命。</div>
+    <div class="card app"><span class="tag">靈修應用</span><h4>永生從今天開始</h4>
+      約翰說的永生（<span class="greek">ζωὴ αἰώνιος</span>）不只是時間的無限延長，更是「認識你獨一的真神，並且認識你所差來的耶穌基督」<button class="ref" data-r="Jn17:3">約 17:3</button>。信的人此刻已經「出死入生」<button class="ref" data-r="Jn5:24">約 5:24</button>。</div>
+  </div>
+  <h3>約翰福音與書信的救贖敘事</h3>
+  <div class="steps">
+    <div class="step"><b>道成肉身的啟示</b><br>太初有道，道成了肉身住在人中間，把人看不見的父神表明出來。<button class="ref" data-r="Jn1:1">約 1:1</button><button class="ref" data-r="Jn1:14">約 1:14</button><button class="ref" data-r="Jn1:18">約 1:18</button></div>
+    <div class="step"><b>光暗之間的抉擇</b><br>真光照進黑暗，人面對基督的見證必須回應：不信的罪已經定了，接待的人得著權柄作神的兒女。<button class="ref" data-r="Jn1:11-12">約 1:11–12</button><button class="ref" data-r="Jn3:18-21">約 3:18–21</button></div>
+    <div class="step"><b>十字架是「被舉起」與「得榮耀」</b><br>約翰把基督的受死看作他被舉起、得榮耀的時刻；藉著他的死與復活，生命被釋放出來賜給信的人。<button class="ref" data-r="Jn3:14-15">約 3:14–15</button><button class="ref" data-r="Jn12:23-33">約 12:23–33</button><button class="ref" data-r="Jn19:30">約 19:30</button><button class="ref" data-r="Jn19:34">約 19:34</button><button class="ref" data-r="Jn20:31">約 20:31</button></div>
+    <div class="step"><b>保惠師內住與相交</b><br>基督差來真理的聖靈，使信徒「常在」基督裡，在愛與真理中彼此相交。<button class="ref" data-r="Jn14:16-17">約 14:16–17</button><button class="ref" data-r="Jn15:4-5">約 15:4–5</button><button class="ref" data-r="1Jn1:3">約一 1:3</button></div>
+  </div>
+  <figure class="illus reveal"><div class="art"><svg viewBox="0 0 800 340" role="img" aria-label="棚架上的葡萄樹，枝子連在樹上結出果子" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="v-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E3EDF7"/><stop offset="1" stop-color="#FBF5E6"/></linearGradient>
+<radialGradient id="v-grape" cx=".35" cy=".35" r=".7"><stop offset="0" stop-color="#9C7BB6"/><stop offset="1" stop-color="#5B3F78"/></radialGradient></defs>
+<rect width="800" height="340" fill="url(#v-sky)"/>
+<circle cx="660" cy="70" r="36" fill="#F6DFA4" opacity=".9"/>
+<path d="M0 280 Q200 260 400 276 T800 270 L800 340 L0 340 Z" fill="#C9D7B4"/>
+<path d="M0 300 Q260 290 520 304 T800 300 L800 340 L0 340 Z" fill="#AFC296"/><rect x="105" y="96" width="10" height="194" fill="#9B7B55"/><rect x="395" y="96" width="10" height="194" fill="#9B7B55"/><rect x="685" y="96" width="10" height="194" fill="#9B7B55"/><rect x="80" y="92" width="640" height="9" rx="4" fill="#A88A5C"/><rect x="80" y="150" width="640" height="5" rx="2" fill="#A88A5C" opacity=".7"/><path d="M400 300 C392 250 410 210 398 160 C392 130 404 110 400 98" fill="none" stroke="#6B4A2E" stroke-width="16" stroke-linecap="round"/><path d="M400 120 C340 100 260 120 160 104" fill="none" stroke="#7A5634" stroke-width="7" stroke-linecap="round"/><path d="M400 120 C470 96 560 124 650 104" fill="none" stroke="#7A5634" stroke-width="7" stroke-linecap="round"/><path d="M398 170 C330 158 270 176 200 160" fill="none" stroke="#7A5634" stroke-width="7" stroke-linecap="round"/><path d="M400 172 C470 156 540 178 610 160" fill="none" stroke="#7A5634" stroke-width="7" stroke-linecap="round"/><path d="M180 100 q-18 -22 0 -40 q18 18 0 40 z" fill="#6F8A5A" transform="rotate(-30 180 100)"/><path d="M180 100 q-10 -18 -4 -32" fill="none" stroke="#56703f" stroke-width="1.5" transform="rotate(-30 180 100)"/><path d="M250 112 q-18 -22 0 -40 q18 18 0 40 z" fill="#6F8A5A" transform="rotate(7 250 112)"/><path d="M250 112 q-10 -18 -4 -32" fill="none" stroke="#56703f" stroke-width="1.5" transform="rotate(7 250 112)"/><path d="M320 104 q-18 -22 0 -40 q18 18 0 40 z" fill="#6F8A5A" transform="rotate(-16 320 104)"/><path d="M320 104 q-10 -18 -4 -32" fill="none" stroke="#56703f" stroke-width="1.5" transform="rotate(-16 320 104)"/><path d="M480 104 q-18 -22 0 -40 q18 18 0 40 z" fill="#6F8A5A" transform="rotate(21 480 104)"/><path d="M480 104 q-10 -18 -4 -32" fill="none" stroke="#56703f" stroke-width="1.5" transform="rotate(21 480 104)"/><path d="M560 116 q-18 -22 0 -40 q18 18 0 40 z" fill="#6F8A5A" transform="rotate(-2 560 116)"/><path d="M560 116 q-10 -18 -4 -32" fill="none" stroke="#56703f" stroke-width="1.5" transform="rotate(-2 560 116)"/><path d="M630 100 q-18 -22 0 -40 q18 18 0 40 z" fill="#6F8A5A" transform="rotate(-25 630 100)"/><path d="M630 100 q-10 -18 -4 -32" fill="none" stroke="#56703f" stroke-width="1.5" transform="rotate(-25 630 100)"/><path d="M220 158 q-18 -22 0 -40 q18 18 0 40 z" fill="#6F8A5A" transform="rotate(12 220 158)"/><path d="M220 158 q-10 -18 -4 -32" fill="none" stroke="#56703f" stroke-width="1.5" transform="rotate(12 220 158)"/><path d="M300 170 q-18 -22 0 -40 q18 18 0 40 z" fill="#6F8A5A" transform="rotate(-11 300 170)"/><path d="M300 170 q-10 -18 -4 -32" fill="none" stroke="#56703f" stroke-width="1.5" transform="rotate(-11 300 170)"/><path d="M500 166 q-18 -22 0 -40 q18 18 0 40 z" fill="#6F8A5A" transform="rotate(26 500 166)"/><path d="M500 166 q-10 -18 -4 -32" fill="none" stroke="#56703f" stroke-width="1.5" transform="rotate(26 500 166)"/><path d="M580 158 q-18 -22 0 -40 q18 18 0 40 z" fill="#6F8A5A" transform="rotate(3 580 158)"/><path d="M580 158 q-10 -18 -4 -32" fill="none" stroke="#56703f" stroke-width="1.5" transform="rotate(3 580 158)"/><circle cx="194" cy="124" r="7.5" fill="url(#v-grape)"/><circle cx="208" cy="124" r="7.5" fill="url(#v-grape)"/><circle cx="220" cy="124" r="7.5" fill="url(#v-grape)"/><circle cx="234" cy="124" r="7.5" fill="url(#v-grape)"/><circle cx="201" cy="136" r="7.5" fill="url(#v-grape)"/><circle cx="214" cy="136" r="7.5" fill="url(#v-grape)"/><circle cx="227" cy="136" r="7.5" fill="url(#v-grape)"/><circle cx="201" cy="148" r="7.5" fill="url(#v-grape)"/><circle cx="214" cy="148" r="7.5" fill="url(#v-grape)"/><circle cx="227" cy="148" r="7.5" fill="url(#v-grape)"/><circle cx="208" cy="160" r="7.5" fill="url(#v-grape)"/><circle cx="220" cy="160" r="7.5" fill="url(#v-grape)"/><circle cx="214" cy="172" r="7.5" fill="url(#v-grape)"/><path d="M214 118 l0 -12" stroke="#6B4A2E" stroke-width="3"/><circle cx="280" cy="128" r="7.5" fill="url(#v-grape)"/><circle cx="294" cy="128" r="7.5" fill="url(#v-grape)"/><circle cx="306" cy="128" r="7.5" fill="url(#v-grape)"/><circle cx="320" cy="128" r="7.5" fill="url(#v-grape)"/><circle cx="287" cy="140" r="7.5" fill="url(#v-grape)"/><circle cx="300" cy="140" r="7.5" fill="url(#v-grape)"/><circle cx="313" cy="140" r="7.5" fill="url(#v-grape)"/><circle cx="287" cy="152" r="7.5" fill="url(#v-grape)"/><circle cx="300" cy="152" r="7.5" fill="url(#v-grape)"/><circle cx="313" cy="152" r="7.5" fill="url(#v-grape)"/><circle cx="294" cy="164" r="7.5" fill="url(#v-grape)"/><circle cx="306" cy="164" r="7.5" fill="url(#v-grape)"/><circle cx="300" cy="176" r="7.5" fill="url(#v-grape)"/><path d="M300 122 l0 -12" stroke="#6B4A2E" stroke-width="3"/><circle cx="510" cy="128" r="7.5" fill="url(#v-grape)"/><circle cx="524" cy="128" r="7.5" fill="url(#v-grape)"/><circle cx="536" cy="128" r="7.5" fill="url(#v-grape)"/><circle cx="550" cy="128" r="7.5" fill="url(#v-grape)"/><circle cx="517" cy="140" r="7.5" fill="url(#v-grape)"/><circle cx="530" cy="140" r="7.5" fill="url(#v-grape)"/><circle cx="543" cy="140" r="7.5" fill="url(#v-grape)"/><circle cx="517" cy="152" r="7.5" fill="url(#v-grape)"/><circle cx="530" cy="152" r="7.5" fill="url(#v-grape)"/><circle cx="543" cy="152" r="7.5" fill="url(#v-grape)"/><circle cx="524" cy="164" r="7.5" fill="url(#v-grape)"/><circle cx="536" cy="164" r="7.5" fill="url(#v-grape)"/><circle cx="530" cy="176" r="7.5" fill="url(#v-grape)"/><path d="M530 122 l0 -12" stroke="#6B4A2E" stroke-width="3"/><circle cx="592" cy="122" r="7.5" fill="url(#v-grape)"/><circle cx="606" cy="122" r="7.5" fill="url(#v-grape)"/><circle cx="618" cy="122" r="7.5" fill="url(#v-grape)"/><circle cx="632" cy="122" r="7.5" fill="url(#v-grape)"/><circle cx="599" cy="134" r="7.5" fill="url(#v-grape)"/><circle cx="612" cy="134" r="7.5" fill="url(#v-grape)"/><circle cx="625" cy="134" r="7.5" fill="url(#v-grape)"/><circle cx="599" cy="146" r="7.5" fill="url(#v-grape)"/><circle cx="612" cy="146" r="7.5" fill="url(#v-grape)"/><circle cx="625" cy="146" r="7.5" fill="url(#v-grape)"/><circle cx="606" cy="158" r="7.5" fill="url(#v-grape)"/><circle cx="618" cy="158" r="7.5" fill="url(#v-grape)"/><circle cx="612" cy="170" r="7.5" fill="url(#v-grape)"/><path d="M612 116 l0 -12" stroke="#6B4A2E" stroke-width="3"/><circle cx="236" cy="182" r="7.5" fill="url(#v-grape)"/><circle cx="250" cy="182" r="7.5" fill="url(#v-grape)"/><circle cx="262" cy="182" r="7.5" fill="url(#v-grape)"/><circle cx="276" cy="182" r="7.5" fill="url(#v-grape)"/><circle cx="243" cy="194" r="7.5" fill="url(#v-grape)"/><circle cx="256" cy="194" r="7.5" fill="url(#v-grape)"/><circle cx="269" cy="194" r="7.5" fill="url(#v-grape)"/><circle cx="243" cy="206" r="7.5" fill="url(#v-grape)"/><circle cx="256" cy="206" r="7.5" fill="url(#v-grape)"/><circle cx="269" cy="206" r="7.5" fill="url(#v-grape)"/><circle cx="250" cy="218" r="7.5" fill="url(#v-grape)"/><circle cx="262" cy="218" r="7.5" fill="url(#v-grape)"/><circle cx="256" cy="230" r="7.5" fill="url(#v-grape)"/><path d="M256 176 l0 -12" stroke="#6B4A2E" stroke-width="3"/><circle cx="540" cy="182" r="7.5" fill="url(#v-grape)"/><circle cx="554" cy="182" r="7.5" fill="url(#v-grape)"/><circle cx="566" cy="182" r="7.5" fill="url(#v-grape)"/><circle cx="580" cy="182" r="7.5" fill="url(#v-grape)"/><circle cx="547" cy="194" r="7.5" fill="url(#v-grape)"/><circle cx="560" cy="194" r="7.5" fill="url(#v-grape)"/><circle cx="573" cy="194" r="7.5" fill="url(#v-grape)"/><circle cx="547" cy="206" r="7.5" fill="url(#v-grape)"/><circle cx="560" cy="206" r="7.5" fill="url(#v-grape)"/><circle cx="573" cy="206" r="7.5" fill="url(#v-grape)"/><circle cx="554" cy="218" r="7.5" fill="url(#v-grape)"/><circle cx="566" cy="218" r="7.5" fill="url(#v-grape)"/><circle cx="560" cy="230" r="7.5" fill="url(#v-grape)"/><path d="M560 176 l0 -12" stroke="#6B4A2E" stroke-width="3"/><path d="M120 312 q40 -10 80 -2" fill="none" stroke="#B49A78" stroke-width="5" stroke-linecap="round"/><path d="M160 308 q4 -14 14 -16" fill="none" stroke="#B49A78" stroke-width="3"/></svg></div><figcaption>「我是葡萄樹，你們是枝子。」約翰的「信」，就是常在主裡面。<button class="ref" data-r="Jn15:4-5">約 15:4–5</button></figcaption></figure>
+  <p class="takeaway">在約翰筆下，信不是一次填好的申請表，而是枝子天天連在葡萄樹上。</p>
+</section>
+
+<section id="s4" class="reveal">
+  <h2><small>第四部分</small>使徒保羅：因信稱義與在基督裡</h2>
+  <h3>法庭宣告與聖約群體（<span class="greek">δικαιοσύνη θεοῦ</span>）</h3>
+  <p>保羅先指出普世的人都在罪的權勢之下<button class="ref" data-r="Ro1:18">羅 1:18</button><button class="ref" data-r="Ro3:9-20">羅 3:9–20</button>，然後宣告：「但如今，神的義在律法以外已經顯明出來。」<button class="ref" data-r="Ro3:21">羅 3:21</button></p>
+  <div class="cards">
+    <div class="card p"><span class="tag">法庭式的稱義</span><h4>審判者宣告無罪</h4>
+      「稱義」（<span class="greek">δικαιόω</span>）是法庭用語：公義的神因基督作了挽回祭（<span class="greek">ἱλαστήριον</span>），宣告信靠基督的罪人為義，並把義歸算（<span class="greek">λογίζομαι</span>）給他們。<button class="ref" data-r="Ro3:24-26">羅 3:24–26</button><button class="ref" data-r="Ga2:16">加 2:16</button><button class="ref" data-r="Ro4:3-5">羅 4:3–5</button><button class="ref" data-r="2Co5:21">林後 5:21</button></div>
+    <div class="card p"><span class="tag">信心不是功德</span><h4>空手領受</h4>
+      得救是「本乎恩，也因著信」<button class="ref" data-r="Eph2:8-9">弗 2:8–9</button>。信心本身不是賺取救恩的本錢，而是領受恩典的器皿：「本乎信，因此就屬乎恩」<button class="ref" data-r="Ro4:16">羅 4:16</button>。</div>
+    <div class="card p"><span class="tag">拆毀隔斷的牆</span><h4>因信稱義也是教會論</h4>
+      外邦人不必藉割禮和摩西律法先變成猶太人；因信基督，就與猶太信徒同為亞伯拉罕的後裔，同歸一體。<button class="ref" data-r="Ga3:26-29">加 3:26–29</button><button class="ref" data-r="Eph2:11-16">弗 2:11–16</button></div>
+  </div>
+  <h3>保羅書信的救恩論架構</h3>
+  <div class="steps p">
+    <div class="step"><b>普世的罪與律法的功用</b><br>猶太人和希臘人都在罪惡之下；律法本是叫人知罪，沒有人能靠行律法稱義。<button class="ref" data-r="Ro3:9-20">羅 3:9–20</button><button class="ref" data-r="Ga3:10-11">加 3:10–11</button></div>
+    <div class="step"><b>基督的代贖與復活</b><br>基督在我們還作罪人的時候為我們死，替我們受了律法的咒詛，又為叫我們稱義而復活。<button class="ref" data-r="Ro5:8">羅 5:8</button><button class="ref" data-r="Ga3:13">加 3:13</button><button class="ref" data-r="Ro4:25">羅 4:25</button></div>
+    <div class="step"><b>與基督聯合（<span class="greek">ἐν Χριστῷ</span>）</b><br>藉著信與洗禮，信徒與基督同死、同埋葬、同復活，脫離罪和死的律。<button class="ref" data-r="Ro6:3-11">羅 6:3–11</button><button class="ref" data-r="Ro8:1-2">羅 8:1–2</button></div>
+    <div class="step"><b>聖靈的印記與榮耀盼望</b><br>稱義的人受了聖靈為得基業的憑據，在教會中建立基督的身體，並等候主降臨。<button class="ref" data-r="Eph1:13-14">弗 1:13–14</button><button class="ref" data-r="Eph4:12-16">弗 4:12–16</button><button class="ref" data-r="1Th4:13-18">帖前 4:13–18</button></div>
+  </div>
+  <figure class="illus reveal"><div class="art"><svg viewBox="0 0 800 340" role="img" aria-label="晨光中山丘上的空十字架" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="c-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9DB7D6"/><stop offset=".55" stop-color="#F3DDB8"/><stop offset="1" stop-color="#F7C99A"/></linearGradient>
+<radialGradient id="c-sun" cx="520" cy="236" r="150" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFF6DA"/><stop offset=".35" stop-color="#FBE2A8" stop-opacity=".8"/><stop offset="1" stop-color="#FBE2A8" stop-opacity="0"/></radialGradient></defs>
+<rect width="800" height="340" fill="url(#c-sky)"/>
+<circle cx="520" cy="236" r="150" fill="url(#c-sun)"/>
+<circle cx="520" cy="214" r="34" fill="#FFF3CF"/>
+<path d="M0 272 Q160 238 330 250 T800 246 L800 340 L0 340 Z" fill="#C79B6E" opacity=".55"/>
+<path d="M0 340 L0 300 Q180 286 300 236 Q360 214 420 236 Q560 296 800 292 L800 340 Z" fill="#8A6A44"/>
+<rect x="352" y="96" width="16" height="148" fill="#5A3E26"/>
+<rect x="316" y="132" width="88" height="14" fill="#5A3E26"/>
+<path d="M300 236 Q360 214 420 236" fill="none" stroke="#6E5234" stroke-width="3"/><path d="M120 300 q-6 -22 0 -32 q6 10 0 32" fill="#6F8A5A"/><path d="M170 300 q-6 -30 0 -40 q6 10 0 40" fill="#6F8A5A"/><path d="M640 292 q-6 -26 0 -36 q6 10 0 36" fill="#6F8A5A"/><path d="M700 292 q-6 -34 0 -44 q6 10 0 44" fill="#6F8A5A"/><path d="M740 292 q-6 -20 0 -30 q6 10 0 30" fill="#6F8A5A"/><path d="M200 70 q8 -6 16 0 q8 -6 16 0" fill="none" stroke="#5E6E86" stroke-width="2" stroke-linecap="round"/><path d="M232 86 q8 -6 16 0 q8 -6 16 0" fill="none" stroke="#5E6E86" stroke-width="2" stroke-linecap="round"/><path d="M600 60 q8 -6 16 0 q8 -6 16 0" fill="none" stroke="#5E6E86" stroke-width="2" stroke-linecap="round"/></svg></div><figcaption>「惟有基督在我們還作罪人的時候為我們死。」<button class="ref" data-r="Ro5:8">羅 5:8</button></figcaption></figure>
+  <div class="flow"><span>人人在罪下</span><i>→</i><span>基督作挽回祭</span><i>→</i><span>因信被算為義</span><i>→</i><span>在基督裡同死同活</span><i>→</i><span>聖靈印記・等候再來</span></div>
+  <figure class="illus reveal"><div class="art"><svg viewBox="0 0 800 340" role="img" aria-label="清晨的空墳墓，石頭已經滾開，光從墓口透出" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="t-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E3EDF7"/><stop offset="1" stop-color="#FBF0DA"/></linearGradient>
+<radialGradient id="t-in" cx="360" cy="218" r="70" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFF8E2"/><stop offset=".6" stop-color="#F8E3B0"/><stop offset="1" stop-color="#E6C98C"/></radialGradient></defs>
+<rect width="800" height="340" fill="url(#t-sky)"/>
+<path d="M120 300 Q140 120 300 104 Q460 92 560 150 Q640 200 660 300 Z" fill="#B7A68C"/>
+<path d="M160 300 Q190 150 310 130 Q420 120 500 160" fill="none" stroke="#A39276" stroke-width="3"/>
+<path d="M312 270 L312 214 Q312 170 360 170 Q408 170 408 214 L408 270 Z" fill="url(#t-in)"/>
+<path d="M312 270 L312 214 Q312 170 360 170 Q408 170 408 214 L408 270" fill="none" stroke="#8C7A5E" stroke-width="4"/>
+<circle cx="496" cy="236" r="52" fill="#9E8C70"/><circle cx="496" cy="236" r="52" fill="none" stroke="#7F6E54" stroke-width="4"/>
+<circle cx="496" cy="236" r="30" fill="none" stroke="#8C7A5E" stroke-width="2" opacity=".6"/>
+<path d="M0 286 L800 286 L800 340 L0 340 Z" fill="#C9D7B4"/>
+<path d="M330 286 L250 340 L470 340 L390 286 Z" fill="#FBEFD0" opacity=".7"/>
+<path d="M336 262 q14 -8 34 -2 q10 4 20 -2" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity=".9"/><path d="M90 290 q-4 -20 0 -28 q4 8 0 28" fill="#6F8A5A"/><circle cx="90" cy="262" r="5" fill="#F3E6C9"/><path d="M140 290 q-4 -20 0 -28 q4 8 0 28" fill="#6F8A5A"/><circle cx="140" cy="262" r="5" fill="#F3E6C9"/><path d="M600 290 q-4 -20 0 -28 q4 8 0 28" fill="#6F8A5A"/><circle cx="600" cy="262" r="5" fill="#F3E6C9"/><path d="M680 290 q-4 -20 0 -28 q4 8 0 28" fill="#6F8A5A"/><circle cx="680" cy="262" r="5" fill="#F3E6C9"/><path d="M730 290 q-4 -20 0 -28 q4 8 0 28" fill="#6F8A5A"/><circle cx="730" cy="262" r="5" fill="#F3E6C9"/><circle cx="680" cy="70" r="28" fill="#FBE2A8"/></svg></div><figcaption>「耶穌被交給人，是為我們的過犯；復活，是為叫我們稱義。」<button class="ref" data-r="Ro4:25">羅 4:25</button></figcaption></figure>
+  <p class="takeaway">稱義不是神對罪睜一隻眼閉一隻眼，而是在十字架上公義與慈愛同時成全。</p>
+</section>
+
+<section id="s5" class="reveal">
+  <h2><small>第五部分</small>聖經神學難題：信心、行為與成聖的張力</h2>
+  <p>解經史上常有人以為「保羅重信輕行」，或「約翰主張無罪完美主義」。回到希臘文文法與上下文，就會發現兩人在信仰實踐上完全一致。</p>
+  <h3>約翰一書的「不犯罪」與羅馬書的「向罪死」</h3>
+  <div class="chat">
+    <div class="bubble q"><span class="who">疑問</span>「凡住在他裡面的，就不犯罪」<button class="ref" data-r="1Jn3:6">約一 3:6</button>，可是同一封信又說「我們若說自己無罪，便是自欺」<button class="ref" data-r="1Jn1:8">約一 1:8</button>。到底是哪一個？</div>
+    <div class="bubble a"><span class="who">原文核實</span>約一 3:6、3:9 的「犯罪」（<span class="greek">ἁμαρτάνει</span>；<span class="greek">ἁμαρτίαν οὐ ποιεῖ</span>）用的是希臘文<b>現在式</b>，表達持續、習慣性地活在罪中。從神生的人，有「神的道」——原文是「種」（<span class="greek">σπέρμα</span>）——存在心裡<button class="ref" data-r="1Jn3:9">約一 3:9</button>，所以不能再把犯罪當作生活常態；若偶然被過犯勝過，「在父那裡我們有一位中保」<button class="ref" data-r="1Jn2:1-2">約一 2:1–2</button>。</div>
+    <div class="bubble u"><span class="who">與保羅共鳴</span>保羅問的是同一個問題：「我們在罪上死了的人豈可仍在罪中活著呢？」<button class="ref" data-r="Ro6:1-2">羅 6:1–2</button> 信徒在地位上已不在罪的轄制之下<button class="ref" data-r="Ro6:14">羅 6:14</button>，在生活中則要「靠著聖靈治死身體的惡行」<button class="ref" data-r="Ro8:13">羅 8:13</button>。</div>
+  </div>
+  <div class="aside">約翰說的不是「這輩子從沒踩過泥巴」，而是「不再住在泥坑裡」。偶爾滑一跤，有中保扶起來；把泥坑當家，才是問題。</div>
+  <figure class="illus reveal"><div class="art"><svg viewBox="0 0 800 340" role="img" aria-label="土壤剖面中一粒種子發芽，向上長出嫩苗" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E3EDF7"/><stop offset="1" stop-color="#FBF5E6"/></linearGradient>
+<linearGradient id="s-soil" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A27B54"/><stop offset="1" stop-color="#6E5234"/></linearGradient></defs>
+<rect width="800" height="340" fill="url(#s-sky)"/>
+<circle cx="140" cy="70" r="34" fill="#F6DFA4"/><line x1="184" y1="70" x2="200" y2="70" stroke="#E8C77A" stroke-width="3" stroke-linecap="round"/><line x1="171" y1="101" x2="182" y2="112" stroke="#E8C77A" stroke-width="3" stroke-linecap="round"/><line x1="140" y1="114" x2="140" y2="130" stroke="#E8C77A" stroke-width="3" stroke-linecap="round"/><line x1="109" y1="101" x2="98" y2="112" stroke="#E8C77A" stroke-width="3" stroke-linecap="round"/><line x1="96" y1="70" x2="80" y2="70" stroke="#E8C77A" stroke-width="3" stroke-linecap="round"/><line x1="109" y1="39" x2="98" y2="28" stroke="#E8C77A" stroke-width="3" stroke-linecap="round"/><line x1="140" y1="26" x2="140" y2="10" stroke="#E8C77A" stroke-width="3" stroke-linecap="round"/><line x1="171" y1="39" x2="182" y2="28" stroke="#E8C77A" stroke-width="3" stroke-linecap="round"/><rect x="0" y="186" width="800" height="154" fill="url(#s-soil)"/>
+<path d="M0 186 Q200 176 400 186 T800 184" fill="none" stroke="#7A5C3C" stroke-width="3"/><circle cx="190" cy="272" r="2.4" fill="#8C6A46" opacity=".7"/><circle cx="483" cy="284" r="1.7" fill="#8C6A46" opacity=".7"/><circle cx="11" cy="313" r="2.1" fill="#8C6A46" opacity=".7"/><circle cx="187" cy="335" r="2.7" fill="#8C6A46" opacity=".7"/><circle cx="669" cy="263" r="3.1" fill="#8C6A46" opacity=".7"/><circle cx="120" cy="285" r="3.7" fill="#8C6A46" opacity=".7"/><circle cx="419" cy="300" r="3.2" fill="#8C6A46" opacity=".7"/><circle cx="51" cy="302" r="3.0" fill="#8C6A46" opacity=".7"/><circle cx="241" cy="200" r="3.7" fill="#8C6A46" opacity=".7"/><circle cx="378" cy="297" r="3.7" fill="#8C6A46" opacity=".7"/><circle cx="571" cy="325" r="2.5" fill="#8C6A46" opacity=".7"/><circle cx="641" cy="258" r="3.8" fill="#8C6A46" opacity=".7"/><circle cx="703" cy="210" r="1.8" fill="#8C6A46" opacity=".7"/><circle cx="174" cy="331" r="2.6" fill="#8C6A46" opacity=".7"/><circle cx="501" cy="238" r="2.8" fill="#8C6A46" opacity=".7"/><circle cx="309" cy="245" r="3.0" fill="#8C6A46" opacity=".7"/><circle cx="467" cy="323" r="3.2" fill="#8C6A46" opacity=".7"/><circle cx="743" cy="316" r="4.0" fill="#8C6A46" opacity=".7"/><circle cx="537" cy="219" r="3.7" fill="#8C6A46" opacity=".7"/><circle cx="772" cy="323" r="2.9" fill="#8C6A46" opacity=".7"/><circle cx="571" cy="226" r="3.6" fill="#8C6A46" opacity=".7"/><circle cx="459" cy="236" r="1.7" fill="#8C6A46" opacity=".7"/><circle cx="683" cy="335" r="1.7" fill="#8C6A46" opacity=".7"/><circle cx="640" cy="253" r="1.9" fill="#8C6A46" opacity=".7"/><circle cx="235" cy="304" r="3.7" fill="#8C6A46" opacity=".7"/><circle cx="35" cy="282" r="1.6" fill="#8C6A46" opacity=".7"/><circle cx="575" cy="242" r="3.7" fill="#8C6A46" opacity=".7"/><circle cx="785" cy="267" r="4.0" fill="#8C6A46" opacity=".7"/><circle cx="248" cy="207" r="3.0" fill="#8C6A46" opacity=".7"/><circle cx="25" cy="224" r="2.5" fill="#8C6A46" opacity=".7"/><circle cx="488" cy="218" r="1.6" fill="#8C6A46" opacity=".7"/><circle cx="694" cy="240" r="3.9" fill="#8C6A46" opacity=".7"/><circle cx="717" cy="249" r="2.7" fill="#8C6A46" opacity=".7"/><circle cx="416" cy="286" r="3.0" fill="#8C6A46" opacity=".7"/><circle cx="447" cy="283" r="3.9" fill="#8C6A46" opacity=".7"/><circle cx="406" cy="256" r="3.3" fill="#8C6A46" opacity=".7"/><circle cx="190" cy="238" r="3.9" fill="#8C6A46" opacity=".7"/><circle cx="417" cy="273" r="1.5" fill="#8C6A46" opacity=".7"/><circle cx="332" cy="277" r="1.6" fill="#8C6A46" opacity=".7"/><circle cx="493" cy="285" r="1.7" fill="#8C6A46" opacity=".7"/><circle cx="502" cy="261" r="3.2" fill="#8C6A46" opacity=".7"/><circle cx="282" cy="295" r="3.3" fill="#8C6A46" opacity=".7"/><circle cx="18" cy="204" r="3.2" fill="#8C6A46" opacity=".7"/><circle cx="771" cy="231" r="2.6" fill="#8C6A46" opacity=".7"/><circle cx="474" cy="241" r="2.4" fill="#8C6A46" opacity=".7"/><circle cx="250" cy="248" r="3.0" fill="#8C6A46" opacity=".7"/><circle cx="240" cy="249" r="3.4" fill="#8C6A46" opacity=".7"/><circle cx="22" cy="276" r="3.3" fill="#8C6A46" opacity=".7"/><circle cx="248" cy="227" r="3.5" fill="#8C6A46" opacity=".7"/><circle cx="191" cy="222" r="2.6" fill="#8C6A46" opacity=".7"/><circle cx="558" cy="210" r="2.3" fill="#8C6A46" opacity=".7"/><circle cx="267" cy="313" r="2.6" fill="#8C6A46" opacity=".7"/><circle cx="684" cy="220" r="2.3" fill="#8C6A46" opacity=".7"/><circle cx="520" cy="320" r="2.6" fill="#8C6A46" opacity=".7"/><circle cx="180" cy="213" r="2.8" fill="#8C6A46" opacity=".7"/><circle cx="153" cy="309" r="3.6" fill="#8C6A46" opacity=".7"/><circle cx="147" cy="235" r="3.5" fill="#8C6A46" opacity=".7"/><circle cx="514" cy="309" r="2.4" fill="#8C6A46" opacity=".7"/><circle cx="104" cy="237" r="3.5" fill="#8C6A46" opacity=".7"/><circle cx="217" cy="244" r="2.5" fill="#8C6A46" opacity=".7"/><path d="M400 268 C392 290 380 300 372 320 M400 270 C410 292 424 304 430 326 M402 272 C400 296 404 312 400 334" fill="none" stroke="#E9D8B4" stroke-width="2.5" stroke-linecap="round"/><ellipse cx="400" cy="262" rx="20" ry="13" fill="#C9A26A" stroke="#8F6E3E" stroke-width="2" transform="rotate(-18 400 262)"/><path d="M392 258 q8 -6 18 -2" fill="none" stroke="#8F6E3E" stroke-width="1.5"/><path d="M402 252 C404 220 396 196 402 140" fill="none" stroke="#6F8A5A" stroke-width="6" stroke-linecap="round"/>
+<path d="M402 150 C372 136 350 116 352 96 C378 100 398 122 402 150 Z" fill="#88A86E"/>
+<path d="M402 140 C432 124 456 104 458 84 C430 88 408 112 402 140 Z" fill="#6F8A5A"/>
+<path d="M402 150 C384 132 366 114 356 100" fill="none" stroke="#56703f" stroke-width="1.5"/>
+<path d="M402 140 C420 122 440 104 452 90" fill="none" stroke="#56703f" stroke-width="1.5"/>
+</svg></div><figcaption>「神的道（原文是種）存在他心裡」——生命一旦種下，就會往光裡長。<button class="ref" data-r="1Jn3:9">約一 3:9</button></figcaption></figure>
+  <h3>「信」與「愛」的雙重交織</h3>
+  <div class="cards">
+    <div class="card p"><span class="tag">保羅論愛與行為</span><h4>生發仁愛的信心</h4>
+      保羅極力反對靠行律法稱義，卻明說「惟獨使人生發仁愛的信心才有功效」<button class="ref" data-r="Ga5:6">加 5:6</button>；神救我們，是「為要叫我們行善，就是神所預備叫我們行的」<button class="ref" data-r="Eph2:10">弗 2:10</button>。另參<button class="ref" data-r="Ro13:8-10">羅 13:8–10</button><button class="ref" data-r="1Co13:13">林前 13:13</button>。</div>
+    <div class="card j"><span class="tag">約翰論信與正統</span><h4>相愛，也認信</h4>
+      約翰極力強調彼此相愛，也同樣堅守純正的基督論：凡不認耶穌基督是成了肉身來的，就是敵基督的。<button class="ref" data-r="1Jn4:2-3">約一 4:2–3</button><button class="ref" data-r="2Jn1:7">約二 7</button></div>
+  </div>
+  <p>《約翰一書》3:23 把兩者綁在一起：「神的命令就是叫我們<b>信</b>他兒子耶穌基督的名，且照他所賜給我們的命令<b>彼此相愛</b>。」<button class="ref" data-r="1Jn3:23">約一 3:23</button></p>
+  <p class="takeaway">保羅反對的是「靠行為稱義」，不是「行為」；約翰強調的是「愛」，但從不離開「信」。</p>
+</section>
+
+<section id="s6" class="reveal">
+  <h2><small>第六部分</small>早期教會的歷史見證</h2>
+  <p>約翰與保羅的一致性，在新約本身與主後一、二世紀的教父文獻中都有印證。</p>
+  <div class="steps">
+    <div class="step"><b>使徒彼此承認</b><br>彼得稱保羅為「我們所親愛的兄弟」，並把保羅的書信與「別的經書」並列。<button class="ref" data-r="2Pe3:15-16">彼後 3:15–16</button></div>
+    <div class="step"><b>以弗所：兩位使徒的同一個教會</b><br>里昂主教愛任紐（約主後 180 年）記載，以弗所教會由保羅建立，約翰也在那裡住到羅馬皇帝圖拉真的時代；他並說約翰在以弗所寫了福音書。兩人的事奉在同一個教會傳承裡交會。</div>
+    <div class="step"><b>坡旅甲：一封信裡同時有保羅與約翰</b><br>士每拿主教坡旅甲是約翰的門生（愛任紐的見證）。他的《致腓立比人書》一面提到「蒙福而榮耀的保羅」寫給他們的書信，一面幾乎逐字引用約翰一書：凡不認耶穌基督是成了肉身來的，就是敵基督的。</div>
+    <div class="step"><b>羅馬的革利免與安提阿的伊格那丟</b><br>約主後 96 年的《革利免一書》提醒哥林多教會拿起「蒙福使徒保羅」的書信來讀；伊格那丟在往羅馬殉道途中寫給以弗所教會的信，也稱他們是「與保羅同參奧祕」的人。</div>
+  </div>
+  <figure class="illus reveal"><div class="art"><svg viewBox="0 0 800 440" role="img" aria-label="地中海東部示意地圖：耶路撒冷、安提阿、以弗所、士每拿、拔摩島、哥林多、羅馬、里昂" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="440" fill="#F4EEDF"/><line x1="94" y1="399" x2="706" y2="399" stroke="#E2D6BC" stroke-width="1"/><text x="98" y="396" font-size="10" fill="#B4A584">30°N</text><line x1="94" y1="294" x2="706" y2="294" stroke="#E2D6BC" stroke-width="1"/><text x="98" y="291" font-size="10" fill="#B4A584">35°N</text><line x1="94" y1="188" x2="706" y2="188" stroke="#E2D6BC" stroke-width="1"/><text x="98" y="185" font-size="10" fill="#B4A584">40°N</text><line x1="94" y1="83" x2="706" y2="83" stroke="#E2D6BC" stroke-width="1"/><text x="98" y="80" font-size="10" fill="#B4A584">45°N</text><line x1="144" y1="30" x2="144" y2="410" stroke="#E2D6BC" stroke-width="1"/><text x="147" y="406" font-size="10" fill="#B4A584">5°E</text><line x1="227" y1="30" x2="227" y2="410" stroke="#E2D6BC" stroke-width="1"/><text x="230" y="406" font-size="10" fill="#B4A584">10°E</text><line x1="309" y1="30" x2="309" y2="410" stroke="#E2D6BC" stroke-width="1"/><text x="312" y="406" font-size="10" fill="#B4A584">15°E</text><line x1="392" y1="30" x2="392" y2="410" stroke="#E2D6BC" stroke-width="1"/><text x="395" y="406" font-size="10" fill="#B4A584">20°E</text><line x1="474" y1="30" x2="474" y2="410" stroke="#E2D6BC" stroke-width="1"/><text x="477" y="406" font-size="10" fill="#B4A584">25°E</text><line x1="557" y1="30" x2="557" y2="410" stroke="#E2D6BC" stroke-width="1"/><text x="560" y="406" font-size="10" fill="#B4A584">30°E</text><line x1="640" y1="30" x2="640" y2="410" stroke="#E2D6BC" stroke-width="1"/><text x="643" y="406" font-size="10" fill="#B4A584">35°E</text><path d="M659 269 L513 232 L439 232 L268 148" fill="none" stroke="#B9562F" stroke-width="2.5" stroke-dasharray="7 6" stroke-linecap="round"/><path d="M643 362 L513 232 L500 245" fill="none" stroke="#5E8FBF" stroke-width="2.5" stroke-dasharray="2 6" stroke-linecap="round"/><path d="M510 222 L268 148 L141 67" fill="none" stroke="#B8893B" stroke-width="2.5" stroke-dasharray="10 4 2 4" stroke-linecap="round"/><circle cx="643" cy="362" r="4.5" fill="#2F2A24" stroke="#FFFDF8" stroke-width="2"/><text x="652" y="367" font-size="13" font-weight="500" text-anchor="start" fill="#2F2A24" font-family="Noto Sans TC, sans-serif" paint-order="stroke" stroke="#F4EEDF" stroke-width="4">耶路撒冷</text><circle cx="659" cy="269" r="4.5" fill="#2F2A24" stroke="#FFFDF8" stroke-width="2"/><text x="668" y="274" font-size="13" font-weight="500" text-anchor="start" fill="#2F2A24" font-family="Noto Sans TC, sans-serif" paint-order="stroke" stroke="#F4EEDF" stroke-width="4">安提阿</text><circle cx="513" cy="232" r="7" fill="#B8893B" stroke="#FFFDF8" stroke-width="2"/><text x="523" y="248" font-size="15" font-weight="700" text-anchor="start" fill="#2F2A24" font-family="Noto Sans TC, sans-serif" paint-order="stroke" stroke="#F4EEDF" stroke-width="4">以弗所</text><circle cx="510" cy="222" r="4.5" fill="#2F2A24" stroke="#FFFDF8" stroke-width="2"/><text x="502" y="214" font-size="13" font-weight="500" text-anchor="end" fill="#2F2A24" font-family="Noto Sans TC, sans-serif" paint-order="stroke" stroke="#F4EEDF" stroke-width="4">士每拿</text><circle cx="500" cy="245" r="4.5" fill="#2F2A24" stroke="#FFFDF8" stroke-width="2"/><text x="492" y="263" font-size="13" font-weight="500" text-anchor="end" fill="#2F2A24" font-family="Noto Sans TC, sans-serif" paint-order="stroke" stroke="#F4EEDF" stroke-width="4">拔摩島</text><circle cx="439" cy="232" r="4.5" fill="#2F2A24" stroke="#FFFDF8" stroke-width="2"/><text x="431" y="224" font-size="13" font-weight="500" text-anchor="end" fill="#2F2A24" font-family="Noto Sans TC, sans-serif" paint-order="stroke" stroke="#F4EEDF" stroke-width="4">哥林多</text><circle cx="268" cy="148" r="4.5" fill="#2F2A24" stroke="#FFFDF8" stroke-width="2"/><text x="268" y="138" font-size="13" font-weight="500" text-anchor="middle" fill="#2F2A24" font-family="Noto Sans TC, sans-serif" paint-order="stroke" stroke="#F4EEDF" stroke-width="4">羅馬</text><circle cx="141" cy="67" r="4.5" fill="#2F2A24" stroke="#FFFDF8" stroke-width="2"/><text x="150" y="72" font-size="13" font-weight="500" text-anchor="start" fill="#2F2A24" font-family="Noto Sans TC, sans-serif" paint-order="stroke" stroke="#F4EEDF" stroke-width="4">里昂</text><rect x="40" y="322" width="320" height="92" rx="10" fill="#FFFDF8" stroke="#E2D6BC"/><line x1="52" y1="342" x2="92" y2="342" stroke="#B9562F" stroke-width="2.5" stroke-dasharray="7 6"/><text x="102" y="347" font-size="13" fill="#2F2A24" font-family="Noto Sans TC, sans-serif">保羅的宣教足跡（簡化）</text><line x1="52" y1="366" x2="92" y2="366" stroke="#5E8FBF" stroke-width="2.5" stroke-dasharray="2 6"/><text x="102" y="371" font-size="13" fill="#2F2A24" font-family="Noto Sans TC, sans-serif">約翰：耶路撒冷 → 以弗所、拔摩</text><line x1="52" y1="390" x2="92" y2="390" stroke="#B8893B" stroke-width="2.5" stroke-dasharray="10 4 2 4"/><text x="102" y="395" font-size="13" fill="#2F2A24" font-family="Noto Sans TC, sans-serif">坡旅甲 → 愛任紐的傳承</text><text x="20" y="430" font-size="11" fill="#9A8B6C" font-family="Noto Sans TC, sans-serif">依實際經緯度等距投影；路線為示意，未繪海岸線</text></svg></div><figcaption>以弗所是保羅建立、約翰長住的教會；坡旅甲把使徒的教導傳給愛任紐。（示意地圖）</figcaption></figure>
+  <p class="note">本節教父文獻摘要依愛任紐《駁異端》卷三、坡旅甲《致腓立比人書》、《革利免一書》、伊格那丟《致以弗所人書》整理，原文連結見文末參考資料。</p>
+  <p class="takeaway">早期教會沒有讓約翰和保羅分家，而是在同一張主餐桌上，讀他們兩人的書信。</p>
+</section>
+
+<section id="s7" class="reveal">
+  <h2><small>結語</small>同一位基督，兩種見證</h2>
+  <p>保羅帶我們站在審判台前，聽見神宣告：「如今，那些在基督耶穌裡的就不定罪了。」<button class="ref" data-r="Ro8:1-2">羅 8:1–2</button> 約翰帶我們走進父家，聽見主說：「你們要常在我裡面，我也常在你們裡面。」<button class="ref" data-r="Jn15:4-5">約 15:4–5</button> 被算為義與得著生命，是同一份救恩的兩面，都源自同一位為我們死而復活的主。</p>
+  <div class="reflect"><h4>省察</h4><ol>
+    <li>我比較習慣用哪一種語言描述自己的得救：「被稱義」還是「得生命」？另一種語言能補足我甚麼？</li>
+    <li>我的信，是名詞多一些，還是動詞多一些？這週有哪一件具體的事，可以讓我「常在主裡面」？</li>
+    <li>我是否把「因信稱義」當成不必改變的藉口，或把「彼此相愛」當成可以不談真理的理由？</li>
+  </ol></div>
+  <div class="prayer"><h4>回應禱告</h4>
+    天父，感謝你在基督裡稱我們為義，又將你兒子的生命賜給我們。<br>
+    求你使我們的信有根有基，生發仁愛；<br>
+    使我們天天住在主裡面，在愛中彼此相交，<br>
+    直到主顯現的日子，我們得見他的真體。<br>
+    奉主耶穌基督的名禱告，阿們。</div>
+</section>
+
+<section id="refs" class="reveal">
+  <h2><small>溯源</small>參考資料</h2>
+  <h3>本文引用經文（依出現順序）</h3>
+  <p class="note">經文依《和合本》新標點整理；點各條目可開啟 Bible Gateway 對照。</p>
+  <ol id="reflist"></ol>
+  <h3>早期教父文獻</h3>
+  <ul class="srcs">
+    <li>愛任紐《駁異端》卷三第一章（約翰在以弗所寫福音書）：<a href="https://www.newadvent.org/fathers/0103301.htm" target="_blank" rel="noopener">New Advent 英譯</a></li>
+    <li>愛任紐《駁異端》卷三第三章第四節（坡旅甲；以弗所教會由保羅建立、約翰住到圖拉真時代）：<a href="https://www.newadvent.org/fathers/0103303.htm" target="_blank" rel="noopener">New Advent 英譯</a></li>
+    <li>坡旅甲《致腓立比人書》第三章（保羅書信）、第七章（引約翰一書 4:3）：<a href="https://www.newadvent.org/fathers/0136.htm" target="_blank" rel="noopener">New Advent 英譯</a></li>
+    <li>《革利免一書》第四十七章：<a href="https://www.newadvent.org/fathers/1010.htm" target="_blank" rel="noopener">New Advent 英譯</a></li>
+    <li>伊格那丟《致以弗所人書》第十二章：<a href="https://www.newadvent.org/fathers/0104.htm" target="_blank" rel="noopener">New Advent 英譯</a></li>
+  </ul>
+  <h3>和合本線上資源</h3>
+  <ul class="srcs">
+    <li><a href="https://bible.fhl.net/" target="_blank" rel="noopener">信望愛站 聖經工具（含希臘文原文分析）</a></li>
+    <li><a href="https://www.biblegateway.com/versions/Chinese-Union-Version-Modern-Punctuation-Traditional-CUVMPT-Bible/" target="_blank" rel="noopener">Bible Gateway：和合本新標點（CUVMPT）</a></li>
+  </ul>
+</section>
+</main>
+
+<footer>約翰與保羅對福音與信仰的詮釋 ・ 聖經真理核實與系統神學整合<br>經文引自《和合本》（公有領域）・ 插圖為象徵示意</footer>
+
+<dialog id="dlg" aria-labelledby="dlg-t">
+  <div class="dlg-h"><div><h5 id="dlg-t"></h5><div class="ver" id="dlg-v"></div></div><button class="dlg-x" id="dlg-x" aria-label="關閉">×</button></div>
+  <div class="dlg-b" id="dlg-b"></div>
+  <div class="dlg-f" id="dlg-f"></div>
+</dialog>
+
+<script>
+const BIBLE_VER = "CUVMPT";
+const bg = (en, ver) => `https://www.biblegateway.com/passage/?search=${encodeURIComponent(en)}&version=${ver}`;
+const V = {"1Jn1:3":{"zh":"約翰一書 1:3","en":"1 John 1:3","v":[[3,"我們將所看見、所聽見的傳給你們，使你們與我們相交。我們乃是與父並他兒子耶穌基督相交的。"]]},"1Jn2:1":{"zh":"約翰一書 2:1","en":"1 John 2:1","v":[[1,"我小子們哪，我將這些話寫給你們，是要叫你們不犯罪。若有人犯罪，在父那裡我們有一位中保，就是那義者耶穌基督。"]]},"Jn1:5":{"zh":"約翰福音 1:5","en":"John 1:5","v":[[5,"光照在黑暗裡，黑暗卻不接受光。"]]},"Jn1:14":{"zh":"約翰福音 1:14","en":"John 1:14","v":[[14,"道成了肉身，住在我們中間，充充滿滿地有恩典有真理。我們也見過他的榮光，正是父獨生子的榮光。"]]},"Jn1:18":{"zh":"約翰福音 1:18","en":"John 1:18","v":[[18,"從來沒有人看見神，只有在父懷裡的獨生子將他表明出來。"]]},"1Jn1:1-3":{"zh":"約翰一書 1:1–3","en":"1 John 1:1-3","v":[[1,"論到從起初原有的生命之道，就是我們所聽見、所看見、親眼看過、親手摸過的。"],[2,"（這生命已經顯現出來，我們也看見過，現在又作見證，將原與父同在且顯現與我們那永遠的生命傳給你們。）"],[3,"我們將所看見、所聽見的傳給你們，使你們與我們相交。我們乃是與父並他兒子耶穌基督相交的。"]]},"1Co15:3-4":{"zh":"哥林多前書 15:3–4","en":"1 Corinthians 15:3-4","v":[[3,"我當日所領受又傳給你們的，第一，就是基督照聖經所說，為我們的罪死了，"],[4,"而且埋葬了；又照聖經所說，第三天復活了，"]]},"Ro1:3-4":{"zh":"羅馬書 1:3–4","en":"Romans 1:3-4","v":[[3,"論到他兒子我主耶穌基督。按肉體說，是從大衛後裔生的；"],[4,"按聖善的靈說，因從死裡復活，以大能顯明是神的兒子。"]]},"Jn3:3-5":{"zh":"約翰福音 3:3–5","en":"John 3:3-5","v":[[3,"耶穌回答說：「我實實在在地告訴你，人若不重生，就不能見神的國。」"],[4,"尼哥底母說：「人已經老了，如何能重生呢？豈能再進母腹生出來嗎？」"],[5,"耶穌說：「我實實在在地告訴你，人若不是從水和聖靈生的，就不能進神的國。"]]},"Jn17:3":{"zh":"約翰福音 17:3","en":"John 17:3","v":[[3,"認識你獨一的真神，並且認識你所差來的耶穌基督，這就是永生。"]]},"Ro1:17-18":{"zh":"羅馬書 1:17–18","en":"Romans 1:17-18","v":[[17,"因為神的義正在這福音上顯明出來；這義是本於信，以致於信。如經上所記：「義人必因信得生。」"],[18,"原來，神的忿怒從天上顯明在一切不虔不義的人身上，就是那些行不義阻擋真理的人。"]]},"Ro3:19-24":{"zh":"羅馬書 3:19–24","en":"Romans 3:19-24","v":[[19,"我們曉得律法上的話都是對律法以下之人說的，好塞住各人的口，叫普世的人都伏在神審判之下。"],[20,"所以凡有血氣的，沒有一個因行律法能在神面前稱義，因為律法本是叫人知罪。"],[21,"但如今，神的義在律法以外已經顯明出來，有律法和先知為證："],[22,"就是神的義，因信耶穌基督加給一切相信的人，並沒有分別。"],[23,"因為世人都犯了罪，虧缺了神的榮耀；"],[24,"如今卻蒙神的恩典，因基督耶穌的救贖，就白白地稱義。"]]},"Jn1:12":{"zh":"約翰福音 1:12","en":"John 1:12","v":[[12,"凡接待他的，就是信他名的人，他就賜他們權柄，作神的兒女。"]]},"Jn3:16":{"zh":"約翰福音 3:16","en":"John 3:16","v":[[16,"「神愛世人，甚至將他的獨生子賜給他們，叫一切信他的，不至滅亡，反得永生。"]]},"Jn15:4":{"zh":"約翰福音 15:4","en":"John 15:4","v":[[4,"你們要常在我裡面，我也常在你們裡面。枝子若不常在葡萄樹上，自己就不能結果子；你們若不常在我裡面，也是這樣。"]]},"Ro3:24-28":{"zh":"羅馬書 3:24–28","en":"Romans 3:24-28","v":[[24,"如今卻蒙神的恩典，因基督耶穌的救贖，就白白地稱義。"],[25,"神設立耶穌作挽回祭，是憑著耶穌的血，藉著人的信，要顯明神的義；因為他用忍耐的心寬容人先時所犯的罪，"],[26,"好在今時顯明他的義，使人知道他自己為義，也稱信耶穌的人為義。"],[27,"既是這樣，哪裡能誇口呢？沒有可誇的了。用何法沒有的呢？是用立功之法嗎？不是，乃用信主之法。"],[28,"所以我們看定了：人稱義是因著信，不在乎遵行律法。"]]},"Ro5:1":{"zh":"羅馬書 5:1","en":"Romans 5:1","v":[[1,"我們既因信稱義，就藉著我們的主耶穌基督得與神相和。"]]},"Ro5:10":{"zh":"羅馬書 5:10","en":"Romans 5:10","v":[[10,"因為我們作仇敵的時候，且藉著神兒子的死得與神和好；既已和好，就更要因他的生得救了。"]]},"2Co5:17":{"zh":"哥林多後書 5:17","en":"2 Corinthians 5:17","v":[[17,"若有人在基督裡，他就是新造的人，舊事已過，都變成新的了。"]]},"Jn6:29":{"zh":"約翰福音 6:29","en":"John 6:29","v":[[29,"耶穌回答說：「信神所差來的，這就是做神的工。」"]]},"Jn8:31-32":{"zh":"約翰福音 8:31–32","en":"John 8:31-32","v":[[31,"耶穌對信他的猶太人說：「你們若常常遵守我的道，就真是我的門徒；"],[32,"你們必曉得真理，真理必叫你們得以自由。」"]]},"Ga2:16":{"zh":"加拉太書 2:16","en":"Galatians 2:16","v":[[16,"既知道人稱義不是因行律法，乃是因信耶穌基督，連我們也信了基督耶穌，使我們因信基督稱義，不因行律法稱義；因為凡有血氣的，沒有一人因行律法稱義。"]]},"Php3:7-9":{"zh":"腓立比書 3:7–9","en":"Philippians 3:7-9","v":[[7,"只是我先前以為與我有益的，我現在因基督都當作有損的。"],[8,"不但如此，我也將萬事當作有損的，因我以認識我主基督耶穌為至寶。我為他已經丟棄萬事，看作糞土，為要得著基督；"],[9,"並且得以在他裡面，不是有自己因律法而得的義，乃是有信基督的義，就是因信神而來的義，"]]},"Eph2:8-9":{"zh":"以弗所書 2:8–9","en":"Ephesians 2:8-9","v":[[8,"你們得救是本乎恩，也因著信；這並不是出於自己，乃是神所賜的；"],[9,"也不是出於行為，免得有人自誇。"]]},"Jn5:24":{"zh":"約翰福音 5:24","en":"John 5:24","v":[[24,"我實實在在地告訴你們，那聽我話、又信差我來者的，就有永生；不至於定罪，是已經出死入生了。"]]},"1Jn2:8":{"zh":"約翰一書 2:8","en":"1 John 2:8","v":[[8,"再者，我寫給你們的是一條新命令，在主是真的，在你們也是真的；因為黑暗漸漸過去，真光現在已經照耀。"]]},"1Jn3:2":{"zh":"約翰一書 3:2","en":"1 John 3:2","v":[[2,"親愛的弟兄啊，我們現在是神的兒女，將來如何，還未顯明；但我們知道，主若顯現，我們必要像他，因為必得見他的真體。"]]},"Ro8:23-25":{"zh":"羅馬書 8:23–25","en":"Romans 8:23-25","v":[[23,"不但如此，就是我們這有聖靈初結果子的，也是自己心裡嘆息，等候得著兒子的名分，乃是我們的身體得贖。"],[24,"我們得救是在乎盼望；只是所見的盼望不是盼望，誰還盼望他所見的呢？"],[25,"但我們若盼望那所不見的，就必忍耐等候。"]]},"1Co15:20-28":{"zh":"哥林多前書 15:20–28","en":"1 Corinthians 15:20-28","v":[[20,"但基督已經從死裡復活，成為睡了之人初熟的果子。"],[21,"死既是因一人而來，死人復活也是因一人而來。"],[22,"在亞當裡眾人都死了；照樣，在基督裡眾人也都要復活。"],[23,"但各人是按著自己的次序復活：初熟的果子是基督；以後，在他來的時候，是那些屬基督的。"],[24,"再後，末期到了，那時基督既將一切執政的、掌權的、有能的都毀滅了，就把國交與父神。"],[25,"因為基督必要作王，等神把一切仇敵都放在他的腳下。"],[26,"儘末了所毀滅的仇敵就是死。"],[27,"因為經上說：「神叫萬物都服在他的腳下。」既說萬物都服了他，明顯那叫萬物服他的，不在其內了。"],[28,"萬物既服了他，那時子也要自己服那叫萬物服他的，叫神在萬物之上，為萬物之主。"]]},"Jn13:34-35":{"zh":"約翰福音 13:34–35","en":"John 13:34-35","v":[[34,"我賜給你們一條新命令，乃是叫你們彼此相愛；我怎樣愛你們，你們也要怎樣相愛。"],[35,"你們若有彼此相愛的心，眾人因此就認出你們是我的門徒了。」"]]},"1Jn2:3-6":{"zh":"約翰一書 2:3–6","en":"1 John 2:3-6","v":[[3,"我們若遵守神的誡命，就曉得是認識他。"],[4,"人若說「我認識他」，卻不遵守他的誡命，便是說謊話的，真理也不在他心裡了。"],[5,"凡遵守主道的，愛神的心在他裡面實在是完全的。從此我們知道我們是在主裡面。"],[6,"人若說他住在主裡面，就該自己照主所行的去行。"]]},"1Jn3:14":{"zh":"約翰一書 3:14","en":"1 John 3:14","v":[[14,"我們因為愛弟兄，就曉得是已經出死入生了。沒有愛心的，仍住在死中。"]]},"Ro6:11-14":{"zh":"羅馬書 6:11–14","en":"Romans 6:11-14","v":[[11,"這樣，你們向罪也當看自己是死的；向神在基督耶穌裡，卻當看自己是活的。"],[12,"所以，不要容罪在你們必死的身上作王，使你們順從身子的私慾。"],[13,"也不要將你們的肢體獻給罪作不義的器具；倒要像從死裡復活的人，將自己獻給神，並將肢體作義的器具獻給神。"],[14,"罪必不能作你們的主，因你們不在律法之下，乃在恩典之下。"]]},"Ga5:16":{"zh":"加拉太書 5:16","en":"Galatians 5:16","v":[[16,"我說，你們當順著聖靈而行，就不放縱肉體的情慾了。"]]},"Ga5:22-23":{"zh":"加拉太書 5:22–23","en":"Galatians 5:22-23","v":[[22,"聖靈所結的果子，就是仁愛、喜樂、和平、忍耐、恩慈、良善、信實、"],[23,"溫柔、節制。這樣的事，沒有律法禁止。"]]},"Jn1:1":{"zh":"約翰福音 1:1","en":"John 1:1","v":[[1,"太初有道，道與神同在，道就是神。"]]},"Jn1:11-12":{"zh":"約翰福音 1:11–12","en":"John 1:11-12","v":[[11,"他到自己的地方來，自己的人倒不接待他。"],[12,"凡接待他的，就是信他名的人，他就賜他們權柄，作神的兒女。"]]},"Jn3:18-21":{"zh":"約翰福音 3:18–21","en":"John 3:18-21","v":[[18,"信他的人，不被定罪；不信的人，罪已經定了，因為他不信神獨生子的名。"],[19,"光來到世間，世人因自己的行為是惡的，不愛光，倒愛黑暗，定他們的罪就是在此。"],[20,"凡作惡的便恨光，並不來就光，恐怕他的行為受責備。"],[21,"但行真理的必來就光，要顯明他所行的是靠神而行。」"]]},"Jn3:14-15":{"zh":"約翰福音 3:14–15","en":"John 3:14-15","v":[[14,"摩西在曠野怎樣舉蛇，人子也必照樣被舉起來，"],[15,"叫一切信他的都得永生。"]]},"Jn12:23-33":{"zh":"約翰福音 12:23–33","en":"John 12:23-33","v":[[23,"耶穌說：「人子得榮耀的時候到了。"],[24,"我實實在在地告訴你們，一粒麥子不落在地裡死了，仍舊是一粒；若是死了，就結出許多子粒來。"],[25,"愛惜自己生命的，就失喪生命；在這世上恨惡自己生命的，就要保守生命到永生。"],[26,"若有人服事我，就當跟從我；我在哪裡，服事我的人也要在哪裡。若有人服事我，我父必尊重他。」"],[27,"我現在心裡憂愁，我說甚麼才好呢？父啊，救我脫離這時候；但我原是為這時候來的。"],[28,"父啊，願你榮耀你的名！」當時就有聲音從天上來，說：「我已經榮耀了我的名，還要再榮耀。」"],[29,"站在旁邊的眾人聽見，就說：「打雷了。」還有人說：「有天使對他說話。」"],[30,"耶穌說：「這聲音不是為我，是為你們發的。"],[31,"現在這世界受審判，這世界的王要被趕出去。"],[32,"我若從地上被舉起來，就要吸引萬人來歸我。」"],[33,"耶穌這話原是指著自己將要怎樣死說的。"]]},"Jn19:30":{"zh":"約翰福音 19:30","en":"John 19:30","v":[[30,"耶穌嘗了那醋，就說：「成了！」便低下頭，將靈魂交付神了。"]]},"Jn19:34":{"zh":"約翰福音 19:34","en":"John 19:34","v":[[34,"惟有一個兵拿槍扎他的肋旁，隨即有血和水流出來。"]]},"Jn20:31":{"zh":"約翰福音 20:31","en":"John 20:31","v":[[31,"但記這些事要叫你們信耶穌是基督，是神的兒子，並且叫你們信了他，就可以因他的名得生命。"]]},"Jn14:16-17":{"zh":"約翰福音 14:16–17","en":"John 14:16-17","v":[[16,"我要求父，父就另外賜給你們一位保惠師，叫他永遠與你們同在，"],[17,"就是真理的聖靈，乃世人不能接受的；因為不見他，也不認識他。你們卻認識他，因他常與你們同在，也要在你們裡面。"]]},"Jn15:4-5":{"zh":"約翰福音 15:4–5","en":"John 15:4-5","v":[[4,"你們要常在我裡面，我也常在你們裡面。枝子若不常在葡萄樹上，自己就不能結果子；你們若不常在我裡面，也是這樣。"],[5,"我是葡萄樹，你們是枝子。常在我裡面的，我也常在他裡面，這人就多結果子；因為離了我，你們就不能做甚麼。"]]},"Ro1:18":{"zh":"羅馬書 1:18","en":"Romans 1:18","v":[[18,"原來，神的忿怒從天上顯明在一切不虔不義的人身上，就是那些行不義阻擋真理的人。"]]},"Ro3:9-20":{"zh":"羅馬書 3:9–20","en":"Romans 3:9-20","v":[[9,"這卻怎麼樣呢？我們比他們強嗎？決不是的！因我們已經證明：猶太人和希臘人都在罪惡之下。"],[10,"就如經上所記：「沒有義人，連一個也沒有！"],[11,"沒有明白的，沒有尋求神的；"],[12,"都是偏離正路，一同變為無用。沒有行善的，連一個也沒有！"],[13,"他們的喉嚨是敞開的墳墓；他們用舌頭弄詭詐，嘴唇裡有虺蛇的毒氣，"],[14,"滿口是咒罵苦毒。"],[15,"殺人流血，他們的腳飛跑，"],[16,"所經過的路便行殘害暴虐的事。"],[17,"平安的路，他們未曾知道；"],[18,"他們眼中不怕神。」"],[19,"我們曉得律法上的話都是對律法以下之人說的，好塞住各人的口，叫普世的人都伏在神審判之下。"],[20,"所以凡有血氣的，沒有一個因行律法能在神面前稱義，因為律法本是叫人知罪。"]]},"Ro3:21":{"zh":"羅馬書 3:21","en":"Romans 3:21","v":[[21,"但如今，神的義在律法以外已經顯明出來，有律法和先知為證："]]},"Ro3:24-26":{"zh":"羅馬書 3:24–26","en":"Romans 3:24-26","v":[[24,"如今卻蒙神的恩典，因基督耶穌的救贖，就白白地稱義。"],[25,"神設立耶穌作挽回祭，是憑著耶穌的血，藉著人的信，要顯明神的義；因為他用忍耐的心寬容人先時所犯的罪，"],[26,"好在今時顯明他的義，使人知道他自己為義，也稱信耶穌的人為義。"]]},"Ro4:3-5":{"zh":"羅馬書 4:3–5","en":"Romans 4:3-5","v":[[3,"經上說甚麼呢？說：「亞伯拉罕信神，這就算為他的義。」"],[4,"做工的得工價，不算恩典，乃是該得的；"],[5,"惟有不做工的，只信稱罪人為義的神，他的信就算為義。"]]},"2Co5:21":{"zh":"哥林多後書 5:21","en":"2 Corinthians 5:21","v":[[21,"神使那無罪的，替我們成為罪，好叫我們在他裡面成為神的義。"]]},"Ro4:16":{"zh":"羅馬書 4:16","en":"Romans 4:16","v":[[16,"所以人得為後嗣是本乎信，因此就屬乎恩，叫應許定然歸給一切後裔；不但歸給那屬乎律法的，也歸給那效法亞伯拉罕之信的。亞伯拉罕在神面前作我們世人的父。"]]},"Ga3:26-29":{"zh":"加拉太書 3:26–29","en":"Galatians 3:26-29","v":[[26,"所以，你們因信基督耶穌都是神的兒子。"],[27,"你們受洗歸入基督的都是披戴基督了。"],[28,"並不分猶太人、希臘人，自主的、為奴的，或男或女，因為你們在基督耶穌裡都成為一了。"],[29,"你們既屬乎基督，就是亞伯拉罕的後裔，是照著應許承受產業的了。"]]},"Eph2:11-16":{"zh":"以弗所書 2:11–16","en":"Ephesians 2:11-16","v":[[11,"所以你們應當記念：你們從前按肉體是外邦人，是稱為沒受割禮的；這名原是那些憑人手在肉身上稱為受割禮之人所起的。"],[12,"那時，你們與基督無關，在以色列國民以外，在所應許的諸約上是局外人，並且活在世上沒有指望，沒有神。"],[13,"你們從前遠離神的人，如今卻在基督耶穌裡，靠著他的血，已經得親近了。"],[14,"因他使我們和睦，將兩下合而為一，拆毀了中間隔斷的牆；"],[15,"而且以自己的身體廢掉冤仇，就是那記在律法上的規條，為要將兩下藉著自己造成一個新人，如此便成就了和睦。"],[16,"既在十字架上滅了冤仇，便藉這十字架使兩下歸為一體，與神和好了，"]]},"Ga3:10-11":{"zh":"加拉太書 3:10–11","en":"Galatians 3:10-11","v":[[10,"凡以行律法為本的，都是被咒詛的；因為經上記著：「凡不常照律法書上所記一切之事去行的，就被咒詛。」"],[11,"沒有一個人靠著律法在神面前稱義，這是明顯的；因為經上說：「義人必因信得生。」"]]},"Ro5:8":{"zh":"羅馬書 5:8","en":"Romans 5:8","v":[[8,"惟有基督在我們還作罪人的時候為我們死，神的愛就在此向我們顯明了。"]]},"Ga3:13":{"zh":"加拉太書 3:13","en":"Galatians 3:13","v":[[13,"基督既為我們受了咒詛，就贖出我們脫離律法的咒詛；因為經上記著：「凡掛在木頭上都是被咒詛的。」"]]},"Ro4:25":{"zh":"羅馬書 4:25","en":"Romans 4:25","v":[[25,"耶穌被交給人，是為我們的過犯；復活，是為叫我們稱義。"]]},"Ro6:3-11":{"zh":"羅馬書 6:3–11","en":"Romans 6:3-11","v":[[3,"豈不知我們這受洗歸入基督耶穌的人是受洗歸入他的死嗎？"],[4,"所以，我們藉著洗禮歸入死，和他一同埋葬，原是叫我們一舉一動有新生的樣式，像基督藉著父的榮耀從死裡復活一樣。"],[5,"我們若在他死的形狀上與他聯合，也要在他復活的形狀上與他聯合；"],[6,"因為知道我們的舊人和他同釘十字架，使罪身滅絕，叫我們不再作罪的奴僕；"],[7,"因為已死的人是脫離了罪。"],[8,"我們若是與基督同死，就信必與他同活。"],[9,"因為知道基督既從死裡復活，就不再死，死也不再作他的主了。"],[10,"他死是向罪死了，只有一次；他活是向神活著。"],[11,"這樣，你們向罪也當看自己是死的；向神在基督耶穌裡，卻當看自己是活的。"]]},"Ro8:1-2":{"zh":"羅馬書 8:1–2","en":"Romans 8:1-2","v":[[1,"如今，那些在基督耶穌裡的就不定罪了。"],[2,"因為賜生命聖靈的律，在基督耶穌裡釋放了我，使我脫離罪和死的律了。"]]},"Eph1:13-14":{"zh":"以弗所書 1:13–14","en":"Ephesians 1:13-14","v":[[13,"你們既聽見真理的道，就是那叫你們得救的福音，也信了基督，既然信他，就受了所應許的聖靈為印記。"],[14,"這聖靈是我們得基業的憑據，直等到神之民被贖，使他的榮耀得著稱讚。"]]},"Eph4:12-16":{"zh":"以弗所書 4:12–16","en":"Ephesians 4:12-16","v":[[12,"為要成全聖徒，各盡其職，建立基督的身體，"],[13,"直等到我們眾人在真道上同歸於一，認識神的兒子，得以長大成人，滿有基督長成的身量，"],[14,"使我們不再作小孩子，中了人的詭計和欺騙的法術，被一切異教之風搖動，飄來飄去，就隨從各樣的異端；"],[15,"惟用愛心說誠實話，凡事長進，連於元首基督，"],[16,"全身都靠他聯絡得合式，百節各按各職，照著各體的功用彼此相助，便叫身體漸漸增長，在愛中建立自己。"]]},"1Th4:13-18":{"zh":"帖撒羅尼迦前書 4:13–18","en":"1 Thessalonians 4:13-18","v":[[13,"論到睡了的人，我們不願意弟兄們不知道，恐怕你們憂傷，像那些沒有指望的人一樣。"],[14,"我們若信耶穌死而復活了，那已經在耶穌裡睡了的人，神也必將他與耶穌一同帶來。"],[15,"我們現在照主的話告訴你們一件事：我們這活著還存留到主降臨的人，斷不能在那已經睡了的人之先。"],[16,"因為主必親自從天降臨，有呼叫的聲音和天使長的聲音，又有神的號吹響；那在基督裡死了的人必先復活。"],[17,"以後我們這活著還存留的人必和他們一同被提到雲裡，在空中與主相遇。這樣，我們就要和主永遠同在。"],[18,"所以，你們當用這些話彼此勸慰。"]]},"1Jn3:6":{"zh":"約翰一書 3:6","en":"1 John 3:6","v":[[6,"凡住在他裡面的，就不犯罪；凡犯罪的，是未曾看見他，也未曾認識他。"]]},"1Jn1:8":{"zh":"約翰一書 1:8","en":"1 John 1:8","v":[[8,"我們若說自己無罪，便是自欺，真理不在我們心裡了。"]]},"1Jn3:9":{"zh":"約翰一書 3:9","en":"1 John 3:9","v":[[9,"凡從神生的，就不犯罪，因神的道（原文是種）存在他心裡；他也不能犯罪，因為他是由神生的。"]]},"1Jn2:1-2":{"zh":"約翰一書 2:1–2","en":"1 John 2:1-2","v":[[1,"我小子們哪，我將這些話寫給你們，是要叫你們不犯罪。若有人犯罪，在父那裡我們有一位中保，就是那義者耶穌基督。"],[2,"他為我們的罪作了挽回祭，不是單為我們的罪，也是為普天下人的罪。"]]},"Ro6:1-2":{"zh":"羅馬書 6:1–2","en":"Romans 6:1-2","v":[[1,"這樣，怎麼說呢？我們可以仍在罪中、叫恩典顯多嗎？"],[2,"斷乎不可！我們在罪上死了的人豈可仍在罪中活著呢？"]]},"Ro6:14":{"zh":"羅馬書 6:14","en":"Romans 6:14","v":[[14,"罪必不能作你們的主，因你們不在律法之下，乃在恩典之下。"]]},"Ro8:13":{"zh":"羅馬書 8:13","en":"Romans 8:13","v":[[13,"你們若順從肉體活著，必要死；若靠著聖靈治死身體的惡行，必要活著。"]]},"Ga5:6":{"zh":"加拉太書 5:6","en":"Galatians 5:6","v":[[6,"原來在基督耶穌裡，受割禮不受割禮全無功效，惟獨使人生發仁愛的信心才有功效。"]]},"Eph2:10":{"zh":"以弗所書 2:10","en":"Ephesians 2:10","v":[[10,"我們原是他的工作，在基督耶穌裡造成的，為要叫我們行善，就是神所預備叫我們行的。"]]},"Ro13:8-10":{"zh":"羅馬書 13:8–10","en":"Romans 13:8-10","v":[[8,"凡事都不可虧欠人，惟有彼此相愛要常以為虧欠；因為愛人的就完全了律法。"],[9,"像那不可姦淫，不可殺人，不可偷盜，不可貪婪，或有別的誡命，都包在愛人如己這一句話之內了。"],[10,"愛是不加害與人的，所以愛就完全了律法。"]]},"1Co13:13":{"zh":"哥林多前書 13:13","en":"1 Corinthians 13:13","v":[[13,"如今常存的有信，有望，有愛這三樣，其中最大的是愛。"]]},"1Jn4:2-3":{"zh":"約翰一書 4:2–3","en":"1 John 4:2-3","v":[[2,"凡靈認耶穌基督是成了肉身來的，就是出於神的；從此你們可以認出神的靈來。"],[3,"凡靈不認耶穌，就不是出於神，這是那敵基督者的靈。你們從前聽見他要來，現在已經在世上了。"]]},"2Jn1:7":{"zh":"約翰二書 1:7","en":"2 John 1:7","v":[[7,"因為世上有許多迷惑人的出來，他們不認耶穌基督是成了肉身來的；這就是那迷惑人、敵基督的。"]]},"1Jn3:23":{"zh":"約翰一書 3:23","en":"1 John 3:23","v":[[23,"神的命令就是叫我們信他兒子耶穌基督的名，且照他所賜給我們的命令彼此相愛。"]]},"2Pe3:15-16":{"zh":"彼得後書 3:15–16","en":"2 Peter 3:15-16","v":[[15,"並且要以我們主長久忍耐為得救的因由，就如我們所親愛的兄弟保羅，照著所賜給他的智慧寫了信給你們。"],[16,"他一切的信上也都是講論這事。信中有些難明白的，那無學問、不堅固的人強解，如強解別的經書一樣，就自取沉淪。"]]}};
+
+const dlg = document.getElementById("dlg");
+function openRef(k){
+  const v = V[k]; if(!v) return;
+  document.getElementById("dlg-t").textContent = v.zh;
+  document.getElementById("dlg-v").textContent = v.ver || "和合本（新標點）";
+  const b = document.getElementById("dlg-b"); b.innerHTML = "";
+  v.v.forEach(([n,t]) => { const p = document.createElement("p"); p.style.margin = "0 0 4px";
+    const s = document.createElement("sup"); s.textContent = n; p.append(s, t); b.append(p); });
+  const f = document.getElementById("dlg-f"); f.innerHTML = "";
+  const links = [[`Bible Gateway（${BIBLE_VER}）`, bg(v.en, BIBLE_VER), "main"], ["和合本 CUV", bg(v.en, "CUV")], ["KJV", bg(v.en, "KJV")]];
+  if (v.src) links.push(["原報告來源", v.src]);
+  (v.links || []).forEach(l => links.push(l));
+  links.forEach(([t,h,c]) => { const a = document.createElement("a"); a.href = h; a.target = "_blank"; a.rel = "noopener"; a.textContent = t; if(c) a.className = c; f.append(a); });
+  if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open","");
+}
+document.addEventListener("click", e => { const r = e.target.closest(".ref"); if (r) openRef(r.dataset.r); });
+document.getElementById("dlg-x").onclick = () => dlg.close();
+dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+
+// 參考資料：依出現順序自動去重
+const seen = new Set(), list = document.getElementById("reflist");
+document.querySelectorAll("main .ref").forEach(r => { const k = r.dataset.r; if (seen.has(k) || !V[k]) return; seen.add(k);
+  const li = document.createElement("li"), a = document.createElement("a");
+  a.href = bg(V[k].en, BIBLE_VER); a.target = "_blank"; a.rel = "noopener"; a.textContent = `${V[k].zh}（${V[k].en}）`;
+  li.append(a); list.append(li); });
+
+// 進度條、導覽高亮
+const bar = document.getElementById("progress"), navs = [...document.querySelectorAll("nav.toc a")];
+function onScroll(){
+  const h = document.documentElement; bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + "%";
+  let cur = null; navs.forEach(a => { const s = document.querySelector(a.getAttribute("href")); if (s && s.getBoundingClientRect().top < 120) cur = a; });
+  navs.forEach(a => a.classList.toggle("on", a === cur));
+}
+addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+// 捲動淡入
+const io = "IntersectionObserver" in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} }), {threshold:.06}) : null;
+document.querySelectorAll(".reveal").forEach(el => io ? io.observe(el) : el.classList.add("in"));
+</script>
+</body>
+</html>
