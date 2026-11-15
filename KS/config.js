@@ -81,6 +81,14 @@ window.SCHOOL_TOPICS = [
 ,{ title:'臉色蒼白，就是缺鐵嗎？', description:'看臉只能提醒，不能確診。說明缺鐵與貧血的差別、鐵蛋白怎麼看、AI看臉判讀的限制，並附判讀順序互動。', category:'醫療新知', url:'/KS/IRONLOOK/', date:'2026-11-08' }
 ,{ title:'感冒了，吃什麼才有用？', description:'維生素C、鋅、蜂蜜、雞湯各有多少證據？依三份考科藍回顧拆開四種說法，並附宣稱分類小遊戲。', category:'醫療新知', url:'/KS/COLDFOOD/', date:'2026-11-08' }
 ,{ title:'日常多動一點，有差嗎？', description:'NEAT是運動以外的日常活動耗能。說明經典研究支持什麼、不能保證什麼，並附依跌倒風險調整的久坐小幫手。', category:'健康練習', url:'/KS/NEAT/', date:'2026-11-08' }
+,{ title:'隔夜冷飯，真的比較不升糖？', description:'冷飯會多一點抗性澱粉，但兩篇人體試驗結論相反。並排比較試驗設計與統計，再學剩飯怎麼保存才安全，附檢核工具與測驗。', category:'醫療新知', url:'/KS/COLDRICE/', date:'2026-11-15' }
+,{ title:'年紀大了，親密還重要嗎？', description:'用尊重的口吻談高齡性健康：睪固酮大型試驗白話解讀、更年期與心臟用藥安全、性傳染病與失智同意倫理，附迷思翻牌與看診提問清單。', category:'醫療新知', url:'/KS/SEXAGE/', date:'2026-11-15' }
+,{ title:'心情低落，和生理時鐘有關？', description:'澳洲研究提出憂鬱的晝夜節律亞型，帶你看懂分群方法、勝算比與能說不能說，附光照療法證據、一週作息觀察表與測驗。', category:'睡眠情緒', url:'/KS/DEPRHYTHM/', date:'2026-11-15' }
+,{ title:'走進森林，心情真的會變好？', description:'森林療癒研究怎麼說？用兩篇統合分析看懂壓力與血壓證據強弱，白話解釋SMD、I²，附20分鐘五感散步與秋冬郊山安全清單。', category:'睡眠情緒', url:'/KS/FOREST/', date:'2026-11-15' }
+,{ title:'瘦下來，還是站得穩重要？', description:'長輩體態目標從體重轉向起身與平衡：看懂亞洲肌少症指標、WHO運動量與蛋白質建議，附五次起立計時、SARC-F自我小檢測與蛋白質小算盤。', category:'健康練習', url:'/KS/AGEFIT/', date:'2026-11-15' }
+,{ title:'腎不好，可以喝代糖飲料嗎？', description:'代糖的ADI安全評估和長期健康研究是兩回事。整理WHO指引、阿斯巴甜2B、腎臟病研究與磷鉀鈉重點，附標示小遊戲、ADI小算盤與測驗。', category:'醫療新知', url:'/KS/SWEETCKD/', date:'2026-11-15' }
+,{ title:'孩子關在房裡不出來，怎麼辦？', description:'看懂繭居的定義、日本調查數字、共病與家長課程的證據強弱，附對話例句、父母自我照顧清單與台灣求助路線圖。', category:'家庭婚姻', url:'/KS/HIKIPARENT/', date:'2026-11-15' }
+
    
    // ,{ title: '新主題名稱', description: '主題簡介', category: '主題分類', url: '/KS/新路徑/', date: '日期XXXX-XX-XX' }
 ];
