@@ -21,6 +21,7 @@ window.SITE_CONFIG = {
   notesHeading: "讀經筆記",
 
   notes: [
+{  title: "從赤身到白衣：從眼睛明亮到真正看見",   subtitle: "以聖經真理與基督的教導核實與擴充",   url: "naked-to-white-robe/", },    
 {  title: "從創世記到啟示錄",  subtitle: "以約翰福音第一章總覽聖經的救贖主線",  url: "genesis-to-revelation/",},
 {  title: "《路加福音》：路加的田野調查與聖經真理核實",  subtitle: "從目擊見證到信仰確據——分辨聖經明說、合理推論與學術假說",  url: "luke-eyewitness-inquiry/",},
 {  title: "約翰與保羅對福音與信仰的詮釋",  subtitle: "聖經真理核實與系統神學整合",  url: "john-paul-gospel/",},
