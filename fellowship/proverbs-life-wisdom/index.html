@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>箴言中的人生智慧</title>
+<meta name="description" content="以《箴言》和合本經文為依據，從敬畏神談到受教、言語、情緒、工作、金錢、家庭與公義，並連到基督裡的恩典。經文可點開溯源。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="箴言中的人生智慧">
+<meta property="og:description" content="以《箴言》和合本經文為依據，從敬畏神談到受教、言語、情緒、工作、金錢、家庭與公義，並連到基督裡的恩典。">
+<meta property="og:url" content="https://www.gungho.idv.tw/fellowship/proverbs-life-wisdom/">
+<meta name="theme-color" content="#FBF8F1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF8F1; --paper:#FFFDF8; --ink:#3A3226; --muted:#6E6455; --line:#E8DFCC;
+  --gold:#B8893B; --gold-soft:#F3E6C8; --sky:#5E8FBF; --sky-soft:#E4EEF7;
+  --terra:#B9562F; --terra-soft:#F6E2D8; --olive:#6F8A5A; --olive-soft:#E6EDDD;
+  --serif:"Noto Serif TC","Songti TC","PMingLiU",serif; --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --r:16px; --shadow:0 6px 24px rgba(90,70,30,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font-family:var(--sans);color:var(--ink);line-height:1.9;font-size:17px;
+  background:var(--bg);
+  background-image:radial-gradient(1100px 600px at 85% -10%,rgba(184,137,59,.13),transparent 60%),
+    radial-gradient(900px 600px at -10% 20%,rgba(94,143,191,.11),transparent 60%);
+  background-attachment:fixed}
+a{color:var(--sky)}
+h1,h2,h3{font-family:var(--serif);line-height:1.4;color:#2E271D}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--sky));z-index:60}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(251,248,241,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.topbar .in{max-width:1080px;margin:auto;display:flex;align-items:center;gap:16px;padding:8px 18px}
+.brand{font-family:var(--serif);font-weight:700;white-space:nowrap;color:#2E271D;text-decoration:none}
+.brand small{color:var(--gold);font-weight:500;margin-left:6px}
+nav.toc{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1}
+nav.toc::-webkit-scrollbar{display:none}
+nav.toc a{white-space:nowrap;text-decoration:none;color:var(--muted);font-size:14px;padding:4px 10px;border-radius:999px}
+nav.toc a:hover,nav.toc a.on{background:var(--gold-soft);color:#7A5A20}
+main{max-width:860px;margin:auto;padding:0 20px 40px}
+/* cover */
+.cover{position:relative;text-align:center;padding:84px 10px 56px;overflow:hidden}
+.cover::before{content:"";position:absolute;left:50%;top:40px;width:520px;height:520px;max-width:120vw;transform:translateX(-50%);
+  background:radial-gradient(circle,rgba(246,217,142,.55),rgba(246,217,142,0) 65%);z-index:-1}
+.eyebrow{display:inline-block;font-size:14px;letter-spacing:.2em;color:var(--gold);border:1px solid var(--gold-soft);background:rgba(255,253,248,.7);padding:4px 14px;border-radius:999px}
+.cover h1{font-size:clamp(34px,7vw,56px);margin:18px 0 6px;font-weight:900;letter-spacing:.04em}
+.cover .sub{font-family:var(--serif);font-size:clamp(18px,3.4vw,24px);color:var(--muted);margin:0}
+.cover .meta{font-size:14px;color:var(--muted);margin-top:22px}
+.cover .key{max-width:560px;margin:30px auto 0;font-family:var(--serif);font-size:19px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 22px;box-shadow:var(--shadow)}
+/* sections */
+section{padding:44px 0 8px;border-top:1px dashed var(--line)}
+.sec-no{font-family:var(--serif);color:var(--gold);font-weight:700;font-size:15px;letter-spacing:.12em}
+section h2{font-size:clamp(24px,4.4vw,31px);margin:4px 0 18px}
+section h3{font-size:20px;margin:28px 0 8px;color:#4A3E2C}
+p{margin:0 0 14px}
+blockquote.verse{margin:18px 0 22px;padding:18px 22px 16px 26px;background:var(--paper);border-radius:var(--r);box-shadow:var(--shadow);border-left:4px solid var(--gold);font-family:var(--serif);font-size:19px;line-height:1.85}
+blockquote.verse p{margin:0 0 8px}
+blockquote.verse p:last-child{margin:0}
+.ref{font:500 13px/1 var(--sans);color:#3F6E9C;background:var(--sky-soft);border:1px solid #CFDDEB;border-radius:999px;padding:4px 9px;margin:0 2px;cursor:pointer;vertical-align:2px;white-space:nowrap}
+.ref:hover,.ref:focus-visible{background:#D3E3F2;outline:none;box-shadow:0 0 0 2px rgba(94,143,191,.35)}
+.takeaway{margin:22px 0 10px;padding:6px 0 6px 18px;border-left:4px solid var(--gold);font-family:var(--serif);font-weight:700;font-size:18.5px;color:#4B3B1E}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;box-shadow:var(--shadow);margin:16px 0}
+.card h4{margin:0 0 6px;font-family:var(--serif);font-size:17px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.duo .card{margin:0}
+.duo .ctx h4{color:var(--sky)} .duo .app h4{color:var(--olive)}
+.duo .ctx{border-top:4px solid var(--sky)} .duo .app{border-top:4px solid var(--olive)}
+.limit{background:var(--terra-soft);border:1px solid #ECC9B8;border-radius:var(--r);padding:14px 18px;margin:16px 0}
+.limit b{color:var(--terra)}
+.aside{border:1.5px dashed #D6C39A;border-radius:12px;padding:10px 16px;margin:14px 0;font-size:15px;color:var(--muted);background:rgba(255,253,248,.6)}
+.aside::before{content:"旁白　";color:var(--gold);font-weight:700}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 16px}
+.pill{background:var(--gold-soft);color:#6E5120;border-radius:999px;padding:4px 14px;font-size:15px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.step .n{font-family:var(--serif);color:var(--gold);font-weight:900;font-size:22px;line-height:1}
+.step h4{margin:6px 0 4px;font-family:var(--serif)}
+.step p{font-size:15.5px;margin:0}
+.tbl{overflow-x:auto;margin:16px 0;border-radius:var(--r);border:1px solid var(--line);background:var(--paper);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-size:15.5px;line-height:1.7}
+th,td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:#F6EEDC;font-family:var(--serif);color:#4B3B1E;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td:first-child{min-width:7.5em}
+.dialogue{margin:18px 0;display:flex;flex-direction:column;gap:10px}
+.bubble{max-width:82%;padding:10px 16px;border-radius:18px;font-size:16px;line-height:1.75}
+.bubble.l{background:var(--sky-soft);border-bottom-left-radius:4px;align-self:flex-start}
+.bubble.r{background:var(--olive-soft);border-bottom-right-radius:4px;align-self:flex-end}
+.bubble small{display:block;font-size:12.5px;color:var(--muted)}
+.examine{background:linear-gradient(135deg,#FFFDF8,#F4F8FB);border:1px solid #D7E3EE;border-radius:var(--r);padding:16px 20px;margin:18px 0}
+.examine h4{margin:0 0 6px;font-family:var(--serif);color:var(--sky)}
+.examine ul{margin:0;padding-left:1.2em}
+.prayer{margin:26px 0;padding:20px 24px;border-radius:var(--r);background:linear-gradient(135deg,#FFF8E8,#FBF1DE);border:1px solid #EBD7A9;font-family:var(--serif);font-size:17.5px}
+.prayer h4{margin:0 0 8px;color:#8A6424}
+figure.illus{margin:26px 0;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.ill-svg{display:block;width:100%;height:auto}
+figure.illus figcaption{padding:10px 16px;font-size:14.5px;color:var(--muted);border-top:1px solid var(--line)}
+.motto{text-align:center;font-family:var(--serif);font-size:clamp(19px,3.6vw,24px);font-weight:700;margin:26px 0 6px;color:#4B3B1E;line-height:1.8}
+.motto-note{text-align:center;font-size:13.5px;color:var(--muted)}
+.refs h3{font-size:18px}
+.refs ol{padding-left:1.4em;font-size:15px}
+.refs li{margin:4px 0;break-inside:avoid}
+@media (min-width:700px){#autoRefs{columns:2;column-gap:32px}}
+.refs .note{font-size:14.5px;color:var(--muted)}
+footer{text-align:center;color:var(--muted);font-size:14px;padding:30px 20px 50px;border-top:1px solid var(--line)}
+/* dialog */
+dialog#vd{border:0;border-radius:18px;padding:0;max-width:min(640px,92vw);width:100%;box-shadow:0 20px 60px rgba(40,30,10,.25);background:var(--paper);color:var(--ink)}
+dialog#vd::backdrop{background:rgba(46,39,29,.35)}
+.vd-h{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line);background:#FBF4E4}
+.vd-h h3{margin:0;font-size:19px}
+.vd-h small{color:var(--muted);font-family:var(--sans);font-size:13px;margin-left:8px;font-weight:400}
+.vd-x{border:0;background:none;font-size:24px;cursor:pointer;color:var(--muted);line-height:1}
+.vd-b{padding:16px 22px;max-height:60vh;overflow:auto;font-family:var(--serif);font-size:18px;line-height:1.85}
+.vd-b p{margin:0 0 8px}
+.vd-b sup{color:var(--gold);font-family:var(--sans);font-size:12px;margin-right:4px;font-weight:700}
+.vd-f{padding:12px 20px;border-top:1px solid var(--line);font-size:14px;display:flex;flex-wrap:wrap;gap:6px 14px}
+.vd-f a{text-decoration:none}
+/* reveal */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+@media (max-width:640px){
+  body{font-size:16.5px}
+  .duo{grid-template-columns:1fr}
+  .brand small{display:none}
+  .bubble{max-width:92%}
+  blockquote.verse{font-size:18px;padding:16px 16px 14px 18px}
+}
+@media print{
+  .topbar,#progress,.ref::after,dialog{display:none!important}
+  body{background:#fff;font-size:12pt}
+  .reveal{opacity:1;transform:none}
+  section{break-inside:avoid-page}
+  .card,blockquote.verse,figure.illus,.tbl{box-shadow:none}
+  .ref{border:0;background:none;padding:0;color:#555}
+  a{color:#000}
+}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<header class="topbar"><div class="in">
+  <a class="brand" href="#top">箴言中的人生智慧<small>經文溯源版</small></a>
+  <nav class="toc" aria-label="章節導覽">
+    <a href="#s2">敬畏</a><a href="#s3">文體</a><a href="#s4">受教</a><a href="#s5">言語</a><a href="#s6">情緒</a><a href="#s7">工作</a><a href="#s8">金錢</a><a href="#s9">家庭</a><a href="#s10">公義</a><a href="#s11">基督</a><a href="#s12">省察</a><a href="#refs">參考</a>
+  </nav>
+</div></header>
+
+<main id="top">
+<div class="cover">
+  <span class="eyebrow">舊約智慧書・箴言</span>
+  <h1>箴言中的人生智慧</h1>
+  <p class="meta">核實日期：2026 年 11 月 16 日｜經文版本：中文和合本（標點及部分舊字形按現代閱讀習慣整理）</p>
+  <div class="key">
+    敬畏耶和華是智慧的開端；認識至聖者便是聰明。<button class="ref" data-r="Pro9:10">箴 9:10</button>
+  </div>
+</div>
+
+<div class="card reveal">
+  <h4>閱讀原則</h4>
+  以經文上下文為首要依據，區分<b>經文原句</b>、<b>神學綜整</b>與<b>生活應用</b>。本文採基督信仰的整本聖經視角。頁面上每個藍色經文標籤都可以點開，查看和合本全文並連到線上聖經比對。
+</div>
+
+<!-- 一 -->
+<section id="s2" class="reveal">
+  <div class="sec-no">一</div>
+  <h2>智慧從敬畏神開始</h2>
+  <blockquote class="verse">
+    <p>「敬畏耶和華是知識的開端；愚妄人藐視智慧和訓誨。」<button class="ref" data-r="Pro1:7">箴 1:7</button></p>
+    <p>「敬畏耶和華是智慧的開端；認識至聖者便是聰明。」<button class="ref" data-r="Pro9:10">箴 9:10</button></p>
+  </blockquote>
+  <p>《箴言》1:2–6 說明本書要教人智慧、訓誨、仁義、公平與正直，也使已有智慧的人繼續增長學問。<button class="ref" data-r="Pro1:2-7">箴 1:2–7</button>因此，智慧包含知識，卻不止於知道更多資訊；它關乎如何判斷、選擇，並實際行出合宜的事。</p>
+  <div class="pills"><span class="pill">智慧</span><span class="pill">訓誨</span><span class="pill">仁義</span><span class="pill">公平</span><span class="pill">正直</span></div>
+  <p>「敬畏」不是只怕受罰，也不能被稀釋為抽象的人生態度。箴言 8:13 把敬畏耶和華與恨惡邪惡相連<button class="ref" data-r="Pro8:13">箴 8:13</button>，3:5–7 則將倚靠神、不自以為有智慧、敬畏神和遠離惡事放在一起<button class="ref" data-r="Pro3:5-7">箴 3:5–7</button>。它同時涉及人的信靠、道德方向與受教的心。</p>
+  <figure class="illus"><svg class="ill-svg" viewBox="0 0 600 300" role="img" aria-label="經卷與油燈" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="lg-glow" cx="377" cy="132" r="150" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFE9B0" stop-opacity=".95"/><stop offset=".45" stop-color="#F6D98E" stop-opacity=".35"/><stop offset="1" stop-color="#F6D98E" stop-opacity="0"/></radialGradient><linearGradient id="lg-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF3F8"/><stop offset="1" stop-color="#FBF5E8"/></linearGradient></defs><rect width="600" height="300" fill="url(#lg-bg)"/><circle cx="377" cy="132" r="150" fill="url(#lg-glow)"/><rect x="60" y="232" width="480" height="10" rx="5" fill="#3A3226" opacity=".12"/><path d="M110 200 Q300 186 490 200 L490 232 Q300 218 110 232 Z" fill="#F4E7C8" stroke="#B8893B" stroke-width="2"/><rect x="92" y="194" width="22" height="44" rx="11" fill="#D9B97A" stroke="#B8893B" stroke-width="2"/><rect x="486" y="194" width="22" height="44" rx="11" fill="#D9B97A" stroke="#B8893B" stroke-width="2"/><path d="M140 205 Q220 199 260 200" stroke="#3A3226" stroke-opacity=".28" stroke-width="1.6" fill="none"/><path d="M340 200 Q400 199 460 205" stroke="#3A3226" stroke-opacity=".28" stroke-width="1.6" fill="none"/><path d="M140 210 Q220 204 260 205" stroke="#3A3226" stroke-opacity=".28" stroke-width="1.6" fill="none"/><path d="M340 205 Q400 204 460 210" stroke="#3A3226" stroke-opacity=".28" stroke-width="1.6" fill="none"/><path d="M140 215 Q220 209 260 210" stroke="#3A3226" stroke-opacity=".28" stroke-width="1.6" fill="none"/><path d="M340 210 Q400 209 460 215" stroke="#3A3226" stroke-opacity=".28" stroke-width="1.6" fill="none"/><path d="M140 220 Q220 214 260 215" stroke="#3A3226" stroke-opacity=".28" stroke-width="1.6" fill="none"/><path d="M340 215 Q400 214 460 220" stroke="#3A3226" stroke-opacity=".28" stroke-width="1.6" fill="none"/><path d="M140 225 Q220 219 260 220" stroke="#3A3226" stroke-opacity=".28" stroke-width="1.6" fill="none"/><path d="M340 220 Q400 219 460 225" stroke="#3A3226" stroke-opacity=".28" stroke-width="1.6" fill="none"/><path d="M248 178 Q300 206 352 178 Q345 160 300 160 Q262 160 248 178 Z" fill="#B9562F"/><path d="M346 172 L374 160 Q380 162 376 168 L352 182 Z" fill="#B9562F"/><ellipse cx="300" cy="164" rx="22" ry="5" fill="#7E3A1F"/><path d="M377 158 C365 146 370 128 377 112 C384 128 389 146 377 158 Z" fill="#F3B440"/><path d="M377 155 C371 147 373 136 377 127 C381 136 383 147 377 155 Z" fill="#FFF1C2"/><text x="588" y="290" text-anchor="end" font-size="11" fill="#3A3226" opacity=".45" font-family="Noto Sans TC, sans-serif">象徵示意</text></svg><figcaption>「誡命是燈，法則是光，訓誨的責備是生命的道。」經卷與油燈象徵神的話照亮人的判斷。<button class="ref" data-r="Pro6:23">箴 6:23</button></figcaption></figure>
+  <div class="duo">
+    <div class="card ctx"><h4>經文脈絡</h4>敬畏耶和華是全書的起點與根基：先有對神的信靠與尊崇，才談得上判斷與選擇。</div>
+    <div class="card app"><h4>靈修應用</h4>遇到選擇時，不只問「這對我有利嗎」，也問「這是否誠實、公義？是否傷害別人？我是否願意讓神的話修正我的打算？」</div>
+  </div>
+  <p style="font-size:14.5px;color:var(--muted)">上述問題是由經文延伸的實踐方法，並非經文逐字列出的檢核表。</p>
+  <p class="takeaway">敬畏神不是一種抽象的謙虛，而是信靠、尊崇並遠離惡事。</p>
+</section>
+
+<!-- 二 -->
+<section id="s3" class="reveal">
+  <div class="sec-no">二</div>
+  <h2>先讀懂《箴言》的文體</h2>
+  <h3>1. 這是一部智慧文集</h3>
+  <p>《箴言》與所羅門密切相關，但不能把每一句都說成所羅門親筆寫作。書內也標示了其他來源：</p>
+  <div class="steps">
+    <div class="step"><div class="n">22:17</div><h4>智慧人的言語</h4><p>另見 24:23。<button class="ref" data-r="Pro22:17">箴 22:17</button><button class="ref" data-r="Pro24:23">箴 24:23</button></p></div>
+    <div class="step"><div class="n">25:1</div><h4>希西家的人謄錄</h4><p>所羅門的箴言，由希西家的人謄錄。<button class="ref" data-r="Pro25:1">箴 25:1</button></p></div>
+    <div class="step"><div class="n">30:1</div><h4>亞古珥的言語</h4><p>雅基的兒子亞古珥。<button class="ref" data-r="Pro30:1">箴 30:1</button></p></div>
+    <div class="step"><div class="n">31:1</div><h4>利慕伊勒王</h4><p>從母親領受的教訓。<button class="ref" data-r="Pro31:1">箴 31:1</button></p></div>
+  </div>
+  <p>前九章多用較長的勸誡與智慧的擬人描寫，後續部分包含大量短句、對照與譬喻。BibleProject 的導讀也提醒讀者留意本書的詩歌框架與中段格言，不能只把它當作彼此無關的名言集。[R8]</p>
+
+  <h3>2. 一般規律不等於無例外的即時保證</h3>
+  <p>殷勤通常有益、誠實值得信任、暴怒容易引起紛爭，這些是智慧對生活方向的教導；卻不能倒推為「貧窮者一定懶惰」「受苦者必定犯罪」。箴言 13:23 本身就承認有人因不義而遭損失<button class="ref" data-r="Pro13:23">箴 13:23</button>；16:8 更指出少有財利而行公義，勝過多有財利卻行事不義<button class="ref" data-r="Pro16:8">箴 16:8</button>。</p>
+  <p>《約伯記》所介紹的是敬畏神、遠離惡事的人，後來仍遭遇苦難<button class="ref" data-r="Job1:1,8">伯 1:1、8</button>；《傳道書》也指出，人的能力與結果並非簡單對應<button class="ref" data-r="Ecc9:11">傳 9:11</button>。這些經文幫助我們避免把智慧變成責備受苦者的工具。</p>
+  <div class="limit"><b>但這並不取消聖經的道德要求。</b>例如不可作假見證、不可欺壓貧弱者，不是「大部分時候才適用」的建議。應區分生活觀察、道德勸誡、詩性比喻與關於神的宣告。</div>
+  <div class="pills"><span class="pill">生活觀察</span><span class="pill">道德勸誡</span><span class="pill">詩性比喻</span><span class="pill">關於神的宣告</span></div>
+
+  <h3>3. 智慧需要辨認處境</h3>
+  <p>箴言 26:4–5 一方面勸人不要照愚昧人的愚妄回答，免得自己與他一樣；另一方面又勸人照他的愚妄回答，免得他自以為有智慧。<button class="ref" data-r="Pro26:4-5">箴 26:4–5</button></p>
+  <div class="dialogue">
+    <div class="bubble l"><small>26:4</small>不要照愚昧人的愚妄話回答他，恐怕你與他一樣。</div>
+    <div class="bubble r"><small>26:5</small>要照愚昧人的愚妄話回答他，免得他自以為有智慧。</div>
+  </div>
+  <div class="aside">兩句緊挨著放，像是編者特意安排的考題：只背一句當口號的人，下一節就會被考倒。</div>
+  <p>兩句放在一起，提醒讀者要考慮回答或不回答各自帶來的後果。因此，智慧既可能是停止無益的爭吵，也可能是清楚指出錯誤。</p>
+  <figure class="illus"><svg class="ill-svg" viewBox="0 0 600 300" role="img" aria-label="黎明中的道路" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="pa-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCE8F3"/><stop offset=".7" stop-color="#FCE9C6"/><stop offset="1" stop-color="#F8D9A6"/></linearGradient><radialGradient id="pa-sun" cx="300" cy="150" r="120" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFF4D6"/><stop offset=".3" stop-color="#FBE2A6" stop-opacity=".8"/><stop offset="1" stop-color="#FBE2A6" stop-opacity="0"/></radialGradient></defs><rect width="600" height="300" fill="url(#pa-sky)"/><circle cx="300" cy="150" r="120" fill="url(#pa-sun)"/><circle cx="300" cy="150" r="30" fill="#F7C866"/><line x1="258.6" y1="142.7" x2="231.1" y2="137.8" stroke="#B8893B" stroke-width="2" stroke-linecap="round" opacity=".55"/><line x1="263.6" y1="129.0" x2="239.4" y2="115.0" stroke="#B8893B" stroke-width="2" stroke-linecap="round" opacity=".55"/><line x1="273.0" y1="117.8" x2="255.0" y2="96.4" stroke="#B8893B" stroke-width="2" stroke-linecap="round" opacity=".55"/><line x1="285.6" y1="110.5" x2="276.1" y2="84.2" stroke="#B8893B" stroke-width="2" stroke-linecap="round" opacity=".55"/><line x1="300.0" y1="108.0" x2="300.0" y2="80.0" stroke="#B8893B" stroke-width="2" stroke-linecap="round" opacity=".55"/><line x1="314.4" y1="110.5" x2="323.9" y2="84.2" stroke="#B8893B" stroke-width="2" stroke-linecap="round" opacity=".55"/><line x1="327.0" y1="117.8" x2="345.0" y2="96.4" stroke="#B8893B" stroke-width="2" stroke-linecap="round" opacity=".55"/><line x1="336.4" y1="129.0" x2="360.6" y2="115.0" stroke="#B8893B" stroke-width="2" stroke-linecap="round" opacity=".55"/><line x1="341.4" y1="142.7" x2="368.9" y2="137.8" stroke="#B8893B" stroke-width="2" stroke-linecap="round" opacity=".55"/><path d="M0 160 Q120 135 230 152 Q300 162 370 150 Q480 132 600 158 L600 300 L0 300 Z" fill="#B7C79E"/><path d="M0 205 Q150 180 300 200 Q450 220 600 190 L600 300 L0 300 Z" fill="#6F8A5A" opacity=".85"/><path d="M296 156 Q284 180 300 200 Q330 235 250 300 L370 300 Q372 236 318 198 Q304 178 304 156 Z" fill="#F1DFB8"/><g fill="#3A3226" opacity=".85"><circle cx="322" cy="216" r="6"/><path d="M316 224 Q322 221 328 224 L330 246 L325 246 L322 262 L318 262 L318 246 L314 246 Z"/><line x1="331" y1="226" x2="336" y2="262" stroke="#3A3226" stroke-width="2.2"/></g><text x="588" y="290" text-anchor="end" font-size="11" fill="#3A3226" opacity=".45" font-family="Noto Sans TC, sans-serif">象徵示意</text></svg><figcaption>「義人的路好像黎明的光，越照越明，直到日午。」智慧是一條在光中逐漸看清的道路。<button class="ref" data-r="Pro4:18">箴 4:18</button></figcaption></figure>
+  <p class="takeaway">經文要求成熟判斷，而不是遇到任何情況只套用一句口號。</p>
+</section>
+
+<!-- 三 -->
+<section id="s4" class="reveal">
+  <div class="sec-no">三</div>
+  <h2>智慧首先表現在願意受教</h2>
+  <div class="steps">
+    <div class="step"><div class="n">12:15</div><h4>肯聽勸教</h4><p>自以為正的愚妄人，對比肯聽勸告的智慧人。<button class="ref" data-r="Pro12:15">箴 12:15</button></p></div>
+    <div class="step"><div class="n">15:22</div><h4>彼此商議</h4><p>謀士眾多，所謀乃成。<button class="ref" data-r="Pro15:22">箴 15:22</button></p></div>
+    <div class="step"><div class="n">18:13</div><h4>聽完再答</h4><p>未曾聽完先回答的，便是他的愚昧和羞辱。<button class="ref" data-r="Pro18:13">箴 18:13</button></p></div>
+    <div class="step"><div class="n">18:17</div><h4>兩造查察</h4><p>先訴情由的似乎有理，但鄰舍來到，就察出實情。<button class="ref" data-r="Pro18:17">箴 18:17</button></p></div>
+  </div>
+  <p>這些經文沒有把愚妄等同於智力不足。它們主要揭示人拒絕教導、自以為是、不願面對事實的態度。學歷或經驗不能保證一個人願意受教。</p>
+  <div class="aside">導航說「請迴轉」時，堅持直走的人，通常不是方向感最差的那位，而是最有把握的那位。</div>
+  <div class="card"><h4>生活應用</h4>做判斷前，區分已知事實、個人推測與尚待查證之處；願意聽取不同意見，也願意在證據改變時修正結論。「謀士眾多」並非人多就一定正確，仍須辨識建議是否公義、真實與合乎神的教導。</div>
+  <p class="takeaway">愚妄不是不夠聰明，而是不肯受教。</p>
+</section>
+
+<!-- 四 -->
+<section id="s5" class="reveal">
+  <div class="sec-no">四</div>
+  <h2>言語：既要約束，也要在該說時開口</h2>
+  <blockquote class="verse">
+    <p>「多言多語難免有過；禁止嘴唇是有智慧。」<button class="ref" data-r="Pro10:19">箴 10:19</button></p>
+    <p>「回答柔和，使怒消退；言語暴戾，觸動怒氣。」<button class="ref" data-r="Pro15:1">箴 15:1</button></p>
+  </blockquote>
+  <p>《箴言》關注的不只是說話數量，也包括是否真實、是否合時，以及會造成什麼結果。12:18 對比傷人如刀的言語與具有醫治作用的智慧言語<button class="ref" data-r="Pro12:18">箴 12:18</button>；16:28 警告傳舌會離間密友<button class="ref" data-r="Pro16:28">箴 16:28</button>；15:23 肯定合時的回答<button class="ref" data-r="Pro15:23">箴 15:23</button>。</p>
+  <figure class="illus"><svg class="ill-svg" viewBox="0 0 600 300" role="img" aria-label="銀網子裡的金蘋果" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ap-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F5F1E6"/><stop offset="1" stop-color="#EAF0F5"/></linearGradient><radialGradient id="ap-g" cx=".35" cy=".35" r=".7"><stop offset="0" stop-color="#FBE3A0"/><stop offset=".6" stop-color="#D9A84A"/><stop offset="1" stop-color="#A97A2E"/></radialGradient><clipPath id="ap-clip"><path d="M150 170 Q300 300 450 170 Z"/></clipPath></defs><rect width="600" height="300" fill="url(#ap-bg)"/><ellipse cx="300" cy="262" rx="190" ry="14" fill="#3A3226" opacity=".08"/><circle cx="240" cy="162" r="30" fill="url(#ap-g)"/><path d="M240 134 q2 -10 8 -14" stroke="#6B5531" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M245 126 q14 -6 20 4 q-12 6 -20 -4z" fill="#6F8A5A"/><circle cx="300" cy="150" r="30" fill="url(#ap-g)"/><path d="M300 122 q2 -10 8 -14" stroke="#6B5531" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M305 114 q14 -6 20 4 q-12 6 -20 -4z" fill="#6F8A5A"/><circle cx="360" cy="162" r="30" fill="url(#ap-g)"/><path d="M360 134 q2 -10 8 -14" stroke="#6B5531" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M365 126 q14 -6 20 4 q-12 6 -20 -4z" fill="#6F8A5A"/><circle cx="270" cy="176" r="30" fill="url(#ap-g)"/><path d="M270 148 q2 -10 8 -14" stroke="#6B5531" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M275 140 q14 -6 20 4 q-12 6 -20 -4z" fill="#6F8A5A"/><circle cx="330" cy="176" r="30" fill="url(#ap-g)"/><path d="M330 148 q2 -10 8 -14" stroke="#6B5531" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M335 140 q14 -6 20 4 q-12 6 -20 -4z" fill="#6F8A5A"/><path d="M150 170 Q300 300 450 170 Z" fill="#DDE3EA" opacity=".85"/><g clip-path="url(#ap-clip)"><line x1="-150" y1="170" x2="-30" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="-30" y1="170" x2="-150" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="-120" y1="170" x2="0" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="0" y1="170" x2="-120" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="-90" y1="170" x2="30" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="30" y1="170" x2="-90" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="-60" y1="170" x2="60" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="60" y1="170" x2="-60" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="-30" y1="170" x2="90" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="90" y1="170" x2="-30" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="0" y1="170" x2="120" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="120" y1="170" x2="0" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="30" y1="170" x2="150" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="150" y1="170" x2="30" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="60" y1="170" x2="180" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="180" y1="170" x2="60" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="90" y1="170" x2="210" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="210" y1="170" x2="90" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="120" y1="170" x2="240" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="240" y1="170" x2="120" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="150" y1="170" x2="270" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="270" y1="170" x2="150" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="180" y1="170" x2="300" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="300" y1="170" x2="180" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="210" y1="170" x2="330" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="330" y1="170" x2="210" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="240" y1="170" x2="360" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="360" y1="170" x2="240" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="270" y1="170" x2="390" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="390" y1="170" x2="270" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="300" y1="170" x2="420" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="420" y1="170" x2="300" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="330" y1="170" x2="450" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="450" y1="170" x2="330" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="360" y1="170" x2="480" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="480" y1="170" x2="360" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="390" y1="170" x2="510" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="510" y1="170" x2="390" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="420" y1="170" x2="540" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="540" y1="170" x2="420" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="450" y1="170" x2="570" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="570" y1="170" x2="450" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="480" y1="170" x2="600" y2="300" stroke="#8C99A8" stroke-width="1.6"/><line x1="600" y1="170" x2="480" y2="300" stroke="#8C99A8" stroke-width="1.6"/></g><path d="M146 170 L454 170" stroke="#A9B4C0" stroke-width="7" stroke-linecap="round"/><path d="M146 170 L454 170" stroke="#F3F6F9" stroke-width="2" stroke-linecap="round"/><text x="588" y="290" text-anchor="end" font-size="11" fill="#3A3226" opacity=".45" font-family="Noto Sans TC, sans-serif">象徵示意</text></svg><figcaption>「一句話說得合宜，就如金蘋果在銀網子裡。」合時的言語既珍貴又得體。<button class="ref" data-r="Pro25:11">箴 25:11</button></figcaption></figure>
+  <p>但沉默不是最高原則。31:8–9 要人為不能自辯者開口，為困苦窮乏者伸冤<button class="ref" data-r="Pro31:8-9">箴 31:8–9</button>。27:5–6 也肯定出於忠誠的責備<button class="ref" data-r="Pro27:5-6">箴 27:5–6</button>。因此，「造就人」不等於只說好聽的話；有時誠實的勸戒比迎合更有益。</p>
+  <div class="duo">
+    <div class="card ctx"><h4>作者整理的提醒</h4>原稿的「真實、必要、造就」可以保留，並補問「<b>時機與方式是否合宜</b>」。以弗所書將真實與造就相連，為此提供新約的補充。<button class="ref" data-r="Eph4:25,29">弗 4:25、29</button></div>
+    <div class="card app"><h4>使用界線</h4>它不是聖經原句，也不應被用來阻止求助、揭露傷害或作必要見證。</div>
+  </div>
+  <div class="aside">訊息按下「送出」前的那三秒，往往比任何「收回」功能都可靠。</div>
+  <p class="takeaway">該約束時禁止嘴唇，該開口時為人發聲；兩者都出於真實與愛。</p>
+</section>
+
+<!-- 五 -->
+<section id="s6" class="reveal">
+  <div class="sec-no">五</div>
+  <h2>情緒與衝突：節制不等於掩蓋問題</h2>
+  <blockquote class="verse"><p>「不輕易發怒的，勝過勇士；治服己心的，強如取城。」<button class="ref" data-r="Pro16:32">箴 16:32</button></p></blockquote>
+  <p>箴言 17:14 以放開的水比喻紛爭的起頭，勸人在爭鬧之前止息爭競<button class="ref" data-r="Pro17:14">箴 17:14</button>；29:11 則對比怒氣全發與忍氣含怒<button class="ref" data-r="Pro29:11">箴 29:11</button>。這些教導重視不讓憤怒支配行動，而非否認委屈或假裝沒有問題。</p>
+  <p>雅各書提醒人快快地聽、慢慢地說、慢慢地動怒，因人的怒氣並不成就神的義<button class="ref" data-r="Jas1:19-20">雅 1:19–20</button>。以弗所書則警告生氣時不可犯罪，也不可讓怒氣持續成為破口<button class="ref" data-r="Eph4:26-27">弗 4:26–27</button>。</p>
+  <figure class="illus"><svg class="ill-svg" viewBox="0 0 600 300" role="img" aria-label="城牆與城門" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ci-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E3EDF6"/><stop offset="1" stop-color="#FBF3E2"/></linearGradient></defs><rect width="600" height="300" fill="url(#ci-bg)"/><path d="M0 230 Q300 170 600 230 L600 300 L0 300 Z" fill="#C9D3B0"/><rect x="150" y="150" width="300" height="70" fill="#E7D6B4" stroke="#B8893B" stroke-width="2"/><rect x="150" y="140" width="12" height="12" fill="#E7D6B4" stroke="#B8893B" stroke-width="1.5"/><rect x="170" y="140" width="12" height="12" fill="#E7D6B4" stroke="#B8893B" stroke-width="1.5"/><rect x="190" y="140" width="12" height="12" fill="#E7D6B4" stroke="#B8893B" stroke-width="1.5"/><rect x="210" y="140" width="12" height="12" fill="#E7D6B4" stroke="#B8893B" stroke-width="1.5"/><rect x="230" y="140" width="12" height="12" fill="#E7D6B4" stroke="#B8893B" stroke-width="1.5"/><rect x="250" y="140" width="12" height="12" fill="#E7D6B4" stroke="#B8893B" stroke-width="1.5"/><rect x="270" y="140" width="12" height="12" fill="#E7D6B4" stroke="#B8893B" stroke-width="1.5"/><rect x="290" y="140" width="12" height="12" fill="#E7D6B4" stroke="#B8893B" stroke-width="1.5"/><rect x="310" y="140" width="12" height="12" fill="#E7D6B4" stroke="#B8893B" stroke-width="1.5"/><rect x="330" y="140" width="12" height="12" fill="#E7D6B4" stroke="#B8893B" stroke-width="1.5"/><rect x="350" y="140" width="12" height="12" fill="#E7D6B4" stroke="#B8893B" stroke-width="1.5"/><rect x="370" y="140" width="12" height="12" fill="#E7D6B4" stroke="#B8893B" stroke-width="1.5"/><rect x="390" y="140" width="12" height="12" fill="#E7D6B4" stroke="#B8893B" stroke-width="1.5"/><rect x="410" y="140" width="12" height="12" fill="#E7D6B4" stroke="#B8893B" stroke-width="1.5"/><rect x="430" y="140" width="12" height="12" fill="#E7D6B4" stroke="#B8893B" stroke-width="1.5"/><rect x="130" y="110" width="40" height="110" fill="#E0CBA0" stroke="#B8893B" stroke-width="2"/><rect x="132" y="100" width="9" height="11" fill="#E0CBA0" stroke="#B8893B" stroke-width="1.5"/><rect x="146" y="100" width="9" height="11" fill="#E0CBA0" stroke="#B8893B" stroke-width="1.5"/><rect x="160" y="100" width="9" height="11" fill="#E0CBA0" stroke="#B8893B" stroke-width="1.5"/><rect x="145" y="128" width="10" height="16" rx="5" fill="#3A3226" opacity=".35"/><rect x="280" y="110" width="40" height="110" fill="#E0CBA0" stroke="#B8893B" stroke-width="2"/><rect x="282" y="100" width="9" height="11" fill="#E0CBA0" stroke="#B8893B" stroke-width="1.5"/><rect x="296" y="100" width="9" height="11" fill="#E0CBA0" stroke="#B8893B" stroke-width="1.5"/><rect x="310" y="100" width="9" height="11" fill="#E0CBA0" stroke="#B8893B" stroke-width="1.5"/><rect x="295" y="128" width="10" height="16" rx="5" fill="#3A3226" opacity=".35"/><rect x="430" y="110" width="40" height="110" fill="#E0CBA0" stroke="#B8893B" stroke-width="2"/><rect x="432" y="100" width="9" height="11" fill="#E0CBA0" stroke="#B8893B" stroke-width="1.5"/><rect x="446" y="100" width="9" height="11" fill="#E0CBA0" stroke="#B8893B" stroke-width="1.5"/><rect x="460" y="100" width="9" height="11" fill="#E0CBA0" stroke="#B8893B" stroke-width="1.5"/><rect x="445" y="128" width="10" height="16" rx="5" fill="#3A3226" opacity=".35"/><path d="M282 220 L282 186 Q300 166 318 186 L318 220 Z" fill="#3A3226" opacity=".55"/><line x1="170" y1="170" x2="430" y2="170" stroke="#B8893B" stroke-opacity=".35" stroke-width="1"/><line x1="170" y1="192" x2="430" y2="192" stroke="#B8893B" stroke-opacity=".35" stroke-width="1"/><line x1="300" y1="100" x2="300" y2="62" stroke="#3A3226" stroke-width="2"/><path d="M300 62 L330 70 L300 78 Z" fill="#5E8FBF"/><g fill="#3A3226" opacity=".8"><circle cx="500" cy="214" r="6"/><path d="M494 222 Q500 219 506 222 L510 238 L522 240 L522 245 L496 245 Z"/></g><text x="588" y="290" text-anchor="end" font-size="11" fill="#3A3226" opacity=".45" font-family="Noto Sans TC, sans-serif">象徵示意</text></svg><figcaption>「治服己心的，強如取城。」城牆象徵自制；能管住己心，勝過攻下城池。<button class="ref" data-r="Pro16:32">箴 16:32</button></figcaption></figure>
+  <div class="card"><h4>生活應用</h4>衝突升高時可先停止辱罵與衝動回應，待能清楚表達時再討論事實、責任與可行改變。這是現代應用，不是經文指定的處理程序。</div>
+  <div class="limit"><b>柔和也不保證對方一定停止傷害。</b>若有欺壓，和平必須與公義、保護受害者一併考慮。<button class="ref" data-r="Pro17:15">箴 17:15</button><button class="ref" data-r="Pro31:8-9">箴 31:8–9</button></div>
+  <p class="takeaway">治服己心，是不讓怒氣掌權，而不是假裝沒有受傷。</p>
+</section>
+
+<!-- 六 -->
+<section id="s7" class="reveal">
+  <div class="sec-no">六</div>
+  <h2>工作：忠實殷勤，並承認自己的有限</h2>
+  <blockquote class="verse"><p>「懶惰人羨慕，卻無所得；殷勤人必得豐裕。」<button class="ref" data-r="Pro13:4">箴 13:4</button></p></blockquote>
+  <p>箴言 6:6–11 用螞蟻提醒人主動預備<button class="ref" data-r="Pro6:6-11">箴 6:6–11</button>；21:5 肯定殷勤籌畫，並警惕急躁<button class="ref" data-r="Pro21:5">箴 21:5</button>。其重點在於負責任地行動，而不是只停留在願望，也不是承諾努力就必定致富。</p>
+  <figure class="illus"><svg class="ill-svg" viewBox="0 0 600 300" role="img" aria-label="預備糧食的螞蟻" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="an-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF3F7"/><stop offset="1" stop-color="#FBF1DC"/></linearGradient></defs><rect width="600" height="300" fill="url(#an-bg)"/><path d="M60 250 Q54 175.0 64 100" stroke="#B8893B" stroke-width="3" fill="none"/><ellipse cx="62" cy="106" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 62 106)"/><ellipse cx="70" cy="110" rx="4" ry="8" fill="#D9B060" transform="rotate(25 70 110)"/><ellipse cx="62" cy="118" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 62 118)"/><ellipse cx="70" cy="122" rx="4" ry="8" fill="#D9B060" transform="rotate(25 70 122)"/><ellipse cx="62" cy="130" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 62 130)"/><ellipse cx="70" cy="134" rx="4" ry="8" fill="#D9B060" transform="rotate(25 70 134)"/><ellipse cx="62" cy="142" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 62 142)"/><ellipse cx="70" cy="146" rx="4" ry="8" fill="#D9B060" transform="rotate(25 70 146)"/><ellipse cx="62" cy="154" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 62 154)"/><ellipse cx="70" cy="158" rx="4" ry="8" fill="#D9B060" transform="rotate(25 70 158)"/><ellipse cx="62" cy="166" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 62 166)"/><ellipse cx="70" cy="170" rx="4" ry="8" fill="#D9B060" transform="rotate(25 70 170)"/><path d="M85 250 Q79 165.0 89 80" stroke="#B8893B" stroke-width="3" fill="none"/><ellipse cx="87" cy="86" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 87 86)"/><ellipse cx="95" cy="90" rx="4" ry="8" fill="#D9B060" transform="rotate(25 95 90)"/><ellipse cx="87" cy="98" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 87 98)"/><ellipse cx="95" cy="102" rx="4" ry="8" fill="#D9B060" transform="rotate(25 95 102)"/><ellipse cx="87" cy="110" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 87 110)"/><ellipse cx="95" cy="114" rx="4" ry="8" fill="#D9B060" transform="rotate(25 95 114)"/><ellipse cx="87" cy="122" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 87 122)"/><ellipse cx="95" cy="126" rx="4" ry="8" fill="#D9B060" transform="rotate(25 95 126)"/><ellipse cx="87" cy="134" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 87 134)"/><ellipse cx="95" cy="138" rx="4" ry="8" fill="#D9B060" transform="rotate(25 95 138)"/><ellipse cx="87" cy="146" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 87 146)"/><ellipse cx="95" cy="150" rx="4" ry="8" fill="#D9B060" transform="rotate(25 95 150)"/><path d="M110 250 Q104 175.0 114 100" stroke="#B8893B" stroke-width="3" fill="none"/><ellipse cx="112" cy="106" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 112 106)"/><ellipse cx="120" cy="110" rx="4" ry="8" fill="#D9B060" transform="rotate(25 120 110)"/><ellipse cx="112" cy="118" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 112 118)"/><ellipse cx="120" cy="122" rx="4" ry="8" fill="#D9B060" transform="rotate(25 120 122)"/><ellipse cx="112" cy="130" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 112 130)"/><ellipse cx="120" cy="134" rx="4" ry="8" fill="#D9B060" transform="rotate(25 120 134)"/><ellipse cx="112" cy="142" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 112 142)"/><ellipse cx="120" cy="146" rx="4" ry="8" fill="#D9B060" transform="rotate(25 120 146)"/><ellipse cx="112" cy="154" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 112 154)"/><ellipse cx="120" cy="158" rx="4" ry="8" fill="#D9B060" transform="rotate(25 120 158)"/><ellipse cx="112" cy="166" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 112 166)"/><ellipse cx="120" cy="170" rx="4" ry="8" fill="#D9B060" transform="rotate(25 120 170)"/><path d="M135 250 Q129 165.0 139 80" stroke="#B8893B" stroke-width="3" fill="none"/><ellipse cx="137" cy="86" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 137 86)"/><ellipse cx="145" cy="90" rx="4" ry="8" fill="#D9B060" transform="rotate(25 145 90)"/><ellipse cx="137" cy="98" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 137 98)"/><ellipse cx="145" cy="102" rx="4" ry="8" fill="#D9B060" transform="rotate(25 145 102)"/><ellipse cx="137" cy="110" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 137 110)"/><ellipse cx="145" cy="114" rx="4" ry="8" fill="#D9B060" transform="rotate(25 145 114)"/><ellipse cx="137" cy="122" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 137 122)"/><ellipse cx="145" cy="126" rx="4" ry="8" fill="#D9B060" transform="rotate(25 145 126)"/><ellipse cx="137" cy="134" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 137 134)"/><ellipse cx="145" cy="138" rx="4" ry="8" fill="#D9B060" transform="rotate(25 145 138)"/><ellipse cx="137" cy="146" rx="4" ry="8" fill="#D9B060" transform="rotate(-25 137 146)"/><ellipse cx="145" cy="150" rx="4" ry="8" fill="#D9B060" transform="rotate(25 145 150)"/><path d="M0 250 L600 250 L600 300 L0 300 Z" fill="#D8C29A"/><path d="M430 250 Q490 186 560 250 Z" fill="#C7A877"/><ellipse cx="495" cy="232" rx="9" ry="5" fill="#3A3226" opacity=".55"/><g transform="translate(190 242)" fill="#3A3226"><ellipse cx="-11" cy="0" rx="7" ry="5"/><ellipse cx="0" cy="-1" rx="4.5" ry="3.5"/><circle cx="8" cy="-3" r="3.6"/><line x1="-4" y1="0" x2="-8" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="-4" y1="0" x2="0" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="0" y1="0" x2="-4" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="0" y1="0" x2="4" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="4" y1="0" x2="0" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="4" y1="0" x2="8" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="10" y1="-5" x2="15" y2="-11" stroke="#3A3226" stroke-width="1.2"/><ellipse cx="9" cy="-12" rx="6" ry="3.5" fill="#E6BE63" transform="rotate(-20 9 -12)"/></g><g transform="translate(250 244)" fill="#3A3226"><ellipse cx="-11" cy="0" rx="7" ry="5"/><ellipse cx="0" cy="-1" rx="4.5" ry="3.5"/><circle cx="8" cy="-3" r="3.6"/><line x1="-4" y1="0" x2="-8" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="-4" y1="0" x2="0" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="0" y1="0" x2="-4" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="0" y1="0" x2="4" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="4" y1="0" x2="0" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="4" y1="0" x2="8" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="10" y1="-5" x2="15" y2="-11" stroke="#3A3226" stroke-width="1.2"/><ellipse cx="9" cy="-12" rx="6" ry="3.5" fill="#E6BE63" transform="rotate(-20 9 -12)"/></g><g transform="translate(310 242)" fill="#3A3226"><ellipse cx="-11" cy="0" rx="7" ry="5"/><ellipse cx="0" cy="-1" rx="4.5" ry="3.5"/><circle cx="8" cy="-3" r="3.6"/><line x1="-4" y1="0" x2="-8" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="-4" y1="0" x2="0" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="0" y1="0" x2="-4" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="0" y1="0" x2="4" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="4" y1="0" x2="0" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="4" y1="0" x2="8" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="10" y1="-5" x2="15" y2="-11" stroke="#3A3226" stroke-width="1.2"/><ellipse cx="9" cy="-12" rx="6" ry="3.5" fill="#E6BE63" transform="rotate(-20 9 -12)"/></g><g transform="translate(370 244)" fill="#3A3226"><ellipse cx="-11" cy="0" rx="7" ry="5"/><ellipse cx="0" cy="-1" rx="4.5" ry="3.5"/><circle cx="8" cy="-3" r="3.6"/><line x1="-4" y1="0" x2="-8" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="-4" y1="0" x2="0" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="0" y1="0" x2="-4" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="0" y1="0" x2="4" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="4" y1="0" x2="0" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="4" y1="0" x2="8" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="10" y1="-5" x2="15" y2="-11" stroke="#3A3226" stroke-width="1.2"/><ellipse cx="9" cy="-12" rx="6" ry="3.5" fill="#E6BE63" transform="rotate(-20 9 -12)"/></g><g transform="translate(425 238)" fill="#3A3226"><ellipse cx="-11" cy="0" rx="7" ry="5"/><ellipse cx="0" cy="-1" rx="4.5" ry="3.5"/><circle cx="8" cy="-3" r="3.6"/><line x1="-4" y1="0" x2="-8" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="-4" y1="0" x2="0" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="0" y1="0" x2="-4" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="0" y1="0" x2="4" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="4" y1="0" x2="0" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="4" y1="0" x2="8" y2="8" stroke="#3A3226" stroke-width="1.4"/><line x1="10" y1="-5" x2="15" y2="-11" stroke="#3A3226" stroke-width="1.2"/><ellipse cx="9" cy="-12" rx="6" ry="3.5" fill="#E6BE63" transform="rotate(-20 9 -12)"/></g><text x="588" y="290" text-anchor="end" font-size="11" fill="#3A3226" opacity=".45" font-family="Noto Sans TC, sans-serif">象徵示意</text></svg><figcaption>「懶惰人哪，你去察看螞蟻的動作就可得智慧。」小小螞蟻在夏天預備糧食。<button class="ref" data-r="Pro6:6-11">箴 6:6–11</button></figcaption></figure>
+  <div class="aside">經上說螞蟻「沒有元帥，沒有官長，沒有君王」，卻懂得夏天預備食物——沒有打卡機，進度照樣不延誤。</div>
+  <p>同一本書在 23:4 勸人不要勞碌求富<button class="ref" data-r="Pro23:4">箴 23:4</button>，16:9 則指出人會籌算道路，腳步卻在神的引導之下<button class="ref" data-r="Pro16:9">箴 16:9</button>。這些教導使勤奮與謙卑並行：認真計畫，也接受結果不是自己完全能控制的。</p>
+  <div class="limit"><b>應用界線：</b>不能以「懶惰」概括疾病、身心限制、照顧責任或遭不義剝奪的處境。評價人的工作表現，需要了解實際條件；勸勉也應伴隨支持，而非只加重羞恥。</div>
+  <p class="takeaway">認真籌算，也把腳步交在神手中。</p>
+</section>
+
+<!-- 七 -->
+<section id="s8" class="reveal">
+  <div class="sec-no">七</div>
+  <h2>金錢：公義比所得更重要</h2>
+  <p>箴言並不把財物一概視為邪惡，卻拒絕把財富視為人生最高標準。</p>
+  <div class="tbl"><table>
+    <thead><tr><th>經文</th><th>教導</th></tr></thead>
+    <tbody>
+      <tr><td><button class="ref" data-r="Pro11:1">箴 11:1</button></td><td>譴責不公平的秤</td></tr>
+      <tr><td><button class="ref" data-r="Pro15:27">箴 15:27</button></td><td>貪財會擾害家庭</td></tr>
+      <tr><td><button class="ref" data-r="Pro16:8">箴 16:8</button></td><td>公義置於財利之上</td></tr>
+      <tr><td><button class="ref" data-r="Pro23:4-5">箴 23:4–5</button></td><td>財富並不可靠</td></tr>
+    </tbody>
+  </table></div>
+  <figure class="illus"><svg class="ill-svg" viewBox="0 0 600 300" role="img" aria-label="公道的天平" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sc-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EAF1F7"/><stop offset="1" stop-color="#FBF4E5"/></linearGradient></defs><rect width="600" height="300" fill="url(#sc-bg)"/><ellipse cx="300" cy="262" rx="160" ry="10" fill="#3A3226" opacity=".08"/><path d="M262 260 L338 260 L322 244 L278 244 Z" fill="#B8893B"/><rect x="295" y="70" width="10" height="176" fill="#B8893B"/><circle cx="300" cy="66" r="9" fill="#B8893B"/><rect x="150" y="80" width="300" height="8" rx="4" fill="#A47830"/><line x1="170" y1="88" x2="125" y2="186" stroke="#8D6B33" stroke-width="1.6"/><line x1="170" y1="88" x2="215" y2="186" stroke="#8D6B33" stroke-width="1.6"/><path d="M112 186 Q170 222 228 186 Z" fill="#D9B465" stroke="#B8893B" stroke-width="2"/><line x1="430" y1="88" x2="385" y2="186" stroke="#8D6B33" stroke-width="1.6"/><line x1="430" y1="88" x2="475" y2="186" stroke="#8D6B33" stroke-width="1.6"/><path d="M372 186 Q430 222 488 186 Z" fill="#D9B465" stroke="#B8893B" stroke-width="2"/><path d="M156 186 L160 170 L180 170 L184 186 Z" fill="#7C8794"/><path d="M162 170 L166 160 L174 160 L178 170 Z" fill="#7C8794"/><ellipse cx="410" cy="180" rx="6" ry="4" fill="#E6BE63"/><ellipse cx="422" cy="180" rx="6" ry="4" fill="#E6BE63"/><ellipse cx="434" cy="180" rx="6" ry="4" fill="#E6BE63"/><ellipse cx="446" cy="180" rx="6" ry="4" fill="#E6BE63"/><ellipse cx="410" cy="173" rx="6" ry="4" fill="#E6BE63"/><ellipse cx="422" cy="173" rx="6" ry="4" fill="#E6BE63"/><ellipse cx="434" cy="173" rx="6" ry="4" fill="#E6BE63"/><text x="588" y="290" text-anchor="end" font-size="11" fill="#3A3226" opacity=".45" font-family="Noto Sans TC, sans-serif">象徵示意</text></svg><figcaption>「詭詐的天平為耶和華所憎惡；公平的法碼為他所喜悅。」<button class="ref" data-r="Pro11:1">箴 11:1</button></figcaption></figure>
+  <p>亞古珥求神使他不貧窮也不富足，供給需用的飲食，其關切是避免因富足而否認神，或因窮乏而陷入偷竊。<button class="ref" data-r="Pro30:8-9">箴 30:8–9</button>這是對自身軟弱的警醒，不是認定所有富人都忘記神、所有窮人都會犯罪。</p>
+  <p>善用財物也包括對鄰舍的責任。3:27 勸人在有能力時不要推辭行善<button class="ref" data-r="Pro3:27">箴 3:27</button>；19:17 肯定憐憫貧窮者<button class="ref" data-r="Pro19:17">箴 19:17</button>；22:22–23 禁止欺壓困苦人<button class="ref" data-r="Pro22:22-23">箴 22:22–23</button>。這些經文不能被變成「奉獻多少就必賺回多少」的交易公式。</p>
+  <div class="card"><h4>生活應用</h4>衡量收入時同時衡量來源是否正當、代價是否傷害家人或他人，以及自己是否仍願意分享。理財可以負責任，卻不應使財富取代神成為安全感的根基。</div>
+  <p class="takeaway">先問來源是否公義，再問數字是否漂亮。</p>
+</section>
+
+<!-- 八 -->
+<section id="s9" class="reveal">
+  <div class="sec-no">八</div>
+  <h2>人際與家庭：忠誠、尊重與彼此成全</h2>
+  <p>箴言 13:20 提醒同行者會影響我們<button class="ref" data-r="Pro13:20">箴 13:20</button>，17:17 肯定朋友在患難中的情誼<button class="ref" data-r="Pro17:17">箴 17:17</button>，27:17 以鐵磨鐵描述相互磨練<button class="ref" data-r="Pro27:17">箴 27:17</button>。智慧的友誼不是彼此利用，也不是永遠附和，而是能支持、提醒並共同成長。</p>
+  <div class="aside">鐵磨鐵會有火花，也會有聲音；不出聲的朋友比較安靜，卻不一定讓你更鋒利。</div>
+  <p>家庭方面，1:8 與 23:22 要人聆聽父母的教導<button class="ref" data-r="Pro1:8">箴 1:8</button><button class="ref" data-r="Pro23:22">箴 23:22</button>；5:15–20 勸人珍惜婚姻、持守忠誠<button class="ref" data-r="Pro5:15-20">箴 5:15–20</button>。31:10–31 則以詩歌稱讚一位有能力、勤勞、慷慨、言語有智慧且敬畏神的婦人，結尾也要求人承認她工作的成果<button class="ref" data-r="Pro31:10-31">箴 31:10–31</button>。這不宜被當作每位女性每天必須完成的績效清單。</p>
+  <p>基督信仰的整體閱讀也需看到以弗所書對父親的要求：不要惹兒女的氣，要按主的教訓和警戒養育<button class="ref" data-r="Eph6:4">弗 6:4</button>。尊敬父母與家長善盡責任應一併教導，而不是只要求較弱勢的一方服從。</p>
+  <div class="limit"><b>應用界線：</b>教導、管教與忠誠不能成為羞辱、暴力或掩蓋傷害的理由。這是結合公義與家庭責任的倫理綜整，不是把現代家庭議題直接塞進單一節經文。</div>
+  <p class="takeaway">好的關係彼此成全：會支持，也會誠實提醒。</p>
+</section>
+
+<!-- 九 -->
+<section id="s10" class="reveal">
+  <div class="sec-no">九</div>
+  <h2>智慧也關乎公義與弱勢者</h2>
+  <blockquote class="verse"><p>「欺壓貧寒的，是辱沒造他的主；憐憫窮乏的，乃是尊敬主。」<button class="ref" data-r="Pro14:31">箴 14:31</button></p></blockquote>
+  <p>《箴言》不只教個人把生活過好，也關心權力如何使用。17:15 譴責把惡人判為義、把義人判為惡<button class="ref" data-r="Pro17:15">箴 17:15</button>；29:4 將國家安定與公平相連<button class="ref" data-r="Pro29:4">箴 29:4</button>；31:8–9 要掌握發言權者為困苦者伸冤<button class="ref" data-r="Pro31:8-9">箴 31:8–9</button>。</p>
+  <div class="pills"><span class="pill">公平交易</span><span class="pill">真實報告</span><span class="pill">誠實作證</span><span class="pill">不利用弱勢者牟利</span></div>
+  <p>因此，敬畏神應落實在公平交易、真實報告、誠實作證，以及不利用弱勢者的需要牟利。放在組織或照顧現場，就是不單以效率評價一切，也注意誰承擔成本、誰被排除、誰的聲音沒有被聽見。這是經文原則的現代延伸。</p>
+  <p class="takeaway">怎樣對待貧寒的人，就顯明我們怎樣看待造他的主。</p>
+</section>
+
+<!-- 十 -->
+<section id="s11" class="reveal">
+  <div class="sec-no">十</div>
+  <h2>從箴言連到基督：智慧不是自我拯救</h2>
+  <blockquote class="verse"><p>「但你們得在基督耶穌裡，是本乎神，神又使他成為我們的智慧、公義、聖潔、救贖。」<button class="ref" data-r="1Co1:30">林前 1:30</button></p></blockquote>
+  <p>依新約的教導，基督信仰不能停留在「修養得更好就能拯救自己」。哥林多前書 1:18–31 將神的智慧與基督的十字架相連，也破除人憑自身資格誇口<button class="ref" data-r="1Co1:18-31">林前 1:18–31</button>；以弗所書 2:8–10 則說明得救出於恩典，善行是蒙恩後要行的生活<button class="ref" data-r="Eph2:8-10">弗 2:8–10</button>。</p>
+  <figure class="illus"><svg class="ill-svg" viewBox="0 0 600 300" role="img" aria-label="晨光中的十字架" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="cr-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCE7F2"/><stop offset=".8" stop-color="#FBEAC8"/></linearGradient><radialGradient id="cr-glow" cx="300" cy="150" r="200" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFF5DA"/><stop offset="1" stop-color="#FFF5DA" stop-opacity="0"/></radialGradient></defs><rect width="600" height="300" fill="url(#cr-bg)"/><circle cx="300" cy="150" r="200" fill="url(#cr-glow)"/><line x1="360.0" y1="150.0" x2="490.0" y2="150.0" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="358.0" y1="165.5" x2="483.5" y2="199.2" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="352.0" y1="180.0" x2="464.5" y2="245.0" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="342.4" y1="192.4" x2="434.4" y2="284.4" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="330.0" y1="202.0" x2="395.0" y2="314.5" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="315.5" y1="208.0" x2="349.2" y2="333.5" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="300.0" y1="210.0" x2="300.0" y2="340.0" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="284.5" y1="208.0" x2="250.8" y2="333.5" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="270.0" y1="202.0" x2="205.0" y2="314.5" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="257.6" y1="192.4" x2="165.6" y2="284.4" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="248.0" y1="180.0" x2="135.5" y2="245.0" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="242.0" y1="165.5" x2="116.5" y2="199.2" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="240.0" y1="150.0" x2="110.0" y2="150.0" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="242.0" y1="134.5" x2="116.5" y2="100.8" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="248.0" y1="120.0" x2="135.5" y2="55.0" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="257.6" y1="107.6" x2="165.6" y2="15.6" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="270.0" y1="98.0" x2="205.0" y2="-14.5" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="284.5" y1="92.0" x2="250.8" y2="-33.5" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="300.0" y1="90.0" x2="300.0" y2="-40.0" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="315.5" y1="92.0" x2="349.2" y2="-33.5" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="330.0" y1="98.0" x2="395.0" y2="-14.5" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="342.4" y1="107.6" x2="434.4" y2="15.6" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="352.0" y1="120.0" x2="464.5" y2="55.0" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><line x1="358.0" y1="134.5" x2="483.5" y2="100.8" stroke="#B8893B" stroke-opacity=".18" stroke-width="2"/><path d="M0 250 Q300 170 600 250 L600 300 L0 300 Z" fill="#B9C6A2"/><rect x="293" y="78" width="14" height="140" fill="#7A5A3A"/><rect x="258" y="108" width="84" height="13" fill="#7A5A3A"/><text x="588" y="290" text-anchor="end" font-size="11" fill="#3A3226" opacity=".45" font-family="Noto Sans TC, sans-serif">象徵示意</text></svg><figcaption>「十字架的道理……在我們得救的人，卻為神的大能。」智慧的終點不是自我完善，而是神在基督裡的恩典。<button class="ref" data-r="1Co1:18">林前 1:18</button></figcaption></figure>
+  <p>因此，讀箴言既要接受勸誡，也要在看見自己的愚妄時悔改、求恩典，而不是把它變成評分自己與別人的工具。雅各書鼓勵缺少智慧的人向神求<button class="ref" data-r="Jas1:5">雅 1:5</button>；並描寫從上頭來的智慧具有清潔、和平、溫良、柔順、憐憫與善果<button class="ref" data-r="Jas3:13-18">雅 3:13–18</button>。</p>
+  <div class="pills"><span class="pill">清潔</span><span class="pill">和平</span><span class="pill">溫良</span><span class="pill">柔順</span><span class="pill">憐憫</span><span class="pill">善果</span></div>
+  <div class="card"><h4>關於箴言第 8 章</h4>箴言 8 章把智慧描寫為發言的女性，是智慧文學的擬人表達<button class="ref" data-r="Pro8">箴 8:1–4、22–31</button>。基督徒可以在整本聖經中思考它與基督的關聯，但不應把其中每個詩性細節直接當作聖子的傳記，更不能單憑某節措辭斷言聖子是受造物。此處區分的是文學表達與基督論的論證層次。</div>
+  <p class="takeaway">箴言指出道路，基督成為我們的智慧；我們靠恩典行在其中。</p>
+</section>
+
+<!-- 十一 -->
+<section id="s12" class="reveal">
+  <div class="sec-no">十一</div>
+  <h2>每日可實踐的反省</h2>
+  <p>以下為依經文整理的應用，不是聖經原句，也不是獲得祝福的公式。</p>
+  <div class="tbl"><table>
+    <thead><tr><th>面向</th><th>可問自己的問題</th><th>對應經文</th></tr></thead>
+    <tbody>
+      <tr><td>敬畏</td><td>我願意讓神修正今天的計畫嗎？</td><td><button class="ref" data-r="Pro3:5-7">箴 3:5–7</button></td></tr>
+      <tr><td>受教</td><td>我是否聽清楚才下判斷？</td><td><button class="ref" data-r="Pro18:13,17">箴 18:13、17</button></td></tr>
+      <tr><td>言語</td><td>我說的是否真實、合時，並有益於人？</td><td><button class="ref" data-r="Pro12:18">箴 12:18</button><button class="ref" data-r="Pro15:23">箴 15:23</button><button class="ref" data-r="Eph4:25,29">弗 4:25、29</button></td></tr>
+      <tr><td>情緒</td><td>我是在處理問題，還是藉怒氣傷人？</td><td><button class="ref" data-r="Pro16:32">箴 16:32</button><button class="ref" data-r="Jas1:19-20">雅 1:19–20</button></td></tr>
+      <tr><td>工作</td><td>今天能忠實完成哪一項責任？</td><td><button class="ref" data-r="Pro6:6-11">箴 6:6–11</button><button class="ref" data-r="Pro21:5">箴 21:5</button></td></tr>
+      <tr><td>金錢</td><td>所得是否公義？我是否願意分享？</td><td><button class="ref" data-r="Pro16:8">箴 16:8</button><button class="ref" data-r="Pro3:27">箴 3:27</button></td></tr>
+      <tr><td>關係</td><td>我需要道歉、聽勸或給誰實際支持？</td><td><button class="ref" data-r="Pro12:15">箴 12:15</button><button class="ref" data-r="Pro17:17">箴 17:17</button><button class="ref" data-r="Pro28:13">箴 28:13</button></td></tr>
+      <tr><td>公義</td><td>有誰需要我替他發聲，而我一直忽略？</td><td><button class="ref" data-r="Pro31:8-9">箴 31:8–9</button></td></tr>
+    </tbody>
+  </table></div>
+  <div class="examine">
+    <h4>今晚的三分鐘省察</h4>
+    <ul>
+      <li>今天哪一句話，我希望能重新說一次？</li>
+      <li>今天哪一個決定，我是先問神、還是事後才想到神？</li>
+      <li>明天我能為哪一位身邊的人，做一件具體的小事？</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 結語 -->
+<section id="end" class="reveal">
+  <div class="sec-no">結語</div>
+  <h2>在恩典中不斷更新</h2>
+  <p>《箴言》教人以敬畏神為根基，在說話、工作、財物、家庭與公共生活中學習正直。智慧不保證人生沒有苦難，卻幫助我們在不能完全掌控的生活裡，仍然選擇誠實、公義、憐憫與忠誠。</p>
+  <p>在基督信仰的完整脈絡中，這樣的生活也不是靠自我完善換取救恩，而是倚靠神的恩典，持續受教、悔改並行善。</p>
+  <p class="motto">敬畏神，肯受教；說真話，行公義；<br>忠於責任，憐憫鄰舍，在恩典中不斷更新。</p>
+  <p class="motto-note">——本文綜整，非聖經直接引文</p>
+  <div class="prayer">
+    <h4>回應禱告（建議）</h4>
+    主啊，你應許缺少智慧的人可以向你求<button class="ref" data-r="Jas1:5">雅 1:5</button>。求你使我們敬畏你，肯聽勸教；在說話時真實而合時，在發怒時治服己心；忠心做手中的工，也記得替困苦的人開口。我們承認自己的愚妄，倚靠你在基督裡的恩典，願我們每天被你更新。奉主耶穌的名求，阿們。
+  </div>
+</section>
+
+<!-- 參考資料 -->
+<section id="refs" class="refs reveal">
+  <div class="sec-no">參考資料</div>
+  <h2>可溯源參考資料</h2>
+  <p class="note">查閱日期：2026-11-16。以聖經原始文本為主要依據，導讀作輔助。以下和合本為歷史譯本的網路轉錄，並非希伯來文或希臘文原文；可依章節在頁內查找。本文沒有進行完整的原文校勘或各宗派詮釋史研究。</p>
+
+  <h3>本頁引用經文（依出現順序）</h3>
+  <ol id="autoRefs"></ol>
+
+  <h3>原稿來源對照</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>代號</th><th>來源</th><th>用途</th></tr></thead>
+    <tbody>
+      <tr><td>R1</td><td><a href="https://zh.wikisource.org/wiki/聖經_(和合本)/箴言" target="_blank" rel="noopener">《聖經》和合本〈箴言〉</a></td><td>本文核心來源</td></tr>
+      <tr><td>R2</td><td><a href="https://zh.wikisource.org/wiki/聖經_(和合本)/約伯記" target="_blank" rel="noopener">《聖經》和合本〈約伯記〉</a></td><td>1:1、8 及其後的苦難敘事；說明受苦不可被直接等同於犯罪的報應</td></tr>
+      <tr><td>R3</td><td><a href="https://zh.wikisource.org/wiki/聖經_(和合本)/傳道書" target="_blank" rel="noopener">《聖經》和合本〈傳道書〉</a></td><td>9:11；能力、努力與結果之間不是機械關係</td></tr>
+      <tr><td>R4</td><td><a href="https://zh.wikisource.org/wiki/聖經_(和合本)/雅各書" target="_blank" rel="noopener">《聖經》和合本〈雅各書〉</a></td><td>1:5、19–20；3:13–18；求智慧、聆聽、憤怒與從上頭來的智慧</td></tr>
+      <tr><td>R5</td><td><a href="https://zh.wikisource.org/wiki/聖經_(和合本)/哥林多前書" target="_blank" rel="noopener">《聖經》和合本〈哥林多前書〉</a></td><td>1:18–31，尤其 1:30；基督、十字架與神的智慧</td></tr>
+      <tr><td>R6</td><td><a href="https://zh.wikisource.org/wiki/聖經_(和合本)/以弗所書" target="_blank" rel="noopener">《聖經》和合本〈以弗所書〉</a></td><td>2:8–10；4:25–29；6:4；恩典與善行、言語與情緒、家長的責任</td></tr>
+      <tr><td>R7</td><td>原始待核稿〈箴言中的人生智慧〉</td><td>使用者提供之 Markdown 文件，僅作修訂比較對象，不作獨立神學證據</td></tr>
+      <tr><td>R8</td><td><a href="https://bibleproject.com/guides/book-of-proverbs/" target="_blank" rel="noopener">BibleProject, Book of Proverbs Guide</a></td><td>智慧文學形式與全書結構的輔助導讀，不代替經文本身</td></tr>
+      <tr><td>R9</td><td><a href="https://www.ccreadbible.org/chinesebible/backup/Old%20Testament/Poetical%20and%20Didactic%20Books/Proverbs" target="_blank" rel="noopener">思高讀經推廣中心〈箴言篇〉</a></td><td>僅用於核對原稿連結的譯文性質；本文引文不採此頁</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>和合本線上資源</h3>
+  <ul>
+    <li><a href="https://www.biblegateway.com/versions/Chinese-Union-Version-Modern-Punctuation-Bible/" target="_blank" rel="noopener">Bible Gateway：和合本（新式標點）CUVMPT</a></li>
+    <li><a href="https://bible.fhl.net/" target="_blank" rel="noopener">信望愛站：線上聖經</a></li>
+    <li><a href="https://zh.wikisource.org/wiki/聖經_(和合本)" target="_blank" rel="noopener">維基文庫：聖經（和合本）</a></li>
+  </ul>
+
+  <h3>核實範圍說明</h3>
+  <p class="note">已核對原稿主要引文、章節歸屬與所連經文頁面的譯本差異，並以所列聖經文本補充上下文。原稿其他導論、講義與彙編未逐一採作依據，因此不保留為已核實書目；這不表示判定它們錯誤。本文的組織、照顧及日常實踐例子，均屬作者依經文所作的應用，不宣稱是經文原句或唯一可行的方法。插圖均為象徵示意。</p>
+</section>
+</main>
+
+<footer>
+  箴言中的人生智慧<br>
+  經文引自《和合本》（公有領域）・插圖為象徵示意
+</footer>
+
+<dialog id="vd" aria-labelledby="vdTitle">
+  <div class="vd-h"><h3 id="vdTitle"></h3><button class="vd-x" aria-label="關閉">×</button></div>
+  <div class="vd-b" id="vdBody"></div>
+  <div class="vd-f" id="vdFoot"></div>
+</dialog>
+
+<script>
+const BIBLE_VER = "CUVMPT";
+const V = {"1Co1:18":{"zh":"哥林多前書 1:18","en":"1 Corinthians 1:18","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/哥林多前書","v":[[18,"因為十字架的道理，在那滅亡的人為愚拙；在我們得救的人，卻為神的大能。"]]},"1Co1:18-31":{"zh":"哥林多前書 1:18–31","en":"1 Corinthians 1:18-31","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/哥林多前書","v":[[18,"因為十字架的道理，在那滅亡的人為愚拙；在我們得救的人，卻為神的大能。"],[19,"就如經上所記：我要滅絕智慧人的智慧，廢棄聰明人的聰明。"],[20,"智慧人在哪裡？文士在哪裡？這世上的辯士在哪裡？神豈不是叫這世上的智慧變成愚拙嗎？"],[21,"世人憑自己的智慧，既不認識神，神就樂意用人所當作愚拙的道理拯救那些信的人；這就是神的智慧了。"],[22,"猶太人是要神蹟，希臘人是求智慧，"],[23,"我們卻是傳釘在十字架的基督，在猶太人為絆腳石，在外邦人為愚拙；"],[24,"但在那蒙召的，無論是猶太人、希臘人，基督總為神的能力，神的智慧。"],[25,"因神的愚拙總比人智慧，神的軟弱總比人強壯。"],[26,"弟兄們哪，可見你們蒙召的，按著肉體有智慧的不多，有能力的不多，有尊貴的也不多。"],[27,"神卻揀選了世上愚拙的，叫有智慧的羞愧；又揀選了世上軟弱的，叫那強壯的羞愧。"],[28,"神也揀選了世上卑賤的，被人厭惡的，以及那無有的，為要廢掉那有的，"],[29,"使一切有血氣的，在神面前一個也不能自誇。"],[30,"但你們得在基督耶穌裡是本乎神，神又使他成為我們的智慧、公義、聖潔、救贖。"],[31,"如經上所記：「誇口的，當指著主誇口。」"]]},"1Co1:30":{"zh":"哥林多前書 1:30","en":"1 Corinthians 1:30","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/哥林多前書","v":[[30,"但你們得在基督耶穌裡是本乎神，神又使他成為我們的智慧、公義、聖潔、救贖。"]]},"Ecc9:11":{"zh":"傳道書 9:11","en":"Ecclesiastes 9:11","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/傳道書","v":[[11,"我又轉念：見日光之下，快跑的未必能贏；力戰的未必得勝；智慧的未必得糧食；明哲的未必得資財；靈巧的未必得喜悅。所臨到眾人的是在乎當時的機會。"]]},"Eph2:8-10":{"zh":"以弗所書 2:8–10","en":"Ephesians 2:8-10","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/以弗所書","v":[[8,"你們得救是本乎恩，也因著信；這並不是出於自己，乃是神所賜的；"],[9,"也不是出於行為，免得有人自誇。"],[10,"我們原是他的工作，在基督耶穌裡造成的，為要叫我們行善，就是神所預備叫我們行的。"]]},"Eph4:25,29":{"zh":"以弗所書 4:25、29","en":"Ephesians 4:25,29","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/以弗所書","v":[[25,"所以，你們要棄絕謊言，各人與鄰舍說實話，因為我們是互相為肢體。"],[29,"汙穢的言語一句不可出口，只要隨事說造就人的好話，叫聽見的人得益處。"]]},"Eph4:26-27":{"zh":"以弗所書 4:26–27","en":"Ephesians 4:26-27","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/以弗所書","v":[[26,"生氣卻不要犯罪；不可含怒到日落，"],[27,"也不可給魔鬼留地步。"]]},"Eph6:4":{"zh":"以弗所書 6:4","en":"Ephesians 6:4","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/以弗所書","v":[[4,"不要只在眼前事奉，像是討人喜歡的，要像基督的僕人，從心裡遵行神的旨意。"]]},"Jas1:19-20":{"zh":"雅各書 1:19–20","en":"James 1:19-20","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/雅各書","v":[[19,"我親愛的弟兄們，這是你們所知道的。但你們各人要快快地聽，慢慢地說，慢慢地動怒，"],[20,"因為人的怒氣並不成就神的義。"]]},"Jas1:5":{"zh":"雅各書 1:5","en":"James 1:5","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/雅各書","v":[[5,"你們中間若有缺少智慧的，應當求那厚賜與眾人、也不斥責人的神，主就必賜給他。"]]},"Jas3:13-18":{"zh":"雅各書 3:13–18","en":"James 3:13-18","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/雅各書","v":[[13,"你們中間誰是有智慧有見識的呢？他就當在智慧的溫柔上顯出他的善行來。"],[14,"你們心裡若懷著苦毒的嫉妒和紛爭，就不可自誇，也不可說謊話抵擋真道。"],[15,"這樣的智慧不是從上頭來的，乃是屬地的，屬情慾的，屬鬼魔的。"],[16,"在何處有嫉妒、紛爭，就在何處有擾亂和各樣的壞事。"],[17,"惟獨從上頭來的智慧，先是清潔，後是和平，溫良柔順，滿有憐憫，多結善果，沒有偏見，沒有假冒。"],[18,"並且使人和平的，是用和平所栽種的義果。"]]},"Job1:1,8":{"zh":"約伯記 1:1、8","en":"Job 1:1,8","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/約伯記","v":[[1,"烏斯地有一個人名叫約伯；那人完全正直，敬畏神，遠離惡事。"],[8,"耶和華問撒但說：「你曾用心察看我的僕人約伯沒有？地上再沒有人像他完全正直，敬畏神，遠離惡事。」"]]},"Pro10:19":{"zh":"箴言 10:19","en":"Proverbs 10:19","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[19,"多言多語難免有過；禁止嘴唇是有智慧。"]]},"Pro11:1":{"zh":"箴言 11:1","en":"Proverbs 11:1","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[1,"詭詐的天平為耶和華所憎惡；公平的法碼為他所喜悅。"]]},"Pro12:15":{"zh":"箴言 12:15","en":"Proverbs 12:15","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[15,"愚妄人所行的，在自己眼中看為正直；惟智慧人肯聽人的勸教。"]]},"Pro12:18":{"zh":"箴言 12:18","en":"Proverbs 12:18","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[18,"說話浮躁的，如刀刺人；智慧人的舌頭卻為醫人的良藥。"]]},"Pro13:20":{"zh":"箴言 13:20","en":"Proverbs 13:20","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[20,"與智慧人同行的，必得智慧；和愚昧人作伴的，必受虧損。"]]},"Pro13:23":{"zh":"箴言 13:23","en":"Proverbs 13:23","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[23,"窮人耕種多得糧食，但因不義，有消滅的。"]]},"Pro13:4":{"zh":"箴言 13:4","en":"Proverbs 13:4","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[4,"懶惰人羨慕，卻無所得；殷勤人必得豐裕。"]]},"Pro14:31":{"zh":"箴言 14:31","en":"Proverbs 14:31","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[31,"欺壓貧寒的，是辱沒造他的主；憐憫窮乏的，乃是尊敬主。"]]},"Pro15:1":{"zh":"箴言 15:1","en":"Proverbs 15:1","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[1,"回答柔和，使怒消退；言語暴戾，觸動怒氣。"]]},"Pro15:22":{"zh":"箴言 15:22","en":"Proverbs 15:22","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[22,"不先商議，所謀無效；謀士眾多，所謀乃成。"]]},"Pro15:23":{"zh":"箴言 15:23","en":"Proverbs 15:23","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[23,"口善應對，自覺喜樂；話合其時，何等美好。"]]},"Pro15:27":{"zh":"箴言 15:27","en":"Proverbs 15:27","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[27,"貪戀財利的，擾害己家；恨惡賄賂的，必得存活。"]]},"Pro16:28":{"zh":"箴言 16:28","en":"Proverbs 16:28","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[28,"乖僻人播散紛爭；傳舌的，離間密友。"]]},"Pro16:32":{"zh":"箴言 16:32","en":"Proverbs 16:32","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[32,"不輕易發怒的，勝過勇士；治服己心的，強如取城。"]]},"Pro16:8":{"zh":"箴言 16:8","en":"Proverbs 16:8","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[8,"多有財利，行事不義，不如少有財利，行事公義。"]]},"Pro16:9":{"zh":"箴言 16:9","en":"Proverbs 16:9","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[9,"人心籌算自己的道路；惟耶和華指引他的腳步。"]]},"Pro17:14":{"zh":"箴言 17:14","en":"Proverbs 17:14","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[14,"紛爭的起頭如水放開，所以，在爭鬧之先必當止息爭競。"]]},"Pro17:15":{"zh":"箴言 17:15","en":"Proverbs 17:15","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[15,"定惡人為義的，定義人為惡的，這都為耶和華所憎惡。"]]},"Pro17:17":{"zh":"箴言 17:17","en":"Proverbs 17:17","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[17,"朋友乃時常親愛，弟兄為患難而生。"]]},"Pro18:13":{"zh":"箴言 18:13","en":"Proverbs 18:13","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[13,"未曾聽完先回答的，便是他的愚昧和羞辱。"]]},"Pro18:13,17":{"zh":"箴言 18:13、17","en":"Proverbs 18:13,17","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[13,"未曾聽完先回答的，便是他的愚昧和羞辱。"],[17,"先訴情由的，似乎有理；但鄰舍來到，就察出實情。"]]},"Pro18:17":{"zh":"箴言 18:17","en":"Proverbs 18:17","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[17,"先訴情由的，似乎有理；但鄰舍來到，就察出實情。"]]},"Pro19:17":{"zh":"箴言 19:17","en":"Proverbs 19:17","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[17,"憐憫貧窮的，就是借給耶和華；他的善行，耶和華必償還。"]]},"Pro1:2-7":{"zh":"箴言 1:2–7","en":"Proverbs 1:2-7","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[2,"要使人曉得智慧和訓誨，分辨通達的言語，"],[3,"使人處事領受智慧、仁義、公平、正直的訓誨，"],[4,"使愚人靈明，使少年人有知識和謀略，"],[5,"使智慧人聽見，增長學問，使聰明人得著智謀，"],[6,"使人明白箴言和譬喻，懂得智慧人的言詞和謎語。"],[7,"敬畏耶和華是知識的開端；愚妄人藐視智慧和訓誨。"]]},"Pro1:7":{"zh":"箴言 1:7","en":"Proverbs 1:7","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[7,"敬畏耶和華是知識的開端；愚妄人藐視智慧和訓誨。"]]},"Pro1:8":{"zh":"箴言 1:8","en":"Proverbs 1:8","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[8,"我兒，要聽你父親的訓誨，不可離棄你母親的法則；"]]},"Pro21:5":{"zh":"箴言 21:5","en":"Proverbs 21:5","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[5,"殷勤籌劃的，足致豐裕；行事急躁的，都必缺乏。"]]},"Pro22:17":{"zh":"箴言 22:17","en":"Proverbs 22:17","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[17,"你須側耳聽受智慧人的言語，留心領會我的知識。"]]},"Pro22:22-23":{"zh":"箴言 22:22–23","en":"Proverbs 22:22-23","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[22,"貧窮人，你不可因他貧窮就搶奪他的物，也不可在城門口欺壓困苦人；"],[23,"因耶和華必為他辨屈；搶奪他的，耶和華必奪取那人的命。"]]},"Pro23:22":{"zh":"箴言 23:22","en":"Proverbs 23:22","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[22,"你要聽從生你的父親；你母親老了，也不可藐視她。"]]},"Pro23:4":{"zh":"箴言 23:4","en":"Proverbs 23:4","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[4,"不要勞碌求富，休仗自己的聰明。"]]},"Pro23:4-5":{"zh":"箴言 23:4–5","en":"Proverbs 23:4-5","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[4,"不要勞碌求富，休仗自己的聰明。"],[5,"你豈要定睛在虛無的錢財上嗎？因錢財必長翅膀，如鷹向天飛去。"]]},"Pro24:23":{"zh":"箴言 24:23","en":"Proverbs 24:23","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[23,"以下也是智慧人的箴言：審判時看人情面是不好的。"]]},"Pro25:1":{"zh":"箴言 25:1","en":"Proverbs 25:1","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[1,"以下也是所羅門的箴言，是猶大王希西家的人所謄錄的。"]]},"Pro25:11":{"zh":"箴言 25:11","en":"Proverbs 25:11","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[11,"一句話說得合宜，就如金蘋果在銀網子裡。"]]},"Pro26:4-5":{"zh":"箴言 26:4–5","en":"Proverbs 26:4-5","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[4,"不要照愚昧人的愚妄話回答他，恐怕你與他一樣。"],[5,"要照愚昧人的愚妄話回答他，免得他自以為有智慧。"]]},"Pro27:17":{"zh":"箴言 27:17","en":"Proverbs 27:17","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[17,"鐵磨鐵，磨出刃來；朋友相感也是如此。"]]},"Pro27:5-6":{"zh":"箴言 27:5–6","en":"Proverbs 27:5-6","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[5,"當面的責備強如背地的愛情。"],[6,"朋友加的傷痕出於忠誠；仇敵連連親嘴卻是多餘。"]]},"Pro28:13":{"zh":"箴言 28:13","en":"Proverbs 28:13","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[13,"遮掩自己罪過的，必不亨通；承認離棄罪過的，必蒙憐恤。"]]},"Pro29:11":{"zh":"箴言 29:11","en":"Proverbs 29:11","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[11,"愚妄人怒氣全發；智慧人忍氣含怒。"]]},"Pro29:4":{"zh":"箴言 29:4","en":"Proverbs 29:4","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[4,"王藉公平，使國堅定；索要賄賂，使國傾敗。"]]},"Pro30:1":{"zh":"箴言 30:1","en":"Proverbs 30:1","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[1,"雅基的兒子亞古珥的言語就是真言。這人對以鐵和烏甲說："]]},"Pro30:8-9":{"zh":"箴言 30:8–9","en":"Proverbs 30:8-9","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[8,"求你使虛假和謊言遠離我；使我也不貧窮也不富足；賜給我需用的飲食，"],[9,"恐怕我飽足不認你，說：耶和華是誰呢？又恐怕我貧窮就偷竊，以致褻瀆我神的名。"]]},"Pro31:1":{"zh":"箴言 31:1","en":"Proverbs 31:1","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[1,"利慕伊勒王的言語，是他母親教訓他的真言。"]]},"Pro31:10-31":{"zh":"箴言 31:10–31","en":"Proverbs 31:10-31","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[10,"才德的婦人誰能得著呢？她的價值遠勝過珍珠。"],[11,"她丈夫心裡倚靠她，必不缺少利益；"],[12,"她一生使丈夫有益無損。"],[13,"她尋找羊絨和麻，甘心用手做工。"],[14,"她好像商船從遠方運糧來，"],[15,"未到黎明她就起來，把食物分給家中的人，將當做的工分派婢女。"],[16,"她想得田地就買來；用手所得之利栽種葡萄園。"],[17,"她以能力束腰，使膀臂有力。"],[18,"她覺得所經營的有利；她的燈終夜不滅。"],[19,"她手拿捻線竿，手把紡線車。"],[20,"她張手周濟困苦人，伸手幫補窮乏人。"],[21,"她不因下雪為家裡的人擔心，因為全家都穿著硃紅衣服。"],[22,"她為自己製作繡花毯子；她的衣服是細麻和紫色布做的。"],[23,"她丈夫在城門口與本地的長老同坐，為眾人所認識。"],[24,"她做細麻布衣裳出賣，又將腰帶賣與商家。"],[25,"能力和威儀是她的衣服；她想到日後的景況就喜笑。"],[26,"她開口就發智慧；她舌上有仁慈的法則。"],[27,"她觀察家務，並不吃閒飯。"],[28,"她的兒女起來稱她有福；她的丈夫也稱讚她，"],[29,"說：才德的女子很多，惟獨你超過一切。"],[30,"豔麗是虛假的，美容是虛浮的；惟敬畏耶和華的婦女必得稱讚。"],[31,"願她享受操作所得的；願她的工作在城門口榮耀她。"]]},"Pro31:8-9":{"zh":"箴言 31:8–9","en":"Proverbs 31:8-9","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[8,"你當為啞巴開口，為一切孤獨的伸冤。"],[9,"你當開口按公義判斷，為困苦和窮乏的辨屈。"]]},"Pro3:27":{"zh":"箴言 3:27","en":"Proverbs 3:27","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[27,"你手若有行善的力量，不可推辭，就當向那應得的人施行。"]]},"Pro3:5-7":{"zh":"箴言 3:5–7","en":"Proverbs 3:5-7","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[5,"你要專心仰賴耶和華，不可倚靠自己的聰明，"],[6,"在你一切所行的事上都要認定他，他必指引你的路。"],[7,"不要自以為有智慧；要敬畏耶和華，遠離惡事。"]]},"Pro4:18":{"zh":"箴言 4:18","en":"Proverbs 4:18","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[18,"但義人的路好像黎明的光，越照越明，直到日午。"]]},"Pro5:15-20":{"zh":"箴言 5:15–20","en":"Proverbs 5:15-20","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[15,"你要喝自己池中的水，飲自己井裡的活水。"],[16,"你的泉源豈可漲溢在外？你的河水豈可流在街上？"],[17,"惟獨歸你一人，不可與外人同用。"],[18,"要使你的泉源蒙福；要喜悅你幼年所娶的妻。"],[19,"她如可愛的麀鹿，可喜的母鹿；願她的胸懷使你時時知足，她的愛情使你常常戀慕。"],[20,"我兒，你為何戀慕淫婦？為何抱外女的胸懷？"]]},"Pro6:23":{"zh":"箴言 6:23","en":"Proverbs 6:23","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[23,"因為誡命是燈，法則是光，訓誨的責備是生命的道，"]]},"Pro6:6-11":{"zh":"箴言 6:6–11","en":"Proverbs 6:6-11","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[6,"懶惰人哪，你去察看螞蟻的動作就可得智慧。"],[7,"螞蟻沒有元帥，沒有官長，沒有君王，"],[8,"尚且在夏天預備食物，在收割時聚斂糧食。"],[9,"懶惰人哪，你要睡到幾時呢？你何時睡醒呢？"],[10,"再睡片時，打盹片時，抱著手躺臥片時，"],[11,"你的貧窮就必如強盜速來，你的缺乏彷彿拿兵器的人來到。"]]},"Pro8":{"zh":"箴言 8:1–4、22–31","en":"Proverbs 8:1-4,22-31","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[1,"智慧豈不呼叫？聰明豈不發聲？"],[2,"她在道旁高處的頂上，在十字路口站立，"],[3,"在城門旁，在城門口，在城門洞，大聲說："],[4,"眾人哪，我呼叫你們，我向世人發聲。"],[22,"在耶和華造化的起頭，在太初創造萬物之先，就有了我。"],[23,"從亙古，從太初，未有世界以前，我已被立。"],[24,"沒有深淵，沒有大水的泉源，我已生出。"],[25,"大山未曾奠定，小山未有之先，我已生出。"],[26,"耶和華還沒有創造大地和田野，並世上的土質，我已生出。"],[27,"他立高天，我在那裡；他在淵面的周圍，劃出圓圈。"],[28,"上使穹蒼堅硬，下使淵源穩固，"],[29,"為滄海定出界限，使水不越過他的命令，立定大地的根基。"],[30,"那時，我在他那裡為工師，日日為他所喜愛，常常在他面前踴躍，"],[31,"踴躍在他為人預備可住之地，也喜悅住在世人之間。"]]},"Pro8:13":{"zh":"箴言 8:13","en":"Proverbs 8:13","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[13,"敬畏耶和華在乎恨惡邪惡；那驕傲、狂妄，並惡道，以及乖謬的口，都為我所恨惡。"]]},"Pro9:10":{"zh":"箴言 9:10","en":"Proverbs 9:10","src":"https://zh.wikisource.org/wiki/聖經_(和合本)/箴言","v":[[10,"敬畏耶和華是智慧的開端；認識至聖者便是聰明。"]]}};
+const bg = (en, ver) => `https://www.biblegateway.com/passage/?search=${encodeURIComponent(en)}&version=${ver}`;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+const dlg = document.getElementById("vd");
+function openVerse(key){
+  const v = V[key]; if(!v) return;
+  document.getElementById("vdTitle").innerHTML = `${esc(v.zh)}<small>${esc(v.ver || "和合本")}</small>`;
+  document.getElementById("vdBody").innerHTML = v.v.map(([n,t]) => `<p><sup>${n}</sup>${esc(t)}</p>`).join("");
+  let links = [];
+  if (v.links) links = v.links.map(([n,u]) => `<a href="${u}" target="_blank" rel="noopener">${esc(n)}</a>`);
+  else {
+    links.push(`<a href="${bg(v.en, BIBLE_VER)}" target="_blank" rel="noopener">Bible Gateway 和合本（新式標點）</a>`);
+    links.push(`<a href="${bg(v.en, "CUV")}" target="_blank" rel="noopener">CUV</a>`);
+    links.push(`<a href="${bg(v.en, "KJV")}" target="_blank" rel="noopener">KJV</a>`);
+    if (v.src) links.push(`<a href="${v.src}" target="_blank" rel="noopener">維基文庫原文頁</a>`);
+  }
+  document.getElementById("vdFoot").innerHTML = links.join("");
+  if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open","");
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest(".ref"); if (b) { openVerse(b.dataset.r); return; }
+  if (e.target.closest(".vd-x") || e.target === dlg) dlg.close();
+});
+
+// auto reference list
+(() => {
+  const seen = new Set(), ol = document.getElementById("autoRefs");
+  document.querySelectorAll("main .ref").forEach(b => {
+    const k = b.dataset.r; if (seen.has(k) || !V[k]) return; seen.add(k);
+    const v = V[k], li = document.createElement("li");
+    li.innerHTML = `${esc(v.zh)}　<a href="${bg(v.en, BIBLE_VER)}" target="_blank" rel="noopener">Bible Gateway</a>${v.src ? `　<a href="${v.src}" target="_blank" rel="noopener">維基文庫</a>` : ""}`;
+    ol.appendChild(li);
+  });
+})();
+
+// progress + nav highlight
+const bar = document.getElementById("progress");
+const navLinks = [...document.querySelectorAll("nav.toc a")];
+const secs = navLinks.map(a => document.querySelector(a.getAttribute("href")));
+function onScroll(){
+  const h = document.documentElement;
+  bar.style.width = (h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight) * 100) + "%";
+  let cur = -1; secs.forEach((s,i) => { if (s && s.getBoundingClientRect().top < 120) cur = i; });
+  navLinks.forEach((a,i) => a.classList.toggle("on", i === cur));
+}
+addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+// reveal
+if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), {rootMargin:"0px 0px -8% 0px"});
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+} else document.querySelectorAll(".reveal").forEach(el => el.classList.add("in"));
+addEventListener("beforeprint", () => document.querySelectorAll(".reveal").forEach(el => el.classList.add("in")));
+</script>
+</body>
+</html>
