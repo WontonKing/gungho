@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>亞當的否認與大衛的認罪</title>
+<meta name="description" content="亞當在罪被揭露時隱藏、推卸；大衛在拿單責備時說「我得罪耶和華了」。從創世記、撒母耳記、詩篇 51 篇到耶穌的比喻，看聖經如何教導人面對自己的罪。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="亞當的否認與大衛的認罪">
+<meta property="og:description" content="面對罪的兩條道路：隱藏推卸，或認罪回轉">
+<meta property="og:url" content="https://www.gungho.idv.tw/fellowship/adam-david-repentance/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF8F1; --ink:#3a3128; --muted:#6f6355; --line:#E8DFCF; --card:#FFFDF8;
+  --gold:#B8893B; --sky:#5E8FBF; --clay:#B9562F; --olive:#6F8A5A;
+  --gold-soft:#F5EAD3; --sky-soft:#E7F0F8; --clay-soft:#F7E6DD; --olive-soft:#EAF0E2;
+  --serif:"Noto Serif TC","Songti TC",serif; --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;font-family:var(--sans);color:var(--ink);line-height:1.85;font-size:17px;
+  background:var(--bg) radial-gradient(1200px 600px at 85% -10%,rgba(184,137,59,.13),transparent 60%),
+  radial-gradient(900px 500px at -10% 20%,rgba(94,143,191,.10),transparent 60%);background-attachment:fixed}
+a{color:var(--sky)}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--sky));z-index:60}
+header.top{position:sticky;top:0;z-index:50;background:rgba(251,248,241,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:16px;padding:10px 20px}
+.brand{font-family:var(--serif);font-weight:700;white-space:nowrap;color:var(--ink);text-decoration:none}
+.brand span{color:var(--gold)}
+nav.toc{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1}
+nav.toc::-webkit-scrollbar{display:none}
+nav.toc a{font-size:14px;color:var(--muted);text-decoration:none;padding:4px 10px;border-radius:99px;white-space:nowrap}
+nav.toc a:hover,nav.toc a.on{background:var(--gold-soft);color:var(--ink)}
+main{max-width:860px;margin:0 auto;padding:0 20px 40px}
+.cover{text-align:center;padding:80px 0 50px;position:relative}
+.cover::before{content:"";position:absolute;left:50%;top:30px;width:420px;height:420px;max-width:90vw;transform:translateX(-50%);
+  background:radial-gradient(circle,rgba(245,214,150,.45),transparent 65%);z-index:-1}
+.eyebrow{display:inline-block;font-size:14px;letter-spacing:.2em;color:var(--gold);border:1px solid var(--gold);padding:2px 14px;border-radius:99px}
+h1{font-family:var(--serif);font-weight:900;font-size:clamp(32px,6vw,52px);line-height:1.3;margin:18px 0 10px}
+.sub{font-family:var(--serif);font-size:clamp(17px,2.6vw,22px);color:var(--muted);margin:0 0 24px}
+.lead{max-width:640px;margin:0 auto;color:var(--muted)}
+section{padding:46px 0 10px;border-top:1px solid var(--line)}
+.sec-no{font-family:var(--serif);color:var(--gold);font-size:15px;letter-spacing:.15em}
+h2{font-family:var(--serif);font-size:clamp(24px,4vw,32px);margin:4px 0 18px;line-height:1.4}
+h3{font-family:var(--serif);font-size:21px;margin:28px 0 10px;color:#4a3d30}
+h4{font-family:var(--serif);font-size:18px;margin:18px 0 6px}
+p{margin:10px 0}
+blockquote.scripture{margin:18px 0;padding:18px 22px;background:var(--card);border:1px solid var(--line);border-radius:14px;
+  font-family:var(--serif);font-size:19px;position:relative}
+blockquote.scripture::before{content:"“";position:absolute;left:10px;top:-14px;font-size:54px;color:var(--gold);opacity:.5}
+blockquote.scripture cite{display:block;font-style:normal;font-family:var(--sans);font-size:14px;color:var(--muted);margin-top:6px}
+.ref{font:inherit;font-size:.82em;font-family:var(--sans);border:1px solid #cfdcea;background:var(--sky-soft);color:#3d6c99;
+  padding:0 8px;border-radius:99px;cursor:pointer;line-height:1.7;vertical-align:baseline;margin:0 2px}
+.ref:hover,.ref:focus-visible{background:#d6e6f4;outline:none;box-shadow:0 0 0 2px rgba(94,143,191,.35)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:16px 0;box-shadow:0 2px 10px rgba(120,90,40,.04)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.pair .card h4{margin-top:0}
+.ctx{border-top:4px solid var(--sky)} .app{border-top:4px solid var(--olive)}
+.adam{border-top:4px solid var(--clay)} .david{border-top:4px solid var(--gold)}
+.tag{display:inline-block;font-size:13px;padding:0 10px;border-radius:99px;margin-bottom:6px}
+.tag.sky{background:var(--sky-soft);color:#3d6c99}.tag.olive{background:var(--olive-soft);color:#4f6a3d}
+.tag.clay{background:var(--clay-soft);color:#93421f}.tag.gold{background:var(--gold-soft);color:#7f5c1f}
+.pills{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0}
+.pill{background:var(--clay-soft);color:#8a3e1d;border-radius:99px;padding:4px 14px;font-size:15px}
+.pill small{opacity:.75;margin-left:4px}
+.pills .arr{color:var(--muted)}
+.pills.good .pill{background:var(--gold-soft);color:#7f5c1f}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 14px 12px;position:relative}
+.step::before{counter-increment:s;content:counter(s);position:absolute;top:-12px;left:14px;width:26px;height:26px;border-radius:50%;
+  background:var(--gold);color:#fff;font-size:14px;display:grid;place-items:center;font-weight:700}
+.step b{display:block;font-family:var(--serif);margin-top:4px}
+.step span{font-size:15px;color:var(--muted)}
+table.cmp{width:100%;border-collapse:separate;border-spacing:0;margin:16px 0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:16px}
+.cmp th,.cmp td{padding:10px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.cmp tr:last-child td{border-bottom:0}
+.cmp thead th{background:var(--gold-soft);font-family:var(--serif)}
+.cmp td:first-child{color:var(--muted);white-space:nowrap}
+.cmp .a{color:#93421f}.cmp .d{color:#7f5c1f}
+.chat{display:flex;flex-direction:column;gap:10px;margin:16px 0}
+.bubble{max-width:82%;padding:10px 16px;border-radius:16px;position:relative;font-size:16px}
+.bubble .who{display:block;font-size:13px;color:var(--muted);margin-bottom:2px}
+.bubble.l{align-self:flex-start;background:var(--sky-soft);border-bottom-left-radius:4px}
+.bubble.r{align-self:flex-end;background:var(--clay-soft);border-bottom-right-radius:4px}
+.bubble.g{align-self:flex-end;background:var(--gold-soft);border-bottom-right-radius:4px}
+.takeaway{border-left:4px solid var(--gold);padding:6px 0 6px 16px;margin:24px 0 10px;font-family:var(--serif);font-size:19px;font-weight:700}
+.aside{border:1.5px dashed #d9c49a;border-radius:12px;padding:10px 14px;margin:16px 0;font-size:15px;color:#6b5a3f;background:rgba(245,234,211,.35)}
+.aside::before{content:"旁白　";font-weight:700;color:var(--gold)}
+.reflect{background:var(--olive-soft);border-radius:14px;padding:16px 20px;margin:18px 0}
+.reflect h4{margin:0 0 6px;color:#4f6a3d}
+.reflect ol{margin:0;padding-left:1.4em}
+.prayer{background:linear-gradient(135deg,#FFF8E8,#EEF4FA);border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin:24px 0;font-family:var(--serif);font-size:18px}
+.prayer h4{margin:0 0 8px;color:var(--gold);font-size:16px;letter-spacing:.15em}
+.callout{background:var(--card);border:2px solid var(--gold);border-radius:16px;padding:16px 20px;text-align:center;font-family:var(--serif);font-size:20px;font-weight:700;margin:20px 0}
+figure.illus{margin:26px 0;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+figure.illus svg{display:block;width:100%;height:auto}
+figure.illus figcaption{padding:10px 16px;font-size:15px;color:var(--muted);border-top:1px solid var(--line)}
+ul.tight{margin:6px 0;padding-left:1.3em} ul.tight li{margin:2px 0}
+.refs h3{margin-top:22px}
+.refs ol,.refs ul{padding-left:1.4em;font-size:15px}
+.refs table{width:100%;border-collapse:collapse;font-size:15px;background:var(--card)}
+.refs td,.refs th{border:1px solid var(--line);padding:6px 10px;text-align:left}
+footer{text-align:center;color:var(--muted);font-size:14px;padding:30px 20px 50px;border-top:1px solid var(--line)}
+dialog{border:none;border-radius:18px;padding:0;max-width:620px;width:calc(100% - 32px);box-shadow:0 20px 60px rgba(60,40,10,.25);background:var(--card);color:var(--ink)}
+dialog::backdrop{background:rgba(58,49,40,.35)}
+.dlg-h{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line);background:var(--gold-soft)}
+.dlg-h h3{margin:0;font-size:19px}
+.dlg-x{border:0;background:none;font-size:24px;cursor:pointer;color:var(--muted);line-height:1}
+.dlg-b{padding:14px 22px;max-height:58vh;overflow:auto;font-family:var(--serif);font-size:17px}
+.dlg-b sup{color:var(--gold);font-family:var(--sans);font-size:12px;margin-right:3px}
+.dlg-f{padding:12px 20px 16px;border-top:1px solid var(--line);font-size:14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.dlg-f a{padding:2px 10px;border:1px solid #cfdcea;border-radius:99px;text-decoration:none;background:var(--sky-soft)}
+.dlg-f .ver{color:var(--muted);margin-right:auto}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+@media (max-width:720px){
+  body{font-size:16px}.grid2,.grid3{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}
+  .brand{display:none}.cover{padding:56px 0 36px}.bubble{max-width:92%}
+  .cmp{font-size:14px}.cmp th,.cmp td{padding:8px}
+}
+@media (max-width:420px){.steps{grid-template-columns:1fr}}
+@media print{
+  header.top,#progress,dialog{display:none!important}
+  body{background:#fff;font-size:12pt}.reveal{opacity:1;transform:none}
+  section{break-inside:auto;border-top:1px solid #ccc}figure.illus,.card,.step{break-inside:avoid}
+  .ref{border:0;background:none;padding:0;color:#333}
+}
+</style>
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+<header class="top"><div class="top-in">
+  <a class="brand" href="#top">亞當<span>與</span>大衛</a>
+  <nav class="toc" aria-label="章節導覽">
+    <a href="#s1">主題</a><a href="#s2">亞當</a><a href="#s3">大衛</a><a href="#s4">差異</a><a href="#s5">平行案例</a>
+    <a href="#s6">耶穌的教導</a><a href="#s7">赦免與後果</a><a href="#s8">今日應用</a><a href="#s9">結論</a><a href="#refs">參考資料</a>
+  </nav>
+</div></header>
+
+<main id="top">
+<div class="cover">
+  <span class="eyebrow">舊約・新約｜認罪與悔改</span>
+  <h1>亞當的否認與大衛的認罪</h1>
+  <p class="sub">面對罪的兩條道路：隱藏推卸，或認罪回轉</p>
+  <p class="lead">兩個人都違背了神，結局卻大不相同。差別不在誰的罪比較大，而在罪被揭露的那一刻，他們怎麼回應。</p>
+  <div class="pills" style="justify-content:center">
+    <button class="ref" data-r="Gen3:12">創 3:12</button>
+    <button class="ref" data-r="2Sa12:13">撒下 12:13</button>
+    <button class="ref" data-r="Ps51:1-19">詩 51</button>
+    <button class="ref" data-r="1Jn1:8-9">約壹 1:8–9</button>
+  </div>
+</div>
+
+<section id="s1" class="reveal">
+  <div class="sec-no">一</div>
+  <h2>主題與研究目的</h2>
+  <p>聖經描述罪，不只在乎「人有沒有犯罪」，更在乎「罪被揭露之後，人怎麼回應」。</p>
+  <p>亞當與大衛都是聖經中的代表人物，兩人都明確違背了上帝的旨意，屬靈結局卻很不一樣。關鍵不在罪行的大小，而在面對罪的態度。</p>
+  <div class="grid2">
+    <div class="card adam"><span class="tag clay">亞當</span><h4>墮落本性的防衛機制</h4>隱藏、推卸、合理化。</div>
+    <div class="card david"><span class="tag gold">大衛</span><h4>悔改者的道路</h4>承認、憂傷、回轉、尋求神的憐憫。</div>
+  </div>
+  <p>新約延續同樣的教導。耶穌與使徒強調：蒙恩的人不是沒有罪的人，而是願意認罪悔改的人
+    <button class="ref" data-r="Luk18:13-14">路 18:13–14</button><button class="ref" data-r="1Jn1:8-9">約壹 1:8–9</button>。</p>
+  <p class="takeaway">問題不是「你有沒有跌倒」，而是「跌倒之後，你往哪裡走」。</p>
+</section>
+
+<section id="s2" class="reveal">
+  <div class="sec-no">二</div>
+  <h2>亞當的否認與推卸責任</h2>
+  <h3>聖經記載</h3>
+  <div class="chat">
+    <div class="bubble l"><span class="who">耶和華神</span>「你在哪裡？」<button class="ref" data-r="Gen3:9-13">創 3:9</button></div>
+    <div class="bubble r"><span class="who">那人</span>「我在園中聽見你的聲音，我就害怕；因為我赤身露體，我便藏了。」</div>
+    <div class="bubble l"><span class="who">耶和華神</span>「莫非你吃了我吩咐你不可吃的那樹上的果子嗎？」</div>
+    <div class="bubble r"><span class="who">那人</span>「你所賜給我、與我同居的女人，她把那樹上的果子給我，我就吃了。」</div>
+  </div>
+  <blockquote class="scripture">你所賜給我、與我同居的女人，她把那樹上的果子給我，我就吃了。
+    <cite>創世記 3:12 <button class="ref" data-r="Gen3:12">創 3:12</button></cite></blockquote>
+  <p>上帝詢問的時候，亞當沒有直接說「我犯了罪」。他的回答裡有兩層卸責：</p>
+  <ol>
+    <li>把責任推給夏娃。</li>
+    <li>間接把責任推給上帝，因為女人是上帝所賜的。</li>
+  </ol>
+  <figure class="illus"><svg viewBox="0 0 800 340" role="img" aria-labelledby="t-garden" xmlns="http://www.w3.org/2000/svg"><title id="t-garden">傍晚的園中，涼風吹過，兩個身影藏在樹後</title><defs><linearGradient id="gs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6EEF5"/><stop offset=".75" stop-color="#F7E2C6"/></linearGradient></defs><rect width="800" height="340" fill="url(#gs)"/><circle cx="560" cy="120" r="30" fill="#F3C97E" opacity=".85"/><path d="M0,250 Q200,226 400,244 T800,236 L800,340 L0,340 Z" fill="#C9D7B4"/><path d="M60,70 q60,-18 120,0 t120,0" stroke="#9BB7D4" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/><path d="M90,104 q60,-18 120,0 t120,0" stroke="#9BB7D4" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/><path d="M120,138 q60,-18 120,0 t120,0" stroke="#9BB7D4" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/><rect x="134.0" y="196.0" width="12.0" height="70.0" rx="4.0" fill="#8A6A4A"/><circle cx="116.0" cy="174.0" r="30.0" fill="#7F9C6C"/><circle cx="162.0" cy="170.0" r="32.0" fill="#7F9C6C"/><circle cx="140" cy="146.0" r="36.0" fill="#9DB58A"/><rect x="694.6" y="199.0" width="10.8" height="63.0" rx="3.6" fill="#8A6A4A"/><circle cx="678.4" cy="179.2" r="27.0" fill="#7F9C6C"/><circle cx="719.8" cy="175.6" r="28.8" fill="#7F9C6C"/><circle cx="700" cy="154.0" r="32.4" fill="#9DB58A"/><circle cx="392" cy="202.8" r="9.450000000000001" fill="#6a5a4c"/><path d="M382.55,215.4 Q392,211.2 401.45,215.4 L407.75,270 L376.25,270 Z" fill="#6a5a4c"/><circle cx="424" cy="211.2" r="8.549999999999999" fill="#7c6a5a"/><path d="M415.45,222.6 Q424,218.8 432.55,222.6 L438.25,272 L409.75,272 Z" fill="#7c6a5a"/><rect x="400.5" y="192.5" width="15.0" height="87.5" rx="5.0" fill="#8A6A4A"/><circle cx="378.0" cy="165.0" r="37.5" fill="#89A574"/><circle cx="435.5" cy="160.0" r="40.0" fill="#89A574"/><circle cx="408" cy="130.0" r="45.0" fill="#A8BF92"/><path d="M330,282 q14,-26 28,0 M470,284 q12,-22 24,0" fill="#89A574"/><text x="786" y="328" text-anchor="end" font-size="13" fill="#7a6a55" opacity=".75" font-family="Noto Sans TC, sans-serif">象徵示意</text></svg><figcaption>「天起了涼風……那人和他妻子……就藏在園裡的樹木中，躲避耶和華神的面。」 <button class="ref" data-r="Gen3:8">創 3:8</button></figcaption></figure>
+  <h3>神學意義</h3>
+  <p>基督教傳統普遍認為，亞當在這裡表現出人犯罪後的典型模式：</p>
+  <div class="pills">
+    <span class="pill">藏匿<small>3:8</small></span><span class="arr">→</span>
+    <span class="pill">害怕<small>3:10</small></span><span class="arr">→</span>
+    <span class="pill">辯解<small>3:12</small></span><span class="arr">→</span>
+    <span class="pill">推卸<small>3:12</small></span>
+  </div>
+  <p><button class="ref" data-r="Gen3:8">創 3:8</button><button class="ref" data-r="Gen3:10">創 3:10</button><button class="ref" data-r="Gen3:12">創 3:12</button></p>
+  <p>罪不只破壞人與神的關係，也破壞人誠實面對自己的能力。</p>
+  <p>奧古斯丁在《上帝之城》第十四卷說，兩種愛造成兩座城：屬地之城出於愛自己、甚至輕看神。墮落的人本能地保護自己，而不是承認罪。</p>
+  <div class="aside">被問一個問題，亞當一口氣點名了兩位：身邊的人，還有天上的那一位。推卸責任這門功夫，人類從第一代就無師自通。</div>
+  <h3>新約的呼應</h3>
+  <p>耶穌責備法利賽人，核心不在表面行為，而在他們拒絕承認自己的罪。</p>
+  <blockquote class="scripture">我來本不是召義人悔改，乃是召罪人悔改。
+    <cite>路加福音 5:32 <button class="ref" data-r="Luk5:32">路 5:32</button></cite></blockquote>
+  <p class="takeaway">神問「你在哪裡」，不是因為祂找不到人，而是要人自己走出來。</p>
+</section>
+
+<section id="s3" class="reveal">
+  <div class="sec-no">三</div>
+  <h2>大衛的認罪與悔改</h2>
+  <h3>聖經記載</h3>
+  <p>拿單先知用一隻小母羊羔的比喻，讓大衛先對「那個富戶」動了怒，然後一句話指出真相
+    <button class="ref" data-r="2Sa12:1-13">撒下 12:1–13</button>。</p>
+  <div class="chat">
+    <div class="bubble l"><span class="who">拿單</span>「你就是那人！」</div>
+    <div class="bubble g"><span class="who">大衛</span>「我得罪耶和華了！」</div>
+    <div class="bubble l"><span class="who">拿單</span>「耶和華已經除掉你的罪，你必不至於死。」</div>
+  </div>
+  <blockquote class="scripture">我得罪耶和華了！
+    <cite>撒母耳記下 12:13 <button class="ref" data-r="2Sa12:13">撒下 12:13</button></cite></blockquote>
+  <p>這是聖經中極具代表性的悔改宣告。和亞當相比，大衛沒有責怪拔示巴，沒有責怪環境，也沒有責怪政治壓力，而是直接承擔責任。</p>
+  <h3>詩篇 51 篇的悔改模式</h3>
+  <p>詩篇 51 篇被歷代教會視為悔罪詩篇的典範 <button class="ref" data-r="Ps51:1-19">詩 51</button>。大衛的禱告有六個步驟：</p>
+  <div class="steps">
+    <div class="step"><b>承認自己的罪</b><span>「我的罪常在我面前」</span> <button class="ref" data-r="Ps51:3">51:3</button></div>
+    <div class="step"><b>承認得罪的是神</b><span>「惟獨得罪了你」</span> <button class="ref" data-r="Ps51:4">51:4</button></div>
+    <div class="step"><b>求神潔淨</b><span>「比雪更白」</span> <button class="ref" data-r="Ps51:7">51:7</button></div>
+    <div class="step"><b>求神更新內心</b><span>「造清潔的心」</span> <button class="ref" data-r="Ps51:10">51:10</button></div>
+    <div class="step"><b>求神恢復喜樂</b><span>「仍得救恩之樂」</span> <button class="ref" data-r="Ps51:12">51:12</button></div>
+    <div class="step"><b>願意見證恩典</b><span>「把你的道指教有過犯的人」</span> <button class="ref" data-r="Ps51:13">51:13</button></div>
+  </div>
+  <figure class="illus"><svg viewBox="0 0 800 340" role="img" aria-labelledby="t-hyssop" xmlns="http://www.w3.org/2000/svg"><title id="t-hyssop">牛膝草枝輕點水盆，四周飄著白雪</title><defs><linearGradient id="hs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EAF2F9"/><stop offset="1" stop-color="#FBF8F1"/></linearGradient></defs><rect width="800" height="340" fill="url(#hs)"/><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="361" y1="58" x2="367.0" y2="58.0"/><line x1="361" y1="58" x2="364.0" y2="63.2"/><line x1="361" y1="58" x2="358.0" y2="63.2"/><line x1="361" y1="58" x2="355.0" y2="58.0"/><line x1="361" y1="58" x2="358.0" y2="52.8"/><line x1="361" y1="58" x2="364.0" y2="52.8"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="696" y1="32" x2="701.0" y2="32.0"/><line x1="696" y1="32" x2="698.5" y2="36.3"/><line x1="696" y1="32" x2="693.5" y2="36.3"/><line x1="696" y1="32" x2="691.0" y2="32.0"/><line x1="696" y1="32" x2="693.5" y2="27.7"/><line x1="696" y1="32" x2="698.5" y2="27.7"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="578" y1="44" x2="584.0" y2="44.0"/><line x1="578" y1="44" x2="581.0" y2="49.2"/><line x1="578" y1="44" x2="575.0" y2="49.2"/><line x1="578" y1="44" x2="572.0" y2="44.0"/><line x1="578" y1="44" x2="575.0" y2="38.8"/><line x1="578" y1="44" x2="581.0" y2="38.8"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="626" y1="34" x2="634.0" y2="34.0"/><line x1="626" y1="34" x2="630.0" y2="40.9"/><line x1="626" y1="34" x2="622.0" y2="40.9"/><line x1="626" y1="34" x2="618.0" y2="34.0"/><line x1="626" y1="34" x2="622.0" y2="27.1"/><line x1="626" y1="34" x2="630.0" y2="27.1"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="249" y1="29" x2="254.0" y2="29.0"/><line x1="249" y1="29" x2="251.5" y2="33.3"/><line x1="249" y1="29" x2="246.5" y2="33.3"/><line x1="249" y1="29" x2="244.0" y2="29.0"/><line x1="249" y1="29" x2="246.5" y2="24.7"/><line x1="249" y1="29" x2="251.5" y2="24.7"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="474" y1="127" x2="479.0" y2="127.0"/><line x1="474" y1="127" x2="476.5" y2="131.3"/><line x1="474" y1="127" x2="471.5" y2="131.3"/><line x1="474" y1="127" x2="469.0" y2="127.0"/><line x1="474" y1="127" x2="471.5" y2="122.7"/><line x1="474" y1="127" x2="476.5" y2="122.7"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="276" y1="43" x2="284.0" y2="43.0"/><line x1="276" y1="43" x2="280.0" y2="49.9"/><line x1="276" y1="43" x2="272.0" y2="49.9"/><line x1="276" y1="43" x2="268.0" y2="43.0"/><line x1="276" y1="43" x2="272.0" y2="36.1"/><line x1="276" y1="43" x2="280.0" y2="36.1"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="464" y1="35" x2="472.0" y2="35.0"/><line x1="464" y1="35" x2="468.0" y2="41.9"/><line x1="464" y1="35" x2="460.0" y2="41.9"/><line x1="464" y1="35" x2="456.0" y2="35.0"/><line x1="464" y1="35" x2="460.0" y2="28.1"/><line x1="464" y1="35" x2="468.0" y2="28.1"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="156" y1="77" x2="164.0" y2="77.0"/><line x1="156" y1="77" x2="160.0" y2="83.9"/><line x1="156" y1="77" x2="152.0" y2="83.9"/><line x1="156" y1="77" x2="148.0" y2="77.0"/><line x1="156" y1="77" x2="152.0" y2="70.1"/><line x1="156" y1="77" x2="160.0" y2="70.1"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="672" y1="169" x2="677.0" y2="169.0"/><line x1="672" y1="169" x2="674.5" y2="173.3"/><line x1="672" y1="169" x2="669.5" y2="173.3"/><line x1="672" y1="169" x2="667.0" y2="169.0"/><line x1="672" y1="169" x2="669.5" y2="164.7"/><line x1="672" y1="169" x2="674.5" y2="164.7"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="620" y1="169" x2="626.0" y2="169.0"/><line x1="620" y1="169" x2="623.0" y2="174.2"/><line x1="620" y1="169" x2="617.0" y2="174.2"/><line x1="620" y1="169" x2="614.0" y2="169.0"/><line x1="620" y1="169" x2="617.0" y2="163.8"/><line x1="620" y1="169" x2="623.0" y2="163.8"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="80" y1="76" x2="85.0" y2="76.0"/><line x1="80" y1="76" x2="82.5" y2="80.3"/><line x1="80" y1="76" x2="77.5" y2="80.3"/><line x1="80" y1="76" x2="75.0" y2="76.0"/><line x1="80" y1="76" x2="77.5" y2="71.7"/><line x1="80" y1="76" x2="82.5" y2="71.7"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="600" y1="54" x2="606.0" y2="54.0"/><line x1="600" y1="54" x2="603.0" y2="59.2"/><line x1="600" y1="54" x2="597.0" y2="59.2"/><line x1="600" y1="54" x2="594.0" y2="54.0"/><line x1="600" y1="54" x2="597.0" y2="48.8"/><line x1="600" y1="54" x2="603.0" y2="48.8"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="459" y1="56" x2="467.0" y2="56.0"/><line x1="459" y1="56" x2="463.0" y2="62.9"/><line x1="459" y1="56" x2="455.0" y2="62.9"/><line x1="459" y1="56" x2="451.0" y2="56.0"/><line x1="459" y1="56" x2="455.0" y2="49.1"/><line x1="459" y1="56" x2="463.0" y2="49.1"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="150" y1="166" x2="156.0" y2="166.0"/><line x1="150" y1="166" x2="153.0" y2="171.2"/><line x1="150" y1="166" x2="147.0" y2="171.2"/><line x1="150" y1="166" x2="144.0" y2="166.0"/><line x1="150" y1="166" x2="147.0" y2="160.8"/><line x1="150" y1="166" x2="153.0" y2="160.8"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="603" y1="194" x2="608.0" y2="194.0"/><line x1="603" y1="194" x2="605.5" y2="198.3"/><line x1="603" y1="194" x2="600.5" y2="198.3"/><line x1="603" y1="194" x2="598.0" y2="194.0"/><line x1="603" y1="194" x2="600.5" y2="189.7"/><line x1="603" y1="194" x2="605.5" y2="189.7"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="135" y1="168" x2="143.0" y2="168.0"/><line x1="135" y1="168" x2="139.0" y2="174.9"/><line x1="135" y1="168" x2="131.0" y2="174.9"/><line x1="135" y1="168" x2="127.0" y2="168.0"/><line x1="135" y1="168" x2="131.0" y2="161.1"/><line x1="135" y1="168" x2="139.0" y2="161.1"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="684" y1="68" x2="690.0" y2="68.0"/><line x1="684" y1="68" x2="687.0" y2="73.2"/><line x1="684" y1="68" x2="681.0" y2="73.2"/><line x1="684" y1="68" x2="678.0" y2="68.0"/><line x1="684" y1="68" x2="681.0" y2="62.8"/><line x1="684" y1="68" x2="687.0" y2="62.8"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="129" y1="160" x2="137.0" y2="160.0"/><line x1="129" y1="160" x2="133.0" y2="166.9"/><line x1="129" y1="160" x2="125.0" y2="166.9"/><line x1="129" y1="160" x2="121.0" y2="160.0"/><line x1="129" y1="160" x2="125.0" y2="153.1"/><line x1="129" y1="160" x2="133.0" y2="153.1"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="94" y1="164" x2="99.0" y2="164.0"/><line x1="94" y1="164" x2="96.5" y2="168.3"/><line x1="94" y1="164" x2="91.5" y2="168.3"/><line x1="94" y1="164" x2="89.0" y2="164.0"/><line x1="94" y1="164" x2="91.5" y2="159.7"/><line x1="94" y1="164" x2="96.5" y2="159.7"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="663" y1="72" x2="669.0" y2="72.0"/><line x1="663" y1="72" x2="666.0" y2="77.2"/><line x1="663" y1="72" x2="660.0" y2="77.2"/><line x1="663" y1="72" x2="657.0" y2="72.0"/><line x1="663" y1="72" x2="660.0" y2="66.8"/><line x1="663" y1="72" x2="666.0" y2="66.8"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="726" y1="156" x2="732.0" y2="156.0"/><line x1="726" y1="156" x2="729.0" y2="161.2"/><line x1="726" y1="156" x2="723.0" y2="161.2"/><line x1="726" y1="156" x2="720.0" y2="156.0"/><line x1="726" y1="156" x2="723.0" y2="150.8"/><line x1="726" y1="156" x2="729.0" y2="150.8"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="351" y1="139" x2="359.0" y2="139.0"/><line x1="351" y1="139" x2="355.0" y2="145.9"/><line x1="351" y1="139" x2="347.0" y2="145.9"/><line x1="351" y1="139" x2="343.0" y2="139.0"/><line x1="351" y1="139" x2="347.0" y2="132.1"/><line x1="351" y1="139" x2="355.0" y2="132.1"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="494" y1="112" x2="500.0" y2="112.0"/><line x1="494" y1="112" x2="497.0" y2="117.2"/><line x1="494" y1="112" x2="491.0" y2="117.2"/><line x1="494" y1="112" x2="488.0" y2="112.0"/><line x1="494" y1="112" x2="491.0" y2="106.8"/><line x1="494" y1="112" x2="497.0" y2="106.8"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="284" y1="66" x2="292.0" y2="66.0"/><line x1="284" y1="66" x2="288.0" y2="72.9"/><line x1="284" y1="66" x2="280.0" y2="72.9"/><line x1="284" y1="66" x2="276.0" y2="66.0"/><line x1="284" y1="66" x2="280.0" y2="59.1"/><line x1="284" y1="66" x2="288.0" y2="59.1"/></g><g stroke="#9BB7D4" stroke-width="1.6" stroke-linecap="round" opacity=".85"><line x1="279" y1="40" x2="287.0" y2="40.0"/><line x1="279" y1="40" x2="283.0" y2="46.9"/><line x1="279" y1="40" x2="275.0" y2="46.9"/><line x1="279" y1="40" x2="271.0" y2="40.0"/><line x1="279" y1="40" x2="275.0" y2="33.1"/><line x1="279" y1="40" x2="283.0" y2="33.1"/></g><ellipse cx="400" cy="296" rx="150" ry="22" fill="#E7D6BD"/><path d="M260,262 Q400,346 540,262 Z" fill="#B9562F" opacity=".85"/><ellipse cx="400" cy="262" rx="140" ry="18" fill="#CFE0EE"/><ellipse cx="400" cy="262" rx="140" ry="18" fill="none" stroke="#9a4626" stroke-width="3"/><path d="M470,110 Q430,160 400,236" stroke="#6F8A5A" stroke-width="4" fill="none" stroke-linecap="round"/><ellipse cx="480" cy="114" rx="11" ry="5" fill="#8BA672" transform="rotate(-30 480 114)"/><ellipse cx="446" cy="130" rx="11" ry="5" fill="#8BA672" transform="rotate(30 446 130)"/><ellipse cx="460" cy="146" rx="11" ry="5" fill="#8BA672" transform="rotate(-30 460 146)"/><ellipse cx="426" cy="162" rx="11" ry="5" fill="#8BA672" transform="rotate(30 426 162)"/><ellipse cx="440" cy="180" rx="11" ry="5" fill="#8BA672" transform="rotate(-30 440 180)"/><ellipse cx="406" cy="198" rx="11" ry="5" fill="#8BA672" transform="rotate(30 406 198)"/><ellipse cx="422" cy="214" rx="11" ry="5" fill="#8BA672" transform="rotate(-30 422 214)"/><circle cx="472" cy="104" r="4" fill="#F1F1F6" stroke="#C9B8D8"/><circle cx="480" cy="112" r="4" fill="#F1F1F6" stroke="#C9B8D8"/><circle cx="466" cy="98" r="4" fill="#F1F1F6" stroke="#C9B8D8"/><path d="M402,238 q4,6 0,8 q-4,-2 0,-8 Z" fill="#8FB3D6"/><path d="M396,246 q4,6 0,8 q-4,-2 0,-8 Z" fill="#8FB3D6"/><path d="M408,248 q4,6 0,8 q-4,-2 0,-8 Z" fill="#8FB3D6"/><text x="786" y="328" text-anchor="end" font-size="13" fill="#7a6a55" opacity=".75" font-family="Noto Sans TC, sans-serif">象徵示意</text></svg><figcaption>「求你用牛膝草潔淨我，我就乾淨；求你洗滌我，我就比雪更白。」 <button class="ref" data-r="Ps51:7">詩 51:7</button></figcaption></figure>
+  <h3>基督教教義觀點</h3>
+  <p>真正的悔改（Repentance）不只是後悔（Regret）。《西敏斯德小要理問答》第 87 問這樣說明：</p>
+  <blockquote class="scripture">悔改得生命乃是神的恩典，使罪人因真覺悟自己的罪，又認識基督的憐憫，就憂傷恨惡自己的罪，歸向神，立志並努力順服祂。
+    <cite>《西敏斯德小要理問答》第 87 問（中譯）</cite></blockquote>
+  <div class="grid3">
+    <div class="card"><span class="tag sky">思想</span><h4>思想改變</h4>看清罪是罪，也看見基督的憐憫。</div>
+    <div class="card"><span class="tag gold">心志</span><h4>心志轉向</h4>憂傷恨惡自己的罪，歸向神。</div>
+    <div class="card"><span class="tag olive">行為</span><h4>行為更新</h4>立志並努力順服。</div>
+  </div>
+  <p class="takeaway">「我得罪耶和華了」只有六個字，卻是一個人不再替自己辯護的開始。</p>
+</section>
+
+<section id="s4" class="reveal">
+  <div class="sec-no">四</div>
+  <h2>亞當與大衛的核心差異</h2>
+  <table class="cmp">
+    <thead><tr><th>面向</th><th>亞當</th><th>大衛</th></tr></thead>
+    <tbody>
+      <tr><td>犯罪後反應</td><td class="a">躲藏</td><td class="d">面對</td></tr>
+      <tr><td>被質問時</td><td class="a">推卸責任</td><td class="d">承認責任</td></tr>
+      <tr><td>對罪的態度</td><td class="a">自我保護</td><td class="d">自我省察</td></tr>
+      <tr><td>與神的關係</td><td class="a">逃避神</td><td class="d">回轉向神</td></tr>
+      <tr><td>屬靈模式</td><td class="a">否認</td><td class="d">悔改</td></tr>
+      <tr><td>結果</td><td class="a">審判與放逐</td><td class="d">赦免與恢復</td></tr>
+    </tbody>
+  </table>
+  <div class="callout">人得救不是因為沒有失敗，而是因為在失敗中轉向神。</div>
+  <div class="reflect"><h4>省察</h4><ol>
+    <li>最近一次被指出錯誤時，我的第一句話是什麼？</li>
+    <li>我比較常說「我錯了」，還是「可是……」？</li>
+  </ol></div>
+  <p class="takeaway">同樣站在罪被揭開的那一刻，一個人往樹叢裡躲，一個人往神面前走。</p>
+</section>
+
+<section id="s5" class="reveal">
+  <div class="sec-no">五</div>
+  <h2>聖經中的平行案例</h2>
+  <h3>否認與推卸類型</h3>
+  <div class="grid3">
+    <div class="card adam"><span class="tag clay">該隱</span><h4>否認與冷漠</h4>
+      「我不知道！我豈是看守我兄弟的嗎？」<br><button class="ref" data-r="Gen4:9">創 4:9</button></div>
+    <div class="card adam"><span class="tag clay">亞倫</span><h4>淡化自身責任</h4>
+      面對金牛犢事件，把原因推給百姓，說牛犢是從火裡「出來」的。<br><button class="ref" data-r="Exo32:22-24">出 32:22–24</button></div>
+    <div class="card adam"><span class="tag clay">掃羅</span><h4>表面認罪，維護權威</h4>
+      「百姓卻在所當滅的物中取了最好的牛羊。」<br><button class="ref" data-r="1Sa15:20-24">撒上 15:20–24</button></div>
+  </div>
+  <div class="aside">金環扔進火裡，「這牛犢便出來了」，大概是歷史上最早的「系統自動生成，與我無關」。</div>
+  <p>掃羅後來雖然說了「我有罪了」，緊接著卻求撒母耳「在百姓的長老和以色列人面前抬舉我」<button class="ref" data-r="1Sa15:30">撒上 15:30</button>。嘴上認罪，心裡掛念的仍是自己的位置。</p>
+  <h3>悔改與回轉類型</h3>
+  <div class="grid3">
+    <div class="card david"><span class="tag gold">彼得</span><h4>痛哭後被恢復</h4>
+      三次不認主之後出去痛哭 <button class="ref" data-r="Luk22:61-62">路 22:61–62</button>；後來在提比哩亞海邊被主恢復 <button class="ref" data-r="Joh21:15-19">約 21:15–19</button>。</div>
+    <div class="card david"><span class="tag gold">稅吏</span><h4>只求憐憫</h4>
+      「神啊，開恩可憐我這個罪人！」耶穌說他比法利賽人更算為義。<br><button class="ref" data-r="Luk18:13">路 18:13</button></div>
+    <div class="card david"><span class="tag gold">浪子</span><h4>回到父親懷抱</h4>
+      「我得罪了天，又得罪了你。」<br><button class="ref" data-r="Luk15:18-20">路 15:18–20</button></div>
+  </div>
+  <figure class="illus"><svg viewBox="0 0 800 340" role="img" aria-labelledby="t-rooster" xmlns="http://www.w3.org/2000/svg"><title id="t-rooster">破曉時分，院中火光尚存，牆頭公雞啼叫</title><defs><linearGradient id="rs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCE6F0"/><stop offset="1" stop-color="#FBE7C6"/></linearGradient><radialGradient id="fg"><stop offset="0" stop-color="#F6C46A" stop-opacity=".75"/><stop offset="1" stop-color="#F6C46A" stop-opacity="0"/></radialGradient></defs><rect width="800" height="340" fill="url(#rs)"/><circle cx="640" cy="96" r="30" fill="#F2B866" opacity=".8"/><path d="M0,190 L800,190 L800,340 L0,340 Z" fill="#EADBC2"/><rect x="0" y="176" width="800" height="70" fill="#D9C4A3"/><line x1="0" y1="176" x2="0" y2="246" stroke="#c7b08c" stroke-width="2"/><line x1="64" y1="176" x2="64" y2="246" stroke="#c7b08c" stroke-width="2"/><line x1="128" y1="176" x2="128" y2="246" stroke="#c7b08c" stroke-width="2"/><line x1="192" y1="176" x2="192" y2="246" stroke="#c7b08c" stroke-width="2"/><line x1="256" y1="176" x2="256" y2="246" stroke="#c7b08c" stroke-width="2"/><line x1="320" y1="176" x2="320" y2="246" stroke="#c7b08c" stroke-width="2"/><line x1="384" y1="176" x2="384" y2="246" stroke="#c7b08c" stroke-width="2"/><line x1="448" y1="176" x2="448" y2="246" stroke="#c7b08c" stroke-width="2"/><line x1="512" y1="176" x2="512" y2="246" stroke="#c7b08c" stroke-width="2"/><line x1="576" y1="176" x2="576" y2="246" stroke="#c7b08c" stroke-width="2"/><line x1="640" y1="176" x2="640" y2="246" stroke="#c7b08c" stroke-width="2"/><line x1="704" y1="176" x2="704" y2="246" stroke="#c7b08c" stroke-width="2"/><line x1="768" y1="176" x2="768" y2="246" stroke="#c7b08c" stroke-width="2"/><line x1="0" y1="211" x2="800" y2="211" stroke="#c7b08c" stroke-width="2"/><g fill="#6b4a36"><ellipse cx="480" cy="152" rx="26" ry="18"/><circle cx="504" cy="130" r="10"/><path d="M500,121 q3,-10 7,-2 q3,-8 6,1 q4,-4 4,4 Z" fill="#B9562F"/><path d="M513,128 l10,3 l-10,4 Z" fill="#B8893B"/><path d="M458,146 Q430,112 446,104 Q450,128 466,140 Z"/><path d="M458,152 Q426,132 434,118 Q446,142 466,150 Z"/></g><path d="M474,168 L470,176 M488,168 L490,176" stroke="#6b4a36" stroke-width="3"/><path d="M528,124 q10,-6 16,-2 M530,132 q12,-2 18,4" stroke="#B8893B" stroke-width="2" fill="none" opacity=".7"/><circle cx="220" cy="270" r="90" fill="url(#fg)"/><path d="M180,298 L260,298" stroke="#8A6A4A" stroke-width="8" stroke-linecap="round"/><path d="M188,292 L252,304 M252,292 L188,304" stroke="#7a5b3d" stroke-width="6" stroke-linecap="round"/><path d="M220,232 C240,256 250,276 232,294 L208,294 C192,276 202,256 220,232 Z" fill="#E8833A"/><path d="M220,254 C230,268 232,282 224,294 L214,294 C208,282 210,268 220,254 Z" fill="#F6C46A"/><circle cx="326.3" cy="255.6" r="8.1" fill="#7a6656"/><path d="M314.6,261.0 Q325.4,257.4 330.8,264.6 L333.5,306 L307.4,306 Z" fill="#7a6656"/><path d="M327.2,266.4 Q321.8,273.6 323.6,279.0" stroke="#7a6656" stroke-width="3.6" fill="none" stroke-linecap="round"/><text x="786" y="328" text-anchor="end" font-size="13" fill="#7a6a55" opacity=".75" font-family="Noto Sans TC, sans-serif">象徵示意</text></svg><figcaption>「正說話之間，雞就叫了。」主轉過身來看彼得，彼得就出去痛哭。 <button class="ref" data-r="Luk22:60-62">路 22:60–62</button></figcaption></figure>
+  <figure class="illus"><svg viewBox="0 0 800 340" role="img" aria-labelledby="t-prodigal" xmlns="http://www.w3.org/2000/svg"><title id="t-prodigal">遠處山坡上的家，父親張開雙臂跑向路上的兒子</title><defs><linearGradient id="ps" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EAF1F7"/><stop offset="1" stop-color="#FBEFD9"/></linearGradient></defs><rect width="800" height="340" fill="url(#ps)"/><circle cx="520" cy="66" r="28" fill="#F3CF8C" opacity=".85"/><path d="M0,210 Q180,150 420,170 T800,130 L800,340 L0,340 Z" fill="#D6E2C1"/><path d="M0,260 Q260,220 520,240 T800,220 L800,340 L0,340 Z" fill="#C3D3A8"/><path d="M120,340 C200,290 300,260 380,240 S560,190 640,150" stroke="#EBDCC0" stroke-width="22" fill="none" stroke-linecap="round"/><rect x="640" y="104" width="70" height="46" fill="#EFE3CC" stroke="#B9562F" stroke-width="2"/><path d="M632,106 L675,78 L718,106 Z" fill="#B9562F"/><rect x="668" y="124" width="14" height="26" fill="#B8893B"/><rect x="757.3" y="128.5" width="5.4" height="31.5" rx="1.8" fill="#8A6A4A"/><circle cx="749.2" cy="118.6" r="13.5" fill="#7F9C6C"/><circle cx="769.9" cy="116.8" r="14.4" fill="#7F9C6C"/><circle cx="760" cy="106.0" r="16.2" fill="#9DB58A"/><circle cx="556.8" cy="144.8" r="7.2" fill="#6a5a4c"/><path d="M550.4,154.4 Q558.4,151.2 564.8,154.4 L571.2,192.8 L561.6,196 L555.2,186.4 L547.2,196 L542.4,191.2 Z" fill="#6a5a4c"/><path d="M552.0,157.6 L536.0,146.4 M563.2,157.6 L550.4,140.0" stroke="#6a5a4c" stroke-width="4.0" stroke-linecap="round"/><circle cx="251.5" cy="242.0" r="6.75" fill="#8a7765"/><path d="M244.0,251.0 Q251.5,248.0 257.5,251.0 L262.0,285.5 L254.5,290 L248.5,282.5 L242.5,290 L239.5,285.5 Z" fill="#8a7765"/><line x1="257.5" y1="252.5" x2="265.0" y2="290" stroke="#8a6a4a" stroke-width="1.7999999999999998" stroke-linecap="round"/><text x="786" y="328" text-anchor="end" font-size="13" fill="#7a6a55" opacity=".75" font-family="Noto Sans TC, sans-serif">象徵示意</text></svg><figcaption>「相離還遠，他父親看見，就動了慈心，跑去抱著他的頸項。」 <button class="ref" data-r="Luk15:20">路 15:20</button></figcaption></figure>
+  <p class="takeaway">否認的人一路替自己找出口，悔改的人一路走回家。</p>
+</section>
+
+<section id="s6" class="reveal">
+  <div class="sec-no">六</div>
+  <h2>耶穌基督的教導</h2>
+  <h3>八福中的悔改精神</h3>
+  <blockquote class="scripture">哀慟的人有福了！因為他們必得安慰。
+    <cite>馬太福音 5:4 <button class="ref" data-r="Mat5:4">太 5:4</button></cite></blockquote>
+  <p>這裡的哀慟不只是人生的痛苦，也包含為罪憂傷。</p>
+  <h3>法利賽人與稅吏的比喻</h3>
+  <p><button class="ref" data-r="Luk18:9-14">路 18:9–14</button></p>
+  <div class="grid2">
+    <div class="card adam"><span class="tag clay">法利賽人</span><ul class="tight"><li>自我稱義</li><li>強調自己做得多好</li></ul></div>
+    <div class="card david"><span class="tag gold">稅吏</span><ul class="tight"><li>承認自己有罪</li><li>求神憐憫</li></ul></div>
+  </div>
+  <p>耶穌宣告：後者回家去，比前者倒算為義了。</p>
+  <figure class="illus"><svg viewBox="0 0 800 340" role="img" aria-labelledby="t-temple" xmlns="http://www.w3.org/2000/svg"><title id="t-temple">殿中一人挺立禱告，一人遠遠站著低頭捶胸</title><defs><linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4EADA"/><stop offset="1" stop-color="#FBF8F1"/></linearGradient><linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF4D6" stop-opacity=".9"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0"/></linearGradient></defs><rect width="800" height="340" fill="url(#ts)"/><rect x="0" y="40" width="800" height="22" fill="#E3D2B4"/><rect x="44" y="62" width="32" height="210" fill="#EFE4D0" stroke="#D8C5A5"/><rect x="38" y="56" width="44" height="10" fill="#D8C5A5"/><rect x="38" y="268" width="44" height="10" fill="#D8C5A5"/><rect x="164" y="62" width="32" height="210" fill="#EFE4D0" stroke="#D8C5A5"/><rect x="158" y="56" width="44" height="10" fill="#D8C5A5"/><rect x="158" y="268" width="44" height="10" fill="#D8C5A5"/><rect x="284" y="62" width="32" height="210" fill="#EFE4D0" stroke="#D8C5A5"/><rect x="278" y="56" width="44" height="10" fill="#D8C5A5"/><rect x="278" y="268" width="44" height="10" fill="#D8C5A5"/><rect x="404" y="62" width="32" height="210" fill="#EFE4D0" stroke="#D8C5A5"/><rect x="398" y="56" width="44" height="10" fill="#D8C5A5"/><rect x="398" y="268" width="44" height="10" fill="#D8C5A5"/><rect x="524" y="62" width="32" height="210" fill="#EFE4D0" stroke="#D8C5A5"/><rect x="518" y="56" width="44" height="10" fill="#D8C5A5"/><rect x="518" y="268" width="44" height="10" fill="#D8C5A5"/><rect x="644" y="62" width="32" height="210" fill="#EFE4D0" stroke="#D8C5A5"/><rect x="638" y="56" width="44" height="10" fill="#D8C5A5"/><rect x="638" y="268" width="44" height="10" fill="#D8C5A5"/><rect x="764" y="62" width="32" height="210" fill="#EFE4D0" stroke="#D8C5A5"/><rect x="758" y="56" width="44" height="10" fill="#D8C5A5"/><rect x="758" y="268" width="44" height="10" fill="#D8C5A5"/><rect x="0" y="278" width="800" height="62" fill="#E6D7BD"/><path d="M600,62 L700,62 L760,300 L560,300 Z" fill="url(#beam)"/><circle cx="250" cy="223.2" r="10.799999999999999" fill="#7b6a5a"/><path d="M239.2,237.6 Q250,232.8 260.8,237.6 L268.0,300 L232.0,300 Z" fill="#7b6a5a"/><path d="M236,236 L222,214 M264,236 L278,214" stroke="#7b6a5a" stroke-width="6" stroke-linecap="round"/><circle cx="665.6" cy="251.2" r="7.2" fill="#5f5247"/><path d="M655.2,256.0 Q664.8,252.8 669.6,259.2 L672.0,296 L648.8,296 Z" fill="#5f5247"/><path d="M666.4,260.8 Q661.6,267.2 663.2,272.0" stroke="#5f5247" stroke-width="3.2" fill="none" stroke-linecap="round"/><text x="786" y="328" text-anchor="end" font-size="13" fill="#7a6a55" opacity=".75" font-family="Noto Sans TC, sans-serif">象徵示意</text></svg><figcaption>「那稅吏遠遠地站著，連舉目望天也不敢，只捶著胸。」 <button class="ref" data-r="Luk18:13">路 18:13</button></figcaption></figure>
+  <h3>主禱文</h3>
+  <blockquote class="scripture">免我們的債，如同我們免了人的債。
+    <cite>馬太福音 6:12 <button class="ref" data-r="Mat6:12">太 6:12</button></cite></blockquote>
+  <p>主禱文表明，持續認罪是門徒日常生活的一部分。</p>
+  <h3>十字架上的禱告與應許</h3>
+  <p>耶穌被釘十字架時，同釘的還有兩個犯人，一個在左邊，一個在右邊 <button class="ref" data-r="Luk23:33-34">路 23:33–34</button>。在極大的痛苦中，耶穌開口先為人代求：</p>
+  <blockquote class="scripture">父啊，赦免他們，因為他們所做的，他們不曉得。
+    <cite>路加福音 23:34 <button class="ref" data-r="Luk23:33-34">路 23:34</button></cite></blockquote>
+  <p>這個禱告是為那些把祂釘上十字架的人說的。兩個犯人就在旁邊，親耳聽見赦免的禱告；在最黑暗的時刻，恩典的門仍然敞開。面對同一位主，兩人的回應卻完全不同 <button class="ref" data-r="Luk23:39-43">路 23:39–43</button>：</p>
+  <div class="grid2">
+    <div class="card adam"><span class="tag clay">譏誚的犯人</span><h4>到死仍要求證明</h4>「你不是基督嗎？可以救自己和我們吧！」沒有一句承認自己的罪，只要神照自己的意思行事。</div>
+    <div class="card david"><span class="tag gold">認罪的犯人</span><h4>承認罪有應得，投靠主</h4>「我們是應該的，因我們所受的與我們所做的相稱。」他不替自己辯護，轉而仰望耶穌。</div>
+  </div>
+  <div class="chat">
+    <div class="bubble g"><span class="who">認罪的犯人</span>「耶穌啊，你得國降臨的時候，求你記念我！」</div>
+    <div class="bubble l"><span class="who">耶穌</span>「我實在告訴你，今日你要同我在樂園裡了。」<button class="ref" data-r="Luk23:42-43">路 23:42–43</button></div>
+  </div>
+  <p>這個人已經來不及做任何彌補，手裡只有一句誠實的認罪和一句仰望的求告，耶穌卻給了他樂園的應許。同樣在十字架上、同樣面對死亡，一個人替自己找出口，一個人把自己交給主的憐憫，正是亞當與大衛兩條道路最後、也最清楚的對照。</p>
+  <figure class="illus"><svg viewBox="0 0 800 340" role="img" aria-labelledby="t-crosses" xmlns="http://www.w3.org/2000/svg"><title id="t-crosses">黃昏山丘上三個十字架的遠景剪影</title><defs><linearGradient id="cs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCE3EC"/><stop offset=".7" stop-color="#F6E1C4"/></linearGradient><radialGradient id="cg"><stop offset="0" stop-color="#F6CF86" stop-opacity=".55"/><stop offset="1" stop-color="#F6CF86" stop-opacity="0"/></radialGradient></defs><rect width="800" height="340" fill="url(#cs)"/><circle cx="400" cy="150" r="170" fill="url(#cg)"/><path d="M0,300 Q200,280 300,230 Q400,190 500,230 Q600,280 800,300 L800,340 L0,340 Z" fill="#C9C0AE"/><path d="M0,320 Q400,296 800,320 L800,340 L0,340 Z" fill="#B9AE98"/><rect x="395.0" y="52" width="10.0" height="150" fill="#6a5a4c"/><rect x="362.0" y="78.0" width="76.0" height="9.0" fill="#6a5a4c"/><rect x="296.0" y="120" width="8.0" height="112" fill="#6a5a4c"/><rect x="269.6" y="140.8" width="60.800000000000004" height="7.2" fill="#6a5a4c"/><rect x="496.0" y="120" width="8.0" height="112" fill="#6a5a4c"/><rect x="469.6" y="140.8" width="60.800000000000004" height="7.2" fill="#6a5a4c"/><text x="786" y="328" text-anchor="end" font-size="13" fill="#7a6a55" opacity=".75" font-family="Noto Sans TC, sans-serif">象徵示意</text></svg><figcaption>「就在那裡把耶穌釘在十字架上，又釘了兩個犯人，一個在左邊，一個在右邊。」 <button class="ref" data-r="Luk23:33-34">路 23:33</button></figcaption></figure>
+  <p class="takeaway">耶穌教門徒天天求赦免；在十字架上，祂親自為人代求，也把樂園的應許給了一個認罪的犯人。</p>
+</section>
+
+<section id="s7" class="reveal">
+  <div class="sec-no">七</div>
+  <h2>認罪、赦免與後果</h2>
+  <p>聖經把「罪責被赦免」與「承擔後果」分開來看。</p>
+  <div class="grid2 pair">
+    <div class="card ctx"><span class="tag sky">經文脈絡</span><h4>赦免罪責</h4>
+      「我們若認自己的罪，神是信實的，是公義的，必要赦免我們的罪，洗淨我們一切的不義。」<button class="ref" data-r="1Jn1:9">約壹 1:9</button><br>
+      大衛認罪時，拿單立刻宣告：「耶和華已經除掉你的罪。」<button class="ref" data-r="2Sa12:13">撒下 12:13</button></div>
+    <div class="card app"><span class="tag olive">經文脈絡</span><h4>承擔後果</h4>
+      大衛雖蒙赦免，仍承受孩子的死亡、家中的刀劍與紛爭 <button class="ref" data-r="2Sa12:10-14">撒下 12:10–14</button>，以及押沙龍叛變帶來的王國動盪 <button class="ref" data-r="2Sa15:13-14">撒下 15:13–14</button>。</div>
+  </div>
+  <div class="grid2 pair">
+    <div class="card app"><span class="tag olive">靈修應用</span><h4>不必背著罪責活</h4>認了的罪，神是信實的。不必一再把已蒙赦免的罪翻出來定自己的罪。</div>
+    <div class="card app"><span class="tag olive">靈修應用</span><h4>也不輕看後果</h4>蒙赦免不等於沒事發生。誠實修補關係、承擔該承擔的，正是悔改結出的果子。</div>
+  </div>
+  <div class="callout">神赦免罪，不一定立刻移除罪所帶來的一切後果。</div>
+</section>
+
+<section id="s8" class="reveal">
+  <div class="sec-no">八</div>
+  <h2>屬靈反思與今日應用</h2>
+  <p>亞當與大衛代表兩條道路。</p>
+  <div class="grid2">
+    <div class="card adam"><span class="tag clay">亞當道路</span><ul class="tight"><li>找理由</li><li>找替罪羊</li><li>保護形象</li><li>逃避責任</li></ul></div>
+    <div class="card david"><span class="tag gold">大衛道路</span><ul class="tight"><li>承認問題</li><li>承擔責任</li><li>尋求赦免</li><li>接受更新</li></ul></div>
+  </div>
+  <div class="aside">小孩打破杯子，第一句常是「它自己掉下去的」。大人只是把同一句話講得比較長、比較專業。</div>
+  <figure class="illus"><svg viewBox="0 0 800 340" role="img" aria-labelledby="t-twopaths" xmlns="http://www.w3.org/2000/svg"><title id="t-twopaths">分岔的路：一邊通往荊棘陰影，一邊通往晨光</title><defs><linearGradient id="ws" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#D9D6DD"/><stop offset=".55" stop-color="#F2EBDD"/><stop offset="1" stop-color="#FBE3B8"/></linearGradient><radialGradient id="sg"><stop offset="0" stop-color="#F6CF86" stop-opacity=".8"/><stop offset="1" stop-color="#F6CF86" stop-opacity="0"/></radialGradient></defs><rect width="800" height="340" fill="url(#ws)"/><circle cx="640" cy="120" r="110" fill="url(#sg)"/><circle cx="640" cy="120" r="34" fill="#F2B866"/><path d="M0,200 Q400,180 800,196 L800,340 L0,340 Z" fill="#DCE3C9"/><path d="M40,206 q-10,-40 6,-70 q-16,-10 -4,-30 M46,170 q16,-8 22,-30 M42,150 q-18,-6 -24,-22" stroke="#7d7488" stroke-width="4" fill="none" stroke-linecap="round" opacity=".8"/><path d="M90,206 q-10,-40 6,-70 q-16,-10 -4,-30 M96,170 q16,-8 22,-30 M92,150 q-18,-6 -24,-22" stroke="#7d7488" stroke-width="4" fill="none" stroke-linecap="round" opacity=".8"/><path d="M140,206 q-10,-40 6,-70 q-16,-10 -4,-30 M146,170 q16,-8 22,-30 M142,150 q-18,-6 -24,-22" stroke="#7d7488" stroke-width="4" fill="none" stroke-linecap="round" opacity=".8"/><path d="M190,206 q-10,-40 6,-70 q-16,-10 -4,-30 M196,170 q16,-8 22,-30 M192,150 q-18,-6 -24,-22" stroke="#7d7488" stroke-width="4" fill="none" stroke-linecap="round" opacity=".8"/><ellipse cx="120" cy="210" rx="140" ry="22" fill="#B9B3C0" opacity=".6"/><path d="M400,340 C400,300 390,270 360,250 C320,226 240,216 170,214" stroke="#E6D9BF" stroke-width="20" fill="none" stroke-linecap="round"/><path d="M400,340 C410,296 440,262 500,236 C560,212 600,200 640,196" stroke="#F1E5CA" stroke-width="20" fill="none" stroke-linecap="round"/><circle cx="398" cy="289.2" r="6.3" fill="#6a5a4c"/><path d="M391.7,297.6 Q398,294.8 404.3,297.6 L408.5,334 L387.5,334 Z" fill="#6a5a4c"/><text x="786" y="328" text-anchor="end" font-size="13" fill="#7a6a55" opacity=".75" font-family="Noto Sans TC, sans-serif">象徵示意</text></svg><figcaption>「神阻擋驕傲的人，賜恩給謙卑的人。」 <button class="ref" data-r="Jas4:6">雅 4:6</button></figcaption></figure>
+  <p>基督徒靈修傳統普遍認為，成熟的屬靈生命不是「永不犯罪」，而是「一犯罪就願意回到神面前」。</p>
+  <div class="reflect"><h4>省察</h4><ol>
+    <li>有沒有一件事，我一直在等「時機對了」才承認？</li>
+    <li>我身邊是否有一位「拿單」，願意對我說真話？我是否也願意聽？</li>
+    <li>今天，我可以用哪一句話代替「可是……」？</li>
+  </ol></div>
+  <p class="takeaway">成熟不是不再跌倒，而是跌倒之後回頭的路越來越短。</p>
+</section>
+
+<section id="s9" class="reveal">
+  <div class="sec-no">九</div>
+  <h2>結論</h2>
+  <p>亞當與大衛最大的差別，不在誰的罪比較大，而在面對罪的態度。</p>
+  <p>亞當象徵墮落人性的自然反應：隱藏、推卸與自我辯護。大衛展現悔改者的道路：承認、憂傷、回轉，並信靠神的憐憫。</p>
+  <p>整本聖經與耶穌基督的教導一致指出：</p>
+  <blockquote class="scripture">神阻擋驕傲的人，賜恩給謙卑的人。
+    <cite>雅各書 4:6；彼得前書 5:5 <button class="ref" data-r="Jas4:6">雅 4:6</button><button class="ref" data-r="1Pe5:5">彼前 5:5</button></cite></blockquote>
+  <p>所以基督信仰的核心，不是證明自己無罪，而是在神面前誠實承認自己的罪，並藉著基督得著赦免與更新。</p>
+  <div class="prayer"><h4>回應禱告</h4>
+    天父，我常像亞當一樣躲在樹叢裡，替自己找理由，把責任推給別人。求你賜我大衛的心，在你面前說「我得罪了你」。
+    求你為我造清潔的心，使我裡面重新有正直的靈；也賜我勇氣，去承擔該承擔的、修補該修補的。
+    謝謝你在基督裡應許：我們若認自己的罪，你是信實的，是公義的，必要赦免。奉主耶穌基督的名，阿們。
+    <div style="margin-top:8px"><button class="ref" data-r="Ps51:10">詩 51:10</button><button class="ref" data-r="1Jn1:9">約壹 1:9</button></div>
+  </div>
+  <p class="takeaway">神所要的祭就是憂傷的靈；憂傷痛悔的心，祂必不輕看。<button class="ref" data-r="Ps51:17">詩 51:17</button></p>
+</section>
+
+<section id="refs" class="refs reveal">
+  <div class="sec-no">參考資料</div>
+  <h2>經文與出處</h2>
+  <h3>本頁經文連結（依出現順序）</h3>
+  <ol id="autoRefs"></ol>
+  <h3>可溯源主要經文</h3>
+  <table>
+    <thead><tr><th>#</th><th>經文</th><th>內容</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><button class="ref" data-r="Gen3:9-13">創 3:9–13</button></td><td>亞當與夏娃推卸責任</td></tr>
+      <tr><td>2</td><td><button class="ref" data-r="Gen4:9">創 4:9</button></td><td>該隱否認</td></tr>
+      <tr><td>3</td><td><button class="ref" data-r="Exo32:22-24">出 32:22–24</button></td><td>亞倫推諉</td></tr>
+      <tr><td>4</td><td><button class="ref" data-r="1Sa15:20-24">撒上 15:20–24</button></td><td>掃羅辯解</td></tr>
+      <tr><td>5</td><td><button class="ref" data-r="2Sa12:1-13">撒下 12:1–13</button></td><td>拿單責備大衛</td></tr>
+      <tr><td>6</td><td><button class="ref" data-r="Ps51:1-19">詩 51</button></td><td>大衛悔罪詩</td></tr>
+      <tr><td>7</td><td><button class="ref" data-r="Luk18:9-14">路 18:9–14</button></td><td>法利賽人與稅吏</td></tr>
+      <tr><td>8</td><td><button class="ref" data-r="Luk22:54-62">路 22:54–62</button></td><td>彼得否認主</td></tr>
+      <tr><td>9</td><td><button class="ref" data-r="Joh21:15-19">約 21:15–19</button></td><td>彼得復和</td></tr>
+      <tr><td>10</td><td><button class="ref" data-r="1Jn1:9">約壹 1:9</button></td><td>認罪與赦免</td></tr>
+      <tr><td>11</td><td><button class="ref" data-r="Jas4:6">雅 4:6</button></td><td>神賜恩給謙卑的人</td></tr>
+      <tr><td>12</td><td><button class="ref" data-r="Mat5:4">太 5:4</button>、<button class="ref" data-r="Mat6:12">太 6:12</button></td><td>哀慟的人有福；主禱文</td></tr>
+      <tr><td>13</td><td><button class="ref" data-r="Luk23:33-34">路 23:33–34</button>、<button class="ref" data-r="Luk23:39-43">路 23:39–43</button></td><td>十字架上的禱告；兩個犯人</td></tr>
+    </tbody>
+  </table>
+  <h3>其他出處</h3>
+  <ul>
+    <li>《西敏斯德小要理問答》第 87 問（英文原文）：<a href="https://bpc.org/sc-q87" target="_blank" rel="noopener">bpc.org</a></li>
+    <li>奧古斯丁《上帝之城》第十四卷第 28 章（英譯，NPNF）：<a href="https://ccel.org/ccel/schaff/npnf102.iv.XIV.28.html" target="_blank" rel="noopener">CCEL</a></li>
+  </ul>
+  <h3>和合本線上資源</h3>
+  <ul>
+    <li>信望愛站聖經工具：<a href="https://bible.fhl.net/" target="_blank" rel="noopener">bible.fhl.net</a></li>
+    <li>Bible Gateway（新標點和合本 CUVMPT、和合本 CUV）：<a href="https://www.biblegateway.com/" target="_blank" rel="noopener">biblegateway.com</a></li>
+  </ul>
+  <p style="font-size:14px;color:var(--muted)">本頁經文採用《和合本》新式標點（公有領域）。插圖皆為象徵示意，不描繪神的形像。</p>
+</section>
+</main>
+
+<footer>亞當的否認與大衛的認罪 ・ 面對罪的兩條道路：隱藏推卸，或認罪回轉</footer>
+
+<dialog id="dlg" aria-labelledby="dlgT">
+  <div class="dlg-h"><h3 id="dlgT"></h3><button class="dlg-x" aria-label="關閉" onclick="dlg.close()">×</button></div>
+  <div class="dlg-b" id="dlgB"></div>
+  <div class="dlg-f" id="dlgF"></div>
+</dialog>
+
+<script>
+const BIBLE_VER = "CUVMPT";
+const V = {
+"Gen3:12": {
+"zh": "創世記 3:12",
+"en": "Genesis 3:12",
+"v": [
+[
+12,
+"那人說：「你所賜給我、與我同居的女人，她把那樹上的果子給我，我就吃了。」"
+]
+]
+},
+"2Sa12:13": {
+"zh": "撒母耳記下 12:13",
+"en": "2 Samuel 12:13",
+"v": [
+[
+13,
+"大衛對拿單說：「我得罪耶和華了！」拿單說：「耶和華已經除掉你的罪，你必不至於死。"
+]
+]
+},
+"Ps51:1-19": {
+"zh": "詩篇 51:1–19",
+"en": "Psalm 51:1-19",
+"v": [
+[
+1,
+"神啊，求你按你的慈愛憐恤我！按你豐盛的慈悲塗抹我的過犯！"
+],
+[
+2,
+"求你將我的罪孽洗除淨盡，並潔除我的罪！"
+],
+[
+3,
+"因為，我知道我的過犯；我的罪常在我面前。"
+],
+[
+4,
+"我向你犯罪，惟獨得罪了你，在你眼前行了這惡，以致你責備我的時候顯為公義，判斷我的時候顯為清正。"
+],
+[
+5,
+"我是在罪孽裡生的，在我母親懷胎的時候就有了罪。"
+],
+[
+6,
+"你所喜愛的是內裡誠實；你在我隱密處，必使我得智慧。"
+],
+[
+7,
+"求你用牛膝草潔淨我，我就乾淨；求你洗滌我，我就比雪更白。"
+],
+[
+8,
+"求你使我得聽歡喜快樂的聲音，使你所壓傷的骨頭可以踴躍。"
+],
+[
+9,
+"求你掩面不看我的罪，塗抹我一切的罪孽。"
+],
+[
+10,
+"神啊，求你為我造清潔的心，使我裡面重新有正直的靈。"
+],
+[
+11,
+"不要丟棄我，使我離開你的面；不要從我收回你的聖靈。"
+],
+[
+12,
+"求你使我仍得救恩之樂，賜我樂意的靈扶持我，"
+],
+[
+13,
+"我就把你的道指教有過犯的人，罪人必歸順你。"
+],
+[
+14,
+"神啊，你是拯救我的神；求你救我脫離流人血的罪！我的舌頭就高聲歌唱你的公義。"
+],
+[
+15,
+"主啊，求你使我嘴唇張開，我的口便傳揚讚美你的話。"
+],
+[
+16,
+"你本不喜愛祭物，若喜愛，我就獻上；燔祭，你也不喜悅。"
+],
+[
+17,
+"神所要的祭就是憂傷的靈；神啊，憂傷痛悔的心，你必不輕看。"
+],
+[
+18,
+"求你隨你的美意善待錫安，建造耶路撒冷的城牆。"
+],
+[
+19,
+"那時，你必喜愛公義的祭和燔祭並全牲的燔祭；那時，人必將公牛獻在你壇上。"
+]
+]
+},
+"1Jn1:8-9": {
+"zh": "約翰一書 1:8–9",
+"en": "1 John 1:8-9",
+"v": [
+[
+8,
+"我們若說自己無罪，便是自欺，真理不在我們心裡了。"
+],
+[
+9,
+"我們若認自己的罪，神是信實的，是公義的，必要赦免我們的罪，洗淨我們一切的不義。"
+]
+]
+},
+"Luk18:13-14": {
+"zh": "路加福音 18:13–14",
+"en": "Luke 18:13-14",
+"v": [
+[
+13,
+"那稅吏遠遠地站著，連舉目望天也不敢，只捶著胸說：『神啊，開恩可憐我這個罪人！』"
+],
+[
+14,
+"我告訴你們，這人回家去比那人倒算為義了。因為，凡自高的，必降為卑；自卑的，必升為高。」"
+]
+]
+},
+"Gen3:9-13": {
+"zh": "創世記 3:9–13",
+"en": "Genesis 3:9-13",
+"v": [
+[
+9,
+"耶和華神呼喚那人，對他說：「你在哪裡？」"
+],
+[
+10,
+"他說：「我在園中聽見你的聲音，我就害怕；因為我赤身露體，我便藏了。」"
+],
+[
+11,
+"耶和華說：「誰告訴你赤身露體呢？莫非你吃了我吩咐你不可吃的那樹上的果子嗎？」"
+],
+[
+12,
+"那人說：「你所賜給我、與我同居的女人，她把那樹上的果子給我，我就吃了。」"
+],
+[
+13,
+"耶和華神對女人說：「你做的是什麼事呢？」女人說：「那蛇引誘我，我就吃了。」"
+]
+]
+},
+"Gen3:8": {
+"zh": "創世記 3:8",
+"en": "Genesis 3:8",
+"v": [
+[
+8,
+"天起了涼風，耶和華神在園中行走。那人和他妻子聽見神的聲音，就藏在園裡的樹木中，躲避耶和華神的面。"
+]
+]
+},
+"Gen3:10": {
+"zh": "創世記 3:10",
+"en": "Genesis 3:10",
+"v": [
+[
+10,
+"他說：「我在園中聽見你的聲音，我就害怕；因為我赤身露體，我便藏了。」"
+]
+]
+},
+"Luk5:32": {
+"zh": "路加福音 5:32",
+"en": "Luke 5:32",
+"v": [
+[
+32,
+"我來本不是召義人悔改，乃是召罪人悔改。"
+]
+]
+},
+"2Sa12:1-13": {
+"zh": "撒母耳記下 12:1–13",
+"en": "2 Samuel 12:1-13",
+"v": [
+[
+1,
+"耶和華差遣拿單去見大衛。拿單到了大衛那裡，對他說：「在一座城裡有兩個人：一個是富戶，一個是窮人。"
+],
+[
+2,
+"富戶有許多牛群羊群；"
+],
+[
+3,
+"窮人除了所買來養活的一隻小母羊羔之外，別無所有。羊羔在他家裡和他兒女一同長大，吃他所吃的，喝他所喝的，睡在他懷中，在他看來如同女兒一樣。"
+],
+[
+4,
+"有一客人來到這富戶家裡；富戶捨不得從自己的牛群羊群中取一隻預備給客人吃，卻取了那窮人的羊羔，預備給客人吃。」"
+],
+[
+5,
+"大衛就甚惱怒那人，對拿單說：「我指著永生的耶和華起誓，行這事的人該死！"
+],
+[
+6,
+"他必償還羊羔四倍；因為他行這事，沒有憐恤的心。」"
+],
+[
+7,
+"拿單對大衛說：「你就是那人！耶和華以色列的神如此說：『我膏你作以色列的王，救你脫離掃羅的手。"
+],
+[
+8,
+"我將你主人的家業賜給你，將你主人的妻交在你懷裡，又將以色列和猶大家賜給你；你若還以為不足，我早就加倍地賜給你。"
+],
+[
+9,
+"你為什麼藐視耶和華的命令，行他眼中看為惡的事呢？你藉亞捫人的刀殺害赫人烏利亞，又娶了他的妻為妻。"
+],
+[
+10,
+"你既藐視我，娶了赫人烏利亞的妻為妻，所以刀劍必永不離開你的家。』"
+],
+[
+11,
+"耶和華如此說：『我必從你家中興起禍患攻擊你。我必在你眼前把你的妃嬪賜給別人，他在日光之下就與她們同寢。"
+],
+[
+12,
+"你在暗中行這事，我卻要在以色列眾人面前、日光之下報應你。』」"
+],
+[
+13,
+"大衛對拿單說：「我得罪耶和華了！」拿單說：「耶和華已經除掉你的罪，你必不至於死。"
+]
+]
+},
+"Ps51:3": {
+"zh": "詩篇 51:3",
+"en": "Psalm 51:3",
+"v": [
+[
+3,
+"因為，我知道我的過犯；我的罪常在我面前。"
+]
+]
+},
+"Ps51:4": {
+"zh": "詩篇 51:4",
+"en": "Psalm 51:4",
+"v": [
+[
+4,
+"我向你犯罪，惟獨得罪了你，在你眼前行了這惡，以致你責備我的時候顯為公義，判斷我的時候顯為清正。"
+]
+]
+},
+"Ps51:7": {
+"zh": "詩篇 51:7",
+"en": "Psalm 51:7",
+"v": [
+[
+7,
+"求你用牛膝草潔淨我，我就乾淨；求你洗滌我，我就比雪更白。"
+]
+]
+},
+"Ps51:10": {
+"zh": "詩篇 51:10",
+"en": "Psalm 51:10",
+"v": [
+[
+10,
+"神啊，求你為我造清潔的心，使我裡面重新有正直的靈。"
+]
+]
+},
+"Ps51:12": {
+"zh": "詩篇 51:12",
+"en": "Psalm 51:12",
+"v": [
+[
+12,
+"求你使我仍得救恩之樂，賜我樂意的靈扶持我，"
+]
+]
+},
+"Ps51:13": {
+"zh": "詩篇 51:13",
+"en": "Psalm 51:13",
+"v": [
+[
+13,
+"我就把你的道指教有過犯的人，罪人必歸順你。"
+]
+]
+},
+"Gen4:9": {
+"zh": "創世記 4:9",
+"en": "Genesis 4:9",
+"v": [
+[
+9,
+"耶和華對該隱說：「你兄弟亞伯在哪裡？」他說：「我不知道！我豈是看守我兄弟的嗎？」"
+]
+]
+},
+"Exo32:22-24": {
+"zh": "出埃及記 32:22–24",
+"en": "Exodus 32:22-24",
+"v": [
+[
+22,
+"亞倫說：「求我主不要發烈怒。這百姓專於作惡，是你知道的。"
+],
+[
+23,
+"他們對我說：『你為我們做神像，可以在我們前面引路；因為領我們出埃及地的那個摩西，我們不知道他遭了什麼事。』"
+],
+[
+24,
+"我對他們說：『凡有金環的可以摘下來』；他們就給了我。我把金環扔在火中，這牛犢便出來了。」"
+]
+]
+},
+"1Sa15:20-24": {
+"zh": "撒母耳記上 15:20–24",
+"en": "1 Samuel 15:20-24",
+"v": [
+[
+20,
+"掃羅對撒母耳說：「我實在聽從了耶和華的命，行了耶和華所差遣我行的路，擒了亞瑪力王亞甲來，滅盡了亞瑪力人。"
+],
+[
+21,
+"百姓卻在所當滅的物中取了最好的牛羊，要在吉甲獻與耶和華你的神。」"
+],
+[
+22,
+"撒母耳說：「耶和華喜悅燔祭和平安祭，豈如喜悅人聽從他的話呢？聽命勝於獻祭；順從勝於公羊的脂油。"
+],
+[
+23,
+"悖逆的罪與行邪術的罪相等；頑梗的罪與拜虛神和偶像的罪相同。你既厭棄耶和華的命令，耶和華也厭棄你作王。」"
+],
+[
+24,
+"掃羅對撒母耳說：「我有罪了！我因懼怕百姓，聽從他們的話，就違背了耶和華的命令和你的言語。"
+]
+]
+},
+"1Sa15:30": {
+"zh": "撒母耳記上 15:30",
+"en": "1 Samuel 15:30",
+"v": [
+[
+30,
+"掃羅說：「我有罪了；雖然如此，求你在百姓的長老和以色列人面前抬舉我，同我回去，我好敬拜耶和華你的神。」"
+]
+]
+},
+"Luk22:61-62": {
+"zh": "路加福音 22:61–62",
+"en": "Luke 22:61-62",
+"v": [
+[
+61,
+"主轉過身來看彼得。彼得便想起主對他所說的話：「今日雞叫以先，你要三次不認我。」"
+],
+[
+62,
+"他就出去痛哭。"
+]
+]
+},
+"Joh21:15-19": {
+"zh": "約翰福音 21:15–19",
+"en": "John 21:15-19",
+"v": [
+[
+15,
+"他們吃完了早飯，耶穌對西門彼得說：「約翰的兒子西門，你愛我比這些更深嗎？」彼得說：「主啊，是的，你知道我愛你。」耶穌對他說：「你餵養我的小羊。」"
+],
+[
+16,
+"耶穌第二次又對他說：「約翰的兒子西門，你愛我嗎？」彼得說：「主啊，是的，你知道我愛你。」耶穌說：「你牧養我的羊。」"
+],
+[
+17,
+"第三次對他說：「約翰的兒子西門，你愛我嗎？」彼得因為耶穌第三次對他說「你愛我嗎？」就憂愁，對耶穌說：「主啊，你是無所不知的；你知道我愛你。」耶穌說：「你餵養我的羊。"
+],
+[
+18,
+"我實實在在地告訴你，你年少的時候，自己束上帶子，隨意往來；但年老的時候，你要伸出手來，別人要把你束上，帶你到不願意去的地方。」"
+],
+[
+19,
+"（耶穌說這話是指著彼得要怎樣死，榮耀神。）說了這話，就對他說：「你跟從我吧！」"
+]
+]
+},
+"Luk18:13": {
+"zh": "路加福音 18:13",
+"en": "Luke 18:13",
+"v": [
+[
+13,
+"那稅吏遠遠地站著，連舉目望天也不敢，只捶著胸說：『神啊，開恩可憐我這個罪人！』"
+]
+]
+},
+"Luk15:18-20": {
+"zh": "路加福音 15:18–20",
+"en": "Luke 15:18-20",
+"v": [
+[
+18,
+"我要起來，到我父親那裡去，向他說：『父親！我得罪了天，又得罪了你；"
+],
+[
+19,
+"從今以後，我不配稱為你的兒子，把我當作一個雇工吧！』"
+],
+[
+20,
+"於是起來，往他父親那裡去。相離還遠，他父親看見，就動了慈心，跑去抱著他的頸項，連連與他親嘴。"
+]
+]
+},
+"Luk22:60-62": {
+"zh": "路加福音 22:60–62",
+"en": "Luke 22:60-62",
+"v": [
+[
+60,
+"彼得說：「你這個人，我不曉得你說的是什麼！」正說話之間，雞就叫了。"
+],
+[
+61,
+"主轉過身來看彼得。彼得便想起主對他所說的話：「今日雞叫以先，你要三次不認我。」"
+],
+[
+62,
+"他就出去痛哭。"
+]
+]
+},
+"Luk15:20": {
+"zh": "路加福音 15:20",
+"en": "Luke 15:20",
+"v": [
+[
+20,
+"於是起來，往他父親那裡去。相離還遠，他父親看見，就動了慈心，跑去抱著他的頸項，連連與他親嘴。"
+]
+]
+},
+"Mat5:4": {
+"zh": "馬太福音 5:4",
+"en": "Matthew 5:4",
+"v": [
+[
+4,
+"哀慟的人有福了！因為他們必得安慰。"
+]
+]
+},
+"Luk18:9-14": {
+"zh": "路加福音 18:9–14",
+"en": "Luke 18:9-14",
+"v": [
+[
+9,
+"耶穌向那些仗著自己是義人，藐視別人的，設一個比喻，"
+],
+[
+10,
+"說：「有兩個人上殿裡去禱告：一個是法利賽人，一個是稅吏。"
+],
+[
+11,
+"法利賽人站著，自言自語地禱告說：『神啊，我感謝你，我不像別人勒索、不義、姦淫，也不像這個稅吏。"
+],
+[
+12,
+"我一個禮拜禁食兩次，凡我所得的都捐上十分之一。』"
+],
+[
+13,
+"那稅吏遠遠地站著，連舉目望天也不敢，只捶著胸說：『神啊，開恩可憐我這個罪人！』"
+],
+[
+14,
+"我告訴你們，這人回家去比那人倒算為義了。因為，凡自高的，必降為卑；自卑的，必升為高。」"
+]
+]
+},
+"Mat6:12": {
+"zh": "馬太福音 6:12",
+"en": "Matthew 6:12",
+"v": [
+[
+12,
+"免我們的債，如同我們免了人的債。"
+]
+]
+},
+"Luk23:33-34": {
+"zh": "路加福音 23:33–34",
+"en": "Luke 23:33-34",
+"v": [
+[
+33,
+"到了一個地方，名叫「髑髏地」，就在那裡把耶穌釘在十字架上，又釘了兩個犯人，一個在左邊，一個在右邊。"
+],
+[
+34,
+"當下耶穌說：「父啊，赦免他們，因為他們所做的，他們不曉得。」兵丁就拈鬮分他的衣服。"
+]
+]
+},
+"Luk23:39-43": {
+"zh": "路加福音 23:39–43",
+"en": "Luke 23:39-43",
+"v": [
+[
+39,
+"那同釘的兩個犯人，有一個譏誚他，說：「你不是基督嗎？可以救自己和我們吧！」"
+],
+[
+40,
+"那一個就應聲責備他，說：「你既是一樣受刑的，還不怕神嗎？"
+],
+[
+41,
+"我們是應該的，因我們所受的與我們所做的相稱，但這個人沒有做過一件不好的事。」"
+],
+[
+42,
+"就說：「耶穌啊，你得國降臨的時候，求你記念我！」"
+],
+[
+43,
+"耶穌對他說：「我實在告訴你，今日你要同我在樂園裡了。」"
+]
+]
+},
+"Luk23:42-43": {
+"zh": "路加福音 23:42–43",
+"en": "Luke 23:42-43",
+"v": [
+[
+42,
+"就說：「耶穌啊，你得國降臨的時候，求你記念我！」"
+],
+[
+43,
+"耶穌對他說：「我實在告訴你，今日你要同我在樂園裡了。」"
+]
+]
+},
+"1Jn1:9": {
+"zh": "約翰一書 1:9",
+"en": "1 John 1:9",
+"v": [
+[
+9,
+"我們若認自己的罪，神是信實的，是公義的，必要赦免我們的罪，洗淨我們一切的不義。"
+]
+]
+},
+"2Sa12:10-14": {
+"zh": "撒母耳記下 12:10–14",
+"en": "2 Samuel 12:10-14",
+"v": [
+[
+10,
+"你既藐視我，娶了赫人烏利亞的妻為妻，所以刀劍必永不離開你的家。』"
+],
+[
+11,
+"耶和華如此說：『我必從你家中興起禍患攻擊你。我必在你眼前把你的妃嬪賜給別人，他在日光之下就與她們同寢。"
+],
+[
+12,
+"你在暗中行這事，我卻要在以色列眾人面前、日光之下報應你。』」"
+],
+[
+13,
+"大衛對拿單說：「我得罪耶和華了！」拿單說：「耶和華已經除掉你的罪，你必不至於死。"
+],
+[
+14,
+"只是你行這事，叫耶和華的仇敵大得褻瀆的機會，故此，你所得的孩子必定要死。」"
+]
+]
+},
+"2Sa15:13-14": {
+"zh": "撒母耳記下 15:13–14",
+"en": "2 Samuel 15:13-14",
+"v": [
+[
+13,
+"有人報告大衛說：「以色列人的心都歸向押沙龍了。」"
+],
+[
+14,
+"大衛就對耶路撒冷跟隨他的臣僕說：「我們要起來逃走，不然都不能躲避押沙龍了。要速速地去，恐怕他忽然來到，加害於我們，用刀殺盡合城的人。」"
+]
+]
+},
+"Jas4:6": {
+"zh": "雅各書 4:6",
+"en": "James 4:6",
+"v": [
+[
+6,
+"但他賜更多的恩典，所以經上說：「神阻擋驕傲的人，賜恩給謙卑的人。」"
+]
+]
+},
+"1Pe5:5": {
+"zh": "彼得前書 5:5",
+"en": "1 Peter 5:5",
+"v": [
+[
+5,
+"你們年幼的，也要順服年長的。就是你們眾人也都要以謙卑束腰，彼此順服；因為神阻擋驕傲的人，賜恩給謙卑的人。"
+]
+]
+},
+"Ps51:17": {
+"zh": "詩篇 51:17",
+"en": "Psalm 51:17",
+"v": [
+[
+17,
+"神所要的祭就是憂傷的靈；神啊，憂傷痛悔的心，你必不輕看。"
+]
+]
+},
+"Luk22:54-62": {
+"zh": "路加福音 22:54–62",
+"en": "Luke 22:54-62",
+"v": [
+[
+54,
+"他們拿住耶穌，把他帶到大祭司的宅裡。彼得遠遠地跟著。"
+],
+[
+55,
+"他們在院子裡生了火，一同坐著，彼得也坐在他們中間。"
+],
+[
+56,
+"有一個使女看見彼得坐在火光裡，就定睛看他，說：「這個人素來也是同那人一夥的。」"
+],
+[
+57,
+"彼得卻不承認，說：「女子，我不認得他。」"
+],
+[
+58,
+"過了不多的時候，又有一個人看見他，說：「你也是他們一黨的。」彼得說：「你這個人，我不是。」"
+],
+[
+59,
+"約過了一小時，又有一個人極力地說：「他實在是同那人一夥的，因為他也是加利利人。」"
+],
+[
+60,
+"彼得說：「你這個人，我不曉得你說的是什麼！」正說話之間，雞就叫了。"
+],
+[
+61,
+"主轉過身來看彼得。彼得便想起主對他所說的話：「今日雞叫以先，你要三次不認我。」"
+],
+[
+62,
+"他就出去痛哭。"
+]
+]
+}
+};
+const bg = (en, ver) => `https://www.biblegateway.com/passage/?search=${encodeURIComponent(en)}&version=${ver}`;
+const dlg = document.getElementById("dlg");
+function openRef(k){
+  const v = V[k]; if(!v) return;
+  document.getElementById("dlgT").textContent = v.zh;
+  document.getElementById("dlgB").innerHTML = v.v.map(([n,t])=>`<p><sup>${n}</sup>${t}</p>`).join("");
+  let f = `<span class="ver">${v.ver || "和合本（新標點）"}</span>`;
+  if(v.links){ f += v.links.map(([n,u])=>`<a href="${u}" target="_blank" rel="noopener">${n}</a>`).join(""); }
+  else{
+    f += `<a href="${bg(v.en,BIBLE_VER)}" target="_blank" rel="noopener">Bible Gateway ${BIBLE_VER}</a>`;
+    f += `<a href="${bg(v.en,"CUV")}" target="_blank" rel="noopener">CUV</a>`;
+    f += `<a href="${bg(v.en,"KJV")}" target="_blank" rel="noopener">KJV</a>`;
+    if(v.src) f += `<a href="${v.src}" target="_blank" rel="noopener">原報告來源</a>`;
+  }
+  document.getElementById("dlgF").innerHTML = f;
+  dlg.showModal();
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest(".ref"); if(b){ openRef(b.dataset.r); }
+});
+dlg.addEventListener("click", e => { if(e.target === dlg) dlg.close(); });
+// 參考資料自動列表
+(() => {
+  const seen = new Set(), ol = document.getElementById("autoRefs");
+  document.querySelectorAll("main .ref").forEach(b => {
+    const k = b.dataset.r; if(seen.has(k) || !V[k]) return; seen.add(k);
+    const v = V[k], li = document.createElement("li");
+    li.innerHTML = `${v.zh}：<a href="${bg(v.en,BIBLE_VER)}" target="_blank" rel="noopener">${v.en}</a>`;
+    ol.appendChild(li);
+  });
+})();
+// 進度條、導覽高亮、淡入
+const prog = document.getElementById("progress");
+const links = [...document.querySelectorAll("nav.toc a")];
+addEventListener("scroll", () => {
+  const h = document.documentElement; prog.style.width = (h.scrollTop/(h.scrollHeight-h.clientHeight)*100) + "%";
+}, {passive:true});
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if(e.isIntersecting){
+    e.target.classList.add("in");
+    links.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#"+e.target.id));
+  }
+}), {rootMargin:"-30% 0px -60% 0px"});
+document.querySelectorAll("section").forEach(s => io.observe(s));
+const io2 = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting) e.target.classList.add("in"); }), {threshold:.05});
+document.querySelectorAll(".reveal").forEach(s => io2.observe(s));
+</script>
+</body>
+</html>
