@@ -21,6 +21,7 @@ window.SITE_CONFIG = {
   notesHeading: "讀經筆記",
 
   notes: [
+{  title: "傳道書中的人生提點",  subtitle: "在有限的日光之下，忠實工作、愛人、行善與感恩",  url: "ecclesiastes-life-lessons/",},    
 {  title: "亞當的否認與大衛的認罪",  subtitle: "面對罪的兩條道路：隱藏推卸，或認罪回轉",  url: "adam-david-repentance/",},
 {  title: "箴言中的人生智慧",  subtitle: "",  url: "proverbs-life-wisdom/",},    
 {  title: "從赤身到白衣：從眼睛明亮到真正看見",   subtitle: " ",   url: "naked-to-white-robe/", },    
