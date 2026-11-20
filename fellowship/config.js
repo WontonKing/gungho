@@ -21,6 +21,7 @@ window.SITE_CONFIG = {
   notesHeading: "讀經筆記",
 
   notes: [
+{  title: "聖經中的赤裸、坦誠、羞恥與白衣",  subtitle: "從羞恥與遮掩，到在基督裡領受義袍白衣",  url: "nakedness-shame-white-robe/",},    
 {  title: "傳道書中的人生提點",  subtitle: "在有限的日光之下，忠實工作、愛人、行善與感恩",  url: "ecclesiastes-life-lessons/",},    
 {  title: "亞當的否認與大衛的認罪",  subtitle: "面對罪的兩條道路：隱藏推卸，或認罪回轉",  url: "adam-david-repentance/",},
 {  title: "箴言中的人生智慧",  subtitle: "",  url: "proverbs-life-wisdom/",},    
