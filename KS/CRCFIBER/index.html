@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2455c7">
+<title>多吃纖維，真能防大腸癌？｜共好小學堂</title>
+<meta name="description" content="整理WCRF與傘狀回顧的證據等級，看懂全穀纖維、蔬果、紅肉加工肉與大腸癌的關係，附纖維小算盤、分類遊戲與台灣篩檢資訊。">
+<link rel="canonical" href="https://www.gungho.idv.tw/KS/CRCFIBER/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="多吃纖維，真能防大腸癌？｜共好小學堂">
+<meta property="og:description" content="整理WCRF與傘狀回顧的證據等級，看懂全穀纖維、蔬果、紅肉加工肉與大腸癌的關係，附纖維小算盤、分類遊戲與台灣篩檢資訊。">
+<meta property="og:url" content="https://www.gungho.idv.tw/KS/CRCFIBER/">
+<meta property="og:site_name" content="共好小學堂">
+<meta property="og:locale" content="zh_TW">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 130'%3E%3Cpath d='M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z' fill='%235ad6a4' stroke='%231f2a44' stroke-width='4'/%3E%3Cpath d='M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z' fill='%237ee3b8' stroke='%231f2a44' stroke-width='4'/%3E%3Cellipse cx='60' cy='88' rx='40' ry='38' fill='%237ee3b8' stroke='%231f2a44' stroke-width='5'/%3E%3Ccircle cx='46' cy='84' r='5' fill='%231f2a44'/%3E%3Ccircle cx='74' cy='84' r='5' fill='%231f2a44'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#2455c7;--blue-d:#173a8f;--blue-l:#e6eeff;--sun:#ffc93c;--sun-l:#fff5d6;--coral:#ff6b6b;--coral-l:#ffe5e5;--mint:#2bb88a;--mint-l:#dcf7ec;--grape:#8a5cf6;--grape-l:#efe8ff;--sky:#38b6ff;--sky-l:#e0f4ff;--orange:#ff9f43;--orange-l:#fff0e0;--ink:#1f2a44;--ink-2:#4a5674;--line:#e3e8f3;--bg:#fffdf7}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC",system-ui,sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden}
+h1,h2,h3,.hn{font-family:"Huninn","Noto Sans TC",sans-serif;font-weight:400;line-height:1.35}
+a{color:var(--blue)}
+img,svg{max-width:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.hl{background:linear-gradient(transparent 58%,var(--sun) 58%);padding:0 .1em;white-space:nowrap}
+/* top bar */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.95);backdrop-filter:blur(6px);border-bottom:3px solid var(--ink)}
+.topbar .wrap{display:flex;align-items:center;gap:14px;padding-top:8px;padding-bottom:8px}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink)}
+.brand svg{width:38px;height:40px}
+.brand b{font-family:Huninn,sans-serif;font-weight:400;font-size:19px;display:block;line-height:1.1}
+.brand small{font-size:10px;letter-spacing:.12em;color:var(--ink-2)}
+.navpills{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.navpills a{font-size:14px;text-decoration:none;color:var(--ink);border:2px solid var(--ink);border-radius:99px;padding:2px 12px;background:#fff}
+.navpills a:hover{background:var(--sun-l)}
+.navpills a.home{background:var(--blue);color:#fff}
+/* hero */
+.hero{position:relative;overflow:hidden;padding:56px 0 90px;background:linear-gradient(180deg,var(--sky-l),var(--bg))}
+.hero .blob{position:absolute;border-radius:50%;opacity:.5}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;position:relative}
+.tag{display:inline-block;font-family:Huninn,sans-serif;background:var(--sun);border:3px solid var(--ink);border-radius:99px;padding:2px 16px;box-shadow:0 3px 0 var(--ink);font-size:15px}
+.hero h1{font-size:clamp(32px,5.4vw,54px);margin:18px 0 12px}
+.hero p.lead{font-size:19px;color:var(--ink-2);margin:0 0 22px}
+.btn{display:inline-block;font-family:Huninn,sans-serif;text-decoration:none;color:var(--ink);background:#fff;border:3px solid var(--ink);border-radius:16px;padding:8px 20px;box-shadow:0 4px 0 var(--ink);margin:0 10px 10px 0;cursor:pointer;font-size:17px}
+.btn.pri{background:var(--blue);color:#fff}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--ink)}
+.wave{position:absolute;left:0;right:0;bottom:-1px;height:60px;width:100%}
+.float{animation:float 4s ease-in-out infinite}
+.float.d2{animation-delay:1.3s}.float.d3{animation-delay:2.4s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media (prefers-reduced-motion:reduce){.float{animation:none}html{scroll-behavior:auto}}
+/* sections */
+section.sec{padding:56px 0}
+section.alt{background:linear-gradient(180deg,var(--c-l,var(--blue-l)),var(--bg))}
+.sec-head{display:flex;align-items:center;gap:16px;margin-bottom:22px}
+.num{flex:none;width:58px;height:58px;display:grid;place-items:center;font-family:Huninn,sans-serif;font-size:28px;color:#fff;background:var(--c,var(--blue));border:3px solid var(--ink);border-radius:16px;transform:rotate(-6deg);box-shadow:0 4px 0 var(--ink)}
+.eyebrow{font-size:13px;letter-spacing:.16em;color:var(--c,var(--blue));font-weight:700;text-transform:uppercase}
+.sec-head h2{font-size:clamp(24px,3.6vw,34px);margin:0}
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:20px 22px;box-shadow:0 4px 0 var(--ink);min-width:0}
+.card h3{margin:0 0 6px;font-size:21px}
+.grid2,.grid3,.grid4{display:grid;gap:18px}
+.grid2{grid-template-columns:repeat(2,1fr)}
+.grid3{grid-template-columns:repeat(3,1fr)}
+.grid4{grid-template-columns:repeat(4,1fr)}
+.grid2>*,.grid3>*,.grid4>*{min-width:0}
+.icon-wrap{width:110px;height:110px;margin:0 auto 8px;display:block}
+.dashed{border:0;border-top:3px dashed var(--line);margin:26px 0}
+.pt{font-weight:700;margin-top:10px}
+/* speech */
+.talk{display:flex;gap:14px;align-items:flex-start;margin:14px 0}
+.talk svg.av{flex:none;width:72px;height:76px}
+.bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:12px 18px;box-shadow:4px 4px 0 var(--sun);min-width:0;flex:1}
+.bubble b.who-n{font-family:Huninn,sans-serif;font-weight:400;color:var(--blue-d)}
+.remind{background:var(--coral-l);border:3px solid var(--ink);border-radius:18px;padding:12px 18px;margin-top:14px}
+/* evidence */
+.lv{display:inline-block;font-size:13px;font-weight:700;border:2px solid var(--ink);border-radius:99px;padding:0 10px;margin-right:6px;background:var(--sun-l)}
+.lv.hi{background:var(--mint-l)}.lv.mid{background:var(--sun-l)}.lv.lo{background:var(--coral-l)}
+.bignum{font-family:Huninn,sans-serif;font-size:44px;line-height:1.1;color:var(--c,var(--blue))}
+.cansay{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.cansay .yes{background:var(--mint-l)}.cansay .no{background:var(--coral-l)}
+.cansay ul{margin:6px 0 0;padding-left:1.2em}
+.tblw{overflow-x:auto;-webkit-overflow-scrolling:touch;border:3px solid var(--ink);border-radius:18px;background:#fff}
+table.t{border-collapse:collapse;width:100%;min-width:560px;font-size:16px}
+table.t th,table.t td{border-bottom:2px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+table.t th{background:var(--blue);color:#fff;font-family:Huninn,sans-serif;font-weight:400}
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.tabs button{font:inherit;font-family:Huninn,sans-serif;border:3px solid var(--ink);background:#fff;border-radius:14px;padding:6px 16px;cursor:pointer;box-shadow:0 3px 0 var(--ink)}
+.tabs button[aria-selected="true"]{background:var(--c,var(--blue));color:#fff}
+.tabpanel[hidden]{display:none}
+/* checklist */
+.chk{display:grid;gap:10px}
+.chk label{display:flex;gap:12px;align-items:flex-start;background:#fff;border:3px solid var(--ink);border-radius:16px;padding:10px 14px;cursor:pointer}
+.chk input{appearance:none;-webkit-appearance:none;flex:none;width:26px;height:26px;border:3px solid var(--ink);border-radius:8px;background:#fff;margin-top:3px;cursor:pointer;display:grid;place-items:center}
+.chk input:checked{background:var(--mint)}
+.chk input:checked::after{content:"✓";color:#fff;font-weight:900;font-size:16px;line-height:1}
+.prog{height:22px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden;margin:12px 0 4px}
+.prog i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 10px,#5ad6a4 10px,#5ad6a4 20px);transition:width .3s}
+.note{font-size:14px;color:var(--ink-2)}
+/* quiz */
+.qz{margin-bottom:16px}
+.qz .opts{display:grid;gap:8px;margin-top:8px}
+.qz button.op{font:inherit;text-align:left;border:3px solid var(--ink);background:#fff;border-radius:14px;padding:8px 14px;cursor:pointer}
+.qz button.op.ok{background:var(--mint-l)}
+.qz button.op.bad{background:var(--coral-l)}
+.qz .exp{display:none;margin-top:8px;background:var(--sun-l);border-radius:12px;padding:8px 12px}
+.qz.done .exp{display:block}
+#qscore{font-family:Huninn,sans-serif;font-size:22px}
+/* story */
+.story{background:var(--grape-l);border:3px solid var(--ink);border-radius:22px;padding:18px 20px;box-shadow:6px 6px 0 var(--grape)}
+/* tools */
+input[type=range]{width:100%;accent-color:var(--blue)}
+.field{display:block;margin:8px 0}
+.field input,.field select{font:inherit;border:3px solid var(--ink);border-radius:12px;padding:6px 10px;width:100%;max-width:100%;background:#fff}
+.out{background:var(--blue-l);border:3px solid var(--ink);border-radius:16px;padding:12px 16px;margin-top:10px}
+/* refs */
+a.src{display:inline-block;font-size:12px;line-height:1.6;text-decoration:none;background:var(--blue-l);color:var(--blue-d);border:1.5px solid var(--blue);border-radius:99px;padding:0 8px;margin:0 2px;vertical-align:2px;white-space:nowrap}
+ol.refs{padding-left:1.4em}
+ol.refs li{margin-bottom:12px;scroll-margin-top:90px}
+ol.refs li:target{background:var(--sun-l);border-radius:10px}
+ol.refs .gist{display:block;font-size:15px;color:var(--ink-2)}
+/* disclaimer */
+.warnbox{background:var(--coral);border:4px solid var(--ink);border-radius:24px;padding:10px;box-shadow:0 6px 0 var(--ink);margin:40px 0}
+.warnbox .in{border:3px dashed #fff;border-radius:18px;padding:18px 20px;color:#fff}
+.warnbox h2{margin:0 0 10px;font-size:26px}
+.warnbox .first{background:#fff;color:#d62828;font-weight:900;border-radius:12px;padding:8px 14px;margin-bottom:10px}
+.warnbox ul{margin:0;padding-left:1.2em}
+.warnbox a{color:#fff}
+.help{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.help span{background:#fff;color:var(--ink);border:2px solid var(--ink);border-radius:12px;padding:2px 12px;font-weight:700}
+/* footer */
+footer{background:var(--blue-d);color:#fff;padding:40px 0 30px;text-align:center}
+footer .pals{display:flex;justify-content:center;gap:16px}
+footer .pals svg{width:78px;height:82px}
+footer .motto{font-family:Huninn,sans-serif;font-size:22px;margin:10px 0}
+footer .strip{display:inline-block;background:var(--sun);color:var(--ink);font-weight:700;border-radius:12px;padding:6px 16px;margin:8px 0}
+footer a{color:#fff}
+footer small{display:block;opacity:.85;margin-top:8px}
+#toTop{position:fixed;right:16px;bottom:16px;width:52px;height:52px;border-radius:50%;border:3px solid var(--ink);background:var(--sun);font-size:24px;box-shadow:0 4px 0 var(--ink);cursor:pointer;display:none;z-index:60}
+#toTop.show{display:block}
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .hero{padding:32px 0 76px}
+  .hero-grid,.grid2,.grid3,.grid4,.cansay{grid-template-columns:1fr}
+  .navpills a:not(.home){display:none}
+  .talk svg.av{width:56px;height:60px}
+  .bignum{font-size:36px}
+  section.sec{padding:40px 0}
+}
+/* CRCFIBER extras */
+.hero-art{position:relative;max-width:440px;margin:0 auto;width:100%}
+.hero-art svg.scene{width:100%;height:auto;display:block}
+.hbub{position:absolute;top:2%;left:4%;right:4%;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:6px 14px;font-family:Huninn,sans-serif;font-size:17px;box-shadow:3px 3px 0 var(--sun);text-align:center}
+.mech{position:relative;padding-top:30px}
+.mech .badge{position:absolute;top:-14px;left:18px;background:var(--c,var(--blue));color:#fff;border:3px solid var(--ink);border-radius:99px;padding:0 12px;font-family:Huninn,sans-serif;font-size:15px}
+.ladder{display:grid;gap:12px}
+.rung{display:grid;grid-template-columns:140px 1fr;gap:14px;align-items:start;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:12px 16px;box-shadow:0 3px 0 var(--ink)}
+.rung>*{min-width:0}
+.rung .lvl{font-family:Huninn,sans-serif;font-size:20px}
+.statcard{text-align:center}
+.statcard .bignum{margin:4px 0}
+.statcard .ci{font-size:14px;color:var(--ink-2)}
+.sortg{display:grid;gap:10px}
+.sitem{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;background:#fff;border:3px solid var(--ink);border-radius:16px;padding:10px 14px}
+.sitem>*{min-width:0}
+.sitem .bins{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.sitem .bins button{font:inherit;font-size:15px;border:2px solid var(--ink);border-radius:12px;background:#fff;padding:2px 10px;cursor:pointer}
+.sitem .bins button.pick-ok{background:var(--mint);color:#fff}
+.sitem .bins button.pick-bad{background:var(--coral);color:#fff}
+.sitem .fb{grid-column:1/-1;font-size:15px;color:var(--ink-2);display:none}
+.sitem.answered .fb{display:block}
+.fibg{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.fibg>*{min-width:0}
+.fitem{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;background:#fff;border:3px solid var(--ink);border-radius:14px;padding:8px 12px}
+.fitem>*{min-width:0}
+.fitem small{display:block;color:var(--ink-2);font-size:13px;line-height:1.4}
+.stepper{display:flex;align-items:center;gap:6px}
+.stepper button{font:inherit;width:34px;height:34px;border:2px solid var(--ink);border-radius:10px;background:var(--sun-l);cursor:pointer;font-weight:900;line-height:1}
+.stepper output{min-width:22px;text-align:center;font-family:Huninn,sans-serif;font-size:19px}
+.fsum{position:relative}
+.fmeter{height:28px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden;position:relative;margin:10px 0 4px}
+.fmeter i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--orange),var(--orange) 10px,#ffb870 10px,#ffb870 20px);transition:width .3s}
+.fmeter i.full{background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 10px,#5ad6a4 10px,#5ad6a4 20px)}
+.riskbars{display:grid;gap:10px;margin-top:10px}
+.rbar{display:grid;grid-template-columns:110px 1fr 70px;gap:10px;align-items:center}
+.rbar>*{min-width:0}
+.rbar .track{height:24px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden}
+.rbar .track i{display:block;height:100%;background:var(--sky)}
+.rbar .track i.alt{background:var(--coral)}
+.rbar b{font-family:Huninn,sans-serif;font-weight:400;font-size:19px;text-align:right}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{font:inherit;font-size:15px;border:3px solid var(--ink);border-radius:99px;background:#fff;padding:2px 14px;cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--grape);color:#fff}
+.swap{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center}
+.swap>*{min-width:0}
+.swap .arr{font-family:Huninn,sans-serif;font-size:22px;color:var(--coral)}
+.tw-stat{text-align:center}
+@media (max-width:820px){
+  .rung{grid-template-columns:1fr;gap:4px}
+  .fibg{grid-template-columns:1fr}
+  .sitem{grid-template-columns:1fr}
+  .sitem .bins{justify-content:flex-start}
+  .rbar{grid-template-columns:84px 1fr 56px}
+  .hbub{font-size:15px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="sprout" viewBox="0 0 120 130">
+  <path d="M60 52 C60 38 60 30 60 22" stroke="#2bb88a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M60 30 C44 10 22 14 20 26 C34 36 50 36 60 30Z" fill="#5ad6a4" stroke="#1f2a44" stroke-width="3"/>
+  <path d="M60 24 C74 4 98 8 100 20 C86 32 70 32 60 24Z" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3"/>
+  <ellipse cx="60" cy="88" rx="40" ry="38" fill="#7ee3b8" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="46" cy="84" r="5" fill="#1f2a44"/><circle cx="74" cy="84" r="5" fill="#1f2a44"/>
+  <circle cx="47.5" cy="82.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="82.5" r="1.6" fill="#fff"/>
+  <ellipse cx="36" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="96" rx="7" ry="4" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 Q60 106 68 98" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="bird" viewBox="0 0 120 110">
+  <path d="M22 60 L6 50 L14 66Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="60" rx="42" ry="38" fill="#38b6ff" stroke="#1f2a44" stroke-width="3.5"/>
+  <ellipse cx="64" cy="72" rx="26" ry="20" fill="#e0f4ff"/>
+  <path d="M40 58 C30 70 34 84 50 82 C52 72 50 64 40 58Z" fill="#2455c7" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 24 C50 12 62 10 64 22" fill="#2455c7" stroke="#1f2a44" stroke-width="3"/>
+  <circle cx="74" cy="50" r="5.5" fill="#1f2a44"/><circle cx="75.6" cy="48.4" r="1.8" fill="#fff"/>
+  <path d="M96 54 L112 60 L96 66Z" fill="#ffb020" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="82" cy="64" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M52 98 v8 M68 98 v8" stroke="#ff9f43" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="star" viewBox="0 0 120 120">
+  <path d="M60 8 L74 42 L110 44 L82 66 L92 102 L60 82 L28 102 L38 66 L10 44 L46 42Z" fill="#ffc93c" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="56" r="4.5" fill="#1f2a44"/><circle cx="70" cy="56" r="4.5" fill="#1f2a44"/>
+  <circle cx="51.2" cy="54.8" r="1.4" fill="#fff"/><circle cx="71.2" cy="54.8" r="1.4" fill="#fff"/>
+  <path d="M53 66 Q60 72 67 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="42" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/><ellipse cx="78" cy="64" rx="5" ry="3" fill="#ff9aa2" opacity=".8"/>
+</symbol>
+<symbol id="bowl" viewBox="0 0 120 120">
+  <path d="M30 52 C34 36 50 30 60 34 C70 28 88 34 92 52Z" fill="#c98a4b" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="44" cy="44" r="3" fill="#8a5a2b"/><circle cx="58" cy="40" r="3" fill="#8a5a2b"/><circle cx="72" cy="44" r="3" fill="#8a5a2b"/><circle cx="84" cy="48" r="2.6" fill="#8a5a2b"/><circle cx="36" cy="49" r="2.6" fill="#8a5a2b"/>
+  <path d="M16 52 H104 C102 84 84 102 60 102 C36 102 18 84 16 52Z" fill="#ff9f43" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M40 100 H80 L76 110 H44Z" fill="#ff9f43" stroke="#1f2a44" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="46" cy="72" r="4.5" fill="#1f2a44"/><circle cx="74" cy="72" r="4.5" fill="#1f2a44"/>
+  <circle cx="47.4" cy="70.6" r="1.4" fill="#fff"/><circle cx="75.4" cy="70.6" r="1.4" fill="#fff"/>
+  <ellipse cx="36" cy="82" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="82" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M53 82 Q60 89 67 82" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="broccoli" viewBox="0 0 120 130">
+  <path d="M48 70 L44 116 H76 L72 70Z" fill="#9be7a0" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="40" cy="50" r="22" fill="#2bb88a" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="80" cy="50" r="22" fill="#2bb88a" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="60" cy="34" r="26" fill="#2bb88a" stroke="#1f2a44" stroke-width="3.5"/>
+  <circle cx="60" cy="62" r="20" fill="#2bb88a"/>
+  <circle cx="52" cy="92" r="4" fill="#1f2a44"/><circle cx="68" cy="92" r="4" fill="#1f2a44"/>
+  <circle cx="53.2" cy="90.8" r="1.3" fill="#fff"/><circle cx="69.2" cy="90.8" r="1.3" fill="#fff"/>
+  <ellipse cx="48" cy="102" rx="4.5" ry="2.8" fill="#ff9aa2" opacity=".8"/><ellipse cx="72" cy="102" rx="4.5" ry="2.8" fill="#ff9aa2" opacity=".8"/>
+  <path d="M55 102 Q60 107 65 102" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="sausage" viewBox="0 0 130 100">
+  <path d="M14 52 C14 30 34 22 64 22 C96 22 116 30 116 52 C116 74 96 82 64 82 C34 82 14 74 14 52Z" fill="#e8624f" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M14 52 L4 44 M14 52 L4 60 M116 52 L126 44 M116 52 L126 60" stroke="#1f2a44" stroke-width="3" stroke-linecap="round"/>
+  <path d="M34 34 Q44 30 50 36 M82 34 Q90 30 98 36" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/>
+  <circle cx="52" cy="50" r="4.5" fill="#1f2a44"/><circle cx="78" cy="50" r="4.5" fill="#1f2a44"/>
+  <circle cx="53.4" cy="48.6" r="1.4" fill="#fff"/><circle cx="79.4" cy="48.6" r="1.4" fill="#fff"/>
+  <ellipse cx="42" cy="60" rx="5.5" ry="3.2" fill="#ff9aa2" opacity=".8"/><ellipse cx="88" cy="60" rx="5.5" ry="3.2" fill="#ff9aa2" opacity=".8"/>
+  <path d="M57 66 Q65 61 73 66" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="gut" viewBox="0 0 120 120">
+  <ellipse cx="60" cy="64" rx="44" ry="46" fill="#ffc4c8" stroke="#1f2a44" stroke-width="3.5"/>
+  <path d="M38 102 V78 C38 70 44 66 60 66 C76 66 82 70 82 78 V94 C82 100 78 102 72 102 H64" fill="none" stroke="#ff8a95" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="46" cy="44" r="4.5" fill="#1f2a44"/><circle cx="74" cy="44" r="4.5" fill="#1f2a44"/>
+  <circle cx="47.4" cy="42.6" r="1.4" fill="#fff"/><circle cx="75.4" cy="42.6" r="1.4" fill="#fff"/>
+  <ellipse cx="36" cy="54" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/><ellipse cx="84" cy="54" rx="6" ry="3.5" fill="#ff9aa2" opacity=".8"/>
+  <path d="M53 54 Q60 61 67 54" stroke="#1f2a44" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="100" cy="16" r="6" fill="#ffc93c" stroke="#1f2a44" stroke-width="2.5"/>
+  <circle cx="110" cy="32" r="4" fill="#2bb88a" stroke="#1f2a44" stroke-width="2.5"/>
+</symbol>
+
+</defs>
+</svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><svg aria-hidden="true"><use href="#sprout"/></svg><span><b>共好小學堂</b><small>GROW &amp; LEARN TOGETHER</small></span></a>
+    <nav class="navpills" aria-label="章節">
+      <a href="#s1">重點</a><a href="#s3">證據</a><a href="#s4">研究</a><a href="#s6">小算盤</a><a href="#s8">篩檢</a><a href="#quiz">測驗</a>
+      <a class="home" href="../index.html">← 回小學堂</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <div class="blob" style="width:320px;height:320px;background:var(--mint-l);top:-90px;left:-80px"></div>
+  <div class="blob" style="width:240px;height:240px;background:var(--sun-l);bottom:30px;right:-60px"></div>
+  <div class="blob" style="width:140px;height:140px;background:var(--coral-l);top:40px;right:32%"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag">✦ 醫療新知小知識</span>
+      <h1>多吃纖維，真能<span class="hl">防大腸癌？</span></h1>
+      <p class="lead">全穀和膳食纖維的證據不錯，蔬果比較弱，加工肉的風險最確定。我們一起把「證據有多強」「風險差多少」看清楚，再算算自己一天吃到幾克纖維。</p>
+      <a class="btn pri" href="#s1">開始認識</a>
+      <a class="btn" href="#s6">直接跳纖維小算盤</a>
+    </div>
+    <div class="hero-art">
+      <svg class="scene" viewBox="0 0 440 340" role="img" aria-label="小芽、藍鳥與星星站在草地上，旁邊有全穀碗與綠花椰">
+        <ellipse cx="220" cy="300" rx="200" ry="28" fill="#dcf7ec" stroke="#1f2a44" stroke-width="3"/>
+        <g class="float"><use href="#bowl" x="18" y="150" width="96" height="96"/></g>
+        <g class="float d2"><use href="#broccoli" x="330" y="140" width="92" height="100"/></g>
+        <use href="#sprout" x="112" y="160" width="120" height="130"/>
+        <use href="#bird" x="226" y="186" width="110" height="100"/>
+        <g class="float d3"><use href="#star" x="188" y="96" width="70" height="70"/></g>
+      </svg>
+      <div class="hbub">纖維吃夠、加工肉少一點，再加上篩檢！</div>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C200 60 400 0 600 30 C800 60 1000 0 1200 30 V60 H0Z" fill="#fffdf7"/></svg>
+</section>
+
+<section class="sec" id="s1" style="--c:var(--blue)">
+  <div class="wrap">
+    <div class="sec-head"><div class="num">1</div><div><div class="eyebrow">Key points</div><h2>先說重點</h2></div></div>
+    <div class="talk"><svg class="av" aria-hidden="true"><use href="#sprout"/></svg><div class="bubble"><b class="who-n">小芽：</b>世界癌症研究基金會（WCRF/AICR）整理了 99 個研究、超過 2,900 萬名成人的資料，結論是：<b>全穀、含膳食纖維的食物</b>屬於「可能」降低大腸癌風險；<b>加工肉</b>屬於「確定」會增加風險，<b>紅肉</b>是「可能」增加。<a class="src" href="#ref1">參考 1</a></div></div>
+    <div class="talk"><svg class="av" aria-hidden="true"><use href="#bird"/></svg><div class="bubble"><b class="who-n">藍鳥：</b>蔬菜和水果呢？它們對大腸癌的證據只到「有限、提示性」，比全穀纖維弱。吃蔬果還是很重要，但不能說「吃某種蔬果就能防癌」。<a class="src" href="#ref1">參考 1</a><a class="src" href="#ref6">參考 6</a></div></div>
+    <div class="talk"><svg class="av" aria-hidden="true"><use href="#star"/></svg><div class="bubble"><b class="who-n">星星：</b>飲食之外，維持體重、多動、不喝酒，還有<b>定期做糞便潛血檢查</b>，一起做才完整。台灣從 2025 年起，45–74 歲都能每 2 年免費篩檢一次。<a class="src" href="#ref8">參考 8</a></div></div>
+    <div class="remind"><b>要分清楚：</b>「風險降低 17%」是一大群人的平均，而且大多來自觀察型研究，不是保證你個人不會得病；也不是說只要吃夠纖維，就可以不用篩檢。</div>
+  </div>
+</section>
+
+<section class="sec alt" id="s2" style="--c:var(--coral);--c-l:var(--coral-l)">
+  <div class="wrap">
+    <div class="sec-head"><div class="num">2</div><div><div class="eyebrow">How fibre helps</div><h2>膳食纖維怎麼照顧腸道？</h2></div></div>
+    <p>這一段講的是「可能的機制」，多半來自生理學、細胞和動物研究。機制說得通，能讓人體研究的結果更可信，但機制本身不等於「吃了就能防癌」的證明。<a class="src" href="#ref1">參考 1</a></p>
+    <div class="grid3">
+      <div class="card mech"><span class="badge">機制 1</span><svg class="icon-wrap" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="var(--coral-l)"/><use href="#gut" x="18" y="18" width="84" height="84"/></svg><h3>讓便便變多、變軟</h3><p>纖維會吸水、增加糞便體積，推動腸道蠕動，讓排便比較順。</p><p class="pt">腸子裡的廢物走得比較快。</p></div>
+      <div class="card mech"><span class="badge">機制 2</span><svg class="icon-wrap" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="var(--sun-l)"/><use href="#bowl" x="18" y="16" width="84" height="84"/></svg><h3>縮短接觸時間</h3><p>糞便體積大、通過得快，可能稀釋腸道內的有害物質，縮短它們和腸壁接觸的時間。</p><p class="pt">「稀釋＋快走」是常見的解釋。</p></div>
+      <div class="card mech"><span class="badge">機制 3</span><svg class="icon-wrap" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="var(--mint-l)"/><use href="#broccoli" x="20" y="12" width="80" height="88"/></svg><h3>餵飽腸道好菌</h3><p>部分纖維會被腸道菌發酵，產生短鏈脂肪酸，其中「丁酸」是大腸黏膜細胞的重要能量來源，也和發炎調節有關。</p><p class="pt">這多半是實驗室層級的證據。</p></div>
+    </div>
+    <hr class="dashed">
+    <div class="talk"><svg class="av" aria-hidden="true"><use href="#bird"/></svg><div class="bubble"><b class="who-n">藍鳥：</b>那槲皮素、茄紅素、類黃酮這些「植化素」呢？在細胞和動物實驗裡，看起來有抗發炎、抑制癌細胞生長的潛力。可是試管裡有效，不等於人吃下去就能預防或治療大腸癌。比較穩的做法是吃多樣、完整的蔬果和全穀，不是去買單一萃取物或保健食品。</div></div>
+  </div>
+</section>
+
+<section class="sec" id="s3" style="--c:var(--orange)">
+  <div class="wrap">
+    <div class="sec-head"><div class="num">3</div><div><div class="eyebrow">Evidence ladder</div><h2>證據梯子：誰確定、誰只是可能？</h2></div></div>
+    <p>WCRF/AICR 的「持續更新計畫」（CUP）2017 年大腸癌報告（2018 年修訂），把全球 99 個研究、超過 2,900 萬名成人、24.7 萬多位大腸癌個案的資料，依證據強弱分成幾級。<a class="src" href="#ref1">參考 1</a></p>
+    <div class="ladder">
+      <div class="rung"><div><span class="lv hi">確定 convincing</span></div><div><b>會增加風險：</b>加工肉、每天約 2 杯以上的酒精飲品（每日酒精約 30 克以上）、體脂肪過多、成年身高較高。<b>會降低風險：</b>身體活動（只限結腸癌）。<br><span class="note">要多個不同族群的研究結果一致、有劑量反應、機制合理、沒有明顯偏誤，才會給到這一級。</span></div></div>
+      <div class="rung"><div><span class="lv mid">可能 probable</span></div><div><b>會增加風險：</b>紅肉。<b>會降低風險：</b>全穀、含膳食纖維的食物、乳製品、鈣補充劑。<br><span class="note">證據方向一致，但研究數量、一致性或精準度還差一點。</span></div></div>
+      <div class="rung"><div><span class="lv lo">有限 limited</span></div><div><b>提示可能降低：</b>非澱粉類蔬菜、水果（尤其每天吃不到 100 克的人風險較高）等。<br><span class="note">有一些研究支持，但結果不夠一致或不夠精準，還不能下結論。</span></div></div>
+    </div>
+    <hr class="dashed">
+    <h3 class="hn">劑量反應：每多吃一點，風險差多少？</h3>
+    <div class="grid4">
+      <div class="card statcard" style="--c:var(--mint)"><div class="note">全穀 每天多 90 克</div><div class="bignum">0.83</div><div class="ci">RR（95% 信賴區間 0.78–0.89）<br>6 個研究、8,320 位個案</div><p>約少 17%</p></div>
+      <div class="card statcard" style="--c:var(--mint)"><div class="note">膳食纖維 每天多 10 克</div><div class="bignum">0.93</div><div class="ci">RR（0.87–1.00）<br>21 個研究、16,562 位個案</div><p>約少 7%，區間碰到 1</p></div>
+      <div class="card statcard" style="--c:var(--coral)"><div class="note">加工肉 每天多 50 克</div><div class="bignum">1.16</div><div class="ci">RR（1.08–1.26）<br>10 個研究、10,738 位個案</div><p>約多 16%</p></div>
+      <div class="card statcard" style="--c:var(--coral)"><div class="note">紅肉 每天多 100 克</div><div class="bignum">1.12</div><div class="ci">RR（1.00–1.25）<br>8 個研究、6,662 位個案</div><p>約多 12%，區間碰到 1</p></div>
+    </div>
+    <p class="note">數字來源：WCRF/AICR CUP 大腸癌報告的劑量反應統合分析。<a class="src" href="#ref1">參考 1</a> 同一份報告中，非澱粉類蔬菜每天多 100 克 RR 0.98（0.96–0.99），水果每天多 100 克 RR 0.96（0.93–1.00）。</p>
+    <div class="talk"><svg class="av" aria-hidden="true"><use href="#star"/></svg><div class="bubble"><b class="who-n">星星的白話統計：</b><b>RR（相對風險）</b>0.83，意思是吃比較多全穀的那群人，大腸癌風險平均大約是另一群人的 0.83 倍，也就是少了約 17%。<b>95% 信賴區間</b>是「真正數值大概落在這個範圍」；像紅肉的 1.00–1.25、纖維的 0.87–1.00 碰到 1，代表也可能其實沒有差別，所以要搭配其他研究一起看。這些都是一群人的平均，不是保證你個人。</div></div>
+    <p>IARC（國際癌症研究署）在 2015 年由 10 國 22 位專家審閱 800 多篇研究，把<b>加工肉列為第 1 類</b>致癌物（對人類致癌證據充分，主要是大腸癌），<b>紅肉列為第 2A 類</b>（很可能致癌）。IARC 估計每天每多吃 50 克加工肉，大腸癌風險約增加 18%。<a class="src" href="#ref4">參考 4</a> 要注意：「第 1 類」是說「致癌的證據有多確定」，不是說加工肉和菸一樣危險。</p>
+    <hr class="dashed">
+    <h3 class="hn">小遊戲：把說法放進正確的證據等級</h3>
+    <p class="note">依 WCRF/AICR CUP 大腸癌報告的分級。每題點一個等級，馬上告訴你對不對。<a class="src" href="#ref1">參考 1</a></p>
+    <div class="sortg" id="sortGame"></div>
+    <div class="out" id="sortOut">已作答 0 / 10 題</div>
+    <button class="btn" id="sortReset" type="button" style="margin-top:12px">重新玩一次</button>
+  </div>
+</section>
+
+<section class="sec alt" id="s4" style="--c:var(--mint);--c-l:var(--mint-l)">
+  <div class="wrap">
+    <div class="sec-head"><div class="num">4</div><div><div class="eyebrow">Study design</div><h2>這些研究是怎麼做的？</h2></div></div>
+    <div class="tabs" role="tablist" aria-label="研究設計">
+      <button role="tab" aria-selected="true" aria-controls="d-1" id="d-1-t">世代研究</button>
+      <button role="tab" aria-selected="false" aria-controls="d-2" id="d-2-t">統合分析</button>
+      <button role="tab" aria-selected="false" aria-controls="d-3" id="d-3-t">劑量反應</button>
+      <button role="tab" aria-selected="false" aria-controls="d-4" id="d-4-t">傘狀回顧</button>
+      <button role="tab" aria-selected="false" aria-controls="d-5" id="d-5-t">為何蔬果較弱</button>
+    </div>
+    <div class="card tabpanel" role="tabpanel" id="d-1" aria-labelledby="d-1-t">
+      <h3>世代研究（cohort）<span class="lv mid">觀察型</span></h3>
+      <p>先問一大群還沒生病的人平常吃什麼，再追蹤好幾年，看誰後來得了大腸癌。因為飲食是「生病前」記錄的，比事後回想的病例對照研究可靠。WCRF 這份報告主要就是用前瞻性世代研究。<a class="src" href="#ref1">參考 1</a></p>
+      <p><b>限制：</b>不是隨機分組。吃比較多全穀的人，可能也比較常運動、比較少抽菸喝酒，研究者會用統計方法校正，但沒辦法完全排除這些干擾。飲食大多靠問卷自己填，也會有記錯的誤差。</p>
+    </div>
+    <div class="card tabpanel" role="tabpanel" id="d-2" aria-labelledby="d-2-t" hidden>
+      <h3>統合分析（meta-analysis）<span class="lv mid">彙整研究</span></h3>
+      <p>把很多個世代研究的結果，用統計方法合在一起算一個平均值和信賴區間。人數變多，估計就比較精準。例如 Reynolds 等人 2019 年在《刺胳針》發表的系列系統性回顧與統合分析，納入 185 個前瞻性研究（約 1.35 億人年）和 58 個臨床試驗（4,635 位成人），發現纖維吃最多的人比吃最少的人，大腸癌等多種疾病風險少約 15%–30%，每天吃到 25–29 克時好處最明顯。<a class="src" href="#ref5">參考 5</a></p>
+      <p><b>限制：</b>合在一起的仍是觀察型研究，原本的干擾因素不會因為合併就消失。</p>
+    </div>
+    <div class="card tabpanel" role="tabpanel" id="d-3" aria-labelledby="d-3-t" hidden>
+      <h3>劑量反應（dose–response）</h3>
+      <p>不只比較「吃多 vs 吃少」，而是問「每多吃 X 克，風險變多少」。像「全穀每天多 90 克，RR 0.83」就是劑量反應的結果。如果吃越多、風險變化越一致，因果關係就比較說得通。<a class="src" href="#ref1">參考 1</a></p>
+      <p><b>90 克全穀大概多少？</b>這是研究裡的計算單位，不是一定要吃到的份量；實際換算成幾碗飯，要看是乾重還是煮熟的重量，研究之間的定義也不同，所以本頁不硬換算。</p>
+    </div>
+    <div class="card tabpanel" role="tabpanel" id="d-4" aria-labelledby="d-4-t" hidden>
+      <h3>傘狀回顧（umbrella review）<span class="lv mid">回顧的回顧</span></h3>
+      <p>《JAMA Network Open》2021 年 Veettil 等人的〈Role of Diet in Colorectal Cancer Incidence〉，不是單一世代研究，而是<b>把已發表的統合分析再整理一次</b>的傘狀回顧：從 9,954 篇文獻中選出 45 篇只納入前瞻性世代研究的統合分析，共 109 種飲食與大腸癌的關聯，再用統計標準分級。<a class="src" href="#ref3">參考 3</a></p>
+      <ul>
+        <li><span class="lv hi">確定</span>纖維多（RR 0.84）、飲食鈣多、優格多與風險較低有關；紅肉多（RR 1.13）、每天喝 4 杯以上酒（RR 1.58）與風險較高有關。</li>
+        <li><span class="lv mid">提示</span>全穀（RR 0.88）、加工肉（RR 1.14）。</li>
+        <li><span class="lv lo">弱</span>水果（RR 0.93）、蔬菜（RR 0.96）。</li>
+      </ul>
+      <p><b>為什麼加工肉在這裡只是「提示」，WCRF 卻是「確定」？</b>傘狀回顧只看統計條件（個案數、p 值、異質性、偏誤跡象），WCRF 和 IARC 還會一起考量劑量反應與生物機制，所以分級可能不同。兩邊方向都一致：加工肉、紅肉、酒和較高風險有關。</p>
+    </div>
+    <div class="card tabpanel" role="tabpanel" id="d-5" aria-labelledby="d-5-t" hidden>
+      <h3>為什麼蔬果的證據比全穀纖維弱？</h3>
+      <ul>
+        <li><b>效果比較小：</b>蔬菜每天多 100 克 RR 0.98，水果 RR 0.96，差距很小，容易被測量誤差蓋過。<a class="src" href="#ref1">參考 1</a></li>
+        <li><b>種類太多：</b>「蔬果」包含幾百種食物，纖維、植化素含量差很多，合在一起算會稀釋效果。</li>
+        <li><b>不一致：</b>有些研究看到保護作用，有些沒有；WHO 的評論也把蔬果對大腸癌的證據描述為「較有限」。<a class="src" href="#ref6">參考 6</a></li>
+        <li><b>可能主要在「吃太少」的人：</b>WCRF 指出每天吃不到 100 克蔬菜或水果的人，風險比較高；已經吃夠的人再多吃，差別就不明顯。</li>
+      </ul>
+      <p>所以結論是：蔬果還是要吃（對心血管、體重和整體健康都有幫助），但談到大腸癌，<b>全穀和纖維</b>的證據比較紮實。</p>
+    </div>
+    <div class="talk"><svg class="av" aria-hidden="true"><use href="#sprout"/></svg><div class="bubble"><b class="who-n">小芽：</b>你會發現，這些研究幾乎都是觀察型的。到目前沒有「隨機分配一群人吃高纖、一群人吃低纖，追蹤幾十年看大腸癌」的大型試驗，因為太難做了。所以等級最高也多半停在「可能」。</div></div>
+  </div>
+</section>
+
+<section class="sec" id="s5" style="--c:var(--sky)">
+  <div class="wrap">
+    <div class="sec-head"><div class="num">5</div><div><div class="eyebrow">Relative vs absolute</div><h2>相對風險 vs 絕對風險</h2></div></div>
+    <p>「風險增加 16%」聽起來很嚇人，但要看<b>原本的風險有多高</b>。下面用「每 1,000 人一生中有幾人得大腸癌」來示意。</p>
+    <div class="card">
+      <label class="field">示範假設：每 1,000 人中，原本一生會得大腸癌的人數 <b id="baseOut">40</b> 人
+        <input type="range" id="baseRange" min="10" max="80" step="1" value="40" aria-label="原本每千人罹病人數">
+      </label>
+      <div class="chips" role="group" aria-label="選擇飲食變化">
+        <button type="button" data-rr="0.83" data-lab="全穀每天多 90 克" aria-pressed="true">全穀 +90 克／天</button>
+        <button type="button" data-rr="0.93" data-lab="纖維每天多 10 克" aria-pressed="false">纖維 +10 克／天</button>
+        <button type="button" data-rr="0.98" data-lab="蔬菜每天多 100 克" aria-pressed="false">蔬菜 +100 克／天</button>
+        <button type="button" data-rr="1.16" data-lab="加工肉每天多 50 克" aria-pressed="false">加工肉 +50 克／天</button>
+        <button type="button" data-rr="1.12" data-lab="紅肉每天多 100 克" aria-pressed="false">紅肉 +100 克／天</button>
+      </div>
+      <div class="riskbars">
+        <div class="rbar"><span>原本</span><div class="track"><i id="barA"></i></div><b id="numA">40</b></div>
+        <div class="rbar"><span id="labB">改變後</span><div class="track"><i id="barB" class="alt"></i></div><b id="numB">33</b></div>
+      </div>
+      <div class="out" id="riskOut"></div>
+      <p class="note">「原本人數」是<b>示範假設</b>，不是台灣的官方終生風險，可以自己拉動看看；RR 取自 WCRF/AICR CUP 劑量反應分析。<a class="src" href="#ref1">參考 1</a> 實際風險受年齡、家族史、體重、抽菸、飲酒、是否篩檢等很多因素影響。</p>
+    </div>
+    <div class="talk"><svg class="av" aria-hidden="true"><use href="#bird"/></svg><div class="bubble"><b class="who-n">藍鳥：</b>原本 40 人，RR 1.16 就變成約 46 人，多了大約 6 人；這 6 人是「每 1,000 人」裡的差別。相對風險讓我們知道方向和強弱，絕對風險讓我們知道對一群人實際差多少，兩個都要看。</div></div>
+  </div>
+</section>
+
+<section class="sec alt" id="s6" style="--c:var(--orange);--c-l:var(--orange-l)">
+  <div class="wrap">
+    <div class="sec-head"><div class="num">6</div><div><div class="eyebrow">Daily plate</div><h2>每天怎麼吃？算算你的纖維</h2></div></div>
+    <div class="grid2">
+      <div class="card">
+        <h3>WCRF/AICR 的建議</h3>
+        <ul>
+          <li>每天至少 <b>30 克</b>來自食物的膳食纖維。</li>
+          <li>每天至少 5 份、合計 <b>400 克</b>以上的非澱粉類蔬菜和水果。</li>
+          <li>大多數餐點都含有全穀、蔬菜、水果和豆類。</li>
+          <li>紅肉每週不超過約 3 份（約 350–500 克熟重）；加工肉盡量少吃，最好不吃。</li>
+          <li>為了預防癌症，最好不要喝酒。<b>喝酒有害健康。</b></li>
+        </ul>
+        <a class="src" href="#ref2">參考 2</a>
+      </div>
+      <div class="card">
+        <h3>台灣的每日飲食指南（2018 版）</h3>
+        <ul>
+          <li>每天<b>至少 3 份蔬菜、2 份水果</b>；熱量需求較高的人份量再往上加（依熱量不同，蔬菜約 3–5 份、水果約 2–4 份）。</li>
+          <li>1 份蔬菜約生重 100 克，煮熟約半碗；1 份水果約一個拳頭大。</li>
+          <li>全穀雜糧類至少 1/3 選未精製的全穀，例如糙米、燕麥、地瓜。</li>
+          <li>「我的餐盤」口訣：每餐水果拳頭大、菜比水果多一點、飯跟蔬菜一樣多、豆魚蛋肉一掌心。</li>
+        </ul>
+        <a class="src" href="#ref7">參考 7</a>
+        <p class="note">常聽到的「8 菜 2 果」不是官方說法；官方的重點是「菜比水果多一點」，份量依個人熱量需求調整。</p>
+      </div>
+    </div>
+    <hr class="dashed">
+    <h3 class="hn">彩虹蔬果與全穀清單</h3>
+    <div class="tblw"><table class="t">
+      <thead><tr><th>類別</th><th>代表食材</th><th>主要營養與可能作用</th></tr></thead>
+      <tbody>
+        <tr><td>十字花科蔬菜</td><td>綠花椰菜、高麗菜、白花椰菜</td><td>膳食纖維、硫代葡萄糖苷與異硫氰酸酯</td></tr>
+        <tr><td>深綠色蔬菜</td><td>菠菜、蘆筍、青江菜</td><td>葉酸、鎂、纖維與抗氧化物</td></tr>
+        <tr><td>紅橘色蔬果</td><td>番茄、胡蘿蔔、甜椒、木瓜、柑橘</td><td>茄紅素、β-胡蘿蔔素與維生素 C</td></tr>
+        <tr><td>高纖水果</td><td>芭樂、奇異果、蘋果、莓果</td><td>膳食纖維、維生素 C 與多酚</td></tr>
+        <tr><td>全穀與豆類</td><td>糙米、燕麥、地瓜、鷹嘴豆、黑豆</td><td>纖維、抗性澱粉、植物蛋白與短鏈脂肪酸前驅物</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">「彩虹飲食」的重點不是某種超級食物，而是吃不同顏色的蔬果，攝取多樣的纖維、維生素、礦物質與植化素。水果雖然健康，吃太多仍會增加熱量和糖分；糖尿病或要控制體重的人更要注意份量，也不要用果汁取代蔬菜。</p>
+    <hr class="dashed">
+    <h3 class="hn">一日纖維小算盤</h3>
+    <p>按「＋」「－」選你今天吃了幾份，看看離 30 克還差多少。</p>
+    <div class="fibg" id="fibGrid"></div>
+    <div class="card fsum" style="margin-top:14px">
+      <div class="fmeter"><i id="fibBar"></i></div>
+      <div class="out" id="fibOut">今天約 0 克</div>
+      <button class="btn" type="button" id="fibReset" style="margin-top:12px">全部歸零</button>
+      <p class="note"><b>示範估算：</b>每份的纖維量是取整數或 0.5 的約略值，依據醫院營養室高纖維飲食衛教單的每 100 克纖維高低分級、媒體引述的營養師數值（例如黑豆乾重每 100 克約 22 克、紅豆約 18.5 克），換算成常見份量後估算。實際數值依品種、部位、烹調與份量而異，精確數字請查衛福部食藥署「食品營養成分資料庫」。<a class="src" href="#ref11">參考 11</a><a class="src" href="#ref12">參考 12</a> 份量選擇只存在你自己的瀏覽器。</p>
+    </div>
+    <div class="talk"><svg class="av" aria-hidden="true"><use href="#star"/></svg><div class="bubble"><b class="who-n">星星：</b>試試看把「白飯」換成「糙米飯」、加一份地瓜葉和一顆芭樂，差很多吧！纖維要慢慢加、水要喝夠，一下子吃太多可能脹氣。有腸胃疾病、腎臟病或醫師要你限制飲食的人，請先問醫師或營養師。</div></div>
+  </div>
+</section>
+
+<section class="sec" id="s7" style="--c:var(--grape)">
+  <div class="wrap">
+    <div class="sec-head"><div class="num">7</div><div><div class="eyebrow">Swap list</div><h2>少吃加工肉：我的替換清單</h2></div></div>
+    <div class="grid2">
+      <div>
+        <div class="talk"><svg class="av" viewBox="0 0 130 100" aria-hidden="true"><use href="#sausage"/></svg><div class="bubble"><b class="who-n">香腸：</b>我是加工肉，臘肉、培根、火腿、熱狗都是我的同類。偶爾見面就好，不要天天見喔！</div></div>
+        <p>加工肉是指經過醃製、煙燻、發酵或加鹽等處理來延長保存、增加風味的肉品。<a class="src" href="#ref4">參考 4</a></p>
+        <ul>
+          <li>少吃香腸、臘肉、培根、火腿等加工肉品。</li>
+          <li>吃紅肉時控制總量、選較瘦部位，避免常常高溫炭烤或油炸。</li>
+          <li>用豆類、魚、禽肉或其他植物性蛋白質取代一部分紅肉。</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>這週我想試試（勾起來）</h3>
+        <div class="chk" id="swapList">
+          <label><input type="checkbox" data-k="s1"><span class="swap"><span>早餐火腿蛋餅</span><span class="arr">→</span><span>蔬菜蛋餅＋無糖豆漿</span></span></label>
+          <label><input type="checkbox" data-k="s2"><span class="swap"><span>便當配香腸</span><span class="arr">→</span><span>滷豆干或毛豆</span></span></label>
+          <label><input type="checkbox" data-k="s3"><span class="swap"><span>培根三明治</span><span class="arr">→</span><span>全麥吐司夾蛋與生菜</span></span></label>
+          <label><input type="checkbox" data-k="s4"><span class="swap"><span>臘肉炒飯</span><span class="arr">→</span><span>糙米飯配雞肉與青菜</span></span></label>
+          <label><input type="checkbox" data-k="s5"><span class="swap"><span>熱狗、貢丸當點心</span><span class="arr">→</span><span>一份水果或一小把無調味堅果</span></span></label>
+          <label><input type="checkbox" data-k="s6"><span class="swap"><span>每天吃牛豬肉</span><span class="arr">→</span><span>一週幾天改吃魚或豆腐</span></span></label>
+        </div>
+        <div class="prog"><i id="swapBar"></i></div>
+        <div id="swapOut" class="note">0 / 6</div>
+        <p class="note">這份清單每週一自動重新開始，勾選只存在你自己的瀏覽器。</p>
+      </div>
+    </div>
+    <hr class="dashed">
+    <div class="grid2">
+      <div class="story">
+        <h3>吃素就不會得大腸癌？</h3>
+        <p>不一定。素食者如果常吃高油、精緻澱粉、加工素料或高鈉食品，蔬果、全穀和豆類又吃得少，一樣會錯過纖維的好處。</p>
+        <ul>
+          <li>用豆腐、豆干、毛豆、黑豆、鷹嘴豆當蛋白質來源。</li>
+          <li>選全穀，不要只吃白米、白麵包。</li>
+          <li>少吃油炸素料、素肉罐頭和重口味調味。</li>
+          <li>留意維生素 B12、維生素 D、鐵、鈣與 omega-3 是否足夠，必要時問營養師。</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>飲食以外，也一樣重要</h3>
+        <ul>
+          <li>維持健康體重：體脂肪過多屬於「確定」增加風險。<a class="src" href="#ref1">參考 1</a></li>
+          <li>規律運動：身體活動對結腸癌屬於「確定」降低風險。</li>
+          <li>不喝酒：每天約 2 杯以上的酒精飲品屬於「確定」增加風險。<b>喝酒有害健康</b>，想預防癌症最好不喝。<a class="src" href="#ref2">參考 2</a></li>
+          <li>依年齡與風險接受大腸癌篩檢（下一章）。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="s8" style="--c:var(--blue);--c-l:var(--blue-l)">
+  <div class="wrap">
+    <div class="sec-head"><div class="num">8</div><div><div class="eyebrow">Taiwan</div><h2>台灣的大腸癌與篩檢</h2></div></div>
+    <div class="grid3">
+      <div class="card tw-stat"><div class="note">新發生人數排名</div><div class="bignum">第 2 名</div><p>2023 年癌症登記，大腸癌新發生人數僅次於肺癌，全國新診斷癌症共 138,051 人。<a class="src" href="#ref9">參考 9</a></p></div>
+      <div class="card tw-stat" style="--c:var(--coral)"><div class="note">2022 年新診斷大腸癌</div><div class="bignum">17,643 人</div><p>同樣排第 2 名；2024 年大腸癌死亡約 7 千人，居癌症死因第 3 位。<a class="src" href="#ref10">參考 10</a><a class="src" href="#ref8">參考 8</a></p></div>
+      <div class="card tw-stat" style="--c:var(--mint)"><div class="note">免費篩檢</div><div class="bignum">每 2 年 1 次</div><p>定量免疫法糞便潛血檢查（FIT），在家採檢、送回院所即可。<a class="src" href="#ref8">參考 8</a></p></div>
+    </div>
+    <div class="card" style="margin-top:18px">
+      <h3>2025 年起，誰可以免費篩檢？</h3>
+      <ul>
+        <li><b>45–74 歲</b>民眾（原本是 50–74 歲）。</li>
+        <li><b>40–44 歲、有家族史</b>的人：父母、子女或兄弟姊妹曾罹患大腸癌。</li>
+      </ul>
+      <p>國健署引用的研究指出，每 2 年做一次糞便潛血檢查，可降低晚期大腸癌發生與大腸癌死亡；早期大腸癌經適當治療，存活率超過 9 成。檢查結果陽性一定要去做大腸鏡確認。<a class="src" href="#ref8">參考 8</a><a class="src" href="#ref9">參考 9</a></p>
+      <p class="note">有血便、排便習慣突然改變、不明原因體重減輕、貧血等情形，不要等篩檢，請直接就醫。</p>
+    </div>
+    <div class="talk"><svg class="av" aria-hidden="true"><use href="#sprout"/></svg><div class="bubble"><b class="who-n">小芽：</b>飲食是「降低機會」，篩檢是「提早發現」，兩件事不能互相取代。吃得再健康，到了年紀還是要記得篩檢喔！</div></div>
+  </div>
+</section>
+
+<section class="sec" id="s9" style="--c:var(--mint)">
+  <div class="wrap">
+    <div class="sec-head"><div class="num">9</div><div><div class="eyebrow">Can say / can't say</div><h2>這些證據能說什麼？</h2></div></div>
+    <div class="cansay">
+      <div class="card yes"><h3>✓ 可以這樣說</h3><ul>
+        <li>多吃全穀和含纖維的食物，和較低的大腸癌風險有關，證據等級是「可能」。</li>
+        <li>加工肉會增加大腸癌風險，證據等級是「確定」；紅肉是「可能」。</li>
+        <li>每天吃很少蔬果（不到 100 克）的人，風險可能比較高。</li>
+        <li>飲食、體重、運動、不喝酒和篩檢要一起做。</li>
+      </ul></div>
+      <div class="card no"><h3>✗ 不能這樣說</h3><ul>
+        <li>吃某種蔬果或植化素可以殺死癌細胞、治療大腸癌。</li>
+        <li>纖維吃夠 30 克就保證不會得大腸癌。</li>
+        <li>RR 0.83 代表「我個人」的風險少 17%。</li>
+        <li>吃素、吃得健康就不用做大腸癌篩檢。</li>
+        <li>加工肉是第 1 類致癌物，所以和抽菸一樣危險。</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="quiz" style="--c:var(--sun);--c-l:var(--sun-l)">
+  <div class="wrap">
+    <div class="sec-head"><div class="num">10</div><div><div class="eyebrow">Quiz</div><h2>情境小測驗</h2></div></div>
+    <div class="card qz" data-ans="1"><p><b>1.</b> 鄰居說：「我每天吃一大盤花椰菜，就不用怕大腸癌了。」比較正確的回應是？</p><div class="opts">
+      <button class="op" type="button">對，十字花科蔬菜已證實能預防大腸癌</button>
+      <button class="op" type="button">蔬菜很好，但對大腸癌證據有限，還要搭配全穀、少加工肉和篩檢</button>
+      <button class="op" type="button">蔬菜對大腸癌完全沒用，不必吃</button></div>
+      <div class="exp">WCRF 把非澱粉類蔬菜對大腸癌列為「有限、提示性」證據；蔬菜仍有其他健康好處，但不能單靠它防癌。</div></div>
+    <div class="card qz" data-ans="2"><p><b>2.</b> 新聞寫「全穀每天多 90 克，大腸癌風險 RR 0.83」，意思最接近？</p><div class="opts">
+      <button class="op" type="button">吃全穀的人一定不會得大腸癌</button>
+      <button class="op" type="button">每 100 人就有 17 人因此不得大腸癌</button>
+      <button class="op" type="button">吃較多全穀的一群人，平均風險約少 17%，是相對比較</button></div>
+      <div class="exp">RR 是相對風險，0.83 代表平均約少 17%；實際少幾人，要看原本的絕對風險有多高。</div></div>
+    <div class="card qz" data-ans="0"><p><b>3.</b> 《JAMA Network Open》2021 年那篇 Veettil 等人的研究，是什麼設計？</p><div class="opts">
+      <button class="op" type="button">傘狀回顧：整理 45 篇世代研究的統合分析</button>
+      <button class="op" type="button">一個追蹤 50 萬人的單一世代研究</button>
+      <button class="op" type="button">隨機分配吃高纖或低纖的臨床試驗</button></div>
+      <div class="exp">它是「回顧的回顧」，把 45 篇只納入前瞻性世代研究的統合分析再分級，共 109 種飲食關聯。</div></div>
+    <div class="card qz" data-ans="1"><p><b>4.</b> 47 歲的阿明沒有家族史，想做國健署的免費大腸癌篩檢，可以嗎？</p><div class="opts">
+      <button class="op" type="button">不行，要 50 歲以上</button>
+      <button class="op" type="button">可以，2025 年起 45–74 歲每 2 年可做一次</button>
+      <button class="op" type="button">只有 40 歲以上有家族史的人可以</button></div>
+      <div class="exp">2025 年起免費糞便潛血檢查擴大到 45–74 歲；40–44 歲有一等親大腸癌家族史者也納入。</div></div>
+    <div class="card qz" data-ans="2"><p><b>5.</b> 想降低大腸癌風險，下列哪個調整最有證據支持？</p><div class="opts">
+      <button class="op" type="button">每天吃一顆茄紅素膠囊</button>
+      <button class="op" type="button">把蔬菜全部打成果汁喝</button>
+      <button class="op" type="button">把加工肉換成豆類或魚，白飯換一部分糙米</button></div>
+      <div class="exp">加工肉是「確定」增加風險，全穀與纖維是「可能」降低風險；單一植化素補充品沒有這樣的證據，果汁也不能取代蔬菜。</div></div>
+    <p id="qscore" aria-live="polite"></p>
+  </div>
+</section>
+
+<section class="sec" id="refs" style="--c:var(--ink-2)">
+  <div class="wrap">
+    <div class="sec-head"><div class="num">✎</div><div><div class="eyebrow">References</div><h2>參考資料</h2></div></div>
+    <ol class="refs">
+      <li id="ref1">World Cancer Research Fund / American Institute for Cancer Research. <i>Diet, nutrition, physical activity and colorectal cancer</i>. Continuous Update Project Expert Report, 2017（2018 修訂）. <a href="https://www.wcrf.org/wp-content/uploads/2024/10/Colorectal-cancer-report.pdf" rel="noopener">WCRF PDF</a><span class="gist">99 個研究、2,900 萬以上成人、24.7 萬以上個案；加工肉 convincing（每 50 克/日 RR 1.16，1.08–1.26）；紅肉 probable（每 100 克/日 RR 1.12，1.00–1.25）；全穀 probable（每 90 克/日 RR 0.83，0.78–0.89）；纖維每 10 克/日 RR 0.93（0.87–1.00）；蔬菜、水果 limited-suggestive。</span></li>
+      <li id="ref2">World Cancer Research Fund / American Institute for Cancer Research. <i>Recommendations and public health and policy implications</i>. 2018. <a href="https://www.wcrf.org/wp-content/uploads/2024/10/Recommendations.pdf" rel="noopener">WCRF PDF</a><span class="gist">每日纖維至少 30 克、蔬果至少 5 份（400 克）；紅肉每週不超過約 3 份（350–500 克熟重）；加工肉盡量少；預防癌症最好不喝酒。</span></li>
+      <li id="ref3">Veettil SK, Wong TY, Loo YS, et al. Role of Diet in Colorectal Cancer Incidence: Umbrella Review of Meta-analyses of Prospective Observational Studies. <i>JAMA Netw Open</i>. 2021;4(2):e2037341. <a href="https://doi.org/10.1001/jamanetworkopen.2020.37341" rel="noopener">DOI 10.1001/jamanetworkopen.2020.37341</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/33591366/" rel="noopener">PMID 33591366</a><span class="gist">傘狀回顧，45 篇統合分析、109 種關聯；確定：纖維、鈣、優格（較低風險），紅肉、每日 4 杯以上酒（較高風險）；全穀、加工肉為提示；蔬菜、水果為弱。</span></li>
+      <li id="ref4">Bouvard V, Loomis D, Guyton KZ, et al. Carcinogenicity of consumption of red and processed meat. <i>Lancet Oncol</i>. 2015;16(16):1599-1600. <a href="https://doi.org/10.1016/S1470-2045(15)00444-1" rel="noopener">DOI 10.1016/S1470-2045(15)00444-1</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/26514947/" rel="noopener">PMID 26514947</a>；IARC 新聞稿 No. 240（2015-10-26）<a href="https://www.iarc.who.int/wp-content/uploads/2018/07/pr240_E.pdf" rel="noopener">IARC PDF</a><span class="gist">10 國 22 位專家、800 多篇研究；加工肉第 1 類、紅肉第 2A 類；每天每 50 克加工肉，大腸癌風險約增加 18%。</span></li>
+      <li id="ref5">Reynolds A, Mann J, Cummings J, et al. Carbohydrate quality and human health: a series of systematic reviews and meta-analyses. <i>Lancet</i>. 2019;393(10170):434-445. <a href="https://doi.org/10.1016/S0140-6736(18)31809-9" rel="noopener">DOI 10.1016/S0140-6736(18)31809-9</a>｜<a href="https://pubmed.ncbi.nlm.nih.gov/30638909/" rel="noopener">PMID 30638909</a><span class="gist">185 個前瞻性研究、58 個臨床試驗；纖維吃最多比最少，大腸癌等疾病風險少約 15%–30%；每日 25–29 克時好處最明顯。</span></li>
+      <li id="ref6">World Health Organization. Increasing fruit and vegetable consumption to reduce the risk of noncommunicable diseases（eLENA 生物學、行為與情境依據評論）. 2016. <a href="https://www.who.int/tools/elena/commentary/fruit-vegetables-ncds" rel="noopener">WHO eLENA</a><span class="gist">引用 WCRF：蔬菜、水果對大腸癌的保護證據較有限；WHO/FAO 2002 年建議每日蔬果超過 400 克。</span></li>
+      <li id="ref7">衛生福利部國民健康署。每日飲食指南（2018 年版）與「我的餐盤」。<a href="https://mohw.gov.tw/cp-16-41108-1.html" rel="noopener">衛福部新聞</a>；<a href="https://mohw.gov.tw/cp-2704-24404-1.html" rel="noopener">每日至少 3 蔬 2 果</a><span class="gist">每日至少 3 份蔬菜、2 份水果，依熱量需求增加；全穀雜糧至少 1/3 為未精製；我的餐盤六口訣。</span></li>
+      <li id="ref8">衛生福利部國民健康署。大腸癌篩檢擴大至 45–74 歲及 40–44 歲有家族史者（新聞稿）. 2025-07-11. <a href="https://mohw.gov.tw/cp-16-83045-1.html" rel="noopener">衛福部新聞</a><span class="gist">2025 年起 45–74 歲、40–44 歲有一等親家族史者每 2 年 1 次免費 FIT；2022 年新診斷 17,643 人；2024 年死亡約 7 千人居第 3。</span></li>
+      <li id="ref9">衛生福利部國民健康署。112 年癌症登記報告（新聞稿）. 2025-12-30. <a href="https://mohw.gov.tw/cp-16-84987-1.html" rel="noopener">衛福部新聞</a><span class="gist">2023 年新診斷癌症 138,051 人；大腸癌新發生人數第 2，僅次於肺癌；重申 45–74 歲每 2 年篩檢。</span></li>
+      <li id="ref10">衛生福利部國民健康署。111 年癌症登記報告（新聞稿）. 2024-12-19. <a href="https://www.mohw.gov.tw/cp-2704-80902-1.html" rel="noopener">衛福部新聞</a><span class="gist">2022 年新診斷癌症 130,293 人；大腸癌 17,643 人，排名第 2。</span></li>
+      <li id="ref11">臺北醫學大學附設醫院營養室（依檔案網址判斷）。高纖維飲食衛教單張. 2019. <a href="https://www.tmuh.org.tw/UploadFile/files/%E7%87%9F%E9%A4%8A%E5%AE%A4%E8%A1%9B%E6%95%99%E5%96%AE%E5%BC%B5/109%E8%A1%9B%E6%95%99%E5%96%AE%E5%BC%B5/%E9%AB%98%E7%BA%96%E7%B6%AD%E9%A3%B2%E9%A3%9F.pdf" rel="noopener">衛教 PDF</a>；TVBS 健康 2.0〈營養師盤點4大類食物纖維量〉2022-08-10 <a href="https://health.tvbs.com.tw/nutrition/334388" rel="noopener">網頁</a><span class="gist">常見食物每 100 克纖維分低（&lt;2 克）、中（2–3 克）、高（&gt;3 克）三級；成人每日建議 25–35 克；乾黑豆每 100 克約 22.4 克、紅豆 18.5 克。</span></li>
+      <li id="ref12">衛生福利部食品藥物管理署。食品營養成分資料集（政府資料開放平臺）. <a href="https://data.gov.tw/dataset/8543" rel="noopener">data.gov.tw</a><span class="gist">查詢各食物實際膳食纖維含量的官方資料庫；本頁小算盤僅為示範估算。</span></li>
+    </ol>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="warnbox" role="note" aria-label="重要聲明">
+    <div class="in">
+      <h2 class="hn">⚠ 重要聲明｜請先看這裡</h2>
+      <div class="first">本站資訊僅供參考，實際以醫療專業人員評估為準。</div>
+      <ul>
+        <li>僅供參考：本頁是一般衛教整理，不構成醫療、投資或法律建議，也不能取代診斷。</li>
+        <li>無任何推薦或行銷：本頁不推薦特定產品、店家或服務，也沒有任何業配。</li>
+        <li>資料時點：資料以2026年10月底前公開資料為準，查核於2026年11月22日。</li>
+        <li>以專業評估為準：個人狀況請以醫師、藥師、物理治療師等專業人員的評估為準。</li>
+        <li>使用前查證：法規、補助與指引可能更新，使用前請再查證最新官方資料。</li>
+      </ul>
+      <!-- optional .help resources -->
+    </div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="pals"><svg aria-hidden="true"><use href="#sprout"/></svg><svg aria-hidden="true"><use href="#bird"/></svg><svg aria-hidden="true"><use href="#star"/></svg></div>
+    <p class="motto">每一次多懂一點，都是送給自己的小禮物。</p>
+    <div class="strip">全穀纖維吃夠、加工肉少一點、不喝酒，45 歲起記得做大腸癌篩檢</div>
+    <p><a href="../index.html">← 回共好小學堂</a></p>
+    <small>共好小學堂 ✦ 一起學習，一起共好</small>
+    <small>本頁插圖為原創 SVG 卡通繪製｜整理日期 2026-11-22</small>
+  </div>
+</footer>
+<button id="toTop" aria-label="回到頂端">↑</button>
+<script>
+(function(){
+  // back to top
+  var tt=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){tt.classList.toggle('show',window.scrollY>600)});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+  // tabs: <div class="tabs" role="tablist" data-tabs="x"><button role="tab" aria-selected="true" aria-controls="x-1" id="x-1-t">…</button>…</div><div class="tabpanel" role="tabpanel" id="x-1" aria-labelledby="x-1-t">…</div>
+  document.querySelectorAll('[role=tablist]').forEach(function(list){
+    var tabs=list.querySelectorAll('[role=tab]');
+    tabs.forEach(function(t){t.addEventListener('click',function(){
+      tabs.forEach(function(o){o.setAttribute('aria-selected','false');var p=document.getElementById(o.getAttribute('aria-controls'));if(p)p.hidden=true});
+      t.setAttribute('aria-selected','true');var p=document.getElementById(t.getAttribute('aria-controls'));if(p)p.hidden=false;
+    })});
+  });
+  // quiz: <div class="qz" data-ans="1"><p>題目</p><div class="opts"><button class="op">A</button>…</div><div class="exp">解說</div></div>, score in #qscore
+  var qs=document.querySelectorAll('.qz'),score=0,done=0;
+  qs.forEach(function(q){
+    var ans=+q.dataset.ans,ops=q.querySelectorAll('.op');
+    ops.forEach(function(b,i){b.addEventListener('click',function(){
+      if(q.classList.contains('done'))return;
+      q.classList.add('done');done++;
+      ops[ans].classList.add('ok');
+      if(i===ans){score++}else{b.classList.add('bad')}
+      var s=document.getElementById('qscore');
+      if(s&&done===qs.length){s.textContent='你答對了 '+score+' / '+qs.length+' 題！'+(score===qs.length?'太厲害了 🎉':'看看解說，再複習一下就更穩了。')}
+    })});
+  });
+  // helper for escaping user text
+  window.ksEsc=function(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})};
+  window.ksStore={get:function(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+  window.ksMonday=function(){var d=new Date();var day=(d.getDay()+6)%7;d.setDate(d.getDate()-day);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')};
+})();
+</script>
+<script>
+(function(){
+  var esc=window.ksEsc, store=window.ksStore;
+  // ---- evidence sorting game ----
+  var LV=['確定','可能','有限'];
+  var items=[
+    ['加工肉增加大腸癌風險',0,'WCRF 列為「確定」：每天多 50 克，RR 1.16。'],
+    ['紅肉增加大腸癌風險',1,'WCRF 列為「可能」：每天多 100 克，RR 1.12，信賴區間碰到 1。'],
+    ['全穀降低大腸癌風險',1,'「可能」：每天多 90 克，RR 0.83。'],
+    ['含膳食纖維的食物降低風險',1,'「可能」：纖維每天多 10 克，RR 0.93。'],
+    ['非澱粉類蔬菜降低風險',2,'「有限、提示性」：每天多 100 克，RR 0.98，效果小。'],
+    ['水果降低風險',2,'「有限、提示性」：每天多 100 克，RR 0.96（0.93–1.00）。'],
+    ['每天約 2 杯以上的酒精飲品增加風險',0,'「確定」會增加風險。喝酒有害健康。'],
+    ['體脂肪過多增加風險',0,'「確定」會增加風險，維持健康體重很重要。'],
+    ['身體活動降低結腸癌風險',0,'「確定」，但只限結腸癌（不含直腸癌）。'],
+    ['乳製品降低風險',1,'「可能」：每天多 400 克，RR 0.87。'],
+  ];
+  var sg=document.getElementById('sortGame'),so=document.getElementById('sortOut');
+  var sAns=0,sOk=0;
+  function buildSort(){
+    sAns=0;sOk=0;sg.innerHTML='';
+    items.forEach(function(it){
+      var d=document.createElement('div');d.className='sitem';
+      var html='<span>'+esc(it[0])+'</span><span class="bins">';
+      LV.forEach(function(l,i){html+='<button type="button" data-i="'+i+'">'+l+'</button>'});
+      html+='</span><span class="fb"></span>';
+      d.innerHTML=html;
+      d.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){
+        if(d.classList.contains('answered'))return;
+        d.classList.add('answered');sAns++;
+        var pick=+b.dataset.i;
+        var right=d.querySelector('button[data-i="'+it[1]+'"]');right.classList.add('pick-ok');
+        if(pick===it[1]){sOk++;d.querySelector('.fb').textContent='答對！'+it[2]}
+        else{b.classList.add('pick-bad');d.querySelector('.fb').textContent='正解是「'+LV[it[1]]+'」。'+it[2]}
+        so.textContent='已作答 '+sAns+' / '+items.length+' 題，答對 '+sOk+' 題'+(sAns===items.length?(sOk===items.length?'，全對！🎉':'，看看說明再玩一次吧。'):'');
+      })});
+      sg.appendChild(d);
+    });
+    so.textContent='已作答 0 / '+items.length+' 題';
+  }
+  buildSort();
+  document.getElementById('sortReset').addEventListener('click',buildSort);
+
+  // ---- relative vs absolute ----
+  var br=document.getElementById('baseRange'),chips=document.querySelectorAll('.chips button'),cur=chips[0];
+  function risk(){
+    var base=+br.value,rr=+cur.dataset.rr,nb=base*rr,diff=nb-base;
+    document.getElementById('baseOut').textContent=base;
+    document.getElementById('numA').textContent=base;
+    document.getElementById('numB').textContent=nb.toFixed(1);
+        var max=100;
+    document.getElementById('barA').style.width=(base/max*100)+'%';
+    var bb=document.getElementById('barB');bb.style.width=(nb/max*100)+'%';
+    bb.style.background=rr<1?'var(--mint)':'var(--coral)';
+    var pct=Math.round(Math.abs(1-rr)*100);
+    document.getElementById('riskOut').innerHTML='<b>'+esc(cur.dataset.lab)+'</b>（RR '+rr+'）：相對風險'+(rr<1?'少':'多')+'約 '+pct+'%；以每 1,000 人原本 '+base+' 人來算，約變成 '+nb.toFixed(1)+' 人，絕對差距約 '+Math.abs(diff).toFixed(1)+' 人。';
+  }
+  chips.forEach(function(c){c.addEventListener('click',function(){chips.forEach(function(o){o.setAttribute('aria-pressed','false')});c.setAttribute('aria-pressed','true');cur=c;risk()})});
+  br.addEventListener('input',risk);risk();
+
+  // ---- fibre calculator (demo estimates) ----
+  var foods=[
+    ['white','白飯','1 碗（約 200 克熟）',0.5],
+    ['brown','糙米飯','1 碗（約 200 克熟）',3.5],
+    ['oat','燕麥片','乾重約 40 克（約 4 湯匙）',3],
+    ['wwbread','全麥吐司','2 片',4],
+    ['wbread','白吐司','2 片',1.5],
+    ['sweetp','地瓜','中型 1 條（約 150 克）',3.5],
+    ['leafy','一般葉菜（高麗菜、小白菜等）','1 份：煮熟約半碗',2],
+    ['hiveg','高纖蔬菜（綠花椰、地瓜葉、菇類、秋葵）','1 份：煮熟約半碗',3.5],
+    ['guava','芭樂','1 份（約半顆到 1 顆小的）',4.5],
+    ['apple','連皮蘋果','1 份（小顆 1 顆）',3],
+    ['banana','香蕉','半根',1],
+    ['kiwi','奇異果','1 份（約 1 顆半）',2.5],
+    ['edamame','毛豆','1 份（去莢約 50 克）',2.5],
+    ['redbean','紅豆或綠豆','乾重約 20 克（煮成約半碗）',3.5],
+    ['blackbean','黑豆','乾重約 20 克',4.5],
+    ['tofu','傳統豆腐','1 份（約 80 克）',0.5],
+    ['nuts','無調味堅果','1 湯匙（約 10 克）',1]
+  ];
+  var KEY='gungho-ks-crcfiber-fiber';
+  var cnt=store.get(KEY)||{};
+  var fg=document.getElementById('fibGrid');
+  foods.forEach(function(f){
+    var d=document.createElement('div');d.className='fitem';
+    d.innerHTML='<div><b>'+esc(f[1])+'</b><small>'+esc(f[2])+'｜約 '+f[3]+' 克／份</small></div><div class="stepper"><button type="button" aria-label="減少 '+esc(f[1])+'" data-d="-1">－</button><output aria-live="polite">0</output><button type="button" aria-label="增加 '+esc(f[1])+'" data-d="1">＋</button></div>';
+    var o=d.querySelector('output');
+    o.textContent=cnt[f[0]]||0;
+    d.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){
+      var v=(cnt[f[0]]||0)+(+b.dataset.d);v=Math.max(0,Math.min(9,v));cnt[f[0]]=v;o.textContent=v;store.set(KEY,cnt);fib();
+    })});
+    fg.appendChild(d);
+  });
+  function fib(){
+    var t=0;foods.forEach(function(f){t+=(cnt[f[0]]||0)*f[3]});
+    var bar=document.getElementById('fibBar');bar.style.width=Math.min(100,t/30*100)+'%';bar.classList.toggle('full',t>=30);
+    var msg='今天約 <b>'+(Math.round(t*10)/10)+'</b> 克膳食纖維（示範估算）；';
+    msg+=t>=30?'已達 WCRF 建議的每天 30 克，記得多喝水！':'離 30 克還差約 '+(Math.round((30-t)*10)/10)+' 克。';
+    document.getElementById('fibOut').innerHTML=msg;
+  }
+  document.getElementById('fibReset').addEventListener('click',function(){cnt={};store.set(KEY,cnt);fg.querySelectorAll('output').forEach(function(o){o.textContent=0});fib()});
+  fib();
+
+  // ---- weekly swap checklist ----
+  var WK='gungho-ks-crcfiber-swap-'+window.ksMonday();
+  var sv=store.get(WK)||{};
+  var boxes=document.querySelectorAll('#swapList input');
+  function sw(){
+    var n=0;boxes.forEach(function(b){if(b.checked)n++});
+    document.getElementById('swapBar').style.width=(n/boxes.length*100)+'%';
+    document.getElementById('swapOut').textContent=n+' / '+boxes.length+(n===boxes.length?'　全部做到了，太棒了！🎉':'');
+  }
+  boxes.forEach(function(b){b.checked=!!sv[b.dataset.k];b.addEventListener('change',function(){sv[b.dataset.k]=b.checked;store.set(WK,sv);sw()})});
+  sw();
+})();
+</script>
+</body>
+</html>
